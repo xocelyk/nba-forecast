@@ -586,7 +586,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504100MEM,2025-04-10,MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,,,,Home,,False,2025
 202504110DEN,2025-04-11,DEN,MEM,Denver Nuggets,Memphis Grizzlies,,,,Home,,False,2025
 202504130MEM,2025-04-13,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
-202412250NYK,2024-12-25,NYK,SAS,New York Knicks,San Antonio Spurs,,,,Home,,False,2025
+202412250NYK,2024-12-25,NYK,SAS,New York Knicks,San Antonio Spurs,117.0,114.0,3.0,Home,94.2,True,2025
 202412270BRK,2024-12-27,BRK,SAS,Brooklyn Nets,San Antonio Spurs,,,,Home,,False,2025
 202412290MIN,2024-12-29,MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,,,,Home,,False,2025
 202412310SAS,2024-12-31,SAS,LAC,San Antonio Spurs,Los Angeles Clippers,,,,Home,,False,2025
@@ -632,7 +632,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504090GSW,2025-04-09,GSW,SAS,Golden State Warriors,San Antonio Spurs,,,,Home,,False,2025
 202504110PHO,2025-04-11,PHO,SAS,Phoenix Suns,San Antonio Spurs,,,,Home,,False,2025
 202504130SAS,2025-04-13,SAS,TOR,San Antonio Spurs,Toronto Raptors,,,,Home,,False,2025
-202412250DAL,2024-12-25,DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,,,,Home,,False,2025
+202412250DAL,2024-12-25,DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,99.0,105.0,-6.0,Home,91.8,True,2025
 202412270PHO,2024-12-27,PHO,DAL,Phoenix Suns,Dallas Mavericks,,,,Home,,False,2025
 202412280POR,2024-12-28,POR,DAL,Portland Trail Blazers,Dallas Mavericks,,,,Home,,False,2025
 202412300SAC,2024-12-30,SAC,DAL,Sacramento Kings,Dallas Mavericks,,,,Home,,False,2025
@@ -675,7 +675,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504050LAC,2025-04-05,LAC,DAL,Los Angeles Clippers,Dallas Mavericks,,,,Home,,False,2025
 202504090DAL,2025-04-09,DAL,LAL,Dallas Mavericks,Los Angeles Lakers,,,,Home,,False,2025
 202504110DAL,2025-04-11,DAL,TOR,Dallas Mavericks,Toronto Raptors,,,,Home,,False,2025
-202412250GSW,2024-12-25,GSW,LAL,Golden State Warriors,Los Angeles Lakers,,,,Home,,False,2025
+202412250GSW,2024-12-25,GSW,LAL,Golden State Warriors,Los Angeles Lakers,113.0,115.0,-2.0,Home,93.8,True,2025
 202412270LAC,2024-12-27,LAC,GSW,Los Angeles Clippers,Golden State Warriors,,,,Home,,False,2025
 202412280GSW,2024-12-28,GSW,PHO,Golden State Warriors,Phoenix Suns,,,,Home,,False,2025
 202412300GSW,2024-12-30,GSW,CLE,Golden State Warriors,Cleveland Cavaliers,,,,Home,,False,2025
@@ -1069,7 +1069,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504050PHI,2025-04-05,PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,,,,Home,,False,2025
 202504110MIN,2025-04-11,MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,,,,Home,,False,2025
 202504130MIN,2025-04-13,MIN,UTA,Minnesota Timberwolves,Utah Jazz,,,,Home,,False,2025
-202412250BOS,2024-12-25,BOS,PHI,Boston Celtics,Philadelphia 76ers,,,,Home,,False,2025
+202412250BOS,2024-12-25,BOS,PHI,Boston Celtics,Philadelphia 76ers,114.0,118.0,-4.0,Home,96.8,True,2025
 202412280UTA,2024-12-28,UTA,PHI,Utah Jazz,Philadelphia 76ers,,,,Home,,False,2025
 202501010SAC,2025-01-01,SAC,PHI,Sacramento Kings,Philadelphia 76ers,,,,Home,,False,2025
 202501040BRK,2025-01-04,BRK,PHI,Brooklyn Nets,Philadelphia 76ers,,,,Home,,False,2025
@@ -1206,7 +1206,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504080ORL,2025-04-08,ORL,ATL,Orlando Magic,Atlanta Hawks,,,,Home,,False,2025
 202504100BRK,2025-04-10,BRK,ATL,Brooklyn Nets,Atlanta Hawks,,,,Home,,False,2025
 202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,,,,Home,,False,2025
-202412250PHO,2024-12-25,PHO,DEN,Phoenix Suns,Denver Nuggets,,,,Home,,False,2025
+202412250PHO,2024-12-25,PHO,DEN,Phoenix Suns,Denver Nuggets,110.0,100.0,10.0,Home,91.1,True,2025
 202412270DEN,2024-12-27,DEN,CLE,Denver Nuggets,Cleveland Cavaliers,,,,Home,,False,2025
 202412300UTA,2024-12-30,UTA,DEN,Utah Jazz,Denver Nuggets,,,,Home,,False,2025
 202501100DEN,2025-01-10,DEN,BRK,Denver Nuggets,Brooklyn Nets,,,,Home,,False,2025
