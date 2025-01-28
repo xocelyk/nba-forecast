@@ -99,7 +99,6 @@ def update_data(names_to_abbr, year=2025, preload=True):
                 ]
             else:
                 # If location is away, invert perspective
-                # and place 'Home' if you prefer to treat away as home's perspective
                 if location == 'Away':
                     location = 'Home'
                 row = [
@@ -264,7 +263,8 @@ def load_training_data(
 
             # Example rating approach: use extended day_cap for 2020
             # If you have special cases for other years, replicate them here
-            day_cap = 300 if (year == 2020) else 100
+            # day_cap = 300 if (year == 2020) else 100
+            day_cap = 300 if (year == 2025) else 200
 
             year_ratings = utils.get_em_ratings(
                 completed_year_data,
