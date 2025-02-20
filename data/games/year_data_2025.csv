@@ -840,7 +840,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504090LAC,2025-04-09,LAC,HOU,Los Angeles Clippers,Houston Rockets,,,,Home,,False,2025
 202504110LAL,2025-04-11,LAL,HOU,Los Angeles Lakers,Houston Rockets,,,,Home,,False,2025
 202504130HOU,2025-04-13,HOU,DEN,Houston Rockets,Denver Nuggets,,,,Home,,False,2025
-202502190LAL,2025-02-19,LAL,CHO,Los Angeles Lakers,Charlotte Hornets,,,,Home,,False,2025
+202502190LAL,2025-02-19,LAL,CHO,Los Angeles Lakers,Charlotte Hornets,97.0,100.0,-3.0,Home,102.1,True,2025
 202502200DEN,2025-02-20,DEN,CHO,Denver Nuggets,Charlotte Hornets,,,,Home,,False,2025
 202502220POR,2025-02-22,POR,CHO,Portland Trail Blazers,Charlotte Hornets,,,,Home,,False,2025
 202502240SAC,2025-02-24,SAC,CHO,Sacramento Kings,Charlotte Hornets,,,,Home,,False,2025
