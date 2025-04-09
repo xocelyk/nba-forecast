@@ -1172,45 +1172,46 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504060CLE,2025-04-06,CLE,SAC,Cleveland Cavaliers,Sacramento Kings,113.0,120.0,-7.0,Home,98.3,True,2025
 202504060BRK,2025-04-06,BRK,TOR,Brooklyn Nets,Toronto Raptors,109.0,120.0,-11.0,Home,108.5,True,2025
 202504060ATL,2025-04-06,ATL,UTA,Atlanta Hawks,Utah Jazz,147.0,134.0,13.0,Home,100.8,True,2025
+202504070DET,2025-04-07,DET,SAC,Detroit Pistons,Sacramento Kings,117.0,127.0,-10.0,Home,94.1,True,2025
+202504070MIA,2025-04-07,MIA,PHI,Miami Heat,Philadelphia 76ers,117.0,105.0,12.0,Home,96.4,True,2025
 202504090LAC,2025-04-09,LAC,HOU,Los Angeles Clippers,Houston Rockets,,,,Home,,False,2025
 202504110LAL,2025-04-11,LAL,HOU,Los Angeles Lakers,Houston Rockets,,,,Home,,False,2025
 202504130HOU,2025-04-13,HOU,DEN,Houston Rockets,Denver Nuggets,,,,Home,,False,2025
-202504080CHO,2025-04-08,CHO,MEM,Charlotte Hornets,Memphis Grizzlies,,,,Home,,False,2025
+202504080CHO,2025-04-08,CHO,MEM,Charlotte Hornets,Memphis Grizzlies,100.0,124.0,-24.0,Home,99.8,True,2025
 202504090TOR,2025-04-09,TOR,CHO,Toronto Raptors,Charlotte Hornets,,,,Home,,False,2025
 202504110BOS,2025-04-11,BOS,CHO,Boston Celtics,Charlotte Hornets,,,,Home,,False,2025
 202504130BOS,2025-04-13,BOS,CHO,Boston Celtics,Charlotte Hornets,,,,Home,,False,2025
 202504100MEM,2025-04-10,MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,,,,Home,,False,2025
 202504110DEN,2025-04-11,DEN,MEM,Denver Nuggets,Memphis Grizzlies,,,,Home,,False,2025
 202504130MEM,2025-04-13,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
-202504080LAC,2025-04-08,LAC,SAS,Los Angeles Clippers,San Antonio Spurs,,,,Home,,False,2025
+202504080LAC,2025-04-08,LAC,SAS,Los Angeles Clippers,San Antonio Spurs,122.0,117.0,5.0,Home,100.1,True,2025
 202504090GSW,2025-04-09,GSW,SAS,Golden State Warriors,San Antonio Spurs,,,,Home,,False,2025
 202504110PHO,2025-04-11,PHO,SAS,Phoenix Suns,San Antonio Spurs,,,,Home,,False,2025
 202504130SAS,2025-04-13,SAS,TOR,San Antonio Spurs,Toronto Raptors,,,,Home,,False,2025
 202504090DAL,2025-04-09,DAL,LAL,Dallas Mavericks,Los Angeles Lakers,,,,Home,,False,2025
 202504110DAL,2025-04-11,DAL,TOR,Dallas Mavericks,Toronto Raptors,,,,Home,,False,2025
-202504080PHO,2025-04-08,PHO,GSW,Phoenix Suns,Golden State Warriors,,,,Home,,False,2025
+202504080PHO,2025-04-08,PHO,GSW,Phoenix Suns,Golden State Warriors,95.0,133.0,-38.0,Home,99.7,True,2025
 202504110POR,2025-04-11,POR,GSW,Portland Trail Blazers,Golden State Warriors,,,,Home,,False,2025
 202504130GSW,2025-04-13,GSW,LAC,Golden State Warriors,Los Angeles Clippers,,,,Home,,False,2025
-202504080NYK,2025-04-08,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
+202504080NYK,2025-04-08,NYK,BOS,New York Knicks,Boston Celtics,117.0,119.0,-2.0,Home,90.2,True,2025
 202504100DET,2025-04-10,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
 202504110NYK,2025-04-11,NYK,CLE,New York Knicks,Cleveland Cavaliers,,,,Home,,False,2025
 202504130BRK,2025-04-13,BRK,NYK,Brooklyn Nets,New York Knicks,,,,Home,,False,2025
-202504080OKC,2025-04-08,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,,,,Home,,False,2025
+202504080OKC,2025-04-08,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,136.0,120.0,16.0,Home,101.0,True,2025
 202504090PHO,2025-04-09,PHO,OKC,Phoenix Suns,Oklahoma City Thunder,,,,Home,,False,2025
 202504110UTA,2025-04-11,UTA,OKC,Utah Jazz,Oklahoma City Thunder,,,,Home,,False,2025
 202504130NOP,2025-04-13,NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,,,,Home,,False,2025
-202504070DET,2025-04-07,DET,SAC,Detroit Pistons,Sacramento Kings,117.0,127.0,-10.0,Home,94.1,True,2025
 202504110DET,2025-04-11,DET,MIL,Detroit Pistons,Milwaukee Bucks,,,,Home,,False,2025
 202504130MIL,2025-04-13,MIL,DET,Milwaukee Bucks,Detroit Pistons,,,,Home,,False,2025
-202504080IND,2025-04-08,IND,WAS,Indiana Pacers,Washington Wizards,,,,Home,,False,2025
+202504080IND,2025-04-08,IND,WAS,Indiana Pacers,Washington Wizards,104.0,98.0,6.0,Home,95.9,True,2025
 202504090WAS,2025-04-09,WAS,PHI,Washington Wizards,Philadelphia 76ers,,,,Home,,False,2025
 202504110CHI,2025-04-11,CHI,WAS,Chicago Bulls,Washington Wizards,,,,Home,,False,2025
 202504130MIA,2025-04-13,MIA,WAS,Miami Heat,Washington Wizards,,,,Home,,False,2025
 202504110SAC,2025-04-11,SAC,LAC,Sacramento Kings,Los Angeles Clippers,,,,Home,,False,2025
-202504080CLE,2025-04-08,CLE,CHI,Cleveland Cavaliers,Chicago Bulls,,,,Home,,False,2025
+202504080CLE,2025-04-08,CLE,CHI,Cleveland Cavaliers,Chicago Bulls,135.0,113.0,22.0,Home,100.3,True,2025
 202504090CHI,2025-04-09,CHI,MIA,Chicago Bulls,Miami Heat,,,,Home,,False,2025
 202504130PHI,2025-04-13,PHI,CHI,Philadelphia 76ers,Chicago Bulls,,,,Home,,False,2025
-202504080MIL,2025-04-08,MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,,,,Home,,False,2025
+202504080MIL,2025-04-08,MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,110.0,103.0,7.0,Home,94.2,True,2025
 202504100MIL,2025-04-10,MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,,,,Home,,False,2025
 202504100IND,2025-04-10,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
 202504110IND,2025-04-11,IND,ORL,Indiana Pacers,Orlando Magic,,,,Home,,False,2025
@@ -1219,13 +1220,12 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504130POR,2025-04-13,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,,,,Home,,False,2025
 202504110MIN,2025-04-11,MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,,,,Home,,False,2025
 202504130MIN,2025-04-13,MIN,UTA,Minnesota Timberwolves,Utah Jazz,,,,Home,,False,2025
-202504070MIA,2025-04-07,MIA,PHI,Miami Heat,Philadelphia 76ers,117.0,105.0,12.0,Home,96.4,True,2025
 202504110PHI,2025-04-11,PHI,ATL,Philadelphia 76ers,Atlanta Hawks,,,,Home,,False,2025
 202504090SAC,2025-04-09,SAC,DEN,Sacramento Kings,Denver Nuggets,,,,Home,,False,2025
 202504130SAC,2025-04-13,SAC,PHO,Sacramento Kings,Phoenix Suns,,,,Home,,False,2025
-202504080BRK,2025-04-08,BRK,NOP,Brooklyn Nets,New Orleans Pelicans,,,,Home,,False,2025
+202504080BRK,2025-04-08,BRK,NOP,Brooklyn Nets,New Orleans Pelicans,119.0,114.0,5.0,Home,101.1,True,2025
 202504110NOP,2025-04-11,NOP,MIA,New Orleans Pelicans,Miami Heat,,,,Home,,False,2025
 202504090ORL,2025-04-09,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
-202504080ORL,2025-04-08,ORL,ATL,Orlando Magic,Atlanta Hawks,,,,Home,,False,2025
+202504080ORL,2025-04-08,ORL,ATL,Orlando Magic,Atlanta Hawks,119.0,112.0,7.0,Home,97.1,True,2025
 202504100BRK,2025-04-10,BRK,ATL,Brooklyn Nets,Atlanta Hawks,,,,Home,,False,2025
 202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,,,,Home,,False,2025
