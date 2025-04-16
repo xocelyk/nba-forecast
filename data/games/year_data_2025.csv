@@ -1214,18 +1214,22 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504110MIN,2025-04-11,MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,117.0,91.0,26.0,Home,91.6,True,2025
 202504110PHI,2025-04-11,PHI,ATL,Philadelphia 76ers,Atlanta Hawks,110.0,124.0,-14.0,Home,100.4,True,2025
 202504110NOP,2025-04-11,NOP,MIA,New Orleans Pelicans,Miami Heat,104.0,153.0,-49.0,Home,104.8,True,2025
-202504130HOU,2025-04-13,HOU,DEN,Houston Rockets,Denver Nuggets,,,,Home,,False,2025
-202504130BOS,2025-04-13,BOS,CHO,Boston Celtics,Charlotte Hornets,,,,Home,,False,2025
-202504130MEM,2025-04-13,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
-202504130SAS,2025-04-13,SAS,TOR,San Antonio Spurs,Toronto Raptors,,,,Home,,False,2025
-202504130GSW,2025-04-13,GSW,LAC,Golden State Warriors,Los Angeles Clippers,,,,Home,,False,2025
-202504130BRK,2025-04-13,BRK,NYK,Brooklyn Nets,New York Knicks,,,,Home,,False,2025
-202504130NOP,2025-04-13,NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,,,,Home,,False,2025
-202504130MIL,2025-04-13,MIL,DET,Milwaukee Bucks,Detroit Pistons,,,,Home,,False,2025
-202504130MIA,2025-04-13,MIA,WAS,Miami Heat,Washington Wizards,,,,Home,,False,2025
-202504130PHI,2025-04-13,PHI,CHI,Philadelphia 76ers,Chicago Bulls,,,,Home,,False,2025
-202504130CLE,2025-04-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
-202504130POR,2025-04-13,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,,,,Home,,False,2025
-202504130MIN,2025-04-13,MIN,UTA,Minnesota Timberwolves,Utah Jazz,,,,Home,,False,2025
-202504130SAC,2025-04-13,SAC,PHO,Sacramento Kings,Phoenix Suns,,,,Home,,False,2025
-202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,,,,Home,,False,2025
+202504130HOU,2025-04-13,HOU,DEN,Houston Rockets,Denver Nuggets,111.0,126.0,-15.0,Home,97.1,True,2025
+202504130BOS,2025-04-13,BOS,CHO,Boston Celtics,Charlotte Hornets,93.0,86.0,7.0,Home,89.7,True,2025
+202504130MEM,2025-04-13,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,132.0,97.0,35.0,Home,100.7,True,2025
+202504150GSW,2025-04-15,GSW,MEM,Golden State Warriors,Memphis Grizzlies,121.0,116.0,5.0,Home,96.1,True,2025
+202504130SAS,2025-04-13,SAS,TOR,San Antonio Spurs,Toronto Raptors,125.0,118.0,7.0,Home,101.4,True,2025
+202504160SAC,2025-04-16,SAC,DAL,Sacramento Kings,Dallas Mavericks,,,,Home,,False,2025
+202504130GSW,2025-04-13,GSW,LAC,Golden State Warriors,Los Angeles Clippers,119.0,124.0,-5.0,Home,89.8,True,2025
+202504130BRK,2025-04-13,BRK,NYK,Brooklyn Nets,New York Knicks,105.0,113.0,-8.0,Home,96.8,True,2025
+202504130NOP,2025-04-13,NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,100.0,115.0,-15.0,Home,100.8,True,2025
+202504130MIL,2025-04-13,MIL,DET,Milwaukee Bucks,Detroit Pistons,140.0,133.0,7.0,Home,98.0,True,2025
+202504130MIA,2025-04-13,MIA,WAS,Miami Heat,Washington Wizards,118.0,119.0,-1.0,Home,100.9,True,2025
+202504130PHI,2025-04-13,PHI,CHI,Philadelphia 76ers,Chicago Bulls,102.0,122.0,-20.0,Home,106.5,True,2025
+202504160CHI,2025-04-16,CHI,MIA,Chicago Bulls,Miami Heat,,,,Home,,False,2025
+202504130CLE,2025-04-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,118.0,126.0,-8.0,Home,102.7,True,2025
+202504130POR,2025-04-13,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,109.0,81.0,28.0,Home,91.5,True,2025
+202504130MIN,2025-04-13,MIN,UTA,Minnesota Timberwolves,Utah Jazz,116.0,105.0,11.0,Home,97.4,True,2025
+202504130SAC,2025-04-13,SAC,PHO,Sacramento Kings,Phoenix Suns,109.0,98.0,11.0,Home,89.8,True,2025
+202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,117.0,105.0,12.0,Home,97.0,True,2025
+202504150ORL,2025-04-15,ORL,ATL,Orlando Magic,Atlanta Hawks,120.0,95.0,25.0,Home,97.1,True,2025
