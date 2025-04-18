@@ -1231,7 +1231,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504130SAC,2025-04-13,SAC,PHO,Sacramento Kings,Phoenix Suns,109.0,98.0,11.0,Home,89.8,True,2025
 202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,117.0,105.0,12.0,Home,97.0,True,2025
 202504150ORL,2025-04-15,ORL,ATL,Orlando Magic,Atlanta Hawks,120.0,95.0,25.0,Home,97.1,True,2025
-202504180MEM,2025-04-18,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
 202504160SAC,2025-04-16,SAC,DAL,Sacramento Kings,Dallas Mavericks,106.0,120.0,-14.0,Home,94.1,True,2025
 202504160CHI,2025-04-16,CHI,MIA,Chicago Bulls,Miami Heat,90.0,109.0,-19.0,Home,97.9,True,2025
+202504180MEM,2025-04-18,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
 202504180ATL,2025-04-18,ATL,MIA,Atlanta Hawks,Miami Heat,,,,Home,,False,2025
