@@ -39,8 +39,8 @@ class Season:
         self.mean_pace = mean_pace
         self.std_pace = std_pace
         self.update_counter = 0
-        self.update_every = 2
-        # pace of future games is not determnistic, assume gaussian distribution
+        self.update_every = 1
+        # pace of future games is not deterministic, assume gaussian distribution
         # also assuming that pace is normally distributed for completed games, have not scraped pace for all past games and now rate limited, so more difficult
         self.future_games['pace'] = [np.random.normal(self.mean_pace, self.std_pace) for _ in range(len(self.future_games))]
         self.completed_games['pace'] = [np.random.normal(self.mean_pace, self.std_pace) for _ in range(len(self.completed_games))]
@@ -326,7 +326,32 @@ class Season:
         self.completed_games['playoff_label'] = None
         self.completed_games['winner_name'] = None
 
-        east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
+        # east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
+        
+        """
+        east rankings
+        1. CLE
+        2. BOS
+        3. NYK
+        4. IND
+        5. MIL
+        6. DET
+        7. ORL
+        8. MIA
+        
+        west rankings
+        1. OKC
+        2. HOU
+        3. LAL
+        4. DEN
+        5. LAC
+        6. MIN
+        7. GSW
+        8. MEM
+        """
+        east_seeds = {1: 'CLE', 2: 'BOS', 3: 'NYK', 4: 'IND', 5: 'MIL', 6: 'DET', 7: 'ORL', 8: 'MIA'}
+        west_seeds = {1: 'OKC', 2: 'HOU', 3: 'LAL', 4: 'DEN', 5: 'LAC', 6: 'MIN', 7: 'GSW', 8: 'MEM'}
+        
         self.seeds = {}
         for seed, team in east_seeds.items():
             self.seeds[team] = seed
@@ -340,7 +365,7 @@ class Season:
         playoff_results['playoffs'] = east_alive + west_alive
 
         # playoff start date is 4/20/2025
-        playoff_start_date = datetime.date(2025, 4, 20)
+        playoff_start_date = datetime.date(2025, 4, 19)
         cur_playoff_results = self.get_cur_playoff_results(playoff_start_date)
         # clear all future games - we create them ourselves
         self.future_games = self.future_games[self.future_games['date'] < playoff_start_date]
@@ -389,7 +414,7 @@ class Season:
         team1_home_map = {0: True, 1: True, 2: False, 3: False, 4: True, 5: False, 6: True}
         rem_games = {}
         num_games_added = 0
-        playoff_games_completed = self.get_playoff_games_completed(datetime.date(2025, 4, 20))
+        playoff_games_completed = self.get_playoff_games_completed(datetime.date(2025, 4, 19))
         for label, (team1, team2) in matchups.items():
             # TODO: add each played playoff game to completed_games
             if team1 not in cur_playoff_results[round_num]:
@@ -657,6 +682,8 @@ class Season:
     
     def get_series_winner(self, series_label):
         series = self.completed_games[self.completed_games['playoff_label'] == series_label]
+        if not len(series) == 7:
+            print(series)
         assert len(series) == 7
         series['winner_name'] = series.apply(lambda row: row['team'] if row['team_win'] else row['opponent'], axis=1)
         value_counts = series['winner_name'].value_counts().sort_values(ascending=False)
@@ -664,15 +691,15 @@ class Season:
         winner = value_counts.index[0]
         wins = value_counts.values[0]
         losses = value_counts.values[1] if len(value_counts) > 1 else 0
-        # print('Series:', series_label)
-        # print('{} vs. {}'.format(series['team'].values[0], series['opponent'].values[0]))
+        print('Series:', series_label)
+        print('{} vs. {}'.format(series['team'].values[0], series['opponent'].values[0]))
         wins = value_counts[0]
         losses = 0
         if len(value_counts) > 1:
             losses = value_counts[1]
-        # print(f'Record: {wins}-{losses}')
-        # print('Winner:', winner)
-        # print()
+        print(f'Record: {wins}-{losses}')
+        print('Winner:', winner)
+        print()
         return winner
                 
     def play_in(self, ec_standings, wc_standings):
