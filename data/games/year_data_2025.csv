@@ -1233,5 +1233,61 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504150ORL,2025-04-15,ORL,ATL,Orlando Magic,Atlanta Hawks,120.0,95.0,25.0,Home,97.1,True,2025
 202504160SAC,2025-04-16,SAC,DAL,Sacramento Kings,Dallas Mavericks,106.0,120.0,-14.0,Home,94.1,True,2025
 202504160CHI,2025-04-16,CHI,MIA,Chicago Bulls,Miami Heat,90.0,109.0,-19.0,Home,97.9,True,2025
-202504180MEM,2025-04-18,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
-202504180ATL,2025-04-18,ATL,MIA,Atlanta Hawks,Miami Heat,,,,Home,,False,2025
+202504200HOU,2025-04-20,HOU,GSW,Houston Rockets,Golden State Warriors,85.0,95.0,-10.0,Home,88.2,True,2025
+202504230HOU,2025-04-23,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
+202504260GSW,2025-04-26,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
+202504280GSW,2025-04-28,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
+202504300HOU,2025-04-30,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
+202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
+202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
+202504180MEM,2025-04-18,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,120.0,106.0,14.0,Home,99.4,True,2025
+202504200OKC,2025-04-20,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,131.0,80.0,51.0,Home,106.2,True,2025
+202504220OKC,2025-04-22,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,118.0,99.0,19.0,Home,99.0,True,2025
+202504240MEM,2025-04-24,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
+202504260MEM,2025-04-26,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
+202504280OKC,2025-04-28,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,,,,Home,,False,2025
+202505010MEM,2025-05-01,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
+202505030OKC,2025-05-03,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,,,,Home,,False,2025
+202504190NYK,2025-04-19,NYK,DET,New York Knicks,Detroit Pistons,123.0,112.0,11.0,Home,100.6,True,2025
+202504210NYK,2025-04-21,NYK,DET,New York Knicks,Detroit Pistons,94.0,100.0,-6.0,Home,92.3,True,2025
+202504240DET,2025-04-24,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
+202504270DET,2025-04-27,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
+202504290NYK,2025-04-29,NYK,DET,New York Knicks,Detroit Pistons,,,,Home,,False,2025
+202505010DET,2025-05-01,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
+202505030NYK,2025-05-03,NYK,DET,New York Knicks,Detroit Pistons,,,,Home,,False,2025
+202504190DEN,2025-04-19,DEN,LAC,Denver Nuggets,Los Angeles Clippers,112.0,110.0,2.0,Home,91.3,True,2025
+202504210DEN,2025-04-21,DEN,LAC,Denver Nuggets,Los Angeles Clippers,102.0,105.0,-3.0,Home,92.0,True,2025
+202504240LAC,2025-04-24,LAC,DEN,Los Angeles Clippers,Denver Nuggets,,,,Home,,False,2025
+202504260LAC,2025-04-26,LAC,DEN,Los Angeles Clippers,Denver Nuggets,,,,Home,,False,2025
+202504290DEN,2025-04-29,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
+202505010LAC,2025-05-01,LAC,DEN,Los Angeles Clippers,Denver Nuggets,,,,Home,,False,2025
+202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
+202504190IND,2025-04-19,IND,MIL,Indiana Pacers,Milwaukee Bucks,117.0,98.0,19.0,Home,95.0,True,2025
+202504220IND,2025-04-22,IND,MIL,Indiana Pacers,Milwaukee Bucks,123.0,115.0,8.0,Home,97.1,True,2025
+202504250MIL,2025-04-25,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
+202504270MIL,2025-04-27,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
+202504290IND,2025-04-29,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
+202505020MIL,2025-05-02,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
+202505040IND,2025-05-04,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
+202504190LAL,2025-04-19,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,95.0,117.0,-22.0,Home,86.8,True,2025
+202504220LAL,2025-04-22,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,94.0,85.0,9.0,Home,87.9,True,2025
+202504250MIN,2025-04-25,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
+202504270MIN,2025-04-27,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
+202504300LAL,2025-04-30,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,,,,Home,,False,2025
+202505020MIN,2025-05-02,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
+202505040LAL,2025-05-04,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,,,,Home,,False,2025
+202504180ATL,2025-04-18,ATL,MIA,Atlanta Hawks,Miami Heat,114.0,123.0,-9.0,Home,93.9,True,2025
+202504200CLE,2025-04-20,CLE,MIA,Cleveland Cavaliers,Miami Heat,121.0,100.0,21.0,Home,86.4,True,2025
+202504230CLE,2025-04-23,CLE,MIA,Cleveland Cavaliers,Miami Heat,,,,Home,,False,2025
+202504260MIA,2025-04-26,MIA,CLE,Miami Heat,Cleveland Cavaliers,,,,Home,,False,2025
+202504280MIA,2025-04-28,MIA,CLE,Miami Heat,Cleveland Cavaliers,,,,Home,,False,2025
+202504300CLE,2025-04-30,CLE,MIA,Cleveland Cavaliers,Miami Heat,,,,Home,,False,2025
+202505020MIA,2025-05-02,MIA,CLE,Miami Heat,Cleveland Cavaliers,,,,Home,,False,2025
+202505040CLE,2025-05-04,CLE,MIA,Cleveland Cavaliers,Miami Heat,,,,Home,,False,2025
+202504200BOS,2025-04-20,BOS,ORL,Boston Celtics,Orlando Magic,103.0,86.0,17.0,Home,87.3,True,2025
+202504230BOS,2025-04-23,BOS,ORL,Boston Celtics,Orlando Magic,,,,Home,,False,2025
+202504250ORL,2025-04-25,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
+202504270ORL,2025-04-27,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
+202504290BOS,2025-04-29,BOS,ORL,Boston Celtics,Orlando Magic,,,,Home,,False,2025
+202505010ORL,2025-05-01,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
+202505030BOS,2025-05-03,BOS,ORL,Boston Celtics,Orlando Magic,,,,Home,,False,2025
