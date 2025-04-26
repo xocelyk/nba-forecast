@@ -1251,32 +1251,32 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504230HOU,2025-04-23,HOU,GSW,Houston Rockets,Golden State Warriors,109.0,94.0,15.0,Home,93.0,True,2025
 202504230CLE,2025-04-23,CLE,MIA,Cleveland Cavaliers,Miami Heat,121.0,112.0,9.0,Home,91.8,True,2025
 202504230BOS,2025-04-23,BOS,ORL,Boston Celtics,Orlando Magic,109.0,100.0,9.0,Home,89.7,True,2025
+202504240MEM,2025-04-24,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,108.0,114.0,-6.0,Home,97.3,True,2025
+202504240DET,2025-04-24,DET,NYK,Detroit Pistons,New York Knicks,116.0,118.0,-2.0,Home,97.7,True,2025
+202504240LAC,2025-04-24,LAC,DEN,Los Angeles Clippers,Denver Nuggets,117.0,83.0,34.0,Home,88.7,True,2025
 202504260GSW,2025-04-26,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
 202504280GSW,2025-04-28,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
 202504300HOU,2025-04-30,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
 202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
 202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
-202504240MEM,2025-04-24,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,108.0,114.0,-6.0,Home,97.3,True,2025
 202504260MEM,2025-04-26,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
 202504280OKC,2025-04-28,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,,,,Home,,False,2025
 202505010MEM,2025-05-01,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
 202505030OKC,2025-05-03,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,,,,Home,,False,2025
-202504240DET,2025-04-24,DET,NYK,Detroit Pistons,New York Knicks,116.0,118.0,-2.0,Home,97.7,True,2025
 202504270DET,2025-04-27,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
 202504290NYK,2025-04-29,NYK,DET,New York Knicks,Detroit Pistons,,,,Home,,False,2025
 202505010DET,2025-05-01,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
 202505030NYK,2025-05-03,NYK,DET,New York Knicks,Detroit Pistons,,,,Home,,False,2025
-202504240LAC,2025-04-24,LAC,DEN,Los Angeles Clippers,Denver Nuggets,117.0,83.0,34.0,Home,88.7,True,2025
 202504260LAC,2025-04-26,LAC,DEN,Los Angeles Clippers,Denver Nuggets,,,,Home,,False,2025
 202504290DEN,2025-04-29,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
 202505010LAC,2025-05-01,LAC,DEN,Los Angeles Clippers,Denver Nuggets,,,,Home,,False,2025
 202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
-202504250MIL,2025-04-25,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
+202504250MIL,2025-04-25,MIL,IND,Milwaukee Bucks,Indiana Pacers,117.0,101.0,16.0,Home,99.9,True,2025
 202504270MIL,2025-04-27,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
 202504290IND,2025-04-29,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
 202505020MIL,2025-05-02,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
 202505040IND,2025-05-04,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
-202504250MIN,2025-04-25,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
+202504250MIN,2025-04-25,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,116.0,104.0,12.0,Home,97.8,True,2025
 202504270MIN,2025-04-27,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
 202504300LAL,2025-04-30,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,,,,Home,,False,2025
 202505020MIN,2025-05-02,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
@@ -1286,7 +1286,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504300CLE,2025-04-30,CLE,MIA,Cleveland Cavaliers,Miami Heat,,,,Home,,False,2025
 202505020MIA,2025-05-02,MIA,CLE,Miami Heat,Cleveland Cavaliers,,,,Home,,False,2025
 202505040CLE,2025-05-04,CLE,MIA,Cleveland Cavaliers,Miami Heat,,,,Home,,False,2025
-202504250ORL,2025-04-25,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
+202504250ORL,2025-04-25,ORL,BOS,Orlando Magic,Boston Celtics,95.0,93.0,2.0,Home,92.0,True,2025
 202504270ORL,2025-04-27,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
 202504290BOS,2025-04-29,BOS,ORL,Boston Celtics,Orlando Magic,,,,Home,,False,2025
 202505010ORL,2025-05-01,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
