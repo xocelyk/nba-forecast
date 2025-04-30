@@ -1266,22 +1266,19 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504270MIN,2025-04-27,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,116.0,113.0,3.0,Home,90.5,True,2025
 202504270ORL,2025-04-27,ORL,BOS,Orlando Magic,Boston Celtics,98.0,107.0,-9.0,Home,93.3,True,2025
 202504280GSW,2025-04-28,GSW,HOU,Golden State Warriors,Houston Rockets,109.0,106.0,3.0,Home,90.0,True,2025
+202504280MIA,2025-04-28,MIA,CLE,Miami Heat,Cleveland Cavaliers,83.0,138.0,-55.0,Home,98.7,True,2025
 202504300HOU,2025-04-30,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
 202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
 202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
-202504290NYK,2025-04-29,NYK,DET,New York Knicks,Detroit Pistons,,,,Home,,False,2025
+202504290NYK,2025-04-29,NYK,DET,New York Knicks,Detroit Pistons,103.0,106.0,-3.0,Home,99.2,True,2025
 202505010DET,2025-05-01,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
 202505030NYK,2025-05-03,NYK,DET,New York Knicks,Detroit Pistons,,,,Home,,False,2025
-202504290DEN,2025-04-29,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
+202504290DEN,2025-04-29,DEN,LAC,Denver Nuggets,Los Angeles Clippers,131.0,115.0,16.0,Home,94.5,True,2025
 202505010LAC,2025-05-01,LAC,DEN,Los Angeles Clippers,Denver Nuggets,,,,Home,,False,2025
 202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
-202504290IND,2025-04-29,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
-202505020MIL,2025-05-02,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
-202505040IND,2025-05-04,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
+202504290IND,2025-04-29,IND,MIL,Indiana Pacers,Milwaukee Bucks,119.0,118.0,1.0,Home,95.9,True,2025
+202505040CLE,2025-05-04,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
 202504300LAL,2025-04-30,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,,,,Home,,False,2025
 202505020MIN,2025-05-02,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,,,,Home,,False,2025
 202505040LAL,2025-05-04,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,,,,Home,,False,2025
-202504280MIA,2025-04-28,MIA,CLE,Miami Heat,Cleveland Cavaliers,83.0,138.0,-55.0,Home,98.7,True,2025
-202504290BOS,2025-04-29,BOS,ORL,Boston Celtics,Orlando Magic,,,,Home,,False,2025
-202505010ORL,2025-05-01,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
-202505030BOS,2025-05-03,BOS,ORL,Boston Celtics,Orlando Magic,,,,Home,,False,2025
+202504290BOS,2025-04-29,BOS,ORL,Boston Celtics,Orlando Magic,120.0,89.0,31.0,Home,92.2,True,2025
