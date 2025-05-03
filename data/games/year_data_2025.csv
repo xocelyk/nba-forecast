@@ -1273,9 +1273,10 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202504290BOS,2025-04-29,BOS,ORL,Boston Celtics,Orlando Magic,120.0,89.0,31.0,Home,92.2,True,2025
 202504300HOU,2025-04-30,HOU,GSW,Houston Rockets,Golden State Warriors,131.0,116.0,15.0,Home,97.0,True,2025
 202504300LAL,2025-04-30,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,96.0,103.0,-7.0,Home,93.9,True,2025
-202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
-202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
 202505010DET,2025-05-01,DET,NYK,Detroit Pistons,New York Knicks,113.0,116.0,-3.0,Home,101.0,True,2025
+202505010LAC,2025-05-01,LAC,DEN,Los Angeles Clippers,Denver Nuggets,111.0,105.0,6.0,Home,88.9,True,2025
+202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,107.0,115.0,-8.0,Home,98.6,True,2025
+202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
 202505050BOS,2025-05-05,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505070BOS,2025-05-07,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505100NYK,2025-05-10,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
@@ -1283,7 +1284,6 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505010LAC,2025-05-01,LAC,DEN,Los Angeles Clippers,Denver Nuggets,111.0,105.0,6.0,Home,88.9,True,2025
 202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
 202505040CLE,2025-05-04,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
 202505060CLE,2025-05-06,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
