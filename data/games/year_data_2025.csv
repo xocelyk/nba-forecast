@@ -1284,7 +1284,11 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,,,,Home,,False,2025
+202505050OKC,2025-05-05,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
+202505070OKC,2025-05-07,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
+202505090DEN,2025-05-09,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
+202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
+202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,120.0,101.0,19.0,Home,99.2,True,2025
 202505040CLE,2025-05-04,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
 202505060CLE,2025-05-06,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
 202505090IND,2025-05-09,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
