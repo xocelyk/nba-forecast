@@ -1278,27 +1278,28 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,107.0,115.0,-8.0,Home,98.6,True,2025
 202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,120.0,101.0,19.0,Home,99.2,True,2025
 202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,89.0,103.0,-14.0,Home,88.7,True,2025
+202505040CLE,2025-05-04,CLE,IND,Cleveland Cavaliers,Indiana Pacers,112.0,121.0,-9.0,Home,98.1,True,2025
 202505060MIN,2025-05-06,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
 202505080MIN,2025-05-08,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
 202505100GSW,2025-05-10,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
+202505120GSW,2025-05-12,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505140MIN,2025-05-14,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
 202505180GSW,2025-05-18,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505200MIN,2025-05-20,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
-202505050BOS,2025-05-05,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
+202505050BOS,2025-05-05,BOS,NYK,Boston Celtics,New York Knicks,105.0,108.0,-3.0,Home,89.9,True,2025
 202505070BOS,2025-05-07,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505100NYK,2025-05-10,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505120NYK,2025-05-12,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505050OKC,2025-05-05,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
+202505050OKC,2025-05-05,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,119.0,121.0,-2.0,Home,104.2,True,2025
 202505070OKC,2025-05-07,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
 202505090DEN,2025-05-09,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505130OKC,2025-05-13,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
 202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505180OKC,2025-05-18,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
-202505040CLE,2025-05-04,CLE,IND,Cleveland Cavaliers,Indiana Pacers,112.0,121.0,-9.0,Home,98.1,True,2025
 202505060CLE,2025-05-06,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
 202505090IND,2025-05-09,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
 202505110IND,2025-05-11,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
