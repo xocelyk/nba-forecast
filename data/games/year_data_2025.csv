@@ -1283,19 +1283,19 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505050OKC,2025-05-05,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,119.0,121.0,-2.0,Home,104.2,True,2025
 202505060MIN,2025-05-06,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,88.0,99.0,-11.0,Home,91.6,True,2025
 202505060CLE,2025-05-06,CLE,IND,Cleveland Cavaliers,Indiana Pacers,119.0,120.0,-1.0,Home,101.6,True,2025
-202505080MIN,2025-05-08,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
+202505070BOS,2025-05-07,BOS,NYK,Boston Celtics,New York Knicks,90.0,91.0,-1.0,Home,95.8,True,2025
+202505070OKC,2025-05-07,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,149.0,106.0,43.0,Home,103.9,True,2025
+202505080MIN,2025-05-08,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,117.0,93.0,24.0,Home,95.2,True,2025
 202505100GSW,2025-05-10,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505120GSW,2025-05-12,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505140MIN,2025-05-14,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
 202505180GSW,2025-05-18,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505200MIN,2025-05-20,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
-202505070BOS,2025-05-07,BOS,NYK,Boston Celtics,New York Knicks,90.0,91.0,-1.0,Home,95.8,True,2025
 202505100NYK,2025-05-10,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505120NYK,2025-05-12,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505070OKC,2025-05-07,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,149.0,106.0,43.0,Home,103.9,True,2025
 202505090DEN,2025-05-09,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505130OKC,2025-05-13,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
