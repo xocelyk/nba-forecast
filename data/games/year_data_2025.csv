@@ -1289,20 +1289,20 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505090DEN,2025-05-09,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,113.0,104.0,9.0,Home,94.4,True,2025
 202505090IND,2025-05-09,IND,CLE,Indiana Pacers,Cleveland Cavaliers,104.0,126.0,-22.0,Home,104.5,True,2025
 202505100GSW,2025-05-10,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,97.0,102.0,-5.0,Home,92.4,True,2025
+202505100NYK,2025-05-10,NYK,BOS,New York Knicks,Boston Celtics,93.0,115.0,-22.0,Home,86.8,True,2025
 202505120GSW,2025-05-12,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505140MIN,2025-05-14,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
 202505180GSW,2025-05-18,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505200MIN,2025-05-20,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
-202505100NYK,2025-05-10,NYK,BOS,New York Knicks,Boston Celtics,93.0,115.0,-22.0,Home,86.8,True,2025
 202505120NYK,2025-05-12,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
+202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,87.0,92.0,-5.0,Home,94.5,True,2025
 202505130OKC,2025-05-13,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
 202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505180OKC,2025-05-18,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
-202505110IND,2025-05-11,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
+202505110IND,2025-05-11,IND,CLE,Indiana Pacers,Cleveland Cavaliers,129.0,109.0,20.0,Home,99.7,True,2025
 202505130CLE,2025-05-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
 202505150IND,2025-05-15,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
 202505180CLE,2025-05-18,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
