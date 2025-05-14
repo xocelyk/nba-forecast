@@ -1293,16 +1293,14 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,87.0,92.0,-5.0,Home,94.5,True,2025
 202505110IND,2025-05-11,IND,CLE,Indiana Pacers,Cleveland Cavaliers,129.0,109.0,20.0,Home,99.7,True,2025
 202505120GSW,2025-05-12,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,110.0,117.0,-7.0,Home,100.2,True,2025
+202505120NYK,2025-05-12,NYK,BOS,New York Knicks,Boston Celtics,121.0,113.0,8.0,Home,93.1,True,2025
 202505140MIN,2025-05-14,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
 202505180GSW,2025-05-18,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,,,,Home,,False,2025
 202505200MIN,2025-05-20,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,,,,Home,,False,2025
-202505120NYK,2025-05-12,NYK,BOS,New York Knicks,Boston Celtics,121.0,113.0,8.0,Home,93.1,True,2025
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505130OKC,2025-05-13,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
+202505130OKC,2025-05-13,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,112.0,105.0,7.0,Home,97.9,True,2025
 202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,,,,Home,,False,2025
 202505180OKC,2025-05-18,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
-202505130CLE,2025-05-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
-202505150IND,2025-05-15,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
-202505180CLE,2025-05-18,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
+202505130CLE,2025-05-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,105.0,114.0,-9.0,Home,100.0,True,2025
