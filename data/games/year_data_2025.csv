@@ -1298,7 +1298,7 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505130CLE,2025-05-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,105.0,114.0,-9.0,Home,100.0,True,2025
 202505140MIN,2025-05-14,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,121.0,110.0,11.0,Home,99.0,True,2025
 202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,127.0,102.0,25.0,Home,91.7,True,2025
+202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,119.0,107.0,12.0,Home,102.1,True,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
 202505190BOS,2025-05-19,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,119.0,107.0,12.0,Home,102.1,True,2025
 202505180OKC,2025-05-18,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
