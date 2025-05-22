@@ -1301,14 +1301,14 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,119.0,107.0,12.0,Home,102.1,True,2025
 202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,119.0,81.0,38.0,Home,94.9,True,2025
 202505180OKC,2025-05-18,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,125.0,93.0,32.0,Home,98.0,True,2025
-202505210NYK,2025-05-21,NYK,IND,New York Knicks,Indiana Pacers,,,,Home,,False,2025
+202505200OKC,2025-05-20,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,114.0,88.0,26.0,Home,96.8,True,2025
+202505210NYK,2025-05-21,NYK,IND,New York Knicks,Indiana Pacers,135.0,138.0,-3.0,Home,97.1,True,2025
 202505230NYK,2025-05-23,NYK,IND,New York Knicks,Indiana Pacers,,,,Home,,False,2025
 202505250IND,2025-05-25,IND,NYK,Indiana Pacers,New York Knicks,,,,Home,,False,2025
 202505270IND,2025-05-27,IND,NYK,Indiana Pacers,New York Knicks,,,,Home,,False,2025
 202505290NYK,2025-05-29,NYK,IND,New York Knicks,Indiana Pacers,,,,Home,,False,2025
 202505310IND,2025-05-31,IND,NYK,Indiana Pacers,New York Knicks,,,,Home,,False,2025
 202506020NYK,2025-06-02,NYK,IND,New York Knicks,Indiana Pacers,,,,Home,,False,2025
-202505200OKC,2025-05-20,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,114.0,88.0,26.0,Home,96.8,True,2025
 202505220OKC,2025-05-22,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,,,,Home,,False,2025
 202505240MIN,2025-05-24,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,,,,Home,,False,2025
 202505260MIN,2025-05-26,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,,,,Home,,False,2025
