@@ -1312,6 +1312,4 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202505290NYK,2025-05-29,NYK,IND,New York Knicks,Indiana Pacers,,,,Home,,False,2025
 202505310IND,2025-05-31,IND,NYK,Indiana Pacers,New York Knicks,,,,Home,,False,2025
 202506020NYK,2025-06-02,NYK,IND,New York Knicks,Indiana Pacers,,,,Home,,False,2025
-202505280OKC,2025-05-28,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,,,,Home,,False,2025
-202505300MIN,2025-05-30,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,,,,Home,,False,2025
-202506010OKC,2025-06-01,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,,,,Home,,False,2025
+202505280OKC,2025-05-28,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,124.0,94.0,30.0,Home,103.5,True,2025
