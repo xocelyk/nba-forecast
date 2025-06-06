@@ -156,7 +156,7 @@ def get_last_n_games_dict(completed_games, n_lst, teams_on_date=None):
             else:
                 vals = []
                 for idx, row in team_data.iterrows():
-                    vals.append(row['toeam_adj_margin'])
+                    vals.append(row['team_adj_margin'])
                 team_val = np.mean(vals)
             team_vals[team] = team_val
             res[n][team] = team_val
