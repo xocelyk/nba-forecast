@@ -117,23 +117,22 @@ def load_regular_season_win_totals_futures():
     return res
 
 def load_training_data(names, update=True, reset=False, start_year=2010, stop_year=2025, this_year_games=None):
-    '''
-    Loads the data from start_year to stop_year and returns a dataframe with the data
-    Data includes each game with data, team rating, opp rating, team last year rating, opp last year rating, and num games into season
+    """
+    Load game results from ``start_year`` through ``stop_year`` and build the
+    training dataframe.
 
-    Current Features:
-    - home/away rating
-    - home/away last year rating
-    - number of games into season
-    - home/away last year rating and number of games into season interaction
-    - Adjusted margin of victory for last 10 games
-    - Adjusted margin of victory for last 5 games
-    - Adjusted margin of victory for last 3 games
-    - Adjusted margin of victory for last 1 game
+    Each row contains the matchup data along with features such as:
+    - ``team_rating`` and ``opponent_rating``
+    - ``last_year_team_rating`` and ``last_year_opponent_rating``
+    - ``pace`` and ``num_games_into_season``
+    - adjusted margins of victory for the last 10, 5, 3 and 1 games
+    - projected win totals for both teams
+    - days of rest since each team's most recent game
 
-    Future Features:
-    - Number of days of rest since last game
-    '''
+    The ``margin`` column represents the target variable. The function returns
+    a dataframe containing these features for all seasons in the specified
+    range.
+    """
 
     all_data_archive = pd.read_csv(f'data/train_data.csv')
     all_data_archive.drop([col for col in all_data_archive.columns if 'Unnamed' in col], axis=1, inplace=True)
