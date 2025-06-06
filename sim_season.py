@@ -351,8 +351,12 @@ class Season:
         # east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
         
         # determine seeding directly from the simulated regular-season standings
-        east_teams = ec_standings['team'].tolist()[:8]
-        west_teams = wc_standings['team'].tolist()[:8]
+        # east_teams = ec_standings['team'].tolist()[:8]
+        # west_teams = wc_standings['team'].tolist()[:8]
+        
+        east_teams = ["CLE", "BOS", "NYK", "IND", "MIL", "DET", "ORL", "MIA"]
+        west_teams = ["OKC", "HOU", "LAL", "DEN", "LAC", "MIN", "GSW", "MEM"]
+        
         east_seeds = {seed: team for seed, team in enumerate(east_teams, 1)}
         west_seeds = {seed: team for seed, team in enumerate(west_teams, 1)}
         
@@ -706,6 +710,7 @@ class Season:
         series['winner_name'] = series.apply(
             lambda row: row['team'] if row['team_win'] else row['opponent'], axis=1
         )
+        
         wins = series['winner_name'].value_counts()
 
         if wins.max() < 4:
