@@ -26,3 +26,4 @@ threadpoolctl==3.2.0
 tzdata==2023.3
 urllib3==2.1.0
 xgboost==2.0.2
+pytest==7.4.3
