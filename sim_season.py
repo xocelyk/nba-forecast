@@ -330,29 +330,11 @@ class Season:
 
         # east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
         
-        """
-        east rankings
-        1. CLE
-        2. BOS
-        3. NYK
-        4. IND
-        5. MIL
-        6. DET
-        7. ORL
-        8. MIA
-        
-        west rankings
-        1. OKC
-        2. HOU
-        3. LAL
-        4. DEN
-        5. LAC
-        6. MIN
-        7. GSW
-        8. MEM
-        """
-        east_seeds = {1: 'CLE', 2: 'BOS', 3: 'NYK', 4: 'IND', 5: 'MIL', 6: 'DET', 7: 'ORL', 8: 'MIA'}
-        west_seeds = {1: 'OKC', 2: 'HOU', 3: 'LAL', 4: 'DEN', 5: 'LAC', 6: 'MIN', 7: 'GSW', 8: 'MEM'}
+        # determine seeding directly from the simulated regular-season standings
+        east_teams = ec_standings['team'].tolist()[:8]
+        west_teams = wc_standings['team'].tolist()[:8]
+        east_seeds = {seed: team for seed, team in enumerate(east_teams, 1)}
+        west_seeds = {seed: team for seed, team in enumerate(west_teams, 1)}
         
         self.seeds = {}
         for seed, team in east_seeds.items():
@@ -454,7 +436,7 @@ class Season:
                 num_games_added += 1
                 game_date += datetime.timedelta(days=3)
 
-        self.update_data(games_on_date=self.future_games[-num_games_added:])
+        self.update_data(games_on_date=self.future_games.tail(num_games_added))
         
         for date in sorted(list(new_dates)):
             self.simulate_day(date, date + datetime.timedelta(days=3), 1)
@@ -538,7 +520,7 @@ class Season:
 
         # -------------- SIMULATE anything we just added -------------
         if num_games_added:
-            self.update_data(games_on_date=self.future_games[-num_games_added:])
+            self.update_data(games_on_date=self.future_games.tail(num_games_added))
             for dt in sorted(new_dates):
                 self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
 
@@ -603,7 +585,7 @@ class Season:
                 game_date += datetime.timedelta(days=3)
 
         if num_games_added:
-            self.update_data(games_on_date=self.future_games[-num_games_added:])
+            self.update_data(games_on_date=self.future_games.tail(num_games_added))
             for dt in sorted(new_dates):
                 self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
 
@@ -665,7 +647,7 @@ class Season:
                 game_date += datetime.timedelta(days=3)
 
         if num_games_added:
-            self.update_data(games_on_date=self.future_games[-num_games_added:])
+            self.update_data(games_on_date=self.future_games.tail(num_games_added))
             for dt in sorted(new_dates):
                 self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
 
@@ -724,7 +706,7 @@ class Season:
         self.append_future_game(self.future_games, date=playin_round_1_date, team=e_9, opponent=e_10, playoff_label='E_P_2')
         self.append_future_game(self.future_games, date=playin_round_1_date, team=w_7, opponent=w_8, playoff_label='W_P_1')
         self.append_future_game(self.future_games, date=playin_round_1_date, team=w_9, opponent=w_10, playoff_label='W_P_2')
-        self.update_data(games_on_date=self.future_games[:-4])
+        self.update_data(games_on_date=self.future_games.tail(4))
         self.simulate_day(playin_round_1_date, playin_round_1_date + datetime.timedelta(days=3), 1)
 
         assert len(self.future_games) == 0, 'future games not empty'
@@ -753,7 +735,7 @@ class Season:
         playin_round_2_date = self.get_next_date(day_increment=3)
         self.append_future_game(self.future_games, date=playin_round_2_date, team=E_P_1_loser, opponent=E_P_2_winner, playoff_label='E_P_3')
         self.append_future_game(self.future_games, playin_round_2_date, W_P_1_loser, W_P_2_winner, 'W_P_3')
-        self.update_data(games_on_date=self.future_games[:-2])
+        self.update_data(games_on_date=self.future_games.tail(2))
         self.simulate_day(playin_round_2_date, playin_round_2_date + datetime.timedelta(days=3), 1)
 
         # east 8 seed
