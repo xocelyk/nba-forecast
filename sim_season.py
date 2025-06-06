@@ -210,7 +210,8 @@ class Season:
             return
         games_on_date = games_on_date.apply(self.simulate_game, axis=1)
         self.completed_games = pd.concat([self.completed_games, games_on_date], axis=0)
-        self.future_games = self.future_games[~self.future_games.index.isin(self.completed_games.index)]
+        # drop the simulated games from future_games using their original indices
+        self.future_games = self.future_games.drop(games_on_date.index)
         if self.future_games.empty:
             return
         self.trim_decided_playoff_series_games()
@@ -1080,8 +1081,9 @@ def sim_season(data, win_margin_model, margin_model_resid_mean, margin_model_res
             print(f'Sim {i+1}/{num_sims}')
 
     stop_time = time.time()
-    print('Finished {} simulations in {} seconds'.format(num_sims, stop_time - start_time, 2))
-    print('Time per simulation: {} seconds'.format((stop_time - start_time) / num_sims, 2))
+    elapsed = stop_time - start_time
+    print('Finished {} simulations in {} seconds'.format(num_sims, round(elapsed, 2)))
+    print('Time per simulation: {} seconds'.format(round(elapsed / num_sims, 2)))
     print()
 
     playoff_results_over_sims = {team: {} for team in teams}
