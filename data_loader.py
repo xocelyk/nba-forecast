@@ -14,7 +14,6 @@ def get_team_names(year=2025):
     '''
     Returns a dictionary of team names to abbreviations
     '''
-    year = 2025
     names_to_abbr = {}
     names_to_abbr['Houston Rockets'] = 'HOU'
     schedule = Schedule('HOU', year=year)
