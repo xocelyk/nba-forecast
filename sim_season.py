@@ -235,6 +235,26 @@ class Season:
         noise = np.random.normal(0, self.margin_model.num_games_to_std_margin_model_resid(num_games_into_season))
         margin = noise + expected_margin
         team_win = int(margin > 0)
+        win_prob = 1 / (1 + np.exp(-0.15 * expected_margin))  # Simple logistic function to convert margin to probability
+        
+        # Debug logging for finals games
+        if row.get('playoff_label') == 'Finals':
+            # Calculate game number based on existing finals games
+            finals_games = self.completed_games[self.completed_games['playoff_label'] == 'Finals']
+            game_num = len(finals_games) + 1
+            
+            print(f"\n=== FINALS GAME {game_num}: {team} vs {opponent} ===")
+            print(f"Expected margin: {expected_margin:.2f}")
+            print(f"Win probability for {team}: {win_prob:.4f}")
+            print(f"Actual margin with noise: {margin:.2f}")
+            print(f"Winner: {team if team_win else opponent}")
+            
+            # Print model inputs
+            print("\nModel Inputs:")
+            for col in train_data.columns:
+                print(f"  {col}: {train_data[col].values[0]:.4f}")
+            print("")
+            
         row['completed'] = True
         row['team_win'] = team_win
         row['margin'] = margin
@@ -621,6 +641,11 @@ class Season:
         else:
             team1, team2 = (w_1, e_1) if random.random() > 0.5 else (e_1, w_1)
 
+        print("\n==== NBA FINALS SIMULATION ====")
+        print(f"Eastern Champion: {e_1}")
+        print(f"Western Champion: {w_1}")
+        print(f"Home-court advantage: {team1}\n")
+        
         matchups = {'Finals': (team1, team2)}
 
         new_dates           = set()
@@ -664,6 +689,7 @@ class Season:
                 game_date += datetime.timedelta(days=3)
 
         if num_games_added:
+            print("Simulating NBA Finals games...")
             self.update_data(games_on_date=self.future_games[-num_games_added:])
             for dt in sorted(new_dates):
                 self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
@@ -1028,9 +1054,84 @@ def run_single_simulation(completed_year_games, future_year_games, margin_model,
     wins_losses_dict = season.get_win_loss_report()
     wins_dict = {team: wins_losses_dict[team][0] for team in wins_losses_dict}
     losses_dict = {team: wins_losses_dict[team][1] for team in wins_losses_dict}
+    
+    # Collect finals game data for analysis
+    finals_games_data = []
+    
+    # Store original print function to restore later
+    original_print = print
+    
+    def capture_finals_data(message):
+        """Custom print function that captures finals game data while still printing"""
+        original_print(message)
+        
+        # Look for win probability data in finals game output
+        if isinstance(message, str) and "Win probability for " in message:
+            parts = message.split(": ")
+            if len(parts) >= 2:
+                team = parts[0].split("Win probability for ")[1]
+                prob = float(parts[1])
+                
+                # Find the most recent game number
+                game_num = None
+                for line in recent_outputs:
+                    if "FINALS GAME " in line and ":" in line:
+                        try:
+                            game_info = line.split("FINALS GAME ")[1].split(":")[0]
+                            game_num = int(game_info)
+                            break
+                        except:
+                            continue
+                
+                if game_num is None:
+                    return  # Can't process without game number
+                
+                # Find the winner - only add data when we know the winner
+                winner = None
+                for line in recent_outputs:
+                    if "Winner: " in line:
+                        try:
+                            winner = line.split("Winner: ")[1]
+                            home_win = winner == team
+                            
+                            # Only add to finals_games_data if we found both game number and winner
+                            finals_games_data.append({
+                                'game_num': game_num,
+                                'home_team': team,
+                                'win_prob': prob,
+                                'home_win': home_win
+                            })
+                            break
+                        except:
+                            continue
+    
+    # Replace print temporarily and keep track of recent outputs for parsing
+    recent_outputs = []
+    def custom_print(*args, **kwargs):
+        message = " ".join(str(arg) for arg in args)
+        recent_outputs.append(message)
+        if len(recent_outputs) > 20:  # Keep only the last 20 lines
+            recent_outputs.pop(0)
+        capture_finals_data(message)
+    
+    # Replace print function during playoffs
+    globals()['print'] = custom_print
+    
+    # Run playoffs
     playoff_results = season.playoffs()
+    
+    # Restore original print function
+    globals()['print'] = original_print
+    
     seeds = season.end_season_standings
-    result_dict = {'wins_dict': wins_dict, 'losses_dict': losses_dict, 'playoff_results': playoff_results, 'seeds': seeds}
+    result_dict = {
+        'wins_dict': wins_dict, 
+        'losses_dict': losses_dict, 
+        'playoff_results': playoff_results, 
+        'seeds': seeds,
+        'finals_games': finals_games_data
+    }
+    
     return result_dict
 
 def write_seed_report(seeds_results_over_sims):
@@ -1060,6 +1161,18 @@ def sim_season(data, win_margin_model, margin_model_resid_mean, margin_model_res
     playoff_results_over_sims = {team: {} for team in teams}
     season_results_over_sims = {team: {'wins': [], 'losses': []} for team in teams}
     seed_results_over_sims = {team: {'seed': []} for team in teams}
+    
+    # Track Finals game win probabilities across simulations
+    finals_game_stats = {
+        1: {'team_wins': 0, 'win_probs': []},
+        2: {'team_wins': 0, 'win_probs': []},
+        3: {'team_wins': 0, 'win_probs': []},
+        4: {'team_wins': 0, 'win_probs': []},
+        5: {'team_wins': 0, 'win_probs': []},
+        6: {'team_wins': 0, 'win_probs': []},
+        7: {'team_wins': 0, 'win_probs': []}
+    }
+    
     margin_model = MarginModel(win_margin_model, margin_model_resid_mean, margin_model_resid_std, num_games_to_std_margin_model_resid)
     year_games = data[data['year'] == year]
     completed_year_games = year_games[year_games['completed'] == True]
@@ -1076,12 +1189,29 @@ def sim_season(data, win_margin_model, margin_model_resid_mean, margin_model_res
     else:
         output = []
         for i in range(num_sims):
-            output.append(run_single_simulation(completed_year_games, future_year_games, margin_model, mean_pace, std_pace))
-            print(f'Sim {i+1}/{num_sims}')
+            print(f'\n========== Simulation {i+1}/{num_sims} ==========')
+            sim_result = run_single_simulation(completed_year_games, future_year_games, margin_model, mean_pace, std_pace)
+            output.append(sim_result)
+            
+            # Collect finals game statistics if available
+            if 'finals_games' in sim_result:
+                for game_num, game_data in enumerate(sim_result['finals_games'], 1):
+                    if game_num <= 7:  # Only track up to 7 games
+                        finals_game_stats[game_num]['win_probs'].append(game_data['win_prob'])
+                        if game_data['home_win']:
+                            finals_game_stats[game_num]['team_wins'] += 1
 
     stop_time = time.time()
     print('Finished {} simulations in {} seconds'.format(num_sims, stop_time - start_time, 2))
     print('Time per simulation: {} seconds'.format((stop_time - start_time) / num_sims, 2))
+    
+    # Print Finals game statistics summary
+    print("\n===== FINALS GAMES STATISTICS SUMMARY =====")
+    for game_num, stats in finals_game_stats.items():
+        if len(stats['win_probs']) > 0:  # Only print if we have data for this game
+            avg_win_prob = sum(stats['win_probs']) / len(stats['win_probs'])
+            actual_win_pct = stats['team_wins'] / len(stats['win_probs']) if len(stats['win_probs']) > 0 else 0
+            print(f"Game {game_num}: Avg predicted home win prob: {avg_win_prob:.4f}, Actual home win rate: {actual_win_pct:.4f} ({stats['team_wins']}/{len(stats['win_probs'])})")
     print()
 
     playoff_results_over_sims = {team: {} for team in teams}
