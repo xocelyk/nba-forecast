@@ -14,24 +14,89 @@ HCA = 3.13
 def calc_rmse(predictions, targets):
 	return np.sqrt(((predictions - targets) ** 2).mean())
 
-def sgd_ratings(games, teams_dict, margin_fn=lambda x:x, lr=.1, epochs=100):
-    games = np.array(games)
-    ratings = np.zeros(30)
-    for _ in range(epochs):
-        diff = [[] for _ in range(30)]
-        for row in games:
-            home, away, y = teams_dict[row[0]], teams_dict[row[1]], margin_fn(row[2])
-            y_pred = margin_fn(ratings[home] - ratings[away] + HCA)
-            err = y - y_pred
-            diff[home].append(err)
-            diff[away].append(-err)
-        mean_diff = []
-        for i in range(30):
-            if len(diff[i]) == 0:
-                mean_diff.append(0)
-            else:
-                mean_diff.append(np.mean(diff[i]))
-            ratings[i] += lr * mean_diff[i]
+def sgd_ratings(games, teams_dict, margin_fn=lambda x: x, lr=0.1, epochs=100, 
+                convergence_threshold=1e-6, verbose=False):
+    """
+    Calculate team ratings using stochastic gradient descent.
+    
+    Parameters:
+    -----------
+    games : array-like
+        List/array of games with format [home_team, away_team, margin]
+    teams_dict : dict
+        Mapping from team names to indices
+    margin_fn : callable
+        Function to transform margins (e.g., clipping)
+    lr : float
+        Learning rate for gradient descent
+    epochs : int
+        Maximum number of training epochs
+    convergence_threshold : float
+        Stop training if rating changes are below this threshold
+    verbose : bool
+        Print convergence information
+        
+    Returns:
+    --------
+    np.array
+        Array of team ratings
+    """
+    if len(games) == 0:
+        return np.zeros(len(teams_dict))
+    
+    games_array = np.array(games)
+    num_teams = len(teams_dict)
+    ratings = np.zeros(num_teams)
+    
+    # Pre-extract team indices and margins for efficiency
+    home_indices = np.array([teams_dict[game[0]] for game in games_array])
+    away_indices = np.array([teams_dict[game[1]] for game in games_array])
+    actual_margins = np.array([margin_fn(float(game[2])) for game in games_array])
+    
+    prev_ratings = None
+    
+    for epoch in range(epochs):
+        # Calculate predicted margins vectorized
+        predicted_margins = margin_fn(ratings[home_indices] - ratings[away_indices] + HCA)
+        errors = actual_margins - predicted_margins
+        
+        # Accumulate rating adjustments using numpy operations
+        rating_adjustments = np.zeros(num_teams)
+        
+        # Add errors for home teams (positive adjustment)
+        np.add.at(rating_adjustments, home_indices, errors)
+        
+        # Subtract errors for away teams (negative adjustment) 
+        np.subtract.at(rating_adjustments, away_indices, errors)
+        
+        # Count games per team to calculate mean adjustments
+        game_counts = np.zeros(num_teams)
+        np.add.at(game_counts, home_indices, 1)
+        np.add.at(game_counts, away_indices, 1)
+        
+        # Avoid division by zero and calculate mean adjustments
+        mean_adjustments = np.divide(rating_adjustments, game_counts, 
+                                   out=np.zeros_like(rating_adjustments), 
+                                   where=game_counts!=0)
+        
+        # Update ratings
+        ratings += lr * mean_adjustments
+        
+        # Check for convergence
+        if prev_ratings is not None:
+            max_change = np.max(np.abs(ratings - prev_ratings))
+            if max_change < convergence_threshold:
+                if verbose:
+                    print(f"Converged after {epoch + 1} epochs (max change: {max_change:.2e})")
+                break
+        
+        prev_ratings = ratings.copy()
+    
+    else:
+        if verbose:
+            max_change = np.max(np.abs(ratings - prev_ratings)) if prev_ratings is not None else float('inf')
+            print(f"Completed {epochs} epochs without convergence (max change: {max_change:.2e})")
+    
     return ratings
 
 def get_em_ratings(df, cap=20, names=None, num_epochs=100, day_cap=100):
