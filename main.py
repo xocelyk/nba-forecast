@@ -136,7 +136,7 @@ def simulate_season(training_data: pd.DataFrame, models: Tuple, mean_pace: float
         std_pace,
         year=year,
         num_sims=num_sims,
-        parallel=True
+        parallel=False
     )
     date_string = datetime.datetime.today().strftime('%Y-%m-%d')
     sim_report.to_csv('data/sim_results/sim_report.csv')
