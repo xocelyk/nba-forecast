@@ -2,6 +2,9 @@ import datetime
 import random
 import time
 from random import choice
+import os
+
+import env
 
 import numpy as np
 import pandas as pd
@@ -1135,12 +1138,12 @@ def write_seed_report(seeds_results_over_sims):
     west_teams = ['DAL', 'DEN', 'GSW', 'HOU', 'LAC', 'LAL', 'MEM', 'MIN', 'NOP', 'OKC', 'PHO', 'POR', 'SAC', 'SAS', 'UTA']
     east_df = seeds_results_over_sims_df[seeds_results_over_sims_df['team'].isin(east_teams)]
     west_df = seeds_results_over_sims_df[seeds_results_over_sims_df['team'].isin(west_teams)]
-    east_df.to_csv('data/seed_reports/archive/east_seed_report_' + date_string + '.csv', index=False)
-    east_df.to_csv('data/seed_reports/east_seed_report.csv', index=False)
-    west_df.to_csv('data/seed_reports/archive/west_seed_report_' + date_string + '.csv', index=False)
-    west_df.to_csv('data/seed_reports/west_seed_report.csv', index=False)
-    seeds_results_over_sims_df.to_csv('data/seed_reports/archive/seed_report_' + date_string + '.csv', index=False)
-    seeds_results_over_sims_df.to_csv('data/seed_reports/seed_report.csv', index=False)
+    east_df.to_csv(os.path.join(env.DATA_DIR, 'seed_reports', 'archive', f'east_seed_report_{date_string}.csv'), index=False)
+    east_df.to_csv(os.path.join(env.DATA_DIR, 'seed_reports', 'east_seed_report.csv'), index=False)
+    west_df.to_csv(os.path.join(env.DATA_DIR, 'seed_reports', 'archive', f'west_seed_report_{date_string}.csv'), index=False)
+    west_df.to_csv(os.path.join(env.DATA_DIR, 'seed_reports', 'west_seed_report.csv'), index=False)
+    seeds_results_over_sims_df.to_csv(os.path.join(env.DATA_DIR, 'seed_reports', 'archive', f'seed_report_{date_string}.csv'), index=False)
+    seeds_results_over_sims_df.to_csv(os.path.join(env.DATA_DIR, 'seed_reports', 'seed_report.csv'), index=False)
 
 def sim_season(data, win_margin_model, win_prob_model, margin_model_resid_mean, margin_model_resid_std, num_games_to_std_margin_model_resid, mean_pace, std_pace, year, num_sims=1000, parallel=True):
     import multiprocessing
