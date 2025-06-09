@@ -38,7 +38,7 @@ class Season:
         self.teams = self.teams()
         self.mean_pace = mean_pace
         self.std_pace = std_pace
-        self.update_counter = 0
+        self.update_counter = 1
         self.update_every = 1
         # pace of future games is not deterministic, assume gaussian distribution
         # also assuming that pace is normally distributed for completed games, have not scraped pace for all past games and now rate limited, so more difficult
@@ -238,22 +238,22 @@ class Season:
         team_win = int(margin > 0)
         win_prob = 1 / (1 + np.exp(-0.15 * expected_margin))  # Simple logistic function to convert margin to probability
         
-        # Debug logging for finals games
-        if row.get('playoff_label') == 'Finals':
-            # Calculate game number based on existing finals games
-            finals_games = self.completed_games[self.completed_games['playoff_label'] == 'Finals']
-            game_num = len(finals_games) + 1
-            
-            print(f"\n=== FINALS GAME {game_num}: {team} vs {opponent} ===")
+        # Debug logging for playoff games
+        if row.get('playoff_label'):
+            print(f"\n=== PLAYOFF GAME: {team} vs {opponent} ({row['playoff_label']}) ===")
             print(f"Expected margin: {expected_margin:.2f}")
+            print(f"Added noise: {noise:.2f}")
+            print(f"Final margin: {margin:.2f}")
             print(f"Win probability for {team}: {win_prob:.4f}")
-            print(f"Actual margin with noise: {margin:.2f}")
             print(f"Winner: {team if team_win else opponent}")
             
-            # Print model inputs
-            print("\nModel Inputs:")
-            for col in train_data.columns:
-                print(f"  {col}: {train_data[col].values[0]:.4f}")
+            print("\nKey Model Inputs:")
+            print(f"  Team rating: {row['team_rating']:.1f} vs Opponent rating: {row['opponent_rating']:.1f}")
+            print(f"  Team L10 rating: {row['team_last_10_rating']:.1f} vs Opponent L10 rating: {row['opponent_last_10_rating']:.1f}")
+            print(f"  Team L5 rating: {row['team_last_5_rating']:.1f} vs Opponent L5 rating: {row['opponent_last_5_rating']:.1f}")
+            print(f"  Team L3 rating: {row['team_last_3_rating']:.1f} vs Opponent L3 rating: {row['opponent_last_3_rating']:.1f}")
+            print(f"  Days rest: Team {row['team_days_since_most_recent_game']:.1f}, Opponent {row['opponent_days_since_most_recent_game']:.1f}")
+            print(f"  Games into season: {num_games_into_season}")
             print("")
             
         row['completed'] = True
