@@ -45,7 +45,7 @@ class Season:
         # also assuming that pace is normally distributed for completed games, have not scraped pace for all past games and now rate limited, so more difficult
         self.future_games['pace'] = [np.random.normal(self.mean_pace, self.std_pace) for _ in range(len(self.future_games))]
         self.completed_games['pace'] = [np.random.normal(self.mean_pace, self.std_pace) for _ in range(len(self.completed_games))]
-        self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams, num_epochs=20)
+        self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams)
         self.time = time.time()
         self.win_total_futures = self.get_win_total_futures()
         self.last_year_ratings = self.get_last_year_ratings()
@@ -175,15 +175,10 @@ class Season:
         if self.update_counter is not None:
             self.update_counter += 1
             if self.update_counter % self.update_every == 0:
-                self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams, num_epochs=20)
-                last_30_days_games = self.completed_games[self.completed_games['date'] > (self.completed_games['date'].max() - datetime.timedelta(days=30))]
-                # self.recent_em_ratings = utils.get_rolling_em_ratings(last_30_days_games, names=self.teams, num_epochs=20)
-                # self.recent_em_ratings = utils.get_rolling_em_ratings(self.completed_games, names=self.teams, num_epochs=20)
+                self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams)
 
         self.future_games['team_rating'] = self.future_games['team'].map(self.em_ratings)
         self.future_games['opponent_rating'] = self.future_games['opponent'].map(self.em_ratings)
-        # self.future_games['recent_team_rating'] = self.future_games['team'].map(self.recent_em_ratings)
-        # self.future_games['recent_opponent_rating'] = self.future_games['opponent'].map(self.recent_em_ratings)
 
         self.future_games['team_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if self.most_recent_game_date_dict[row['team']] is None else min(int((row['date'] - self.most_recent_game_date_dict[row['team']]).days), 10), axis=1)
         self.future_games['opponent_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if self.most_recent_game_date_dict[row['opponent']] is None else min(int((row['date'] - self.most_recent_game_date_dict[row['opponent']]).days), 10), axis=1)

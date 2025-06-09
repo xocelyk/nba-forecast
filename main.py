@@ -85,7 +85,7 @@ def load_game_data(year: int, update: bool, names_to_abbr: Dict[str, str]) -> pd
     return games
 
 def calculate_em_ratings(completed_games: pd.DataFrame, abbrs: List[str], year: int) -> Dict[str, float]:
-    em_ratings = utils.get_em_ratings(completed_games, names=abbrs, cap=20)
+    em_ratings = utils.get_em_ratings(completed_games, names=abbrs)
     em_ratings = {k: v for k, v in sorted(em_ratings.items(), key=lambda item: item[1], reverse=True)}
     ratings_lst = [[i + 1, team, round(rating, 2)] for i, (team, rating) in enumerate(em_ratings.items())]
     em_ratings_df = pd.DataFrame(ratings_lst, columns=['rank', 'team', 'rating'])

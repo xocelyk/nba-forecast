@@ -30,11 +30,38 @@ def predict_margin_this_week_games(games, win_margin_model):
     games = games[games['date'] < datetime.date.today() + datetime.timedelta(days=7)]
     if len(games) == 0:
         return None
-    games['margin'] = win_margin_model.predict(games[['team_rating', 'opponent_rating', 'team_win_total_future','opponent_win_total_future', 'last_year_team_rating', 'last_year_opponent_rating', 'num_games_into_season', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game']])
+        
+    print("\n=== NEXT WEEK'S GAME PREDICTIONS ===")
+    print("Input features used for predictions:")
+    for col in ['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 
+                'last_year_team_rating', 'last_year_opponent_rating', 'num_games_into_season',
+                'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating',
+                'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating',
+                'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game']:
+        print(f"\n{col}:")
+        print(games[col].describe())
+        
+    games['margin'] = win_margin_model.predict(games[['team_rating', 'opponent_rating', 'team_win_total_future',
+                                                    'opponent_win_total_future', 'last_year_team_rating', 
+                                                    'last_year_opponent_rating', 'num_games_into_season', 
+                                                    'team_last_10_rating', 'opponent_last_10_rating', 
+                                                    'team_last_5_rating', 'opponent_last_5_rating', 
+                                                    'team_last_3_rating', 'opponent_last_3_rating', 
+                                                    'team_last_1_rating', 'opponent_last_1_rating',
+                                                    'team_days_since_most_recent_game', 
+                                                    'opponent_days_since_most_recent_game']])
+                                                    
+    print("\nPredicted Margins by Date:")
     for date in games['date'].unique():
-        print('{} games'.format(date))
-        for index, row in games[games['date'] == date].iterrows():
-            print('{} vs {}: {}'.format(row['team'], row['opponent'], round(row['margin'], 1)))
+        print(f'\n{date} games:')
+        date_games = games[games['date'] == date]
+        for index, row in date_games.iterrows():
+            print(f"\n{row['team']} vs {row['opponent']}")
+            print(f"Predicted margin: {round(row['margin'], 1)}")
+            print("Key features:")
+            print(f"  Team rating: {row['team_rating']:.1f} vs Opponent rating: {row['opponent_rating']:.1f}")
+            print(f"  Team L10 rating: {row['team_last_10_rating']:.1f} vs Opponent L10 rating: {row['opponent_last_10_rating']:.1f}")
+            print(f"  Days rest: Team {row['team_days_since_most_recent_game']:.1f}, Opponent {row['opponent_days_since_most_recent_game']:.1f}")
             to_csv_data.append([row['date'], row['team'], row['opponent'], round(row['margin'], 1)])
         print()
     to_csv_data = pd.DataFrame(to_csv_data, columns=['Date', 'Home', 'Away', 'Predicted Home Margin'])
