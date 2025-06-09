@@ -124,10 +124,11 @@ def train_models(training_data: pd.DataFrame) -> Tuple:
     return win_margin_model, win_prob_model, mean_margin_model_resid, std_margin_model_resid, num_games_to_std_margin_model_resid
 
 def simulate_season(training_data: pd.DataFrame, models: Tuple, mean_pace: float, std_pace: float, year: int, num_sims: int) -> pd.DataFrame:
-    win_margin_model, _, mean_margin_model_resid, std_margin_model_resid, stdev_function = models
+    win_margin_model, win_prob_model, mean_margin_model_resid, std_margin_model_resid, stdev_function = models
     sim_report = sim_season(
         training_data,
         win_margin_model,
+        win_prob_model,
         mean_margin_model_resid,
         std_margin_model_resid,
         stdev_function,
