@@ -33,9 +33,11 @@ class Season:
     def __init__(self, year, completed_games, future_games, margin_model, win_prob_model, mean_pace, std_pace, sim_date_increment=1):
         self.year = year
         self.completed_games = completed_games
+        self.completed_games['rating_diff'] = self.completed_games['team_rating'] - self.completed_games['opponent_rating']
         self.completed_games['winner_name'] = self.completed_games.apply(lambda row: row['team'] if row['margin'] > 0 else row['opponent'], axis=1)
         self.completed_games['team_win'] = self.completed_games.apply(lambda row: 1 if row['margin'] > 0 else 0, axis=1)
         self.future_games = future_games
+        self.future_games['rating_diff'] = self.future_games['team_rating'] - self.future_games['opponent_rating']
         self.future_games['winner_name'] = np.nan
         self.margin_model = margin_model
         self.win_prob_model = win_prob_model
@@ -182,6 +184,7 @@ class Season:
 
         self.future_games['team_rating'] = self.future_games['team'].map(self.em_ratings)
         self.future_games['opponent_rating'] = self.future_games['opponent'].map(self.em_ratings)
+        self.future_games['rating_diff'] = self.future_games['team_rating'] - self.future_games['opponent_rating']
 
         self.future_games['team_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if self.most_recent_game_date_dict[row['team']] is None else min(int((row['date'] - self.most_recent_game_date_dict[row['team']]).days), 10), axis=1)
         self.future_games['opponent_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if self.most_recent_game_date_dict[row['opponent']] is None else min(int((row['date'] - self.most_recent_game_date_dict[row['opponent']]).days), 10), axis=1)
@@ -264,6 +267,7 @@ class Season:
         row['team_win'] = team_win
         row['margin'] = margin
         row['winner_name'] = team if team_win else opponent
+        row['rating_diff'] = row['team_rating'] - row['opponent_rating']
 
         team_adj_margin = row['margin'] + row['opponent_rating'] - utils.HCA
         opponent_adj_margin = -row['margin'] + row['team_rating'] + utils.HCA
@@ -292,7 +296,8 @@ class Season:
         team_days_since_most_recent_game = row['team_days_since_most_recent_game']
         opponent_days_since_most_recent_game = row['opponent_days_since_most_recent_game']
 
-        data = pd.DataFrame([[team_rating, opp_rating, team_win_total_future, opponent_win_total_future, last_year_team_rating, last_year_opp_rating, num_games_into_season, team_last_10_rating, opponent_last_10_rating, team_last_5_rating, opponent_last_5_rating, team_last_3_rating, opponent_last_3_rating, team_last_1_rating, opponent_last_1_rating, team_days_since_most_recent_game, opponent_days_since_most_recent_game]], columns=['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opponent_rating', 'num_games_into_season', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game'])
+        rating_diff = team_rating - opp_rating
+        data = pd.DataFrame([[team_rating, opp_rating, rating_diff, team_win_total_future, opponent_win_total_future, last_year_team_rating, last_year_opp_rating, num_games_into_season, team_last_10_rating, opponent_last_10_rating, team_last_5_rating, opponent_last_5_rating, team_last_3_rating, opponent_last_3_rating, team_last_1_rating, opponent_last_1_rating, team_days_since_most_recent_game, opponent_days_since_most_recent_game]], columns=['team_rating', 'opponent_rating', 'rating_diff', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opponent_rating', 'num_games_into_season', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game'])
         return data
 
     def get_win_loss_report(self):

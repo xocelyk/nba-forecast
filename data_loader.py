@@ -479,6 +479,7 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
         # Convert the final data to a DataFrame and save
         all_data = pd.DataFrame(all_data)
 <<<<<<< ours
+<<<<<<< ours
         all_data.to_csv('data/train_data.csv', index=False)
 
     else:
@@ -505,12 +506,21 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
 
 =======
         all_data.to_csv(os.path.join(env.DATA_DIR, 'train_data.csv'), index=False)
+=======
+        all_data['rating_diff'] = all_data['team_rating'] - all_data['opponent_rating']
+        all_data.to_csv(f'data/train_data.csv', index=False)
+>>>>>>> theirs
     else:
         all_data = pd.read_csv(os.path.join(env.DATA_DIR, 'train_data.csv'))
         all_data.drop([col for col in all_data.columns if 'Unnamed' in col], axis=1, inplace=True)
         all_data['team_win_total_future'] = all_data.apply(lambda x: win_totals_futures[str(x['year'])][x['team']], axis=1).astype(float)
         all_data['opponent_win_total_future'] = all_data.apply(lambda x: win_totals_futures[str(x['year'])][x['opponent']], axis=1).astype(float)
+<<<<<<< ours
         all_data.to_csv(os.path.join(env.DATA_DIR, 'train_data.csv'))
+=======
+        all_data['rating_diff'] = all_data['team_rating'] - all_data['opponent_rating']
+        all_data.to_csv(f'data/train_data.csv')
+>>>>>>> theirs
     
     all_data = add_days_since_most_recent_game(all_data)
     all_data.to_csv(os.path.join(env.DATA_DIR, 'train_data.csv'), index=False)

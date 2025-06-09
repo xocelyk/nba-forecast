@@ -13,6 +13,7 @@ def test_duplicate_games_basic():
             "margin": 10,
             "team_rating": 100,
             "opponent_rating": 90,
+            "rating_diff": 10,
             "last_year_team_rating": 95,
             "last_year_opponent_rating": 92,
             "team_last_10_rating": 101,
@@ -38,4 +39,5 @@ def test_duplicate_games_basic():
     assert dup["team"] == "B"
     assert dup["opponent"] == "A"
     assert dup["margin"] == -10 + 2 * utils.HCA
+    assert dup["rating_diff"] == -10
 
