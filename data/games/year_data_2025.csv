@@ -470,760 +470,852 @@ boxscore_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score
 202412290BOS,2024-12-29,BOS,IND,Boston Celtics,Indiana Pacers,114.0,123.0,-9.0,Home,97.7,True,2025
 202412290TOR,2024-12-29,TOR,ATL,Toronto Raptors,Atlanta Hawks,107.0,136.0,-29.0,Home,109.0,True,2025
 202412290ORL,2024-12-29,ORL,BRK,Orlando Magic,Brooklyn Nets,102.0,101.0,1.0,Home,89.2,True,2025
-202501010HOU,2025-01-01,HOU,DAL,Houston Rockets,Dallas Mavericks,110.0,99.0,11.0,Home,101.0,True,2025
-202501030HOU,2025-01-03,HOU,BOS,Houston Rockets,Boston Celtics,86.0,109.0,-23.0,Home,85.8,True,2025
-202501050HOU,2025-01-05,HOU,LAL,Houston Rockets,Los Angeles Lakers,119.0,115.0,4.0,Home,90.0,True,2025
-202501070WAS,2025-01-07,WAS,HOU,Washington Wizards,Houston Rockets,112.0,135.0,-23.0,Home,96.3,True,2025
-202501090MEM,2025-01-09,MEM,HOU,Memphis Grizzlies,Houston Rockets,115.0,119.0,-4.0,Home,105.2,True,2025
-202501130HOU,2025-01-13,HOU,MEM,Houston Rockets,Memphis Grizzlies,120.0,118.0,2.0,Home,99.9,True,2025
-202501150DEN,2025-01-15,DEN,HOU,Denver Nuggets,Houston Rockets,108.0,128.0,-20.0,Home,94.6,True,2025
-202501160SAC,2025-01-16,SAC,HOU,Sacramento Kings,Houston Rockets,132.0,127.0,5.0,Home,104.4,True,2025
-202501180POR,2025-01-18,POR,HOU,Portland Trail Blazers,Houston Rockets,103.0,125.0,-22.0,Home,103.7,True,2025
-202501200HOU,2025-01-20,HOU,DET,Houston Rockets,Detroit Pistons,96.0,107.0,-11.0,Home,100.1,True,2025
-202501220HOU,2025-01-22,HOU,CLE,Houston Rockets,Cleveland Cavaliers,109.0,108.0,1.0,Home,95.9,True,2025
-202501250CLE,2025-01-25,CLE,HOU,Cleveland Cavaliers,Houston Rockets,131.0,135.0,-4.0,Home,99.7,True,2025
-202501270BOS,2025-01-27,BOS,HOU,Boston Celtics,Houston Rockets,112.0,114.0,-2.0,Home,94.1,True,2025
 202412300CHO,2024-12-30,CHO,CHI,Charlotte Hornets,Chicago Bulls,108.0,115.0,-7.0,Home,102.8,True,2025
-202501030DET,2025-01-03,DET,CHO,Detroit Pistons,Charlotte Hornets,98.0,94.0,4.0,Home,98.6,True,2025
-202501050CLE,2025-01-05,CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,115.0,105.0,10.0,Home,99.1,True,2025
-202501070CHO,2025-01-07,CHO,PHO,Charlotte Hornets,Phoenix Suns,115.0,104.0,11.0,Home,100.4,True,2025
-202501120PHO,2025-01-12,PHO,CHO,Phoenix Suns,Charlotte Hornets,120.0,113.0,7.0,Home,98.7,True,2025
-202501150UTA,2025-01-15,UTA,CHO,Utah Jazz,Charlotte Hornets,112.0,117.0,-5.0,Home,99.8,True,2025
-202501170CHI,2025-01-17,CHI,CHO,Chicago Bulls,Charlotte Hornets,123.0,125.0,-2.0,Home,101.0,True,2025
-202501200CHO,2025-01-20,CHO,DAL,Charlotte Hornets,Dallas Mavericks,110.0,105.0,5.0,Home,96.2,True,2025
-202501220MEM,2025-01-22,MEM,CHO,Memphis Grizzlies,Charlotte Hornets,132.0,120.0,12.0,Home,100.5,True,2025
-202501240CHO,2025-01-24,CHO,POR,Charlotte Hornets,Portland Trail Blazers,97.0,102.0,-5.0,Home,94.1,True,2025
-202501250CHO,2025-01-25,CHO,NOP,Charlotte Hornets,New Orleans Pelicans,123.0,92.0,31.0,Home,97.8,True,2025
-202501270CHO,2025-01-27,CHO,LAL,Charlotte Hornets,Los Angeles Lakers,107.0,112.0,-5.0,Home,98.3,True,2025
-202412310PHO,2024-12-31,PHO,MEM,Phoenix Suns,Memphis Grizzlies,112.0,117.0,-5.0,Home,106.2,True,2025
-202501030SAC,2025-01-03,SAC,MEM,Sacramento Kings,Memphis Grizzlies,138.0,133.0,5.0,Home,105.2,True,2025
-202501040GSW,2025-01-04,GSW,MEM,Golden State Warriors,Memphis Grizzlies,121.0,113.0,8.0,Home,99.7,True,2025
-202501060MEM,2025-01-06,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,119.0,104.0,15.0,Home,104.0,True,2025
-202501110MIN,2025-01-11,MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,125.0,127.0,-2.0,Home,102.6,True,2025
-202501150SAS,2025-01-15,SAS,MEM,San Antonio Spurs,Memphis Grizzlies,115.0,129.0,-14.0,Home,102.6,True,2025
-202501170SAS,2025-01-17,SAS,MEM,San Antonio Spurs,Memphis Grizzlies,112.0,140.0,-28.0,Home,99.7,True,2025
-202501200MEM,2025-01-20,MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,108.0,106.0,2.0,Home,98.9,True,2025
-202501240MEM,2025-01-24,MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,139.0,126.0,13.0,Home,99.4,True,2025
-202501250MEM,2025-01-25,MEM,UTA,Memphis Grizzlies,Utah Jazz,125.0,103.0,22.0,Home,99.1,True,2025
-202501270NYK,2025-01-27,NYK,MEM,New York Knicks,Memphis Grizzlies,143.0,106.0,37.0,Home,104.5,True,2025
-202412310SAS,2024-12-31,SAS,LAC,San Antonio Spurs,Los Angeles Clippers,122.0,86.0,36.0,Home,96.9,True,2025
-202501030DEN,2025-01-03,DEN,SAS,Denver Nuggets,San Antonio Spurs,110.0,113.0,-3.0,Home,100.7,True,2025
-202501040SAS,2025-01-04,SAS,DEN,San Antonio Spurs,Denver Nuggets,111.0,122.0,-11.0,Home,99.0,True,2025
-202501060CHI,2025-01-06,CHI,SAS,Chicago Bulls,San Antonio Spurs,114.0,110.0,4.0,Home,102.5,True,2025
-202501080MIL,2025-01-08,MIL,SAS,Milwaukee Bucks,San Antonio Spurs,121.0,105.0,16.0,Home,99.1,True,2025
-202501130LAL,2025-01-13,LAL,SAS,Los Angeles Lakers,San Antonio Spurs,102.0,126.0,-24.0,Home,94.7,True,2025
-202501190MIA,2025-01-19,MIA,SAS,Miami Heat,San Antonio Spurs,128.0,107.0,21.0,Home,97.5,True,2025
-202501230IND,2025-01-23,IND,SAS,Indiana Pacers,San Antonio Spurs,110.0,140.0,-30.0,Home,102.4,True,2025
-202501250SAS,2025-01-25,SAS,IND,San Antonio Spurs,Indiana Pacers,98.0,136.0,-38.0,Home,100.8,True,2025
 202412300SAC,2024-12-30,SAC,DAL,Sacramento Kings,Dallas Mavericks,110.0,100.0,10.0,Home,102.7,True,2025
-202501030DAL,2025-01-03,DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,122.0,134.0,-12.0,Home,101.9,True,2025
-202501070DAL,2025-01-07,DAL,LAL,Dallas Mavericks,Los Angeles Lakers,118.0,97.0,21.0,Home,90.5,True,2025
-202501090DAL,2025-01-09,DAL,POR,Dallas Mavericks,Portland Trail Blazers,117.0,111.0,6.0,Home,96.9,True,2025
-202501120DAL,2025-01-12,DAL,DEN,Dallas Mavericks,Denver Nuggets,101.0,112.0,-11.0,Home,98.3,True,2025
-202501140DAL,2025-01-14,DAL,DEN,Dallas Mavericks,Denver Nuggets,99.0,118.0,-19.0,Home,99.5,True,2025
-202501150NOP,2025-01-15,NOP,DAL,New Orleans Pelicans,Dallas Mavericks,119.0,116.0,3.0,Home,103.7,True,2025
-202501170DAL,2025-01-17,DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,106.0,98.0,8.0,Home,94.4,True,2025
-202501220DAL,2025-01-22,DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,114.0,115.0,-1.0,Home,99.2,True,2025
-202501230OKC,2025-01-23,OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,115.0,121.0,-6.0,Home,100.0,True,2025
-202501250DAL,2025-01-25,DAL,BOS,Dallas Mavericks,Boston Celtics,107.0,122.0,-15.0,Home,96.5,True,2025
-202501270DAL,2025-01-27,DAL,WAS,Dallas Mavericks,Washington Wizards,130.0,108.0,22.0,Home,99.5,True,2025
 202412300GSW,2024-12-30,GSW,CLE,Golden State Warriors,Cleveland Cavaliers,95.0,113.0,-18.0,Home,105.6,True,2025
-202501020GSW,2025-01-02,GSW,PHI,Golden State Warriors,Philadelphia 76ers,139.0,105.0,34.0,Home,99.0,True,2025
-202501050GSW,2025-01-05,GSW,SAC,Golden State Warriors,Sacramento Kings,99.0,129.0,-30.0,Home,99.7,True,2025
-202501070GSW,2025-01-07,GSW,MIA,Golden State Warriors,Miami Heat,98.0,114.0,-16.0,Home,98.5,True,2025
-202501090DET,2025-01-09,DET,GSW,Detroit Pistons,Golden State Warriors,104.0,107.0,-3.0,Home,96.6,True,2025
-202501100IND,2025-01-10,IND,GSW,Indiana Pacers,Golden State Warriors,108.0,96.0,12.0,Home,97.0,True,2025
-202501130TOR,2025-01-13,TOR,GSW,Toronto Raptors,Golden State Warriors,104.0,101.0,3.0,Home,93.1,True,2025
-202501150MIN,2025-01-15,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,115.0,116.0,-1.0,Home,88.2,True,2025
-202501180GSW,2025-01-18,GSW,WAS,Golden State Warriors,Washington Wizards,122.0,114.0,8.0,Home,97.4,True,2025
-202501200GSW,2025-01-20,GSW,BOS,Golden State Warriors,Boston Celtics,85.0,125.0,-40.0,Home,95.5,True,2025
-202501220SAC,2025-01-22,SAC,GSW,Sacramento Kings,Golden State Warriors,123.0,117.0,6.0,Home,99.1,True,2025
-202501230GSW,2025-01-23,GSW,CHI,Golden State Warriors,Chicago Bulls,131.0,106.0,25.0,Home,99.6,True,2025
-202501250GSW,2025-01-25,GSW,LAL,Golden State Warriors,Los Angeles Lakers,108.0,118.0,-10.0,Home,95.4,True,2025
 202412300WAS,2024-12-30,WAS,NYK,Washington Wizards,New York Knicks,106.0,126.0,-20.0,Home,99.5,True,2025
+202412300NOP,2024-12-30,NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,113.0,116.0,-3.0,Home,96.8,True,2025
+202412300POR,2024-12-30,POR,PHI,Portland Trail Blazers,Philadelphia 76ers,103.0,125.0,-22.0,Home,98.8,True,2025
+202412300UTA,2024-12-30,UTA,DEN,Utah Jazz,Denver Nuggets,121.0,132.0,-11.0,Home,101.3,True,2025
+202412310PHO,2024-12-31,PHO,MEM,Phoenix Suns,Memphis Grizzlies,112.0,117.0,-5.0,Home,106.2,True,2025
+202412310SAS,2024-12-31,SAS,LAC,San Antonio Spurs,Los Angeles Clippers,122.0,86.0,36.0,Home,96.9,True,2025
+202412310OKC,2024-12-31,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,113.0,105.0,8.0,Home,98.0,True,2025
+202412310IND,2024-12-31,IND,MIL,Indiana Pacers,Milwaukee Bucks,112.0,120.0,-8.0,Home,107.5,True,2025
+202412310BOS,2024-12-31,BOS,TOR,Boston Celtics,Toronto Raptors,125.0,71.0,54.0,Home,94.5,True,2025
+202412310LAL,2024-12-31,LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,110.0,122.0,-12.0,Home,100.6,True,2025
+202501010HOU,2025-01-01,HOU,DAL,Houston Rockets,Dallas Mavericks,110.0,99.0,11.0,Home,101.0,True,2025
 202501010NYK,2025-01-01,NYK,UTA,New York Knicks,Utah Jazz,119.0,103.0,16.0,Home,102.0,True,2025
+202501010DET,2025-01-01,DET,ORL,Detroit Pistons,Orlando Magic,105.0,96.0,9.0,Home,100.0,True,2025
+202501010WAS,2025-01-01,WAS,CHI,Washington Wizards,Chicago Bulls,125.0,107.0,18.0,Home,109.1,True,2025
+202501010SAC,2025-01-01,SAC,PHI,Sacramento Kings,Philadelphia 76ers,113.0,107.0,6.0,Home,96.7,True,2025
+202501010MIA,2025-01-01,MIA,NOP,Miami Heat,New Orleans Pelicans,119.0,108.0,11.0,Home,95.9,True,2025
+202501010TOR,2025-01-01,TOR,BRK,Toronto Raptors,Brooklyn Nets,130.0,113.0,17.0,Home,99.1,True,2025
+202501010DEN,2025-01-01,DEN,ATL,Denver Nuggets,Atlanta Hawks,139.0,120.0,19.0,Home,109.5,True,2025
+202501020GSW,2025-01-02,GSW,PHI,Golden State Warriors,Philadelphia 76ers,139.0,105.0,34.0,Home,99.0,True,2025
+202501020OKC,2025-01-02,OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,116.0,98.0,18.0,Home,97.9,True,2025
+202501020MIL,2025-01-02,MIL,BRK,Milwaukee Bucks,Brooklyn Nets,110.0,113.0,-3.0,Home,99.3,True,2025
+202501020MIA,2025-01-02,MIA,IND,Miami Heat,Indiana Pacers,115.0,128.0,-13.0,Home,95.5,True,2025
+202501020LAL,2025-01-02,LAL,POR,Los Angeles Lakers,Portland Trail Blazers,114.0,106.0,8.0,Home,96.4,True,2025
+202501020MIN,2025-01-02,MIN,BOS,Minnesota Timberwolves,Boston Celtics,115.0,118.0,-3.0,Home,85.6,True,2025
+202501030HOU,2025-01-03,HOU,BOS,Houston Rockets,Boston Celtics,86.0,109.0,-23.0,Home,85.8,True,2025
+202501030DET,2025-01-03,DET,CHO,Detroit Pistons,Charlotte Hornets,98.0,94.0,4.0,Home,98.6,True,2025
+202501030SAC,2025-01-03,SAC,MEM,Sacramento Kings,Memphis Grizzlies,138.0,133.0,5.0,Home,105.2,True,2025
+202501030DEN,2025-01-03,DEN,SAS,Denver Nuggets,San Antonio Spurs,110.0,113.0,-3.0,Home,100.7,True,2025
+202501030DAL,2025-01-03,DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,122.0,134.0,-12.0,Home,101.9,True,2025
 202501030OKC,2025-01-03,OKC,NYK,Oklahoma City Thunder,New York Knicks,117.0,107.0,10.0,Home,96.9,True,2025
+202501030NOP,2025-01-03,NOP,WAS,New Orleans Pelicans,Washington Wizards,132.0,120.0,12.0,Home,99.5,True,2025
+202501030TOR,2025-01-03,TOR,ORL,Toronto Raptors,Orlando Magic,97.0,106.0,-9.0,Home,87.3,True,2025
+202501030LAL,2025-01-03,LAL,ATL,Los Angeles Lakers,Atlanta Hawks,119.0,102.0,17.0,Home,98.7,True,2025
+202501040GSW,2025-01-04,GSW,MEM,Golden State Warriors,Memphis Grizzlies,121.0,113.0,8.0,Home,99.7,True,2025
+202501040SAS,2025-01-04,SAS,DEN,San Antonio Spurs,Denver Nuggets,111.0,122.0,-11.0,Home,99.0,True,2025
 202501040CHI,2025-01-04,CHI,NYK,Chicago Bulls,New York Knicks,139.0,126.0,13.0,Home,103.4,True,2025
+202501040DET,2025-01-04,DET,MIN,Detroit Pistons,Minnesota Timberwolves,119.0,105.0,14.0,Home,98.4,True,2025
+202501040LAC,2025-01-04,LAC,ATL,Los Angeles Clippers,Atlanta Hawks,131.0,105.0,26.0,Home,110.6,True,2025
+202501040MIL,2025-01-04,MIL,POR,Milwaukee Bucks,Portland Trail Blazers,102.0,105.0,-3.0,Home,100.9,True,2025
+202501040IND,2025-01-04,IND,PHO,Indiana Pacers,Phoenix Suns,126.0,108.0,18.0,Home,95.3,True,2025
+202501040BRK,2025-01-04,BRK,PHI,Brooklyn Nets,Philadelphia 76ers,94.0,123.0,-29.0,Home,104.4,True,2025
+202501040MIA,2025-01-04,MIA,UTA,Miami Heat,Utah Jazz,100.0,136.0,-36.0,Home,101.5,True,2025
+202501050HOU,2025-01-05,HOU,LAL,Houston Rockets,Los Angeles Lakers,119.0,115.0,4.0,Home,90.0,True,2025
+202501050CLE,2025-01-05,CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,115.0,105.0,10.0,Home,99.1,True,2025
+202501050GSW,2025-01-05,GSW,SAC,Golden State Warriors,Sacramento Kings,99.0,129.0,-30.0,Home,99.7,True,2025
+202501050OKC,2025-01-05,OKC,BOS,Oklahoma City Thunder,Boston Celtics,105.0,92.0,13.0,Home,97.2,True,2025
+202501050WAS,2025-01-05,WAS,NOP,Washington Wizards,New Orleans Pelicans,98.0,110.0,-12.0,Home,98.6,True,2025
+202501050ORL,2025-01-05,ORL,UTA,Orlando Magic,Utah Jazz,92.0,105.0,-13.0,Home,97.1,True,2025
+202501060MEM,2025-01-06,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,119.0,104.0,15.0,Home,104.0,True,2025
+202501060CHI,2025-01-06,CHI,SAS,Chicago Bulls,San Antonio Spurs,114.0,110.0,4.0,Home,102.5,True,2025
 202501060NYK,2025-01-06,NYK,ORL,New York Knicks,Orlando Magic,94.0,103.0,-9.0,Home,87.8,True,2025
+202501060DET,2025-01-06,DET,POR,Detroit Pistons,Portland Trail Blazers,118.0,115.0,3.0,Home,98.6,True,2025
+202501060MIN,2025-01-06,MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,108.0,106.0,2.0,Home,96.5,True,2025
+202501060TOR,2025-01-06,TOR,MIL,Toronto Raptors,Milwaukee Bucks,104.0,128.0,-24.0,Home,102.1,True,2025
+202501060BRK,2025-01-06,BRK,IND,Brooklyn Nets,Indiana Pacers,99.0,113.0,-14.0,Home,93.2,True,2025
+202501060PHI,2025-01-06,PHI,PHO,Philadelphia 76ers,Phoenix Suns,99.0,109.0,-10.0,Home,95.2,True,2025
+202501060SAC,2025-01-06,SAC,MIA,Sacramento Kings,Miami Heat,123.0,118.0,5.0,Home,93.4,True,2025
+202501070WAS,2025-01-07,WAS,HOU,Washington Wizards,Houston Rockets,112.0,135.0,-23.0,Home,96.3,True,2025
+202501070CHO,2025-01-07,CHO,PHO,Charlotte Hornets,Phoenix Suns,115.0,104.0,11.0,Home,100.4,True,2025
+202501070DAL,2025-01-07,DAL,LAL,Dallas Mavericks,Los Angeles Lakers,118.0,97.0,21.0,Home,90.5,True,2025
+202501070GSW,2025-01-07,GSW,MIA,Golden State Warriors,Miami Heat,98.0,114.0,-16.0,Home,98.5,True,2025
+202501070NOP,2025-01-07,NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,97.0,104.0,-7.0,Home,101.3,True,2025
+202501070DEN,2025-01-07,DEN,BOS,Denver Nuggets,Boston Celtics,106.0,118.0,-12.0,Home,93.9,True,2025
+202501070UTA,2025-01-07,UTA,ATL,Utah Jazz,Atlanta Hawks,121.0,124.0,-3.0,Home,102.2,True,2025
+202501080MIL,2025-01-08,MIL,SAS,Milwaukee Bucks,San Antonio Spurs,121.0,105.0,16.0,Home,99.1,True,2025
 202501080NYK,2025-01-08,NYK,TOR,New York Knicks,Toronto Raptors,112.0,98.0,14.0,Home,92.1,True,2025
+202501080CLE,2025-01-08,CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,129.0,122.0,7.0,Home,100.6,True,2025
+202501080BRK,2025-01-08,BRK,DET,Brooklyn Nets,Detroit Pistons,98.0,113.0,-15.0,Home,97.5,True,2025
+202501080PHI,2025-01-08,PHI,WAS,Philadelphia 76ers,Washington Wizards,109.0,103.0,6.0,Home,92.7,True,2025
+202501080DEN,2025-01-08,DEN,LAC,Denver Nuggets,Los Angeles Clippers,126.0,103.0,23.0,Home,98.8,True,2025
+202501080IND,2025-01-08,IND,CHI,Indiana Pacers,Chicago Bulls,129.0,113.0,16.0,Home,103.5,True,2025
+202501080NOP,2025-01-08,NOP,POR,New Orleans Pelicans,Portland Trail Blazers,100.0,119.0,-19.0,Home,92.1,True,2025
+202501090MEM,2025-01-09,MEM,HOU,Memphis Grizzlies,Houston Rockets,115.0,119.0,-4.0,Home,105.2,True,2025
+202501090DAL,2025-01-09,DAL,POR,Dallas Mavericks,Portland Trail Blazers,117.0,111.0,6.0,Home,96.9,True,2025
+202501090DET,2025-01-09,DET,GSW,Detroit Pistons,Golden State Warriors,104.0,107.0,-3.0,Home,96.6,True,2025
+202501090ORL,2025-01-09,ORL,MIN,Orlando Magic,Minnesota Timberwolves,89.0,104.0,-15.0,Home,93.4,True,2025
+202501090CLE,2025-01-09,CLE,TOR,Cleveland Cavaliers,Toronto Raptors,132.0,126.0,6.0,Home,95.5,True,2025
+202501090UTA,2025-01-09,UTA,MIA,Utah Jazz,Miami Heat,92.0,97.0,-5.0,Home,95.1,True,2025
+202501090PHO,2025-01-09,PHO,ATL,Phoenix Suns,Atlanta Hawks,123.0,115.0,8.0,Home,94.0,True,2025
+202501100IND,2025-01-10,IND,GSW,Indiana Pacers,Golden State Warriors,108.0,96.0,12.0,Home,97.0,True,2025
 202501100NYK,2025-01-10,NYK,OKC,New York Knicks,Oklahoma City Thunder,101.0,126.0,-25.0,Home,99.8,True,2025
+202501100CHI,2025-01-10,CHI,WAS,Chicago Bulls,Washington Wizards,138.0,105.0,33.0,Home,104.5,True,2025
+202501100ORL,2025-01-10,ORL,MIL,Orlando Magic,Milwaukee Bucks,106.0,109.0,-3.0,Home,95.9,True,2025
+202501100PHI,2025-01-10,PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,115.0,123.0,-8.0,Home,96.8,True,2025
+202501100BOS,2025-01-10,BOS,SAC,Boston Celtics,Sacramento Kings,97.0,114.0,-17.0,Home,98.5,True,2025
+202501100DEN,2025-01-10,DEN,BRK,Denver Nuggets,Brooklyn Nets,124.0,105.0,19.0,Home,102.4,True,2025
+202501110MIN,2025-01-11,MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,125.0,127.0,-2.0,Home,102.6,True,2025
+202501110DET,2025-01-11,DET,TOR,Detroit Pistons,Toronto Raptors,123.0,114.0,9.0,Home,100.3,True,2025
+202501110POR,2025-01-11,POR,MIA,Portland Trail Blazers,Miami Heat,98.0,119.0,-21.0,Home,99.8,True,2025
+202501110PHO,2025-01-11,PHO,UTA,Phoenix Suns,Utah Jazz,114.0,106.0,8.0,Home,90.9,True,2025
+202501130HOU,2025-01-13,HOU,MEM,Houston Rockets,Memphis Grizzlies,120.0,118.0,2.0,Home,100.3,True,2025
+202501120PHO,2025-01-12,PHO,CHO,Phoenix Suns,Charlotte Hornets,120.0,113.0,7.0,Home,98.7,True,2025
+202501130LAL,2025-01-13,LAL,SAS,Los Angeles Lakers,San Antonio Spurs,102.0,126.0,-24.0,Home,94.7,True,2025
+202501120DAL,2025-01-12,DAL,DEN,Dallas Mavericks,Denver Nuggets,101.0,112.0,-11.0,Home,98.3,True,2025
+202501130TOR,2025-01-13,TOR,GSW,Toronto Raptors,Golden State Warriors,104.0,101.0,3.0,Home,93.1,True,2025
 202501120NYK,2025-01-12,NYK,MIL,New York Knicks,Milwaukee Bucks,140.0,106.0,34.0,Home,98.8,True,2025
 202501130NYK,2025-01-13,NYK,DET,New York Knicks,Detroit Pistons,119.0,124.0,-5.0,Home,99.0,True,2025
-202501150PHI,2025-01-15,PHI,NYK,Philadelphia 76ers,New York Knicks,119.0,125.0,-6.0,Home,86.7,True,2025
-202501170NYK,2025-01-17,NYK,MIN,New York Knicks,Minnesota Timberwolves,99.0,116.0,-17.0,Home,88.5,True,2025
-202501200NYK,2025-01-20,NYK,ATL,New York Knicks,Atlanta Hawks,119.0,110.0,9.0,Home,99.7,True,2025
-202501210BRK,2025-01-21,BRK,NYK,Brooklyn Nets,New York Knicks,95.0,99.0,-4.0,Home,94.8,True,2025
-202501250NYK,2025-01-25,NYK,SAC,New York Knicks,Sacramento Kings,143.0,120.0,23.0,Home,103.6,True,2025
-202412310OKC,2024-12-31,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,113.0,105.0,8.0,Home,98.0,True,2025
-202501020OKC,2025-01-02,OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,116.0,98.0,18.0,Home,97.9,True,2025
-202501050OKC,2025-01-05,OKC,BOS,Oklahoma City Thunder,Boston Celtics,105.0,92.0,13.0,Home,97.2,True,2025
-202501080CLE,2025-01-08,CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,129.0,122.0,7.0,Home,100.6,True,2025
 202501120WAS,2025-01-12,WAS,OKC,Washington Wizards,Oklahoma City Thunder,95.0,136.0,-41.0,Home,104.6,True,2025
-202501140PHI,2025-01-14,PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,102.0,118.0,-16.0,Home,97.3,True,2025
-202501160OKC,2025-01-16,OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,134.0,114.0,20.0,Home,106.3,True,2025
-202501190OKC,2025-01-19,OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,127.0,101.0,26.0,Home,96.6,True,2025
-202501220OKC,2025-01-22,OKC,UTA,Oklahoma City Thunder,Utah Jazz,123.0,114.0,9.0,Home,100.8,True,2025
-202501260POR,2025-01-26,POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,108.0,118.0,-10.0,Home,92.6,True,2025
-202501010DET,2025-01-01,DET,ORL,Detroit Pistons,Orlando Magic,105.0,96.0,9.0,Home,100.0,True,2025
-202501040DET,2025-01-04,DET,MIN,Detroit Pistons,Minnesota Timberwolves,119.0,105.0,14.0,Home,98.4,True,2025
-202501060DET,2025-01-06,DET,POR,Detroit Pistons,Portland Trail Blazers,118.0,115.0,3.0,Home,98.6,True,2025
-202501080BRK,2025-01-08,BRK,DET,Brooklyn Nets,Detroit Pistons,98.0,113.0,-15.0,Home,97.5,True,2025
-202501110DET,2025-01-11,DET,TOR,Detroit Pistons,Toronto Raptors,123.0,114.0,9.0,Home,100.3,True,2025
-202501160DET,2025-01-16,DET,IND,Detroit Pistons,Indiana Pacers,100.0,111.0,-11.0,Home,103.5,True,2025
-202501180DET,2025-01-18,DET,PHO,Detroit Pistons,Phoenix Suns,121.0,125.0,-4.0,Home,99.7,True,2025
-202501220ATL,2025-01-22,ATL,DET,Atlanta Hawks,Detroit Pistons,104.0,114.0,-10.0,Home,107.3,True,2025
-202501250ORL,2025-01-25,ORL,DET,Orlando Magic,Detroit Pistons,121.0,113.0,8.0,Home,102.1,True,2025
-202501270CLE,2025-01-27,CLE,DET,Cleveland Cavaliers,Detroit Pistons,110.0,91.0,19.0,Home,95.9,True,2025
-202501010WAS,2025-01-01,WAS,CHI,Washington Wizards,Chicago Bulls,125.0,107.0,18.0,Home,109.1,True,2025
-202501030NOP,2025-01-03,NOP,WAS,New Orleans Pelicans,Washington Wizards,132.0,120.0,12.0,Home,99.5,True,2025
-202501050WAS,2025-01-05,WAS,NOP,Washington Wizards,New Orleans Pelicans,98.0,110.0,-12.0,Home,98.6,True,2025
-202501080PHI,2025-01-08,PHI,WAS,Philadelphia 76ers,Washington Wizards,109.0,103.0,6.0,Home,92.7,True,2025
-202501100CHI,2025-01-10,CHI,WAS,Chicago Bulls,Washington Wizards,138.0,105.0,33.0,Home,104.5,True,2025
 202501130WAS,2025-01-13,WAS,MIN,Washington Wizards,Minnesota Timberwolves,106.0,120.0,-14.0,Home,98.7,True,2025
-202501160WAS,2025-01-16,WAS,PHO,Washington Wizards,Phoenix Suns,123.0,130.0,-7.0,Home,103.5,True,2025
-202501190SAC,2025-01-19,SAC,WAS,Sacramento Kings,Washington Wizards,123.0,100.0,23.0,Home,106.0,True,2025
-202501210LAL,2025-01-21,LAL,WAS,Los Angeles Lakers,Washington Wizards,111.0,88.0,23.0,Home,101.1,True,2025
-202501230LAC,2025-01-23,LAC,WAS,Los Angeles Clippers,Washington Wizards,110.0,93.0,17.0,Home,101.7,True,2025
-202501250PHO,2025-01-25,PHO,WAS,Phoenix Suns,Washington Wizards,119.0,109.0,10.0,Home,96.8,True,2025
-202412300NOP,2024-12-30,NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,113.0,116.0,-3.0,Home,96.8,True,2025
-202501040LAC,2025-01-04,LAC,ATL,Los Angeles Clippers,Atlanta Hawks,131.0,105.0,26.0,Home,110.6,True,2025
-202501060MIN,2025-01-06,MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,108.0,106.0,2.0,Home,96.5,True,2025
-202501080DEN,2025-01-08,DEN,LAC,Denver Nuggets,Los Angeles Clippers,126.0,103.0,23.0,Home,98.8,True,2025
 202501130LAC,2025-01-13,LAC,MIA,Los Angeles Clippers,Miami Heat,109.0,98.0,11.0,Home,99.8,True,2025
-202501150LAC,2025-01-15,LAC,BRK,Los Angeles Clippers,Brooklyn Nets,126.0,67.0,59.0,Home,98.1,True,2025
-202501160POR,2025-01-16,POR,LAC,Portland Trail Blazers,Los Angeles Clippers,89.0,118.0,-29.0,Home,97.2,True,2025
-202501190LAC,2025-01-19,LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,116.0,102.0,14.0,Home,94.6,True,2025
-202501200LAC,2025-01-20,LAC,CHI,Los Angeles Clippers,Chicago Bulls,99.0,112.0,-13.0,Home,96.3,True,2025
-202501220LAC,2025-01-22,LAC,BOS,Los Angeles Clippers,Boston Celtics,113.0,117.0,-4.0,Home,96.0,True,2025
-202501250LAC,2025-01-25,LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,127.0,117.0,10.0,Home,100.6,True,2025
-202501270PHO,2025-01-27,PHO,LAC,Phoenix Suns,Los Angeles Clippers,111.0,109.0,2.0,Home,94.1,True,2025
-202501080IND,2025-01-08,IND,CHI,Indiana Pacers,Chicago Bulls,129.0,113.0,16.0,Home,103.5,True,2025
 202501120CHI,2025-01-12,CHI,SAC,Chicago Bulls,Sacramento Kings,119.0,124.0,-5.0,Home,100.0,True,2025
+202501120CLE,2025-01-12,CLE,IND,Cleveland Cavaliers,Indiana Pacers,93.0,108.0,-15.0,Home,98.8,True,2025
+202501120ORL,2025-01-12,ORL,PHI,Orlando Magic,Philadelphia 76ers,104.0,99.0,5.0,Home,94.6,True,2025
+202501120BOS,2025-01-12,BOS,NOP,Boston Celtics,New Orleans Pelicans,120.0,119.0,1.0,Home,100.7,True,2025
+202501120UTA,2025-01-12,UTA,BRK,Utah Jazz,Brooklyn Nets,112.0,111.0,1.0,Home,91.4,True,2025
+202501150DEN,2025-01-15,DEN,HOU,Denver Nuggets,Houston Rockets,108.0,128.0,-20.0,Home,94.6,True,2025
+202501150UTA,2025-01-15,UTA,CHO,Utah Jazz,Charlotte Hornets,112.0,117.0,-5.0,Home,99.8,True,2025
+202501150SAS,2025-01-15,SAS,MEM,San Antonio Spurs,Memphis Grizzlies,115.0,129.0,-14.0,Home,102.6,True,2025
+202501140DAL,2025-01-14,DAL,DEN,Dallas Mavericks,Denver Nuggets,99.0,118.0,-19.0,Home,99.5,True,2025
+202501150NOP,2025-01-15,NOP,DAL,New Orleans Pelicans,Dallas Mavericks,119.0,116.0,3.0,Home,103.7,True,2025
+202501150MIN,2025-01-15,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,115.0,116.0,-1.0,Home,88.2,True,2025
+202501150PHI,2025-01-15,PHI,NYK,Philadelphia 76ers,New York Knicks,119.0,125.0,-6.0,Home,86.7,True,2025
+202501140PHI,2025-01-14,PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,102.0,118.0,-16.0,Home,97.3,True,2025
+202501150LAC,2025-01-15,LAC,BRK,Los Angeles Clippers,Brooklyn Nets,126.0,67.0,59.0,Home,98.1,True,2025
 202501140CHI,2025-01-14,CHI,NOP,Chicago Bulls,New Orleans Pelicans,113.0,119.0,-6.0,Home,101.1,True,2025
 202501150CHI,2025-01-15,CHI,ATL,Chicago Bulls,Atlanta Hawks,94.0,110.0,-16.0,Home,103.7,True,2025
-202501190POR,2025-01-19,POR,CHI,Portland Trail Blazers,Chicago Bulls,113.0,102.0,11.0,Home,99.4,True,2025
-202501250CHI,2025-01-25,CHI,PHI,Chicago Bulls,Philadelphia 76ers,97.0,109.0,-12.0,Home,100.2,True,2025
-202501270CHI,2025-01-27,CHI,DEN,Chicago Bulls,Denver Nuggets,129.0,121.0,8.0,Home,104.2,True,2025
-202412310IND,2024-12-31,IND,MIL,Indiana Pacers,Milwaukee Bucks,112.0,120.0,-8.0,Home,107.5,True,2025
-202501020MIL,2025-01-02,MIL,BRK,Milwaukee Bucks,Brooklyn Nets,110.0,113.0,-3.0,Home,99.3,True,2025
-202501040MIL,2025-01-04,MIL,POR,Milwaukee Bucks,Portland Trail Blazers,102.0,105.0,-3.0,Home,100.9,True,2025
-202501060TOR,2025-01-06,TOR,MIL,Toronto Raptors,Milwaukee Bucks,104.0,128.0,-24.0,Home,102.1,True,2025
-202501100ORL,2025-01-10,ORL,MIL,Orlando Magic,Milwaukee Bucks,106.0,109.0,-3.0,Home,95.9,True,2025
 202501140MIL,2025-01-14,MIL,SAC,Milwaukee Bucks,Sacramento Kings,130.0,115.0,15.0,Home,101.8,True,2025
 202501150MIL,2025-01-15,MIL,ORL,Milwaukee Bucks,Orlando Magic,122.0,93.0,29.0,Home,104.6,True,2025
-202501170MIL,2025-01-17,MIL,TOR,Milwaukee Bucks,Toronto Raptors,130.0,112.0,18.0,Home,100.1,True,2025
-202501190MIL,2025-01-19,MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,123.0,109.0,14.0,Home,98.0,True,2025
-202501230MIL,2025-01-23,MIL,MIA,Milwaukee Bucks,Miami Heat,125.0,96.0,29.0,Home,98.7,True,2025
-202501270UTA,2025-01-27,UTA,MIL,Utah Jazz,Milwaukee Bucks,110.0,125.0,-15.0,Home,99.5,True,2025
-202501020MIA,2025-01-02,MIA,IND,Miami Heat,Indiana Pacers,115.0,128.0,-13.0,Home,95.5,True,2025
-202501040IND,2025-01-04,IND,PHO,Indiana Pacers,Phoenix Suns,126.0,108.0,18.0,Home,95.3,True,2025
-202501060BRK,2025-01-06,BRK,IND,Brooklyn Nets,Indiana Pacers,99.0,113.0,-14.0,Home,93.2,True,2025
-202501120CLE,2025-01-12,CLE,IND,Cleveland Cavaliers,Indiana Pacers,93.0,108.0,-15.0,Home,98.8,True,2025
 202501140IND,2025-01-14,IND,CLE,Indiana Pacers,Cleveland Cavaliers,117.0,127.0,-10.0,Home,101.8,True,2025
-202501180IND,2025-01-18,IND,PHI,Indiana Pacers,Philadelphia 76ers,115.0,102.0,13.0,Home,94.5,True,2025
-202412300POR,2024-12-30,POR,PHI,Portland Trail Blazers,Philadelphia 76ers,103.0,125.0,-22.0,Home,98.8,True,2025
-202501020LAL,2025-01-02,LAL,POR,Los Angeles Lakers,Portland Trail Blazers,114.0,106.0,8.0,Home,96.4,True,2025
-202501080NOP,2025-01-08,NOP,POR,New Orleans Pelicans,Portland Trail Blazers,100.0,119.0,-19.0,Home,92.1,True,2025
-202501110POR,2025-01-11,POR,MIA,Portland Trail Blazers,Miami Heat,98.0,119.0,-21.0,Home,99.8,True,2025
 202501140POR,2025-01-14,POR,BRK,Portland Trail Blazers,Brooklyn Nets,114.0,132.0,-18.0,Home,98.2,True,2025
-202501210MIA,2025-01-21,MIA,POR,Miami Heat,Portland Trail Blazers,107.0,116.0,-9.0,Home,93.2,True,2025
-202501230ORL,2025-01-23,ORL,POR,Orlando Magic,Portland Trail Blazers,79.0,101.0,-22.0,Home,95.0,True,2025
-202501020MIN,2025-01-02,MIN,BOS,Minnesota Timberwolves,Boston Celtics,115.0,118.0,-3.0,Home,85.6,True,2025
-202501070NOP,2025-01-07,NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,97.0,104.0,-7.0,Home,101.3,True,2025
-202501090ORL,2025-01-09,ORL,MIN,Orlando Magic,Minnesota Timberwolves,89.0,104.0,-15.0,Home,93.4,True,2025
-202501180MIN,2025-01-18,MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,117.0,124.0,-7.0,Home,95.0,True,2025
-202501250MIN,2025-01-25,MIN,DEN,Minnesota Timberwolves,Denver Nuggets,133.0,104.0,29.0,Home,96.8,True,2025
-202501270MIN,2025-01-27,MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,100.0,92.0,8.0,Home,100.1,True,2025
-202501010SAC,2025-01-01,SAC,PHI,Sacramento Kings,Philadelphia 76ers,113.0,107.0,6.0,Home,96.7,True,2025
-202501040BRK,2025-01-04,BRK,PHI,Brooklyn Nets,Philadelphia 76ers,94.0,123.0,-29.0,Home,104.4,True,2025
-202501060PHI,2025-01-06,PHI,PHO,Philadelphia 76ers,Phoenix Suns,99.0,109.0,-10.0,Home,95.2,True,2025
-202501100PHI,2025-01-10,PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,115.0,123.0,-8.0,Home,96.8,True,2025
-202501120ORL,2025-01-12,ORL,PHI,Orlando Magic,Philadelphia 76ers,104.0,99.0,5.0,Home,94.6,True,2025
-202501210DEN,2025-01-21,DEN,PHI,Denver Nuggets,Philadelphia 76ers,144.0,109.0,35.0,Home,96.2,True,2025
-202501240PHI,2025-01-24,PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,132.0,129.0,3.0,Home,99.6,True,2025
-202501060SAC,2025-01-06,SAC,MIA,Sacramento Kings,Miami Heat,123.0,118.0,5.0,Home,93.4,True,2025
-202501100BOS,2025-01-10,BOS,SAC,Boston Celtics,Sacramento Kings,97.0,114.0,-17.0,Home,98.5,True,2025
-202501230DEN,2025-01-23,DEN,SAC,Denver Nuggets,Sacramento Kings,132.0,123.0,9.0,Home,108.4,True,2025
-202501270BRK,2025-01-27,BRK,SAC,Brooklyn Nets,Sacramento Kings,96.0,110.0,-14.0,Home,92.9,True,2025
-202501010MIA,2025-01-01,MIA,NOP,Miami Heat,New Orleans Pelicans,119.0,108.0,11.0,Home,95.9,True,2025
-202501120BOS,2025-01-12,BOS,NOP,Boston Celtics,New Orleans Pelicans,120.0,119.0,1.0,Home,100.7,True,2025
-202501170NOP,2025-01-17,NOP,UTA,New Orleans Pelicans,Utah Jazz,136.0,123.0,13.0,Home,104.8,True,2025
-202501200NOP,2025-01-20,NOP,UTA,New Orleans Pelicans,Utah Jazz,123.0,119.0,4.0,Home,99.9,True,2025
-202501270TOR,2025-01-27,TOR,NOP,Toronto Raptors,New Orleans Pelicans,113.0,104.0,9.0,Home,107.2,True,2025
-202412310BOS,2024-12-31,BOS,TOR,Boston Celtics,Toronto Raptors,125.0,71.0,54.0,Home,94.5,True,2025
-202501010TOR,2025-01-01,TOR,BRK,Toronto Raptors,Brooklyn Nets,130.0,113.0,17.0,Home,99.1,True,2025
-202501030TOR,2025-01-03,TOR,ORL,Toronto Raptors,Orlando Magic,97.0,106.0,-9.0,Home,87.3,True,2025
-202501090CLE,2025-01-09,CLE,TOR,Cleveland Cavaliers,Toronto Raptors,132.0,126.0,6.0,Home,95.5,True,2025
 202501150TOR,2025-01-15,TOR,BOS,Toronto Raptors,Boston Celtics,110.0,97.0,13.0,Home,93.0,True,2025
-202501210TOR,2025-01-21,TOR,ORL,Toronto Raptors,Orlando Magic,109.0,93.0,16.0,Home,91.7,True,2025
-202501230ATL,2025-01-23,ATL,TOR,Atlanta Hawks,Toronto Raptors,119.0,122.0,-3.0,Home,103.8,True,2025
-202501250ATL,2025-01-25,ATL,TOR,Atlanta Hawks,Toronto Raptors,94.0,117.0,-23.0,Home,109.9,True,2025
-202501040MIA,2025-01-04,MIA,UTA,Miami Heat,Utah Jazz,100.0,136.0,-36.0,Home,101.5,True,2025
-202501090UTA,2025-01-09,UTA,MIA,Utah Jazz,Miami Heat,92.0,97.0,-5.0,Home,95.1,True,2025
 202501150LAL,2025-01-15,LAL,MIA,Los Angeles Lakers,Miami Heat,117.0,108.0,9.0,Home,95.6,True,2025
+202501140ATL,2025-01-14,ATL,PHO,Atlanta Hawks,Phoenix Suns,122.0,117.0,5.0,Home,100.3,True,2025
+202501160SAC,2025-01-16,SAC,HOU,Sacramento Kings,Houston Rockets,132.0,127.0,5.0,Home,104.4,True,2025
+202501170CHI,2025-01-17,CHI,CHO,Chicago Bulls,Charlotte Hornets,123.0,125.0,-2.0,Home,101.0,True,2025
+202501170SAS,2025-01-17,SAS,MEM,San Antonio Spurs,Memphis Grizzlies,112.0,140.0,-28.0,Home,99.7,True,2025
+202501170DAL,2025-01-17,DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,106.0,98.0,8.0,Home,94.4,True,2025
+202501170NYK,2025-01-17,NYK,MIN,New York Knicks,Minnesota Timberwolves,99.0,116.0,-17.0,Home,88.5,True,2025
+202501160OKC,2025-01-16,OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,134.0,114.0,20.0,Home,106.3,True,2025
+202501160DET,2025-01-16,DET,IND,Detroit Pistons,Indiana Pacers,100.0,111.0,-11.0,Home,103.5,True,2025
+202501160WAS,2025-01-16,WAS,PHO,Washington Wizards,Phoenix Suns,123.0,130.0,-7.0,Home,103.5,True,2025
+202501160POR,2025-01-16,POR,LAC,Portland Trail Blazers,Los Angeles Clippers,89.0,118.0,-29.0,Home,97.2,True,2025
+202501170MIL,2025-01-17,MIL,TOR,Milwaukee Bucks,Toronto Raptors,130.0,112.0,18.0,Home,100.1,True,2025
+202501170NOP,2025-01-17,NOP,UTA,New Orleans Pelicans,Utah Jazz,136.0,123.0,13.0,Home,104.8,True,2025
 202501170MIA,2025-01-17,MIA,DEN,Miami Heat,Denver Nuggets,113.0,133.0,-20.0,Home,97.7,True,2025
-202501250BRK,2025-01-25,BRK,MIA,Brooklyn Nets,Miami Heat,97.0,106.0,-9.0,Home,96.2,True,2025
-202501270MIA,2025-01-27,MIA,ORL,Miami Heat,Orlando Magic,125.0,119.0,6.0,Home,91.8,True,2025
-202501070DEN,2025-01-07,DEN,BOS,Denver Nuggets,Boston Celtics,106.0,118.0,-12.0,Home,93.9,True,2025
 202501170BOS,2025-01-17,BOS,ORL,Boston Celtics,Orlando Magic,121.0,94.0,27.0,Home,89.1,True,2025
-202501180BOS,2025-01-18,BOS,ATL,Boston Celtics,Atlanta Hawks,115.0,119.0,-4.0,Home,97.7,True,2025
-202501230LAL,2025-01-23,LAL,BOS,Los Angeles Lakers,Boston Celtics,117.0,96.0,21.0,Home,93.9,True,2025
-202412310LAL,2024-12-31,LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,110.0,122.0,-12.0,Home,100.6,True,2025
-202501030LAL,2025-01-03,LAL,ATL,Los Angeles Lakers,Atlanta Hawks,119.0,102.0,17.0,Home,98.7,True,2025
 202501170LAL,2025-01-17,LAL,BRK,Los Angeles Lakers,Brooklyn Nets,102.0,101.0,1.0,Home,90.9,True,2025
-202412300UTA,2024-12-30,UTA,DEN,Utah Jazz,Denver Nuggets,121.0,132.0,-11.0,Home,101.3,True,2025
-202501010DEN,2025-01-01,DEN,ATL,Denver Nuggets,Atlanta Hawks,139.0,120.0,19.0,Home,109.5,True,2025
-202501100DEN,2025-01-10,DEN,BRK,Denver Nuggets,Brooklyn Nets,124.0,105.0,19.0,Home,102.4,True,2025
+202501180POR,2025-01-18,POR,HOU,Portland Trail Blazers,Houston Rockets,103.0,125.0,-22.0,Home,103.7,True,2025
+202501180GSW,2025-01-18,GSW,WAS,Golden State Warriors,Washington Wizards,122.0,114.0,8.0,Home,97.4,True,2025
+202501180DET,2025-01-18,DET,PHO,Detroit Pistons,Phoenix Suns,121.0,125.0,-4.0,Home,99.7,True,2025
+202501180IND,2025-01-18,IND,PHI,Indiana Pacers,Philadelphia 76ers,115.0,102.0,13.0,Home,94.5,True,2025
+202501180MIN,2025-01-18,MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,117.0,124.0,-7.0,Home,95.0,True,2025
+202501180BOS,2025-01-18,BOS,ATL,Boston Celtics,Atlanta Hawks,115.0,119.0,-4.0,Home,97.7,True,2025
+202501200HOU,2025-01-20,HOU,DET,Houston Rockets,Detroit Pistons,96.0,107.0,-11.0,Home,100.1,True,2025
+202501200CHO,2025-01-20,CHO,DAL,Charlotte Hornets,Dallas Mavericks,110.0,105.0,5.0,Home,96.2,True,2025
+202501200MEM,2025-01-20,MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,108.0,106.0,2.0,Home,98.9,True,2025
+202501190MIA,2025-01-19,MIA,SAS,Miami Heat,San Antonio Spurs,128.0,107.0,21.0,Home,97.5,True,2025
+202501200GSW,2025-01-20,GSW,BOS,Golden State Warriors,Boston Celtics,85.0,125.0,-40.0,Home,95.5,True,2025
+202501200NYK,2025-01-20,NYK,ATL,New York Knicks,Atlanta Hawks,119.0,110.0,9.0,Home,99.7,True,2025
+202501190OKC,2025-01-19,OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,127.0,101.0,26.0,Home,96.6,True,2025
+202501190SAC,2025-01-19,SAC,WAS,Sacramento Kings,Washington Wizards,123.0,100.0,23.0,Home,106.0,True,2025
+202501190LAC,2025-01-19,LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,116.0,102.0,14.0,Home,94.6,True,2025
+202501200LAC,2025-01-20,LAC,CHI,Los Angeles Clippers,Chicago Bulls,99.0,112.0,-13.0,Home,96.3,True,2025
+202501190POR,2025-01-19,POR,CHI,Portland Trail Blazers,Chicago Bulls,113.0,102.0,11.0,Home,99.4,True,2025
+202501190MIL,2025-01-19,MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,123.0,109.0,14.0,Home,98.0,True,2025
+202501200NOP,2025-01-20,NOP,UTA,New Orleans Pelicans,Utah Jazz,123.0,119.0,4.0,Home,99.0,True,2025
 202501190ORL,2025-01-19,ORL,DEN,Orlando Magic,Denver Nuggets,100.0,113.0,-13.0,Home,96.6,True,2025
 202501200CLE,2025-01-20,CLE,PHO,Cleveland Cavaliers,Phoenix Suns,118.0,92.0,26.0,Home,96.6,True,2025
-202501070UTA,2025-01-07,UTA,ATL,Utah Jazz,Atlanta Hawks,121.0,124.0,-3.0,Home,102.2,True,2025
-202501090PHO,2025-01-09,PHO,ATL,Phoenix Suns,Atlanta Hawks,123.0,115.0,8.0,Home,94.0,True,2025
-202501140ATL,2025-01-14,ATL,PHO,Atlanta Hawks,Phoenix Suns,122.0,117.0,5.0,Home,100.3,True,2025
-202501120UTA,2025-01-12,UTA,BRK,Utah Jazz,Brooklyn Nets,112.0,111.0,1.0,Home,91.4,True,2025
+202501210BRK,2025-01-21,BRK,NYK,Brooklyn Nets,New York Knicks,95.0,99.0,-4.0,Home,94.8,True,2025
+202501210LAL,2025-01-21,LAL,WAS,Los Angeles Lakers,Washington Wizards,111.0,88.0,23.0,Home,101.1,True,2025
+202501210MIA,2025-01-21,MIA,POR,Miami Heat,Portland Trail Blazers,107.0,116.0,-9.0,Home,93.2,True,2025
+202501210DEN,2025-01-21,DEN,PHI,Denver Nuggets,Philadelphia 76ers,144.0,109.0,35.0,Home,96.2,True,2025
+202501210TOR,2025-01-21,TOR,ORL,Toronto Raptors,Orlando Magic,109.0,93.0,16.0,Home,91.7,True,2025
+202501220HOU,2025-01-22,HOU,CLE,Houston Rockets,Cleveland Cavaliers,109.0,108.0,1.0,Home,95.9,True,2025
+202501220MEM,2025-01-22,MEM,CHO,Memphis Grizzlies,Charlotte Hornets,132.0,120.0,12.0,Home,100.5,True,2025
+202501220DAL,2025-01-22,DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,114.0,115.0,-1.0,Home,99.2,True,2025
+202501220SAC,2025-01-22,SAC,GSW,Sacramento Kings,Golden State Warriors,123.0,117.0,6.0,Home,99.1,True,2025
+202501220OKC,2025-01-22,OKC,UTA,Oklahoma City Thunder,Utah Jazz,123.0,114.0,9.0,Home,100.8,True,2025
+202501220ATL,2025-01-22,ATL,DET,Atlanta Hawks,Detroit Pistons,104.0,114.0,-10.0,Home,107.3,True,2025
+202501220LAC,2025-01-22,LAC,BOS,Los Angeles Clippers,Boston Celtics,113.0,117.0,-4.0,Home,96.0,True,2025
 202501220BRK,2025-01-22,BRK,PHO,Brooklyn Nets,Phoenix Suns,84.0,108.0,-24.0,Home,91.9,True,2025
-202501110PHO,2025-01-11,PHO,UTA,Phoenix Suns,Utah Jazz,114.0,106.0,8.0,Home,90.9,True,2025
-202501050ORL,2025-01-05,ORL,UTA,Orlando Magic,Utah Jazz,92.0,105.0,-13.0,Home,97.1,True,2025
-202501280ATL,2025-01-28,ATL,HOU,Atlanta Hawks,Houston Rockets,,,,Home,,False,2025
-202501300MEM,2025-01-30,MEM,HOU,Memphis Grizzlies,Houston Rockets,,,,Home,,False,2025
-202502010HOU,2025-02-01,HOU,BRK,Houston Rockets,Brooklyn Nets,,,,Home,,False,2025
-202502030NYK,2025-02-03,NYK,HOU,New York Knicks,Houston Rockets,,,,Home,,False,2025
-202502040BRK,2025-02-04,BRK,HOU,Brooklyn Nets,Houston Rockets,,,,Home,,False,2025
-202502060MIN,2025-02-06,MIN,HOU,Minnesota Timberwolves,Houston Rockets,,,,Home,,False,2025
-202502080DAL,2025-02-08,DAL,HOU,Dallas Mavericks,Houston Rockets,,,,Home,,False,2025
-202502090HOU,2025-02-09,HOU,TOR,Houston Rockets,Toronto Raptors,,,,Home,,False,2025
-202502120HOU,2025-02-12,HOU,PHO,Houston Rockets,Phoenix Suns,,,,Home,,False,2025
-202502130HOU,2025-02-13,HOU,GSW,Houston Rockets,Golden State Warriors,,,,Home,,False,2025
-202502210HOU,2025-02-21,HOU,MIN,Houston Rockets,Minnesota Timberwolves,,,,Home,,False,2025
-202502220UTA,2025-02-22,UTA,HOU,Utah Jazz,Houston Rockets,,,,Home,,False,2025
-202502250HOU,2025-02-25,HOU,MIL,Houston Rockets,Milwaukee Bucks,,,,Home,,False,2025
-202502260HOU,2025-02-26,HOU,SAS,Houston Rockets,San Antonio Spurs,,,,Home,,False,2025
-202503010HOU,2025-03-01,HOU,SAC,Houston Rockets,Sacramento Kings,,,,Home,,False,2025
-202503030OKC,2025-03-03,OKC,HOU,Oklahoma City Thunder,Houston Rockets,,,,Home,,False,2025
-202503040IND,2025-03-04,IND,HOU,Indiana Pacers,Houston Rockets,,,,Home,,False,2025
-202503060NOP,2025-03-06,NOP,HOU,New Orleans Pelicans,Houston Rockets,,,,Home,,False,2025
-202503080HOU,2025-03-08,HOU,NOP,Houston Rockets,New Orleans Pelicans,,,,Home,,False,2025
-202503100HOU,2025-03-10,HOU,ORL,Houston Rockets,Orlando Magic,,,,Home,,False,2025
-202503120HOU,2025-03-12,HOU,PHO,Houston Rockets,Phoenix Suns,,,,Home,,False,2025
-202503140HOU,2025-03-14,HOU,DAL,Houston Rockets,Dallas Mavericks,,,,Home,,False,2025
-202503150HOU,2025-03-15,HOU,CHI,Houston Rockets,Chicago Bulls,,,,Home,,False,2025
-202503170HOU,2025-03-17,HOU,PHI,Houston Rockets,Philadelphia 76ers,,,,Home,,False,2025
-202503190ORL,2025-03-19,ORL,HOU,Orlando Magic,Houston Rockets,,,,Home,,False,2025
-202503210MIA,2025-03-21,MIA,HOU,Miami Heat,Houston Rockets,,,,Home,,False,2025
-202503230HOU,2025-03-23,HOU,DEN,Houston Rockets,Denver Nuggets,,,,Home,,False,2025
-202503250HOU,2025-03-25,HOU,ATL,Houston Rockets,Atlanta Hawks,,,,Home,,False,2025
-202503270UTA,2025-03-27,UTA,HOU,Utah Jazz,Houston Rockets,,,,Home,,False,2025
-202503300PHO,2025-03-30,PHO,HOU,Phoenix Suns,Houston Rockets,,,,Home,,False,2025
-202503310LAL,2025-03-31,LAL,HOU,Los Angeles Lakers,Houston Rockets,,,,Home,,False,2025
-202504020HOU,2025-04-02,HOU,UTA,Houston Rockets,Utah Jazz,,,,Home,,False,2025
-202504040HOU,2025-04-04,HOU,OKC,Houston Rockets,Oklahoma City Thunder,,,,Home,,False,2025
-202504060GSW,2025-04-06,GSW,HOU,Golden State Warriors,Houston Rockets,,,,Home,,False,2025
-202504090LAC,2025-04-09,LAC,HOU,Los Angeles Clippers,Houston Rockets,,,,Home,,False,2025
-202504110LAL,2025-04-11,LAL,HOU,Los Angeles Lakers,Houston Rockets,,,,Home,,False,2025
-202504130HOU,2025-04-13,HOU,DEN,Houston Rockets,Denver Nuggets,,,,Home,,False,2025
-202501290CHO,2025-01-29,CHO,BRK,Charlotte Hornets,Brooklyn Nets,,,,Home,,False,2025
-202501310CHO,2025-01-31,CHO,LAC,Charlotte Hornets,Los Angeles Clippers,,,,Home,,False,2025
-202502010CHO,2025-02-01,CHO,DEN,Charlotte Hornets,Denver Nuggets,,,,Home,,False,2025
-202502030CHO,2025-02-03,CHO,WAS,Charlotte Hornets,Washington Wizards,,,,Home,,False,2025
-202502050CHO,2025-02-05,CHO,MIL,Charlotte Hornets,Milwaukee Bucks,,,,Home,,False,2025
-202502070CHO,2025-02-07,CHO,SAS,Charlotte Hornets,San Antonio Spurs,,,,Home,,False,2025
-202502090DET,2025-02-09,DET,CHO,Detroit Pistons,Charlotte Hornets,,,,Home,,False,2025
-202502100BRK,2025-02-10,BRK,CHO,Brooklyn Nets,Charlotte Hornets,,,,Home,,False,2025
-202502120ORL,2025-02-12,ORL,CHO,Orlando Magic,Charlotte Hornets,,,,Home,,False,2025
-202502190LAL,2025-02-19,LAL,CHO,Los Angeles Lakers,Charlotte Hornets,,,,Home,,False,2025
-202502200DEN,2025-02-20,DEN,CHO,Denver Nuggets,Charlotte Hornets,,,,Home,,False,2025
-202502220POR,2025-02-22,POR,CHO,Portland Trail Blazers,Charlotte Hornets,,,,Home,,False,2025
-202502240SAC,2025-02-24,SAC,CHO,Sacramento Kings,Charlotte Hornets,,,,Home,,False,2025
-202502250GSW,2025-02-25,GSW,CHO,Golden State Warriors,Charlotte Hornets,,,,Home,,False,2025
-202502270DAL,2025-02-27,DAL,CHO,Dallas Mavericks,Charlotte Hornets,,,,Home,,False,2025
-202503010CHO,2025-03-01,CHO,WAS,Charlotte Hornets,Washington Wizards,,,,Home,,False,2025
-202503030CHO,2025-03-03,CHO,GSW,Charlotte Hornets,Golden State Warriors,,,,Home,,False,2025
-202503050CHO,2025-03-05,CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,,,,Home,,False,2025
-202503070CHO,2025-03-07,CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,,,,Home,,False,2025
-202503080CHO,2025-03-08,CHO,BRK,Charlotte Hornets,Brooklyn Nets,,,,Home,,False,2025
-202503100MIA,2025-03-10,MIA,CHO,Miami Heat,Charlotte Hornets,,,,Home,,False,2025
-202503120ATL,2025-03-12,ATL,CHO,Atlanta Hawks,Charlotte Hornets,,,,Home,,False,2025
-202503140SAS,2025-03-14,SAS,CHO,San Antonio Spurs,Charlotte Hornets,,,,Home,,False,2025
-202503160LAC,2025-03-16,LAC,CHO,Los Angeles Clippers,Charlotte Hornets,,,,Home,,False,2025
-202503180CHO,2025-03-18,CHO,ATL,Charlotte Hornets,Atlanta Hawks,,,,Home,,False,2025
-202503200CHO,2025-03-20,CHO,NYK,Charlotte Hornets,New York Knicks,,,,Home,,False,2025
-202503210OKC,2025-03-21,OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,,,,Home,,False,2025
-202503230MIA,2025-03-23,MIA,CHO,Miami Heat,Charlotte Hornets,,,,Home,,False,2025
-202503250CHO,2025-03-25,CHO,ORL,Charlotte Hornets,Orlando Magic,,,,Home,,False,2025
-202503280TOR,2025-03-28,TOR,CHO,Toronto Raptors,Charlotte Hornets,,,,Home,,False,2025
-202503300NOP,2025-03-30,NOP,CHO,New Orleans Pelicans,Charlotte Hornets,,,,Home,,False,2025
-202503310CHO,2025-03-31,CHO,UTA,Charlotte Hornets,Utah Jazz,,,,Home,,False,2025
-202504020IND,2025-04-02,IND,CHO,Indiana Pacers,Charlotte Hornets,,,,Home,,False,2025
-202504040CHO,2025-04-04,CHO,SAC,Charlotte Hornets,Sacramento Kings,,,,Home,,False,2025
-202504060CHO,2025-04-06,CHO,CHI,Charlotte Hornets,Chicago Bulls,,,,Home,,False,2025
-202504080CHO,2025-04-08,CHO,MEM,Charlotte Hornets,Memphis Grizzlies,,,,Home,,False,2025
-202504090TOR,2025-04-09,TOR,CHO,Toronto Raptors,Charlotte Hornets,,,,Home,,False,2025
-202504110BOS,2025-04-11,BOS,CHO,Boston Celtics,Charlotte Hornets,,,,Home,,False,2025
-202504130BOS,2025-04-13,BOS,CHO,Boston Celtics,Charlotte Hornets,,,,Home,,False,2025
-202502020MIL,2025-02-02,MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,,,,Home,,False,2025
-202502030MEM,2025-02-03,MEM,SAS,Memphis Grizzlies,San Antonio Spurs,,,,Home,,False,2025
-202502050TOR,2025-02-05,TOR,MEM,Toronto Raptors,Memphis Grizzlies,,,,Home,,False,2025
-202502080MEM,2025-02-08,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
-202502110PHO,2025-02-11,PHO,MEM,Phoenix Suns,Memphis Grizzlies,,,,Home,,False,2025
-202502120LAC,2025-02-12,LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,,,,Home,,False,2025
-202502200IND,2025-02-20,IND,MEM,Indiana Pacers,Memphis Grizzlies,,,,Home,,False,2025
-202502210ORL,2025-02-21,ORL,MEM,Orlando Magic,Memphis Grizzlies,,,,Home,,False,2025
-202502230CLE,2025-02-23,CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,,,,Home,,False,2025
-202502250MEM,2025-02-25,MEM,PHO,Memphis Grizzlies,Phoenix Suns,,,,Home,,False,2025
-202502280MEM,2025-02-28,MEM,NYK,Memphis Grizzlies,New York Knicks,,,,Home,,False,2025
-202503010MEM,2025-03-01,MEM,SAS,Memphis Grizzlies,San Antonio Spurs,,,,Home,,False,2025
-202503030MEM,2025-03-03,MEM,ATL,Memphis Grizzlies,Atlanta Hawks,,,,Home,,False,2025
-202503050MEM,2025-03-05,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,,,,Home,,False,2025
-202503070DAL,2025-03-07,DAL,MEM,Dallas Mavericks,Memphis Grizzlies,,,,Home,,False,2025
-202503090NOP,2025-03-09,NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,,,,Home,,False,2025
-202503100MEM,2025-03-10,MEM,PHO,Memphis Grizzlies,Phoenix Suns,,,,Home,,False,2025
-202503120MEM,2025-03-12,MEM,UTA,Memphis Grizzlies,Utah Jazz,,,,Home,,False,2025
-202503140MEM,2025-03-14,MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,,,,Home,,False,2025
-202503150MEM,2025-03-15,MEM,MIA,Memphis Grizzlies,Miami Heat,,,,Home,,False,2025
-202503170SAC,2025-03-17,SAC,MEM,Sacramento Kings,Memphis Grizzlies,,,,Home,,False,2025
-202503190POR,2025-03-19,POR,MEM,Portland Trail Blazers,Memphis Grizzlies,,,,Home,,False,2025
-202503210LAC,2025-03-21,LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,,,,Home,,False,2025
-202503250UTA,2025-03-25,UTA,MEM,Utah Jazz,Memphis Grizzlies,,,,Home,,False,2025
-202503270OKC,2025-03-27,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,,,,Home,,False,2025
-202503290MEM,2025-03-29,MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,,,,Home,,False,2025
-202503310MEM,2025-03-31,MEM,BOS,Memphis Grizzlies,Boston Celtics,,,,Home,,False,2025
-202504010MEM,2025-04-01,MEM,GSW,Memphis Grizzlies,Golden State Warriors,,,,Home,,False,2025
-202504030MIA,2025-04-03,MIA,MEM,Miami Heat,Memphis Grizzlies,,,,Home,,False,2025
-202504050DET,2025-04-05,DET,MEM,Detroit Pistons,Memphis Grizzlies,,,,Home,,False,2025
-202504100MEM,2025-04-10,MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,,,,Home,,False,2025
-202504110DEN,2025-04-11,DEN,MEM,Denver Nuggets,Memphis Grizzlies,,,,Home,,False,2025
-202504130MEM,2025-04-13,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,,,,Home,,False,2025
-202501290SAS,2025-01-29,SAS,LAC,San Antonio Spurs,Los Angeles Clippers,,,,Home,,False,2025
-202501310SAS,2025-01-31,SAS,MIL,San Antonio Spurs,Milwaukee Bucks,,,,Home,,False,2025
-202502010SAS,2025-02-01,SAS,MIA,San Antonio Spurs,Miami Heat,,,,Home,,False,2025
-202502050ATL,2025-02-05,ATL,SAS,Atlanta Hawks,San Antonio Spurs,,,,Home,,False,2025
-202502080ORL,2025-02-08,ORL,SAS,Orlando Magic,San Antonio Spurs,,,,Home,,False,2025
-202502100WAS,2025-02-10,WAS,SAS,Washington Wizards,San Antonio Spurs,,,,Home,,False,2025
-202502120BOS,2025-02-12,BOS,SAS,Boston Celtics,San Antonio Spurs,,,,Home,,False,2025
-202502200SAS,2025-02-20,SAS,PHO,San Antonio Spurs,Phoenix Suns,,,,Home,,False,2025
-202502210SAS,2025-02-21,SAS,DET,San Antonio Spurs,Detroit Pistons,,,,Home,,False,2025
-202502230NOP,2025-02-23,NOP,SAS,New Orleans Pelicans,San Antonio Spurs,,,,Home,,False,2025
-202502250NOP,2025-02-25,NOP,SAS,New Orleans Pelicans,San Antonio Spurs,,,,Home,,False,2025
-202503020SAS,2025-03-02,SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,,,,Home,,False,2025
-202503040SAS,2025-03-04,SAS,BRK,San Antonio Spurs,Brooklyn Nets,,,,Home,,False,2025
-202503070SAC,2025-03-07,SAC,SAS,Sacramento Kings,San Antonio Spurs,,,,Home,,False,2025
-202503090MIN,2025-03-09,MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,,,,Home,,False,2025
-202503100SAS,2025-03-10,SAS,DAL,San Antonio Spurs,Dallas Mavericks,,,,Home,,False,2025
-202503120SAS,2025-03-12,SAS,DAL,San Antonio Spurs,Dallas Mavericks,,,,Home,,False,2025
-202503150SAS,2025-03-15,SAS,NOP,San Antonio Spurs,New Orleans Pelicans,,,,Home,,False,2025
-202503170SAS,2025-03-17,SAS,ORL,San Antonio Spurs,Orlando Magic,,,,Home,,False,2025
-202503190SAS,2025-03-19,SAS,NYK,San Antonio Spurs,New York Knicks,,,,Home,,False,2025
-202503210SAS,2025-03-21,SAS,PHI,San Antonio Spurs,Philadelphia 76ers,,,,Home,,False,2025
-202503230TOR,2025-03-23,TOR,SAS,Toronto Raptors,San Antonio Spurs,,,,Home,,False,2025
-202503250DET,2025-03-25,DET,SAS,Detroit Pistons,San Antonio Spurs,,,,Home,,False,2025
-202503270CLE,2025-03-27,CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,,,,Home,,False,2025
-202503290SAS,2025-03-29,SAS,BOS,San Antonio Spurs,Boston Celtics,,,,Home,,False,2025
-202503300SAS,2025-03-30,SAS,GSW,San Antonio Spurs,Golden State Warriors,,,,Home,,False,2025
-202504020DEN,2025-04-02,DEN,SAS,Denver Nuggets,San Antonio Spurs,,,,Home,,False,2025
-202504040SAS,2025-04-04,SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,,,,Home,,False,2025
-202504060POR,2025-04-06,POR,SAS,Portland Trail Blazers,San Antonio Spurs,,,,Home,,False,2025
-202504080LAC,2025-04-08,LAC,SAS,Los Angeles Clippers,San Antonio Spurs,,,,Home,,False,2025
-202504090GSW,2025-04-09,GSW,SAS,Golden State Warriors,San Antonio Spurs,,,,Home,,False,2025
-202504110PHO,2025-04-11,PHO,SAS,Phoenix Suns,San Antonio Spurs,,,,Home,,False,2025
-202504130SAS,2025-04-13,SAS,TOR,San Antonio Spurs,Toronto Raptors,,,,Home,,False,2025
-202501290NOP,2025-01-29,NOP,DAL,New Orleans Pelicans,Dallas Mavericks,,,,Home,,False,2025
-202501310DET,2025-01-31,DET,DAL,Detroit Pistons,Dallas Mavericks,,,,Home,,False,2025
-202502020CLE,2025-02-02,CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,,,,Home,,False,2025
-202502040PHI,2025-02-04,PHI,DAL,Philadelphia 76ers,Dallas Mavericks,,,,Home,,False,2025
-202502060BOS,2025-02-06,BOS,DAL,Boston Celtics,Dallas Mavericks,,,,Home,,False,2025
-202502100DAL,2025-02-10,DAL,SAC,Dallas Mavericks,Sacramento Kings,,,,Home,,False,2025
-202502120DAL,2025-02-12,DAL,GSW,Dallas Mavericks,Golden State Warriors,,,,Home,,False,2025
-202502130DAL,2025-02-13,DAL,MIA,Dallas Mavericks,Miami Heat,,,,Home,,False,2025
-202502210DAL,2025-02-21,DAL,NOP,Dallas Mavericks,New Orleans Pelicans,,,,Home,,False,2025
-202502230GSW,2025-02-23,GSW,DAL,Golden State Warriors,Dallas Mavericks,,,,Home,,False,2025
-202502250LAL,2025-02-25,LAL,DAL,Los Angeles Lakers,Dallas Mavericks,,,,Home,,False,2025
-202503010DAL,2025-03-01,DAL,MIL,Dallas Mavericks,Milwaukee Bucks,,,,Home,,False,2025
-202503030DAL,2025-03-03,DAL,SAC,Dallas Mavericks,Sacramento Kings,,,,Home,,False,2025
-202503050MIL,2025-03-05,MIL,DAL,Milwaukee Bucks,Dallas Mavericks,,,,Home,,False,2025
-202503090DAL,2025-03-09,DAL,PHO,Dallas Mavericks,Phoenix Suns,,,,Home,,False,2025
-202503160DAL,2025-03-16,DAL,PHI,Dallas Mavericks,Philadelphia 76ers,,,,Home,,False,2025
-202503190IND,2025-03-19,IND,DAL,Indiana Pacers,Dallas Mavericks,,,,Home,,False,2025
-202503210DAL,2025-03-21,DAL,DET,Dallas Mavericks,Detroit Pistons,,,,Home,,False,2025
-202503240BRK,2025-03-24,BRK,DAL,Brooklyn Nets,Dallas Mavericks,,,,Home,,False,2025
-202503250NYK,2025-03-25,NYK,DAL,New York Knicks,Dallas Mavericks,,,,Home,,False,2025
-202503270ORL,2025-03-27,ORL,DAL,Orlando Magic,Dallas Mavericks,,,,Home,,False,2025
-202503290CHI,2025-03-29,CHI,DAL,Chicago Bulls,Dallas Mavericks,,,,Home,,False,2025
-202503310DAL,2025-03-31,DAL,BRK,Dallas Mavericks,Brooklyn Nets,,,,Home,,False,2025
-202504020DAL,2025-04-02,DAL,ATL,Dallas Mavericks,Atlanta Hawks,,,,Home,,False,2025
-202504040LAC,2025-04-04,LAC,DAL,Los Angeles Clippers,Dallas Mavericks,,,,Home,,False,2025
-202504050LAC,2025-04-05,LAC,DAL,Los Angeles Clippers,Dallas Mavericks,,,,Home,,False,2025
-202504090DAL,2025-04-09,DAL,LAL,Dallas Mavericks,Los Angeles Lakers,,,,Home,,False,2025
-202504110DAL,2025-04-11,DAL,TOR,Dallas Mavericks,Toronto Raptors,,,,Home,,False,2025
-202501280GSW,2025-01-28,GSW,UTA,Golden State Warriors,Utah Jazz,,,,Home,,False,2025
-202501290GSW,2025-01-29,GSW,OKC,Golden State Warriors,Oklahoma City Thunder,,,,Home,,False,2025
-202501310GSW,2025-01-31,GSW,PHO,Golden State Warriors,Phoenix Suns,,,,Home,,False,2025
-202502030GSW,2025-02-03,GSW,ORL,Golden State Warriors,Orlando Magic,,,,Home,,False,2025
-202502050UTA,2025-02-05,UTA,GSW,Utah Jazz,Golden State Warriors,,,,Home,,False,2025
-202502060LAL,2025-02-06,LAL,GSW,Los Angeles Lakers,Golden State Warriors,,,,Home,,False,2025
-202502080CHI,2025-02-08,CHI,GSW,Chicago Bulls,Golden State Warriors,,,,Home,,False,2025
-202502100MIL,2025-02-10,MIL,GSW,Milwaukee Bucks,Golden State Warriors,,,,Home,,False,2025
-202502210SAC,2025-02-21,SAC,GSW,Sacramento Kings,Golden State Warriors,,,,Home,,False,2025
-202502270ORL,2025-02-27,ORL,GSW,Orlando Magic,Golden State Warriors,,,,Home,,False,2025
-202503010PHI,2025-03-01,PHI,GSW,Philadelphia 76ers,Golden State Warriors,,,,Home,,False,2025
-202503040NYK,2025-03-04,NYK,GSW,New York Knicks,Golden State Warriors,,,,Home,,False,2025
-202503060BRK,2025-03-06,BRK,GSW,Brooklyn Nets,Golden State Warriors,,,,Home,,False,2025
-202503080GSW,2025-03-08,GSW,DET,Golden State Warriors,Detroit Pistons,,,,Home,,False,2025
-202503100GSW,2025-03-10,GSW,POR,Golden State Warriors,Portland Trail Blazers,,,,Home,,False,2025
-202503130GSW,2025-03-13,GSW,SAC,Golden State Warriors,Sacramento Kings,,,,Home,,False,2025
-202503150GSW,2025-03-15,GSW,NYK,Golden State Warriors,New York Knicks,,,,Home,,False,2025
-202503170GSW,2025-03-17,GSW,DEN,Golden State Warriors,Denver Nuggets,,,,Home,,False,2025
-202503190GSW,2025-03-19,GSW,TOR,Golden State Warriors,Toronto Raptors,,,,Home,,False,2025
-202503200GSW,2025-03-20,GSW,MIL,Golden State Warriors,Milwaukee Bucks,,,,Home,,False,2025
-202503220ATL,2025-03-22,ATL,GSW,Atlanta Hawks,Golden State Warriors,,,,Home,,False,2025
-202503250MIA,2025-03-25,MIA,GSW,Miami Heat,Golden State Warriors,,,,Home,,False,2025
-202503280NOP,2025-03-28,NOP,GSW,New Orleans Pelicans,Golden State Warriors,,,,Home,,False,2025
-202504030LAL,2025-04-03,LAL,GSW,Los Angeles Lakers,Golden State Warriors,,,,Home,,False,2025
-202504040GSW,2025-04-04,GSW,DEN,Golden State Warriors,Denver Nuggets,,,,Home,,False,2025
-202504080PHO,2025-04-08,PHO,GSW,Phoenix Suns,Golden State Warriors,,,,Home,,False,2025
-202504110POR,2025-04-11,POR,GSW,Portland Trail Blazers,Golden State Warriors,,,,Home,,False,2025
-202504130GSW,2025-04-13,GSW,LAC,Golden State Warriors,Los Angeles Clippers,,,,Home,,False,2025
-202501290NYK,2025-01-29,NYK,DEN,New York Knicks,Denver Nuggets,,,,Home,,False,2025
-202502010NYK,2025-02-01,NYK,LAL,New York Knicks,Los Angeles Lakers,,,,Home,,False,2025
-202502040TOR,2025-02-04,TOR,NYK,Toronto Raptors,New York Knicks,,,,Home,,False,2025
-202502080NYK,2025-02-08,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
-202502110IND,2025-02-11,IND,NYK,Indiana Pacers,New York Knicks,,,,Home,,False,2025
-202502120NYK,2025-02-12,NYK,ATL,New York Knicks,Atlanta Hawks,,,,Home,,False,2025
-202502200NYK,2025-02-20,NYK,CHI,New York Knicks,Chicago Bulls,,,,Home,,False,2025
-202502210CLE,2025-02-21,CLE,NYK,Cleveland Cavaliers,New York Knicks,,,,Home,,False,2025
-202502230BOS,2025-02-23,BOS,NYK,Boston Celtics,New York Knicks,,,,Home,,False,2025
-202502260NYK,2025-02-26,NYK,PHI,New York Knicks,Philadelphia 76ers,,,,Home,,False,2025
-202503020MIA,2025-03-02,MIA,NYK,Miami Heat,New York Knicks,,,,Home,,False,2025
-202503060LAL,2025-03-06,LAL,NYK,Los Angeles Lakers,New York Knicks,,,,Home,,False,2025
-202503070LAC,2025-03-07,LAC,NYK,Los Angeles Clippers,New York Knicks,,,,Home,,False,2025
-202503100SAC,2025-03-10,SAC,NYK,Sacramento Kings,New York Knicks,,,,Home,,False,2025
-202503120POR,2025-03-12,POR,NYK,Portland Trail Blazers,New York Knicks,,,,Home,,False,2025
-202503170NYK,2025-03-17,NYK,MIA,New York Knicks,Miami Heat,,,,Home,,False,2025
-202503220NYK,2025-03-22,NYK,WAS,New York Knicks,Washington Wizards,,,,Home,,False,2025
-202503260NYK,2025-03-26,NYK,LAC,New York Knicks,Los Angeles Clippers,,,,Home,,False,2025
-202503280MIL,2025-03-28,MIL,NYK,Milwaukee Bucks,New York Knicks,,,,Home,,False,2025
-202503300NYK,2025-03-30,NYK,POR,New York Knicks,Portland Trail Blazers,,,,Home,,False,2025
-202504010NYK,2025-04-01,NYK,PHI,New York Knicks,Philadelphia 76ers,,,,Home,,False,2025
-202504020CLE,2025-04-02,CLE,NYK,Cleveland Cavaliers,New York Knicks,,,,Home,,False,2025
-202504050ATL,2025-04-05,ATL,NYK,Atlanta Hawks,New York Knicks,,,,Home,,False,2025
-202504060NYK,2025-04-06,NYK,PHO,New York Knicks,Phoenix Suns,,,,Home,,False,2025
-202504080NYK,2025-04-08,NYK,BOS,New York Knicks,Boston Celtics,,,,Home,,False,2025
-202504100DET,2025-04-10,DET,NYK,Detroit Pistons,New York Knicks,,,,Home,,False,2025
-202504110NYK,2025-04-11,NYK,CLE,New York Knicks,Cleveland Cavaliers,,,,Home,,False,2025
-202504130BRK,2025-04-13,BRK,NYK,Brooklyn Nets,New York Knicks,,,,Home,,False,2025
-202502010OKC,2025-02-01,OKC,SAC,Oklahoma City Thunder,Sacramento Kings,,,,Home,,False,2025
-202502030OKC,2025-02-03,OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,,,,Home,,False,2025
-202502050OKC,2025-02-05,OKC,PHO,Oklahoma City Thunder,Phoenix Suns,,,,Home,,False,2025
-202502070OKC,2025-02-07,OKC,TOR,Oklahoma City Thunder,Toronto Raptors,,,,Home,,False,2025
-202502100OKC,2025-02-10,OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,,,,Home,,False,2025
-202502120OKC,2025-02-12,OKC,MIA,Oklahoma City Thunder,Miami Heat,,,,Home,,False,2025
-202502130MIN,2025-02-13,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,,,,Home,,False,2025
-202502210UTA,2025-02-21,UTA,OKC,Utah Jazz,Oklahoma City Thunder,,,,Home,,False,2025
-202502230MIN,2025-02-23,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,,,,Home,,False,2025
-202502240OKC,2025-02-24,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,,,,Home,,False,2025
-202502260BRK,2025-02-26,BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,,,,Home,,False,2025
-202502280ATL,2025-02-28,ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,,,,Home,,False,2025
-202503070OKC,2025-03-07,OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,,,,Home,,False,2025
-202503090OKC,2025-03-09,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
-202503100OKC,2025-03-10,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,,,,Home,,False,2025
-202503120BOS,2025-03-12,BOS,OKC,Boston Celtics,Oklahoma City Thunder,,,,Home,,False,2025
-202503150DET,2025-03-15,DET,OKC,Detroit Pistons,Oklahoma City Thunder,,,,Home,,False,2025
-202503160MIL,2025-03-16,MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,,,,Home,,False,2025
-202503190OKC,2025-03-19,OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,,,,Home,,False,2025
-202503230LAC,2025-03-23,LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,,,,Home,,False,2025
-202503250SAC,2025-03-25,SAC,OKC,Sacramento Kings,Oklahoma City Thunder,,,,Home,,False,2025
-202503290OKC,2025-03-29,OKC,IND,Oklahoma City Thunder,Indiana Pacers,,,,Home,,False,2025
-202503310OKC,2025-03-31,OKC,CHI,Oklahoma City Thunder,Chicago Bulls,,,,Home,,False,2025
-202504020OKC,2025-04-02,OKC,DET,Oklahoma City Thunder,Detroit Pistons,,,,Home,,False,2025
-202504060OKC,2025-04-06,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,,,,Home,,False,2025
-202504080OKC,2025-04-08,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,,,,Home,,False,2025
-202504090PHO,2025-04-09,PHO,OKC,Phoenix Suns,Oklahoma City Thunder,,,,Home,,False,2025
-202504110UTA,2025-04-11,UTA,OKC,Utah Jazz,Oklahoma City Thunder,,,,Home,,False,2025
-202504130NOP,2025-04-13,NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,,,,Home,,False,2025
-202501290IND,2025-01-29,IND,DET,Indiana Pacers,Detroit Pistons,,,,Home,,False,2025
-202502020DET,2025-02-02,DET,CHI,Detroit Pistons,Chicago Bulls,,,,Home,,False,2025
-202502030DET,2025-02-03,DET,ATL,Detroit Pistons,Atlanta Hawks,,,,Home,,False,2025
-202502050DET,2025-02-05,DET,CLE,Detroit Pistons,Cleveland Cavaliers,,,,Home,,False,2025
-202502070DET,2025-02-07,DET,PHI,Detroit Pistons,Philadelphia 76ers,,,,Home,,False,2025
-202502110CHI,2025-02-11,CHI,DET,Chicago Bulls,Detroit Pistons,,,,Home,,False,2025
-202502120CHI,2025-02-12,CHI,DET,Chicago Bulls,Detroit Pistons,,,,Home,,False,2025
-202502230ATL,2025-02-23,ATL,DET,Atlanta Hawks,Detroit Pistons,,,,Home,,False,2025
-202502240DET,2025-02-24,DET,LAC,Detroit Pistons,Los Angeles Clippers,,,,Home,,False,2025
-202502260DET,2025-02-26,DET,BOS,Detroit Pistons,Boston Celtics,,,,Home,,False,2025
-202502280DET,2025-02-28,DET,DEN,Detroit Pistons,Denver Nuggets,,,,Home,,False,2025
-202503010DET,2025-03-01,DET,BRK,Detroit Pistons,Brooklyn Nets,,,,Home,,False,2025
-202503030UTA,2025-03-03,UTA,DET,Utah Jazz,Detroit Pistons,,,,Home,,False,2025
-202503050LAC,2025-03-05,LAC,DET,Los Angeles Clippers,Detroit Pistons,,,,Home,,False,2025
-202503090POR,2025-03-09,POR,DET,Portland Trail Blazers,Detroit Pistons,,,,Home,,False,2025
-202503110DET,2025-03-11,DET,WAS,Detroit Pistons,Washington Wizards,,,,Home,,False,2025
-202503130DET,2025-03-13,DET,WAS,Detroit Pistons,Washington Wizards,,,,Home,,False,2025
-202503170NOP,2025-03-17,NOP,DET,New Orleans Pelicans,Detroit Pistons,,,,Home,,False,2025
-202503190MIA,2025-03-19,MIA,DET,Miami Heat,Detroit Pistons,,,,Home,,False,2025
-202503230DET,2025-03-23,DET,NOP,Detroit Pistons,New Orleans Pelicans,,,,Home,,False,2025
-202503280DET,2025-03-28,DET,CLE,Detroit Pistons,Cleveland Cavaliers,,,,Home,,False,2025
-202503300MIN,2025-03-30,MIN,DET,Minnesota Timberwolves,Detroit Pistons,,,,Home,,False,2025
-202504040TOR,2025-04-04,TOR,DET,Toronto Raptors,Detroit Pistons,,,,Home,,False,2025
-202504070DET,2025-04-07,DET,SAC,Detroit Pistons,Sacramento Kings,,,,Home,,False,2025
-202504110DET,2025-04-11,DET,MIL,Detroit Pistons,Milwaukee Bucks,,,,Home,,False,2025
-202504130MIL,2025-04-13,MIL,DET,Milwaukee Bucks,Detroit Pistons,,,,Home,,False,2025
-202501290WAS,2025-01-29,WAS,TOR,Washington Wizards,Toronto Raptors,,,,Home,,False,2025
-202501300WAS,2025-01-30,WAS,LAL,Washington Wizards,Los Angeles Lakers,,,,Home,,False,2025
-202502010MIN,2025-02-01,MIN,WAS,Minnesota Timberwolves,Washington Wizards,,,,Home,,False,2025
-202502050BRK,2025-02-05,BRK,WAS,Brooklyn Nets,Washington Wizards,,,,Home,,False,2025
-202502070WAS,2025-02-07,WAS,CLE,Washington Wizards,Cleveland Cavaliers,,,,Home,,False,2025
-202502080WAS,2025-02-08,WAS,ATL,Washington Wizards,Atlanta Hawks,,,,Home,,False,2025
-202502120WAS,2025-02-12,WAS,IND,Washington Wizards,Indiana Pacers,,,,Home,,False,2025
-202502210WAS,2025-02-21,WAS,MIL,Washington Wizards,Milwaukee Bucks,,,,Home,,False,2025
-202502230ORL,2025-02-23,ORL,WAS,Orlando Magic,Washington Wizards,,,,Home,,False,2025
-202502240WAS,2025-02-24,WAS,BRK,Washington Wizards,Brooklyn Nets,,,,Home,,False,2025
-202502260WAS,2025-02-26,WAS,POR,Washington Wizards,Portland Trail Blazers,,,,Home,,False,2025
-202503030MIA,2025-03-03,MIA,WAS,Miami Heat,Washington Wizards,,,,Home,,False,2025
-202503050WAS,2025-03-05,WAS,UTA,Washington Wizards,Utah Jazz,,,,Home,,False,2025
-202503080TOR,2025-03-08,TOR,WAS,Toronto Raptors,Washington Wizards,,,,Home,,False,2025
-202503100TOR,2025-03-10,TOR,WAS,Toronto Raptors,Washington Wizards,,,,Home,,False,2025
-202503150DEN,2025-03-15,DEN,WAS,Denver Nuggets,Washington Wizards,,,,Home,,False,2025
-202503170POR,2025-03-17,POR,WAS,Portland Trail Blazers,Washington Wizards,,,,Home,,False,2025
-202503190UTA,2025-03-19,UTA,WAS,Utah Jazz,Washington Wizards,,,,Home,,False,2025
-202503210WAS,2025-03-21,WAS,ORL,Washington Wizards,Orlando Magic,,,,Home,,False,2025
-202503240WAS,2025-03-24,WAS,TOR,Washington Wizards,Toronto Raptors,,,,Home,,False,2025
-202503260PHI,2025-03-26,PHI,WAS,Philadelphia 76ers,Washington Wizards,,,,Home,,False,2025
-202503270WAS,2025-03-27,WAS,IND,Washington Wizards,Indiana Pacers,,,,Home,,False,2025
-202503290WAS,2025-03-29,WAS,BRK,Washington Wizards,Brooklyn Nets,,,,Home,,False,2025
-202503310WAS,2025-03-31,WAS,MIA,Washington Wizards,Miami Heat,,,,Home,,False,2025
-202504020WAS,2025-04-02,WAS,SAC,Washington Wizards,Sacramento Kings,,,,Home,,False,2025
-202504030WAS,2025-04-03,WAS,ORL,Washington Wizards,Orlando Magic,,,,Home,,False,2025
-202504060BOS,2025-04-06,BOS,WAS,Boston Celtics,Washington Wizards,,,,Home,,False,2025
-202504080IND,2025-04-08,IND,WAS,Indiana Pacers,Washington Wizards,,,,Home,,False,2025
-202504090WAS,2025-04-09,WAS,PHI,Washington Wizards,Philadelphia 76ers,,,,Home,,False,2025
-202504110CHI,2025-04-11,CHI,WAS,Chicago Bulls,Washington Wizards,,,,Home,,False,2025
-202504130MIA,2025-04-13,MIA,WAS,Miami Heat,Washington Wizards,,,,Home,,False,2025
-202502020TOR,2025-02-02,TOR,LAC,Toronto Raptors,Los Angeles Clippers,,,,Home,,False,2025
-202502040LAC,2025-02-04,LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,,,,Home,,False,2025
-202502060LAC,2025-02-06,LAC,IND,Los Angeles Clippers,Indiana Pacers,,,,Home,,False,2025
-202502080LAC,2025-02-08,LAC,UTA,Los Angeles Clippers,Utah Jazz,,,,Home,,False,2025
-202502130UTA,2025-02-13,UTA,LAC,Utah Jazz,Los Angeles Clippers,,,,Home,,False,2025
-202502200MIL,2025-02-20,MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,,,,Home,,False,2025
-202502230IND,2025-02-23,IND,LAC,Indiana Pacers,Los Angeles Clippers,,,,Home,,False,2025
-202502260CHI,2025-02-26,CHI,LAC,Chicago Bulls,Los Angeles Clippers,,,,Home,,False,2025
-202502280LAL,2025-02-28,LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,,,,Home,,False,2025
-202503020LAL,2025-03-02,LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,,,,Home,,False,2025
-202503040PHO,2025-03-04,PHO,LAC,Phoenix Suns,Los Angeles Clippers,,,,Home,,False,2025
-202503090LAC,2025-03-09,LAC,SAC,Los Angeles Clippers,Sacramento Kings,,,,Home,,False,2025
-202503110NOP,2025-03-11,NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,,,,Home,,False,2025
-202503120MIA,2025-03-12,MIA,LAC,Miami Heat,Los Angeles Clippers,,,,Home,,False,2025
-202503140ATL,2025-03-14,ATL,LAC,Atlanta Hawks,Los Angeles Clippers,,,,Home,,False,2025
-202503180LAC,2025-03-18,LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,,,,Home,,False,2025
-202503280BRK,2025-03-28,BRK,LAC,Brooklyn Nets,Los Angeles Clippers,,,,Home,,False,2025
-202503300CLE,2025-03-30,CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,,,,Home,,False,2025
-202503310ORL,2025-03-31,ORL,LAC,Orlando Magic,Los Angeles Clippers,,,,Home,,False,2025
-202504020LAC,2025-04-02,LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,,,,Home,,False,2025
-202504110SAC,2025-04-11,SAC,LAC,Sacramento Kings,Los Angeles Clippers,,,,Home,,False,2025
-202501290BOS,2025-01-29,BOS,CHI,Boston Celtics,Chicago Bulls,,,,Home,,False,2025
-202501310TOR,2025-01-31,TOR,CHI,Toronto Raptors,Chicago Bulls,,,,Home,,False,2025
-202502040CHI,2025-02-04,CHI,MIA,Chicago Bulls,Miami Heat,,,,Home,,False,2025
-202502050MIN,2025-02-05,MIN,CHI,Minnesota Timberwolves,Chicago Bulls,,,,Home,,False,2025
-202502220CHI,2025-02-22,CHI,PHO,Chicago Bulls,Phoenix Suns,,,,Home,,False,2025
-202502240PHI,2025-02-24,PHI,CHI,Philadelphia 76ers,Chicago Bulls,,,,Home,,False,2025
-202502280CHI,2025-02-28,CHI,TOR,Chicago Bulls,Toronto Raptors,,,,Home,,False,2025
-202503020IND,2025-03-02,IND,CHI,Indiana Pacers,Chicago Bulls,,,,Home,,False,2025
-202503040CHI,2025-03-04,CHI,CLE,Chicago Bulls,Cleveland Cavaliers,,,,Home,,False,2025
-202503080MIA,2025-03-08,MIA,CHI,Miami Heat,Chicago Bulls,,,,Home,,False,2025
-202503100CHI,2025-03-10,CHI,IND,Chicago Bulls,Indiana Pacers,,,,Home,,False,2025
-202503120ORL,2025-03-12,ORL,CHI,Orlando Magic,Chicago Bulls,,,,Home,,False,2025
-202503130CHI,2025-03-13,CHI,BRK,Chicago Bulls,Brooklyn Nets,,,,Home,,False,2025
-202503170UTA,2025-03-17,UTA,CHI,Utah Jazz,Chicago Bulls,,,,Home,,False,2025
-202503190PHO,2025-03-19,PHO,CHI,Phoenix Suns,Chicago Bulls,,,,Home,,False,2025
-202503200SAC,2025-03-20,SAC,CHI,Sacramento Kings,Chicago Bulls,,,,Home,,False,2025
-202503220LAL,2025-03-22,LAL,CHI,Los Angeles Lakers,Chicago Bulls,,,,Home,,False,2025
-202503240DEN,2025-03-24,DEN,CHI,Denver Nuggets,Chicago Bulls,,,,Home,,False,2025
-202503270CHI,2025-03-27,CHI,LAL,Chicago Bulls,Los Angeles Lakers,,,,Home,,False,2025
-202504010CHI,2025-04-01,CHI,TOR,Chicago Bulls,Toronto Raptors,,,,Home,,False,2025
-202504040CHI,2025-04-04,CHI,POR,Chicago Bulls,Portland Trail Blazers,,,,Home,,False,2025
-202504080CLE,2025-04-08,CLE,CHI,Cleveland Cavaliers,Chicago Bulls,,,,Home,,False,2025
-202504090CHI,2025-04-09,CHI,MIA,Chicago Bulls,Miami Heat,,,,Home,,False,2025
-202504130PHI,2025-04-13,PHI,CHI,Philadelphia 76ers,Chicago Bulls,,,,Home,,False,2025
-202501280POR,2025-01-28,POR,MIL,Portland Trail Blazers,Milwaukee Bucks,,,,Home,,False,2025
-202502070ATL,2025-02-07,ATL,MIL,Atlanta Hawks,Milwaukee Bucks,,,,Home,,False,2025
-202502090MIL,2025-02-09,MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,,,,Home,,False,2025
-202502120MIN,2025-02-12,MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,,,,Home,,False,2025
-202502230MIL,2025-02-23,MIL,MIA,Milwaukee Bucks,Miami Heat,,,,Home,,False,2025
-202502270MIL,2025-02-27,MIL,DEN,Milwaukee Bucks,Denver Nuggets,,,,Home,,False,2025
-202503040ATL,2025-03-04,ATL,MIL,Atlanta Hawks,Milwaukee Bucks,,,,Home,,False,2025
-202503080MIL,2025-03-08,MIL,ORL,Milwaukee Bucks,Orlando Magic,,,,Home,,False,2025
-202503090MIL,2025-03-09,MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,,,,Home,,False,2025
-202503110IND,2025-03-11,IND,MIL,Indiana Pacers,Milwaukee Bucks,,,,Home,,False,2025
-202503130MIL,2025-03-13,MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,,,,Home,,False,2025
-202503150MIL,2025-03-15,MIL,IND,Milwaukee Bucks,Indiana Pacers,,,,Home,,False,2025
-202503180LAL,2025-03-18,LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,,,,Home,,False,2025
-202503220SAC,2025-03-22,SAC,MIL,Sacramento Kings,Milwaukee Bucks,,,,Home,,False,2025
-202503240PHO,2025-03-24,PHO,MIL,Phoenix Suns,Milwaukee Bucks,,,,Home,,False,2025
-202503260DEN,2025-03-26,DEN,MIL,Denver Nuggets,Milwaukee Bucks,,,,Home,,False,2025
-202503300MIL,2025-03-30,MIL,ATL,Milwaukee Bucks,Atlanta Hawks,,,,Home,,False,2025
-202504010MIL,2025-04-01,MIL,PHO,Milwaukee Bucks,Phoenix Suns,,,,Home,,False,2025
-202504030PHI,2025-04-03,PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,,,,Home,,False,2025
-202504050MIA,2025-04-05,MIA,MIL,Miami Heat,Milwaukee Bucks,,,,Home,,False,2025
-202504080MIL,2025-04-08,MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,,,,Home,,False,2025
-202504090MIL,2025-04-09,MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,,,,Home,,False,2025
-202502010IND,2025-02-01,IND,ATL,Indiana Pacers,Atlanta Hawks,,,,Home,,False,2025
-202502030UTA,2025-02-03,UTA,IND,Utah Jazz,Indiana Pacers,,,,Home,,False,2025
-202502040POR,2025-02-04,POR,IND,Portland Trail Blazers,Indiana Pacers,,,,Home,,False,2025
-202502080LAL,2025-02-08,LAL,IND,Los Angeles Lakers,Indiana Pacers,,,,Home,,False,2025
-202502240IND,2025-02-24,IND,DEN,Indiana Pacers,Denver Nuggets,,,,Home,,False,2025
-202502260IND,2025-02-26,IND,TOR,Indiana Pacers,Toronto Raptors,,,,Home,,False,2025
-202502280MIA,2025-02-28,MIA,IND,Miami Heat,Indiana Pacers,,,,Home,,False,2025
-202503060ATL,2025-03-06,ATL,IND,Atlanta Hawks,Indiana Pacers,,,,Home,,False,2025
-202503080ATL,2025-03-08,ATL,IND,Atlanta Hawks,Indiana Pacers,,,,Home,,False,2025
-202503140PHI,2025-03-14,PHI,IND,Philadelphia 76ers,Indiana Pacers,,,,Home,,False,2025
-202503170MIN,2025-03-17,MIN,IND,Minnesota Timberwolves,Indiana Pacers,,,,Home,,False,2025
-202503200IND,2025-03-20,IND,BRK,Indiana Pacers,Brooklyn Nets,,,,Home,,False,2025
-202503220IND,2025-03-22,IND,BRK,Indiana Pacers,Brooklyn Nets,,,,Home,,False,2025
-202503240IND,2025-03-24,IND,MIN,Indiana Pacers,Minnesota Timberwolves,,,,Home,,False,2025
-202503260IND,2025-03-26,IND,LAL,Indiana Pacers,Los Angeles Lakers,,,,Home,,False,2025
-202503310IND,2025-03-31,IND,SAC,Indiana Pacers,Sacramento Kings,,,,Home,,False,2025
-202504040IND,2025-04-04,IND,UTA,Indiana Pacers,Utah Jazz,,,,Home,,False,2025
-202504060DEN,2025-04-06,DEN,IND,Denver Nuggets,Indiana Pacers,,,,Home,,False,2025
-202504100IND,2025-04-10,IND,CLE,Indiana Pacers,Cleveland Cavaliers,,,,Home,,False,2025
-202504110IND,2025-04-11,IND,ORL,Indiana Pacers,Orlando Magic,,,,Home,,False,2025
-202504130CLE,2025-04-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,,,,Home,,False,2025
-202501300POR,2025-01-30,POR,ORL,Portland Trail Blazers,Orlando Magic,,,,Home,,False,2025
-202502010POR,2025-02-01,POR,PHO,Portland Trail Blazers,Phoenix Suns,,,,Home,,False,2025
-202502030POR,2025-02-03,POR,PHO,Portland Trail Blazers,Phoenix Suns,,,,Home,,False,2025
-202502060POR,2025-02-06,POR,SAC,Portland Trail Blazers,Sacramento Kings,,,,Home,,False,2025
-202502080MIN,2025-02-08,MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,,,,Home,,False,2025
-202502100DEN,2025-02-10,DEN,POR,Denver Nuggets,Portland Trail Blazers,,,,Home,,False,2025
-202502120DEN,2025-02-12,DEN,POR,Denver Nuggets,Portland Trail Blazers,,,,Home,,False,2025
-202502200POR,2025-02-20,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,,,,Home,,False,2025
-202502240UTA,2025-02-24,UTA,POR,Utah Jazz,Portland Trail Blazers,,,,Home,,False,2025
-202502280BRK,2025-02-28,BRK,POR,Brooklyn Nets,Portland Trail Blazers,,,,Home,,False,2025
-202503020CLE,2025-03-02,CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,,,,Home,,False,2025
-202503030PHI,2025-03-03,PHI,POR,Philadelphia 76ers,Portland Trail Blazers,,,,Home,,False,2025
-202503050BOS,2025-03-05,BOS,POR,Boston Celtics,Portland Trail Blazers,,,,Home,,False,2025
-202503160POR,2025-03-16,POR,TOR,Portland Trail Blazers,Toronto Raptors,,,,Home,,False,2025
-202503210POR,2025-03-21,POR,DEN,Portland Trail Blazers,Denver Nuggets,,,,Home,,False,2025
-202503230POR,2025-03-23,POR,BOS,Portland Trail Blazers,Boston Celtics,,,,Home,,False,2025
-202503250POR,2025-03-25,POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,,,,Home,,False,2025
-202503270SAC,2025-03-27,SAC,POR,Sacramento Kings,Portland Trail Blazers,,,,Home,,False,2025
-202504010ATL,2025-04-01,ATL,POR,Atlanta Hawks,Portland Trail Blazers,,,,Home,,False,2025
-202504030TOR,2025-04-03,TOR,POR,Toronto Raptors,Portland Trail Blazers,,,,Home,,False,2025
-202504090UTA,2025-04-09,UTA,POR,Utah Jazz,Portland Trail Blazers,,,,Home,,False,2025
-202504130POR,2025-04-13,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,,,,Home,,False,2025
-202501290PHO,2025-01-29,PHO,MIN,Phoenix Suns,Minnesota Timberwolves,,,,Home,,False,2025
-202501300UTA,2025-01-30,UTA,MIN,Utah Jazz,Minnesota Timberwolves,,,,Home,,False,2025
-202502030MIN,2025-02-03,MIN,SAC,Minnesota Timberwolves,Sacramento Kings,,,,Home,,False,2025
-202502100CLE,2025-02-10,CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,,,,Home,,False,2025
-202502270LAL,2025-02-27,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,,,,Home,,False,2025
-202502280UTA,2025-02-28,UTA,MIN,Utah Jazz,Minnesota Timberwolves,,,,Home,,False,2025
-202503020PHO,2025-03-02,PHO,MIN,Phoenix Suns,Minnesota Timberwolves,,,,Home,,False,2025
-202503040MIN,2025-03-04,MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,,,,Home,,False,2025
-202503070MIA,2025-03-07,MIA,MIN,Miami Heat,Minnesota Timberwolves,,,,Home,,False,2025
-202503120DEN,2025-03-12,DEN,MIN,Denver Nuggets,Minnesota Timberwolves,,,,Home,,False,2025
-202503140MIN,2025-03-14,MIN,ORL,Minnesota Timberwolves,Orlando Magic,,,,Home,,False,2025
-202503160MIN,2025-03-16,MIN,UTA,Minnesota Timberwolves,Utah Jazz,,,,Home,,False,2025
-202503190MIN,2025-03-19,MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,,,,Home,,False,2025
-202503210MIN,2025-03-21,MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,,,,Home,,False,2025
-202503280MIN,2025-03-28,MIN,PHO,Minnesota Timberwolves,Phoenix Suns,,,,Home,,False,2025
-202504010DEN,2025-04-01,DEN,MIN,Denver Nuggets,Minnesota Timberwolves,,,,Home,,False,2025
-202504030BRK,2025-04-03,BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,,,,Home,,False,2025
-202504050PHI,2025-04-05,PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,,,,Home,,False,2025
-202504110MIN,2025-04-11,MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,,,,Home,,False,2025
-202504130MIN,2025-04-13,MIN,UTA,Minnesota Timberwolves,Utah Jazz,,,,Home,,False,2025
-202501280PHI,2025-01-28,PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,,,,Home,,False,2025
-202501290PHI,2025-01-29,PHI,SAC,Philadelphia 76ers,Sacramento Kings,,,,Home,,False,2025
-202501310PHI,2025-01-31,PHI,DEN,Philadelphia 76ers,Denver Nuggets,,,,Home,,False,2025
-202502020PHI,2025-02-02,PHI,BOS,Philadelphia 76ers,Boston Celtics,,,,Home,,False,2025
-202502050PHI,2025-02-05,PHI,MIA,Philadelphia 76ers,Miami Heat,,,,Home,,False,2025
-202502110PHI,2025-02-11,PHI,TOR,Philadelphia 76ers,Toronto Raptors,,,,Home,,False,2025
-202502120BRK,2025-02-12,BRK,PHI,Brooklyn Nets,Philadelphia 76ers,,,,Home,,False,2025
-202502200PHI,2025-02-20,PHI,BOS,Philadelphia 76ers,Boston Celtics,,,,Home,,False,2025
-202502220PHI,2025-02-22,PHI,BRK,Philadelphia 76ers,Brooklyn Nets,,,,Home,,False,2025
-202503060BOS,2025-03-06,BOS,PHI,Boston Celtics,Philadelphia 76ers,,,,Home,,False,2025
-202503090PHI,2025-03-09,PHI,UTA,Philadelphia 76ers,Utah Jazz,,,,Home,,False,2025
-202503100ATL,2025-03-10,ATL,PHI,Atlanta Hawks,Philadelphia 76ers,,,,Home,,False,2025
-202503120TOR,2025-03-12,TOR,PHI,Toronto Raptors,Philadelphia 76ers,,,,Home,,False,2025
-202503230ATL,2025-03-23,ATL,PHI,Atlanta Hawks,Philadelphia 76ers,,,,Home,,False,2025
-202503240NOP,2025-03-24,NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,,,,Home,,False,2025
-202503290PHI,2025-03-29,PHI,MIA,Philadelphia 76ers,Miami Heat,,,,Home,,False,2025
-202503300PHI,2025-03-30,PHI,TOR,Philadelphia 76ers,Toronto Raptors,,,,Home,,False,2025
-202504070MIA,2025-04-07,MIA,PHI,Miami Heat,Philadelphia 76ers,,,,Home,,False,2025
-202504110PHI,2025-04-11,PHI,ATL,Philadelphia 76ers,Atlanta Hawks,,,,Home,,False,2025
-202502050SAC,2025-02-05,SAC,ORL,Sacramento Kings,Orlando Magic,,,,Home,,False,2025
-202502080SAC,2025-02-08,SAC,NOP,Sacramento Kings,New Orleans Pelicans,,,,Home,,False,2025
-202502120NOP,2025-02-12,NOP,SAC,New Orleans Pelicans,Sacramento Kings,,,,Home,,False,2025
-202502130NOP,2025-02-13,NOP,SAC,New Orleans Pelicans,Sacramento Kings,,,,Home,,False,2025
-202502260UTA,2025-02-26,UTA,SAC,Utah Jazz,Sacramento Kings,,,,Home,,False,2025
-202503050DEN,2025-03-05,DEN,SAC,Denver Nuggets,Sacramento Kings,,,,Home,,False,2025
-202503140PHO,2025-03-14,PHO,SAC,Phoenix Suns,Sacramento Kings,,,,Home,,False,2025
-202503190SAC,2025-03-19,SAC,CLE,Sacramento Kings,Cleveland Cavaliers,,,,Home,,False,2025
-202503240SAC,2025-03-24,SAC,BOS,Sacramento Kings,Boston Celtics,,,,Home,,False,2025
-202503290ORL,2025-03-29,ORL,SAC,Orlando Magic,Sacramento Kings,,,,Home,,False,2025
-202504060CLE,2025-04-06,CLE,SAC,Cleveland Cavaliers,Sacramento Kings,,,,Home,,False,2025
-202504090SAC,2025-04-09,SAC,DEN,Sacramento Kings,Denver Nuggets,,,,Home,,False,2025
-202504130SAC,2025-04-13,SAC,PHO,Sacramento Kings,Phoenix Suns,,,,Home,,False,2025
-202501310NOP,2025-01-31,NOP,BOS,New Orleans Pelicans,Boston Celtics,,,,Home,,False,2025
-202502030DEN,2025-02-03,DEN,NOP,Denver Nuggets,New Orleans Pelicans,,,,Home,,False,2025
-202502050DEN,2025-02-05,DEN,NOP,Denver Nuggets,New Orleans Pelicans,,,,Home,,False,2025
-202502270PHO,2025-02-27,PHO,NOP,Phoenix Suns,New Orleans Pelicans,,,,Home,,False,2025
-202502280PHO,2025-02-28,PHO,NOP,Phoenix Suns,New Orleans Pelicans,,,,Home,,False,2025
-202503020UTA,2025-03-02,UTA,NOP,Utah Jazz,New Orleans Pelicans,,,,Home,,False,2025
-202503040LAL,2025-03-04,LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,,,,Home,,False,2025
-202504040LAL,2025-04-04,LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,,,,Home,,False,2025
-202504060NOP,2025-04-06,NOP,ORL,New Orleans Pelicans,Orlando Magic,,,,Home,,False,2025
-202504080BRK,2025-04-08,BRK,NOP,Brooklyn Nets,New Orleans Pelicans,,,,Home,,False,2025
-202504110NOP,2025-04-11,NOP,MIA,New Orleans Pelicans,Miami Heat,,,,Home,,False,2025
-202502120TOR,2025-02-12,TOR,CLE,Toronto Raptors,Cleveland Cavaliers,,,,Home,,False,2025
-202502210TOR,2025-02-21,TOR,MIA,Toronto Raptors,Miami Heat,,,,Home,,False,2025
-202502230TOR,2025-02-23,TOR,PHO,Toronto Raptors,Phoenix Suns,,,,Home,,False,2025
-202502250TOR,2025-02-25,TOR,BOS,Toronto Raptors,Boston Celtics,,,,Home,,False,2025
-202503020ORL,2025-03-02,ORL,TOR,Orlando Magic,Toronto Raptors,,,,Home,,False,2025
-202503040ORL,2025-03-04,ORL,TOR,Orlando Magic,Toronto Raptors,,,,Home,,False,2025
-202503070TOR,2025-03-07,TOR,UTA,Toronto Raptors,Utah Jazz,,,,Home,,False,2025
-202503140UTA,2025-03-14,UTA,TOR,Utah Jazz,Toronto Raptors,,,,Home,,False,2025
-202503170PHO,2025-03-17,PHO,TOR,Phoenix Suns,Toronto Raptors,,,,Home,,False,2025
-202503260BRK,2025-03-26,BRK,TOR,Brooklyn Nets,Toronto Raptors,,,,Home,,False,2025
-202504060BRK,2025-04-06,BRK,TOR,Brooklyn Nets,Toronto Raptors,,,,Home,,False,2025
-202501290MIA,2025-01-29,MIA,CLE,Miami Heat,Cleveland Cavaliers,,,,Home,,False,2025
-202502070BRK,2025-02-07,BRK,MIA,Brooklyn Nets,Miami Heat,,,,Home,,False,2025
-202502100MIA,2025-02-10,MIA,BOS,Miami Heat,Boston Celtics,,,,Home,,False,2025
-202502240ATL,2025-02-24,ATL,MIA,Atlanta Hawks,Miami Heat,,,,Home,,False,2025
-202502260MIA,2025-02-26,MIA,ATL,Miami Heat,Atlanta Hawks,,,,Home,,False,2025
-202503050CLE,2025-03-05,CLE,MIA,Cleveland Cavaliers,Miami Heat,,,,Home,,False,2025
-202503140MIA,2025-03-14,MIA,BOS,Miami Heat,Boston Celtics,,,,Home,,False,2025
-202503270MIA,2025-03-27,MIA,ATL,Miami Heat,Atlanta Hawks,,,,Home,,False,2025
-202504020BOS,2025-04-02,BOS,MIA,Boston Celtics,Miami Heat,,,,Home,,False,2025
-202502040CLE,2025-02-04,CLE,BOS,Cleveland Cavaliers,Boston Celtics,,,,Home,,False,2025
-202502280BOS,2025-02-28,BOS,CLE,Boston Celtics,Cleveland Cavaliers,,,,Home,,False,2025
-202503020BOS,2025-03-02,BOS,DEN,Boston Celtics,Denver Nuggets,,,,Home,,False,2025
-202503080BOS,2025-03-08,BOS,LAL,Boston Celtics,Los Angeles Lakers,,,,Home,,False,2025
-202503100BOS,2025-03-10,BOS,UTA,Boston Celtics,Utah Jazz,,,,Home,,False,2025
-202503150BRK,2025-03-15,BRK,BOS,Brooklyn Nets,Boston Celtics,,,,Home,,False,2025
-202503180BOS,2025-03-18,BOS,BRK,Boston Celtics,Brooklyn Nets,,,,Home,,False,2025
-202503210UTA,2025-03-21,UTA,BOS,Utah Jazz,Boston Celtics,,,,Home,,False,2025
-202503260PHO,2025-03-26,PHO,BOS,Phoenix Suns,Boston Celtics,,,,Home,,False,2025
-202504040BOS,2025-04-04,BOS,PHO,Boston Celtics,Phoenix Suns,,,,Home,,False,2025
-202504090ORL,2025-04-09,ORL,BOS,Orlando Magic,Boston Celtics,,,,Home,,False,2025
-202502100LAL,2025-02-10,LAL,UTA,Los Angeles Lakers,Utah Jazz,,,,Home,,False,2025
-202502120UTA,2025-02-12,UTA,LAL,Utah Jazz,Los Angeles Lakers,,,,Home,,False,2025
-202502220DEN,2025-02-22,DEN,LAL,Denver Nuggets,Los Angeles Lakers,,,,Home,,False,2025
-202503100BRK,2025-03-10,BRK,LAL,Brooklyn Nets,Los Angeles Lakers,,,,Home,,False,2025
-202503140DEN,2025-03-14,DEN,LAL,Denver Nuggets,Los Angeles Lakers,,,,Home,,False,2025
-202503160LAL,2025-03-16,LAL,PHO,Los Angeles Lakers,Phoenix Suns,,,,Home,,False,2025
-202503190LAL,2025-03-19,LAL,DEN,Los Angeles Lakers,Denver Nuggets,,,,Home,,False,2025
-202503240ORL,2025-03-24,ORL,LAL,Orlando Magic,Los Angeles Lakers,,,,Home,,False,2025
-202502060DEN,2025-02-06,DEN,ORL,Denver Nuggets,Orlando Magic,,,,Home,,False,2025
-202502080PHO,2025-02-08,PHO,DEN,Phoenix Suns,Denver Nuggets,,,,Home,,False,2025
-202503070DEN,2025-03-07,DEN,PHO,Denver Nuggets,Phoenix Suns,,,,Home,,False,2025
-202503280DEN,2025-03-28,DEN,UTA,Denver Nuggets,Utah Jazz,,,,Home,,False,2025
-202501300CLE,2025-01-30,CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,,,,Home,,False,2025
-202502200BRK,2025-02-20,BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,,,,Home,,False,2025
-202502250ORL,2025-02-25,ORL,CLE,Orlando Magic,Cleveland Cavaliers,,,,Home,,False,2025
-202503110CLE,2025-03-11,CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,,,,Home,,False,2025
-202503160CLE,2025-03-16,CLE,ORL,Cleveland Cavaliers,Orlando Magic,,,,Home,,False,2025
-202503210PHO,2025-03-21,PHO,CLE,Phoenix Suns,Cleveland Cavaliers,,,,Home,,False,2025
-202503230UTA,2025-03-23,UTA,CLE,Utah Jazz,Cleveland Cavaliers,,,,Home,,False,2025
-202502100ORL,2025-02-10,ORL,ATL,Orlando Magic,Atlanta Hawks,,,,Home,,False,2025
-202502200ATL,2025-02-20,ATL,ORL,Atlanta Hawks,Orlando Magic,,,,Home,,False,2025
-202503160BRK,2025-03-16,BRK,ATL,Brooklyn Nets,Atlanta Hawks,,,,Home,,False,2025
-202504060ATL,2025-04-06,ATL,UTA,Atlanta Hawks,Utah Jazz,,,,Home,,False,2025
-202504080ORL,2025-04-08,ORL,ATL,Orlando Magic,Atlanta Hawks,,,,Home,,False,2025
-202504100BRK,2025-04-10,BRK,ATL,Brooklyn Nets,Atlanta Hawks,,,,Home,,False,2025
-202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,,,,Home,,False,2025
-202502070PHO,2025-02-07,PHO,UTA,Phoenix Suns,Utah Jazz,,,,Home,,False,2025
-202502010UTA,2025-02-01,UTA,ORL,Utah Jazz,Orlando Magic,,,,Home,,False,2025
+202501230IND,2025-01-23,IND,SAS,Indiana Pacers,San Antonio Spurs,110.0,140.0,-30.0,Home,102.4,True,2025
+202501230OKC,2025-01-23,OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,115.0,121.0,-6.0,Home,100.0,True,2025
+202501230GSW,2025-01-23,GSW,CHI,Golden State Warriors,Chicago Bulls,131.0,106.0,25.0,Home,99.6,True,2025
+202501230LAC,2025-01-23,LAC,WAS,Los Angeles Clippers,Washington Wizards,110.0,93.0,17.0,Home,101.7,True,2025
+202501230MIL,2025-01-23,MIL,MIA,Milwaukee Bucks,Miami Heat,125.0,96.0,29.0,Home,98.7,True,2025
+202501230ORL,2025-01-23,ORL,POR,Orlando Magic,Portland Trail Blazers,79.0,101.0,-22.0,Home,95.0,True,2025
+202501230DEN,2025-01-23,DEN,SAC,Denver Nuggets,Sacramento Kings,132.0,123.0,9.0,Home,108.4,True,2025
+202501230ATL,2025-01-23,ATL,TOR,Atlanta Hawks,Toronto Raptors,119.0,122.0,-3.0,Home,103.8,True,2025
+202501230LAL,2025-01-23,LAL,BOS,Los Angeles Lakers,Boston Celtics,117.0,96.0,21.0,Home,93.9,True,2025
+202501240CHO,2025-01-24,CHO,POR,Charlotte Hornets,Portland Trail Blazers,97.0,102.0,-5.0,Home,94.1,True,2025
+202501240MEM,2025-01-24,MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,139.0,126.0,13.0,Home,99.4,True,2025
+202501240PHI,2025-01-24,PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,132.0,129.0,3.0,Home,99.6,True,2025
+202501250CLE,2025-01-25,CLE,HOU,Cleveland Cavaliers,Houston Rockets,131.0,135.0,-4.0,Home,99.7,True,2025
+202501250CHO,2025-01-25,CHO,NOP,Charlotte Hornets,New Orleans Pelicans,123.0,92.0,31.0,Home,97.8,True,2025
+202501250MEM,2025-01-25,MEM,UTA,Memphis Grizzlies,Utah Jazz,125.0,103.0,22.0,Home,99.1,True,2025
+202501250SAS,2025-01-25,SAS,IND,San Antonio Spurs,Indiana Pacers,98.0,136.0,-38.0,Home,100.8,True,2025
+202501250DAL,2025-01-25,DAL,BOS,Dallas Mavericks,Boston Celtics,107.0,122.0,-15.0,Home,96.5,True,2025
+202501250GSW,2025-01-25,GSW,LAL,Golden State Warriors,Los Angeles Lakers,108.0,118.0,-10.0,Home,95.4,True,2025
+202501250NYK,2025-01-25,NYK,SAC,New York Knicks,Sacramento Kings,143.0,120.0,23.0,Home,103.6,True,2025
+202501250ORL,2025-01-25,ORL,DET,Orlando Magic,Detroit Pistons,121.0,113.0,8.0,Home,102.1,True,2025
+202501250PHO,2025-01-25,PHO,WAS,Phoenix Suns,Washington Wizards,119.0,109.0,10.0,Home,96.8,True,2025
+202501250LAC,2025-01-25,LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,127.0,117.0,10.0,Home,100.6,True,2025
+202501250CHI,2025-01-25,CHI,PHI,Chicago Bulls,Philadelphia 76ers,97.0,109.0,-12.0,Home,100.2,True,2025
+202501250MIN,2025-01-25,MIN,DEN,Minnesota Timberwolves,Denver Nuggets,133.0,104.0,29.0,Home,96.8,True,2025
+202501250ATL,2025-01-25,ATL,TOR,Atlanta Hawks,Toronto Raptors,94.0,117.0,-23.0,Home,109.9,True,2025
+202501250BRK,2025-01-25,BRK,MIA,Brooklyn Nets,Miami Heat,97.0,106.0,-9.0,Home,96.2,True,2025
+202501260POR,2025-01-26,POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,108.0,118.0,-10.0,Home,92.6,True,2025
+202501270BOS,2025-01-27,BOS,HOU,Boston Celtics,Houston Rockets,112.0,114.0,-2.0,Home,94.1,True,2025
+202501270CHO,2025-01-27,CHO,LAL,Charlotte Hornets,Los Angeles Lakers,107.0,112.0,-5.0,Home,98.3,True,2025
+202501270NYK,2025-01-27,NYK,MEM,New York Knicks,Memphis Grizzlies,143.0,106.0,37.0,Home,104.5,True,2025
+202501270DAL,2025-01-27,DAL,WAS,Dallas Mavericks,Washington Wizards,130.0,108.0,22.0,Home,99.5,True,2025
+202501270CLE,2025-01-27,CLE,DET,Cleveland Cavaliers,Detroit Pistons,110.0,91.0,19.0,Home,95.9,True,2025
+202501270PHO,2025-01-27,PHO,LAC,Phoenix Suns,Los Angeles Clippers,111.0,109.0,2.0,Home,94.1,True,2025
+202501270CHI,2025-01-27,CHI,DEN,Chicago Bulls,Denver Nuggets,129.0,121.0,8.0,Home,104.2,True,2025
+202501270UTA,2025-01-27,UTA,MIL,Utah Jazz,Milwaukee Bucks,110.0,125.0,-15.0,Home,99.5,True,2025
+202501270MIN,2025-01-27,MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,100.0,92.0,8.0,Home,100.1,True,2025
+202501270BRK,2025-01-27,BRK,SAC,Brooklyn Nets,Sacramento Kings,96.0,110.0,-14.0,Home,92.9,True,2025
+202501270TOR,2025-01-27,TOR,NOP,Toronto Raptors,New Orleans Pelicans,113.0,104.0,9.0,Home,107.2,True,2025
+202501270MIA,2025-01-27,MIA,ORL,Miami Heat,Orlando Magic,125.0,119.0,6.0,Home,91.8,True,2025
+202501280ATL,2025-01-28,ATL,HOU,Atlanta Hawks,Houston Rockets,96.0,100.0,-4.0,Home,101.6,True,2025
+202501280GSW,2025-01-28,GSW,UTA,Golden State Warriors,Utah Jazz,114.0,103.0,11.0,Home,94.7,True,2025
+202501280POR,2025-01-28,POR,MIL,Portland Trail Blazers,Milwaukee Bucks,125.0,112.0,13.0,Home,96.1,True,2025
+202501280PHI,2025-01-28,PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,118.0,104.0,14.0,Home,97.9,True,2025
+202501300MEM,2025-01-30,MEM,HOU,Memphis Grizzlies,Houston Rockets,120.0,119.0,1.0,Home,98.0,True,2025
+202501290CHO,2025-01-29,CHO,BRK,Charlotte Hornets,Brooklyn Nets,83.0,104.0,-21.0,Home,90.4,True,2025
+202501290SAS,2025-01-29,SAS,LAC,San Antonio Spurs,Los Angeles Clippers,116.0,128.0,-12.0,Home,98.7,True,2025
+202501290NOP,2025-01-29,NOP,DAL,New Orleans Pelicans,Dallas Mavericks,136.0,137.0,-1.0,Home,103.0,True,2025
+202501290GSW,2025-01-29,GSW,OKC,Golden State Warriors,Oklahoma City Thunder,116.0,109.0,7.0,Home,100.9,True,2025
+202501290NYK,2025-01-29,NYK,DEN,New York Knicks,Denver Nuggets,122.0,112.0,10.0,Home,96.9,True,2025
+202501290IND,2025-01-29,IND,DET,Indiana Pacers,Detroit Pistons,133.0,119.0,14.0,Home,102.5,True,2025
+202501290WAS,2025-01-29,WAS,TOR,Washington Wizards,Toronto Raptors,82.0,106.0,-24.0,Home,99.0,True,2025
+202501300WAS,2025-01-30,WAS,LAL,Washington Wizards,Los Angeles Lakers,96.0,134.0,-38.0,Home,101.3,True,2025
+202501290BOS,2025-01-29,BOS,CHI,Boston Celtics,Chicago Bulls,122.0,100.0,22.0,Home,99.9,True,2025
+202501300POR,2025-01-30,POR,ORL,Portland Trail Blazers,Orlando Magic,119.0,90.0,29.0,Home,90.8,True,2025
+202501290PHO,2025-01-29,PHO,MIN,Phoenix Suns,Minnesota Timberwolves,113.0,121.0,-8.0,Home,97.4,True,2025
+202501300UTA,2025-01-30,UTA,MIN,Utah Jazz,Minnesota Timberwolves,113.0,138.0,-25.0,Home,96.0,True,2025
+202501290PHI,2025-01-29,PHI,SAC,Philadelphia 76ers,Sacramento Kings,117.0,104.0,13.0,Home,93.5,True,2025
+202501290MIA,2025-01-29,MIA,CLE,Miami Heat,Cleveland Cavaliers,106.0,126.0,-20.0,Home,95.1,True,2025
+202501300CLE,2025-01-30,CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,137.0,115.0,22.0,Home,100.4,True,2025
+202501310CHO,2025-01-31,CHO,LAC,Charlotte Hornets,Los Angeles Clippers,104.0,112.0,-8.0,Home,96.6,True,2025
+202501310SAS,2025-01-31,SAS,MIL,San Antonio Spurs,Milwaukee Bucks,144.0,118.0,26.0,Home,101.7,True,2025
+202501310DET,2025-01-31,DET,DAL,Detroit Pistons,Dallas Mavericks,117.0,102.0,15.0,Home,95.1,True,2025
+202501310GSW,2025-01-31,GSW,PHO,Golden State Warriors,Phoenix Suns,105.0,130.0,-25.0,Home,104.3,True,2025
+202501310TOR,2025-01-31,TOR,CHI,Toronto Raptors,Chicago Bulls,106.0,122.0,-16.0,Home,99.7,True,2025
+202501310PHI,2025-01-31,PHI,DEN,Philadelphia 76ers,Denver Nuggets,134.0,137.0,-3.0,Home,97.5,True,2025
+202501310NOP,2025-01-31,NOP,BOS,New Orleans Pelicans,Boston Celtics,116.0,118.0,-2.0,Home,103.7,True,2025
+202502010HOU,2025-02-01,HOU,BRK,Houston Rockets,Brooklyn Nets,98.0,110.0,-12.0,Home,93.0,True,2025
+202502010CHO,2025-02-01,CHO,DEN,Charlotte Hornets,Denver Nuggets,104.0,107.0,-3.0,Home,98.2,True,2025
+202502010SAS,2025-02-01,SAS,MIA,San Antonio Spurs,Miami Heat,103.0,105.0,-2.0,Home,96.6,True,2025
+202502010NYK,2025-02-01,NYK,LAL,New York Knicks,Los Angeles Lakers,112.0,128.0,-16.0,Home,99.4,True,2025
+202502010OKC,2025-02-01,OKC,SAC,Oklahoma City Thunder,Sacramento Kings,144.0,110.0,34.0,Home,105.9,True,2025
+202502010MIN,2025-02-01,MIN,WAS,Minnesota Timberwolves,Washington Wizards,103.0,105.0,-2.0,Home,100.8,True,2025
+202502010IND,2025-02-01,IND,ATL,Indiana Pacers,Atlanta Hawks,132.0,127.0,5.0,Home,104.2,True,2025
+202502010POR,2025-02-01,POR,PHO,Portland Trail Blazers,Phoenix Suns,127.0,108.0,19.0,Home,99.9,True,2025
+202502010UTA,2025-02-01,UTA,ORL,Utah Jazz,Orlando Magic,113.0,99.0,14.0,Home,99.8,True,2025
+202502030NYK,2025-02-03,NYK,HOU,New York Knicks,Houston Rockets,124.0,118.0,6.0,Home,103.5,True,2025
+202502030CHO,2025-02-03,CHO,WAS,Charlotte Hornets,Washington Wizards,114.0,124.0,-10.0,Home,100.2,True,2025
+202502020MIL,2025-02-02,MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,119.0,132.0,-13.0,Home,102.5,True,2025
+202502030MEM,2025-02-03,MEM,SAS,Memphis Grizzlies,San Antonio Spurs,128.0,109.0,19.0,Home,111.2,True,2025
+202502020CLE,2025-02-02,CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,144.0,101.0,43.0,Home,105.7,True,2025
+202502030GSW,2025-02-03,GSW,ORL,Golden State Warriors,Orlando Magic,104.0,99.0,5.0,Home,94.7,True,2025
+202502030OKC,2025-02-03,OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,125.0,96.0,29.0,Home,103.7,True,2025
+202502020DET,2025-02-02,DET,CHI,Detroit Pistons,Chicago Bulls,127.0,119.0,8.0,Home,105.1,True,2025
+202502030DET,2025-02-03,DET,ATL,Detroit Pistons,Atlanta Hawks,130.0,132.0,-2.0,Home,103.4,True,2025
+202502020TOR,2025-02-02,TOR,LAC,Toronto Raptors,Los Angeles Clippers,115.0,108.0,7.0,Home,93.0,True,2025
+202502030UTA,2025-02-03,UTA,IND,Utah Jazz,Indiana Pacers,111.0,112.0,-1.0,Home,102.0,True,2025
+202502030POR,2025-02-03,POR,PHO,Portland Trail Blazers,Phoenix Suns,121.0,119.0,2.0,Home,89.9,True,2025
+202502030MIN,2025-02-03,MIN,SAC,Minnesota Timberwolves,Sacramento Kings,114.0,116.0,-2.0,Home,96.1,True,2025
+202502020PHI,2025-02-02,PHI,BOS,Philadelphia 76ers,Boston Celtics,110.0,118.0,-8.0,Home,94.0,True,2025
+202502030DEN,2025-02-03,DEN,NOP,Denver Nuggets,New Orleans Pelicans,125.0,113.0,12.0,Home,91.1,True,2025
+202502040BRK,2025-02-04,BRK,HOU,Brooklyn Nets,Houston Rockets,99.0,97.0,2.0,Home,91.9,True,2025
+202502040PHI,2025-02-04,PHI,DAL,Philadelphia 76ers,Dallas Mavericks,118.0,116.0,2.0,Home,94.0,True,2025
+202502040TOR,2025-02-04,TOR,NYK,Toronto Raptors,New York Knicks,115.0,121.0,-6.0,Home,93.7,True,2025
+202502040LAC,2025-02-04,LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,97.0,122.0,-25.0,Home,94.7,True,2025
+202502040CHI,2025-02-04,CHI,MIA,Chicago Bulls,Miami Heat,133.0,124.0,9.0,Home,102.2,True,2025
+202502040POR,2025-02-04,POR,IND,Portland Trail Blazers,Indiana Pacers,112.0,89.0,23.0,Home,95.3,True,2025
+202502040CLE,2025-02-04,CLE,BOS,Cleveland Cavaliers,Boston Celtics,105.0,112.0,-7.0,Home,98.9,True,2025
+202502050CHO,2025-02-05,CHO,MIL,Charlotte Hornets,Milwaukee Bucks,102.0,112.0,-10.0,Home,92.1,True,2025
+202502050TOR,2025-02-05,TOR,MEM,Toronto Raptors,Memphis Grizzlies,107.0,138.0,-31.0,Home,98.0,True,2025
+202502050ATL,2025-02-05,ATL,SAS,Atlanta Hawks,San Antonio Spurs,125.0,126.0,-1.0,Home,106.8,True,2025
+202502050UTA,2025-02-05,UTA,GSW,Utah Jazz,Golden State Warriors,131.0,128.0,3.0,Home,103.7,True,2025
+202502050OKC,2025-02-05,OKC,PHO,Oklahoma City Thunder,Phoenix Suns,140.0,109.0,31.0,Home,100.9,True,2025
+202502050DET,2025-02-05,DET,CLE,Detroit Pistons,Cleveland Cavaliers,115.0,118.0,-3.0,Home,102.9,True,2025
+202502050BRK,2025-02-05,BRK,WAS,Brooklyn Nets,Washington Wizards,102.0,119.0,-17.0,Home,90.9,True,2025
+202502050MIN,2025-02-05,MIN,CHI,Minnesota Timberwolves,Chicago Bulls,127.0,108.0,19.0,Home,94.7,True,2025
+202502050PHI,2025-02-05,PHI,MIA,Philadelphia 76ers,Miami Heat,101.0,108.0,-7.0,Home,96.9,True,2025
+202502050SAC,2025-02-05,SAC,ORL,Sacramento Kings,Orlando Magic,111.0,130.0,-19.0,Home,94.4,True,2025
+202502050DEN,2025-02-05,DEN,NOP,Denver Nuggets,New Orleans Pelicans,144.0,119.0,25.0,Home,101.8,True,2025
+202502060MIN,2025-02-06,MIN,HOU,Minnesota Timberwolves,Houston Rockets,127.0,114.0,13.0,Home,94.7,True,2025
+202502060BOS,2025-02-06,BOS,DAL,Boston Celtics,Dallas Mavericks,120.0,127.0,-7.0,Home,96.4,True,2025
+202502060LAL,2025-02-06,LAL,GSW,Los Angeles Lakers,Golden State Warriors,120.0,112.0,8.0,Home,103.3,True,2025
+202502060LAC,2025-02-06,LAC,IND,Los Angeles Clippers,Indiana Pacers,112.0,119.0,-7.0,Home,100.4,True,2025
+202502060POR,2025-02-06,POR,SAC,Portland Trail Blazers,Sacramento Kings,108.0,102.0,6.0,Home,96.8,True,2025
+202502060DEN,2025-02-06,DEN,ORL,Denver Nuggets,Orlando Magic,112.0,90.0,22.0,Home,97.3,True,2025
+202502070CHO,2025-02-07,CHO,SAS,Charlotte Hornets,San Antonio Spurs,117.0,116.0,1.0,Home,93.8,True,2025
+202502070OKC,2025-02-07,OKC,TOR,Oklahoma City Thunder,Toronto Raptors,121.0,109.0,12.0,Home,95.0,True,2025
+202502070DET,2025-02-07,DET,PHI,Detroit Pistons,Philadelphia 76ers,125.0,112.0,13.0,Home,98.0,True,2025
+202502070WAS,2025-02-07,WAS,CLE,Washington Wizards,Cleveland Cavaliers,124.0,134.0,-10.0,Home,100.1,True,2025
+202502070ATL,2025-02-07,ATL,MIL,Atlanta Hawks,Milwaukee Bucks,115.0,110.0,5.0,Home,99.9,True,2025
+202502070BRK,2025-02-07,BRK,MIA,Brooklyn Nets,Miami Heat,102.0,86.0,16.0,Home,93.4,True,2025
+202502070PHO,2025-02-07,PHO,UTA,Phoenix Suns,Utah Jazz,135.0,127.0,8.0,Home,96.4,True,2025
+202502080DAL,2025-02-08,DAL,HOU,Dallas Mavericks,Houston Rockets,116.0,105.0,11.0,Home,91.1,True,2025
+202502080MEM,2025-02-08,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,112.0,125.0,-13.0,Home,97.3,True,2025
+202502080ORL,2025-02-08,ORL,SAS,Orlando Magic,San Antonio Spurs,112.0,111.0,1.0,Home,95.9,True,2025
+202502080CHI,2025-02-08,CHI,GSW,Chicago Bulls,Golden State Warriors,111.0,132.0,-21.0,Home,98.6,True,2025
+202502080NYK,2025-02-08,NYK,BOS,New York Knicks,Boston Celtics,104.0,131.0,-27.0,Home,93.8,True,2025
+202502080WAS,2025-02-08,WAS,ATL,Washington Wizards,Atlanta Hawks,111.0,125.0,-14.0,Home,104.8,True,2025
+202502080LAC,2025-02-08,LAC,UTA,Los Angeles Clippers,Utah Jazz,130.0,110.0,20.0,Home,99.3,True,2025
+202502080LAL,2025-02-08,LAL,IND,Los Angeles Lakers,Indiana Pacers,124.0,117.0,7.0,Home,99.8,True,2025
+202502080MIN,2025-02-08,MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,114.0,98.0,16.0,Home,98.8,True,2025
+202502080SAC,2025-02-08,SAC,NOP,Sacramento Kings,New Orleans Pelicans,123.0,118.0,5.0,Home,110.0,True,2025
+202502080PHO,2025-02-08,PHO,DEN,Phoenix Suns,Denver Nuggets,105.0,122.0,-17.0,Home,90.8,True,2025
+202502090HOU,2025-02-09,HOU,TOR,Houston Rockets,Toronto Raptors,94.0,87.0,7.0,Home,99.8,True,2025
+202502090DET,2025-02-09,DET,CHO,Detroit Pistons,Charlotte Hornets,112.0,102.0,10.0,Home,90.9,True,2025
+202502090MIL,2025-02-09,MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,135.0,127.0,8.0,Home,102.2,True,2025
+202502100BRK,2025-02-10,BRK,CHO,Brooklyn Nets,Charlotte Hornets,97.0,89.0,8.0,Home,92.6,True,2025
+202502100WAS,2025-02-10,WAS,SAS,Washington Wizards,San Antonio Spurs,121.0,131.0,-10.0,Home,101.1,True,2025
+202502100DAL,2025-02-10,DAL,SAC,Dallas Mavericks,Sacramento Kings,128.0,129.0,-1.0,Home,100.4,True,2025
+202502100MIL,2025-02-10,MIL,GSW,Milwaukee Bucks,Golden State Warriors,111.0,125.0,-14.0,Home,101.8,True,2025
+202502100OKC,2025-02-10,OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,137.0,101.0,36.0,Home,101.9,True,2025
+202502100DEN,2025-02-10,DEN,POR,Denver Nuggets,Portland Trail Blazers,146.0,117.0,29.0,Home,102.2,True,2025
+202502100CLE,2025-02-10,CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,128.0,107.0,21.0,Home,101.2,True,2025
+202502100MIA,2025-02-10,MIA,BOS,Miami Heat,Boston Celtics,85.0,103.0,-18.0,Home,90.5,True,2025
+202502100LAL,2025-02-10,LAL,UTA,Los Angeles Lakers,Utah Jazz,132.0,113.0,19.0,Home,101.2,True,2025
+202502100ORL,2025-02-10,ORL,ATL,Orlando Magic,Atlanta Hawks,106.0,112.0,-6.0,Home,98.0,True,2025
+202502110PHO,2025-02-11,PHO,MEM,Phoenix Suns,Memphis Grizzlies,112.0,119.0,-7.0,Home,103.1,True,2025
+202502110IND,2025-02-11,IND,NYK,Indiana Pacers,New York Knicks,115.0,128.0,-13.0,Home,100.5,True,2025
+202502110CHI,2025-02-11,CHI,DET,Chicago Bulls,Detroit Pistons,92.0,132.0,-40.0,Home,106.9,True,2025
+202502110PHI,2025-02-11,PHI,TOR,Philadelphia 76ers,Toronto Raptors,103.0,106.0,-3.0,Home,99.2,True,2025
+202502120HOU,2025-02-12,HOU,PHO,Houston Rockets,Phoenix Suns,119.0,111.0,8.0,Home,98.9,True,2025
+202502120ORL,2025-02-12,ORL,CHO,Orlando Magic,Charlotte Hornets,102.0,86.0,16.0,Home,92.9,True,2025
+202502120LAC,2025-02-12,LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,128.0,114.0,14.0,Home,105.5,True,2025
+202502120BOS,2025-02-12,BOS,SAS,Boston Celtics,San Antonio Spurs,116.0,103.0,13.0,Home,98.5,True,2025
+202502120DAL,2025-02-12,DAL,GSW,Dallas Mavericks,Golden State Warriors,111.0,107.0,4.0,Home,97.3,True,2025
+202502120NYK,2025-02-12,NYK,ATL,New York Knicks,Atlanta Hawks,149.0,148.0,1.0,Home,105.5,True,2025
+202502120OKC,2025-02-12,OKC,MIA,Oklahoma City Thunder,Miami Heat,115.0,101.0,14.0,Home,95.5,True,2025
+202502120CHI,2025-02-12,CHI,DET,Chicago Bulls,Detroit Pistons,110.0,128.0,-18.0,Home,104.6,True,2025
+202502120WAS,2025-02-12,WAS,IND,Washington Wizards,Indiana Pacers,130.0,134.0,-4.0,Home,101.1,True,2025
+202502120MIN,2025-02-12,MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,101.0,103.0,-2.0,Home,103.0,True,2025
+202502120DEN,2025-02-12,DEN,POR,Denver Nuggets,Portland Trail Blazers,132.0,121.0,11.0,Home,104.1,True,2025
+202502120BRK,2025-02-12,BRK,PHI,Brooklyn Nets,Philadelphia 76ers,100.0,96.0,4.0,Home,93.2,True,2025
+202502120NOP,2025-02-12,NOP,SAC,New Orleans Pelicans,Sacramento Kings,111.0,119.0,-8.0,Home,95.8,True,2025
+202502120TOR,2025-02-12,TOR,CLE,Toronto Raptors,Cleveland Cavaliers,108.0,131.0,-23.0,Home,104.1,True,2025
+202502120UTA,2025-02-12,UTA,LAL,Utah Jazz,Los Angeles Lakers,131.0,119.0,12.0,Home,101.4,True,2025
+202502130HOU,2025-02-13,HOU,GSW,Houston Rockets,Golden State Warriors,98.0,105.0,-7.0,Home,100.7,True,2025
+202502130DAL,2025-02-13,DAL,MIA,Dallas Mavericks,Miami Heat,118.0,113.0,5.0,Home,96.3,True,2025
+202502130MIN,2025-02-13,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,116.0,101.0,15.0,Home,94.9,True,2025
+202502130UTA,2025-02-13,UTA,LAC,Utah Jazz,Los Angeles Clippers,116.0,120.0,-4.0,Home,95.1,True,2025
+202502130NOP,2025-02-13,NOP,SAC,New Orleans Pelicans,Sacramento Kings,140.0,133.0,7.0,Home,99.2,True,2025
+202502190LAL,2025-02-19,LAL,CHO,Los Angeles Lakers,Charlotte Hornets,97.0,100.0,-3.0,Home,102.1,True,2025
+202502200DEN,2025-02-20,DEN,CHO,Denver Nuggets,Charlotte Hornets,129.0,115.0,14.0,Home,100.3,True,2025
+202502200IND,2025-02-20,IND,MEM,Indiana Pacers,Memphis Grizzlies,127.0,113.0,14.0,Home,103.2,True,2025
+202502200SAS,2025-02-20,SAS,PHO,San Antonio Spurs,Phoenix Suns,120.0,109.0,11.0,Home,103.3,True,2025
+202502200NYK,2025-02-20,NYK,CHI,New York Knicks,Chicago Bulls,113.0,111.0,2.0,Home,100.1,True,2025
+202502200MIL,2025-02-20,MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,116.0,110.0,6.0,Home,98.4,True,2025
+202502200POR,2025-02-20,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,102.0,110.0,-8.0,Home,103.5,True,2025
+202502200PHI,2025-02-20,PHI,BOS,Philadelphia 76ers,Boston Celtics,104.0,124.0,-20.0,Home,96.0,True,2025
+202502200BRK,2025-02-20,BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,97.0,110.0,-13.0,Home,101.3,True,2025
+202502200ATL,2025-02-20,ATL,ORL,Atlanta Hawks,Orlando Magic,108.0,114.0,-6.0,Home,99.6,True,2025
+202502210HOU,2025-02-21,HOU,MIN,Houston Rockets,Minnesota Timberwolves,121.0,115.0,6.0,Home,104.5,True,2025
+202502210ORL,2025-02-21,ORL,MEM,Orlando Magic,Memphis Grizzlies,104.0,105.0,-1.0,Home,101.5,True,2025
+202502210SAS,2025-02-21,SAS,DET,San Antonio Spurs,Detroit Pistons,110.0,125.0,-15.0,Home,98.6,True,2025
+202502210DAL,2025-02-21,DAL,NOP,Dallas Mavericks,New Orleans Pelicans,111.0,103.0,8.0,Home,101.3,True,2025
+202502210SAC,2025-02-21,SAC,GSW,Sacramento Kings,Golden State Warriors,108.0,132.0,-24.0,Home,97.0,True,2025
+202502210CLE,2025-02-21,CLE,NYK,Cleveland Cavaliers,New York Knicks,142.0,105.0,37.0,Home,101.8,True,2025
+202502210UTA,2025-02-21,UTA,OKC,Utah Jazz,Oklahoma City Thunder,107.0,130.0,-23.0,Home,99.9,True,2025
+202502210WAS,2025-02-21,WAS,MIL,Washington Wizards,Milwaukee Bucks,101.0,104.0,-3.0,Home,101.2,True,2025
+202502210TOR,2025-02-21,TOR,MIA,Toronto Raptors,Miami Heat,111.0,120.0,-9.0,Home,90.6,True,2025
+202502220UTA,2025-02-22,UTA,HOU,Utah Jazz,Houston Rockets,124.0,115.0,9.0,Home,102.1,True,2025
+202502220POR,2025-02-22,POR,CHO,Portland Trail Blazers,Charlotte Hornets,141.0,88.0,53.0,Home,107.1,True,2025
+202502220CHI,2025-02-22,CHI,PHO,Chicago Bulls,Phoenix Suns,117.0,121.0,-4.0,Home,101.4,True,2025
+202502220PHI,2025-02-22,PHI,BRK,Philadelphia 76ers,Brooklyn Nets,103.0,105.0,-2.0,Home,92.2,True,2025
+202502220DEN,2025-02-22,DEN,LAL,Denver Nuggets,Los Angeles Lakers,100.0,123.0,-23.0,Home,97.5,True,2025
+202502230CLE,2025-02-23,CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,129.0,123.0,6.0,Home,102.6,True,2025
+202502230NOP,2025-02-23,NOP,SAS,New Orleans Pelicans,San Antonio Spurs,114.0,96.0,18.0,Home,102.8,True,2025
+202502230GSW,2025-02-23,GSW,DAL,Golden State Warriors,Dallas Mavericks,126.0,102.0,24.0,Home,99.6,True,2025
+202502230BOS,2025-02-23,BOS,NYK,Boston Celtics,New York Knicks,118.0,105.0,13.0,Home,96.4,True,2025
+202502230MIN,2025-02-23,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,123.0,130.0,-7.0,Home,97.2,True,2025
+202502230ATL,2025-02-23,ATL,DET,Atlanta Hawks,Detroit Pistons,143.0,148.0,-5.0,Home,113.7,True,2025
+202502230ORL,2025-02-23,ORL,WAS,Orlando Magic,Washington Wizards,110.0,90.0,20.0,Home,100.0,True,2025
+202502230IND,2025-02-23,IND,LAC,Indiana Pacers,Los Angeles Clippers,129.0,111.0,18.0,Home,100.8,True,2025
+202502230MIL,2025-02-23,MIL,MIA,Milwaukee Bucks,Miami Heat,120.0,113.0,7.0,Home,96.5,True,2025
+202502230TOR,2025-02-23,TOR,PHO,Toronto Raptors,Phoenix Suns,127.0,109.0,18.0,Home,100.4,True,2025
+202502240SAC,2025-02-24,SAC,CHO,Sacramento Kings,Charlotte Hornets,130.0,88.0,42.0,Home,97.4,True,2025
+202502240OKC,2025-02-24,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,128.0,131.0,-3.0,Home,101.2,True,2025
+202502240DET,2025-02-24,DET,LAC,Detroit Pistons,Los Angeles Clippers,106.0,97.0,9.0,Home,100.2,True,2025
+202502240WAS,2025-02-24,WAS,BRK,Washington Wizards,Brooklyn Nets,107.0,99.0,8.0,Home,93.9,True,2025
+202502240PHI,2025-02-24,PHI,CHI,Philadelphia 76ers,Chicago Bulls,110.0,142.0,-32.0,Home,105.9,True,2025
+202502240IND,2025-02-24,IND,DEN,Indiana Pacers,Denver Nuggets,116.0,125.0,-9.0,Home,103.8,True,2025
+202502240UTA,2025-02-24,UTA,POR,Utah Jazz,Portland Trail Blazers,112.0,114.0,-2.0,Home,103.3,True,2025
+202502240ATL,2025-02-24,ATL,MIA,Atlanta Hawks,Miami Heat,98.0,86.0,12.0,Home,95.8,True,2025
+202502250HOU,2025-02-25,HOU,MIL,Houston Rockets,Milwaukee Bucks,100.0,97.0,3.0,Home,100.1,True,2025
+202502250GSW,2025-02-25,GSW,CHO,Golden State Warriors,Charlotte Hornets,128.0,92.0,36.0,Home,100.9,True,2025
+202502250MEM,2025-02-25,MEM,PHO,Memphis Grizzlies,Phoenix Suns,151.0,148.0,3.0,Home,104.4,True,2025
+202502250NOP,2025-02-25,NOP,SAS,New Orleans Pelicans,San Antonio Spurs,109.0,103.0,6.0,Home,102.6,True,2025
+202502250LAL,2025-02-25,LAL,DAL,Los Angeles Lakers,Dallas Mavericks,107.0,99.0,8.0,Home,97.2,True,2025
+202502250TOR,2025-02-25,TOR,BOS,Toronto Raptors,Boston Celtics,101.0,111.0,-10.0,Home,95.4,True,2025
+202502250ORL,2025-02-25,ORL,CLE,Orlando Magic,Cleveland Cavaliers,82.0,122.0,-40.0,Home,90.4,True,2025
+202502260HOU,2025-02-26,HOU,SAS,Houston Rockets,San Antonio Spurs,118.0,106.0,12.0,Home,101.0,True,2025
+202502260NYK,2025-02-26,NYK,PHI,New York Knicks,Philadelphia 76ers,110.0,105.0,5.0,Home,97.4,True,2025
+202502260BRK,2025-02-26,BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,121.0,129.0,-8.0,Home,99.3,True,2025
+202502260DET,2025-02-26,DET,BOS,Detroit Pistons,Boston Celtics,117.0,97.0,20.0,Home,95.3,True,2025
+202502260WAS,2025-02-26,WAS,POR,Washington Wizards,Portland Trail Blazers,121.0,129.0,-8.0,Home,109.5,True,2025
+202502260CHI,2025-02-26,CHI,LAC,Chicago Bulls,Los Angeles Clippers,117.0,122.0,-5.0,Home,96.6,True,2025
+202502260IND,2025-02-26,IND,TOR,Indiana Pacers,Toronto Raptors,111.0,91.0,20.0,Home,102.3,True,2025
+202502260UTA,2025-02-26,UTA,SAC,Utah Jazz,Sacramento Kings,101.0,118.0,-17.0,Home,96.1,True,2025
+202502260MIA,2025-02-26,MIA,ATL,Miami Heat,Atlanta Hawks,131.0,109.0,22.0,Home,94.2,True,2025
+202502270DAL,2025-02-27,DAL,CHO,Dallas Mavericks,Charlotte Hornets,103.0,96.0,7.0,Home,101.1,True,2025
+202502280MEM,2025-02-28,MEM,NYK,Memphis Grizzlies,New York Knicks,113.0,114.0,-1.0,Home,100.4,True,2025
+202502270ORL,2025-02-27,ORL,GSW,Orlando Magic,Golden State Warriors,115.0,121.0,-6.0,Home,96.0,True,2025
+202502280ATL,2025-02-28,ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,119.0,135.0,-16.0,Home,106.2,True,2025
+202502280DET,2025-02-28,DET,DEN,Detroit Pistons,Denver Nuggets,119.0,134.0,-15.0,Home,105.1,True,2025
+202502280LAL,2025-02-28,LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,106.0,102.0,4.0,Home,94.2,True,2025
+202502280CHI,2025-02-28,CHI,TOR,Chicago Bulls,Toronto Raptors,125.0,115.0,10.0,Home,99.9,True,2025
+202502270MIL,2025-02-27,MIL,DEN,Milwaukee Bucks,Denver Nuggets,121.0,112.0,9.0,Home,105.7,True,2025
+202502280MIA,2025-02-28,MIA,IND,Miami Heat,Indiana Pacers,125.0,120.0,5.0,Home,90.2,True,2025
+202502280BRK,2025-02-28,BRK,POR,Brooklyn Nets,Portland Trail Blazers,102.0,121.0,-19.0,Home,98.0,True,2025
+202502270LAL,2025-02-27,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,111.0,102.0,9.0,Home,95.5,True,2025
+202502280UTA,2025-02-28,UTA,MIN,Utah Jazz,Minnesota Timberwolves,117.0,116.0,1.0,Home,101.4,True,2025
+202502270PHO,2025-02-27,PHO,NOP,Phoenix Suns,New Orleans Pelicans,116.0,124.0,-8.0,Home,95.5,True,2025
+202502280PHO,2025-02-28,PHO,NOP,Phoenix Suns,New Orleans Pelicans,125.0,108.0,17.0,Home,94.5,True,2025
+202502280BOS,2025-02-28,BOS,CLE,Boston Celtics,Cleveland Cavaliers,116.0,123.0,-7.0,Home,91.2,True,2025
+202503010HOU,2025-03-01,HOU,SAC,Houston Rockets,Sacramento Kings,103.0,113.0,-10.0,Home,95.9,True,2025
+202503010CHO,2025-03-01,CHO,WAS,Charlotte Hornets,Washington Wizards,100.0,113.0,-13.0,Home,97.7,True,2025
+202503010MEM,2025-03-01,MEM,SAS,Memphis Grizzlies,San Antonio Spurs,128.0,130.0,-2.0,Home,102.2,True,2025
+202503010DAL,2025-03-01,DAL,MIL,Dallas Mavericks,Milwaukee Bucks,117.0,132.0,-15.0,Home,100.3,True,2025
+202503010PHI,2025-03-01,PHI,GSW,Philadelphia 76ers,Golden State Warriors,126.0,119.0,7.0,Home,100.3,True,2025
+202503010DET,2025-03-01,DET,BRK,Detroit Pistons,Brooklyn Nets,115.0,94.0,21.0,Home,104.3,True,2025
+202503020SAS,2025-03-02,SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,132.0,146.0,-14.0,Home,102.7,True,2025
+202503020MIA,2025-03-02,MIA,NYK,Miami Heat,New York Knicks,112.0,116.0,-4.0,Home,90.7,True,2025
+202503020LAL,2025-03-02,LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,108.0,102.0,6.0,Home,92.1,True,2025
+202503020IND,2025-03-02,IND,CHI,Indiana Pacers,Chicago Bulls,127.0,112.0,15.0,Home,98.1,True,2025
+202503020CLE,2025-03-02,CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,133.0,129.0,4.0,Home,101.2,True,2025
+202503020PHO,2025-03-02,PHO,MIN,Phoenix Suns,Minnesota Timberwolves,98.0,116.0,-18.0,Home,100.3,True,2025
+202503020UTA,2025-03-02,UTA,NOP,Utah Jazz,New Orleans Pelicans,121.0,128.0,-7.0,Home,104.0,True,2025
+202503020ORL,2025-03-02,ORL,TOR,Orlando Magic,Toronto Raptors,102.0,104.0,-2.0,Home,91.5,True,2025
+202503020BOS,2025-03-02,BOS,DEN,Boston Celtics,Denver Nuggets,110.0,103.0,7.0,Home,93.0,True,2025
+202503030OKC,2025-03-03,OKC,HOU,Oklahoma City Thunder,Houston Rockets,137.0,128.0,9.0,Home,106.3,True,2025
+202503030CHO,2025-03-03,CHO,GSW,Charlotte Hornets,Golden State Warriors,101.0,119.0,-18.0,Home,103.5,True,2025
+202503030MEM,2025-03-03,MEM,ATL,Memphis Grizzlies,Atlanta Hawks,130.0,132.0,-2.0,Home,99.3,True,2025
+202503030DAL,2025-03-03,DAL,SAC,Dallas Mavericks,Sacramento Kings,98.0,122.0,-24.0,Home,91.4,True,2025
+202503030UTA,2025-03-03,UTA,DET,Utah Jazz,Detroit Pistons,106.0,134.0,-28.0,Home,109.5,True,2025
+202503030MIA,2025-03-03,MIA,WAS,Miami Heat,Washington Wizards,106.0,90.0,16.0,Home,96.7,True,2025
+202503030PHI,2025-03-03,PHI,POR,Philadelphia 76ers,Portland Trail Blazers,102.0,119.0,-17.0,Home,93.5,True,2025
+202503040IND,2025-03-04,IND,HOU,Indiana Pacers,Houston Rockets,115.0,102.0,13.0,Home,96.0,True,2025
+202503040SAS,2025-03-04,SAS,BRK,San Antonio Spurs,Brooklyn Nets,127.0,113.0,14.0,Home,97.3,True,2025
+202503040NYK,2025-03-04,NYK,GSW,New York Knicks,Golden State Warriors,102.0,114.0,-12.0,Home,96.6,True,2025
+202503040PHO,2025-03-04,PHO,LAC,Phoenix Suns,Los Angeles Clippers,119.0,117.0,2.0,Home,93.3,True,2025
+202503040CHI,2025-03-04,CHI,CLE,Chicago Bulls,Cleveland Cavaliers,117.0,139.0,-22.0,Home,107.9,True,2025
+202503040ATL,2025-03-04,ATL,MIL,Atlanta Hawks,Milwaukee Bucks,121.0,127.0,-6.0,Home,108.9,True,2025
+202503040MIN,2025-03-04,MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,126.0,112.0,14.0,Home,97.3,True,2025
+202503040LAL,2025-03-04,LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,136.0,115.0,21.0,Home,98.3,True,2025
+202503040ORL,2025-03-04,ORL,TOR,Orlando Magic,Toronto Raptors,113.0,114.0,-1.0,Home,99.1,True,2025
+202503050CHO,2025-03-05,CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,110.0,125.0,-15.0,Home,95.1,True,2025
+202503050MEM,2025-03-05,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,103.0,120.0,-17.0,Home,102.3,True,2025
+202503050MIL,2025-03-05,MIL,DAL,Milwaukee Bucks,Dallas Mavericks,137.0,107.0,30.0,Home,105.3,True,2025
+202503050LAC,2025-03-05,LAC,DET,Los Angeles Clippers,Detroit Pistons,123.0,115.0,8.0,Home,96.8,True,2025
+202503050WAS,2025-03-05,WAS,UTA,Washington Wizards,Utah Jazz,125.0,122.0,3.0,Home,104.8,True,2025
+202503050BOS,2025-03-05,BOS,POR,Boston Celtics,Portland Trail Blazers,128.0,118.0,10.0,Home,94.5,True,2025
+202503050DEN,2025-03-05,DEN,SAC,Denver Nuggets,Sacramento Kings,116.0,110.0,6.0,Home,98.3,True,2025
+202503050CLE,2025-03-05,CLE,MIA,Cleveland Cavaliers,Miami Heat,112.0,107.0,5.0,Home,97.3,True,2025
+202503060NOP,2025-03-06,NOP,HOU,New Orleans Pelicans,Houston Rockets,97.0,109.0,-12.0,Home,95.5,True,2025
+202503060BRK,2025-03-06,BRK,GSW,Brooklyn Nets,Golden State Warriors,119.0,121.0,-2.0,Home,95.5,True,2025
+202503060LAL,2025-03-06,LAL,NYK,Los Angeles Lakers,New York Knicks,113.0,109.0,4.0,Home,94.4,True,2025
+202503070OKC,2025-03-07,OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,107.0,89.0,18.0,Home,100.5,True,2025
+202503060ORL,2025-03-06,ORL,CHI,Orlando Magic,Chicago Bulls,123.0,125.0,-2.0,Home,102.8,True,2025
+202503060ATL,2025-03-06,ATL,IND,Atlanta Hawks,Indiana Pacers,124.0,118.0,6.0,Home,97.5,True,2025
+202503070MIA,2025-03-07,MIA,MIN,Miami Heat,Minnesota Timberwolves,104.0,106.0,-2.0,Home,93.6,True,2025
+202503060BOS,2025-03-06,BOS,PHI,Boston Celtics,Philadelphia 76ers,123.0,105.0,18.0,Home,91.5,True,2025
+202503070TOR,2025-03-07,TOR,UTA,Toronto Raptors,Utah Jazz,118.0,109.0,9.0,Home,102.0,True,2025
+202503070DEN,2025-03-07,DEN,PHO,Denver Nuggets,Phoenix Suns,149.0,141.0,8.0,Home,96.1,True,2025
+202503070CHO,2025-03-07,CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,117.0,118.0,-1.0,Home,100.8,True,2025
+202503070DAL,2025-03-07,DAL,MEM,Dallas Mavericks,Memphis Grizzlies,111.0,122.0,-11.0,Home,104.0,True,2025
+202503070SAC,2025-03-07,SAC,SAS,Sacramento Kings,San Antonio Spurs,127.0,109.0,18.0,Home,93.4,True,2025
+202503070LAC,2025-03-07,LAC,NYK,Los Angeles Clippers,New York Knicks,105.0,95.0,10.0,Home,97.2,True,2025
+202503080HOU,2025-03-08,HOU,NOP,Houston Rockets,New Orleans Pelicans,146.0,117.0,29.0,Home,100.7,True,2025
+202503080CHO,2025-03-08,CHO,BRK,Charlotte Hornets,Brooklyn Nets,105.0,102.0,3.0,Home,89.1,True,2025
+202503090NOP,2025-03-09,NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,104.0,107.0,-3.0,Home,95.4,True,2025
+202503090MIN,2025-03-09,MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,141.0,124.0,17.0,Home,96.5,True,2025
+202503090DAL,2025-03-09,DAL,PHO,Dallas Mavericks,Phoenix Suns,116.0,125.0,-9.0,Home,96.7,True,2025
+202503080GSW,2025-03-08,GSW,DET,Golden State Warriors,Detroit Pistons,115.0,110.0,5.0,Home,105.9,True,2025
+202503090OKC,2025-03-09,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,127.0,103.0,24.0,Home,98.0,True,2025
+202503090POR,2025-03-09,POR,DET,Portland Trail Blazers,Detroit Pistons,112.0,119.0,-7.0,Home,103.9,True,2025
+202503080TOR,2025-03-08,TOR,WAS,Toronto Raptors,Washington Wizards,117.0,118.0,-1.0,Home,97.2,True,2025
+202503090LAC,2025-03-09,LAC,SAC,Los Angeles Clippers,Sacramento Kings,111.0,110.0,1.0,Home,87.8,True,2025
+202503080MIA,2025-03-08,MIA,CHI,Miami Heat,Chicago Bulls,109.0,114.0,-5.0,Home,104.0,True,2025
+202503080MIL,2025-03-08,MIL,ORL,Milwaukee Bucks,Orlando Magic,109.0,111.0,-2.0,Home,93.5,True,2025
+202503090MIL,2025-03-09,MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,100.0,112.0,-12.0,Home,97.2,True,2025
+202503080ATL,2025-03-08,ATL,IND,Atlanta Hawks,Indiana Pacers,120.0,118.0,2.0,Home,102.6,True,2025
+202503090PHI,2025-03-09,PHI,UTA,Philadelphia 76ers,Utah Jazz,126.0,122.0,4.0,Home,109.1,True,2025
+202503080BOS,2025-03-08,BOS,LAL,Boston Celtics,Los Angeles Lakers,111.0,101.0,10.0,Home,94.2,True,2025
+202503100HOU,2025-03-10,HOU,ORL,Houston Rockets,Orlando Magic,97.0,84.0,13.0,Home,91.4,True,2025
+202503100MIA,2025-03-10,MIA,CHO,Miami Heat,Charlotte Hornets,102.0,105.0,-3.0,Home,94.5,True,2025
+202503100MEM,2025-03-10,MEM,PHO,Memphis Grizzlies,Phoenix Suns,120.0,118.0,2.0,Home,97.7,True,2025
+202503100SAS,2025-03-10,SAS,DAL,San Antonio Spurs,Dallas Mavericks,129.0,133.0,-4.0,Home,98.8,True,2025
+202503100GSW,2025-03-10,GSW,POR,Golden State Warriors,Portland Trail Blazers,130.0,120.0,10.0,Home,98.9,True,2025
+202503100SAC,2025-03-10,SAC,NYK,Sacramento Kings,New York Knicks,104.0,133.0,-29.0,Home,100.3,True,2025
+202503100OKC,2025-03-10,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,127.0,140.0,-13.0,Home,98.9,True,2025
+202503100TOR,2025-03-10,TOR,WAS,Toronto Raptors,Washington Wizards,119.0,104.0,15.0,Home,99.9,True,2025
+202503100CHI,2025-03-10,CHI,IND,Chicago Bulls,Indiana Pacers,121.0,103.0,18.0,Home,108.9,True,2025
+202503100ATL,2025-03-10,ATL,PHI,Atlanta Hawks,Philadelphia 76ers,132.0,123.0,9.0,Home,102.0,True,2025
+202503100BOS,2025-03-10,BOS,UTA,Boston Celtics,Utah Jazz,114.0,108.0,6.0,Home,95.2,True,2025
+202503100BRK,2025-03-10,BRK,LAL,Brooklyn Nets,Los Angeles Lakers,111.0,108.0,3.0,Home,94.1,True,2025
+202503110DET,2025-03-11,DET,WAS,Detroit Pistons,Washington Wizards,123.0,103.0,20.0,Home,100.9,True,2025
+202503110NOP,2025-03-11,NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,127.0,120.0,7.0,Home,97.7,True,2025
+202503110IND,2025-03-11,IND,MIL,Indiana Pacers,Milwaukee Bucks,115.0,114.0,1.0,Home,99.4,True,2025
+202503110CLE,2025-03-11,CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,109.0,104.0,5.0,Home,97.3,True,2025
+202503120HOU,2025-03-12,HOU,PHO,Houston Rockets,Phoenix Suns,111.0,104.0,7.0,Home,93.1,True,2025
+202503120ATL,2025-03-12,ATL,CHO,Atlanta Hawks,Charlotte Hornets,123.0,110.0,13.0,Home,103.4,True,2025
+202503120MEM,2025-03-12,MEM,UTA,Memphis Grizzlies,Utah Jazz,122.0,115.0,7.0,Home,106.4,True,2025
+202503120SAS,2025-03-12,SAS,DAL,San Antonio Spurs,Dallas Mavericks,126.0,116.0,10.0,Home,102.1,True,2025
+202503130GSW,2025-03-13,GSW,SAC,Golden State Warriors,Sacramento Kings,130.0,104.0,26.0,Home,96.6,True,2025
+202503120POR,2025-03-12,POR,NYK,Portland Trail Blazers,New York Knicks,113.0,114.0,-1.0,Home,92.6,True,2025
+202503120BOS,2025-03-12,BOS,OKC,Boston Celtics,Oklahoma City Thunder,112.0,118.0,-6.0,Home,94.4,True,2025
+202503130DET,2025-03-13,DET,WAS,Detroit Pistons,Washington Wizards,125.0,129.0,-4.0,Home,104.7,True,2025
+202503120MIA,2025-03-12,MIA,LAC,Miami Heat,Los Angeles Clippers,104.0,119.0,-15.0,Home,91.3,True,2025
+202503130CHI,2025-03-13,CHI,BRK,Chicago Bulls,Brooklyn Nets,116.0,110.0,6.0,Home,94.5,True,2025
+202503130MIL,2025-03-13,MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,126.0,106.0,20.0,Home,102.6,True,2025
+202503120DEN,2025-03-12,DEN,MIN,Denver Nuggets,Minnesota Timberwolves,95.0,115.0,-20.0,Home,95.3,True,2025
+202503120TOR,2025-03-12,TOR,PHI,Toronto Raptors,Philadelphia 76ers,118.0,105.0,13.0,Home,105.0,True,2025
+202503130NOP,2025-03-13,NOP,ORL,New Orleans Pelicans,Orlando Magic,93.0,113.0,-20.0,Home,90.0,True,2025
+202503140HOU,2025-03-14,HOU,DAL,Houston Rockets,Dallas Mavericks,133.0,96.0,37.0,Home,100.3,True,2025
+202503140SAS,2025-03-14,SAS,CHO,San Antonio Spurs,Charlotte Hornets,134.0,145.0,-11.0,Home,99.9,True,2025
+202503140MEM,2025-03-14,MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,124.0,133.0,-9.0,Home,108.1,True,2025
+202503140ATL,2025-03-14,ATL,LAC,Atlanta Hawks,Los Angeles Clippers,98.0,121.0,-23.0,Home,98.8,True,2025
+202503140PHI,2025-03-14,PHI,IND,Philadelphia 76ers,Indiana Pacers,100.0,112.0,-12.0,Home,94.4,True,2025
+202503140MIN,2025-03-14,MIN,ORL,Minnesota Timberwolves,Orlando Magic,118.0,111.0,7.0,Home,100.6,True,2025
+202503140PHO,2025-03-14,PHO,SAC,Phoenix Suns,Sacramento Kings,122.0,106.0,16.0,Home,93.5,True,2025
+202503140UTA,2025-03-14,UTA,TOR,Utah Jazz,Toronto Raptors,118.0,126.0,-8.0,Home,109.3,True,2025
+202503140MIA,2025-03-14,MIA,BOS,Miami Heat,Boston Celtics,91.0,103.0,-12.0,Home,91.9,True,2025
+202503140DEN,2025-03-14,DEN,LAL,Denver Nuggets,Los Angeles Lakers,131.0,126.0,5.0,Home,99.3,True,2025
+202503150HOU,2025-03-15,HOU,CHI,Houston Rockets,Chicago Bulls,117.0,114.0,3.0,Home,103.5,True,2025
+202503150MEM,2025-03-15,MEM,MIA,Memphis Grizzlies,Miami Heat,125.0,91.0,34.0,Home,95.9,True,2025
+202503150SAS,2025-03-15,SAS,NOP,San Antonio Spurs,New Orleans Pelicans,119.0,115.0,4.0,Home,99.6,True,2025
+202503150GSW,2025-03-15,GSW,NYK,Golden State Warriors,New York Knicks,97.0,94.0,3.0,Home,90.6,True,2025
+202503150DET,2025-03-15,DET,OKC,Detroit Pistons,Oklahoma City Thunder,107.0,113.0,-6.0,Home,103.6,True,2025
+202503150DEN,2025-03-15,DEN,WAS,Denver Nuggets,Washington Wizards,123.0,126.0,-3.0,Home,105.6,True,2025
+202503150MIL,2025-03-15,MIL,IND,Milwaukee Bucks,Indiana Pacers,126.0,119.0,7.0,Home,99.6,True,2025
+202503150BRK,2025-03-15,BRK,BOS,Brooklyn Nets,Boston Celtics,113.0,115.0,-2.0,Home,84.2,True,2025
+202503160LAC,2025-03-16,LAC,CHO,Los Angeles Clippers,Charlotte Hornets,123.0,88.0,35.0,Home,95.7,True,2025
+202503160DAL,2025-03-16,DAL,PHI,Dallas Mavericks,Philadelphia 76ers,125.0,130.0,-5.0,Home,103.0,True,2025
+202503160MIL,2025-03-16,MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,105.0,121.0,-16.0,Home,96.8,True,2025
+202503160POR,2025-03-16,POR,TOR,Portland Trail Blazers,Toronto Raptors,105.0,102.0,3.0,Home,96.2,True,2025
+202503160MIN,2025-03-16,MIN,UTA,Minnesota Timberwolves,Utah Jazz,128.0,102.0,26.0,Home,103.0,True,2025
+202503160LAL,2025-03-16,LAL,PHO,Los Angeles Lakers,Phoenix Suns,107.0,96.0,11.0,Home,95.1,True,2025
+202503160CLE,2025-03-16,CLE,ORL,Cleveland Cavaliers,Orlando Magic,103.0,108.0,-5.0,Home,98.4,True,2025
+202503160BRK,2025-03-16,BRK,ATL,Brooklyn Nets,Atlanta Hawks,122.0,114.0,8.0,Home,100.6,True,2025
+202503170HOU,2025-03-17,HOU,PHI,Houston Rockets,Philadelphia 76ers,144.0,137.0,7.0,Home,97.7,True,2025
+202503170SAC,2025-03-17,SAC,MEM,Sacramento Kings,Memphis Grizzlies,132.0,122.0,10.0,Home,101.4,True,2025
+202503170LAL,2025-03-17,LAL,SAS,Los Angeles Lakers,San Antonio Spurs,125.0,109.0,16.0,Home,99.8,True,2025
+202503170GSW,2025-03-17,GSW,DEN,Golden State Warriors,Denver Nuggets,105.0,114.0,-9.0,Home,101.5,True,2025
+202503170NYK,2025-03-17,NYK,MIA,New York Knicks,Miami Heat,116.0,95.0,21.0,Home,96.2,True,2025
+202503170NOP,2025-03-17,NOP,DET,New Orleans Pelicans,Detroit Pistons,81.0,127.0,-46.0,Home,98.5,True,2025
+202503170POR,2025-03-17,POR,WAS,Portland Trail Blazers,Washington Wizards,112.0,97.0,15.0,Home,99.2,True,2025
+202503170UTA,2025-03-17,UTA,CHI,Utah Jazz,Chicago Bulls,97.0,111.0,-14.0,Home,105.6,True,2025
+202503170MIN,2025-03-17,MIN,IND,Minnesota Timberwolves,Indiana Pacers,130.0,132.0,-2.0,Home,102.2,True,2025
+202503170PHO,2025-03-17,PHO,TOR,Phoenix Suns,Toronto Raptors,129.0,89.0,40.0,Home,94.2,True,2025
+202503180CHO,2025-03-18,CHO,ATL,Charlotte Hornets,Atlanta Hawks,102.0,134.0,-32.0,Home,97.9,True,2025
+202503180GSW,2025-03-18,GSW,MIL,Golden State Warriors,Milwaukee Bucks,104.0,93.0,11.0,Home,95.4,True,2025
+202503180LAC,2025-03-18,LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,132.0,119.0,13.0,Home,94.7,True,2025
+202503180BOS,2025-03-18,BOS,BRK,Boston Celtics,Brooklyn Nets,104.0,96.0,8.0,Home,94.0,True,2025
+202503190ORL,2025-03-19,ORL,HOU,Orlando Magic,Houston Rockets,108.0,116.0,-8.0,Home,95.9,True,2025
+202503190POR,2025-03-19,POR,MEM,Portland Trail Blazers,Memphis Grizzlies,115.0,99.0,16.0,Home,97.7,True,2025
+202503190SAS,2025-03-19,SAS,NYK,San Antonio Spurs,New York Knicks,120.0,105.0,15.0,Home,94.7,True,2025
+202503190IND,2025-03-19,IND,DAL,Indiana Pacers,Dallas Mavericks,135.0,131.0,4.0,Home,104.0,True,2025
+202503190OKC,2025-03-19,OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,133.0,100.0,33.0,Home,99.5,True,2025
+202503190MIA,2025-03-19,MIA,DET,Miami Heat,Detroit Pistons,113.0,116.0,-3.0,Home,96.7,True,2025
+202503190UTA,2025-03-19,UTA,WAS,Utah Jazz,Washington Wizards,128.0,112.0,16.0,Home,100.4,True,2025
+202503190PHO,2025-03-19,PHO,CHI,Phoenix Suns,Chicago Bulls,127.0,121.0,6.0,Home,99.5,True,2025
+202503190MIN,2025-03-19,MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,115.0,119.0,-4.0,Home,98.6,True,2025
+202503190SAC,2025-03-19,SAC,CLE,Sacramento Kings,Cleveland Cavaliers,123.0,119.0,4.0,Home,94.3,True,2025
+202503190LAL,2025-03-19,LAL,DEN,Los Angeles Lakers,Denver Nuggets,120.0,108.0,12.0,Home,100.0,True,2025
+202503200CHO,2025-03-20,CHO,NYK,Charlotte Hornets,New York Knicks,115.0,98.0,17.0,Home,94.1,True,2025
+202503200GSW,2025-03-20,GSW,TOR,Golden State Warriors,Toronto Raptors,117.0,114.0,3.0,Home,102.3,True,2025
+202503200SAC,2025-03-20,SAC,CHI,Sacramento Kings,Chicago Bulls,116.0,128.0,-12.0,Home,96.2,True,2025
+202503200LAL,2025-03-20,LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,89.0,118.0,-29.0,Home,95.4,True,2025
+202503200IND,2025-03-20,IND,BRK,Indiana Pacers,Brooklyn Nets,105.0,99.0,6.0,Home,97.4,True,2025
+202503210MIA,2025-03-21,MIA,HOU,Miami Heat,Houston Rockets,98.0,102.0,-4.0,Home,93.7,True,2025
+202503210OKC,2025-03-21,OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,141.0,106.0,35.0,Home,95.5,True,2025
+202503210LAC,2025-03-21,LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,128.0,108.0,20.0,Home,99.9,True,2025
+202503210SAS,2025-03-21,SAS,PHI,San Antonio Spurs,Philadelphia 76ers,128.0,120.0,8.0,Home,101.4,True,2025
+202503210DAL,2025-03-21,DAL,DET,Dallas Mavericks,Detroit Pistons,123.0,117.0,6.0,Home,102.8,True,2025
+202503210WAS,2025-03-21,WAS,ORL,Washington Wizards,Orlando Magic,105.0,120.0,-15.0,Home,100.1,True,2025
+202503210POR,2025-03-21,POR,DEN,Portland Trail Blazers,Denver Nuggets,128.0,109.0,19.0,Home,95.4,True,2025
+202503210MIN,2025-03-21,MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,134.0,93.0,41.0,Home,96.9,True,2025
+202503210UTA,2025-03-21,UTA,BOS,Utah Jazz,Boston Celtics,99.0,121.0,-22.0,Home,94.8,True,2025
+202503210PHO,2025-03-21,PHO,CLE,Phoenix Suns,Cleveland Cavaliers,123.0,112.0,11.0,Home,94.4,True,2025
+202503220ATL,2025-03-22,ATL,GSW,Atlanta Hawks,Golden State Warriors,124.0,115.0,9.0,Home,98.6,True,2025
+202503220NYK,2025-03-22,NYK,WAS,New York Knicks,Washington Wizards,122.0,103.0,19.0,Home,103.1,True,2025
+202503220LAL,2025-03-22,LAL,CHI,Los Angeles Lakers,Chicago Bulls,115.0,146.0,-31.0,Home,103.3,True,2025
+202503220SAC,2025-03-22,SAC,MIL,Sacramento Kings,Milwaukee Bucks,108.0,114.0,-6.0,Home,90.8,True,2025
+202503220IND,2025-03-22,IND,BRK,Indiana Pacers,Brooklyn Nets,108.0,103.0,5.0,Home,100.2,True,2025
+202503230HOU,2025-03-23,HOU,DEN,Houston Rockets,Denver Nuggets,111.0,116.0,-5.0,Home,92.9,True,2025
+202503230MIA,2025-03-23,MIA,CHO,Miami Heat,Charlotte Hornets,122.0,105.0,17.0,Home,95.4,True,2025
+202503230TOR,2025-03-23,TOR,SAS,Toronto Raptors,San Antonio Spurs,89.0,123.0,-34.0,Home,98.8,True,2025
+202503230LAC,2025-03-23,LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,101.0,103.0,-2.0,Home,95.0,True,2025
+202503230DET,2025-03-23,DET,NOP,Detroit Pistons,New Orleans Pelicans,136.0,130.0,6.0,Home,97.4,True,2025
+202503230POR,2025-03-23,POR,BOS,Portland Trail Blazers,Boston Celtics,116.0,129.0,-13.0,Home,91.3,True,2025
+202503230ATL,2025-03-23,ATL,PHI,Atlanta Hawks,Philadelphia 76ers,132.0,119.0,13.0,Home,101.2,True,2025
+202503230UTA,2025-03-23,UTA,CLE,Utah Jazz,Cleveland Cavaliers,91.0,120.0,-29.0,Home,101.0,True,2025
+202503240BRK,2025-03-24,BRK,DAL,Brooklyn Nets,Dallas Mavericks,101.0,120.0,-19.0,Home,93.1,True,2025
+202503240WAS,2025-03-24,WAS,TOR,Washington Wizards,Toronto Raptors,104.0,112.0,-8.0,Home,106.1,True,2025
+202503240DEN,2025-03-24,DEN,CHI,Denver Nuggets,Chicago Bulls,119.0,129.0,-10.0,Home,99.1,True,2025
+202503240PHO,2025-03-24,PHO,MIL,Phoenix Suns,Milwaukee Bucks,108.0,106.0,2.0,Home,90.8,True,2025
+202503240IND,2025-03-24,IND,MIN,Indiana Pacers,Minnesota Timberwolves,119.0,103.0,16.0,Home,101.7,True,2025
+202503240NOP,2025-03-24,NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,112.0,99.0,13.0,Home,93.0,True,2025
+202503240SAC,2025-03-24,SAC,BOS,Sacramento Kings,Boston Celtics,95.0,113.0,-18.0,Home,96.4,True,2025
+202503240ORL,2025-03-24,ORL,LAL,Orlando Magic,Los Angeles Lakers,118.0,106.0,12.0,Home,89.8,True,2025
+202503250HOU,2025-03-25,HOU,ATL,Houston Rockets,Atlanta Hawks,121.0,114.0,7.0,Home,101.2,True,2025
+202503250CHO,2025-03-25,CHO,ORL,Charlotte Hornets,Orlando Magic,104.0,111.0,-7.0,Home,95.2,True,2025
+202503250UTA,2025-03-25,UTA,MEM,Utah Jazz,Memphis Grizzlies,103.0,140.0,-37.0,Home,94.9,True,2025
+202503250DET,2025-03-25,DET,SAS,Detroit Pistons,San Antonio Spurs,122.0,96.0,26.0,Home,91.8,True,2025
+202503250NYK,2025-03-25,NYK,DAL,New York Knicks,Dallas Mavericks,128.0,113.0,15.0,Home,102.9,True,2025
+202503250MIA,2025-03-25,MIA,GSW,Miami Heat,Golden State Warriors,112.0,86.0,26.0,Home,90.3,True,2025
+202503250SAC,2025-03-25,SAC,OKC,Sacramento Kings,Oklahoma City Thunder,105.0,121.0,-16.0,Home,100.7,True,2025
+202503250POR,2025-03-25,POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,111.0,122.0,-11.0,Home,96.3,True,2025
+202503260NYK,2025-03-26,NYK,LAC,New York Knicks,Los Angeles Clippers,113.0,126.0,-13.0,Home,91.9,True,2025
+202503260PHI,2025-03-26,PHI,WAS,Philadelphia 76ers,Washington Wizards,114.0,119.0,-5.0,Home,96.0,True,2025
+202503260DEN,2025-03-26,DEN,MIL,Denver Nuggets,Milwaukee Bucks,127.0,117.0,10.0,Home,98.5,True,2025
+202503260IND,2025-03-26,IND,LAL,Indiana Pacers,Los Angeles Lakers,119.0,120.0,-1.0,Home,95.9,True,2025
+202503260BRK,2025-03-26,BRK,TOR,Brooklyn Nets,Toronto Raptors,86.0,116.0,-30.0,Home,102.8,True,2025
+202503260PHO,2025-03-26,PHO,BOS,Phoenix Suns,Boston Celtics,102.0,132.0,-30.0,Home,96.0,True,2025
+202503270UTA,2025-03-27,UTA,HOU,Utah Jazz,Houston Rockets,110.0,121.0,-11.0,Home,97.6,True,2025
+202503270OKC,2025-03-27,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,125.0,104.0,21.0,Home,102.8,True,2025
+202503270CLE,2025-03-27,CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,124.0,116.0,8.0,Home,103.0,True,2025
+202503270ORL,2025-03-27,ORL,DAL,Orlando Magic,Dallas Mavericks,92.0,101.0,-9.0,Home,96.4,True,2025
+202503270WAS,2025-03-27,WAS,IND,Washington Wizards,Indiana Pacers,109.0,162.0,-53.0,Home,99.2,True,2025
+202503270CHI,2025-03-27,CHI,LAL,Chicago Bulls,Los Angeles Lakers,119.0,117.0,2.0,Home,102.7,True,2025
+202503270SAC,2025-03-27,SAC,POR,Sacramento Kings,Portland Trail Blazers,128.0,107.0,21.0,Home,95.1,True,2025
+202503270MIA,2025-03-27,MIA,ATL,Miami Heat,Atlanta Hawks,122.0,112.0,10.0,Home,96.3,True,2025
+202503280TOR,2025-03-28,TOR,CHO,Toronto Raptors,Charlotte Hornets,108.0,97.0,11.0,Home,99.3,True,2025
+202503280NOP,2025-03-28,NOP,GSW,New Orleans Pelicans,Golden State Warriors,95.0,111.0,-16.0,Home,93.2,True,2025
+202503280MIL,2025-03-28,MIL,NYK,Milwaukee Bucks,New York Knicks,107.0,116.0,-9.0,Home,93.5,True,2025
+202503280DET,2025-03-28,DET,CLE,Detroit Pistons,Cleveland Cavaliers,133.0,122.0,11.0,Home,100.7,True,2025
+202503280BRK,2025-03-28,BRK,LAC,Brooklyn Nets,Los Angeles Clippers,100.0,132.0,-32.0,Home,102.8,True,2025
+202503280MIN,2025-03-28,MIN,PHO,Minnesota Timberwolves,Phoenix Suns,124.0,109.0,15.0,Home,92.4,True,2025
+202503280DEN,2025-03-28,DEN,UTA,Denver Nuggets,Utah Jazz,129.0,93.0,36.0,Home,102.9,True,2025
+202503290MEM,2025-03-29,MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,127.0,134.0,-7.0,Home,103.8,True,2025
+202503290SAS,2025-03-29,SAS,BOS,San Antonio Spurs,Boston Celtics,111.0,121.0,-10.0,Home,92.3,True,2025
+202503290CHI,2025-03-29,CHI,DAL,Chicago Bulls,Dallas Mavericks,119.0,120.0,-1.0,Home,106.2,True,2025
+202503290OKC,2025-03-29,OKC,IND,Oklahoma City Thunder,Indiana Pacers,132.0,111.0,21.0,Home,102.9,True,2025
+202503290WAS,2025-03-29,WAS,BRK,Washington Wizards,Brooklyn Nets,112.0,115.0,-3.0,Home,96.0,True,2025
+202503290PHI,2025-03-29,PHI,MIA,Philadelphia 76ers,Miami Heat,95.0,118.0,-23.0,Home,92.2,True,2025
+202503290ORL,2025-03-29,ORL,SAC,Orlando Magic,Sacramento Kings,121.0,91.0,30.0,Home,96.8,True,2025
+202503300PHO,2025-03-30,PHO,HOU,Phoenix Suns,Houston Rockets,109.0,148.0,-39.0,Home,102.7,True,2025
+202503300NOP,2025-03-30,NOP,CHO,New Orleans Pelicans,Charlotte Hornets,98.0,94.0,4.0,Home,101.2,True,2025
+202503300SAS,2025-03-30,SAS,GSW,San Antonio Spurs,Golden State Warriors,106.0,148.0,-42.0,Home,104.6,True,2025
+202503300NYK,2025-03-30,NYK,POR,New York Knicks,Portland Trail Blazers,110.0,93.0,17.0,Home,92.9,True,2025
+202503300MIN,2025-03-30,MIN,DET,Minnesota Timberwolves,Detroit Pistons,123.0,104.0,19.0,Home,97.3,True,2025
+202503300CLE,2025-03-30,CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,127.0,122.0,5.0,Home,102.7,True,2025
+202503300MIL,2025-03-30,MIL,ATL,Milwaukee Bucks,Atlanta Hawks,124.0,145.0,-21.0,Home,103.5,True,2025
+202503300PHI,2025-03-30,PHI,TOR,Philadelphia 76ers,Toronto Raptors,109.0,127.0,-18.0,Home,105.6,True,2025
+202503310LAL,2025-03-31,LAL,HOU,Los Angeles Lakers,Houston Rockets,104.0,98.0,6.0,Home,97.6,True,2025
+202503310CHO,2025-03-31,CHO,UTA,Charlotte Hornets,Utah Jazz,110.0,106.0,4.0,Home,94.1,True,2025
+202503310MEM,2025-03-31,MEM,BOS,Memphis Grizzlies,Boston Celtics,103.0,117.0,-14.0,Home,103.1,True,2025
+202503310DAL,2025-03-31,DAL,BRK,Dallas Mavericks,Brooklyn Nets,109.0,113.0,-4.0,Home,96.0,True,2025
+202503310OKC,2025-03-31,OKC,CHI,Oklahoma City Thunder,Chicago Bulls,145.0,117.0,28.0,Home,111.1,True,2025
+202503310WAS,2025-03-31,WAS,MIA,Washington Wizards,Miami Heat,94.0,120.0,-26.0,Home,106.2,True,2025
+202503310ORL,2025-03-31,ORL,LAC,Orlando Magic,Los Angeles Clippers,87.0,96.0,-9.0,Home,91.9,True,2025
+202503310IND,2025-03-31,IND,SAC,Indiana Pacers,Sacramento Kings,111.0,109.0,2.0,Home,102.1,True,2025
+202504010MEM,2025-04-01,MEM,GSW,Memphis Grizzlies,Golden State Warriors,125.0,134.0,-9.0,Home,105.0,True,2025
+202504010SAS,2025-04-01,SAS,ORL,San Antonio Spurs,Orlando Magic,105.0,116.0,-11.0,Home,94.9,True,2025
+202504010NYK,2025-04-01,NYK,PHI,New York Knicks,Philadelphia 76ers,105.0,91.0,14.0,Home,96.0,True,2025
+202504010CHI,2025-04-01,CHI,TOR,Chicago Bulls,Toronto Raptors,137.0,118.0,19.0,Home,101.1,True,2025
+202504010MIL,2025-04-01,MIL,PHO,Milwaukee Bucks,Phoenix Suns,133.0,123.0,10.0,Home,96.0,True,2025
+202504010ATL,2025-04-01,ATL,POR,Atlanta Hawks,Portland Trail Blazers,113.0,127.0,-14.0,Home,109.1,True,2025
+202504010DEN,2025-04-01,DEN,MIN,Denver Nuggets,Minnesota Timberwolves,139.0,140.0,-1.0,Home,93.2,True,2025
+202504020HOU,2025-04-02,HOU,UTA,Houston Rockets,Utah Jazz,143.0,105.0,38.0,Home,102.3,True,2025
+202504020IND,2025-04-02,IND,CHO,Indiana Pacers,Charlotte Hornets,119.0,105.0,14.0,Home,93.0,True,2025
+202504020DEN,2025-04-02,DEN,SAS,Denver Nuggets,San Antonio Spurs,106.0,113.0,-7.0,Home,103.2,True,2025
+202504020DAL,2025-04-02,DAL,ATL,Dallas Mavericks,Atlanta Hawks,120.0,118.0,2.0,Home,102.2,True,2025
+202504020CLE,2025-04-02,CLE,NYK,Cleveland Cavaliers,New York Knicks,124.0,105.0,19.0,Home,94.5,True,2025
+202504020OKC,2025-04-02,OKC,DET,Oklahoma City Thunder,Detroit Pistons,119.0,103.0,16.0,Home,102.8,True,2025
+202504020WAS,2025-04-02,WAS,SAC,Washington Wizards,Sacramento Kings,116.0,111.0,5.0,Home,97.4,True,2025
+202504020LAC,2025-04-02,LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,114.0,98.0,16.0,Home,97.3,True,2025
+202504020BOS,2025-04-02,BOS,MIA,Boston Celtics,Miami Heat,103.0,124.0,-21.0,Home,84.3,True,2025
+202504030MIA,2025-04-03,MIA,MEM,Miami Heat,Memphis Grizzlies,108.0,110.0,-2.0,Home,96.5,True,2025
+202504030LAL,2025-04-03,LAL,GSW,Los Angeles Lakers,Golden State Warriors,116.0,123.0,-7.0,Home,90.4,True,2025
+202504030WAS,2025-04-03,WAS,ORL,Washington Wizards,Orlando Magic,97.0,109.0,-12.0,Home,91.3,True,2025
+202504030PHI,2025-04-03,PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,113.0,126.0,-13.0,Home,97.2,True,2025
+202504030TOR,2025-04-03,TOR,POR,Toronto Raptors,Portland Trail Blazers,103.0,112.0,-9.0,Home,100.0,True,2025
+202504030BRK,2025-04-03,BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,90.0,105.0,-15.0,Home,92.6,True,2025
+202504040HOU,2025-04-04,HOU,OKC,Houston Rockets,Oklahoma City Thunder,125.0,111.0,14.0,Home,100.7,True,2025
+202504040CHO,2025-04-04,CHO,SAC,Charlotte Hornets,Sacramento Kings,102.0,125.0,-23.0,Home,96.8,True,2025
+202504040SAS,2025-04-04,SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,113.0,114.0,-1.0,Home,102.0,True,2025
+202504040LAC,2025-04-04,LAC,DAL,Los Angeles Clippers,Dallas Mavericks,114.0,91.0,23.0,Home,97.7,True,2025
+202504040GSW,2025-04-04,GSW,DEN,Golden State Warriors,Denver Nuggets,118.0,104.0,14.0,Home,96.9,True,2025
+202504040TOR,2025-04-04,TOR,DET,Toronto Raptors,Detroit Pistons,105.0,117.0,-12.0,Home,98.7,True,2025
+202504040CHI,2025-04-04,CHI,POR,Chicago Bulls,Portland Trail Blazers,118.0,113.0,5.0,Home,106.0,True,2025
+202504040IND,2025-04-04,IND,UTA,Indiana Pacers,Utah Jazz,140.0,112.0,28.0,Home,102.0,True,2025
+202504040LAL,2025-04-04,LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,124.0,108.0,16.0,Home,92.4,True,2025
+202504040BOS,2025-04-04,BOS,PHO,Boston Celtics,Phoenix Suns,123.0,103.0,20.0,Home,92.2,True,2025
+202504050DET,2025-04-05,DET,MEM,Detroit Pistons,Memphis Grizzlies,103.0,109.0,-6.0,Home,102.4,True,2025
+202504050LAC,2025-04-05,LAC,DAL,Los Angeles Clippers,Dallas Mavericks,135.0,104.0,31.0,Home,99.4,True,2025
+202504050ATL,2025-04-05,ATL,NYK,Atlanta Hawks,New York Knicks,105.0,121.0,-16.0,Home,97.6,True,2025
+202504050MIA,2025-04-05,MIA,MIL,Miami Heat,Milwaukee Bucks,115.0,121.0,-6.0,Home,94.8,True,2025
+202504050PHI,2025-04-05,PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,109.0,114.0,-5.0,Home,93.4,True,2025
+202504060GSW,2025-04-06,GSW,HOU,Golden State Warriors,Houston Rockets,96.0,106.0,-10.0,Home,97.0,True,2025
+202504060CHO,2025-04-06,CHO,CHI,Charlotte Hornets,Chicago Bulls,117.0,131.0,-14.0,Home,101.6,True,2025
+202504060POR,2025-04-06,POR,SAS,Portland Trail Blazers,San Antonio Spurs,120.0,109.0,11.0,Home,105.4,True,2025
+202504060NYK,2025-04-06,NYK,PHO,New York Knicks,Phoenix Suns,112.0,98.0,14.0,Home,92.4,True,2025
+202504060OKC,2025-04-06,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,99.0,126.0,-27.0,Home,94.3,True,2025
+202504060BOS,2025-04-06,BOS,WAS,Boston Celtics,Washington Wizards,124.0,90.0,34.0,Home,86.4,True,2025
+202504060NOP,2025-04-06,NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,107.0,111.0,-4.0,Home,99.8,True,2025
+202504060DEN,2025-04-06,DEN,IND,Denver Nuggets,Indiana Pacers,120.0,125.0,-5.0,Home,102.8,True,2025
+202504060CLE,2025-04-06,CLE,SAC,Cleveland Cavaliers,Sacramento Kings,113.0,120.0,-7.0,Home,98.3,True,2025
+202504060BRK,2025-04-06,BRK,TOR,Brooklyn Nets,Toronto Raptors,109.0,120.0,-11.0,Home,108.5,True,2025
+202504060ATL,2025-04-06,ATL,UTA,Atlanta Hawks,Utah Jazz,147.0,134.0,13.0,Home,100.8,True,2025
+202504070DET,2025-04-07,DET,SAC,Detroit Pistons,Sacramento Kings,117.0,127.0,-10.0,Home,94.1,True,2025
+202504070MIA,2025-04-07,MIA,PHI,Miami Heat,Philadelphia 76ers,117.0,105.0,12.0,Home,96.4,True,2025
+202504080CHO,2025-04-08,CHO,MEM,Charlotte Hornets,Memphis Grizzlies,100.0,124.0,-24.0,Home,99.8,True,2025
+202504080LAC,2025-04-08,LAC,SAS,Los Angeles Clippers,San Antonio Spurs,122.0,117.0,5.0,Home,100.1,True,2025
+202504080PHO,2025-04-08,PHO,GSW,Phoenix Suns,Golden State Warriors,95.0,133.0,-38.0,Home,99.7,True,2025
+202504080NYK,2025-04-08,NYK,BOS,New York Knicks,Boston Celtics,117.0,119.0,-2.0,Home,90.2,True,2025
+202504080OKC,2025-04-08,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,136.0,120.0,16.0,Home,101.0,True,2025
+202504080IND,2025-04-08,IND,WAS,Indiana Pacers,Washington Wizards,104.0,98.0,6.0,Home,95.9,True,2025
+202504080CLE,2025-04-08,CLE,CHI,Cleveland Cavaliers,Chicago Bulls,135.0,113.0,22.0,Home,100.3,True,2025
+202504080MIL,2025-04-08,MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,110.0,103.0,7.0,Home,94.2,True,2025
+202504080BRK,2025-04-08,BRK,NOP,Brooklyn Nets,New Orleans Pelicans,119.0,114.0,5.0,Home,101.1,True,2025
+202504080ORL,2025-04-08,ORL,ATL,Orlando Magic,Atlanta Hawks,119.0,112.0,7.0,Home,97.1,True,2025
+202504090LAC,2025-04-09,LAC,HOU,Los Angeles Clippers,Houston Rockets,134.0,117.0,17.0,Home,97.5,True,2025
+202504090TOR,2025-04-09,TOR,CHO,Toronto Raptors,Charlotte Hornets,126.0,96.0,30.0,Home,100.7,True,2025
+202504090GSW,2025-04-09,GSW,SAS,Golden State Warriors,San Antonio Spurs,111.0,114.0,-3.0,Home,92.3,True,2025
+202504090DAL,2025-04-09,DAL,LAL,Dallas Mavericks,Los Angeles Lakers,97.0,112.0,-15.0,Home,91.8,True,2025
+202504090PHO,2025-04-09,PHO,OKC,Phoenix Suns,Oklahoma City Thunder,112.0,125.0,-13.0,Home,99.6,True,2025
+202504090WAS,2025-04-09,WAS,PHI,Washington Wizards,Philadelphia 76ers,103.0,122.0,-19.0,Home,102.6,True,2025
+202504090CHI,2025-04-09,CHI,MIA,Chicago Bulls,Miami Heat,119.0,111.0,8.0,Home,98.9,True,2025
+202504090UTA,2025-04-09,UTA,POR,Utah Jazz,Portland Trail Blazers,133.0,126.0,7.0,Home,103.8,True,2025
+202504090SAC,2025-04-09,SAC,DEN,Sacramento Kings,Denver Nuggets,116.0,124.0,-8.0,Home,92.8,True,2025
+202504090ORL,2025-04-09,ORL,BOS,Orlando Magic,Boston Celtics,96.0,76.0,20.0,Home,89.5,True,2025
+202504100MEM,2025-04-10,MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,125.0,141.0,-16.0,Home,103.8,True,2025
+202504100DET,2025-04-10,DET,NYK,Detroit Pistons,New York Knicks,115.0,106.0,9.0,Home,95.5,True,2025
+202504100MIL,2025-04-10,MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,136.0,111.0,25.0,Home,104.7,True,2025
+202504100IND,2025-04-10,IND,CLE,Indiana Pacers,Cleveland Cavaliers,114.0,112.0,2.0,Home,100.3,True,2025
+202504100BRK,2025-04-10,BRK,ATL,Brooklyn Nets,Atlanta Hawks,109.0,133.0,-24.0,Home,106.1,True,2025
+202504110LAL,2025-04-11,LAL,HOU,Los Angeles Lakers,Houston Rockets,140.0,109.0,31.0,Home,105.7,True,2025
+202504110BOS,2025-04-11,BOS,CHO,Boston Celtics,Charlotte Hornets,130.0,94.0,36.0,Home,99.8,True,2025
+202504110DEN,2025-04-11,DEN,MEM,Denver Nuggets,Memphis Grizzlies,117.0,109.0,8.0,Home,104.0,True,2025
+202504110PHO,2025-04-11,PHO,SAS,Phoenix Suns,San Antonio Spurs,117.0,98.0,19.0,Home,99.2,True,2025
+202504110DAL,2025-04-11,DAL,TOR,Dallas Mavericks,Toronto Raptors,124.0,102.0,22.0,Home,101.9,True,2025
+202504110POR,2025-04-11,POR,GSW,Portland Trail Blazers,Golden State Warriors,86.0,103.0,-17.0,Home,101.2,True,2025
+202504110NYK,2025-04-11,NYK,CLE,New York Knicks,Cleveland Cavaliers,102.0,108.0,-6.0,Home,92.3,True,2025
+202504110UTA,2025-04-11,UTA,OKC,Utah Jazz,Oklahoma City Thunder,111.0,145.0,-34.0,Home,107.7,True,2025
+202504110DET,2025-04-11,DET,MIL,Detroit Pistons,Milwaukee Bucks,119.0,125.0,-6.0,Home,101.7,True,2025
+202504110CHI,2025-04-11,CHI,WAS,Chicago Bulls,Washington Wizards,119.0,89.0,30.0,Home,101.8,True,2025
+202504110SAC,2025-04-11,SAC,LAC,Sacramento Kings,Los Angeles Clippers,100.0,101.0,-1.0,Home,89.5,True,2025
+202504110IND,2025-04-11,IND,ORL,Indiana Pacers,Orlando Magic,115.0,129.0,-14.0,Home,103.7,True,2025
+202504110MIN,2025-04-11,MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,117.0,91.0,26.0,Home,91.6,True,2025
+202504110PHI,2025-04-11,PHI,ATL,Philadelphia 76ers,Atlanta Hawks,110.0,124.0,-14.0,Home,100.4,True,2025
+202504110NOP,2025-04-11,NOP,MIA,New Orleans Pelicans,Miami Heat,104.0,153.0,-49.0,Home,104.8,True,2025
+202504130HOU,2025-04-13,HOU,DEN,Houston Rockets,Denver Nuggets,111.0,126.0,-15.0,Home,97.1,True,2025
+202504130BOS,2025-04-13,BOS,CHO,Boston Celtics,Charlotte Hornets,93.0,86.0,7.0,Home,89.7,True,2025
+202504130MEM,2025-04-13,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,132.0,97.0,35.0,Home,100.7,True,2025
+202504150GSW,2025-04-15,GSW,MEM,Golden State Warriors,Memphis Grizzlies,121.0,116.0,5.0,Home,96.1,True,2025
+202504130SAS,2025-04-13,SAS,TOR,San Antonio Spurs,Toronto Raptors,125.0,118.0,7.0,Home,101.4,True,2025
+202504130GSW,2025-04-13,GSW,LAC,Golden State Warriors,Los Angeles Clippers,119.0,124.0,-5.0,Home,89.8,True,2025
+202504130BRK,2025-04-13,BRK,NYK,Brooklyn Nets,New York Knicks,105.0,113.0,-8.0,Home,96.8,True,2025
+202504130NOP,2025-04-13,NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,100.0,115.0,-15.0,Home,100.8,True,2025
+202504130MIL,2025-04-13,MIL,DET,Milwaukee Bucks,Detroit Pistons,140.0,133.0,7.0,Home,98.0,True,2025
+202504130MIA,2025-04-13,MIA,WAS,Miami Heat,Washington Wizards,118.0,119.0,-1.0,Home,100.9,True,2025
+202504130PHI,2025-04-13,PHI,CHI,Philadelphia 76ers,Chicago Bulls,102.0,122.0,-20.0,Home,106.5,True,2025
+202504130CLE,2025-04-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,118.0,126.0,-8.0,Home,102.7,True,2025
+202504130POR,2025-04-13,POR,LAL,Portland Trail Blazers,Los Angeles Lakers,109.0,81.0,28.0,Home,91.5,True,2025
+202504130MIN,2025-04-13,MIN,UTA,Minnesota Timberwolves,Utah Jazz,116.0,105.0,11.0,Home,97.4,True,2025
+202504130SAC,2025-04-13,SAC,PHO,Sacramento Kings,Phoenix Suns,109.0,98.0,11.0,Home,89.8,True,2025
+202504130ATL,2025-04-13,ATL,ORL,Atlanta Hawks,Orlando Magic,117.0,105.0,12.0,Home,97.0,True,2025
+202504150ORL,2025-04-15,ORL,ATL,Orlando Magic,Atlanta Hawks,120.0,95.0,25.0,Home,97.1,True,2025
+202504160SAC,2025-04-16,SAC,DAL,Sacramento Kings,Dallas Mavericks,106.0,120.0,-14.0,Home,94.1,True,2025
+202504160CHI,2025-04-16,CHI,MIA,Chicago Bulls,Miami Heat,90.0,109.0,-19.0,Home,97.9,True,2025
+202504200HOU,2025-04-20,HOU,GSW,Houston Rockets,Golden State Warriors,85.0,95.0,-10.0,Home,88.2,True,2025
+202504180MEM,2025-04-18,MEM,DAL,Memphis Grizzlies,Dallas Mavericks,120.0,106.0,14.0,Home,99.4,True,2025
+202504200OKC,2025-04-20,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,131.0,80.0,51.0,Home,106.2,True,2025
+202504220OKC,2025-04-22,OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,118.0,99.0,19.0,Home,99.0,True,2025
+202504190NYK,2025-04-19,NYK,DET,New York Knicks,Detroit Pistons,123.0,112.0,11.0,Home,100.6,True,2025
+202504210NYK,2025-04-21,NYK,DET,New York Knicks,Detroit Pistons,94.0,100.0,-6.0,Home,92.3,True,2025
+202504190DEN,2025-04-19,DEN,LAC,Denver Nuggets,Los Angeles Clippers,112.0,110.0,2.0,Home,91.3,True,2025
+202504210DEN,2025-04-21,DEN,LAC,Denver Nuggets,Los Angeles Clippers,102.0,105.0,-3.0,Home,92.0,True,2025
+202504190IND,2025-04-19,IND,MIL,Indiana Pacers,Milwaukee Bucks,117.0,98.0,19.0,Home,95.0,True,2025
+202504220IND,2025-04-22,IND,MIL,Indiana Pacers,Milwaukee Bucks,123.0,115.0,8.0,Home,97.1,True,2025
+202504190LAL,2025-04-19,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,95.0,117.0,-22.0,Home,86.8,True,2025
+202504220LAL,2025-04-22,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,94.0,85.0,9.0,Home,87.9,True,2025
+202504180ATL,2025-04-18,ATL,MIA,Atlanta Hawks,Miami Heat,114.0,123.0,-9.0,Home,93.9,True,2025
+202504200CLE,2025-04-20,CLE,MIA,Cleveland Cavaliers,Miami Heat,121.0,100.0,21.0,Home,86.4,True,2025
+202504200BOS,2025-04-20,BOS,ORL,Boston Celtics,Orlando Magic,103.0,86.0,17.0,Home,87.3,True,2025
+202504230HOU,2025-04-23,HOU,GSW,Houston Rockets,Golden State Warriors,109.0,94.0,15.0,Home,93.0,True,2025
+202504230CLE,2025-04-23,CLE,MIA,Cleveland Cavaliers,Miami Heat,121.0,112.0,9.0,Home,91.8,True,2025
+202504230BOS,2025-04-23,BOS,ORL,Boston Celtics,Orlando Magic,109.0,100.0,9.0,Home,89.7,True,2025
+202504240MEM,2025-04-24,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,108.0,114.0,-6.0,Home,97.3,True,2025
+202504240DET,2025-04-24,DET,NYK,Detroit Pistons,New York Knicks,116.0,118.0,-2.0,Home,97.7,True,2025
+202504240LAC,2025-04-24,LAC,DEN,Los Angeles Clippers,Denver Nuggets,117.0,83.0,34.0,Home,88.7,True,2025
+202504250MIL,2025-04-25,MIL,IND,Milwaukee Bucks,Indiana Pacers,117.0,101.0,16.0,Home,99.9,True,2025
+202504250MIN,2025-04-25,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,116.0,104.0,12.0,Home,97.8,True,2025
+202504250ORL,2025-04-25,ORL,BOS,Orlando Magic,Boston Celtics,95.0,93.0,2.0,Home,92.0,True,2025
+202504260GSW,2025-04-26,GSW,HOU,Golden State Warriors,Houston Rockets,104.0,93.0,11.0,Home,94.0,True,2025
+202504260MEM,2025-04-26,MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,115.0,117.0,-2.0,Home,101.2,True,2025
+202504260LAC,2025-04-26,LAC,DEN,Los Angeles Clippers,Denver Nuggets,99.0,101.0,-2.0,Home,91.6,True,2025
+202504260MIA,2025-04-26,MIA,CLE,Miami Heat,Cleveland Cavaliers,87.0,124.0,-37.0,Home,90.4,True,2025
+202504270DET,2025-04-27,DET,NYK,Detroit Pistons,New York Knicks,93.0,94.0,-1.0,Home,93.0,True,2025
+202504270MIL,2025-04-27,MIL,IND,Milwaukee Bucks,Indiana Pacers,103.0,129.0,-26.0,Home,93.4,True,2025
+202504270MIN,2025-04-27,MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,116.0,113.0,3.0,Home,90.5,True,2025
+202504270ORL,2025-04-27,ORL,BOS,Orlando Magic,Boston Celtics,98.0,107.0,-9.0,Home,93.3,True,2025
+202504280GSW,2025-04-28,GSW,HOU,Golden State Warriors,Houston Rockets,109.0,106.0,3.0,Home,90.0,True,2025
+202504280MIA,2025-04-28,MIA,CLE,Miami Heat,Cleveland Cavaliers,83.0,138.0,-55.0,Home,98.7,True,2025
+202504290NYK,2025-04-29,NYK,DET,New York Knicks,Detroit Pistons,103.0,106.0,-3.0,Home,99.2,True,2025
+202504290DEN,2025-04-29,DEN,LAC,Denver Nuggets,Los Angeles Clippers,131.0,115.0,16.0,Home,94.5,True,2025
+202504290IND,2025-04-29,IND,MIL,Indiana Pacers,Milwaukee Bucks,119.0,118.0,1.0,Home,95.9,True,2025
+202504290BOS,2025-04-29,BOS,ORL,Boston Celtics,Orlando Magic,120.0,89.0,31.0,Home,92.2,True,2025
+202504300HOU,2025-04-30,HOU,GSW,Houston Rockets,Golden State Warriors,131.0,116.0,15.0,Home,97.0,True,2025
+202504300LAL,2025-04-30,LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,96.0,103.0,-7.0,Home,93.9,True,2025
+202505010DET,2025-05-01,DET,NYK,Detroit Pistons,New York Knicks,113.0,116.0,-3.0,Home,101.0,True,2025
+202505010LAC,2025-05-01,LAC,DEN,Los Angeles Clippers,Denver Nuggets,111.0,105.0,6.0,Home,88.9,True,2025
+202505020GSW,2025-05-02,GSW,HOU,Golden State Warriors,Houston Rockets,107.0,115.0,-8.0,Home,98.6,True,2025
+202505030DEN,2025-05-03,DEN,LAC,Denver Nuggets,Los Angeles Clippers,120.0,101.0,19.0,Home,99.2,True,2025
+202505040HOU,2025-05-04,HOU,GSW,Houston Rockets,Golden State Warriors,89.0,103.0,-14.0,Home,88.7,True,2025
+202505040CLE,2025-05-04,CLE,IND,Cleveland Cavaliers,Indiana Pacers,112.0,121.0,-9.0,Home,98.1,True,2025
+202505050BOS,2025-05-05,BOS,NYK,Boston Celtics,New York Knicks,105.0,108.0,-3.0,Home,89.9,True,2025
+202505050OKC,2025-05-05,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,119.0,121.0,-2.0,Home,104.2,True,2025
+202505060MIN,2025-05-06,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,88.0,99.0,-11.0,Home,91.6,True,2025
+202505060CLE,2025-05-06,CLE,IND,Cleveland Cavaliers,Indiana Pacers,119.0,120.0,-1.0,Home,101.6,True,2025
+202505070BOS,2025-05-07,BOS,NYK,Boston Celtics,New York Knicks,90.0,91.0,-1.0,Home,95.8,True,2025
+202505070OKC,2025-05-07,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,149.0,106.0,43.0,Home,103.9,True,2025
+202505080MIN,2025-05-08,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,117.0,93.0,24.0,Home,95.2,True,2025
+202505090DEN,2025-05-09,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,113.0,104.0,9.0,Home,94.4,True,2025
+202505090IND,2025-05-09,IND,CLE,Indiana Pacers,Cleveland Cavaliers,104.0,126.0,-22.0,Home,104.5,True,2025
+202505100GSW,2025-05-10,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,97.0,102.0,-5.0,Home,92.4,True,2025
+202505100NYK,2025-05-10,NYK,BOS,New York Knicks,Boston Celtics,93.0,115.0,-22.0,Home,86.8,True,2025
+202505110DEN,2025-05-11,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,87.0,92.0,-5.0,Home,94.5,True,2025
+202505110IND,2025-05-11,IND,CLE,Indiana Pacers,Cleveland Cavaliers,129.0,109.0,20.0,Home,99.7,True,2025
+202505120GSW,2025-05-12,GSW,MIN,Golden State Warriors,Minnesota Timberwolves,110.0,117.0,-7.0,Home,100.2,True,2025
+202505120NYK,2025-05-12,NYK,BOS,New York Knicks,Boston Celtics,121.0,113.0,8.0,Home,93.1,True,2025
+202505130OKC,2025-05-13,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,112.0,105.0,7.0,Home,97.9,True,2025
+202505130CLE,2025-05-13,CLE,IND,Cleveland Cavaliers,Indiana Pacers,105.0,114.0,-9.0,Home,100.0,True,2025
+202505140MIN,2025-05-14,MIN,GSW,Minnesota Timberwolves,Golden State Warriors,121.0,110.0,11.0,Home,99.0,True,2025
+202505140BOS,2025-05-14,BOS,NYK,Boston Celtics,New York Knicks,127.0,102.0,25.0,Home,91.7,True,2025
+202505150DEN,2025-05-15,DEN,OKC,Denver Nuggets,Oklahoma City Thunder,119.0,107.0,12.0,Home,102.1,True,2025
+202505160NYK,2025-05-16,NYK,BOS,New York Knicks,Boston Celtics,119.0,81.0,38.0,Home,94.9,True,2025
+202505180OKC,2025-05-18,OKC,DEN,Oklahoma City Thunder,Denver Nuggets,125.0,93.0,32.0,Home,98.0,True,2025
+202505200OKC,2025-05-20,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,114.0,88.0,26.0,Home,96.8,True,2025
+202505210NYK,2025-05-21,NYK,IND,New York Knicks,Indiana Pacers,135.0,138.0,-3.0,Home,97.1,True,2025
+202505220OKC,2025-05-22,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,118.0,103.0,15.0,Home,95.9,True,2025
+202505230NYK,2025-05-23,NYK,IND,New York Knicks,Indiana Pacers,109.0,114.0,-5.0,Home,92.4,True,2025
+202505240MIN,2025-05-24,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,143.0,101.0,42.0,Home,101.1,True,2025
+202505250IND,2025-05-25,IND,NYK,Indiana Pacers,New York Knicks,100.0,106.0,-6.0,Home,95.4,True,2025
+202505260MIN,2025-05-26,MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,126.0,128.0,-2.0,Home,94.6,True,2025
+202505270IND,2025-05-27,IND,NYK,Indiana Pacers,New York Knicks,130.0,121.0,9.0,Home,102.5,True,2025
+202505280OKC,2025-05-28,OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,124.0,94.0,30.0,Home,103.5,True,2025
+202505290NYK,2025-05-29,NYK,IND,New York Knicks,Indiana Pacers,111.0,94.0,17.0,Home,98.6,True,2025
+202505310IND,2025-05-31,IND,NYK,Indiana Pacers,New York Knicks,125.0,108.0,17.0,Home,99.0,True,2025
+202506050OKC,2025-06-05,OKC,IND,Oklahoma City Thunder,Indiana Pacers,110.0,111.0,-1.0,Home,101.9,True,2025
+202506080OKC,2025-06-08,OKC,IND,Oklahoma City Thunder,Indiana Pacers,123.0,107.0,16.0,Home,97.6,True,2025
+202506110IND,2025-06-11,IND,OKC,Indiana Pacers,Oklahoma City Thunder,,,,Home,,False,2025
+202506130IND,2025-06-13,IND,OKC,Indiana Pacers,Oklahoma City Thunder,,,,Home,,False,2025
+202506160OKC,2025-06-16,OKC,IND,Oklahoma City Thunder,Indiana Pacers,,,,Home,,False,2025
+202506190IND,2025-06-19,IND,OKC,Indiana Pacers,Oklahoma City Thunder,,,,Home,,False,2025
+202506220OKC,2025-06-22,OKC,IND,Oklahoma City Thunder,Indiana Pacers,,,,Home,,False,2025
