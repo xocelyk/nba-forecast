@@ -1,4 +1,5 @@
 import csv
+import os
 import time
 
 import numpy as np
@@ -8,6 +9,7 @@ from sportsipy.nba.schedule import Schedule
 from sportsipy.nba.teams import Teams
 
 import utils
+import env
 
 
 def get_team_names(year=2025):
@@ -30,7 +32,7 @@ def load_year_data(year=2025):
     pre-loader for update_data function
     '''
     data = []
-    filename = 'data/games/year_data_{}.csv'.format(year)
+    filename = os.path.join(env.DATA_DIR, 'games', f'year_data_{year}.csv')
     df = pd.read_csv(filename)
     df = df[df['completed'] == True]
     for idx, row in df.iterrows():
@@ -93,12 +95,12 @@ def update_data(names_to_abbr, year=2025, preload=True):
     data['margin'] = data['team_score'] - data['opponent_score']
     data = data[['boxscore_id', 'date', 'team', 'opponent', 'team_name', 'opponent_name', 'team_score', 'opponent_score', 'margin', 'location', 'pace', 'completed', 'year']]
     data.set_index('boxscore_id', inplace=True)
-    data.to_csv('data/games/year_data_{}.csv'.format(year))
+    data.to_csv(os.path.join(env.DATA_DIR, 'games', f'year_data_{year}.csv'))
     return data
 
 def load_regular_season_win_totals_futures():
     res = {}
-    filename = 'data/regular_season_win_totals_odds_archive.csv'
+    filename = os.path.join(env.DATA_DIR, 'regular_season_win_totals_odds_archive.csv')
     with open(filename, 'r') as f:
         reader = csv.reader(f)
         data = list(reader)
@@ -135,7 +137,7 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
     - Number of days of rest since last game
     '''
 
-    all_data_archive = pd.read_csv(f'data/train_data.csv')
+    all_data_archive = pd.read_csv(os.path.join(env.DATA_DIR, 'train_data.csv'))
     all_data_archive.drop([col for col in all_data_archive.columns if 'Unnamed' in col], axis=1, inplace=True)
     win_totals_futures = load_regular_season_win_totals_futures()
     
@@ -148,7 +150,7 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
                 year_data = this_year_games
                 year_data['date'] = pd.to_datetime(year_data['date'], format='mixed')
             else:
-                year_data = pd.read_csv(f'data/games/year_data_{year}.csv')
+                year_data = pd.read_csv(os.path.join(env.DATA_DIR, 'games', f'year_data_{year}.csv'))
             year_data = year_data.sort_values('date')
             if 'team_abbr' in year_data.columns and 'team' not in year_data.columns:
                 year_data['team'] = year_data['team_abbr']
@@ -201,7 +203,7 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
                                 end_year_ratings_dct[year - 1][team] = np.mean(list(end_year_ratings_dct[year - 1].values()))
                     end_year_ratings_df = pd.DataFrame(end_year_ratings_dct[year - 1].items(), columns=['team', 'rating'])
                     end_year_ratings_df['year'] = year - 1
-                    end_year_ratings_df.to_csv(f'data/end_year_ratings/{year - 1}.csv', index=False)
+                    end_year_ratings_df.to_csv(os.path.join(env.DATA_DIR, 'end_year_ratings', f'{year - 1}.csv'), index=False)
                     year_data['last_year_team_rating'] = year_data.apply(lambda x: end_year_ratings_dct[year - 1][x['team']], axis=1)
                     year_data['last_year_opp_rating'] = year_data.apply(lambda x: end_year_ratings_dct[year - 1][x['opponent']], axis=1)
                     year_data['num_games_into_season'] = year_data.apply(lambda x: len(year_data[year_data['date'] < x['date']]), axis=1)
@@ -246,16 +248,16 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
 
         # all_data = pd.DataFrame(all_data, columns=['team', 'opponent', 'team_rating', 'opponent_rating', 'last_year_team_rating', 'last_year_opponent_rating', 'margin','pace', 'num_games_into_season', 'date', 'year', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'completed', 'team_win_total_future', 'opponent_win_total_future', 'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game'])
         all_data = pd.DataFrame(all_data)
-        all_data.to_csv(f'data/train_data.csv', index=False)
+        all_data.to_csv(os.path.join(env.DATA_DIR, 'train_data.csv'), index=False)
     else:
-        all_data = pd.read_csv(f'data/train_data.csv')
+        all_data = pd.read_csv(os.path.join(env.DATA_DIR, 'train_data.csv'))
         all_data.drop([col for col in all_data.columns if 'Unnamed' in col], axis=1, inplace=True)
         all_data['team_win_total_future'] = all_data.apply(lambda x: win_totals_futures[str(x['year'])][x['team']], axis=1).astype(float)
         all_data['opponent_win_total_future'] = all_data.apply(lambda x: win_totals_futures[str(x['year'])][x['opponent']], axis=1).astype(float)
-        all_data.to_csv(f'data/train_data.csv')
+        all_data.to_csv(os.path.join(env.DATA_DIR, 'train_data.csv'))
     
     all_data = add_days_since_most_recent_game(all_data)
-    all_data.to_csv(f'data/train_data.csv', index=False)
+    all_data.to_csv(os.path.join(env.DATA_DIR, 'train_data.csv'), index=False)
     return all_data
 
 def add_days_since_most_recent_game(df, cap=10):

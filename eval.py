@@ -6,6 +6,7 @@ from scipy.interpolate import UnivariateSpline
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.model_selection import train_test_split
+import os
 from xgboost import XGBClassifier, XGBRegressor
 from sklearn.metrics import log_loss
 import env
@@ -102,7 +103,7 @@ def get_win_margin_model(games, features=None):
     m, std = prediction_interval_stdev(model, X_test, y_test)
 
     # Save the trained model
-    filename = 'win_margin_model_heavy.pkl'
+    filename = os.path.join(env.DATA_DIR, 'win_margin_model_heavy.pkl')
     pickle.dump(model, open(filename, 'wb'))
     
     return model, m, std, spline
