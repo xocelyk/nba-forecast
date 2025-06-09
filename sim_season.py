@@ -27,7 +27,7 @@ class MarginModel:
         self.resid_mean = margin_model_resid_mean
 
 class Season:
-    def __init__(self, year, completed_games, future_games, margin_model, mean_pace, std_pace, sim_date_increment=1):
+    def __init__(self, year, completed_games, future_games, margin_model, win_prob_model, mean_pace, std_pace, sim_date_increment=1):
         self.year = year
         self.completed_games = completed_games
         self.completed_games['winner_name'] = self.completed_games.apply(lambda row: row['team'] if row['margin'] > 0 else row['opponent'], axis=1)
@@ -35,6 +35,7 @@ class Season:
         self.future_games = future_games
         self.future_games['winner_name'] = np.nan
         self.margin_model = margin_model
+        self.win_prob_model = win_prob_model
         self.teams = self.teams()
         self.mean_pace = mean_pace
         self.std_pace = std_pace
@@ -233,10 +234,15 @@ class Season:
         num_games_into_season = row['num_games_into_season']
         train_data = self.get_game_data(row)
         expected_margin = self.margin_model.margin_model.predict(train_data)[0]
-        noise = np.random.normal(0, self.margin_model.num_games_to_std_margin_model_resid(num_games_into_season))
+        # Add normally distributed noise based on how deep we are into the season
+        noise = np.random.normal(
+            0, self.margin_model.num_games_to_std_margin_model_resid(num_games_into_season)
+        )
         margin = noise + expected_margin
         team_win = int(margin > 0)
-        win_prob = 1 / (1 + np.exp(-0.15 * expected_margin))  # Simple logistic function to convert margin to probability
+        # Use the trained win probability model for reporting only; outcome is
+        # determined solely by the noisy margin above
+        win_prob = self.win_prob_model.predict_proba(np.array([[expected_margin]]))[:, 1][0]
         
         # Debug logging for finals games
         if row.get('playoff_label') == 'Finals':
@@ -1035,8 +1041,8 @@ def get_sim_report(season_results_over_sims, playoff_results_over_sims, num_sims
     sim_report_df.set_index('team', inplace=True)
     return sim_report_df
 
-def run_single_simulation(completed_year_games, future_year_games, margin_model, mean_pace, std_pace):
-    season = Season(2025, completed_year_games, future_year_games, margin_model, mean_pace, std_pace)
+def run_single_simulation(completed_year_games, future_year_games, margin_model, win_prob_model, mean_pace, std_pace):
+    season = Season(2025, completed_year_games, future_year_games, margin_model, win_prob_model, mean_pace, std_pace)
     season.simulate_season()
     wins_losses_dict = season.get_win_loss_report()
     wins_dict = {team: wins_losses_dict[team][0] for team in wins_losses_dict}
@@ -1141,7 +1147,7 @@ def write_seed_report(seeds_results_over_sims):
     seeds_results_over_sims_df.to_csv('data/seed_reports/archive/seed_report_' + date_string + '.csv', index=False)
     seeds_results_over_sims_df.to_csv('data/seed_reports/seed_report.csv', index=False)
 
-def sim_season(data, win_margin_model, margin_model_resid_mean, margin_model_resid_std, num_games_to_std_margin_model_resid, mean_pace, std_pace, year, num_sims=1000, parallel=True):
+def sim_season(data, win_margin_model, win_prob_model, margin_model_resid_mean, margin_model_resid_std, num_games_to_std_margin_model_resid, mean_pace, std_pace, year, num_sims=1000, parallel=True):
     import multiprocessing
     teams = data[data['year'] == year]['team'].unique()
     data['date'] = pd.to_datetime(data['date']).dt.date
@@ -1170,14 +1176,14 @@ def sim_season(data, win_margin_model, margin_model_resid_mean, margin_model_res
         num_cores = multiprocessing.cpu_count()
         print('Running {} simulations in parallel on {} cores'.format(num_sims, num_cores))
         pool = multiprocessing.Pool(num_cores)
-        results = [pool.apply_async(run_single_simulation, args=(completed_year_games, future_year_games, margin_model, mean_pace, std_pace)) for i in range(num_sims)]
+        results = [pool.apply_async(run_single_simulation, args=(completed_year_games, future_year_games, margin_model, win_prob_model, mean_pace, std_pace)) for i in range(num_sims)]
         output = [p.get() for p in results]
         pool.close()
     else:
         output = []
         for i in range(num_sims):
             print(f'\n========== Simulation {i+1}/{num_sims} ==========')
-            sim_result = run_single_simulation(completed_year_games, future_year_games, margin_model, mean_pace, std_pace)
+            sim_result = run_single_simulation(completed_year_games, future_year_games, margin_model, win_prob_model, mean_pace, std_pace)
             output.append(sim_result)
             
             # Collect finals game statistics if available
