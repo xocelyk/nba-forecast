@@ -8,28 +8,32 @@ import pandas as pd
 
 import utils
 
+'''
+# TODO: update with days since most recent game
+This is the simulation flow:
+for each day:
+    1. Run the get most recent data function over the completed games and impute future games with that data
+        - Ratings, win totals, and last n game ratings
+    2. Run the simulation over the next block of games
+        - Games are blocked by day, so we simulate each day
+    3. Add simulated games to completed games and remove simulated games from future games
+'''
+
 class MarginModel:
-    """
-    Represents the predictive model used for scoring margin.
-    """
-    def __init__(
-        self,
-        margin_model,
-        margin_model_resid_mean,
-        margin_model_resid_std,
-        num_games_to_std_margin_model_resid
-    ):
+    def __init__(self, margin_model, margin_model_resid_mean, margin_model_resid_std, num_games_to_std_margin_model_resid):
         self.margin_model = margin_model
         self.resid_std = margin_model_resid_std
         self.num_games_to_std_margin_model_resid = num_games_to_std_margin_model_resid
         self.resid_mean = margin_model_resid_mean
 
-
 class Season:
     def __init__(self, year, completed_games, future_games, margin_model, win_prob_model, mean_pace, std_pace, sim_date_increment=1):
         self.year = year
-        self.completed_games = completed_games.copy()
-        self.future_games = future_games.copy()
+        self.completed_games = completed_games
+        self.completed_games['winner_name'] = self.completed_games.apply(lambda row: row['team'] if row['margin'] > 0 else row['opponent'], axis=1)
+        self.completed_games['team_win'] = self.completed_games.apply(lambda row: 1 if row['margin'] > 0 else 0, axis=1)
+        self.future_games = future_games
+        self.future_games['winner_name'] = np.nan
         self.margin_model = margin_model
         self.win_prob_model = win_prob_model
         self.teams = self.teams()
@@ -46,285 +50,128 @@ class Season:
         self.win_total_futures = self.get_win_total_futures()
         self.last_year_ratings = self.get_last_year_ratings()
         self.last_n_games_adj_margins = self.init_last_n_games_adj_margins()
-        self.team_last_adj_margin_dict = {
-            team: np.mean(self.last_n_games_adj_margins[team][:1])
-            if len(self.last_n_games_adj_margins[team]) >= 1 else 0
-            for team in self.teams
-        }
-
-        self.update_counter = 0
-        self.update_every = 2
+        self.team_last_adj_margin_dict = {team: np.mean(self.last_n_games_adj_margins[team][:1]) if len(self.last_n_games_adj_margins[team]) >= 1 else 0 for team in self.teams}
         self.last_game_stats_dict = None
+        self.sim_date_increment = sim_date_increment
+        self.most_recent_game_date_dict = self.get_most_recent_game_date_dict()
+
+        self.future_games['team_most_recent_game_date'] = self.future_games.apply(lambda row: self.most_recent_game_date_dict[row['team']], axis=1)
+        self.future_games['opponent_most_recent_game_date'] = self.future_games.apply(lambda row: self.most_recent_game_date_dict[row['opponent']], axis=1)
+        self.future_games['team_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if row['team_most_recent_game_date'] is None else (row['date'] - row['team_most_recent_game_date']).days, axis=1)
+        self.future_games['opponent_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if row['opponent_most_recent_game_date'] is None else (row['date'] - row['opponent_most_recent_game_date']).days, axis=1)
         self.end_season_standings = None
         self.regular_season_win_loss_report = None
 
-    def _initialize_team_data(self):
-        """
-        Adds winner_name and team_win columns to completed_games.
-        Adds a placeholder winner_name to future_games.
-        Determines the set of teams involved.
-        """
-        self.completed_games["winner_name"] = self.completed_games.apply(
-            lambda row: row["team"] if row["margin"] > 0 else row["opponent"],
-            axis=1
-        )
-        self.completed_games["team_win"] = self.completed_games.apply(
-            lambda row: 1 if row["margin"] > 0 else 0,
-            axis=1
-        )
-
-        self.future_games["winner_name"] = np.nan
-        self.teams = self._get_teams()
-
-    def _initialize_games_data(self):
-        """
-        Performs initial setup for pace columns and most recent game date columns.
-        """
-        # Pace of future games is not deterministic; assume Gaussian distribution.
-        self.future_games["pace"] = [
-            np.random.normal(self.mean_pace, self.std_pace)
-            for _ in range(len(self.future_games))
-        ]
-        self.completed_games["pace"] = [
-            np.random.normal(self.mean_pace, self.std_pace)
-            for _ in range(len(self.completed_games))
-        ]
-
-        # Dictionary of most recent game dates for each team.
-        self.most_recent_game_date_dict = self.get_most_recent_game_date_dict()
-
-        self.future_games["team_most_recent_game_date"] = self.future_games.apply(
-            lambda row: self.most_recent_game_date_dict.get(row["team"]),
-            axis=1
-        )
-        self.future_games["opponent_most_recent_game_date"] = self.future_games.apply(
-            lambda row: self.most_recent_game_date_dict.get(row["opponent"]),
-            axis=1
-        )
-
-        self.future_games[
-            "team_days_since_most_recent_game"
-        ] = self.future_games.apply(
-            lambda row: 10 if row["team_most_recent_game_date"] is None
-            else (row["date"] - row["team_most_recent_game_date"]).days,
-            axis=1
-        )
-        self.future_games[
-            "opponent_days_since_most_recent_game"
-        ] = self.future_games.apply(
-            lambda row: 10 if row["opponent_most_recent_game_date"] is None
-            else (row["date"] - row["opponent_most_recent_game_date"]).days,
-            axis=1
-        )
-
-    def _get_teams(self):
-        """
-        Returns all teams that appear in either completed or future games.
-        """
-        return sorted(list(set(
-            self.completed_games["team"].unique().tolist()
-            + self.future_games["team"].unique().tolist()
-        )))
-
     def get_most_recent_game_date_dict(self, cap=10):
-        """
-        Creates and returns a dict of team -> most recent game date in the completed games.
-        If no completed game is available for a team, maps to None.
-        """
-        most_recent_game_date_dict = {}
+        # Create a dict of team to days since most recent game
+        most_recent_game_date_dict= {}
+        # Concatenate completed games with future games
         for team in self.teams:
-            team_data = self.completed_games.loc[
-                (self.completed_games["team"] == team)
-                | (self.completed_games["opponent"] == team)
-            ]
+            team_data = self.completed_games.loc[(self.completed_games['team'] == team) | (self.completed_games['opponent'] == team)]
             if len(team_data) == 0:
                 most_recent_game_date_dict[team] = None
             else:
-                team_data = team_data.sort_values(by="date", ascending=False)
-                most_recent_game_date = team_data.iloc[0]["date"]
+                team_data = team_data.sort_values(by='date', ascending=False)
+                most_recent_game_date = team_data.iloc[0]['date']
                 most_recent_game_date_dict[team] = most_recent_game_date
         return most_recent_game_date_dict
 
     def init_last_n_games_adj_margins(self):
-        """
-        Sets up a dictionary of team -> list of adjusted margins for that team's past games.
-        Uses earliest games first, then consecutive to most recent.
-        """
+        # earliest games first, most recent games last
         completed_games = self.completed_games.copy()
-        completed_games.sort_values(by="date", ascending=True, inplace=True)
         res = {}
-
+        completed_games.sort_values(by='date', ascending=True, inplace=True)
         for team in self.teams:
-            team_data = completed_games[
-                (completed_games["team"] == team)
-                | (completed_games["opponent"] == team)
-            ].sort_values(by="date", ascending=True)
-
-            # Create duplicated view of each game with vantage of 'team'
+            team_data = completed_games[(completed_games['team'] == team) | (completed_games['opponent'] == team)].sort_values(by='date', ascending=True)
             team_data = utils.duplicate_games(team_data)
-            team_data = team_data[team_data["team"] == team]
-
-            team_data["team_adj_margin"] = team_data.apply(
-                lambda x: x["margin"] + x["opponent_rating"] - utils.HCA,
-                axis=1
-            )
-
+            team_data = team_data[team_data['team'] == team]
+            team_data['team_adj_margin'] = team_data.apply(lambda x: x['margin'] + x['opponent_rating'] - utils.HCA, axis=1)
             if len(team_data) == 0:
                 team_adj_margins = []
             else:
-                team_adj_margins = team_data["team_adj_margin"].tolist()
-
+                team_adj_margins = team_data['team_adj_margin'].tolist()
             res[team] = team_adj_margins
-
         return res
 
     def get_random_pace(self):
-        """Returns a random pace value given our normal distribution assumption."""
         return np.random.normal(self.mean_pace, self.std_pace)
 
     def get_win_total_futures(self):
-        """
-        Returns a dictionary {team: team_win_total_future} using both completed and future games.
-        """
-        all_games = pd.concat([self.completed_games, self.future_games])
         win_total_futures = {}
-
+        all_games = pd.concat([self.completed_games, self.future_games])
+        # get dict of team to win total futures
+        win_total_futures = {}
         for team in self.teams:
-            # Take the first relevant row's 'team_win_total_future' as that team's future
-            first_future = all_games.loc[
-                all_games["team"] == team, "team_win_total_future"
-            ].iloc[0]
-            win_total_futures[team] = first_future
-
+            team_win_total_futures = all_games.loc[all_games['team'] == team, 'team_win_total_future'].iloc[0]
+            win_total_futures[team] = team_win_total_futures
         return win_total_futures
 
     def get_last_year_ratings(self):
-        """
-        Returns a dict {team: last_year_team_rating} by looking at available game data.
-        """
+        """Create a dict of team to last year's team rating."""
         last_year_ratings = {}
+        # Concatenate completed games with future games
         all_games = pd.concat([self.completed_games, self.future_games])
-
+        # get dict of team to win total futures
         for team in self.teams:
-            first_rating = all_games.loc[
-                all_games["team"] == team, "last_year_team_rating"
-            ].iloc[0]
-            last_year_ratings[team] = first_rating
-
+            team_last_year_ratings = all_games.loc[all_games['team'] == team, 'last_year_team_rating'].iloc[0]
+            last_year_ratings[team] = team_last_year_ratings
         return last_year_ratings
 
+    def teams(self):
+        return sorted(list(set(self.completed_games['team'].unique().tolist() + self.future_games['team'].unique().tolist())))
+
     def simulate_season(self):
-        """
-        Main driver that goes day by day from the earliest future game date
-        until season_stop_date, simulating all games on each day.
-        """
         season_stop_date = datetime.date(2025, 4, 14)
         date_increment = self.sim_date_increment
-        min_date = self.future_games["date"].min()
+        min_date = self.future_games['date'].min()
+        # max_date = self.future_games['date'].max()
         max_date = season_stop_date
-
         if min_date > max_date:
             return
-
         daterange = [min_date]
         while daterange[-1] <= max_date:
             daterange.append(daterange[-1] + datetime.timedelta(days=1))
-
+        
         for date in daterange[::date_increment]:
             start_date = date
             end_date = date + datetime.timedelta(days=date_increment)
             self.simulate_day(start_date, end_date, date_increment)
 
-    def simulate_day(self, start_date, end_date, date_increment=1):
-        """
-        Simulates all games that happen in the date range [start_date, end_date).
-        Moves the played games from future_games to completed_games. Then updates data.
-        """
-        games_on_date = self.future_games[
-            (self.future_games["date"] < end_date)
-            & (self.future_games["date"] >= start_date)
-        ]
-        if games_on_date.empty:
-            return
-
-        # Simulate each game
-        games_on_date = games_on_date.apply(self.simulate_game, axis=1)
-
-        # Move those newly completed games to completed_games
-        self.completed_games = pd.concat([self.completed_games, games_on_date], axis=0)
-        self.future_games = self.future_games[
-            ~self.future_games.index.isin(self.completed_games.index)
-        ]
-
-        # If all future games are completed, nothing else to do
-        if self.future_games.empty:
-            return
-
-        # Update ratings, margins, etc.
-        self.update_data(games_on_date=games_on_date)
+    def get_team_last_games(self):
+        teams_last_games_dict = {}
+        for team in self.teams:
+            team_last_games = utils.duplicate_games(self.completed_games)
+            team_last_games = team_last_games.loc[team_last_games['team'] == team]
+            team_last_games.sort_values(by='date', ascending=False, inplace=True)
+            team_last_game = team_last_games.iloc[0]
+            teams_last_games_dict[team] = team_last_game
+        return teams_last_games_dict
 
     def update_data(self, games_on_date=None):
-        """
-        Updates ratings, last_n_games data, and several columns in the future_games DataFrame.
-        """
+        # TODO: last_n_games should be based on em_ratings calculated from the most recent data
+        # After playing a series of games (e.g. a day), update the ratings for each team
         if self.future_games.empty:
             return
-
         if games_on_date is None:
-            games_on_date = self.future_games[self.future_games["completed"] == True]
+            games_on_date = self.future_games[self.future_games['completed'] == True]
+    
+        last_10_games_dict = {team: np.mean(self.last_n_games_adj_margins[team][-10:]) if len(self.last_n_games_adj_margins[team]) >= 10 else 0 for team in self.teams}
+        last_5_games_dict = {team: np.mean(self.last_n_games_adj_margins[team][-5:]) if len(self.last_n_games_adj_margins[team]) >= 5 else 0 for team in self.teams}
+        last_3_games_dict = {team: np.mean(self.last_n_games_adj_margins[team][-3:]) if len(self.last_n_games_adj_margins[team]) >= 3 else 0 for team in self.teams}
+        last_1_games_dict = {team: np.mean(self.last_n_games_adj_margins[team][-1:]) if len(self.last_n_games_adj_margins[team]) >= 1 else 0 for team in self.teams}
 
-        # Prepare rolling average margins
-        last_10_games_dict = {
-            team: np.mean(self.last_n_games_adj_margins[team][-10:])
-            if len(self.last_n_games_adj_margins[team]) >= 10 else 0
-            for team in self.teams
-        }
-        last_5_games_dict = {
-            team: np.mean(self.last_n_games_adj_margins[team][-5:])
-            if len(self.last_n_games_adj_margins[team]) >= 5 else 0
-            for team in self.teams
-        }
-        last_3_games_dict = {
-            team: np.mean(self.last_n_games_adj_margins[team][-3:])
-            if len(self.last_n_games_adj_margins[team]) >= 3 else 0
-            for team in self.teams
-        }
-        last_1_games_dict = {
-            team: np.mean(self.last_n_games_adj_margins[team][-1:])
-            if len(self.last_n_games_adj_margins[team]) >= 1 else 0
-            for team in self.teams
-        }
+        self.future_games['team_last_10_rating'] = self.future_games['team'].map(last_10_games_dict)
+        self.future_games['opponent_last_10_rating'] = self.future_games['opponent'].map(last_10_games_dict)
 
-        # Map rolling averages back to self.future_games
-        self.future_games["team_last_10_rating"] = self.future_games["team"].map(
-            last_10_games_dict
-        )
-        self.future_games["opponent_last_10_rating"] = self.future_games[
-            "opponent"
-        ].map(last_10_games_dict)
+        self.future_games['team_last_5_rating'] = self.future_games['team'].map(last_5_games_dict)
+        self.future_games['opponent_last_5_rating'] = self.future_games['opponent'].map(last_5_games_dict)
 
-        self.future_games["team_last_5_rating"] = self.future_games["team"].map(
-            last_5_games_dict
-        )
-        self.future_games["opponent_last_5_rating"] = self.future_games[
-            "opponent"
-        ].map(last_5_games_dict)
+        self.future_games['team_last_3_rating'] = self.future_games['team'].map(last_3_games_dict)
+        self.future_games['opponent_last_3_rating'] = self.future_games['opponent'].map(last_3_games_dict)
 
-        self.future_games["team_last_3_rating"] = self.future_games["team"].map(
-            last_3_games_dict
-        )
-        self.future_games["opponent_last_3_rating"] = self.future_games[
-            "opponent"
-        ].map(last_3_games_dict)
+        self.future_games['team_last_1_rating'] = self.future_games['team'].map(last_1_games_dict)
+        self.future_games['opponent_last_1_rating'] = self.future_games['opponent'].map(last_1_games_dict)
 
-        self.future_games["team_last_1_rating"] = self.future_games["team"].map(
-            last_1_games_dict
-        )
-        self.future_games["opponent_last_1_rating"] = self.future_games[
-            "opponent"
-        ].map(last_1_games_dict)
-
-        # Update EM ratings occasionally
         if self.update_counter is not None:
             self.update_counter += 1
             if self.update_counter % self.update_every == 0:
@@ -336,23 +183,14 @@ class Season:
         self.future_games['team_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if self.most_recent_game_date_dict[row['team']] is None else min(int((row['date'] - self.most_recent_game_date_dict[row['team']]).days), 10), axis=1)
         self.future_games['opponent_days_since_most_recent_game'] = self.future_games.apply(lambda row: 10 if self.most_recent_game_date_dict[row['opponent']] is None else min(int((row['date'] - self.most_recent_game_date_dict[row['opponent']]).days), 10), axis=1)
 
-        # Ensure last_year_team_rating, last_year_opponent_rating are filled
-        if self.future_games["last_year_team_rating"].isnull().any():
-            self.future_games["last_year_team_rating"] = self.future_games["team"].map(
-                self.last_year_ratings
-            )
-            self.future_games["last_year_opponent_rating"] = self.future_games[
-                "opponent"
-            ].map(self.last_year_ratings)
+        # this is necessary for games that we create, e.g. playoff games
+        if self.future_games['last_year_team_rating'].isnull().any():
+            self.future_games['last_year_team_rating'] = self.future_games['team'].map(self.last_year_ratings)
+            self.future_games['last_year_opponent_rating'] = self.future_games['opponent'].map(self.last_year_ratings)
 
-        # Ensure team_win_total_future columns are filled
-        if self.future_games["team_win_total_future"].isnull().any():
-            self.future_games["team_win_total_future"] = self.future_games["team"].map(
-                self.win_total_futures
-            )
-            self.future_games["opponent_win_total_future"] = self.future_games[
-                "opponent"
-            ].map(self.win_total_futures)
+        if self.future_games['team_win_total_future'].isnull().any():
+            self.future_games['team_win_total_future'] = self.future_games['team'].map(self.win_total_futures)
+            self.future_games['opponent_win_total_future'] = self.future_games['opponent'].map(self.win_total_futures)
 
         if self.future_games['num_games_into_season'].isnull().any():
             # this only works for playoffs
@@ -384,15 +222,11 @@ class Season:
         print('Predicted margin:', round(pred_margin, 1))
 
     def simulate_game(self, row):
-        """
-        Simulates a single game according to our margin model, including random noise.
-        Records which team won (team_win), the final margin, and updates that row accordingly.
-        """
-        team = row["team"]
-        opponent = row["opponent"]
-        num_games_into_season = row["num_games_into_season"]
-
-        # Prepare dataset to feed model
+        # TODO (possibly): add simulations of pace, three point percentage, etc
+        # but make sure stats are not independent of each other (otherwise we will regress to mean, decreasing variance)
+        team = row['team']
+        opponent = row['opponent']
+        num_games_into_season = row['num_games_into_season']
         train_data = self.get_game_data(row)
         expected_margin = self.margin_model.margin_model.predict(train_data)[0]
         # Add normally distributed noise based on how deep we are into the season
@@ -432,96 +266,42 @@ class Season:
         opponent_adj_margin = -row['margin'] + row['team_rating'] + utils.HCA
         self.last_n_games_adj_margins[team].append(team_adj_margin)
         self.last_n_games_adj_margins[opponent].append(opponent_adj_margin)
-
-        # Update "most recent date" for both teams
-        self.most_recent_game_date_dict[team] = row["date"]
-        self.most_recent_game_date_dict[opponent] = row["date"]
-
+        self.most_recent_game_date_dict[team] = row['date']
+        self.most_recent_game_date_dict[opponent] = row['date']
         return row
 
     def get_game_data(self, row):
-        """
-        Assembles a single-row DataFrame that the margin_model can consume
-        to predict the margin. This uses many of the columns from row.
-        """
-        team_rating = row["team_rating"]
-        opp_rating = row["opponent_rating"]
-        last_year_team_rating = row["last_year_team_rating"]
-        last_year_opp_rating = row["last_year_opponent_rating"]
-        num_games_into_season = row["num_games_into_season"]
-        team_last_10_rating = row["team_last_10_rating"]
-        opponent_last_10_rating = row["opponent_last_10_rating"]
-        team_last_5_rating = row["team_last_5_rating"]
-        opponent_last_5_rating = row["opponent_last_5_rating"]
-        team_last_3_rating = row["team_last_3_rating"]
-        opponent_last_3_rating = row["opponent_last_3_rating"]
-        team_last_1_rating = row["team_last_1_rating"]
-        opponent_last_1_rating = row["opponent_last_1_rating"]
-        team_win_total_future = row["team_win_total_future"]
-        opponent_win_total_future = row["opponent_win_total_future"]
-        team_days_since_most_recent_game = row["team_days_since_most_recent_game"]
-        opponent_days_since_most_recent_game = row["opponent_days_since_most_recent_game"]
+        team_rating = row['team_rating']
+        opp_rating = row['opponent_rating']
+        last_year_team_rating = row['last_year_team_rating']
+        last_year_opp_rating = row['last_year_opponent_rating']
+        num_games_into_season = row['num_games_into_season']
+        team_last_10_rating = row['team_last_10_rating']
+        opponent_last_10_rating = row['opponent_last_10_rating']
+        team_last_5_rating = row['team_last_5_rating']
+        opponent_last_5_rating = row['opponent_last_5_rating']
+        team_last_3_rating = row['team_last_3_rating']
+        opponent_last_3_rating = row['opponent_last_3_rating']
+        team_last_1_rating = row['team_last_1_rating']
+        opponent_last_1_rating = row['opponent_last_1_rating']
+        team_win_total_future = row['team_win_total_future']
+        opponent_win_total_future = row['opponent_win_total_future']
+        team_days_since_most_recent_game = row['team_days_since_most_recent_game']
+        opponent_days_since_most_recent_game = row['opponent_days_since_most_recent_game']
 
-        data = pd.DataFrame([[
-            team_rating,
-            opp_rating,
-            team_win_total_future,
-            opponent_win_total_future,
-            last_year_team_rating,
-            last_year_opp_rating,
-            num_games_into_season,
-            team_last_10_rating,
-            opponent_last_10_rating,
-            team_last_5_rating,
-            opponent_last_5_rating,
-            team_last_3_rating,
-            opponent_last_3_rating,
-            team_last_1_rating,
-            opponent_last_1_rating,
-            team_days_since_most_recent_game,
-            opponent_days_since_most_recent_game
-        ]], columns=[
-            "team_rating",
-            "opponent_rating",
-            "team_win_total_future",
-            "opponent_win_total_future",
-            "last_year_team_rating",
-            "last_year_opponent_rating",
-            "num_games_into_season",
-            "team_last_10_rating",
-            "opponent_last_10_rating",
-            "team_last_5_rating",
-            "opponent_last_5_rating",
-            "team_last_3_rating",
-            "opponent_last_3_rating",
-            "team_last_1_rating",
-            "opponent_last_1_rating",
-            "team_days_since_most_recent_game",
-            "opponent_days_since_most_recent_game"
-        ])
+        data = pd.DataFrame([[team_rating, opp_rating, team_win_total_future, opponent_win_total_future, last_year_team_rating, last_year_opp_rating, num_games_into_season, team_last_10_rating, opponent_last_10_rating, team_last_5_rating, opponent_last_5_rating, team_last_3_rating, opponent_last_3_rating, team_last_1_rating, opponent_last_1_rating, team_days_since_most_recent_game, opponent_days_since_most_recent_game]], columns=['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opponent_rating', 'num_games_into_season', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game'])
         return data
 
     def get_win_loss_report(self):
-        """
-        Returns a dictionary mapping each team -> [wins, losses]
-        based on all completed games so far.
-        """
         record_by_team = {team: [0, 0] for team in self.teams}
-        for _, game in self.completed_games.iterrows():
-            if game["team_win"]:
-                record_by_team[game["team"]][0] += 1
-                record_by_team[game["opponent"]][1] += 1
+        for idx, game in self.completed_games.iterrows():
+            if game['team_win']:
+                record_by_team[game['team']][0] += 1
+                record_by_team[game['opponent']][1] += 1
             else:
-                record_by_team[game["team"]][1] += 1
-                record_by_team[game["opponent"]][0] += 1
+                record_by_team[game['team']][1] += 1
+                record_by_team[game['opponent']][0] += 1
         return record_by_team
-
-    def get_most_recent_game_date_for_team(self, team):
-        """
-        Returns the most recent game date for the given team,
-        or None if not available.
-        """
-        return self.most_recent_game_date_dict.get(team)
     
     def get_playoff_games_completed(self, playoff_start_date):
         playoff_games = self.completed_games[self.completed_games['date'] >= playoff_start_date]
@@ -553,31 +333,21 @@ class Season:
         return results
 
     def playoffs(self):
-        """
-        Main entry to begin playoff simulations after the regular season.
-        Returns a dictionary containing results for each playoff round.
-        """
-        playoff_results = {
-            "playoffs": [],
-            "second_round": [],
-            "conference_finals": [],
-            "finals": [],
-            "champion": []
-        }
+        playoff_results = {'playoffs': [], 'second_round': [], 'conference_finals': [], 'finals': [], 'champion': []}
         win_loss_report = self.get_win_loss_report()
         self.regular_season_win_loss_report = win_loss_report
-
         ec_standings, wc_standings = self.get_playoff_standings(win_loss_report)
         self.end_season_standings = {}
-        for _, row in ec_standings.iterrows():
-            self.end_season_standings[row["team"]] = row["seed"]
-        for _, row in wc_standings.iterrows():
-            self.end_season_standings[row["team"]] = row["seed"]
+        for idx, row in ec_standings.iterrows():
+            self.end_season_standings[row['team']] = row['seed']
+        for idx, row in wc_standings.iterrows():
+            self.end_season_standings[row['team']] = row['seed']
+    
+        self.future_games['playoff_label'] = None
+        self.future_games['winner_name'] = None
 
-        self.future_games["playoff_label"] = None
-        self.future_games["winner_name"] = None
-        self.completed_games["playoff_label"] = None
-        self.completed_games["winner_name"] = None
+        self.completed_games['playoff_label'] = None
+        self.completed_games['winner_name'] = None
 
         # east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
         
@@ -598,41 +368,44 @@ class Season:
             self.seeds[team] = seed
 
         east_alive = list(east_seeds.values())
-        west_alive = list(west_seeds.values())
-        playoff_results["playoffs"] = east_alive + west_alive
+        west_alive = list(west_seeds.values()) 
+        assert len(set(east_alive).intersection(set(west_alive))) == 0
+        assert len(set(west_alive + east_alive)) == len(west_alive + east_alive)
+        playoff_results['playoffs'] = east_alive + west_alive
 
         # playoff start date is 4/20/2025
         playoff_start_date = datetime.date(2025, 4, 19)
         cur_playoff_results = self.get_cur_playoff_results(playoff_start_date)
+        # clear all future games - we create them ourselves
+        self.future_games = self.future_games[self.future_games['date'] < playoff_start_date]
 
-        # Clear all future games beyond playoff_start_date
-        self.future_games = self.future_games[self.future_games["date"] < playoff_start_date]
 
-        # Simulate first round
+        # simulate first round
         east_seeds, west_seeds = self.first_round(east_seeds, west_seeds, cur_playoff_results)
         east_alive = list(east_seeds.values())
         west_alive = list(west_seeds.values())
-        playoff_results["second_round"] = east_alive + west_alive
+        playoff_results['second_round'] = east_alive + west_alive
 
-        # Simulate second round
+        # simulate second round
         east_seeds, west_seeds = self.second_round(east_seeds, west_seeds, cur_playoff_results)
         east_alive = list(east_seeds.values())
         west_alive = list(west_seeds.values())
-        playoff_results["conference_finals"] = east_alive + west_alive
+        playoff_results['conference_finals'] = east_alive + west_alive
 
-        # Simulate conference finals
+        # simulate conference finals
         e1, w1 = self.conference_finals(east_seeds, west_seeds, cur_playoff_results)
-        playoff_results["finals"] = [e1, w1]
+        playoff_results['finals'] = [e1, w1]
 
-        # Random assignment for home court if a tie in seed or record
         if choice([True, False]):
-            team1, team2 = e1, w1
+            team1 = e1
+            team2 = w1
         else:
-            team1, team2 = w1, e1
-
-        # Simulate finals
+            team1 = w1
+            team2 = e1
+        
+        # simulate finals
         champ = self.finals(team1, team2, cur_playoff_results)
-        playoff_results["champion"] = [champ]
+        playoff_results['champion'] = [champ]
         return playoff_results
 
     def first_round(self, east_seeds, west_seeds, cur_playoff_results):
