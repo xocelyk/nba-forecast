@@ -274,6 +274,10 @@ def duplicate_games(df):
     }
     
     duplicated_games = duplicated_games.rename(columns=col_mapping)
+
+    # Recompute rating differential after swapping
+    if 'team_rating' in duplicated_games.columns and 'opponent_rating' in duplicated_games.columns:
+        duplicated_games['rating_diff'] = duplicated_games['team_rating'] - duplicated_games['opponent_rating']
     
     # Adjust columns that require calculation
     duplicated_games['margin'] = -duplicated_games['margin'] + 2 * HCA
@@ -325,7 +329,7 @@ def duplicate_games(df):
 #     return df
 
 def duplicate_games_training_data(df):
-    features = ['team', 'opponent', 'team_rating', 'opponent_rating', 'last_year_team_rating', 'last_year_opponent_rating', 'margin', 'num_games_into_season', 'date', 'year', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'completed', 'team_win_total_future', 'opponent_win_total_future']
+    features = ['team', 'opponent', 'team_rating', 'opponent_rating', 'rating_diff', 'last_year_team_rating', 'last_year_opponent_rating', 'margin', 'num_games_into_season', 'date', 'year', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'completed', 'team_win_total_future', 'opponent_win_total_future']
     def reverse_game(row):
         team = row['opponent']
         opponent = row['team']
@@ -348,12 +352,15 @@ def duplicate_games_training_data(df):
         completed = row['completed']
         team_win_total_future = row['opponent_win_total_future']
         opponent_win_total_future = row['team_win_total_future']
-        return [team, opponent, team_rating, opponent_rating, last_year_team_rating, last_year_opponent_rating, margin, num_games_into_season, date, year, team_last_10_rating, opponent_last_10_rating, team_last_5_rating, opponent_last_5_rating, team_last_3_rating, opponent_last_3_rating, team_last_1_rating, opponent_last_1_rating, completed, team_win_total_future, opponent_win_total_future]
+        rating_diff = team_rating - opponent_rating
+        return [team, opponent, team_rating, opponent_rating, rating_diff, last_year_team_rating, last_year_opponent_rating, margin, num_games_into_season, date, year, team_last_10_rating, opponent_last_10_rating, team_last_5_rating, opponent_last_5_rating, team_last_3_rating, opponent_last_3_rating, team_last_1_rating, opponent_last_1_rating, completed, team_win_total_future, opponent_win_total_future]
     
     duplicated_games = []
     for idx, game in df.iterrows():
         duplicated_games.append(reverse_game(game))
     duplicated_games = pd.DataFrame(duplicated_games, columns=features)
+    if 'rating_diff' in df.columns:
+        df['rating_diff'] = df['team_rating'] - df['opponent_rating']
     df = pd.concat([df, duplicated_games])
     return df
 
