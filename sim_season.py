@@ -234,9 +234,14 @@ class Season:
         num_games_into_season = row['num_games_into_season']
         train_data = self.get_game_data(row)
         expected_margin = self.margin_model.margin_model.predict(train_data)[0]
-        noise = np.random.normal(0, self.margin_model.num_games_to_std_margin_model_resid(num_games_into_season))
+        # Add normally distributed noise based on how deep we are into the season
+        noise = np.random.normal(
+            0, self.margin_model.num_games_to_std_margin_model_resid(num_games_into_season)
+        )
         margin = noise + expected_margin
         team_win = int(margin > 0)
+        # Use the trained win probability model for reporting only; outcome is
+        # determined solely by the noisy margin above
         win_prob = self.win_prob_model.predict_proba(np.array([[expected_margin]]))[:, 1][0]
         
         # Debug logging for finals games
