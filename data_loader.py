@@ -246,12 +246,14 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
 
         # all_data = pd.DataFrame(all_data, columns=['team', 'opponent', 'team_rating', 'opponent_rating', 'last_year_team_rating', 'last_year_opponent_rating', 'margin','pace', 'num_games_into_season', 'date', 'year', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'completed', 'team_win_total_future', 'opponent_win_total_future', 'team_days_since_most_recent_game', 'opponent_days_since_most_recent_game'])
         all_data = pd.DataFrame(all_data)
+        all_data['rating_diff'] = all_data['team_rating'] - all_data['opponent_rating']
         all_data.to_csv(f'data/train_data.csv', index=False)
     else:
         all_data = pd.read_csv(f'data/train_data.csv')
         all_data.drop([col for col in all_data.columns if 'Unnamed' in col], axis=1, inplace=True)
         all_data['team_win_total_future'] = all_data.apply(lambda x: win_totals_futures[str(x['year'])][x['team']], axis=1).astype(float)
         all_data['opponent_win_total_future'] = all_data.apply(lambda x: win_totals_futures[str(x['year'])][x['opponent']], axis=1).astype(float)
+        all_data['rating_diff'] = all_data['team_rating'] - all_data['opponent_rating']
         all_data.to_csv(f'data/train_data.csv')
     
     all_data = add_days_since_most_recent_game(all_data)
