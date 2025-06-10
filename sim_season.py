@@ -41,6 +41,9 @@ class Season:
         self.future_games['winner_name'] = np.nan
         self.margin_model = margin_model
         self.win_prob_model = win_prob_model
+        self.hca_prior_mean = utils.HCA_PRIOR_MEAN
+        self.hca_prior_weight = 20.0
+        self.hca = utils.calculate_dynamic_hca(self.completed_games, prior_mean=self.hca_prior_mean, prior_weight=self.hca_prior_weight)
         self.teams = self.teams()
         self.mean_pace = mean_pace
         self.std_pace = std_pace
@@ -50,7 +53,7 @@ class Season:
         # also assuming that pace is normally distributed for completed games, have not scraped pace for all past games and now rate limited, so more difficult
         self.future_games['pace'] = [np.random.normal(self.mean_pace, self.std_pace) for _ in range(len(self.future_games))]
         self.completed_games['pace'] = [np.random.normal(self.mean_pace, self.std_pace) for _ in range(len(self.completed_games))]
-        self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams)
+        self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams, hca=self.hca)
         self.time = time.time()
         self.win_total_futures = self.get_win_total_futures()
         self.last_year_ratings = self.get_last_year_ratings()
@@ -88,9 +91,9 @@ class Season:
         completed_games.sort_values(by='date', ascending=True, inplace=True)
         for team in self.teams:
             team_data = completed_games[(completed_games['team'] == team) | (completed_games['opponent'] == team)].sort_values(by='date', ascending=True)
-            team_data = utils.duplicate_games(team_data)
+            team_data = utils.duplicate_games(team_data, hca=self.hca)
             team_data = team_data[team_data['team'] == team]
-            team_data['team_adj_margin'] = team_data.apply(lambda x: x['margin'] + x['opponent_rating'] - utils.HCA, axis=1)
+            team_data['team_adj_margin'] = team_data.apply(lambda x: x['margin'] + x['opponent_rating'] - self.hca, axis=1)
             if len(team_data) == 0:
                 team_adj_margins = []
             else:
@@ -145,7 +148,7 @@ class Season:
     def get_team_last_games(self):
         teams_last_games_dict = {}
         for team in self.teams:
-            team_last_games = utils.duplicate_games(self.completed_games)
+            team_last_games = utils.duplicate_games(self.completed_games, hca=self.hca)
             team_last_games = team_last_games.loc[team_last_games['team'] == team]
             team_last_games.sort_values(by='date', ascending=False, inplace=True)
             team_last_game = team_last_games.iloc[0]
@@ -159,6 +162,11 @@ class Season:
             return
         if games_on_date is None:
             games_on_date = self.future_games[self.future_games['completed'] == True]
+
+        # Recalculate home court advantage from all completed games
+        self.hca = utils.calculate_dynamic_hca(self.completed_games,
+                                               prior_mean=self.hca_prior_mean,
+                                               prior_weight=self.hca_prior_weight)
     
         last_10_games_dict = {team: np.mean(self.last_n_games_adj_margins[team][-10:]) if len(self.last_n_games_adj_margins[team]) >= 10 else 0 for team in self.teams}
         last_5_games_dict = {team: np.mean(self.last_n_games_adj_margins[team][-5:]) if len(self.last_n_games_adj_margins[team]) >= 5 else 0 for team in self.teams}
@@ -180,7 +188,7 @@ class Season:
         if self.update_counter is not None:
             self.update_counter += 1
             if self.update_counter % self.update_every == 0:
-                self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams)
+                self.em_ratings = utils.get_em_ratings(self.completed_games, names=self.teams, hca=self.hca)
 
         self.future_games['team_rating'] = self.future_games['team'].map(self.em_ratings)
         self.future_games['opponent_rating'] = self.future_games['opponent'].map(self.em_ratings)
@@ -269,8 +277,8 @@ class Season:
         row['winner_name'] = team if team_win else opponent
         row['rating_diff'] = row['team_rating'] - row['opponent_rating']
 
-        team_adj_margin = row['margin'] + row['opponent_rating'] - utils.HCA
-        opponent_adj_margin = -row['margin'] + row['team_rating'] + utils.HCA
+        team_adj_margin = row['margin'] + row['opponent_rating'] - self.hca
+        opponent_adj_margin = -row['margin'] + row['team_rating'] + self.hca
         self.last_n_games_adj_margins[team].append(team_adj_margin)
         self.last_n_games_adj_margins[opponent].append(opponent_adj_margin)
         self.most_recent_game_date_dict[team] = row['date']
@@ -326,7 +334,7 @@ class Season:
             if team not in playoff_games['team'].unique() and team not in playoff_games['opponent'].unique():
                 continue
             team_playoff_games = playoff_games[(playoff_games['team'] == team) | (playoff_games['opponent'] == team)]
-            duped_games = utils.duplicate_games(team_playoff_games)
+            duped_games = utils.duplicate_games(team_playoff_games, hca=self.hca)
             # find all the unique opponents the team played and sort them by date. first is the first round opponent, second is the second round opponent, etc.
             opponents = duped_games['opponent'].unique()
             opponents = sorted(opponents, key=lambda x: duped_games[duped_games['opponent'] == x].iloc[0]['date'])
@@ -902,7 +910,7 @@ class Season:
         for team in teams:
             head_to_head[team] = 0
 
-        sim_completed_games = utils.duplicate_games(self.completed_games)
+        sim_completed_games = utils.duplicate_games(self.completed_games, hca=self.hca)
         # can do this quicker with apply then sum
         for idx, game in sim_completed_games.iterrows():
             if game['team'] in teams and game['opponent'] in teams:
