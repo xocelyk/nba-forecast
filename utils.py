@@ -451,9 +451,9 @@ def duplicate_games(df, hca: float = HCA):
     #     "team_rating" in duplicated_games.columns
     #     and "opponent_rating" in duplicated_games.columns
     # ):
-        # duplicated_games["rating_diff"] = (
-        #     duplicated_games["team_rating"] - duplicated_games["opponent_rating"]
-        # )
+    # duplicated_games["rating_diff"] = (
+    #     duplicated_games["team_rating"] - duplicated_games["opponent_rating"]
+    # )
 
     # Adjust columns that require calculation
     duplicated_games["margin"] = -duplicated_games["margin"] + 2 * hca

@@ -15,9 +15,7 @@ def predict_margin_today_games(games, win_margin_model):
     games = games[games["date"] == datetime.date.today()]
     if len(games) == 0:
         return None
-    games["margin"] = win_margin_model.predict(
-        games[env.x_features]
-    )
+    games["margin"] = win_margin_model.predict(games[env.x_features])
     for date in games["date"].unique():
         print("{} games".format(date))
         for index, row in games[games["date"] == date].iterrows():
@@ -65,9 +63,7 @@ def predict_margin_this_week_games(games, win_margin_model):
         print(f"\n{col}:")
         print(games[col].describe())
 
-    games["margin"] = win_margin_model.predict(
-        games[env.x_features]
-    )
+    games["margin"] = win_margin_model.predict(games[env.x_features])
 
     print("\nPredicted Margins by Date:")
     for date in games["date"].unique():
@@ -109,9 +105,7 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
     games = games[games["date"] >= datetime.date.today()]
     if len(games) == 0:
         return None
-    games["pred_margin"] = win_margin_model.predict(
-        games[env.x_features]
-    )
+    games["pred_margin"] = win_margin_model.predict(games[env.x_features])
     games["win_prob"] = win_prob_model.predict_proba(
         games["pred_margin"].values.reshape(-1, 1)
     )[:, 1]
