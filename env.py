@@ -55,7 +55,6 @@ class Config:
     def __post_init__(self) -> None:
         self.x_features_heavy = self.x_features.copy()
 
-
 config = Config()
 
 # Backwards compatibility for existing imports
@@ -66,4 +65,3 @@ margin_label = config.margin_label
 win_prob_label = config.win_prob_label
 win_margin_model_params = config.win_margin_model_params
 win_prob_model_params = config.win_prob_model_params
-
