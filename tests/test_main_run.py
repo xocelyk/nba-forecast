@@ -73,7 +73,7 @@ class DummyGames:
 
 # Replace heavy functions with simple stubs
 main.parse_arguments = lambda: argparse.Namespace(
-    year=2025, update=False, save_names=False, num_sims=10, reset=False
+    year=2025, update=False, save_names=False, num_sims=10, reset=False, parallel=False
 )
 main.load_team_data = lambda *a, **k: (["A"], {"Alpha": "A"}, {"A": "Alpha"})
 main.load_game_data = lambda *a, **k: DummyGames()
