@@ -195,7 +195,7 @@ def load_training_data(
 def add_days_since_most_recent_game(df: pd.DataFrame, cap: int = 10) -> pd.DataFrame:
     """Vectorized computation of days since a team's previous game."""
     df = df.copy()
-    df["date"] = pd.to_datetime(df["date"]).dt.date
+    df["date"] = pd.to_datetime(df["date"])
 
     df = df.sort_values("date").reset_index(drop=True)
 
