@@ -37,7 +37,9 @@ def parse_arguments() -> argparse.Namespace:
         "--num-sims", type=int, default=1000, help="Number of simulations to run"
     )
     parser.add_argument("--reset", action="store_true", help="Reset training data")
-    parser.add_argument("--parallel", action="store_true", help="Run simulations in parallel")
+    parser.add_argument(
+        "--parallel", action="store_true", help="Run simulations in parallel"
+    )
     return parser.parse_args()
 
 
@@ -400,7 +402,13 @@ def main():
 
     # Simulate season
     sim_report = simulate_season(
-        training_data, models, mean_pace, std_pace, year=YEAR, num_sims=num_sims, parallel=parallel
+        training_data,
+        models,
+        mean_pace,
+        std_pace,
+        year=YEAR,
+        num_sims=num_sims,
+        parallel=parallel,
     )
 
     # Add predictive ratings
