@@ -5,6 +5,7 @@ import os
 @dataclass
 class Config:
     """Configuration for model training and data locations."""
+
     data_dir: str = field(default_factory=lambda: os.getenv("NBA_DATA_DIR", "data"))
     x_features: List[str] = field(default_factory=lambda: [
         'team_rating',
