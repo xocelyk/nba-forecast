@@ -15,7 +15,7 @@ class Config:
             "team_win_total_future",
             "opponent_win_total_future",
             "last_year_team_rating",
-            "last_year_opponent_rating",
+            "last_year_opp_rating",
             "num_games_into_season",
             "team_last_10_rating",
             "opponent_last_10_rating",

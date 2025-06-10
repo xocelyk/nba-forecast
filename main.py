@@ -206,7 +206,7 @@ def simulate_season(
         std_pace,
         year=year,
         num_sims=num_sims,
-        parallel=False,
+        parallel=True,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     sim_report.to_csv(os.path.join(env.DATA_DIR, "sim_results", "sim_report.csv"))

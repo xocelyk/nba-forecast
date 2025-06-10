@@ -50,10 +50,6 @@ class Season:
     ):
         self.year = year
         self.completed_games = completed_games
-        self.completed_games["rating_diff"] = (
-            self.completed_games["team_rating"]
-            - self.completed_games["opponent_rating"]
-        )
         self.completed_games["winner_name"] = self.completed_games.apply(
             lambda row: row["team"] if row["margin"] > 0 else row["opponent"], axis=1
         )
@@ -61,9 +57,6 @@ class Season:
             lambda row: 1 if row["margin"] > 0 else 0, axis=1
         )
         self.future_games = future_games
-        self.future_games["rating_diff"] = (
-            self.future_games["team_rating"] - self.future_games["opponent_rating"]
-        )
         self.future_games["winner_name"] = np.nan
         self.margin_model = margin_model
         self.win_prob_model = win_prob_model
@@ -328,9 +321,6 @@ class Season:
         self.future_games["opponent_rating"] = self.future_games["opponent"].map(
             self.em_ratings
         )
-        self.future_games["rating_diff"] = (
-            self.future_games["team_rating"] - self.future_games["opponent_rating"]
-        )
 
         self.future_games["team_days_since_most_recent_game"] = self.future_games.apply(
             lambda row: (
@@ -371,7 +361,7 @@ class Season:
             self.future_games["last_year_team_rating"] = self.future_games["team"].map(
                 self.last_year_ratings
             )
-            self.future_games["last_year_opponent_rating"] = self.future_games[
+            self.future_games["last_year_opp_rating"] = self.future_games[
                 "opponent"
             ].map(self.last_year_ratings)
 
@@ -483,7 +473,6 @@ class Season:
         row["team_win"] = team_win
         row["margin"] = margin
         row["winner_name"] = team if team_win else opponent
-        row["rating_diff"] = row["team_rating"] - row["opponent_rating"]
 
         team_adj_margin = row["margin"] + row["opponent_rating"] - self.hca
         opponent_adj_margin = -row["margin"] + row["team_rating"] + self.hca
@@ -497,7 +486,7 @@ class Season:
         team_rating = row["team_rating"]
         opp_rating = row["opponent_rating"]
         last_year_team_rating = row["last_year_team_rating"]
-        last_year_opp_rating = row["last_year_opponent_rating"]
+        last_year_opp_rating = row["last_year_opp_rating"]
         num_games_into_season = row["num_games_into_season"]
         team_last_10_rating = row["team_last_10_rating"]
         opponent_last_10_rating = row["opponent_last_10_rating"]
@@ -514,13 +503,13 @@ class Season:
             "opponent_days_since_most_recent_game"
         ]
 
-        rating_diff = team_rating - opp_rating
+        # rating_diff = team_rating - opp_rating
         data = pd.DataFrame(
             [
                 [
                     team_rating,
                     opp_rating,
-                    rating_diff,
+                    # rating_diff,
                     team_win_total_future,
                     opponent_win_total_future,
                     last_year_team_rating,
@@ -541,11 +530,11 @@ class Season:
             columns=[
                 "team_rating",
                 "opponent_rating",
-                "rating_diff",
+                # "rating_diff",
                 "team_win_total_future",
                 "opponent_win_total_future",
                 "last_year_team_rating",
-                "last_year_opponent_rating",
+                "last_year_opp_rating",
                 "num_games_into_season",
                 "team_last_10_rating",
                 "opponent_last_10_rating",
