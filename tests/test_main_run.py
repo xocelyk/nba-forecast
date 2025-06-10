@@ -7,11 +7,15 @@ import types
 sys.modules.setdefault("numpy", types.ModuleType("numpy"))
 # Provide bare-bones pandas stub with DataFrame placeholder
 pandas_stub = types.ModuleType("pandas")
+
+
 class DummyDF:
     def to_csv(self, *a, **k):
         pass
+
     def head(self, *a, **k):
         return "dummy"
+
 
 pandas_stub.DataFrame = DummyDF
 pandas_stub.read_csv = lambda *a, **k: DummyDF()
@@ -41,26 +45,37 @@ for mod in ["data_loader", "eval", "forecast", "stats"]:
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
 import main
 
+
 class SimpleDF:
     def to_csv(self, *a, **k):
         pass
+
     def head(self, *a, **k):
         return "ok"
 
+
 dummy_df = SimpleDF()
+
+
 class DummyGames:
     def __getitem__(self, key):
         return self
+
     def __invert__(self):
         return self
+
     def mean(self):
         return 0.0
+
     def std(self):
         return 0.0
 
+
 # Replace heavy functions with simple stubs
-main.parse_arguments = lambda: argparse.Namespace(year=2025, update=False, save_names=False, num_sims=10, reset=False)
-main.load_team_data = lambda *a, **k: (["A"], {"Alpha":"A"}, {"A":"Alpha"})
+main.parse_arguments = lambda: argparse.Namespace(
+    year=2025, update=False, save_names=False, num_sims=10, reset=False
+)
+main.load_team_data = lambda *a, **k: (["A"], {"Alpha": "A"}, {"A": "Alpha"})
 main.load_game_data = lambda *a, **k: DummyGames()
 main.calculate_em_ratings = lambda *a, **k: {}
 main.initialize_dataframe = lambda *a, **k: dummy_df
@@ -79,4 +94,3 @@ sys.modules["forecast"].predict_margin_this_week_games = lambda *a, **k: None
 
 def test_main_runs_without_error():
     main.main()
-

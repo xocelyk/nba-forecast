@@ -1,12 +1,14 @@
 import csv
 import os
 import time
+
 import numpy as np
 import pandas as pd
 from sportsipy.nba.boxscore import Boxscore
 from sportsipy.nba.schedule import Schedule
-import utils
+
 import env
+import utils
 
 
 def get_team_names(year: int = 2025):
@@ -33,18 +35,20 @@ def load_year_data(year: int = 2025):
         boxscore_id = row["boxscore_id"]
         date_str = f"{boxscore_id[4:6]}/{boxscore_id[6:8]}/{boxscore_id[0:4]}"
         date_val = pd.to_datetime(date_str)
-        data.append([
-            boxscore_id,
-            date_val,
-            row["team"],
-            row["opponent"],
-            row["team_score"],
-            row["opponent_score"],
-            "Home",
-            row["pace"],
-            row["completed"],
-            year,
-        ])
+        data.append(
+            [
+                boxscore_id,
+                date_val,
+                row["team"],
+                row["opponent"],
+                row["team_score"],
+                row["opponent_score"],
+                "Home",
+                row["pace"],
+                row["completed"],
+                year,
+            ]
+        )
     return data
 
 
@@ -136,9 +140,7 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
 
 def load_regular_season_win_totals_futures():
     """Load historical regular-season win total futures."""
-    filename = os.path.join(
-        env.DATA_DIR, "regular_season_win_totals_odds_archive.csv"
-    )
+    filename = os.path.join(env.DATA_DIR, "regular_season_win_totals_odds_archive.csv")
     with open(filename, "r") as f:
         reader = csv.reader(f)
         data = list(reader)
@@ -213,8 +215,7 @@ def add_days_since_most_recent_game(df: pd.DataFrame, cap: int = 10) -> pd.DataF
     combined["days_since"] = (
         combined.groupby(["year", "club"])["date"]
         .diff()
-        .dt.days
-        .fillna(cap)
+        .dt.days.fillna(cap)
         .clip(upper=cap)
     )
 
