@@ -37,6 +37,7 @@ def parse_arguments() -> argparse.Namespace:
         "--num-sims", type=int, default=1000, help="Number of simulations to run"
     )
     parser.add_argument("--reset", action="store_true", help="Reset training data")
+    parser.add_argument("--parallel", action="store_true", help="Run simulations in parallel")
     return parser.parse_args()
 
 
@@ -187,6 +188,7 @@ def simulate_season(
     std_pace: float,
     year: int,
     num_sims: int,
+    parallel: bool = False,
 ) -> pd.DataFrame:
     (
         win_margin_model,
@@ -206,7 +208,7 @@ def simulate_season(
         std_pace,
         year=year,
         num_sims=num_sims,
-        parallel=False,
+        parallel=parallel,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     sim_report.to_csv(os.path.join(env.DATA_DIR, "sim_results", "sim_report.csv"))
@@ -360,6 +362,7 @@ def main():
     save_names = args.save_names
     num_sims = args.num_sims
     reset = args.reset
+    parallel = args.parallel
 
     # Load team data
     abbrs, names_to_abbr, abbr_to_name = load_team_data(YEAR, update, save_names)
@@ -397,7 +400,7 @@ def main():
 
     # Simulate season
     sim_report = simulate_season(
-        training_data, models, mean_pace, std_pace, year=YEAR, num_sims=num_sims
+        training_data, models, mean_pace, std_pace, year=YEAR, num_sims=num_sims, parallel=parallel
     )
 
     # Add predictive ratings

@@ -586,32 +586,3 @@ def duplicate_games_training_data(df, hca: float = HCA):
     #     df["rating_diff"] = df["team_rating"] - df["opponent_rating"]
     df = pd.concat([df, duplicated_games])
     return df
-
-
-def series_win_probability(game_win_probs):
-    """Return probability that team1 wins a best-of-7 series.
-
-    Parameters
-    ----------
-    game_win_probs : list[float]
-        Probability of team1 winning each scheduled game, in order.
-
-    Returns
-    -------
-    float
-        Probability that team1 wins four games before team2 does.
-    """
-    from functools import lru_cache
-
-    @lru_cache(None)
-    def dp(i: int, w1: int, w2: int) -> float:
-        if w1 >= 4:
-            return 1.0
-        if w2 >= 4:
-            return 0.0
-        if i >= len(game_win_probs):
-            return 1.0 if w1 > w2 else 0.0
-        p = game_win_probs[i]
-        return p * dp(i + 1, w1 + 1, w2) + (1 - p) * dp(i + 1, w1, w2 + 1)
-
-    return dp(0, 0, 0)

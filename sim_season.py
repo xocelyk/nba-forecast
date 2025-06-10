@@ -527,26 +527,7 @@ class Season:
                     opponent_days_since_most_recent_game,
                 ]
             ],
-            columns=[
-                "team_rating",
-                "opponent_rating",
-                # "rating_diff",
-                "team_win_total_future",
-                "opponent_win_total_future",
-                "last_year_team_rating",
-                "last_year_opp_rating",
-                "num_games_into_season",
-                "team_last_10_rating",
-                "opponent_last_10_rating",
-                "team_last_5_rating",
-                "opponent_last_5_rating",
-                "team_last_3_rating",
-                "opponent_last_3_rating",
-                "team_last_1_rating",
-                "opponent_last_1_rating",
-                "team_days_since_most_recent_game",
-                "opponent_days_since_most_recent_game",
-            ],
+            columns=env.x_features,
         )
         return data
 
