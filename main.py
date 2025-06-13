@@ -151,16 +151,30 @@ def add_predictive_ratings(df_final: pd.DataFrame, abbrs: List[str], win_margin_
     df_final['rank'] = range(1, len(abbrs) + 1)
     return df_final
 
-def add_simulation_results(df_final: pd.DataFrame, sim_report: pd.DataFrame, future_games: pd.DataFrame) -> pd.DataFrame:
+def add_simulation_results(df_final: pd.DataFrame, sim_report: pd.DataFrame, future_games: pd.DataFrame, completed_games: pd.DataFrame) -> pd.DataFrame:
     df_final['expected_wins'] = df_final['team'].apply(lambda x: sim_report.loc[x, 'wins'])
     df_final['expected_losses'] = df_final['team'].apply(lambda x: sim_report.loc[x, 'losses'])
 
-    # correction for midseason tournament
-    df_final['expected_wins_temp'] = df_final.apply(lambda row: row['expected_wins'] * 82 / (row['expected_wins'] + row['expected_losses']), axis=1)
-    df_final['expected_losses_temp'] = df_final.apply(lambda row: row['expected_losses'] * 82 / (row['expected_wins'] + row['expected_losses']), axis=1)
-    df_final['expected_wins'] = df_final['expected_wins_temp']
-    df_final['expected_losses'] = df_final['expected_losses_temp']
-    df_final.drop(columns=['expected_wins_temp', 'expected_losses_temp'], inplace=True)
+    # Compute regular season record based on the first 82 games for each team
+    reg_wins, reg_losses = stats.get_regular_season_wins_losses(completed_games)
+
+    def adjust_record(row):
+        wins = row['expected_wins']
+        losses = row['expected_losses']
+        total_games = wins + losses
+
+        if total_games < 82:
+            factor = 82 / total_games
+            wins *= factor
+            losses *= factor
+        elif total_games > 82:
+            # Season is complete; use the regular season record
+            wins = reg_wins.get(row['team'], wins)
+            losses = reg_losses.get(row['team'], losses)
+
+        return pd.Series({'expected_wins': wins, 'expected_losses': losses})
+
+    df_final[['expected_wins', 'expected_losses']] = df_final.apply(adjust_record, axis=1)
     
     df_final['expected_record'] = df_final.apply(lambda x: str(round(x['expected_wins'], 1)) + '-' + str(round(x['expected_losses'], 1)), axis=1)
     df_final['Playoffs'] = df_final['team'].apply(lambda x: round(sim_report.loc[x, 'playoffs'], 3))
@@ -233,7 +247,7 @@ def main():
     df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
 
     # Add simulation results
-    df_final = add_simulation_results(df_final, sim_report, future_games)
+    df_final = add_simulation_results(df_final, sim_report, future_games, completed_games)
 
     # Format for CSV
     df_final = format_for_csv(df_final)
