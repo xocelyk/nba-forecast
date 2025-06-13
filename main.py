@@ -15,6 +15,7 @@ import eval
 import forecast
 import stats
 import utils
+import env
 from sim_season import sim_season
 
 # Configure logging
@@ -42,19 +43,19 @@ def load_team_data(year: int, update: bool, save_names: bool) -> Tuple[List[str]
             # sys.exit(1)
 
             # Temp fix
-            with open(f'data/names_to_abbr_{year}.pkl', 'rb') as f:
+            with open(os.path.join(env.DATA_DIR, f'names_to_abbr_{year}.pkl'), 'rb') as f:
                 names_to_abbr = pickle.load(f)
 
         if save_names:
             try:
-                with open(f'data/names_to_abbr_{year}.pkl', 'wb') as f:
+                with open(os.path.join(env.DATA_DIR, f'names_to_abbr_{year}.pkl'), 'wb') as f:
                     pickle.dump(names_to_abbr, f)
             except Exception as e:
                 logging.error(f"Error saving team abbreviations: {e}")
                 sys.exit(1)
     else:
         try:
-            with open(f'data/names_to_abbr_{year}.pkl', 'rb') as f:
+            with open(os.path.join(env.DATA_DIR, f'names_to_abbr_{year}.pkl'), 'rb') as f:
                 names_to_abbr = pickle.load(f)
         except FileNotFoundError:
             logging.error("Pickle file not found. Consider running with save_names=True first.")
@@ -76,7 +77,7 @@ def load_game_data(year: int, update: bool, names_to_abbr: Dict[str, str]) -> pd
             sys.exit(1)
     else:
         try:
-            games = pd.read_csv(f'data/games/year_data_{year}.csv')
+            games = pd.read_csv(os.path.join(env.DATA_DIR, 'games', f'year_data_{year}.csv'))
             games.rename(columns={'team_abbr': 'team', 'opponent_abbr': 'opponent'}, inplace=True)
             games['date'] = pd.to_datetime(games['date'], format='mixed')
         except Exception as e:
@@ -89,7 +90,7 @@ def calculate_em_ratings(completed_games: pd.DataFrame, abbrs: List[str], year: 
     em_ratings = {k: v for k, v in sorted(em_ratings.items(), key=lambda item: item[1], reverse=True)}
     ratings_lst = [[i + 1, team, round(rating, 2)] for i, (team, rating) in enumerate(em_ratings.items())]
     em_ratings_df = pd.DataFrame(ratings_lst, columns=['rank', 'team', 'rating'])
-    em_ratings_df.to_csv(f'data/em_ratings_{year}.csv', index=False)
+    em_ratings_df.to_csv(os.path.join(env.DATA_DIR, f'em_ratings_{year}.csv'), index=False)
     return em_ratings
 
 def initialize_dataframe(abbrs: List[str], abbr_to_name: Dict[str, str], em_ratings: Dict[str, float]) -> pd.DataFrame:
@@ -139,8 +140,8 @@ def simulate_season(training_data: pd.DataFrame, models: Tuple, mean_pace: float
         parallel=False
     )
     date_string = datetime.datetime.today().strftime('%Y-%m-%d')
-    sim_report.to_csv('data/sim_results/sim_report.csv')
-    sim_report.to_csv(f'data/sim_results/archive/sim_report_{date_string}.csv')
+    sim_report.to_csv(os.path.join(env.DATA_DIR, 'sim_results', 'sim_report.csv'))
+    sim_report.to_csv(os.path.join(env.DATA_DIR, 'sim_results', 'archive', f'sim_report_{date_string}.csv'))
     return sim_report
 
 def add_predictive_ratings(df_final: pd.DataFrame, abbrs: List[str], win_margin_model, year: int) -> pd.DataFrame:
@@ -237,7 +238,7 @@ def main():
 
     # Format for CSV
     df_final = format_for_csv(df_final)
-    df_final.to_csv(f'data/main_{YEAR}.csv', index=False)
+    df_final.to_csv(os.path.join(env.DATA_DIR, f'main_{YEAR}.csv'), index=False)
     print(df_final.head(30))
 
 if __name__ == '__main__':
