@@ -15,6 +15,43 @@ def get_wins_losses(game_df):
             wins[row['opponent']] = wins.get(row['opponent'], 0) + 1
     return wins, losses
 
+
+def get_regular_season_wins_losses(game_df):
+    """Return win/loss totals using only the first 82 games for each team."""
+
+    # Initialize dictionaries for all teams that appear in the data
+    teams = set(game_df['team']).union(set(game_df['opponent']))
+    wins = {team: 0 for team in teams}
+    losses = {team: 0 for team in teams}
+
+    # Sort by date to ensure chronological order
+    sorted_games = game_df.sort_values('date')
+
+    for _, row in sorted_games.iterrows():
+        home = row['team']
+        away = row['opponent']
+        margin = row['margin']
+
+        # Update home team record if they haven't reached 82 games
+        if wins[home] + losses[home] < 82:
+            if margin > 0:
+                wins[home] += 1
+            else:
+                losses[home] += 1
+
+        # Update away team record if they haven't reached 82 games
+        if wins[away] + losses[away] < 82:
+            if margin < 0:
+                wins[away] += 1
+            else:
+                losses[away] += 1
+
+        # If all teams have reached 82 games we can stop early
+        if all(wins[t] + losses[t] >= 82 for t in teams):
+            break
+
+    return wins, losses
+
 def get_offensive_efficiency(data):
     off_eff = {}
     for idx, row in data.iterrows():
