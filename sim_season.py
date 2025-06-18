@@ -546,6 +546,12 @@ class Season:
         playoff_games = self.completed_games[
             self.completed_games["date"] >= playoff_start_date
         ]
+
+        # print first 10 completed games sorted by most recent
+        print("First 10 completed games sorted by most recent:")
+        print(playoff_games.sort_values(by="date", ascending=False).head(10))
+        print()
+
         # drop duplicate entries in playoff_games
         # TODO: there are duplicate entires in the playoffs for some reason, not sure where this comes from
         playoff_games = playoff_games.drop_duplicates(
@@ -576,12 +582,20 @@ class Season:
             )
             opponents = [opponent for opponent in opponents if opponent != team]
             for idx, opponent in enumerate(opponents):
+                print()
+                print(f"Team: {team}, Opponent: {opponent}, Index: {idx}")
+                print("--------------------------------")
+                print()
                 team_opponent_games = duped_games[
                     (duped_games["opponent"] == opponent)
                     & (duped_games["team"] == team)
                 ]
+                print(f"Matchup Games:\n{team_opponent_games}")
+                print()
                 series_team_wins = team_opponent_games["team_win"].sum()
                 series_opponent_wins = len(team_opponent_games) - series_team_wins
+                print("Record: ", series_team_wins, "-", series_opponent_wins)
+                print()
                 if idx not in results:
                     results[idx] = {}
                 results[idx][team] = [opponent, series_team_wins, series_opponent_wins]
@@ -637,6 +651,9 @@ class Season:
         # playoff start date is 4/20/2025
         playoff_start_date = datetime.date(2025, 4, 19)
         cur_playoff_results = self.get_cur_playoff_results(playoff_start_date)
+
+        print("Cur Playoff Results:\n", cur_playoff_results)
+
         # clear all future games - we create them ourselves
         self.future_games = self.future_games[
             self.future_games["date"] < playoff_start_date
@@ -1514,6 +1531,19 @@ class Season:
 
         for label in played["playoff_label"].unique():
             series = played[played["playoff_label"] == label]
+            # Ensure winner_name is set for all games in the series
+            if "winner_name" not in series.columns or series["winner_name"].isnull().any():
+                # Update winner_name based on margin for any games missing it
+                mask = (self.completed_games["playoff_label"] == label) & (
+                    self.completed_games["winner_name"].isnull() | 
+                    pd.isna(self.completed_games["winner_name"])
+                )
+                self.completed_games.loc[mask, "winner_name"] = self.completed_games.loc[mask].apply(
+                    lambda row: row["team"] if row["margin"] > 0 else row["opponent"], axis=1
+                )
+                # Refresh the series data
+                series = self.completed_games[self.completed_games["playoff_label"] == label]
+            
             win_counts = series["winner_name"].value_counts()
             if not win_counts.empty and win_counts.max() >= 4:
                 # Series is decided – drop remaining games for this label

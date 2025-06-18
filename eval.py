@@ -84,9 +84,10 @@ def get_win_margin_model(games, features=None):
         2018,
         2019,
         2021,
+        2022,
         2023,
     ]
-    test_years = [2022]
+    test_years = [2024]
     omit_years = [2020]
 
     # Exclude omitted years

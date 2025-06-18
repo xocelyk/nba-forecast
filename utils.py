@@ -37,7 +37,7 @@ MEAN_PACE = 100
 # Prior mean for home court advantage (in points).  Historically this has been
 # around 3 points so we keep the default here.  All dynamic estimates of HCA
 # will start from this value.
-HCA_PRIOR_MEAN = 3.13
+HCA_PRIOR_MEAN = 2.5
 
 # Global variable storing the current estimate of home court advantage.  Code
 # that needs the value of HCA should reference this variable.
