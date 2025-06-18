@@ -259,30 +259,42 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
     return all_data
 
 def add_days_since_most_recent_game(df, cap=10):
-    # TODO: only apply this to recently completed games
-    df['team_days_since_most_recent_game'] = cap
-    df['opponent_days_since_most_recent_game'] = cap
+    """Vectorized computation of days since a team's previous game."""
+
+    df = df.copy()
     df['date'] = pd.to_datetime(df['date']).dt.date
-    for year in df['year'].unique():
-        year_data = df[df['year'] == year]
-        year_data = year_data.sort_values('date')
-        team_most_recent_game_date = {team: None for team in year_data['team'].unique()}
-        # team_most_recent_game_time_diff = {team: None for team in year_data['team'].unique()}
-        for i, row in year_data.iterrows():
-            team = row['team']
-            if team_most_recent_game_date[team] is None:
-                team_most_recent_game_date[team] = row['date']
-                df.loc[i, 'team_days_since_most_recent_game'] = cap
-            else:
-                df.loc[i, 'team_days_since_most_recent_game'] = min((row['date'] - team_most_recent_game_date[team]).days, cap)
-                team_most_recent_game_date[team] = row['date']
-            opponent = row['opponent']
-            if team_most_recent_game_date[opponent] is None:
-                team_most_recent_game_date[opponent] = row['date']
-                df.loc[i, 'opponent_days_since_most_recent_game'] = cap
-            else:
-                df.loc[i, 'opponent_days_since_most_recent_game'] = min((row['date'] - team_most_recent_game_date[opponent]).days, cap)
-                team_most_recent_game_date[opponent] = row['date']
+
+    # Prepare DataFrames for both team perspectives
+    df = df.sort_values('date').reset_index(drop=True)
+
+    as_team = df[['team', 'date', 'year']].rename(columns={'team': 'club'})
+    as_team['row_idx'] = as_team.index
+    as_team['is_team'] = True
+
+    as_opp = df[['opponent', 'date', 'year']].rename(columns={'opponent': 'club'})
+    as_opp['row_idx'] = as_opp.index
+    as_opp['is_team'] = False
+
+    combined = pd.concat([as_team, as_opp], ignore_index=True)
+    combined.sort_values(['club', 'date'], inplace=True)
+
+    combined['days_since'] = (
+        combined.groupby(['year', 'club'])['date']
+        .diff()
+        .dt.days
+        .fillna(cap)
+        .clip(upper=cap)
+    )
+
+    team_days = combined[combined['is_team']].set_index('row_idx')['days_since']
+    opp_days = combined[~combined['is_team']].set_index('row_idx')['days_since']
+
+    df['team_days_since_most_recent_game'] = team_days
+    df['opponent_days_since_most_recent_game'] = opp_days
+
+    df['team_days_since_most_recent_game'].fillna(cap, inplace=True)
+    df['opponent_days_since_most_recent_game'].fillna(cap, inplace=True)
+
     return df
             
             
