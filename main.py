@@ -227,13 +227,24 @@ def simulate_season(
 def add_predictive_ratings(
     df_final: pd.DataFrame, abbrs: List[str], win_margin_model, year: int
 ) -> pd.DataFrame:
+    # Regular season predictive ratings
     predictive_ratings = forecast.get_predictive_ratings_win_margin(
-        abbrs, win_margin_model, year=year
+        abbrs, win_margin_model, year=year, playoff_mode=False
     )
     predictive_ratings = predictive_ratings["expected_margin"].to_dict()
     df_final["predictive_rating"] = df_final["team"].apply(
         lambda x: predictive_ratings[x]
     )
+    
+    # Playoff predictive ratings
+    playoff_predictive_ratings = forecast.get_predictive_ratings_win_margin(
+        abbrs, win_margin_model, year=year, playoff_mode=True
+    )
+    playoff_predictive_ratings = playoff_predictive_ratings["expected_margin"].to_dict()
+    df_final["playoff_predictive_rating"] = df_final["team"].apply(
+        lambda x: playoff_predictive_ratings[x]
+    )
+    
     df_final.sort_values(by="predictive_rating", ascending=False, inplace=True)
     df_final["rank"] = range(1, len(abbrs) + 1)
     return df_final

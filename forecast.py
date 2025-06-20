@@ -160,7 +160,7 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
     return games
 
 
-def get_predictive_ratings_win_margin(teams, model, year):
+def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
     """
     win margin model takes these features:
     ['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opp_rating', 'num_games_into_season', \
@@ -299,7 +299,7 @@ def get_predictive_ratings_win_margin(teams, model, year):
                 "opponent_last_1_rating": opp_last_1_rating_rating,
                 "team_days_since_most_recent_game": team_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": opp_days_since_most_recent_game,
-                "playoff": 0,
+                "playoff": 1 if playoff_mode else 0,
             }
             X_home = pd.DataFrame.from_dict(X_home_dct, orient="index").transpose()
             team_home_margins.append(model.predict(X_home[env.x_features])[0])
@@ -323,7 +323,7 @@ def get_predictive_ratings_win_margin(teams, model, year):
                 "opponent_last_1_rating": team_last_1_rating_rating,
                 "team_days_since_most_recent_game": opp_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": team_days_since_most_recent_game,
-                "playoff": 0,
+                "playoff": 1 if playoff_mode else 0,
             }
             X_away = pd.DataFrame.from_dict(X_away_dct, orient="index").transpose()
             team_away_margins.append(-model.predict(X_away[env.x_features])[0])
@@ -333,8 +333,8 @@ def get_predictive_ratings_win_margin(teams, model, year):
         team_predictive_em[team] = np.mean([average_home_margin, average_away_margin])
 
     mean_predictive_em = np.mean(list(team_predictive_em.values()))
-    # for team in teams:
-    #     team_predictive_em[team] -= mean_predictive_em
+    for team in teams:
+        team_predictive_em[team] -= mean_predictive_em
 
     team_predictive_em_df = pd.DataFrame.from_dict(
         team_predictive_em, orient="index", columns=["expected_margin"]
@@ -342,7 +342,8 @@ def get_predictive_ratings_win_margin(teams, model, year):
     team_predictive_em_df = team_predictive_em_df.sort_values(
         by="expected_margin", ascending=False
     )
-    team_predictive_em_df.to_csv(os.path.join(env.DATA_DIR, "predictive_ratings.csv"))
+    filename = "predictive_ratings_playoff.csv" if playoff_mode else "predictive_ratings.csv"
+    team_predictive_em_df.to_csv(os.path.join(env.DATA_DIR, filename))
     return team_predictive_em_df
 
 
