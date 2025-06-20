@@ -190,6 +190,15 @@ def load_training_data(
     ).astype(float)
 
     all_data = add_days_since_most_recent_game(all_data)
+
+    # Add per-season HCA values
+    hca_map_path = os.path.join(env.DATA_DIR, "hca_by_year.json")
+    hca_map = utils.load_hca_map(hca_map_path)
+    if not hca_map or any(int(y) not in hca_map for y in all_data["year"].unique()):
+        hca_map = utils.calculate_hca_by_season(all_data)
+        utils.save_hca_map(hca_map, hca_map_path)
+    all_data["hca"] = all_data["year"].map(hca_map).astype(float)
+
     all_data.to_csv(os.path.join(env.DATA_DIR, "train_data.csv"), index=False)
     return all_data
 
