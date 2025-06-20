@@ -49,14 +49,14 @@ class Season:
         sim_date_increment=1,
     ):
         self.year = year
-        self.completed_games = completed_games
+        self.completed_games = utils.add_playoff_indicator(completed_games)
         self.completed_games["winner_name"] = self.completed_games.apply(
             lambda row: row["team"] if row["margin"] > 0 else row["opponent"], axis=1
         )
         self.completed_games["team_win"] = self.completed_games.apply(
             lambda row: 1 if row["margin"] > 0 else 0, axis=1
         )
-        self.future_games = future_games
+        self.future_games = utils.add_playoff_indicator(future_games)
         self.future_games["winner_name"] = np.nan
         self.margin_model = margin_model
         self.win_prob_model = win_prob_model
@@ -237,6 +237,8 @@ class Season:
         # After playing a series of games (e.g. a day), update the ratings for each team
         if self.future_games.empty:
             return
+        self.future_games = utils.add_playoff_indicator(self.future_games)
+        self.completed_games = utils.add_playoff_indicator(self.completed_games)
         if games_on_date is None:
             games_on_date = self.future_games[self.future_games["completed"] == True]
 
@@ -502,6 +504,7 @@ class Season:
         opponent_days_since_most_recent_game = row[
             "opponent_days_since_most_recent_game"
         ]
+        playoff = row.get("playoff", int(utils.is_playoff_date(row["date"], row["year"])))
 
         # rating_diff = team_rating - opp_rating
         data = pd.DataFrame(
@@ -525,6 +528,7 @@ class Season:
                     opponent_last_1_rating,
                     team_days_since_most_recent_game,
                     opponent_days_since_most_recent_game,
+                    playoff,
                 ]
             ],
             columns=env.x_features,
@@ -1260,22 +1264,18 @@ class Season:
     def append_future_game(
         self, future_games, date, team, opponent, playoff_label=None
     ):
-        self.future_games = pd.concat(
-            [
-                self.future_games,
-                pd.DataFrame(
-                    {
-                        "date": date,
-                        "team": team,
-                        "opponent": opponent,
-                        "year": self.year,
-                        "playoff_label": playoff_label,
-                    },
-                    index=[0],
-                ),
-            ],
-            ignore_index=True,
+        new_row = pd.DataFrame(
+            {
+                "date": date,
+                "team": team,
+                "opponent": opponent,
+                "year": self.year,
+                "playoff_label": playoff_label,
+            },
+            index=[0],
         )
+        new_row = utils.add_playoff_indicator(new_row)
+        self.future_games = pd.concat([self.future_games, new_row], ignore_index=True)
         # new index
         # TODO: this is a hack, fix it
         self.completed_games.index = range(len(self.completed_games))

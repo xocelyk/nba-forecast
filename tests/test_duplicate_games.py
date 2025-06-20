@@ -29,6 +29,7 @@ def test_duplicate_games_basic():
                 "team_win_total_future": 50,
                 "opponent_win_total_future": 30,
                 "team_win": 1,
+                "hca": 2.5,
             }
         ]
     )
@@ -41,5 +42,5 @@ def test_duplicate_games_basic():
     dup = result.iloc[1]
     assert dup["team"] == "B"
     assert dup["opponent"] == "A"
-    assert dup["margin"] == -10 + 2 * utils.HCA
+    assert dup["margin"] == -10 + 2 * 2.5
     # assert dup["rating_diff"] == -10

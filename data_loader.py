@@ -129,6 +129,7 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
     data_df["team_name"] = data_df["team"].map(abbr_to_name)
     data_df["opponent_name"] = data_df["opponent"].map(abbr_to_name)
     data_df["margin"] = data_df["team_score"] - data_df["opponent_score"]
+    data_df = utils.add_playoff_indicator(data_df)
     data_df = data_df[
         [
             "boxscore_id",
@@ -174,27 +175,21 @@ def load_regular_season_win_totals_futures():
     return res
 
 
-def load_training_data(names, update=True, reset=False, start_year=2010, stop_year=2025, this_year_games=None):
-    '''
-    Loads the data from start_year to stop_year and returns a dataframe with the data
-    Data includes each game with data, team rating, opp rating, team last year rating, opp last year rating, and num games into season
+def load_training_data(
+    names,
+    update: bool = True,
+    reset: bool = False,
+    start_year: int = 2010,
+    stop_year: int = 2025,
+    this_year_games=None,
+):
+    """Return a training DataFrame built from historical game data."""
+    all_data_archive = pd.read_csv(os.path.join(env.DATA_DIR, "train_data.csv"))
+    all_data_archive.drop(
+        [c for c in all_data_archive.columns if "Unnamed" in c], axis=1, inplace=True
+    )
+    all_data_archive = utils.add_playoff_indicator(all_data_archive)
 
-    Current Features:
-    - home/away rating
-    - home/away last year rating
-    - number of games into season
-    - home/away last year rating and number of games into season interaction
-    - Adjusted margin of victory for last 10 games
-    - Adjusted margin of victory for last 5 games
-    - Adjusted margin of victory for last 3 games
-    - Adjusted margin of victory for last 1 game
-
-    Future Features:
-    - Number of days of rest since last game
-    '''
-
-    all_data_archive = pd.read_csv(f'data/train_data.csv')
-    all_data_archive.drop([col for col in all_data_archive.columns if 'Unnamed' in col], axis=1, inplace=True)
     win_totals_futures = load_regular_season_win_totals_futures()
     
     if update == True:
@@ -313,7 +308,16 @@ def load_training_data(names, update=True, reset=False, start_year=2010, stop_ye
         all_data.to_csv(f'data/train_data.csv')
     
     all_data = add_days_since_most_recent_game(all_data)
-    all_data.to_csv(f'data/train_data.csv', index=False)
+
+    # Add per-season HCA values
+    hca_map_path = os.path.join(env.DATA_DIR, "hca_by_year.json")
+    hca_map = utils.load_hca_map(hca_map_path)
+    if not hca_map or any(int(y) not in hca_map for y in all_data["year"].unique()):
+        hca_map = utils.calculate_hca_by_season(all_data)
+        utils.save_hca_map(hca_map, hca_map_path)
+    all_data["hca"] = all_data["year"].map(hca_map).astype(float)
+
+    all_data.to_csv(os.path.join(env.DATA_DIR, "train_data.csv"), index=False)
     return all_data
 
 

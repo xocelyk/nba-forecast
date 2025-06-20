@@ -1,4 +1,7 @@
 import time
+import json
+import os
+from typing import Dict
 
 import numpy as np
 import pandas as pd
@@ -48,6 +51,66 @@ def calc_rmse(predictions, targets):
     return np.sqrt(((predictions - targets) ** 2).mean())
 
 
+NBA_REG_SEASON_END_DATES = {
+    2000: "2000-04-19",
+    2001: "2001-04-18",
+    2002: "2002-04-17",
+    2003: "2003-04-16",
+    2004: "2004-04-14",
+    2005: "2005-04-20",
+    2006: "2006-04-19",
+    2007: "2007-04-18",
+    2008: "2008-04-16",
+    2009: "2009-04-16",
+    2010: "2010-04-14",
+    2011: "2011-04-13",
+    2012: "2012-04-26",
+    2013: "2013-04-17",
+    2014: "2014-04-16",
+    2015: "2015-04-15",
+    2016: "2016-04-13",
+    2017: "2017-04-12",
+    2018: "2018-04-11",
+    2019: "2019-04-10",
+    2020: "2020-08-14",
+    2021: "2021-05-16",
+    2022: "2022-04-10",
+    2023: "2023-04-09",
+    2024: "2024-04-14",
+    2025: "2025-04-13",
+}
+
+
+def get_playoff_start_date(year: int):
+    """Return the start date of the playoffs for ``year``."""
+    end_date = NBA_REG_SEASON_END_DATES.get(year)
+    if end_date is None:
+        # Fall back to mid-April if we have no data
+        end_date = f"{year}-04-13"
+    return pd.to_datetime(end_date) + pd.Timedelta(days=1)
+
+
+def is_playoff_date(date, year: int) -> bool:
+    """Return ``True`` if ``date`` falls in the playoffs for ``year``."""
+    dt = pd.to_datetime(date)
+    return dt >= get_playoff_start_date(int(year))
+
+
+def add_playoff_indicator(df: pd.DataFrame) -> pd.DataFrame:
+    """Add a binary ``playoff`` column to ``df`` based on ``date`` and ``year``."""
+    df = df.copy()
+    if "year" not in df.columns:
+        # Infer year from date if not available
+        df["playoff"] = df["date"].apply(
+            lambda d: int(is_playoff_date(d, pd.to_datetime(d).year))
+        )
+    else:
+        df["playoff"] = df.apply(
+            lambda row: int(is_playoff_date(row["date"], int(row["year"]))), axis=1
+        )
+    return df
+
+
 def calculate_dynamic_hca(
     games: pd.DataFrame, prior_mean: float = HCA_PRIOR_MEAN, prior_weight: float = 20.0
 ) -> float:
@@ -85,6 +148,32 @@ def update_hca(
     global HCA
     HCA = calculate_dynamic_hca(games, prior_mean, prior_weight)
     return HCA
+
+
+def calculate_hca_by_season(
+    games: pd.DataFrame, prior_mean: float = HCA_PRIOR_MEAN, prior_weight: float = 20.0
+) -> Dict[int, float]:
+    """Return a mapping from season year to estimated HCA."""
+    hca_map = {}
+    for year, season_games in games.groupby("year"):
+        hca_map[int(year)] = calculate_dynamic_hca(
+            season_games, prior_mean=prior_mean, prior_weight=prior_weight
+        )
+    return hca_map
+
+
+def save_hca_map(hca_map: Dict[int, float], filepath: str) -> None:
+    """Save ``hca_map`` as a JSON file."""
+    with open(filepath, "w") as f:
+        json.dump(hca_map, f)
+
+
+def load_hca_map(filepath: str) -> Dict[int, float]:
+    """Load HCA map from ``filepath`` if it exists, else return an empty dict."""
+    if not os.path.exists(filepath):
+        return {}
+    with open(filepath, "r") as f:
+        return {int(k): float(v) for k, v in json.load(f).items()}
 
 
 def sgd_ratings(
@@ -456,7 +545,10 @@ def duplicate_games(df, hca: float = HCA):
     # )
 
     # Adjust columns that require calculation
-    duplicated_games["margin"] = -duplicated_games["margin"] + 2 * hca
+    if "hca" in duplicated_games.columns:
+        duplicated_games["margin"] = -duplicated_games["margin"] + 2 * duplicated_games["hca"]
+    else:
+        duplicated_games["margin"] = -duplicated_games["margin"] + 2 * hca
     duplicated_games["team_win"] = 1 - duplicated_games["team_win"]
 
     # Concatenate the original and duplicated DataFrames
@@ -528,6 +620,7 @@ def duplicate_games_training_data(df, hca: float = HCA):
         "completed",
         "team_win_total_future",
         "opponent_win_total_future",
+        "hca",
     ]
 
     def reverse_game(row):
@@ -537,7 +630,7 @@ def duplicate_games_training_data(df, hca: float = HCA):
         opponent_rating = row["team_rating"]
         last_year_team_rating = row["last_year_opp_rating"]
         last_year_opp_rating = row["last_year_team_rating"]
-        margin = -row["margin"] + 2 * hca
+        margin = -row["margin"] + 2 * (row.get("hca", hca))
         num_games_into_season = row["num_games_into_season"]
         date = row["date"]
         year = row["year"]
@@ -576,6 +669,7 @@ def duplicate_games_training_data(df, hca: float = HCA):
             completed,
             team_win_total_future,
             opponent_win_total_future,
+            row.get("hca", hca),
         ]
 
     duplicated_games = []

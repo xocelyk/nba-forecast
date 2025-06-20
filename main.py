@@ -95,6 +95,7 @@ def load_game_data(
     if update:
         try:
             games = data_loader.update_data(names_to_abbr, preload=True)
+            games = utils.add_playoff_indicator(games)
         except Exception as e:
             logging.error(f"Error updating game data: {e}")
             sys.exit(1)
@@ -107,6 +108,7 @@ def load_game_data(
                 columns={"team_abbr": "team", "opponent_abbr": "opponent"}, inplace=True
             )
             games["date"] = pd.to_datetime(games["date"], format="mixed")
+            games = utils.add_playoff_indicator(games)
         except Exception as e:
             logging.error(f"Error loading game data: {e}")
             sys.exit(1)
