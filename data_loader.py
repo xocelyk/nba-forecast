@@ -116,6 +116,7 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
     data_df["team_name"] = data_df["team"].map(abbr_to_name)
     data_df["opponent_name"] = data_df["opponent"].map(abbr_to_name)
     data_df["margin"] = data_df["team_score"] - data_df["opponent_score"]
+    data_df = utils.add_playoff_indicator(data_df)
     data_df = data_df[
         [
             "boxscore_id",
@@ -174,6 +175,7 @@ def load_training_data(
     all_data_archive.drop(
         [c for c in all_data_archive.columns if "Unnamed" in c], axis=1, inplace=True
     )
+    all_data_archive = utils.add_playoff_indicator(all_data_archive)
 
     win_totals_futures = load_regular_season_win_totals_futures()
 

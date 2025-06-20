@@ -27,6 +27,7 @@ class Config:
             "opponent_last_1_rating",
             "team_days_since_most_recent_game",
             "opponent_days_since_most_recent_game",
+            "playoff",
         ]
     )
     margin_label: str = "margin"
