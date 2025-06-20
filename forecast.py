@@ -299,6 +299,7 @@ def get_predictive_ratings_win_margin(teams, model, year):
                 "opponent_last_1_rating": opp_last_1_rating_rating,
                 "team_days_since_most_recent_game": team_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": opp_days_since_most_recent_game,
+                "playoff": 0,
             }
             X_home = pd.DataFrame.from_dict(X_home_dct, orient="index").transpose()
             team_home_margins.append(model.predict(X_home[env.x_features])[0])
@@ -322,6 +323,7 @@ def get_predictive_ratings_win_margin(teams, model, year):
                 "opponent_last_1_rating": team_last_1_rating_rating,
                 "team_days_since_most_recent_game": opp_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": team_days_since_most_recent_game,
+                "playoff": 0,
             }
             X_away = pd.DataFrame.from_dict(X_away_dct, orient="index").transpose()
             team_away_margins.append(-model.predict(X_away[env.x_features])[0])
