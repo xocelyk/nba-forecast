@@ -278,13 +278,14 @@ def load_training_data(
                         games_on_date = games_on_date[['team', 'opponent', 'team_rating', 'opp_rating', 'last_year_team_rating', 'last_year_opp_rating', 'margin', 'pace', 'num_games_into_season', 'date', 'year']]
                         year_data_temp += games_on_date.values.tolist()
                     
-                    year_data = pd.DataFrame(year_data_temp, columns=['team', 'opponent', 'team_rating', 'opponent_rating', 'last_year_team_rating', 'last_year_opponent_rating', 'margin', 'pace', 'num_games_into_season', 'date', 'year'])
+                    year_data = pd.DataFrame(year_data_temp, columns=['team', 'opponent', 'team_rating', 'opponent_rating', 'last_year_team_rating', 'last_year_opp_rating', 'margin', 'pace', 'num_games_into_season', 'date', 'year'])
                     year_data = utils.last_n_games(year_data, 10)
                     year_data = utils.last_n_games(year_data, 5)
                     year_data = utils.last_n_games(year_data, 3)
                     year_data = utils.last_n_games(year_data, 1)
 
                     year_data['completed'] = year_data['margin'].apply(lambda x: True if not np.isnan(x) else False)
+                    year_data = utils.add_playoff_indicator(year_data)
                     year_data['date'] = pd.to_datetime(year_data['date']).dt.date
                     year_data['team_win_total_future'] = year_data.apply(lambda x: win_totals_futures[str(x['year'])][x['team']], axis=1).astype(float)
                     year_data['opponent_win_total_future'] = year_data.apply(lambda x: win_totals_futures[str(x['year'])][x['opponent']], axis=1).astype(float)
