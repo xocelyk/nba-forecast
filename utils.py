@@ -51,6 +51,66 @@ def calc_rmse(predictions, targets):
     return np.sqrt(((predictions - targets) ** 2).mean())
 
 
+NBA_REG_SEASON_END_DATES = {
+    2000: "2000-04-19",
+    2001: "2001-04-18",
+    2002: "2002-04-17",
+    2003: "2003-04-16",
+    2004: "2004-04-14",
+    2005: "2005-04-20",
+    2006: "2006-04-19",
+    2007: "2007-04-18",
+    2008: "2008-04-16",
+    2009: "2009-04-16",
+    2010: "2010-04-14",
+    2011: "2011-04-13",
+    2012: "2012-04-26",
+    2013: "2013-04-17",
+    2014: "2014-04-16",
+    2015: "2015-04-15",
+    2016: "2016-04-13",
+    2017: "2017-04-12",
+    2018: "2018-04-11",
+    2019: "2019-04-10",
+    2020: "2020-08-14",
+    2021: "2021-05-16",
+    2022: "2022-04-10",
+    2023: "2023-04-09",
+    2024: "2024-04-14",
+    2025: "2025-04-13",
+}
+
+
+def get_playoff_start_date(year: int):
+    """Return the start date of the playoffs for ``year``."""
+    end_date = NBA_REG_SEASON_END_DATES.get(year)
+    if end_date is None:
+        # Fall back to mid-April if we have no data
+        end_date = f"{year}-04-13"
+    return pd.to_datetime(end_date) + pd.Timedelta(days=1)
+
+
+def is_playoff_date(date, year: int) -> bool:
+    """Return ``True`` if ``date`` falls in the playoffs for ``year``."""
+    dt = pd.to_datetime(date)
+    return dt >= get_playoff_start_date(int(year))
+
+
+def add_playoff_indicator(df: pd.DataFrame) -> pd.DataFrame:
+    """Add a binary ``playoff`` column to ``df`` based on ``date`` and ``year``."""
+    df = df.copy()
+    if "year" not in df.columns:
+        # Infer year from date if not available
+        df["playoff"] = df["date"].apply(
+            lambda d: int(is_playoff_date(d, pd.to_datetime(d).year))
+        )
+    else:
+        df["playoff"] = df.apply(
+            lambda row: int(is_playoff_date(row["date"], int(row["year"]))), axis=1
+        )
+    return df
+
+
 def calculate_dynamic_hca(
     games: pd.DataFrame, prior_mean: float = HCA_PRIOR_MEAN, prior_weight: float = 20.0
 ) -> float:
