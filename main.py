@@ -6,7 +6,7 @@ import pickle
 import sys
 import time
 import warnings
-from typing import Dict, List, Tuple
+from typing import Dict, List, Tuple, Optional
 
 import numpy as np
 import pandas as pd
@@ -39,6 +39,12 @@ def parse_arguments() -> argparse.Namespace:
     parser.add_argument("--reset", action="store_true", help="Reset training data")
     parser.add_argument(
         "--parallel", action="store_true", help="Run simulations in parallel"
+    )
+    parser.add_argument(
+        "--start-date",
+        type=str,
+        default=None,
+        help="Start date for simulation in YYYY-MM-DD format",
     )
     return parser.parse_args()
 
@@ -191,6 +197,7 @@ def simulate_season(
     year: int,
     num_sims: int,
     parallel: bool = False,
+    start_date: Optional[str] = None,
 ) -> pd.DataFrame:
     (
         win_margin_model,
@@ -211,6 +218,7 @@ def simulate_season(
         year=year,
         num_sims=num_sims,
         parallel=parallel,
+        start_date=start_date,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     sim_report.to_csv(os.path.join(env.DATA_DIR, "sim_results", "sim_report.csv"))
@@ -365,6 +373,7 @@ def main():
     num_sims = args.num_sims
     reset = args.reset
     parallel = args.parallel
+    start_date = args.start_date
 
     # Load team data
     abbrs, names_to_abbr, abbr_to_name = load_team_data(YEAR, update, save_names)
@@ -409,6 +418,7 @@ def main():
         year=YEAR,
         num_sims=num_sims,
         parallel=parallel,
+        start_date=start_date,
     )
 
     # Add predictive ratings
