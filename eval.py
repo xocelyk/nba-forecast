@@ -157,7 +157,6 @@ def get_win_probability_model(games, win_margin_model):
     X = X[["pred_margin"]]
     logit_inv = lambda x: np.log(x / (1 - x))
     intercept = -(logit_inv(0.5) / X.mean())
-    print(intercept)
     games["win"] = games["margin"] > 0
     model = LogisticRegression(fit_intercept=False)
     model.fit(X, games["win"])
@@ -184,7 +183,4 @@ def get_win_probability_model_xgb(games, win_margin_model):
     }
     model = XGBClassifier(**params)
     model.fit(X, games["team_win"])
-    print("Win Prob Model Log Loss")
-    print(log_loss(games["team_win"], model.predict_proba(X)[:, 1]))
-    print()
     return model

@@ -61,21 +61,11 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
         data = []
         boxscore_tracked = []
 
-    # Print all box score indexes
-    print("Boxscore Indexes: ", sorted(boxscore_tracked))
-
     abbr_to_name = {v: k for k, v in names_to_abbr.items()}
     for abbr in names_to_abbr.values():
-        print()
-        print("--------------------------------")
-        print()
-        print(f"Updating {abbr} for {year}")
         schedule = Schedule(abbr, year=year)
         time.sleep(5)
         for game in schedule:
-            print()
-            print(f"Updating {abbr} for {year} {game.boxscore_index}")
-            print("Game tracked: ", game.boxscore_index in boxscore_tracked)
             if not game.boxscore_index or game.boxscore_index in boxscore_tracked:
                 continue
             if game.location == "Home":
@@ -98,8 +88,6 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
                     game.points_scored,
                     "Home",
                 ]
-            print("Points Scored: ", game.points_scored)
-            print("Points Allowed: ", game.points_allowed)
             pace = None
             if game.points_scored is not None:
                 pace = Boxscore(game.boxscore_index).pace
@@ -108,7 +96,6 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
             completed = str(row[-3]).isdigit() and str(row[-4]).isdigit()
             row.append(completed)
             row.append(year)
-            print("Game Data: ", row)
             data.append(row)
             boxscore_tracked.append(game.boxscore_index)
 
@@ -233,13 +220,6 @@ def load_training_data(
                 year_ratings = utils.get_em_ratings(
                     completed_year_data, names=year_names, day_cap=100
                 )
-            print(year)
-            print(
-                "Year Ratings:",
-                sorted(year_ratings.items(), key=lambda x: x[1], reverse=True),
-            )
-            print()
-            print()
             for team, rating in year_ratings.items():
                 end_year_ratings_dct[year][team] = rating
             if first_year:
@@ -254,19 +234,15 @@ def load_training_data(
                                 end_year_ratings_dct[year - 1][team] = (
                                     end_year_ratings_dct[year - 1]["NJN"]
                                 )
-                                print("Linking NJN to BRK")
                             elif team == "NOP":
                                 end_year_ratings_dct[year - 1][team] = (
                                     end_year_ratings_dct[year - 1]["NOH"]
                                 )
-                                print("Linking NOH to NOP")
                             elif team == "CHO":
                                 end_year_ratings_dct[year - 1][team] = (
                                     end_year_ratings_dct[year - 1]["CHA"]
                                 )
-                                print("Linking CHA to CHO")
                             else:
-                                print("No Link Found: ", team)
                                 end_year_ratings_dct[year - 1][team] = np.mean(
                                     list(end_year_ratings_dct[year - 1].values())
                                 )
@@ -299,13 +275,6 @@ def load_training_data(
 
                     year_data_temp = []
                     for i, date in enumerate(sorted(year_data["date"].unique())):
-                        print(
-                            "Progress:",
-                            i + 1,
-                            "/",
-                            len(year_data["date"].unique()),
-                            end="\r",
-                        )
                         completed_year_data = year_data[year_data["date"] < date]
                         games_on_date = year_data[year_data["date"] == date]
                         if (

@@ -105,9 +105,12 @@ def add_playoff_indicator(df: pd.DataFrame) -> pd.DataFrame:
             lambda d: int(is_playoff_date(d, pd.to_datetime(d).year))
         )
     else:
-        df["playoff"] = df.apply(
-            lambda row: int(is_playoff_date(row["date"], int(row["year"]))), axis=1
-        )
+        df = df.reset_index(drop=True)
+        playoff_values = []
+        for idx, row in df.iterrows():
+            playoff_val = int(is_playoff_date(row["date"], int(row["year"])))
+            playoff_values.append(playoff_val)
+        df["playoff"] = playoff_values
     return df
 
 
@@ -262,9 +265,7 @@ def sgd_ratings(
             max_change = np.max(np.abs(ratings - prev_ratings))
             if max_change < convergence_threshold:
                 if verbose:
-                    print(
-                        f"Converged after {epoch + 1} epochs (max change: {max_change:.2e})"
-                    )
+                    print(f"Converged after {iteration + 1} iterations")
                 break
 
         prev_ratings = ratings.copy()
@@ -275,9 +276,6 @@ def sgd_ratings(
                 np.max(np.abs(ratings - prev_ratings))
                 if prev_ratings is not None
                 else float("inf")
-            )
-            print(
-                f"Completed {epochs} epochs without convergence (max change: {max_change:.2e})"
             )
 
     return ratings
@@ -470,7 +468,6 @@ def get_last_n_games_dict(completed_games, n_lst, teams_on_date=None, hca: float
 
 def add_days_since_most_recent_game_to_df(df, hca: float = HCA):
     for year in df["year"].unique():
-        print("adding most recent game: {}".format(year))
         year_data = df[df["year"] == year]
         for date in year_data["date"].unique():
             date_data = year_data[year_data["date"] == date]

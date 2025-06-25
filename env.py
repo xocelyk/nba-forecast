@@ -8,6 +8,10 @@ class Config:
     """Configuration for model training and data locations."""
 
     data_dir: str = field(default_factory=lambda: os.getenv("NBA_DATA_DIR", "data"))
+    use_hardcoded_seeds: bool = field(
+        default_factory=lambda: os.getenv("NBA_USE_HARDCODED_SEEDS", "false").lower()
+        == "true"
+    )
     x_features: List[str] = field(
         default_factory=lambda: [
             "team_rating",
@@ -76,6 +80,7 @@ config = Config()
 
 # Backwards compatibility for existing imports
 DATA_DIR = config.data_dir
+use_hardcoded_seeds = config.use_hardcoded_seeds
 x_features = config.x_features
 x_features_heavy = config.x_features_heavy
 margin_label = config.margin_label

@@ -6,7 +6,7 @@ import pickle
 import sys
 import time
 import warnings
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
@@ -388,10 +388,10 @@ def main():
     parallel = args.parallel
     start_date = args.start_date
 
-    # Load team data
+    print(f"Loading team data for {YEAR}...")
     abbrs, names_to_abbr, abbr_to_name = load_team_data(YEAR, update, save_names)
 
-    # Load game data
+    print("Loading game data...")
     games = load_game_data(YEAR, update, names_to_abbr)
 
     completed_games = games[games["completed"]]
@@ -408,10 +408,11 @@ def main():
     # Add statistics
     df_final = add_statistics(df_final, completed_games)
 
-    # Train models
+    print("Loading training data...")
     training_data = data_loader.load_training_data(
         abbrs, update=update, reset=reset, this_year_games=games
     )
+    print("Training models...")
     models = train_models(training_data)
 
     win_margin_model, win_prob_model, _, _, _ = models
@@ -422,7 +423,7 @@ def main():
     )
     forecast.predict_margin_this_week_games(training_data, win_margin_model)
 
-    # Simulate season
+    print(f"Starting {num_sims} season simulations...")
     sim_report = simulate_season(
         training_data,
         models,
@@ -434,61 +435,17 @@ def main():
         start_date=start_date,
     )
 
-    # Check playoff feature in training data
-    print("\n" + "=" * 60)
-    print("PLAYOFF FEATURE ANALYSIS")
-    print("=" * 60)
-    print(f"Total training games: {len(training_data)}")
-    print(f"Playoff games: {training_data['playoff'].sum()}")
-    print(
-        f"Regular season games: {len(training_data) - training_data['playoff'].sum()}"
-    )
-    print(f"Playoff percentage: {training_data['playoff'].mean():.2%}")
-    print("=" * 60 + "\n")
-
-    # Print model feature importance
-    print("\n" + "=" * 60)
-    print("MODEL FEATURE IMPORTANCE")
-    print("=" * 60)
-    feature_importance = pd.DataFrame(
-        {"feature": env.x_features, "importance": models[0].feature_importances_}
-    ).sort_values("importance", ascending=False)
-    print(feature_importance)
-    print("=" * 60 + "\n")
-
     # Add predictive ratings
     df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
-
-    # Print predictive ratings comparison
-    print("\n" + "=" * 60)
-    print("PREDICTIVE RATINGS COMPARISON")
-    print("=" * 60)
-    ratings_comparison = df_final[
-        ["team", "predictive_rating", "playoff_predictive_rating"]
-    ].copy()
-    ratings_comparison["playoff_advantage"] = (
-        ratings_comparison["playoff_predictive_rating"]
-        - ratings_comparison["predictive_rating"]
-    )
-    ratings_comparison = ratings_comparison.sort_values(
-        "playoff_predictive_rating", ascending=False
-    )
-    ratings_comparison.columns = [
-        "Team",
-        "Regular Season",
-        "Playoff Mode",
-        "Playoff Advantage",
-    ]
-    print(ratings_comparison.round(2))
-    print("=" * 60 + "\n")
 
     # Add simulation results
     df_final = add_simulation_results(df_final, sim_report, future_games)
 
-    # Format for CSV
+    print("Generating final results...")
     df_final = format_for_csv(df_final)
     df_final.to_csv(os.path.join(env.DATA_DIR, f"main_{YEAR}.csv"), index=False)
-    print(df_final.head(30))
+    print(f"Results saved to main_{YEAR}.csv")
+    print("\nSimulation complete!")
 
 
 if __name__ == "__main__":
