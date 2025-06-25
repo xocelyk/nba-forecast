@@ -1,6 +1,6 @@
-import time
 import json
 import os
+import time
 from typing import Dict
 
 import numpy as np
@@ -546,7 +546,9 @@ def duplicate_games(df, hca: float = HCA):
 
     # Adjust columns that require calculation
     if "hca" in duplicated_games.columns:
-        duplicated_games["margin"] = -duplicated_games["margin"] + 2 * duplicated_games["hca"]
+        duplicated_games["margin"] = (
+            -duplicated_games["margin"] + 2 * duplicated_games["hca"]
+        )
     else:
         duplicated_games["margin"] = -duplicated_games["margin"] + 2 * hca
     duplicated_games["team_win"] = 1 - duplicated_games["team_win"]

@@ -235,7 +235,7 @@ def add_predictive_ratings(
     df_final["predictive_rating"] = df_final["team"].apply(
         lambda x: predictive_ratings[x]
     )
-    
+
     # Playoff predictive ratings
     playoff_predictive_ratings = forecast.get_predictive_ratings_win_margin(
         abbrs, win_margin_model, year=year, playoff_mode=True
@@ -244,7 +244,7 @@ def add_predictive_ratings(
     df_final["playoff_predictive_rating"] = df_final["team"].apply(
         lambda x: playoff_predictive_ratings[x]
     )
-    
+
     df_final.sort_values(by="predictive_rating", ascending=False, inplace=True)
     df_final["rank"] = range(1, len(abbrs) + 1)
     return df_final
@@ -425,39 +425,52 @@ def main():
     )
 
     # Check playoff feature in training data
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("PLAYOFF FEATURE ANALYSIS")
-    print("="*60)
+    print("=" * 60)
     print(f"Total training games: {len(training_data)}")
     print(f"Playoff games: {training_data['playoff'].sum()}")
-    print(f"Regular season games: {len(training_data) - training_data['playoff'].sum()}")
+    print(
+        f"Regular season games: {len(training_data) - training_data['playoff'].sum()}"
+    )
     print(f"Playoff percentage: {training_data['playoff'].mean():.2%}")
-    print("="*60 + "\n")
+    print("=" * 60 + "\n")
 
     # Print model feature importance
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("MODEL FEATURE IMPORTANCE")
-    print("="*60)
-    feature_importance = pd.DataFrame({
-        'feature': env.x_features,
-        'importance': models[0].feature_importances_
-    }).sort_values('importance', ascending=False)
+    print("=" * 60)
+    feature_importance = pd.DataFrame(
+        {"feature": env.x_features, "importance": models[0].feature_importances_}
+    ).sort_values("importance", ascending=False)
     print(feature_importance)
-    print("="*60 + "\n")
+    print("=" * 60 + "\n")
 
     # Add predictive ratings
     df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
-    
+
     # Print predictive ratings comparison
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("PREDICTIVE RATINGS COMPARISON")
-    print("="*60)
-    ratings_comparison = df_final[['team', 'predictive_rating', 'playoff_predictive_rating']].copy()
-    ratings_comparison['playoff_advantage'] = ratings_comparison['playoff_predictive_rating'] - ratings_comparison['predictive_rating']
-    ratings_comparison = ratings_comparison.sort_values('playoff_predictive_rating', ascending=False)
-    ratings_comparison.columns = ['Team', 'Regular Season', 'Playoff Mode', 'Playoff Advantage']
+    print("=" * 60)
+    ratings_comparison = df_final[
+        ["team", "predictive_rating", "playoff_predictive_rating"]
+    ].copy()
+    ratings_comparison["playoff_advantage"] = (
+        ratings_comparison["playoff_predictive_rating"]
+        - ratings_comparison["predictive_rating"]
+    )
+    ratings_comparison = ratings_comparison.sort_values(
+        "playoff_predictive_rating", ascending=False
+    )
+    ratings_comparison.columns = [
+        "Team",
+        "Regular Season",
+        "Playoff Mode",
+        "Playoff Advantage",
+    ]
     print(ratings_comparison.round(2))
-    print("="*60 + "\n")
+    print("=" * 60 + "\n")
 
     # Add simulation results
     df_final = add_simulation_results(df_final, sim_report, future_games)

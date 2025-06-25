@@ -164,6 +164,7 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
 def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
     # Load the HCA value for this year
     import json
+
     hca_map_path = os.path.join(env.DATA_DIR, "hca_by_year.json")
     with open(hca_map_path, "r") as f:
         hca_map = {int(k): float(v) for k, v in json.load(f).items()}
@@ -296,7 +297,8 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "opponent_win_total_future": opp_win_total_future,
                 "last_year_team_rating": last_year_ratings[team],
                 "last_year_opp_rating": last_year_ratings[opp],
-                "last_year_rating_diff": last_year_ratings[team] - last_year_ratings[opp],
+                "last_year_rating_diff": last_year_ratings[team]
+                - last_year_ratings[opp],
                 "num_games_into_season": num_games_into_season,
                 "team_last_10_rating": team_last_10_rating,
                 "opponent_last_10_rating": opp_last_10_rating,
@@ -309,7 +311,8 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "last_3_rating_diff": team_last_3_rating - opp_last_3_rating,
                 "team_last_1_rating": team_last_1_rating_rating,
                 "opponent_last_1_rating": opp_last_1_rating_rating,
-                "last_1_rating_diff": team_last_1_rating_rating - opp_last_1_rating_rating,
+                "last_1_rating_diff": team_last_1_rating_rating
+                - opp_last_1_rating_rating,
                 "team_days_since_most_recent_game": team_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": opp_days_since_most_recent_game,
                 "hca": current_hca,
@@ -327,7 +330,8 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "opponent_win_total_future": team_win_total_future,
                 "last_year_team_rating": last_year_ratings[opp],
                 "last_year_opp_rating": last_year_ratings[team],
-                "last_year_rating_diff": last_year_ratings[opp] - last_year_ratings[team],
+                "last_year_rating_diff": last_year_ratings[opp]
+                - last_year_ratings[team],
                 "num_games_into_season": num_games_into_season,
                 "team_last_10_rating": opp_last_10_rating,
                 "opponent_last_10_rating": team_last_10_rating,
@@ -340,7 +344,8 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "last_3_rating_diff": opp_last_3_rating - team_last_3_rating,
                 "team_last_1_rating": opp_last_1_rating_rating,
                 "opponent_last_1_rating": team_last_1_rating_rating,
-                "last_1_rating_diff": opp_last_1_rating_rating - team_last_1_rating_rating,
+                "last_1_rating_diff": opp_last_1_rating_rating
+                - team_last_1_rating_rating,
                 "team_days_since_most_recent_game": opp_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": team_days_since_most_recent_game,
                 "hca": current_hca,
@@ -363,7 +368,9 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
     team_predictive_em_df = team_predictive_em_df.sort_values(
         by="expected_margin", ascending=False
     )
-    filename = "predictive_ratings_playoff.csv" if playoff_mode else "predictive_ratings.csv"
+    filename = (
+        "predictive_ratings_playoff.csv" if playoff_mode else "predictive_ratings.csv"
+    )
     team_predictive_em_df.to_csv(os.path.join(env.DATA_DIR, filename))
     return team_predictive_em_df
 

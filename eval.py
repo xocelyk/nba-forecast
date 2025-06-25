@@ -94,7 +94,7 @@ def get_win_margin_model(games, features=None):
 
     # Filter completed games first
     games = games[games["completed"] == True]
-    
+
     # Exclude omitted years
     games = games[~games["year"].isin(omit_years)]
 
@@ -120,7 +120,9 @@ def get_win_margin_model(games, features=None):
 
     # Round the number of games into the season for error analysis
     test_with_round = test.copy()
-    test_with_round["num_games_into_season_round_100"] = test_with_round["num_games_into_season"].round(-2)
+    test_with_round["num_games_into_season_round_100"] = test_with_round[
+        "num_games_into_season"
+    ].round(-2)
 
     # Create a DataFrame for errors using the same test set
     error_df = pd.DataFrame(

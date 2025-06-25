@@ -504,7 +504,9 @@ class Season:
         opponent_days_since_most_recent_game = row[
             "opponent_days_since_most_recent_game"
         ]
-        playoff = row.get("playoff", int(utils.is_playoff_date(row["date"], row["year"])))
+        playoff = row.get(
+            "playoff", int(utils.is_playoff_date(row["date"], row["year"]))
+        )
 
         # rating_diff = team_rating - opp_rating
         data = pd.DataFrame(
@@ -517,11 +519,13 @@ class Season:
                     opponent_win_total_future,
                     last_year_team_rating,
                     last_year_opp_rating,
-                    last_year_team_rating - last_year_opp_rating,  # last_year_rating_diff
+                    last_year_team_rating
+                    - last_year_opp_rating,  # last_year_rating_diff
                     num_games_into_season,
                     team_last_10_rating,
                     opponent_last_10_rating,
-                    team_last_10_rating - opponent_last_10_rating,  # last_10_rating_diff
+                    team_last_10_rating
+                    - opponent_last_10_rating,  # last_10_rating_diff
                     team_last_5_rating,
                     opponent_last_5_rating,
                     team_last_5_rating - opponent_last_5_rating,  # last_5_rating_diff
@@ -1538,18 +1542,26 @@ class Season:
         for label in played["playoff_label"].unique():
             series = played[played["playoff_label"] == label]
             # Ensure winner_name is set for all games in the series
-            if "winner_name" not in series.columns or series["winner_name"].isnull().any():
+            if (
+                "winner_name" not in series.columns
+                or series["winner_name"].isnull().any()
+            ):
                 # Update winner_name based on margin for any games missing it
                 mask = (self.completed_games["playoff_label"] == label) & (
-                    self.completed_games["winner_name"].isnull() | 
-                    pd.isna(self.completed_games["winner_name"])
+                    self.completed_games["winner_name"].isnull()
+                    | pd.isna(self.completed_games["winner_name"])
                 )
-                self.completed_games.loc[mask, "winner_name"] = self.completed_games.loc[mask].apply(
-                    lambda row: row["team"] if row["margin"] > 0 else row["opponent"], axis=1
+                self.completed_games.loc[
+                    mask, "winner_name"
+                ] = self.completed_games.loc[mask].apply(
+                    lambda row: row["team"] if row["margin"] > 0 else row["opponent"],
+                    axis=1,
                 )
                 # Refresh the series data
-                series = self.completed_games[self.completed_games["playoff_label"] == label]
-            
+                series = self.completed_games[
+                    self.completed_games["playoff_label"] == label
+                ]
+
             win_counts = series["winner_name"].value_counts()
             if not win_counts.empty and win_counts.max() >= 4:
                 # Series is decided – drop remaining games for this label
