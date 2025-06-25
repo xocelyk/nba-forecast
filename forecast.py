@@ -1,7 +1,9 @@
 import datetime
+import os
 
 import numpy as np
 import pandas as pd
+import env
 
 
 def predict_margin_today_games(games, win_margin_model):
@@ -65,7 +67,7 @@ def predict_margin_this_week_games(games, win_margin_model):
             to_csv_data.append([row['date'], row['team'], row['opponent'], round(row['margin'], 1)])
         print()
     to_csv_data = pd.DataFrame(to_csv_data, columns=['Date', 'Home', 'Away', 'Predicted Home Margin'])
-    to_csv_data.to_csv('data/predicted_margins.csv', index=False)
+    to_csv_data.to_csv(os.path.join(env.DATA_DIR, 'predicted_margins.csv'), index=False)
     return games
 
 def predict_win_prob_this_week_games(games, win_prob_model):
@@ -91,8 +93,8 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
         print()
     
     to_csv_data = pd.DataFrame(to_csv_data, columns=['Date', 'Home', 'Away', 'Predicted Home Margin', 'Predicted Home Win Probability'])
-    to_csv_data.to_csv('data/predictions/predicted_margins_and_win_probs.csv', index=False)
-    to_csv_data.to_csv('data/predictions/archive/predicted_margins_and_win_probs_{}.csv'.format(datetime.date.today()), index=False)
+    to_csv_data.to_csv(os.path.join(env.DATA_DIR, 'predictions', 'predicted_margins_and_win_probs.csv'), index=False)
+    to_csv_data.to_csv(os.path.join(env.DATA_DIR, 'predictions', 'archive', f'predicted_margins_and_win_probs_{datetime.date.today()}.csv'), index=False)
     return games
 
 def get_predictive_ratings_win_margin(teams, model, year):
@@ -102,7 +104,7 @@ def get_predictive_ratings_win_margin(teams, model, year):
     ['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opponent_rating', 'num_games_into_season', \
     'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating'])
     '''
-    filename = 'data/train_data.csv'
+    filename = os.path.join(env.DATA_DIR, 'train_data.csv')
     most_recent_games_dict = {} # team to pandas series of most recent game
     # most recent game is either the most recently played game OR the next game to be played (if no games have been played yet)
     this_year_games = pd.read_csv(filename)[pd.read_csv(filename)['year'] == year]
@@ -185,7 +187,7 @@ def get_predictive_ratings_win_margin(teams, model, year):
     
     team_predictive_em_df = pd.DataFrame.from_dict(team_predictive_em, orient='index', columns=['expected_margin'])
     team_predictive_em_df = team_predictive_em_df.sort_values(by='expected_margin', ascending=False)
-    team_predictive_em_df.to_csv('data/predictive_ratings.csv')
+    team_predictive_em_df.to_csv(os.path.join(env.DATA_DIR, 'predictive_ratings.csv'))
     return team_predictive_em_df
 
 def get_expected_wins_losses(all_data, future_games_with_win_probs):
