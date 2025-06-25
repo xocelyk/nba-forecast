@@ -1863,6 +1863,7 @@ def sim_season(
     year,
     num_sims=1000,
     parallel=True,
+    start_date=None,
 ):
     import multiprocessing
 
@@ -1890,8 +1891,15 @@ def sim_season(
         num_games_to_std_margin_model_resid,
     )
     year_games = data[data["year"] == year]
-    completed_year_games = year_games[year_games["completed"] == True]
-    future_year_games = year_games[year_games["completed"] == False]
+    if start_date is not None:
+        start_dt = pd.to_datetime(start_date).date()
+        completed_year_games = year_games[year_games["date"] < start_dt].copy()
+        future_year_games = year_games[year_games["date"] >= start_dt].copy()
+        completed_year_games["completed"] = True
+        future_year_games["completed"] = False
+    else:
+        completed_year_games = year_games[year_games["completed"] == True]
+        future_year_games = year_games[year_games["completed"] == False]
 
     start_time = time.time()
     if parallel:
