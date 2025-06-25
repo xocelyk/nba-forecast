@@ -284,6 +284,14 @@ def load_training_data(
                     year_data = utils.last_n_games(year_data, 3)
                     year_data = utils.last_n_games(year_data, 1)
 
+                    # Add rating difference features
+                    year_data['rating_diff'] = year_data['team_rating'] - year_data['opponent_rating']
+                    year_data['last_year_rating_diff'] = year_data['last_year_team_rating'] - year_data['last_year_opp_rating']
+                    year_data['last_10_rating_diff'] = year_data['team_last_10_rating'] - year_data['opponent_last_10_rating']
+                    year_data['last_5_rating_diff'] = year_data['team_last_5_rating'] - year_data['opponent_last_5_rating']
+                    year_data['last_3_rating_diff'] = year_data['team_last_3_rating'] - year_data['opponent_last_3_rating']
+                    year_data['last_1_rating_diff'] = year_data['team_last_1_rating'] - year_data['opponent_last_1_rating']
+
                     year_data['completed'] = year_data['margin'].apply(lambda x: True if not np.isnan(x) else False)
                     year_data = utils.add_playoff_indicator(year_data)
                     year_data['date'] = pd.to_datetime(year_data['date']).dt.date

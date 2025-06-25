@@ -72,6 +72,7 @@ def prediction_interval_stdev(model, x_test, y_test):
 
 
 def get_win_margin_model(games, features=None):
+    # Define year splits (no overlap between train and test)
     train_years = [
         2010,
         2011,
@@ -83,13 +84,17 @@ def get_win_margin_model(games, features=None):
         2017,
         2018,
         2019,
+        2020,
         2021,
         2022,
         2023,
     ]
     test_years = [2024]
-    omit_years = [2020]
+    omit_years = []
 
+    # Filter completed games first
+    games = games[games["completed"] == True]
+    
     # Exclude omitted years
     games = games[~games["year"].isin(omit_years)]
 
@@ -97,37 +102,30 @@ def get_win_margin_model(games, features=None):
     train = games[games["year"].isin(train_years)]
     test = games[games["year"].isin(test_years)]
 
-    # Filter completed games
-    games = games[games["completed"] == True]
-
     # Use specified features or default to environment features
     x_features = features if features else env.x_features
     params = env.win_margin_model_params
     model = XGBRegressor(**params)
 
-    # Split the data into training and testing sets
-    train_df, test_df = train_test_split(games, test_size=0.2, random_state=41)
-
+    # Prepare training and testing data
     X_train, y_train = train[x_features], train["margin"]
     X_test, y_test = test[x_features], test["margin"]
-    X, y = games[x_features], games["margin"]
 
     # Train the model
     model.fit(X_train, y_train)
 
-    # Make predictions and calculate errors
+    # Make predictions and calculate errors on test set
     preds = model.predict(X_test)
     errors = preds - y_test
 
-    # Round the number of games into the season
-    test_df["num_games_into_season_round_100"] = test_df["num_games_into_season"].round(
-        -2
-    )
+    # Round the number of games into the season for error analysis
+    test_with_round = test.copy()
+    test_with_round["num_games_into_season_round_100"] = test_with_round["num_games_into_season"].round(-2)
 
-    # Create a DataFrame for errors
+    # Create a DataFrame for errors using the same test set
     error_df = pd.DataFrame(
         {
-            "num_games_into_season": test_df["num_games_into_season_round_100"],
+            "num_games_into_season": test_with_round["num_games_into_season_round_100"],
             "error": errors,
         }
     )

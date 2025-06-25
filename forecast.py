@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 
 import env
+import utils
 
 
 def predict_margin_today_games(games, win_margin_model):
@@ -161,6 +162,12 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
 
 
 def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
+    # Load the HCA value for this year
+    import json
+    hca_map_path = os.path.join(env.DATA_DIR, "hca_by_year.json")
+    with open(hca_map_path, "r") as f:
+        hca_map = {int(k): float(v) for k, v in json.load(f).items()}
+    current_hca = hca_map.get(year, utils.HCA_PRIOR_MEAN)
     """
     win margin model takes these features:
     ['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opp_rating', 'num_games_into_season', \
@@ -284,21 +291,28 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
             X_home_dct = {
                 "team_rating": team_rating,
                 "opponent_rating": opp_rating,
+                "rating_diff": team_rating - opp_rating,
                 "team_win_total_future": team_win_total_future,
                 "opponent_win_total_future": opp_win_total_future,
                 "last_year_team_rating": last_year_ratings[team],
                 "last_year_opp_rating": last_year_ratings[opp],
+                "last_year_rating_diff": last_year_ratings[team] - last_year_ratings[opp],
                 "num_games_into_season": num_games_into_season,
                 "team_last_10_rating": team_last_10_rating,
                 "opponent_last_10_rating": opp_last_10_rating,
+                "last_10_rating_diff": team_last_10_rating - opp_last_10_rating,
                 "team_last_5_rating": team_last_5_rating,
                 "opponent_last_5_rating": opp_last_5_rating,
+                "last_5_rating_diff": team_last_5_rating - opp_last_5_rating,
                 "team_last_3_rating": team_last_3_rating,
                 "opponent_last_3_rating": opp_last_3_rating,
+                "last_3_rating_diff": team_last_3_rating - opp_last_3_rating,
                 "team_last_1_rating": team_last_1_rating_rating,
                 "opponent_last_1_rating": opp_last_1_rating_rating,
+                "last_1_rating_diff": team_last_1_rating_rating - opp_last_1_rating_rating,
                 "team_days_since_most_recent_game": team_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": opp_days_since_most_recent_game,
+                "hca": current_hca,
                 "playoff": 1 if playoff_mode else 0,
             }
             X_home = pd.DataFrame.from_dict(X_home_dct, orient="index").transpose()
@@ -308,21 +322,28 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
             X_away_dct = {
                 "team_rating": opp_rating,
                 "opponent_rating": team_rating,
+                "rating_diff": opp_rating - team_rating,
                 "team_win_total_future": opp_win_total_future,
                 "opponent_win_total_future": team_win_total_future,
                 "last_year_team_rating": last_year_ratings[opp],
                 "last_year_opp_rating": last_year_ratings[team],
+                "last_year_rating_diff": last_year_ratings[opp] - last_year_ratings[team],
                 "num_games_into_season": num_games_into_season,
                 "team_last_10_rating": opp_last_10_rating,
                 "opponent_last_10_rating": team_last_10_rating,
+                "last_10_rating_diff": opp_last_10_rating - team_last_10_rating,
                 "team_last_5_rating": opp_last_5_rating,
                 "opponent_last_5_rating": team_last_5_rating,
+                "last_5_rating_diff": opp_last_5_rating - team_last_5_rating,
                 "team_last_3_rating": opp_last_3_rating,
                 "opponent_last_3_rating": team_last_3_rating,
+                "last_3_rating_diff": opp_last_3_rating - team_last_3_rating,
                 "team_last_1_rating": opp_last_1_rating_rating,
                 "opponent_last_1_rating": team_last_1_rating_rating,
+                "last_1_rating_diff": opp_last_1_rating_rating - team_last_1_rating_rating,
                 "team_days_since_most_recent_game": opp_days_since_most_recent_game,
                 "opponent_days_since_most_recent_game": team_days_since_most_recent_game,
+                "hca": current_hca,
                 "playoff": 1 if playoff_mode else 0,
             }
             X_away = pd.DataFrame.from_dict(X_away_dct, orient="index").transpose()
