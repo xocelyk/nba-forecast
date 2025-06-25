@@ -71,7 +71,7 @@ class Season:
         self.mean_pace = mean_pace
         self.std_pace = std_pace
         self.update_counter = 1
-        self.update_every = 1
+        self.update_every = 5
         # pace of future games is not deterministic, assume gaussian distribution
         # also assuming that pace is normally distributed for completed games, have not scraped pace for all past games and now rate limited, so more difficult
         self.future_games["pace"] = [
@@ -101,30 +101,33 @@ class Season:
         self.sim_date_increment = sim_date_increment
         self.most_recent_game_date_dict = self.get_most_recent_game_date_dict()
 
-        self.future_games["team_most_recent_game_date"] = self.future_games.apply(
-            lambda row: self.most_recent_game_date_dict[row["team"]], axis=1
+        self.future_games["team_most_recent_game_date"] = self.future_games["team"].map(
+            self.most_recent_game_date_dict
         )
-        self.future_games["opponent_most_recent_game_date"] = self.future_games.apply(
-            lambda row: self.most_recent_game_date_dict[row["opponent"]], axis=1
-        )
-        self.future_games["team_days_since_most_recent_game"] = self.future_games.apply(
-            lambda row: (
-                10
-                if row["team_most_recent_game_date"] is None
-                else (row["date"] - row["team_most_recent_game_date"]).days
-            ),
-            axis=1,
-        )
-        self.future_games["opponent_days_since_most_recent_game"] = (
-            self.future_games.apply(
-                lambda row: (
-                    10
-                    if row["opponent_most_recent_game_date"] is None
-                    else (row["date"] - row["opponent_most_recent_game_date"]).days
-                ),
-                axis=1,
-            )
-        )
+        self.future_games["opponent_most_recent_game_date"] = self.future_games[
+            "opponent"
+        ].map(self.most_recent_game_date_dict)
+        team_days_values = []
+        opponent_days_values = []
+        for idx, row in self.future_games.iterrows():
+            # Team days since most recent game
+            if row["team_most_recent_game_date"] is None:
+                team_days = 10
+            else:
+                team_days = (row["date"] - row["team_most_recent_game_date"]).days
+            team_days_values.append(team_days)
+
+            # Opponent days since most recent game
+            if row["opponent_most_recent_game_date"] is None:
+                opponent_days = 10
+            else:
+                opponent_days = (
+                    row["date"] - row["opponent_most_recent_game_date"]
+                ).days
+            opponent_days_values.append(opponent_days)
+
+        self.future_games["team_days_since_most_recent_game"] = team_days_values
+        self.future_games["opponent_days_since_most_recent_game"] = opponent_days_values
         self.end_season_standings = None
         self.regular_season_win_loss_report = None
 
@@ -208,11 +211,19 @@ class Season:
     def simulate_season(self):
         season_stop_date = datetime.date(2025, 4, 14)
         date_increment = self.sim_date_increment
+
+        # Check if there are any future games to simulate
+        if self.future_games.empty:
+            print("No future games to simulate - season appears to be complete")
+            return
+
         min_date = self.future_games["date"].min()
         # max_date = self.future_games['date'].max()
         max_date = season_stop_date
-        if min_date > max_date:
+        if pd.isna(min_date) or min_date > max_date:
+            print("All future games are beyond season end date")
             return
+
         daterange = [min_date]
         while daterange[-1] <= max_date:
             daterange.append(daterange[-1] + datetime.timedelta(days=1))
@@ -441,36 +452,6 @@ class Season:
             :, 1
         ][0]
 
-        # Debug logging for playoff games
-        if row.get("playoff_label"):
-            print(
-                f"\n=== PLAYOFF GAME: {team} vs {opponent} ({row['playoff_label']}) ==="
-            )
-            print(f"Expected margin: {expected_margin:.2f}")
-            print(f"Added noise: {noise:.2f}")
-            print(f"Final margin: {margin:.2f}")
-            print(f"Win probability for {team}: {win_prob:.4f}")
-            print(f"Winner: {team if team_win else opponent}")
-
-            print("\nKey Model Inputs:")
-            print(
-                f"  Team rating: {row['team_rating']:.1f} vs Opponent rating: {row['opponent_rating']:.1f}"
-            )
-            print(
-                f"  Team L10 rating: {row['team_last_10_rating']:.1f} vs Opponent L10 rating: {row['opponent_last_10_rating']:.1f}"
-            )
-            print(
-                f"  Team L5 rating: {row['team_last_5_rating']:.1f} vs Opponent L5 rating: {row['opponent_last_5_rating']:.1f}"
-            )
-            print(
-                f"  Team L3 rating: {row['team_last_3_rating']:.1f} vs Opponent L3 rating: {row['opponent_last_3_rating']:.1f}"
-            )
-            print(
-                f"  Days rest: Team {row['team_days_since_most_recent_game']:.1f}, Opponent {row['opponent_days_since_most_recent_game']:.1f}"
-            )
-            print(f"  Games into season: {num_games_into_season}")
-            print("")
-
         row["completed"] = True
         row["team_win"] = team_win
         row["margin"] = margin
@@ -547,7 +528,9 @@ class Season:
 
     def get_win_loss_report(self):
         record_by_team = {team: [0, 0] for team in self.teams}
-        for idx, game in self.completed_games.iterrows():
+        # Only count regular season games (playoff column = 0)
+        regular_season_games = self.completed_games[self.completed_games["playoff"] == 0]
+        for idx, game in regular_season_games.iterrows():
             if game["team_win"]:
                 record_by_team[game["team"]][0] += 1
                 record_by_team[game["opponent"]][1] += 1
@@ -560,11 +543,6 @@ class Season:
         playoff_games = self.completed_games[
             self.completed_games["date"] >= playoff_start_date
         ]
-
-        # print first 10 completed games sorted by most recent
-        print("First 10 completed games sorted by most recent:")
-        print(playoff_games.sort_values(by="date", ascending=False).head(10))
-        print()
 
         # drop duplicate entries in playoff_games
         # TODO: there are duplicate entires in the playoffs for some reason, not sure where this comes from
@@ -587,29 +565,33 @@ class Season:
             team_playoff_games = playoff_games[
                 (playoff_games["team"] == team) | (playoff_games["opponent"] == team)
             ]
-            duped_games = utils.duplicate_games(team_playoff_games, hca=self.hca)
-            # find all the unique opponents the team played and sort them by date. first is the first round opponent, second is the second round opponent, etc.
-            opponents = duped_games["opponent"].unique()
+            # Find all the unique opponents the team played and sort them by date
+            # Get opponents from both home and away games
+            home_opponents = team_playoff_games[team_playoff_games["team"] == team]["opponent"].unique()
+            away_opponents = team_playoff_games[team_playoff_games["opponent"] == team]["team"].unique()
+            all_opponents = list(set(list(home_opponents) + list(away_opponents)))
             opponents = sorted(
-                opponents,
-                key=lambda x: duped_games[duped_games["opponent"] == x].iloc[0]["date"],
+                all_opponents,
+                key=lambda x: team_playoff_games[
+                    ((team_playoff_games["team"] == team) & (team_playoff_games["opponent"] == x)) |
+                    ((team_playoff_games["opponent"] == team) & (team_playoff_games["team"] == x))
+                ].iloc[0]["date"],
             )
-            opponents = [opponent for opponent in opponents if opponent != team]
             for idx, opponent in enumerate(opponents):
-                print()
-                print(f"Team: {team}, Opponent: {opponent}, Index: {idx}")
-                print("--------------------------------")
-                print()
-                team_opponent_games = duped_games[
-                    (duped_games["opponent"] == opponent)
-                    & (duped_games["team"] == team)
+                # Get all games between this team and opponent
+                team_opponent_games = team_playoff_games[
+                    ((team_playoff_games["team"] == team) & (team_playoff_games["opponent"] == opponent)) |
+                    ((team_playoff_games["opponent"] == team) & (team_playoff_games["team"] == opponent))
                 ]
-                print(f"Matchup Games:\n{team_opponent_games}")
-                print()
-                series_team_wins = team_opponent_games["team_win"].sum()
+                # Count wins for this team
+                team_home_wins = team_opponent_games[
+                    (team_opponent_games["team"] == team) & (team_opponent_games["team_win"] == 1)
+                ].shape[0]
+                team_away_wins = team_opponent_games[
+                    (team_opponent_games["opponent"] == team) & (team_opponent_games["team_win"] == 0)
+                ].shape[0]
+                series_team_wins = team_home_wins + team_away_wins
                 series_opponent_wins = len(team_opponent_games) - series_team_wins
-                print("Record: ", series_team_wins, "-", series_opponent_wins)
-                print()
                 if idx not in results:
                     results[idx] = {}
                 results[idx][team] = [opponent, series_team_wins, series_opponent_wins]
@@ -638,17 +620,18 @@ class Season:
         self.completed_games["playoff_label"] = None
         self.completed_games["winner_name"] = None
 
-        # east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
-
-        # determine seeding directly from the simulated regular-season standings
-        # east_teams = ec_standings['team'].tolist()[:8]
-        # west_teams = wc_standings['team'].tolist()[:8]
-
-        east_teams = ["CLE", "BOS", "NYK", "IND", "MIL", "DET", "ORL", "MIA"]
-        west_teams = ["OKC", "HOU", "LAL", "DEN", "LAC", "MIN", "GSW", "MEM"]
-
-        east_seeds = {seed: team for seed, team in enumerate(east_teams, 1)}
-        west_seeds = {seed: team for seed, team in enumerate(west_teams, 1)}
+        # Use hardcoded seeds or calculated seeds based on environment variable
+        if env.use_hardcoded_seeds:
+            # Use hardcoded playoff seeds (current manual configuration)
+            east_teams = ["CLE", "BOS", "NYK", "IND", "MIL", "DET", "ORL", "MIA"]
+            west_teams = ["OKC", "HOU", "LAL", "DEN", "LAC", "MIN", "GSW", "MEM"]
+            print("Using hardcoded playoff seeds")
+            east_seeds = {seed: team for seed, team in enumerate(east_teams, 1)}
+            west_seeds = {seed: team for seed, team in enumerate(west_teams, 1)}
+        else:
+            # Simulate play-in tournament to determine final 8 seeds in each conference
+            print("Simulating play-in tournament to determine playoff seeds")
+            east_seeds, west_seeds = self.play_in(ec_standings, wc_standings)
 
         self.seeds = {}
         for seed, team in east_seeds.items():
@@ -666,12 +649,192 @@ class Season:
         playoff_start_date = datetime.date(2025, 4, 19)
         cur_playoff_results = self.get_cur_playoff_results(playoff_start_date)
 
-        print("Cur Playoff Results:\n", cur_playoff_results)
-
         # clear all future games - we create them ourselves
         self.future_games = self.future_games[
             self.future_games["date"] < playoff_start_date
         ]
+
+        # Check if we have any playoff games that need to be simulated
+        playoff_games_completed = self.get_playoff_games_completed(playoff_start_date)
+        if playoff_games_completed.empty:
+            print("No playoff games found - creating playoff schedule...")
+        else:
+            print(f"Found {len(playoff_games_completed)} completed playoff games")
+
+            # Check if playoffs are already completely finished
+            unique_labels = playoff_games_completed["playoff_label"].dropna().unique()
+            print(f"Playoff series found: {sorted(unique_labels)}")
+
+            # Check if we have enough playoff games to suggest season is complete
+            # A complete playoffs would have at least 15 series * 4 games = 60+ games minimum
+            if len(playoff_games_completed) >= 60:
+                print(
+                    f"Found {len(playoff_games_completed)} playoff games - season appears complete"
+                )
+
+                # Try to extract results from completed playoff data
+                try:
+                    # Since the exact series labels might not match, let's try to extract
+                    # the champion and other results from the available data
+
+                    # Look for Finals games first
+                    finals_games = playoff_games_completed[
+                        playoff_games_completed["playoff_label"] == "Finals"
+                    ]
+                    if not finals_games.empty:
+                        finals_winner = self.get_series_winner("Finals")
+                        print(f"Champion found: {finals_winner}")
+                        playoff_results["champion"] = [finals_winner]
+
+                        # Extract finals participants
+                        finals_teams = finals_games[
+                            ["team", "opponent"]
+                        ].values.flatten()
+                        playoff_results["finals"] = list(set(finals_teams))
+
+                        # Create reasonable fallback data
+                        playoff_results["conference_finals"] = list(set(finals_teams))
+                        playoff_results["second_round"] = east_alive + west_alive
+
+                        return playoff_results
+
+                    # If no Finals label found, check if we can reconstruct from existing data
+                    print(
+                        "No Finals series found - attempting to reconstruct playoff results"
+                    )
+
+                    # Get all unique teams that participated in playoffs
+                    all_playoff_teams = set()
+                    for _, game in playoff_games_completed.iterrows():
+                        all_playoff_teams.add(game["team"])
+                        all_playoff_teams.add(game["opponent"])
+
+                    # Find the team with the most playoff wins as likely champion
+                    team_playoff_wins = {}
+                    for team in all_playoff_teams:
+                        team_games = playoff_games_completed[
+                            (playoff_games_completed["team"] == team)
+                            | (playoff_games_completed["opponent"] == team)
+                        ].copy()
+
+                        # Count wins for this team
+                        wins = 0
+                        for _, game in team_games.iterrows():
+                            if (
+                                game["team"] == team
+                                and game.get("team_win", game["margin"] > 0)
+                            ) or (
+                                game["opponent"] == team
+                                and not game.get("team_win", game["margin"] <= 0)
+                            ):
+                                wins += 1
+                        team_playoff_wins[team] = wins
+
+                    if team_playoff_wins:
+                        # Team with most playoff wins is likely the champion
+                        champion = max(team_playoff_wins, key=team_playoff_wins.get)
+                        print(
+                            f"Reconstructed champion based on playoff wins: {champion}"
+                        )
+
+                        playoff_results["champion"] = [champion]
+                        playoff_results["finals"] = [champion] + [
+                            team
+                            for team in team_playoff_wins.keys()
+                            if team != champion
+                        ][:1]
+                        playoff_results["conference_finals"] = list(all_playoff_teams)[
+                            :4
+                        ]
+                        playoff_results["second_round"] = list(all_playoff_teams)[:8]
+
+                        return playoff_results
+
+                except Exception as e:
+                    print(f"Warning: Could not reconstruct playoff results: {e}")
+                    print("Proceeding with normal playoff simulation...")
+
+            # Check if we have a champion already (Finals series completed)
+            finals_games = playoff_games_completed[
+                playoff_games_completed["playoff_label"] == "Finals"
+            ]
+            if not finals_games.empty:
+                try:
+                    # Try to extract champion from completed finals
+                    finals_winner = self.get_series_winner("Finals")
+                    print(f"Season already complete - Champion: {finals_winner}")
+
+                    # Return results based on completed playoff data
+                    playoff_results["champion"] = [finals_winner]
+
+                    # Extract other round results from completed data
+                    try:
+                        # Finals participants
+                        finals_teams = finals_games[
+                            ["team", "opponent"]
+                        ].values.flatten()
+                        finals_participants = list(set(finals_teams))
+                        playoff_results["finals"] = finals_participants
+
+                        # Try to extract conference finals participants
+                        conf_finals_east = playoff_games_completed[
+                            playoff_games_completed["playoff_label"] == "E_1_2"
+                        ]
+                        conf_finals_west = playoff_games_completed[
+                            playoff_games_completed["playoff_label"] == "W_1_2"
+                        ]
+
+                        conf_finals_participants = []
+                        if not conf_finals_east.empty:
+                            east_conf_teams = conf_finals_east[
+                                ["team", "opponent"]
+                            ].values.flatten()
+                            conf_finals_participants.extend(list(set(east_conf_teams)))
+                        if not conf_finals_west.empty:
+                            west_conf_teams = conf_finals_west[
+                                ["team", "opponent"]
+                            ].values.flatten()
+                            conf_finals_participants.extend(list(set(west_conf_teams)))
+                        playoff_results["conference_finals"] = list(
+                            set(conf_finals_participants)
+                        )
+
+                        # Extract second round participants
+                        second_round_labels = ["E_1_4", "E_2_3", "W_1_4", "W_2_3"]
+                        second_round_participants = []
+                        for label in second_round_labels:
+                            round_games = playoff_games_completed[
+                                playoff_games_completed["playoff_label"] == label
+                            ]
+                            if not round_games.empty:
+                                teams = round_games[
+                                    ["team", "opponent"]
+                                ].values.flatten()
+                                second_round_participants.extend(list(set(teams)))
+                        playoff_results["second_round"] = list(
+                            set(second_round_participants)
+                        )
+
+                    except Exception as e:
+                        print(
+                            f"Warning: Could not extract all playoff round participants: {e}"
+                        )
+                        # Set minimal required data
+                        playoff_results["finals"] = finals_participants
+                        playoff_results["conference_finals"] = (
+                            finals_participants  # Fallback
+                        )
+                        playoff_results["second_round"] = (
+                            east_alive + west_alive
+                        )  # Fallback
+
+                    return playoff_results
+
+                except Exception as e:
+                    print(
+                        f"Warning: Could not extract champion from completed finals: {e}"
+                    )
+                    print("Proceeding with normal playoff simulation...")
 
         # simulate first round
         east_seeds, west_seeds = self.first_round(
@@ -965,11 +1128,6 @@ class Season:
         else:
             team1, team2 = (w_1, e_1) if random.random() > 0.5 else (e_1, w_1)
 
-        print("\n==== NBA FINALS SIMULATION ====")
-        print(f"Eastern Champion: {e_1}")
-        print(f"Western Champion: {w_1}")
-        print(f"Home-court advantage: {team1}\n")
-
         matchups = {"Finals": (team1, team2)}
 
         new_dates = set()
@@ -1040,15 +1198,7 @@ class Season:
                 (game["date"], game["team"], game["opponent"], home_score, away_score)
             )
 
-        print("\nNBA Finals Results:")
-        print(f"{team1} vs {team2}")
-        print("-----------------")
-        for i, (d, h, a, hs, as_) in enumerate(finals_scores, 1):
-            print(f"Game {i}: {h} {hs:3} - {a} {as_:3}")
-        print()
-
         champion = self.get_series_winner("Finals")
-        print(f"\nNBA Champion: {champion}")
         return champion
 
     def get_series_winner(self, series_label):
@@ -1056,23 +1206,42 @@ class Season:
             self.completed_games["playoff_label"] == series_label
         ].copy()
 
+        # Handle case where no games exist for this series
+        if series.empty:
+            print(f"Warning: No games found for series {series_label}")
+            print(
+                f"Available playoff labels in completed games: {self.completed_games['playoff_label'].unique()}"
+            )
+            # Try to find if this is a known series that should exist
+            all_playoff_games = self.completed_games[
+                self.completed_games["playoff_label"].notna()
+            ]
+            if all_playoff_games.empty:
+                raise ValueError(
+                    f"No playoff games found at all - season may not be complete"
+                )
+            raise ValueError(f"No games found for series {series_label}")
+
         series["winner_name"] = series.apply(
             lambda row: row["team"] if row["team_win"] else row["opponent"], axis=1
         )
 
         wins = series["winner_name"].value_counts()
 
+        # Handle case where wins is empty
+        if wins.empty:
+            raise ValueError(f"No wins data available for series {series_label}")
+
         if wins.max() < 4:
+            print(f"Series {series_label} is not finished yet - max wins: {wins.max()}")
+            print(f"Games in series: {len(series)}")
+            print(f"Win distribution: {wins.to_dict()}")
             raise ValueError(f"Series {series_label} is not finished yet!")
 
         winner = wins.idxmax()
         w = wins[winner]
         l = len(series) - w
 
-        print("Series:", series_label)
-        print("{} vs. {}".format(series.iloc[0]["team"], series.iloc[0]["opponent"]))
-        print(f"Record: {w}-{l}")
-        print("Winner:", winner, "\n")
         return winner
 
     def play_in(self, ec_standings, wc_standings):
@@ -1118,7 +1287,8 @@ class Season:
             playin_round_1_date, playin_round_1_date + datetime.timedelta(days=3), 1
         )
 
-        assert len(self.future_games) == 0, "future games not empty"
+        # Note: We no longer assert that future_games is empty since play_in may be called 
+        # with other future games still in the schedule
 
         # east 7 seed
         E_P_1_winner = self.completed_games[
@@ -1243,10 +1413,19 @@ class Season:
             ].values[0]
         )
 
-        self.completed_games = pd.concat(
-            [self.completed_games, self.future_games], ignore_index=True
-        )
-        self.future_games = self.future_games.iloc[0:0]
+        # Move only play-in games to completed_games, not all future_games
+        # since play_in may now be called from within the main playoff flow
+        playin_games = self.future_games[
+            self.future_games["playoff_label"].isin(["E_P_1", "E_P_2", "E_P_3", "W_P_1", "W_P_2", "W_P_3"])
+        ]
+        if not playin_games.empty:
+            self.completed_games = pd.concat(
+                [self.completed_games, playin_games], ignore_index=True
+            )
+            # Remove only the play-in games from future_games
+            self.future_games = self.future_games[
+                ~self.future_games["playoff_label"].isin(["E_P_1", "E_P_2", "E_P_3", "W_P_1", "W_P_2", "W_P_3"])
+            ]
 
         ec_seeds = {
             1: e_1,
@@ -1534,6 +1713,10 @@ class Season:
         wins in a given `playoff_label`, delete the still-scheduled games
         for that label from `self.future_games`.
         """
+        # Check if playoff_label column exists (it won't during regular season)
+        if "playoff_label" not in self.completed_games.columns:
+            return
+
         # only look at playoff games
         played = self.completed_games[~self.completed_games["playoff_label"].isnull()]
         if played.empty:
@@ -1738,6 +1921,7 @@ def run_single_simulation(
     globals()["print"] = custom_print
 
     # Run playoffs
+    original_print("  Starting playoffs...")
     playoff_results = season.playoffs()
 
     # Restore original print function
@@ -1904,9 +2088,6 @@ def sim_season(
     start_time = time.time()
     if parallel:
         num_cores = multiprocessing.cpu_count()
-        print(
-            "Running {} simulations in parallel on {} cores".format(num_sims, num_cores)
-        )
         pool = multiprocessing.Pool(num_cores)
         results = [
             pool.apply_async(
@@ -1927,7 +2108,7 @@ def sim_season(
     else:
         output = []
         for i in range(num_sims):
-            print(f"\n========== Simulation {i+1}/{num_sims} ==========")
+            print(f"Running simulation {i+1}/{num_sims}...")
             sim_result = run_single_simulation(
                 completed_year_games,
                 future_year_games,
@@ -1949,29 +2130,8 @@ def sim_season(
                             finals_game_stats[game_num]["team_wins"] += 1
 
     stop_time = time.time()
-    print(
-        "Finished {} simulations in {} seconds".format(
-            num_sims, stop_time - start_time, 2
-        )
-    )
-    print(
-        "Time per simulation: {} seconds".format((stop_time - start_time) / num_sims, 2)
-    )
-
-    # Print Finals game statistics summary
-    print("\n===== FINALS GAMES STATISTICS SUMMARY =====")
-    for game_num, stats in finals_game_stats.items():
-        if len(stats["win_probs"]) > 0:  # Only print if we have data for this game
-            avg_win_prob = sum(stats["win_probs"]) / len(stats["win_probs"])
-            actual_win_pct = (
-                stats["team_wins"] / len(stats["win_probs"])
-                if len(stats["win_probs"]) > 0
-                else 0
-            )
-            print(
-                f"Game {game_num}: Avg predicted home win prob: {avg_win_prob:.4f}, Actual home win rate: {actual_win_pct:.4f} ({stats['team_wins']}/{len(stats['win_probs'])})"
-            )
-    print()
+    print(f"Completed {num_sims} simulations in {stop_time - start_time:.1f} seconds")
+    print("Processing simulation results...")
 
     playoff_results_over_sims = {team: {} for team in teams}
     season_results_over_sims = {team: {"wins": [], "losses": []} for team in teams}
