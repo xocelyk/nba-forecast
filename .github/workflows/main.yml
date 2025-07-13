@@ -7,6 +7,15 @@ jobs:
   run_my_code:
     runs-on: ubuntu-latest
     steps:
+        - name: Check if we should skip (before Oct 20, 2025)
+          run: |
+            current_date=$(date +%Y%m%d)
+            target_date=20251020
+            if [ $current_date -lt $target_date ]; then
+              echo "Current date ($current_date) is before October 20, 2025 ($target_date). Skipping workflow."
+              exit 0
+            fi
+            echo "Proceeding with workflow"
         - uses: actions/checkout@v2
           with:
             fetch-depth: 0
