@@ -262,9 +262,9 @@ def print_weekly_results(
 
 def get_weekly_dates(year: int = 2025) -> List[datetime.date]:
     """Get weekly simulation dates throughout the NBA season."""
-    # NBA season typically runs from mid-October to mid-April
+    # NBA season typically runs from mid-October through July (including playoffs)
     season_start = datetime.date(year - 1, 10, 15)  # October 15, 2024
-    season_end = datetime.date(year, 4, 14)  # April 14, 2025
+    season_end = datetime.date(year, 7, 31)  # July 31, 2025
 
     # Start with first Monday of the season
     current_date = season_start

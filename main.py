@@ -17,12 +17,10 @@ import eval
 import forecast
 import stats
 import utils
-from sim_season import sim_season
 
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+# Import logger from env
+from env import logger
+from sim_season import sim_season
 
 # ignore warnings
 warnings.filterwarnings("ignore")
@@ -388,10 +386,10 @@ def main():
     parallel = args.parallel
     start_date = args.start_date
 
-    print(f"Loading team data for {YEAR}...")
+    logger.info(f"Loading team data for {YEAR}...")
     abbrs, names_to_abbr, abbr_to_name = load_team_data(YEAR, update, save_names)
 
-    print("Loading game data...")
+    logger.info("Loading game data...")
     games = load_game_data(YEAR, update, names_to_abbr)
 
     completed_games = games[games["completed"]]
@@ -408,11 +406,11 @@ def main():
     # Add statistics
     df_final = add_statistics(df_final, completed_games)
 
-    print("Loading training data...")
+    logger.info("Loading training data...")
     training_data = data_loader.load_training_data(
         abbrs, update=update, reset=reset, this_year_games=games
     )
-    print("Training models...")
+    logger.info("Training models...")
     models = train_models(training_data)
 
     win_margin_model, win_prob_model, _, _, _ = models
@@ -423,7 +421,7 @@ def main():
     )
     forecast.predict_margin_this_week_games(training_data, win_margin_model)
 
-    print(f"Starting {num_sims} season simulations...")
+    logger.info(f"Starting {num_sims} season simulations...")
     sim_report = simulate_season(
         training_data,
         models,
@@ -441,11 +439,11 @@ def main():
     # Add simulation results
     df_final = add_simulation_results(df_final, sim_report, future_games)
 
-    print("Generating final results...")
+    logger.info("Generating final results...")
     df_final = format_for_csv(df_final)
     df_final.to_csv(os.path.join(env.DATA_DIR, f"main_{YEAR}.csv"), index=False)
-    print(f"Results saved to main_{YEAR}.csv")
-    print("\nSimulation complete!")
+    logger.info(f"Results saved to main_{YEAR}.csv")
+    logger.info("Simulation complete!")
 
 
 if __name__ == "__main__":

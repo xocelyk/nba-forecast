@@ -1,3 +1,4 @@
+import logging
 import os
 from dataclasses import dataclass, field
 from typing import Dict, List
@@ -8,6 +9,7 @@ class Config:
     """Configuration for model training and data locations."""
 
     data_dir: str = field(default_factory=lambda: os.getenv("NBA_DATA_DIR", "data"))
+    log_level: str = field(default_factory=lambda: os.getenv("NBA_LOG_LEVEL", "INFO"))
     use_hardcoded_seeds: bool = field(
         default_factory=lambda: os.getenv("NBA_USE_HARDCODED_SEEDS", "false").lower()
         == "true"
@@ -80,6 +82,7 @@ config = Config()
 
 # Backwards compatibility for existing imports
 DATA_DIR = config.data_dir
+log_level = config.log_level
 use_hardcoded_seeds = config.use_hardcoded_seeds
 x_features = config.x_features
 x_features_heavy = config.x_features_heavy
@@ -87,3 +90,26 @@ margin_label = config.margin_label
 win_prob_label = config.win_prob_label
 win_margin_model_params = config.win_margin_model_params
 win_prob_model_params = config.win_prob_model_params
+
+
+# Configure logging
+def setup_logging():
+    """Set up logging configuration based on environment variable."""
+    level_mapping = {
+        "DEBUG": logging.DEBUG,
+        "INFO": logging.INFO,
+        "WARNING": logging.WARNING,
+        "ERROR": logging.ERROR,
+        "CRITICAL": logging.CRITICAL,
+    }
+
+    level = level_mapping.get(config.log_level.upper(), logging.INFO)
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
+    )
+    return logging.getLogger("nba")
+
+
+logger = setup_logging()
