@@ -55,9 +55,11 @@ class Season:
         self.completed_games["winner_name"] = np.where(
             self.completed_games["margin"] > 0,
             self.completed_games["team"],
-            self.completed_games["opponent"]
+            self.completed_games["opponent"],
         )
-        self.completed_games["team_win"] = (self.completed_games["margin"] > 0).astype(int)
+        self.completed_games["team_win"] = (self.completed_games["margin"] > 0).astype(
+            int
+        )
         self.future_games = utils.add_playoff_indicator(future_games)
         self.future_games["winner_name"] = np.nan
         self.margin_model = margin_model
@@ -107,22 +109,28 @@ class Season:
         self.future_games["opponent_most_recent_game_date"] = self.future_games[
             "opponent"
         ].map(self.most_recent_game_date_dict)
-        
+
         # Vectorized calculation for initial setup
         # Team days since most recent game
         team_null_mask = self.future_games["team_most_recent_game_date"].isna()
         team_days_values = np.where(
             team_null_mask,
             10,  # Default value when no recent game
-            (pd.to_datetime(self.future_games["date"]) - pd.to_datetime(self.future_games["team_most_recent_game_date"])).dt.days
+            (
+                pd.to_datetime(self.future_games["date"])
+                - pd.to_datetime(self.future_games["team_most_recent_game_date"])
+            ).dt.days,
         )
-        
-        # Opponent days since most recent game  
+
+        # Opponent days since most recent game
         opponent_null_mask = self.future_games["opponent_most_recent_game_date"].isna()
         opponent_days_values = np.where(
             opponent_null_mask,
             10,  # Default value when no recent game
-            (pd.to_datetime(self.future_games["date"]) - pd.to_datetime(self.future_games["opponent_most_recent_game_date"])).dt.days
+            (
+                pd.to_datetime(self.future_games["date"])
+                - pd.to_datetime(self.future_games["opponent_most_recent_game_date"])
+            ).dt.days,
         )
 
         self.future_games["team_days_since_most_recent_game"] = team_days_values
@@ -302,43 +310,71 @@ class Season:
         # Batch update multiple columns to reduce overhead
         rating_updates = {
             "team_last_10_rating": self.future_games["team"].map(last_10_games_dict),
-            "opponent_last_10_rating": self.future_games["opponent"].map(last_10_games_dict),
+            "opponent_last_10_rating": self.future_games["opponent"].map(
+                last_10_games_dict
+            ),
             "team_last_5_rating": self.future_games["team"].map(last_5_games_dict),
-            "opponent_last_5_rating": self.future_games["opponent"].map(last_5_games_dict),
+            "opponent_last_5_rating": self.future_games["opponent"].map(
+                last_5_games_dict
+            ),
             "team_last_3_rating": self.future_games["team"].map(last_3_games_dict),
-            "opponent_last_3_rating": self.future_games["opponent"].map(last_3_games_dict),
+            "opponent_last_3_rating": self.future_games["opponent"].map(
+                last_3_games_dict
+            ),
             "team_last_1_rating": self.future_games["team"].map(last_1_games_dict),
-            "opponent_last_1_rating": self.future_games["opponent"].map(last_1_games_dict),
+            "opponent_last_1_rating": self.future_games["opponent"].map(
+                last_1_games_dict
+            ),
             "team_rating": self.future_games["team"].map(self.em_ratings),
             "opponent_rating": self.future_games["opponent"].map(self.em_ratings),
         }
-        
+
         # Update all columns at once - more efficient than individual assignments
         for col_name, values in rating_updates.items():
             self.future_games[col_name] = values
 
         # Optimized calculation of days since most recent game using vectorized operations
-        team_most_recent_dates = self.future_games["team"].map(self.most_recent_game_date_dict)
-        opponent_most_recent_dates = self.future_games["opponent"].map(self.most_recent_game_date_dict)
-        
+        team_most_recent_dates = self.future_games["team"].map(
+            self.most_recent_game_date_dict
+        )
+        opponent_most_recent_dates = self.future_games["opponent"].map(
+            self.most_recent_game_date_dict
+        )
+
         # Vectorized team days calculation
         team_days_list = []
-        for i, (game_date, recent_date) in enumerate(zip(self.future_games["date"], team_most_recent_dates)):
+        for i, (game_date, recent_date) in enumerate(
+            zip(self.future_games["date"], team_most_recent_dates)
+        ):
             if pd.isna(recent_date) or recent_date is None:
                 team_days_list.append(10)
             else:
-                days = (game_date - recent_date).days if hasattr((game_date - recent_date), 'days') else int((pd.to_datetime(game_date) - pd.to_datetime(recent_date)).days)
+                days = (
+                    (game_date - recent_date).days
+                    if hasattr((game_date - recent_date), "days")
+                    else int(
+                        (pd.to_datetime(game_date) - pd.to_datetime(recent_date)).days
+                    )
+                )
                 team_days_list.append(min(days, 10))
-        
-        # Vectorized opponent days calculation  
+
+        # Vectorized opponent days calculation
         opponent_days_list = []
-        for i, (game_date, recent_date) in enumerate(zip(self.future_games["date"], opponent_most_recent_dates)):
+        for i, (game_date, recent_date) in enumerate(
+            zip(self.future_games["date"], opponent_most_recent_dates)
+        ):
             if pd.isna(recent_date) or recent_date is None:
                 opponent_days_list.append(10)
             else:
-                days = (game_date - recent_date).days if hasattr((game_date - recent_date), 'days') else int((pd.to_datetime(game_date) - pd.to_datetime(recent_date)).days)
+                days = (
+                    (game_date - recent_date).days
+                    if hasattr((game_date - recent_date), "days")
+                    else int(
+                        (pd.to_datetime(game_date) - pd.to_datetime(recent_date)).days
+                    )
+                )
                 opponent_days_list.append(min(days, 10))
-        
+
         self.future_games["team_days_since_most_recent_game"] = team_days_list
         self.future_games["opponent_days_since_most_recent_game"] = opponent_days_list
 
@@ -369,8 +405,12 @@ class Season:
             # Vectorized pace generation - much faster than list comprehension
             num_missing = self.future_games["pace"].isnull().sum()
             if num_missing > 0:
-                random_paces = np.random.normal(self.mean_pace, self.std_pace, size=num_missing)
-                self.future_games.loc[self.future_games["pace"].isnull(), "pace"] = random_paces
+                random_paces = np.random.normal(
+                    self.mean_pace, self.std_pace, size=num_missing
+                )
+                self.future_games.loc[self.future_games["pace"].isnull(), "pace"] = (
+                    random_paces
+                )
 
     def simulate_day(self, start_date, end_date, date_increment=1):
         games_on_date = self.future_games[
@@ -654,7 +694,9 @@ class Season:
         if playoff_games_completed.empty:
             logger.debug("No playoff games found - creating playoff schedule...")
         else:
-            logger.debug(f"Found {len(playoff_games_completed)} completed playoff games")
+            logger.debug(
+                f"Found {len(playoff_games_completed)} completed playoff games"
+            )
 
             # Check if playoffs are already completely finished
             unique_labels = playoff_games_completed["playoff_label"].dropna().unique()
@@ -746,7 +788,9 @@ class Season:
                         return playoff_results
 
                 except Exception as e:
-                    logger.warning(f"Warning: Could not reconstruct playoff results: {e}")
+                    logger.warning(
+                        f"Warning: Could not reconstruct playoff results: {e}"
+                    )
                     logger.info("Proceeding with normal playoff simulation...")
 
             # Check if we have a champion already (Finals series completed)
@@ -1450,7 +1494,9 @@ class Season:
                 self.get_series_winner("Finals")
                 break  # Finals complete
             except ValueError:
-                logger.debug(f"Scheduling additional games for incomplete Finals series")
+                logger.debug(
+                    f"Scheduling additional games for incomplete Finals series"
+                )
 
                 # Schedule more games for incomplete Finals
                 # Get current series status
@@ -1520,7 +1566,9 @@ class Season:
                     break  # No Finals games exist - unusual
 
         if attempt >= max_attempts:
-            logger.warning(f"Warning: Could not complete Finals after {max_attempts} attempts")
+            logger.warning(
+                f"Warning: Could not complete Finals after {max_attempts} attempts"
+            )
 
         # -------------- pretty print & declare champion -------------
         finals_scores = []
@@ -1571,7 +1619,9 @@ class Season:
             raise ValueError(f"No wins data available for series {series_label}")
 
         if wins.max() < 4:
-            logger.debug(f"Series {series_label} is not finished yet - max wins: {wins.max()}")
+            logger.debug(
+                f"Series {series_label} is not finished yet - max wins: {wins.max()}"
+            )
             logger.debug(f"Games in series: {len(series)}")
             logger.debug(f"Win distribution: {wins.to_dict()}")
             raise ValueError(f"Series {series_label} is not finished yet!")
