@@ -437,7 +437,7 @@ def main():
     df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
 
     # Add simulation results
-    df_final = add_simulation_results(df_final, sim_report, future_games)
+    df_final = add_simulation_results(df_final, sim_report, future_games, completed_games)
 
     logger.info("Generating final results...")
     df_final = format_for_csv(df_final)
