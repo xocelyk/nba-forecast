@@ -680,8 +680,9 @@ class Season:
         assert len(set(west_alive + east_alive)) == len(west_alive + east_alive)
         playoff_results["playoffs"] = east_alive + west_alive
 
-        # playoff start date is 4/20/2025
-        playoff_start_date = datetime.date(2025, 4, 19)
+        # TODO: Make playoff start date dynamic based on year instead of hardcoded
+        # playoff start date is 4/20/2026
+        playoff_start_date = datetime.date(2026, 4, 19)
         cur_playoff_results = self.get_cur_playoff_results(playoff_start_date)
 
         # clear all future games - we create them ourselves
