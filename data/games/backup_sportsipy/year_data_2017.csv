@@ -1,0 +1,1310 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201610260LAL,"Wed, Oct 26, 2016",LAL,HOU,Los Angeles Lakers,Houston Rockets,120,114,6,Home,99.4,True,2017
+201610280DAL,"Fri, Oct 28, 2016",DAL,HOU,Dallas Mavericks,Houston Rockets,98,106,-8,Home,93.1,True,2017
+201610300HOU,"Sun, Oct 30, 2016",HOU,DAL,Houston Rockets,Dallas Mavericks,93,92,1,Home,91.5,True,2017
+201611010CLE,"Tue, Nov 1, 2016",CLE,HOU,Cleveland Cavaliers,Houston Rockets,128,120,8,Home,92.8,True,2017
+201611020NYK,"Wed, Nov 2, 2016",NYK,HOU,New York Knicks,Houston Rockets,99,118,-19,Home,100.2,True,2017
+201611050ATL,"Sat, Nov 5, 2016",ATL,HOU,Atlanta Hawks,Houston Rockets,112,97,15,Home,101.4,True,2017
+201611070WAS,"Mon, Nov 7, 2016",WAS,HOU,Washington Wizards,Houston Rockets,106,114,-8,Home,96.1,True,2017
+201611090SAS,"Wed, Nov 9, 2016",SAS,HOU,San Antonio Spurs,Houston Rockets,99,101,-2,Home,95.4,True,2017
+201611120HOU,"Sat, Nov 12, 2016",HOU,SAS,Houston Rockets,San Antonio Spurs,100,106,-6,Home,92.7,True,2017
+201611140HOU,"Mon, Nov 14, 2016",HOU,PHI,Houston Rockets,Philadelphia 76ers,115,88,27,Home,96.7,True,2017
+201611160OKC,"Wed, Nov 16, 2016",OKC,HOU,Oklahoma City Thunder,Houston Rockets,105,103,2,Home,100.1,True,2017
+201611170HOU,"Thu, Nov 17, 2016",HOU,POR,Houston Rockets,Portland Trail Blazers,126,109,17,Home,99.3,True,2017
+201611190HOU,"Sat, Nov 19, 2016",HOU,UTA,Houston Rockets,Utah Jazz,111,102,9,Home,91.7,True,2017
+201611210DET,"Mon, Nov 21, 2016",DET,HOU,Detroit Pistons,Houston Rockets,96,99,-3,Home,93.0,True,2017
+201611230HOU,"Wed, Nov 23, 2016",HOU,TOR,Houston Rockets,Toronto Raptors,102,115,-13,Home,94.3,True,2017
+201611250SAC,"Fri, Nov 25, 2016",SAC,HOU,Sacramento Kings,Houston Rockets,104,117,-13,Home,97.7,True,2017
+201611270POR,"Sun, Nov 27, 2016",POR,HOU,Portland Trail Blazers,Houston Rockets,114,130,-16,Home,97.5,True,2017
+201611290UTA,"Tue, Nov 29, 2016",UTA,HOU,Utah Jazz,Houston Rockets,120,101,19,Home,88.0,True,2017
+201612010GSW,"Thu, Dec 1, 2016",GSW,HOU,Golden State Warriors,Houston Rockets,127,132,-5,Home,100.1,True,2017
+201612020DEN,"Fri, Dec 2, 2016",DEN,HOU,Denver Nuggets,Houston Rockets,110,128,-18,Home,98.4,True,2017
+201612050HOU,"Mon, Dec 5, 2016",HOU,BOS,Houston Rockets,Boston Celtics,107,106,1,Home,99.3,True,2017
+201612070HOU,"Wed, Dec 7, 2016",HOU,LAL,Houston Rockets,Los Angeles Lakers,134,95,39,Home,107.2,True,2017
+201612090OKC,"Fri, Dec 9, 2016",OKC,HOU,Oklahoma City Thunder,Houston Rockets,99,102,-3,Home,100.6,True,2017
+201612100HOU,"Sat, Dec 10, 2016",HOU,DAL,Houston Rockets,Dallas Mavericks,109,87,22,Home,86.8,True,2017
+201612120HOU,"Mon, Dec 12, 2016",HOU,BRK,Houston Rockets,Brooklyn Nets,122,118,4,Home,106.5,True,2017
+201612140HOU,"Wed, Dec 14, 2016",HOU,SAC,Houston Rockets,Sacramento Kings,132,98,34,Home,98.6,True,2017
+201612160HOU,"Fri, Dec 16, 2016",HOU,NOP,Houston Rockets,New Orleans Pelicans,122,100,22,Home,101.5,True,2017
+201612170MIN,"Sat, Dec 17, 2016",MIN,HOU,Minnesota Timberwolves,Houston Rockets,109,111,-2,Home,98.7,True,2017
+201612200HOU,"Tue, Dec 20, 2016",HOU,SAS,Houston Rockets,San Antonio Spurs,100,102,-2,Home,95.5,True,2017
+201612210PHO,"Wed, Dec 21, 2016",PHO,HOU,Phoenix Suns,Houston Rockets,111,125,-14,Home,94.5,True,2017
+201612230MEM,"Fri, Dec 23, 2016",MEM,HOU,Memphis Grizzlies,Houston Rockets,115,109,6,Home,92.6,True,2017
+201612260HOU,"Mon, Dec 26, 2016",HOU,PHO,Houston Rockets,Phoenix Suns,131,115,16,Home,111.8,True,2017
+201612270DAL,"Tue, Dec 27, 2016",DAL,HOU,Dallas Mavericks,Houston Rockets,107,123,-16,Home,93.4,True,2017
+201612300HOU,"Fri, Dec 30, 2016",HOU,LAC,Houston Rockets,Los Angeles Clippers,140,116,24,Home,103.1,True,2017
+201612310HOU,"Sat, Dec 31, 2016",HOU,NYK,Houston Rockets,New York Knicks,129,122,7,Home,105.1,True,2017
+201701020HOU,"Mon, Jan 2, 2017",HOU,WAS,Houston Rockets,Washington Wizards,101,91,10,Home,99.5,True,2017
+201701050HOU,"Thu, Jan 5, 2017",HOU,OKC,Houston Rockets,Oklahoma City Thunder,118,116,2,Home,95.7,True,2017
+201701060ORL,"Fri, Jan 6, 2017",ORL,HOU,Orlando Magic,Houston Rockets,93,100,-7,Home,91.0,True,2017
+201701080TOR,"Sun, Jan 8, 2017",TOR,HOU,Toronto Raptors,Houston Rockets,122,129,-7,Home,104.3,True,2017
+201701100HOU,"Tue, Jan 10, 2017",HOU,CHO,Houston Rockets,Charlotte Hornets,121,114,7,Home,99.8,True,2017
+201701110MIN,"Wed, Jan 11, 2017",MIN,HOU,Minnesota Timberwolves,Houston Rockets,119,105,14,Home,100.1,True,2017
+201701130HOU,"Fri, Jan 13, 2017",HOU,MEM,Houston Rockets,Memphis Grizzlies,105,110,-5,Home,97.9,True,2017
+201701150BRK,"Sun, Jan 15, 2017",BRK,HOU,Brooklyn Nets,Houston Rockets,112,137,-25,Home,104.4,True,2017
+201701170MIA,"Tue, Jan 17, 2017",MIA,HOU,Miami Heat,Houston Rockets,109,103,6,Home,104.5,True,2017
+201701180HOU,"Wed, Jan 18, 2017",HOU,MIL,Houston Rockets,Milwaukee Bucks,111,92,19,Home,96.9,True,2017
+201701200HOU,"Fri, Jan 20, 2017",HOU,GSW,Houston Rockets,Golden State Warriors,108,125,-17,Home,101.3,True,2017
+201701210MEM,"Sat, Jan 21, 2017",MEM,HOU,Memphis Grizzlies,Houston Rockets,95,119,-24,Home,95.5,True,2017
+201701230MIL,"Mon, Jan 23, 2017",MIL,HOU,Milwaukee Bucks,Houston Rockets,127,114,13,Home,102.5,True,2017
+201701250BOS,"Wed, Jan 25, 2017",BOS,HOU,Boston Celtics,Houston Rockets,120,109,11,Home,101.3,True,2017
+201701270PHI,"Fri, Jan 27, 2017",PHI,HOU,Philadelphia 76ers,Houston Rockets,118,123,-5,Home,108.6,True,2017
+201701290IND,"Sun, Jan 29, 2017",IND,HOU,Indiana Pacers,Houston Rockets,120,101,19,Home,97.4,True,2017
+201701310HOU,"Tue, Jan 31, 2017",HOU,SAC,Houston Rockets,Sacramento Kings,105,83,22,Home,96.5,True,2017
+201702020HOU,"Thu, Feb 2, 2017",HOU,ATL,Houston Rockets,Atlanta Hawks,108,113,-5,Home,106.1,True,2017
+201702030HOU,"Fri, Feb 3, 2017",HOU,CHI,Houston Rockets,Chicago Bulls,121,117,4,Home,97.8,True,2017
+201702070HOU,"Tue, Feb 7, 2017",HOU,ORL,Houston Rockets,Orlando Magic,128,104,24,Home,101.7,True,2017
+201702090CHO,"Thu, Feb 9, 2017",CHO,HOU,Charlotte Hornets,Houston Rockets,95,107,-12,Home,100.8,True,2017
+201702110HOU,"Sat, Feb 11, 2017",HOU,PHO,Houston Rockets,Phoenix Suns,133,102,31,Home,107.3,True,2017
+201702150HOU,"Wed, Feb 15, 2017",HOU,MIA,Houston Rockets,Miami Heat,109,117,-8,Home,90.9,True,2017
+201702230NOP,"Thu, Feb 23, 2017",NOP,HOU,New Orleans Pelicans,Houston Rockets,99,129,-30,Home,103.7,True,2017
+201702250HOU,"Sat, Feb 25, 2017",HOU,MIN,Houston Rockets,Minnesota Timberwolves,142,130,12,Home,106.4,True,2017
+201702270HOU,"Mon, Feb 27, 2017",HOU,IND,Houston Rockets,Indiana Pacers,108,117,-9,Home,100.0,True,2017
+201703010LAC,"Wed, Mar 1, 2017",LAC,HOU,Los Angeles Clippers,Houston Rockets,103,122,-19,Home,94.7,True,2017
+201703040HOU,"Sat, Mar 4, 2017",HOU,MEM,Houston Rockets,Memphis Grizzlies,123,108,15,Home,97.2,True,2017
+201703060SAS,"Mon, Mar 6, 2017",SAS,HOU,San Antonio Spurs,Houston Rockets,112,110,2,Home,97.2,True,2017
+201703080HOU,"Wed, Mar 8, 2017",HOU,UTA,Houston Rockets,Utah Jazz,108,115,-7,Home,91.0,True,2017
+201703100CHI,"Fri, Mar 10, 2017",CHI,HOU,Chicago Bulls,Houston Rockets,94,115,-21,Home,107.0,True,2017
+201703120HOU,"Sun, Mar 12, 2017",HOU,CLE,Houston Rockets,Cleveland Cavaliers,117,112,5,Home,93.5,True,2017
+201703150HOU,"Wed, Mar 15, 2017",HOU,LAL,Houston Rockets,Los Angeles Lakers,139,100,39,Home,109.6,True,2017
+201703170NOP,"Fri, Mar 17, 2017",NOP,HOU,New Orleans Pelicans,Houston Rockets,128,112,16,Home,105.3,True,2017
+201703180DEN,"Sat, Mar 18, 2017",DEN,HOU,Denver Nuggets,Houston Rockets,105,109,-4,Home,99.8,True,2017
+201703200HOU,"Mon, Mar 20, 2017",HOU,DEN,Houston Rockets,Denver Nuggets,125,124,1,Home,104.9,True,2017
+201703240HOU,"Fri, Mar 24, 2017",HOU,NOP,Houston Rockets,New Orleans Pelicans,117,107,10,Home,100.9,True,2017
+201703260HOU,"Sun, Mar 26, 2017",HOU,OKC,Houston Rockets,Oklahoma City Thunder,137,125,12,Home,105.0,True,2017
+201703280HOU,"Tue, Mar 28, 2017",HOU,GSW,Houston Rockets,Golden State Warriors,106,113,-7,Home,101.3,True,2017
+201703300POR,"Thu, Mar 30, 2017",POR,HOU,Portland Trail Blazers,Houston Rockets,117,107,10,Home,99.3,True,2017
+201703310GSW,"Fri, Mar 31, 2017",GSW,HOU,Golden State Warriors,Houston Rockets,107,98,9,Home,92.1,True,2017
+201704020PHO,"Sun, Apr 2, 2017",PHO,HOU,Phoenix Suns,Houston Rockets,116,123,-7,Home,109.9,True,2017
+201704050HOU,"Wed, Apr 5, 2017",HOU,DEN,Houston Rockets,Denver Nuggets,110,104,6,Home,107.7,True,2017
+201704070HOU,"Fri, Apr 7, 2017",HOU,DET,Houston Rockets,Detroit Pistons,109,114,-5,Home,99.2,True,2017
+201704090SAC,"Sun, Apr 9, 2017",SAC,HOU,Sacramento Kings,Houston Rockets,128,135,-7,Home,103.0,True,2017
+201704100LAC,"Mon, Apr 10, 2017",LAC,HOU,Los Angeles Clippers,Houston Rockets,125,96,29,Home,98.6,True,2017
+201704120HOU,"Wed, Apr 12, 2017",HOU,MIN,Houston Rockets,Minnesota Timberwolves,123,118,5,Home,100.2,True,2017
+201704160HOU,"Sun, Apr 16, 2017",HOU,OKC,Houston Rockets,Oklahoma City Thunder,118,87,31,Home,97.7,True,2017
+201704190HOU,"Wed, Apr 19, 2017",HOU,OKC,Houston Rockets,Oklahoma City Thunder,115,111,4,Home,96.9,True,2017
+201704210OKC,"Fri, Apr 21, 2017",OKC,HOU,Oklahoma City Thunder,Houston Rockets,115,113,2,Home,95.4,True,2017
+201704230OKC,"Sun, Apr 23, 2017",OKC,HOU,Oklahoma City Thunder,Houston Rockets,109,113,-4,Home,102.8,True,2017
+201704250HOU,"Tue, Apr 25, 2017",HOU,OKC,Houston Rockets,Oklahoma City Thunder,105,99,6,Home,96.4,True,2017
+201705010SAS,"Mon, May 1, 2017",SAS,HOU,San Antonio Spurs,Houston Rockets,99,126,-27,Home,102.4,True,2017
+201705030SAS,"Wed, May 3, 2017",SAS,HOU,San Antonio Spurs,Houston Rockets,121,96,25,Home,87.2,True,2017
+201705050HOU,"Fri, May 5, 2017",HOU,SAS,Houston Rockets,San Antonio Spurs,92,103,-11,Home,95.2,True,2017
+201705070HOU,"Sun, May 7, 2017",HOU,SAS,Houston Rockets,San Antonio Spurs,125,104,21,Home,98.9,True,2017
+201705090SAS,"Tue, May 9, 2017",SAS,HOU,San Antonio Spurs,Houston Rockets,110,107,3,Home,89.1,True,2017
+201705110HOU,"Thu, May 11, 2017",HOU,SAS,Houston Rockets,San Antonio Spurs,75,114,-39,Home,90.6,True,2017
+201610280UTA,"Fri, Oct 28, 2016",UTA,LAL,Utah Jazz,Los Angeles Lakers,96,89,7,Home,92.1,True,2017
+201610300OKC,"Sun, Oct 30, 2016",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,113,96,17,Home,105.9,True,2017
+201611010IND,"Tue, Nov 1, 2016",IND,LAL,Indiana Pacers,Los Angeles Lakers,115,108,7,Home,102.9,True,2017
+201611020ATL,"Wed, Nov 2, 2016",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,116,123,-7,Home,101.6,True,2017
+201611040LAL,"Fri, Nov 4, 2016",LAL,GSW,Los Angeles Lakers,Golden State Warriors,117,97,20,Home,102.5,True,2017
+201611060LAL,"Sun, Nov 6, 2016",LAL,PHO,Los Angeles Lakers,Phoenix Suns,119,108,11,Home,106.0,True,2017
+201611080LAL,"Tue, Nov 8, 2016",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,97,109,-12,Home,90.2,True,2017
+201611100SAC,"Thu, Nov 10, 2016",SAC,LAL,Sacramento Kings,Los Angeles Lakers,91,101,-10,Home,97.6,True,2017
+201611120NOP,"Sat, Nov 12, 2016",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,99,126,-27,Home,94.9,True,2017
+201611130MIN,"Sun, Nov 13, 2016",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,125,99,26,Home,96.6,True,2017
+201611150LAL,"Tue, Nov 15, 2016",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,125,118,7,Home,108.1,True,2017
+201611180LAL,"Fri, Nov 18, 2016",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,107,116,-9,Home,93.0,True,2017
+201611200LAL,"Sun, Nov 20, 2016",LAL,CHI,Los Angeles Lakers,Chicago Bulls,110,118,-8,Home,98.9,True,2017
+201611220LAL,"Tue, Nov 22, 2016",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,111,109,2,Home,98.2,True,2017
+201611230GSW,"Wed, Nov 23, 2016",GSW,LAL,Golden State Warriors,Los Angeles Lakers,149,106,43,Home,104.4,True,2017
+201611250LAL,"Fri, Nov 25, 2016",LAL,GSW,Los Angeles Lakers,Golden State Warriors,85,109,-24,Home,101.5,True,2017
+201611270LAL,"Sun, Nov 27, 2016",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,109,94,15,Home,94.7,True,2017
+201611290NOP,"Tue, Nov 29, 2016",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,105,88,17,Home,94.5,True,2017
+201611300CHI,"Wed, Nov 30, 2016",CHI,LAL,Chicago Bulls,Los Angeles Lakers,90,96,-6,Home,101.4,True,2017
+201612020TOR,"Fri, Dec 2, 2016",TOR,LAL,Toronto Raptors,Los Angeles Lakers,113,80,33,Home,91.7,True,2017
+201612030MEM,"Sat, Dec 3, 2016",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,103,100,3,Home,91.8,True,2017
+201612050LAL,"Mon, Dec 5, 2016",LAL,UTA,Los Angeles Lakers,Utah Jazz,101,107,-6,Home,89.6,True,2017
+201612090LAL,"Fri, Dec 9, 2016",LAL,PHO,Los Angeles Lakers,Phoenix Suns,115,119,-4,Home,102.4,True,2017
+201612110LAL,"Sun, Dec 11, 2016",LAL,NYK,Los Angeles Lakers,New York Knicks,112,118,-6,Home,99.1,True,2017
+201612120SAC,"Mon, Dec 12, 2016",SAC,LAL,Sacramento Kings,Los Angeles Lakers,116,92,24,Home,96.0,True,2017
+201612140BRK,"Wed, Dec 14, 2016",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,107,97,10,Home,96.0,True,2017
+201612160PHI,"Fri, Dec 16, 2016",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,89,100,-11,Home,97.7,True,2017
+201612170CLE,"Sat, Dec 17, 2016",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,119,108,11,Home,91.6,True,2017
+201612200CHO,"Tue, Dec 20, 2016",CHO,LAL,Charlotte Hornets,Los Angeles Lakers,117,113,4,Home,94.0,True,2017
+201612220MIA,"Thu, Dec 22, 2016",MIA,LAL,Miami Heat,Los Angeles Lakers,115,107,8,Home,96.4,True,2017
+201612230ORL,"Fri, Dec 23, 2016",ORL,LAL,Orlando Magic,Los Angeles Lakers,109,90,19,Home,99.7,True,2017
+201612250LAL,"Sun, Dec 25, 2016",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,111,102,9,Home,96.4,True,2017
+201612270LAL,"Tue, Dec 27, 2016",LAL,UTA,Los Angeles Lakers,Utah Jazz,100,102,-2,Home,88.8,True,2017
+201612290LAL,"Thu, Dec 29, 2016",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,89,101,-12,Home,86.2,True,2017
+201701010LAL,"Sun, Jan 1, 2017",LAL,TOR,Los Angeles Lakers,Toronto Raptors,114,123,-9,Home,95.6,True,2017
+201701030LAL,"Tue, Jan 3, 2017",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,116,102,14,Home,93.9,True,2017
+201701050POR,"Thu, Jan 5, 2017",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,118,109,9,Home,98.4,True,2017
+201701060LAL,"Fri, Jan 6, 2017",LAL,MIA,Los Angeles Lakers,Miami Heat,127,100,27,Home,100.3,True,2017
+201701080LAL,"Sun, Jan 8, 2017",LAL,ORL,Los Angeles Lakers,Orlando Magic,111,95,16,Home,102.0,True,2017
+201701100LAL,"Tue, Jan 10, 2017",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,87,108,-21,Home,93.5,True,2017
+201701120SAS,"Thu, Jan 12, 2017",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,134,94,40,Home,94.8,True,2017
+201701140LAC,"Sat, Jan 14, 2017",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,113,97,16,Home,96.0,True,2017
+201701150LAL,"Sun, Jan 15, 2017",LAL,DET,Los Angeles Lakers,Detroit Pistons,97,102,-5,Home,96.8,True,2017
+201701170LAL,"Tue, Jan 17, 2017",LAL,DEN,Los Angeles Lakers,Denver Nuggets,121,127,-6,Home,101.4,True,2017
+201701200LAL,"Fri, Jan 20, 2017",LAL,IND,Los Angeles Lakers,Indiana Pacers,108,95,13,Home,99.7,True,2017
+201701220DAL,"Sun, Jan 22, 2017",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,122,73,49,Home,90.1,True,2017
+201701250POR,"Wed, Jan 25, 2017",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,105,98,7,Home,98.0,True,2017
+201701260UTA,"Thu, Jan 26, 2017",UTA,LAL,Utah Jazz,Los Angeles Lakers,96,88,8,Home,89.5,True,2017
+201701310LAL,"Tue, Jan 31, 2017",LAL,DEN,Los Angeles Lakers,Denver Nuggets,120,116,4,Home,98.2,True,2017
+201702020WAS,"Thu, Feb 2, 2017",WAS,LAL,Washington Wizards,Los Angeles Lakers,116,108,8,Home,101.3,True,2017
+201702030BOS,"Fri, Feb 3, 2017",BOS,LAL,Boston Celtics,Los Angeles Lakers,113,107,6,Home,100.8,True,2017
+201702060NYK,"Mon, Feb 6, 2017",NYK,LAL,New York Knicks,Los Angeles Lakers,107,121,-14,Home,101.3,True,2017
+201702080DET,"Wed, Feb 8, 2017",DET,LAL,Detroit Pistons,Los Angeles Lakers,121,102,19,Home,107.7,True,2017
+201702100MIL,"Fri, Feb 10, 2017",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,114,122,-8,Home,101.5,True,2017
+201702140LAL,"Tue, Feb 14, 2017",LAL,SAC,Los Angeles Lakers,Sacramento Kings,96,97,-1,Home,92.1,True,2017
+201702150PHO,"Wed, Feb 15, 2017",PHO,LAL,Phoenix Suns,Los Angeles Lakers,137,101,36,Home,106.3,True,2017
+201702240OKC,"Fri, Feb 24, 2017",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,110,93,17,Home,104.1,True,2017
+201702260LAL,"Sun, Feb 26, 2017",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,98,119,-21,Home,97.5,True,2017
+201702280LAL,"Tue, Feb 28, 2017",LAL,CHO,Los Angeles Lakers,Charlotte Hornets,104,109,-5,Home,95.2,True,2017
+201703030LAL,"Fri, Mar 3, 2017",LAL,BOS,Los Angeles Lakers,Boston Celtics,95,115,-20,Home,103.1,True,2017
+201703050LAL,"Sun, Mar 5, 2017",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,97,105,-8,Home,101.5,True,2017
+201703070DAL,"Tue, Mar 7, 2017",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,122,111,11,Home,97.9,True,2017
+201703090PHO,"Thu, Mar 9, 2017",PHO,LAL,Phoenix Suns,Los Angeles Lakers,110,122,-12,Home,100.4,True,2017
+201703120LAL,"Sun, Mar 12, 2017",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,116,118,-2,Home,104.3,True,2017
+201703130DEN,"Mon, Mar 13, 2017",DEN,LAL,Denver Nuggets,Los Angeles Lakers,129,101,28,Home,102.3,True,2017
+201703170LAL,"Fri, Mar 17, 2017",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,103,107,-4,Home,96.3,True,2017
+201703190LAL,"Sun, Mar 19, 2017",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,120,125,-5,Home,94.0,True,2017
+201703210LAL,"Tue, Mar 21, 2017",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,109,133,-24,Home,97.0,True,2017
+201703240LAL,"Fri, Mar 24, 2017",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,130,119,11,Home,95.1,True,2017
+201703260LAL,"Sun, Mar 26, 2017",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,81,97,-16,Home,98.0,True,2017
+201703280LAL,"Tue, Mar 28, 2017",LAL,WAS,Los Angeles Lakers,Washington Wizards,108,119,-11,Home,99.3,True,2017
+201703300MIN,"Thu, Mar 30, 2017",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,119,104,15,Home,92.3,True,2017
+201704010LAC,"Sat, Apr 1, 2017",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,115,104,11,Home,95.9,True,2017
+201704020LAL,"Sun, Apr 2, 2017",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,108,103,5,Home,92.4,True,2017
+201704050SAS,"Wed, Apr 5, 2017",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,95,102,-7,Home,97.5,True,2017
+201704070LAL,"Fri, Apr 7, 2017",LAL,SAC,Los Angeles Lakers,Sacramento Kings,98,94,4,Home,92.0,True,2017
+201704090LAL,"Sun, Apr 9, 2017",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,110,109,1,Home,97.2,True,2017
+201704110LAL,"Tue, Apr 11, 2017",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,108,96,12,Home,98.4,True,2017
+201704120GSW,"Wed, Apr 12, 2017",GSW,LAL,Golden State Warriors,Los Angeles Lakers,109,94,15,Home,103.2,True,2017
+201610260IND,"Wed, Oct 26, 2016",IND,DAL,Indiana Pacers,Dallas Mavericks,130,121,9,Home,103.6,True,2017
+201611020UTA,"Wed, Nov 2, 2016",UTA,DAL,Utah Jazz,Dallas Mavericks,97,81,16,Home,88.4,True,2017
+201611040DAL,"Fri, Nov 4, 2016",DAL,POR,Dallas Mavericks,Portland Trail Blazers,95,105,-10,Home,95.6,True,2017
+201611060DAL,"Sun, Nov 6, 2016",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,86,75,11,Home,90.2,True,2017
+201611090GSW,"Wed, Nov 9, 2016",GSW,DAL,Golden State Warriors,Dallas Mavericks,116,95,21,Home,90.9,True,2017
+201611140NYK,"Mon, Nov 14, 2016",NYK,DAL,New York Knicks,Dallas Mavericks,93,77,16,Home,86.8,True,2017
+201611160BOS,"Wed, Nov 16, 2016",BOS,DAL,Boston Celtics,Dallas Mavericks,90,83,7,Home,89.7,True,2017
+201611180DAL,"Fri, Nov 18, 2016",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,64,80,-16,Home,86.7,True,2017
+201611190ORL,"Sat, Nov 19, 2016",ORL,DAL,Orlando Magic,Dallas Mavericks,95,87,8,Home,94.2,True,2017
+201611210SAS,"Mon, Nov 21, 2016",SAS,DAL,San Antonio Spurs,Dallas Mavericks,96,91,5,Home,88.9,True,2017
+201611230DAL,"Wed, Nov 23, 2016",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,104,124,-20,Home,98.2,True,2017
+201611250CLE,"Fri, Nov 25, 2016",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,128,90,38,Home,96.7,True,2017
+201611270DAL,"Sun, Nov 27, 2016",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,91,81,10,Home,85.4,True,2017
+201611300DAL,"Wed, Nov 30, 2016",DAL,SAS,Dallas Mavericks,San Antonio Spurs,87,94,-7,Home,84.3,True,2017
+201612010CHO,"Thu, Dec 1, 2016",CHO,DAL,Charlotte Hornets,Dallas Mavericks,97,87,10,Home,92.1,True,2017
+201612030DAL,"Sat, Dec 3, 2016",DAL,CHI,Dallas Mavericks,Chicago Bulls,107,82,25,Home,88.8,True,2017
+201612050DAL,"Mon, Dec 5, 2016",DAL,CHO,Dallas Mavericks,Charlotte Hornets,101,109,-8,Home,92.6,True,2017
+201612070DAL,"Wed, Dec 7, 2016",DAL,SAC,Dallas Mavericks,Sacramento Kings,89,120,-31,Home,97.8,True,2017
+201612090DAL,"Fri, Dec 9, 2016",DAL,IND,Dallas Mavericks,Indiana Pacers,111,103,8,Home,89.7,True,2017
+201612120DAL,"Mon, Dec 12, 2016",DAL,DEN,Dallas Mavericks,Denver Nuggets,112,92,20,Home,82.9,True,2017
+201612140DAL,"Wed, Dec 14, 2016",DAL,DET,Dallas Mavericks,Detroit Pistons,85,95,-10,Home,88.4,True,2017
+201612160UTA,"Fri, Dec 16, 2016",UTA,DAL,Utah Jazz,Dallas Mavericks,103,100,3,Home,83.4,True,2017
+201612180DAL,"Sun, Dec 18, 2016",DAL,SAC,Dallas Mavericks,Sacramento Kings,99,79,20,Home,90.7,True,2017
+201612190DEN,"Mon, Dec 19, 2016",DEN,DAL,Denver Nuggets,Dallas Mavericks,117,107,10,Home,90.7,True,2017
+201612210POR,"Wed, Dec 21, 2016",POR,DAL,Portland Trail Blazers,Dallas Mavericks,95,96,-1,Home,90.2,True,2017
+201612230LAC,"Fri, Dec 23, 2016",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,88,90,-2,Home,90.3,True,2017
+201612260NOP,"Mon, Dec 26, 2016",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,111,104,7,Home,88.2,True,2017
+201612300GSW,"Fri, Dec 30, 2016",GSW,DAL,Golden State Warriors,Dallas Mavericks,108,99,9,Home,96.9,True,2017
+201701030DAL,"Tue, Jan 3, 2017",DAL,WAS,Dallas Mavericks,Washington Wizards,113,105,8,Home,98.8,True,2017
+201701050DAL,"Thu, Jan 5, 2017",DAL,PHO,Dallas Mavericks,Phoenix Suns,95,102,-7,Home,87.7,True,2017
+201701070DAL,"Sat, Jan 7, 2017",DAL,ATL,Dallas Mavericks,Atlanta Hawks,82,97,-15,Home,91.5,True,2017
+201701090MIN,"Mon, Jan 9, 2017",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,101,92,9,Home,88.4,True,2017
+201701120PHO,"Thu, Jan 12, 2017",PHO,DAL,Phoenix Suns,Dallas Mavericks,108,113,-5,Home,94.1,True,2017
+201701150DAL,"Sun, Jan 15, 2017",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,98,87,11,Home,88.8,True,2017
+201701170CHI,"Tue, Jan 17, 2017",CHI,DAL,Chicago Bulls,Dallas Mavericks,98,99,-1,Home,90.6,True,2017
+201701190MIA,"Thu, Jan 19, 2017",MIA,DAL,Miami Heat,Dallas Mavericks,99,95,4,Home,89.8,True,2017
+201701200DAL,"Fri, Jan 20, 2017",DAL,UTA,Dallas Mavericks,Utah Jazz,107,112,-5,Home,89.8,True,2017
+201701250DAL,"Wed, Jan 25, 2017",DAL,NYK,Dallas Mavericks,New York Knicks,103,95,8,Home,92.6,True,2017
+201701260OKC,"Thu, Jan 26, 2017",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,109,98,11,Home,93.6,True,2017
+201701290SAS,"Sun, Jan 29, 2017",SAS,DAL,San Antonio Spurs,Dallas Mavericks,101,105,-4,Home,95.0,True,2017
+201701300DAL,"Mon, Jan 30, 2017",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,104,97,7,Home,92.8,True,2017
+201702010DAL,"Wed, Feb 1, 2017",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,113,95,18,Home,94.0,True,2017
+201702030POR,"Fri, Feb 3, 2017",POR,DAL,Portland Trail Blazers,Dallas Mavericks,104,108,-4,Home,89.1,True,2017
+201702060DEN,"Mon, Feb 6, 2017",DEN,DAL,Denver Nuggets,Dallas Mavericks,110,87,23,Home,92.6,True,2017
+201702070DAL,"Tue, Feb 7, 2017",DAL,POR,Dallas Mavericks,Portland Trail Blazers,113,114,-1,Home,92.4,True,2017
+201702090DAL,"Thu, Feb 9, 2017",DAL,UTA,Dallas Mavericks,Utah Jazz,112,105,7,Home,90.9,True,2017
+201702110DAL,"Sat, Feb 11, 2017",DAL,ORL,Dallas Mavericks,Orlando Magic,112,80,32,Home,92.2,True,2017
+201702130DAL,"Mon, Feb 13, 2017",DAL,BOS,Dallas Mavericks,Boston Celtics,98,111,-13,Home,93.4,True,2017
+201702150DET,"Wed, Feb 15, 2017",DET,DAL,Detroit Pistons,Dallas Mavericks,98,91,7,Home,96.0,True,2017
+201702240MIN,"Fri, Feb 24, 2017",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,97,84,13,Home,90.9,True,2017
+201702250DAL,"Sat, Feb 25, 2017",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,96,83,13,Home,95.5,True,2017
+201702270DAL,"Mon, Feb 27, 2017",DAL,MIA,Dallas Mavericks,Miami Heat,96,89,7,Home,86.5,True,2017
+201703010ATL,"Wed, Mar 1, 2017",ATL,DAL,Atlanta Hawks,Dallas Mavericks,100,95,5,Home,91.1,True,2017
+201703030DAL,"Fri, Mar 3, 2017",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,104,100,4,Home,92.5,True,2017
+201703050DAL,"Sun, Mar 5, 2017",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,104,89,15,Home,94.3,True,2017
+201703100DAL,"Fri, Mar 10, 2017",DAL,BRK,Dallas Mavericks,Brooklyn Nets,105,96,9,Home,95.1,True,2017
+201703110DAL,"Sat, Mar 11, 2017",DAL,PHO,Dallas Mavericks,Phoenix Suns,98,100,-2,Home,93.4,True,2017
+201703130TOR,"Mon, Mar 13, 2017",TOR,DAL,Toronto Raptors,Dallas Mavericks,100,78,22,Home,87.9,True,2017
+201703150WAS,"Wed, Mar 15, 2017",WAS,DAL,Washington Wizards,Dallas Mavericks,107,112,-5,Home,95.4,True,2017
+201703170PHI,"Fri, Mar 17, 2017",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,116,74,42,Home,97.7,True,2017
+201703190BRK,"Sun, Mar 19, 2017",BRK,DAL,Brooklyn Nets,Dallas Mavericks,104,111,-7,Home,93.1,True,2017
+201703210DAL,"Tue, Mar 21, 2017",DAL,GSW,Dallas Mavericks,Golden State Warriors,87,112,-25,Home,94.1,True,2017
+201703230DAL,"Thu, Mar 23, 2017",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,97,95,2,Home,94.0,True,2017
+201703250DAL,"Sat, Mar 25, 2017",DAL,TOR,Dallas Mavericks,Toronto Raptors,86,94,-8,Home,86.1,True,2017
+201703270DAL,"Mon, Mar 27, 2017",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,91,92,-1,Home,93.4,True,2017
+201703290NOP,"Wed, Mar 29, 2017",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,121,118,3,Home,92.1,True,2017
+201703310MEM,"Fri, Mar 31, 2017",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,99,90,9,Home,87.4,True,2017
+201704020MIL,"Sun, Apr 2, 2017",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,105,109,-4,Home,90.6,True,2017
+201704040SAC,"Tue, Apr 4, 2017",SAC,DAL,Sacramento Kings,Dallas Mavericks,98,87,11,Home,93.1,True,2017
+201704050LAC,"Wed, Apr 5, 2017",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,112,101,11,Home,97.1,True,2017
+201704070DAL,"Fri, Apr 7, 2017",DAL,SAS,Dallas Mavericks,San Antonio Spurs,89,102,-13,Home,93.3,True,2017
+201704090PHO,"Sun, Apr 9, 2017",PHO,DAL,Phoenix Suns,Dallas Mavericks,124,111,13,Home,95.5,True,2017
+201704110DAL,"Tue, Apr 11, 2017",DAL,DEN,Dallas Mavericks,Denver Nuggets,91,109,-18,Home,95.8,True,2017
+201704120MEM,"Wed, Apr 12, 2017",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,93,100,-7,Home,88.9,True,2017
+201610250CLE,"Tue, Oct 25, 2016",CLE,NYK,Cleveland Cavaliers,New York Knicks,117,88,29,Home,99.9,True,2017
+201610280TOR,"Fri, Oct 28, 2016",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,91,94,-3,Home,93.9,True,2017
+201610290CLE,"Sat, Oct 29, 2016",CLE,ORL,Cleveland Cavaliers,Orlando Magic,105,99,6,Home,96.5,True,2017
+201611030CLE,"Thu, Nov 3, 2016",CLE,BOS,Cleveland Cavaliers,Boston Celtics,128,122,6,Home,99.4,True,2017
+201611050PHI,"Sat, Nov 5, 2016",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,101,102,-1,Home,102.3,True,2017
+201611080CLE,"Tue, Nov 8, 2016",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,106,110,-4,Home,97.6,True,2017
+201611110WAS,"Fri, Nov 11, 2016",WAS,CLE,Washington Wizards,Cleveland Cavaliers,94,105,-11,Home,97.4,True,2017
+201611130CLE,"Sun, Nov 13, 2016",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,100,93,7,Home,92.5,True,2017
+201611150CLE,"Tue, Nov 15, 2016",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,121,117,4,Home,99.0,True,2017
+201611160IND,"Wed, Nov 16, 2016",IND,CLE,Indiana Pacers,Cleveland Cavaliers,103,93,10,Home,97.1,True,2017
+201611180CLE,"Fri, Nov 18, 2016",CLE,DET,Cleveland Cavaliers,Detroit Pistons,104,81,23,Home,95.3,True,2017
+201611230CLE,"Wed, Nov 23, 2016",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,137,125,12,Home,98.3,True,2017
+201611270PHI,"Sun, Nov 27, 2016",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,108,112,-4,Home,96.6,True,2017
+201611290MIL,"Tue, Nov 29, 2016",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,118,101,17,Home,99.6,True,2017
+201612010CLE,"Thu, Dec 1, 2016",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,94,113,-19,Home,94.7,True,2017
+201612020CHI,"Fri, Dec 2, 2016",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,111,105,6,Home,97.0,True,2017
+201612050TOR,"Mon, Dec 5, 2016",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,112,116,-4,Home,92.9,True,2017
+201612070NYK,"Wed, Dec 7, 2016",NYK,CLE,New York Knicks,Cleveland Cavaliers,94,126,-32,Home,93.8,True,2017
+201612090CLE,"Fri, Dec 9, 2016",CLE,MIA,Cleveland Cavaliers,Miami Heat,114,84,30,Home,87.8,True,2017
+201612100CLE,"Sat, Dec 10, 2016",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,116,105,11,Home,95.3,True,2017
+201612130CLE,"Tue, Dec 13, 2016",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,103,86,17,Home,95.1,True,2017
+201612140MEM,"Wed, Dec 14, 2016",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,93,85,8,Home,89.7,True,2017
+201612200MIL,"Tue, Dec 20, 2016",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,108,114,-6,Home,91.2,True,2017
+201612210CLE,"Wed, Dec 21, 2016",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,113,102,11,Home,92.7,True,2017
+201612230CLE,"Fri, Dec 23, 2016",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,119,99,20,Home,105.0,True,2017
+201612250CLE,"Sun, Dec 25, 2016",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,109,108,1,Home,100.1,True,2017
+201612260DET,"Mon, Dec 26, 2016",DET,CLE,Detroit Pistons,Cleveland Cavaliers,106,90,16,Home,98.0,True,2017
+201612290CLE,"Thu, Dec 29, 2016",CLE,BOS,Cleveland Cavaliers,Boston Celtics,124,118,6,Home,98.1,True,2017
+201612310CHO,"Sat, Dec 31, 2016",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,109,121,-12,Home,89.2,True,2017
+201701020CLE,"Mon, Jan 2, 2017",CLE,NOP,Cleveland Cavaliers,New Orleans Pelicans,90,82,8,Home,96.0,True,2017
+201701040CLE,"Wed, Jan 4, 2017",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,94,106,-12,Home,89.3,True,2017
+201701060BRK,"Fri, Jan 6, 2017",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,108,116,-8,Home,109.3,True,2017
+201701080PHO,"Sun, Jan 8, 2017",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,116,120,-4,Home,94.3,True,2017
+201701100UTA,"Tue, Jan 10, 2017",UTA,CLE,Utah Jazz,Cleveland Cavaliers,100,92,8,Home,93.9,True,2017
+201701110POR,"Wed, Jan 11, 2017",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,102,86,16,Home,93.3,True,2017
+201701130SAC,"Fri, Jan 13, 2017",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,108,120,-12,Home,97.0,True,2017
+201701160GSW,"Mon, Jan 16, 2017",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,126,91,35,Home,104.5,True,2017
+201701190CLE,"Thu, Jan 19, 2017",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,118,103,15,Home,97.2,True,2017
+201701210CLE,"Sat, Jan 21, 2017",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,115,118,-3,Home,95.0,True,2017
+201701230NOP,"Mon, Jan 23, 2017",NOP,CLE,New Orleans Pelicans,Cleveland Cavaliers,124,122,2,Home,100.1,True,2017
+201701250CLE,"Wed, Jan 25, 2017",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,112,116,-4,Home,91.9,True,2017
+201701270CLE,"Fri, Jan 27, 2017",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,124,116,8,Home,101.5,True,2017
+201701290CLE,"Sun, Jan 29, 2017",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,107,91,16,Home,104.4,True,2017
+201702010CLE,"Wed, Feb 1, 2017",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,125,97,28,Home,95.4,True,2017
+201702040NYK,"Sat, Feb 4, 2017",NYK,CLE,New York Knicks,Cleveland Cavaliers,104,111,-7,Home,93.4,True,2017
+201702060WAS,"Mon, Feb 6, 2017",WAS,CLE,Washington Wizards,Cleveland Cavaliers,135,140,-5,Home,99.3,True,2017
+201702080IND,"Wed, Feb 8, 2017",IND,CLE,Indiana Pacers,Cleveland Cavaliers,117,132,-15,Home,97.3,True,2017
+201702090OKC,"Thu, Feb 9, 2017",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,118,109,9,Home,102.0,True,2017
+201702110CLE,"Sat, Feb 11, 2017",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,125,109,16,Home,98.5,True,2017
+201702140MIN,"Tue, Feb 14, 2017",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,108,116,-8,Home,94.4,True,2017
+201702150CLE,"Wed, Feb 15, 2017",CLE,IND,Cleveland Cavaliers,Indiana Pacers,113,104,9,Home,87.5,True,2017
+201702230CLE,"Thu, Feb 23, 2017",CLE,NYK,Cleveland Cavaliers,New York Knicks,119,104,15,Home,98.5,True,2017
+201702250CLE,"Sat, Feb 25, 2017",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,99,117,-18,Home,94.5,True,2017
+201702270CLE,"Mon, Feb 27, 2017",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,102,95,7,Home,91.9,True,2017
+201703010BOS,"Wed, Mar 1, 2017",BOS,CLE,Boston Celtics,Cleveland Cavaliers,103,99,4,Home,92.8,True,2017
+201703030ATL,"Fri, Mar 3, 2017",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,130,135,-5,Home,102.3,True,2017
+201703040MIA,"Sat, Mar 4, 2017",MIA,CLE,Miami Heat,Cleveland Cavaliers,120,92,28,Home,86.6,True,2017
+201703060CLE,"Mon, Mar 6, 2017",CLE,MIA,Cleveland Cavaliers,Miami Heat,98,106,-8,Home,94.4,True,2017
+201703090DET,"Thu, Mar 9, 2017",DET,CLE,Detroit Pistons,Cleveland Cavaliers,106,101,5,Home,90.9,True,2017
+201703110ORL,"Sat, Mar 11, 2017",ORL,CLE,Orlando Magic,Cleveland Cavaliers,104,116,-12,Home,96.6,True,2017
+201703140CLE,"Tue, Mar 14, 2017",CLE,DET,Cleveland Cavaliers,Detroit Pistons,128,96,32,Home,93.5,True,2017
+201703160CLE,"Thu, Mar 16, 2017",CLE,UTA,Cleveland Cavaliers,Utah Jazz,91,83,8,Home,92.4,True,2017
+201703180LAC,"Sat, Mar 18, 2017",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,108,78,30,Home,96.5,True,2017
+201703220DEN,"Wed, Mar 22, 2017",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,126,113,13,Home,94.2,True,2017
+201703240CHO,"Fri, Mar 24, 2017",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,105,112,-7,Home,92.4,True,2017
+201703250CLE,"Sat, Mar 25, 2017",CLE,WAS,Cleveland Cavaliers,Washington Wizards,115,127,-12,Home,92.9,True,2017
+201703270SAS,"Mon, Mar 27, 2017",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,103,74,29,Home,93.7,True,2017
+201703300CHI,"Thu, Mar 30, 2017",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,99,93,6,Home,93.5,True,2017
+201703310CLE,"Fri, Mar 31, 2017",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,122,105,17,Home,97.8,True,2017
+201704020CLE,"Sun, Apr 2, 2017",CLE,IND,Cleveland Cavaliers,Indiana Pacers,135,130,5,Home,88.4,True,2017
+201704040CLE,"Tue, Apr 4, 2017",CLE,ORL,Cleveland Cavaliers,Orlando Magic,122,102,20,Home,97.2,True,2017
+201704050BOS,"Wed, Apr 5, 2017",BOS,CLE,Boston Celtics,Cleveland Cavaliers,91,114,-23,Home,94.5,True,2017
+201704070CLE,"Fri, Apr 7, 2017",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,100,114,-14,Home,96.8,True,2017
+201704090ATL,"Sun, Apr 9, 2017",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,126,125,1,Home,97.2,True,2017
+201704100MIA,"Mon, Apr 10, 2017",MIA,CLE,Miami Heat,Cleveland Cavaliers,124,121,3,Home,100.9,True,2017
+201704120CLE,"Wed, Apr 12, 2017",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,83,98,-15,Home,88.2,True,2017
+201704150CLE,"Sat, Apr 15, 2017",CLE,IND,Cleveland Cavaliers,Indiana Pacers,109,108,1,Home,88.6,True,2017
+201704170CLE,"Mon, Apr 17, 2017",CLE,IND,Cleveland Cavaliers,Indiana Pacers,117,111,6,Home,95.5,True,2017
+201704200IND,"Thu, Apr 20, 2017",IND,CLE,Indiana Pacers,Cleveland Cavaliers,114,119,-5,Home,95.3,True,2017
+201704230IND,"Sun, Apr 23, 2017",IND,CLE,Indiana Pacers,Cleveland Cavaliers,102,106,-4,Home,97.1,True,2017
+201705010CLE,"Mon, May 1, 2017",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,116,105,11,Home,100.1,True,2017
+201705030CLE,"Wed, May 3, 2017",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,125,103,22,Home,99.6,True,2017
+201705050TOR,"Fri, May 5, 2017",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,94,115,-21,Home,94.9,True,2017
+201705070TOR,"Sun, May 7, 2017",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,102,109,-7,Home,92.0,True,2017
+201705170BOS,"Wed, May 17, 2017",BOS,CLE,Boston Celtics,Cleveland Cavaliers,104,117,-13,Home,91.9,True,2017
+201705190BOS,"Fri, May 19, 2017",BOS,CLE,Boston Celtics,Cleveland Cavaliers,86,130,-44,Home,98.1,True,2017
+201705210CLE,"Sun, May 21, 2017",CLE,BOS,Cleveland Cavaliers,Boston Celtics,108,111,-3,Home,89.9,True,2017
+201705230CLE,"Tue, May 23, 2017",CLE,BOS,Cleveland Cavaliers,Boston Celtics,112,99,13,Home,90.3,True,2017
+201705250BOS,"Thu, May 25, 2017",BOS,CLE,Boston Celtics,Cleveland Cavaliers,102,135,-33,Home,98.7,True,2017
+201706010GSW,"Thu, Jun 1, 2017",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,113,91,22,Home,99.5,True,2017
+201706040GSW,"Sun, Jun 4, 2017",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,132,113,19,Home,106.4,True,2017
+201706070CLE,"Wed, Jun 7, 2017",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,113,118,-5,Home,100.2,True,2017
+201706090CLE,"Fri, Jun 9, 2017",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,137,116,21,Home,96.1,True,2017
+201706120GSW,"Mon, Jun 12, 2017",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,129,120,9,Home,98.8,True,2017
+201610290NYK,"Sat, Oct 29, 2016",NYK,MEM,New York Knicks,Memphis Grizzlies,111,104,7,Home,96.4,True,2017
+201611010DET,"Tue, Nov 1, 2016",DET,NYK,Detroit Pistons,New York Knicks,102,89,13,Home,94.7,True,2017
+201611040CHI,"Fri, Nov 4, 2016",CHI,NYK,Chicago Bulls,New York Knicks,104,117,-13,Home,89.4,True,2017
+201611060NYK,"Sun, Nov 6, 2016",NYK,UTA,New York Knicks,Utah Jazz,109,114,-5,Home,91.0,True,2017
+201611090NYK,"Wed, Nov 9, 2016",NYK,BRK,New York Knicks,Brooklyn Nets,110,96,14,Home,101.2,True,2017
+201611110BOS,"Fri, Nov 11, 2016",BOS,NYK,Boston Celtics,New York Knicks,115,87,28,Home,101.4,True,2017
+201611120TOR,"Sat, Nov 12, 2016",TOR,NYK,Toronto Raptors,New York Knicks,118,107,11,Home,98.6,True,2017
+201611160NYK,"Wed, Nov 16, 2016",NYK,DET,New York Knicks,Detroit Pistons,105,102,3,Home,90.0,True,2017
+201611170WAS,"Thu, Nov 17, 2016",WAS,NYK,Washington Wizards,New York Knicks,119,112,7,Home,94.9,True,2017
+201611200NYK,"Sun, Nov 20, 2016",NYK,ATL,New York Knicks,Atlanta Hawks,104,94,10,Home,95.9,True,2017
+201611220NYK,"Tue, Nov 22, 2016",NYK,POR,New York Knicks,Portland Trail Blazers,107,103,4,Home,99.5,True,2017
+201611250NYK,"Fri, Nov 25, 2016",NYK,CHO,New York Knicks,Charlotte Hornets,113,111,2,Home,95.1,True,2017
+201611260CHO,"Sat, Nov 26, 2016",CHO,NYK,Charlotte Hornets,New York Knicks,107,102,5,Home,98.8,True,2017
+201611280NYK,"Mon, Nov 28, 2016",NYK,OKC,New York Knicks,Oklahoma City Thunder,103,112,-9,Home,93.5,True,2017
+201611300MIN,"Wed, Nov 30, 2016",MIN,NYK,Minnesota Timberwolves,New York Knicks,104,106,-2,Home,94.3,True,2017
+201612020NYK,"Fri, Dec 2, 2016",NYK,MIN,New York Knicks,Minnesota Timberwolves,118,114,4,Home,98.6,True,2017
+201612040NYK,"Sun, Dec 4, 2016",NYK,SAC,New York Knicks,Sacramento Kings,106,98,8,Home,99.9,True,2017
+201612060MIA,"Tue, Dec 6, 2016",MIA,NYK,Miami Heat,New York Knicks,103,114,-11,Home,93.5,True,2017
+201612090SAC,"Fri, Dec 9, 2016",SAC,NYK,Sacramento Kings,New York Knicks,100,103,-3,Home,97.1,True,2017
+201612130PHO,"Tue, Dec 13, 2016",PHO,NYK,Phoenix Suns,New York Knicks,113,111,2,Home,98.0,True,2017
+201612150GSW,"Thu, Dec 15, 2016",GSW,NYK,Golden State Warriors,New York Knicks,103,90,13,Home,98.4,True,2017
+201612170DEN,"Sat, Dec 17, 2016",DEN,NYK,Denver Nuggets,New York Knicks,127,114,13,Home,97.2,True,2017
+201612200NYK,"Tue, Dec 20, 2016",NYK,IND,New York Knicks,Indiana Pacers,118,111,7,Home,103.4,True,2017
+201612220NYK,"Thu, Dec 22, 2016",NYK,ORL,New York Knicks,Orlando Magic,106,95,11,Home,98.1,True,2017
+201612250NYK,"Sun, Dec 25, 2016",NYK,BOS,New York Knicks,Boston Celtics,114,119,-5,Home,93.9,True,2017
+201612280ATL,"Wed, Dec 28, 2016",ATL,NYK,Atlanta Hawks,New York Knicks,102,98,4,Home,94.4,True,2017
+201612300NOP,"Fri, Dec 30, 2016",NOP,NYK,New Orleans Pelicans,New York Knicks,104,92,12,Home,101.7,True,2017
+201701020NYK,"Mon, Jan 2, 2017",NYK,ORL,New York Knicks,Orlando Magic,103,115,-12,Home,93.2,True,2017
+201701040NYK,"Wed, Jan 4, 2017",NYK,MIL,New York Knicks,Milwaukee Bucks,104,105,-1,Home,95.2,True,2017
+201701060MIL,"Fri, Jan 6, 2017",MIL,NYK,Milwaukee Bucks,New York Knicks,111,116,-5,Home,95.7,True,2017
+201701070IND,"Sat, Jan 7, 2017",IND,NYK,Indiana Pacers,New York Knicks,123,109,14,Home,104.4,True,2017
+201701090NYK,"Mon, Jan 9, 2017",NYK,NOP,New York Knicks,New Orleans Pelicans,96,110,-14,Home,90.7,True,2017
+201701110PHI,"Wed, Jan 11, 2017",PHI,NYK,Philadelphia 76ers,New York Knicks,98,97,1,Home,93.9,True,2017
+201701120NYK,"Thu, Jan 12, 2017",NYK,CHI,New York Knicks,Chicago Bulls,104,89,15,Home,90.4,True,2017
+201701150TOR,"Sun, Jan 15, 2017",TOR,NYK,Toronto Raptors,New York Knicks,116,101,15,Home,95.8,True,2017
+201701160NYK,"Mon, Jan 16, 2017",NYK,ATL,New York Knicks,Atlanta Hawks,107,108,-1,Home,96.8,True,2017
+201701180BOS,"Wed, Jan 18, 2017",BOS,NYK,Boston Celtics,New York Knicks,106,117,-11,Home,93.0,True,2017
+201701190NYK,"Thu, Jan 19, 2017",NYK,WAS,New York Knicks,Washington Wizards,110,113,-3,Home,94.2,True,2017
+201701210NYK,"Sat, Jan 21, 2017",NYK,PHO,New York Knicks,Phoenix Suns,105,107,-2,Home,91.4,True,2017
+201701230IND,"Mon, Jan 23, 2017",IND,NYK,Indiana Pacers,New York Knicks,103,109,-6,Home,97.8,True,2017
+201701270NYK,"Fri, Jan 27, 2017",NYK,CHO,New York Knicks,Charlotte Hornets,110,107,3,Home,98.9,True,2017
+201701290ATL,"Sun, Jan 29, 2017",ATL,NYK,Atlanta Hawks,New York Knicks,142,139,3,Home,91.6,True,2017
+201701310WAS,"Tue, Jan 31, 2017",WAS,NYK,Washington Wizards,New York Knicks,117,101,16,Home,95.8,True,2017
+201702010BRK,"Wed, Feb 1, 2017",BRK,NYK,Brooklyn Nets,New York Knicks,90,95,-5,Home,100.3,True,2017
+201702080NYK,"Wed, Feb 8, 2017",NYK,LAC,New York Knicks,Los Angeles Clippers,115,119,-4,Home,97.5,True,2017
+201702100NYK,"Fri, Feb 10, 2017",NYK,DEN,New York Knicks,Denver Nuggets,123,131,-8,Home,94.7,True,2017
+201702120NYK,"Sun, Feb 12, 2017",NYK,SAS,New York Knicks,San Antonio Spurs,94,90,4,Home,89.2,True,2017
+201702150OKC,"Wed, Feb 15, 2017",OKC,NYK,Oklahoma City Thunder,New York Knicks,116,105,11,Home,99.4,True,2017
+201702250NYK,"Sat, Feb 25, 2017",NYK,PHI,New York Knicks,Philadelphia 76ers,110,109,1,Home,98.7,True,2017
+201702270NYK,"Mon, Feb 27, 2017",NYK,TOR,New York Knicks,Toronto Raptors,91,92,-1,Home,87.7,True,2017
+201703010ORL,"Wed, Mar 1, 2017",ORL,NYK,Orlando Magic,New York Knicks,90,101,-11,Home,92.0,True,2017
+201703030PHI,"Fri, Mar 3, 2017",PHI,NYK,Philadelphia 76ers,New York Knicks,105,102,3,Home,96.7,True,2017
+201703050NYK,"Sun, Mar 5, 2017",NYK,GSW,New York Knicks,Golden State Warriors,105,112,-7,Home,92.6,True,2017
+201703060ORL,"Mon, Mar 6, 2017",ORL,NYK,Orlando Magic,New York Knicks,105,113,-8,Home,94.0,True,2017
+201703080MIL,"Wed, Mar 8, 2017",MIL,NYK,Milwaukee Bucks,New York Knicks,104,93,11,Home,92.0,True,2017
+201703110DET,"Sat, Mar 11, 2017",DET,NYK,Detroit Pistons,New York Knicks,112,92,20,Home,95.6,True,2017
+201703120BRK,"Sun, Mar 12, 2017",BRK,NYK,Brooklyn Nets,New York Knicks,120,112,8,Home,99.8,True,2017
+201703140NYK,"Tue, Mar 14, 2017",NYK,IND,New York Knicks,Indiana Pacers,87,81,6,Home,92.5,True,2017
+201703160NYK,"Thu, Mar 16, 2017",NYK,BRK,New York Knicks,Brooklyn Nets,110,121,-11,Home,98.8,True,2017
+201703200LAC,"Mon, Mar 20, 2017",LAC,NYK,Los Angeles Clippers,New York Knicks,114,105,9,Home,95.5,True,2017
+201703220UTA,"Wed, Mar 22, 2017",UTA,NYK,Utah Jazz,New York Knicks,108,101,7,Home,87.3,True,2017
+201703230POR,"Thu, Mar 23, 2017",POR,NYK,Portland Trail Blazers,New York Knicks,110,95,15,Home,95.3,True,2017
+201703250SAS,"Sat, Mar 25, 2017",SAS,NYK,San Antonio Spurs,New York Knicks,106,98,8,Home,96.7,True,2017
+201703270NYK,"Mon, Mar 27, 2017",NYK,DET,New York Knicks,Detroit Pistons,109,95,14,Home,96.5,True,2017
+201703290NYK,"Wed, Mar 29, 2017",NYK,MIA,New York Knicks,Miami Heat,88,105,-17,Home,91.3,True,2017
+201703310MIA,"Fri, Mar 31, 2017",MIA,NYK,Miami Heat,New York Knicks,94,98,-4,Home,91.8,True,2017
+201704020NYK,"Sun, Apr 2, 2017",NYK,BOS,New York Knicks,Boston Celtics,94,110,-16,Home,94.7,True,2017
+201704040NYK,"Tue, Apr 4, 2017",NYK,CHI,New York Knicks,Chicago Bulls,100,91,9,Home,92.9,True,2017
+201704060NYK,"Thu, Apr 6, 2017",NYK,WAS,New York Knicks,Washington Wizards,103,106,-3,Home,89.7,True,2017
+201704070MEM,"Fri, Apr 7, 2017",MEM,NYK,Memphis Grizzlies,New York Knicks,101,88,13,Home,82.6,True,2017
+201704090NYK,"Sun, Apr 9, 2017",NYK,TOR,New York Knicks,Toronto Raptors,97,110,-13,Home,91.3,True,2017
+201704120NYK,"Wed, Apr 12, 2017",NYK,PHI,New York Knicks,Philadelphia 76ers,114,113,1,Home,94.5,True,2017
+201610270ATL,"Thu, Oct 27, 2016",ATL,WAS,Atlanta Hawks,Washington Wizards,114,99,15,Home,103.4,True,2017
+201610290PHI,"Sat, Oct 29, 2016",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,72,104,-32,Home,100.3,True,2017
+201610310ATL,"Mon, Oct 31, 2016",ATL,SAC,Atlanta Hawks,Sacramento Kings,106,95,11,Home,93.7,True,2017
+201611040WAS,"Fri, Nov 4, 2016",WAS,ATL,Washington Wizards,Atlanta Hawks,95,92,3,Home,102.1,True,2017
+201611090ATL,"Wed, Nov 9, 2016",ATL,CHI,Atlanta Hawks,Chicago Bulls,115,107,8,Home,100.7,True,2017
+201611120ATL,"Sat, Nov 12, 2016",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,117,96,21,Home,99.4,True,2017
+201611150MIA,"Tue, Nov 15, 2016",MIA,ATL,Miami Heat,Atlanta Hawks,90,93,-3,Home,97.9,True,2017
+201611160ATL,"Wed, Nov 16, 2016",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,107,100,7,Home,98.8,True,2017
+201611180CHO,"Fri, Nov 18, 2016",CHO,ATL,Charlotte Hornets,Atlanta Hawks,100,96,4,Home,99.7,True,2017
+201611220ATL,"Tue, Nov 22, 2016",ATL,NOP,Atlanta Hawks,New Orleans Pelicans,94,112,-18,Home,95.5,True,2017
+201611230IND,"Wed, Nov 23, 2016",IND,ATL,Indiana Pacers,Atlanta Hawks,85,96,-11,Home,97.6,True,2017
+201611250UTA,"Fri, Nov 25, 2016",UTA,ATL,Utah Jazz,Atlanta Hawks,95,68,27,Home,93.9,True,2017
+201611280GSW,"Mon, Nov 28, 2016",GSW,ATL,Golden State Warriors,Atlanta Hawks,105,100,5,Home,100.5,True,2017
+201611300PHO,"Wed, Nov 30, 2016",PHO,ATL,Phoenix Suns,Atlanta Hawks,109,107,2,Home,101.4,True,2017
+201612020ATL,"Fri, Dec 2, 2016",ATL,DET,Atlanta Hawks,Detroit Pistons,85,121,-36,Home,95.7,True,2017
+201612030TOR,"Sat, Dec 3, 2016",TOR,ATL,Toronto Raptors,Atlanta Hawks,128,84,44,Home,95.7,True,2017
+201612050ATL,"Mon, Dec 5, 2016",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,99,102,-3,Home,100.2,True,2017
+201612070ATL,"Wed, Dec 7, 2016",ATL,MIA,Atlanta Hawks,Miami Heat,103,95,8,Home,92.6,True,2017
+201612090MIL,"Fri, Dec 9, 2016",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,110,114,-4,Home,103.4,True,2017
+201612130ATL,"Tue, Dec 13, 2016",ATL,ORL,Atlanta Hawks,Orlando Magic,120,131,-11,Home,97.1,True,2017
+201612160TOR,"Fri, Dec 16, 2016",TOR,ATL,Toronto Raptors,Atlanta Hawks,121,125,-4,Home,95.4,True,2017
+201612170ATL,"Sat, Dec 17, 2016",ATL,CHO,Atlanta Hawks,Charlotte Hornets,99,107,-8,Home,96.1,True,2017
+201612190OKC,"Mon, Dec 19, 2016",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,108,110,-2,Home,93.3,True,2017
+201612210ATL,"Wed, Dec 21, 2016",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,84,92,-8,Home,87.7,True,2017
+201612230DEN,"Fri, Dec 23, 2016",DEN,ATL,Denver Nuggets,Atlanta Hawks,108,109,-1,Home,98.1,True,2017
+201612260MIN,"Mon, Dec 26, 2016",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,104,90,14,Home,89.9,True,2017
+201612300ATL,"Fri, Dec 30, 2016",ATL,DET,Atlanta Hawks,Detroit Pistons,105,98,7,Home,96.0,True,2017
+201701010ATL,"Sun, Jan 1, 2017",ATL,SAS,Atlanta Hawks,San Antonio Spurs,114,112,2,Home,91.5,True,2017
+201701040ORL,"Wed, Jan 4, 2017",ORL,ATL,Orlando Magic,Atlanta Hawks,92,111,-19,Home,96.1,True,2017
+201701050NOP,"Thu, Jan 5, 2017",NOP,ATL,New Orleans Pelicans,Atlanta Hawks,94,99,-5,Home,97.2,True,2017
+201701100BRK,"Tue, Jan 10, 2017",BRK,ATL,Brooklyn Nets,Atlanta Hawks,97,117,-20,Home,100.8,True,2017
+201701130ATL,"Fri, Jan 13, 2017",ATL,BOS,Atlanta Hawks,Boston Celtics,101,103,-2,Home,91.1,True,2017
+201701150ATL,"Sun, Jan 15, 2017",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,111,98,13,Home,88.8,True,2017
+201701180DET,"Wed, Jan 18, 2017",DET,ATL,Detroit Pistons,Atlanta Hawks,118,95,23,Home,94.8,True,2017
+201701200ATL,"Fri, Jan 20, 2017",ATL,CHI,Atlanta Hawks,Chicago Bulls,102,93,9,Home,97.5,True,2017
+201701210ATL,"Sat, Jan 21, 2017",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,110,93,17,Home,100.0,True,2017
+201701230ATL,"Mon, Jan 23, 2017",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,105,115,-10,Home,94.8,True,2017
+201701250CHI,"Wed, Jan 25, 2017",CHI,ATL,Chicago Bulls,Atlanta Hawks,114,119,-5,Home,96.1,True,2017
+201701270ATL,"Fri, Jan 27, 2017",ATL,WAS,Atlanta Hawks,Washington Wizards,86,112,-26,Home,101.5,True,2017
+201702010MIA,"Wed, Feb 1, 2017",MIA,ATL,Miami Heat,Atlanta Hawks,116,93,23,Home,99.7,True,2017
+201702040ATL,"Sat, Feb 4, 2017",ATL,ORL,Atlanta Hawks,Orlando Magic,113,86,27,Home,93.3,True,2017
+201702060ATL,"Mon, Feb 6, 2017",ATL,UTA,Atlanta Hawks,Utah Jazz,95,120,-25,Home,90.7,True,2017
+201702080ATL,"Wed, Feb 8, 2017",ATL,DEN,Atlanta Hawks,Denver Nuggets,117,106,11,Home,95.1,True,2017
+201702100SAC,"Fri, Feb 10, 2017",SAC,ATL,Sacramento Kings,Atlanta Hawks,108,107,1,Home,97.0,True,2017
+201702130POR,"Mon, Feb 13, 2017",POR,ATL,Portland Trail Blazers,Atlanta Hawks,104,109,-5,Home,94.0,True,2017
+201702150LAC,"Wed, Feb 15, 2017",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,99,84,15,Home,94.8,True,2017
+201702240ATL,"Fri, Feb 24, 2017",ATL,MIA,Atlanta Hawks,Miami Heat,90,108,-18,Home,96.2,True,2017
+201702250ORL,"Sat, Feb 25, 2017",ORL,ATL,Orlando Magic,Atlanta Hawks,105,86,19,Home,97.6,True,2017
+201702270BOS,"Mon, Feb 27, 2017",BOS,ATL,Boston Celtics,Atlanta Hawks,98,114,-16,Home,103.3,True,2017
+201703050ATL,"Sun, Mar 5, 2017",ATL,IND,Atlanta Hawks,Indiana Pacers,96,97,-1,Home,92.0,True,2017
+201703060ATL,"Mon, Mar 6, 2017",ATL,GSW,Atlanta Hawks,Golden State Warriors,111,119,-8,Home,97.2,True,2017
+201703080ATL,"Wed, Mar 8, 2017",ATL,BRK,Atlanta Hawks,Brooklyn Nets,110,105,5,Home,107.7,True,2017
+201703100ATL,"Fri, Mar 10, 2017",ATL,TOR,Atlanta Hawks,Toronto Raptors,105,99,6,Home,97.8,True,2017
+201703110MEM,"Sat, Mar 11, 2017",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,90,107,-17,Home,95.6,True,2017
+201703130SAS,"Mon, Mar 13, 2017",SAS,ATL,San Antonio Spurs,Atlanta Hawks,107,99,8,Home,101.4,True,2017
+201703160ATL,"Thu, Mar 16, 2017",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,91,103,-12,Home,91.5,True,2017
+201703180ATL,"Sat, Mar 18, 2017",ATL,POR,Atlanta Hawks,Portland Trail Blazers,97,113,-16,Home,99.1,True,2017
+201703200CHO,"Mon, Mar 20, 2017",CHO,ATL,Charlotte Hornets,Atlanta Hawks,105,90,15,Home,88.6,True,2017
+201703220WAS,"Wed, Mar 22, 2017",WAS,ATL,Washington Wizards,Atlanta Hawks,104,100,4,Home,101.7,True,2017
+201703240MIL,"Fri, Mar 24, 2017",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,100,97,3,Home,92.0,True,2017
+201703260ATL,"Sun, Mar 26, 2017",ATL,BRK,Atlanta Hawks,Brooklyn Nets,92,107,-15,Home,102.0,True,2017
+201703280ATL,"Tue, Mar 28, 2017",ATL,PHO,Atlanta Hawks,Phoenix Suns,95,91,4,Home,104.2,True,2017
+201703290PHI,"Wed, Mar 29, 2017",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,92,99,-7,Home,89.7,True,2017
+201704010CHI,"Sat, Apr 1, 2017",CHI,ATL,Chicago Bulls,Atlanta Hawks,106,104,2,Home,96.0,True,2017
+201704020BRK,"Sun, Apr 2, 2017",BRK,ATL,Brooklyn Nets,Atlanta Hawks,91,82,9,Home,99.5,True,2017
+201704060ATL,"Thu, Apr 6, 2017",ATL,BOS,Atlanta Hawks,Boston Celtics,123,116,7,Home,104.2,True,2017
+201704110ATL,"Tue, Apr 11, 2017",ATL,CHO,Atlanta Hawks,Charlotte Hornets,103,76,27,Home,90.4,True,2017
+201704120IND,"Wed, Apr 12, 2017",IND,ATL,Indiana Pacers,Atlanta Hawks,104,86,18,Home,89.2,True,2017
+201704160WAS,"Sun, Apr 16, 2017",WAS,ATL,Washington Wizards,Atlanta Hawks,114,107,7,Home,99.2,True,2017
+201704190WAS,"Wed, Apr 19, 2017",WAS,ATL,Washington Wizards,Atlanta Hawks,109,101,8,Home,98.6,True,2017
+201704220ATL,"Sat, Apr 22, 2017",ATL,WAS,Atlanta Hawks,Washington Wizards,116,98,18,Home,103.1,True,2017
+201704240ATL,"Mon, Apr 24, 2017",ATL,WAS,Atlanta Hawks,Washington Wizards,111,101,10,Home,98.4,True,2017
+201704260WAS,"Wed, Apr 26, 2017",WAS,ATL,Washington Wizards,Atlanta Hawks,103,99,4,Home,93.0,True,2017
+201704280ATL,"Fri, Apr 28, 2017",ATL,WAS,Atlanta Hawks,Washington Wizards,99,115,-16,Home,94.3,True,2017
+201610300MEM,"Sun, Oct 30, 2016",MEM,WAS,Memphis Grizzlies,Washington Wizards,112,103,9,Home,90.4,True,2017
+201611020WAS,"Wed, Nov 2, 2016",WAS,TOR,Washington Wizards,Toronto Raptors,103,113,-10,Home,95.7,True,2017
+201611050ORL,"Sat, Nov 5, 2016",ORL,WAS,Orlando Magic,Washington Wizards,88,86,2,Home,85.9,True,2017
+201611090WAS,"Wed, Nov 9, 2016",WAS,BOS,Washington Wizards,Boston Celtics,118,93,25,Home,90.9,True,2017
+201611120CHI,"Sat, Nov 12, 2016",CHI,WAS,Chicago Bulls,Washington Wizards,106,95,11,Home,97.1,True,2017
+201611160PHI,"Wed, Nov 16, 2016",PHI,WAS,Philadelphia 76ers,Washington Wizards,109,102,7,Home,98.0,True,2017
+201611190WAS,"Sat, Nov 19, 2016",WAS,MIA,Washington Wizards,Miami Heat,111,114,-3,Home,93.8,True,2017
+201611210WAS,"Mon, Nov 21, 2016",WAS,PHO,Washington Wizards,Phoenix Suns,106,101,5,Home,100.9,True,2017
+201611250ORL,"Fri, Nov 25, 2016",ORL,WAS,Orlando Magic,Washington Wizards,91,94,-3,Home,93.1,True,2017
+201611260WAS,"Sat, Nov 26, 2016",WAS,SAS,Washington Wizards,San Antonio Spurs,100,112,-12,Home,93.1,True,2017
+201611280WAS,"Mon, Nov 28, 2016",WAS,SAC,Washington Wizards,Sacramento Kings,101,95,6,Home,96.4,True,2017
+201611300OKC,"Wed, Nov 30, 2016",OKC,WAS,Oklahoma City Thunder,Washington Wizards,126,115,11,Home,98.1,True,2017
+201612020SAS,"Fri, Dec 2, 2016",SAS,WAS,San Antonio Spurs,Washington Wizards,107,105,2,Home,95.8,True,2017
+201612050BRK,"Mon, Dec 5, 2016",BRK,WAS,Brooklyn Nets,Washington Wizards,113,118,-5,Home,100.0,True,2017
+201612060WAS,"Tue, Dec 6, 2016",WAS,ORL,Washington Wizards,Orlando Magic,116,124,-8,Home,100.4,True,2017
+201612080WAS,"Thu, Dec 8, 2016",WAS,DEN,Washington Wizards,Denver Nuggets,92,85,7,Home,94.8,True,2017
+201612100WAS,"Sat, Dec 10, 2016",WAS,MIL,Washington Wizards,Milwaukee Bucks,110,105,5,Home,95.6,True,2017
+201612120MIA,"Mon, Dec 12, 2016",MIA,WAS,Miami Heat,Washington Wizards,112,101,11,Home,94.8,True,2017
+201612140WAS,"Wed, Dec 14, 2016",WAS,CHO,Washington Wizards,Charlotte Hornets,109,106,3,Home,94.5,True,2017
+201612160WAS,"Fri, Dec 16, 2016",WAS,DET,Washington Wizards,Detroit Pistons,122,108,14,Home,91.0,True,2017
+201612180WAS,"Sun, Dec 18, 2016",WAS,LAC,Washington Wizards,Los Angeles Clippers,117,110,7,Home,97.0,True,2017
+201612190IND,"Mon, Dec 19, 2016",IND,WAS,Indiana Pacers,Washington Wizards,107,105,2,Home,98.7,True,2017
+201612210CHI,"Wed, Dec 21, 2016",CHI,WAS,Chicago Bulls,Washington Wizards,97,107,-10,Home,96.6,True,2017
+201612230MIL,"Fri, Dec 23, 2016",MIL,WAS,Milwaukee Bucks,Washington Wizards,123,96,27,Home,93.5,True,2017
+201612260WAS,"Mon, Dec 26, 2016",WAS,MIL,Washington Wizards,Milwaukee Bucks,107,102,5,Home,95.4,True,2017
+201612280WAS,"Wed, Dec 28, 2016",WAS,IND,Washington Wizards,Indiana Pacers,111,105,6,Home,97.2,True,2017
+201612300WAS,"Fri, Dec 30, 2016",WAS,BRK,Washington Wizards,Brooklyn Nets,118,95,23,Home,98.6,True,2017
+201701060WAS,"Fri, Jan 6, 2017",WAS,MIN,Washington Wizards,Minnesota Timberwolves,112,105,7,Home,90.0,True,2017
+201701080MIL,"Sun, Jan 8, 2017",MIL,WAS,Milwaukee Bucks,Washington Wizards,101,107,-6,Home,96.8,True,2017
+201701100WAS,"Tue, Jan 10, 2017",WAS,CHI,Washington Wizards,Chicago Bulls,101,99,2,Home,99.3,True,2017
+201701110BOS,"Wed, Jan 11, 2017",BOS,WAS,Boston Celtics,Washington Wizards,117,108,9,Home,95.5,True,2017
+201701140WAS,"Sat, Jan 14, 2017",WAS,PHI,Washington Wizards,Philadelphia 76ers,109,93,16,Home,96.0,True,2017
+201701160WAS,"Mon, Jan 16, 2017",WAS,POR,Washington Wizards,Portland Trail Blazers,120,101,19,Home,96.7,True,2017
+201701180WAS,"Wed, Jan 18, 2017",WAS,MEM,Washington Wizards,Memphis Grizzlies,104,101,3,Home,88.8,True,2017
+201701210DET,"Sat, Jan 21, 2017",DET,WAS,Detroit Pistons,Washington Wizards,113,112,1,Home,101.6,True,2017
+201701230CHO,"Mon, Jan 23, 2017",CHO,WAS,Charlotte Hornets,Washington Wizards,99,109,-10,Home,95.1,True,2017
+201701240WAS,"Tue, Jan 24, 2017",WAS,BOS,Washington Wizards,Boston Celtics,123,108,15,Home,97.6,True,2017
+201701290NOP,"Sun, Jan 29, 2017",NOP,WAS,New Orleans Pelicans,Washington Wizards,94,107,-13,Home,92.4,True,2017
+201702040WAS,"Sat, Feb 4, 2017",WAS,NOP,Washington Wizards,New Orleans Pelicans,105,91,14,Home,96.9,True,2017
+201702080BRK,"Wed, Feb 8, 2017",BRK,WAS,Brooklyn Nets,Washington Wizards,110,114,-4,Home,94.7,True,2017
+201702100WAS,"Fri, Feb 10, 2017",WAS,IND,Washington Wizards,Indiana Pacers,112,107,5,Home,96.4,True,2017
+201702130WAS,"Mon, Feb 13, 2017",WAS,OKC,Washington Wizards,Oklahoma City Thunder,120,98,22,Home,99.3,True,2017
+201702160IND,"Thu, Feb 16, 2017",IND,WAS,Indiana Pacers,Washington Wizards,98,111,-13,Home,91.1,True,2017
+201702240PHI,"Fri, Feb 24, 2017",PHI,WAS,Philadelphia 76ers,Washington Wizards,120,112,8,Home,106.8,True,2017
+201702260WAS,"Sun, Feb 26, 2017",WAS,UTA,Washington Wizards,Utah Jazz,92,102,-10,Home,99.2,True,2017
+201702280WAS,"Tue, Feb 28, 2017",WAS,GSW,Washington Wizards,Golden State Warriors,112,108,4,Home,98.3,True,2017
+201703010TOR,"Wed, Mar 1, 2017",TOR,WAS,Toronto Raptors,Washington Wizards,96,105,-9,Home,94.3,True,2017
+201703030WAS,"Fri, Mar 3, 2017",WAS,TOR,Washington Wizards,Toronto Raptors,106,114,-8,Home,98.1,True,2017
+201703050WAS,"Sun, Mar 5, 2017",WAS,ORL,Washington Wizards,Orlando Magic,115,114,1,Home,93.5,True,2017
+201703070PHO,"Tue, Mar 7, 2017",PHO,WAS,Phoenix Suns,Washington Wizards,127,131,-4,Home,111.6,True,2017
+201703080DEN,"Wed, Mar 8, 2017",DEN,WAS,Denver Nuggets,Washington Wizards,113,123,-10,Home,98.9,True,2017
+201703100SAC,"Fri, Mar 10, 2017",SAC,WAS,Sacramento Kings,Washington Wizards,122,130,-8,Home,95.1,True,2017
+201703110POR,"Sat, Mar 11, 2017",POR,WAS,Portland Trail Blazers,Washington Wizards,124,125,-1,Home,94.9,True,2017
+201703130MIN,"Mon, Mar 13, 2017",MIN,WAS,Minnesota Timberwolves,Washington Wizards,119,104,15,Home,101.5,True,2017
+201703170WAS,"Fri, Mar 17, 2017",WAS,CHI,Washington Wizards,Chicago Bulls,112,107,5,Home,98.6,True,2017
+201703180CHO,"Sat, Mar 18, 2017",CHO,WAS,Charlotte Hornets,Washington Wizards,98,93,5,Home,93.0,True,2017
+201703200BOS,"Mon, Mar 20, 2017",BOS,WAS,Boston Celtics,Washington Wizards,110,102,8,Home,100.0,True,2017
+201703240WAS,"Fri, Mar 24, 2017",WAS,BRK,Washington Wizards,Brooklyn Nets,129,108,21,Home,101.5,True,2017
+201703290LAC,"Wed, Mar 29, 2017",LAC,WAS,Los Angeles Clippers,Washington Wizards,133,124,9,Home,99.5,True,2017
+201703310UTA,"Fri, Mar 31, 2017",UTA,WAS,Utah Jazz,Washington Wizards,95,88,7,Home,89.1,True,2017
+201704020GSW,"Sun, Apr 2, 2017",GSW,WAS,Golden State Warriors,Washington Wizards,139,115,24,Home,104.5,True,2017
+201704040WAS,"Tue, Apr 4, 2017",WAS,CHO,Washington Wizards,Charlotte Hornets,118,111,7,Home,95.2,True,2017
+201704080WAS,"Sat, Apr 8, 2017",WAS,MIA,Washington Wizards,Miami Heat,103,106,-3,Home,96.8,True,2017
+201704100DET,"Mon, Apr 10, 2017",DET,WAS,Detroit Pistons,Washington Wizards,101,105,-4,Home,97.5,True,2017
+201704120MIA,"Wed, Apr 12, 2017",MIA,WAS,Miami Heat,Washington Wizards,110,102,8,Home,94.1,True,2017
+201704300BOS,"Sun, Apr 30, 2017",BOS,WAS,Boston Celtics,Washington Wizards,123,111,12,Home,92.7,True,2017
+201705020BOS,"Tue, May 2, 2017",BOS,WAS,Boston Celtics,Washington Wizards,129,119,10,Home,96.0,True,2017
+201705040WAS,"Thu, May 4, 2017",WAS,BOS,Washington Wizards,Boston Celtics,116,89,27,Home,95.9,True,2017
+201705070WAS,"Sun, May 7, 2017",WAS,BOS,Washington Wizards,Boston Celtics,121,102,19,Home,97.6,True,2017
+201705100BOS,"Wed, May 10, 2017",BOS,WAS,Boston Celtics,Washington Wizards,123,101,22,Home,96.6,True,2017
+201705120WAS,"Fri, May 12, 2017",WAS,BOS,Washington Wizards,Boston Celtics,92,91,1,Home,90.1,True,2017
+201705150BOS,"Mon, May 15, 2017",BOS,WAS,Boston Celtics,Washington Wizards,115,105,10,Home,93.3,True,2017
+201610250GSW,"Tue, Oct 25, 2016",GSW,SAS,Golden State Warriors,San Antonio Spurs,100,129,-29,Home,98.3,True,2017
+201610270SAC,"Thu, Oct 27, 2016",SAC,SAS,Sacramento Kings,San Antonio Spurs,94,102,-8,Home,91.0,True,2017
+201610290SAS,"Sat, Oct 29, 2016",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,98,79,19,Home,93.6,True,2017
+201610300MIA,"Sun, Oct 30, 2016",MIA,SAS,Miami Heat,San Antonio Spurs,99,106,-7,Home,93.4,True,2017
+201611010SAS,"Tue, Nov 1, 2016",SAS,UTA,San Antonio Spurs,Utah Jazz,91,106,-15,Home,89.8,True,2017
+201611040UTA,"Fri, Nov 4, 2016",UTA,SAS,Utah Jazz,San Antonio Spurs,86,100,-14,Home,92.0,True,2017
+201611050SAS,"Sat, Nov 5, 2016",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,92,116,-24,Home,93.7,True,2017
+201611110SAS,"Fri, Nov 11, 2016",SAS,DET,San Antonio Spurs,Detroit Pistons,96,86,10,Home,85.6,True,2017
+201611140SAS,"Mon, Nov 14, 2016",SAS,MIA,San Antonio Spurs,Miami Heat,94,90,4,Home,94.2,True,2017
+201611160SAC,"Wed, Nov 16, 2016",SAC,SAS,Sacramento Kings,San Antonio Spurs,105,110,-5,Home,94.7,True,2017
+201611230CHO,"Wed, Nov 23, 2016",CHO,SAS,Charlotte Hornets,San Antonio Spurs,114,119,-5,Home,95.2,True,2017
+201611250BOS,"Fri, Nov 25, 2016",BOS,SAS,Boston Celtics,San Antonio Spurs,103,109,-6,Home,93.3,True,2017
+201611290SAS,"Tue, Nov 29, 2016",SAS,ORL,San Antonio Spurs,Orlando Magic,83,95,-12,Home,92.7,True,2017
+201612050MIL,"Mon, Dec 5, 2016",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,96,97,-1,Home,95.6,True,2017
+201612060MIN,"Tue, Dec 6, 2016",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,91,105,-14,Home,90.4,True,2017
+201612080CHI,"Thu, Dec 8, 2016",CHI,SAS,Chicago Bulls,San Antonio Spurs,95,91,4,Home,98.0,True,2017
+201612100SAS,"Sat, Dec 10, 2016",SAS,BRK,San Antonio Spurs,Brooklyn Nets,130,101,29,Home,102.0,True,2017
+201612140SAS,"Wed, Dec 14, 2016",SAS,BOS,San Antonio Spurs,Boston Celtics,108,101,7,Home,94.9,True,2017
+201612150PHO,"Thu, Dec 15, 2016",PHO,SAS,Phoenix Suns,San Antonio Spurs,92,107,-15,Home,93.9,True,2017
+201612180SAS,"Sun, Dec 18, 2016",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,113,100,13,Home,94.7,True,2017
+201612220LAC,"Thu, Dec 22, 2016",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,106,101,5,Home,95.4,True,2017
+201612230POR,"Fri, Dec 23, 2016",POR,SAS,Portland Trail Blazers,San Antonio Spurs,90,110,-20,Home,86.3,True,2017
+201612250SAS,"Sun, Dec 25, 2016",SAS,CHI,San Antonio Spurs,Chicago Bulls,119,100,19,Home,92.9,True,2017
+201612280SAS,"Wed, Dec 28, 2016",SAS,PHO,San Antonio Spurs,Phoenix Suns,119,98,21,Home,96.8,True,2017
+201612300SAS,"Fri, Dec 30, 2016",SAS,POR,San Antonio Spurs,Portland Trail Blazers,110,94,16,Home,92.3,True,2017
+201701030SAS,"Tue, Jan 3, 2017",SAS,TOR,San Antonio Spurs,Toronto Raptors,110,82,28,Home,90.6,True,2017
+201701050DEN,"Thu, Jan 5, 2017",DEN,SAS,Denver Nuggets,San Antonio Spurs,99,127,-28,Home,94.4,True,2017
+201701070SAS,"Sat, Jan 7, 2017",SAS,CHO,San Antonio Spurs,Charlotte Hornets,102,85,17,Home,92.2,True,2017
+201701100SAS,"Tue, Jan 10, 2017",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,107,109,-2,Home,90.4,True,2017
+201701140PHO,"Sat, Jan 14, 2017",PHO,SAS,Phoenix Suns,San Antonio Spurs,108,105,3,Home,93.2,True,2017
+201701170SAS,"Tue, Jan 17, 2017",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,122,114,8,Home,99.3,True,2017
+201701190SAS,"Thu, Jan 19, 2017",SAS,DEN,San Antonio Spurs,Denver Nuggets,118,104,14,Home,99.5,True,2017
+201701230BRK,"Mon, Jan 23, 2017",BRK,SAS,Brooklyn Nets,San Antonio Spurs,86,112,-26,Home,96.1,True,2017
+201701240TOR,"Tue, Jan 24, 2017",TOR,SAS,Toronto Raptors,San Antonio Spurs,106,108,-2,Home,99.4,True,2017
+201701270NOP,"Fri, Jan 27, 2017",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,119,103,16,Home,96.7,True,2017
+201701310SAS,"Tue, Jan 31, 2017",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,108,94,14,Home,105.7,True,2017
+201702020SAS,"Thu, Feb 2, 2017",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,102,86,16,Home,104.0,True,2017
+201702040SAS,"Sat, Feb 4, 2017",SAS,DEN,San Antonio Spurs,Denver Nuggets,121,97,24,Home,97.1,True,2017
+201702060MEM,"Mon, Feb 6, 2017",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,89,74,15,Home,89.8,True,2017
+201702080PHI,"Wed, Feb 8, 2017",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,103,111,-8,Home,92.7,True,2017
+201702100DET,"Fri, Feb 10, 2017",DET,SAS,Detroit Pistons,San Antonio Spurs,92,103,-11,Home,96.3,True,2017
+201702130IND,"Mon, Feb 13, 2017",IND,SAS,Indiana Pacers,San Antonio Spurs,106,110,-4,Home,94.9,True,2017
+201702150ORL,"Wed, Feb 15, 2017",ORL,SAS,Orlando Magic,San Antonio Spurs,79,107,-28,Home,94.7,True,2017
+201702240LAC,"Fri, Feb 24, 2017",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,97,105,-8,Home,90.7,True,2017
+201703010SAS,"Wed, Mar 1, 2017",SAS,IND,San Antonio Spurs,Indiana Pacers,100,99,1,Home,94.0,True,2017
+201703030NOP,"Fri, Mar 3, 2017",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,98,101,-3,Home,95.2,True,2017
+201703040SAS,"Sat, Mar 4, 2017",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,97,90,7,Home,86.0,True,2017
+201703080SAS,"Wed, Mar 8, 2017",SAS,SAC,San Antonio Spurs,Sacramento Kings,114,104,10,Home,99.0,True,2017
+201703090OKC,"Thu, Mar 9, 2017",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,102,92,10,Home,91.3,True,2017
+201703110SAS,"Sat, Mar 11, 2017",SAS,GSW,San Antonio Spurs,Golden State Warriors,107,85,22,Home,94.7,True,2017
+201703150SAS,"Wed, Mar 15, 2017",SAS,POR,San Antonio Spurs,Portland Trail Blazers,106,110,-4,Home,94.5,True,2017
+201703180MEM,"Sat, Mar 18, 2017",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,104,96,8,Home,89.0,True,2017
+201703190SAS,"Sun, Mar 19, 2017",SAS,SAC,San Antonio Spurs,Sacramento Kings,118,102,16,Home,89.4,True,2017
+201703210MIN,"Tue, Mar 21, 2017",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,93,100,-7,Home,90.4,True,2017
+201703230SAS,"Thu, Mar 23, 2017",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,97,90,7,Home,85.2,True,2017
+201703290SAS,"Wed, Mar 29, 2017",SAS,GSW,San Antonio Spurs,Golden State Warriors,98,110,-12,Home,89.9,True,2017
+201703310OKC,"Fri, Mar 31, 2017",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,95,100,-5,Home,93.9,True,2017
+201704020SAS,"Sun, Apr 2, 2017",SAS,UTA,San Antonio Spurs,Utah Jazz,109,103,6,Home,90.1,True,2017
+201704040SAS,"Tue, Apr 4, 2017",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,95,89,6,Home,86.6,True,2017
+201704080SAS,"Sat, Apr 8, 2017",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,87,98,-11,Home,88.8,True,2017
+201704100POR,"Mon, Apr 10, 2017",POR,SAS,Portland Trail Blazers,San Antonio Spurs,99,98,1,Home,90.5,True,2017
+201704120UTA,"Wed, Apr 12, 2017",UTA,SAS,Utah Jazz,San Antonio Spurs,101,97,4,Home,90.8,True,2017
+201704150SAS,"Sat, Apr 15, 2017",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,111,82,29,Home,85.2,True,2017
+201704170SAS,"Mon, Apr 17, 2017",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,96,82,14,Home,83.3,True,2017
+201704200MEM,"Thu, Apr 20, 2017",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,105,94,11,Home,83.0,True,2017
+201704220MEM,"Sat, Apr 22, 2017",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,110,108,2,Home,93.7,True,2017
+201704250SAS,"Tue, Apr 25, 2017",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,116,103,13,Home,82.0,True,2017
+201704270MEM,"Thu, Apr 27, 2017",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,96,103,-7,Home,82.1,True,2017
+201705140GSW,"Sun, May 14, 2017",GSW,SAS,Golden State Warriors,San Antonio Spurs,113,111,2,Home,94.9,True,2017
+201705160GSW,"Tue, May 16, 2017",GSW,SAS,Golden State Warriors,San Antonio Spurs,136,100,36,Home,102.5,True,2017
+201705200SAS,"Sat, May 20, 2017",SAS,GSW,San Antonio Spurs,Golden State Warriors,108,120,-12,Home,103.1,True,2017
+201705220SAS,"Mon, May 22, 2017",SAS,GSW,San Antonio Spurs,Golden State Warriors,115,129,-14,Home,106.9,True,2017
+201610260PHI,"Wed, Oct 26, 2016",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,97,103,-6,Home,100.3,True,2017
+201611010PHI,"Tue, Nov 1, 2016",PHI,ORL,Philadelphia 76ers,Orlando Magic,101,103,-2,Home,94.6,True,2017
+201611020CHO,"Wed, Nov 2, 2016",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,109,93,16,Home,96.5,True,2017
+201611070PHI,"Mon, Nov 7, 2016",PHI,UTA,Philadelphia 76ers,Utah Jazz,84,109,-25,Home,93.1,True,2017
+201611090IND,"Wed, Nov 9, 2016",IND,PHI,Indiana Pacers,Philadelphia 76ers,122,115,7,Home,97.1,True,2017
+201611110PHI,"Fri, Nov 11, 2016",PHI,IND,Philadelphia 76ers,Indiana Pacers,109,105,4,Home,94.5,True,2017
+201611170MIN,"Thu, Nov 17, 2016",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,110,86,24,Home,90.1,True,2017
+201611190PHI,"Sat, Nov 19, 2016",PHI,PHO,Philadelphia 76ers,Phoenix Suns,120,105,15,Home,106.0,True,2017
+201611210PHI,"Mon, Nov 21, 2016",PHI,MIA,Philadelphia 76ers,Miami Heat,101,94,7,Home,90.6,True,2017
+201611230PHI,"Wed, Nov 23, 2016",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,99,104,-5,Home,95.4,True,2017
+201611250PHI,"Fri, Nov 25, 2016",PHI,CHI,Philadelphia 76ers,Chicago Bulls,89,105,-16,Home,99.1,True,2017
+201611280TOR,"Mon, Nov 28, 2016",TOR,PHI,Toronto Raptors,Philadelphia 76ers,122,95,27,Home,91.9,True,2017
+201612020PHI,"Fri, Dec 2, 2016",PHI,ORL,Philadelphia 76ers,Orlando Magic,88,105,-17,Home,91.1,True,2017
+201612030PHI,"Sat, Dec 3, 2016",PHI,BOS,Philadelphia 76ers,Boston Celtics,106,107,-1,Home,91.6,True,2017
+201612050PHI,"Mon, Dec 5, 2016",PHI,DEN,Philadelphia 76ers,Denver Nuggets,98,106,-8,Home,98.2,True,2017
+201612060MEM,"Tue, Dec 6, 2016",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,96,91,5,Home,98.8,True,2017
+201612080NOP,"Thu, Dec 8, 2016",NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,88,99,-11,Home,92.5,True,2017
+201612110DET,"Sun, Dec 11, 2016",DET,PHI,Detroit Pistons,Philadelphia 76ers,79,97,-18,Home,90.2,True,2017
+201612140PHI,"Wed, Dec 14, 2016",PHI,TOR,Philadelphia 76ers,Toronto Raptors,114,123,-9,Home,93.3,True,2017
+201612180PHI,"Sun, Dec 18, 2016",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,108,107,1,Home,100.6,True,2017
+201612200PHI,"Tue, Dec 20, 2016",PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,93,108,-15,Home,96.9,True,2017
+201612230PHO,"Fri, Dec 23, 2016",PHO,PHI,Phoenix Suns,Philadelphia 76ers,123,116,7,Home,100.9,True,2017
+201612260SAC,"Mon, Dec 26, 2016",SAC,PHI,Sacramento Kings,Philadelphia 76ers,102,100,2,Home,98.9,True,2017
+201612290UTA,"Thu, Dec 29, 2016",UTA,PHI,Utah Jazz,Philadelphia 76ers,100,83,17,Home,89.1,True,2017
+201612300DEN,"Fri, Dec 30, 2016",DEN,PHI,Denver Nuggets,Philadelphia 76ers,122,124,-2,Home,97.6,True,2017
+201701030PHI,"Tue, Jan 3, 2017",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,93,91,2,Home,97.1,True,2017
+201701060BOS,"Fri, Jan 6, 2017",BOS,PHI,Boston Celtics,Philadelphia 76ers,110,106,4,Home,99.7,True,2017
+201701080BRK,"Sun, Jan 8, 2017",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,95,105,-10,Home,105.9,True,2017
+201701130PHI,"Fri, Jan 13, 2017",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,102,93,9,Home,93.2,True,2017
+201701160MIL,"Mon, Jan 16, 2017",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,104,113,-9,Home,97.6,True,2017
+201701180PHI,"Wed, Jan 18, 2017",PHI,TOR,Philadelphia 76ers,Toronto Raptors,94,89,5,Home,94.9,True,2017
+201701200PHI,"Fri, Jan 20, 2017",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,93,92,1,Home,100.1,True,2017
+201701240PHI,"Tue, Jan 24, 2017",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,121,110,11,Home,95.4,True,2017
+201701250MIL,"Wed, Jan 25, 2017",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,109,114,-5,Home,99.1,True,2017
+201701290CHI,"Sun, Jan 29, 2017",CHI,PHI,Chicago Bulls,Philadelphia 76ers,121,108,13,Home,101.3,True,2017
+201701300PHI,"Mon, Jan 30, 2017",PHI,SAC,Philadelphia 76ers,Sacramento Kings,122,119,3,Home,95.5,True,2017
+201702040MIA,"Sat, Feb 4, 2017",MIA,PHI,Miami Heat,Philadelphia 76ers,125,102,23,Home,103.4,True,2017
+201702060DET,"Mon, Feb 6, 2017",DET,PHI,Detroit Pistons,Philadelphia 76ers,113,96,17,Home,97.0,True,2017
+201702090ORL,"Thu, Feb 9, 2017",ORL,PHI,Orlando Magic,Philadelphia 76ers,111,112,-1,Home,106.4,True,2017
+201702110PHI,"Sat, Feb 11, 2017",PHI,MIA,Philadelphia 76ers,Miami Heat,117,109,8,Home,100.4,True,2017
+201702130CHO,"Mon, Feb 13, 2017",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,99,105,-6,Home,100.0,True,2017
+201702150BOS,"Wed, Feb 15, 2017",BOS,PHI,Boston Celtics,Philadelphia 76ers,116,108,8,Home,109.0,True,2017
+201702270PHI,"Mon, Feb 27, 2017",PHI,GSW,Philadelphia 76ers,Golden State Warriors,108,119,-11,Home,100.0,True,2017
+201703010MIA,"Wed, Mar 1, 2017",MIA,PHI,Miami Heat,Philadelphia 76ers,125,98,27,Home,101.6,True,2017
+201703040PHI,"Sat, Mar 4, 2017",PHI,DET,Philadelphia 76ers,Detroit Pistons,106,136,-30,Home,101.0,True,2017
+201703060PHI,"Mon, Mar 6, 2017",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,98,112,-14,Home,92.2,True,2017
+201703090POR,"Thu, Mar 9, 2017",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,114,108,6,Home,94.1,True,2017
+201703110LAC,"Sat, Mar 11, 2017",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,112,100,12,Home,97.3,True,2017
+201703140GSW,"Tue, Mar 14, 2017",GSW,PHI,Golden State Warriors,Philadelphia 76ers,106,104,2,Home,104.8,True,2017
+201703190PHI,"Sun, Mar 19, 2017",PHI,BOS,Philadelphia 76ers,Boston Celtics,105,99,6,Home,100.9,True,2017
+201703200ORL,"Mon, Mar 20, 2017",ORL,PHI,Orlando Magic,Philadelphia 76ers,112,109,3,Home,102.1,True,2017
+201703220OKC,"Wed, Mar 22, 2017",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,122,97,25,Home,95.2,True,2017
+201703240CHI,"Fri, Mar 24, 2017",CHI,PHI,Chicago Bulls,Philadelphia 76ers,107,117,-10,Home,98.9,True,2017
+201703260IND,"Sun, Mar 26, 2017",IND,PHI,Indiana Pacers,Philadelphia 76ers,107,94,13,Home,97.5,True,2017
+201703280BRK,"Tue, Mar 28, 2017",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,101,106,-5,Home,102.0,True,2017
+201704020TOR,"Sun, Apr 2, 2017",TOR,PHI,Toronto Raptors,Philadelphia 76ers,113,105,8,Home,94.5,True,2017
+201704040PHI,"Tue, Apr 4, 2017",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,118,141,-23,Home,103.1,True,2017
+201704060PHI,"Thu, Apr 6, 2017",PHI,CHI,Philadelphia 76ers,Chicago Bulls,90,102,-12,Home,102.3,True,2017
+201704080PHI,"Sat, Apr 8, 2017",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,82,90,-8,Home,93.6,True,2017
+201704100PHI,"Mon, Apr 10, 2017",PHI,IND,Philadelphia 76ers,Indiana Pacers,111,120,-9,Home,93.8,True,2017
+201610280OKC,"Fri, Oct 28, 2016",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,113,110,3,Home,104.5,True,2017
+201611020LAC,"Wed, Nov 2, 2016",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,83,85,-2,Home,101.3,True,2017
+201611030GSW,"Thu, Nov 3, 2016",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,122,96,26,Home,96.9,True,2017
+201611050OKC,"Sat, Nov 5, 2016",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,112,92,20,Home,93.3,True,2017
+201611070OKC,"Mon, Nov 7, 2016",OKC,MIA,Oklahoma City Thunder,Miami Heat,97,85,12,Home,92.8,True,2017
+201611090OKC,"Wed, Nov 9, 2016",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,102,112,-10,Home,93.3,True,2017
+201611110OKC,"Fri, Nov 11, 2016",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,108,110,-2,Home,99.3,True,2017
+201611130OKC,"Sun, Nov 13, 2016",OKC,ORL,Oklahoma City Thunder,Orlando Magic,117,119,-2,Home,96.3,True,2017
+201611140DET,"Mon, Nov 14, 2016",DET,OKC,Detroit Pistons,Oklahoma City Thunder,104,88,16,Home,100.3,True,2017
+201611180OKC,"Fri, Nov 18, 2016",OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,124,105,19,Home,102.1,True,2017
+201611200OKC,"Sun, Nov 20, 2016",OKC,IND,Oklahoma City Thunder,Indiana Pacers,111,115,-4,Home,98.5,True,2017
+201611230SAC,"Wed, Nov 23, 2016",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,116,101,15,Home,96.4,True,2017
+201611250DEN,"Fri, Nov 25, 2016",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,129,132,-3,Home,101.2,True,2017
+201611260OKC,"Sat, Nov 26, 2016",OKC,DET,Oklahoma City Thunder,Detroit Pistons,106,88,18,Home,90.3,True,2017
+201612040OKC,"Sun, Dec 4, 2016",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,101,92,9,Home,103.2,True,2017
+201612110OKC,"Sun, Dec 11, 2016",OKC,BOS,Oklahoma City Thunder,Boston Celtics,99,96,3,Home,91.2,True,2017
+201612130POR,"Tue, Dec 13, 2016",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,114,95,19,Home,97.2,True,2017
+201612140UTA,"Wed, Dec 14, 2016",UTA,OKC,Utah Jazz,Oklahoma City Thunder,109,89,20,Home,87.0,True,2017
+201612170OKC,"Sat, Dec 17, 2016",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,114,101,13,Home,95.9,True,2017
+201612210NOP,"Wed, Dec 21, 2016",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,110,121,-11,Home,95.9,True,2017
+201612230BOS,"Fri, Dec 23, 2016",BOS,OKC,Boston Celtics,Oklahoma City Thunder,112,117,-5,Home,99.7,True,2017
+201612250OKC,"Sun, Dec 25, 2016",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,112,100,12,Home,93.9,True,2017
+201612270MIA,"Tue, Dec 27, 2016",MIA,OKC,Miami Heat,Oklahoma City Thunder,94,106,-12,Home,92.2,True,2017
+201612290MEM,"Thu, Dec 29, 2016",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,114,80,34,Home,89.5,True,2017
+201612310OKC,"Sat, Dec 31, 2016",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,114,88,26,Home,91.4,True,2017
+201701020MIL,"Mon, Jan 2, 2017",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,98,94,4,Home,88.7,True,2017
+201701040CHO,"Wed, Jan 4, 2017",CHO,OKC,Charlotte Hornets,Oklahoma City Thunder,123,112,11,Home,101.4,True,2017
+201701070OKC,"Sat, Jan 7, 2017",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,121,106,15,Home,104.1,True,2017
+201701090CHI,"Mon, Jan 9, 2017",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,94,109,-15,Home,92.6,True,2017
+201701110OKC,"Wed, Jan 11, 2017",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,103,95,8,Home,95.5,True,2017
+201701130MIN,"Fri, Jan 13, 2017",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,96,86,10,Home,94.3,True,2017
+201701150SAC,"Sun, Jan 15, 2017",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,118,122,-4,Home,104.5,True,2017
+201701160LAC,"Mon, Jan 16, 2017",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,120,98,22,Home,96.2,True,2017
+201701180GSW,"Wed, Jan 18, 2017",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,121,100,21,Home,100.4,True,2017
+201701230UTA,"Mon, Jan 23, 2017",UTA,OKC,Utah Jazz,Oklahoma City Thunder,95,97,-2,Home,94.3,True,2017
+201701250NOP,"Wed, Jan 25, 2017",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,105,114,-9,Home,105.4,True,2017
+201702010OKC,"Wed, Feb 1, 2017",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,100,128,-28,Home,99.2,True,2017
+201702030OKC,"Fri, Feb 3, 2017",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,114,102,12,Home,94.1,True,2017
+201702050OKC,"Sun, Feb 5, 2017",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,105,99,6,Home,97.6,True,2017
+201702060IND,"Mon, Feb 6, 2017",IND,OKC,Indiana Pacers,Oklahoma City Thunder,93,90,3,Home,90.4,True,2017
+201702110OKC,"Sat, Feb 11, 2017",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,114,130,-16,Home,102.3,True,2017
+201702260OKC,"Sun, Feb 26, 2017",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,118,110,8,Home,97.6,True,2017
+201702280OKC,"Tue, Feb 28, 2017",OKC,UTA,Oklahoma City Thunder,Utah Jazz,109,106,3,Home,93.5,True,2017
+201703020POR,"Thu, Mar 2, 2017",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,114,109,5,Home,96.7,True,2017
+201703030PHO,"Fri, Mar 3, 2017",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,118,111,7,Home,108.1,True,2017
+201703070OKC,"Tue, Mar 7, 2017",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,121,126,-5,Home,96.8,True,2017
+201703110OKC,"Sat, Mar 11, 2017",OKC,UTA,Oklahoma City Thunder,Utah Jazz,112,104,8,Home,92.3,True,2017
+201703140BRK,"Tue, Mar 14, 2017",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,104,122,-18,Home,98.3,True,2017
+201703160TOR,"Thu, Mar 16, 2017",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,102,123,-21,Home,100.9,True,2017
+201703180OKC,"Sat, Mar 18, 2017",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,110,94,16,Home,93.4,True,2017
+201703200OKC,"Mon, Mar 20, 2017",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,95,111,-16,Home,96.8,True,2017
+201703290ORL,"Wed, Mar 29, 2017",ORL,OKC,Orlando Magic,Oklahoma City Thunder,106,114,-8,Home,100.0,True,2017
+201704020OKC,"Sun, Apr 2, 2017",OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,101,113,-12,Home,103.5,True,2017
+201704040OKC,"Tue, Apr 4, 2017",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,110,79,31,Home,92.7,True,2017
+201704050MEM,"Wed, Apr 5, 2017",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,100,103,-3,Home,91.9,True,2017
+201704070PHO,"Fri, Apr 7, 2017",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,120,99,21,Home,89.1,True,2017
+201704090DEN,"Sun, Apr 9, 2017",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,105,106,-1,Home,97.4,True,2017
+201704110MIN,"Tue, Apr 11, 2017",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,98,100,-2,Home,92.8,True,2017
+201704120OKC,"Wed, Apr 12, 2017",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,105,111,-6,Home,105.0,True,2017
+201610250POR,"Tue, Oct 25, 2016",POR,UTA,Portland Trail Blazers,Utah Jazz,113,104,9,Home,90.5,True,2017
+201610270POR,"Thu, Oct 27, 2016",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,106,114,-8,Home,100.8,True,2017
+201610290DEN,"Sat, Oct 29, 2016",DEN,POR,Denver Nuggets,Portland Trail Blazers,113,115,-2,Home,103.9,True,2017
+201611010POR,"Tue, Nov 1, 2016",POR,GSW,Portland Trail Blazers,Golden State Warriors,104,127,-23,Home,105.3,True,2017
+201611020PHO,"Wed, Nov 2, 2016",PHO,POR,Phoenix Suns,Portland Trail Blazers,118,115,3,Home,101.2,True,2017
+201611060MEM,"Sun, Nov 6, 2016",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,94,100,-6,Home,91.7,True,2017
+201611080POR,"Tue, Nov 8, 2016",POR,PHO,Portland Trail Blazers,Phoenix Suns,124,121,3,Home,101.6,True,2017
+201611090LAC,"Wed, Nov 9, 2016",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,111,80,31,Home,93.6,True,2017
+201611110POR,"Fri, Nov 11, 2016",POR,SAC,Portland Trail Blazers,Sacramento Kings,122,120,2,Home,91.7,True,2017
+201611130POR,"Sun, Nov 13, 2016",POR,DEN,Portland Trail Blazers,Denver Nuggets,112,105,7,Home,101.6,True,2017
+201611150POR,"Tue, Nov 15, 2016",POR,CHI,Portland Trail Blazers,Chicago Bulls,88,113,-25,Home,97.5,True,2017
+201611180NOP,"Fri, Nov 18, 2016",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,113,101,12,Home,96.8,True,2017
+201611200BRK,"Sun, Nov 20, 2016",BRK,POR,Brooklyn Nets,Portland Trail Blazers,109,129,-20,Home,100.5,True,2017
+201611250POR,"Fri, Nov 25, 2016",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,119,104,15,Home,100.9,True,2017
+201611300POR,"Wed, Nov 30, 2016",POR,IND,Portland Trail Blazers,Indiana Pacers,131,109,22,Home,94.1,True,2017
+201612030POR,"Sat, Dec 3, 2016",POR,MIA,Portland Trail Blazers,Miami Heat,99,92,7,Home,94.2,True,2017
+201612050CHI,"Mon, Dec 5, 2016",CHI,POR,Chicago Bulls,Portland Trail Blazers,110,112,-2,Home,96.5,True,2017
+201612070MIL,"Wed, Dec 7, 2016",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,115,107,8,Home,96.6,True,2017
+201612080MEM,"Thu, Dec 8, 2016",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,88,86,2,Home,95.1,True,2017
+201612100IND,"Sat, Dec 10, 2016",IND,POR,Indiana Pacers,Portland Trail Blazers,118,111,7,Home,95.5,True,2017
+201612120LAC,"Mon, Dec 12, 2016",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,121,120,1,Home,96.4,True,2017
+201612150DEN,"Thu, Dec 15, 2016",DEN,POR,Denver Nuggets,Portland Trail Blazers,132,120,12,Home,103.0,True,2017
+201612170GSW,"Sat, Dec 17, 2016",GSW,POR,Golden State Warriors,Portland Trail Blazers,135,90,45,Home,99.8,True,2017
+201612200SAC,"Tue, Dec 20, 2016",SAC,POR,Sacramento Kings,Portland Trail Blazers,126,121,5,Home,94.3,True,2017
+201612260POR,"Mon, Dec 26, 2016",POR,TOR,Portland Trail Blazers,Toronto Raptors,91,95,-4,Home,98.4,True,2017
+201612280POR,"Wed, Dec 28, 2016",POR,SAC,Portland Trail Blazers,Sacramento Kings,102,89,13,Home,92.4,True,2017
+201701010MIN,"Sun, Jan 1, 2017",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,89,95,-6,Home,94.9,True,2017
+201701040GSW,"Wed, Jan 4, 2017",GSW,POR,Golden State Warriors,Portland Trail Blazers,125,117,8,Home,104.0,True,2017
+201701080POR,"Sun, Jan 8, 2017",POR,DET,Portland Trail Blazers,Detroit Pistons,124,125,-1,Home,91.5,True,2017
+201701130POR,"Fri, Jan 13, 2017",POR,ORL,Portland Trail Blazers,Orlando Magic,109,115,-6,Home,99.4,True,2017
+201701180CHO,"Wed, Jan 18, 2017",CHO,POR,Charlotte Hornets,Portland Trail Blazers,107,85,22,Home,96.6,True,2017
+201701210BOS,"Sat, Jan 21, 2017",BOS,POR,Boston Celtics,Portland Trail Blazers,123,127,-4,Home,98.1,True,2017
+201701270POR,"Fri, Jan 27, 2017",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,112,109,3,Home,90.6,True,2017
+201701290POR,"Sun, Jan 29, 2017",POR,GSW,Portland Trail Blazers,Golden State Warriors,111,113,-2,Home,104.1,True,2017
+201701310POR,"Tue, Jan 31, 2017",POR,CHO,Portland Trail Blazers,Charlotte Hornets,115,98,17,Home,98.2,True,2017
+201702090POR,"Thu, Feb 9, 2017",POR,BOS,Portland Trail Blazers,Boston Celtics,111,120,-9,Home,94.1,True,2017
+201702150UTA,"Wed, Feb 15, 2017",UTA,POR,Utah Jazz,Portland Trail Blazers,111,88,23,Home,94.1,True,2017
+201702230ORL,"Thu, Feb 23, 2017",ORL,POR,Orlando Magic,Portland Trail Blazers,103,112,-9,Home,100.5,True,2017
+201702260TOR,"Sun, Feb 26, 2017",TOR,POR,Toronto Raptors,Portland Trail Blazers,112,106,6,Home,93.2,True,2017
+201702280DET,"Tue, Feb 28, 2017",DET,POR,Detroit Pistons,Portland Trail Blazers,120,113,7,Home,97.0,True,2017
+201703040POR,"Sat, Mar 4, 2017",POR,BRK,Portland Trail Blazers,Brooklyn Nets,130,116,14,Home,97.7,True,2017
+201703120PHO,"Sun, Mar 12, 2017",PHO,POR,Phoenix Suns,Portland Trail Blazers,101,110,-9,Home,101.7,True,2017
+201703140NOP,"Tue, Mar 14, 2017",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,100,77,23,Home,93.4,True,2017
+201703190MIA,"Sun, Mar 19, 2017",MIA,POR,Miami Heat,Portland Trail Blazers,104,115,-11,Home,89.4,True,2017
+201703210POR,"Tue, Mar 21, 2017",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,90,93,-3,Home,93.4,True,2017
+201703250POR,"Sat, Mar 25, 2017",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,112,100,12,Home,88.2,True,2017
+201703280POR,"Tue, Mar 28, 2017",POR,DEN,Portland Trail Blazers,Denver Nuggets,122,113,9,Home,98.9,True,2017
+201704010POR,"Sat, Apr 1, 2017",POR,PHO,Portland Trail Blazers,Phoenix Suns,130,117,13,Home,101.6,True,2017
+201704030MIN,"Mon, Apr 3, 2017",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,110,109,1,Home,89.4,True,2017
+201704040UTA,"Tue, Apr 4, 2017",UTA,POR,Utah Jazz,Portland Trail Blazers,106,87,19,Home,87.7,True,2017
+201704060POR,"Thu, Apr 6, 2017",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,105,98,7,Home,98.2,True,2017
+201704080POR,"Sat, Apr 8, 2017",POR,UTA,Portland Trail Blazers,Utah Jazz,101,86,15,Home,86.9,True,2017
+201704120POR,"Wed, Apr 12, 2017",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,100,103,-3,Home,98.1,True,2017
+201704160GSW,"Sun, Apr 16, 2017",GSW,POR,Golden State Warriors,Portland Trail Blazers,121,109,12,Home,100.3,True,2017
+201704190GSW,"Wed, Apr 19, 2017",GSW,POR,Golden State Warriors,Portland Trail Blazers,110,81,29,Home,103.7,True,2017
+201704220POR,"Sat, Apr 22, 2017",POR,GSW,Portland Trail Blazers,Golden State Warriors,113,119,-6,Home,104.5,True,2017
+201704240POR,"Mon, Apr 24, 2017",POR,GSW,Portland Trail Blazers,Golden State Warriors,103,128,-25,Home,99.6,True,2017
+201610300LAC,"Sun, Oct 30, 2016",LAC,UTA,Los Angeles Clippers,Utah Jazz,88,75,13,Home,88.8,True,2017
+201611090CHO,"Wed, Nov 9, 2016",CHO,UTA,Charlotte Hornets,Utah Jazz,104,98,6,Home,92.9,True,2017
+201611110ORL,"Fri, Nov 11, 2016",ORL,UTA,Orlando Magic,Utah Jazz,74,87,-13,Home,88.8,True,2017
+201611120MIA,"Sat, Nov 12, 2016",MIA,UTA,Miami Heat,Utah Jazz,91,102,-11,Home,91.8,True,2017
+201611140UTA,"Mon, Nov 14, 2016",UTA,MEM,Utah Jazz,Memphis Grizzlies,96,102,-6,Home,84.6,True,2017
+201611170UTA,"Thu, Nov 17, 2016",UTA,CHI,Utah Jazz,Chicago Bulls,77,85,-8,Home,86.2,True,2017
+201611200DEN,"Sun, Nov 20, 2016",DEN,UTA,Denver Nuggets,Utah Jazz,105,91,14,Home,91.5,True,2017
+201611230UTA,"Wed, Nov 23, 2016",UTA,DEN,Utah Jazz,Denver Nuggets,108,83,25,Home,98.3,True,2017
+201611280MIN,"Mon, Nov 28, 2016",MIN,UTA,Minnesota Timberwolves,Utah Jazz,103,112,-9,Home,92.7,True,2017
+201612010UTA,"Thu, Dec 1, 2016",UTA,MIA,Utah Jazz,Miami Heat,110,111,-1,Home,85.0,True,2017
+201612030UTA,"Sat, Dec 3, 2016",UTA,DEN,Utah Jazz,Denver Nuggets,105,98,7,Home,91.7,True,2017
+201612060UTA,"Tue, Dec 6, 2016",UTA,PHO,Utah Jazz,Phoenix Suns,112,105,7,Home,95.5,True,2017
+201612080UTA,"Thu, Dec 8, 2016",UTA,GSW,Utah Jazz,Golden State Warriors,99,106,-7,Home,97.5,True,2017
+201612100UTA,"Sat, Dec 10, 2016",UTA,SAC,Utah Jazz,Sacramento Kings,104,84,20,Home,91.0,True,2017
+201612180MEM,"Sun, Dec 18, 2016",MEM,UTA,Memphis Grizzlies,Utah Jazz,73,82,-9,Home,85.0,True,2017
+201612200GSW,"Tue, Dec 20, 2016",GSW,UTA,Golden State Warriors,Utah Jazz,104,74,30,Home,96.2,True,2017
+201612210UTA,"Wed, Dec 21, 2016",UTA,SAC,Utah Jazz,Sacramento Kings,93,94,-1,Home,86.0,True,2017
+201612230UTA,"Fri, Dec 23, 2016",UTA,TOR,Utah Jazz,Toronto Raptors,98,104,-6,Home,92.1,True,2017
+201612310UTA,"Sat, Dec 31, 2016",UTA,PHO,Utah Jazz,Phoenix Suns,91,86,5,Home,89.8,True,2017
+201701020BRK,"Mon, Jan 2, 2017",BRK,UTA,Brooklyn Nets,Utah Jazz,89,101,-12,Home,94.3,True,2017
+201701030BOS,"Tue, Jan 3, 2017",BOS,UTA,Boston Celtics,Utah Jazz,115,104,11,Home,89.6,True,2017
+201701050TOR,"Thu, Jan 5, 2017",TOR,UTA,Toronto Raptors,Utah Jazz,101,93,8,Home,84.6,True,2017
+201701070MIN,"Sat, Jan 7, 2017",MIN,UTA,Minnesota Timberwolves,Utah Jazz,92,94,-2,Home,86.5,True,2017
+201701080MEM,"Sun, Jan 8, 2017",MEM,UTA,Memphis Grizzlies,Utah Jazz,88,79,9,Home,88.2,True,2017
+201701130UTA,"Fri, Jan 13, 2017",UTA,DET,Utah Jazz,Detroit Pistons,110,77,33,Home,91.0,True,2017
+201701140UTA,"Sat, Jan 14, 2017",UTA,ORL,Utah Jazz,Orlando Magic,114,107,7,Home,99.9,True,2017
+201701160PHO,"Mon, Jan 16, 2017",PHO,UTA,Phoenix Suns,Utah Jazz,101,106,-5,Home,90.6,True,2017
+201701210UTA,"Sat, Jan 21, 2017",UTA,IND,Utah Jazz,Indiana Pacers,109,100,9,Home,97.3,True,2017
+201701240DEN,"Tue, Jan 24, 2017",DEN,UTA,Denver Nuggets,Utah Jazz,103,93,10,Home,94.6,True,2017
+201701280UTA,"Sat, Jan 28, 2017",UTA,MEM,Utah Jazz,Memphis Grizzlies,95,102,-7,Home,82.0,True,2017
+201702010UTA,"Wed, Feb 1, 2017",UTA,MIL,Utah Jazz,Milwaukee Bucks,104,88,16,Home,91.4,True,2017
+201702040UTA,"Sat, Feb 4, 2017",UTA,CHO,Utah Jazz,Charlotte Hornets,105,98,7,Home,93.6,True,2017
+201702080NOP,"Wed, Feb 8, 2017",NOP,UTA,New Orleans Pelicans,Utah Jazz,94,127,-33,Home,92.4,True,2017
+201702110UTA,"Sat, Feb 11, 2017",UTA,BOS,Utah Jazz,Boston Celtics,104,112,-8,Home,92.4,True,2017
+201702130UTA,"Mon, Feb 13, 2017",UTA,LAC,Utah Jazz,Los Angeles Clippers,72,88,-16,Home,91.1,True,2017
+201702240MIL,"Fri, Feb 24, 2017",MIL,UTA,Milwaukee Bucks,Utah Jazz,95,109,-14,Home,89.7,True,2017
+201703010UTA,"Wed, Mar 1, 2017",UTA,MIN,Utah Jazz,Minnesota Timberwolves,80,107,-27,Home,89.5,True,2017
+201703030UTA,"Fri, Mar 3, 2017",UTA,BRK,Utah Jazz,Brooklyn Nets,112,97,15,Home,97.9,True,2017
+201703050SAC,"Sun, Mar 5, 2017",SAC,UTA,Sacramento Kings,Utah Jazz,109,110,-1,Home,89.3,True,2017
+201703060UTA,"Mon, Mar 6, 2017",UTA,NOP,Utah Jazz,New Orleans Pelicans,88,83,5,Home,93.9,True,2017
+201703130UTA,"Mon, Mar 13, 2017",UTA,LAC,Utah Jazz,Los Angeles Clippers,114,108,6,Home,87.0,True,2017
+201703150DET,"Wed, Mar 15, 2017",DET,UTA,Detroit Pistons,Utah Jazz,83,97,-14,Home,89.8,True,2017
+201703180CHI,"Sat, Mar 18, 2017",CHI,UTA,Chicago Bulls,Utah Jazz,95,86,9,Home,87.0,True,2017
+201703200IND,"Mon, Mar 20, 2017",IND,UTA,Indiana Pacers,Utah Jazz,107,100,7,Home,91.6,True,2017
+201703250LAC,"Sat, Mar 25, 2017",LAC,UTA,Los Angeles Clippers,Utah Jazz,108,95,13,Home,93.2,True,2017
+201703270UTA,"Mon, Mar 27, 2017",UTA,NOP,Utah Jazz,New Orleans Pelicans,108,100,8,Home,91.7,True,2017
+201703290SAC,"Wed, Mar 29, 2017",SAC,UTA,Sacramento Kings,Utah Jazz,82,112,-30,Home,91.5,True,2017
+201704070UTA,"Fri, Apr 7, 2017",UTA,MIN,Utah Jazz,Minnesota Timberwolves,120,113,7,Home,91.5,True,2017
+201704100GSW,"Mon, Apr 10, 2017",GSW,UTA,Golden State Warriors,Utah Jazz,99,105,-6,Home,92.4,True,2017
+201704150LAC,"Sat, Apr 15, 2017",LAC,UTA,Los Angeles Clippers,Utah Jazz,95,97,-2,Home,91.9,True,2017
+201704180LAC,"Tue, Apr 18, 2017",LAC,UTA,Los Angeles Clippers,Utah Jazz,99,91,8,Home,88.7,True,2017
+201704210UTA,"Fri, Apr 21, 2017",UTA,LAC,Utah Jazz,Los Angeles Clippers,106,111,-5,Home,87.4,True,2017
+201704230UTA,"Sun, Apr 23, 2017",UTA,LAC,Utah Jazz,Los Angeles Clippers,105,98,7,Home,87.7,True,2017
+201704250LAC,"Tue, Apr 25, 2017",LAC,UTA,Los Angeles Clippers,Utah Jazz,92,96,-4,Home,90.3,True,2017
+201704280UTA,"Fri, Apr 28, 2017",UTA,LAC,Utah Jazz,Los Angeles Clippers,93,98,-5,Home,88.6,True,2017
+201704300LAC,"Sun, Apr 30, 2017",LAC,UTA,Los Angeles Clippers,Utah Jazz,91,104,-13,Home,87.6,True,2017
+201705020GSW,"Tue, May 2, 2017",GSW,UTA,Golden State Warriors,Utah Jazz,106,94,12,Home,91.2,True,2017
+201705040GSW,"Thu, May 4, 2017",GSW,UTA,Golden State Warriors,Utah Jazz,115,104,11,Home,100.3,True,2017
+201705060UTA,"Sat, May 6, 2017",UTA,GSW,Utah Jazz,Golden State Warriors,91,102,-11,Home,92.3,True,2017
+201705080UTA,"Mon, May 8, 2017",UTA,GSW,Utah Jazz,Golden State Warriors,95,121,-26,Home,98.5,True,2017
+201610260TOR,"Wed, Oct 26, 2016",TOR,DET,Toronto Raptors,Detroit Pistons,109,91,18,Home,95.2,True,2017
+201610280DET,"Fri, Oct 28, 2016",DET,ORL,Detroit Pistons,Orlando Magic,108,82,26,Home,95.3,True,2017
+201610300DET,"Sun, Oct 30, 2016",DET,MIL,Detroit Pistons,Milwaukee Bucks,98,83,15,Home,93.2,True,2017
+201611020BRK,"Wed, Nov 2, 2016",BRK,DET,Brooklyn Nets,Detroit Pistons,109,101,8,Home,97.3,True,2017
+201611050DET,"Sat, Nov 5, 2016",DET,DEN,Detroit Pistons,Denver Nuggets,103,86,17,Home,96.7,True,2017
+201611070LAC,"Mon, Nov 7, 2016",LAC,DET,Los Angeles Clippers,Detroit Pistons,114,82,32,Home,92.3,True,2017
+201611090PHO,"Wed, Nov 9, 2016",PHO,DET,Phoenix Suns,Detroit Pistons,107,100,7,Home,101.3,True,2017
+201611120DEN,"Sat, Nov 12, 2016",DEN,DET,Denver Nuggets,Detroit Pistons,95,106,-11,Home,90.0,True,2017
+201611190DET,"Sat, Nov 19, 2016",DET,BOS,Detroit Pistons,Boston Celtics,92,94,-2,Home,86.2,True,2017
+201611230DET,"Wed, Nov 23, 2016",DET,MIA,Detroit Pistons,Miami Heat,107,84,23,Home,93.1,True,2017
+201611250DET,"Fri, Nov 25, 2016",DET,LAC,Detroit Pistons,Los Angeles Clippers,108,97,11,Home,91.2,True,2017
+201611290CHO,"Tue, Nov 29, 2016",CHO,DET,Charlotte Hornets,Detroit Pistons,89,112,-23,Home,95.1,True,2017
+201611300BOS,"Wed, Nov 30, 2016",BOS,DET,Boston Celtics,Detroit Pistons,114,121,-7,Home,92.8,True,2017
+201612040DET,"Sun, Dec 4, 2016",DET,ORL,Detroit Pistons,Orlando Magic,92,98,-6,Home,91.1,True,2017
+201612060DET,"Tue, Dec 6, 2016",DET,CHI,Detroit Pistons,Chicago Bulls,102,91,11,Home,93.9,True,2017
+201612070CHO,"Wed, Dec 7, 2016",CHO,DET,Charlotte Hornets,Detroit Pistons,87,77,10,Home,97.7,True,2017
+201612090MIN,"Fri, Dec 9, 2016",MIN,DET,Minnesota Timberwolves,Detroit Pistons,90,117,-27,Home,89.0,True,2017
+201612170DET,"Sat, Dec 17, 2016",DET,IND,Detroit Pistons,Indiana Pacers,90,105,-15,Home,90.7,True,2017
+201612190CHI,"Mon, Dec 19, 2016",CHI,DET,Chicago Bulls,Detroit Pistons,113,82,31,Home,87.8,True,2017
+201612210DET,"Wed, Dec 21, 2016",DET,MEM,Detroit Pistons,Memphis Grizzlies,86,98,-12,Home,90.6,True,2017
+201612230DET,"Fri, Dec 23, 2016",DET,GSW,Detroit Pistons,Golden State Warriors,113,119,-6,Home,104.1,True,2017
+201612280DET,"Wed, Dec 28, 2016",DET,MIL,Detroit Pistons,Milwaukee Bucks,94,119,-25,Home,93.0,True,2017
+201701010MIA,"Sun, Jan 1, 2017",MIA,DET,Miami Heat,Detroit Pistons,98,107,-9,Home,93.1,True,2017
+201701030DET,"Tue, Jan 3, 2017",DET,IND,Detroit Pistons,Indiana Pacers,116,121,-5,Home,91.8,True,2017
+201701050DET,"Thu, Jan 5, 2017",DET,CHO,Detroit Pistons,Charlotte Hornets,115,114,1,Home,99.7,True,2017
+201701100SAC,"Tue, Jan 10, 2017",SAC,DET,Sacramento Kings,Detroit Pistons,100,94,6,Home,88.9,True,2017
+201701120GSW,"Thu, Jan 12, 2017",GSW,DET,Golden State Warriors,Detroit Pistons,127,107,20,Home,105.8,True,2017
+201701230DET,"Mon, Jan 23, 2017",DET,SAC,Detroit Pistons,Sacramento Kings,104,109,-5,Home,96.4,True,2017
+201701280MIA,"Sat, Jan 28, 2017",MIA,DET,Miami Heat,Detroit Pistons,116,103,13,Home,91.1,True,2017
+201701300BOS,"Mon, Jan 30, 2017",BOS,DET,Boston Celtics,Detroit Pistons,113,109,4,Home,99.7,True,2017
+201702010DET,"Wed, Feb 1, 2017",DET,NOP,Detroit Pistons,New Orleans Pelicans,118,98,20,Home,98.7,True,2017
+201702030DET,"Fri, Feb 3, 2017",DET,MIN,Detroit Pistons,Minnesota Timberwolves,116,108,8,Home,95.8,True,2017
+201702040IND,"Sat, Feb 4, 2017",IND,DET,Indiana Pacers,Detroit Pistons,105,84,21,Home,94.8,True,2017
+201702120TOR,"Sun, Feb 12, 2017",TOR,DET,Toronto Raptors,Detroit Pistons,101,102,-1,Home,88.4,True,2017
+201702130MIL,"Mon, Feb 13, 2017",MIL,DET,Milwaukee Bucks,Detroit Pistons,102,89,13,Home,89.6,True,2017
+201702230DET,"Thu, Feb 23, 2017",DET,CHO,Detroit Pistons,Charlotte Hornets,114,108,6,Home,95.7,True,2017
+201702260DET,"Sun, Feb 26, 2017",DET,BOS,Detroit Pistons,Boston Celtics,98,104,-6,Home,100.8,True,2017
+201703010NOP,"Wed, Mar 1, 2017",NOP,DET,New Orleans Pelicans,Detroit Pistons,109,86,23,Home,92.8,True,2017
+201703060DET,"Mon, Mar 6, 2017",DET,CHI,Detroit Pistons,Chicago Bulls,109,95,14,Home,93.3,True,2017
+201703080IND,"Wed, Mar 8, 2017",IND,DET,Indiana Pacers,Detroit Pistons,115,98,17,Home,93.1,True,2017
+201703170DET,"Fri, Mar 17, 2017",DET,TOR,Detroit Pistons,Toronto Raptors,75,87,-12,Home,90.1,True,2017
+201703190DET,"Sun, Mar 19, 2017",DET,PHO,Detroit Pistons,Phoenix Suns,112,95,17,Home,102.5,True,2017
+201703210BRK,"Tue, Mar 21, 2017",BRK,DET,Brooklyn Nets,Detroit Pistons,98,96,2,Home,93.2,True,2017
+201703220CHI,"Wed, Mar 22, 2017",CHI,DET,Chicago Bulls,Detroit Pistons,117,95,22,Home,91.3,True,2017
+201703240ORL,"Fri, Mar 24, 2017",ORL,DET,Orlando Magic,Detroit Pistons,115,87,28,Home,98.4,True,2017
+201703280DET,"Tue, Mar 28, 2017",DET,MIA,Detroit Pistons,Miami Heat,96,97,-1,Home,89.7,True,2017
+201703300DET,"Thu, Mar 30, 2017",DET,BRK,Detroit Pistons,Brooklyn Nets,90,89,1,Home,97.9,True,2017
+201703310MIL,"Fri, Mar 31, 2017",MIL,DET,Milwaukee Bucks,Detroit Pistons,108,105,3,Home,91.2,True,2017
+201704050DET,"Wed, Apr 5, 2017",DET,TOR,Detroit Pistons,Toronto Raptors,102,105,-3,Home,92.7,True,2017
+201704090MEM,"Sun, Apr 9, 2017",MEM,DET,Memphis Grizzlies,Detroit Pistons,90,103,-13,Home,88.6,True,2017
+201704120ORL,"Wed, Apr 12, 2017",ORL,DET,Orlando Magic,Detroit Pistons,113,109,4,Home,102.0,True,2017
+201610310TOR,"Mon, Oct 31, 2016",TOR,DEN,Toronto Raptors,Denver Nuggets,105,102,3,Home,91.4,True,2017
+201611040TOR,"Fri, Nov 4, 2016",TOR,MIA,Toronto Raptors,Miami Heat,96,87,9,Home,92.1,True,2017
+201611060TOR,"Sun, Nov 6, 2016",TOR,SAC,Toronto Raptors,Sacramento Kings,91,96,-5,Home,85.8,True,2017
+201611110CHO,"Fri, Nov 11, 2016",CHO,TOR,Charlotte Hornets,Toronto Raptors,111,113,-2,Home,94.8,True,2017
+201611160TOR,"Wed, Nov 16, 2016",TOR,GSW,Toronto Raptors,Golden State Warriors,121,127,-6,Home,99.6,True,2017
+201611180DEN,"Fri, Nov 18, 2016",DEN,TOR,Denver Nuggets,Toronto Raptors,111,113,-2,Home,99.7,True,2017
+201611200SAC,"Sun, Nov 20, 2016",SAC,TOR,Sacramento Kings,Toronto Raptors,102,99,3,Home,95.2,True,2017
+201611210LAC,"Mon, Nov 21, 2016",LAC,TOR,Los Angeles Clippers,Toronto Raptors,123,115,8,Home,98.9,True,2017
+201611250MIL,"Fri, Nov 25, 2016",MIL,TOR,Milwaukee Bucks,Toronto Raptors,99,105,-6,Home,86.2,True,2017
+201611300TOR,"Wed, Nov 30, 2016",TOR,MEM,Toronto Raptors,Memphis Grizzlies,120,105,15,Home,90.8,True,2017
+201612080TOR,"Thu, Dec 8, 2016",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,124,110,14,Home,90.1,True,2017
+201612090BOS,"Fri, Dec 9, 2016",BOS,TOR,Boston Celtics,Toronto Raptors,94,101,-7,Home,95.4,True,2017
+201612120TOR,"Mon, Dec 12, 2016",TOR,MIL,Toronto Raptors,Milwaukee Bucks,122,100,22,Home,92.2,True,2017
+201612180ORL,"Sun, Dec 18, 2016",ORL,TOR,Orlando Magic,Toronto Raptors,79,109,-30,Home,94.3,True,2017
+201612200TOR,"Tue, Dec 20, 2016",TOR,BRK,Toronto Raptors,Brooklyn Nets,116,104,12,Home,102.8,True,2017
+201612280GSW,"Wed, Dec 28, 2016",GSW,TOR,Golden State Warriors,Toronto Raptors,121,111,10,Home,98.2,True,2017
+201612290PHO,"Thu, Dec 29, 2016",PHO,TOR,Phoenix Suns,Toronto Raptors,99,91,8,Home,97.1,True,2017
+201701070CHI,"Sat, Jan 7, 2017",CHI,TOR,Chicago Bulls,Toronto Raptors,123,118,5,Home,95.9,True,2017
+201701100TOR,"Tue, Jan 10, 2017",TOR,BOS,Toronto Raptors,Boston Celtics,114,106,8,Home,97.7,True,2017
+201701130TOR,"Fri, Jan 13, 2017",TOR,BRK,Toronto Raptors,Brooklyn Nets,132,113,19,Home,99.6,True,2017
+201701170BRK,"Tue, Jan 17, 2017",BRK,TOR,Brooklyn Nets,Toronto Raptors,109,119,-10,Home,97.2,True,2017
+201701200CHO,"Fri, Jan 20, 2017",CHO,TOR,Charlotte Hornets,Toronto Raptors,113,78,35,Home,92.2,True,2017
+201701220TOR,"Sun, Jan 22, 2017",TOR,PHO,Toronto Raptors,Phoenix Suns,103,115,-12,Home,97.3,True,2017
+201701250MEM,"Wed, Jan 25, 2017",MEM,TOR,Memphis Grizzlies,Toronto Raptors,101,99,2,Home,89.8,True,2017
+201701270TOR,"Fri, Jan 27, 2017",TOR,MIL,Toronto Raptors,Milwaukee Bucks,102,86,16,Home,94.2,True,2017
+201701290TOR,"Sun, Jan 29, 2017",TOR,ORL,Toronto Raptors,Orlando Magic,113,114,-1,Home,94.4,True,2017
+201701310TOR,"Tue, Jan 31, 2017",TOR,NOP,Toronto Raptors,New Orleans Pelicans,108,106,2,Home,89.5,True,2017
+201702010BOS,"Wed, Feb 1, 2017",BOS,TOR,Boston Celtics,Toronto Raptors,109,104,5,Home,93.7,True,2017
+201702030ORL,"Fri, Feb 3, 2017",ORL,TOR,Orlando Magic,Toronto Raptors,102,94,8,Home,91.4,True,2017
+201702050BRK,"Sun, Feb 5, 2017",BRK,TOR,Brooklyn Nets,Toronto Raptors,95,103,-8,Home,97.3,True,2017
+201702060TOR,"Mon, Feb 6, 2017",TOR,LAC,Toronto Raptors,Los Angeles Clippers,118,109,9,Home,94.1,True,2017
+201702080MIN,"Wed, Feb 8, 2017",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,112,109,3,Home,87.8,True,2017
+201702140CHI,"Tue, Feb 14, 2017",CHI,TOR,Chicago Bulls,Toronto Raptors,105,94,11,Home,94.3,True,2017
+201702150TOR,"Wed, Feb 15, 2017",TOR,CHO,Toronto Raptors,Charlotte Hornets,90,85,5,Home,93.6,True,2017
+201702240TOR,"Fri, Feb 24, 2017",TOR,BOS,Toronto Raptors,Boston Celtics,107,97,10,Home,89.6,True,2017
+201703040MIL,"Sat, Mar 4, 2017",MIL,TOR,Milwaukee Bucks,Toronto Raptors,101,94,7,Home,90.7,True,2017
+201703080NOP,"Wed, Mar 8, 2017",NOP,TOR,New Orleans Pelicans,Toronto Raptors,87,94,-7,Home,88.7,True,2017
+201703110MIA,"Sat, Mar 11, 2017",MIA,TOR,Miami Heat,Toronto Raptors,104,89,15,Home,92.1,True,2017
+201703190TOR,"Sun, Mar 19, 2017",TOR,IND,Toronto Raptors,Indiana Pacers,116,91,25,Home,94.4,True,2017
+201703210TOR,"Tue, Mar 21, 2017",TOR,CHI,Toronto Raptors,Chicago Bulls,122,120,2,Home,94.2,True,2017
+201703230MIA,"Thu, Mar 23, 2017",MIA,TOR,Miami Heat,Toronto Raptors,84,101,-17,Home,95.7,True,2017
+201703270TOR,"Mon, Mar 27, 2017",TOR,ORL,Toronto Raptors,Orlando Magic,131,112,19,Home,101.7,True,2017
+201703290TOR,"Wed, Mar 29, 2017",TOR,CHO,Toronto Raptors,Charlotte Hornets,106,110,-4,Home,89.6,True,2017
+201703310TOR,"Fri, Mar 31, 2017",TOR,IND,Toronto Raptors,Indiana Pacers,111,100,11,Home,94.1,True,2017
+201704040IND,"Tue, Apr 4, 2017",IND,TOR,Indiana Pacers,Toronto Raptors,108,90,18,Home,92.4,True,2017
+201704070TOR,"Fri, Apr 7, 2017",TOR,MIA,Toronto Raptors,Miami Heat,96,94,2,Home,95.8,True,2017
+201704150TOR,"Sat, Apr 15, 2017",TOR,MIL,Toronto Raptors,Milwaukee Bucks,83,97,-14,Home,87.5,True,2017
+201704180TOR,"Tue, Apr 18, 2017",TOR,MIL,Toronto Raptors,Milwaukee Bucks,106,100,6,Home,91.4,True,2017
+201704200MIL,"Thu, Apr 20, 2017",MIL,TOR,Milwaukee Bucks,Toronto Raptors,104,77,27,Home,89.3,True,2017
+201704220MIL,"Sat, Apr 22, 2017",MIL,TOR,Milwaukee Bucks,Toronto Raptors,76,87,-11,Home,94.0,True,2017
+201704240TOR,"Mon, Apr 24, 2017",TOR,MIL,Toronto Raptors,Milwaukee Bucks,118,93,25,Home,91.8,True,2017
+201704270MIL,"Thu, Apr 27, 2017",MIL,TOR,Milwaukee Bucks,Toronto Raptors,89,92,-3,Home,84.8,True,2017
+201610260PHO,"Wed, Oct 26, 2016",PHO,SAC,Phoenix Suns,Sacramento Kings,94,113,-19,Home,96.8,True,2017
+201610290SAC,"Sat, Oct 29, 2016",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,106,103,3,Home,89.4,True,2017
+201611010MIA,"Tue, Nov 1, 2016",MIA,SAC,Miami Heat,Sacramento Kings,108,96,12,Home,95.1,True,2017
+201611030ORL,"Thu, Nov 3, 2016",ORL,SAC,Orlando Magic,Sacramento Kings,102,94,8,Home,90.3,True,2017
+201611050MIL,"Sat, Nov 5, 2016",MIL,SAC,Milwaukee Bucks,Sacramento Kings,117,91,26,Home,89.7,True,2017
+201611080SAC,"Tue, Nov 8, 2016",SAC,NOP,Sacramento Kings,New Orleans Pelicans,102,94,8,Home,92.9,True,2017
+201611180SAC,"Fri, Nov 18, 2016",SAC,LAC,Sacramento Kings,Los Angeles Clippers,115,121,-6,Home,100.2,True,2017
+201611270BRK,"Sun, Nov 27, 2016",BRK,SAC,Brooklyn Nets,Sacramento Kings,105,122,-17,Home,97.9,True,2017
+201612020BOS,"Fri, Dec 2, 2016",BOS,SAC,Boston Celtics,Sacramento Kings,97,92,5,Home,94.5,True,2017
+201612160MEM,"Fri, Dec 16, 2016",MEM,SAC,Memphis Grizzlies,Sacramento Kings,92,96,-4,Home,90.4,True,2017
+201612230MIN,"Fri, Dec 23, 2016",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,105,109,-4,Home,88.7,True,2017
+201612310SAC,"Sat, Dec 31, 2016",SAC,MEM,Sacramento Kings,Memphis Grizzlies,98,112,-14,Home,83.3,True,2017
+201701030DEN,"Tue, Jan 3, 2017",DEN,SAC,Denver Nuggets,Sacramento Kings,113,120,-7,Home,96.1,True,2017
+201701040SAC,"Wed, Jan 4, 2017",SAC,MIA,Sacramento Kings,Miami Heat,102,107,-5,Home,94.2,True,2017
+201701060SAC,"Fri, Jan 6, 2017",SAC,LAC,Sacramento Kings,Los Angeles Clippers,98,106,-8,Home,90.2,True,2017
+201701080SAC,"Sun, Jan 8, 2017",SAC,GSW,Sacramento Kings,Golden State Warriors,106,117,-11,Home,101.1,True,2017
+201701180SAC,"Wed, Jan 18, 2017",SAC,IND,Sacramento Kings,Indiana Pacers,100,106,-6,Home,91.0,True,2017
+201701200MEM,"Fri, Jan 20, 2017",MEM,SAC,Memphis Grizzlies,Sacramento Kings,107,91,16,Home,92.9,True,2017
+201701210CHI,"Sat, Jan 21, 2017",CHI,SAC,Chicago Bulls,Sacramento Kings,102,99,3,Home,90.9,True,2017
+201701270IND,"Fri, Jan 27, 2017",IND,SAC,Indiana Pacers,Sacramento Kings,115,111,4,Home,84.0,True,2017
+201701280CHO,"Sat, Jan 28, 2017",CHO,SAC,Charlotte Hornets,Sacramento Kings,106,109,-3,Home,88.4,True,2017
+201702030SAC,"Fri, Feb 3, 2017",SAC,PHO,Sacramento Kings,Phoenix Suns,103,105,-2,Home,97.2,True,2017
+201702040SAC,"Sat, Feb 4, 2017",SAC,GSW,Sacramento Kings,Golden State Warriors,109,106,3,Home,93.9,True,2017
+201702060SAC,"Mon, Feb 6, 2017",SAC,CHI,Sacramento Kings,Chicago Bulls,107,112,-5,Home,91.6,True,2017
+201702080SAC,"Wed, Feb 8, 2017",SAC,BOS,Sacramento Kings,Boston Celtics,108,92,16,Home,96.1,True,2017
+201702120SAC,"Sun, Feb 12, 2017",SAC,NOP,Sacramento Kings,New Orleans Pelicans,105,99,6,Home,99.3,True,2017
+201702150GSW,"Wed, Feb 15, 2017",GSW,SAC,Golden State Warriors,Sacramento Kings,109,86,23,Home,97.0,True,2017
+201702230SAC,"Thu, Feb 23, 2017",SAC,DEN,Sacramento Kings,Denver Nuggets,116,100,16,Home,99.2,True,2017
+201702250SAC,"Sat, Feb 25, 2017",SAC,CHO,Sacramento Kings,Charlotte Hornets,85,99,-14,Home,87.7,True,2017
+201702270SAC,"Mon, Feb 27, 2017",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,88,102,-14,Home,96.3,True,2017
+201703010SAC,"Wed, Mar 1, 2017",SAC,BRK,Sacramento Kings,Brooklyn Nets,100,109,-9,Home,94.2,True,2017
+201703060DEN,"Mon, Mar 6, 2017",DEN,SAC,Denver Nuggets,Sacramento Kings,108,96,12,Home,94.2,True,2017
+201703110SAC,"Sat, Mar 11, 2017",SAC,DEN,Sacramento Kings,Denver Nuggets,92,105,-13,Home,90.7,True,2017
+201703130SAC,"Mon, Mar 13, 2017",SAC,ORL,Sacramento Kings,Orlando Magic,120,115,5,Home,103.7,True,2017
+201703150PHO,"Wed, Mar 15, 2017",PHO,SAC,Phoenix Suns,Sacramento Kings,101,107,-6,Home,103.8,True,2017
+201703220SAC,"Wed, Mar 22, 2017",SAC,MIL,Sacramento Kings,Milwaukee Bucks,98,116,-18,Home,90.6,True,2017
+201703240GSW,"Fri, Mar 24, 2017",GSW,SAC,Golden State Warriors,Sacramento Kings,114,100,14,Home,96.9,True,2017
+201703260LAC,"Sun, Mar 26, 2017",LAC,SAC,Los Angeles Clippers,Sacramento Kings,97,98,-1,Home,93.2,True,2017
+201703270SAC,"Mon, Mar 27, 2017",SAC,MEM,Sacramento Kings,Memphis Grizzlies,91,90,1,Home,82.0,True,2017
+201703310NOP,"Fri, Mar 31, 2017",NOP,SAC,New Orleans Pelicans,Sacramento Kings,117,89,28,Home,101.8,True,2017
+201704010MIN,"Sat, Apr 1, 2017",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,117,123,-6,Home,100.9,True,2017
+201704110SAC,"Tue, Apr 11, 2017",SAC,PHO,Sacramento Kings,Phoenix Suns,129,104,25,Home,105.8,True,2017
+201704120LAC,"Wed, Apr 12, 2017",LAC,SAC,Los Angeles Clippers,Sacramento Kings,115,95,20,Home,88.1,True,2017
+201610280NOP,"Fri, Oct 28, 2016",NOP,GSW,New Orleans Pelicans,Golden State Warriors,114,122,-8,Home,107.7,True,2017
+201610300PHO,"Sun, Oct 30, 2016",PHO,GSW,Phoenix Suns,Golden State Warriors,100,106,-6,Home,100.6,True,2017
+201611070GSW,"Mon, Nov 7, 2016",GSW,NOP,Golden State Warriors,New Orleans Pelicans,116,106,10,Home,97.9,True,2017
+201611100DEN,"Thu, Nov 10, 2016",DEN,GSW,Denver Nuggets,Golden State Warriors,101,125,-24,Home,98.4,True,2017
+201611130GSW,"Sun, Nov 13, 2016",GSW,PHO,Golden State Warriors,Phoenix Suns,133,120,13,Home,105.3,True,2017
+201611180BOS,"Fri, Nov 18, 2016",BOS,GSW,Boston Celtics,Golden State Warriors,88,104,-16,Home,95.7,True,2017
+201611190MIL,"Sat, Nov 19, 2016",MIL,GSW,Milwaukee Bucks,Golden State Warriors,121,124,-3,Home,99.3,True,2017
+201611210IND,"Mon, Nov 21, 2016",IND,GSW,Indiana Pacers,Golden State Warriors,83,120,-37,Home,100.9,True,2017
+201611260GSW,"Sat, Nov 26, 2016",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,115,102,13,Home,94.9,True,2017
+201612030GSW,"Sat, Dec 3, 2016",GSW,PHO,Golden State Warriors,Phoenix Suns,138,109,29,Home,99.5,True,2017
+201612050GSW,"Mon, Dec 5, 2016",GSW,IND,Golden State Warriors,Indiana Pacers,142,106,36,Home,105.0,True,2017
+201612070LAC,"Wed, Dec 7, 2016",LAC,GSW,Los Angeles Clippers,Golden State Warriors,98,115,-17,Home,95.4,True,2017
+201612100MEM,"Sat, Dec 10, 2016",MEM,GSW,Memphis Grizzlies,Golden State Warriors,110,89,21,Home,96.6,True,2017
+201612110MIN,"Sun, Dec 11, 2016",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,108,116,-8,Home,94.5,True,2017
+201612130NOP,"Tue, Dec 13, 2016",NOP,GSW,New Orleans Pelicans,Golden State Warriors,109,113,-4,Home,102.4,True,2017
+201612220BRK,"Thu, Dec 22, 2016",BRK,GSW,Brooklyn Nets,Golden State Warriors,101,117,-16,Home,109.5,True,2017
+201701020GSW,"Mon, Jan 2, 2017",GSW,DEN,Golden State Warriors,Denver Nuggets,127,119,8,Home,103.1,True,2017
+201701060GSW,"Fri, Jan 6, 2017",GSW,MEM,Golden State Warriors,Memphis Grizzlies,119,128,-9,Home,96.8,True,2017
+201701100GSW,"Tue, Jan 10, 2017",GSW,MIA,Golden State Warriors,Miami Heat,107,95,12,Home,100.6,True,2017
+201701220ORL,"Sun, Jan 22, 2017",ORL,GSW,Orlando Magic,Golden State Warriors,98,118,-20,Home,99.9,True,2017
+201701230MIA,"Mon, Jan 23, 2017",MIA,GSW,Miami Heat,Golden State Warriors,105,102,3,Home,99.6,True,2017
+201701250CHO,"Wed, Jan 25, 2017",CHO,GSW,Charlotte Hornets,Golden State Warriors,103,113,-10,Home,99.2,True,2017
+201701280GSW,"Sat, Jan 28, 2017",GSW,LAC,Golden State Warriors,Los Angeles Clippers,144,98,46,Home,97.8,True,2017
+201702010GSW,"Wed, Feb 1, 2017",GSW,CHO,Golden State Warriors,Charlotte Hornets,126,111,15,Home,101.5,True,2017
+201702020LAC,"Thu, Feb 2, 2017",LAC,GSW,Los Angeles Clippers,Golden State Warriors,120,133,-13,Home,100.3,True,2017
+201702080GSW,"Wed, Feb 8, 2017",GSW,CHI,Golden State Warriors,Chicago Bulls,123,92,31,Home,97.0,True,2017
+201702100MEM,"Fri, Feb 10, 2017",MEM,GSW,Memphis Grizzlies,Golden State Warriors,107,122,-15,Home,98.2,True,2017
+201702130DEN,"Mon, Feb 13, 2017",DEN,GSW,Denver Nuggets,Golden State Warriors,132,110,22,Home,100.8,True,2017
+201702230GSW,"Thu, Feb 23, 2017",GSW,LAC,Golden State Warriors,Los Angeles Clippers,123,113,10,Home,106.2,True,2017
+201702250GSW,"Sat, Feb 25, 2017",GSW,BRK,Golden State Warriors,Brooklyn Nets,112,95,17,Home,104.2,True,2017
+201703020CHI,"Thu, Mar 2, 2017",CHI,GSW,Chicago Bulls,Golden State Warriors,94,87,7,Home,99.3,True,2017
+201703080GSW,"Wed, Mar 8, 2017",GSW,BOS,Golden State Warriors,Boston Celtics,86,99,-13,Home,92.6,True,2017
+201703100MIN,"Fri, Mar 10, 2017",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,103,102,1,Home,93.3,True,2017
+201703160GSW,"Thu, Mar 16, 2017",GSW,ORL,Golden State Warriors,Orlando Magic,122,92,30,Home,102.3,True,2017
+201703180GSW,"Sat, Mar 18, 2017",GSW,MIL,Golden State Warriors,Milwaukee Bucks,117,92,25,Home,90.0,True,2017
+201703260GSW,"Sun, Mar 26, 2017",GSW,MEM,Golden State Warriors,Memphis Grizzlies,106,94,12,Home,88.0,True,2017
+201704040GSW,"Tue, Apr 4, 2017",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,121,107,14,Home,97.6,True,2017
+201704050PHO,"Wed, Apr 5, 2017",PHO,GSW,Phoenix Suns,Golden State Warriors,111,120,-9,Home,105.2,True,2017
+201704080GSW,"Sat, Apr 8, 2017",GSW,NOP,Golden State Warriors,New Orleans Pelicans,123,101,22,Home,95.0,True,2017
+201610260NOP,"Wed, Oct 26, 2016",NOP,DEN,New Orleans Pelicans,Denver Nuggets,102,107,-5,Home,107.1,True,2017
+201611030MIN,"Thu, Nov 3, 2016",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,99,102,-3,Home,100.3,True,2017
+201611060BOS,"Sun, Nov 6, 2016",BOS,DEN,Boston Celtics,Denver Nuggets,107,123,-16,Home,100.3,True,2017
+201611080MEM,"Tue, Nov 8, 2016",MEM,DEN,Memphis Grizzlies,Denver Nuggets,108,107,1,Home,98.5,True,2017
+201611160DEN,"Wed, Nov 16, 2016",DEN,PHO,Denver Nuggets,Phoenix Suns,120,104,16,Home,99.5,True,2017
+201611220DEN,"Tue, Nov 22, 2016",DEN,CHI,Denver Nuggets,Chicago Bulls,110,107,3,Home,97.3,True,2017
+201611270PHO,"Sun, Nov 27, 2016",PHO,DEN,Phoenix Suns,Denver Nuggets,114,120,-6,Home,103.1,True,2017
+201611300DEN,"Wed, Nov 30, 2016",DEN,MIA,Denver Nuggets,Miami Heat,98,106,-8,Home,100.8,True,2017
+201612070BRK,"Wed, Dec 7, 2016",BRK,DEN,Brooklyn Nets,Denver Nuggets,116,111,5,Home,100.7,True,2017
+201612100ORL,"Sat, Dec 10, 2016",ORL,DEN,Orlando Magic,Denver Nuggets,113,121,-8,Home,95.8,True,2017
+201612200LAC,"Tue, Dec 20, 2016",LAC,DEN,Los Angeles Clippers,Denver Nuggets,119,102,17,Home,95.0,True,2017
+201612260LAC,"Mon, Dec 26, 2016",LAC,DEN,Los Angeles Clippers,Denver Nuggets,102,106,-4,Home,96.9,True,2017
+201612280DEN,"Wed, Dec 28, 2016",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,105,103,2,Home,90.8,True,2017
+201701120DEN,"Thu, Jan 12, 2017",DEN,IND,Denver Nuggets,Indiana Pacers,140,112,28,Home,100.7,True,2017
+201701160DEN,"Mon, Jan 16, 2017",DEN,ORL,Denver Nuggets,Orlando Magic,125,112,13,Home,99.8,True,2017
+201701210DEN,"Sat, Jan 21, 2017",DEN,LAC,Denver Nuggets,Los Angeles Clippers,123,98,25,Home,93.9,True,2017
+201701220MIN,"Sun, Jan 22, 2017",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,111,108,3,Home,96.4,True,2017
+201701260DEN,"Thu, Jan 26, 2017",DEN,PHO,Denver Nuggets,Phoenix Suns,127,120,7,Home,93.4,True,2017
+201701280PHO,"Sat, Jan 28, 2017",PHO,DEN,Phoenix Suns,Denver Nuggets,112,123,-11,Home,101.6,True,2017
+201702010DEN,"Wed, Feb 1, 2017",DEN,MEM,Denver Nuggets,Memphis Grizzlies,99,119,-20,Home,97.2,True,2017
+201702030DEN,"Fri, Feb 3, 2017",DEN,MIL,Denver Nuggets,Milwaukee Bucks,121,117,4,Home,102.6,True,2017
+201702150DEN,"Wed, Feb 15, 2017",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,99,112,-13,Home,96.4,True,2017
+201702240DEN,"Fri, Feb 24, 2017",DEN,BRK,Denver Nuggets,Brooklyn Nets,129,109,20,Home,107.5,True,2017
+201702260DEN,"Sun, Feb 26, 2017",DEN,MEM,Denver Nuggets,Memphis Grizzlies,98,105,-7,Home,91.1,True,2017
+201702280CHI,"Tue, Feb 28, 2017",CHI,DEN,Chicago Bulls,Denver Nuggets,107,125,-18,Home,98.9,True,2017
+201703010MIL,"Wed, Mar 1, 2017",MIL,DEN,Milwaukee Bucks,Denver Nuggets,98,110,-12,Home,89.7,True,2017
+201703040DEN,"Sat, Mar 4, 2017",DEN,CHO,Denver Nuggets,Charlotte Hornets,102,112,-10,Home,88.8,True,2017
+201703100DEN,"Fri, Mar 10, 2017",DEN,BOS,Denver Nuggets,Boston Celtics,119,99,20,Home,98.7,True,2017
+201703160DEN,"Thu, Mar 16, 2017",DEN,LAC,Denver Nuggets,Los Angeles Clippers,129,114,15,Home,94.9,True,2017
+201703240IND,"Fri, Mar 24, 2017",IND,DEN,Indiana Pacers,Denver Nuggets,117,125,-8,Home,99.2,True,2017
+201703260DEN,"Sun, Mar 26, 2017",DEN,NOP,Denver Nuggets,New Orleans Pelicans,90,115,-25,Home,101.2,True,2017
+201703310CHO,"Fri, Mar 31, 2017",CHO,DEN,Charlotte Hornets,Denver Nuggets,122,114,8,Home,95.1,True,2017
+201704020MIA,"Sun, Apr 2, 2017",MIA,DEN,Miami Heat,Denver Nuggets,113,116,-3,Home,98.0,True,2017
+201704040NOP,"Tue, Apr 4, 2017",NOP,DEN,New Orleans Pelicans,Denver Nuggets,131,134,-3,Home,100.5,True,2017
+201704070DEN,"Fri, Apr 7, 2017",DEN,NOP,Denver Nuggets,New Orleans Pelicans,122,106,16,Home,101.8,True,2017
+201610260BOS,"Wed, Oct 26, 2016",BOS,BRK,Boston Celtics,Brooklyn Nets,122,117,5,Home,103.0,True,2017
+201610270CHI,"Thu, Oct 27, 2016",CHI,BOS,Chicago Bulls,Boston Celtics,105,99,6,Home,94.2,True,2017
+201610290CHO,"Sat, Oct 29, 2016",CHO,BOS,Charlotte Hornets,Boston Celtics,98,104,-6,Home,94.6,True,2017
+201611020BOS,"Wed, Nov 2, 2016",BOS,CHI,Boston Celtics,Chicago Bulls,107,100,7,Home,95.1,True,2017
+201611120IND,"Sat, Nov 12, 2016",IND,BOS,Indiana Pacers,Boston Celtics,99,105,-6,Home,93.1,True,2017
+201611140NOP,"Mon, Nov 14, 2016",NOP,BOS,New Orleans Pelicans,Boston Celtics,106,105,1,Home,99.8,True,2017
+201611210MIN,"Mon, Nov 21, 2016",MIN,BOS,Minnesota Timberwolves,Boston Celtics,93,99,-6,Home,93.5,True,2017
+201611230BRK,"Wed, Nov 23, 2016",BRK,BOS,Brooklyn Nets,Boston Celtics,92,111,-19,Home,101.7,True,2017
+201611280MIA,"Mon, Nov 28, 2016",MIA,BOS,Miami Heat,Boston Celtics,104,112,-8,Home,96.8,True,2017
+201612070ORL,"Wed, Dec 7, 2016",ORL,BOS,Orlando Magic,Boston Celtics,87,117,-30,Home,93.3,True,2017
+201612160BOS,"Fri, Dec 16, 2016",BOS,CHO,Boston Celtics,Charlotte Hornets,96,88,8,Home,96.4,True,2017
+201612180MIA,"Sun, Dec 18, 2016",MIA,BOS,Miami Heat,Boston Celtics,95,105,-10,Home,95.7,True,2017
+201612200MEM,"Tue, Dec 20, 2016",MEM,BOS,Memphis Grizzlies,Boston Celtics,109,112,-3,Home,88.2,True,2017
+201612220IND,"Thu, Dec 22, 2016",IND,BOS,Indiana Pacers,Boston Celtics,102,109,-7,Home,102.9,True,2017
+201612270BOS,"Tue, Dec 27, 2016",BOS,MEM,Boston Celtics,Memphis Grizzlies,113,103,10,Home,94.1,True,2017
+201612300BOS,"Fri, Dec 30, 2016",BOS,MIA,Boston Celtics,Miami Heat,117,114,3,Home,93.6,True,2017
+201701070BOS,"Sat, Jan 7, 2017",BOS,NOP,Boston Celtics,New Orleans Pelicans,117,108,9,Home,94.2,True,2017
+201701160BOS,"Mon, Jan 16, 2017",BOS,CHO,Boston Celtics,Charlotte Hornets,108,98,10,Home,91.8,True,2017
+201701270BOS,"Fri, Jan 27, 2017",BOS,ORL,Boston Celtics,Orlando Magic,128,98,30,Home,97.4,True,2017
+201701280MIL,"Sat, Jan 28, 2017",MIL,BOS,Milwaukee Bucks,Boston Celtics,108,112,-4,Home,93.8,True,2017
+201702050BOS,"Sun, Feb 5, 2017",BOS,LAC,Boston Celtics,Los Angeles Clippers,107,102,5,Home,97.6,True,2017
+201702160CHI,"Thu, Feb 16, 2017",CHI,BOS,Chicago Bulls,Boston Celtics,104,103,1,Home,86.8,True,2017
+201703050PHO,"Sun, Mar 5, 2017",PHO,BOS,Phoenix Suns,Boston Celtics,109,106,3,Home,101.3,True,2017
+201703060LAC,"Mon, Mar 6, 2017",LAC,BOS,Los Angeles Clippers,Boston Celtics,116,102,14,Home,97.4,True,2017
+201703120BOS,"Sun, Mar 12, 2017",BOS,CHI,Boston Celtics,Chicago Bulls,100,80,20,Home,93.9,True,2017
+201703150BOS,"Wed, Mar 15, 2017",BOS,MIN,Boston Celtics,Minnesota Timberwolves,117,104,13,Home,90.5,True,2017
+201703170BRK,"Fri, Mar 17, 2017",BRK,BOS,Brooklyn Nets,Boston Celtics,95,98,-3,Home,98.3,True,2017
+201703220BOS,"Wed, Mar 22, 2017",BOS,IND,Boston Celtics,Indiana Pacers,109,100,9,Home,91.4,True,2017
+201703240BOS,"Fri, Mar 24, 2017",BOS,PHO,Boston Celtics,Phoenix Suns,130,120,10,Home,109.3,True,2017
+201703260BOS,"Sun, Mar 26, 2017",BOS,MIA,Boston Celtics,Miami Heat,112,108,4,Home,94.5,True,2017
+201703290BOS,"Wed, Mar 29, 2017",BOS,MIL,Boston Celtics,Milwaukee Bucks,100,103,-3,Home,92.0,True,2017
+201703310BOS,"Fri, Mar 31, 2017",BOS,ORL,Boston Celtics,Orlando Magic,117,116,1,Home,103.2,True,2017
+201704080CHO,"Sat, Apr 8, 2017",CHO,BOS,Charlotte Hornets,Boston Celtics,114,121,-7,Home,96.7,True,2017
+201704100BOS,"Mon, Apr 10, 2017",BOS,BRK,Boston Celtics,Brooklyn Nets,114,105,9,Home,102.9,True,2017
+201704120BOS,"Wed, Apr 12, 2017",BOS,MIL,Boston Celtics,Milwaukee Bucks,112,94,18,Home,96.9,True,2017
+201704160BOS,"Sun, Apr 16, 2017",BOS,CHI,Boston Celtics,Chicago Bulls,102,106,-4,Home,92.8,True,2017
+201704180BOS,"Tue, Apr 18, 2017",BOS,CHI,Boston Celtics,Chicago Bulls,97,111,-14,Home,91.8,True,2017
+201704210CHI,"Fri, Apr 21, 2017",CHI,BOS,Chicago Bulls,Boston Celtics,87,104,-17,Home,91.0,True,2017
+201704230CHI,"Sun, Apr 23, 2017",CHI,BOS,Chicago Bulls,Boston Celtics,95,104,-9,Home,89.9,True,2017
+201704260BOS,"Wed, Apr 26, 2017",BOS,CHI,Boston Celtics,Chicago Bulls,108,97,11,Home,92.4,True,2017
+201704280CHI,"Fri, Apr 28, 2017",CHI,BOS,Chicago Bulls,Boston Celtics,83,105,-22,Home,88.6,True,2017
+201610280BRK,"Fri, Oct 28, 2016",BRK,IND,Brooklyn Nets,Indiana Pacers,103,94,9,Home,99.8,True,2017
+201610290MIL,"Sat, Oct 29, 2016",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,110,108,2,Home,101.7,True,2017
+201610310BRK,"Mon, Oct 31, 2016",BRK,CHI,Brooklyn Nets,Chicago Bulls,88,118,-30,Home,101.2,True,2017
+201611040BRK,"Fri, Nov 4, 2016",BRK,CHO,Brooklyn Nets,Charlotte Hornets,95,99,-4,Home,103.0,True,2017
+201611080BRK,"Tue, Nov 8, 2016",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,119,110,9,Home,101.8,True,2017
+201611120PHO,"Sat, Nov 12, 2016",PHO,BRK,Phoenix Suns,Brooklyn Nets,104,122,-18,Home,107.8,True,2017
+201611140LAC,"Mon, Nov 14, 2016",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,127,95,32,Home,97.8,True,2017
+201611250IND,"Fri, Nov 25, 2016",IND,BRK,Indiana Pacers,Brooklyn Nets,118,97,21,Home,98.0,True,2017
+201611290BRK,"Tue, Nov 29, 2016",BRK,LAC,Brooklyn Nets,Los Angeles Clippers,127,122,5,Home,99.6,True,2017
+201612010BRK,"Thu, Dec 1, 2016",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,93,111,-18,Home,95.5,True,2017
+201612030MIL,"Sat, Dec 3, 2016",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,112,103,9,Home,104.2,True,2017
+201612160ORL,"Fri, Dec 16, 2016",ORL,BRK,Orlando Magic,Brooklyn Nets,118,111,7,Home,104.5,True,2017
+201612260BRK,"Mon, Dec 26, 2016",BRK,CHO,Brooklyn Nets,Charlotte Hornets,120,118,2,Home,99.8,True,2017
+201612280CHI,"Wed, Dec 28, 2016",CHI,BRK,Chicago Bulls,Brooklyn Nets,101,99,2,Home,96.2,True,2017
+201701050IND,"Thu, Jan 5, 2017",IND,BRK,Indiana Pacers,Brooklyn Nets,121,109,12,Home,98.9,True,2017
+201701120BRK,"Thu, Jan 12, 2017",BRK,NOP,Brooklyn Nets,New Orleans Pelicans,95,104,-9,Home,107.4,True,2017
+201701200NOP,"Fri, Jan 20, 2017",NOP,BRK,New Orleans Pelicans,Brooklyn Nets,114,143,-29,Home,103.9,True,2017
+201701210CHO,"Sat, Jan 21, 2017",CHO,BRK,Charlotte Hornets,Brooklyn Nets,112,105,7,Home,99.2,True,2017
+201701250BRK,"Wed, Jan 25, 2017",BRK,MIA,Brooklyn Nets,Miami Heat,106,109,-3,Home,97.7,True,2017
+201701280MIN,"Sat, Jan 28, 2017",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,129,109,20,Home,103.4,True,2017
+201701300MIA,"Mon, Jan 30, 2017",MIA,BRK,Miami Heat,Brooklyn Nets,104,96,8,Home,95.2,True,2017
+201702030BRK,"Fri, Feb 3, 2017",BRK,IND,Brooklyn Nets,Indiana Pacers,97,106,-9,Home,101.0,True,2017
+201702070CHO,"Tue, Feb 7, 2017",CHO,BRK,Charlotte Hornets,Brooklyn Nets,111,107,4,Home,105.2,True,2017
+201702100BRK,"Fri, Feb 10, 2017",BRK,MIA,Brooklyn Nets,Miami Heat,99,108,-9,Home,98.9,True,2017
+201702130BRK,"Mon, Feb 13, 2017",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,103,112,-9,Home,93.9,True,2017
+201702150BRK,"Wed, Feb 15, 2017",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,125,129,-4,Home,104.0,True,2017
+201703060MEM,"Mon, Mar 6, 2017",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,109,122,-13,Home,98.0,True,2017
+201703230BRK,"Thu, Mar 23, 2017",BRK,PHO,Brooklyn Nets,Phoenix Suns,126,98,28,Home,110.1,True,2017
+201704010BRK,"Sat, Apr 1, 2017",BRK,ORL,Brooklyn Nets,Orlando Magic,121,111,10,Home,100.0,True,2017
+201704060ORL,"Thu, Apr 6, 2017",ORL,BRK,Orlando Magic,Brooklyn Nets,115,107,8,Home,102.1,True,2017
+201704080BRK,"Sat, Apr 8, 2017",BRK,CHI,Brooklyn Nets,Chicago Bulls,107,106,1,Home,102.1,True,2017
+201704120CHI,"Wed, Apr 12, 2017",CHI,BRK,Chicago Bulls,Brooklyn Nets,112,73,39,Home,100.2,True,2017
+201611010NOP,"Tue, Nov 1, 2016",NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,113,117,-4,Home,101.9,True,2017
+201611020MEM,"Wed, Nov 2, 2016",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,89,83,6,Home,92.6,True,2017
+201611040NOP,"Fri, Nov 4, 2016",NOP,PHO,New Orleans Pelicans,Phoenix Suns,111,112,-1,Home,96.2,True,2017
+201611100MIL,"Thu, Nov 10, 2016",MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,106,112,-6,Home,98.4,True,2017
+201611160ORL,"Wed, Nov 16, 2016",ORL,NOP,Orlando Magic,New Orleans Pelicans,89,82,7,Home,94.4,True,2017
+201611190NOP,"Sat, Nov 19, 2016",NOP,CHO,New Orleans Pelicans,Charlotte Hornets,121,116,5,Home,100.0,True,2017
+201611230NOP,"Wed, Nov 23, 2016",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,117,96,21,Home,105.9,True,2017
+201612020NOP,"Fri, Dec 2, 2016",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,96,114,-18,Home,91.9,True,2017
+201612050NOP,"Mon, Dec 5, 2016",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,108,110,-2,Home,92.5,True,2017
+201612100LAC,"Sat, Dec 10, 2016",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,133,105,28,Home,98.3,True,2017
+201612110PHO,"Sun, Dec 11, 2016",PHO,NOP,Phoenix Suns,New Orleans Pelicans,119,120,-1,Home,96.5,True,2017
+201612150NOP,"Thu, Dec 15, 2016",NOP,IND,New Orleans Pelicans,Indiana Pacers,102,95,7,Home,100.9,True,2017
+201612230NOP,"Fri, Dec 23, 2016",NOP,MIA,New Orleans Pelicans,Miami Heat,91,87,4,Home,94.8,True,2017
+201612280NOP,"Wed, Dec 28, 2016",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,102,98,4,Home,93.6,True,2017
+201701140CHI,"Sat, Jan 14, 2017",CHI,NOP,Chicago Bulls,New Orleans Pelicans,107,99,8,Home,97.4,True,2017
+201701160IND,"Mon, Jan 16, 2017",IND,NOP,Indiana Pacers,New Orleans Pelicans,98,95,3,Home,96.6,True,2017
+201701180NOP,"Wed, Jan 18, 2017",NOP,ORL,New Orleans Pelicans,Orlando Magic,118,98,20,Home,103.2,True,2017
+201702060NOP,"Mon, Feb 6, 2017",NOP,PHO,New Orleans Pelicans,Phoenix Suns,111,106,5,Home,106.2,True,2017
+201702100MIN,"Fri, Feb 10, 2017",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,106,122,-16,Home,97.0,True,2017
+201702130PHO,"Mon, Feb 13, 2017",PHO,NOP,Phoenix Suns,New Orleans Pelicans,108,110,-2,Home,103.0,True,2017
+201702150MEM,"Wed, Feb 15, 2017",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,91,95,-4,Home,94.5,True,2017
+201703110CHO,"Sat, Mar 11, 2017",CHO,NOP,Charlotte Hornets,New Orleans Pelicans,122,125,-3,Home,95.6,True,2017
+201703150MIA,"Wed, Mar 15, 2017",MIA,NOP,Miami Heat,New Orleans Pelicans,120,112,8,Home,99.5,True,2017
+201703190NOP,"Sun, Mar 19, 2017",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,123,109,14,Home,100.1,True,2017
+201703210NOP,"Tue, Mar 21, 2017",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,95,82,13,Home,94.1,True,2017
+201704020NOP,"Sun, Apr 2, 2017",NOP,CHI,New Orleans Pelicans,Chicago Bulls,110,117,-7,Home,100.0,True,2017
+201610260MEM,"Wed, Oct 26, 2016",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,102,98,4,Home,91.2,True,2017
+201611010MIN,"Tue, Nov 1, 2016",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,116,80,36,Home,97.6,True,2017
+201611090ORL,"Wed, Nov 9, 2016",ORL,MIN,Orlando Magic,Minnesota Timberwolves,107,123,-16,Home,92.2,True,2017
+201611120MIN,"Sat, Nov 12, 2016",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,105,119,-14,Home,94.2,True,2017
+201611150MIN,"Tue, Nov 15, 2016",MIN,CHO,Minnesota Timberwolves,Charlotte Hornets,108,115,-7,Home,98.1,True,2017
+201611190MEM,"Sat, Nov 19, 2016",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,93,71,22,Home,84.0,True,2017
+201611250PHO,"Fri, Nov 25, 2016",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,85,98,-13,Home,98.3,True,2017
+201612030CHO,"Sat, Dec 3, 2016",CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,120,125,-5,Home,98.4,True,2017
+201612130CHI,"Tue, Dec 13, 2016",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,94,99,-5,Home,90.6,True,2017
+201612190MIN,"Mon, Dec 19, 2016",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,115,108,7,Home,101.9,True,2017
+201612300MIN,"Fri, Dec 30, 2016",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,116,99,17,Home,86.9,True,2017
+201701190LAC,"Thu, Jan 19, 2017",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,101,104,-3,Home,92.0,True,2017
+201701240PHO,"Tue, Jan 24, 2017",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,111,112,-1,Home,98.6,True,2017
+201701260MIN,"Thu, Jan 26, 2017",MIN,IND,Minnesota Timberwolves,Indiana Pacers,103,109,-6,Home,97.3,True,2017
+201701300MIN,"Mon, Jan 30, 2017",MIN,ORL,Minnesota Timberwolves,Orlando Magic,111,105,6,Home,92.3,True,2017
+201702040MIN,"Sat, Feb 4, 2017",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,99,107,-8,Home,86.8,True,2017
+201702060MIN,"Mon, Feb 6, 2017",MIN,MIA,Minnesota Timberwolves,Miami Heat,113,115,-2,Home,92.8,True,2017
+201702120MIN,"Sun, Feb 12, 2017",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,117,89,28,Home,95.6,True,2017
+201703080MIN,"Wed, Mar 8, 2017",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,107,91,16,Home,92.3,True,2017
+201703110MIL,"Sat, Mar 11, 2017",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,102,95,7,Home,86.7,True,2017
+201703170MIA,"Fri, Mar 17, 2017",MIA,MIN,Miami Heat,Minnesota Timberwolves,123,105,18,Home,93.2,True,2017
+201703280IND,"Tue, Mar 28, 2017",IND,MIN,Indiana Pacers,Minnesota Timberwolves,114,115,-1,Home,94.5,True,2017
+201610310LAC,"Mon, Oct 31, 2016",LAC,PHO,Los Angeles Clippers,Phoenix Suns,116,98,18,Home,105.7,True,2017
+201611180IND,"Fri, Nov 18, 2016",IND,PHO,Indiana Pacers,Phoenix Suns,96,116,-20,Home,93.3,True,2017
+201611230ORL,"Wed, Nov 23, 2016",ORL,PHO,Orlando Magic,Phoenix Suns,87,92,-5,Home,94.7,True,2017
+201612070PHO,"Wed, Dec 7, 2016",PHO,IND,Phoenix Suns,Indiana Pacers,94,109,-15,Home,100.0,True,2017
+201701020LAC,"Mon, Jan 2, 2017",LAC,PHO,Los Angeles Clippers,Phoenix Suns,109,98,11,Home,100.7,True,2017
+201701030PHO,"Tue, Jan 3, 2017",PHO,MIA,Phoenix Suns,Miami Heat,99,90,9,Home,91.0,True,2017
+201701300PHO,"Mon, Jan 30, 2017",PHO,MEM,Phoenix Suns,Memphis Grizzlies,96,115,-19,Home,94.6,True,2017
+201702010PHO,"Wed, Feb 1, 2017",PHO,LAC,Phoenix Suns,Los Angeles Clippers,114,124,-10,Home,101.7,True,2017
+201702040PHO,"Sat, Feb 4, 2017",PHO,MIL,Phoenix Suns,Milwaukee Bucks,112,137,-25,Home,103.3,True,2017
+201702080MEM,"Wed, Feb 8, 2017",MEM,PHO,Memphis Grizzlies,Phoenix Suns,110,91,19,Home,94.4,True,2017
+201702100PHO,"Fri, Feb 10, 2017",PHO,CHI,Phoenix Suns,Chicago Bulls,115,97,18,Home,91.7,True,2017
+201702240CHI,"Fri, Feb 24, 2017",CHI,PHO,Chicago Bulls,Phoenix Suns,128,121,7,Home,100.2,True,2017
+201702260MIL,"Sun, Feb 26, 2017",MIL,PHO,Milwaukee Bucks,Phoenix Suns,100,96,4,Home,95.4,True,2017
+201702280MEM,"Tue, Feb 28, 2017",MEM,PHO,Memphis Grizzlies,Phoenix Suns,130,112,18,Home,94.4,True,2017
+201703020PHO,"Thu, Mar 2, 2017",PHO,CHO,Phoenix Suns,Charlotte Hornets,120,103,17,Home,102.8,True,2017
+201703170PHO,"Fri, Mar 17, 2017",PHO,ORL,Phoenix Suns,Orlando Magic,103,109,-6,Home,103.9,True,2017
+201703210MIA,"Tue, Mar 21, 2017",MIA,PHO,Miami Heat,Phoenix Suns,112,97,15,Home,102.3,True,2017
+201703260CHO,"Sun, Mar 26, 2017",CHO,PHO,Charlotte Hornets,Phoenix Suns,120,106,14,Home,93.6,True,2017
+201703300PHO,"Thu, Mar 30, 2017",PHO,LAC,Phoenix Suns,Los Angeles Clippers,118,124,-6,Home,101.3,True,2017
+201611040MEM,"Fri, Nov 4, 2016",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,88,99,-11,Home,95.7,True,2017
+201611120MIL,"Sat, Nov 12, 2016",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,106,96,10,Home,92.3,True,2017
+201611160LAC,"Wed, Nov 16, 2016",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,107,111,-4,Home,93.5,True,2017
+201611210CHO,"Mon, Nov 21, 2016",CHO,MEM,Charlotte Hornets,Memphis Grizzlies,90,105,-15,Home,90.3,True,2017
+201611250MEM,"Fri, Nov 25, 2016",MEM,MIA,Memphis Grizzlies,Miami Heat,81,90,-9,Home,88.9,True,2017
+201611260MIA,"Sat, Nov 26, 2016",MIA,MEM,Miami Heat,Memphis Grizzlies,107,110,-3,Home,90.3,True,2017
+201611280MEM,"Mon, Nov 28, 2016",MEM,CHO,Memphis Grizzlies,Charlotte Hornets,85,104,-19,Home,96.7,True,2017
+201612010MEM,"Thu, Dec 1, 2016",MEM,ORL,Memphis Grizzlies,Orlando Magic,95,94,1,Home,93.2,True,2017
+201612260ORL,"Mon, Dec 26, 2016",ORL,MEM,Orlando Magic,Memphis Grizzlies,112,102,10,Home,91.1,True,2017
+201701040LAC,"Wed, Jan 4, 2017",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,115,106,9,Home,95.0,True,2017
+201701150MEM,"Sun, Jan 15, 2017",MEM,CHI,Memphis Grizzlies,Chicago Bulls,104,108,-4,Home,97.2,True,2017
+201702240IND,"Fri, Feb 24, 2017",IND,MEM,Indiana Pacers,Memphis Grizzlies,102,92,10,Home,90.8,True,2017
+201703090MEM,"Thu, Mar 9, 2017",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,98,114,-16,Home,94.7,True,2017
+201703130MEM,"Mon, Mar 13, 2017",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,113,93,20,Home,84.7,True,2017
+201703150CHI,"Wed, Mar 15, 2017",CHI,MEM,Chicago Bulls,Memphis Grizzlies,91,98,-7,Home,86.2,True,2017
+201703290MEM,"Wed, Mar 29, 2017",MEM,IND,Memphis Grizzlies,Indiana Pacers,110,97,13,Home,90.7,True,2017
+201611190LAC,"Sat, Nov 19, 2016",LAC,CHI,Los Angeles Clippers,Chicago Bulls,102,95,7,Home,84.0,True,2017
+201611270IND,"Sun, Nov 27, 2016",IND,LAC,Indiana Pacers,Los Angeles Clippers,91,70,21,Home,93.2,True,2017
+201612040LAC,"Sun, Dec 4, 2016",LAC,IND,Los Angeles Clippers,Indiana Pacers,102,111,-9,Home,96.2,True,2017
+201612140ORL,"Wed, Dec 14, 2016",ORL,LAC,Orlando Magic,Los Angeles Clippers,108,113,-5,Home,91.9,True,2017
+201612160MIA,"Fri, Dec 16, 2016",MIA,LAC,Miami Heat,Los Angeles Clippers,98,102,-4,Home,96.2,True,2017
+201701080LAC,"Sun, Jan 8, 2017",LAC,MIA,Los Angeles Clippers,Miami Heat,98,86,12,Home,96.3,True,2017
+201701110LAC,"Wed, Jan 11, 2017",LAC,ORL,Los Angeles Clippers,Orlando Magic,105,96,9,Home,101.4,True,2017
+201702110CHO,"Sat, Feb 11, 2017",CHO,LAC,Charlotte Hornets,Los Angeles Clippers,102,107,-5,Home,93.5,True,2017
+201702260LAC,"Sun, Feb 26, 2017",LAC,CHO,Los Angeles Clippers,Charlotte Hornets,124,121,3,Home,93.2,True,2017
+201703030MIL,"Fri, Mar 3, 2017",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,112,101,11,Home,93.4,True,2017
+201703040CHI,"Sat, Mar 4, 2017",CHI,LAC,Chicago Bulls,Los Angeles Clippers,91,101,-10,Home,92.5,True,2017
+201703150LAC,"Wed, Mar 15, 2017",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,96,97,-1,Home,93.7,True,2017
+201610260ORL,"Wed, Oct 26, 2016",ORL,MIA,Orlando Magic,Miami Heat,96,108,-12,Home,94.3,True,2017
+201611070CHI,"Mon, Nov 7, 2016",CHI,ORL,Chicago Bulls,Orlando Magic,112,80,32,Home,94.0,True,2017
+201611140IND,"Mon, Nov 14, 2016",IND,ORL,Indiana Pacers,Orlando Magic,88,69,19,Home,93.6,True,2017
+201611210MIL,"Mon, Nov 21, 2016",MIL,ORL,Milwaukee Bucks,Orlando Magic,93,89,4,Home,99.2,True,2017
+201611270ORL,"Sun, Nov 27, 2016",ORL,MIL,Orlando Magic,Milwaukee Bucks,96,104,-8,Home,94.7,True,2017
+201612090CHO,"Fri, Dec 9, 2016",CHO,ORL,Charlotte Hornets,Orlando Magic,109,88,21,Home,93.5,True,2017
+201612200MIA,"Tue, Dec 20, 2016",MIA,ORL,Miami Heat,Orlando Magic,130,136,-6,Home,98.5,True,2017
+201612280ORL,"Wed, Dec 28, 2016",ORL,CHO,Orlando Magic,Charlotte Hornets,101,120,-19,Home,93.1,True,2017
+201701010IND,"Sun, Jan 1, 2017",IND,ORL,Indiana Pacers,Orlando Magic,117,104,13,Home,98.3,True,2017
+201701200ORL,"Fri, Jan 20, 2017",ORL,MIL,Orlando Magic,Milwaukee Bucks,112,96,16,Home,93.5,True,2017
+201701240ORL,"Tue, Jan 24, 2017",ORL,CHI,Orlando Magic,Chicago Bulls,92,100,-8,Home,97.4,True,2017
+201702010ORL,"Wed, Feb 1, 2017",ORL,IND,Orlando Magic,Indiana Pacers,88,98,-10,Home,92.1,True,2017
+201702130MIA,"Mon, Feb 13, 2017",MIA,ORL,Miami Heat,Orlando Magic,107,116,-9,Home,100.4,True,2017
+201703030ORL,"Fri, Mar 3, 2017",ORL,MIA,Orlando Magic,Miami Heat,110,99,11,Home,96.1,True,2017
+201703080ORL,"Wed, Mar 8, 2017",ORL,CHI,Orlando Magic,Chicago Bulls,98,91,7,Home,90.4,True,2017
+201703100CHO,"Fri, Mar 10, 2017",CHO,ORL,Charlotte Hornets,Orlando Magic,121,81,40,Home,86.6,True,2017
+201703220ORL,"Wed, Mar 22, 2017",ORL,CHO,Orlando Magic,Charlotte Hornets,102,109,-7,Home,91.7,True,2017
+201704080ORL,"Sat, Apr 8, 2017",ORL,IND,Orlando Magic,Indiana Pacers,112,127,-15,Home,101.9,True,2017
+201704100CHI,"Mon, Apr 10, 2017",CHI,ORL,Chicago Bulls,Orlando Magic,122,75,47,Home,95.6,True,2017
+201610260MIL,"Wed, Oct 26, 2016",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,96,107,-11,Home,96.5,True,2017
+201610280MIA,"Fri, Oct 28, 2016",MIA,CHO,Miami Heat,Charlotte Hornets,91,97,-6,Home,97.2,True,2017
+201611070CHO,"Mon, Nov 7, 2016",CHO,IND,Charlotte Hornets,Indiana Pacers,122,100,22,Home,104.6,True,2017
+201612120IND,"Mon, Dec 12, 2016",IND,CHO,Indiana Pacers,Charlotte Hornets,110,94,16,Home,97.7,True,2017
+201612230CHO,"Fri, Dec 23, 2016",CHO,CHI,Charlotte Hornets,Chicago Bulls,103,91,12,Home,90.7,True,2017
+201612290CHO,"Thu, Dec 29, 2016",CHO,MIA,Charlotte Hornets,Miami Heat,91,82,9,Home,97.1,True,2017
+201701020CHI,"Mon, Jan 2, 2017",CHI,CHO,Chicago Bulls,Charlotte Hornets,118,111,7,Home,95.3,True,2017
+201703060CHO,"Mon, Mar 6, 2017",CHO,IND,Charlotte Hornets,Indiana Pacers,100,88,12,Home,90.1,True,2017
+201703080MIA,"Wed, Mar 8, 2017",MIA,CHO,Miami Heat,Charlotte Hornets,108,101,7,Home,92.7,True,2017
+201703130CHO,"Mon, Mar 13, 2017",CHO,CHI,Charlotte Hornets,Chicago Bulls,109,115,-6,Home,95.4,True,2017
+201703150IND,"Wed, Mar 15, 2017",IND,CHO,Indiana Pacers,Charlotte Hornets,98,77,21,Home,89.2,True,2017
+201703280CHO,"Tue, Mar 28, 2017",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,108,118,-10,Home,90.2,True,2017
+201704050CHO,"Wed, Apr 5, 2017",CHO,MIA,Charlotte Hornets,Miami Heat,99,112,-13,Home,87.5,True,2017
+201704100MIL,"Mon, Apr 10, 2017",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,89,79,10,Home,87.0,True,2017
+201611100MIA,"Thu, Nov 10, 2016",MIA,CHI,Miami Heat,Chicago Bulls,95,98,-3,Home,91.6,True,2017
+201611170MIA,"Thu, Nov 17, 2016",MIA,MIL,Miami Heat,Milwaukee Bucks,96,73,23,Home,91.1,True,2017
+201612100CHI,"Sat, Dec 10, 2016",CHI,MIA,Chicago Bulls,Miami Heat,105,100,5,Home,94.1,True,2017
+201612140MIA,"Wed, Dec 14, 2016",MIA,IND,Miami Heat,Indiana Pacers,95,89,6,Home,94.5,True,2017
+201701130MIL,"Fri, Jan 13, 2017",MIL,MIA,Milwaukee Bucks,Miami Heat,116,108,8,Home,90.6,True,2017
+201701210MIA,"Sat, Jan 21, 2017",MIA,MIL,Miami Heat,Milwaukee Bucks,109,97,12,Home,90.5,True,2017
+201701270CHI,"Fri, Jan 27, 2017",CHI,MIA,Chicago Bulls,Miami Heat,88,100,-12,Home,96.7,True,2017
+201702080MIL,"Wed, Feb 8, 2017",MIL,MIA,Milwaukee Bucks,Miami Heat,88,106,-18,Home,90.6,True,2017
+201702250MIA,"Sat, Feb 25, 2017",MIA,IND,Miami Heat,Indiana Pacers,113,95,18,Home,94.8,True,2017
+201703120IND,"Sun, Mar 12, 2017",IND,MIA,Indiana Pacers,Miami Heat,102,98,4,Home,89.7,True,2017
+201611030MIL,"Thu, Nov 3, 2016",MIL,IND,Milwaukee Bucks,Indiana Pacers,125,107,18,Home,100.2,True,2017
+201612150MIL,"Thu, Dec 15, 2016",MIL,CHI,Milwaukee Bucks,Chicago Bulls,108,97,11,Home,94.1,True,2017
+201612160CHI,"Fri, Dec 16, 2016",CHI,MIL,Chicago Bulls,Milwaukee Bucks,69,95,-26,Home,87.3,True,2017
+201612310CHI,"Sat, Dec 31, 2016",CHI,MIL,Chicago Bulls,Milwaukee Bucks,96,116,-20,Home,89.6,True,2017
+201702110IND,"Sat, Feb 11, 2017",IND,MIL,Indiana Pacers,Milwaukee Bucks,100,116,-16,Home,86.3,True,2017
+201703100MIL,"Fri, Mar 10, 2017",MIL,IND,Milwaukee Bucks,Indiana Pacers,99,85,14,Home,91.5,True,2017
+201703260MIL,"Sun, Mar 26, 2017",MIL,CHI,Milwaukee Bucks,Chicago Bulls,94,109,-15,Home,90.7,True,2017
+201704060IND,"Thu, Apr 6, 2017",IND,MIL,Indiana Pacers,Milwaukee Bucks,104,89,15,Home,91.7,True,2017
+201610290CHI,"Sat, Oct 29, 2016",CHI,IND,Chicago Bulls,Indiana Pacers,118,101,17,Home,93.4,True,2017
+201611050IND,"Sat, Nov 5, 2016",IND,CHI,Indiana Pacers,Chicago Bulls,111,94,17,Home,90.9,True,2017
+201612260CHI,"Mon, Dec 26, 2016",CHI,IND,Chicago Bulls,Indiana Pacers,90,85,5,Home,89.3,True,2017
+201612300IND,"Fri, Dec 30, 2016",IND,CHI,Indiana Pacers,Chicago Bulls,111,101,10,Home,94.2,True,2017

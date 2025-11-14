@@ -1,0 +1,1075 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201112260ORL,"Mon, Dec 26, 2011",ORL,HOU,Orlando Magic,Houston Rockets,104,95,9,Home,88.3,True,2012
+201112290HOU,"Thu, Dec 29, 2011",HOU,SAS,Houston Rockets,San Antonio Spurs,105,85,20,Home,86.8,True,2012
+201112300MEM,"Fri, Dec 30, 2011",MEM,HOU,Memphis Grizzlies,Houston Rockets,113,93,20,Home,99.8,True,2012
+201112310HOU,"Sat, Dec 31, 2011",HOU,ATL,Houston Rockets,Atlanta Hawks,95,84,11,Home,89.4,True,2012
+201201030LAL,"Tue, Jan 3, 2012",LAL,HOU,Los Angeles Lakers,Houston Rockets,108,99,9,Home,94.5,True,2012
+201201040LAC,"Wed, Jan 4, 2012",LAC,HOU,Los Angeles Clippers,Houston Rockets,117,89,28,Home,93.4,True,2012
+201201060OKC,"Fri, Jan 6, 2012",OKC,HOU,Oklahoma City Thunder,Houston Rockets,109,94,15,Home,90.6,True,2012
+201201070HOU,"Sat, Jan 7, 2012",HOU,OKC,Houston Rockets,Oklahoma City Thunder,95,98,-3,Home,87.2,True,2012
+201201100CHA,"Tue, Jan 10, 2012",CHA,HOU,Charlotte Bobcats,Houston Rockets,70,82,-12,Home,93.8,True,2012
+201201110SAS,"Wed, Jan 11, 2012",SAS,HOU,San Antonio Spurs,Houston Rockets,101,95,6,Home,84.4,True,2012
+201201130HOU,"Fri, Jan 13, 2012",HOU,SAC,Houston Rockets,Sacramento Kings,103,89,14,Home,89.8,True,2012
+201201140HOU,"Sat, Jan 14, 2012",HOU,POR,Houston Rockets,Portland Trail Blazers,107,105,2,Home,88.4,True,2012
+201201160WAS,"Mon, Jan 16, 2012",WAS,HOU,Washington Wizards,Houston Rockets,106,114,-8,Home,92.4,True,2012
+201201170HOU,"Tue, Jan 17, 2012",HOU,DET,Houston Rockets,Detroit Pistons,97,80,17,Home,86.0,True,2012
+201201190HOU,"Thu, Jan 19, 2012",HOU,NOH,Houston Rockets,New Orleans Hornets,90,88,2,Home,86.3,True,2012
+201201210HOU,"Sat, Jan 21, 2012",HOU,SAS,Houston Rockets,San Antonio Spurs,105,102,3,Home,92.4,True,2012
+201201230MIN,"Mon, Jan 23, 2012",MIN,HOU,Minnesota Timberwolves,Houston Rockets,92,107,-15,Home,100.2,True,2012
+201201250HOU,"Wed, Jan 25, 2012",HOU,MIL,Houston Rockets,Milwaukee Bucks,99,105,-6,Home,94.7,True,2012
+201201270HOU,"Fri, Jan 27, 2012",HOU,WAS,Houston Rockets,Washington Wizards,103,76,27,Home,97.7,True,2012
+201201280HOU,"Sat, Jan 28, 2012",HOU,NYK,Houston Rockets,New York Knicks,97,84,13,Home,92.5,True,2012
+201201300HOU,"Mon, Jan 30, 2012",HOU,MIN,Houston Rockets,Minnesota Timberwolves,108,120,-12,Home,96.3,True,2012
+201202010SAS,"Wed, Feb 1, 2012",SAS,HOU,San Antonio Spurs,Houston Rockets,99,91,8,Home,90.8,True,2012
+201202030HOU,"Fri, Feb 3, 2012",HOU,PHO,Houston Rockets,Phoenix Suns,99,81,18,Home,94.3,True,2012
+201202040MIN,"Sat, Feb 4, 2012",MIN,HOU,Minnesota Timberwolves,Houston Rockets,100,91,9,Home,92.4,True,2012
+201202060DEN,"Mon, Feb 6, 2012",DEN,HOU,Denver Nuggets,Houston Rockets,90,99,-9,Home,99.6,True,2012
+201202080POR,"Wed, Feb 8, 2012",POR,HOU,Portland Trail Blazers,Houston Rockets,96,103,-7,Home,95.7,True,2012
+201202090PHO,"Thu, Feb 9, 2012",PHO,HOU,Phoenix Suns,Houston Rockets,89,96,-7,Home,86.1,True,2012
+201202120GSW,"Sun, Feb 12, 2012",GSW,HOU,Golden State Warriors,Houston Rockets,106,97,9,Home,93.8,True,2012
+201202140MEM,"Tue, Feb 14, 2012",MEM,HOU,Memphis Grizzlies,Houston Rockets,93,83,10,Home,86.0,True,2012
+201202150HOU,"Wed, Feb 15, 2012",HOU,OKC,Houston Rockets,Oklahoma City Thunder,96,95,1,Home,95.9,True,2012
+201202170HOU,"Fri, Feb 17, 2012",HOU,MIN,Houston Rockets,Minnesota Timberwolves,98,111,-13,Home,90.5,True,2012
+201202190HOU,"Sun, Feb 19, 2012",HOU,UTA,Houston Rockets,Utah Jazz,101,85,16,Home,83.5,True,2012
+201202200HOU,"Mon, Feb 20, 2012",HOU,MEM,Houston Rockets,Memphis Grizzlies,97,93,4,Home,84.9,True,2012
+201202220HOU,"Wed, Feb 22, 2012",HOU,PHI,Houston Rockets,Philadelphia 76ers,93,87,6,Home,93.8,True,2012
+201202280HOU,"Tue, Feb 28, 2012",HOU,TOR,Houston Rockets,Toronto Raptors,88,85,3,Home,88.9,True,2012
+201202290UTA,"Wed, Feb 29, 2012",UTA,HOU,Utah Jazz,Houston Rockets,104,83,21,Home,93.2,True,2012
+201203020HOU,"Fri, Mar 2, 2012",HOU,DEN,Houston Rockets,Denver Nuggets,105,117,-12,Home,91.5,True,2012
+201203040HOU,"Sun, Mar 4, 2012",HOU,LAC,Houston Rockets,Los Angeles Clippers,103,105,-2,Home,86.0,True,2012
+201203060BOS,"Tue, Mar 6, 2012",BOS,HOU,Boston Celtics,Houston Rockets,97,92,5,Home,90.1,True,2012
+201203070TOR,"Wed, Mar 7, 2012",TOR,HOU,Toronto Raptors,Houston Rockets,116,98,18,Home,92.8,True,2012
+201203100NJN,"Sat, Mar 10, 2012",NJN,HOU,New Jersey Nets,Houston Rockets,106,112,-6,Home,83.6,True,2012
+201203110CLE,"Sun, Mar 11, 2012",CLE,HOU,Cleveland Cavaliers,Houston Rockets,118,107,11,Home,96.8,True,2012
+201203130OKC,"Tue, Mar 13, 2012",OKC,HOU,Oklahoma City Thunder,Houston Rockets,103,104,-1,Home,90.8,True,2012
+201203140HOU,"Wed, Mar 14, 2012",HOU,CHA,Houston Rockets,Charlotte Bobcats,107,87,20,Home,96.8,True,2012
+201203170LAC,"Sat, Mar 17, 2012",LAC,HOU,Los Angeles Clippers,Houston Rockets,95,91,4,Home,87.0,True,2012
+201203180PHO,"Sun, Mar 18, 2012",PHO,HOU,Phoenix Suns,Houston Rockets,99,86,13,Home,90.0,True,2012
+201203200HOU,"Tue, Mar 20, 2012",HOU,LAL,Houston Rockets,Los Angeles Lakers,107,104,3,Home,90.4,True,2012
+201203220HOU,"Thu, Mar 22, 2012",HOU,GSW,Houston Rockets,Golden State Warriors,109,83,26,Home,92.6,True,2012
+201203240HOU,"Sat, Mar 24, 2012",HOU,DAL,Houston Rockets,Dallas Mavericks,99,101,-2,Home,81.8,True,2012
+201203260HOU,"Mon, Mar 26, 2012",HOU,SAC,Houston Rockets,Sacramento Kings,113,106,7,Home,93.5,True,2012
+201203270DAL,"Tue, Mar 27, 2012",DAL,HOU,Dallas Mavericks,Houston Rockets,90,81,9,Home,90.5,True,2012
+201203300HOU,"Fri, Mar 30, 2012",HOU,MEM,Houston Rockets,Memphis Grizzlies,98,89,9,Home,87.2,True,2012
+201204010HOU,"Sun, Apr 1, 2012",HOU,IND,Houston Rockets,Indiana Pacers,102,104,-2,Home,84.2,True,2012
+201204020CHI,"Mon, Apr 2, 2012",CHI,HOU,Chicago Bulls,Houston Rockets,93,99,-6,Home,88.3,True,2012
+201204060LAL,"Fri, Apr 6, 2012",LAL,HOU,Los Angeles Lakers,Houston Rockets,107,112,-5,Home,98.5,True,2012
+201204080SAC,"Sun, Apr 8, 2012",SAC,HOU,Sacramento Kings,Houston Rockets,87,104,-17,Home,89.7,True,2012
+201204090POR,"Mon, Apr 9, 2012",POR,HOU,Portland Trail Blazers,Houston Rockets,89,94,-5,Home,88.9,True,2012
+201204110HOU,"Wed, Apr 11, 2012",HOU,UTA,Houston Rockets,Utah Jazz,91,103,-12,Home,90.0,True,2012
+201204130HOU,"Fri, Apr 13, 2012",HOU,PHO,Houston Rockets,Phoenix Suns,105,112,-7,Home,96.5,True,2012
+201204150DEN,"Sun, Apr 15, 2012",DEN,HOU,Denver Nuggets,Houston Rockets,101,86,15,Home,97.0,True,2012
+201204160HOU,"Mon, Apr 16, 2012",HOU,DEN,Houston Rockets,Denver Nuggets,102,105,-3,Home,94.7,True,2012
+201204180DAL,"Wed, Apr 18, 2012",DAL,HOU,Dallas Mavericks,Houston Rockets,117,110,7,Home,90.2,True,2012
+201204190NOH,"Thu, Apr 19, 2012",NOH,HOU,New Orleans Hornets,Houston Rockets,105,99,6,Home,89.0,True,2012
+201204210HOU,"Sat, Apr 21, 2012",HOU,GSW,Houston Rockets,Golden State Warriors,99,96,3,Home,87.9,True,2012
+201204220MIA,"Sun, Apr 22, 2012",MIA,HOU,Miami Heat,Houston Rockets,97,88,9,Home,90.2,True,2012
+201204260HOU,"Thu, Apr 26, 2012",HOU,NOH,Houston Rockets,New Orleans Hornets,84,77,7,Home,89.2,True,2012
+201112250OKC,"Sun, Dec 25, 2011",OKC,ORL,Oklahoma City Thunder,Orlando Magic,97,89,8,Home,92.5,True,2012
+201112290ORL,"Thu, Dec 29, 2011",ORL,NJN,Orlando Magic,New Jersey Nets,94,78,16,Home,90.9,True,2012
+201112300CHA,"Fri, Dec 30, 2011",CHA,ORL,Charlotte Bobcats,Orlando Magic,79,100,-21,Home,88.0,True,2012
+201201010ORL,"Sun, Jan 1, 2012",ORL,TOR,Orlando Magic,Toronto Raptors,102,96,6,Home,86.7,True,2012
+201201020DET,"Mon, Jan 2, 2012",DET,ORL,Detroit Pistons,Orlando Magic,89,78,11,Home,80.9,True,2012
+201201040ORL,"Wed, Jan 4, 2012",ORL,WAS,Orlando Magic,Washington Wizards,103,85,18,Home,92.0,True,2012
+201201060ORL,"Fri, Jan 6, 2012",ORL,CHI,Orlando Magic,Chicago Bulls,83,97,-14,Home,88.8,True,2012
+201201080SAC,"Sun, Jan 8, 2012",SAC,ORL,Sacramento Kings,Orlando Magic,97,104,-7,Home,90.6,True,2012
+201201110POR,"Wed, Jan 11, 2012",POR,ORL,Portland Trail Blazers,Orlando Magic,104,107,-3,Home,90.0,True,2012
+201201120GSW,"Thu, Jan 12, 2012",GSW,ORL,Golden State Warriors,Orlando Magic,109,117,-8,Home,94.8,True,2012
+201201160NYK,"Mon, Jan 16, 2012",NYK,ORL,New York Knicks,Orlando Magic,93,102,-9,Home,90.4,True,2012
+201201170ORL,"Tue, Jan 17, 2012",ORL,CHA,Orlando Magic,Charlotte Bobcats,96,89,7,Home,94.2,True,2012
+201201180ORL,"Wed, Jan 18, 2012",ORL,SAS,Orlando Magic,San Antonio Spurs,83,85,-2,Home,83.4,True,2012
+201201200ORL,"Fri, Jan 20, 2012",ORL,LAL,Orlando Magic,Los Angeles Lakers,92,80,12,Home,84.7,True,2012
+201201230BOS,"Mon, Jan 23, 2012",BOS,ORL,Boston Celtics,Orlando Magic,87,56,31,Home,89.7,True,2012
+201201240IND,"Tue, Jan 24, 2012",IND,ORL,Indiana Pacers,Orlando Magic,83,102,-19,Home,88.9,True,2012
+201201260ORL,"Thu, Jan 26, 2012",ORL,BOS,Orlando Magic,Boston Celtics,83,91,-8,Home,85.7,True,2012
+201201270NOH,"Fri, Jan 27, 2012",NOH,ORL,New Orleans Hornets,Orlando Magic,93,67,26,Home,87.3,True,2012
+201201290ORL,"Sun, Jan 29, 2012",ORL,IND,Orlando Magic,Indiana Pacers,85,106,-21,Home,90.7,True,2012
+201201300PHI,"Mon, Jan 30, 2012",PHI,ORL,Philadelphia 76ers,Orlando Magic,74,69,5,Home,83.9,True,2012
+201202010ORL,"Wed, Feb 1, 2012",ORL,WAS,Orlando Magic,Washington Wizards,109,103,6,Home,92.7,True,2012
+201202030ORL,"Fri, Feb 3, 2012",ORL,CLE,Orlando Magic,Cleveland Cavaliers,102,94,8,Home,90.2,True,2012
+201202040IND,"Sat, Feb 4, 2012",IND,ORL,Indiana Pacers,Orlando Magic,81,85,-4,Home,92.5,True,2012
+201202060ORL,"Mon, Feb 6, 2012",ORL,LAC,Orlando Magic,Los Angeles Clippers,102,107,-5,Home,84.0,True,2012
+201202080ORL,"Wed, Feb 8, 2012",ORL,MIA,Orlando Magic,Miami Heat,102,89,13,Home,85.8,True,2012
+201202100ORL,"Fri, Feb 10, 2012",ORL,ATL,Orlando Magic,Atlanta Hawks,87,89,-2,Home,84.6,True,2012
+201202110MIL,"Sat, Feb 11, 2012",MIL,ORL,Milwaukee Bucks,Orlando Magic,94,99,-5,Home,88.1,True,2012
+201202130ORL,"Mon, Feb 13, 2012",ORL,MIN,Orlando Magic,Minnesota Timberwolves,102,89,13,Home,93.9,True,2012
+201202150ORL,"Wed, Feb 15, 2012",ORL,PHI,Orlando Magic,Philadelphia 76ers,103,87,16,Home,90.3,True,2012
+201202170ORL,"Fri, Feb 17, 2012",ORL,MIL,Orlando Magic,Milwaukee Bucks,94,85,9,Home,93.4,True,2012
+201202190MIA,"Sun, Feb 19, 2012",MIA,ORL,Miami Heat,Orlando Magic,90,78,12,Home,87.0,True,2012
+201202200MIL,"Mon, Feb 20, 2012",MIL,ORL,Milwaukee Bucks,Orlando Magic,90,93,-3,Home,83.9,True,2012
+201202220NJN,"Wed, Feb 22, 2012",NJN,ORL,New Jersey Nets,Orlando Magic,91,108,-17,Home,86.4,True,2012
+201202230ATL,"Thu, Feb 23, 2012",ATL,ORL,Atlanta Hawks,Orlando Magic,83,78,5,Home,89.4,True,2012
+201202290WAS,"Wed, Feb 29, 2012",WAS,ORL,Washington Wizards,Orlando Magic,95,102,-7,Home,88.2,True,2012
+201203010ORL,"Thu, Mar 1, 2012",ORL,OKC,Orlando Magic,Oklahoma City Thunder,102,105,-3,Home,89.2,True,2012
+201203030ORL,"Sat, Mar 3, 2012",ORL,MIL,Orlando Magic,Milwaukee Bucks,114,98,16,Home,97.1,True,2012
+201203050TOR,"Mon, Mar 5, 2012",TOR,ORL,Toronto Raptors,Orlando Magic,88,92,-4,Home,88.5,True,2012
+201203060CHA,"Tue, Mar 6, 2012",CHA,ORL,Charlotte Bobcats,Orlando Magic,100,84,16,Home,88.7,True,2012
+201203080CHI,"Thu, Mar 8, 2012",CHI,ORL,Chicago Bulls,Orlando Magic,94,99,-5,Home,85.2,True,2012
+201203110ORL,"Sun, Mar 11, 2012",ORL,IND,Orlando Magic,Indiana Pacers,107,94,13,Home,90.7,True,2012
+201203130ORL,"Tue, Mar 13, 2012",ORL,MIA,Orlando Magic,Miami Heat,104,98,6,Home,90.5,True,2012
+201203140SAS,"Wed, Mar 14, 2012",SAS,ORL,San Antonio Spurs,Orlando Magic,122,111,11,Home,89.2,True,2012
+201203160ORL,"Fri, Mar 16, 2012",ORL,NJN,Orlando Magic,New Jersey Nets,86,70,16,Home,85.8,True,2012
+201203180MIA,"Sun, Mar 18, 2012",MIA,ORL,Miami Heat,Orlando Magic,91,81,10,Home,90.1,True,2012
+201203190ORL,"Mon, Mar 19, 2012",ORL,CHI,Orlando Magic,Chicago Bulls,59,85,-26,Home,83.7,True,2012
+201203210ORL,"Wed, Mar 21, 2012",ORL,PHO,Orlando Magic,Phoenix Suns,103,93,10,Home,92.3,True,2012
+201203230ORL,"Fri, Mar 23, 2012",ORL,CLE,Orlando Magic,Cleveland Cavaliers,93,80,13,Home,87.4,True,2012
+201203260TOR,"Mon, Mar 26, 2012",TOR,ORL,Toronto Raptors,Orlando Magic,101,117,-16,Home,87.4,True,2012
+201203280NYK,"Wed, Mar 28, 2012",NYK,ORL,New York Knicks,Orlando Magic,108,86,22,Home,86.0,True,2012
+201203300ORL,"Fri, Mar 30, 2012",ORL,DAL,Orlando Magic,Dallas Mavericks,98,100,-2,Home,93.1,True,2012
+201204010ORL,"Sun, Apr 1, 2012",ORL,DEN,Orlando Magic,Denver Nuggets,101,104,-3,Home,88.7,True,2012
+201204030DET,"Tue, Apr 3, 2012",DET,ORL,Detroit Pistons,Orlando Magic,102,95,7,Home,86.3,True,2012
+201204050ORL,"Thu, Apr 5, 2012",ORL,NYK,Orlando Magic,New York Knicks,80,96,-16,Home,83.3,True,2012
+201204070PHI,"Sat, Apr 7, 2012",PHI,ORL,Philadelphia 76ers,Orlando Magic,82,88,-6,Home,82.2,True,2012
+201204090ORL,"Mon, Apr 9, 2012",ORL,DET,Orlando Magic,Detroit Pistons,119,89,30,Home,85.9,True,2012
+201204100WAS,"Tue, Apr 10, 2012",WAS,ORL,Washington Wizards,Orlando Magic,93,85,8,Home,92.1,True,2012
+201204130ORL,"Fri, Apr 13, 2012",ORL,ATL,Orlando Magic,Atlanta Hawks,81,109,-28,Home,92.4,True,2012
+201204150CLE,"Sun, Apr 15, 2012",CLE,ORL,Cleveland Cavaliers,Orlando Magic,84,100,-16,Home,87.3,True,2012
+201204160ORL,"Mon, Apr 16, 2012",ORL,PHI,Orlando Magic,Philadelphia 76ers,113,100,13,Home,88.9,True,2012
+201204180BOS,"Wed, Apr 18, 2012",BOS,ORL,Boston Celtics,Orlando Magic,102,98,4,Home,89.7,True,2012
+201204210UTA,"Sat, Apr 21, 2012",UTA,ORL,Utah Jazz,Orlando Magic,117,107,10,Home,83.7,True,2012
+201204220DEN,"Sun, Apr 22, 2012",DEN,ORL,Denver Nuggets,Orlando Magic,101,74,27,Home,84.1,True,2012
+201204250ORL,"Wed, Apr 25, 2012",ORL,CHA,Orlando Magic,Charlotte Bobcats,102,95,7,Home,89.2,True,2012
+201204260MEM,"Thu, Apr 26, 2012",MEM,ORL,Memphis Grizzlies,Orlando Magic,88,76,12,Home,84.0,True,2012
+201204280IND,"Sat, Apr 28, 2012",IND,ORL,Indiana Pacers,Orlando Magic,77,81,-4,Home,86.0,True,2012
+201204300IND,"Mon, Apr 30, 2012",IND,ORL,Indiana Pacers,Orlando Magic,93,78,15,Home,82.8,True,2012
+201205020ORL,"Wed, May 2, 2012",ORL,IND,Orlando Magic,Indiana Pacers,74,97,-23,Home,87.1,True,2012
+201205050ORL,"Sat, May 5, 2012",ORL,IND,Orlando Magic,Indiana Pacers,99,101,-2,Home,85.2,True,2012
+201205080IND,"Tue, May 8, 2012",IND,ORL,Indiana Pacers,Orlando Magic,105,87,18,Home,86.6,True,2012
+201112260SAS,"Mon, Dec 26, 2011",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,95,82,13,Home,94.1,True,2012
+201112280SAS,"Wed, Dec 28, 2011",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,115,90,25,Home,90.0,True,2012
+201112310SAS,"Sat, Dec 31, 2011",SAS,UTA,San Antonio Spurs,Utah Jazz,104,89,15,Home,95.2,True,2012
+201201020MIN,"Mon, Jan 2, 2012",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,106,96,10,Home,88.2,True,2012
+201201040SAS,"Wed, Jan 4, 2012",SAS,GSW,San Antonio Spurs,Golden State Warriors,101,95,6,Home,91.5,True,2012
+201201050SAS,"Thu, Jan 5, 2012",SAS,DAL,San Antonio Spurs,Dallas Mavericks,93,71,22,Home,88.7,True,2012
+201201070SAS,"Sat, Jan 7, 2012",SAS,DEN,San Antonio Spurs,Denver Nuggets,121,117,4,Home,94.2,True,2012
+201201080OKC,"Sun, Jan 8, 2012",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,108,96,12,Home,94.1,True,2012
+201201100MIL,"Tue, Jan 10, 2012",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,106,103,3,Home,91.7,True,2012
+201201130SAS,"Fri, Jan 13, 2012",SAS,POR,San Antonio Spurs,Portland Trail Blazers,99,83,16,Home,96.1,True,2012
+201201150SAS,"Sun, Jan 15, 2012",SAS,PHO,San Antonio Spurs,Phoenix Suns,102,91,11,Home,95.7,True,2012
+201201170MIA,"Tue, Jan 17, 2012",MIA,SAS,Miami Heat,San Antonio Spurs,120,98,22,Home,88.5,True,2012
+201201200SAS,"Fri, Jan 20, 2012",SAS,SAC,San Antonio Spurs,Sacramento Kings,86,88,-2,Home,89.0,True,2012
+201201230NOH,"Mon, Jan 23, 2012",NOH,SAS,New Orleans Hornets,San Antonio Spurs,102,104,-2,Home,88.3,True,2012
+201201250SAS,"Wed, Jan 25, 2012",SAS,ATL,San Antonio Spurs,Atlanta Hawks,105,83,22,Home,93.8,True,2012
+201201270MIN,"Fri, Jan 27, 2012",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,87,79,8,Home,87.7,True,2012
+201201290DAL,"Sun, Jan 29, 2012",DAL,SAS,Dallas Mavericks,San Antonio Spurs,101,100,1,Home,86.5,True,2012
+201201300MEM,"Mon, Jan 30, 2012",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,73,83,-10,Home,87.2,True,2012
+201202020SAS,"Thu, Feb 2, 2012",SAS,NOH,San Antonio Spurs,New Orleans Hornets,93,81,12,Home,84.2,True,2012
+201202040SAS,"Sat, Feb 4, 2012",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,107,96,11,Home,94.5,True,2012
+201202060MEM,"Mon, Feb 6, 2012",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,84,89,-5,Home,91.9,True,2012
+201202080PHI,"Wed, Feb 8, 2012",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,90,100,-10,Home,88.5,True,2012
+201202110NJN,"Sat, Feb 11, 2012",NJN,SAS,New Jersey Nets,San Antonio Spurs,89,103,-14,Home,89.9,True,2012
+201202140DET,"Tue, Feb 14, 2012",DET,SAS,Detroit Pistons,San Antonio Spurs,95,99,-4,Home,94.6,True,2012
+201202150TOR,"Wed, Feb 15, 2012",TOR,SAS,Toronto Raptors,San Antonio Spurs,106,113,-7,Home,98.3,True,2012
+201202180LAC,"Sat, Feb 18, 2012",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,100,103,-3,Home,86.8,True,2012
+201202200UTA,"Mon, Feb 20, 2012",UTA,SAS,Utah Jazz,San Antonio Spurs,102,106,-4,Home,96.5,True,2012
+201202210POR,"Tue, Feb 21, 2012",POR,SAS,Portland Trail Blazers,San Antonio Spurs,137,97,40,Home,96.7,True,2012
+201202230DEN,"Thu, Feb 23, 2012",DEN,SAS,Denver Nuggets,San Antonio Spurs,99,114,-15,Home,92.0,True,2012
+201202290SAS,"Wed, Feb 29, 2012",SAS,CHI,San Antonio Spurs,Chicago Bulls,89,96,-7,Home,94.6,True,2012
+201203020SAS,"Fri, Mar 2, 2012",SAS,CHA,San Antonio Spurs,Charlotte Bobcats,102,72,30,Home,92.9,True,2012
+201203040SAS,"Sun, Mar 4, 2012",SAS,DEN,San Antonio Spurs,Denver Nuggets,94,99,-5,Home,93.1,True,2012
+201203070SAS,"Wed, Mar 7, 2012",SAS,NYK,San Antonio Spurs,New York Knicks,118,105,13,Home,99.2,True,2012
+201203090SAS,"Fri, Mar 9, 2012",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,108,120,-12,Home,90.9,True,2012
+201203120SAS,"Mon, Mar 12, 2012",SAS,WAS,San Antonio Spurs,Washington Wizards,112,97,15,Home,90.6,True,2012
+201203160OKC,"Fri, Mar 16, 2012",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,105,114,-9,Home,98.4,True,2012
+201203170DAL,"Sat, Mar 17, 2012",DAL,SAS,Dallas Mavericks,San Antonio Spurs,106,99,7,Home,91.0,True,2012
+201203210SAS,"Wed, Mar 21, 2012",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,116,100,16,Home,100.3,True,2012
+201203230SAS,"Fri, Mar 23, 2012",SAS,DAL,San Antonio Spurs,Dallas Mavericks,104,87,17,Home,92.4,True,2012
+201203240NOH,"Sat, Mar 24, 2012",NOH,SAS,New Orleans Hornets,San Antonio Spurs,86,89,-3,Home,86.6,True,2012
+201203250SAS,"Sun, Mar 25, 2012",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,93,76,17,Home,97.5,True,2012
+201203270PHO,"Tue, Mar 27, 2012",PHO,SAS,Phoenix Suns,San Antonio Spurs,100,107,-7,Home,89.8,True,2012
+201203280SAC,"Wed, Mar 28, 2012",SAC,SAS,Sacramento Kings,San Antonio Spurs,112,117,-5,Home,98.1,True,2012
+201203310SAS,"Sat, Mar 31, 2012",SAS,IND,San Antonio Spurs,Indiana Pacers,112,103,9,Home,92.0,True,2012
+201204030CLE,"Tue, Apr 3, 2012",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,90,125,-35,Home,88.6,True,2012
+201204040BOS,"Wed, Apr 4, 2012",BOS,SAS,Boston Celtics,San Antonio Spurs,86,87,-1,Home,94.3,True,2012
+201204060SAS,"Fri, Apr 6, 2012",SAS,NOH,San Antonio Spurs,New Orleans Hornets,128,103,25,Home,94.4,True,2012
+201204080SAS,"Sun, Apr 8, 2012",SAS,UTA,San Antonio Spurs,Utah Jazz,114,104,10,Home,98.4,True,2012
+201204090UTA,"Mon, Apr 9, 2012",UTA,SAS,Utah Jazz,San Antonio Spurs,91,84,7,Home,89.3,True,2012
+201204110SAS,"Wed, Apr 11, 2012",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,84,98,-14,Home,89.4,True,2012
+201204120SAS,"Thu, Apr 12, 2012",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,107,97,10,Home,95.4,True,2012
+201204140SAS,"Sat, Apr 14, 2012",SAS,PHO,San Antonio Spurs,Phoenix Suns,105,91,14,Home,96.3,True,2012
+201204160GSW,"Mon, Apr 16, 2012",GSW,SAS,Golden State Warriors,San Antonio Spurs,99,120,-21,Home,100.3,True,2012
+201204170LAL,"Tue, Apr 17, 2012",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,91,112,-21,Home,94.3,True,2012
+201204180SAC,"Wed, Apr 18, 2012",SAC,SAS,Sacramento Kings,San Antonio Spurs,102,127,-25,Home,93.6,True,2012
+201204200SAS,"Fri, Apr 20, 2012",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,121,97,24,Home,88.6,True,2012
+201204220SAS,"Sun, Apr 22, 2012",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,114,98,16,Home,97.5,True,2012
+201204230SAS,"Mon, Apr 23, 2012",SAS,POR,San Antonio Spurs,Portland Trail Blazers,124,89,35,Home,97.1,True,2012
+201204250PHO,"Wed, Apr 25, 2012",PHO,SAS,Phoenix Suns,San Antonio Spurs,106,110,-4,Home,97.7,True,2012
+201204260GSW,"Thu, Apr 26, 2012",GSW,SAS,Golden State Warriors,San Antonio Spurs,101,107,-6,Home,96.8,True,2012
+201204290SAS,"Sun, Apr 29, 2012",SAS,UTA,San Antonio Spurs,Utah Jazz,106,91,15,Home,91.7,True,2012
+201205020SAS,"Wed, May 2, 2012",SAS,UTA,San Antonio Spurs,Utah Jazz,114,83,31,Home,93.0,True,2012
+201205050UTA,"Sat, May 5, 2012",UTA,SAS,Utah Jazz,San Antonio Spurs,90,102,-12,Home,89.4,True,2012
+201205070UTA,"Mon, May 7, 2012",UTA,SAS,Utah Jazz,San Antonio Spurs,81,87,-6,Home,91.4,True,2012
+201205150SAS,"Tue, May 15, 2012",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,108,92,16,Home,93.8,True,2012
+201205170SAS,"Thu, May 17, 2012",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,105,88,17,Home,87.9,True,2012
+201205190LAC,"Sat, May 19, 2012",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,86,96,-10,Home,91.2,True,2012
+201205200LAC,"Sun, May 20, 2012",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,99,102,-3,Home,88.7,True,2012
+201205270SAS,"Sun, May 27, 2012",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,101,98,3,Home,95.9,True,2012
+201205290SAS,"Tue, May 29, 2012",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,120,111,9,Home,95.1,True,2012
+201205310OKC,"Thu, May 31, 2012",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,102,82,20,Home,88.2,True,2012
+201206020OKC,"Sat, Jun 2, 2012",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,109,103,6,Home,90.5,True,2012
+201206040SAS,"Mon, Jun 4, 2012",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,103,108,-5,Home,97.3,True,2012
+201206060OKC,"Wed, Jun 6, 2012",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,107,99,8,Home,92.5,True,2012
+201112280MEM,"Wed, Dec 28, 2011",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,95,98,-3,Home,88.6,True,2012
+201201010CHI,"Sun, Jan 1, 2012",CHI,MEM,Chicago Bulls,Memphis Grizzlies,104,64,40,Home,89.7,True,2012
+201201030MEM,"Tue, Jan 3, 2012",MEM,SAC,Memphis Grizzlies,Sacramento Kings,113,96,17,Home,96.3,True,2012
+201201040MIN,"Wed, Jan 4, 2012",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,86,90,-4,Home,87.7,True,2012
+201201060UTA,"Fri, Jan 6, 2012",UTA,MEM,Utah Jazz,Memphis Grizzlies,94,85,9,Home,91.0,True,2012
+201201080LAL,"Sun, Jan 8, 2012",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,90,82,8,Home,95.2,True,2012
+201201100MEM,"Tue, Jan 10, 2012",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,95,100,-5,Home,89.2,True,2012
+201201120MEM,"Thu, Jan 12, 2012",MEM,NYK,Memphis Grizzlies,New York Knicks,94,83,11,Home,95.3,True,2012
+201201140MEM,"Sat, Jan 14, 2012",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,108,99,9,Home,89.5,True,2012
+201201160MEM,"Mon, Jan 16, 2012",MEM,CHI,Memphis Grizzlies,Chicago Bulls,102,86,16,Home,92.3,True,2012
+201201180NOH,"Wed, Jan 18, 2012",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,87,93,-6,Home,83.1,True,2012
+201201200DET,"Fri, Jan 20, 2012",DET,MEM,Detroit Pistons,Memphis Grizzlies,81,98,-17,Home,87.6,True,2012
+201201210MEM,"Sat, Jan 21, 2012",MEM,SAC,Memphis Grizzlies,Sacramento Kings,128,95,33,Home,100.4,True,2012
+201201230GSW,"Mon, Jan 23, 2012",GSW,MEM,Golden State Warriors,Memphis Grizzlies,90,91,-1,Home,94.4,True,2012
+201201240POR,"Tue, Jan 24, 2012",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,97,84,13,Home,94.3,True,2012
+201201260LAC,"Thu, Jan 26, 2012",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,98,91,7,Home,92.9,True,2012
+201201280PHO,"Sat, Jan 28, 2012",PHO,MEM,Phoenix Suns,Memphis Grizzlies,86,84,2,Home,89.9,True,2012
+201201310MEM,"Tue, Jan 31, 2012",MEM,DEN,Memphis Grizzlies,Denver Nuggets,100,97,3,Home,91.3,True,2012
+201202020ATL,"Thu, Feb 2, 2012",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,77,96,-19,Home,87.4,True,2012
+201202030OKC,"Fri, Feb 3, 2012",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,101,94,7,Home,90.7,True,2012
+201202050BOS,"Sun, Feb 5, 2012",BOS,MEM,Boston Celtics,Memphis Grizzlies,98,80,18,Home,90.0,True,2012
+201202080MEM,"Wed, Feb 8, 2012",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,85,80,5,Home,92.0,True,2012
+201202100MEM,"Fri, Feb 10, 2012",MEM,IND,Memphis Grizzlies,Indiana Pacers,98,92,6,Home,90.4,True,2012
+201202120MEM,"Sun, Feb 12, 2012",MEM,UTA,Memphis Grizzlies,Utah Jazz,88,98,-10,Home,85.9,True,2012
+201202150NJN,"Wed, Feb 15, 2012",NJN,MEM,New Jersey Nets,Memphis Grizzlies,100,105,-5,Home,85.3,True,2012
+201202170MEM,"Fri, Feb 17, 2012",MEM,DEN,Memphis Grizzlies,Denver Nuggets,103,102,1,Home,89.9,True,2012
+201202180MEM,"Sat, Feb 18, 2012",MEM,GSW,Memphis Grizzlies,Golden State Warriors,104,103,1,Home,93.0,True,2012
+201202210MEM,"Tue, Feb 21, 2012",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,89,76,13,Home,89.1,True,2012
+201202290MEM,"Wed, Feb 29, 2012",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,96,85,11,Home,92.4,True,2012
+201203020TOR,"Fri, Mar 2, 2012",TOR,MEM,Toronto Raptors,Memphis Grizzlies,99,102,-3,Home,92.5,True,2012
+201203030MEM,"Sat, Mar 3, 2012",MEM,DET,Memphis Grizzlies,Detroit Pistons,100,83,17,Home,87.6,True,2012
+201203070GSW,"Wed, Mar 7, 2012",GSW,MEM,Golden State Warriors,Memphis Grizzlies,92,110,-18,Home,92.1,True,2012
+201203100PHO,"Sat, Mar 10, 2012",PHO,MEM,Phoenix Suns,Memphis Grizzlies,98,91,7,Home,90.5,True,2012
+201203110DEN,"Sun, Mar 11, 2012",DEN,MEM,Denver Nuggets,Memphis Grizzlies,91,94,-3,Home,94.4,True,2012
+201203130MEM,"Tue, Mar 13, 2012",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,111,116,-5,Home,90.0,True,2012
+201203160MEM,"Fri, Mar 16, 2012",MEM,TOR,Memphis Grizzlies,Toronto Raptors,110,114,-4,Home,96.1,True,2012
+201203180MEM,"Sun, Mar 18, 2012",MEM,WAS,Memphis Grizzlies,Washington Wizards,97,92,5,Home,94.3,True,2012
+201203200SAC,"Tue, Mar 20, 2012",SAC,MEM,Sacramento Kings,Memphis Grizzlies,119,110,9,Home,100.4,True,2012
+201203220POR,"Thu, Mar 22, 2012",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,97,93,4,Home,89.0,True,2012
+201203240LAC,"Sat, Mar 24, 2012",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,101,85,16,Home,84.3,True,2012
+201203250LAL,"Sun, Mar 25, 2012",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,96,102,-6,Home,87.4,True,2012
+201203270MEM,"Tue, Mar 27, 2012",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,93,86,7,Home,89.4,True,2012
+201203310MIL,"Sat, Mar 31, 2012",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,95,99,-4,Home,97.3,True,2012
+201204020OKC,"Mon, Apr 2, 2012",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,88,94,-6,Home,89.3,True,2012
+201204030MEM,"Tue, Apr 3, 2012",MEM,GSW,Memphis Grizzlies,Golden State Warriors,98,94,4,Home,90.7,True,2012
+201204040DAL,"Wed, Apr 4, 2012",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,95,85,10,Home,88.0,True,2012
+201204060MIA,"Fri, Apr 6, 2012",MIA,MEM,Miami Heat,Memphis Grizzlies,82,97,-15,Home,84.8,True,2012
+201204070MEM,"Sat, Apr 7, 2012",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,94,89,5,Home,88.3,True,2012
+201204090MEM,"Mon, Apr 9, 2012",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,94,85,9,Home,84.6,True,2012
+201204110MEM,"Wed, Apr 11, 2012",MEM,PHO,Memphis Grizzlies,Phoenix Suns,104,93,11,Home,83.1,True,2012
+201204140MEM,"Sat, Apr 14, 2012",MEM,UTA,Memphis Grizzlies,Utah Jazz,103,98,5,Home,86.8,True,2012
+201204150NOH,"Sun, Apr 15, 2012",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,88,75,13,Home,85.1,True,2012
+201204170MIN,"Tue, Apr 17, 2012",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,84,91,-7,Home,86.4,True,2012
+201204180MEM,"Wed, Apr 18, 2012",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,103,91,12,Home,84.8,True,2012
+201204200CHA,"Fri, Apr 20, 2012",CHA,MEM,Charlotte Bobcats,Memphis Grizzlies,80,85,-5,Home,91.1,True,2012
+201204210MEM,"Sat, Apr 21, 2012",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,93,89,4,Home,85.3,True,2012
+201204230MEM,"Mon, Apr 23, 2012",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,109,101,8,Home,89.5,True,2012
+201204290MEM,"Sun, Apr 29, 2012",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,98,99,-1,Home,89.3,True,2012
+201205020MEM,"Wed, May 2, 2012",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,105,98,7,Home,87.6,True,2012
+201205050LAC,"Sat, May 5, 2012",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,87,86,1,Home,90.1,True,2012
+201205070LAC,"Mon, May 7, 2012",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,101,97,4,Home,80.5,True,2012
+201205090MEM,"Wed, May 9, 2012",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,92,80,12,Home,85.6,True,2012
+201205110LAC,"Fri, May 11, 2012",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,88,90,-2,Home,87.2,True,2012
+201205130MEM,"Sun, May 13, 2012",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,72,82,-10,Home,88.0,True,2012
+201112270NJN,"Tue, Dec 27, 2011",NJN,ATL,New Jersey Nets,Atlanta Hawks,70,106,-36,Home,87.5,True,2012
+201112280ATL,"Wed, Dec 28, 2011",ATL,WAS,Atlanta Hawks,Washington Wizards,101,83,18,Home,91.8,True,2012
+201112300ATL,"Fri, Dec 30, 2011",ATL,NJN,Atlanta Hawks,New Jersey Nets,105,98,7,Home,85.1,True,2012
+201201020MIA,"Mon, Jan 2, 2012",MIA,ATL,Miami Heat,Atlanta Hawks,92,100,-8,Home,89.7,True,2012
+201201030CHI,"Tue, Jan 3, 2012",CHI,ATL,Chicago Bulls,Atlanta Hawks,76,74,2,Home,89.0,True,2012
+201201050ATL,"Thu, Jan 5, 2012",ATL,MIA,Atlanta Hawks,Miami Heat,109,116,-7,Home,86.9,True,2012
+201201060CHA,"Fri, Jan 6, 2012",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,96,102,-6,Home,84.5,True,2012
+201201070ATL,"Sat, Jan 7, 2012",ATL,CHI,Atlanta Hawks,Chicago Bulls,109,94,15,Home,91.6,True,2012
+201201090NJN,"Mon, Jan 9, 2012",NJN,ATL,New Jersey Nets,Atlanta Hawks,101,106,-5,Home,87.6,True,2012
+201201110IND,"Wed, Jan 11, 2012",IND,ATL,Indiana Pacers,Atlanta Hawks,96,84,12,Home,97.0,True,2012
+201201120ATL,"Thu, Jan 12, 2012",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,111,81,30,Home,89.7,True,2012
+201201140ATL,"Sat, Jan 14, 2012",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,93,91,2,Home,92.6,True,2012
+201201160ATL,"Mon, Jan 16, 2012",ATL,TOR,Atlanta Hawks,Toronto Raptors,93,84,9,Home,87.8,True,2012
+201201180ATL,"Wed, Jan 18, 2012",ATL,POR,Atlanta Hawks,Portland Trail Blazers,92,89,3,Home,92.1,True,2012
+201201200PHI,"Fri, Jan 20, 2012",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,90,76,14,Home,87.2,True,2012
+201201210ATL,"Sat, Jan 21, 2012",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,121,94,27,Home,92.9,True,2012
+201201230MIL,"Mon, Jan 23, 2012",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,92,97,-5,Home,96.1,True,2012
+201201270DET,"Fri, Jan 27, 2012",DET,ATL,Detroit Pistons,Atlanta Hawks,101,107,-6,Home,88.9,True,2012
+201201290NOH,"Sun, Jan 29, 2012",NOH,ATL,New Orleans Hornets,Atlanta Hawks,72,94,-22,Home,83.5,True,2012
+201201310TOR,"Tue, Jan 31, 2012",TOR,ATL,Toronto Raptors,Atlanta Hawks,77,100,-23,Home,89.7,True,2012
+201202040ATL,"Sat, Feb 4, 2012",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,87,98,-11,Home,87.1,True,2012
+201202060ATL,"Mon, Feb 6, 2012",ATL,PHO,Atlanta Hawks,Phoenix Suns,90,99,-9,Home,85.6,True,2012
+201202080ATL,"Wed, Feb 8, 2012",ATL,IND,Atlanta Hawks,Indiana Pacers,97,87,10,Home,87.1,True,2012
+201202120ATL,"Sun, Feb 12, 2012",ATL,MIA,Atlanta Hawks,Miami Heat,87,107,-20,Home,90.2,True,2012
+201202140LAL,"Tue, Feb 14, 2012",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,86,78,8,Home,87.8,True,2012
+201202150PHO,"Wed, Feb 15, 2012",PHO,ATL,Phoenix Suns,Atlanta Hawks,99,101,-2,Home,94.4,True,2012
+201202180POR,"Sat, Feb 18, 2012",POR,ATL,Portland Trail Blazers,Atlanta Hawks,97,77,20,Home,82.4,True,2012
+201202200CHI,"Mon, Feb 20, 2012",CHI,ATL,Chicago Bulls,Atlanta Hawks,90,79,11,Home,88.7,True,2012
+201202220NYK,"Wed, Feb 22, 2012",NYK,ATL,New York Knicks,Atlanta Hawks,99,82,17,Home,96.9,True,2012
+201202290ATL,"Wed, Feb 29, 2012",ATL,GSW,Atlanta Hawks,Golden State Warriors,82,85,-3,Home,90.9,True,2012
+201203020ATL,"Fri, Mar 2, 2012",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,99,94,5,Home,101.6,True,2012
+201203030ATL,"Sat, Mar 3, 2012",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,97,90,7,Home,93.1,True,2012
+201203060IND,"Tue, Mar 6, 2012",IND,ATL,Indiana Pacers,Atlanta Hawks,96,101,-5,Home,88.7,True,2012
+201203070MIA,"Wed, Mar 7, 2012",MIA,ATL,Miami Heat,Atlanta Hawks,89,86,3,Home,89.1,True,2012
+201203090DET,"Fri, Mar 9, 2012",DET,ATL,Detroit Pistons,Atlanta Hawks,86,85,1,Home,81.0,True,2012
+201203110SAC,"Sun, Mar 11, 2012",SAC,ATL,Sacramento Kings,Atlanta Hawks,99,106,-7,Home,94.4,True,2012
+201203130DEN,"Tue, Mar 13, 2012",DEN,ATL,Denver Nuggets,Atlanta Hawks,118,117,1,Home,89.8,True,2012
+201203140LAC,"Wed, Mar 14, 2012",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,96,82,14,Home,81.8,True,2012
+201203160ATL,"Fri, Mar 16, 2012",ATL,WAS,Atlanta Hawks,Washington Wizards,102,88,14,Home,88.9,True,2012
+201203180CLE,"Sun, Mar 18, 2012",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,87,103,-16,Home,89.8,True,2012
+201203190ATL,"Mon, Mar 19, 2012",ATL,BOS,Atlanta Hawks,Boston Celtics,76,79,-3,Home,89.6,True,2012
+201203210ATL,"Wed, Mar 21, 2012",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,103,102,1,Home,88.1,True,2012
+201203230ATL,"Fri, Mar 23, 2012",ATL,NJN,Atlanta Hawks,New Jersey Nets,93,84,9,Home,86.5,True,2012
+201203240WAS,"Sat, Mar 24, 2012",WAS,ATL,Washington Wizards,Atlanta Hawks,92,95,-3,Home,83.2,True,2012
+201203250ATL,"Sun, Mar 25, 2012",ATL,UTA,Atlanta Hawks,Utah Jazz,139,133,6,Home,85.6,True,2012
+201203270MIL,"Tue, Mar 27, 2012",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,108,101,7,Home,95.1,True,2012
+201203280ATL,"Wed, Mar 28, 2012",ATL,CHI,Atlanta Hawks,Chicago Bulls,77,98,-21,Home,82.9,True,2012
+201203300ATL,"Fri, Mar 30, 2012",ATL,NYK,Atlanta Hawks,New York Knicks,100,90,10,Home,90.3,True,2012
+201203310PHI,"Sat, Mar 31, 2012",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,95,90,5,Home,85.2,True,2012
+201204040ATL,"Wed, Apr 4, 2012",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,120,93,27,Home,90.5,True,2012
+201204060ATL,"Fri, Apr 6, 2012",ATL,DET,Atlanta Hawks,Detroit Pistons,101,96,5,Home,91.7,True,2012
+201204070CHA,"Sat, Apr 7, 2012",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,96,116,-20,Home,90.9,True,2012
+201204110BOS,"Wed, Apr 11, 2012",BOS,ATL,Boston Celtics,Atlanta Hawks,88,86,2,Home,89.4,True,2012
+201204150ATL,"Sun, Apr 15, 2012",ATL,TOR,Atlanta Hawks,Toronto Raptors,86,102,-16,Home,89.1,True,2012
+201204160TOR,"Mon, Apr 16, 2012",TOR,ATL,Toronto Raptors,Atlanta Hawks,87,109,-22,Home,89.9,True,2012
+201204180ATL,"Wed, Apr 18, 2012",ATL,DET,Atlanta Hawks,Detroit Pistons,116,84,32,Home,97.2,True,2012
+201204200ATL,"Fri, Apr 20, 2012",ATL,BOS,Atlanta Hawks,Boston Celtics,97,92,5,Home,85.5,True,2012
+201204220ATL,"Sun, Apr 22, 2012",ATL,NYK,Atlanta Hawks,New York Knicks,112,113,-1,Home,97.6,True,2012
+201204240ATL,"Tue, Apr 24, 2012",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,109,102,7,Home,91.0,True,2012
+201204260ATL,"Thu, Apr 26, 2012",ATL,DAL,Atlanta Hawks,Dallas Mavericks,106,89,17,Home,94.6,True,2012
+201204290ATL,"Sun, Apr 29, 2012",ATL,BOS,Atlanta Hawks,Boston Celtics,83,74,9,Home,85.3,True,2012
+201205010ATL,"Tue, May 1, 2012",ATL,BOS,Atlanta Hawks,Boston Celtics,80,87,-7,Home,90.7,True,2012
+201205040BOS,"Fri, May 4, 2012",BOS,ATL,Boston Celtics,Atlanta Hawks,90,84,6,Home,88.3,True,2012
+201205060BOS,"Sun, May 6, 2012",BOS,ATL,Boston Celtics,Atlanta Hawks,101,79,22,Home,90.4,True,2012
+201205080ATL,"Tue, May 8, 2012",ATL,BOS,Atlanta Hawks,Boston Celtics,87,86,1,Home,83.9,True,2012
+201205100BOS,"Thu, May 10, 2012",BOS,ATL,Boston Celtics,Atlanta Hawks,83,80,3,Home,84.2,True,2012
+201112250LAL,"Sun, Dec 25, 2011",LAL,CHI,Los Angeles Lakers,Chicago Bulls,87,88,-1,Home,88.0,True,2012
+201112260SAC,"Mon, Dec 26, 2011",SAC,LAL,Sacramento Kings,Los Angeles Lakers,100,91,9,Home,88.3,True,2012
+201112270LAL,"Tue, Dec 27, 2011",LAL,UTA,Los Angeles Lakers,Utah Jazz,96,71,25,Home,83.5,True,2012
+201112290LAL,"Thu, Dec 29, 2011",LAL,NYK,Los Angeles Lakers,New York Knicks,99,82,17,Home,86.6,True,2012
+201112310LAL,"Sat, Dec 31, 2011",LAL,DEN,Los Angeles Lakers,Denver Nuggets,92,89,3,Home,94.0,True,2012
+201201010DEN,"Sun, Jan 1, 2012",DEN,LAL,Denver Nuggets,Los Angeles Lakers,99,90,9,Home,97.3,True,2012
+201201050POR,"Thu, Jan 5, 2012",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,107,96,11,Home,90.3,True,2012
+201201060LAL,"Fri, Jan 6, 2012",LAL,GSW,Los Angeles Lakers,Golden State Warriors,97,90,7,Home,91.9,True,2012
+201201100LAL,"Tue, Jan 10, 2012",LAL,PHO,Los Angeles Lakers,Phoenix Suns,99,83,16,Home,86.8,True,2012
+201201110UTA,"Wed, Jan 11, 2012",UTA,LAL,Utah Jazz,Los Angeles Lakers,87,90,-3,Home,88.4,True,2012
+201201130LAL,"Fri, Jan 13, 2012",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,97,92,5,Home,95.0,True,2012
+201201140LAC,"Sat, Jan 14, 2012",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,102,94,8,Home,85.9,True,2012
+201201160LAL,"Mon, Jan 16, 2012",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,73,70,3,Home,88.3,True,2012
+201201190MIA,"Thu, Jan 19, 2012",MIA,LAL,Miami Heat,Los Angeles Lakers,98,87,11,Home,85.2,True,2012
+201201220LAL,"Sun, Jan 22, 2012",LAL,IND,Los Angeles Lakers,Indiana Pacers,96,98,-2,Home,87.7,True,2012
+201201250LAL,"Wed, Jan 25, 2012",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,96,91,5,Home,83.9,True,2012
+201201280MIL,"Sat, Jan 28, 2012",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,100,89,11,Home,86.1,True,2012
+201201290MIN,"Sun, Jan 29, 2012",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,101,106,-5,Home,89.9,True,2012
+201201310LAL,"Tue, Jan 31, 2012",LAL,CHA,Los Angeles Lakers,Charlotte Bobcats,106,73,33,Home,87.7,True,2012
+201202030DEN,"Fri, Feb 3, 2012",DEN,LAL,Denver Nuggets,Los Angeles Lakers,89,93,-4,Home,91.0,True,2012
+201202040UTA,"Sat, Feb 4, 2012",UTA,LAL,Utah Jazz,Los Angeles Lakers,96,87,9,Home,83.8,True,2012
+201202060PHI,"Mon, Feb 6, 2012",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,95,90,5,Home,81.7,True,2012
+201202090BOS,"Thu, Feb 9, 2012",BOS,LAL,Boston Celtics,Los Angeles Lakers,87,88,-1,Home,83.8,True,2012
+201202100NYK,"Fri, Feb 10, 2012",NYK,LAL,New York Knicks,Los Angeles Lakers,92,85,7,Home,94.0,True,2012
+201202120TOR,"Sun, Feb 12, 2012",TOR,LAL,Toronto Raptors,Los Angeles Lakers,92,94,-2,Home,89.9,True,2012
+201202170LAL,"Fri, Feb 17, 2012",LAL,PHO,Los Angeles Lakers,Phoenix Suns,111,99,12,Home,103.9,True,2012
+201202190PHO,"Sun, Feb 19, 2012",PHO,LAL,Phoenix Suns,Los Angeles Lakers,102,90,12,Home,94.4,True,2012
+201202200LAL,"Mon, Feb 20, 2012",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,103,92,11,Home,91.3,True,2012
+201202220DAL,"Wed, Feb 22, 2012",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,91,96,-5,Home,87.3,True,2012
+201202230OKC,"Thu, Feb 23, 2012",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,100,85,15,Home,90.7,True,2012
+201202290LAL,"Wed, Feb 29, 2012",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,104,85,19,Home,95.7,True,2012
+201203020LAL,"Fri, Mar 2, 2012",LAL,SAC,Los Angeles Lakers,Sacramento Kings,115,107,8,Home,96.2,True,2012
+201203040LAL,"Sun, Mar 4, 2012",LAL,MIA,Los Angeles Lakers,Miami Heat,93,83,10,Home,82.3,True,2012
+201203060DET,"Tue, Mar 6, 2012",DET,LAL,Detroit Pistons,Los Angeles Lakers,88,85,3,Home,79.5,True,2012
+201203070WAS,"Wed, Mar 7, 2012",WAS,LAL,Washington Wizards,Los Angeles Lakers,106,101,5,Home,96.3,True,2012
+201203090MIN,"Fri, Mar 9, 2012",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,102,105,-3,Home,91.4,True,2012
+201203110LAL,"Sun, Mar 11, 2012",LAL,BOS,Los Angeles Lakers,Boston Celtics,97,94,3,Home,89.6,True,2012
+201203140NOH,"Wed, Mar 14, 2012",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,101,107,-6,Home,91.1,True,2012
+201203160LAL,"Fri, Mar 16, 2012",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,97,92,5,Home,92.3,True,2012
+201203180LAL,"Sun, Mar 18, 2012",LAL,UTA,Los Angeles Lakers,Utah Jazz,99,103,-4,Home,103.6,True,2012
+201203210DAL,"Wed, Mar 21, 2012",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,93,109,-16,Home,88.0,True,2012
+201203230LAL,"Fri, Mar 23, 2012",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,103,96,7,Home,90.8,True,2012
+201203270GSW,"Tue, Mar 27, 2012",GSW,LAL,Golden State Warriors,Los Angeles Lakers,101,104,-3,Home,91.4,True,2012
+201203290LAL,"Thu, Mar 29, 2012",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,93,102,-9,Home,86.2,True,2012
+201203310LAL,"Sat, Mar 31, 2012",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,88,85,3,Home,87.4,True,2012
+201204010LAL,"Sun, Apr 1, 2012",LAL,GSW,Los Angeles Lakers,Golden State Warriors,120,112,8,Home,92.2,True,2012
+201204030LAL,"Tue, Apr 3, 2012",LAL,NJN,Los Angeles Lakers,New Jersey Nets,91,87,4,Home,86.3,True,2012
+201204040LAC,"Wed, Apr 4, 2012",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,108,113,-5,Home,93.1,True,2012
+201204070PHO,"Sat, Apr 7, 2012",PHO,LAL,Phoenix Suns,Los Angeles Lakers,125,105,20,Home,94.7,True,2012
+201204090NOH,"Mon, Apr 9, 2012",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,91,93,-2,Home,82.3,True,2012
+201204130LAL,"Fri, Apr 13, 2012",LAL,DEN,Los Angeles Lakers,Denver Nuggets,103,97,6,Home,93.1,True,2012
+201204150LAL,"Sun, Apr 15, 2012",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,112,108,4,Home,85.0,True,2012
+201204180GSW,"Wed, Apr 18, 2012",GSW,LAL,Golden State Warriors,Los Angeles Lakers,87,99,-12,Home,95.2,True,2012
+201204220LAL,"Sun, Apr 22, 2012",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,114,106,8,Home,91.2,True,2012
+201204260SAC,"Thu, Apr 26, 2012",SAC,LAL,Sacramento Kings,Los Angeles Lakers,113,96,17,Home,94.2,True,2012
+201204290LAL,"Sun, Apr 29, 2012",LAL,DEN,Los Angeles Lakers,Denver Nuggets,103,88,15,Home,92.0,True,2012
+201205010LAL,"Tue, May 1, 2012",LAL,DEN,Los Angeles Lakers,Denver Nuggets,104,100,4,Home,93.0,True,2012
+201205040DEN,"Fri, May 4, 2012",DEN,LAL,Denver Nuggets,Los Angeles Lakers,99,84,15,Home,87.1,True,2012
+201205060DEN,"Sun, May 6, 2012",DEN,LAL,Denver Nuggets,Los Angeles Lakers,88,92,-4,Home,84.9,True,2012
+201205080LAL,"Tue, May 8, 2012",LAL,DEN,Los Angeles Lakers,Denver Nuggets,99,102,-3,Home,92.5,True,2012
+201205100DEN,"Thu, May 10, 2012",DEN,LAL,Denver Nuggets,Los Angeles Lakers,113,96,17,Home,94.7,True,2012
+201205120LAL,"Sat, May 12, 2012",LAL,DEN,Los Angeles Lakers,Denver Nuggets,96,87,9,Home,84.7,True,2012
+201205140OKC,"Mon, May 14, 2012",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,119,90,29,Home,87.8,True,2012
+201205160OKC,"Wed, May 16, 2012",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,77,75,2,Home,81.5,True,2012
+201205180LAL,"Fri, May 18, 2012",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,99,96,3,Home,87.1,True,2012
+201205190LAL,"Sat, May 19, 2012",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,100,103,-3,Home,84.4,True,2012
+201205210OKC,"Mon, May 21, 2012",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,106,90,16,Home,94.7,True,2012
+201112250GSW,"Sun, Dec 25, 2011",GSW,LAC,Golden State Warriors,Los Angeles Clippers,86,105,-19,Home,90.3,True,2012
+201112300LAC,"Fri, Dec 30, 2011",LAC,CHI,Los Angeles Clippers,Chicago Bulls,101,114,-13,Home,88.0,True,2012
+201201010LAC,"Sun, Jan 1, 2012",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,93,88,5,Home,95.4,True,2012
+201201070LAC,"Sat, Jan 7, 2012",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,92,86,6,Home,88.6,True,2012
+201201100POR,"Tue, Jan 10, 2012",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,105,97,8,Home,89.2,True,2012
+201201110LAC,"Wed, Jan 11, 2012",LAC,MIA,Los Angeles Clippers,Miami Heat,95,89,6,Home,89.3,True,2012
+201201160LAC,"Mon, Jan 16, 2012",LAC,NJN,Los Angeles Clippers,New Jersey Nets,101,91,10,Home,88.4,True,2012
+201201170UTA,"Tue, Jan 17, 2012",UTA,LAC,Utah Jazz,Los Angeles Clippers,108,79,29,Home,92.1,True,2012
+201201180LAC,"Wed, Jan 18, 2012",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,91,89,2,Home,86.8,True,2012
+201201200LAC,"Fri, Jan 20, 2012",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,98,101,-3,Home,93.3,True,2012
+201201220LAC,"Sun, Jan 22, 2012",LAC,TOR,Los Angeles Clippers,Toronto Raptors,103,91,12,Home,96.7,True,2012
+201201290DEN,"Sun, Jan 29, 2012",DEN,LAC,Denver Nuggets,Los Angeles Clippers,105,109,-4,Home,92.5,True,2012
+201201300LAC,"Mon, Jan 30, 2012",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,112,100,12,Home,91.8,True,2012
+201202010UTA,"Wed, Feb 1, 2012",UTA,LAC,Utah Jazz,Los Angeles Clippers,105,107,-2,Home,96.0,True,2012
+201202020LAC,"Thu, Feb 2, 2012",LAC,DEN,Los Angeles Clippers,Denver Nuggets,91,112,-21,Home,87.8,True,2012
+201202040WAS,"Sat, Feb 4, 2012",WAS,LAC,Washington Wizards,Los Angeles Clippers,81,107,-26,Home,90.8,True,2012
+201202080CLE,"Wed, Feb 8, 2012",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,99,92,7,Home,84.8,True,2012
+201202100PHI,"Fri, Feb 10, 2012",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,77,78,-1,Home,80.0,True,2012
+201202110CHA,"Sat, Feb 11, 2012",CHA,LAC,Charlotte Bobcats,Los Angeles Clippers,86,111,-25,Home,84.0,True,2012
+201202130DAL,"Mon, Feb 13, 2012",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,96,92,4,Home,91.9,True,2012
+201202150LAC,"Wed, Feb 15, 2012",LAC,WAS,Los Angeles Clippers,Washington Wizards,102,84,18,Home,87.5,True,2012
+201202160POR,"Thu, Feb 16, 2012",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,71,74,-3,Home,83.5,True,2012
+201202200GSW,"Mon, Feb 20, 2012",GSW,LAC,Golden State Warriors,Los Angeles Clippers,104,97,7,Home,86.2,True,2012
+201202220LAC,"Wed, Feb 22, 2012",LAC,DEN,Los Angeles Clippers,Denver Nuggets,103,95,8,Home,89.9,True,2012
+201202280LAC,"Tue, Feb 28, 2012",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,97,109,-12,Home,88.2,True,2012
+201203010SAC,"Thu, Mar 1, 2012",SAC,LAC,Sacramento Kings,Los Angeles Clippers,100,108,-8,Home,94.1,True,2012
+201203020PHO,"Fri, Mar 2, 2012",PHO,LAC,Phoenix Suns,Los Angeles Clippers,81,78,3,Home,85.8,True,2012
+201203050MIN,"Mon, Mar 5, 2012",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,95,94,1,Home,86.6,True,2012
+201203070NJN,"Wed, Mar 7, 2012",NJN,LAC,New Jersey Nets,Los Angeles Clippers,101,100,1,Home,91.9,True,2012
+201203110LAC,"Sun, Mar 11, 2012",LAC,GSW,Los Angeles Clippers,Golden State Warriors,93,97,-4,Home,88.6,True,2012
+201203120LAC,"Mon, Mar 12, 2012",LAC,BOS,Los Angeles Clippers,Boston Celtics,85,94,-9,Home,83.7,True,2012
+201203150LAC,"Thu, Mar 15, 2012",LAC,PHO,Los Angeles Clippers,Phoenix Suns,87,91,-4,Home,82.7,True,2012
+201203180LAC,"Sun, Mar 18, 2012",LAC,DET,Los Angeles Clippers,Detroit Pistons,87,83,4,Home,82.9,True,2012
+201203200IND,"Tue, Mar 20, 2012",IND,LAC,Indiana Pacers,Los Angeles Clippers,102,89,13,Home,81.8,True,2012
+201203210OKC,"Wed, Mar 21, 2012",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,114,91,23,Home,88.7,True,2012
+201203220NOH,"Thu, Mar 22, 2012",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,97,90,7,Home,86.2,True,2012
+201203260LAC,"Mon, Mar 26, 2012",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,97,85,12,Home,89.8,True,2012
+201203280LAC,"Wed, Mar 28, 2012",LAC,PHO,Los Angeles Clippers,Phoenix Suns,103,86,17,Home,89.2,True,2012
+201203300LAC,"Fri, Mar 30, 2012",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,98,97,1,Home,84.5,True,2012
+201203310LAC,"Sat, Mar 31, 2012",LAC,UTA,Los Angeles Clippers,Utah Jazz,105,96,9,Home,88.3,True,2012
+201204020DAL,"Mon, Apr 2, 2012",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,75,94,-19,Home,85.1,True,2012
+201204050SAC,"Thu, Apr 5, 2012",SAC,LAC,Sacramento Kings,Los Angeles Clippers,85,93,-8,Home,90.1,True,2012
+201204070LAC,"Sat, Apr 7, 2012",LAC,SAC,Los Angeles Clippers,Sacramento Kings,109,94,15,Home,101.9,True,2012
+201204110OKC,"Wed, Apr 11, 2012",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,98,100,-2,Home,87.1,True,2012
+201204120MIN,"Thu, Apr 12, 2012",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,82,95,-13,Home,88.2,True,2012
+201204140LAC,"Sat, Apr 14, 2012",LAC,GSW,Los Angeles Clippers,Golden State Warriors,112,104,8,Home,90.9,True,2012
+201204160LAC,"Mon, Apr 16, 2012",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,92,77,15,Home,84.0,True,2012
+201204180DEN,"Wed, Apr 18, 2012",DEN,LAC,Denver Nuggets,Los Angeles Clippers,98,104,-6,Home,90.7,True,2012
+201204190PHO,"Thu, Apr 19, 2012",PHO,LAC,Phoenix Suns,Los Angeles Clippers,93,90,3,Home,85.8,True,2012
+201204220LAC,"Sun, Apr 22, 2012",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,107,98,9,Home,93.5,True,2012
+201204250NYK,"Wed, Apr 25, 2012",NYK,LAC,New York Knicks,Los Angeles Clippers,99,93,6,Home,84.6,True,2012
+201112260MIN,"Mon, Dec 26, 2011",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,100,104,-4,Home,97.7,True,2012
+201112290OKC,"Thu, Dec 29, 2011",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,104,102,2,Home,94.9,True,2012
+201112310OKC,"Sat, Dec 31, 2011",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,107,97,10,Home,95.0,True,2012
+201201020DAL,"Mon, Jan 2, 2012",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,100,87,13,Home,87.1,True,2012
+201201030OKC,"Tue, Jan 3, 2012",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,93,103,-10,Home,88.8,True,2012
+201201110NOH,"Wed, Jan 11, 2012",NOH,OKC,New Orleans Hornets,Oklahoma City Thunder,85,95,-10,Home,85.4,True,2012
+201201140OKC,"Sat, Jan 14, 2012",OKC,NYK,Oklahoma City Thunder,New York Knicks,104,92,12,Home,96.4,True,2012
+201201160BOS,"Mon, Jan 16, 2012",BOS,OKC,Boston Celtics,Oklahoma City Thunder,88,97,-9,Home,91.2,True,2012
+201201180WAS,"Wed, Jan 18, 2012",WAS,OKC,Washington Wizards,Oklahoma City Thunder,105,102,3,Home,102.2,True,2012
+201201210NJN,"Sat, Jan 21, 2012",NJN,OKC,New Jersey Nets,Oklahoma City Thunder,74,84,-10,Home,91.4,True,2012
+201201230OKC,"Mon, Jan 23, 2012",OKC,DET,Oklahoma City Thunder,Detroit Pistons,99,79,20,Home,90.9,True,2012
+201201250OKC,"Wed, Jan 25, 2012",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,101,91,10,Home,91.5,True,2012
+201201270GSW,"Fri, Jan 27, 2012",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,109,120,-11,Home,103.2,True,2012
+201202010DAL,"Wed, Feb 1, 2012",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,86,95,-9,Home,94.5,True,2012
+201202060POR,"Mon, Feb 6, 2012",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,107,111,-4,Home,91.6,True,2012
+201202070GSW,"Tue, Feb 7, 2012",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,116,119,-3,Home,97.0,True,2012
+201202090SAC,"Thu, Feb 9, 2012",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,106,101,5,Home,97.7,True,2012
+201202100UTA,"Fri, Feb 10, 2012",UTA,OKC,Utah Jazz,Oklahoma City Thunder,87,101,-14,Home,92.0,True,2012
+201202140OKC,"Tue, Feb 14, 2012",OKC,UTA,Oklahoma City Thunder,Utah Jazz,111,85,26,Home,90.1,True,2012
+201202170OKC,"Fri, Feb 17, 2012",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,110,87,23,Home,92.7,True,2012
+201202190OKC,"Sun, Feb 19, 2012",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,124,118,6,Home,91.8,True,2012
+201202200OKC,"Mon, Feb 20, 2012",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,101,93,8,Home,97.5,True,2012
+201202220OKC,"Wed, Feb 22, 2012",OKC,BOS,Oklahoma City Thunder,Boston Celtics,119,104,15,Home,99.4,True,2012
+201202290PHI,"Wed, Feb 29, 2012",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,88,92,-4,Home,89.0,True,2012
+201203050OKC,"Mon, Mar 5, 2012",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,95,91,4,Home,87.7,True,2012
+201203070OKC,"Wed, Mar 7, 2012",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,115,104,11,Home,98.7,True,2012
+201203090OKC,"Fri, Mar 9, 2012",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,90,96,-6,Home,91.1,True,2012
+201203100OKC,"Sat, Mar 10, 2012",OKC,CHA,Oklahoma City Thunder,Charlotte Bobcats,122,95,27,Home,90.2,True,2012
+201203150DEN,"Thu, Mar 15, 2012",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,90,103,-13,Home,92.6,True,2012
+201203180OKC,"Sun, Mar 18, 2012",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,111,95,16,Home,89.7,True,2012
+201203200UTA,"Tue, Mar 20, 2012",UTA,OKC,Utah Jazz,Oklahoma City Thunder,97,90,7,Home,89.2,True,2012
+201203230OKC,"Fri, Mar 23, 2012",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,149,140,9,Home,98.4,True,2012
+201203250OKC,"Sun, Mar 25, 2012",OKC,MIA,Oklahoma City Thunder,Miami Heat,103,87,16,Home,91.6,True,2012
+201203270POR,"Tue, Mar 27, 2012",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,95,109,-14,Home,89.1,True,2012
+201204010OKC,"Sun, Apr 1, 2012",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,92,78,14,Home,88.9,True,2012
+201204040MIA,"Wed, Apr 4, 2012",MIA,OKC,Miami Heat,Oklahoma City Thunder,98,93,5,Home,93.3,True,2012
+201204060IND,"Fri, Apr 6, 2012",IND,OKC,Indiana Pacers,Oklahoma City Thunder,103,98,5,Home,91.9,True,2012
+201204080OKC,"Sun, Apr 8, 2012",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,91,75,16,Home,86.8,True,2012
+201204090MIL,"Mon, Apr 9, 2012",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,89,109,-20,Home,95.1,True,2012
+201204130OKC,"Fri, Apr 13, 2012",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,115,89,26,Home,100.8,True,2012
+201204140MIN,"Sat, Apr 14, 2012",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,110,115,-5,Home,99.2,True,2012
+201204180PHO,"Wed, Apr 18, 2012",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,97,109,-12,Home,95.3,True,2012
+201204200SAC,"Fri, Apr 20, 2012",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,92,103,-11,Home,93.9,True,2012
+201204240OKC,"Tue, Apr 24, 2012",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,118,110,8,Home,96.8,True,2012
+201204250OKC,"Wed, Apr 25, 2012",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,101,106,-5,Home,90.4,True,2012
+201204280OKC,"Sat, Apr 28, 2012",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,99,98,1,Home,90.8,True,2012
+201204300OKC,"Mon, Apr 30, 2012",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,102,99,3,Home,91.5,True,2012
+201205030DAL,"Thu, May 3, 2012",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,79,95,-16,Home,90.1,True,2012
+201205050DAL,"Sat, May 5, 2012",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,97,103,-6,Home,89.2,True,2012
+201206120OKC,"Tue, Jun 12, 2012",OKC,MIA,Oklahoma City Thunder,Miami Heat,105,94,11,Home,87.4,True,2012
+201206140OKC,"Thu, Jun 14, 2012",OKC,MIA,Oklahoma City Thunder,Miami Heat,96,100,-4,Home,86.7,True,2012
+201206170MIA,"Sun, Jun 17, 2012",MIA,OKC,Miami Heat,Oklahoma City Thunder,91,85,6,Home,84.2,True,2012
+201206190MIA,"Tue, Jun 19, 2012",MIA,OKC,Miami Heat,Oklahoma City Thunder,104,98,6,Home,88.6,True,2012
+201206210MIA,"Thu, Jun 21, 2012",MIA,OKC,Miami Heat,Oklahoma City Thunder,121,106,15,Home,96.1,True,2012
+201112260CHA,"Mon, Dec 26, 2011",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,96,95,1,Home,94.7,True,2012
+201112280CHA,"Wed, Dec 28, 2011",CHA,MIA,Charlotte Bobcats,Miami Heat,95,96,-1,Home,93.1,True,2012
+201201010MIA,"Sun, Jan 1, 2012",MIA,CHA,Miami Heat,Charlotte Bobcats,129,90,39,Home,103.1,True,2012
+201201030CLE,"Tue, Jan 3, 2012",CLE,CHA,Cleveland Cavaliers,Charlotte Bobcats,115,101,14,Home,98.8,True,2012
+201201040NYK,"Wed, Jan 4, 2012",NYK,CHA,New York Knicks,Charlotte Bobcats,110,118,-8,Home,98.1,True,2012
+201201070IND,"Sat, Jan 7, 2012",IND,CHA,Indiana Pacers,Charlotte Bobcats,99,77,22,Home,84.5,True,2012
+201201090NYK,"Mon, Jan 9, 2012",NYK,CHA,New York Knicks,Charlotte Bobcats,91,87,4,Home,93.5,True,2012
+201201130CHA,"Fri, Jan 13, 2012",CHA,DET,Charlotte Bobcats,Detroit Pistons,81,98,-17,Home,84.8,True,2012
+201201140CHA,"Sat, Jan 14, 2012",CHA,GSW,Charlotte Bobcats,Golden State Warriors,112,100,12,Home,95.4,True,2012
+201201160CHA,"Mon, Jan 16, 2012",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,94,102,-8,Home,94.8,True,2012
+201201210CHI,"Sat, Jan 21, 2012",CHI,CHA,Chicago Bulls,Charlotte Bobcats,95,89,6,Home,88.5,True,2012
+201201220NJN,"Sun, Jan 22, 2012",NJN,CHA,New Jersey Nets,Charlotte Bobcats,97,87,10,Home,87.3,True,2012
+201201240CHA,"Tue, Jan 24, 2012",CHA,NYK,Charlotte Bobcats,New York Knicks,78,111,-33,Home,91.3,True,2012
+201201250WAS,"Wed, Jan 25, 2012",WAS,CHA,Washington Wizards,Charlotte Bobcats,92,75,17,Home,93.3,True,2012
+201201270PHI,"Fri, Jan 27, 2012",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,89,72,17,Home,83.5,True,2012
+201201280CHA,"Sat, Jan 28, 2012",CHA,WAS,Charlotte Bobcats,Washington Wizards,99,102,-3,Home,92.5,True,2012
+201202010POR,"Wed, Feb 1, 2012",POR,CHA,Portland Trail Blazers,Charlotte Bobcats,112,68,44,Home,95.7,True,2012
+201202040PHO,"Sat, Feb 4, 2012",PHO,CHA,Phoenix Suns,Charlotte Bobcats,95,89,6,Home,86.5,True,2012
+201202070BOS,"Tue, Feb 7, 2012",BOS,CHA,Boston Celtics,Charlotte Bobcats,94,84,10,Home,85.4,True,2012
+201202100CHA,"Fri, Feb 10, 2012",CHA,CHI,Charlotte Bobcats,Chicago Bulls,64,95,-31,Home,88.3,True,2012
+201202130CHA,"Mon, Feb 13, 2012",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,89,98,-9,Home,90.3,True,2012
+201202150MIN,"Wed, Feb 15, 2012",MIN,CHA,Minnesota Timberwolves,Charlotte Bobcats,102,90,12,Home,91.5,True,2012
+201202170TOR,"Fri, Feb 17, 2012",TOR,CHA,Toronto Raptors,Charlotte Bobcats,91,98,-7,Home,90.3,True,2012
+201202190IND,"Sun, Feb 19, 2012",IND,CHA,Indiana Pacers,Charlotte Bobcats,108,73,35,Home,94.4,True,2012
+201202220CHA,"Wed, Feb 22, 2012",CHA,IND,Charlotte Bobcats,Indiana Pacers,88,102,-14,Home,81.4,True,2012
+201202290DET,"Wed, Feb 29, 2012",DET,CHA,Detroit Pistons,Charlotte Bobcats,109,94,15,Home,92.4,True,2012
+201203040CHA,"Sun, Mar 4, 2012",CHA,NJN,Charlotte Bobcats,New Jersey Nets,101,104,-3,Home,91.4,True,2012
+201203070CHA,"Wed, Mar 7, 2012",CHA,UTA,Charlotte Bobcats,Utah Jazz,93,99,-6,Home,88.9,True,2012
+201203090CHA,"Fri, Mar 9, 2012",CHA,NJN,Charlotte Bobcats,New Jersey Nets,74,83,-9,Home,86.1,True,2012
+201203120NOH,"Mon, Mar 12, 2012",NOH,CHA,New Orleans Hornets,Charlotte Bobcats,71,73,-2,Home,86.4,True,2012
+201203150DAL,"Thu, Mar 15, 2012",DAL,CHA,Dallas Mavericks,Charlotte Bobcats,101,96,5,Home,91.5,True,2012
+201203170CHA,"Sat, Mar 17, 2012",CHA,TOR,Charlotte Bobcats,Toronto Raptors,107,103,4,Home,94.0,True,2012
+201203190CHA,"Mon, Mar 19, 2012",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,80,105,-25,Home,83.3,True,2012
+201203230CHA,"Fri, Mar 23, 2012",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,92,112,-20,Home,92.4,True,2012
+201203240NJN,"Sat, Mar 24, 2012",NJN,CHA,New Jersey Nets,Charlotte Bobcats,102,89,13,Home,93.8,True,2012
+201203260CHA,"Mon, Mar 26, 2012",CHA,BOS,Charlotte Bobcats,Boston Celtics,95,102,-7,Home,92.2,True,2012
+201203280CHA,"Wed, Mar 28, 2012",CHA,MIN,Charlotte Bobcats,Minnesota Timberwolves,83,88,-5,Home,88.0,True,2012
+201203300CHA,"Fri, Mar 30, 2012",CHA,DEN,Charlotte Bobcats,Denver Nuggets,88,99,-11,Home,99.6,True,2012
+201203310DET,"Sat, Mar 31, 2012",DET,CHA,Detroit Pistons,Charlotte Bobcats,110,107,3,Home,86.3,True,2012
+201204030TOR,"Tue, Apr 3, 2012",TOR,CHA,Toronto Raptors,Charlotte Bobcats,92,87,5,Home,84.0,True,2012
+201204060MIL,"Fri, Apr 6, 2012",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,95,90,5,Home,97.6,True,2012
+201204090CHA,"Mon, Apr 9, 2012",CHA,WAS,Charlotte Bobcats,Washington Wizards,85,113,-28,Home,94.2,True,2012
+201204100CLE,"Tue, Apr 10, 2012",CLE,CHA,Cleveland Cavaliers,Charlotte Bobcats,103,90,13,Home,85.1,True,2012
+201204120CHA,"Thu, Apr 12, 2012",CHA,DET,Charlotte Bobcats,Detroit Pistons,85,109,-24,Home,85.0,True,2012
+201204130MIA,"Fri, Apr 13, 2012",MIA,CHA,Miami Heat,Charlotte Bobcats,105,82,23,Home,87.8,True,2012
+201204150CHA,"Sun, Apr 15, 2012",CHA,BOS,Charlotte Bobcats,Boston Celtics,82,94,-12,Home,89.5,True,2012
+201204160CHA,"Mon, Apr 16, 2012",CHA,NOH,Charlotte Bobcats,New Orleans Hornets,67,75,-8,Home,86.6,True,2012
+201204180CHA,"Wed, Apr 18, 2012",CHA,CHI,Charlotte Bobcats,Chicago Bulls,68,100,-32,Home,82.2,True,2012
+201204220CHA,"Sun, Apr 22, 2012",CHA,SAC,Charlotte Bobcats,Sacramento Kings,88,114,-26,Home,93.6,True,2012
+201204230WAS,"Mon, Apr 23, 2012",WAS,CHA,Washington Wizards,Charlotte Bobcats,101,73,28,Home,94.2,True,2012
+201204260CHA,"Thu, Apr 26, 2012",CHA,NYK,Charlotte Bobcats,New York Knicks,84,104,-20,Home,90.9,True,2012
+201112270POR,"Tue, Dec 27, 2011",POR,SAC,Portland Trail Blazers,Sacramento Kings,101,79,22,Home,89.8,True,2012
+201112290SAC,"Thu, Dec 29, 2011",SAC,CHI,Sacramento Kings,Chicago Bulls,98,108,-10,Home,94.5,True,2012
+201112310SAC,"Sat, Dec 31, 2011",SAC,NYK,Sacramento Kings,New York Knicks,92,114,-22,Home,89.7,True,2012
+201201010SAC,"Sun, Jan 1, 2012",SAC,NOH,Sacramento Kings,New Orleans Hornets,96,80,16,Home,90.2,True,2012
+201201040DEN,"Wed, Jan 4, 2012",DEN,SAC,Denver Nuggets,Sacramento Kings,110,83,27,Home,102.5,True,2012
+201201050SAC,"Thu, Jan 5, 2012",SAC,MIL,Sacramento Kings,Milwaukee Bucks,103,100,3,Home,95.5,True,2012
+201201100PHI,"Tue, Jan 10, 2012",PHI,SAC,Philadelphia 76ers,Sacramento Kings,112,85,27,Home,96.2,True,2012
+201201110TOR,"Wed, Jan 11, 2012",TOR,SAC,Toronto Raptors,Sacramento Kings,91,98,-7,Home,93.6,True,2012
+201201140DAL,"Sat, Jan 14, 2012",DAL,SAC,Dallas Mavericks,Sacramento Kings,99,60,39,Home,92.8,True,2012
+201201160MIN,"Mon, Jan 16, 2012",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,99,86,13,Home,90.6,True,2012
+201201180SAC,"Wed, Jan 18, 2012",SAC,IND,Sacramento Kings,Indiana Pacers,92,88,4,Home,87.7,True,2012
+201201230POR,"Mon, Jan 23, 2012",POR,SAC,Portland Trail Blazers,Sacramento Kings,101,89,12,Home,91.1,True,2012
+201201250SAC,"Wed, Jan 25, 2012",SAC,DEN,Sacramento Kings,Denver Nuggets,93,122,-29,Home,92.5,True,2012
+201201280UTA,"Sat, Jan 28, 2012",UTA,SAC,Utah Jazz,Sacramento Kings,96,93,3,Home,88.5,True,2012
+201201310GSW,"Tue, Jan 31, 2012",GSW,SAC,Golden State Warriors,Sacramento Kings,93,90,3,Home,93.3,True,2012
+201202020SAC,"Thu, Feb 2, 2012",SAC,POR,Sacramento Kings,Portland Trail Blazers,95,92,3,Home,91.8,True,2012
+201202040SAC,"Sat, Feb 4, 2012",SAC,GSW,Sacramento Kings,Golden State Warriors,114,106,8,Home,89.6,True,2012
+201202060NOH,"Mon, Feb 6, 2012",NOH,SAC,New Orleans Hornets,Sacramento Kings,92,100,-8,Home,85.8,True,2012
+201202070MIN,"Tue, Feb 7, 2012",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,86,84,2,Home,93.4,True,2012
+201202110SAC,"Sat, Feb 11, 2012",SAC,PHO,Sacramento Kings,Phoenix Suns,84,98,-14,Home,88.1,True,2012
+201202140CHI,"Tue, Feb 14, 2012",CHI,SAC,Chicago Bulls,Sacramento Kings,121,115,6,Home,96.8,True,2012
+201202150NYK,"Wed, Feb 15, 2012",NYK,SAC,New York Knicks,Sacramento Kings,100,85,15,Home,94.0,True,2012
+201202170DET,"Fri, Feb 17, 2012",DET,SAC,Detroit Pistons,Sacramento Kings,114,108,6,Home,97.4,True,2012
+201202190CLE,"Sun, Feb 19, 2012",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,93,92,1,Home,92.6,True,2012
+201202210MIA,"Tue, Feb 21, 2012",MIA,SAC,Miami Heat,Sacramento Kings,120,108,12,Home,93.4,True,2012
+201202220WAS,"Wed, Feb 22, 2012",WAS,SAC,Washington Wizards,Sacramento Kings,107,115,-8,Home,97.9,True,2012
+201202280SAC,"Tue, Feb 28, 2012",SAC,UTA,Sacramento Kings,Utah Jazz,103,96,7,Home,95.7,True,2012
+201203040PHO,"Sun, Mar 4, 2012",PHO,SAC,Phoenix Suns,Sacramento Kings,96,88,8,Home,94.4,True,2012
+201203050DEN,"Mon, Mar 5, 2012",DEN,SAC,Denver Nuggets,Sacramento Kings,119,116,3,Home,96.0,True,2012
+201203070SAC,"Wed, Mar 7, 2012",SAC,NOH,Sacramento Kings,New Orleans Hornets,99,98,1,Home,89.3,True,2012
+201203090SAC,"Fri, Mar 9, 2012",SAC,DAL,Sacramento Kings,Dallas Mavericks,110,97,13,Home,90.7,True,2012
+201203130SAC,"Tue, Mar 13, 2012",SAC,GSW,Sacramento Kings,Golden State Warriors,89,115,-26,Home,93.0,True,2012
+201203140SAC,"Wed, Mar 14, 2012",SAC,DET,Sacramento Kings,Detroit Pistons,112,124,-12,Home,93.8,True,2012
+201203160SAC,"Fri, Mar 16, 2012",SAC,BOS,Sacramento Kings,Boston Celtics,120,95,25,Home,98.0,True,2012
+201203180SAC,"Sun, Mar 18, 2012",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,115,99,16,Home,100.6,True,2012
+201203220SAC,"Thu, Mar 22, 2012",SAC,UTA,Sacramento Kings,Utah Jazz,102,103,-1,Home,98.4,True,2012
+201203240GSW,"Sat, Mar 24, 2012",GSW,SAC,Golden State Warriors,Sacramento Kings,111,108,3,Home,98.9,True,2012
+201203300UTA,"Fri, Mar 30, 2012",UTA,SAC,Utah Jazz,Sacramento Kings,103,104,-1,Home,96.3,True,2012
+201203310SAC,"Sat, Mar 31, 2012",SAC,NJN,Sacramento Kings,New Jersey Nets,99,111,-12,Home,100.3,True,2012
+201204020SAC,"Mon, Apr 2, 2012",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,116,108,8,Home,91.3,True,2012
+201204030SAC,"Tue, Apr 3, 2012",SAC,PHO,Sacramento Kings,Phoenix Suns,100,109,-9,Home,98.3,True,2012
+201204100DAL,"Tue, Apr 10, 2012",DAL,SAC,Dallas Mavericks,Sacramento Kings,110,100,10,Home,101.9,True,2012
+201204110NOH,"Wed, Apr 11, 2012",NOH,SAC,New Orleans Hornets,Sacramento Kings,105,96,9,Home,92.6,True,2012
+201204150SAC,"Sun, Apr 15, 2012",SAC,POR,Sacramento Kings,Portland Trail Blazers,104,103,1,Home,88.8,True,2012
+201112260POR,"Mon, Dec 26, 2011",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,107,103,4,Home,100.0,True,2012
+201112290POR,"Thu, Dec 29, 2011",POR,DEN,Portland Trail Blazers,Denver Nuggets,111,102,9,Home,104.2,True,2012
+201201060PHO,"Fri, Jan 6, 2012",PHO,POR,Phoenix Suns,Portland Trail Blazers,102,77,25,Home,91.3,True,2012
+201201080POR,"Sun, Jan 8, 2012",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,98,78,20,Home,100.9,True,2012
+201201160NOH,"Mon, Jan 16, 2012",NOH,POR,New Orleans Hornets,Portland Trail Blazers,77,84,-7,Home,89.2,True,2012
+201201200TOR,"Fri, Jan 20, 2012",TOR,POR,Toronto Raptors,Portland Trail Blazers,84,94,-10,Home,94.3,True,2012
+201201210DET,"Sat, Jan 21, 2012",DET,POR,Detroit Pistons,Portland Trail Blazers,94,91,3,Home,82.0,True,2012
+201201250GSW,"Wed, Jan 25, 2012",GSW,POR,Golden State Warriors,Portland Trail Blazers,101,93,8,Home,88.0,True,2012
+201201270POR,"Fri, Jan 27, 2012",POR,PHO,Portland Trail Blazers,Phoenix Suns,109,71,38,Home,98.8,True,2012
+201201300UTA,"Mon, Jan 30, 2012",UTA,POR,Utah Jazz,Portland Trail Blazers,93,89,4,Home,91.2,True,2012
+201202040POR,"Sat, Feb 4, 2012",POR,DEN,Portland Trail Blazers,Denver Nuggets,117,97,20,Home,93.3,True,2012
+201202100NOH,"Fri, Feb 10, 2012",NOH,POR,New Orleans Hornets,Portland Trail Blazers,86,94,-8,Home,85.4,True,2012
+201202110DAL,"Sat, Feb 11, 2012",DAL,POR,Dallas Mavericks,Portland Trail Blazers,97,94,3,Home,87.2,True,2012
+201202140POR,"Tue, Feb 14, 2012",POR,WAS,Portland Trail Blazers,Washington Wizards,109,124,-15,Home,91.2,True,2012
+201202150GSW,"Wed, Feb 15, 2012",GSW,POR,Golden State Warriors,Portland Trail Blazers,91,93,-2,Home,86.8,True,2012
+201202290DEN,"Wed, Feb 29, 2012",DEN,POR,Denver Nuggets,Portland Trail Blazers,104,95,9,Home,88.9,True,2012
+201203010POR,"Thu, Mar 1, 2012",POR,MIA,Portland Trail Blazers,Miami Heat,93,107,-14,Home,89.6,True,2012
+201203030POR,"Sat, Mar 3, 2012",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,110,122,-12,Home,92.3,True,2012
+201203050POR,"Mon, Mar 5, 2012",POR,NOH,Portland Trail Blazers,New Orleans Hornets,86,74,12,Home,83.9,True,2012
+201203070MIN,"Wed, Mar 7, 2012",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,106,94,12,Home,86.6,True,2012
+201203090BOS,"Fri, Mar 9, 2012",BOS,POR,Boston Celtics,Portland Trail Blazers,104,86,18,Home,91.7,True,2012
+201203100WAS,"Sat, Mar 10, 2012",WAS,POR,Washington Wizards,Portland Trail Blazers,99,110,-11,Home,86.5,True,2012
+201203130IND,"Tue, Mar 13, 2012",IND,POR,Indiana Pacers,Portland Trail Blazers,92,75,17,Home,89.2,True,2012
+201203140NYK,"Wed, Mar 14, 2012",NYK,POR,New York Knicks,Portland Trail Blazers,121,79,42,Home,93.1,True,2012
+201203160CHI,"Fri, Mar 16, 2012",CHI,POR,Chicago Bulls,Portland Trail Blazers,89,100,-11,Home,79.0,True,2012
+201203200POR,"Tue, Mar 20, 2012",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,87,116,-29,Home,92.9,True,2012
+201203250POR,"Sun, Mar 25, 2012",POR,GSW,Portland Trail Blazers,Golden State Warriors,90,87,3,Home,87.6,True,2012
+201203290POR,"Thu, Mar 29, 2012",POR,NOH,Portland Trail Blazers,New Orleans Hornets,99,93,6,Home,81.2,True,2012
+201204010POR,"Sun, Apr 1, 2012",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,119,106,13,Home,91.3,True,2012
+201204020POR,"Mon, Apr 2, 2012",POR,UTA,Portland Trail Blazers,Utah Jazz,97,102,-5,Home,90.9,True,2012
+201204040POR,"Wed, Apr 4, 2012",POR,NJN,Portland Trail Blazers,New Jersey Nets,101,88,13,Home,91.6,True,2012
+201204060DAL,"Fri, Apr 6, 2012",DAL,POR,Dallas Mavericks,Portland Trail Blazers,97,99,-2,Home,85.9,True,2012
+201204070MIL,"Sat, Apr 7, 2012",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,116,94,22,Home,92.9,True,2012
+201204110POR,"Wed, Apr 11, 2012",POR,GSW,Portland Trail Blazers,Golden State Warriors,118,110,8,Home,97.1,True,2012
+201204130POR,"Fri, Apr 13, 2012",POR,DAL,Portland Trail Blazers,Dallas Mavericks,94,97,-3,Home,89.7,True,2012
+201204160PHO,"Mon, Apr 16, 2012",PHO,POR,Phoenix Suns,Portland Trail Blazers,125,107,18,Home,93.7,True,2012
+201204180POR,"Wed, Apr 18, 2012",POR,UTA,Portland Trail Blazers,Utah Jazz,91,112,-21,Home,93.4,True,2012
+201204260UTA,"Thu, Apr 26, 2012",UTA,POR,Utah Jazz,Portland Trail Blazers,96,94,2,Home,92.5,True,2012
+201112260WAS,"Mon, Dec 26, 2011",WAS,NJN,Washington Wizards,New Jersey Nets,84,90,-6,Home,89.7,True,2012
+201112300MIL,"Fri, Dec 30, 2011",MIL,WAS,Milwaukee Bucks,Washington Wizards,102,81,21,Home,94.3,True,2012
+201201010WAS,"Sun, Jan 1, 2012",WAS,BOS,Washington Wizards,Boston Celtics,86,94,-8,Home,90.2,True,2012
+201201020BOS,"Mon, Jan 2, 2012",BOS,WAS,Boston Celtics,Washington Wizards,100,92,8,Home,90.2,True,2012
+201201060WAS,"Fri, Jan 6, 2012",WAS,NYK,Washington Wizards,New York Knicks,96,99,-3,Home,101.3,True,2012
+201201080WAS,"Sun, Jan 8, 2012",WAS,MIN,Washington Wizards,Minnesota Timberwolves,72,93,-21,Home,89.4,True,2012
+201201100WAS,"Tue, Jan 10, 2012",WAS,TOR,Washington Wizards,Toronto Raptors,93,78,15,Home,90.3,True,2012
+201201110CHI,"Wed, Jan 11, 2012",CHI,WAS,Chicago Bulls,Washington Wizards,78,64,14,Home,86.2,True,2012
+201201130PHI,"Fri, Jan 13, 2012",PHI,WAS,Philadelphia 76ers,Washington Wizards,120,89,31,Home,95.3,True,2012
+201201140WAS,"Sat, Jan 14, 2012",WAS,PHI,Washington Wizards,Philadelphia 76ers,90,103,-13,Home,93.6,True,2012
+201201200WAS,"Fri, Jan 20, 2012",WAS,DEN,Washington Wizards,Denver Nuggets,104,108,-4,Home,98.5,True,2012
+201201220WAS,"Sun, Jan 22, 2012",WAS,BOS,Washington Wizards,Boston Celtics,94,100,-6,Home,94.5,True,2012
+201201230PHI,"Mon, Jan 23, 2012",PHI,WAS,Philadelphia 76ers,Washington Wizards,103,83,20,Home,85.9,True,2012
+201201300WAS,"Mon, Jan 30, 2012",WAS,CHI,Washington Wizards,Chicago Bulls,88,98,-10,Home,91.4,True,2012
+201202030TOR,"Fri, Feb 3, 2012",TOR,WAS,Toronto Raptors,Washington Wizards,106,89,17,Home,91.3,True,2012
+201202060WAS,"Mon, Feb 6, 2012",WAS,TOR,Washington Wizards,Toronto Raptors,111,108,3,Home,87.0,True,2012
+201202080WAS,"Wed, Feb 8, 2012",WAS,NYK,Washington Wizards,New York Knicks,93,107,-14,Home,89.9,True,2012
+201202100WAS,"Fri, Feb 10, 2012",WAS,MIA,Washington Wizards,Miami Heat,89,106,-17,Home,97.5,True,2012
+201202120DET,"Sun, Feb 12, 2012",DET,WAS,Detroit Pistons,Washington Wizards,77,98,-21,Home,96.9,True,2012
+201202170UTA,"Fri, Feb 17, 2012",UTA,WAS,Utah Jazz,Washington Wizards,114,100,14,Home,96.0,True,2012
+201202200PHO,"Mon, Feb 20, 2012",PHO,WAS,Phoenix Suns,Washington Wizards,104,88,16,Home,95.1,True,2012
+201202280MIL,"Tue, Feb 28, 2012",MIL,WAS,Milwaukee Bucks,Washington Wizards,119,118,1,Home,94.9,True,2012
+201203030WAS,"Sat, Mar 3, 2012",WAS,CLE,Washington Wizards,Cleveland Cavaliers,101,98,3,Home,96.7,True,2012
+201203050WAS,"Mon, Mar 5, 2012",WAS,GSW,Washington Wizards,Golden State Warriors,100,120,-20,Home,94.2,True,2012
+201203130DAL,"Tue, Mar 13, 2012",DAL,WAS,Dallas Mavericks,Washington Wizards,107,98,9,Home,93.5,True,2012
+201203150NOH,"Thu, Mar 15, 2012",NOH,WAS,New Orleans Hornets,Washington Wizards,89,99,-10,Home,86.2,True,2012
+201203210NJN,"Wed, Mar 21, 2012",NJN,WAS,New Jersey Nets,Washington Wizards,89,108,-19,Home,90.8,True,2012
+201203220WAS,"Thu, Mar 22, 2012",WAS,IND,Washington Wizards,Indiana Pacers,83,85,-2,Home,86.8,True,2012
+201203250BOS,"Sun, Mar 25, 2012",BOS,WAS,Boston Celtics,Washington Wizards,88,76,12,Home,90.0,True,2012
+201203260WAS,"Mon, Mar 26, 2012",WAS,DET,Washington Wizards,Detroit Pistons,77,79,-2,Home,89.3,True,2012
+201203290IND,"Thu, Mar 29, 2012",IND,WAS,Indiana Pacers,Washington Wizards,93,89,4,Home,87.5,True,2012
+201203300WAS,"Fri, Mar 30, 2012",WAS,PHI,Washington Wizards,Philadelphia 76ers,97,76,21,Home,87.8,True,2012
+201204010TOR,"Sun, Apr 1, 2012",TOR,WAS,Toronto Raptors,Washington Wizards,99,92,7,Home,83.9,True,2012
+201204020WAS,"Mon, Apr 2, 2012",WAS,MIL,Washington Wizards,Milwaukee Bucks,98,112,-14,Home,96.8,True,2012
+201204040WAS,"Wed, Apr 4, 2012",WAS,IND,Washington Wizards,Indiana Pacers,96,109,-13,Home,90.0,True,2012
+201204050DET,"Thu, Apr 5, 2012",DET,WAS,Detroit Pistons,Washington Wizards,99,94,5,Home,92.4,True,2012
+201204060NJN,"Fri, Apr 6, 2012",NJN,WAS,New Jersey Nets,Washington Wizards,110,98,12,Home,88.6,True,2012
+201204130NYK,"Fri, Apr 13, 2012",NYK,WAS,New York Knicks,Washington Wizards,103,65,38,Home,90.6,True,2012
+201204140WAS,"Sat, Apr 14, 2012",WAS,CLE,Washington Wizards,Cleveland Cavaliers,89,98,-9,Home,87.7,True,2012
+201204160CHI,"Mon, Apr 16, 2012",CHI,WAS,Chicago Bulls,Washington Wizards,84,87,-3,Home,91.0,True,2012
+201204180WAS,"Wed, Apr 18, 2012",WAS,MIL,Washington Wizards,Milwaukee Bucks,121,112,9,Home,97.7,True,2012
+201204210MIA,"Sat, Apr 21, 2012",MIA,WAS,Miami Heat,Washington Wizards,84,86,-2,Home,89.8,True,2012
+201204250CLE,"Wed, Apr 25, 2012",CLE,WAS,Cleveland Cavaliers,Washington Wizards,85,96,-11,Home,89.9,True,2012
+201204260WAS,"Thu, Apr 26, 2012",WAS,MIA,Washington Wizards,Miami Heat,104,70,34,Home,92.2,True,2012
+201112260IND,"Mon, Dec 26, 2011",IND,DET,Indiana Pacers,Detroit Pistons,91,79,12,Home,87.1,True,2012
+201112280DET,"Wed, Dec 28, 2011",DET,CLE,Detroit Pistons,Cleveland Cavaliers,89,105,-16,Home,87.4,True,2012
+201112300BOS,"Fri, Dec 30, 2011",BOS,DET,Boston Celtics,Detroit Pistons,96,85,11,Home,78.4,True,2012
+201112310DET,"Sat, Dec 31, 2011",DET,IND,Detroit Pistons,Indiana Pacers,96,88,8,Home,92.7,True,2012
+201201040DET,"Wed, Jan 4, 2012",DET,CHI,Detroit Pistons,Chicago Bulls,83,99,-16,Home,90.1,True,2012
+201201060PHI,"Fri, Jan 6, 2012",PHI,DET,Philadelphia 76ers,Detroit Pistons,96,73,23,Home,88.5,True,2012
+201201070DET,"Sat, Jan 7, 2012",DET,NYK,Detroit Pistons,New York Knicks,80,103,-23,Home,89.3,True,2012
+201201090CHI,"Mon, Jan 9, 2012",CHI,DET,Chicago Bulls,Detroit Pistons,92,68,24,Home,81.8,True,2012
+201201100DET,"Tue, Jan 10, 2012",DET,DAL,Detroit Pistons,Dallas Mavericks,86,100,-14,Home,90.6,True,2012
+201201120MIL,"Thu, Jan 12, 2012",MIL,DET,Milwaukee Bucks,Detroit Pistons,102,93,9,Home,84.8,True,2012
+201201150DET,"Sun, Jan 15, 2012",DET,GSW,Detroit Pistons,Golden State Warriors,91,99,-8,Home,89.2,True,2012
+201201180MIN,"Wed, Jan 18, 2012",MIN,DET,Minnesota Timberwolves,Detroit Pistons,93,85,8,Home,89.4,True,2012
+201201250DET,"Wed, Jan 25, 2012",DET,MIA,Detroit Pistons,Miami Heat,98,101,-3,Home,84.5,True,2012
+201201280PHI,"Sat, Jan 28, 2012",PHI,DET,Philadelphia 76ers,Detroit Pistons,95,74,21,Home,85.5,True,2012
+201201300MIL,"Mon, Jan 30, 2012",MIL,DET,Milwaukee Bucks,Detroit Pistons,103,82,21,Home,88.1,True,2012
+201201310NYK,"Tue, Jan 31, 2012",NYK,DET,New York Knicks,Detroit Pistons,113,86,27,Home,88.6,True,2012
+201202010NJN,"Wed, Feb 1, 2012",NJN,DET,New Jersey Nets,Detroit Pistons,99,96,3,Home,80.7,True,2012
+201202030DET,"Fri, Feb 3, 2012",DET,MIL,Detroit Pistons,Milwaukee Bucks,88,80,8,Home,90.1,True,2012
+201202040DET,"Sat, Feb 4, 2012",DET,NOH,Detroit Pistons,New Orleans Hornets,89,87,2,Home,83.1,True,2012
+201202080NJN,"Wed, Feb 8, 2012",NJN,DET,New Jersey Nets,Detroit Pistons,92,99,-7,Home,83.6,True,2012
+201202100DET,"Fri, Feb 10, 2012",DET,NJN,Detroit Pistons,New Jersey Nets,109,92,17,Home,93.2,True,2012
+201202150BOS,"Wed, Feb 15, 2012",BOS,DET,Boston Celtics,Detroit Pistons,88,98,-10,Home,85.8,True,2012
+201202190DET,"Sun, Feb 19, 2012",DET,BOS,Detroit Pistons,Boston Celtics,96,81,15,Home,93.2,True,2012
+201202210CLE,"Tue, Feb 21, 2012",CLE,DET,Cleveland Cavaliers,Detroit Pistons,101,100,1,Home,93.6,True,2012
+201202220TOR,"Wed, Feb 22, 2012",TOR,DET,Toronto Raptors,Detroit Pistons,103,93,10,Home,89.0,True,2012
+201202280DET,"Tue, Feb 28, 2012",DET,PHI,Detroit Pistons,Philadelphia 76ers,68,97,-29,Home,90.3,True,2012
+201203100DET,"Sat, Mar 10, 2012",DET,TOR,Detroit Pistons,Toronto Raptors,105,86,19,Home,88.8,True,2012
+201203120UTA,"Mon, Mar 12, 2012",UTA,DET,Utah Jazz,Detroit Pistons,105,90,15,Home,89.1,True,2012
+201203160PHO,"Fri, Mar 16, 2012",PHO,DET,Phoenix Suns,Detroit Pistons,109,101,8,Home,89.4,True,2012
+201203210DEN,"Wed, Mar 21, 2012",DEN,DET,Denver Nuggets,Detroit Pistons,116,115,1,Home,95.8,True,2012
+201203230DET,"Fri, Mar 23, 2012",DET,MIA,Detroit Pistons,Miami Heat,73,88,-15,Home,90.4,True,2012
+201203240NYK,"Sat, Mar 24, 2012",NYK,DET,New York Knicks,Detroit Pistons,101,79,22,Home,92.1,True,2012
+201203280CLE,"Wed, Mar 28, 2012",CLE,DET,Cleveland Cavaliers,Detroit Pistons,75,87,-12,Home,85.7,True,2012
+201203300CHI,"Fri, Mar 30, 2012",CHI,DET,Chicago Bulls,Detroit Pistons,83,71,12,Home,77.6,True,2012
+201204080MIA,"Sun, Apr 8, 2012",MIA,DET,Miami Heat,Detroit Pistons,98,75,23,Home,87.9,True,2012
+201204130DET,"Fri, Apr 13, 2012",DET,MIL,Detroit Pistons,Milwaukee Bucks,97,113,-16,Home,94.5,True,2012
+201204150DET,"Sun, Apr 15, 2012",DET,CHI,Detroit Pistons,Chicago Bulls,94,100,-6,Home,90.6,True,2012
+201204170DET,"Tue, Apr 17, 2012",DET,CLE,Detroit Pistons,Cleveland Cavaliers,116,77,39,Home,89.2,True,2012
+201204190DET,"Thu, Apr 19, 2012",DET,MIN,Detroit Pistons,Minnesota Timberwolves,80,91,-11,Home,92.8,True,2012
+201204220DET,"Sun, Apr 22, 2012",DET,TOR,Detroit Pistons,Toronto Raptors,76,73,3,Home,87.5,True,2012
+201204230IND,"Mon, Apr 23, 2012",IND,DET,Indiana Pacers,Detroit Pistons,103,97,6,Home,94.4,True,2012
+201204260DET,"Thu, Apr 26, 2012",DET,PHI,Detroit Pistons,Philadelphia 76ers,108,86,22,Home,86.3,True,2012
+201112260PHO,"Mon, Dec 26, 2011",PHO,NOH,Phoenix Suns,New Orleans Hornets,84,85,-1,Home,88.5,True,2012
+201112280NOH,"Wed, Dec 28, 2011",NOH,BOS,New Orleans Hornets,Boston Celtics,97,78,19,Home,83.0,True,2012
+201112300NOH,"Fri, Dec 30, 2011",NOH,PHO,New Orleans Hornets,Phoenix Suns,78,93,-15,Home,86.4,True,2012
+201201020UTA,"Mon, Jan 2, 2012",UTA,NOH,Utah Jazz,New Orleans Hornets,94,90,4,Home,87.4,True,2012
+201201040NOH,"Wed, Jan 4, 2012",NOH,PHI,New Orleans Hornets,Philadelphia 76ers,93,101,-8,Home,87.9,True,2012
+201201060NOH,"Fri, Jan 6, 2012",NOH,DEN,New Orleans Hornets,Denver Nuggets,88,96,-8,Home,89.2,True,2012
+201201070DAL,"Sat, Jan 7, 2012",DAL,NOH,Dallas Mavericks,New Orleans Hornets,96,81,15,Home,90.5,True,2012
+201201090DEN,"Mon, Jan 9, 2012",DEN,NOH,Denver Nuggets,New Orleans Hornets,81,94,-13,Home,87.1,True,2012
+201201130NOH,"Fri, Jan 13, 2012",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,80,87,-7,Home,87.7,True,2012
+201201210NOH,"Sat, Jan 21, 2012",NOH,DAL,New Orleans Hornets,Dallas Mavericks,81,83,-2,Home,88.8,True,2012
+201201300MIA,"Mon, Jan 30, 2012",MIA,NOH,Miami Heat,New Orleans Hornets,109,95,14,Home,89.7,True,2012
+201202010NOH,"Wed, Feb 1, 2012",NOH,PHO,New Orleans Hornets,Phoenix Suns,103,120,-17,Home,92.5,True,2012
+201202080NOH,"Wed, Feb 8, 2012",NOH,CHI,New Orleans Hornets,Chicago Bulls,67,90,-23,Home,88.2,True,2012
+201202130NOH,"Mon, Feb 13, 2012",NOH,UTA,New Orleans Hornets,Utah Jazz,86,80,6,Home,81.9,True,2012
+201202150MIL,"Wed, Feb 15, 2012",MIL,NOH,Milwaukee Bucks,New Orleans Hornets,89,92,-3,Home,86.7,True,2012
+201202170NYK,"Fri, Feb 17, 2012",NYK,NOH,New York Knicks,New Orleans Hornets,85,89,-4,Home,91.1,True,2012
+201202210IND,"Tue, Feb 21, 2012",IND,NOH,Indiana Pacers,New Orleans Hornets,117,108,9,Home,88.0,True,2012
+201202220CLE,"Wed, Feb 22, 2012",CLE,NOH,Cleveland Cavaliers,New Orleans Hornets,84,89,-5,Home,86.3,True,2012
+201202280CHI,"Tue, Feb 28, 2012",CHI,NOH,Chicago Bulls,New Orleans Hornets,99,95,4,Home,95.7,True,2012
+201202290NOH,"Wed, Feb 29, 2012",NOH,TOR,New Orleans Hornets,Toronto Raptors,84,95,-11,Home,86.0,True,2012
+201203020NOH,"Fri, Mar 2, 2012",NOH,DAL,New Orleans Hornets,Dallas Mavericks,97,92,5,Home,87.2,True,2012
+201203030NOH,"Sat, Mar 3, 2012",NOH,IND,New Orleans Hornets,Indiana Pacers,84,102,-18,Home,88.9,True,2012
+201203090DEN,"Fri, Mar 9, 2012",DEN,NOH,Denver Nuggets,New Orleans Hornets,110,97,13,Home,85.4,True,2012
+201203100MIN,"Sat, Mar 10, 2012",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,89,95,-6,Home,91.0,True,2012
+201203170NJN,"Sat, Mar 17, 2012",NJN,NOH,New Jersey Nets,New Orleans Hornets,94,102,-8,Home,86.5,True,2012
+201203210NOH,"Wed, Mar 21, 2012",NOH,GSW,New Orleans Hornets,Golden State Warriors,92,101,-9,Home,90.4,True,2012
+201203280GSW,"Wed, Mar 28, 2012",GSW,NOH,Golden State Warriors,New Orleans Hornets,87,102,-15,Home,84.0,True,2012
+201204010PHO,"Sun, Apr 1, 2012",PHO,NOH,Phoenix Suns,New Orleans Hornets,92,75,17,Home,88.8,True,2012
+201204040NOH,"Wed, Apr 4, 2012",NOH,DEN,New Orleans Hornets,Denver Nuggets,94,92,2,Home,84.9,True,2012
+201204070NOH,"Sat, Apr 7, 2012",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,99,90,9,Home,87.8,True,2012
+201204130NOH,"Fri, Apr 13, 2012",NOH,UTA,New Orleans Hornets,Utah Jazz,96,85,11,Home,80.2,True,2012
+201204240GSW,"Tue, Apr 24, 2012",GSW,NOH,Golden State Warriors,New Orleans Hornets,81,83,-2,Home,83.8,True,2012
+201112270MIL,"Tue, Dec 27, 2011",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,98,95,3,Home,97.0,True,2012
+201112300MIN,"Fri, Dec 30, 2011",MIN,MIA,Minnesota Timberwolves,Miami Heat,101,103,-2,Home,103.6,True,2012
+201201010MIN,"Sun, Jan 1, 2012",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,99,82,17,Home,93.2,True,2012
+201201060MIN,"Fri, Jan 6, 2012",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,87,98,-11,Home,92.4,True,2012
+201201090TOR,"Mon, Jan 9, 2012",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,97,87,10,Home,86.8,True,2012
+201201100MIN,"Tue, Jan 10, 2012",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,100,111,-11,Home,94.6,True,2012
+201201210UTA,"Sat, Jan 21, 2012",UTA,MIN,Utah Jazz,Minnesota Timberwolves,108,98,10,Home,88.5,True,2012
+201201250DAL,"Wed, Jan 25, 2012",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,90,105,-15,Home,93.6,True,2012
+201202010MIN,"Wed, Feb 1, 2012",MIN,IND,Minnesota Timberwolves,Indiana Pacers,99,109,-10,Home,103.0,True,2012
+201202030NJN,"Fri, Feb 3, 2012",NJN,MIN,New Jersey Nets,Minnesota Timberwolves,105,108,-3,Home,94.0,True,2012
+201202100MIN,"Fri, Feb 10, 2012",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,97,104,-7,Home,105.0,True,2012
+201202110MIN,"Sat, Feb 11, 2012",MIN,NYK,Minnesota Timberwolves,New York Knicks,98,100,-2,Home,102.7,True,2012
+201202190MIN,"Sun, Feb 19, 2012",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,92,91,1,Home,87.8,True,2012
+201202200DEN,"Mon, Feb 20, 2012",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,103,101,2,Home,93.6,True,2012
+201202220MIN,"Wed, Feb 22, 2012",MIN,UTA,Minnesota Timberwolves,Utah Jazz,100,98,2,Home,88.2,True,2012
+201203010PHO,"Thu, Mar 1, 2012",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,104,95,9,Home,90.7,True,2012
+201203120PHO,"Mon, Mar 12, 2012",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,124,127,-3,Home,95.4,True,2012
+201203150UTA,"Thu, Mar 15, 2012",UTA,MIN,Utah Jazz,Minnesota Timberwolves,111,105,6,Home,94.4,True,2012
+201203190GSW,"Mon, Mar 19, 2012",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,93,97,-4,Home,89.1,True,2012
+201203250MIN,"Sun, Mar 25, 2012",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,117,100,17,Home,92.6,True,2012
+201203300MIN,"Fri, Mar 30, 2012",MIN,BOS,Minnesota Timberwolves,Boston Celtics,79,100,-21,Home,89.0,True,2012
+201204040MIN,"Wed, Apr 4, 2012",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,94,97,-3,Home,95.7,True,2012
+201204090MIN,"Mon, Apr 9, 2012",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,90,114,-24,Home,96.8,True,2012
+201204110DEN,"Wed, Apr 11, 2012",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,113,107,6,Home,93.6,True,2012
+201204160IND,"Mon, Apr 16, 2012",IND,MIN,Indiana Pacers,Minnesota Timberwolves,111,88,23,Home,95.1,True,2012
+201204220MIN,"Sun, Apr 22, 2012",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,88,93,-5,Home,91.6,True,2012
+201204260MIN,"Thu, Apr 26, 2012",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,102,131,-29,Home,100.1,True,2012
+201201020DEN,"Mon, Jan 2, 2012",DEN,MIL,Denver Nuggets,Milwaukee Bucks,91,86,5,Home,94.4,True,2012
+201201030UTA,"Tue, Jan 3, 2012",UTA,MIL,Utah Jazz,Milwaukee Bucks,85,73,12,Home,90.2,True,2012
+201201080PHO,"Sun, Jan 8, 2012",PHO,MIL,Phoenix Suns,Milwaukee Bucks,109,93,16,Home,90.7,True,2012
+201201130DAL,"Fri, Jan 13, 2012",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,102,76,26,Home,89.8,True,2012
+201201160PHI,"Mon, Jan 16, 2012",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,94,82,12,Home,87.6,True,2012
+201201170MIL,"Tue, Jan 17, 2012",MIL,DEN,Milwaukee Bucks,Denver Nuggets,95,105,-10,Home,96.8,True,2012
+201201200NYK,"Fri, Jan 20, 2012",NYK,MIL,New York Knicks,Milwaukee Bucks,86,100,-14,Home,96.9,True,2012
+201201220MIA,"Sun, Jan 22, 2012",MIA,MIL,Miami Heat,Milwaukee Bucks,82,91,-9,Home,88.6,True,2012
+201201270CHI,"Fri, Jan 27, 2012",CHI,MIL,Chicago Bulls,Milwaukee Bucks,107,100,7,Home,92.6,True,2012
+201202010MIL,"Wed, Feb 1, 2012",MIL,MIA,Milwaukee Bucks,Miami Heat,105,97,8,Home,92.8,True,2012
+201202040MIL,"Sat, Feb 4, 2012",MIL,CHI,Milwaukee Bucks,Chicago Bulls,90,113,-23,Home,92.8,True,2012
+201202070MIL,"Tue, Feb 7, 2012",MIL,PHO,Milwaukee Bucks,Phoenix Suns,105,107,-2,Home,90.5,True,2012
+201202080TOR,"Wed, Feb 8, 2012",TOR,MIL,Toronto Raptors,Milwaukee Bucks,99,105,-6,Home,95.0,True,2012
+201202100CLE,"Fri, Feb 10, 2012",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,112,113,-1,Home,96.0,True,2012
+201202130MIL,"Mon, Feb 13, 2012",MIL,MIA,Milwaukee Bucks,Miami Heat,96,114,-18,Home,91.5,True,2012
+201202190NJN,"Sun, Feb 19, 2012",NJN,MIL,New Jersey Nets,Milwaukee Bucks,85,92,-7,Home,88.0,True,2012
+201202220CHI,"Wed, Feb 22, 2012",CHI,MIL,Chicago Bulls,Milwaukee Bucks,110,91,19,Home,90.4,True,2012
+201202290BOS,"Wed, Feb 29, 2012",BOS,MIL,Boston Celtics,Milwaukee Bucks,102,96,6,Home,94.7,True,2012
+201203050MIL,"Mon, Mar 5, 2012",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,97,93,4,Home,93.7,True,2012
+201203070MIL,"Wed, Mar 7, 2012",MIL,CHI,Milwaukee Bucks,Chicago Bulls,104,106,-2,Home,87.3,True,2012
+201203090MIL,"Fri, Mar 9, 2012",MIL,NYK,Milwaukee Bucks,New York Knicks,119,114,5,Home,96.7,True,2012
+201203110TOR,"Sun, Mar 11, 2012",TOR,MIL,Toronto Raptors,Milwaukee Bucks,99,105,-6,Home,90.2,True,2012
+201203120NJN,"Mon, Mar 12, 2012",NJN,MIL,New Jersey Nets,Milwaukee Bucks,99,105,-6,Home,97.0,True,2012
+201203140MIL,"Wed, Mar 14, 2012",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,115,105,10,Home,94.1,True,2012
+201203160GSW,"Fri, Mar 16, 2012",GSW,MIL,Golden State Warriors,Milwaukee Bucks,98,120,-22,Home,91.4,True,2012
+201203220MIL,"Thu, Mar 22, 2012",MIL,BOS,Milwaukee Bucks,Boston Celtics,91,100,-9,Home,99.5,True,2012
+201203240MIL,"Sat, Mar 24, 2012",MIL,IND,Milwaukee Bucks,Indiana Pacers,104,125,-21,Home,95.1,True,2012
+201203260NYK,"Mon, Mar 26, 2012",NYK,MIL,New York Knicks,Milwaukee Bucks,89,80,9,Home,98.5,True,2012
+201203300CLE,"Fri, Mar 30, 2012",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,84,121,-37,Home,89.6,True,2012
+201204040MIL,"Wed, Apr 4, 2012",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,107,98,9,Home,93.9,True,2012
+201204110MIL,"Wed, Apr 11, 2012",MIL,NYK,Milwaukee Bucks,New York Knicks,107,111,-4,Home,96.8,True,2012
+201204140MIL,"Sat, Apr 14, 2012",MIL,IND,Milwaukee Bucks,Indiana Pacers,99,105,-6,Home,90.9,True,2012
+201204190IND,"Thu, Apr 19, 2012",IND,MIL,Indiana Pacers,Milwaukee Bucks,118,109,9,Home,96.8,True,2012
+201204210MIL,"Sat, Apr 21, 2012",MIL,NJN,Milwaukee Bucks,New Jersey Nets,106,95,11,Home,98.2,True,2012
+201204230MIL,"Mon, Apr 23, 2012",MIL,TOR,Milwaukee Bucks,Toronto Raptors,92,86,6,Home,92.7,True,2012
+201204250MIL,"Wed, Apr 25, 2012",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,85,90,-5,Home,98.0,True,2012
+201204260BOS,"Thu, Apr 26, 2012",BOS,MIL,Boston Celtics,Milwaukee Bucks,87,74,13,Home,98.6,True,2012
+201112250NYK,"Sun, Dec 25, 2011",NYK,BOS,New York Knicks,Boston Celtics,106,104,2,Home,93.2,True,2012
+201112280GSW,"Wed, Dec 28, 2011",GSW,NYK,Golden State Warriors,New York Knicks,92,78,14,Home,89.0,True,2012
+201201020NYK,"Mon, Jan 2, 2012",NYK,TOR,New York Knicks,Toronto Raptors,85,90,-5,Home,92.6,True,2012
+201201110NYK,"Wed, Jan 11, 2012",NYK,PHI,New York Knicks,Philadelphia 76ers,85,79,6,Home,92.9,True,2012
+201201180NYK,"Wed, Jan 18, 2012",NYK,PHO,New York Knicks,Phoenix Suns,88,91,-3,Home,95.6,True,2012
+201201210NYK,"Sat, Jan 21, 2012",NYK,DEN,New York Knicks,Denver Nuggets,114,119,-5,Home,97.3,True,2012
+201201250CLE,"Wed, Jan 25, 2012",CLE,NYK,Cleveland Cavaliers,New York Knicks,91,81,10,Home,92.9,True,2012
+201201270MIA,"Fri, Jan 27, 2012",MIA,NYK,Miami Heat,New York Knicks,99,89,10,Home,94.6,True,2012
+201202020NYK,"Thu, Feb 2, 2012",NYK,CHI,New York Knicks,Chicago Bulls,102,105,-3,Home,91.7,True,2012
+201202030BOS,"Fri, Feb 3, 2012",BOS,NYK,Boston Celtics,New York Knicks,91,89,2,Home,84.5,True,2012
+201202040NYK,"Sat, Feb 4, 2012",NYK,NJN,New York Knicks,New Jersey Nets,99,92,7,Home,88.4,True,2012
+201202060NYK,"Mon, Feb 6, 2012",NYK,UTA,New York Knicks,Utah Jazz,99,88,11,Home,94.5,True,2012
+201202140TOR,"Tue, Feb 14, 2012",TOR,NYK,Toronto Raptors,New York Knicks,87,90,-3,Home,89.3,True,2012
+201202190NYK,"Sun, Feb 19, 2012",NYK,DAL,New York Knicks,Dallas Mavericks,104,97,7,Home,91.2,True,2012
+201202200NYK,"Mon, Feb 20, 2012",NYK,NJN,New York Knicks,New Jersey Nets,92,100,-8,Home,96.9,True,2012
+201202230MIA,"Thu, Feb 23, 2012",MIA,NYK,Miami Heat,New York Knicks,102,88,14,Home,92.0,True,2012
+201202290NYK,"Wed, Feb 29, 2012",NYK,CLE,New York Knicks,Cleveland Cavaliers,120,103,17,Home,94.1,True,2012
+201203040BOS,"Sun, Mar 4, 2012",BOS,NYK,Boston Celtics,New York Knicks,115,111,4,Home,98.5,True,2012
+201203060DAL,"Tue, Mar 6, 2012",DAL,NYK,Dallas Mavericks,New York Knicks,95,85,10,Home,93.7,True,2012
+201203110NYK,"Sun, Mar 11, 2012",NYK,PHI,New York Knicks,Philadelphia 76ers,94,106,-12,Home,95.0,True,2012
+201203120CHI,"Mon, Mar 12, 2012",CHI,NYK,Chicago Bulls,New York Knicks,104,99,5,Home,93.8,True,2012
+201203160NYK,"Fri, Mar 16, 2012",NYK,IND,New York Knicks,Indiana Pacers,115,100,15,Home,96.6,True,2012
+201203170IND,"Sat, Mar 17, 2012",IND,NYK,Indiana Pacers,New York Knicks,88,102,-14,Home,89.3,True,2012
+201203200NYK,"Tue, Mar 20, 2012",NYK,TOR,New York Knicks,Toronto Raptors,106,87,19,Home,89.2,True,2012
+201203210PHI,"Wed, Mar 21, 2012",PHI,NYK,Philadelphia 76ers,New York Knicks,79,82,-3,Home,83.3,True,2012
+201203230TOR,"Fri, Mar 23, 2012",TOR,NYK,Toronto Raptors,New York Knicks,96,79,17,Home,98.8,True,2012
+201203310NYK,"Sat, Mar 31, 2012",NYK,CLE,New York Knicks,Cleveland Cavaliers,91,75,16,Home,88.0,True,2012
+201204030IND,"Tue, Apr 3, 2012",IND,NYK,Indiana Pacers,New York Knicks,112,104,8,Home,88.4,True,2012
+201204080NYK,"Sun, Apr 8, 2012",NYK,CHI,New York Knicks,Chicago Bulls,100,99,1,Home,90.2,True,2012
+201204100CHI,"Tue, Apr 10, 2012",CHI,NYK,Chicago Bulls,New York Knicks,98,86,12,Home,89.3,True,2012
+201204150NYK,"Sun, Apr 15, 2012",NYK,MIA,New York Knicks,Miami Heat,85,93,-8,Home,88.5,True,2012
+201204170NYK,"Tue, Apr 17, 2012",NYK,BOS,New York Knicks,Boston Celtics,118,110,8,Home,85.0,True,2012
+201204180NJN,"Wed, Apr 18, 2012",NJN,NYK,New Jersey Nets,New York Knicks,95,104,-9,Home,91.5,True,2012
+201204200CLE,"Fri, Apr 20, 2012",CLE,NYK,Cleveland Cavaliers,New York Knicks,98,90,8,Home,86.9,True,2012
+201204280MIA,"Sat, Apr 28, 2012",MIA,NYK,Miami Heat,New York Knicks,100,67,33,Home,82.4,True,2012
+201204300MIA,"Mon, Apr 30, 2012",MIA,NYK,Miami Heat,New York Knicks,104,94,10,Home,84.4,True,2012
+201205030NYK,"Thu, May 3, 2012",NYK,MIA,New York Knicks,Miami Heat,70,87,-17,Home,84.5,True,2012
+201205060NYK,"Sun, May 6, 2012",NYK,MIA,New York Knicks,Miami Heat,89,87,2,Home,91.8,True,2012
+201205090MIA,"Wed, May 9, 2012",MIA,NYK,Miami Heat,New York Knicks,106,94,12,Home,85.6,True,2012
+201112280PHO,"Wed, Dec 28, 2011",PHO,PHI,Phoenix Suns,Philadelphia 76ers,83,103,-20,Home,89.9,True,2012
+201201020PHO,"Mon, Jan 2, 2012",PHO,GSW,Phoenix Suns,Golden State Warriors,102,91,11,Home,89.2,True,2012
+201201040DAL,"Wed, Jan 4, 2012",DAL,PHO,Dallas Mavericks,Phoenix Suns,98,89,9,Home,91.0,True,2012
+201201120PHO,"Thu, Jan 12, 2012",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,90,101,-11,Home,90.0,True,2012
+201201130PHO,"Fri, Jan 13, 2012",PHO,NJN,Phoenix Suns,New Jersey Nets,103,110,-7,Home,88.9,True,2012
+201201170CHI,"Tue, Jan 17, 2012",CHI,PHO,Chicago Bulls,Phoenix Suns,118,97,21,Home,92.2,True,2012
+201201200BOS,"Fri, Jan 20, 2012",BOS,PHO,Boston Celtics,Phoenix Suns,71,79,-8,Home,87.2,True,2012
+201201230DAL,"Mon, Jan 23, 2012",DAL,PHO,Dallas Mavericks,Phoenix Suns,93,87,6,Home,91.1,True,2012
+201201240PHO,"Tue, Jan 24, 2012",PHO,TOR,Phoenix Suns,Toronto Raptors,96,99,-3,Home,95.1,True,2012
+201201300PHO,"Mon, Jan 30, 2012",PHO,DAL,Phoenix Suns,Dallas Mavericks,99,122,-23,Home,92.2,True,2012
+201202130GSW,"Mon, Feb 13, 2012",GSW,PHO,Golden State Warriors,Phoenix Suns,102,96,6,Home,89.3,True,2012
+201202140DEN,"Tue, Feb 14, 2012",DEN,PHO,Denver Nuggets,Phoenix Suns,109,92,17,Home,104.4,True,2012
+201202220PHO,"Wed, Feb 22, 2012",PHO,GSW,Phoenix Suns,Golden State Warriors,104,106,-2,Home,86.1,True,2012
+201203080PHO,"Thu, Mar 8, 2012",PHO,DAL,Phoenix Suns,Dallas Mavericks,96,94,2,Home,90.1,True,2012
+201203140PHO,"Wed, Mar 14, 2012",PHO,UTA,Phoenix Suns,Utah Jazz,120,111,9,Home,98.6,True,2012
+201203200MIA,"Tue, Mar 20, 2012",MIA,PHO,Miami Heat,Phoenix Suns,99,95,4,Home,90.5,True,2012
+201203230IND,"Fri, Mar 23, 2012",IND,PHO,Indiana Pacers,Phoenix Suns,111,113,-2,Home,92.9,True,2012
+201203250CLE,"Sun, Mar 25, 2012",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,83,108,-25,Home,89.1,True,2012
+201204040UTA,"Wed, Apr 4, 2012",UTA,PHO,Utah Jazz,Phoenix Suns,105,107,-2,Home,95.2,True,2012
+201204060DEN,"Fri, Apr 6, 2012",DEN,PHO,Denver Nuggets,Phoenix Suns,105,99,6,Home,92.0,True,2012
+201204210PHO,"Sat, Apr 21, 2012",PHO,DEN,Phoenix Suns,Denver Nuggets,107,118,-11,Home,94.6,True,2012
+201204240UTA,"Tue, Apr 24, 2012",UTA,PHO,Utah Jazz,Phoenix Suns,100,88,12,Home,99.1,True,2012
+201112260DAL,"Mon, Dec 26, 2011",DAL,DEN,Dallas Mavericks,Denver Nuggets,93,115,-22,Home,98.8,True,2012
+201112280DEN,"Wed, Dec 28, 2011",DEN,UTA,Denver Nuggets,Utah Jazz,117,100,17,Home,102.4,True,2012
+201201110DEN,"Wed, Jan 11, 2012",DEN,NJN,Denver Nuggets,New Jersey Nets,123,115,8,Home,95.8,True,2012
+201201130DEN,"Fri, Jan 13, 2012",DEN,MIA,Denver Nuggets,Miami Heat,117,104,13,Home,96.1,True,2012
+201201150DEN,"Sun, Jan 15, 2012",DEN,UTA,Denver Nuggets,Utah Jazz,96,106,-10,Home,94.6,True,2012
+201201180PHI,"Wed, Jan 18, 2012",PHI,DEN,Philadelphia 76ers,Denver Nuggets,104,108,-4,Home,92.3,True,2012
+201201270DEN,"Fri, Jan 27, 2012",DEN,TOR,Denver Nuggets,Toronto Raptors,96,81,15,Home,89.1,True,2012
+201202080DEN,"Wed, Feb 8, 2012",DEN,DAL,Denver Nuggets,Dallas Mavericks,95,105,-10,Home,92.2,True,2012
+201202090DEN,"Thu, Feb 9, 2012",DEN,GSW,Denver Nuggets,Golden State Warriors,101,109,-8,Home,98.7,True,2012
+201202110IND,"Sat, Feb 11, 2012",IND,DEN,Indiana Pacers,Denver Nuggets,109,113,-4,Home,97.7,True,2012
+201202150DAL,"Wed, Feb 15, 2012",DAL,DEN,Dallas Mavericks,Denver Nuggets,102,84,18,Home,87.9,True,2012
+201203070DEN,"Wed, Mar 7, 2012",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,99,100,-1,Home,98.6,True,2012
+201203170DEN,"Sat, Mar 17, 2012",DEN,BOS,Denver Nuggets,Boston Celtics,98,91,7,Home,91.6,True,2012
+201203190DEN,"Mon, Mar 19, 2012",DEN,DAL,Denver Nuggets,Dallas Mavericks,95,112,-17,Home,98.2,True,2012
+201203230UTA,"Fri, Mar 23, 2012",UTA,DEN,Utah Jazz,Denver Nuggets,121,102,19,Home,94.4,True,2012
+201203260CHI,"Mon, Mar 26, 2012",CHI,DEN,Chicago Bulls,Denver Nuggets,91,108,-17,Home,87.5,True,2012
+201203280TOR,"Wed, Mar 28, 2012",TOR,DEN,Toronto Raptors,Denver Nuggets,105,96,9,Home,89.1,True,2012
+201204070GSW,"Sat, Apr 7, 2012",GSW,DEN,Golden State Warriors,Denver Nuggets,112,97,15,Home,90.8,True,2012
+201204090DEN,"Mon, Apr 9, 2012",DEN,GSW,Denver Nuggets,Golden State Warriors,123,84,39,Home,95.2,True,2012
+201112260GSW,"Mon, Dec 26, 2011",GSW,CHI,Golden State Warriors,Chicago Bulls,99,91,8,Home,92.9,True,2012
+201112310GSW,"Sat, Dec 31, 2011",GSW,PHI,Golden State Warriors,Philadelphia 76ers,79,107,-28,Home,91.8,True,2012
+201201070GSW,"Sat, Jan 7, 2012",GSW,UTA,Golden State Warriors,Utah Jazz,87,88,-1,Home,84.8,True,2012
+201201100GSW,"Tue, Jan 10, 2012",GSW,MIA,Golden State Warriors,Miami Heat,111,106,5,Home,97.1,True,2012
+201201170CLE,"Tue, Jan 17, 2012",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,95,105,-10,Home,98.1,True,2012
+201201180NJN,"Wed, Jan 18, 2012",NJN,GSW,New Jersey Nets,Golden State Warriors,107,100,7,Home,84.5,True,2012
+201201200GSW,"Fri, Jan 20, 2012",GSW,IND,Golden State Warriors,Indiana Pacers,91,94,-3,Home,93.0,True,2012
+201202020GSW,"Thu, Feb 2, 2012",GSW,UTA,Golden State Warriors,Utah Jazz,119,101,18,Home,89.7,True,2012
+201202280IND,"Tue, Feb 28, 2012",IND,GSW,Indiana Pacers,Golden State Warriors,102,78,24,Home,90.6,True,2012
+201203020PHI,"Fri, Mar 2, 2012",PHI,GSW,Philadelphia 76ers,Golden State Warriors,105,83,22,Home,90.2,True,2012
+201203040TOR,"Sun, Mar 4, 2012",TOR,GSW,Toronto Raptors,Golden State Warriors,83,75,8,Home,86.6,True,2012
+201203100GSW,"Sat, Mar 10, 2012",GSW,DAL,Golden State Warriors,Dallas Mavericks,111,87,24,Home,97.5,True,2012
+201203140GSW,"Wed, Mar 14, 2012",GSW,BOS,Golden State Warriors,Boston Celtics,103,105,-2,Home,92.7,True,2012
+201203170UTA,"Sat, Mar 17, 2012",UTA,GSW,Utah Jazz,Golden State Warriors,99,92,7,Home,90.2,True,2012
+201203300GSW,"Fri, Mar 30, 2012",GSW,NJN,Golden State Warriors,New Jersey Nets,100,102,-2,Home,92.9,True,2012
+201204060UTA,"Fri, Apr 6, 2012",UTA,GSW,Utah Jazz,Golden State Warriors,104,98,6,Home,89.1,True,2012
+201204120GSW,"Thu, Apr 12, 2012",GSW,DAL,Golden State Warriors,Dallas Mavericks,103,112,-9,Home,90.8,True,2012
+201204200DAL,"Fri, Apr 20, 2012",DAL,GSW,Dallas Mavericks,Golden State Warriors,104,94,10,Home,94.4,True,2012
+201112300UTA,"Fri, Dec 30, 2011",UTA,PHI,Utah Jazz,Philadelphia 76ers,102,99,3,Home,93.0,True,2012
+201201100UTA,"Tue, Jan 10, 2012",UTA,CLE,Utah Jazz,Cleveland Cavaliers,113,105,8,Home,91.4,True,2012
+201201140UTA,"Sat, Jan 14, 2012",UTA,NJN,Utah Jazz,New Jersey Nets,107,94,13,Home,92.6,True,2012
+201201190UTA,"Thu, Jan 19, 2012",UTA,DAL,Utah Jazz,Dallas Mavericks,91,94,-3,Home,87.5,True,2012
+201201250UTA,"Wed, Jan 25, 2012",UTA,TOR,Utah Jazz,Toronto Raptors,106,111,-5,Home,90.9,True,2012
+201201270DAL,"Fri, Jan 27, 2012",DAL,UTA,Dallas Mavericks,Utah Jazz,116,101,15,Home,86.5,True,2012
+201202070IND,"Tue, Feb 7, 2012",IND,UTA,Indiana Pacers,Utah Jazz,104,99,5,Home,96.6,True,2012
+201203020UTA,"Fri, Mar 2, 2012",UTA,MIA,Utah Jazz,Miami Heat,99,98,1,Home,85.0,True,2012
+201203030DAL,"Sat, Mar 3, 2012",DAL,UTA,Dallas Mavericks,Utah Jazz,102,96,6,Home,90.7,True,2012
+201203050CLE,"Mon, Mar 5, 2012",CLE,UTA,Cleveland Cavaliers,Utah Jazz,100,109,-9,Home,91.4,True,2012
+201203090PHI,"Fri, Mar 9, 2012",PHI,UTA,Philadelphia 76ers,Utah Jazz,104,91,13,Home,90.5,True,2012
+201203100CHI,"Sat, Mar 10, 2012",CHI,UTA,Chicago Bulls,Utah Jazz,111,97,14,Home,87.5,True,2012
+201203260NJN,"Mon, Mar 26, 2012",NJN,UTA,New Jersey Nets,Utah Jazz,84,105,-21,Home,93.3,True,2012
+201203280BOS,"Wed, Mar 28, 2012",BOS,UTA,Boston Celtics,Utah Jazz,94,82,12,Home,90.1,True,2012
+201204160UTA,"Mon, Apr 16, 2012",UTA,DAL,Utah Jazz,Dallas Mavericks,123,121,2,Home,86.0,True,2012
+201201070PHI,"Sat, Jan 7, 2012",PHI,TOR,Philadelphia 76ers,Toronto Raptors,97,62,35,Home,89.6,True,2012
+201201090PHI,"Mon, Jan 9, 2012",PHI,IND,Philadelphia 76ers,Indiana Pacers,96,86,10,Home,94.2,True,2012
+201201210MIA,"Sat, Jan 21, 2012",MIA,PHI,Miami Heat,Philadelphia 76ers,113,92,21,Home,88.9,True,2012
+201201250PHI,"Wed, Jan 25, 2012",PHI,NJN,Philadelphia 76ers,New Jersey Nets,90,97,-7,Home,82.5,True,2012
+201202010PHI,"Wed, Feb 1, 2012",PHI,CHI,Philadelphia 76ers,Chicago Bulls,98,82,16,Home,88.5,True,2012
+201202030PHI,"Fri, Feb 3, 2012",PHI,MIA,Philadelphia 76ers,Miami Heat,79,99,-20,Home,85.8,True,2012
+201202110CLE,"Sat, Feb 11, 2012",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,84,99,-15,Home,88.9,True,2012
+201202170PHI,"Fri, Feb 17, 2012",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,75,82,-7,Home,88.5,True,2012
+201203040PHI,"Sun, Mar 4, 2012",PHI,CHI,Philadelphia 76ers,Chicago Bulls,91,96,-5,Home,89.5,True,2012
+201203070PHI,"Wed, Mar 7, 2012",PHI,BOS,Philadelphia 76ers,Boston Celtics,103,71,32,Home,86.6,True,2012
+201203140IND,"Wed, Mar 14, 2012",IND,PHI,Indiana Pacers,Philadelphia 76ers,111,94,17,Home,82.2,True,2012
+201203160PHI,"Fri, Mar 16, 2012",PHI,MIA,Philadelphia 76ers,Miami Heat,78,84,-6,Home,91.9,True,2012
+201203170CHI,"Sat, Mar 17, 2012",CHI,PHI,Chicago Bulls,Philadelphia 76ers,89,80,9,Home,86.4,True,2012
+201203230PHI,"Fri, Mar 23, 2012",PHI,BOS,Philadelphia 76ers,Boston Celtics,99,86,13,Home,88.7,True,2012
+201203270PHI,"Tue, Mar 27, 2012",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,103,85,18,Home,92.3,True,2012
+201204030MIA,"Tue, Apr 3, 2012",MIA,PHI,Miami Heat,Philadelphia 76ers,99,93,6,Home,93.5,True,2012
+201204040PHI,"Wed, Apr 4, 2012",PHI,TOR,Philadelphia 76ers,Toronto Raptors,78,99,-21,Home,79.5,True,2012
+201204080BOS,"Sun, Apr 8, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,103,79,24,Home,90.6,True,2012
+201204100NJN,"Tue, Apr 10, 2012",NJN,PHI,New Jersey Nets,Philadelphia 76ers,88,107,-19,Home,95.1,True,2012
+201204110TOR,"Wed, Apr 11, 2012",TOR,PHI,Toronto Raptors,Philadelphia 76ers,75,93,-18,Home,83.8,True,2012
+201204130PHI,"Fri, Apr 13, 2012",PHI,NJN,Philadelphia 76ers,New Jersey Nets,89,95,-6,Home,96.4,True,2012
+201204170PHI,"Tue, Apr 17, 2012",PHI,IND,Philadelphia 76ers,Indiana Pacers,97,102,-5,Home,87.1,True,2012
+201204180CLE,"Wed, Apr 18, 2012",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,87,103,-16,Home,92.4,True,2012
+201204210IND,"Sat, Apr 21, 2012",IND,PHI,Indiana Pacers,Philadelphia 76ers,106,109,-3,Home,86.5,True,2012
+201204230NJN,"Mon, Apr 23, 2012",NJN,PHI,New Jersey Nets,Philadelphia 76ers,87,105,-18,Home,84.9,True,2012
+201204280CHI,"Sat, Apr 28, 2012",CHI,PHI,Chicago Bulls,Philadelphia 76ers,103,91,12,Home,93.8,True,2012
+201205010CHI,"Tue, May 1, 2012",CHI,PHI,Chicago Bulls,Philadelphia 76ers,92,109,-17,Home,85.0,True,2012
+201205040PHI,"Fri, May 4, 2012",PHI,CHI,Philadelphia 76ers,Chicago Bulls,79,74,5,Home,83.0,True,2012
+201205060PHI,"Sun, May 6, 2012",PHI,CHI,Philadelphia 76ers,Chicago Bulls,89,82,7,Home,89.0,True,2012
+201205080CHI,"Tue, May 8, 2012",CHI,PHI,Chicago Bulls,Philadelphia 76ers,77,69,8,Home,91.0,True,2012
+201205100PHI,"Thu, May 10, 2012",PHI,CHI,Philadelphia 76ers,Chicago Bulls,79,78,1,Home,82.3,True,2012
+201205120BOS,"Sat, May 12, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,92,91,1,Home,92.1,True,2012
+201205140BOS,"Mon, May 14, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,81,82,-1,Home,90.0,True,2012
+201205160PHI,"Wed, May 16, 2012",PHI,BOS,Philadelphia 76ers,Boston Celtics,91,107,-16,Home,86.9,True,2012
+201205180PHI,"Fri, May 18, 2012",PHI,BOS,Philadelphia 76ers,Boston Celtics,92,83,9,Home,89.5,True,2012
+201205210BOS,"Mon, May 21, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,101,85,16,Home,82.4,True,2012
+201205230PHI,"Wed, May 23, 2012",PHI,BOS,Philadelphia 76ers,Boston Celtics,82,75,7,Home,85.9,True,2012
+201205260BOS,"Sat, May 26, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,85,75,10,Home,90.1,True,2012
+201112260CLE,"Mon, Dec 26, 2011",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,96,104,-8,Home,84.9,True,2012
+201112280TOR,"Wed, Dec 28, 2011",TOR,IND,Toronto Raptors,Indiana Pacers,85,90,-5,Home,90.9,True,2012
+201112300DAL,"Fri, Dec 30, 2011",DAL,TOR,Dallas Mavericks,Toronto Raptors,99,86,13,Home,90.2,True,2012
+201201040TOR,"Wed, Jan 4, 2012",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,92,77,15,Home,85.8,True,2012
+201201060TOR,"Fri, Jan 6, 2012",TOR,NJN,Toronto Raptors,New Jersey Nets,85,97,-12,Home,84.5,True,2012
+201201130TOR,"Fri, Jan 13, 2012",TOR,IND,Toronto Raptors,Indiana Pacers,90,95,-5,Home,88.9,True,2012
+201201140CHI,"Sat, Jan 14, 2012",CHI,TOR,Chicago Bulls,Toronto Raptors,77,64,13,Home,80.5,True,2012
+201201180BOS,"Wed, Jan 18, 2012",BOS,TOR,Boston Celtics,Toronto Raptors,96,73,23,Home,85.3,True,2012
+201201290NJN,"Sun, Jan 29, 2012",NJN,TOR,New Jersey Nets,Toronto Raptors,73,94,-21,Home,83.3,True,2012
+201202010BOS,"Wed, Feb 1, 2012",BOS,TOR,Boston Celtics,Toronto Raptors,100,64,36,Home,84.1,True,2012
+201202050MIA,"Sun, Feb 5, 2012",MIA,TOR,Miami Heat,Toronto Raptors,95,89,6,Home,91.7,True,2012
+201202100TOR,"Fri, Feb 10, 2012",TOR,BOS,Toronto Raptors,Boston Celtics,86,74,12,Home,80.1,True,2012
+201203130CLE,"Tue, Mar 13, 2012",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,88,96,-8,Home,84.2,True,2012
+201203140NJN,"Wed, Mar 14, 2012",NJN,TOR,New Jersey Nets,Toronto Raptors,98,84,14,Home,87.6,True,2012
+201203210TOR,"Wed, Mar 21, 2012",TOR,CHI,Toronto Raptors,Chicago Bulls,82,94,-12,Home,89.9,True,2012
+201203240CHI,"Sat, Mar 24, 2012",CHI,TOR,Chicago Bulls,Toronto Raptors,102,101,1,Home,85.1,True,2012
+201203300TOR,"Fri, Mar 30, 2012",TOR,MIA,Toronto Raptors,Miami Heat,101,113,-12,Home,83.4,True,2012
+201204060TOR,"Fri, Apr 6, 2012",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,80,84,-4,Home,85.4,True,2012
+201204090IND,"Mon, Apr 9, 2012",IND,TOR,Indiana Pacers,Toronto Raptors,103,98,5,Home,86.9,True,2012
+201204130TOR,"Fri, Apr 13, 2012",TOR,BOS,Toronto Raptors,Boston Celtics,84,79,5,Home,83.7,True,2012
+201204180MIA,"Wed, Apr 18, 2012",MIA,TOR,Miami Heat,Toronto Raptors,96,72,24,Home,81.8,True,2012
+201204260TOR,"Thu, Apr 26, 2012",TOR,NJN,Toronto Raptors,New Jersey Nets,98,67,31,Home,89.8,True,2012
+201112270MIA,"Tue, Dec 27, 2011",MIA,BOS,Miami Heat,Boston Celtics,115,107,8,Home,102.3,True,2012
+201201040BOS,"Wed, Jan 4, 2012",BOS,NJN,Boston Celtics,New Jersey Nets,89,70,19,Home,79.8,True,2012
+201201060BOS,"Fri, Jan 6, 2012",BOS,IND,Boston Celtics,Indiana Pacers,74,87,-13,Home,80.4,True,2012
+201201110BOS,"Wed, Jan 11, 2012",BOS,DAL,Boston Celtics,Dallas Mavericks,85,90,-5,Home,90.0,True,2012
+201201130BOS,"Fri, Jan 13, 2012",BOS,CHI,Boston Celtics,Chicago Bulls,79,88,-9,Home,80.8,True,2012
+201201140IND,"Sat, Jan 14, 2012",IND,BOS,Indiana Pacers,Boston Celtics,97,83,14,Home,91.4,True,2012
+201201270BOS,"Fri, Jan 27, 2012",BOS,IND,Boston Celtics,Indiana Pacers,94,87,7,Home,94.7,True,2012
+201201290BOS,"Sun, Jan 29, 2012",BOS,CLE,Boston Celtics,Cleveland Cavaliers,87,88,-1,Home,85.7,True,2012
+201201310CLE,"Tue, Jan 31, 2012",CLE,BOS,Cleveland Cavaliers,Boston Celtics,90,93,-3,Home,84.5,True,2012
+201202120BOS,"Sun, Feb 12, 2012",BOS,CHI,Boston Celtics,Chicago Bulls,95,91,4,Home,93.9,True,2012
+201202160CHI,"Thu, Feb 16, 2012",CHI,BOS,Chicago Bulls,Boston Celtics,89,80,9,Home,85.7,True,2012
+201202200DAL,"Mon, Feb 20, 2012",DAL,BOS,Dallas Mavericks,Boston Celtics,89,73,16,Home,89.1,True,2012
+201202280CLE,"Tue, Feb 28, 2012",CLE,BOS,Cleveland Cavaliers,Boston Celtics,83,86,-3,Home,90.0,True,2012
+201203020BOS,"Fri, Mar 2, 2012",BOS,NJN,Boston Celtics,New Jersey Nets,107,94,13,Home,101.2,True,2012
+201204010BOS,"Sun, Apr 1, 2012",BOS,MIA,Boston Celtics,Miami Heat,91,72,19,Home,89.7,True,2012
+201204050CHI,"Thu, Apr 5, 2012",CHI,BOS,Chicago Bulls,Boston Celtics,93,86,7,Home,87.2,True,2012
+201204070IND,"Sat, Apr 7, 2012",IND,BOS,Indiana Pacers,Boston Celtics,72,86,-14,Home,89.1,True,2012
+201204100MIA,"Tue, Apr 10, 2012",MIA,BOS,Miami Heat,Boston Celtics,107,115,-8,Home,89.1,True,2012
+201204140NJN,"Sat, Apr 14, 2012",NJN,BOS,New Jersey Nets,Boston Celtics,82,94,-12,Home,91.0,True,2012
+201204240BOS,"Tue, Apr 24, 2012",BOS,MIA,Boston Celtics,Miami Heat,78,66,12,Home,90.8,True,2012
+201205280MIA,"Mon, May 28, 2012",MIA,BOS,Miami Heat,Boston Celtics,93,79,14,Home,82.5,True,2012
+201205300MIA,"Wed, May 30, 2012",MIA,BOS,Miami Heat,Boston Celtics,115,111,4,Home,84.8,True,2012
+201206010BOS,"Fri, Jun 1, 2012",BOS,MIA,Boston Celtics,Miami Heat,101,91,10,Home,87.0,True,2012
+201206030BOS,"Sun, Jun 3, 2012",BOS,MIA,Boston Celtics,Miami Heat,93,91,2,Home,86.7,True,2012
+201206050MIA,"Tue, Jun 5, 2012",MIA,BOS,Miami Heat,Boston Celtics,90,94,-4,Home,92.7,True,2012
+201206070BOS,"Thu, Jun 7, 2012",BOS,MIA,Boston Celtics,Miami Heat,79,98,-19,Home,86.8,True,2012
+201206090MIA,"Sat, Jun 9, 2012",MIA,BOS,Miami Heat,Boston Celtics,101,88,13,Home,85.1,True,2012
+201201010CLE,"Sun, Jan 1, 2012",CLE,NJN,Cleveland Cavaliers,New Jersey Nets,98,82,16,Home,91.0,True,2012
+201201020NJN,"Mon, Jan 2, 2012",NJN,IND,New Jersey Nets,Indiana Pacers,94,108,-14,Home,84.2,True,2012
+201201070NJN,"Sat, Jan 7, 2012",NJN,MIA,New Jersey Nets,Miami Heat,90,101,-11,Home,96.4,True,2012
+201201230CHI,"Mon, Jan 23, 2012",CHI,NJN,Chicago Bulls,New Jersey Nets,110,95,15,Home,84.6,True,2012
+201201270CLE,"Fri, Jan 27, 2012",CLE,NJN,Cleveland Cavaliers,New Jersey Nets,96,99,-3,Home,89.0,True,2012
+201201310IND,"Tue, Jan 31, 2012",IND,NJN,Indiana Pacers,New Jersey Nets,106,99,7,Home,94.1,True,2012
+201202060NJN,"Mon, Feb 6, 2012",NJN,CHI,New Jersey Nets,Chicago Bulls,87,108,-21,Home,84.5,True,2012
+201202160IND,"Thu, Feb 16, 2012",IND,NJN,Indiana Pacers,New Jersey Nets,93,88,5,Home,86.3,True,2012
+201202180CHI,"Sat, Feb 18, 2012",CHI,NJN,Chicago Bulls,New Jersey Nets,85,97,-12,Home,86.9,True,2012
+201202280DAL,"Tue, Feb 28, 2012",DAL,NJN,Dallas Mavericks,New Jersey Nets,92,93,-1,Home,95.1,True,2012
+201203060MIA,"Tue, Mar 6, 2012",MIA,NJN,Miami Heat,New Jersey Nets,108,78,30,Home,88.5,True,2012
+201203190NJN,"Mon, Mar 19, 2012",NJN,CLE,New Jersey Nets,Cleveland Cavaliers,100,105,-5,Home,91.2,True,2012
+201203280NJN,"Wed, Mar 28, 2012",NJN,IND,New Jersey Nets,Indiana Pacers,100,84,16,Home,86.4,True,2012
+201204080NJN,"Sun, Apr 8, 2012",NJN,CLE,New Jersey Nets,Cleveland Cavaliers,122,117,5,Home,91.9,True,2012
+201204160NJN,"Mon, Apr 16, 2012",NJN,MIA,New Jersey Nets,Miami Heat,98,101,-3,Home,89.6,True,2012
+201112300IND,"Fri, Dec 30, 2011",IND,CLE,Indiana Pacers,Cleveland Cavaliers,98,91,7,Home,96.3,True,2012
+201201200CLE,"Fri, Jan 20, 2012",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,75,114,-39,Home,92.3,True,2012
+201201240MIA,"Tue, Jan 24, 2012",MIA,CLE,Miami Heat,Cleveland Cavaliers,92,85,7,Home,88.0,True,2012
+201202040CLE,"Sat, Feb 4, 2012",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,91,88,3,Home,91.3,True,2012
+201202070MIA,"Tue, Feb 7, 2012",MIA,CLE,Miami Heat,Cleveland Cavaliers,107,91,16,Home,94.9,True,2012
+201202150CLE,"Wed, Feb 15, 2012",CLE,IND,Cleveland Cavaliers,Indiana Pacers,98,87,11,Home,84.0,True,2012
+201202170CLE,"Fri, Feb 17, 2012",CLE,MIA,Cleveland Cavaliers,Miami Heat,87,111,-24,Home,85.8,True,2012
+201203020CLE,"Fri, Mar 2, 2012",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,91,112,-21,Home,87.7,True,2012
+201204110CLE,"Wed, Apr 11, 2012",CLE,IND,Cleveland Cavaliers,Indiana Pacers,98,104,-6,Home,89.6,True,2012
+201204130IND,"Fri, Apr 13, 2012",IND,CLE,Indiana Pacers,Cleveland Cavaliers,102,83,19,Home,93.0,True,2012
+201204260CHI,"Thu, Apr 26, 2012",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,107,75,32,Home,88.9,True,2012
+201112250DAL,"Sun, Dec 25, 2011",DAL,MIA,Dallas Mavericks,Miami Heat,94,105,-11,Home,99.3,True,2012
+201202030DAL,"Fri, Feb 3, 2012",DAL,IND,Dallas Mavericks,Indiana Pacers,87,98,-11,Home,89.4,True,2012
+201203290MIA,"Thu, Mar 29, 2012",MIA,DAL,Miami Heat,Dallas Mavericks,106,85,21,Home,89.7,True,2012
+201204210CHI,"Sat, Apr 21, 2012",CHI,DAL,Chicago Bulls,Dallas Mavericks,93,83,10,Home,88.5,True,2012
+201201040MIA,"Wed, Jan 4, 2012",MIA,IND,Miami Heat,Indiana Pacers,118,83,35,Home,96.8,True,2012
+201201250CHI,"Wed, Jan 25, 2012",CHI,IND,Chicago Bulls,Indiana Pacers,90,95,-5,Home,90.2,True,2012
+201202140IND,"Tue, Feb 14, 2012",IND,MIA,Indiana Pacers,Miami Heat,90,105,-15,Home,94.4,True,2012
+201203050CHI,"Mon, Mar 5, 2012",CHI,IND,Chicago Bulls,Indiana Pacers,92,72,20,Home,85.7,True,2012
+201203100MIA,"Sat, Mar 10, 2012",MIA,IND,Miami Heat,Indiana Pacers,93,91,2,Home,82.2,True,2012
+201203260IND,"Mon, Mar 26, 2012",IND,MIA,Indiana Pacers,Miami Heat,105,90,15,Home,90.5,True,2012
+201204250IND,"Wed, Apr 25, 2012",IND,CHI,Indiana Pacers,Chicago Bulls,87,92,-5,Home,86.9,True,2012
+201205130MIA,"Sun, May 13, 2012",MIA,IND,Miami Heat,Indiana Pacers,95,86,9,Home,92.0,True,2012
+201205150MIA,"Tue, May 15, 2012",MIA,IND,Miami Heat,Indiana Pacers,75,78,-3,Home,84.9,True,2012
+201205170IND,"Thu, May 17, 2012",IND,MIA,Indiana Pacers,Miami Heat,94,75,19,Home,84.1,True,2012
+201205200IND,"Sun, May 20, 2012",IND,MIA,Indiana Pacers,Miami Heat,93,101,-8,Home,92.9,True,2012
+201205220MIA,"Tue, May 22, 2012",MIA,IND,Miami Heat,Indiana Pacers,115,83,32,Home,90.0,True,2012
+201205240IND,"Thu, May 24, 2012",IND,MIA,Indiana Pacers,Miami Heat,93,105,-12,Home,87.2,True,2012
+201201290MIA,"Sun, Jan 29, 2012",MIA,CHI,Miami Heat,Chicago Bulls,97,93,4,Home,94.7,True,2012
+201203140CHI,"Wed, Mar 14, 2012",CHI,MIA,Chicago Bulls,Miami Heat,106,102,4,Home,89.1,True,2012
+201204120CHI,"Thu, Apr 12, 2012",CHI,MIA,Chicago Bulls,Miami Heat,96,86,10,Home,83.6,True,2012
+201204190MIA,"Thu, Apr 19, 2012",MIA,CHI,Miami Heat,Chicago Bulls,83,72,11,Home,86.3,True,2012

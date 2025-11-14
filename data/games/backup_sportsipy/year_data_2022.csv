@@ -1,0 +1,1324 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+202110200MIN,"Wed, Oct 20, 2021",MIN,HOU,Minnesota Timberwolves,Houston Rockets,124,106,18,Home,104.8,True,2022
+202110220HOU,"Fri, Oct 22, 2021",HOU,OKC,Houston Rockets,Oklahoma City Thunder,124,91,33,Home,106.2,True,2022
+202110240HOU,"Sun, Oct 24, 2021",HOU,BOS,Houston Rockets,Boston Celtics,97,107,-10,Home,97.3,True,2022
+202110260DAL,"Tue, Oct 26, 2021",DAL,HOU,Dallas Mavericks,Houston Rockets,116,106,10,Home,101.7,True,2022
+202110280HOU,"Thu, Oct 28, 2021",HOU,UTA,Houston Rockets,Utah Jazz,91,122,-31,Home,100.6,True,2022
+202110310LAL,"Sun, Oct 31, 2021",LAL,HOU,Los Angeles Lakers,Houston Rockets,95,85,10,Home,101.9,True,2022
+202111020LAL,"Tue, Nov 2, 2021",LAL,HOU,Los Angeles Lakers,Houston Rockets,119,117,2,Home,106.2,True,2022
+202111040PHO,"Thu, Nov 4, 2021",PHO,HOU,Phoenix Suns,Houston Rockets,123,111,12,Home,104.1,True,2022
+202111060DEN,"Sat, Nov 6, 2021",DEN,HOU,Denver Nuggets,Houston Rockets,95,94,1,Home,94.5,True,2022
+202111070GSW,"Sun, Nov 7, 2021",GSW,HOU,Golden State Warriors,Houston Rockets,120,107,13,Home,101.2,True,2022
+202111100HOU,"Wed, Nov 10, 2021",HOU,DET,Houston Rockets,Detroit Pistons,104,112,-8,Home,99.1,True,2022
+202111120HOU,"Fri, Nov 12, 2021",HOU,POR,Houston Rockets,Portland Trail Blazers,92,104,-12,Home,99.6,True,2022
+202111140HOU,"Sun, Nov 14, 2021",HOU,PHO,Houston Rockets,Phoenix Suns,89,115,-26,Home,103.3,True,2022
+202111150MEM,"Mon, Nov 15, 2021",MEM,HOU,Memphis Grizzlies,Houston Rockets,136,102,34,Home,106.1,True,2022
+202111170OKC,"Wed, Nov 17, 2021",OKC,HOU,Oklahoma City Thunder,Houston Rockets,101,89,12,Home,99.7,True,2022
+202111200NYK,"Sat, Nov 20, 2021",NYK,HOU,New York Knicks,Houston Rockets,106,99,7,Home,98.2,True,2022
+202111220BOS,"Mon, Nov 22, 2021",BOS,HOU,Boston Celtics,Houston Rockets,108,90,18,Home,101.6,True,2022
+202111240HOU,"Wed, Nov 24, 2021",HOU,CHI,Houston Rockets,Chicago Bulls,118,113,5,Home,105.0,True,2022
+202111270HOU,"Sat, Nov 27, 2021",HOU,CHO,Houston Rockets,Charlotte Hornets,146,143,3,Home,96.0,True,2022
+202111290HOU,"Mon, Nov 29, 2021",HOU,OKC,Houston Rockets,Oklahoma City Thunder,102,89,13,Home,103.8,True,2022
+202112010OKC,"Wed, Dec 1, 2021",OKC,HOU,Oklahoma City Thunder,Houston Rockets,110,114,-4,Home,96.9,True,2022
+202112030HOU,"Fri, Dec 3, 2021",HOU,ORL,Houston Rockets,Orlando Magic,118,116,2,Home,99.7,True,2022
+202112050HOU,"Sun, Dec 5, 2021",HOU,NOP,Houston Rockets,New Orleans Pelicans,118,108,10,Home,89.3,True,2022
+202112080HOU,"Wed, Dec 8, 2021",HOU,BRK,Houston Rockets,Brooklyn Nets,114,104,10,Home,95.5,True,2022
+202112100HOU,"Fri, Dec 10, 2021",HOU,MIL,Houston Rockets,Milwaukee Bucks,114,123,-9,Home,98.5,True,2022
+202112110MEM,"Sat, Dec 11, 2021",MEM,HOU,Memphis Grizzlies,Houston Rockets,113,106,7,Home,93.7,True,2022
+202112130ATL,"Mon, Dec 13, 2021",ATL,HOU,Atlanta Hawks,Houston Rockets,126,132,-6,Home,101.8,True,2022
+202112150CLE,"Wed, Dec 15, 2021",CLE,HOU,Cleveland Cavaliers,Houston Rockets,124,89,35,Home,96.4,True,2022
+202112160HOU,"Thu, Dec 16, 2021",HOU,NYK,Houston Rockets,New York Knicks,103,116,-13,Home,88.4,True,2022
+202112180DET,"Sat, Dec 18, 2021",DET,HOU,Detroit Pistons,Houston Rockets,107,116,-9,Home,102.7,True,2022
+202112200CHI,"Mon, Dec 20, 2021",CHI,HOU,Chicago Bulls,Houston Rockets,133,118,15,Home,94.3,True,2022
+202112220MIL,"Wed, Dec 22, 2021",MIL,HOU,Milwaukee Bucks,Houston Rockets,126,106,20,Home,99.3,True,2022
+202112230IND,"Thu, Dec 23, 2021",IND,HOU,Indiana Pacers,Houston Rockets,118,106,12,Home,91.1,True,2022
+202112270CHO,"Mon, Dec 27, 2021",CHO,HOU,Charlotte Hornets,Houston Rockets,123,99,24,Home,100.5,True,2022
+202112280HOU,"Tue, Dec 28, 2021",HOU,LAL,Houston Rockets,Los Angeles Lakers,123,132,-9,Home,100.9,True,2022
+202112310HOU,"Fri, Dec 31, 2021",HOU,MIA,Houston Rockets,Miami Heat,110,120,-10,Home,99.8,True,2022
+202201010HOU,"Sat, Jan 1, 2022",HOU,DEN,Houston Rockets,Denver Nuggets,111,124,-13,Home,98.2,True,2022
+202201030PHI,"Mon, Jan 3, 2022",PHI,HOU,Philadelphia 76ers,Houston Rockets,133,113,20,Home,101.4,True,2022
+202201050WAS,"Wed, Jan 5, 2022",WAS,HOU,Washington Wizards,Houston Rockets,111,114,-3,Home,106.1,True,2022
+202201070HOU,"Fri, Jan 7, 2022",HOU,DAL,Houston Rockets,Dallas Mavericks,106,130,-24,Home,104.2,True,2022
+202201090HOU,"Sun, Jan 9, 2022",HOU,MIN,Houston Rockets,Minnesota Timberwolves,123,141,-18,Home,108.5,True,2022
+202201100HOU,"Mon, Jan 10, 2022",HOU,PHI,Houston Rockets,Philadelphia 76ers,91,111,-20,Home,98.8,True,2022
+202201120SAS,"Wed, Jan 12, 2022",SAS,HOU,San Antonio Spurs,Houston Rockets,124,128,-4,Home,106.6,True,2022
+202201140SAC,"Fri, Jan 14, 2022",SAC,HOU,Sacramento Kings,Houston Rockets,126,114,12,Home,107.3,True,2022
+202201160SAC,"Sun, Jan 16, 2022",SAC,HOU,Sacramento Kings,Houston Rockets,112,118,-6,Home,104.2,True,2022
+202201190UTA,"Wed, Jan 19, 2022",UTA,HOU,Utah Jazz,Houston Rockets,111,116,-5,Home,94.9,True,2022
+202201210GSW,"Fri, Jan 21, 2022",GSW,HOU,Golden State Warriors,Houston Rockets,105,103,2,Home,98.6,True,2022
+202201250HOU,"Tue, Jan 25, 2022",HOU,SAS,Houston Rockets,San Antonio Spurs,104,134,-30,Home,101.9,True,2022
+202201280HOU,"Fri, Jan 28, 2022",HOU,POR,Houston Rockets,Portland Trail Blazers,110,125,-15,Home,100.0,True,2022
+202201310HOU,"Mon, Jan 31, 2022",HOU,GSW,Houston Rockets,Golden State Warriors,108,122,-14,Home,98.1,True,2022
+202202020HOU,"Wed, Feb 2, 2022",HOU,CLE,Houston Rockets,Cleveland Cavaliers,115,104,11,Home,97.2,True,2022
+202202040SAS,"Fri, Feb 4, 2022",SAS,HOU,San Antonio Spurs,Houston Rockets,131,106,25,Home,98.9,True,2022
+202202060HOU,"Sun, Feb 6, 2022",HOU,NOP,Houston Rockets,New Orleans Pelicans,107,120,-13,Home,97.4,True,2022
+202202080NOP,"Tue, Feb 8, 2022",NOP,HOU,New Orleans Pelicans,Houston Rockets,110,97,13,Home,99.0,True,2022
+202202100HOU,"Thu, Feb 10, 2022",HOU,TOR,Houston Rockets,Toronto Raptors,120,139,-19,Home,100.5,True,2022
+202202140UTA,"Mon, Feb 14, 2022",UTA,HOU,Utah Jazz,Houston Rockets,135,101,34,Home,95.6,True,2022
+202202160PHO,"Wed, Feb 16, 2022",PHO,HOU,Phoenix Suns,Houston Rockets,124,121,3,Home,106.2,True,2022
+202202170LAC,"Thu, Feb 17, 2022",LAC,HOU,Los Angeles Clippers,Houston Rockets,142,111,31,Home,103.7,True,2022
+202202250ORL,"Fri, Feb 25, 2022",ORL,HOU,Orlando Magic,Houston Rockets,119,111,8,Home,103.5,True,2022
+202202270HOU,"Sun, Feb 27, 2022",HOU,LAC,Houston Rockets,Los Angeles Clippers,98,99,-1,Home,96.8,True,2022
+202203010HOU,"Tue, Mar 1, 2022",HOU,LAC,Houston Rockets,Los Angeles Clippers,100,113,-13,Home,98.2,True,2022
+202203020HOU,"Wed, Mar 2, 2022",HOU,UTA,Houston Rockets,Utah Jazz,127,132,-5,Home,97.9,True,2022
+202203040DEN,"Fri, Mar 4, 2022",DEN,HOU,Denver Nuggets,Houston Rockets,116,101,15,Home,96.1,True,2022
+202203060HOU,"Sun, Mar 6, 2022",HOU,MEM,Houston Rockets,Memphis Grizzlies,123,112,11,Home,104.5,True,2022
+202203070MIA,"Mon, Mar 7, 2022",MIA,HOU,Miami Heat,Houston Rockets,123,106,17,Home,96.2,True,2022
+202203090HOU,"Wed, Mar 9, 2022",HOU,LAL,Houston Rockets,Los Angeles Lakers,139,130,9,Home,103.3,True,2022
+202203110HOU,"Fri, Mar 11, 2022",HOU,DAL,Houston Rockets,Dallas Mavericks,100,113,-13,Home,98.7,True,2022
+202203130NOP,"Sun, Mar 13, 2022",NOP,HOU,New Orleans Pelicans,Houston Rockets,130,105,25,Home,101.6,True,2022
+202203160HOU,"Wed, Mar 16, 2022",HOU,PHO,Houston Rockets,Phoenix Suns,112,129,-17,Home,94.9,True,2022
+202203180HOU,"Fri, Mar 18, 2022",HOU,IND,Houston Rockets,Indiana Pacers,118,121,-3,Home,102.4,True,2022
+202203200HOU,"Sun, Mar 20, 2022",HOU,MEM,Houston Rockets,Memphis Grizzlies,98,122,-24,Home,107.5,True,2022
+202203210HOU,"Mon, Mar 21, 2022",HOU,WAS,Houston Rockets,Washington Wizards,115,97,18,Home,95.1,True,2022
+202203230DAL,"Wed, Mar 23, 2022",DAL,HOU,Dallas Mavericks,Houston Rockets,110,91,19,Home,96.1,True,2022
+202203250POR,"Fri, Mar 25, 2022",POR,HOU,Portland Trail Blazers,Houston Rockets,106,125,-19,Home,95.9,True,2022
+202203260POR,"Sat, Mar 26, 2022",POR,HOU,Portland Trail Blazers,Houston Rockets,98,115,-17,Home,99.2,True,2022
+202203280HOU,"Mon, Mar 28, 2022",HOU,SAS,Houston Rockets,San Antonio Spurs,120,123,-3,Home,103.9,True,2022
+202203300HOU,"Wed, Mar 30, 2022",HOU,SAC,Houston Rockets,Sacramento Kings,118,121,-3,Home,105.3,True,2022
+202204010HOU,"Fri, Apr 1, 2022",HOU,SAC,Houston Rockets,Sacramento Kings,117,122,-5,Home,99.8,True,2022
+202204030HOU,"Sun, Apr 3, 2022",HOU,MIN,Houston Rockets,Minnesota Timberwolves,132,139,-7,Home,107.2,True,2022
+202204050BRK,"Tue, Apr 5, 2022",BRK,HOU,Brooklyn Nets,Houston Rockets,118,105,13,Home,99.4,True,2022
+202204080TOR,"Fri, Apr 8, 2022",TOR,HOU,Toronto Raptors,Houston Rockets,117,115,2,Home,99.6,True,2022
+202204100HOU,"Sun, Apr 10, 2022",HOU,ATL,Houston Rockets,Atlanta Hawks,114,130,-16,Home,94.6,True,2022
+202110230MIN,"Sat, Oct 23, 2021",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,96,89,7,Home,103.3,True,2022
+202110250MIN,"Mon, Oct 25, 2021",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,98,107,-9,Home,97.7,True,2022
+202110270MIL,"Wed, Oct 27, 2021",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,108,113,-5,Home,99.2,True,2022
+202110300MIN,"Sat, Oct 30, 2021",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,91,93,-2,Home,95.0,True,2022
+202111010MIN,"Mon, Nov 1, 2021",MIN,ORL,Minnesota Timberwolves,Orlando Magic,97,115,-18,Home,97.1,True,2022
+202111030MIN,"Wed, Nov 3, 2021",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,115,126,-11,Home,99.0,True,2022
+202111050MIN,"Fri, Nov 5, 2021",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,84,104,-20,Home,102.9,True,2022
+202111080MEM,"Mon, Nov 8, 2021",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,125,118,7,Home,90.8,True,2022
+202111100GSW,"Wed, Nov 10, 2021",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,123,110,13,Home,97.1,True,2022
+202111120LAL,"Fri, Nov 12, 2021",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,83,107,-24,Home,97.7,True,2022
+202111130LAC,"Sat, Nov 13, 2021",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,129,102,27,Home,103.9,True,2022
+202111150MIN,"Mon, Nov 15, 2021",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,96,99,-3,Home,99.5,True,2022
+202111170MIN,"Wed, Nov 17, 2021",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,107,97,10,Home,92.6,True,2022
+202111180MIN,"Thu, Nov 18, 2021",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,115,90,25,Home,90.8,True,2022
+202111200MIN,"Sat, Nov 20, 2021",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,138,95,43,Home,96.4,True,2022
+202111220NOP,"Mon, Nov 22, 2021",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,96,110,-14,Home,97.2,True,2022
+202111240MIN,"Wed, Nov 24, 2021",MIN,MIA,Minnesota Timberwolves,Miami Heat,113,101,12,Home,101.2,True,2022
+202111260CHO,"Fri, Nov 26, 2021",CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,133,115,18,Home,101.9,True,2022
+202111270PHI,"Sat, Nov 27, 2021",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,120,121,-1,Home,92.0,True,2022
+202111290MIN,"Mon, Nov 29, 2021",MIN,IND,Minnesota Timberwolves,Indiana Pacers,100,98,2,Home,99.7,True,2022
+202112010WAS,"Wed, Dec 1, 2021",WAS,MIN,Washington Wizards,Minnesota Timberwolves,115,107,8,Home,96.4,True,2022
+202112030BRK,"Fri, Dec 3, 2021",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,110,105,5,Home,99.5,True,2022
+202112060MIN,"Mon, Dec 6, 2021",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,110,121,-11,Home,94.7,True,2022
+202112080MIN,"Wed, Dec 8, 2021",MIN,UTA,Minnesota Timberwolves,Utah Jazz,104,136,-32,Home,102.9,True,2022
+202112100MIN,"Fri, Dec 10, 2021",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,106,123,-17,Home,103.6,True,2022
+202112120POR,"Sun, Dec 12, 2021",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,111,116,-5,Home,100.7,True,2022
+202112150DEN,"Wed, Dec 15, 2021",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,107,124,-17,Home,99.0,True,2022
+202112170MIN,"Fri, Dec 17, 2021",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,110,92,18,Home,105.4,True,2022
+202112190MIN,"Sun, Dec 19, 2021",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,111,105,6,Home,91.8,True,2022
+202112210DAL,"Tue, Dec 21, 2021",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,114,102,12,Home,93.9,True,2022
+202112230UTA,"Thu, Dec 23, 2021",UTA,MIN,Utah Jazz,Minnesota Timberwolves,128,116,12,Home,102.1,True,2022
+202112270MIN,"Mon, Dec 27, 2021",MIN,BOS,Minnesota Timberwolves,Boston Celtics,108,103,5,Home,99.0,True,2022
+202112280MIN,"Tue, Dec 28, 2021",MIN,NYK,Minnesota Timberwolves,New York Knicks,88,96,-8,Home,93.1,True,2022
+202112310UTA,"Fri, Dec 31, 2021",UTA,MIN,Utah Jazz,Minnesota Timberwolves,120,108,12,Home,99.9,True,2022
+202201020LAL,"Sun, Jan 2, 2022",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,108,103,5,Home,97.0,True,2022
+202201030LAC,"Mon, Jan 3, 2022",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,104,122,-18,Home,99.9,True,2022
+202201050MIN,"Wed, Jan 5, 2022",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,98,90,8,Home,98.0,True,2022
+202201070OKC,"Fri, Jan 7, 2022",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,105,135,-30,Home,104.4,True,2022
+202201110NOP,"Tue, Jan 11, 2022",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,128,125,3,Home,100.4,True,2022
+202201130MEM,"Thu, Jan 13, 2022",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,116,108,8,Home,102.4,True,2022
+202201160MIN,"Sun, Jan 16, 2022",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,119,99,20,Home,104.2,True,2022
+202201180NYK,"Tue, Jan 18, 2022",NYK,MIN,New York Knicks,Minnesota Timberwolves,110,112,-2,Home,98.7,True,2022
+202201190ATL,"Wed, Jan 19, 2022",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,134,122,12,Home,101.1,True,2022
+202201230MIN,"Sun, Jan 23, 2022",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,136,125,11,Home,100.7,True,2022
+202201250POR,"Tue, Jan 25, 2022",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,107,109,-2,Home,98.2,True,2022
+202201270GSW,"Thu, Jan 27, 2022",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,124,115,9,Home,100.6,True,2022
+202201280PHO,"Fri, Jan 28, 2022",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,134,124,10,Home,99.6,True,2022
+202201300MIN,"Sun, Jan 30, 2022",MIN,UTA,Minnesota Timberwolves,Utah Jazz,126,106,20,Home,99.0,True,2022
+202202010MIN,"Tue, Feb 1, 2022",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,130,115,15,Home,100.4,True,2022
+202202030DET,"Thu, Feb 3, 2022",DET,MIN,Detroit Pistons,Minnesota Timberwolves,117,128,-11,Home,101.9,True,2022
+202202060MIN,"Sun, Feb 6, 2022",MIN,DET,Minnesota Timberwolves,Detroit Pistons,118,105,13,Home,96.8,True,2022
+202202080SAC,"Tue, Feb 8, 2022",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,114,134,-20,Home,105.2,True,2022
+202202090SAC,"Wed, Feb 9, 2022",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,132,119,13,Home,105.4,True,2022
+202202110CHI,"Fri, Feb 11, 2022",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,134,122,12,Home,100.9,True,2022
+202202130IND,"Sun, Feb 13, 2022",IND,MIN,Indiana Pacers,Minnesota Timberwolves,120,129,-9,Home,98.7,True,2022
+202202150MIN,"Tue, Feb 15, 2022",MIN,CHO,Minnesota Timberwolves,Charlotte Hornets,126,120,6,Home,105.5,True,2022
+202202160MIN,"Wed, Feb 16, 2022",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,91,103,-12,Home,97.1,True,2022
+202202240MIN,"Thu, Feb 24, 2022",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,119,114,5,Home,100.0,True,2022
+202202250MIN,"Fri, Feb 25, 2022",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,102,133,-31,Home,101.0,True,2022
+202202280CLE,"Mon, Feb 28, 2022",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,122,127,-5,Home,96.8,True,2022
+202203010MIN,"Tue, Mar 1, 2022",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,129,114,15,Home,106.7,True,2022
+202203040OKC,"Fri, Mar 4, 2022",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,101,138,-37,Home,108.2,True,2022
+202203050MIN,"Sat, Mar 5, 2022",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,135,121,14,Home,99.2,True,2022
+202203070MIN,"Mon, Mar 7, 2022",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,124,81,43,Home,107.5,True,2022
+202203090MIN,"Wed, Mar 9, 2022",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,132,102,30,Home,102.8,True,2022
+202203110ORL,"Fri, Mar 11, 2022",ORL,MIN,Orlando Magic,Minnesota Timberwolves,118,110,8,Home,97.3,True,2022
+202203120MIA,"Sat, Mar 12, 2022",MIA,MIN,Miami Heat,Minnesota Timberwolves,104,113,-9,Home,103.6,True,2022
+202203140SAS,"Mon, Mar 14, 2022",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,139,149,-10,Home,110.8,True,2022
+202203160MIN,"Wed, Mar 16, 2022",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,124,104,20,Home,99.6,True,2022
+202203190MIN,"Sat, Mar 19, 2022",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,138,119,19,Home,103.2,True,2022
+202203210DAL,"Mon, Mar 21, 2022",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,110,108,2,Home,95.1,True,2022
+202203230MIN,"Wed, Mar 23, 2022",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,116,125,-9,Home,97.8,True,2022
+202203250MIN,"Fri, Mar 25, 2022",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,116,95,21,Home,95.9,True,2022
+202203270BOS,"Sun, Mar 27, 2022",BOS,MIN,Boston Celtics,Minnesota Timberwolves,134,112,22,Home,97.8,True,2022
+202203300TOR,"Wed, Mar 30, 2022",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,125,102,23,Home,104.4,True,2022
+202204010DEN,"Fri, Apr 1, 2022",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,130,136,-6,Home,102.6,True,2022
+202204050MIN,"Tue, Apr 5, 2022",MIN,WAS,Minnesota Timberwolves,Washington Wizards,114,132,-18,Home,104.7,True,2022
+202204070MIN,"Thu, Apr 7, 2022",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,127,121,6,Home,104.2,True,2022
+202204100MIN,"Sun, Apr 10, 2022",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,120,124,-4,Home,101.2,True,2022
+202204120MIN,"Tue, Apr 12, 2022",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,109,104,5,Home,96.7,True,2022
+202204160MEM,"Sat, Apr 16, 2022",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,117,130,-13,Home,105.4,True,2022
+202204190MEM,"Tue, Apr 19, 2022",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,124,96,28,Home,100.2,True,2022
+202204210MIN,"Thu, Apr 21, 2022",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,95,104,-9,Home,98.7,True,2022
+202204230MIN,"Sat, Apr 23, 2022",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,119,118,1,Home,101.6,True,2022
+202204260MEM,"Tue, Apr 26, 2022",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,111,109,2,Home,106.7,True,2022
+202204290MIN,"Fri, Apr 29, 2022",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,106,114,-8,Home,97.8,True,2022
+202110200UTA,"Wed, Oct 20, 2021",UTA,OKC,Utah Jazz,Oklahoma City Thunder,107,86,21,Home,94.5,True,2022
+202110240OKC,"Sun, Oct 24, 2021",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,103,115,-12,Home,95.6,True,2022
+202110260OKC,"Tue, Oct 26, 2021",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,98,106,-8,Home,96.4,True,2022
+202110270OKC,"Wed, Oct 27, 2021",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,123,115,8,Home,102.0,True,2022
+202110300GSW,"Sat, Oct 30, 2021",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,103,82,21,Home,101.1,True,2022
+202111010LAC,"Mon, Nov 1, 2021",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,99,94,5,Home,98.5,True,2022
+202111040LAL,"Thu, Nov 4, 2021",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,104,107,-3,Home,97.7,True,2022
+202111070OKC,"Sun, Nov 7, 2021",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,99,94,5,Home,97.8,True,2022
+202111100NOP,"Wed, Nov 10, 2021",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,100,108,-8,Home,99.7,True,2022
+202111120OKC,"Fri, Nov 12, 2021",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,105,103,2,Home,98.7,True,2022
+202111140OKC,"Sun, Nov 14, 2021",OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,96,120,-24,Home,96.0,True,2022
+202111150OKC,"Mon, Nov 15, 2021",OKC,MIA,Oklahoma City Thunder,Miami Heat,90,103,-13,Home,95.8,True,2022
+202111190MIL,"Fri, Nov 19, 2021",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,96,89,7,Home,98.9,True,2022
+202111200BOS,"Sat, Nov 20, 2021",BOS,OKC,Boston Celtics,Oklahoma City Thunder,111,105,6,Home,93.4,True,2022
+202111220ATL,"Mon, Nov 22, 2021",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,113,101,12,Home,91.4,True,2022
+202111240OKC,"Wed, Nov 24, 2021",OKC,UTA,Oklahoma City Thunder,Utah Jazz,104,110,-6,Home,96.7,True,2022
+202111260OKC,"Fri, Nov 26, 2021",OKC,WAS,Oklahoma City Thunder,Washington Wizards,99,101,-2,Home,95.0,True,2022
+202112020MEM,"Thu, Dec 2, 2021",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,152,79,73,Home,95.4,True,2022
+202112060DET,"Mon, Dec 6, 2021",DET,OKC,Detroit Pistons,Oklahoma City Thunder,103,114,-11,Home,98.1,True,2022
+202112080TOR,"Wed, Dec 8, 2021",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,109,110,-1,Home,96.5,True,2022
+202112100OKC,"Fri, Dec 10, 2021",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,95,116,-21,Home,96.2,True,2022
+202112120OKC,"Sun, Dec 12, 2021",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,84,103,-19,Home,93.5,True,2022
+202112150OKC,"Wed, Dec 15, 2021",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,110,113,-3,Home,97.1,True,2022
+202112180OKC,"Sat, Dec 18, 2021",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,104,103,1,Home,93.9,True,2022
+202112200MEM,"Mon, Dec 20, 2021",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,99,102,-3,Home,98.1,True,2022
+202112220OKC,"Wed, Dec 22, 2021",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,108,94,14,Home,98.4,True,2022
+202112230PHO,"Thu, Dec 23, 2021",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,113,101,12,Home,100.7,True,2022
+202112260OKC,"Sun, Dec 26, 2021",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,117,112,5,Home,102.7,True,2022
+202112280SAC,"Tue, Dec 28, 2021",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,117,111,6,Home,103.5,True,2022
+202112290PHO,"Wed, Dec 29, 2021",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,115,97,18,Home,96.0,True,2022
+202112310OKC,"Fri, Dec 31, 2021",OKC,NYK,Oklahoma City Thunder,New York Knicks,95,80,15,Home,92.6,True,2022
+202201020OKC,"Sun, Jan 2, 2022",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,86,95,-9,Home,93.5,True,2022
+202201090OKC,"Sun, Jan 9, 2022",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,95,99,-4,Home,89.3,True,2022
+202201110WAS,"Tue, Jan 11, 2022",WAS,OKC,Washington Wizards,Oklahoma City Thunder,122,118,4,Home,97.2,True,2022
+202201130BRK,"Thu, Jan 13, 2022",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,109,130,-21,Home,95.1,True,2022
+202201150OKC,"Sat, Jan 15, 2022",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,102,107,-5,Home,90.8,True,2022
+202201170DAL,"Mon, Jan 17, 2022",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,104,102,2,Home,98.3,True,2022
+202201190SAS,"Wed, Jan 19, 2022",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,118,96,22,Home,99.1,True,2022
+202201210CHO,"Fri, Jan 21, 2022",CHO,OKC,Charlotte Hornets,Oklahoma City Thunder,121,98,23,Home,100.3,True,2022
+202201220CLE,"Sat, Jan 22, 2022",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,94,87,7,Home,95.8,True,2022
+202201240OKC,"Mon, Jan 24, 2022",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,110,111,-1,Home,101.1,True,2022
+202201280OKC,"Fri, Jan 28, 2022",OKC,IND,Oklahoma City Thunder,Indiana Pacers,110,113,-3,Home,94.4,True,2022
+202201310OKC,"Mon, Jan 31, 2022",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,98,81,17,Home,91.6,True,2022
+202202020DAL,"Wed, Feb 2, 2022",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,114,120,-6,Home,89.4,True,2022
+202202040POR,"Fri, Feb 4, 2022",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,93,96,-3,Home,95.6,True,2022
+202202050SAC,"Sat, Feb 5, 2022",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,113,103,10,Home,99.9,True,2022
+202202070OKC,"Mon, Feb 7, 2022",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,98,110,-12,Home,95.5,True,2022
+202202090OKC,"Wed, Feb 9, 2022",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,98,117,-19,Home,96.2,True,2022
+202202110PHI,"Fri, Feb 11, 2022",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,100,87,13,Home,97.6,True,2022
+202202120CHI,"Sat, Feb 12, 2022",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,106,101,5,Home,99.6,True,2022
+202202140NYK,"Mon, Feb 14, 2022",NYK,OKC,New York Knicks,Oklahoma City Thunder,123,127,-4,Home,98.3,True,2022
+202202160OKC,"Wed, Feb 16, 2022",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,106,114,-8,Home,102.9,True,2022
+202202240OKC,"Thu, Feb 24, 2022",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,104,124,-20,Home,105.8,True,2022
+202202250IND,"Fri, Feb 25, 2022",IND,OKC,Indiana Pacers,Oklahoma City Thunder,125,129,-4,Home,100.2,True,2022
+202202280OKC,"Mon, Feb 28, 2022",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,110,131,-21,Home,104.5,True,2022
+202203020DEN,"Wed, Mar 2, 2022",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,107,119,-12,Home,101.4,True,2022
+202203060OKC,"Sun, Mar 6, 2022",OKC,UTA,Oklahoma City Thunder,Utah Jazz,103,116,-13,Home,94.1,True,2022
+202203080OKC,"Tue, Mar 8, 2022",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,115,142,-27,Home,102.3,True,2022
+202203130OKC,"Sun, Mar 13, 2022",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,118,125,-7,Home,101.3,True,2022
+202203140OKC,"Mon, Mar 14, 2022",OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,116,134,-18,Home,98.5,True,2022
+202203160SAS,"Wed, Mar 16, 2022",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,122,120,2,Home,101.0,True,2022
+202203180MIA,"Fri, Mar 18, 2022",MIA,OKC,Miami Heat,Oklahoma City Thunder,120,108,12,Home,92.7,True,2022
+202203200ORL,"Sun, Mar 20, 2022",ORL,OKC,Orlando Magic,Oklahoma City Thunder,90,85,5,Home,98.0,True,2022
+202203210OKC,"Mon, Mar 21, 2022",OKC,BOS,Oklahoma City Thunder,Boston Celtics,123,132,-9,Home,99.8,True,2022
+202203230OKC,"Wed, Mar 23, 2022",OKC,ORL,Oklahoma City Thunder,Orlando Magic,118,102,16,Home,97.3,True,2022
+202203260DEN,"Sat, Mar 26, 2022",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,113,107,6,Home,99.4,True,2022
+202203280POR,"Mon, Mar 28, 2022",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,131,134,-3,Home,96.8,True,2022
+202203300OKC,"Wed, Mar 30, 2022",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,118,136,-18,Home,105.0,True,2022
+202204010OKC,"Fri, Apr 1, 2022",OKC,DET,Oklahoma City Thunder,Detroit Pistons,101,110,-9,Home,98.9,True,2022
+202204030OKC,"Sun, Apr 3, 2022",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,117,96,21,Home,97.8,True,2022
+202204050OKC,"Tue, Apr 5, 2022",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,98,94,4,Home,93.5,True,2022
+202204060UTA,"Wed, Apr 6, 2022",UTA,OKC,Utah Jazz,Oklahoma City Thunder,137,101,36,Home,93.0,True,2022
+202204080LAL,"Fri, Apr 8, 2022",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,120,101,19,Home,99.5,True,2022
+202204100LAC,"Sun, Apr 10, 2022",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,138,88,50,Home,96.8,True,2022
+202110200NYK,"Wed, Oct 20, 2021",NYK,BOS,New York Knicks,Boston Celtics,138,134,4,Home,103.9,True,2022
+202110220BOS,"Fri, Oct 22, 2021",BOS,TOR,Boston Celtics,Toronto Raptors,83,115,-32,Home,97.6,True,2022
+202110250CHO,"Mon, Oct 25, 2021",CHO,BOS,Charlotte Hornets,Boston Celtics,129,140,-11,Home,101.3,True,2022
+202110270BOS,"Wed, Oct 27, 2021",BOS,WAS,Boston Celtics,Washington Wizards,107,116,-9,Home,98.0,True,2022
+202110300WAS,"Sat, Oct 30, 2021",WAS,BOS,Washington Wizards,Boston Celtics,115,112,3,Home,97.4,True,2022
+202111010BOS,"Mon, Nov 1, 2021",BOS,CHI,Boston Celtics,Chicago Bulls,114,128,-14,Home,97.4,True,2022
+202111030ORL,"Wed, Nov 3, 2021",ORL,BOS,Orlando Magic,Boston Celtics,79,92,-13,Home,93.3,True,2022
+202111040MIA,"Thu, Nov 4, 2021",MIA,BOS,Miami Heat,Boston Celtics,78,95,-17,Home,90.2,True,2022
+202111060DAL,"Sat, Nov 6, 2021",DAL,BOS,Dallas Mavericks,Boston Celtics,107,104,3,Home,92.4,True,2022
+202111100BOS,"Wed, Nov 10, 2021",BOS,TOR,Boston Celtics,Toronto Raptors,104,88,16,Home,98.0,True,2022
+202111120BOS,"Fri, Nov 12, 2021",BOS,MIL,Boston Celtics,Milwaukee Bucks,122,113,9,Home,90.1,True,2022
+202111130CLE,"Sat, Nov 13, 2021",CLE,BOS,Cleveland Cavaliers,Boston Celtics,91,89,2,Home,91.2,True,2022
+202111150CLE,"Mon, Nov 15, 2021",CLE,BOS,Cleveland Cavaliers,Boston Celtics,92,98,-6,Home,93.8,True,2022
+202111170ATL,"Wed, Nov 17, 2021",ATL,BOS,Atlanta Hawks,Boston Celtics,110,99,11,Home,91.9,True,2022
+202111190BOS,"Fri, Nov 19, 2021",BOS,LAL,Boston Celtics,Los Angeles Lakers,130,108,22,Home,99.3,True,2022
+202111240BOS,"Wed, Nov 24, 2021",BOS,BRK,Boston Celtics,Brooklyn Nets,104,123,-19,Home,96.2,True,2022
+202111260SAS,"Fri, Nov 26, 2021",SAS,BOS,San Antonio Spurs,Boston Celtics,96,88,8,Home,95.3,True,2022
+202111280TOR,"Sun, Nov 28, 2021",TOR,BOS,Toronto Raptors,Boston Celtics,97,109,-12,Home,95.2,True,2022
+202112010BOS,"Wed, Dec 1, 2021",BOS,PHI,Boston Celtics,Philadelphia 76ers,88,87,1,Home,93.3,True,2022
+202112030UTA,"Fri, Dec 3, 2021",UTA,BOS,Utah Jazz,Boston Celtics,137,130,7,Home,99.5,True,2022
+202112040POR,"Sat, Dec 4, 2021",POR,BOS,Portland Trail Blazers,Boston Celtics,117,145,-28,Home,98.0,True,2022
+202112070LAL,"Tue, Dec 7, 2021",LAL,BOS,Los Angeles Lakers,Boston Celtics,117,102,15,Home,98.5,True,2022
+202112080LAC,"Wed, Dec 8, 2021",LAC,BOS,Los Angeles Clippers,Boston Celtics,114,111,3,Home,102.1,True,2022
+202112100PHO,"Fri, Dec 10, 2021",PHO,BOS,Phoenix Suns,Boston Celtics,111,90,21,Home,96.6,True,2022
+202112130BOS,"Mon, Dec 13, 2021",BOS,MIL,Boston Celtics,Milwaukee Bucks,117,103,14,Home,95.0,True,2022
+202112170BOS,"Fri, Dec 17, 2021",BOS,GSW,Boston Celtics,Golden State Warriors,107,111,-4,Home,96.7,True,2022
+202112180BOS,"Sat, Dec 18, 2021",BOS,NYK,Boston Celtics,New York Knicks,114,107,7,Home,95.6,True,2022
+202112200BOS,"Mon, Dec 20, 2021",BOS,PHI,Boston Celtics,Philadelphia 76ers,103,108,-5,Home,97.5,True,2022
+202112220BOS,"Wed, Dec 22, 2021",BOS,CLE,Boston Celtics,Cleveland Cavaliers,111,101,10,Home,99.3,True,2022
+202112250MIL,"Sat, Dec 25, 2021",MIL,BOS,Milwaukee Bucks,Boston Celtics,117,113,4,Home,98.9,True,2022
+202112290BOS,"Wed, Dec 29, 2021",BOS,LAC,Boston Celtics,Los Angeles Clippers,82,91,-9,Home,89.4,True,2022
+202112310BOS,"Fri, Dec 31, 2021",BOS,PHO,Boston Celtics,Phoenix Suns,123,108,15,Home,96.4,True,2022
+202201020BOS,"Sun, Jan 2, 2022",BOS,ORL,Boston Celtics,Orlando Magic,116,111,5,Home,97.4,True,2022
+202201050BOS,"Wed, Jan 5, 2022",BOS,SAS,Boston Celtics,San Antonio Spurs,97,99,-2,Home,89.8,True,2022
+202201060NYK,"Thu, Jan 6, 2022",NYK,BOS,New York Knicks,Boston Celtics,108,105,3,Home,88.8,True,2022
+202201080BOS,"Sat, Jan 8, 2022",BOS,NYK,Boston Celtics,New York Knicks,99,75,24,Home,83.6,True,2022
+202201100BOS,"Mon, Jan 10, 2022",BOS,IND,Boston Celtics,Indiana Pacers,101,98,3,Home,95.5,True,2022
+202201120IND,"Wed, Jan 12, 2022",IND,BOS,Indiana Pacers,Boston Celtics,100,119,-19,Home,91.1,True,2022
+202201140PHI,"Fri, Jan 14, 2022",PHI,BOS,Philadelphia 76ers,Boston Celtics,111,99,12,Home,96.8,True,2022
+202201150BOS,"Sat, Jan 15, 2022",BOS,CHI,Boston Celtics,Chicago Bulls,114,112,2,Home,89.8,True,2022
+202201170BOS,"Mon, Jan 17, 2022",BOS,NOP,Boston Celtics,New Orleans Pelicans,104,92,12,Home,96.3,True,2022
+202201190BOS,"Wed, Jan 19, 2022",BOS,CHO,Boston Celtics,Charlotte Hornets,102,111,-9,Home,96.8,True,2022
+202201210BOS,"Fri, Jan 21, 2022",BOS,POR,Boston Celtics,Portland Trail Blazers,105,109,-4,Home,93.5,True,2022
+202201230WAS,"Sun, Jan 23, 2022",WAS,BOS,Washington Wizards,Boston Celtics,87,116,-29,Home,96.8,True,2022
+202201250BOS,"Tue, Jan 25, 2022",BOS,SAC,Boston Celtics,Sacramento Kings,128,75,53,Home,95.7,True,2022
+202201280ATL,"Fri, Jan 28, 2022",ATL,BOS,Atlanta Hawks,Boston Celtics,108,92,16,Home,95.7,True,2022
+202201290NOP,"Sat, Jan 29, 2022",NOP,BOS,New Orleans Pelicans,Boston Celtics,97,107,-10,Home,93.7,True,2022
+202201310BOS,"Mon, Jan 31, 2022",BOS,MIA,Boston Celtics,Miami Heat,122,92,30,Home,95.4,True,2022
+202202020BOS,"Wed, Feb 2, 2022",BOS,CHO,Boston Celtics,Charlotte Hornets,113,107,6,Home,99.4,True,2022
+202202040DET,"Fri, Feb 4, 2022",DET,BOS,Detroit Pistons,Boston Celtics,93,102,-9,Home,96.7,True,2022
+202202060ORL,"Sun, Feb 6, 2022",ORL,BOS,Orlando Magic,Boston Celtics,83,116,-33,Home,98.1,True,2022
+202202080BRK,"Tue, Feb 8, 2022",BRK,BOS,Brooklyn Nets,Boston Celtics,91,126,-35,Home,98.4,True,2022
+202202110BOS,"Fri, Feb 11, 2022",BOS,DEN,Boston Celtics,Denver Nuggets,108,102,6,Home,102.6,True,2022
+202202130BOS,"Sun, Feb 13, 2022",BOS,ATL,Boston Celtics,Atlanta Hawks,105,95,10,Home,96.9,True,2022
+202202150PHI,"Tue, Feb 15, 2022",PHI,BOS,Philadelphia 76ers,Boston Celtics,87,135,-48,Home,91.8,True,2022
+202202160BOS,"Wed, Feb 16, 2022",BOS,DET,Boston Celtics,Detroit Pistons,111,112,-1,Home,95.0,True,2022
+202202240BRK,"Thu, Feb 24, 2022",BRK,BOS,Brooklyn Nets,Boston Celtics,106,129,-23,Home,102.7,True,2022
+202202260DET,"Sat, Feb 26, 2022",DET,BOS,Detroit Pistons,Boston Celtics,104,113,-9,Home,95.2,True,2022
+202202270IND,"Sun, Feb 27, 2022",IND,BOS,Indiana Pacers,Boston Celtics,128,107,21,Home,97.9,True,2022
+202203010BOS,"Tue, Mar 1, 2022",BOS,ATL,Boston Celtics,Atlanta Hawks,107,98,9,Home,93.0,True,2022
+202203030BOS,"Thu, Mar 3, 2022",BOS,MEM,Boston Celtics,Memphis Grizzlies,120,107,13,Home,92.1,True,2022
+202203060BOS,"Sun, Mar 6, 2022",BOS,BRK,Boston Celtics,Brooklyn Nets,126,120,6,Home,97.5,True,2022
+202203090CHO,"Wed, Mar 9, 2022",CHO,BOS,Charlotte Hornets,Boston Celtics,101,115,-14,Home,93.8,True,2022
+202203110BOS,"Fri, Mar 11, 2022",BOS,DET,Boston Celtics,Detroit Pistons,114,103,11,Home,94.9,True,2022
+202203130BOS,"Sun, Mar 13, 2022",BOS,DAL,Boston Celtics,Dallas Mavericks,92,95,-3,Home,93.7,True,2022
+202203160GSW,"Wed, Mar 16, 2022",GSW,BOS,Golden State Warriors,Boston Celtics,88,110,-22,Home,91.5,True,2022
+202203180SAC,"Fri, Mar 18, 2022",SAC,BOS,Sacramento Kings,Boston Celtics,97,126,-29,Home,95.5,True,2022
+202203200DEN,"Sun, Mar 20, 2022",DEN,BOS,Denver Nuggets,Boston Celtics,104,124,-20,Home,90.0,True,2022
+202203230BOS,"Wed, Mar 23, 2022",BOS,UTA,Boston Celtics,Utah Jazz,125,97,28,Home,90.4,True,2022
+202203280TOR,"Mon, Mar 28, 2022",TOR,BOS,Toronto Raptors,Boston Celtics,115,112,3,Home,94.6,True,2022
+202203300BOS,"Wed, Mar 30, 2022",BOS,MIA,Boston Celtics,Miami Heat,98,106,-8,Home,100.8,True,2022
+202204010BOS,"Fri, Apr 1, 2022",BOS,IND,Boston Celtics,Indiana Pacers,128,123,5,Home,96.4,True,2022
+202204030BOS,"Sun, Apr 3, 2022",BOS,WAS,Boston Celtics,Washington Wizards,144,102,42,Home,94.3,True,2022
+202204060CHI,"Wed, Apr 6, 2022",CHI,BOS,Chicago Bulls,Boston Celtics,94,117,-23,Home,98.2,True,2022
+202204070MIL,"Thu, Apr 7, 2022",MIL,BOS,Milwaukee Bucks,Boston Celtics,127,121,6,Home,101.8,True,2022
+202204100MEM,"Sun, Apr 10, 2022",MEM,BOS,Memphis Grizzlies,Boston Celtics,110,139,-29,Home,102.1,True,2022
+202204170BOS,"Sun, Apr 17, 2022",BOS,BRK,Boston Celtics,Brooklyn Nets,115,114,1,Home,96.0,True,2022
+202204200BOS,"Wed, Apr 20, 2022",BOS,BRK,Boston Celtics,Brooklyn Nets,114,107,7,Home,93.3,True,2022
+202204230BRK,"Sat, Apr 23, 2022",BRK,BOS,Brooklyn Nets,Boston Celtics,103,109,-6,Home,86.5,True,2022
+202204250BRK,"Mon, Apr 25, 2022",BRK,BOS,Brooklyn Nets,Boston Celtics,112,116,-4,Home,96.4,True,2022
+202205010BOS,"Sun, May 1, 2022",BOS,MIL,Boston Celtics,Milwaukee Bucks,89,101,-12,Home,99.2,True,2022
+202205030BOS,"Tue, May 3, 2022",BOS,MIL,Boston Celtics,Milwaukee Bucks,109,86,23,Home,90.8,True,2022
+202205070MIL,"Sat, May 7, 2022",MIL,BOS,Milwaukee Bucks,Boston Celtics,103,101,2,Home,99.5,True,2022
+202205090MIL,"Mon, May 9, 2022",MIL,BOS,Milwaukee Bucks,Boston Celtics,108,116,-8,Home,97.0,True,2022
+202205110BOS,"Wed, May 11, 2022",BOS,MIL,Boston Celtics,Milwaukee Bucks,107,110,-3,Home,93.0,True,2022
+202205130MIL,"Fri, May 13, 2022",MIL,BOS,Milwaukee Bucks,Boston Celtics,95,108,-13,Home,95.8,True,2022
+202205150BOS,"Sun, May 15, 2022",BOS,MIL,Boston Celtics,Milwaukee Bucks,109,81,28,Home,97.6,True,2022
+202205170MIA,"Tue, May 17, 2022",MIA,BOS,Miami Heat,Boston Celtics,118,107,11,Home,96.8,True,2022
+202205190MIA,"Thu, May 19, 2022",MIA,BOS,Miami Heat,Boston Celtics,102,127,-25,Home,94.0,True,2022
+202205210BOS,"Sat, May 21, 2022",BOS,MIA,Boston Celtics,Miami Heat,103,109,-6,Home,95.5,True,2022
+202205230BOS,"Mon, May 23, 2022",BOS,MIA,Boston Celtics,Miami Heat,102,82,20,Home,89.5,True,2022
+202205250MIA,"Wed, May 25, 2022",MIA,BOS,Miami Heat,Boston Celtics,80,93,-13,Home,89.0,True,2022
+202205270BOS,"Fri, May 27, 2022",BOS,MIA,Boston Celtics,Miami Heat,103,111,-8,Home,92.8,True,2022
+202205290MIA,"Sun, May 29, 2022",MIA,BOS,Miami Heat,Boston Celtics,96,100,-4,Home,96.9,True,2022
+202206020GSW,"Thu, Jun 2, 2022",GSW,BOS,Golden State Warriors,Boston Celtics,108,120,-12,Home,93.9,True,2022
+202206050GSW,"Sun, Jun 5, 2022",GSW,BOS,Golden State Warriors,Boston Celtics,107,88,19,Home,98.1,True,2022
+202206080BOS,"Wed, Jun 8, 2022",BOS,GSW,Boston Celtics,Golden State Warriors,116,100,16,Home,92.5,True,2022
+202206100BOS,"Fri, Jun 10, 2022",BOS,GSW,Boston Celtics,Golden State Warriors,97,107,-10,Home,95.0,True,2022
+202206130GSW,"Mon, Jun 13, 2022",GSW,BOS,Golden State Warriors,Boston Celtics,104,94,10,Home,96.0,True,2022
+202206160BOS,"Thu, Jun 16, 2022",BOS,GSW,Boston Celtics,Golden State Warriors,90,103,-13,Home,92.1,True,2022
+202110210ATL,"Thu, Oct 21, 2021",ATL,DAL,Atlanta Hawks,Dallas Mavericks,113,87,26,Home,102.9,True,2022
+202110230TOR,"Sat, Oct 23, 2021",TOR,DAL,Toronto Raptors,Dallas Mavericks,95,103,-8,Home,93.2,True,2022
+202110280DAL,"Thu, Oct 28, 2021",DAL,SAS,Dallas Mavericks,San Antonio Spurs,104,99,5,Home,95.9,True,2022
+202110290DEN,"Fri, Oct 29, 2021",DEN,DAL,Denver Nuggets,Dallas Mavericks,106,75,31,Home,99.0,True,2022
+202110310DAL,"Sun, Oct 31, 2021",DAL,SAC,Dallas Mavericks,Sacramento Kings,105,99,6,Home,95.9,True,2022
+202111020DAL,"Tue, Nov 2, 2021",DAL,MIA,Dallas Mavericks,Miami Heat,110,125,-15,Home,92.4,True,2022
+202111030SAS,"Wed, Nov 3, 2021",SAS,DAL,San Antonio Spurs,Dallas Mavericks,108,109,-1,Home,106.2,True,2022
+202111080DAL,"Mon, Nov 8, 2021",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,108,92,16,Home,92.9,True,2022
+202111100CHI,"Wed, Nov 10, 2021",CHI,DAL,Chicago Bulls,Dallas Mavericks,117,107,10,Home,96.5,True,2022
+202111120SAS,"Fri, Nov 12, 2021",SAS,DAL,San Antonio Spurs,Dallas Mavericks,109,123,-14,Home,101.1,True,2022
+202111150DAL,"Mon, Nov 15, 2021",DAL,DEN,Dallas Mavericks,Denver Nuggets,111,101,10,Home,91.3,True,2022
+202111170PHO,"Wed, Nov 17, 2021",PHO,DAL,Phoenix Suns,Dallas Mavericks,105,98,7,Home,95.3,True,2022
+202111190PHO,"Fri, Nov 19, 2021",PHO,DAL,Phoenix Suns,Dallas Mavericks,112,104,8,Home,97.6,True,2022
+202111210LAC,"Sun, Nov 21, 2021",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,97,91,6,Home,88.9,True,2022
+202111230LAC,"Tue, Nov 23, 2021",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,104,112,-8,Home,90.3,True,2022
+202111270DAL,"Sat, Nov 27, 2021",DAL,WAS,Dallas Mavericks,Washington Wizards,114,120,-6,Home,94.8,True,2022
+202111290DAL,"Mon, Nov 29, 2021",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,96,114,-18,Home,98.8,True,2022
+202112010NOP,"Wed, Dec 1, 2021",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,107,139,-32,Home,91.3,True,2022
+202112030DAL,"Fri, Dec 3, 2021",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,91,107,-16,Home,97.8,True,2022
+202112040DAL,"Sat, Dec 4, 2021",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,90,97,-7,Home,96.5,True,2022
+202112070DAL,"Tue, Dec 7, 2021",DAL,BRK,Dallas Mavericks,Brooklyn Nets,99,102,-3,Home,91.2,True,2022
+202112080MEM,"Wed, Dec 8, 2021",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,96,104,-8,Home,95.9,True,2022
+202112100IND,"Fri, Dec 10, 2021",IND,DAL,Indiana Pacers,Dallas Mavericks,106,93,13,Home,86.7,True,2022
+202112130DAL,"Mon, Dec 13, 2021",DAL,CHO,Dallas Mavericks,Charlotte Hornets,120,96,24,Home,83.1,True,2022
+202112150DAL,"Wed, Dec 15, 2021",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,104,107,-3,Home,96.1,True,2022
+202112230DAL,"Thu, Dec 23, 2021",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,95,102,-7,Home,95.3,True,2022
+202112250UTA,"Sat, Dec 25, 2021",UTA,DAL,Utah Jazz,Dallas Mavericks,120,116,4,Home,105.2,True,2022
+202112270POR,"Mon, Dec 27, 2021",POR,DAL,Portland Trail Blazers,Dallas Mavericks,117,132,-15,Home,99.3,True,2022
+202112290SAC,"Wed, Dec 29, 2021",SAC,DAL,Sacramento Kings,Dallas Mavericks,95,94,1,Home,87.8,True,2022
+202112310SAC,"Fri, Dec 31, 2021",SAC,DAL,Sacramento Kings,Dallas Mavericks,96,112,-16,Home,92.3,True,2022
+202201030DAL,"Mon, Jan 3, 2022",DAL,DEN,Dallas Mavericks,Denver Nuggets,103,89,14,Home,91.5,True,2022
+202201050DAL,"Wed, Jan 5, 2022",DAL,GSW,Dallas Mavericks,Golden State Warriors,99,82,17,Home,95.7,True,2022
+202201090DAL,"Sun, Jan 9, 2022",DAL,CHI,Dallas Mavericks,Chicago Bulls,113,99,14,Home,92.6,True,2022
+202201120NYK,"Wed, Jan 12, 2022",NYK,DAL,New York Knicks,Dallas Mavericks,108,85,23,Home,93.0,True,2022
+202201140MEM,"Fri, Jan 14, 2022",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,85,112,-27,Home,99.0,True,2022
+202201150DAL,"Sat, Jan 15, 2022",DAL,ORL,Dallas Mavericks,Orlando Magic,108,92,16,Home,90.9,True,2022
+202201190DAL,"Wed, Jan 19, 2022",DAL,TOR,Dallas Mavericks,Toronto Raptors,102,98,4,Home,91.6,True,2022
+202201200DAL,"Thu, Jan 20, 2022",DAL,PHO,Dallas Mavericks,Phoenix Suns,101,109,-8,Home,99.0,True,2022
+202201230DAL,"Sun, Jan 23, 2022",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,104,91,13,Home,93.8,True,2022
+202201250GSW,"Tue, Jan 25, 2022",GSW,DAL,Golden State Warriors,Dallas Mavericks,130,92,38,Home,98.8,True,2022
+202201260POR,"Wed, Jan 26, 2022",POR,DAL,Portland Trail Blazers,Dallas Mavericks,112,132,-20,Home,98.6,True,2022
+202201290DAL,"Sat, Jan 29, 2022",DAL,IND,Dallas Mavericks,Indiana Pacers,132,105,27,Home,98.9,True,2022
+202201300ORL,"Sun, Jan 30, 2022",ORL,DAL,Orlando Magic,Dallas Mavericks,110,108,2,Home,97.5,True,2022
+202202040DAL,"Fri, Feb 4, 2022",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,107,98,9,Home,88.5,True,2022
+202202060DAL,"Sun, Feb 6, 2022",DAL,ATL,Dallas Mavericks,Atlanta Hawks,103,94,9,Home,94.3,True,2022
+202202080DAL,"Tue, Feb 8, 2022",DAL,DET,Dallas Mavericks,Detroit Pistons,116,86,30,Home,95.8,True,2022
+202202100DAL,"Thu, Feb 10, 2022",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,112,105,7,Home,94.1,True,2022
+202202120DAL,"Sat, Feb 12, 2022",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,97,99,-2,Home,93.0,True,2022
+202202150MIA,"Tue, Feb 15, 2022",MIA,DAL,Miami Heat,Dallas Mavericks,99,107,-8,Home,86.4,True,2022
+202202170NOP,"Thu, Feb 17, 2022",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,118,125,-7,Home,94.2,True,2022
+202202250UTA,"Fri, Feb 25, 2022",UTA,DAL,Utah Jazz,Dallas Mavericks,114,109,5,Home,91.6,True,2022
+202202270GSW,"Sun, Feb 27, 2022",GSW,DAL,Golden State Warriors,Dallas Mavericks,101,107,-6,Home,96.7,True,2022
+202203010LAL,"Tue, Mar 1, 2022",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,104,109,-5,Home,96.3,True,2022
+202203030DAL,"Thu, Mar 3, 2022",DAL,GSW,Dallas Mavericks,Golden State Warriors,122,113,9,Home,90.9,True,2022
+202203050DAL,"Sat, Mar 5, 2022",DAL,SAC,Dallas Mavericks,Sacramento Kings,114,113,1,Home,98.2,True,2022
+202203070DAL,"Mon, Mar 7, 2022",DAL,UTA,Dallas Mavericks,Utah Jazz,111,103,8,Home,93.1,True,2022
+202203090DAL,"Wed, Mar 9, 2022",DAL,NYK,Dallas Mavericks,New York Knicks,77,107,-30,Home,89.2,True,2022
+202203160BRK,"Wed, Mar 16, 2022",BRK,DAL,Brooklyn Nets,Dallas Mavericks,111,113,-2,Home,88.6,True,2022
+202203180PHI,"Fri, Mar 18, 2022",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,111,101,10,Home,89.1,True,2022
+202203190CHO,"Sat, Mar 19, 2022",CHO,DAL,Charlotte Hornets,Dallas Mavericks,129,108,21,Home,96.6,True,2022
+202203270DAL,"Sun, Mar 27, 2022",DAL,UTA,Dallas Mavericks,Utah Jazz,114,100,14,Home,87.4,True,2022
+202203290DAL,"Tue, Mar 29, 2022",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,128,110,18,Home,92.0,True,2022
+202203300CLE,"Wed, Mar 30, 2022",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,112,120,-8,Home,94.5,True,2022
+202204010WAS,"Fri, Apr 1, 2022",WAS,DAL,Washington Wizards,Dallas Mavericks,135,103,32,Home,97.3,True,2022
+202204030MIL,"Sun, Apr 3, 2022",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,112,118,-6,Home,97.4,True,2022
+202204060DET,"Wed, Apr 6, 2022",DET,DAL,Detroit Pistons,Dallas Mavericks,113,131,-18,Home,94.7,True,2022
+202204080DAL,"Fri, Apr 8, 2022",DAL,POR,Dallas Mavericks,Portland Trail Blazers,128,78,50,Home,96.2,True,2022
+202204100DAL,"Sun, Apr 10, 2022",DAL,SAS,Dallas Mavericks,San Antonio Spurs,130,120,10,Home,98.4,True,2022
+202204160DAL,"Sat, Apr 16, 2022",DAL,UTA,Dallas Mavericks,Utah Jazz,93,99,-6,Home,89.5,True,2022
+202204180DAL,"Mon, Apr 18, 2022",DAL,UTA,Dallas Mavericks,Utah Jazz,110,104,6,Home,88.0,True,2022
+202204210UTA,"Thu, Apr 21, 2022",UTA,DAL,Utah Jazz,Dallas Mavericks,118,126,-8,Home,95.6,True,2022
+202204230UTA,"Sat, Apr 23, 2022",UTA,DAL,Utah Jazz,Dallas Mavericks,100,99,1,Home,89.7,True,2022
+202204250DAL,"Mon, Apr 25, 2022",DAL,UTA,Dallas Mavericks,Utah Jazz,102,77,25,Home,90.5,True,2022
+202204280UTA,"Thu, Apr 28, 2022",UTA,DAL,Utah Jazz,Dallas Mavericks,96,98,-2,Home,90.2,True,2022
+202205020PHO,"Mon, May 2, 2022",PHO,DAL,Phoenix Suns,Dallas Mavericks,121,114,7,Home,93.9,True,2022
+202205040PHO,"Wed, May 4, 2022",PHO,DAL,Phoenix Suns,Dallas Mavericks,129,109,20,Home,94.5,True,2022
+202205060DAL,"Fri, May 6, 2022",DAL,PHO,Dallas Mavericks,Phoenix Suns,103,94,9,Home,90.8,True,2022
+202205080DAL,"Sun, May 8, 2022",DAL,PHO,Dallas Mavericks,Phoenix Suns,111,101,10,Home,92.5,True,2022
+202205100PHO,"Tue, May 10, 2022",PHO,DAL,Phoenix Suns,Dallas Mavericks,110,80,30,Home,92.0,True,2022
+202205120DAL,"Thu, May 12, 2022",DAL,PHO,Dallas Mavericks,Phoenix Suns,113,86,27,Home,91.6,True,2022
+202205150PHO,"Sun, May 15, 2022",PHO,DAL,Phoenix Suns,Dallas Mavericks,90,123,-33,Home,89.4,True,2022
+202205180GSW,"Wed, May 18, 2022",GSW,DAL,Golden State Warriors,Dallas Mavericks,112,87,25,Home,96.3,True,2022
+202205200GSW,"Fri, May 20, 2022",GSW,DAL,Golden State Warriors,Dallas Mavericks,126,117,9,Home,96.5,True,2022
+202205220DAL,"Sun, May 22, 2022",DAL,GSW,Dallas Mavericks,Golden State Warriors,100,109,-9,Home,86.0,True,2022
+202205240DAL,"Tue, May 24, 2022",DAL,GSW,Dallas Mavericks,Golden State Warriors,119,109,10,Home,95.5,True,2022
+202205260GSW,"Thu, May 26, 2022",GSW,DAL,Golden State Warriors,Dallas Mavericks,120,110,10,Home,90.7,True,2022
+202110220SAC,"Fri, Oct 22, 2021",SAC,UTA,Sacramento Kings,Utah Jazz,101,110,-9,Home,102.3,True,2022
+202110260UTA,"Tue, Oct 26, 2021",UTA,DEN,Utah Jazz,Denver Nuggets,122,110,12,Home,100.1,True,2022
+202110300CHI,"Sat, Oct 30, 2021",CHI,UTA,Chicago Bulls,Utah Jazz,107,99,8,Home,102.2,True,2022
+202110310MIL,"Sun, Oct 31, 2021",MIL,UTA,Milwaukee Bucks,Utah Jazz,95,107,-12,Home,90.7,True,2022
+202111020UTA,"Tue, Nov 2, 2021",UTA,SAC,Utah Jazz,Sacramento Kings,119,113,6,Home,106.5,True,2022
+202111040ATL,"Thu, Nov 4, 2021",ATL,UTA,Atlanta Hawks,Utah Jazz,98,116,-18,Home,95.0,True,2022
+202111060MIA,"Sat, Nov 6, 2021",MIA,UTA,Miami Heat,Utah Jazz,118,115,3,Home,89.8,True,2022
+202111070ORL,"Sun, Nov 7, 2021",ORL,UTA,Orlando Magic,Utah Jazz,107,100,7,Home,97.2,True,2022
+202111090UTA,"Tue, Nov 9, 2021",UTA,ATL,Utah Jazz,Atlanta Hawks,110,98,12,Home,92.0,True,2022
+202111110UTA,"Thu, Nov 11, 2021",UTA,IND,Utah Jazz,Indiana Pacers,100,111,-11,Home,95.8,True,2022
+202111130UTA,"Sat, Nov 13, 2021",UTA,MIA,Utah Jazz,Miami Heat,105,111,-6,Home,96.2,True,2022
+202111160UTA,"Tue, Nov 16, 2021",UTA,PHI,Utah Jazz,Philadelphia 76ers,120,85,35,Home,98.6,True,2022
+202111180UTA,"Thu, Nov 18, 2021",UTA,TOR,Utah Jazz,Toronto Raptors,119,103,16,Home,96.0,True,2022
+202111200SAC,"Sat, Nov 20, 2021",SAC,UTA,Sacramento Kings,Utah Jazz,105,123,-18,Home,95.2,True,2022
+202111220UTA,"Mon, Nov 22, 2021",UTA,MEM,Utah Jazz,Memphis Grizzlies,118,119,-1,Home,97.6,True,2022
+202111260UTA,"Fri, Nov 26, 2021",UTA,NOP,Utah Jazz,New Orleans Pelicans,97,98,-1,Home,96.6,True,2022
+202111270UTA,"Sat, Nov 27, 2021",UTA,NOP,Utah Jazz,New Orleans Pelicans,127,105,22,Home,98.9,True,2022
+202111290UTA,"Mon, Nov 29, 2021",UTA,POR,Utah Jazz,Portland Trail Blazers,129,107,22,Home,93.1,True,2022
+202112050CLE,"Sun, Dec 5, 2021",CLE,UTA,Cleveland Cavaliers,Utah Jazz,108,109,-1,Home,93.2,True,2022
+202112090PHI,"Thu, Dec 9, 2021",PHI,UTA,Philadelphia 76ers,Utah Jazz,96,118,-22,Home,94.1,True,2022
+202112110WAS,"Sat, Dec 11, 2021",WAS,UTA,Washington Wizards,Utah Jazz,98,123,-25,Home,95.3,True,2022
+202112150UTA,"Wed, Dec 15, 2021",UTA,LAC,Utah Jazz,Los Angeles Clippers,124,103,21,Home,98.8,True,2022
+202112170UTA,"Fri, Dec 17, 2021",UTA,SAS,Utah Jazz,San Antonio Spurs,126,128,-2,Home,101.4,True,2022
+202112180UTA,"Sat, Dec 18, 2021",UTA,WAS,Utah Jazz,Washington Wizards,103,109,-6,Home,98.8,True,2022
+202112200UTA,"Mon, Dec 20, 2021",UTA,CHO,Utah Jazz,Charlotte Hornets,112,102,10,Home,104.5,True,2022
+202112270SAS,"Mon, Dec 27, 2021",SAS,UTA,San Antonio Spurs,Utah Jazz,104,110,-6,Home,104.0,True,2022
+202112290POR,"Wed, Dec 29, 2021",POR,UTA,Portland Trail Blazers,Utah Jazz,105,120,-15,Home,96.3,True,2022
+202201010UTA,"Sat, Jan 1, 2022",UTA,GSW,Utah Jazz,Golden State Warriors,116,123,-7,Home,100.1,True,2022
+202201030NOP,"Mon, Jan 3, 2022",NOP,UTA,New Orleans Pelicans,Utah Jazz,104,115,-11,Home,94.4,True,2022
+202201050DEN,"Wed, Jan 5, 2022",DEN,UTA,Denver Nuggets,Utah Jazz,109,115,-6,Home,97.8,True,2022
+202201070TOR,"Fri, Jan 7, 2022",TOR,UTA,Toronto Raptors,Utah Jazz,122,108,14,Home,98.0,True,2022
+202201080IND,"Sat, Jan 8, 2022",IND,UTA,Indiana Pacers,Utah Jazz,125,113,12,Home,96.4,True,2022
+202201100DET,"Mon, Jan 10, 2022",DET,UTA,Detroit Pistons,Utah Jazz,126,116,10,Home,98.6,True,2022
+202201120UTA,"Wed, Jan 12, 2022",UTA,CLE,Utah Jazz,Cleveland Cavaliers,91,111,-20,Home,92.2,True,2022
+202201160DEN,"Sun, Jan 16, 2022",DEN,UTA,Denver Nuggets,Utah Jazz,102,125,-23,Home,97.8,True,2022
+202201170LAL,"Mon, Jan 17, 2022",LAL,UTA,Los Angeles Lakers,Utah Jazz,101,95,6,Home,96.6,True,2022
+202201210UTA,"Fri, Jan 21, 2022",UTA,DET,Utah Jazz,Detroit Pistons,111,101,10,Home,93.6,True,2022
+202201230GSW,"Sun, Jan 23, 2022",GSW,UTA,Golden State Warriors,Utah Jazz,94,92,2,Home,82.2,True,2022
+202201240PHO,"Mon, Jan 24, 2022",PHO,UTA,Phoenix Suns,Utah Jazz,115,109,6,Home,96.8,True,2022
+202201260UTA,"Wed, Jan 26, 2022",UTA,PHO,Utah Jazz,Phoenix Suns,97,105,-8,Home,91.5,True,2022
+202201280MEM,"Fri, Jan 28, 2022",MEM,UTA,Memphis Grizzlies,Utah Jazz,119,109,10,Home,97.2,True,2022
+202202020UTA,"Wed, Feb 2, 2022",UTA,DEN,Utah Jazz,Denver Nuggets,108,104,4,Home,91.2,True,2022
+202202040UTA,"Fri, Feb 4, 2022",UTA,BRK,Utah Jazz,Brooklyn Nets,125,102,23,Home,95.7,True,2022
+202202070UTA,"Mon, Feb 7, 2022",UTA,NYK,Utah Jazz,New York Knicks,113,104,9,Home,99.8,True,2022
+202202090UTA,"Wed, Feb 9, 2022",UTA,GSW,Utah Jazz,Golden State Warriors,111,85,26,Home,91.9,True,2022
+202202110UTA,"Fri, Feb 11, 2022",UTA,ORL,Utah Jazz,Orlando Magic,114,99,15,Home,99.4,True,2022
+202202160LAL,"Wed, Feb 16, 2022",LAL,UTA,Los Angeles Lakers,Utah Jazz,106,101,5,Home,91.8,True,2022
+202202270PHO,"Sun, Feb 27, 2022",PHO,UTA,Phoenix Suns,Utah Jazz,114,118,-4,Home,90.8,True,2022
+202203040NOP,"Fri, Mar 4, 2022",NOP,UTA,New Orleans Pelicans,Utah Jazz,124,90,34,Home,96.6,True,2022
+202203090UTA,"Wed, Mar 9, 2022",UTA,POR,Utah Jazz,Portland Trail Blazers,123,85,38,Home,94.6,True,2022
+202203110SAS,"Fri, Mar 11, 2022",SAS,UTA,San Antonio Spurs,Utah Jazz,104,102,2,Home,101.3,True,2022
+202203120UTA,"Sat, Mar 12, 2022",UTA,SAC,Utah Jazz,Sacramento Kings,134,125,9,Home,97.8,True,2022
+202203140UTA,"Mon, Mar 14, 2022",UTA,MIL,Utah Jazz,Milwaukee Bucks,111,117,-6,Home,100.8,True,2022
+202203160UTA,"Wed, Mar 16, 2022",UTA,CHI,Utah Jazz,Chicago Bulls,125,110,15,Home,101.9,True,2022
+202203180UTA,"Fri, Mar 18, 2022",UTA,LAC,Utah Jazz,Los Angeles Clippers,121,92,29,Home,97.9,True,2022
+202203200NYK,"Sun, Mar 20, 2022",NYK,UTA,New York Knicks,Utah Jazz,93,108,-15,Home,88.6,True,2022
+202203210BRK,"Mon, Mar 21, 2022",BRK,UTA,Brooklyn Nets,Utah Jazz,114,106,8,Home,93.6,True,2022
+202203250CHO,"Fri, Mar 25, 2022",CHO,UTA,Charlotte Hornets,Utah Jazz,107,101,6,Home,86.8,True,2022
+202203290LAC,"Tue, Mar 29, 2022",LAC,UTA,Los Angeles Clippers,Utah Jazz,121,115,6,Home,91.3,True,2022
+202203310UTA,"Thu, Mar 31, 2022",UTA,LAL,Utah Jazz,Los Angeles Lakers,122,109,13,Home,96.2,True,2022
+202204020GSW,"Sat, Apr 2, 2022",GSW,UTA,Golden State Warriors,Utah Jazz,111,107,4,Home,94.4,True,2022
+202204050UTA,"Tue, Apr 5, 2022",UTA,MEM,Utah Jazz,Memphis Grizzlies,121,115,6,Home,103.2,True,2022
+202204080UTA,"Fri, Apr 8, 2022",UTA,PHO,Utah Jazz,Phoenix Suns,105,111,-6,Home,96.3,True,2022
+202204100POR,"Sun, Apr 10, 2022",POR,UTA,Portland Trail Blazers,Utah Jazz,80,111,-31,Home,96.6,True,2022
+202110190LAL,"Tue, Oct 19, 2021",LAL,GSW,Los Angeles Lakers,Golden State Warriors,114,121,-7,Home,112.8,True,2022
+202110220LAL,"Fri, Oct 22, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,105,115,-10,Home,100.5,True,2022
+202110240LAL,"Sun, Oct 24, 2021",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,121,118,3,Home,100.5,True,2022
+202110260SAS,"Tue, Oct 26, 2021",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,121,125,-4,Home,105.1,True,2022
+202110290LAL,"Fri, Oct 29, 2021",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,113,101,12,Home,93.1,True,2022
+202111060POR,"Sat, Nov 6, 2021",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,105,90,15,Home,104.0,True,2022
+202111080LAL,"Mon, Nov 8, 2021",LAL,CHO,Los Angeles Lakers,Charlotte Hornets,126,123,3,Home,102.0,True,2022
+202111100LAL,"Wed, Nov 10, 2021",LAL,MIA,Los Angeles Lakers,Miami Heat,120,117,3,Home,100.5,True,2022
+202111140LAL,"Sun, Nov 14, 2021",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,114,106,8,Home,96.6,True,2022
+202111150LAL,"Mon, Nov 15, 2021",LAL,CHI,Los Angeles Lakers,Chicago Bulls,103,121,-18,Home,102.1,True,2022
+202111170MIL,"Wed, Nov 17, 2021",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,109,102,7,Home,101.7,True,2022
+202111210DET,"Sun, Nov 21, 2021",DET,LAL,Detroit Pistons,Los Angeles Lakers,116,121,-5,Home,104.2,True,2022
+202111230NYK,"Tue, Nov 23, 2021",NYK,LAL,New York Knicks,Los Angeles Lakers,106,100,6,Home,99.0,True,2022
+202111240IND,"Wed, Nov 24, 2021",IND,LAL,Indiana Pacers,Los Angeles Lakers,116,124,-8,Home,97.4,True,2022
+202111260LAL,"Fri, Nov 26, 2021",LAL,SAC,Los Angeles Lakers,Sacramento Kings,137,141,-4,Home,94.2,True,2022
+202111280LAL,"Sun, Nov 28, 2021",LAL,DET,Los Angeles Lakers,Detroit Pistons,110,106,4,Home,101.0,True,2022
+202111300SAC,"Tue, Nov 30, 2021",SAC,LAL,Sacramento Kings,Los Angeles Lakers,92,117,-25,Home,99.8,True,2022
+202112030LAL,"Fri, Dec 3, 2021",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,115,119,-4,Home,93.3,True,2022
+202112090MEM,"Thu, Dec 9, 2021",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,108,95,13,Home,97.9,True,2022
+202112120LAL,"Sun, Dec 12, 2021",LAL,ORL,Los Angeles Lakers,Orlando Magic,106,94,12,Home,97.2,True,2022
+202112190CHI,"Sun, Dec 19, 2021",CHI,LAL,Chicago Bulls,Los Angeles Lakers,115,110,5,Home,98.7,True,2022
+202112210LAL,"Tue, Dec 21, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,90,108,-18,Home,104.7,True,2022
+202112230LAL,"Thu, Dec 23, 2021",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,110,138,-28,Home,103.1,True,2022
+202112250LAL,"Sat, Dec 25, 2021",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,115,122,-7,Home,103.7,True,2022
+202112290MEM,"Wed, Dec 29, 2021",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,104,99,5,Home,95.4,True,2022
+202112310LAL,"Fri, Dec 31, 2021",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,139,106,33,Home,98.5,True,2022
+202201040LAL,"Tue, Jan 4, 2022",LAL,SAC,Los Angeles Lakers,Sacramento Kings,122,114,8,Home,97.7,True,2022
+202201070LAL,"Fri, Jan 7, 2022",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,134,118,16,Home,107.7,True,2022
+202201090LAL,"Sun, Jan 9, 2022",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,119,127,-8,Home,100.4,True,2022
+202201120SAC,"Wed, Jan 12, 2022",SAC,LAL,Sacramento Kings,Los Angeles Lakers,125,116,9,Home,99.5,True,2022
+202201150DEN,"Sat, Jan 15, 2022",DEN,LAL,Denver Nuggets,Los Angeles Lakers,133,96,37,Home,92.7,True,2022
+202201190LAL,"Wed, Jan 19, 2022",LAL,IND,Los Angeles Lakers,Indiana Pacers,104,111,-7,Home,92.9,True,2022
+202201210ORL,"Fri, Jan 21, 2022",ORL,LAL,Orlando Magic,Los Angeles Lakers,105,116,-11,Home,104.5,True,2022
+202201230MIA,"Sun, Jan 23, 2022",MIA,LAL,Miami Heat,Los Angeles Lakers,113,107,6,Home,98.4,True,2022
+202201250BRK,"Tue, Jan 25, 2022",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,96,106,-10,Home,94.2,True,2022
+202201270PHI,"Thu, Jan 27, 2022",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,105,87,18,Home,98.5,True,2022
+202201280CHO,"Fri, Jan 28, 2022",CHO,LAL,Charlotte Hornets,Los Angeles Lakers,117,114,3,Home,95.4,True,2022
+202201300ATL,"Sun, Jan 30, 2022",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,129,121,8,Home,101.8,True,2022
+202202020LAL,"Wed, Feb 2, 2022",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,99,94,5,Home,96.2,True,2022
+202202030LAC,"Thu, Feb 3, 2022",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,111,110,1,Home,94.3,True,2022
+202202050LAL,"Sat, Feb 5, 2022",LAL,NYK,Los Angeles Lakers,New York Knicks,122,115,7,Home,100.3,True,2022
+202202080LAL,"Tue, Feb 8, 2022",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,116,131,-15,Home,101.4,True,2022
+202202090POR,"Wed, Feb 9, 2022",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,107,105,2,Home,95.7,True,2022
+202202120GSW,"Sat, Feb 12, 2022",GSW,LAL,Golden State Warriors,Los Angeles Lakers,117,115,2,Home,99.3,True,2022
+202202250LAL,"Fri, Feb 25, 2022",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,102,105,-3,Home,98.6,True,2022
+202202270LAL,"Sun, Feb 27, 2022",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,95,123,-28,Home,105.3,True,2022
+202203030LAC,"Thu, Mar 3, 2022",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,132,111,21,Home,95.7,True,2022
+202203050LAL,"Sat, Mar 5, 2022",LAL,GSW,Los Angeles Lakers,Golden State Warriors,124,116,8,Home,102.8,True,2022
+202203070SAS,"Mon, Mar 7, 2022",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,117,110,7,Home,101.4,True,2022
+202203110LAL,"Fri, Mar 11, 2022",LAL,WAS,Los Angeles Lakers,Washington Wizards,122,109,13,Home,94.6,True,2022
+202203130PHO,"Sun, Mar 13, 2022",PHO,LAL,Phoenix Suns,Los Angeles Lakers,140,111,29,Home,103.2,True,2022
+202203140LAL,"Mon, Mar 14, 2022",LAL,TOR,Los Angeles Lakers,Toronto Raptors,103,114,-11,Home,101.3,True,2022
+202203180TOR,"Fri, Mar 18, 2022",TOR,LAL,Toronto Raptors,Los Angeles Lakers,123,128,-5,Home,90.9,True,2022
+202203190WAS,"Sat, Mar 19, 2022",WAS,LAL,Washington Wizards,Los Angeles Lakers,127,119,8,Home,96.5,True,2022
+202203210CLE,"Mon, Mar 21, 2022",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,120,131,-11,Home,97.6,True,2022
+202203230LAL,"Wed, Mar 23, 2022",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,121,126,-5,Home,101.8,True,2022
+202203270NOP,"Sun, Mar 27, 2022",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,116,108,8,Home,93.7,True,2022
+202204010LAL,"Fri, Apr 1, 2022",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,111,114,-3,Home,100.3,True,2022
+202204030LAL,"Sun, Apr 3, 2022",LAL,DEN,Los Angeles Lakers,Denver Nuggets,118,129,-11,Home,102.6,True,2022
+202204050PHO,"Tue, Apr 5, 2022",PHO,LAL,Phoenix Suns,Los Angeles Lakers,121,110,11,Home,107.1,True,2022
+202204070GSW,"Thu, Apr 7, 2022",GSW,LAL,Golden State Warriors,Los Angeles Lakers,128,112,16,Home,106.5,True,2022
+202204100DEN,"Sun, Apr 10, 2022",DEN,LAL,Denver Nuggets,Los Angeles Lakers,141,146,-5,Home,102.7,True,2022
+202110200PHO,"Wed, Oct 20, 2021",PHO,DEN,Phoenix Suns,Denver Nuggets,98,110,-12,Home,98.7,True,2022
+202110230POR,"Sat, Oct 23, 2021",POR,PHO,Portland Trail Blazers,Phoenix Suns,134,105,29,Home,101.0,True,2022
+202110270PHO,"Wed, Oct 27, 2021",PHO,SAC,Phoenix Suns,Sacramento Kings,107,110,-3,Home,100.0,True,2022
+202110300PHO,"Sat, Oct 30, 2021",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,101,92,9,Home,100.6,True,2022
+202111020PHO,"Tue, Nov 2, 2021",PHO,NOP,Phoenix Suns,New Orleans Pelicans,112,100,12,Home,98.8,True,2022
+202111060PHO,"Sat, Nov 6, 2021",PHO,ATL,Phoenix Suns,Atlanta Hawks,121,117,4,Home,102.4,True,2022
+202111080SAC,"Mon, Nov 8, 2021",SAC,PHO,Sacramento Kings,Phoenix Suns,104,109,-5,Home,106.2,True,2022
+202111100PHO,"Wed, Nov 10, 2021",PHO,POR,Phoenix Suns,Portland Trail Blazers,119,109,10,Home,96.8,True,2022
+202111120MEM,"Fri, Nov 12, 2021",MEM,PHO,Memphis Grizzlies,Phoenix Suns,94,119,-25,Home,104.3,True,2022
+202111210PHO,"Sun, Nov 21, 2021",PHO,DEN,Phoenix Suns,Denver Nuggets,126,97,29,Home,97.4,True,2022
+202111220SAS,"Mon, Nov 22, 2021",SAS,PHO,San Antonio Spurs,Phoenix Suns,111,115,-4,Home,100.3,True,2022
+202111240CLE,"Wed, Nov 24, 2021",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,115,120,-5,Home,101.7,True,2022
+202111260NYK,"Fri, Nov 26, 2021",NYK,PHO,New York Knicks,Phoenix Suns,97,118,-21,Home,96.2,True,2022
+202111270BRK,"Sat, Nov 27, 2021",BRK,PHO,Brooklyn Nets,Phoenix Suns,107,113,-6,Home,100.5,True,2022
+202111300PHO,"Tue, Nov 30, 2021",PHO,GSW,Phoenix Suns,Golden State Warriors,104,96,8,Home,94.7,True,2022
+202112020PHO,"Thu, Dec 2, 2021",PHO,DET,Phoenix Suns,Detroit Pistons,114,103,11,Home,95.3,True,2022
+202112030GSW,"Fri, Dec 3, 2021",GSW,PHO,Golden State Warriors,Phoenix Suns,118,96,22,Home,99.6,True,2022
+202112060PHO,"Mon, Dec 6, 2021",PHO,SAS,Phoenix Suns,San Antonio Spurs,108,104,4,Home,102.3,True,2022
+202112130LAC,"Mon, Dec 13, 2021",LAC,PHO,Los Angeles Clippers,Phoenix Suns,111,95,16,Home,95.9,True,2022
+202112140POR,"Tue, Dec 14, 2021",POR,PHO,Portland Trail Blazers,Phoenix Suns,107,111,-4,Home,94.1,True,2022
+202112160PHO,"Thu, Dec 16, 2021",PHO,WAS,Phoenix Suns,Washington Wizards,118,98,20,Home,98.8,True,2022
+202112190PHO,"Sun, Dec 19, 2021",PHO,CHO,Phoenix Suns,Charlotte Hornets,137,106,31,Home,105.8,True,2022
+202112250PHO,"Sat, Dec 25, 2021",PHO,GSW,Phoenix Suns,Golden State Warriors,107,116,-9,Home,90.2,True,2022
+202112270PHO,"Mon, Dec 27, 2021",PHO,MEM,Phoenix Suns,Memphis Grizzlies,113,114,-1,Home,97.0,True,2022
+202201020CHO,"Sun, Jan 2, 2022",CHO,PHO,Charlotte Hornets,Phoenix Suns,99,133,-34,Home,105.9,True,2022
+202201040NOP,"Tue, Jan 4, 2022",NOP,PHO,New Orleans Pelicans,Phoenix Suns,110,123,-13,Home,97.5,True,2022
+202201060PHO,"Thu, Jan 6, 2022",PHO,LAC,Phoenix Suns,Los Angeles Clippers,106,89,17,Home,97.4,True,2022
+202201080PHO,"Sat, Jan 8, 2022",PHO,MIA,Phoenix Suns,Miami Heat,100,123,-23,Home,96.8,True,2022
+202201110TOR,"Tue, Jan 11, 2022",TOR,PHO,Toronto Raptors,Phoenix Suns,95,99,-4,Home,89.7,True,2022
+202201140IND,"Fri, Jan 14, 2022",IND,PHO,Indiana Pacers,Phoenix Suns,94,112,-18,Home,96.9,True,2022
+202201160DET,"Sun, Jan 16, 2022",DET,PHO,Detroit Pistons,Phoenix Suns,108,135,-27,Home,100.6,True,2022
+202201170SAS,"Mon, Jan 17, 2022",SAS,PHO,San Antonio Spurs,Phoenix Suns,107,121,-14,Home,96.3,True,2022
+202201220PHO,"Sat, Jan 22, 2022",PHO,IND,Phoenix Suns,Indiana Pacers,113,103,10,Home,98.1,True,2022
+202201300PHO,"Sun, Jan 30, 2022",PHO,SAS,Phoenix Suns,San Antonio Spurs,115,110,5,Home,98.3,True,2022
+202202010PHO,"Tue, Feb 1, 2022",PHO,BRK,Phoenix Suns,Brooklyn Nets,121,111,10,Home,94.5,True,2022
+202202030ATL,"Thu, Feb 3, 2022",ATL,PHO,Atlanta Hawks,Phoenix Suns,124,115,9,Home,99.9,True,2022
+202202050WAS,"Sat, Feb 5, 2022",WAS,PHO,Washington Wizards,Phoenix Suns,80,95,-15,Home,91.9,True,2022
+202202070CHI,"Mon, Feb 7, 2022",CHI,PHO,Chicago Bulls,Phoenix Suns,124,127,-3,Home,97.7,True,2022
+202202080PHI,"Tue, Feb 8, 2022",PHI,PHO,Philadelphia 76ers,Phoenix Suns,109,114,-5,Home,101.6,True,2022
+202202100PHO,"Thu, Feb 10, 2022",PHO,MIL,Phoenix Suns,Milwaukee Bucks,131,107,24,Home,99.4,True,2022
+202202120PHO,"Sat, Feb 12, 2022",PHO,ORL,Phoenix Suns,Orlando Magic,132,105,27,Home,107.1,True,2022
+202202150PHO,"Tue, Feb 15, 2022",PHO,LAC,Phoenix Suns,Los Angeles Clippers,103,96,7,Home,97.8,True,2022
+202202250PHO,"Fri, Feb 25, 2022",PHO,NOP,Phoenix Suns,New Orleans Pelicans,102,117,-15,Home,96.5,True,2022
+202203020PHO,"Wed, Mar 2, 2022",PHO,POR,Phoenix Suns,Portland Trail Blazers,120,90,30,Home,99.2,True,2022
+202203040PHO,"Fri, Mar 4, 2022",PHO,NYK,Phoenix Suns,New York Knicks,115,114,1,Home,98.5,True,2022
+202203060MIL,"Sun, Mar 6, 2022",MIL,PHO,Milwaukee Bucks,Phoenix Suns,132,122,10,Home,98.5,True,2022
+202203080ORL,"Tue, Mar 8, 2022",ORL,PHO,Orlando Magic,Phoenix Suns,99,102,-3,Home,103.4,True,2022
+202203090MIA,"Wed, Mar 9, 2022",MIA,PHO,Miami Heat,Phoenix Suns,90,111,-21,Home,99.7,True,2022
+202203110PHO,"Fri, Mar 11, 2022",PHO,TOR,Phoenix Suns,Toronto Raptors,112,117,-5,Home,104.1,True,2022
+202203150NOP,"Tue, Mar 15, 2022",NOP,PHO,New Orleans Pelicans,Phoenix Suns,115,131,-16,Home,97.5,True,2022
+202203180PHO,"Fri, Mar 18, 2022",PHO,CHI,Phoenix Suns,Chicago Bulls,129,102,27,Home,94.4,True,2022
+202203200SAC,"Sun, Mar 20, 2022",SAC,PHO,Sacramento Kings,Phoenix Suns,124,127,-3,Home,99.0,True,2022
+202203240DEN,"Thu, Mar 24, 2022",DEN,PHO,Denver Nuggets,Phoenix Suns,130,140,-10,Home,98.7,True,2022
+202203270PHO,"Sun, Mar 27, 2022",PHO,PHI,Phoenix Suns,Philadelphia 76ers,114,104,10,Home,97.5,True,2022
+202203300GSW,"Wed, Mar 30, 2022",GSW,PHO,Golden State Warriors,Phoenix Suns,103,107,-4,Home,103.2,True,2022
+202204010MEM,"Fri, Apr 1, 2022",MEM,PHO,Memphis Grizzlies,Phoenix Suns,122,114,8,Home,106.7,True,2022
+202204060LAC,"Wed, Apr 6, 2022",LAC,PHO,Los Angeles Clippers,Phoenix Suns,113,109,4,Home,102.3,True,2022
+202204100PHO,"Sun, Apr 10, 2022",PHO,SAC,Phoenix Suns,Sacramento Kings,109,116,-7,Home,98.9,True,2022
+202204170PHO,"Sun, Apr 17, 2022",PHO,NOP,Phoenix Suns,New Orleans Pelicans,110,99,11,Home,89.8,True,2022
+202204190PHO,"Tue, Apr 19, 2022",PHO,NOP,Phoenix Suns,New Orleans Pelicans,114,125,-11,Home,96.3,True,2022
+202204220NOP,"Fri, Apr 22, 2022",NOP,PHO,New Orleans Pelicans,Phoenix Suns,111,114,-3,Home,92.8,True,2022
+202204240NOP,"Sun, Apr 24, 2022",NOP,PHO,New Orleans Pelicans,Phoenix Suns,118,103,15,Home,89.9,True,2022
+202204260PHO,"Tue, Apr 26, 2022",PHO,NOP,Phoenix Suns,New Orleans Pelicans,112,97,15,Home,95.4,True,2022
+202204280NOP,"Thu, Apr 28, 2022",NOP,PHO,New Orleans Pelicans,Phoenix Suns,109,115,-6,Home,91.9,True,2022
+202110220DEN,"Fri, Oct 22, 2021",DEN,SAS,Denver Nuggets,San Antonio Spurs,102,96,6,Home,101.3,True,2022
+202110250DEN,"Mon, Oct 25, 2021",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,87,99,-12,Home,96.3,True,2022
+202111010MEM,"Mon, Nov 1, 2021",MEM,DEN,Memphis Grizzlies,Denver Nuggets,106,97,9,Home,98.8,True,2022
+202111030MEM,"Wed, Nov 3, 2021",MEM,DEN,Memphis Grizzlies,Denver Nuggets,108,106,2,Home,94.2,True,2022
+202111080DEN,"Mon, Nov 8, 2021",DEN,MIA,Denver Nuggets,Miami Heat,113,96,17,Home,94.5,True,2022
+202111100DEN,"Wed, Nov 10, 2021",DEN,IND,Denver Nuggets,Indiana Pacers,101,98,3,Home,89.2,True,2022
+202111120DEN,"Fri, Nov 12, 2021",DEN,ATL,Denver Nuggets,Atlanta Hawks,105,96,9,Home,93.6,True,2022
+202111140DEN,"Sun, Nov 14, 2021",DEN,POR,Denver Nuggets,Portland Trail Blazers,124,95,29,Home,88.8,True,2022
+202111180DEN,"Thu, Nov 18, 2021",DEN,PHI,Denver Nuggets,Philadelphia 76ers,89,103,-14,Home,92.7,True,2022
+202111190DEN,"Fri, Nov 19, 2021",DEN,CHI,Denver Nuggets,Chicago Bulls,108,114,-6,Home,93.4,True,2022
+202111230POR,"Tue, Nov 23, 2021",POR,DEN,Portland Trail Blazers,Denver Nuggets,119,100,19,Home,91.7,True,2022
+202111260DEN,"Fri, Nov 26, 2021",DEN,MIL,Denver Nuggets,Milwaukee Bucks,109,120,-11,Home,94.9,True,2022
+202111290MIA,"Mon, Nov 29, 2021",MIA,DEN,Miami Heat,Denver Nuggets,111,120,-9,Home,90.8,True,2022
+202112010ORL,"Wed, Dec 1, 2021",ORL,DEN,Orlando Magic,Denver Nuggets,108,103,5,Home,100.4,True,2022
+202112040NYK,"Sat, Dec 4, 2021",NYK,DEN,New York Knicks,Denver Nuggets,99,113,-14,Home,88.8,True,2022
+202112060CHI,"Mon, Dec 6, 2021",CHI,DEN,Chicago Bulls,Denver Nuggets,109,97,12,Home,97.4,True,2022
+202112080NOP,"Wed, Dec 8, 2021",NOP,DEN,New Orleans Pelicans,Denver Nuggets,114,120,-6,Home,94.6,True,2022
+202112090SAS,"Thu, Dec 9, 2021",SAS,DEN,San Antonio Spurs,Denver Nuggets,123,111,12,Home,97.9,True,2022
+202112110SAS,"Sat, Dec 11, 2021",SAS,DEN,San Antonio Spurs,Denver Nuggets,112,127,-15,Home,99.6,True,2022
+202112130DEN,"Mon, Dec 13, 2021",DEN,WAS,Denver Nuggets,Washington Wizards,113,107,6,Home,101.4,True,2022
+202112170ATL,"Fri, Dec 17, 2021",ATL,DEN,Atlanta Hawks,Denver Nuggets,115,133,-18,Home,103.7,True,2022
+202112230DEN,"Thu, Dec 23, 2021",DEN,CHO,Denver Nuggets,Charlotte Hornets,107,115,-8,Home,103.7,True,2022
+202112260LAC,"Sun, Dec 26, 2021",LAC,DEN,Los Angeles Clippers,Denver Nuggets,100,103,-3,Home,99.8,True,2022
+202112280GSW,"Tue, Dec 28, 2021",GSW,DEN,Golden State Warriors,Denver Nuggets,86,89,-3,Home,91.5,True,2022
+202201070DEN,"Fri, Jan 7, 2022",DEN,SAC,Denver Nuggets,Sacramento Kings,121,111,10,Home,97.6,True,2022
+202201110LAC,"Tue, Jan 11, 2022",LAC,DEN,Los Angeles Clippers,Denver Nuggets,87,85,2,Home,92.5,True,2022
+202201130DEN,"Thu, Jan 13, 2022",DEN,POR,Denver Nuggets,Portland Trail Blazers,140,108,32,Home,99.5,True,2022
+202201190DEN,"Wed, Jan 19, 2022",DEN,LAC,Denver Nuggets,Los Angeles Clippers,130,128,2,Home,93.2,True,2022
+202201210DEN,"Fri, Jan 21, 2022",DEN,MEM,Denver Nuggets,Memphis Grizzlies,118,122,-4,Home,100.6,True,2022
+202201230DEN,"Sun, Jan 23, 2022",DEN,DET,Denver Nuggets,Detroit Pistons,117,111,6,Home,97.9,True,2022
+202201250DET,"Tue, Jan 25, 2022",DET,DEN,Detroit Pistons,Denver Nuggets,105,110,-5,Home,101.4,True,2022
+202201260BRK,"Wed, Jan 26, 2022",BRK,DEN,Brooklyn Nets,Denver Nuggets,118,124,-6,Home,101.3,True,2022
+202201280NOP,"Fri, Jan 28, 2022",NOP,DEN,New Orleans Pelicans,Denver Nuggets,105,116,-11,Home,100.8,True,2022
+202201300MIL,"Sun, Jan 30, 2022",MIL,DEN,Milwaukee Bucks,Denver Nuggets,100,136,-36,Home,94.7,True,2022
+202202040DEN,"Fri, Feb 4, 2022",DEN,NOP,Denver Nuggets,New Orleans Pelicans,105,113,-8,Home,91.9,True,2022
+202202060DEN,"Sun, Feb 6, 2022",DEN,BRK,Denver Nuggets,Brooklyn Nets,124,104,20,Home,98.1,True,2022
+202202080DEN,"Tue, Feb 8, 2022",DEN,NYK,Denver Nuggets,New York Knicks,132,115,17,Home,97.9,True,2022
+202202120TOR,"Sat, Feb 12, 2022",TOR,DEN,Toronto Raptors,Denver Nuggets,109,110,-1,Home,94.0,True,2022
+202202140DEN,"Mon, Feb 14, 2022",DEN,ORL,Denver Nuggets,Orlando Magic,121,111,10,Home,104.4,True,2022
+202202160GSW,"Wed, Feb 16, 2022",GSW,DEN,Golden State Warriors,Denver Nuggets,116,117,-1,Home,100.4,True,2022
+202202240SAC,"Thu, Feb 24, 2022",SAC,DEN,Sacramento Kings,Denver Nuggets,110,128,-18,Home,103.8,True,2022
+202202260DEN,"Sat, Feb 26, 2022",DEN,SAC,Denver Nuggets,Sacramento Kings,115,110,5,Home,102.6,True,2022
+202202270POR,"Sun, Feb 27, 2022",POR,DEN,Portland Trail Blazers,Denver Nuggets,92,124,-32,Home,104.0,True,2022
+202203060DEN,"Sun, Mar 6, 2022",DEN,NOP,Denver Nuggets,New Orleans Pelicans,138,130,8,Home,99.9,True,2022
+202203070DEN,"Mon, Mar 7, 2022",DEN,GSW,Denver Nuggets,Golden State Warriors,131,124,7,Home,101.8,True,2022
+202203090SAC,"Wed, Mar 9, 2022",SAC,DEN,Sacramento Kings,Denver Nuggets,100,106,-6,Home,99.2,True,2022
+202203100DEN,"Thu, Mar 10, 2022",DEN,GSW,Denver Nuggets,Golden State Warriors,102,113,-11,Home,93.2,True,2022
+202203120DEN,"Sat, Mar 12, 2022",DEN,TOR,Denver Nuggets,Toronto Raptors,115,127,-12,Home,95.6,True,2022
+202203140PHI,"Mon, Mar 14, 2022",PHI,DEN,Philadelphia 76ers,Denver Nuggets,110,114,-4,Home,98.1,True,2022
+202203160WAS,"Wed, Mar 16, 2022",WAS,DEN,Washington Wizards,Denver Nuggets,109,127,-18,Home,97.1,True,2022
+202203180CLE,"Fri, Mar 18, 2022",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,119,116,3,Home,93.1,True,2022
+202203220DEN,"Tue, Mar 22, 2022",DEN,LAC,Denver Nuggets,Los Angeles Clippers,127,115,12,Home,94.8,True,2022
+202203280CHO,"Mon, Mar 28, 2022",CHO,DEN,Charlotte Hornets,Denver Nuggets,109,113,-4,Home,99.0,True,2022
+202203300IND,"Wed, Mar 30, 2022",IND,DEN,Indiana Pacers,Denver Nuggets,118,125,-7,Home,95.0,True,2022
+202204050DEN,"Tue, Apr 5, 2022",DEN,SAS,Denver Nuggets,San Antonio Spurs,97,116,-19,Home,102.8,True,2022
+202204070DEN,"Thu, Apr 7, 2022",DEN,MEM,Denver Nuggets,Memphis Grizzlies,122,109,13,Home,97.4,True,2022
+202204160GSW,"Sat, Apr 16, 2022",GSW,DEN,Golden State Warriors,Denver Nuggets,123,107,16,Home,95.1,True,2022
+202204180GSW,"Mon, Apr 18, 2022",GSW,DEN,Golden State Warriors,Denver Nuggets,126,106,20,Home,93.7,True,2022
+202204210DEN,"Thu, Apr 21, 2022",DEN,GSW,Denver Nuggets,Golden State Warriors,113,118,-5,Home,96.2,True,2022
+202204240DEN,"Sun, Apr 24, 2022",DEN,GSW,Denver Nuggets,Golden State Warriors,126,121,5,Home,102.3,True,2022
+202204270GSW,"Wed, Apr 27, 2022",GSW,DEN,Golden State Warriors,Denver Nuggets,102,98,4,Home,92.1,True,2022
+202110210GSW,"Thu, Oct 21, 2021",GSW,LAC,Golden State Warriors,Los Angeles Clippers,115,113,2,Home,102.3,True,2022
+202110240SAC,"Sun, Oct 24, 2021",SAC,GSW,Sacramento Kings,Golden State Warriors,107,119,-12,Home,97.4,True,2022
+202110280GSW,"Thu, Oct 28, 2021",GSW,MEM,Golden State Warriors,Memphis Grizzlies,101,104,-3,Home,97.9,True,2022
+202111030GSW,"Wed, Nov 3, 2021",GSW,CHO,Golden State Warriors,Charlotte Hornets,114,92,22,Home,103.4,True,2022
+202111050GSW,"Fri, Nov 5, 2021",GSW,NOP,Golden State Warriors,New Orleans Pelicans,126,85,41,Home,97.6,True,2022
+202111080GSW,"Mon, Nov 8, 2021",GSW,ATL,Golden State Warriors,Atlanta Hawks,127,113,14,Home,103.8,True,2022
+202111120GSW,"Fri, Nov 12, 2021",GSW,CHI,Golden State Warriors,Chicago Bulls,119,93,26,Home,100.0,True,2022
+202111140CHO,"Sun, Nov 14, 2021",CHO,GSW,Charlotte Hornets,Golden State Warriors,106,102,4,Home,100.4,True,2022
+202111160BRK,"Tue, Nov 16, 2021",BRK,GSW,Brooklyn Nets,Golden State Warriors,99,117,-18,Home,100.8,True,2022
+202111180CLE,"Thu, Nov 18, 2021",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,89,104,-15,Home,89.4,True,2022
+202111190DET,"Fri, Nov 19, 2021",DET,GSW,Detroit Pistons,Golden State Warriors,102,105,-3,Home,90.6,True,2022
+202111210GSW,"Sun, Nov 21, 2021",GSW,TOR,Golden State Warriors,Toronto Raptors,119,104,15,Home,96.0,True,2022
+202111240GSW,"Wed, Nov 24, 2021",GSW,PHI,Golden State Warriors,Philadelphia 76ers,116,96,20,Home,100.1,True,2022
+202111260GSW,"Fri, Nov 26, 2021",GSW,POR,Golden State Warriors,Portland Trail Blazers,118,103,15,Home,96.8,True,2022
+202111280LAC,"Sun, Nov 28, 2021",LAC,GSW,Los Angeles Clippers,Golden State Warriors,90,105,-15,Home,97.6,True,2022
+202112040GSW,"Sat, Dec 4, 2021",GSW,SAS,Golden State Warriors,San Antonio Spurs,107,112,-5,Home,96.4,True,2022
+202112060GSW,"Mon, Dec 6, 2021",GSW,ORL,Golden State Warriors,Orlando Magic,126,95,31,Home,103.3,True,2022
+202112080GSW,"Wed, Dec 8, 2021",GSW,POR,Golden State Warriors,Portland Trail Blazers,104,94,10,Home,98.9,True,2022
+202112110PHI,"Sat, Dec 11, 2021",PHI,GSW,Philadelphia 76ers,Golden State Warriors,102,93,9,Home,92.8,True,2022
+202112130IND,"Mon, Dec 13, 2021",IND,GSW,Indiana Pacers,Golden State Warriors,100,102,-2,Home,95.6,True,2022
+202112140NYK,"Tue, Dec 14, 2021",NYK,GSW,New York Knicks,Golden State Warriors,96,105,-9,Home,93.2,True,2022
+202112180TOR,"Sat, Dec 18, 2021",TOR,GSW,Toronto Raptors,Golden State Warriors,119,100,19,Home,96.1,True,2022
+202112200GSW,"Mon, Dec 20, 2021",GSW,SAC,Golden State Warriors,Sacramento Kings,113,98,15,Home,98.6,True,2022
+202112230GSW,"Thu, Dec 23, 2021",GSW,MEM,Golden State Warriors,Memphis Grizzlies,113,104,9,Home,96.3,True,2022
+202201030GSW,"Mon, Jan 3, 2022",GSW,MIA,Golden State Warriors,Miami Heat,115,108,7,Home,101.9,True,2022
+202201060NOP,"Thu, Jan 6, 2022",NOP,GSW,New Orleans Pelicans,Golden State Warriors,101,96,5,Home,100.5,True,2022
+202201090GSW,"Sun, Jan 9, 2022",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,96,82,14,Home,90.8,True,2022
+202201110MEM,"Tue, Jan 11, 2022",MEM,GSW,Memphis Grizzlies,Golden State Warriors,116,108,8,Home,105.2,True,2022
+202201130MIL,"Thu, Jan 13, 2022",MIL,GSW,Milwaukee Bucks,Golden State Warriors,118,99,19,Home,105.2,True,2022
+202201140CHI,"Fri, Jan 14, 2022",CHI,GSW,Chicago Bulls,Golden State Warriors,96,138,-42,Home,96.8,True,2022
+202201180GSW,"Tue, Jan 18, 2022",GSW,DET,Golden State Warriors,Detroit Pistons,102,86,16,Home,95.9,True,2022
+202201200GSW,"Thu, Jan 20, 2022",GSW,IND,Golden State Warriors,Indiana Pacers,117,121,-4,Home,98.6,True,2022
+202201290GSW,"Sat, Jan 29, 2022",GSW,BRK,Golden State Warriors,Brooklyn Nets,110,106,4,Home,95.9,True,2022
+202202010SAS,"Tue, Feb 1, 2022",SAS,GSW,San Antonio Spurs,Golden State Warriors,120,124,-4,Home,98.1,True,2022
+202202030GSW,"Thu, Feb 3, 2022",GSW,SAC,Golden State Warriors,Sacramento Kings,126,114,12,Home,95.8,True,2022
+202202100GSW,"Thu, Feb 10, 2022",GSW,NYK,Golden State Warriors,New York Knicks,114,116,-2,Home,98.3,True,2022
+202202140LAC,"Mon, Feb 14, 2022",LAC,GSW,Los Angeles Clippers,Golden State Warriors,119,104,15,Home,96.9,True,2022
+202202240POR,"Thu, Feb 24, 2022",POR,GSW,Portland Trail Blazers,Golden State Warriors,95,132,-37,Home,100.5,True,2022
+202203080GSW,"Tue, Mar 8, 2022",GSW,LAC,Golden State Warriors,Los Angeles Clippers,112,97,15,Home,101.2,True,2022
+202203120GSW,"Sat, Mar 12, 2022",GSW,MIL,Golden State Warriors,Milwaukee Bucks,122,109,13,Home,95.4,True,2022
+202203140GSW,"Mon, Mar 14, 2022",GSW,WAS,Golden State Warriors,Washington Wizards,126,112,14,Home,98.5,True,2022
+202203200GSW,"Sun, Mar 20, 2022",GSW,SAS,Golden State Warriors,San Antonio Spurs,108,110,-2,Home,94.4,True,2022
+202203220ORL,"Tue, Mar 22, 2022",ORL,GSW,Orlando Magic,Golden State Warriors,94,90,4,Home,94.0,True,2022
+202203230MIA,"Wed, Mar 23, 2022",MIA,GSW,Miami Heat,Golden State Warriors,104,118,-14,Home,91.9,True,2022
+202203250ATL,"Fri, Mar 25, 2022",ATL,GSW,Atlanta Hawks,Golden State Warriors,121,110,11,Home,95.6,True,2022
+202203270WAS,"Sun, Mar 27, 2022",WAS,GSW,Washington Wizards,Golden State Warriors,123,115,8,Home,99.8,True,2022
+202203280MEM,"Mon, Mar 28, 2022",MEM,GSW,Memphis Grizzlies,Golden State Warriors,123,95,28,Home,101.4,True,2022
+202204030SAC,"Sun, Apr 3, 2022",SAC,GSW,Sacramento Kings,Golden State Warriors,90,109,-19,Home,93.9,True,2022
+202204090SAS,"Sat, Apr 9, 2022",SAS,GSW,San Antonio Spurs,Golden State Warriors,94,100,-6,Home,95.4,True,2022
+202204100NOP,"Sun, Apr 10, 2022",NOP,GSW,New Orleans Pelicans,Golden State Warriors,107,128,-21,Home,94.6,True,2022
+202205010MEM,"Sun, May 1, 2022",MEM,GSW,Memphis Grizzlies,Golden State Warriors,116,117,-1,Home,101.0,True,2022
+202205030MEM,"Tue, May 3, 2022",MEM,GSW,Memphis Grizzlies,Golden State Warriors,106,101,5,Home,101.1,True,2022
+202205070GSW,"Sat, May 7, 2022",GSW,MEM,Golden State Warriors,Memphis Grizzlies,142,112,30,Home,102.6,True,2022
+202205090GSW,"Mon, May 9, 2022",GSW,MEM,Golden State Warriors,Memphis Grizzlies,101,98,3,Home,102.8,True,2022
+202205110MEM,"Wed, May 11, 2022",MEM,GSW,Memphis Grizzlies,Golden State Warriors,134,95,39,Home,101.5,True,2022
+202205130GSW,"Fri, May 13, 2022",GSW,MEM,Golden State Warriors,Memphis Grizzlies,110,96,14,Home,97.4,True,2022
+202110200DET,"Wed, Oct 20, 2021",DET,CHI,Detroit Pistons,Chicago Bulls,88,94,-6,Home,98.5,True,2022
+202110230CHI,"Sat, Oct 23, 2021",CHI,DET,Chicago Bulls,Detroit Pistons,97,82,15,Home,100.7,True,2022
+202110250ATL,"Mon, Oct 25, 2021",ATL,DET,Atlanta Hawks,Detroit Pistons,122,104,18,Home,99.1,True,2022
+202110280PHI,"Thu, Oct 28, 2021",PHI,DET,Philadelphia 76ers,Detroit Pistons,110,102,8,Home,98.0,True,2022
+202110300DET,"Sat, Oct 30, 2021",DET,ORL,Detroit Pistons,Orlando Magic,110,103,7,Home,95.2,True,2022
+202110310BRK,"Sun, Oct 31, 2021",BRK,DET,Brooklyn Nets,Detroit Pistons,117,91,26,Home,95.2,True,2022
+202111020DET,"Tue, Nov 2, 2021",DET,MIL,Detroit Pistons,Milwaukee Bucks,89,117,-28,Home,99.6,True,2022
+202111040DET,"Thu, Nov 4, 2021",DET,PHI,Detroit Pistons,Philadelphia 76ers,98,109,-11,Home,89.8,True,2022
+202111050DET,"Fri, Nov 5, 2021",DET,BRK,Detroit Pistons,Brooklyn Nets,90,96,-6,Home,97.9,True,2022
+202111120CLE,"Fri, Nov 12, 2021",CLE,DET,Cleveland Cavaliers,Detroit Pistons,98,78,20,Home,95.0,True,2022
+202111130TOR,"Sat, Nov 13, 2021",TOR,DET,Toronto Raptors,Detroit Pistons,121,127,-6,Home,94.3,True,2022
+202111150DET,"Mon, Nov 15, 2021",DET,SAC,Detroit Pistons,Sacramento Kings,107,129,-22,Home,101.8,True,2022
+202111170DET,"Wed, Nov 17, 2021",DET,IND,Detroit Pistons,Indiana Pacers,97,89,8,Home,95.2,True,2022
+202111230DET,"Tue, Nov 23, 2021",DET,MIA,Detroit Pistons,Miami Heat,92,100,-8,Home,91.8,True,2022
+202111240MIL,"Wed, Nov 24, 2021",MIL,DET,Milwaukee Bucks,Detroit Pistons,114,93,21,Home,99.0,True,2022
+202111260LAC,"Fri, Nov 26, 2021",LAC,DET,Los Angeles Clippers,Detroit Pistons,107,96,11,Home,100.8,True,2022
+202111300POR,"Tue, Nov 30, 2021",POR,DET,Portland Trail Blazers,Detroit Pistons,110,92,18,Home,99.1,True,2022
+202112080DET,"Wed, Dec 8, 2021",DET,WAS,Detroit Pistons,Washington Wizards,116,119,-3,Home,91.1,True,2022
+202112100NOP,"Fri, Dec 10, 2021",NOP,DET,New Orleans Pelicans,Detroit Pistons,109,93,16,Home,97.7,True,2022
+202112120DET,"Sun, Dec 12, 2021",DET,BRK,Detroit Pistons,Brooklyn Nets,104,116,-12,Home,105.9,True,2022
+202112160IND,"Thu, Dec 16, 2021",IND,DET,Indiana Pacers,Detroit Pistons,122,113,9,Home,99.2,True,2022
+202112190DET,"Sun, Dec 19, 2021",DET,MIA,Detroit Pistons,Miami Heat,100,90,10,Home,92.6,True,2022
+202112210NYK,"Tue, Dec 21, 2021",NYK,DET,New York Knicks,Detroit Pistons,105,91,14,Home,98.2,True,2022
+202112230MIA,"Thu, Dec 23, 2021",MIA,DET,Miami Heat,Detroit Pistons,115,112,3,Home,100.7,True,2022
+202112260SAS,"Sun, Dec 26, 2021",SAS,DET,San Antonio Spurs,Detroit Pistons,144,109,35,Home,111.6,True,2022
+202112290DET,"Wed, Dec 29, 2021",DET,NYK,Detroit Pistons,New York Knicks,85,94,-9,Home,95.1,True,2022
+202201010DET,"Sat, Jan 1, 2022",DET,SAS,Detroit Pistons,San Antonio Spurs,117,116,1,Home,101.1,True,2022
+202201030MIL,"Mon, Jan 3, 2022",MIL,DET,Milwaukee Bucks,Detroit Pistons,106,115,-9,Home,97.8,True,2022
+202201050CHO,"Wed, Jan 5, 2022",CHO,DET,Charlotte Hornets,Detroit Pistons,140,111,29,Home,102.5,True,2022
+202201060MEM,"Thu, Jan 6, 2022",MEM,DET,Memphis Grizzlies,Detroit Pistons,118,88,30,Home,102.6,True,2022
+202201080DET,"Sat, Jan 8, 2022",DET,ORL,Detroit Pistons,Orlando Magic,97,92,5,Home,97.2,True,2022
+202201110CHI,"Tue, Jan 11, 2022",CHI,DET,Chicago Bulls,Detroit Pistons,133,87,46,Home,101.7,True,2022
+202201140DET,"Fri, Jan 14, 2022",DET,TOR,Detroit Pistons,Toronto Raptors,103,87,16,Home,87.9,True,2022
+202201190SAC,"Wed, Jan 19, 2022",SAC,DET,Sacramento Kings,Detroit Pistons,131,133,-2,Home,97.2,True,2022
+202201280ORL,"Fri, Jan 28, 2022",ORL,DET,Orlando Magic,Detroit Pistons,119,103,16,Home,97.2,True,2022
+202201300DET,"Sun, Jan 30, 2022",DET,CLE,Detroit Pistons,Cleveland Cavaliers,115,105,10,Home,90.8,True,2022
+202202010DET,"Tue, Feb 1, 2022",DET,NOP,Detroit Pistons,New Orleans Pelicans,101,111,-10,Home,98.1,True,2022
+202202100DET,"Thu, Feb 10, 2022",DET,MEM,Detroit Pistons,Memphis Grizzlies,107,132,-25,Home,101.0,True,2022
+202202110DET,"Fri, Feb 11, 2022",DET,CHO,Detroit Pistons,Charlotte Hornets,119,141,-22,Home,109.0,True,2022
+202202140WAS,"Mon, Feb 14, 2022",WAS,DET,Washington Wizards,Detroit Pistons,103,94,9,Home,93.4,True,2022
+202202240DET,"Thu, Feb 24, 2022",DET,CLE,Detroit Pistons,Cleveland Cavaliers,106,103,3,Home,93.3,True,2022
+202202270CHO,"Sun, Feb 27, 2022",CHO,DET,Charlotte Hornets,Detroit Pistons,126,127,-1,Home,96.3,True,2022
+202203010WAS,"Tue, Mar 1, 2022",WAS,DET,Washington Wizards,Detroit Pistons,116,113,3,Home,94.9,True,2022
+202203030TOR,"Thu, Mar 3, 2022",TOR,DET,Toronto Raptors,Detroit Pistons,106,108,-2,Home,90.9,True,2022
+202203040DET,"Fri, Mar 4, 2022",DET,IND,Detroit Pistons,Indiana Pacers,111,106,5,Home,96.0,True,2022
+202203070DET,"Mon, Mar 7, 2022",DET,ATL,Detroit Pistons,Atlanta Hawks,113,110,3,Home,89.3,True,2022
+202203090DET,"Wed, Mar 9, 2022",DET,CHI,Detroit Pistons,Chicago Bulls,108,114,-6,Home,98.6,True,2022
+202203130DET,"Sun, Mar 13, 2022",DET,LAC,Detroit Pistons,Los Angeles Clippers,102,106,-4,Home,90.0,True,2022
+202203150MIA,"Tue, Mar 15, 2022",MIA,DET,Miami Heat,Detroit Pistons,105,98,7,Home,92.5,True,2022
+202203170ORL,"Thu, Mar 17, 2022",ORL,DET,Orlando Magic,Detroit Pistons,120,134,-14,Home,104.4,True,2022
+202203190CLE,"Sat, Mar 19, 2022",CLE,DET,Cleveland Cavaliers,Detroit Pistons,113,109,4,Home,96.9,True,2022
+202203210DET,"Mon, Mar 21, 2022",DET,POR,Detroit Pistons,Portland Trail Blazers,115,119,-4,Home,101.8,True,2022
+202203230DET,"Wed, Mar 23, 2022",DET,ATL,Detroit Pistons,Atlanta Hawks,122,101,21,Home,102.3,True,2022
+202203250DET,"Fri, Mar 25, 2022",DET,WAS,Detroit Pistons,Washington Wizards,97,100,-3,Home,103.1,True,2022
+202203270DET,"Sun, Mar 27, 2022",DET,NYK,Detroit Pistons,New York Knicks,102,104,-2,Home,92.0,True,2022
+202203290BRK,"Tue, Mar 29, 2022",BRK,DET,Brooklyn Nets,Detroit Pistons,130,123,7,Home,98.8,True,2022
+202203310DET,"Thu, Mar 31, 2022",DET,PHI,Detroit Pistons,Philadelphia 76ers,102,94,8,Home,91.2,True,2022
+202204030IND,"Sun, Apr 3, 2022",IND,DET,Indiana Pacers,Detroit Pistons,117,121,-4,Home,103.1,True,2022
+202204080DET,"Fri, Apr 8, 2022",DET,MIL,Detroit Pistons,Milwaukee Bucks,101,131,-30,Home,102.2,True,2022
+202204100PHI,"Sun, Apr 10, 2022",PHI,DET,Philadelphia 76ers,Detroit Pistons,118,106,12,Home,96.6,True,2022
+202110200POR,"Wed, Oct 20, 2021",POR,SAC,Portland Trail Blazers,Sacramento Kings,121,124,-3,Home,104.6,True,2022
+202110250LAC,"Mon, Oct 25, 2021",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,116,86,30,Home,112.6,True,2022
+202110270POR,"Wed, Oct 27, 2021",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,116,96,20,Home,97.3,True,2022
+202110290POR,"Fri, Oct 29, 2021",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,111,92,19,Home,99.5,True,2022
+202110310CHO,"Sun, Oct 31, 2021",CHO,POR,Charlotte Hornets,Portland Trail Blazers,125,113,12,Home,95.1,True,2022
+202111010PHI,"Mon, Nov 1, 2021",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,113,103,10,Home,90.8,True,2022
+202111030CLE,"Wed, Nov 3, 2021",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,107,104,3,Home,93.7,True,2022
+202111050POR,"Fri, Nov 5, 2021",POR,IND,Portland Trail Blazers,Indiana Pacers,110,106,4,Home,94.6,True,2022
+202111090LAC,"Tue, Nov 9, 2021",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,117,109,8,Home,95.0,True,2022
+202111150POR,"Mon, Nov 15, 2021",POR,TOR,Portland Trail Blazers,Toronto Raptors,118,113,5,Home,92.4,True,2022
+202111170POR,"Wed, Nov 17, 2021",POR,CHI,Portland Trail Blazers,Chicago Bulls,112,107,5,Home,95.1,True,2022
+202111200POR,"Sat, Nov 20, 2021",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,118,111,7,Home,95.9,True,2022
+202111240SAC,"Wed, Nov 24, 2021",SAC,POR,Sacramento Kings,Portland Trail Blazers,125,121,4,Home,100.0,True,2022
+202112020POR,"Thu, Dec 2, 2021",POR,SAS,Portland Trail Blazers,San Antonio Spurs,83,114,-31,Home,99.7,True,2022
+202112060POR,"Mon, Dec 6, 2021",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,90,102,-12,Home,99.1,True,2022
+202112150POR,"Wed, Dec 15, 2021",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,103,113,-10,Home,98.9,True,2022
+202112170POR,"Fri, Dec 17, 2021",POR,CHO,Portland Trail Blazers,Charlotte Hornets,125,116,9,Home,99.5,True,2022
+202112190MEM,"Sun, Dec 19, 2021",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,100,105,-5,Home,95.5,True,2022
+202112210NOP,"Tue, Dec 21, 2021",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,111,97,14,Home,90.1,True,2022
+202201030POR,"Mon, Jan 3, 2022",POR,ATL,Portland Trail Blazers,Atlanta Hawks,136,131,5,Home,97.9,True,2022
+202201050POR,"Wed, Jan 5, 2022",POR,MIA,Portland Trail Blazers,Miami Heat,109,115,-6,Home,88.6,True,2022
+202201070POR,"Fri, Jan 7, 2022",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,101,114,-13,Home,91.8,True,2022
+202201090POR,"Sun, Jan 9, 2022",POR,SAC,Portland Trail Blazers,Sacramento Kings,103,88,15,Home,97.2,True,2022
+202201100POR,"Mon, Jan 10, 2022",POR,BRK,Portland Trail Blazers,Brooklyn Nets,114,108,6,Home,97.5,True,2022
+202201150WAS,"Sat, Jan 15, 2022",WAS,POR,Washington Wizards,Portland Trail Blazers,110,115,-5,Home,103.6,True,2022
+202201170ORL,"Mon, Jan 17, 2022",ORL,POR,Orlando Magic,Portland Trail Blazers,88,98,-10,Home,102.4,True,2022
+202201190MIA,"Wed, Jan 19, 2022",MIA,POR,Miami Heat,Portland Trail Blazers,104,92,12,Home,92.9,True,2022
+202201230TOR,"Sun, Jan 23, 2022",TOR,POR,Toronto Raptors,Portland Trail Blazers,105,114,-9,Home,100.7,True,2022
+202201300CHI,"Sun, Jan 30, 2022",CHI,POR,Chicago Bulls,Portland Trail Blazers,130,116,14,Home,95.8,True,2022
+202202050POR,"Sat, Feb 5, 2022",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,108,137,-29,Home,99.3,True,2022
+202202080POR,"Tue, Feb 8, 2022",POR,ORL,Portland Trail Blazers,Orlando Magic,95,113,-18,Home,95.7,True,2022
+202202120POR,"Sat, Feb 12, 2022",POR,NYK,Portland Trail Blazers,New York Knicks,112,103,9,Home,96.9,True,2022
+202202140MIL,"Mon, Feb 14, 2022",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,107,122,-15,Home,104.4,True,2022
+202202160MEM,"Wed, Feb 16, 2022",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,119,123,-4,Home,96.9,True,2022
+202203120POR,"Sat, Mar 12, 2022",POR,WAS,Portland Trail Blazers,Washington Wizards,127,118,9,Home,97.4,True,2022
+202203140ATL,"Mon, Mar 14, 2022",ATL,POR,Atlanta Hawks,Portland Trail Blazers,122,113,9,Home,105.0,True,2022
+202203160NYK,"Wed, Mar 16, 2022",NYK,POR,New York Knicks,Portland Trail Blazers,128,98,30,Home,96.1,True,2022
+202203180BRK,"Fri, Mar 18, 2022",BRK,POR,Brooklyn Nets,Portland Trail Blazers,128,123,5,Home,99.2,True,2022
+202203200IND,"Sun, Mar 20, 2022",IND,POR,Indiana Pacers,Portland Trail Blazers,129,98,31,Home,93.6,True,2022
+202203230POR,"Wed, Mar 23, 2022",POR,SAS,Portland Trail Blazers,San Antonio Spurs,96,133,-37,Home,101.6,True,2022
+202203300POR,"Wed, Mar 30, 2022",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,107,117,-10,Home,96.0,True,2022
+202204010SAS,"Fri, Apr 1, 2022",SAS,POR,San Antonio Spurs,Portland Trail Blazers,130,111,19,Home,97.3,True,2022
+202204030SAS,"Sun, Apr 3, 2022",SAS,POR,San Antonio Spurs,Portland Trail Blazers,113,92,21,Home,96.2,True,2022
+202204070NOP,"Thu, Apr 7, 2022",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,127,94,33,Home,91.6,True,2022
+202110200MEM,"Wed, Oct 20, 2021",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,132,121,11,Home,101.1,True,2022
+202110230LAC,"Sat, Oct 23, 2021",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,114,120,-6,Home,95.6,True,2022
+202110300MEM,"Sat, Oct 30, 2021",MEM,MIA,Memphis Grizzlies,Miami Heat,103,129,-26,Home,100.0,True,2022
+202111050WAS,"Fri, Nov 5, 2021",WAS,MEM,Washington Wizards,Memphis Grizzlies,115,87,28,Home,99.9,True,2022
+202111100MEM,"Wed, Nov 10, 2021",MEM,CHO,Memphis Grizzlies,Charlotte Hornets,108,118,-10,Home,106.6,True,2022
+202111130NOP,"Sat, Nov 13, 2021",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,112,101,11,Home,90.3,True,2022
+202111180MEM,"Thu, Nov 18, 2021",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,120,108,12,Home,96.3,True,2022
+202111240MEM,"Wed, Nov 24, 2021",MEM,TOR,Memphis Grizzlies,Toronto Raptors,113,126,-13,Home,93.8,True,2022
+202111260MEM,"Fri, Nov 26, 2021",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,100,132,-32,Home,99.6,True,2022
+202111280MEM,"Sun, Nov 28, 2021",MEM,SAC,Memphis Grizzlies,Sacramento Kings,128,101,27,Home,106.2,True,2022
+202111300TOR,"Tue, Nov 30, 2021",TOR,MEM,Toronto Raptors,Memphis Grizzlies,91,98,-7,Home,98.1,True,2022
+202112060MIA,"Mon, Dec 6, 2021",MIA,MEM,Miami Heat,Memphis Grizzlies,90,105,-15,Home,97.4,True,2022
+202112130MEM,"Mon, Dec 13, 2021",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,126,91,35,Home,98.0,True,2022
+202112170SAC,"Fri, Dec 17, 2021",SAC,MEM,Sacramento Kings,Memphis Grizzlies,105,124,-19,Home,104.7,True,2022
+202112260SAC,"Sun, Dec 26, 2021",SAC,MEM,Sacramento Kings,Memphis Grizzlies,102,127,-25,Home,99.9,True,2022
+202112310MEM,"Fri, Dec 31, 2021",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,118,105,13,Home,99.6,True,2022
+202201030BRK,"Mon, Jan 3, 2022",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,104,118,-14,Home,95.4,True,2022
+202201040CLE,"Tue, Jan 4, 2022",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,106,110,-4,Home,94.8,True,2022
+202201080LAC,"Sat, Jan 8, 2022",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,108,123,-15,Home,102.2,True,2022
+202201170MEM,"Mon, Jan 17, 2022",MEM,CHI,Memphis Grizzlies,Chicago Bulls,119,106,13,Home,105.7,True,2022
+202201190MIL,"Wed, Jan 19, 2022",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,126,114,12,Home,105.8,True,2022
+202201260SAS,"Wed, Jan 26, 2022",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,110,118,-8,Home,98.7,True,2022
+202201290MEM,"Sat, Jan 29, 2022",MEM,WAS,Memphis Grizzlies,Washington Wizards,115,95,20,Home,93.2,True,2022
+202201310PHI,"Mon, Jan 31, 2022",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,122,119,3,Home,99.8,True,2022
+202202020NYK,"Wed, Feb 2, 2022",NYK,MEM,New York Knicks,Memphis Grizzlies,108,120,-12,Home,100.4,True,2022
+202202050ORL,"Sat, Feb 5, 2022",ORL,MEM,Orlando Magic,Memphis Grizzlies,115,135,-20,Home,103.1,True,2022
+202202080MEM,"Tue, Feb 8, 2022",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,135,109,26,Home,103.2,True,2022
+202202120CHO,"Sat, Feb 12, 2022",CHO,MEM,Charlotte Hornets,Memphis Grizzlies,118,125,-7,Home,108.5,True,2022
+202202150NOP,"Tue, Feb 15, 2022",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,109,121,-12,Home,96.7,True,2022
+202202260CHI,"Sat, Feb 26, 2022",CHI,MEM,Chicago Bulls,Memphis Grizzlies,110,116,-6,Home,104.5,True,2022
+202202280MEM,"Mon, Feb 28, 2022",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,118,105,13,Home,99.9,True,2022
+202203050MEM,"Sat, Mar 5, 2022",MEM,ORL,Memphis Grizzlies,Orlando Magic,124,96,28,Home,103.4,True,2022
+202203080MEM,"Tue, Mar 8, 2022",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,132,111,21,Home,102.2,True,2022
+202203110MEM,"Fri, Mar 11, 2022",MEM,NYK,Memphis Grizzlies,New York Knicks,118,114,4,Home,104.7,True,2022
+202203150IND,"Tue, Mar 15, 2022",IND,MEM,Indiana Pacers,Memphis Grizzlies,102,135,-33,Home,104.2,True,2022
+202203180ATL,"Fri, Mar 18, 2022",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,120,105,15,Home,97.8,True,2022
+202203230MEM,"Wed, Mar 23, 2022",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,132,120,12,Home,100.6,True,2022
+202203240MEM,"Thu, Mar 24, 2022",MEM,IND,Memphis Grizzlies,Indiana Pacers,133,103,30,Home,98.0,True,2022
+202203260MEM,"Sat, Mar 26, 2022",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,127,102,25,Home,100.3,True,2022
+202203300SAS,"Wed, Mar 30, 2022",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,111,112,-1,Home,93.8,True,2022
+202204090MEM,"Sat, Apr 9, 2022",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,141,114,27,Home,105.8,True,2022
+202110220ORL,"Fri, Oct 22, 2021",ORL,NYK,Orlando Magic,New York Knicks,96,121,-25,Home,97.2,True,2022
+202110240NYK,"Sun, Oct 24, 2021",NYK,ORL,New York Knicks,Orlando Magic,104,110,-6,Home,103.7,True,2022
+202110260NYK,"Tue, Oct 26, 2021",NYK,PHI,New York Knicks,Philadelphia 76ers,112,99,13,Home,89.4,True,2022
+202110280CHI,"Thu, Oct 28, 2021",CHI,NYK,Chicago Bulls,New York Knicks,103,104,-1,Home,93.6,True,2022
+202110300NOP,"Sat, Oct 30, 2021",NOP,NYK,New Orleans Pelicans,New York Knicks,117,123,-6,Home,97.6,True,2022
+202111010NYK,"Mon, Nov 1, 2021",NYK,TOR,New York Knicks,Toronto Raptors,104,113,-9,Home,95.2,True,2022
+202111030IND,"Wed, Nov 3, 2021",IND,NYK,Indiana Pacers,New York Knicks,111,98,13,Home,94.3,True,2022
+202111050MIL,"Fri, Nov 5, 2021",MIL,NYK,Milwaukee Bucks,New York Knicks,98,113,-15,Home,97.1,True,2022
+202111070NYK,"Sun, Nov 7, 2021",NYK,CLE,New York Knicks,Cleveland Cavaliers,109,126,-17,Home,96.4,True,2022
+202111080PHI,"Mon, Nov 8, 2021",PHI,NYK,Philadelphia 76ers,New York Knicks,96,103,-7,Home,92.7,True,2022
+202111100NYK,"Wed, Nov 10, 2021",NYK,MIL,New York Knicks,Milwaukee Bucks,100,112,-12,Home,91.8,True,2022
+202111120CHO,"Fri, Nov 12, 2021",CHO,NYK,Charlotte Hornets,New York Knicks,104,96,8,Home,100.3,True,2022
+202111150NYK,"Mon, Nov 15, 2021",NYK,IND,New York Knicks,Indiana Pacers,92,84,8,Home,89.3,True,2022
+202111170NYK,"Wed, Nov 17, 2021",NYK,ORL,New York Knicks,Orlando Magic,98,104,-6,Home,97.9,True,2022
+202111210CHI,"Sun, Nov 21, 2021",CHI,NYK,Chicago Bulls,New York Knicks,109,103,6,Home,94.6,True,2022
+202111270ATL,"Sat, Nov 27, 2021",ATL,NYK,Atlanta Hawks,New York Knicks,90,99,-9,Home,92.1,True,2022
+202111300BRK,"Tue, Nov 30, 2021",BRK,NYK,Brooklyn Nets,New York Knicks,112,110,2,Home,93.3,True,2022
+202112020NYK,"Thu, Dec 2, 2021",NYK,CHI,New York Knicks,Chicago Bulls,115,119,-4,Home,98.2,True,2022
+202112070SAS,"Tue, Dec 7, 2021",SAS,NYK,San Antonio Spurs,New York Knicks,109,121,-12,Home,92.6,True,2022
+202112080IND,"Wed, Dec 8, 2021",IND,NYK,Indiana Pacers,New York Knicks,122,102,20,Home,94.2,True,2022
+202112100TOR,"Fri, Dec 10, 2021",TOR,NYK,Toronto Raptors,New York Knicks,90,87,3,Home,89.2,True,2022
+202112120NYK,"Sun, Dec 12, 2021",NYK,MIL,New York Knicks,Milwaukee Bucks,97,112,-15,Home,94.5,True,2022
+202112230NYK,"Thu, Dec 23, 2021",NYK,WAS,New York Knicks,Washington Wizards,117,124,-7,Home,93.4,True,2022
+202112250NYK,"Sat, Dec 25, 2021",NYK,ATL,New York Knicks,Atlanta Hawks,101,87,14,Home,92.7,True,2022
+202201020TOR,"Sun, Jan 2, 2022",TOR,NYK,Toronto Raptors,New York Knicks,120,105,15,Home,98.3,True,2022
+202201040NYK,"Tue, Jan 4, 2022",NYK,IND,New York Knicks,Indiana Pacers,104,94,10,Home,87.2,True,2022
+202201100NYK,"Mon, Jan 10, 2022",NYK,SAS,New York Knicks,San Antonio Spurs,111,96,15,Home,96.3,True,2022
+202201150ATL,"Sat, Jan 15, 2022",ATL,NYK,Atlanta Hawks,New York Knicks,108,117,-9,Home,89.9,True,2022
+202201170NYK,"Mon, Jan 17, 2022",NYK,CHO,New York Knicks,Charlotte Hornets,87,97,-10,Home,90.4,True,2022
+202201200NYK,"Thu, Jan 20, 2022",NYK,NOP,New York Knicks,New Orleans Pelicans,91,102,-11,Home,92.1,True,2022
+202201230NYK,"Sun, Jan 23, 2022",NYK,LAC,New York Knicks,Los Angeles Clippers,110,102,8,Home,94.9,True,2022
+202201240CLE,"Mon, Jan 24, 2022",CLE,NYK,Cleveland Cavaliers,New York Knicks,95,93,2,Home,93.5,True,2022
+202201260MIA,"Wed, Jan 26, 2022",MIA,NYK,Miami Heat,New York Knicks,110,96,14,Home,91.1,True,2022
+202201280MIL,"Fri, Jan 28, 2022",MIL,NYK,Milwaukee Bucks,New York Knicks,123,108,15,Home,99.4,True,2022
+202201310NYK,"Mon, Jan 31, 2022",NYK,SAC,New York Knicks,Sacramento Kings,116,96,20,Home,99.9,True,2022
+202202160NYK,"Wed, Feb 16, 2022",NYK,BRK,New York Knicks,Brooklyn Nets,106,111,-5,Home,93.6,True,2022
+202202250NYK,"Fri, Feb 25, 2022",NYK,MIA,New York Knicks,Miami Heat,100,115,-15,Home,101.4,True,2022
+202202270NYK,"Sun, Feb 27, 2022",NYK,PHI,New York Knicks,Philadelphia 76ers,109,125,-16,Home,102.6,True,2022
+202203020PHI,"Wed, Mar 2, 2022",PHI,NYK,Philadelphia 76ers,New York Knicks,123,108,15,Home,98.0,True,2022
+202203060LAC,"Sun, Mar 6, 2022",LAC,NYK,Los Angeles Clippers,New York Knicks,93,116,-23,Home,96.0,True,2022
+202203070SAC,"Mon, Mar 7, 2022",SAC,NYK,Sacramento Kings,New York Knicks,115,131,-16,Home,100.4,True,2022
+202203130BRK,"Sun, Mar 13, 2022",BRK,NYK,Brooklyn Nets,New York Knicks,110,107,3,Home,95.2,True,2022
+202203180NYK,"Fri, Mar 18, 2022",NYK,WAS,New York Knicks,Washington Wizards,100,97,3,Home,95.7,True,2022
+202203220NYK,"Tue, Mar 22, 2022",NYK,ATL,New York Knicks,Atlanta Hawks,111,117,-6,Home,94.7,True,2022
+202203230CHO,"Wed, Mar 23, 2022",CHO,NYK,Charlotte Hornets,New York Knicks,106,121,-15,Home,90.0,True,2022
+202203250MIA,"Fri, Mar 25, 2022",MIA,NYK,Miami Heat,New York Knicks,103,111,-8,Home,85.6,True,2022
+202203280NYK,"Mon, Mar 28, 2022",NYK,CHI,New York Knicks,Chicago Bulls,109,104,5,Home,96.3,True,2022
+202203300NYK,"Wed, Mar 30, 2022",NYK,CHO,New York Knicks,Charlotte Hornets,114,125,-11,Home,97.1,True,2022
+202204020NYK,"Sat, Apr 2, 2022",NYK,CLE,New York Knicks,Cleveland Cavaliers,101,119,-18,Home,92.1,True,2022
+202204030ORL,"Sun, Apr 3, 2022",ORL,NYK,Orlando Magic,New York Knicks,88,118,-30,Home,95.6,True,2022
+202204060NYK,"Wed, Apr 6, 2022",NYK,BRK,New York Knicks,Brooklyn Nets,98,110,-12,Home,96.8,True,2022
+202204080WAS,"Fri, Apr 8, 2022",WAS,NYK,Washington Wizards,New York Knicks,92,114,-22,Home,95.2,True,2022
+202204100NYK,"Sun, Apr 10, 2022",NYK,TOR,New York Knicks,Toronto Raptors,105,94,11,Home,96.6,True,2022
+202110220CHI,"Fri, Oct 22, 2021",CHI,NOP,Chicago Bulls,New Orleans Pelicans,128,112,16,Home,100.7,True,2022
+202110250TOR,"Mon, Oct 25, 2021",TOR,CHI,Toronto Raptors,Chicago Bulls,108,111,-3,Home,95.4,True,2022
+202111030PHI,"Wed, Nov 3, 2021",PHI,CHI,Philadelphia 76ers,Chicago Bulls,103,98,5,Home,93.9,True,2022
+202111060CHI,"Sat, Nov 6, 2021",CHI,PHI,Chicago Bulls,Philadelphia 76ers,105,114,-9,Home,94.2,True,2022
+202111080CHI,"Mon, Nov 8, 2021",CHI,BRK,Chicago Bulls,Brooklyn Nets,118,95,23,Home,99.6,True,2022
+202111140LAC,"Sun, Nov 14, 2021",LAC,CHI,Los Angeles Clippers,Chicago Bulls,90,100,-10,Home,97.9,True,2022
+202111220CHI,"Mon, Nov 22, 2021",CHI,IND,Chicago Bulls,Indiana Pacers,77,109,-32,Home,94.7,True,2022
+202111260ORL,"Fri, Nov 26, 2021",ORL,CHI,Orlando Magic,Chicago Bulls,88,123,-35,Home,99.0,True,2022
+202111270CHI,"Sat, Nov 27, 2021",CHI,MIA,Chicago Bulls,Miami Heat,104,107,-3,Home,96.8,True,2022
+202111290CHI,"Mon, Nov 29, 2021",CHI,CHO,Chicago Bulls,Charlotte Hornets,133,119,14,Home,100.2,True,2022
+202112040BRK,"Sat, Dec 4, 2021",BRK,CHI,Brooklyn Nets,Chicago Bulls,107,111,-4,Home,99.6,True,2022
+202112080CLE,"Wed, Dec 8, 2021",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,115,92,23,Home,95.8,True,2022
+202112110MIA,"Sat, Dec 11, 2021",MIA,CHI,Miami Heat,Chicago Bulls,118,92,26,Home,92.7,True,2022
+202112260CHI,"Sun, Dec 26, 2021",CHI,IND,Chicago Bulls,Indiana Pacers,113,105,8,Home,96.9,True,2022
+202112270ATL,"Mon, Dec 27, 2021",ATL,CHI,Atlanta Hawks,Chicago Bulls,118,130,-12,Home,96.9,True,2022
+202112290CHI,"Wed, Dec 29, 2021",CHI,ATL,Chicago Bulls,Atlanta Hawks,131,117,14,Home,100.8,True,2022
+202112310IND,"Fri, Dec 31, 2021",IND,CHI,Indiana Pacers,Chicago Bulls,106,108,-2,Home,99.1,True,2022
+202201010WAS,"Sat, Jan 1, 2022",WAS,CHI,Washington Wizards,Chicago Bulls,119,120,-1,Home,102.5,True,2022
+202201030CHI,"Mon, Jan 3, 2022",CHI,ORL,Chicago Bulls,Orlando Magic,102,98,4,Home,98.4,True,2022
+202201070CHI,"Fri, Jan 7, 2022",CHI,WAS,Chicago Bulls,Washington Wizards,130,122,8,Home,102.7,True,2022
+202201120CHI,"Wed, Jan 12, 2022",CHI,BRK,Chicago Bulls,Brooklyn Nets,112,138,-26,Home,99.1,True,2022
+202201190CHI,"Wed, Jan 19, 2022",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,117,104,13,Home,92.4,True,2022
+202201210MIL,"Fri, Jan 21, 2022",MIL,CHI,Milwaukee Bucks,Chicago Bulls,94,90,4,Home,95.4,True,2022
+202201230ORL,"Sun, Jan 23, 2022",ORL,CHI,Orlando Magic,Chicago Bulls,114,95,19,Home,97.9,True,2022
+202201260CHI,"Wed, Jan 26, 2022",CHI,TOR,Chicago Bulls,Toronto Raptors,111,105,6,Home,93.1,True,2022
+202201280SAS,"Fri, Jan 28, 2022",SAS,CHI,San Antonio Spurs,Chicago Bulls,131,122,9,Home,98.8,True,2022
+202202010CHI,"Tue, Feb 1, 2022",CHI,ORL,Chicago Bulls,Orlando Magic,126,115,11,Home,100.8,True,2022
+202202030TOR,"Thu, Feb 3, 2022",TOR,CHI,Toronto Raptors,Chicago Bulls,127,120,7,Home,96.9,True,2022
+202202040IND,"Fri, Feb 4, 2022",IND,CHI,Indiana Pacers,Chicago Bulls,115,122,-7,Home,97.5,True,2022
+202202060CHI,"Sun, Feb 6, 2022",CHI,PHI,Chicago Bulls,Philadelphia 76ers,108,119,-11,Home,94.7,True,2022
+202202090CHO,"Wed, Feb 9, 2022",CHO,CHI,Charlotte Hornets,Chicago Bulls,109,121,-12,Home,96.5,True,2022
+202202140CHI,"Mon, Feb 14, 2022",CHI,SAS,Chicago Bulls,San Antonio Spurs,120,109,11,Home,101.5,True,2022
+202202160CHI,"Wed, Feb 16, 2022",CHI,SAC,Chicago Bulls,Sacramento Kings,125,118,7,Home,97.9,True,2022
+202202240CHI,"Thu, Feb 24, 2022",CHI,ATL,Chicago Bulls,Atlanta Hawks,112,108,4,Home,98.4,True,2022
+202202280MIA,"Mon, Feb 28, 2022",MIA,CHI,Miami Heat,Chicago Bulls,112,99,13,Home,96.7,True,2022
+202203030ATL,"Thu, Mar 3, 2022",ATL,CHI,Atlanta Hawks,Chicago Bulls,130,124,6,Home,93.9,True,2022
+202203040CHI,"Fri, Mar 4, 2022",CHI,MIL,Chicago Bulls,Milwaukee Bucks,112,118,-6,Home,103.2,True,2022
+202203070PHI,"Mon, Mar 7, 2022",PHI,CHI,Philadelphia 76ers,Chicago Bulls,121,106,15,Home,95.9,True,2022
+202203120CHI,"Sat, Mar 12, 2022",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,101,91,10,Home,98.4,True,2022
+202203140SAC,"Mon, Mar 14, 2022",SAC,CHI,Sacramento Kings,Chicago Bulls,112,103,9,Home,99.0,True,2022
+202203210CHI,"Mon, Mar 21, 2022",CHI,TOR,Chicago Bulls,Toronto Raptors,113,99,14,Home,90.7,True,2022
+202203220MIL,"Tue, Mar 22, 2022",MIL,CHI,Milwaukee Bucks,Chicago Bulls,126,98,28,Home,98.8,True,2022
+202203240NOP,"Thu, Mar 24, 2022",NOP,CHI,New Orleans Pelicans,Chicago Bulls,126,109,17,Home,95.6,True,2022
+202203260CLE,"Sat, Mar 26, 2022",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,94,98,-4,Home,90.1,True,2022
+202203290WAS,"Tue, Mar 29, 2022",WAS,CHI,Washington Wizards,Chicago Bulls,94,107,-13,Home,92.1,True,2022
+202203310CHI,"Thu, Mar 31, 2022",CHI,LAC,Chicago Bulls,Los Angeles Clippers,135,130,5,Home,97.7,True,2022
+202204020CHI,"Sat, Apr 2, 2022",CHI,MIA,Chicago Bulls,Miami Heat,109,127,-18,Home,93.0,True,2022
+202204050CHI,"Tue, Apr 5, 2022",CHI,MIL,Chicago Bulls,Milwaukee Bucks,106,127,-21,Home,101.9,True,2022
+202204080CHI,"Fri, Apr 8, 2022",CHI,CHO,Chicago Bulls,Charlotte Hornets,117,133,-16,Home,93.7,True,2022
+202204170MIL,"Sun, Apr 17, 2022",MIL,CHI,Milwaukee Bucks,Chicago Bulls,93,86,7,Home,99.4,True,2022
+202204200MIL,"Wed, Apr 20, 2022",MIL,CHI,Milwaukee Bucks,Chicago Bulls,110,114,-4,Home,100.1,True,2022
+202204220CHI,"Fri, Apr 22, 2022",CHI,MIL,Chicago Bulls,Milwaukee Bucks,81,111,-30,Home,95.7,True,2022
+202204240CHI,"Sun, Apr 24, 2022",CHI,MIL,Chicago Bulls,Milwaukee Bucks,95,119,-24,Home,100.5,True,2022
+202204270MIL,"Wed, Apr 27, 2022",MIL,CHI,Milwaukee Bucks,Chicago Bulls,116,100,16,Home,104.0,True,2022
+202110200CHO,"Wed, Oct 20, 2021",CHO,IND,Charlotte Hornets,Indiana Pacers,123,122,1,Home,108.7,True,2022
+202110220CLE,"Fri, Oct 22, 2021",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,112,123,-11,Home,102.9,True,2022
+202110240BRK,"Sun, Oct 24, 2021",BRK,CHO,Brooklyn Nets,Charlotte Hornets,95,111,-16,Home,100.1,True,2022
+202110270ORL,"Wed, Oct 27, 2021",ORL,CHO,Orlando Magic,Charlotte Hornets,111,120,-9,Home,98.7,True,2022
+202110290MIA,"Fri, Oct 29, 2021",MIA,CHO,Miami Heat,Charlotte Hornets,114,99,15,Home,97.0,True,2022
+202111010CHO,"Mon, Nov 1, 2021",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,110,113,-3,Home,99.7,True,2022
+202111050SAC,"Fri, Nov 5, 2021",SAC,CHO,Sacramento Kings,Charlotte Hornets,140,110,30,Home,101.3,True,2022
+202111070LAC,"Sun, Nov 7, 2021",LAC,CHO,Los Angeles Clippers,Charlotte Hornets,120,106,14,Home,106.5,True,2022
+202111170CHO,"Wed, Nov 17, 2021",CHO,WAS,Charlotte Hornets,Washington Wizards,97,87,10,Home,93.0,True,2022
+202111190CHO,"Fri, Nov 19, 2021",CHO,IND,Charlotte Hornets,Indiana Pacers,121,118,3,Home,102.4,True,2022
+202111200ATL,"Sat, Nov 20, 2021",ATL,CHO,Atlanta Hawks,Charlotte Hornets,115,105,10,Home,95.0,True,2022
+202111220WAS,"Mon, Nov 22, 2021",WAS,CHO,Washington Wizards,Charlotte Hornets,103,109,-6,Home,101.1,True,2022
+202111240ORL,"Wed, Nov 24, 2021",ORL,CHO,Orlando Magic,Charlotte Hornets,99,106,-7,Home,98.4,True,2022
+202112010MIL,"Wed, Dec 1, 2021",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,127,125,2,Home,107.1,True,2022
+202112050ATL,"Sun, Dec 5, 2021",ATL,CHO,Atlanta Hawks,Charlotte Hornets,127,130,-3,Home,97.4,True,2022
+202112060CHO,"Mon, Dec 6, 2021",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,124,127,-3,Home,95.1,True,2022
+202112080CHO,"Wed, Dec 8, 2021",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,106,110,-4,Home,94.6,True,2022
+202112100CHO,"Fri, Dec 10, 2021",CHO,SAC,Charlotte Hornets,Sacramento Kings,124,123,1,Home,98.2,True,2022
+202112150SAS,"Wed, Dec 15, 2021",SAS,CHO,San Antonio Spurs,Charlotte Hornets,115,131,-16,Home,95.0,True,2022
+202112290IND,"Wed, Dec 29, 2021",IND,CHO,Indiana Pacers,Charlotte Hornets,108,116,-8,Home,103.8,True,2022
+202201030WAS,"Mon, Jan 3, 2022",WAS,CHO,Washington Wizards,Charlotte Hornets,124,121,3,Home,102.9,True,2022
+202201080CHO,"Sat, Jan 8, 2022",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,114,106,8,Home,100.0,True,2022
+202201100CHO,"Mon, Jan 10, 2022",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,103,99,4,Home,101.7,True,2022
+202201120PHI,"Wed, Jan 12, 2022",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,98,109,-11,Home,95.2,True,2022
+202201140CHO,"Fri, Jan 14, 2022",CHO,ORL,Charlotte Hornets,Orlando Magic,109,116,-7,Home,107.6,True,2022
+202201230CHO,"Sun, Jan 23, 2022",CHO,ATL,Charlotte Hornets,Atlanta Hawks,91,113,-22,Home,100.7,True,2022
+202201250TOR,"Tue, Jan 25, 2022",TOR,CHO,Toronto Raptors,Charlotte Hornets,125,113,12,Home,98.4,True,2022
+202201260IND,"Wed, Jan 26, 2022",IND,CHO,Indiana Pacers,Charlotte Hornets,126,158,-32,Home,107.0,True,2022
+202201300CHO,"Sun, Jan 30, 2022",CHO,LAC,Charlotte Hornets,Los Angeles Clippers,90,115,-25,Home,103.4,True,2022
+202202040CHO,"Fri, Feb 4, 2022",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,101,102,-1,Home,93.6,True,2022
+202202050CHO,"Sat, Feb 5, 2022",CHO,MIA,Charlotte Hornets,Miami Heat,86,104,-18,Home,97.6,True,2022
+202202070CHO,"Mon, Feb 7, 2022",CHO,TOR,Charlotte Hornets,Toronto Raptors,101,116,-15,Home,100.6,True,2022
+202202170CHO,"Thu, Feb 17, 2022",CHO,MIA,Charlotte Hornets,Miami Heat,107,111,-4,Home,88.9,True,2022
+202202250CHO,"Fri, Feb 25, 2022",CHO,TOR,Charlotte Hornets,Toronto Raptors,125,93,32,Home,98.8,True,2022
+202202280MIL,"Mon, Feb 28, 2022",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,130,106,24,Home,101.6,True,2022
+202203020CLE,"Wed, Mar 2, 2022",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,98,119,-21,Home,95.5,True,2022
+202203050CHO,"Sat, Mar 5, 2022",CHO,SAS,Charlotte Hornets,San Antonio Spurs,123,117,6,Home,100.8,True,2022
+202203080CHO,"Tue, Mar 8, 2022",CHO,BRK,Charlotte Hornets,Brooklyn Nets,121,132,-11,Home,103.6,True,2022
+202203110NOP,"Fri, Mar 11, 2022",NOP,CHO,New Orleans Pelicans,Charlotte Hornets,120,142,-22,Home,100.9,True,2022
+202203160CHO,"Wed, Mar 16, 2022",CHO,ATL,Charlotte Hornets,Atlanta Hawks,116,106,10,Home,94.0,True,2022
+202203210CHO,"Mon, Mar 21, 2022",CHO,NOP,Charlotte Hornets,New Orleans Pelicans,106,103,3,Home,95.0,True,2022
+202203270BRK,"Sun, Mar 27, 2022",BRK,CHO,Brooklyn Nets,Charlotte Hornets,110,119,-9,Home,99.6,True,2022
+202204020PHI,"Sat, Apr 2, 2022",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,144,114,30,Home,105.0,True,2022
+202204050MIA,"Tue, Apr 5, 2022",MIA,CHO,Miami Heat,Charlotte Hornets,144,115,29,Home,98.8,True,2022
+202204070CHO,"Thu, Apr 7, 2022",CHO,ORL,Charlotte Hornets,Orlando Magic,128,101,27,Home,105.3,True,2022
+202204100CHO,"Sun, Apr 10, 2022",CHO,WAS,Charlotte Hornets,Washington Wizards,124,108,16,Home,97.7,True,2022
+202204130ATL,"Wed, Apr 13, 2022",ATL,CHO,Atlanta Hawks,Charlotte Hornets,132,103,29,Home,101.7,True,2022
+202110200SAS,"Wed, Oct 20, 2021",SAS,ORL,San Antonio Spurs,Orlando Magic,123,97,26,Home,96.2,True,2022
+202110250MIA,"Mon, Oct 25, 2021",MIA,ORL,Miami Heat,Orlando Magic,107,90,17,Home,95.4,True,2022
+202110290TOR,"Fri, Oct 29, 2021",TOR,ORL,Toronto Raptors,Orlando Magic,110,109,1,Home,94.4,True,2022
+202111050ORL,"Fri, Nov 5, 2021",ORL,SAS,Orlando Magic,San Antonio Spurs,89,102,-13,Home,103.3,True,2022
+202111100ORL,"Wed, Nov 10, 2021",ORL,BRK,Orlando Magic,Brooklyn Nets,90,123,-33,Home,104.5,True,2022
+202111130ORL,"Sat, Nov 13, 2021",ORL,WAS,Orlando Magic,Washington Wizards,92,104,-12,Home,95.4,True,2022
+202111150ATL,"Mon, Nov 15, 2021",ATL,ORL,Atlanta Hawks,Orlando Magic,129,111,18,Home,101.1,True,2022
+202111190BRK,"Fri, Nov 19, 2021",BRK,ORL,Brooklyn Nets,Orlando Magic,115,113,2,Home,97.0,True,2022
+202111200MIL,"Sat, Nov 20, 2021",MIL,ORL,Milwaukee Bucks,Orlando Magic,117,108,9,Home,102.7,True,2022
+202111220MIL,"Mon, Nov 22, 2021",MIL,ORL,Milwaukee Bucks,Orlando Magic,123,92,31,Home,99.4,True,2022
+202111270CLE,"Sat, Nov 27, 2021",CLE,ORL,Cleveland Cavaliers,Orlando Magic,105,92,13,Home,96.0,True,2022
+202111290PHI,"Mon, Nov 29, 2021",PHI,ORL,Philadelphia 76ers,Orlando Magic,101,96,5,Home,100.9,True,2022
+202112080SAC,"Wed, Dec 8, 2021",SAC,ORL,Sacramento Kings,Orlando Magic,142,130,12,Home,99.9,True,2022
+202112110LAC,"Sat, Dec 11, 2021",LAC,ORL,Los Angeles Clippers,Orlando Magic,106,104,2,Home,88.6,True,2022
+202112150ORL,"Wed, Dec 15, 2021",ORL,ATL,Orlando Magic,Atlanta Hawks,99,111,-12,Home,98.3,True,2022
+202112170ORL,"Fri, Dec 17, 2021",ORL,MIA,Orlando Magic,Miami Heat,105,115,-10,Home,91.4,True,2022
+202112180BRK,"Sat, Dec 18, 2021",BRK,ORL,Brooklyn Nets,Orlando Magic,93,100,-7,Home,100.2,True,2022
+202112220ATL,"Wed, Dec 22, 2021",ATL,ORL,Atlanta Hawks,Orlando Magic,98,104,-6,Home,92.9,True,2022
+202112230ORL,"Thu, Dec 23, 2021",ORL,NOP,Orlando Magic,New Orleans Pelicans,104,110,-6,Home,92.5,True,2022
+202112260MIA,"Sun, Dec 26, 2021",MIA,ORL,Miami Heat,Orlando Magic,93,83,10,Home,88.2,True,2022
+202112280ORL,"Tue, Dec 28, 2021",ORL,MIL,Orlando Magic,Milwaukee Bucks,110,127,-17,Home,98.0,True,2022
+202112300ORL,"Thu, Dec 30, 2021",ORL,MIL,Orlando Magic,Milwaukee Bucks,118,136,-18,Home,101.3,True,2022
+202201050ORL,"Wed, Jan 5, 2022",ORL,PHI,Orlando Magic,Philadelphia 76ers,106,116,-10,Home,99.9,True,2022
+202201090ORL,"Sun, Jan 9, 2022",ORL,WAS,Orlando Magic,Washington Wizards,100,102,-2,Home,96.2,True,2022
+202201120WAS,"Wed, Jan 12, 2022",WAS,ORL,Washington Wizards,Orlando Magic,112,106,6,Home,93.7,True,2022
+202201190PHI,"Wed, Jan 19, 2022",PHI,ORL,Philadelphia 76ers,Orlando Magic,123,110,13,Home,96.9,True,2022
+202201260ORL,"Wed, Jan 26, 2022",ORL,LAC,Orlando Magic,Los Angeles Clippers,102,111,-9,Home,97.3,True,2022
+202202020IND,"Wed, Feb 2, 2022",IND,ORL,Indiana Pacers,Orlando Magic,118,119,-1,Home,106.9,True,2022
+202202160ORL,"Wed, Feb 16, 2022",ORL,ATL,Orlando Magic,Atlanta Hawks,109,130,-21,Home,99.6,True,2022
+202202280ORL,"Mon, Feb 28, 2022",ORL,IND,Orlando Magic,Indiana Pacers,119,103,16,Home,100.4,True,2022
+202203020ORL,"Wed, Mar 2, 2022",ORL,IND,Orlando Magic,Indiana Pacers,114,122,-8,Home,100.2,True,2022
+202203040TOR,"Fri, Mar 4, 2022",TOR,ORL,Toronto Raptors,Orlando Magic,97,103,-6,Home,98.0,True,2022
+202203090NOP,"Wed, Mar 9, 2022",NOP,ORL,New Orleans Pelicans,Orlando Magic,102,108,-6,Home,98.1,True,2022
+202203130ORL,"Sun, Mar 13, 2022",ORL,PHI,Orlando Magic,Philadelphia 76ers,114,116,-2,Home,92.0,True,2022
+202203150ORL,"Tue, Mar 15, 2022",ORL,BRK,Orlando Magic,Brooklyn Nets,108,150,-42,Home,105.1,True,2022
+202203260ORL,"Sat, Mar 26, 2022",ORL,SAC,Orlando Magic,Sacramento Kings,110,114,-4,Home,93.7,True,2022
+202203280CLE,"Mon, Mar 28, 2022",CLE,ORL,Cleveland Cavaliers,Orlando Magic,107,101,6,Home,99.3,True,2022
+202203300WAS,"Wed, Mar 30, 2022",WAS,ORL,Washington Wizards,Orlando Magic,127,110,17,Home,101.3,True,2022
+202204010ORL,"Fri, Apr 1, 2022",ORL,TOR,Orlando Magic,Toronto Raptors,89,102,-13,Home,92.5,True,2022
+202204050ORL,"Tue, Apr 5, 2022",ORL,CLE,Orlando Magic,Cleveland Cavaliers,120,115,5,Home,96.8,True,2022
+202204100ORL,"Sun, Apr 10, 2022",ORL,MIA,Orlando Magic,Miami Heat,125,111,14,Home,98.5,True,2022
+202110200NOP,"Wed, Oct 20, 2021",NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,97,117,-20,Home,98.3,True,2022
+202110270NOP,"Wed, Oct 27, 2021",NOP,ATL,New Orleans Pelicans,Atlanta Hawks,99,102,-3,Home,92.5,True,2022
+202110290NOP,"Fri, Oct 29, 2021",NOP,SAC,New Orleans Pelicans,Sacramento Kings,109,113,-4,Home,102.3,True,2022
+202111030SAC,"Wed, Nov 3, 2021",SAC,NOP,Sacramento Kings,New Orleans Pelicans,112,99,13,Home,95.0,True,2022
+202111120NOP,"Fri, Nov 12, 2021",NOP,BRK,New Orleans Pelicans,Brooklyn Nets,112,120,-8,Home,95.7,True,2022
+202111150WAS,"Mon, Nov 15, 2021",WAS,NOP,Washington Wizards,New Orleans Pelicans,105,100,5,Home,92.2,True,2022
+202111170MIA,"Wed, Nov 17, 2021",MIA,NOP,Miami Heat,New Orleans Pelicans,113,98,15,Home,90.9,True,2022
+202111190NOP,"Fri, Nov 19, 2021",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,94,81,13,Home,91.7,True,2022
+202111200IND,"Sat, Nov 20, 2021",IND,NOP,Indiana Pacers,New Orleans Pelicans,111,94,17,Home,99.3,True,2022
+202111240NOP,"Wed, Nov 24, 2021",NOP,WAS,New Orleans Pelicans,Washington Wizards,127,102,25,Home,104.2,True,2022
+202111290LAC,"Mon, Nov 29, 2021",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,104,123,-19,Home,91.7,True,2022
+202112120SAS,"Sun, Dec 12, 2021",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,112,97,15,Home,98.7,True,2022
+202112170NOP,"Fri, Dec 17, 2021",NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,116,112,4,Home,96.9,True,2022
+202112280NOP,"Tue, Dec 28, 2021",NOP,CLE,New Orleans Pelicans,Cleveland Cavaliers,108,104,4,Home,91.3,True,2022
+202201010MIL,"Sat, Jan 1, 2022",MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,136,113,23,Home,107.6,True,2022
+202201090TOR,"Sun, Jan 9, 2022",TOR,NOP,Toronto Raptors,New Orleans Pelicans,105,101,4,Home,88.3,True,2022
+202201130NOP,"Thu, Jan 13, 2022",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,113,89,24,Home,97.0,True,2022
+202201150BRK,"Sat, Jan 15, 2022",BRK,NOP,Brooklyn Nets,New Orleans Pelicans,120,105,15,Home,94.1,True,2022
+202201240NOP,"Mon, Jan 24, 2022",NOP,IND,New Orleans Pelicans,Indiana Pacers,117,113,4,Home,98.6,True,2022
+202201250PHI,"Tue, Jan 25, 2022",PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,117,107,10,Home,89.7,True,2022
+202201310CLE,"Mon, Jan 31, 2022",CLE,NOP,Cleveland Cavaliers,New Orleans Pelicans,93,90,3,Home,88.5,True,2022
+202202100NOP,"Thu, Feb 10, 2022",NOP,MIA,New Orleans Pelicans,Miami Heat,97,112,-15,Home,93.1,True,2022
+202202120NOP,"Sat, Feb 12, 2022",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,114,124,-10,Home,97.4,True,2022
+202202140NOP,"Mon, Feb 14, 2022",NOP,TOR,New Orleans Pelicans,Toronto Raptors,120,90,30,Home,91.7,True,2022
+202203020NOP,"Wed, Mar 2, 2022",NOP,SAC,New Orleans Pelicans,Sacramento Kings,125,95,30,Home,98.5,True,2022
+202203180SAS,"Fri, Mar 18, 2022",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,91,124,-33,Home,100.6,True,2022
+202203200ATL,"Sun, Mar 20, 2022",ATL,NOP,Atlanta Hawks,New Orleans Pelicans,112,117,-5,Home,103.0,True,2022
+202203260NOP,"Sat, Mar 26, 2022",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,103,107,-4,Home,91.8,True,2022
+202204030LAC,"Sun, Apr 3, 2022",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,119,100,19,Home,93.1,True,2022
+202204050SAC,"Tue, Apr 5, 2022",SAC,NOP,Sacramento Kings,New Orleans Pelicans,109,123,-14,Home,96.6,True,2022
+202204130NOP,"Wed, Apr 13, 2022",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,113,103,10,Home,95.5,True,2022
+202204150LAC,"Fri, Apr 15, 2022",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,101,105,-4,Home,91.1,True,2022
+202110190MIL,"Tue, Oct 19, 2021",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,127,104,23,Home,101.8,True,2022
+202110220PHI,"Fri, Oct 22, 2021",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,109,114,-5,Home,96.6,True,2022
+202110250BRK,"Mon, Oct 25, 2021",BRK,WAS,Brooklyn Nets,Washington Wizards,104,90,14,Home,102.5,True,2022
+202110270BRK,"Wed, Oct 27, 2021",BRK,MIA,Brooklyn Nets,Miami Heat,93,106,-13,Home,101.1,True,2022
+202110290BRK,"Fri, Oct 29, 2021",BRK,IND,Brooklyn Nets,Indiana Pacers,105,98,7,Home,101.8,True,2022
+202111030BRK,"Wed, Nov 3, 2021",BRK,ATL,Brooklyn Nets,Atlanta Hawks,117,108,9,Home,99.6,True,2022
+202111070TOR,"Sun, Nov 7, 2021",TOR,BRK,Toronto Raptors,Brooklyn Nets,103,116,-13,Home,91.7,True,2022
+202111170BRK,"Wed, Nov 17, 2021",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,109,99,10,Home,96.2,True,2022
+202111220CLE,"Mon, Nov 22, 2021",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,112,117,-5,Home,100.5,True,2022
+202112100ATL,"Fri, Dec 10, 2021",ATL,BRK,Atlanta Hawks,Brooklyn Nets,105,113,-8,Home,99.4,True,2022
+202112140BRK,"Tue, Dec 14, 2021",BRK,TOR,Brooklyn Nets,Toronto Raptors,131,129,2,Home,97.4,True,2022
+202112160BRK,"Thu, Dec 16, 2021",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,114,105,9,Home,99.0,True,2022
+202112270LAC,"Mon, Dec 27, 2021",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,108,124,-16,Home,99.5,True,2022
+202112300BRK,"Thu, Dec 30, 2021",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,102,110,-8,Home,97.0,True,2022
+202201010BRK,"Sat, Jan 1, 2022",BRK,LAC,Brooklyn Nets,Los Angeles Clippers,116,120,-4,Home,101.2,True,2022
+202201050IND,"Wed, Jan 5, 2022",IND,BRK,Indiana Pacers,Brooklyn Nets,121,129,-8,Home,99.0,True,2022
+202201070BRK,"Fri, Jan 7, 2022",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,109,121,-12,Home,96.5,True,2022
+202201090BRK,"Sun, Jan 9, 2022",BRK,SAS,Brooklyn Nets,San Antonio Spurs,121,119,2,Home,102.7,True,2022
+202201170CLE,"Mon, Jan 17, 2022",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,114,107,7,Home,95.0,True,2022
+202201190WAS,"Wed, Jan 19, 2022",WAS,BRK,Washington Wizards,Brooklyn Nets,118,119,-1,Home,97.8,True,2022
+202201210SAS,"Fri, Jan 21, 2022",SAS,BRK,San Antonio Spurs,Brooklyn Nets,102,117,-15,Home,95.1,True,2022
+202202020SAC,"Wed, Feb 2, 2022",SAC,BRK,Sacramento Kings,Brooklyn Nets,112,101,11,Home,92.3,True,2022
+202202100WAS,"Thu, Feb 10, 2022",WAS,BRK,Washington Wizards,Brooklyn Nets,113,112,1,Home,91.9,True,2022
+202202120MIA,"Sat, Feb 12, 2022",MIA,BRK,Miami Heat,Brooklyn Nets,115,111,4,Home,99.2,True,2022
+202202140BRK,"Mon, Feb 14, 2022",BRK,SAC,Brooklyn Nets,Sacramento Kings,109,85,24,Home,100.7,True,2022
+202202170BRK,"Thu, Feb 17, 2022",BRK,WAS,Brooklyn Nets,Washington Wizards,103,117,-14,Home,95.0,True,2022
+202202260MIL,"Sat, Feb 26, 2022",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,123,126,-3,Home,101.2,True,2022
+202202280BRK,"Mon, Feb 28, 2022",BRK,TOR,Brooklyn Nets,Toronto Raptors,97,133,-36,Home,101.1,True,2022
+202203010TOR,"Tue, Mar 1, 2022",TOR,BRK,Toronto Raptors,Brooklyn Nets,109,108,1,Home,94.7,True,2022
+202203030BRK,"Thu, Mar 3, 2022",BRK,MIA,Brooklyn Nets,Miami Heat,107,113,-6,Home,95.0,True,2022
+202203100PHI,"Thu, Mar 10, 2022",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,100,129,-29,Home,99.9,True,2022
+202203260MIA,"Sat, Mar 26, 2022",MIA,BRK,Miami Heat,Brooklyn Nets,95,110,-15,Home,96.7,True,2022
+202203310BRK,"Thu, Mar 31, 2022",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,119,120,-1,Home,102.5,True,2022
+202204020ATL,"Sat, Apr 2, 2022",ATL,BRK,Atlanta Hawks,Brooklyn Nets,122,115,7,Home,104.8,True,2022
+202204080BRK,"Fri, Apr 8, 2022",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,118,107,11,Home,89.6,True,2022
+202204100BRK,"Sun, Apr 10, 2022",BRK,IND,Brooklyn Nets,Indiana Pacers,134,126,8,Home,103.9,True,2022
+202204120BRK,"Tue, Apr 12, 2022",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,115,108,7,Home,99.7,True,2022
+202110210MIA,"Thu, Oct 21, 2021",MIA,MIL,Miami Heat,Milwaukee Bucks,137,95,42,Home,106.3,True,2022
+202110230SAS,"Sat, Oct 23, 2021",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,111,121,-10,Home,102.6,True,2022
+202110250IND,"Mon, Oct 25, 2021",IND,MIL,Indiana Pacers,Milwaukee Bucks,109,119,-10,Home,102.3,True,2022
+202110300MIL,"Sat, Oct 30, 2021",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,93,102,-9,Home,104.2,True,2022
+202111070WAS,"Sun, Nov 7, 2021",WAS,MIL,Washington Wizards,Milwaukee Bucks,101,94,7,Home,97.9,True,2022
+202111090PHI,"Tue, Nov 9, 2021",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,109,118,-9,Home,97.8,True,2022
+202111140ATL,"Sun, Nov 14, 2021",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,120,100,20,Home,95.6,True,2022
+202111280IND,"Sun, Nov 28, 2021",IND,MIL,Indiana Pacers,Milwaukee Bucks,100,118,-18,Home,98.1,True,2022
+202112020TOR,"Thu, Dec 2, 2021",TOR,MIL,Toronto Raptors,Milwaukee Bucks,97,93,4,Home,89.0,True,2022
+202112040MIL,"Sat, Dec 4, 2021",MIL,MIA,Milwaukee Bucks,Miami Heat,124,102,22,Home,97.5,True,2022
+202112060MIL,"Mon, Dec 6, 2021",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,112,104,8,Home,100.4,True,2022
+202112080MIA,"Wed, Dec 8, 2021",MIA,MIL,Miami Heat,Milwaukee Bucks,113,104,9,Home,97.9,True,2022
+202112150MIL,"Wed, Dec 15, 2021",MIL,IND,Milwaukee Bucks,Indiana Pacers,114,99,15,Home,92.5,True,2022
+202112180MIL,"Sat, Dec 18, 2021",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,90,119,-29,Home,96.6,True,2022
+202201050MIL,"Wed, Jan 5, 2022",MIL,TOR,Milwaukee Bucks,Toronto Raptors,111,117,-6,Home,102.0,True,2022
+202201150MIL,"Sat, Jan 15, 2022",MIL,TOR,Milwaukee Bucks,Toronto Raptors,96,103,-7,Home,93.7,True,2022
+202201170ATL,"Mon, Jan 17, 2022",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,121,114,7,Home,100.0,True,2022
+202201220MIL,"Sat, Jan 22, 2022",MIL,SAC,Milwaukee Bucks,Sacramento Kings,133,127,6,Home,100.9,True,2022
+202201260CLE,"Wed, Jan 26, 2022",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,115,99,16,Home,93.2,True,2022
+202202010MIL,"Tue, Feb 1, 2022",MIL,WAS,Milwaukee Bucks,Washington Wizards,112,98,14,Home,94.5,True,2022
+202202060LAC,"Sun, Feb 6, 2022",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,113,137,-24,Home,101.3,True,2022
+202202150MIL,"Tue, Feb 15, 2022",MIL,IND,Milwaukee Bucks,Indiana Pacers,128,119,9,Home,102.1,True,2022
+202202170MIL,"Thu, Feb 17, 2022",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,120,123,-3,Home,99.9,True,2022
+202203020MIL,"Wed, Mar 2, 2022",MIL,MIA,Milwaukee Bucks,Miami Heat,120,119,1,Home,101.8,True,2022
+202203090MIL,"Wed, Mar 9, 2022",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,124,115,9,Home,98.2,True,2022
+202203160SAC,"Wed, Mar 16, 2022",SAC,MIL,Sacramento Kings,Milwaukee Bucks,126,135,-9,Home,106.7,True,2022
+202203240MIL,"Thu, Mar 24, 2022",MIL,WAS,Milwaukee Bucks,Washington Wizards,114,102,12,Home,95.6,True,2022
+202203290PHI,"Tue, Mar 29, 2022",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,116,118,-2,Home,98.1,True,2022
+202204010MIL,"Fri, Apr 1, 2022",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,119,153,-34,Home,101.3,True,2022
+202204100CLE,"Sun, Apr 10, 2022",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,133,115,18,Home,101.9,True,2022
+202110230CLE,"Sat, Oct 23, 2021",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,101,95,6,Home,95.7,True,2022
+202110280WAS,"Thu, Oct 28, 2021",WAS,ATL,Washington Wizards,Atlanta Hawks,122,111,11,Home,99.2,True,2022
+202110300PHI,"Sat, Oct 30, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,122,94,28,Home,98.3,True,2022
+202111010ATL,"Mon, Nov 1, 2021",ATL,WAS,Atlanta Hawks,Washington Wizards,118,111,7,Home,93.4,True,2022
+202111240SAS,"Wed, Nov 24, 2021",SAS,ATL,San Antonio Spurs,Atlanta Hawks,106,124,-18,Home,97.4,True,2022
+202112010IND,"Wed, Dec 1, 2021",IND,ATL,Indiana Pacers,Atlanta Hawks,111,114,-3,Home,96.4,True,2022
+202112030ATL,"Fri, Dec 3, 2021",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,96,98,-2,Home,91.2,True,2022
+202112230PHI,"Thu, Dec 23, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,96,98,-2,Home,87.9,True,2022
+202112310CLE,"Fri, Dec 31, 2021",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,118,121,-3,Home,93.2,True,2022
+202201050SAC,"Wed, Jan 5, 2022",SAC,ATL,Sacramento Kings,Atlanta Hawks,102,108,-6,Home,97.4,True,2022
+202201090LAC,"Sun, Jan 9, 2022",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,106,93,13,Home,92.0,True,2022
+202201120ATL,"Wed, Jan 12, 2022",ATL,MIA,Atlanta Hawks,Miami Heat,91,115,-24,Home,98.0,True,2022
+202201140MIA,"Fri, Jan 14, 2022",MIA,ATL,Miami Heat,Atlanta Hawks,124,118,6,Home,94.6,True,2022
+202201210ATL,"Fri, Jan 21, 2022",ATL,MIA,Atlanta Hawks,Miami Heat,110,108,2,Home,89.4,True,2022
+202201260ATL,"Wed, Jan 26, 2022",ATL,SAC,Atlanta Hawks,Sacramento Kings,121,104,17,Home,99.6,True,2022
+202201310ATL,"Mon, Jan 31, 2022",ATL,TOR,Atlanta Hawks,Toronto Raptors,100,106,-6,Home,96.8,True,2022
+202202040TOR,"Fri, Feb 4, 2022",TOR,ATL,Toronto Raptors,Atlanta Hawks,125,114,11,Home,95.1,True,2022
+202202080ATL,"Tue, Feb 8, 2022",ATL,IND,Atlanta Hawks,Indiana Pacers,133,112,21,Home,98.4,True,2022
+202202110ATL,"Fri, Feb 11, 2022",ATL,SAS,Atlanta Hawks,San Antonio Spurs,121,136,-15,Home,105.2,True,2022
+202202150ATL,"Tue, Feb 15, 2022",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,124,116,8,Home,91.8,True,2022
+202202260ATL,"Sat, Feb 26, 2022",ATL,TOR,Atlanta Hawks,Toronto Raptors,127,100,27,Home,99.5,True,2022
+202203040WAS,"Fri, Mar 4, 2022",WAS,ATL,Washington Wizards,Atlanta Hawks,114,117,-3,Home,93.3,True,2022
+202203110ATL,"Fri, Mar 11, 2022",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,112,106,6,Home,92.3,True,2022
+202203130ATL,"Sun, Mar 13, 2022",ATL,IND,Atlanta Hawks,Indiana Pacers,131,128,3,Home,96.3,True,2022
+202203280IND,"Mon, Mar 28, 2022",IND,ATL,Indiana Pacers,Atlanta Hawks,123,132,-9,Home,95.4,True,2022
+202203310ATL,"Thu, Mar 31, 2022",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,131,107,24,Home,98.0,True,2022
+202204050TOR,"Tue, Apr 5, 2022",TOR,ATL,Toronto Raptors,Atlanta Hawks,118,108,10,Home,96.1,True,2022
+202204060ATL,"Wed, Apr 6, 2022",ATL,WAS,Atlanta Hawks,Washington Wizards,118,103,15,Home,97.2,True,2022
+202204080MIA,"Fri, Apr 8, 2022",MIA,ATL,Miami Heat,Atlanta Hawks,113,109,4,Home,95.3,True,2022
+202204150CLE,"Fri, Apr 15, 2022",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,101,107,-6,Home,89.8,True,2022
+202204170MIA,"Sun, Apr 17, 2022",MIA,ATL,Miami Heat,Atlanta Hawks,115,91,24,Home,97.1,True,2022
+202204190MIA,"Tue, Apr 19, 2022",MIA,ATL,Miami Heat,Atlanta Hawks,115,105,10,Home,101.1,True,2022
+202204220ATL,"Fri, Apr 22, 2022",ATL,MIA,Atlanta Hawks,Miami Heat,111,110,1,Home,96.6,True,2022
+202204240ATL,"Sun, Apr 24, 2022",ATL,MIA,Atlanta Hawks,Miami Heat,86,110,-24,Home,86.9,True,2022
+202204260MIA,"Tue, Apr 26, 2022",MIA,ATL,Miami Heat,Atlanta Hawks,97,94,3,Home,92.5,True,2022
+202110270LAC,"Wed, Oct 27, 2021",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,79,92,-13,Home,95.0,True,2022
+202111050TOR,"Fri, Nov 5, 2021",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,101,102,-1,Home,90.1,True,2022
+202111100CLE,"Wed, Nov 10, 2021",CLE,WAS,Cleveland Cavaliers,Washington Wizards,94,97,-3,Home,90.7,True,2022
+202112010MIA,"Wed, Dec 1, 2021",MIA,CLE,Miami Heat,Cleveland Cavaliers,85,111,-26,Home,90.0,True,2022
+202112030WAS,"Fri, Dec 3, 2021",WAS,CLE,Washington Wizards,Cleveland Cavaliers,101,116,-15,Home,95.2,True,2022
+202112110CLE,"Sat, Dec 11, 2021",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,117,103,14,Home,106.0,True,2022
+202112130CLE,"Mon, Dec 13, 2021",CLE,MIA,Cleveland Cavaliers,Miami Heat,105,94,11,Home,89.9,True,2022
+202112260CLE,"Sun, Dec 26, 2021",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,144,99,45,Home,107.2,True,2022
+202112300WAS,"Thu, Dec 30, 2021",WAS,CLE,Washington Wizards,Cleveland Cavaliers,110,93,17,Home,94.2,True,2022
+202201020CLE,"Sun, Jan 2, 2022",CLE,IND,Cleveland Cavaliers,Indiana Pacers,108,104,4,Home,92.8,True,2022
+202201100SAC,"Mon, Jan 10, 2022",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,108,109,-1,Home,93.0,True,2022
+202201140SAS,"Fri, Jan 14, 2022",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,109,114,-5,Home,100.4,True,2022
+202202060CLE,"Sun, Feb 6, 2022",CLE,IND,Cleveland Cavaliers,Indiana Pacers,98,85,13,Home,90.7,True,2022
+202202090CLE,"Wed, Feb 9, 2022",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,105,92,13,Home,96.1,True,2022
+202202110IND,"Fri, Feb 11, 2022",IND,CLE,Indiana Pacers,Cleveland Cavaliers,113,120,-7,Home,100.7,True,2022
+202202120PHI,"Sat, Feb 12, 2022",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,103,93,10,Home,90.5,True,2022
+202202260CLE,"Sat, Feb 26, 2022",CLE,WAS,Cleveland Cavaliers,Washington Wizards,92,86,6,Home,92.1,True,2022
+202203040PHI,"Fri, Mar 4, 2022",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,125,119,6,Home,94.1,True,2022
+202203060CLE,"Sun, Mar 6, 2022",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,104,96,8,Home,95.8,True,2022
+202203080IND,"Tue, Mar 8, 2022",IND,CLE,Indiana Pacers,Cleveland Cavaliers,124,127,-3,Home,98.1,True,2022
+202203110MIA,"Fri, Mar 11, 2022",MIA,CLE,Miami Heat,Cleveland Cavaliers,117,105,12,Home,98.0,True,2022
+202203140CLE,"Mon, Mar 14, 2022",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,120,111,9,Home,89.1,True,2022
+202203160CLE,"Wed, Mar 16, 2022",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,114,118,-4,Home,93.4,True,2022
+202203240TOR,"Thu, Mar 24, 2022",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,117,104,13,Home,88.9,True,2022
+202204030CLE,"Sun, Apr 3, 2022",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,108,112,-4,Home,95.0,True,2022
+202110220WAS,"Fri, Oct 22, 2021",WAS,IND,Washington Wizards,Indiana Pacers,135,134,1,Home,96.0,True,2022
+202110230IND,"Sat, Oct 23, 2021",IND,MIA,Indiana Pacers,Miami Heat,102,91,11,Home,96.6,True,2022
+202110270TOR,"Wed, Oct 27, 2021",TOR,IND,Toronto Raptors,Indiana Pacers,118,100,18,Home,97.1,True,2022
+202110300IND,"Sat, Oct 30, 2021",IND,TOR,Indiana Pacers,Toronto Raptors,94,97,-3,Home,96.9,True,2022
+202111010IND,"Mon, Nov 1, 2021",IND,SAS,Indiana Pacers,San Antonio Spurs,131,118,13,Home,99.9,True,2022
+202111070SAC,"Sun, Nov 7, 2021",SAC,IND,Sacramento Kings,Indiana Pacers,91,94,-3,Home,94.0,True,2022
+202111130IND,"Sat, Nov 13, 2021",IND,PHI,Indiana Pacers,Philadelphia 76ers,118,113,5,Home,94.8,True,2022
+202111260IND,"Fri, Nov 26, 2021",IND,TOR,Indiana Pacers,Toronto Raptors,114,97,17,Home,93.1,True,2022
+202112030IND,"Fri, Dec 3, 2021",IND,MIA,Indiana Pacers,Miami Heat,104,113,-9,Home,90.1,True,2022
+202112060IND,"Mon, Dec 6, 2021",IND,WAS,Indiana Pacers,Washington Wizards,116,110,6,Home,90.5,True,2022
+202112210MIA,"Tue, Dec 21, 2021",MIA,IND,Miami Heat,Indiana Pacers,125,96,29,Home,94.7,True,2022
+202201170LAC,"Mon, Jan 17, 2022",LAC,IND,Los Angeles Clippers,Indiana Pacers,139,133,6,Home,99.6,True,2022
+202201310IND,"Mon, Jan 31, 2022",IND,LAC,Indiana Pacers,Los Angeles Clippers,122,116,6,Home,98.6,True,2022
+202202160IND,"Wed, Feb 16, 2022",IND,WAS,Indiana Pacers,Washington Wizards,113,108,5,Home,96.4,True,2022
+202203060WAS,"Sun, Mar 6, 2022",WAS,IND,Washington Wizards,Indiana Pacers,133,123,10,Home,98.4,True,2022
+202203120SAS,"Sat, Mar 12, 2022",SAS,IND,San Antonio Spurs,Indiana Pacers,108,119,-11,Home,100.2,True,2022
+202203230IND,"Wed, Mar 23, 2022",IND,SAC,Indiana Pacers,Sacramento Kings,109,110,-1,Home,99.0,True,2022
+202203260TOR,"Sat, Mar 26, 2022",TOR,IND,Toronto Raptors,Indiana Pacers,131,91,40,Home,89.0,True,2022
+202204050IND,"Tue, Apr 5, 2022",IND,PHI,Indiana Pacers,Philadelphia 76ers,122,131,-9,Home,101.3,True,2022
+202204090PHI,"Sat, Apr 9, 2022",PHI,IND,Philadelphia 76ers,Indiana Pacers,133,120,13,Home,100.3,True,2022
+202111110LAC,"Thu, Nov 11, 2021",LAC,MIA,Los Angeles Clippers,Miami Heat,112,109,3,Home,98.5,True,2022
+202111180MIA,"Thu, Nov 18, 2021",MIA,WAS,Miami Heat,Washington Wizards,112,97,15,Home,91.2,True,2022
+202111200WAS,"Sat, Nov 20, 2021",WAS,MIA,Washington Wizards,Miami Heat,103,100,3,Home,90.1,True,2022
+202112150PHI,"Wed, Dec 15, 2021",PHI,MIA,Philadelphia 76ers,Miami Heat,96,101,-5,Home,91.2,True,2022
+202112280MIA,"Tue, Dec 28, 2021",MIA,WAS,Miami Heat,Washington Wizards,119,112,7,Home,93.1,True,2022
+202201020SAC,"Sun, Jan 2, 2022",SAC,MIA,Sacramento Kings,Miami Heat,115,113,2,Home,96.7,True,2022
+202201150MIA,"Sat, Jan 15, 2022",MIA,PHI,Miami Heat,Philadelphia 76ers,98,109,-11,Home,94.9,True,2022
+202201170MIA,"Mon, Jan 17, 2022",MIA,TOR,Miami Heat,Toronto Raptors,104,99,5,Home,90.2,True,2022
+202201280MIA,"Fri, Jan 28, 2022",MIA,LAC,Miami Heat,Los Angeles Clippers,121,114,7,Home,103.5,True,2022
+202201290MIA,"Sat, Jan 29, 2022",MIA,TOR,Miami Heat,Toronto Raptors,120,124,-4,Home,89.5,True,2022
+202202010TOR,"Tue, Feb 1, 2022",TOR,MIA,Toronto Raptors,Miami Heat,110,106,4,Home,92.3,True,2022
+202202030SAS,"Thu, Feb 3, 2022",SAS,MIA,San Antonio Spurs,Miami Heat,95,112,-17,Home,96.8,True,2022
+202202070WAS,"Mon, Feb 7, 2022",WAS,MIA,Washington Wizards,Miami Heat,100,121,-21,Home,96.7,True,2022
+202202260MIA,"Sat, Feb 26, 2022",MIA,SAS,Miami Heat,San Antonio Spurs,133,129,4,Home,105.0,True,2022
+202203050MIA,"Sat, Mar 5, 2022",MIA,PHI,Miami Heat,Philadelphia 76ers,99,82,17,Home,84.6,True,2022
+202203210PHI,"Mon, Mar 21, 2022",PHI,MIA,Philadelphia 76ers,Miami Heat,113,106,7,Home,93.2,True,2022
+202203280MIA,"Mon, Mar 28, 2022",MIA,SAC,Miami Heat,Sacramento Kings,123,100,23,Home,96.1,True,2022
+202204030TOR,"Sun, Apr 3, 2022",TOR,MIA,Toronto Raptors,Miami Heat,109,114,-5,Home,96.8,True,2022
+202205020MIA,"Mon, May 2, 2022",MIA,PHI,Miami Heat,Philadelphia 76ers,106,92,14,Home,90.6,True,2022
+202205040MIA,"Wed, May 4, 2022",MIA,PHI,Miami Heat,Philadelphia 76ers,119,103,16,Home,95.2,True,2022
+202205060PHI,"Fri, May 6, 2022",PHI,MIA,Philadelphia 76ers,Miami Heat,99,79,20,Home,85.3,True,2022
+202205080PHI,"Sun, May 8, 2022",PHI,MIA,Philadelphia 76ers,Miami Heat,116,108,8,Home,96.3,True,2022
+202205100MIA,"Tue, May 10, 2022",MIA,PHI,Miami Heat,Philadelphia 76ers,120,85,35,Home,94.2,True,2022
+202205120PHI,"Thu, May 12, 2022",PHI,MIA,Philadelphia 76ers,Miami Heat,90,99,-9,Home,91.8,True,2022
+202111110PHI,"Thu, Nov 11, 2021",PHI,TOR,Philadelphia 76ers,Toronto Raptors,109,115,-6,Home,94.9,True,2022
+202111220SAC,"Mon, Nov 22, 2021",SAC,PHI,Sacramento Kings,Philadelphia 76ers,94,102,-8,Home,91.7,True,2022
+202112260WAS,"Sun, Dec 26, 2021",WAS,PHI,Washington Wizards,Philadelphia 76ers,96,117,-21,Home,94.5,True,2022
+202112280TOR,"Tue, Dec 28, 2021",TOR,PHI,Toronto Raptors,Philadelphia 76ers,109,114,-5,Home,93.1,True,2022
+202201070PHI,"Fri, Jan 7, 2022",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,119,100,19,Home,98.0,True,2022
+202201170WAS,"Mon, Jan 17, 2022",WAS,PHI,Washington Wizards,Philadelphia 76ers,117,98,19,Home,99.2,True,2022
+202201210PHI,"Fri, Jan 21, 2022",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,101,102,-1,Home,91.5,True,2022
+202201230SAS,"Sun, Jan 23, 2022",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,109,115,-6,Home,94.4,True,2022
+202201290PHI,"Sat, Jan 29, 2022",PHI,SAC,Philadelphia 76ers,Sacramento Kings,103,101,2,Home,93.0,True,2022
+202202020PHI,"Wed, Feb 2, 2022",PHI,WAS,Philadelphia 76ers,Washington Wizards,103,106,-3,Home,88.7,True,2022
+202203200PHI,"Sun, Mar 20, 2022",PHI,TOR,Philadelphia 76ers,Toronto Raptors,88,93,-5,Home,88.1,True,2022
+202203250LAC,"Fri, Mar 25, 2022",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,97,122,-25,Home,99.3,True,2022
+202204070TOR,"Thu, Apr 7, 2022",TOR,PHI,Toronto Raptors,Philadelphia 76ers,119,114,5,Home,94.2,True,2022
+202204160PHI,"Sat, Apr 16, 2022",PHI,TOR,Philadelphia 76ers,Toronto Raptors,131,111,20,Home,89.8,True,2022
+202204180PHI,"Mon, Apr 18, 2022",PHI,TOR,Philadelphia 76ers,Toronto Raptors,112,97,15,Home,87.1,True,2022
+202204200TOR,"Wed, Apr 20, 2022",TOR,PHI,Toronto Raptors,Philadelphia 76ers,101,104,-3,Home,84.4,True,2022
+202204230TOR,"Sat, Apr 23, 2022",TOR,PHI,Toronto Raptors,Philadelphia 76ers,110,102,8,Home,97.8,True,2022
+202204250PHI,"Mon, Apr 25, 2022",PHI,TOR,Philadelphia 76ers,Toronto Raptors,88,103,-15,Home,92.8,True,2022
+202204280TOR,"Thu, Apr 28, 2022",TOR,PHI,Toronto Raptors,Philadelphia 76ers,97,132,-35,Home,90.6,True,2022
+202110200TOR,"Wed, Oct 20, 2021",TOR,WAS,Toronto Raptors,Washington Wizards,83,98,-15,Home,103.8,True,2022
+202111030WAS,"Wed, Nov 3, 2021",WAS,TOR,Washington Wizards,Toronto Raptors,100,109,-9,Home,93.2,True,2022
+202111290SAS,"Mon, Nov 29, 2021",SAS,WAS,San Antonio Spurs,Washington Wizards,116,99,17,Home,91.0,True,2022
+202112050TOR,"Sun, Dec 5, 2021",TOR,WAS,Toronto Raptors,Washington Wizards,102,90,12,Home,90.0,True,2022
+202112150SAC,"Wed, Dec 15, 2021",SAC,WAS,Sacramento Kings,Washington Wizards,119,105,14,Home,98.5,True,2022
+202201210WAS,"Fri, Jan 21, 2022",WAS,TOR,Washington Wizards,Toronto Raptors,105,109,-4,Home,92.9,True,2022
+202201250WAS,"Tue, Jan 25, 2022",WAS,LAC,Washington Wizards,Los Angeles Clippers,115,116,-1,Home,104.2,True,2022
+202202120WAS,"Sat, Feb 12, 2022",WAS,SAC,Washington Wizards,Sacramento Kings,110,123,-13,Home,94.3,True,2022
+202202250WAS,"Fri, Feb 25, 2022",WAS,SAS,Washington Wizards,San Antonio Spurs,153,157,-4,Home,99.4,True,2022
+202203090LAC,"Wed, Mar 9, 2022",LAC,WAS,Los Angeles Clippers,Washington Wizards,115,109,6,Home,95.8,True,2022
+202111100SAS,"Wed, Nov 10, 2021",SAS,SAC,San Antonio Spurs,Sacramento Kings,136,117,19,Home,100.1,True,2022
+202111160LAC,"Tue, Nov 16, 2021",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,106,92,14,Home,106.7,True,2022
+202112190SAC,"Sun, Dec 19, 2021",SAC,SAS,Sacramento Kings,San Antonio Spurs,121,114,7,Home,95.8,True,2022
+202112200LAC,"Mon, Dec 20, 2021",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,92,116,-24,Home,99.5,True,2022
+202201040TOR,"Tue, Jan 4, 2022",TOR,SAS,Toronto Raptors,San Antonio Spurs,129,104,25,Home,102.9,True,2022
+202201150SAS,"Sat, Jan 15, 2022",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,101,94,7,Home,92.7,True,2022
+202203030SAS,"Thu, Mar 3, 2022",SAS,SAC,San Antonio Spurs,Sacramento Kings,112,115,-3,Home,102.2,True,2022
+202203090SAS,"Wed, Mar 9, 2022",SAS,TOR,San Antonio Spurs,Toronto Raptors,104,119,-15,Home,93.6,True,2022
+202111190SAC,"Fri, Nov 19, 2021",SAC,TOR,Sacramento Kings,Toronto Raptors,89,108,-19,Home,93.7,True,2022
+202112010LAC,"Wed, Dec 1, 2021",LAC,SAC,Los Angeles Clippers,Sacramento Kings,115,124,-9,Home,98.1,True,2022
+202112040SAC,"Sat, Dec 4, 2021",SAC,LAC,Sacramento Kings,Los Angeles Clippers,104,99,5,Home,102.5,True,2022
+202112130TOR,"Mon, Dec 13, 2021",TOR,SAC,Toronto Raptors,Sacramento Kings,124,101,23,Home,100.1,True,2022
+202112220SAC,"Wed, Dec 22, 2021",SAC,LAC,Sacramento Kings,Los Angeles Clippers,89,105,-16,Home,95.5,True,2022
+202204090LAC,"Sat, Apr 9, 2022",LAC,SAC,Los Angeles Clippers,Sacramento Kings,117,98,19,Home,99.1,True,2022
+202112310TOR,"Fri, Dec 31, 2021",TOR,LAC,Toronto Raptors,Los Angeles Clippers,116,108,8,Home,94.9,True,2022
+202203160LAC,"Wed, Mar 16, 2022",LAC,TOR,Los Angeles Clippers,Toronto Raptors,100,103,-3,Home,87.7,True,2022

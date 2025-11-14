@@ -1,0 +1,1313 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201810170HOU,"Wed, Oct 17, 2018",HOU,NOP,Houston Rockets,New Orleans Pelicans,112,131,-19,Home,103.0,True,2019
+201810200LAL,"Sat, Oct 20, 2018",LAL,HOU,Los Angeles Lakers,Houston Rockets,115,124,-9,Home,108.1,True,2019
+201810210LAC,"Sun, Oct 21, 2018",LAC,HOU,Los Angeles Clippers,Houston Rockets,115,112,3,Home,98.9,True,2019
+201810240HOU,"Wed, Oct 24, 2018",HOU,UTA,Houston Rockets,Utah Jazz,89,100,-11,Home,95.4,True,2019
+201810260HOU,"Fri, Oct 26, 2018",HOU,LAC,Houston Rockets,Los Angeles Clippers,113,133,-20,Home,102.7,True,2019
+201810300HOU,"Tue, Oct 30, 2018",HOU,POR,Houston Rockets,Portland Trail Blazers,85,104,-19,Home,96.0,True,2019
+201811020BRK,"Fri, Nov 2, 2018",BRK,HOU,Brooklyn Nets,Houston Rockets,111,119,-8,Home,92.4,True,2019
+201811030CHI,"Sat, Nov 3, 2018",CHI,HOU,Chicago Bulls,Houston Rockets,88,96,-8,Home,96.6,True,2019
+201811050IND,"Mon, Nov 5, 2018",IND,HOU,Indiana Pacers,Houston Rockets,94,98,-4,Home,93.3,True,2019
+201811080OKC,"Thu, Nov 8, 2018",OKC,HOU,Oklahoma City Thunder,Houston Rockets,98,80,18,Home,89.1,True,2019
+201811100SAS,"Sat, Nov 10, 2018",SAS,HOU,San Antonio Spurs,Houston Rockets,96,89,7,Home,91.4,True,2019
+201811110HOU,"Sun, Nov 11, 2018",HOU,IND,Houston Rockets,Indiana Pacers,115,103,12,Home,94.1,True,2019
+201811130DEN,"Tue, Nov 13, 2018",DEN,HOU,Denver Nuggets,Houston Rockets,99,109,-10,Home,89.2,True,2019
+201811150HOU,"Thu, Nov 15, 2018",HOU,GSW,Houston Rockets,Golden State Warriors,107,86,21,Home,85.9,True,2019
+201811170HOU,"Sat, Nov 17, 2018",HOU,SAC,Houston Rockets,Sacramento Kings,132,112,20,Home,105.1,True,2019
+201811210HOU,"Wed, Nov 21, 2018",HOU,DET,Houston Rockets,Detroit Pistons,126,124,2,Home,97.6,True,2019
+201811230DET,"Fri, Nov 23, 2018",DET,HOU,Detroit Pistons,Houston Rockets,116,111,5,Home,90.5,True,2019
+201811240CLE,"Sat, Nov 24, 2018",CLE,HOU,Cleveland Cavaliers,Houston Rockets,117,108,9,Home,92.2,True,2019
+201811260WAS,"Mon, Nov 26, 2018",WAS,HOU,Washington Wizards,Houston Rockets,135,131,4,Home,95.6,True,2019
+201811280HOU,"Wed, Nov 28, 2018",HOU,DAL,Houston Rockets,Dallas Mavericks,108,128,-20,Home,95.1,True,2019
+201811300SAS,"Fri, Nov 30, 2018",SAS,HOU,San Antonio Spurs,Houston Rockets,105,136,-31,Home,96.4,True,2019
+201812010HOU,"Sat, Dec 1, 2018",HOU,CHI,Houston Rockets,Chicago Bulls,121,105,16,Home,103.1,True,2019
+201812030MIN,"Mon, Dec 3, 2018",MIN,HOU,Minnesota Timberwolves,Houston Rockets,103,91,12,Home,92.0,True,2019
+201812060UTA,"Thu, Dec 6, 2018",UTA,HOU,Utah Jazz,Houston Rockets,118,91,27,Home,99.7,True,2019
+201812080DAL,"Sat, Dec 8, 2018",DAL,HOU,Dallas Mavericks,Houston Rockets,107,104,3,Home,89.6,True,2019
+201812110HOU,"Tue, Dec 11, 2018",HOU,POR,Houston Rockets,Portland Trail Blazers,111,104,7,Home,91.8,True,2019
+201812130HOU,"Thu, Dec 13, 2018",HOU,LAL,Houston Rockets,Los Angeles Lakers,126,111,15,Home,94.0,True,2019
+201812150MEM,"Sat, Dec 15, 2018",MEM,HOU,Memphis Grizzlies,Houston Rockets,97,105,-8,Home,88.8,True,2019
+201812170HOU,"Mon, Dec 17, 2018",HOU,UTA,Houston Rockets,Utah Jazz,102,97,5,Home,104.0,True,2019
+201812190HOU,"Wed, Dec 19, 2018",HOU,WAS,Houston Rockets,Washington Wizards,136,118,18,Home,99.4,True,2019
+201812200MIA,"Thu, Dec 20, 2018",MIA,HOU,Miami Heat,Houston Rockets,101,99,2,Home,92.7,True,2019
+201812220HOU,"Sat, Dec 22, 2018",HOU,SAS,Houston Rockets,San Antonio Spurs,108,101,7,Home,93.8,True,2019
+201812250HOU,"Tue, Dec 25, 2018",HOU,OKC,Houston Rockets,Oklahoma City Thunder,113,109,4,Home,103.0,True,2019
+201812270HOU,"Thu, Dec 27, 2018",HOU,BOS,Houston Rockets,Boston Celtics,127,113,14,Home,97.4,True,2019
+201812290NOP,"Sat, Dec 29, 2018",NOP,HOU,New Orleans Pelicans,Houston Rockets,104,108,-4,Home,98.5,True,2019
+201812310HOU,"Mon, Dec 31, 2018",HOU,MEM,Houston Rockets,Memphis Grizzlies,113,101,12,Home,95.7,True,2019
+201901030GSW,"Thu, Jan 3, 2019",GSW,HOU,Golden State Warriors,Houston Rockets,134,135,-1,Home,98.1,True,2019
+201901050POR,"Sat, Jan 5, 2019",POR,HOU,Portland Trail Blazers,Houston Rockets,110,101,9,Home,90.0,True,2019
+201901070HOU,"Mon, Jan 7, 2019",HOU,DEN,Houston Rockets,Denver Nuggets,125,113,12,Home,99.4,True,2019
+201901090HOU,"Wed, Jan 9, 2019",HOU,MIL,Houston Rockets,Milwaukee Bucks,109,116,-7,Home,101.2,True,2019
+201901110HOU,"Fri, Jan 11, 2019",HOU,CLE,Houston Rockets,Cleveland Cavaliers,141,113,28,Home,106.5,True,2019
+201901130ORL,"Sun, Jan 13, 2019",ORL,HOU,Orlando Magic,Houston Rockets,116,109,7,Home,94.6,True,2019
+201901140HOU,"Mon, Jan 14, 2019",HOU,MEM,Houston Rockets,Memphis Grizzlies,112,94,18,Home,96.1,True,2019
+201901160HOU,"Wed, Jan 16, 2019",HOU,BRK,Houston Rockets,Brooklyn Nets,142,145,-3,Home,102.8,True,2019
+201901190HOU,"Sat, Jan 19, 2019",HOU,LAL,Houston Rockets,Los Angeles Lakers,138,134,4,Home,99.6,True,2019
+201901210PHI,"Mon, Jan 21, 2019",PHI,HOU,Philadelphia 76ers,Houston Rockets,121,93,28,Home,102.1,True,2019
+201901230NYK,"Wed, Jan 23, 2019",NYK,HOU,New York Knicks,Houston Rockets,110,114,-4,Home,100.0,True,2019
+201901250HOU,"Fri, Jan 25, 2019",HOU,TOR,Houston Rockets,Toronto Raptors,121,119,2,Home,102.3,True,2019
+201901270HOU,"Sun, Jan 27, 2019",HOU,ORL,Houston Rockets,Orlando Magic,103,98,5,Home,97.1,True,2019
+201901290HOU,"Tue, Jan 29, 2019",HOU,NOP,Houston Rockets,New Orleans Pelicans,116,121,-5,Home,104.1,True,2019
+201902010DEN,"Fri, Feb 1, 2019",DEN,HOU,Denver Nuggets,Houston Rockets,136,122,14,Home,89.2,True,2019
+201902020UTA,"Sat, Feb 2, 2019",UTA,HOU,Utah Jazz,Houston Rockets,98,125,-27,Home,106.0,True,2019
+201902040PHO,"Mon, Feb 4, 2019",PHO,HOU,Phoenix Suns,Houston Rockets,110,118,-8,Home,97.0,True,2019
+201902060SAC,"Wed, Feb 6, 2019",SAC,HOU,Sacramento Kings,Houston Rockets,101,127,-26,Home,100.1,True,2019
+201902090HOU,"Sat, Feb 9, 2019",HOU,OKC,Houston Rockets,Oklahoma City Thunder,112,117,-5,Home,104.0,True,2019
+201902110HOU,"Mon, Feb 11, 2019",HOU,DAL,Houston Rockets,Dallas Mavericks,120,104,16,Home,95.6,True,2019
+201902130MIN,"Wed, Feb 13, 2019",MIN,HOU,Minnesota Timberwolves,Houston Rockets,121,111,10,Home,93.2,True,2019
+201902210LAL,"Thu, Feb 21, 2019",LAL,HOU,Los Angeles Lakers,Houston Rockets,111,106,5,Home,103.0,True,2019
+201902230GSW,"Sat, Feb 23, 2019",GSW,HOU,Golden State Warriors,Houston Rockets,112,118,-6,Home,103.3,True,2019
+201902250HOU,"Mon, Feb 25, 2019",HOU,ATL,Houston Rockets,Atlanta Hawks,119,111,8,Home,96.2,True,2019
+201902270CHO,"Wed, Feb 27, 2019",CHO,HOU,Charlotte Hornets,Houston Rockets,113,118,-5,Home,102.3,True,2019
+201902280HOU,"Thu, Feb 28, 2019",HOU,MIA,Houston Rockets,Miami Heat,121,118,3,Home,94.4,True,2019
+201903030BOS,"Sun, Mar 3, 2019",BOS,HOU,Boston Celtics,Houston Rockets,104,115,-11,Home,93.4,True,2019
+201903050TOR,"Tue, Mar 5, 2019",TOR,HOU,Toronto Raptors,Houston Rockets,95,107,-12,Home,90.2,True,2019
+201903080HOU,"Fri, Mar 8, 2019",HOU,PHI,Houston Rockets,Philadelphia 76ers,107,91,16,Home,99.3,True,2019
+201903100DAL,"Sun, Mar 10, 2019",DAL,HOU,Dallas Mavericks,Houston Rockets,93,94,-1,Home,91.9,True,2019
+201903110HOU,"Mon, Mar 11, 2019",HOU,CHO,Houston Rockets,Charlotte Hornets,118,106,12,Home,99.3,True,2019
+201903130HOU,"Wed, Mar 13, 2019",HOU,GSW,Houston Rockets,Golden State Warriors,104,106,-2,Home,89.9,True,2019
+201903150HOU,"Fri, Mar 15, 2019",HOU,PHO,Houston Rockets,Phoenix Suns,108,102,6,Home,102.1,True,2019
+201903170HOU,"Sun, Mar 17, 2019",HOU,MIN,Houston Rockets,Minnesota Timberwolves,117,102,15,Home,97.3,True,2019
+201903190ATL,"Tue, Mar 19, 2019",ATL,HOU,Atlanta Hawks,Houston Rockets,105,121,-16,Home,98.7,True,2019
+201903200MEM,"Wed, Mar 20, 2019",MEM,HOU,Memphis Grizzlies,Houston Rockets,126,125,1,Home,92.7,True,2019
+201903220HOU,"Fri, Mar 22, 2019",HOU,SAS,Houston Rockets,San Antonio Spurs,111,105,6,Home,98.4,True,2019
+201903240NOP,"Sun, Mar 24, 2019",NOP,HOU,New Orleans Pelicans,Houston Rockets,90,113,-23,Home,93.2,True,2019
+201903260MIL,"Tue, Mar 26, 2019",MIL,HOU,Milwaukee Bucks,Houston Rockets,108,94,14,Home,104.1,True,2019
+201903280HOU,"Thu, Mar 28, 2019",HOU,DEN,Houston Rockets,Denver Nuggets,112,85,27,Home,94.2,True,2019
+201903300HOU,"Sat, Mar 30, 2019",HOU,SAC,Houston Rockets,Sacramento Kings,119,108,11,Home,94.5,True,2019
+201904020SAC,"Tue, Apr 2, 2019",SAC,HOU,Sacramento Kings,Houston Rockets,105,130,-25,Home,97.2,True,2019
+201904030LAC,"Wed, Apr 3, 2019",LAC,HOU,Los Angeles Clippers,Houston Rockets,103,135,-32,Home,101.9,True,2019
+201904050HOU,"Fri, Apr 5, 2019",HOU,NYK,Houston Rockets,New York Knicks,120,96,24,Home,104.2,True,2019
+201904070HOU,"Sun, Apr 7, 2019",HOU,PHO,Houston Rockets,Phoenix Suns,149,113,36,Home,104.9,True,2019
+201904090OKC,"Tue, Apr 9, 2019",OKC,HOU,Oklahoma City Thunder,Houston Rockets,112,111,1,Home,95.8,True,2019
+201904140HOU,"Sun, Apr 14, 2019",HOU,UTA,Houston Rockets,Utah Jazz,122,90,32,Home,98.7,True,2019
+201904170HOU,"Wed, Apr 17, 2019",HOU,UTA,Houston Rockets,Utah Jazz,118,98,20,Home,100.3,True,2019
+201904200UTA,"Sat, Apr 20, 2019",UTA,HOU,Utah Jazz,Houston Rockets,101,104,-3,Home,100.9,True,2019
+201904220UTA,"Mon, Apr 22, 2019",UTA,HOU,Utah Jazz,Houston Rockets,107,91,16,Home,91.6,True,2019
+201904240HOU,"Wed, Apr 24, 2019",HOU,UTA,Houston Rockets,Utah Jazz,100,93,7,Home,97.9,True,2019
+201904280GSW,"Sun, Apr 28, 2019",GSW,HOU,Golden State Warriors,Houston Rockets,104,100,4,Home,95.5,True,2019
+201904300GSW,"Tue, Apr 30, 2019",GSW,HOU,Golden State Warriors,Houston Rockets,115,109,6,Home,92.7,True,2019
+201905040HOU,"Sat, May 4, 2019",HOU,GSW,Houston Rockets,Golden State Warriors,126,121,5,Home,91.8,True,2019
+201905060HOU,"Mon, May 6, 2019",HOU,GSW,Houston Rockets,Golden State Warriors,112,108,4,Home,99.1,True,2019
+201905080GSW,"Wed, May 8, 2019",GSW,HOU,Golden State Warriors,Houston Rockets,104,99,5,Home,93.4,True,2019
+201905100HOU,"Fri, May 10, 2019",HOU,GSW,Houston Rockets,Golden State Warriors,113,118,-5,Home,96.8,True,2019
+201810190NOP,"Fri, Oct 19, 2018",NOP,SAC,New Orleans Pelicans,Sacramento Kings,149,129,20,Home,111.3,True,2019
+201810230NOP,"Tue, Oct 23, 2018",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,116,109,7,Home,103.7,True,2019
+201810260NOP,"Fri, Oct 26, 2018",NOP,BRK,New Orleans Pelicans,Brooklyn Nets,117,115,2,Home,102.5,True,2019
+201810270NOP,"Sat, Oct 27, 2018",NOP,UTA,New Orleans Pelicans,Utah Jazz,111,132,-21,Home,108.6,True,2019
+201810290DEN,"Mon, Oct 29, 2018",DEN,NOP,Denver Nuggets,New Orleans Pelicans,116,111,5,Home,104.5,True,2019
+201810310GSW,"Wed, Oct 31, 2018",GSW,NOP,Golden State Warriors,New Orleans Pelicans,131,121,10,Home,104.8,True,2019
+201811010POR,"Thu, Nov 1, 2018",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,132,119,13,Home,104.5,True,2019
+201811030SAS,"Sat, Nov 3, 2018",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,109,95,14,Home,100.2,True,2019
+201811050OKC,"Mon, Nov 5, 2018",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,122,116,6,Home,105.4,True,2019
+201811070NOP,"Wed, Nov 7, 2018",NOP,CHI,New Orleans Pelicans,Chicago Bulls,107,98,9,Home,104.4,True,2019
+201811100NOP,"Sat, Nov 10, 2018",NOP,PHO,New Orleans Pelicans,Phoenix Suns,119,99,20,Home,97.4,True,2019
+201811120TOR,"Mon, Nov 12, 2018",TOR,NOP,Toronto Raptors,New Orleans Pelicans,110,126,-16,Home,101.2,True,2019
+201811140MIN,"Wed, Nov 14, 2018",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,107,100,7,Home,104.0,True,2019
+201811160NOP,"Fri, Nov 16, 2018",NOP,NYK,New Orleans Pelicans,New York Knicks,129,124,5,Home,110.9,True,2019
+201811170NOP,"Sat, Nov 17, 2018",NOP,DEN,New Orleans Pelicans,Denver Nuggets,125,115,10,Home,101.1,True,2019
+201811190NOP,"Mon, Nov 19, 2018",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,140,126,14,Home,101.0,True,2019
+201811210PHI,"Wed, Nov 21, 2018",PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,121,120,1,Home,107.5,True,2019
+201811230NYK,"Fri, Nov 23, 2018",NYK,NOP,New York Knicks,New Orleans Pelicans,114,109,5,Home,99.3,True,2019
+201811240WAS,"Sat, Nov 24, 2018",WAS,NOP,Washington Wizards,New Orleans Pelicans,124,114,10,Home,107.5,True,2019
+201811260NOP,"Mon, Nov 26, 2018",NOP,BOS,New Orleans Pelicans,Boston Celtics,107,124,-17,Home,98.5,True,2019
+201811280NOP,"Wed, Nov 28, 2018",NOP,WAS,New Orleans Pelicans,Washington Wizards,125,104,21,Home,105.6,True,2019
+201811300MIA,"Fri, Nov 30, 2018",MIA,NOP,Miami Heat,New Orleans Pelicans,106,101,5,Home,97.1,True,2019
+201812020CHO,"Sun, Dec 2, 2018",CHO,NOP,Charlotte Hornets,New Orleans Pelicans,109,119,-10,Home,101.8,True,2019
+201812030NOP,"Mon, Dec 3, 2018",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,126,129,-3,Home,97.9,True,2019
+201812050NOP,"Wed, Dec 5, 2018",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,132,106,26,Home,105.5,True,2019
+201812070NOP,"Fri, Dec 7, 2018",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,103,107,-4,Home,96.9,True,2019
+201812090DET,"Sun, Dec 9, 2018",DET,NOP,Detroit Pistons,New Orleans Pelicans,108,116,-8,Home,98.8,True,2019
+201812100BOS,"Mon, Dec 10, 2018",BOS,NOP,Boston Celtics,New Orleans Pelicans,113,100,13,Home,98.2,True,2019
+201812120NOP,"Wed, Dec 12, 2018",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,118,114,4,Home,106.3,True,2019
+201812160NOP,"Sun, Dec 16, 2018",NOP,MIA,New Orleans Pelicans,Miami Heat,96,102,-6,Home,91.2,True,2019
+201812190MIL,"Wed, Dec 19, 2018",MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,123,115,8,Home,103.3,True,2019
+201812210LAL,"Fri, Dec 21, 2018",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,112,104,8,Home,104.7,True,2019
+201812230SAC,"Sun, Dec 23, 2018",SAC,NOP,Sacramento Kings,New Orleans Pelicans,122,117,5,Home,106.9,True,2019
+201812260DAL,"Wed, Dec 26, 2018",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,122,119,3,Home,101.6,True,2019
+201812280NOP,"Fri, Dec 28, 2018",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,114,112,2,Home,94.9,True,2019
+201812310NOP,"Mon, Dec 31, 2018",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,123,114,9,Home,96.2,True,2019
+201901020BRK,"Wed, Jan 2, 2019",BRK,NOP,Brooklyn Nets,New Orleans Pelicans,126,121,5,Home,98.4,True,2019
+201901050CLE,"Sat, Jan 5, 2019",CLE,NOP,Cleveland Cavaliers,New Orleans Pelicans,98,133,-35,Home,97.7,True,2019
+201901070NOP,"Mon, Jan 7, 2019",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,114,95,19,Home,97.9,True,2019
+201901090NOP,"Wed, Jan 9, 2019",NOP,CLE,New Orleans Pelicans,Cleveland Cavaliers,140,124,16,Home,102.2,True,2019
+201901120MIN,"Sat, Jan 12, 2019",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,110,106,4,Home,100.0,True,2019
+201901140LAC,"Mon, Jan 14, 2019",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,117,121,-4,Home,104.0,True,2019
+201901160GSW,"Wed, Jan 16, 2019",GSW,NOP,Golden State Warriors,New Orleans Pelicans,147,140,7,Home,113.8,True,2019
+201901180POR,"Fri, Jan 18, 2019",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,128,112,16,Home,99.1,True,2019
+201901210MEM,"Mon, Jan 21, 2019",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,85,105,-20,Home,95.0,True,2019
+201901230NOP,"Wed, Jan 23, 2019",NOP,DET,New Orleans Pelicans,Detroit Pistons,94,98,-4,Home,96.6,True,2019
+201901240OKC,"Thu, Jan 24, 2019",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,122,116,6,Home,107.3,True,2019
+201901260NOP,"Sat, Jan 26, 2019",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,114,126,-12,Home,101.3,True,2019
+201901300NOP,"Wed, Jan 30, 2019",NOP,DEN,New Orleans Pelicans,Denver Nuggets,99,105,-6,Home,98.7,True,2019
+201902020SAS,"Sat, Feb 2, 2019",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,113,108,5,Home,100.9,True,2019
+201902040NOP,"Mon, Feb 4, 2019",NOP,IND,New Orleans Pelicans,Indiana Pacers,107,109,-2,Home,100.9,True,2019
+201902060CHI,"Wed, Feb 6, 2019",CHI,NOP,Chicago Bulls,New Orleans Pelicans,120,125,-5,Home,94.6,True,2019
+201902080NOP,"Fri, Feb 8, 2019",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,122,117,5,Home,104.5,True,2019
+201902090MEM,"Sat, Feb 9, 2019",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,99,90,9,Home,93.5,True,2019
+201902120NOP,"Tue, Feb 12, 2019",NOP,ORL,New Orleans Pelicans,Orlando Magic,88,118,-30,Home,100.5,True,2019
+201902140NOP,"Thu, Feb 14, 2019",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,131,122,9,Home,104.0,True,2019
+201902220IND,"Fri, Feb 22, 2019",IND,NOP,Indiana Pacers,New Orleans Pelicans,126,111,15,Home,105.5,True,2019
+201902230NOP,"Sat, Feb 23, 2019",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,128,115,13,Home,108.5,True,2019
+201902250NOP,"Mon, Feb 25, 2019",NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,110,111,-1,Home,110.9,True,2019
+201902270LAL,"Wed, Feb 27, 2019",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,125,119,6,Home,107.9,True,2019
+201903010PHO,"Fri, Mar 1, 2019",PHO,NOP,Phoenix Suns,New Orleans Pelicans,116,130,-14,Home,109.6,True,2019
+201903020DEN,"Sat, Mar 2, 2019",DEN,NOP,Denver Nuggets,New Orleans Pelicans,112,120,-8,Home,108.6,True,2019
+201903040UTA,"Mon, Mar 4, 2019",UTA,NOP,Utah Jazz,New Orleans Pelicans,112,115,-3,Home,98.8,True,2019
+201903060NOP,"Wed, Mar 6, 2019",NOP,UTA,New Orleans Pelicans,Utah Jazz,104,114,-10,Home,106.5,True,2019
+201903080NOP,"Fri, Mar 8, 2019",NOP,TOR,New Orleans Pelicans,Toronto Raptors,104,127,-23,Home,111.0,True,2019
+201903100ATL,"Sun, Mar 10, 2019",ATL,NOP,Atlanta Hawks,New Orleans Pelicans,128,116,12,Home,104.6,True,2019
+201903120NOP,"Tue, Mar 12, 2019",NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,113,130,-17,Home,114.6,True,2019
+201903150NOP,"Fri, Mar 15, 2019",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,110,122,-12,Home,102.2,True,2019
+201903160NOP,"Sat, Mar 16, 2019",NOP,PHO,New Orleans Pelicans,Phoenix Suns,136,138,-2,Home,111.4,True,2019
+201903180DAL,"Mon, Mar 18, 2019",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,125,129,-4,Home,103.6,True,2019
+201903200ORL,"Wed, Mar 20, 2019",ORL,NOP,Orlando Magic,New Orleans Pelicans,119,96,23,Home,101.9,True,2019
+201903260NOP,"Tue, Mar 26, 2019",NOP,ATL,New Orleans Pelicans,Atlanta Hawks,120,130,-10,Home,112.9,True,2019
+201903280NOP,"Thu, Mar 28, 2019",NOP,SAC,New Orleans Pelicans,Sacramento Kings,121,118,3,Home,104.8,True,2019
+201903310NOP,"Sun, Mar 31, 2019",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,102,130,-28,Home,108.5,True,2019
+201904030NOP,"Wed, Apr 3, 2019",NOP,CHO,New Orleans Pelicans,Charlotte Hornets,109,115,-6,Home,102.6,True,2019
+201904050PHO,"Fri, Apr 5, 2019",PHO,NOP,Phoenix Suns,New Orleans Pelicans,133,126,7,Home,97.1,True,2019
+201904070SAC,"Sun, Apr 7, 2019",SAC,NOP,Sacramento Kings,New Orleans Pelicans,129,133,-4,Home,104.3,True,2019
+201904090NOP,"Tue, Apr 9, 2019",NOP,GSW,New Orleans Pelicans,Golden State Warriors,103,112,-9,Home,102.5,True,2019
+201810180POR,"Thu, Oct 18, 2018",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,128,119,9,Home,111.3,True,2019
+201810220LAL,"Mon, Oct 22, 2018",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,142,143,-1,Home,103.6,True,2019
+201810240PHO,"Wed, Oct 24, 2018",PHO,LAL,Phoenix Suns,Los Angeles Lakers,113,131,-18,Home,103.5,True,2019
+201810250LAL,"Thu, Oct 25, 2018",LAL,DEN,Los Angeles Lakers,Denver Nuggets,121,114,7,Home,105.7,True,2019
+201810270SAS,"Sat, Oct 27, 2018",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,110,106,4,Home,101.6,True,2019
+201810290MIN,"Mon, Oct 29, 2018",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,124,120,4,Home,103.8,True,2019
+201810310LAL,"Wed, Oct 31, 2018",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,114,113,1,Home,104.9,True,2019
+201811030POR,"Sat, Nov 3, 2018",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,110,114,-4,Home,107.8,True,2019
+201811040LAL,"Sun, Nov 4, 2018",LAL,TOR,Los Angeles Lakers,Toronto Raptors,107,121,-14,Home,103.0,True,2019
+201811070LAL,"Wed, Nov 7, 2018",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,114,110,4,Home,97.3,True,2019
+201811100SAC,"Sat, Nov 10, 2018",SAC,LAL,Sacramento Kings,Los Angeles Lakers,86,101,-15,Home,102.0,True,2019
+201811110LAL,"Sun, Nov 11, 2018",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,107,106,1,Home,103.9,True,2019
+201811140LAL,"Wed, Nov 14, 2018",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,126,117,9,Home,103.8,True,2019
+201811170ORL,"Sat, Nov 17, 2018",ORL,LAL,Orlando Magic,Los Angeles Lakers,130,117,13,Home,103.6,True,2019
+201811180MIA,"Sun, Nov 18, 2018",MIA,LAL,Miami Heat,Los Angeles Lakers,97,113,-16,Home,94.6,True,2019
+201811210CLE,"Wed, Nov 21, 2018",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,105,109,-4,Home,95.3,True,2019
+201811230LAL,"Fri, Nov 23, 2018",LAL,UTA,Los Angeles Lakers,Utah Jazz,90,83,7,Home,103.1,True,2019
+201811250LAL,"Sun, Nov 25, 2018",LAL,ORL,Los Angeles Lakers,Orlando Magic,104,108,-4,Home,102.4,True,2019
+201811270DEN,"Tue, Nov 27, 2018",DEN,LAL,Denver Nuggets,Los Angeles Lakers,117,85,32,Home,96.6,True,2019
+201811290LAL,"Thu, Nov 29, 2018",LAL,IND,Los Angeles Lakers,Indiana Pacers,104,96,8,Home,101.8,True,2019
+201811300LAL,"Fri, Nov 30, 2018",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,114,103,11,Home,105.8,True,2019
+201812020LAL,"Sun, Dec 2, 2018",LAL,PHO,Los Angeles Lakers,Phoenix Suns,120,96,24,Home,106.1,True,2019
+201812050LAL,"Wed, Dec 5, 2018",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,121,113,8,Home,103.6,True,2019
+201812070SAS,"Fri, Dec 7, 2018",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,133,120,13,Home,104.2,True,2019
+201812080MEM,"Sat, Dec 8, 2018",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,88,111,-23,Home,95.9,True,2019
+201812100LAL,"Mon, Dec 10, 2018",LAL,MIA,Los Angeles Lakers,Miami Heat,108,105,3,Home,98.4,True,2019
+201812150CHO,"Sat, Dec 15, 2018",CHO,LAL,Charlotte Hornets,Los Angeles Lakers,100,128,-28,Home,106.0,True,2019
+201812160WAS,"Sun, Dec 16, 2018",WAS,LAL,Washington Wizards,Los Angeles Lakers,128,110,18,Home,110.7,True,2019
+201812180BRK,"Tue, Dec 18, 2018",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,115,110,5,Home,104.4,True,2019
+201812230LAL,"Sun, Dec 23, 2018",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,99,107,-8,Home,93.9,True,2019
+201812250GSW,"Tue, Dec 25, 2018",GSW,LAL,Golden State Warriors,Los Angeles Lakers,101,127,-26,Home,103.6,True,2019
+201812270SAC,"Thu, Dec 27, 2018",SAC,LAL,Sacramento Kings,Los Angeles Lakers,117,116,1,Home,104.7,True,2019
+201812280LAL,"Fri, Dec 28, 2018",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,107,118,-11,Home,109.4,True,2019
+201812300LAL,"Sun, Dec 30, 2018",LAL,SAC,Los Angeles Lakers,Sacramento Kings,121,114,7,Home,104.6,True,2019
+201901020LAL,"Wed, Jan 2, 2019",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,100,107,-7,Home,110.2,True,2019
+201901040LAL,"Fri, Jan 4, 2019",LAL,NYK,Los Angeles Lakers,New York Knicks,112,119,-7,Home,107.6,True,2019
+201901060MIN,"Sun, Jan 6, 2019",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,108,86,22,Home,104.1,True,2019
+201901070DAL,"Mon, Jan 7, 2019",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,97,107,-10,Home,101.4,True,2019
+201901090LAL,"Wed, Jan 9, 2019",LAL,DET,Los Angeles Lakers,Detroit Pistons,113,100,13,Home,93.0,True,2019
+201901110UTA,"Fri, Jan 11, 2019",UTA,LAL,Utah Jazz,Los Angeles Lakers,113,95,18,Home,107.5,True,2019
+201901130LAL,"Sun, Jan 13, 2019",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,95,101,-6,Home,97.9,True,2019
+201901150LAL,"Tue, Jan 15, 2019",LAL,CHI,Los Angeles Lakers,Chicago Bulls,107,100,7,Home,99.4,True,2019
+201901170OKC,"Thu, Jan 17, 2019",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,128,138,-10,Home,104.6,True,2019
+201901210LAL,"Mon, Jan 21, 2019",LAL,GSW,Los Angeles Lakers,Golden State Warriors,111,130,-19,Home,103.9,True,2019
+201901240LAL,"Thu, Jan 24, 2019",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,105,120,-15,Home,99.7,True,2019
+201901270LAL,"Sun, Jan 27, 2019",LAL,PHO,Los Angeles Lakers,Phoenix Suns,116,102,14,Home,95.2,True,2019
+201901290LAL,"Tue, Jan 29, 2019",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,105,121,-16,Home,102.9,True,2019
+201901310LAC,"Thu, Jan 31, 2019",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,120,123,-3,Home,101.5,True,2019
+201902020GSW,"Sat, Feb 2, 2019",GSW,LAL,Golden State Warriors,Los Angeles Lakers,115,101,14,Home,101.5,True,2019
+201902050IND,"Tue, Feb 5, 2019",IND,LAL,Indiana Pacers,Los Angeles Lakers,136,94,42,Home,100.4,True,2019
+201902070BOS,"Thu, Feb 7, 2019",BOS,LAL,Boston Celtics,Los Angeles Lakers,128,129,-1,Home,99.3,True,2019
+201902100PHI,"Sun, Feb 10, 2019",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,143,120,23,Home,106.0,True,2019
+201902120ATL,"Tue, Feb 12, 2019",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,117,113,4,Home,111.4,True,2019
+201902250MEM,"Mon, Feb 25, 2019",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,110,105,5,Home,101.9,True,2019
+201903010LAL,"Fri, Mar 1, 2019",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,120,131,-11,Home,102.3,True,2019
+201903020PHO,"Sat, Mar 2, 2019",PHO,LAL,Phoenix Suns,Los Angeles Lakers,118,109,9,Home,95.2,True,2019
+201903040LAL,"Mon, Mar 4, 2019",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,105,113,-8,Home,100.2,True,2019
+201903060LAL,"Wed, Mar 6, 2019",LAL,DEN,Los Angeles Lakers,Denver Nuggets,99,115,-16,Home,96.7,True,2019
+201903090LAL,"Sat, Mar 9, 2019",LAL,BOS,Los Angeles Lakers,Boston Celtics,107,120,-13,Home,102.9,True,2019
+201903120CHI,"Tue, Mar 12, 2019",CHI,LAL,Chicago Bulls,Los Angeles Lakers,107,123,-16,Home,100.5,True,2019
+201903140TOR,"Thu, Mar 14, 2019",TOR,LAL,Toronto Raptors,Los Angeles Lakers,111,98,13,Home,106.5,True,2019
+201903150DET,"Fri, Mar 15, 2019",DET,LAL,Detroit Pistons,Los Angeles Lakers,111,97,14,Home,97.0,True,2019
+201903170NYK,"Sun, Mar 17, 2019",NYK,LAL,New York Knicks,Los Angeles Lakers,124,123,1,Home,100.7,True,2019
+201903190MIL,"Tue, Mar 19, 2019",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,115,101,14,Home,104.3,True,2019
+201903220LAL,"Fri, Mar 22, 2019",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,106,111,-5,Home,103.2,True,2019
+201903240LAL,"Sun, Mar 24, 2019",LAL,SAC,Los Angeles Lakers,Sacramento Kings,111,106,5,Home,103.4,True,2019
+201903260LAL,"Tue, Mar 26, 2019",LAL,WAS,Los Angeles Lakers,Washington Wizards,124,106,18,Home,104.0,True,2019
+201903270UTA,"Wed, Mar 27, 2019",UTA,LAL,Utah Jazz,Los Angeles Lakers,115,100,15,Home,100.3,True,2019
+201903290LAL,"Fri, Mar 29, 2019",LAL,CHO,Los Angeles Lakers,Charlotte Hornets,129,115,14,Home,98.1,True,2019
+201904020OKC,"Tue, Apr 2, 2019",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,119,103,16,Home,103.3,True,2019
+201904040LAL,"Thu, Apr 4, 2019",LAL,GSW,Los Angeles Lakers,Golden State Warriors,90,108,-18,Home,105.0,True,2019
+201904050LAC,"Fri, Apr 5, 2019",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,117,122,-5,Home,106.0,True,2019
+201904070LAL,"Sun, Apr 7, 2019",LAL,UTA,Los Angeles Lakers,Utah Jazz,113,109,4,Home,95.1,True,2019
+201904090LAL,"Tue, Apr 9, 2019",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,101,104,-3,Home,97.7,True,2019
+201810170LAC,"Wed, Oct 17, 2018",LAC,DEN,Los Angeles Clippers,Denver Nuggets,98,107,-9,Home,98.9,True,2019
+201810190LAC,"Fri, Oct 19, 2018",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,108,92,16,Home,98.3,True,2019
+201810280LAC,"Sun, Oct 28, 2018",LAC,WAS,Los Angeles Clippers,Washington Wizards,136,104,32,Home,106.6,True,2019
+201810300OKC,"Tue, Oct 30, 2018",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,128,110,18,Home,109.8,True,2019
+201811010PHI,"Thu, Nov 1, 2018",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,122,113,9,Home,106.7,True,2019
+201811020ORL,"Fri, Nov 2, 2018",ORL,LAC,Orlando Magic,Los Angeles Clippers,95,120,-25,Home,99.7,True,2019
+201811050LAC,"Mon, Nov 5, 2018",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,120,109,11,Home,96.1,True,2019
+201811080POR,"Thu, Nov 8, 2018",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,116,105,11,Home,96.3,True,2019
+201811100LAC,"Sat, Nov 10, 2018",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,128,126,2,Home,104.2,True,2019
+201811120LAC,"Mon, Nov 12, 2018",LAC,GSW,Los Angeles Clippers,Golden State Warriors,121,116,5,Home,100.3,True,2019
+201811150LAC,"Thu, Nov 15, 2018",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,116,111,5,Home,99.7,True,2019
+201811170BRK,"Sat, Nov 17, 2018",BRK,LAC,Brooklyn Nets,Los Angeles Clippers,119,127,-8,Home,98.3,True,2019
+201811190ATL,"Mon, Nov 19, 2018",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,119,127,-8,Home,107.1,True,2019
+201811200WAS,"Tue, Nov 20, 2018",WAS,LAC,Washington Wizards,Los Angeles Clippers,125,118,7,Home,103.9,True,2019
+201811230LAC,"Fri, Nov 23, 2018",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,112,107,5,Home,97.2,True,2019
+201811250POR,"Sun, Nov 25, 2018",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,100,104,-4,Home,95.6,True,2019
+201811280LAC,"Wed, Nov 28, 2018",LAC,PHO,Los Angeles Clippers,Phoenix Suns,115,99,16,Home,102.0,True,2019
+201811290SAC,"Thu, Nov 29, 2018",SAC,LAC,Sacramento Kings,Los Angeles Clippers,121,133,-12,Home,100.2,True,2019
+201812020DAL,"Sun, Dec 2, 2018",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,114,110,4,Home,104.4,True,2019
+201812050MEM,"Wed, Dec 5, 2018",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,96,86,10,Home,95.9,True,2019
+201812080LAC,"Sat, Dec 8, 2018",LAC,MIA,Los Angeles Clippers,Miami Heat,98,121,-23,Home,103.3,True,2019
+201812100PHO,"Mon, Dec 10, 2018",PHO,LAC,Phoenix Suns,Los Angeles Clippers,119,123,-4,Home,95.3,True,2019
+201812110LAC,"Tue, Dec 11, 2018",LAC,TOR,Los Angeles Clippers,Toronto Raptors,99,123,-24,Home,95.5,True,2019
+201812130SAS,"Thu, Dec 13, 2018",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,125,87,38,Home,95.8,True,2019
+201812150OKC,"Sat, Dec 15, 2018",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,110,104,6,Home,102.1,True,2019
+201812170LAC,"Mon, Dec 17, 2018",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,127,131,-4,Home,100.4,True,2019
+201812200LAC,"Thu, Dec 20, 2018",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,125,121,4,Home,97.2,True,2019
+201812220LAC,"Sat, Dec 22, 2018",LAC,DEN,Los Angeles Clippers,Denver Nuggets,132,111,21,Home,100.6,True,2019
+201812230GSW,"Sun, Dec 23, 2018",GSW,LAC,Golden State Warriors,Los Angeles Clippers,129,127,2,Home,99.9,True,2019
+201812260LAC,"Wed, Dec 26, 2018",LAC,SAC,Los Angeles Clippers,Sacramento Kings,127,118,9,Home,104.8,True,2019
+201812290LAC,"Sat, Dec 29, 2018",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,111,122,-11,Home,106.2,True,2019
+201901010LAC,"Tue, Jan 1, 2019",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,113,119,-6,Home,103.7,True,2019
+201901040PHO,"Fri, Jan 4, 2019",PHO,LAC,Phoenix Suns,Los Angeles Clippers,111,121,-10,Home,96.5,True,2019
+201901060LAC,"Sun, Jan 6, 2019",LAC,ORL,Los Angeles Clippers,Orlando Magic,106,96,10,Home,97.8,True,2019
+201901080LAC,"Tue, Jan 8, 2019",LAC,CHO,Los Angeles Clippers,Charlotte Hornets,128,109,19,Home,101.8,True,2019
+201901100DEN,"Thu, Jan 10, 2019",DEN,LAC,Denver Nuggets,Los Angeles Clippers,121,100,21,Home,98.0,True,2019
+201901120LAC,"Sat, Jan 12, 2019",LAC,DET,Los Angeles Clippers,Detroit Pistons,104,109,-5,Home,95.3,True,2019
+201901160LAC,"Wed, Jan 16, 2019",LAC,UTA,Los Angeles Clippers,Utah Jazz,109,129,-20,Home,103.9,True,2019
+201901180LAC,"Fri, Jan 18, 2019",LAC,GSW,Los Angeles Clippers,Golden State Warriors,94,112,-18,Home,103.6,True,2019
+201901200SAS,"Sun, Jan 20, 2019",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,95,103,-8,Home,99.9,True,2019
+201901220DAL,"Tue, Jan 22, 2019",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,106,98,8,Home,92.7,True,2019
+201901230MIA,"Wed, Jan 23, 2019",MIA,LAC,Miami Heat,Los Angeles Clippers,99,111,-12,Home,92.7,True,2019
+201901250CHI,"Fri, Jan 25, 2019",CHI,LAC,Chicago Bulls,Los Angeles Clippers,101,106,-5,Home,102.4,True,2019
+201901270LAC,"Sun, Jan 27, 2019",LAC,SAC,Los Angeles Clippers,Sacramento Kings,122,108,14,Home,100.8,True,2019
+201901280LAC,"Mon, Jan 28, 2019",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,118,123,-5,Home,98.0,True,2019
+201902020DET,"Sat, Feb 2, 2019",DET,LAC,Detroit Pistons,Los Angeles Clippers,101,111,-10,Home,96.2,True,2019
+201902030TOR,"Sun, Feb 3, 2019",TOR,LAC,Toronto Raptors,Los Angeles Clippers,121,103,18,Home,103.2,True,2019
+201902050CHO,"Tue, Feb 5, 2019",CHO,LAC,Charlotte Hornets,Los Angeles Clippers,115,117,-2,Home,95.7,True,2019
+201902070IND,"Thu, Feb 7, 2019",IND,LAC,Indiana Pacers,Los Angeles Clippers,116,92,24,Home,101.6,True,2019
+201902090BOS,"Sat, Feb 9, 2019",BOS,LAC,Boston Celtics,Los Angeles Clippers,112,123,-11,Home,109.0,True,2019
+201902110MIN,"Mon, Feb 11, 2019",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,130,120,10,Home,100.2,True,2019
+201902130LAC,"Wed, Feb 13, 2019",LAC,PHO,Los Angeles Clippers,Phoenix Suns,134,107,27,Home,101.4,True,2019
+201902220MEM,"Fri, Feb 22, 2019",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,106,112,-6,Home,104.5,True,2019
+201902240DEN,"Sun, Feb 24, 2019",DEN,LAC,Denver Nuggets,Los Angeles Clippers,123,96,27,Home,109.6,True,2019
+201902250LAC,"Mon, Feb 25, 2019",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,121,112,9,Home,98.5,True,2019
+201902270UTA,"Wed, Feb 27, 2019",UTA,LAC,Utah Jazz,Los Angeles Clippers,111,105,6,Home,104.0,True,2019
+201903010SAC,"Fri, Mar 1, 2019",SAC,LAC,Sacramento Kings,Los Angeles Clippers,109,116,-7,Home,100.9,True,2019
+201903030LAC,"Sun, Mar 3, 2019",LAC,NYK,Los Angeles Clippers,New York Knicks,128,107,21,Home,107.7,True,2019
+201903080LAC,"Fri, Mar 8, 2019",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,118,110,8,Home,105.6,True,2019
+201903110LAC,"Mon, Mar 11, 2019",LAC,BOS,Los Angeles Clippers,Boston Celtics,140,115,25,Home,103.8,True,2019
+201903120LAC,"Tue, Mar 12, 2019",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,104,125,-21,Home,93.5,True,2019
+201903150LAC,"Fri, Mar 15, 2019",LAC,CHI,Los Angeles Clippers,Chicago Bulls,128,121,7,Home,101.4,True,2019
+201903170LAC,"Sun, Mar 17, 2019",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,119,116,3,Home,104.8,True,2019
+201903190LAC,"Tue, Mar 19, 2019",LAC,IND,Los Angeles Clippers,Indiana Pacers,115,109,6,Home,101.7,True,2019
+201903220CLE,"Fri, Mar 22, 2019",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,108,110,-2,Home,96.9,True,2019
+201903240NYK,"Sun, Mar 24, 2019",NYK,LAC,New York Knicks,Los Angeles Clippers,113,124,-11,Home,95.0,True,2019
+201903260MIN,"Tue, Mar 26, 2019",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,111,122,-11,Home,106.3,True,2019
+201903280MIL,"Thu, Mar 28, 2019",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,128,118,10,Home,102.6,True,2019
+201903300LAC,"Sat, Mar 30, 2019",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,132,108,24,Home,98.0,True,2019
+201903310LAC,"Sun, Mar 31, 2019",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,113,96,17,Home,102.7,True,2019
+201904070GSW,"Sun, Apr 7, 2019",GSW,LAC,Golden State Warriors,Los Angeles Clippers,131,104,27,Home,102.4,True,2019
+201904100LAC,"Wed, Apr 10, 2019",LAC,UTA,Los Angeles Clippers,Utah Jazz,143,137,6,Home,106.2,True,2019
+201904130GSW,"Sat, Apr 13, 2019",GSW,LAC,Golden State Warriors,Los Angeles Clippers,121,104,17,Home,109.3,True,2019
+201904150GSW,"Mon, Apr 15, 2019",GSW,LAC,Golden State Warriors,Los Angeles Clippers,131,135,-4,Home,107.7,True,2019
+201904180LAC,"Thu, Apr 18, 2019",LAC,GSW,Los Angeles Clippers,Golden State Warriors,105,132,-27,Home,100.8,True,2019
+201904210LAC,"Sun, Apr 21, 2019",LAC,GSW,Los Angeles Clippers,Golden State Warriors,105,113,-8,Home,96.9,True,2019
+201904240GSW,"Wed, Apr 24, 2019",GSW,LAC,Golden State Warriors,Los Angeles Clippers,121,129,-8,Home,94.5,True,2019
+201904260LAC,"Fri, Apr 26, 2019",LAC,GSW,Los Angeles Clippers,Golden State Warriors,110,129,-19,Home,103.3,True,2019
+201810170SAC,"Wed, Oct 17, 2018",SAC,UTA,Sacramento Kings,Utah Jazz,117,123,-6,Home,105.7,True,2019
+201810190UTA,"Fri, Oct 19, 2018",UTA,GSW,Utah Jazz,Golden State Warriors,123,124,-1,Home,103.1,True,2019
+201810220UTA,"Mon, Oct 22, 2018",UTA,MEM,Utah Jazz,Memphis Grizzlies,84,92,-8,Home,94.9,True,2019
+201810280DAL,"Sun, Oct 28, 2018",DAL,UTA,Dallas Mavericks,Utah Jazz,104,113,-9,Home,99.0,True,2019
+201810310MIN,"Wed, Oct 31, 2018",MIN,UTA,Minnesota Timberwolves,Utah Jazz,128,125,3,Home,103.0,True,2019
+201811020UTA,"Fri, Nov 2, 2018",UTA,MEM,Utah Jazz,Memphis Grizzlies,100,110,-10,Home,90.1,True,2019
+201811030DEN,"Sat, Nov 3, 2018",DEN,UTA,Denver Nuggets,Utah Jazz,103,88,15,Home,95.2,True,2019
+201811050UTA,"Mon, Nov 5, 2018",UTA,TOR,Utah Jazz,Toronto Raptors,111,124,-13,Home,99.6,True,2019
+201811070UTA,"Wed, Nov 7, 2018",UTA,DAL,Utah Jazz,Dallas Mavericks,117,102,15,Home,100.1,True,2019
+201811090UTA,"Fri, Nov 9, 2018",UTA,BOS,Utah Jazz,Boston Celtics,123,115,8,Home,97.1,True,2019
+201811120MEM,"Mon, Nov 12, 2018",MEM,UTA,Memphis Grizzlies,Utah Jazz,88,96,-8,Home,94.7,True,2019
+201811140DAL,"Wed, Nov 14, 2018",DAL,UTA,Dallas Mavericks,Utah Jazz,118,68,50,Home,99.2,True,2019
+201811160PHI,"Fri, Nov 16, 2018",PHI,UTA,Philadelphia 76ers,Utah Jazz,113,107,6,Home,101.7,True,2019
+201811170BOS,"Sat, Nov 17, 2018",BOS,UTA,Boston Celtics,Utah Jazz,86,98,-12,Home,94.9,True,2019
+201811190IND,"Mon, Nov 19, 2018",IND,UTA,Indiana Pacers,Utah Jazz,121,94,27,Home,96.0,True,2019
+201811210UTA,"Wed, Nov 21, 2018",UTA,SAC,Utah Jazz,Sacramento Kings,110,119,-9,Home,98.5,True,2019
+201811250SAC,"Sun, Nov 25, 2018",SAC,UTA,Sacramento Kings,Utah Jazz,112,133,-21,Home,107.8,True,2019
+201811260UTA,"Mon, Nov 26, 2018",UTA,IND,Utah Jazz,Indiana Pacers,88,121,-33,Home,97.9,True,2019
+201811280BRK,"Wed, Nov 28, 2018",BRK,UTA,Brooklyn Nets,Utah Jazz,91,101,-10,Home,101.2,True,2019
+201811300CHO,"Fri, Nov 30, 2018",CHO,UTA,Charlotte Hornets,Utah Jazz,111,119,-8,Home,97.7,True,2019
+201812020MIA,"Sun, Dec 2, 2018",MIA,UTA,Miami Heat,Utah Jazz,102,100,2,Home,97.4,True,2019
+201812040UTA,"Tue, Dec 4, 2018",UTA,SAS,Utah Jazz,San Antonio Spurs,139,105,34,Home,102.8,True,2019
+201812090SAS,"Sun, Dec 9, 2018",SAS,UTA,San Antonio Spurs,Utah Jazz,110,97,13,Home,94.8,True,2019
+201812100OKC,"Mon, Dec 10, 2018",OKC,UTA,Oklahoma City Thunder,Utah Jazz,122,113,9,Home,105.2,True,2019
+201812120UTA,"Wed, Dec 12, 2018",UTA,MIA,Utah Jazz,Miami Heat,111,84,27,Home,95.6,True,2019
+201812150ORL,"Sat, Dec 15, 2018",ORL,UTA,Orlando Magic,Utah Jazz,96,89,7,Home,97.2,True,2019
+201812190UTA,"Wed, Dec 19, 2018",UTA,GSW,Utah Jazz,Golden State Warriors,108,103,5,Home,103.9,True,2019
+201812210POR,"Fri, Dec 21, 2018",POR,UTA,Portland Trail Blazers,Utah Jazz,90,120,-30,Home,96.6,True,2019
+201812220UTA,"Sat, Dec 22, 2018",UTA,OKC,Utah Jazz,Oklahoma City Thunder,106,107,-1,Home,104.1,True,2019
+201812250UTA,"Tue, Dec 25, 2018",UTA,POR,Utah Jazz,Portland Trail Blazers,117,96,21,Home,99.6,True,2019
+201812270UTA,"Thu, Dec 27, 2018",UTA,PHI,Utah Jazz,Philadelphia 76ers,97,114,-17,Home,97.6,True,2019
+201812290UTA,"Sat, Dec 29, 2018",UTA,NYK,Utah Jazz,New York Knicks,129,97,32,Home,100.3,True,2019
+201901010TOR,"Tue, Jan 1, 2019",TOR,UTA,Toronto Raptors,Utah Jazz,122,116,6,Home,99.3,True,2019
+201901040CLE,"Fri, Jan 4, 2019",CLE,UTA,Cleveland Cavaliers,Utah Jazz,91,117,-26,Home,93.4,True,2019
+201901050DET,"Sat, Jan 5, 2019",DET,UTA,Detroit Pistons,Utah Jazz,105,110,-5,Home,101.0,True,2019
+201901070MIL,"Mon, Jan 7, 2019",MIL,UTA,Milwaukee Bucks,Utah Jazz,114,102,12,Home,99.9,True,2019
+201901090UTA,"Wed, Jan 9, 2019",UTA,ORL,Utah Jazz,Orlando Magic,106,93,13,Home,95.9,True,2019
+201901120UTA,"Sat, Jan 12, 2019",UTA,CHI,Utah Jazz,Chicago Bulls,110,102,8,Home,100.3,True,2019
+201901140UTA,"Mon, Jan 14, 2019",UTA,DET,Utah Jazz,Detroit Pistons,100,94,6,Home,98.8,True,2019
+201901180UTA,"Fri, Jan 18, 2019",UTA,CLE,Utah Jazz,Cleveland Cavaliers,115,99,16,Home,102.6,True,2019
+201901210UTA,"Mon, Jan 21, 2019",UTA,POR,Utah Jazz,Portland Trail Blazers,104,109,-5,Home,99.5,True,2019
+201901230UTA,"Wed, Jan 23, 2019",UTA,DEN,Utah Jazz,Denver Nuggets,114,108,6,Home,97.1,True,2019
+201901250UTA,"Fri, Jan 25, 2019",UTA,MIN,Utah Jazz,Minnesota Timberwolves,106,102,4,Home,96.9,True,2019
+201901270MIN,"Sun, Jan 27, 2019",MIN,UTA,Minnesota Timberwolves,Utah Jazz,111,125,-14,Home,97.0,True,2019
+201901300POR,"Wed, Jan 30, 2019",POR,UTA,Portland Trail Blazers,Utah Jazz,132,105,27,Home,99.8,True,2019
+201902010UTA,"Fri, Feb 1, 2019",UTA,ATL,Utah Jazz,Atlanta Hawks,128,112,16,Home,105.4,True,2019
+201902060UTA,"Wed, Feb 6, 2019",UTA,PHO,Utah Jazz,Phoenix Suns,116,88,28,Home,96.7,True,2019
+201902090UTA,"Sat, Feb 9, 2019",UTA,SAS,Utah Jazz,San Antonio Spurs,125,105,20,Home,99.6,True,2019
+201902120GSW,"Tue, Feb 12, 2019",GSW,UTA,Golden State Warriors,Utah Jazz,115,108,7,Home,100.7,True,2019
+201902220OKC,"Fri, Feb 22, 2019",OKC,UTA,Oklahoma City Thunder,Utah Jazz,148,147,1,Home,103.2,True,2019
+201902230UTA,"Sat, Feb 23, 2019",UTA,DAL,Utah Jazz,Dallas Mavericks,125,109,16,Home,97.2,True,2019
+201902280DEN,"Thu, Feb 28, 2019",DEN,UTA,Denver Nuggets,Utah Jazz,104,111,-7,Home,99.2,True,2019
+201903020UTA,"Sat, Mar 2, 2019",UTA,MIL,Utah Jazz,Milwaukee Bucks,115,111,4,Home,102.7,True,2019
+201903080MEM,"Fri, Mar 8, 2019",MEM,UTA,Memphis Grizzlies,Utah Jazz,114,104,10,Home,94.4,True,2019
+201903110UTA,"Mon, Mar 11, 2019",UTA,OKC,Utah Jazz,Oklahoma City Thunder,89,98,-9,Home,97.4,True,2019
+201903130PHO,"Wed, Mar 13, 2019",PHO,UTA,Phoenix Suns,Utah Jazz,97,114,-17,Home,97.5,True,2019
+201903140UTA,"Thu, Mar 14, 2019",UTA,MIN,Utah Jazz,Minnesota Timberwolves,120,100,20,Home,97.4,True,2019
+201903160UTA,"Sat, Mar 16, 2019",UTA,BRK,Utah Jazz,Brooklyn Nets,114,98,16,Home,101.8,True,2019
+201903180WAS,"Mon, Mar 18, 2019",WAS,UTA,Washington Wizards,Utah Jazz,95,116,-21,Home,100.5,True,2019
+201903200NYK,"Wed, Mar 20, 2019",NYK,UTA,New York Knicks,Utah Jazz,116,137,-21,Home,98.9,True,2019
+201903210ATL,"Thu, Mar 21, 2019",ATL,UTA,Atlanta Hawks,Utah Jazz,117,114,3,Home,102.8,True,2019
+201903230CHI,"Sat, Mar 23, 2019",CHI,UTA,Chicago Bulls,Utah Jazz,83,114,-31,Home,99.1,True,2019
+201903250UTA,"Mon, Mar 25, 2019",UTA,PHO,Utah Jazz,Phoenix Suns,125,92,33,Home,98.0,True,2019
+201903290UTA,"Fri, Mar 29, 2019",UTA,WAS,Utah Jazz,Washington Wizards,128,124,4,Home,104.9,True,2019
+201904010UTA,"Mon, Apr 1, 2019",UTA,CHO,Utah Jazz,Charlotte Hornets,111,102,9,Home,101.1,True,2019
+201904030PHO,"Wed, Apr 3, 2019",PHO,UTA,Phoenix Suns,Utah Jazz,97,118,-21,Home,95.9,True,2019
+201904050UTA,"Fri, Apr 5, 2019",UTA,SAC,Utah Jazz,Sacramento Kings,119,98,21,Home,105.0,True,2019
+201904090UTA,"Tue, Apr 9, 2019",UTA,DEN,Utah Jazz,Denver Nuggets,118,108,10,Home,98.6,True,2019
+201810200POR,"Sat, Oct 20, 2018",POR,SAS,Portland Trail Blazers,San Antonio Spurs,121,108,13,Home,93.8,True,2019
+201810220POR,"Mon, Oct 22, 2018",POR,WAS,Portland Trail Blazers,Washington Wizards,124,125,-1,Home,107.4,True,2019
+201810250ORL,"Thu, Oct 25, 2018",ORL,POR,Orlando Magic,Portland Trail Blazers,114,128,-14,Home,95.7,True,2019
+201810270MIA,"Sat, Oct 27, 2018",MIA,POR,Miami Heat,Portland Trail Blazers,120,111,9,Home,99.9,True,2019
+201810290IND,"Mon, Oct 29, 2018",IND,POR,Indiana Pacers,Portland Trail Blazers,93,103,-10,Home,95.3,True,2019
+201811040POR,"Sun, Nov 4, 2018",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,111,81,30,Home,96.0,True,2019
+201811060POR,"Tue, Nov 6, 2018",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,118,103,15,Home,93.6,True,2019
+201811110POR,"Sun, Nov 11, 2018",POR,BOS,Portland Trail Blazers,Boston Celtics,100,94,6,Home,95.2,True,2019
+201811160MIN,"Fri, Nov 16, 2018",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,112,96,16,Home,99.7,True,2019
+201811180WAS,"Sun, Nov 18, 2018",WAS,POR,Washington Wizards,Portland Trail Blazers,109,119,-10,Home,105.0,True,2019
+201811200NYK,"Tue, Nov 20, 2018",NYK,POR,New York Knicks,Portland Trail Blazers,114,118,-4,Home,96.0,True,2019
+201811210MIL,"Wed, Nov 21, 2018",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,143,100,43,Home,111.1,True,2019
+201811230GSW,"Fri, Nov 23, 2018",GSW,POR,Golden State Warriors,Portland Trail Blazers,125,97,28,Home,99.8,True,2019
+201811280POR,"Wed, Nov 28, 2018",POR,ORL,Portland Trail Blazers,Orlando Magic,115,112,3,Home,96.1,True,2019
+201811300POR,"Fri, Nov 30, 2018",POR,DEN,Portland Trail Blazers,Denver Nuggets,112,113,-1,Home,94.2,True,2019
+201812020SAS,"Sun, Dec 2, 2018",SAS,POR,San Antonio Spurs,Portland Trail Blazers,131,118,13,Home,98.6,True,2019
+201812040DAL,"Tue, Dec 4, 2018",DAL,POR,Dallas Mavericks,Portland Trail Blazers,111,102,9,Home,99.5,True,2019
+201812060POR,"Thu, Dec 6, 2018",POR,PHO,Portland Trail Blazers,Phoenix Suns,108,86,22,Home,99.5,True,2019
+201812080POR,"Sat, Dec 8, 2018",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,113,105,8,Home,99.8,True,2019
+201812120MEM,"Wed, Dec 12, 2018",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,92,83,9,Home,98.2,True,2019
+201812140POR,"Fri, Dec 14, 2018",POR,TOR,Portland Trail Blazers,Toronto Raptors,128,122,6,Home,96.0,True,2019
+201812190POR,"Wed, Dec 19, 2018",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,99,92,7,Home,88.6,True,2019
+201812230POR,"Sun, Dec 23, 2018",POR,DAL,Portland Trail Blazers,Dallas Mavericks,121,118,3,Home,101.8,True,2019
+201812270GSW,"Thu, Dec 27, 2018",GSW,POR,Golden State Warriors,Portland Trail Blazers,109,110,-1,Home,101.9,True,2019
+201812290POR,"Sat, Dec 29, 2018",POR,GSW,Portland Trail Blazers,Golden State Warriors,105,115,-10,Home,98.9,True,2019
+201812300POR,"Sun, Dec 30, 2018",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,129,95,34,Home,107.3,True,2019
+201901010SAC,"Tue, Jan 1, 2019",SAC,POR,Sacramento Kings,Portland Trail Blazers,108,113,-5,Home,101.4,True,2019
+201901040POR,"Fri, Jan 4, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,109,111,-2,Home,102.1,True,2019
+201901070POR,"Mon, Jan 7, 2019",POR,NYK,Portland Trail Blazers,New York Knicks,111,101,10,Home,96.9,True,2019
+201901090POR,"Wed, Jan 9, 2019",POR,CHI,Portland Trail Blazers,Chicago Bulls,124,112,12,Home,100.8,True,2019
+201901110POR,"Fri, Jan 11, 2019",POR,CHO,Portland Trail Blazers,Charlotte Hornets,127,96,31,Home,97.9,True,2019
+201901130DEN,"Sun, Jan 13, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,116,113,3,Home,95.4,True,2019
+201901140SAC,"Mon, Jan 14, 2019",SAC,POR,Sacramento Kings,Portland Trail Blazers,115,107,8,Home,98.3,True,2019
+201901160POR,"Wed, Jan 16, 2019",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,129,112,17,Home,92.6,True,2019
+201901220OKC,"Tue, Jan 22, 2019",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,123,114,9,Home,99.0,True,2019
+201901240PHO,"Thu, Jan 24, 2019",PHO,POR,Phoenix Suns,Portland Trail Blazers,106,120,-14,Home,102.7,True,2019
+201901260POR,"Sat, Jan 26, 2019",POR,ATL,Portland Trail Blazers,Atlanta Hawks,120,111,9,Home,99.3,True,2019
+201902050POR,"Tue, Feb 5, 2019",POR,MIA,Portland Trail Blazers,Miami Heat,108,118,-10,Home,97.9,True,2019
+201902070POR,"Thu, Feb 7, 2019",POR,SAS,Portland Trail Blazers,San Antonio Spurs,127,118,9,Home,102.1,True,2019
+201902100DAL,"Sun, Feb 10, 2019",DAL,POR,Dallas Mavericks,Portland Trail Blazers,102,101,1,Home,97.5,True,2019
+201902110OKC,"Mon, Feb 11, 2019",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,120,111,9,Home,102.8,True,2019
+201902130POR,"Wed, Feb 13, 2019",POR,GSW,Portland Trail Blazers,Golden State Warriors,129,107,22,Home,92.3,True,2019
+201902210BRK,"Thu, Feb 21, 2019",BRK,POR,Brooklyn Nets,Portland Trail Blazers,99,113,-14,Home,101.9,True,2019
+201902230PHI,"Sat, Feb 23, 2019",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,115,130,-15,Home,100.0,True,2019
+201902250CLE,"Mon, Feb 25, 2019",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,110,123,-13,Home,92.8,True,2019
+201902270BOS,"Wed, Feb 27, 2019",BOS,POR,Boston Celtics,Portland Trail Blazers,92,97,-5,Home,95.1,True,2019
+201903010TOR,"Fri, Mar 1, 2019",TOR,POR,Toronto Raptors,Portland Trail Blazers,119,117,2,Home,100.4,True,2019
+201903030CHO,"Sun, Mar 3, 2019",CHO,POR,Charlotte Hornets,Portland Trail Blazers,108,118,-10,Home,99.3,True,2019
+201903050MEM,"Tue, Mar 5, 2019",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,120,111,9,Home,101.4,True,2019
+201903070POR,"Thu, Mar 7, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,121,129,-8,Home,102.3,True,2019
+201903090POR,"Sat, Mar 9, 2019",POR,PHO,Portland Trail Blazers,Phoenix Suns,127,120,7,Home,105.1,True,2019
+201903160SAS,"Sat, Mar 16, 2019",SAS,POR,San Antonio Spurs,Portland Trail Blazers,108,103,5,Home,97.4,True,2019
+201903180POR,"Mon, Mar 18, 2019",POR,IND,Portland Trail Blazers,Indiana Pacers,106,98,8,Home,92.1,True,2019
+201903200POR,"Wed, Mar 20, 2019",POR,DAL,Portland Trail Blazers,Dallas Mavericks,126,118,8,Home,100.9,True,2019
+201903230POR,"Sat, Mar 23, 2019",POR,DET,Portland Trail Blazers,Detroit Pistons,117,112,5,Home,89.3,True,2019
+201903250POR,"Mon, Mar 25, 2019",POR,BRK,Portland Trail Blazers,Brooklyn Nets,148,144,4,Home,99.1,True,2019
+201903270CHI,"Wed, Mar 27, 2019",CHI,POR,Chicago Bulls,Portland Trail Blazers,98,118,-20,Home,90.0,True,2019
+201903290ATL,"Fri, Mar 29, 2019",ATL,POR,Atlanta Hawks,Portland Trail Blazers,98,118,-20,Home,100.8,True,2019
+201903300DET,"Sat, Mar 30, 2019",DET,POR,Detroit Pistons,Portland Trail Blazers,99,90,9,Home,99.6,True,2019
+201904010MIN,"Mon, Apr 1, 2019",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,122,132,-10,Home,99.9,True,2019
+201904030POR,"Wed, Apr 3, 2019",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,116,89,27,Home,96.4,True,2019
+201904050DEN,"Fri, Apr 5, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,119,110,9,Home,92.5,True,2019
+201904070POR,"Sun, Apr 7, 2019",POR,DEN,Portland Trail Blazers,Denver Nuggets,115,108,7,Home,99.1,True,2019
+201904100POR,"Wed, Apr 10, 2019",POR,SAC,Portland Trail Blazers,Sacramento Kings,136,131,5,Home,97.4,True,2019
+201904140POR,"Sun, Apr 14, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,104,99,5,Home,98.4,True,2019
+201904160POR,"Tue, Apr 16, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,114,94,20,Home,100.3,True,2019
+201904190OKC,"Fri, Apr 19, 2019",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,120,108,12,Home,97.6,True,2019
+201904210OKC,"Sun, Apr 21, 2019",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,98,111,-13,Home,102.3,True,2019
+201904230POR,"Tue, Apr 23, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,118,115,3,Home,99.6,True,2019
+201904290DEN,"Mon, Apr 29, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,121,113,8,Home,97.6,True,2019
+201905010DEN,"Wed, May 1, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,90,97,-7,Home,93.3,True,2019
+201905030POR,"Fri, May 3, 2019",POR,DEN,Portland Trail Blazers,Denver Nuggets,140,137,3,Home,84.8,True,2019
+201905050POR,"Sun, May 5, 2019",POR,DEN,Portland Trail Blazers,Denver Nuggets,112,116,-4,Home,92.4,True,2019
+201905070DEN,"Tue, May 7, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,124,98,26,Home,100.1,True,2019
+201905090POR,"Thu, May 9, 2019",POR,DEN,Portland Trail Blazers,Denver Nuggets,119,108,11,Home,90.7,True,2019
+201905120DEN,"Sun, May 12, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,96,100,-4,Home,94.1,True,2019
+201905140GSW,"Tue, May 14, 2019",GSW,POR,Golden State Warriors,Portland Trail Blazers,116,94,22,Home,95.3,True,2019
+201905160GSW,"Thu, May 16, 2019",GSW,POR,Golden State Warriors,Portland Trail Blazers,114,111,3,Home,95.6,True,2019
+201905180POR,"Sat, May 18, 2019",POR,GSW,Portland Trail Blazers,Golden State Warriors,99,110,-11,Home,98.2,True,2019
+201905200POR,"Mon, May 20, 2019",POR,GSW,Portland Trail Blazers,Golden State Warriors,117,119,-2,Home,95.3,True,2019
+201810170DET,"Wed, Oct 17, 2018",DET,BRK,Detroit Pistons,Brooklyn Nets,103,100,3,Home,100.0,True,2019
+201810190BRK,"Fri, Oct 19, 2018",BRK,NYK,Brooklyn Nets,New York Knicks,107,105,2,Home,93.8,True,2019
+201810200IND,"Sat, Oct 20, 2018",IND,BRK,Indiana Pacers,Brooklyn Nets,132,112,20,Home,101.9,True,2019
+201810240CLE,"Wed, Oct 24, 2018",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,86,102,-16,Home,95.0,True,2019
+201810280BRK,"Sun, Oct 28, 2018",BRK,GSW,Brooklyn Nets,Golden State Warriors,114,120,-6,Home,99.7,True,2019
+201810290NYK,"Mon, Oct 29, 2018",NYK,BRK,New York Knicks,Brooklyn Nets,115,96,19,Home,90.5,True,2019
+201810310BRK,"Wed, Oct 31, 2018",BRK,DET,Brooklyn Nets,Detroit Pistons,120,119,1,Home,99.1,True,2019
+201811040BRK,"Sun, Nov 4, 2018",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,122,97,25,Home,101.2,True,2019
+201811060PHO,"Tue, Nov 6, 2018",PHO,BRK,Phoenix Suns,Brooklyn Nets,82,104,-22,Home,97.3,True,2019
+201811090DEN,"Fri, Nov 9, 2018",DEN,BRK,Denver Nuggets,Brooklyn Nets,110,112,-2,Home,97.8,True,2019
+201811100GSW,"Sat, Nov 10, 2018",GSW,BRK,Golden State Warriors,Brooklyn Nets,116,100,16,Home,92.3,True,2019
+201811120MIN,"Mon, Nov 12, 2018",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,120,113,7,Home,103.4,True,2019
+201811140BRK,"Wed, Nov 14, 2018",BRK,MIA,Brooklyn Nets,Miami Heat,107,120,-13,Home,106.9,True,2019
+201811160WAS,"Fri, Nov 16, 2018",WAS,BRK,Washington Wizards,Brooklyn Nets,104,115,-11,Home,100.4,True,2019
+201811200MIA,"Tue, Nov 20, 2018",MIA,BRK,Miami Heat,Brooklyn Nets,92,104,-12,Home,97.7,True,2019
+201811210DAL,"Wed, Nov 21, 2018",DAL,BRK,Dallas Mavericks,Brooklyn Nets,119,113,6,Home,98.5,True,2019
+201811230BRK,"Fri, Nov 23, 2018",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,102,112,-10,Home,95.7,True,2019
+201811250BRK,"Sun, Nov 25, 2018",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,125,127,-2,Home,100.3,True,2019
+201811300BRK,"Fri, Nov 30, 2018",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,125,131,-6,Home,92.5,True,2019
+201812010WAS,"Sat, Dec 1, 2018",WAS,BRK,Washington Wizards,Brooklyn Nets,102,88,14,Home,96.0,True,2019
+201812030BRK,"Mon, Dec 3, 2018",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,97,99,-2,Home,91.3,True,2019
+201812050BRK,"Wed, Dec 5, 2018",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,112,114,-2,Home,102.5,True,2019
+201812070BRK,"Fri, Dec 7, 2018",BRK,TOR,Brooklyn Nets,Toronto Raptors,106,105,1,Home,96.6,True,2019
+201812080NYK,"Sat, Dec 8, 2018",NYK,BRK,New York Knicks,Brooklyn Nets,104,112,-8,Home,96.7,True,2019
+201812120PHI,"Wed, Dec 12, 2018",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,124,127,-3,Home,101.4,True,2019
+201812140BRK,"Fri, Dec 14, 2018",BRK,WAS,Brooklyn Nets,Washington Wizards,125,118,7,Home,97.0,True,2019
+201812160BRK,"Sun, Dec 16, 2018",BRK,ATL,Brooklyn Nets,Atlanta Hawks,144,127,17,Home,101.2,True,2019
+201812190CHI,"Wed, Dec 19, 2018",CHI,BRK,Chicago Bulls,Brooklyn Nets,93,96,-3,Home,90.7,True,2019
+201812210BRK,"Fri, Dec 21, 2018",BRK,IND,Brooklyn Nets,Indiana Pacers,106,114,-8,Home,92.8,True,2019
+201812230BRK,"Sun, Dec 23, 2018",BRK,PHO,Brooklyn Nets,Phoenix Suns,111,103,8,Home,98.3,True,2019
+201812260BRK,"Wed, Dec 26, 2018",BRK,CHO,Brooklyn Nets,Charlotte Hornets,134,132,2,Home,97.3,True,2019
+201812280CHO,"Fri, Dec 28, 2018",CHO,BRK,Charlotte Hornets,Brooklyn Nets,100,87,13,Home,95.8,True,2019
+201812290MIL,"Sat, Dec 29, 2018",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,129,115,14,Home,103.6,True,2019
+201901040MEM,"Fri, Jan 4, 2019",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,100,109,-9,Home,101.2,True,2019
+201901060CHI,"Sun, Jan 6, 2019",CHI,BRK,Chicago Bulls,Brooklyn Nets,100,117,-17,Home,93.6,True,2019
+201901070BOS,"Mon, Jan 7, 2019",BOS,BRK,Boston Celtics,Brooklyn Nets,116,95,21,Home,102.5,True,2019
+201901090BRK,"Wed, Jan 9, 2019",BRK,ATL,Brooklyn Nets,Atlanta Hawks,116,100,16,Home,104.8,True,2019
+201901110TOR,"Fri, Jan 11, 2019",TOR,BRK,Toronto Raptors,Brooklyn Nets,122,105,17,Home,108.6,True,2019
+201901140BRK,"Mon, Jan 14, 2019",BRK,BOS,Brooklyn Nets,Boston Celtics,109,102,7,Home,98.3,True,2019
+201901180ORL,"Fri, Jan 18, 2019",ORL,BRK,Orlando Magic,Brooklyn Nets,115,117,-2,Home,100.9,True,2019
+201901210BRK,"Mon, Jan 21, 2019",BRK,SAC,Brooklyn Nets,Sacramento Kings,123,94,29,Home,100.7,True,2019
+201901230BRK,"Wed, Jan 23, 2019",BRK,ORL,Brooklyn Nets,Orlando Magic,114,110,4,Home,100.4,True,2019
+201901250BRK,"Fri, Jan 25, 2019",BRK,NYK,Brooklyn Nets,New York Knicks,109,99,10,Home,99.6,True,2019
+201901280BOS,"Mon, Jan 28, 2019",BOS,BRK,Boston Celtics,Brooklyn Nets,112,104,8,Home,103.4,True,2019
+201901290BRK,"Tue, Jan 29, 2019",BRK,CHI,Brooklyn Nets,Chicago Bulls,122,117,5,Home,111.5,True,2019
+201901310SAS,"Thu, Jan 31, 2019",SAS,BRK,San Antonio Spurs,Brooklyn Nets,117,114,3,Home,106.9,True,2019
+201902020ORL,"Sat, Feb 2, 2019",ORL,BRK,Orlando Magic,Brooklyn Nets,102,89,13,Home,105.1,True,2019
+201902040BRK,"Mon, Feb 4, 2019",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,94,113,-19,Home,104.8,True,2019
+201902060BRK,"Wed, Feb 6, 2019",BRK,DEN,Brooklyn Nets,Denver Nuggets,135,130,5,Home,108.7,True,2019
+201902080BRK,"Fri, Feb 8, 2019",BRK,CHI,Brooklyn Nets,Chicago Bulls,106,125,-19,Home,102.6,True,2019
+201902110TOR,"Mon, Feb 11, 2019",TOR,BRK,Toronto Raptors,Brooklyn Nets,127,125,2,Home,104.7,True,2019
+201902130CLE,"Wed, Feb 13, 2019",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,139,148,-9,Home,94.2,True,2019
+201902230CHO,"Sat, Feb 23, 2019",CHO,BRK,Charlotte Hornets,Brooklyn Nets,115,117,-2,Home,95.9,True,2019
+201902250BRK,"Mon, Feb 25, 2019",BRK,SAS,Brooklyn Nets,San Antonio Spurs,101,85,16,Home,97.7,True,2019
+201902270BRK,"Wed, Feb 27, 2019",BRK,WAS,Brooklyn Nets,Washington Wizards,116,125,-9,Home,108.1,True,2019
+201903010BRK,"Fri, Mar 1, 2019",BRK,CHO,Brooklyn Nets,Charlotte Hornets,112,123,-11,Home,100.9,True,2019
+201903020MIA,"Sat, Mar 2, 2019",MIA,BRK,Miami Heat,Brooklyn Nets,117,88,29,Home,98.0,True,2019
+201903040BRK,"Mon, Mar 4, 2019",BRK,DAL,Brooklyn Nets,Dallas Mavericks,127,88,39,Home,102.5,True,2019
+201903060BRK,"Wed, Mar 6, 2019",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,113,107,6,Home,103.4,True,2019
+201903090ATL,"Sat, Mar 9, 2019",ATL,BRK,Atlanta Hawks,Brooklyn Nets,112,114,-2,Home,105.7,True,2019
+201903110BRK,"Mon, Mar 11, 2019",BRK,DET,Brooklyn Nets,Detroit Pistons,103,75,28,Home,97.4,True,2019
+201903130OKC,"Wed, Mar 13, 2019",OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,108,96,12,Home,97.7,True,2019
+201903190SAC,"Tue, Mar 19, 2019",SAC,BRK,Sacramento Kings,Brooklyn Nets,121,123,-2,Home,107.8,True,2019
+201903280PHI,"Thu, Mar 28, 2019",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,123,110,13,Home,102.1,True,2019
+201903300BRK,"Sat, Mar 30, 2019",BRK,BOS,Brooklyn Nets,Boston Celtics,110,96,14,Home,99.2,True,2019
+201904010BRK,"Mon, Apr 1, 2019",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,121,131,-10,Home,112.5,True,2019
+201904030BRK,"Wed, Apr 3, 2019",BRK,TOR,Brooklyn Nets,Toronto Raptors,105,115,-10,Home,99.0,True,2019
+201904060MIL,"Sat, Apr 6, 2019",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,128,133,-5,Home,103.5,True,2019
+201904070IND,"Sun, Apr 7, 2019",IND,BRK,Indiana Pacers,Brooklyn Nets,96,108,-12,Home,93.7,True,2019
+201904100BRK,"Wed, Apr 10, 2019",BRK,MIA,Brooklyn Nets,Miami Heat,113,94,19,Home,107.3,True,2019
+201904130PHI,"Sat, Apr 13, 2019",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,102,111,-9,Home,98.0,True,2019
+201904150PHI,"Mon, Apr 15, 2019",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,145,123,22,Home,102.8,True,2019
+201904180BRK,"Thu, Apr 18, 2019",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,115,131,-16,Home,108.1,True,2019
+201904200BRK,"Sat, Apr 20, 2019",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,108,112,-4,Home,101.8,True,2019
+201904230PHI,"Tue, Apr 23, 2019",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,122,100,22,Home,108.0,True,2019
+201810180PHI,"Thu, Oct 18, 2018",PHI,CHI,Philadelphia 76ers,Chicago Bulls,127,108,19,Home,108.4,True,2019
+201810200CHI,"Sat, Oct 20, 2018",CHI,DET,Chicago Bulls,Detroit Pistons,116,118,-2,Home,99.9,True,2019
+201810220DAL,"Mon, Oct 22, 2018",DAL,CHI,Dallas Mavericks,Chicago Bulls,115,109,6,Home,98.5,True,2019
+201810240CHI,"Wed, Oct 24, 2018",CHI,CHO,Chicago Bulls,Charlotte Hornets,112,110,2,Home,93.9,True,2019
+201810260CHO,"Fri, Oct 26, 2018",CHO,CHI,Charlotte Hornets,Chicago Bulls,135,106,29,Home,97.4,True,2019
+201810270ATL,"Sat, Oct 27, 2018",ATL,CHI,Atlanta Hawks,Chicago Bulls,85,97,-12,Home,101.7,True,2019
+201810290CHI,"Mon, Oct 29, 2018",CHI,GSW,Chicago Bulls,Golden State Warriors,124,149,-25,Home,104.6,True,2019
+201810310CHI,"Wed, Oct 31, 2018",CHI,DEN,Chicago Bulls,Denver Nuggets,107,108,-1,Home,92.0,True,2019
+201811020CHI,"Fri, Nov 2, 2018",CHI,IND,Chicago Bulls,Indiana Pacers,105,107,-2,Home,94.1,True,2019
+201811050NYK,"Mon, Nov 5, 2018",NYK,CHI,New York Knicks,Chicago Bulls,115,116,-1,Home,92.5,True,2019
+201811100CHI,"Sat, Nov 10, 2018",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,99,98,1,Home,94.4,True,2019
+201811120CHI,"Mon, Nov 12, 2018",CHI,DAL,Chicago Bulls,Dallas Mavericks,98,103,-5,Home,104.0,True,2019
+201811140BOS,"Wed, Nov 14, 2018",BOS,CHI,Boston Celtics,Chicago Bulls,111,82,29,Home,101.0,True,2019
+201811160MIL,"Fri, Nov 16, 2018",MIL,CHI,Milwaukee Bucks,Chicago Bulls,123,104,19,Home,104.8,True,2019
+201811170CHI,"Sat, Nov 17, 2018",CHI,TOR,Chicago Bulls,Toronto Raptors,83,122,-39,Home,107.8,True,2019
+201811210CHI,"Wed, Nov 21, 2018",CHI,PHO,Chicago Bulls,Phoenix Suns,124,116,8,Home,105.2,True,2019
+201811230CHI,"Fri, Nov 23, 2018",CHI,MIA,Chicago Bulls,Miami Heat,96,103,-7,Home,103.8,True,2019
+201811240MIN,"Sat, Nov 24, 2018",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,111,96,15,Home,99.8,True,2019
+201811260CHI,"Mon, Nov 26, 2018",CHI,SAS,Chicago Bulls,San Antonio Spurs,107,108,-1,Home,99.1,True,2019
+201811280MIL,"Wed, Nov 28, 2018",MIL,CHI,Milwaukee Bucks,Chicago Bulls,116,113,3,Home,101.0,True,2019
+201811300DET,"Fri, Nov 30, 2018",DET,CHI,Detroit Pistons,Chicago Bulls,107,88,19,Home,97.3,True,2019
+201812040IND,"Tue, Dec 4, 2018",IND,CHI,Indiana Pacers,Chicago Bulls,96,90,6,Home,98.2,True,2019
+201812070CHI,"Fri, Dec 7, 2018",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,114,112,2,Home,108.0,True,2019
+201812080CHI,"Sat, Dec 8, 2018",CHI,BOS,Chicago Bulls,Boston Celtics,77,133,-56,Home,92.3,True,2019
+201812100CHI,"Mon, Dec 10, 2018",CHI,SAC,Chicago Bulls,Sacramento Kings,89,108,-19,Home,99.1,True,2019
+201812130ORL,"Thu, Dec 13, 2018",ORL,CHI,Orlando Magic,Chicago Bulls,97,91,6,Home,95.9,True,2019
+201812150SAS,"Sat, Dec 15, 2018",SAS,CHI,San Antonio Spurs,Chicago Bulls,93,98,-5,Home,91.0,True,2019
+201812170OKC,"Mon, Dec 17, 2018",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,121,96,25,Home,101.2,True,2019
+201812210CHI,"Fri, Dec 21, 2018",CHI,ORL,Chicago Bulls,Orlando Magic,90,80,10,Home,85.8,True,2019
+201812230CLE,"Sun, Dec 23, 2018",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,92,112,-20,Home,90.0,True,2019
+201812260CHI,"Wed, Dec 26, 2018",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,94,119,-25,Home,97.9,True,2019
+201812280WAS,"Fri, Dec 28, 2018",WAS,CHI,Washington Wizards,Chicago Bulls,92,101,-9,Home,92.9,True,2019
+201812300TOR,"Sun, Dec 30, 2018",TOR,CHI,Toronto Raptors,Chicago Bulls,95,89,6,Home,93.1,True,2019
+201901020CHI,"Wed, Jan 2, 2019",CHI,ORL,Chicago Bulls,Orlando Magic,84,112,-28,Home,92.8,True,2019
+201901040CHI,"Fri, Jan 4, 2019",CHI,IND,Chicago Bulls,Indiana Pacers,116,119,-3,Home,93.3,True,2019
+201901110GSW,"Fri, Jan 11, 2019",GSW,CHI,Golden State Warriors,Chicago Bulls,146,109,37,Home,100.3,True,2019
+201901170DEN,"Thu, Jan 17, 2019",DEN,CHI,Denver Nuggets,Chicago Bulls,135,105,30,Home,93.8,True,2019
+201901190CHI,"Sat, Jan 19, 2019",CHI,MIA,Chicago Bulls,Miami Heat,103,117,-14,Home,98.7,True,2019
+201901210CLE,"Mon, Jan 21, 2019",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,88,104,-16,Home,96.6,True,2019
+201901230CHI,"Wed, Jan 23, 2019",CHI,ATL,Chicago Bulls,Atlanta Hawks,101,121,-20,Home,97.8,True,2019
+201901270CHI,"Sun, Jan 27, 2019",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,101,104,-3,Home,94.4,True,2019
+201901300MIA,"Wed, Jan 30, 2019",MIA,CHI,Miami Heat,Chicago Bulls,89,105,-16,Home,91.7,True,2019
+201902020CHO,"Sat, Feb 2, 2019",CHO,CHI,Charlotte Hornets,Chicago Bulls,125,118,7,Home,90.8,True,2019
+201902090CHI,"Sat, Feb 9, 2019",CHI,WAS,Chicago Bulls,Washington Wizards,125,134,-9,Home,105.3,True,2019
+201902110CHI,"Mon, Feb 11, 2019",CHI,MIL,Chicago Bulls,Milwaukee Bucks,99,112,-13,Home,104.3,True,2019
+201902130CHI,"Wed, Feb 13, 2019",CHI,MEM,Chicago Bulls,Memphis Grizzlies,122,110,12,Home,96.5,True,2019
+201902220ORL,"Fri, Feb 22, 2019",ORL,CHI,Orlando Magic,Chicago Bulls,109,110,-1,Home,97.3,True,2019
+201902230CHI,"Sat, Feb 23, 2019",CHI,BOS,Chicago Bulls,Boston Celtics,126,116,10,Home,98.4,True,2019
+201902250CHI,"Mon, Feb 25, 2019",CHI,MIL,Chicago Bulls,Milwaukee Bucks,106,117,-11,Home,99.3,True,2019
+201902270MEM,"Wed, Feb 27, 2019",MEM,CHI,Memphis Grizzlies,Chicago Bulls,107,109,-2,Home,100.9,True,2019
+201903010ATL,"Fri, Mar 1, 2019",ATL,CHI,Atlanta Hawks,Chicago Bulls,161,168,-7,Home,100.6,True,2019
+201903030CHI,"Sun, Mar 3, 2019",CHI,ATL,Chicago Bulls,Atlanta Hawks,118,123,-5,Home,102.6,True,2019
+201903050IND,"Tue, Mar 5, 2019",IND,CHI,Indiana Pacers,Chicago Bulls,105,96,9,Home,94.1,True,2019
+201903060CHI,"Wed, Mar 6, 2019",CHI,PHI,Chicago Bulls,Philadelphia 76ers,108,107,1,Home,97.7,True,2019
+201903080CHI,"Fri, Mar 8, 2019",CHI,DET,Chicago Bulls,Detroit Pistons,104,112,-8,Home,98.5,True,2019
+201903100DET,"Sun, Mar 10, 2019",DET,CHI,Detroit Pistons,Chicago Bulls,131,108,23,Home,95.8,True,2019
+201903170SAC,"Sun, Mar 17, 2019",SAC,CHI,Sacramento Kings,Chicago Bulls,129,102,27,Home,102.4,True,2019
+201903180PHO,"Mon, Mar 18, 2019",PHO,CHI,Phoenix Suns,Chicago Bulls,101,116,-15,Home,98.1,True,2019
+201903200CHI,"Wed, Mar 20, 2019",CHI,WAS,Chicago Bulls,Washington Wizards,126,120,6,Home,96.5,True,2019
+201903260TOR,"Tue, Mar 26, 2019",TOR,CHI,Toronto Raptors,Chicago Bulls,112,103,9,Home,104.5,True,2019
+201903300CHI,"Sat, Mar 30, 2019",CHI,TOR,Chicago Bulls,Toronto Raptors,101,124,-23,Home,99.7,True,2019
+201904010NYK,"Mon, Apr 1, 2019",NYK,CHI,New York Knicks,Chicago Bulls,113,105,8,Home,94.8,True,2019
+201904030WAS,"Wed, Apr 3, 2019",WAS,CHI,Washington Wizards,Chicago Bulls,114,115,-1,Home,107.8,True,2019
+201904060CHI,"Sat, Apr 6, 2019",CHI,PHI,Chicago Bulls,Philadelphia 76ers,96,116,-20,Home,96.5,True,2019
+201904090CHI,"Tue, Apr 9, 2019",CHI,NYK,Chicago Bulls,New York Knicks,86,96,-10,Home,95.4,True,2019
+201904100PHI,"Wed, Apr 10, 2019",PHI,CHI,Philadelphia 76ers,Chicago Bulls,125,109,16,Home,96.3,True,2019
+201810170IND,"Wed, Oct 17, 2018",IND,MEM,Indiana Pacers,Memphis Grizzlies,111,83,28,Home,93.5,True,2019
+201810190MIL,"Fri, Oct 19, 2018",MIL,IND,Milwaukee Bucks,Indiana Pacers,118,101,17,Home,105.0,True,2019
+201810220MIN,"Mon, Oct 22, 2018",MIN,IND,Minnesota Timberwolves,Indiana Pacers,101,91,10,Home,99.3,True,2019
+201810240SAS,"Wed, Oct 24, 2018",SAS,IND,San Antonio Spurs,Indiana Pacers,96,116,-20,Home,92.9,True,2019
+201810270CLE,"Sat, Oct 27, 2018",CLE,IND,Cleveland Cavaliers,Indiana Pacers,107,119,-12,Home,91.6,True,2019
+201810310NYK,"Wed, Oct 31, 2018",NYK,IND,New York Knicks,Indiana Pacers,101,107,-6,Home,94.1,True,2019
+201811030IND,"Sat, Nov 3, 2018",IND,BOS,Indiana Pacers,Boston Celtics,102,101,1,Home,96.6,True,2019
+201811070IND,"Wed, Nov 7, 2018",IND,PHI,Indiana Pacers,Philadelphia 76ers,94,100,-6,Home,98.5,True,2019
+201811090MIA,"Fri, Nov 9, 2018",MIA,IND,Miami Heat,Indiana Pacers,102,110,-8,Home,102.9,True,2019
+201811160IND,"Fri, Nov 16, 2018",IND,MIA,Indiana Pacers,Miami Heat,99,91,8,Home,100.0,True,2019
+201811170IND,"Sat, Nov 17, 2018",IND,ATL,Indiana Pacers,Atlanta Hawks,97,89,8,Home,107.4,True,2019
+201811210CHO,"Wed, Nov 21, 2018",CHO,IND,Charlotte Hornets,Indiana Pacers,127,109,18,Home,93.6,True,2019
+201811230IND,"Fri, Nov 23, 2018",IND,SAS,Indiana Pacers,San Antonio Spurs,100,111,-11,Home,100.0,True,2019
+201811270PHO,"Tue, Nov 27, 2018",PHO,IND,Phoenix Suns,Indiana Pacers,104,109,-5,Home,94.4,True,2019
+201812010SAC,"Sat, Dec 1, 2018",SAC,IND,Sacramento Kings,Indiana Pacers,111,110,1,Home,106.6,True,2019
+201812070ORL,"Fri, Dec 7, 2018",ORL,IND,Orlando Magic,Indiana Pacers,90,112,-22,Home,97.8,True,2019
+201812080IND,"Sat, Dec 8, 2018",IND,SAC,Indiana Pacers,Sacramento Kings,107,97,10,Home,96.5,True,2019
+201812100IND,"Mon, Dec 10, 2018",IND,WAS,Indiana Pacers,Washington Wizards,109,101,8,Home,101.6,True,2019
+201812120IND,"Wed, Dec 12, 2018",IND,MIL,Indiana Pacers,Milwaukee Bucks,113,97,16,Home,99.3,True,2019
+201812140PHI,"Fri, Dec 14, 2018",PHI,IND,Philadelphia 76ers,Indiana Pacers,101,113,-12,Home,97.0,True,2019
+201812160IND,"Sun, Dec 16, 2018",IND,NYK,Indiana Pacers,New York Knicks,110,99,11,Home,96.7,True,2019
+201812180IND,"Tue, Dec 18, 2018",IND,CLE,Indiana Pacers,Cleveland Cavaliers,91,92,-1,Home,93.1,True,2019
+201812190TOR,"Wed, Dec 19, 2018",TOR,IND,Toronto Raptors,Indiana Pacers,99,96,3,Home,97.1,True,2019
+201812230IND,"Sun, Dec 23, 2018",IND,WAS,Indiana Pacers,Washington Wizards,105,89,16,Home,100.5,True,2019
+201812260ATL,"Wed, Dec 26, 2018",ATL,IND,Atlanta Hawks,Indiana Pacers,121,129,-8,Home,102.3,True,2019
+201812280IND,"Fri, Dec 28, 2018",IND,DET,Indiana Pacers,Detroit Pistons,125,88,37,Home,99.9,True,2019
+201812310IND,"Mon, Dec 31, 2018",IND,ATL,Indiana Pacers,Atlanta Hawks,116,108,8,Home,96.9,True,2019
+201901060TOR,"Sun, Jan 6, 2019",TOR,IND,Toronto Raptors,Indiana Pacers,121,105,16,Home,99.7,True,2019
+201901080CLE,"Tue, Jan 8, 2019",CLE,IND,Cleveland Cavaliers,Indiana Pacers,115,123,-8,Home,94.4,True,2019
+201901090BOS,"Wed, Jan 9, 2019",BOS,IND,Boston Celtics,Indiana Pacers,135,108,27,Home,101.3,True,2019
+201901110NYK,"Fri, Jan 11, 2019",NYK,IND,New York Knicks,Indiana Pacers,106,121,-15,Home,100.0,True,2019
+201901150IND,"Tue, Jan 15, 2019",IND,PHO,Indiana Pacers,Phoenix Suns,131,97,34,Home,108.8,True,2019
+201901170IND,"Thu, Jan 17, 2019",IND,PHI,Indiana Pacers,Philadelphia 76ers,96,120,-24,Home,98.4,True,2019
+201901190IND,"Sat, Jan 19, 2019",IND,DAL,Indiana Pacers,Dallas Mavericks,111,99,12,Home,93.2,True,2019
+201901200IND,"Sun, Jan 20, 2019",IND,CHO,Indiana Pacers,Charlotte Hornets,120,95,25,Home,99.5,True,2019
+201901230IND,"Wed, Jan 23, 2019",IND,TOR,Indiana Pacers,Toronto Raptors,110,106,4,Home,95.7,True,2019
+201901260MEM,"Sat, Jan 26, 2019",MEM,IND,Memphis Grizzlies,Indiana Pacers,106,103,3,Home,95.5,True,2019
+201901280IND,"Mon, Jan 28, 2019",IND,GSW,Indiana Pacers,Golden State Warriors,100,132,-32,Home,100.6,True,2019
+201901300WAS,"Wed, Jan 30, 2019",WAS,IND,Washington Wizards,Indiana Pacers,107,89,18,Home,92.7,True,2019
+201901310ORL,"Thu, Jan 31, 2019",ORL,IND,Orlando Magic,Indiana Pacers,107,100,7,Home,97.8,True,2019
+201902020MIA,"Sat, Feb 2, 2019",MIA,IND,Miami Heat,Indiana Pacers,88,95,-7,Home,92.8,True,2019
+201902090IND,"Sat, Feb 9, 2019",IND,CLE,Indiana Pacers,Cleveland Cavaliers,105,90,15,Home,89.0,True,2019
+201902110IND,"Mon, Feb 11, 2019",IND,CHO,Indiana Pacers,Charlotte Hornets,99,90,9,Home,85.3,True,2019
+201902130IND,"Wed, Feb 13, 2019",IND,MIL,Indiana Pacers,Milwaukee Bucks,97,106,-9,Home,98.7,True,2019
+201902230WAS,"Sat, Feb 23, 2019",WAS,IND,Washington Wizards,Indiana Pacers,112,119,-7,Home,101.4,True,2019
+201902250DET,"Mon, Feb 25, 2019",DET,IND,Detroit Pistons,Indiana Pacers,113,109,4,Home,92.8,True,2019
+201902270DAL,"Wed, Feb 27, 2019",DAL,IND,Dallas Mavericks,Indiana Pacers,110,101,9,Home,93.7,True,2019
+201902280IND,"Thu, Feb 28, 2019",IND,MIN,Indiana Pacers,Minnesota Timberwolves,122,115,7,Home,97.1,True,2019
+201903020IND,"Sat, Mar 2, 2019",IND,ORL,Indiana Pacers,Orlando Magic,112,117,-5,Home,94.9,True,2019
+201903070MIL,"Thu, Mar 7, 2019",MIL,IND,Milwaukee Bucks,Indiana Pacers,117,98,19,Home,99.8,True,2019
+201903100PHI,"Sun, Mar 10, 2019",PHI,IND,Philadelphia 76ers,Indiana Pacers,106,89,17,Home,97.8,True,2019
+201903120IND,"Tue, Mar 12, 2019",IND,NYK,Indiana Pacers,New York Knicks,103,98,5,Home,97.5,True,2019
+201903140IND,"Thu, Mar 14, 2019",IND,OKC,Indiana Pacers,Oklahoma City Thunder,108,106,2,Home,102.4,True,2019
+201903160DEN,"Sat, Mar 16, 2019",DEN,IND,Denver Nuggets,Indiana Pacers,102,100,2,Home,89.9,True,2019
+201903210GSW,"Thu, Mar 21, 2019",GSW,IND,Golden State Warriors,Indiana Pacers,112,89,23,Home,99.3,True,2019
+201903240IND,"Sun, Mar 24, 2019",IND,DEN,Indiana Pacers,Denver Nuggets,124,88,36,Home,97.7,True,2019
+201903270OKC,"Wed, Mar 27, 2019",OKC,IND,Oklahoma City Thunder,Indiana Pacers,107,99,8,Home,96.0,True,2019
+201903290BOS,"Fri, Mar 29, 2019",BOS,IND,Boston Celtics,Indiana Pacers,114,112,2,Home,97.2,True,2019
+201903300IND,"Sat, Mar 30, 2019",IND,ORL,Indiana Pacers,Orlando Magic,116,121,-5,Home,96.7,True,2019
+201904010IND,"Mon, Apr 1, 2019",IND,DET,Indiana Pacers,Detroit Pistons,111,102,9,Home,94.2,True,2019
+201904030DET,"Wed, Apr 3, 2019",DET,IND,Detroit Pistons,Indiana Pacers,89,108,-19,Home,97.5,True,2019
+201904050IND,"Fri, Apr 5, 2019",IND,BOS,Indiana Pacers,Boston Celtics,97,117,-20,Home,100.5,True,2019
+201904100ATL,"Wed, Apr 10, 2019",ATL,IND,Atlanta Hawks,Indiana Pacers,134,135,-1,Home,107.7,True,2019
+201904140BOS,"Sun, Apr 14, 2019",BOS,IND,Boston Celtics,Indiana Pacers,84,74,10,Home,94.8,True,2019
+201904170BOS,"Wed, Apr 17, 2019",BOS,IND,Boston Celtics,Indiana Pacers,99,91,8,Home,92.4,True,2019
+201904190IND,"Fri, Apr 19, 2019",IND,BOS,Indiana Pacers,Boston Celtics,96,104,-8,Home,91.4,True,2019
+201904210IND,"Sun, Apr 21, 2019",IND,BOS,Indiana Pacers,Boston Celtics,106,110,-4,Home,98.9,True,2019
+201810160GSW,"Tue, Oct 16, 2018",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,108,100,8,Home,102.3,True,2019
+201810210OKC,"Sun, Oct 21, 2018",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,120,131,-11,Home,110.0,True,2019
+201810250OKC,"Thu, Oct 25, 2018",OKC,BOS,Oklahoma City Thunder,Boston Celtics,95,101,-6,Home,100.0,True,2019
+201810280OKC,"Sun, Oct 28, 2018",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,117,110,7,Home,105.9,True,2019
+201811010CHO,"Thu, Nov 1, 2018",CHO,OKC,Charlotte Hornets,Oklahoma City Thunder,107,111,-4,Home,103.5,True,2019
+201811020WAS,"Fri, Nov 2, 2018",WAS,OKC,Washington Wizards,Oklahoma City Thunder,111,134,-23,Home,102.2,True,2019
+201811070CLE,"Wed, Nov 7, 2018",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,86,95,-9,Home,98.5,True,2019
+201811100DAL,"Sat, Nov 10, 2018",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,111,96,15,Home,94.0,True,2019
+201811120OKC,"Mon, Nov 12, 2018",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,118,101,17,Home,96.1,True,2019
+201811140OKC,"Wed, Nov 14, 2018",OKC,NYK,Oklahoma City Thunder,New York Knicks,128,103,25,Home,102.4,True,2019
+201811170PHO,"Sat, Nov 17, 2018",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,100,110,-10,Home,99.2,True,2019
+201811190SAC,"Mon, Nov 19, 2018",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,117,113,4,Home,110.1,True,2019
+201811210GSW,"Wed, Nov 21, 2018",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,95,123,-28,Home,102.3,True,2019
+201811230OKC,"Fri, Nov 23, 2018",OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,109,104,5,Home,101.4,True,2019
+201811240OKC,"Sat, Nov 24, 2018",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,98,105,-7,Home,99.8,True,2019
+201811280OKC,"Wed, Nov 28, 2018",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,100,83,17,Home,96.3,True,2019
+201811300OKC,"Fri, Nov 30, 2018",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,124,109,15,Home,107.5,True,2019
+201812030DET,"Mon, Dec 3, 2018",DET,OKC,Detroit Pistons,Oklahoma City Thunder,83,110,-27,Home,104.2,True,2019
+201812140DEN,"Fri, Dec 14, 2018",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,109,98,11,Home,94.7,True,2019
+201812190SAC,"Wed, Dec 19, 2018",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,113,132,-19,Home,109.9,True,2019
+201812230OKC,"Sun, Dec 23, 2018",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,112,114,-2,Home,101.8,True,2019
+201812280PHO,"Fri, Dec 28, 2018",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,102,118,-16,Home,103.7,True,2019
+201812300DAL,"Sun, Dec 30, 2018",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,105,103,2,Home,103.2,True,2019
+201812310OKC,"Mon, Dec 31, 2018",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,122,102,20,Home,111.3,True,2019
+201901060OKC,"Sun, Jan 6, 2019",OKC,WAS,Oklahoma City Thunder,Washington Wizards,98,116,-18,Home,100.4,True,2019
+201901080OKC,"Tue, Jan 8, 2019",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,117,119,-2,Home,98.9,True,2019
+201901100SAS,"Thu, Jan 10, 2019",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,154,147,7,Home,100.3,True,2019
+201901120OKC,"Sat, Jan 12, 2019",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,122,112,10,Home,103.9,True,2019
+201901150ATL,"Tue, Jan 15, 2019",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,142,126,16,Home,104.9,True,2019
+201901190PHI,"Sat, Jan 19, 2019",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,115,117,-2,Home,100.8,True,2019
+201901210NYK,"Mon, Jan 21, 2019",NYK,OKC,New York Knicks,Oklahoma City Thunder,109,127,-18,Home,100.3,True,2019
+201901270OKC,"Sun, Jan 27, 2019",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,118,112,6,Home,104.8,True,2019
+201901290ORL,"Tue, Jan 29, 2019",ORL,OKC,Orlando Magic,Oklahoma City Thunder,117,126,-9,Home,101.4,True,2019
+201902010MIA,"Fri, Feb 1, 2019",MIA,OKC,Miami Heat,Oklahoma City Thunder,102,118,-16,Home,101.2,True,2019
+201902030BOS,"Sun, Feb 3, 2019",BOS,OKC,Boston Celtics,Oklahoma City Thunder,134,129,5,Home,105.2,True,2019
+201902050OKC,"Tue, Feb 5, 2019",OKC,ORL,Oklahoma City Thunder,Orlando Magic,132,122,10,Home,113.6,True,2019
+201902070OKC,"Thu, Feb 7, 2019",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,117,95,22,Home,99.7,True,2019
+201902230OKC,"Sat, Feb 23, 2019",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,116,119,-3,Home,111.0,True,2019
+201902260DEN,"Tue, Feb 26, 2019",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,121,112,9,Home,106.8,True,2019
+201902280OKC,"Thu, Feb 28, 2019",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,104,108,-4,Home,101.4,True,2019
+201903020SAS,"Sat, Mar 2, 2019",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,116,102,14,Home,99.5,True,2019
+201903030OKC,"Sun, Mar 3, 2019",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,99,95,4,Home,101.5,True,2019
+201903050MIN,"Tue, Mar 5, 2019",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,131,120,11,Home,102.3,True,2019
+201903160OKC,"Sat, Mar 16, 2019",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,88,110,-22,Home,100.6,True,2019
+201903180OKC,"Mon, Mar 18, 2019",OKC,MIA,Oklahoma City Thunder,Miami Heat,107,116,-9,Home,101.5,True,2019
+201903200OKC,"Wed, Mar 20, 2019",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,114,123,-9,Home,99.8,True,2019
+201903220TOR,"Fri, Mar 22, 2019",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,109,116,-7,Home,96.4,True,2019
+201903250MEM,"Mon, Mar 25, 2019",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,115,103,12,Home,98.1,True,2019
+201903290OKC,"Fri, Mar 29, 2019",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,105,115,-10,Home,92.8,True,2019
+201903310OKC,"Sun, Mar 31, 2019",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,103,106,-3,Home,97.5,True,2019
+201904050OKC,"Fri, Apr 5, 2019",OKC,DET,Oklahoma City Thunder,Detroit Pistons,123,110,13,Home,102.6,True,2019
+201904070MIN,"Sun, Apr 7, 2019",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,126,132,-6,Home,101.0,True,2019
+201904100MIL,"Wed, Apr 10, 2019",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,116,127,-11,Home,108.4,True,2019
+201810170SAS,"Wed, Oct 17, 2018",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,112,108,4,Home,95.8,True,2019
+201810290SAS,"Mon, Oct 29, 2018",SAS,DAL,San Antonio Spurs,Dallas Mavericks,113,108,5,Home,100.1,True,2019
+201810310PHO,"Wed, Oct 31, 2018",PHO,SAS,Phoenix Suns,San Antonio Spurs,90,120,-30,Home,102.0,True,2019
+201811040SAS,"Sun, Nov 4, 2018",SAS,ORL,San Antonio Spurs,Orlando Magic,110,117,-7,Home,95.2,True,2019
+201811070MIA,"Wed, Nov 7, 2018",MIA,SAS,Miami Heat,San Antonio Spurs,95,88,7,Home,97.1,True,2019
+201811120SAC,"Mon, Nov 12, 2018",SAC,SAS,Sacramento Kings,San Antonio Spurs,104,99,5,Home,96.7,True,2019
+201811140PHO,"Wed, Nov 14, 2018",PHO,SAS,Phoenix Suns,San Antonio Spurs,116,96,20,Home,96.8,True,2019
+201811180SAS,"Sun, Nov 18, 2018",SAS,GSW,San Antonio Spurs,Golden State Warriors,104,92,12,Home,94.9,True,2019
+201811210SAS,"Wed, Nov 21, 2018",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,103,104,-1,Home,92.3,True,2019
+201811240MIL,"Sat, Nov 24, 2018",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,135,129,6,Home,103.9,True,2019
+201811280MIN,"Wed, Nov 28, 2018",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,128,89,39,Home,97.1,True,2019
+201812110SAS,"Tue, Dec 11, 2018",SAS,PHO,San Antonio Spurs,Phoenix Suns,111,86,25,Home,96.0,True,2019
+201812170SAS,"Mon, Dec 17, 2018",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,123,96,27,Home,95.8,True,2019
+201812190ORL,"Wed, Dec 19, 2018",ORL,SAS,Orlando Magic,San Antonio Spurs,90,129,-39,Home,93.2,True,2019
+201812210SAS,"Fri, Dec 21, 2018",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,124,98,26,Home,97.9,True,2019
+201812260SAS,"Wed, Dec 26, 2018",SAS,DEN,San Antonio Spurs,Denver Nuggets,111,103,8,Home,99.8,True,2019
+201812280DEN,"Fri, Dec 28, 2018",DEN,SAS,Denver Nuggets,San Antonio Spurs,102,99,3,Home,93.5,True,2019
+201812310SAS,"Mon, Dec 31, 2018",SAS,BOS,San Antonio Spurs,Boston Celtics,120,111,9,Home,98.6,True,2019
+201901030SAS,"Thu, Jan 3, 2019",SAS,TOR,San Antonio Spurs,Toronto Raptors,125,107,18,Home,97.4,True,2019
+201901050SAS,"Sat, Jan 5, 2019",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,108,88,20,Home,99.6,True,2019
+201901070DET,"Mon, Jan 7, 2019",DET,SAS,Detroit Pistons,San Antonio Spurs,107,119,-12,Home,91.2,True,2019
+201901090MEM,"Wed, Jan 9, 2019",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,96,86,10,Home,96.9,True,2019
+201901140SAS,"Mon, Jan 14, 2019",SAS,CHO,San Antonio Spurs,Charlotte Hornets,93,108,-15,Home,94.2,True,2019
+201901160DAL,"Wed, Jan 16, 2019",DAL,SAS,Dallas Mavericks,San Antonio Spurs,101,105,-4,Home,86.0,True,2019
+201901180MIN,"Fri, Jan 18, 2019",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,113,116,-3,Home,99.3,True,2019
+201901230PHI,"Wed, Jan 23, 2019",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,122,120,2,Home,96.3,True,2019
+201901270SAS,"Sun, Jan 27, 2019",SAS,WAS,San Antonio Spurs,Washington Wizards,132,119,13,Home,100.8,True,2019
+201901290SAS,"Tue, Jan 29, 2019",SAS,PHO,San Antonio Spurs,Phoenix Suns,126,124,2,Home,102.1,True,2019
+201902040SAC,"Mon, Feb 4, 2019",SAC,SAS,Sacramento Kings,San Antonio Spurs,127,112,15,Home,98.2,True,2019
+201902060GSW,"Wed, Feb 6, 2019",GSW,SAS,Golden State Warriors,San Antonio Spurs,141,102,39,Home,101.1,True,2019
+201902120MEM,"Tue, Feb 12, 2019",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,107,108,-1,Home,96.0,True,2019
+201902220TOR,"Fri, Feb 22, 2019",TOR,SAS,Toronto Raptors,San Antonio Spurs,120,117,3,Home,100.9,True,2019
+201902240NYK,"Sun, Feb 24, 2019",NYK,SAS,New York Knicks,San Antonio Spurs,130,118,12,Home,98.4,True,2019
+201902270SAS,"Wed, Feb 27, 2019",SAS,DET,San Antonio Spurs,Detroit Pistons,105,93,12,Home,94.3,True,2019
+201903040SAS,"Mon, Mar 4, 2019",SAS,DEN,San Antonio Spurs,Denver Nuggets,104,103,1,Home,96.5,True,2019
+201903060ATL,"Wed, Mar 6, 2019",ATL,SAS,Atlanta Hawks,San Antonio Spurs,104,111,-7,Home,104.4,True,2019
+201903100SAS,"Sun, Mar 10, 2019",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,121,114,7,Home,100.5,True,2019
+201903120DAL,"Tue, Mar 12, 2019",DAL,SAS,Dallas Mavericks,San Antonio Spurs,105,112,-7,Home,94.4,True,2019
+201903150SAS,"Fri, Mar 15, 2019",SAS,NYK,San Antonio Spurs,New York Knicks,109,83,26,Home,94.7,True,2019
+201903180SAS,"Mon, Mar 18, 2019",SAS,GSW,San Antonio Spurs,Golden State Warriors,111,105,6,Home,96.7,True,2019
+201903200SAS,"Wed, Mar 20, 2019",SAS,MIA,San Antonio Spurs,Miami Heat,105,110,-5,Home,95.1,True,2019
+201903240BOS,"Sun, Mar 24, 2019",BOS,SAS,Boston Celtics,San Antonio Spurs,96,115,-19,Home,96.1,True,2019
+201903260CHO,"Tue, Mar 26, 2019",CHO,SAS,Charlotte Hornets,San Antonio Spurs,125,116,9,Home,99.2,True,2019
+201903280SAS,"Thu, Mar 28, 2019",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,116,110,6,Home,96.0,True,2019
+201903310SAS,"Sun, Mar 31, 2019",SAS,SAC,San Antonio Spurs,Sacramento Kings,106,113,-7,Home,94.7,True,2019
+201904020SAS,"Tue, Apr 2, 2019",SAS,ATL,San Antonio Spurs,Atlanta Hawks,117,111,6,Home,100.9,True,2019
+201904030DEN,"Wed, Apr 3, 2019",DEN,SAS,Denver Nuggets,San Antonio Spurs,113,85,28,Home,93.1,True,2019
+201904050WAS,"Fri, Apr 5, 2019",WAS,SAS,Washington Wizards,San Antonio Spurs,112,129,-17,Home,94.3,True,2019
+201904070CLE,"Sun, Apr 7, 2019",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,90,112,-22,Home,96.1,True,2019
+201904100SAS,"Wed, Apr 10, 2019",SAS,DAL,San Antonio Spurs,Dallas Mavericks,105,94,11,Home,95.4,True,2019
+201904130DEN,"Sat, Apr 13, 2019",DEN,SAS,Denver Nuggets,San Antonio Spurs,96,101,-5,Home,92.4,True,2019
+201904160DEN,"Tue, Apr 16, 2019",DEN,SAS,Denver Nuggets,San Antonio Spurs,114,105,9,Home,95.3,True,2019
+201904180SAS,"Thu, Apr 18, 2019",SAS,DEN,San Antonio Spurs,Denver Nuggets,118,108,10,Home,90.5,True,2019
+201904200SAS,"Sat, Apr 20, 2019",SAS,DEN,San Antonio Spurs,Denver Nuggets,103,117,-14,Home,91.4,True,2019
+201904230DEN,"Tue, Apr 23, 2019",DEN,SAS,Denver Nuggets,San Antonio Spurs,108,90,18,Home,91.8,True,2019
+201904250SAS,"Thu, Apr 25, 2019",SAS,DEN,San Antonio Spurs,Denver Nuggets,120,103,17,Home,89.5,True,2019
+201904270DEN,"Sat, Apr 27, 2019",DEN,SAS,Denver Nuggets,San Antonio Spurs,90,86,4,Home,88.9,True,2019
+201810200DEN,"Sat, Oct 20, 2018",DEN,PHO,Denver Nuggets,Phoenix Suns,119,91,28,Home,102.4,True,2019
+201810210DEN,"Sun, Oct 21, 2018",DEN,GSW,Denver Nuggets,Golden State Warriors,100,98,2,Home,97.7,True,2019
+201810230DEN,"Tue, Oct 23, 2018",DEN,SAC,Denver Nuggets,Sacramento Kings,126,112,14,Home,100.3,True,2019
+201811010CLE,"Thu, Nov 1, 2018",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,91,110,-19,Home,87.4,True,2019
+201811050DEN,"Mon, Nov 5, 2018",DEN,BOS,Denver Nuggets,Boston Celtics,115,107,8,Home,96.7,True,2019
+201811070MEM,"Wed, Nov 7, 2018",MEM,DEN,Memphis Grizzlies,Denver Nuggets,89,87,2,Home,88.1,True,2019
+201811110DEN,"Sun, Nov 11, 2018",DEN,MIL,Denver Nuggets,Milwaukee Bucks,114,121,-7,Home,95.7,True,2019
+201811150DEN,"Thu, Nov 15, 2018",DEN,ATL,Denver Nuggets,Atlanta Hawks,138,93,45,Home,106.2,True,2019
+201811190MIL,"Mon, Nov 19, 2018",MIL,DEN,Milwaukee Bucks,Denver Nuggets,104,98,6,Home,98.1,True,2019
+201811210MIN,"Wed, Nov 21, 2018",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,101,103,-2,Home,95.1,True,2019
+201811230DEN,"Fri, Nov 23, 2018",DEN,ORL,Denver Nuggets,Orlando Magic,112,87,25,Home,95.9,True,2019
+201812030TOR,"Mon, Dec 3, 2018",TOR,DEN,Toronto Raptors,Denver Nuggets,103,106,-3,Home,101.4,True,2019
+201812050ORL,"Wed, Dec 5, 2018",ORL,DEN,Orlando Magic,Denver Nuggets,118,124,-6,Home,91.8,True,2019
+201812070CHO,"Fri, Dec 7, 2018",CHO,DEN,Charlotte Hornets,Denver Nuggets,113,107,6,Home,95.6,True,2019
+201812080ATL,"Sat, Dec 8, 2018",ATL,DEN,Atlanta Hawks,Denver Nuggets,106,98,8,Home,106.6,True,2019
+201812100DEN,"Mon, Dec 10, 2018",DEN,MEM,Denver Nuggets,Memphis Grizzlies,105,99,6,Home,87.9,True,2019
+201812160DEN,"Sun, Dec 16, 2018",DEN,TOR,Denver Nuggets,Toronto Raptors,95,86,9,Home,88.7,True,2019
+201812180DEN,"Tue, Dec 18, 2018",DEN,DAL,Denver Nuggets,Dallas Mavericks,126,118,8,Home,98.9,True,2019
+201812290PHO,"Sat, Dec 29, 2018",PHO,DEN,Phoenix Suns,Denver Nuggets,118,122,-4,Home,96.9,True,2019
+201901010DEN,"Tue, Jan 1, 2019",DEN,NYK,Denver Nuggets,New York Knicks,115,108,7,Home,92.4,True,2019
+201901030SAC,"Thu, Jan 3, 2019",SAC,DEN,Sacramento Kings,Denver Nuggets,113,117,-4,Home,96.0,True,2019
+201901050DEN,"Sat, Jan 5, 2019",DEN,CHO,Denver Nuggets,Charlotte Hornets,123,110,13,Home,96.8,True,2019
+201901080MIA,"Tue, Jan 8, 2019",MIA,DEN,Miami Heat,Denver Nuggets,99,103,-4,Home,91.1,True,2019
+201901120PHO,"Sat, Jan 12, 2019",PHO,DEN,Phoenix Suns,Denver Nuggets,102,93,9,Home,95.6,True,2019
+201901150DEN,"Tue, Jan 15, 2019",DEN,GSW,Denver Nuggets,Golden State Warriors,111,142,-31,Home,96.3,True,2019
+201901190DEN,"Sat, Jan 19, 2019",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,124,102,22,Home,89.5,True,2019
+201901250DEN,"Fri, Jan 25, 2019",DEN,PHO,Denver Nuggets,Phoenix Suns,132,95,37,Home,100.2,True,2019
+201901260DEN,"Sat, Jan 26, 2019",DEN,PHI,Denver Nuggets,Philadelphia 76ers,126,110,16,Home,102.0,True,2019
+201901280MEM,"Mon, Jan 28, 2019",MEM,DEN,Memphis Grizzlies,Denver Nuggets,92,95,-3,Home,93.6,True,2019
+201902020MIN,"Sat, Feb 2, 2019",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,106,107,-1,Home,91.2,True,2019
+201902040DET,"Mon, Feb 4, 2019",DET,DEN,Detroit Pistons,Denver Nuggets,129,103,26,Home,100.1,True,2019
+201902080PHI,"Fri, Feb 8, 2019",PHI,DEN,Philadelphia 76ers,Denver Nuggets,117,110,7,Home,101.0,True,2019
+201902110DEN,"Mon, Feb 11, 2019",DEN,MIA,Denver Nuggets,Miami Heat,103,87,16,Home,97.1,True,2019
+201902130DEN,"Wed, Feb 13, 2019",DEN,SAC,Denver Nuggets,Sacramento Kings,120,118,2,Home,105.1,True,2019
+201902220DAL,"Fri, Feb 22, 2019",DAL,DEN,Dallas Mavericks,Denver Nuggets,104,114,-10,Home,103.0,True,2019
+201903080GSW,"Fri, Mar 8, 2019",GSW,DEN,Golden State Warriors,Denver Nuggets,122,105,17,Home,101.9,True,2019
+201903120DEN,"Tue, Mar 12, 2019",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,133,107,26,Home,95.0,True,2019
+201903140DEN,"Thu, Mar 14, 2019",DEN,DAL,Denver Nuggets,Dallas Mavericks,100,99,1,Home,90.3,True,2019
+201903180BOS,"Mon, Mar 18, 2019",BOS,DEN,Boston Celtics,Denver Nuggets,105,114,-9,Home,99.3,True,2019
+201903210WAS,"Thu, Mar 21, 2019",WAS,DEN,Washington Wizards,Denver Nuggets,108,113,-5,Home,91.2,True,2019
+201903220NYK,"Fri, Mar 22, 2019",NYK,DEN,New York Knicks,Denver Nuggets,93,111,-18,Home,94.5,True,2019
+201903260DEN,"Tue, Mar 26, 2019",DEN,DET,Denver Nuggets,Detroit Pistons,95,92,3,Home,95.5,True,2019
+201903310DEN,"Sun, Mar 31, 2019",DEN,WAS,Denver Nuggets,Washington Wizards,90,95,-5,Home,99.6,True,2019
+201904020GSW,"Tue, Apr 2, 2019",GSW,DEN,Golden State Warriors,Denver Nuggets,116,102,14,Home,106.6,True,2019
+201904100DEN,"Wed, Apr 10, 2019",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,99,95,4,Home,93.8,True,2019
+201810220GSW,"Mon, Oct 22, 2018",GSW,PHO,Golden State Warriors,Phoenix Suns,123,103,20,Home,102.6,True,2019
+201810240GSW,"Wed, Oct 24, 2018",GSW,WAS,Golden State Warriors,Washington Wizards,144,122,22,Home,106.7,True,2019
+201810260NYK,"Fri, Oct 26, 2018",NYK,GSW,New York Knicks,Golden State Warriors,100,128,-28,Home,99.7,True,2019
+201811020GSW,"Fri, Nov 2, 2018",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,116,99,17,Home,100.8,True,2019
+201811050GSW,"Mon, Nov 5, 2018",GSW,MEM,Golden State Warriors,Memphis Grizzlies,117,101,16,Home,95.0,True,2019
+201811080GSW,"Thu, Nov 8, 2018",GSW,MIL,Golden State Warriors,Milwaukee Bucks,111,134,-23,Home,106.2,True,2019
+201811130GSW,"Tue, Nov 13, 2018",GSW,ATL,Golden State Warriors,Atlanta Hawks,110,103,7,Home,96.8,True,2019
+201811170DAL,"Sat, Nov 17, 2018",DAL,GSW,Dallas Mavericks,Golden State Warriors,112,109,3,Home,99.9,True,2019
+201811240GSW,"Sat, Nov 24, 2018",GSW,SAC,Golden State Warriors,Sacramento Kings,117,116,1,Home,101.6,True,2019
+201811260GSW,"Mon, Nov 26, 2018",GSW,ORL,Golden State Warriors,Orlando Magic,116,110,6,Home,98.4,True,2019
+201811290TOR,"Thu, Nov 29, 2018",TOR,GSW,Toronto Raptors,Golden State Warriors,131,128,3,Home,94.7,True,2019
+201812010DET,"Sat, Dec 1, 2018",DET,GSW,Detroit Pistons,Golden State Warriors,111,102,9,Home,99.2,True,2019
+201812030ATL,"Mon, Dec 3, 2018",ATL,GSW,Atlanta Hawks,Golden State Warriors,111,128,-17,Home,105.5,True,2019
+201812050CLE,"Wed, Dec 5, 2018",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,105,129,-24,Home,93.8,True,2019
+201812070MIL,"Fri, Dec 7, 2018",MIL,GSW,Milwaukee Bucks,Golden State Warriors,95,105,-10,Home,101.9,True,2019
+201812100GSW,"Mon, Dec 10, 2018",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,116,108,8,Home,100.9,True,2019
+201812120GSW,"Wed, Dec 12, 2018",GSW,TOR,Golden State Warriors,Toronto Raptors,93,113,-20,Home,99.6,True,2019
+201812140SAC,"Fri, Dec 14, 2018",SAC,GSW,Sacramento Kings,Golden State Warriors,125,130,-5,Home,111.7,True,2019
+201812170GSW,"Mon, Dec 17, 2018",GSW,MEM,Golden State Warriors,Memphis Grizzlies,110,93,17,Home,99.4,True,2019
+201812220GSW,"Sat, Dec 22, 2018",GSW,DAL,Golden State Warriors,Dallas Mavericks,120,116,4,Home,102.4,True,2019
+201812310PHO,"Mon, Dec 31, 2018",PHO,GSW,Phoenix Suns,Golden State Warriors,109,132,-23,Home,103.1,True,2019
+201901050SAC,"Sat, Jan 5, 2019",SAC,GSW,Sacramento Kings,Golden State Warriors,123,127,-4,Home,96.1,True,2019
+201901080GSW,"Tue, Jan 8, 2019",GSW,NYK,Golden State Warriors,New York Knicks,122,95,27,Home,99.8,True,2019
+201901130DAL,"Sun, Jan 13, 2019",DAL,GSW,Dallas Mavericks,Golden State Warriors,114,119,-5,Home,94.8,True,2019
+201901240WAS,"Thu, Jan 24, 2019",WAS,GSW,Washington Wizards,Golden State Warriors,118,126,-8,Home,102.9,True,2019
+201901260BOS,"Sat, Jan 26, 2019",BOS,GSW,Boston Celtics,Golden State Warriors,111,115,-4,Home,100.6,True,2019
+201901310GSW,"Thu, Jan 31, 2019",GSW,PHI,Golden State Warriors,Philadelphia 76ers,104,113,-9,Home,98.5,True,2019
+201902080PHO,"Fri, Feb 8, 2019",PHO,GSW,Phoenix Suns,Golden State Warriors,107,117,-10,Home,102.7,True,2019
+201902100GSW,"Sun, Feb 10, 2019",GSW,MIA,Golden State Warriors,Miami Heat,120,118,2,Home,97.7,True,2019
+201902210GSW,"Thu, Feb 21, 2019",GSW,SAC,Golden State Warriors,Sacramento Kings,125,123,2,Home,109.7,True,2019
+201902250CHO,"Mon, Feb 25, 2019",CHO,GSW,Charlotte Hornets,Golden State Warriors,110,121,-11,Home,101.1,True,2019
+201902270MIA,"Wed, Feb 27, 2019",MIA,GSW,Miami Heat,Golden State Warriors,126,125,1,Home,97.3,True,2019
+201902280ORL,"Thu, Feb 28, 2019",ORL,GSW,Orlando Magic,Golden State Warriors,103,96,7,Home,101.2,True,2019
+201903020PHI,"Sat, Mar 2, 2019",PHI,GSW,Philadelphia 76ers,Golden State Warriors,117,120,-3,Home,105.3,True,2019
+201903050GSW,"Tue, Mar 5, 2019",GSW,BOS,Golden State Warriors,Boston Celtics,95,128,-33,Home,104.1,True,2019
+201903100GSW,"Sun, Mar 10, 2019",GSW,PHO,Golden State Warriors,Phoenix Suns,111,115,-4,Home,103.0,True,2019
+201903190MIN,"Tue, Mar 19, 2019",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,107,117,-10,Home,100.7,True,2019
+201903230GSW,"Sat, Mar 23, 2019",GSW,DAL,Golden State Warriors,Dallas Mavericks,91,126,-35,Home,95.2,True,2019
+201903240GSW,"Sun, Mar 24, 2019",GSW,DET,Golden State Warriors,Detroit Pistons,121,114,7,Home,87.2,True,2019
+201903270MEM,"Wed, Mar 27, 2019",MEM,GSW,Memphis Grizzlies,Golden State Warriors,103,118,-15,Home,96.9,True,2019
+201903290MIN,"Fri, Mar 29, 2019",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,131,130,1,Home,103.9,True,2019
+201903310GSW,"Sun, Mar 31, 2019",GSW,CHO,Golden State Warriors,Charlotte Hornets,137,90,47,Home,96.5,True,2019
+201904050GSW,"Fri, Apr 5, 2019",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,120,114,6,Home,97.5,True,2019
+201904100MEM,"Wed, Apr 10, 2019",MEM,GSW,Memphis Grizzlies,Golden State Warriors,132,117,15,Home,99.8,True,2019
+201905300TOR,"Thu, May 30, 2019",TOR,GSW,Toronto Raptors,Golden State Warriors,118,109,9,Home,93.6,True,2019
+201906020TOR,"Sun, Jun 2, 2019",TOR,GSW,Toronto Raptors,Golden State Warriors,104,109,-5,Home,100.0,True,2019
+201906050GSW,"Wed, Jun 5, 2019",GSW,TOR,Golden State Warriors,Toronto Raptors,109,123,-14,Home,99.6,True,2019
+201906070GSW,"Fri, Jun 7, 2019",GSW,TOR,Golden State Warriors,Toronto Raptors,92,105,-13,Home,94.8,True,2019
+201906100TOR,"Mon, Jun 10, 2019",TOR,GSW,Toronto Raptors,Golden State Warriors,105,106,-1,Home,94.3,True,2019
+201906130GSW,"Thu, Jun 13, 2019",GSW,TOR,Golden State Warriors,Toronto Raptors,110,114,-4,Home,94.6,True,2019
+201810240SAC,"Wed, Oct 24, 2018",SAC,MEM,Sacramento Kings,Memphis Grizzlies,97,92,5,Home,97.3,True,2019
+201810260SAC,"Fri, Oct 26, 2018",SAC,WAS,Sacramento Kings,Washington Wizards,116,112,4,Home,108.9,True,2019
+201810290MIA,"Mon, Oct 29, 2018",MIA,SAC,Miami Heat,Sacramento Kings,113,123,-10,Home,108.9,True,2019
+201810300ORL,"Tue, Oct 30, 2018",ORL,SAC,Orlando Magic,Sacramento Kings,99,107,-8,Home,102.5,True,2019
+201811010ATL,"Thu, Nov 1, 2018",ATL,SAC,Atlanta Hawks,Sacramento Kings,115,146,-31,Home,112.9,True,2019
+201811040MIL,"Sun, Nov 4, 2018",MIL,SAC,Milwaukee Bucks,Sacramento Kings,144,109,35,Home,109.6,True,2019
+201811070SAC,"Wed, Nov 7, 2018",SAC,TOR,Sacramento Kings,Toronto Raptors,105,114,-9,Home,102.2,True,2019
+201811090SAC,"Fri, Nov 9, 2018",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,121,110,11,Home,105.7,True,2019
+201811160MEM,"Fri, Nov 16, 2018",MEM,SAC,Memphis Grizzlies,Sacramento Kings,112,104,8,Home,99.1,True,2019
+201812040PHO,"Tue, Dec 4, 2018",PHO,SAC,Phoenix Suns,Sacramento Kings,105,122,-17,Home,100.9,True,2019
+201812070CLE,"Fri, Dec 7, 2018",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,110,129,-19,Home,96.8,True,2019
+201812120SAC,"Wed, Dec 12, 2018",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,141,130,11,Home,100.3,True,2019
+201812160DAL,"Sun, Dec 16, 2018",DAL,SAC,Dallas Mavericks,Sacramento Kings,113,120,-7,Home,103.3,True,2019
+201812170MIN,"Mon, Dec 17, 2018",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,132,105,27,Home,106.9,True,2019
+201812210SAC,"Fri, Dec 21, 2018",SAC,MEM,Sacramento Kings,Memphis Grizzlies,102,99,3,Home,93.1,True,2019
+201901070SAC,"Mon, Jan 7, 2019",SAC,ORL,Sacramento Kings,Orlando Magic,111,95,16,Home,105.9,True,2019
+201901080PHO,"Tue, Jan 8, 2019",PHO,SAC,Phoenix Suns,Sacramento Kings,115,111,4,Home,103.7,True,2019
+201901100SAC,"Thu, Jan 10, 2019",SAC,DET,Sacramento Kings,Detroit Pistons,112,102,10,Home,100.4,True,2019
+201901120SAC,"Sat, Jan 12, 2019",SAC,CHO,Sacramento Kings,Charlotte Hornets,104,97,7,Home,100.8,True,2019
+201901170CHO,"Thu, Jan 17, 2019",CHO,SAC,Charlotte Hornets,Sacramento Kings,114,95,19,Home,97.3,True,2019
+201901190DET,"Sat, Jan 19, 2019",DET,SAC,Detroit Pistons,Sacramento Kings,101,103,-2,Home,92.2,True,2019
+201901220TOR,"Tue, Jan 22, 2019",TOR,SAC,Toronto Raptors,Sacramento Kings,120,105,15,Home,104.0,True,2019
+201901250MEM,"Fri, Jan 25, 2019",MEM,SAC,Memphis Grizzlies,Sacramento Kings,96,99,-3,Home,98.6,True,2019
+201901300SAC,"Wed, Jan 30, 2019",SAC,ATL,Sacramento Kings,Atlanta Hawks,135,113,22,Home,105.2,True,2019
+201902020SAC,"Sat, Feb 2, 2019",SAC,PHI,Sacramento Kings,Philadelphia 76ers,115,108,7,Home,102.0,True,2019
+201902080SAC,"Fri, Feb 8, 2019",SAC,MIA,Sacramento Kings,Miami Heat,102,96,6,Home,101.1,True,2019
+201902100SAC,"Sun, Feb 10, 2019",SAC,PHO,Sacramento Kings,Phoenix Suns,117,104,13,Home,103.4,True,2019
+201902250MIN,"Mon, Feb 25, 2019",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,112,105,7,Home,109.0,True,2019
+201902270SAC,"Wed, Feb 27, 2019",SAC,MIL,Sacramento Kings,Milwaukee Bucks,140,141,-1,Home,108.5,True,2019
+201903040SAC,"Mon, Mar 4, 2019",SAC,NYK,Sacramento Kings,New York Knicks,115,108,7,Home,102.8,True,2019
+201903060SAC,"Wed, Mar 6, 2019",SAC,BOS,Sacramento Kings,Boston Celtics,109,111,-2,Home,99.0,True,2019
+201903090NYK,"Sat, Mar 9, 2019",NYK,SAC,New York Knicks,Sacramento Kings,94,102,-8,Home,97.4,True,2019
+201903110WAS,"Mon, Mar 11, 2019",WAS,SAC,Washington Wizards,Sacramento Kings,121,115,6,Home,109.3,True,2019
+201903140BOS,"Thu, Mar 14, 2019",BOS,SAC,Boston Celtics,Sacramento Kings,126,120,6,Home,108.0,True,2019
+201903150PHI,"Fri, Mar 15, 2019",PHI,SAC,Philadelphia 76ers,Sacramento Kings,123,114,9,Home,100.1,True,2019
+201903210SAC,"Thu, Mar 21, 2019",SAC,DAL,Sacramento Kings,Dallas Mavericks,116,100,16,Home,97.9,True,2019
+201903230SAC,"Sat, Mar 23, 2019",SAC,PHO,Sacramento Kings,Phoenix Suns,112,103,9,Home,99.8,True,2019
+201903260DAL,"Tue, Mar 26, 2019",DAL,SAC,Dallas Mavericks,Sacramento Kings,121,125,-4,Home,92.9,True,2019
+201904040SAC,"Thu, Apr 4, 2019",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,117,104,13,Home,96.2,True,2019
+201810230DET,"Tue, Oct 23, 2018",DET,PHI,Detroit Pistons,Philadelphia 76ers,133,132,1,Home,101.0,True,2019
+201810250DET,"Thu, Oct 25, 2018",DET,CLE,Detroit Pistons,Cleveland Cavaliers,110,103,7,Home,95.4,True,2019
+201810270DET,"Sat, Oct 27, 2018",DET,BOS,Detroit Pistons,Boston Celtics,89,109,-20,Home,100.9,True,2019
+201810300BOS,"Tue, Oct 30, 2018",BOS,DET,Boston Celtics,Detroit Pistons,108,105,3,Home,102.9,True,2019
+201811030PHI,"Sat, Nov 3, 2018",PHI,DET,Philadelphia 76ers,Detroit Pistons,109,99,10,Home,105.9,True,2019
+201811050DET,"Mon, Nov 5, 2018",DET,MIA,Detroit Pistons,Miami Heat,115,120,-5,Home,103.8,True,2019
+201811070ORL,"Wed, Nov 7, 2018",ORL,DET,Orlando Magic,Detroit Pistons,96,103,-7,Home,102.4,True,2019
+201811090ATL,"Fri, Nov 9, 2018",ATL,DET,Atlanta Hawks,Detroit Pistons,109,124,-15,Home,102.9,True,2019
+201811110DET,"Sun, Nov 11, 2018",DET,CHO,Detroit Pistons,Charlotte Hornets,103,113,-10,Home,96.5,True,2019
+201811140TOR,"Wed, Nov 14, 2018",TOR,DET,Toronto Raptors,Detroit Pistons,104,106,-2,Home,105.1,True,2019
+201811190DET,"Mon, Nov 19, 2018",DET,CLE,Detroit Pistons,Cleveland Cavaliers,113,102,11,Home,89.9,True,2019
+201811250DET,"Sun, Nov 25, 2018",DET,PHO,Detroit Pistons,Phoenix Suns,118,107,11,Home,97.8,True,2019
+201811270DET,"Tue, Nov 27, 2018",DET,NYK,Detroit Pistons,New York Knicks,115,108,7,Home,103.2,True,2019
+201812050MIL,"Wed, Dec 5, 2018",MIL,DET,Milwaukee Bucks,Detroit Pistons,115,92,23,Home,106.5,True,2019
+201812070DET,"Fri, Dec 7, 2018",DET,PHI,Detroit Pistons,Philadelphia 76ers,111,117,-6,Home,99.9,True,2019
+201812100PHI,"Mon, Dec 10, 2018",PHI,DET,Philadelphia 76ers,Detroit Pistons,116,102,14,Home,97.7,True,2019
+201812120CHO,"Wed, Dec 12, 2018",CHO,DET,Charlotte Hornets,Detroit Pistons,108,107,1,Home,98.7,True,2019
+201812150DET,"Sat, Dec 15, 2018",DET,BOS,Detroit Pistons,Boston Celtics,113,104,9,Home,102.3,True,2019
+201812170DET,"Mon, Dec 17, 2018",DET,MIL,Detroit Pistons,Milwaukee Bucks,104,107,-3,Home,97.8,True,2019
+201812190MIN,"Wed, Dec 19, 2018",MIN,DET,Minnesota Timberwolves,Detroit Pistons,123,129,-6,Home,98.0,True,2019
+201812210CHO,"Fri, Dec 21, 2018",CHO,DET,Charlotte Hornets,Detroit Pistons,98,86,12,Home,90.0,True,2019
+201812230DET,"Sun, Dec 23, 2018",DET,ATL,Detroit Pistons,Atlanta Hawks,95,98,-3,Home,101.8,True,2019
+201812260DET,"Wed, Dec 26, 2018",DET,WAS,Detroit Pistons,Washington Wizards,106,95,11,Home,96.8,True,2019
+201812300ORL,"Sun, Dec 30, 2018",ORL,DET,Orlando Magic,Detroit Pistons,109,107,2,Home,95.8,True,2019
+201901010MIL,"Tue, Jan 1, 2019",MIL,DET,Milwaukee Bucks,Detroit Pistons,121,98,23,Home,97.7,True,2019
+201901020MEM,"Wed, Jan 2, 2019",MEM,DET,Memphis Grizzlies,Detroit Pistons,94,101,-7,Home,89.8,True,2019
+201901160DET,"Wed, Jan 16, 2019",DET,ORL,Detroit Pistons,Orlando Magic,120,115,5,Home,88.6,True,2019
+201901180DET,"Fri, Jan 18, 2019",DET,MIA,Detroit Pistons,Miami Heat,98,93,5,Home,94.1,True,2019
+201901210WAS,"Mon, Jan 21, 2019",WAS,DET,Washington Wizards,Detroit Pistons,101,87,14,Home,98.2,True,2019
+201901250DAL,"Fri, Jan 25, 2019",DAL,DET,Dallas Mavericks,Detroit Pistons,106,101,5,Home,92.1,True,2019
+201901290DET,"Tue, Jan 29, 2019",DET,MIL,Detroit Pistons,Milwaukee Bucks,105,115,-10,Home,93.4,True,2019
+201901310DET,"Thu, Jan 31, 2019",DET,DAL,Detroit Pistons,Dallas Mavericks,93,89,4,Home,89.7,True,2019
+201902050NYK,"Tue, Feb 5, 2019",NYK,DET,New York Knicks,Detroit Pistons,92,105,-13,Home,90.8,True,2019
+201902080DET,"Fri, Feb 8, 2019",DET,NYK,Detroit Pistons,New York Knicks,120,103,17,Home,96.9,True,2019
+201902110DET,"Mon, Feb 11, 2019",DET,WAS,Detroit Pistons,Washington Wizards,121,112,9,Home,98.5,True,2019
+201902130BOS,"Wed, Feb 13, 2019",BOS,DET,Boston Celtics,Detroit Pistons,118,110,8,Home,98.2,True,2019
+201902220ATL,"Fri, Feb 22, 2019",ATL,DET,Atlanta Hawks,Detroit Pistons,122,125,-3,Home,102.9,True,2019
+201902230MIA,"Sat, Feb 23, 2019",MIA,DET,Miami Heat,Detroit Pistons,96,119,-23,Home,95.2,True,2019
+201903020CLE,"Sat, Mar 2, 2019",CLE,DET,Cleveland Cavaliers,Detroit Pistons,93,129,-36,Home,92.6,True,2019
+201903030DET,"Sun, Mar 3, 2019",DET,TOR,Detroit Pistons,Toronto Raptors,112,107,5,Home,92.0,True,2019
+201903060DET,"Wed, Mar 6, 2019",DET,MIN,Detroit Pistons,Minnesota Timberwolves,131,114,17,Home,96.3,True,2019
+201903130MIA,"Wed, Mar 13, 2019",MIA,DET,Miami Heat,Detroit Pistons,108,74,34,Home,89.5,True,2019
+201903170DET,"Sun, Mar 17, 2019",DET,TOR,Detroit Pistons,Toronto Raptors,110,107,3,Home,91.5,True,2019
+201903180CLE,"Mon, Mar 18, 2019",CLE,DET,Cleveland Cavaliers,Detroit Pistons,126,119,7,Home,92.4,True,2019
+201903210PHO,"Thu, Mar 21, 2019",PHO,DET,Phoenix Suns,Detroit Pistons,98,118,-20,Home,94.1,True,2019
+201903280DET,"Thu, Mar 28, 2019",DET,ORL,Detroit Pistons,Orlando Magic,115,98,17,Home,92.7,True,2019
+201904070DET,"Sun, Apr 7, 2019",DET,CHO,Detroit Pistons,Charlotte Hornets,91,104,-13,Home,89.5,True,2019
+201904090DET,"Tue, Apr 9, 2019",DET,MEM,Detroit Pistons,Memphis Grizzlies,100,93,7,Home,91.3,True,2019
+201904100NYK,"Wed, Apr 10, 2019",NYK,DET,New York Knicks,Detroit Pistons,89,115,-26,Home,93.5,True,2019
+201904140MIL,"Sun, Apr 14, 2019",MIL,DET,Milwaukee Bucks,Detroit Pistons,121,86,35,Home,102.1,True,2019
+201904170MIL,"Wed, Apr 17, 2019",MIL,DET,Milwaukee Bucks,Detroit Pistons,120,99,21,Home,101.1,True,2019
+201904200DET,"Sat, Apr 20, 2019",DET,MIL,Detroit Pistons,Milwaukee Bucks,103,119,-16,Home,96.4,True,2019
+201904220DET,"Mon, Apr 22, 2019",DET,MIL,Detroit Pistons,Milwaukee Bucks,104,127,-23,Home,102.4,True,2019
+201810170TOR,"Wed, Oct 17, 2018",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,116,104,12,Home,100.3,True,2019
+201810190MIN,"Fri, Oct 19, 2018",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,131,123,8,Home,103.4,True,2019
+201810210CLE,"Sun, Oct 21, 2018",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,111,133,-22,Home,106.0,True,2019
+201810300CLE,"Tue, Oct 30, 2018",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,136,114,22,Home,105.7,True,2019
+201811030CHO,"Sat, Nov 3, 2018",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,126,94,32,Home,96.6,True,2019
+201811050ORL,"Mon, Nov 5, 2018",ORL,CLE,Orlando Magic,Cleveland Cavaliers,102,100,2,Home,95.2,True,2019
+201811130CLE,"Tue, Nov 13, 2018",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,113,89,24,Home,95.7,True,2019
+201811140WAS,"Wed, Nov 14, 2018",WAS,CLE,Washington Wizards,Cleveland Cavaliers,119,95,24,Home,104.6,True,2019
+201811230PHI,"Fri, Nov 23, 2018",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,112,121,-9,Home,91.0,True,2019
+201811260CLE,"Mon, Nov 26, 2018",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,95,102,-7,Home,93.5,True,2019
+201811300BOS,"Fri, Nov 30, 2018",BOS,CLE,Boston Celtics,Cleveland Cavaliers,128,95,33,Home,94.0,True,2019
+201812010CLE,"Sat, Dec 1, 2018",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,95,106,-11,Home,94.4,True,2019
+201812080CLE,"Sat, Dec 8, 2018",CLE,WAS,Cleveland Cavaliers,Washington Wizards,116,101,15,Home,88.3,True,2019
+201812100MIL,"Mon, Dec 10, 2018",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,108,92,16,Home,101.0,True,2019
+201812120CLE,"Wed, Dec 12, 2018",CLE,NYK,Cleveland Cavaliers,New York Knicks,113,106,7,Home,99.5,True,2019
+201812140CLE,"Fri, Dec 14, 2018",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,102,114,-12,Home,97.4,True,2019
+201812160CLE,"Sun, Dec 16, 2018",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,105,128,-23,Home,97.7,True,2019
+201812190CHO,"Wed, Dec 19, 2018",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,110,99,11,Home,92.8,True,2019
+201812210TOR,"Fri, Dec 21, 2018",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,126,110,16,Home,94.1,True,2019
+201812260MEM,"Wed, Dec 26, 2018",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,95,87,8,Home,90.5,True,2019
+201812280MIA,"Fri, Dec 28, 2018",MIA,CLE,Miami Heat,Cleveland Cavaliers,118,94,24,Home,93.3,True,2019
+201812290ATL,"Sat, Dec 29, 2018",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,111,108,3,Home,99.8,True,2019
+201901020CLE,"Wed, Jan 2, 2019",CLE,MIA,Cleveland Cavaliers,Miami Heat,92,117,-25,Home,88.9,True,2019
+201901230BOS,"Wed, Jan 23, 2019",BOS,CLE,Boston Celtics,Cleveland Cavaliers,123,103,20,Home,98.9,True,2019
+201901250CLE,"Fri, Jan 25, 2019",CLE,MIA,Cleveland Cavaliers,Miami Heat,94,100,-6,Home,92.3,True,2019
+201901290CLE,"Tue, Jan 29, 2019",CLE,WAS,Cleveland Cavaliers,Washington Wizards,116,113,3,Home,100.1,True,2019
+201902020CLE,"Sat, Feb 2, 2019",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,98,111,-13,Home,93.6,True,2019
+201902050CLE,"Tue, Feb 5, 2019",CLE,BOS,Cleveland Cavaliers,Boston Celtics,96,103,-7,Home,92.2,True,2019
+201902080WAS,"Fri, Feb 8, 2019",WAS,CLE,Washington Wizards,Cleveland Cavaliers,119,106,13,Home,101.8,True,2019
+201902110CLE,"Mon, Feb 11, 2019",CLE,NYK,Cleveland Cavaliers,New York Knicks,107,104,3,Home,100.1,True,2019
+201902210CLE,"Thu, Feb 21, 2019",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,111,98,13,Home,97.7,True,2019
+201902230CLE,"Sat, Feb 23, 2019",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,112,107,5,Home,97.9,True,2019
+201902280NYK,"Thu, Feb 28, 2019",NYK,CLE,New York Knicks,Cleveland Cavaliers,118,125,-7,Home,95.9,True,2019
+201903030CLE,"Sun, Mar 3, 2019",CLE,ORL,Cleveland Cavaliers,Orlando Magic,107,93,14,Home,93.0,True,2019
+201903080MIA,"Fri, Mar 8, 2019",MIA,CLE,Miami Heat,Cleveland Cavaliers,126,110,16,Home,92.6,True,2019
+201903110CLE,"Mon, Mar 11, 2019",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,126,101,25,Home,103.4,True,2019
+201903120PHI,"Tue, Mar 12, 2019",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,106,99,7,Home,99.9,True,2019
+201903140ORL,"Thu, Mar 14, 2019",ORL,CLE,Orlando Magic,Cleveland Cavaliers,120,91,29,Home,97.4,True,2019
+201903160DAL,"Sat, Mar 16, 2019",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,121,116,5,Home,90.9,True,2019
+201903200CLE,"Wed, Mar 20, 2019",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,107,102,5,Home,97.7,True,2019
+201903240MIL,"Sun, Mar 24, 2019",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,127,105,22,Home,100.7,True,2019
+201903260CLE,"Tue, Mar 26, 2019",CLE,BOS,Cleveland Cavaliers,Boston Celtics,106,116,-10,Home,98.5,True,2019
+201904010PHO,"Mon, Apr 1, 2019",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,122,113,9,Home,98.2,True,2019
+201904090CLE,"Tue, Apr 9, 2019",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,97,124,-27,Home,89.8,True,2019
+201810180WAS,"Thu, Oct 18, 2018",WAS,MIA,Washington Wizards,Miami Heat,112,113,-1,Home,101.9,True,2019
+201810200WAS,"Sat, Oct 20, 2018",WAS,TOR,Washington Wizards,Toronto Raptors,113,117,-4,Home,102.0,True,2019
+201810300MEM,"Tue, Oct 30, 2018",MEM,WAS,Memphis Grizzlies,Washington Wizards,107,95,12,Home,95.5,True,2019
+201811040WAS,"Sun, Nov 4, 2018",WAS,NYK,Washington Wizards,New York Knicks,108,95,13,Home,97.9,True,2019
+201811060DAL,"Tue, Nov 6, 2018",DAL,WAS,Dallas Mavericks,Washington Wizards,119,100,19,Home,98.2,True,2019
+201811090ORL,"Fri, Nov 9, 2018",ORL,WAS,Orlando Magic,Washington Wizards,117,108,9,Home,98.9,True,2019
+201811100MIA,"Sat, Nov 10, 2018",MIA,WAS,Miami Heat,Washington Wizards,110,116,-6,Home,98.1,True,2019
+201811120WAS,"Mon, Nov 12, 2018",WAS,ORL,Washington Wizards,Orlando Magic,117,109,8,Home,94.7,True,2019
+201811230TOR,"Fri, Nov 23, 2018",TOR,WAS,Toronto Raptors,Washington Wizards,125,107,18,Home,101.2,True,2019
+201811300PHI,"Fri, Nov 30, 2018",PHI,WAS,Philadelphia 76ers,Washington Wizards,123,98,25,Home,104.3,True,2019
+201812030NYK,"Mon, Dec 3, 2018",NYK,WAS,New York Knicks,Washington Wizards,107,110,-3,Home,96.3,True,2019
+201812050ATL,"Wed, Dec 5, 2018",ATL,WAS,Atlanta Hawks,Washington Wizards,117,131,-14,Home,110.6,True,2019
+201812120WAS,"Wed, Dec 12, 2018",WAS,BOS,Washington Wizards,Boston Celtics,125,130,-5,Home,98.6,True,2019
+201812180ATL,"Tue, Dec 18, 2018",ATL,WAS,Atlanta Hawks,Washington Wizards,118,110,8,Home,102.8,True,2019
+201812220WAS,"Sat, Dec 22, 2018",WAS,PHO,Washington Wizards,Phoenix Suns,149,146,3,Home,92.6,True,2019
+201812290WAS,"Sat, Dec 29, 2018",WAS,CHO,Washington Wizards,Charlotte Hornets,130,126,4,Home,104.3,True,2019
+201901020WAS,"Wed, Jan 2, 2019",WAS,ATL,Washington Wizards,Atlanta Hawks,114,98,16,Home,99.6,True,2019
+201901040MIA,"Fri, Jan 4, 2019",MIA,WAS,Miami Heat,Washington Wizards,115,109,6,Home,103.3,True,2019
+201901080PHI,"Tue, Jan 8, 2019",PHI,WAS,Philadelphia 76ers,Washington Wizards,132,115,17,Home,102.9,True,2019
+201901090WAS,"Wed, Jan 9, 2019",WAS,PHI,Washington Wizards,Philadelphia 76ers,123,106,17,Home,102.1,True,2019
+201901110WAS,"Fri, Jan 11, 2019",WAS,MIL,Washington Wizards,Milwaukee Bucks,113,106,7,Home,99.4,True,2019
+201901130WAS,"Sun, Jan 13, 2019",WAS,TOR,Washington Wizards,Toronto Raptors,138,140,-2,Home,101.5,True,2019
+201901170WAS,"Thu, Jan 17, 2019",WAS,NYK,Washington Wizards,New York Knicks,101,100,1,Home,97.5,True,2019
+201901250ORL,"Fri, Jan 25, 2019",ORL,WAS,Orlando Magic,Washington Wizards,91,95,-4,Home,90.7,True,2019
+201902020WAS,"Sat, Feb 2, 2019",WAS,MIL,Washington Wizards,Milwaukee Bucks,115,131,-16,Home,103.6,True,2019
+201902040WAS,"Mon, Feb 4, 2019",WAS,ATL,Washington Wizards,Atlanta Hawks,129,137,-8,Home,100.4,True,2019
+201902060MIL,"Wed, Feb 6, 2019",MIL,WAS,Milwaukee Bucks,Washington Wizards,148,129,19,Home,111.0,True,2019
+201902130TOR,"Wed, Feb 13, 2019",TOR,WAS,Toronto Raptors,Washington Wizards,129,120,9,Home,110.8,True,2019
+201902220CHO,"Fri, Feb 22, 2019",CHO,WAS,Charlotte Hornets,Washington Wizards,123,110,13,Home,104.5,True,2019
+201903010BOS,"Fri, Mar 1, 2019",BOS,WAS,Boston Celtics,Washington Wizards,107,96,11,Home,101.1,True,2019
+201903030WAS,"Sun, Mar 3, 2019",WAS,MIN,Washington Wizards,Minnesota Timberwolves,135,121,14,Home,103.7,True,2019
+201903060WAS,"Wed, Mar 6, 2019",WAS,DAL,Washington Wizards,Dallas Mavericks,132,123,9,Home,97.0,True,2019
+201903080CHO,"Fri, Mar 8, 2019",CHO,WAS,Charlotte Hornets,Washington Wizards,112,111,1,Home,95.8,True,2019
+201903090MIN,"Sat, Mar 9, 2019",MIN,WAS,Minnesota Timberwolves,Washington Wizards,135,130,5,Home,103.0,True,2019
+201903130WAS,"Wed, Mar 13, 2019",WAS,ORL,Washington Wizards,Orlando Magic,100,90,10,Home,90.3,True,2019
+201903150WAS,"Fri, Mar 15, 2019",WAS,CHO,Washington Wizards,Charlotte Hornets,110,116,-6,Home,100.0,True,2019
+201903160WAS,"Sat, Mar 16, 2019",WAS,MEM,Washington Wizards,Memphis Grizzlies,135,128,7,Home,100.6,True,2019
+201903230WAS,"Sat, Mar 23, 2019",WAS,MIA,Washington Wizards,Miami Heat,108,113,-5,Home,93.8,True,2019
+201903270PHO,"Wed, Mar 27, 2019",PHO,WAS,Phoenix Suns,Washington Wizards,121,124,-3,Home,102.2,True,2019
+201904070NYK,"Sun, Apr 7, 2019",NYK,WAS,New York Knicks,Washington Wizards,113,110,3,Home,94.5,True,2019
+201904090WAS,"Tue, Apr 9, 2019",WAS,BOS,Washington Wizards,Boston Celtics,110,116,-6,Home,101.9,True,2019
+201810170PHO,"Wed, Oct 17, 2018",PHO,DAL,Phoenix Suns,Dallas Mavericks,121,100,21,Home,92.6,True,2019
+201810200DAL,"Sat, Oct 20, 2018",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,140,136,4,Home,109.0,True,2019
+201810240ATL,"Wed, Oct 24, 2018",ATL,DAL,Atlanta Hawks,Dallas Mavericks,111,104,7,Home,108.1,True,2019
+201810260TOR,"Fri, Oct 26, 2018",TOR,DAL,Toronto Raptors,Dallas Mavericks,116,107,9,Home,100.7,True,2019
+201811020DAL,"Fri, Nov 2, 2018",DAL,NYK,Dallas Mavericks,New York Knicks,106,118,-12,Home,96.4,True,2019
+201811190MEM,"Mon, Nov 19, 2018",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,98,88,10,Home,95.1,True,2019
+201811240DAL,"Sat, Nov 24, 2018",DAL,BOS,Dallas Mavericks,Boston Celtics,113,104,9,Home,97.4,True,2019
+201812100DAL,"Mon, Dec 10, 2018",DAL,ORL,Dallas Mavericks,Orlando Magic,101,76,25,Home,95.6,True,2019
+201812120DAL,"Wed, Dec 12, 2018",DAL,ATL,Dallas Mavericks,Atlanta Hawks,114,107,7,Home,101.3,True,2019
+201812130PHO,"Thu, Dec 13, 2018",PHO,DAL,Phoenix Suns,Dallas Mavericks,99,89,10,Home,97.9,True,2019
+201901020CHO,"Wed, Jan 2, 2019",CHO,DAL,Charlotte Hornets,Dallas Mavericks,84,122,-38,Home,98.2,True,2019
+201901040BOS,"Fri, Jan 4, 2019",BOS,DAL,Boston Celtics,Dallas Mavericks,114,93,21,Home,96.9,True,2019
+201901050PHI,"Sat, Jan 5, 2019",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,106,100,6,Home,100.5,True,2019
+201901090DAL,"Wed, Jan 9, 2019",DAL,PHO,Dallas Mavericks,Phoenix Suns,104,94,10,Home,98.3,True,2019
+201901110MIN,"Fri, Jan 11, 2019",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,115,119,-4,Home,100.1,True,2019
+201901210MIL,"Mon, Jan 21, 2019",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,116,106,10,Home,104.3,True,2019
+201901270DAL,"Sun, Jan 27, 2019",DAL,TOR,Dallas Mavericks,Toronto Raptors,120,123,-3,Home,100.5,True,2019
+201901300NYK,"Wed, Jan 30, 2019",NYK,DAL,New York Knicks,Dallas Mavericks,90,114,-24,Home,97.1,True,2019
+201902060DAL,"Wed, Feb 6, 2019",DAL,CHO,Dallas Mavericks,Charlotte Hornets,99,93,6,Home,98.9,True,2019
+201902080DAL,"Fri, Feb 8, 2019",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,107,122,-15,Home,98.6,True,2019
+201902130DAL,"Wed, Feb 13, 2019",DAL,MIA,Dallas Mavericks,Miami Heat,101,112,-11,Home,97.4,True,2019
+201903020DAL,"Sat, Mar 2, 2019",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,81,111,-30,Home,96.0,True,2019
+201903080ORL,"Fri, Mar 8, 2019",ORL,DAL,Orlando Magic,Dallas Mavericks,111,106,5,Home,97.3,True,2019
+201903280MIA,"Thu, Mar 28, 2019",MIA,DAL,Miami Heat,Dallas Mavericks,105,99,6,Home,100.0,True,2019
+201904010DAL,"Mon, Apr 1, 2019",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,122,102,20,Home,104.1,True,2019
+201904030DAL,"Wed, Apr 3, 2019",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,108,110,-2,Home,98.2,True,2019
+201904050DAL,"Fri, Apr 5, 2019",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,112,122,-10,Home,98.8,True,2019
+201904070MEM,"Sun, Apr 7, 2019",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,127,129,-2,Home,95.2,True,2019
+201904090DAL,"Tue, Apr 9, 2019",DAL,PHO,Dallas Mavericks,Phoenix Suns,120,109,11,Home,105.9,True,2019
+201810240TOR,"Wed, Oct 24, 2018",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,112,105,7,Home,97.3,True,2019
+201810260MIN,"Fri, Oct 26, 2018",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,95,125,-30,Home,106.1,True,2019
+201811180MIN,"Sun, Nov 18, 2018",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,87,100,-13,Home,94.0,True,2019
+201812010MIN,"Sat, Dec 1, 2018",MIN,BOS,Minnesota Timberwolves,Boston Celtics,109,118,-9,Home,99.4,True,2019
+201812050MIN,"Wed, Dec 5, 2018",MIN,CHO,Minnesota Timberwolves,Charlotte Hornets,121,104,17,Home,99.5,True,2019
+201812150PHO,"Sat, Dec 15, 2018",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,107,99,8,Home,100.2,True,2019
+201812280MIN,"Fri, Dec 28, 2018",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,120,123,-3,Home,100.5,True,2019
+201812300MIA,"Sun, Dec 30, 2018",MIA,MIN,Miami Heat,Minnesota Timberwolves,104,113,-9,Home,99.7,True,2019
+201901020BOS,"Wed, Jan 2, 2019",BOS,MIN,Boston Celtics,Minnesota Timberwolves,115,102,13,Home,95.5,True,2019
+201901040MIN,"Fri, Jan 4, 2019",MIN,ORL,Minnesota Timberwolves,Orlando Magic,120,103,17,Home,100.5,True,2019
+201901150PHI,"Tue, Jan 15, 2019",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,149,107,42,Home,105.6,True,2019
+201901200MIN,"Sun, Jan 20, 2019",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,116,114,2,Home,104.5,True,2019
+201901220PHO,"Tue, Jan 22, 2019",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,91,118,-27,Home,100.5,True,2019
+201901300MIN,"Wed, Jan 30, 2019",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,99,97,2,Home,88.8,True,2019
+201902050MEM,"Tue, Feb 5, 2019",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,108,106,2,Home,92.0,True,2019
+201902070ORL,"Thu, Feb 7, 2019",ORL,MIN,Orlando Magic,Minnesota Timberwolves,122,112,10,Home,95.4,True,2019
+201902220NYK,"Fri, Feb 22, 2019",NYK,MIN,New York Knicks,Minnesota Timberwolves,104,115,-11,Home,105.6,True,2019
+201902230MIL,"Sat, Feb 23, 2019",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,140,128,12,Home,104.7,True,2019
+201902270ATL,"Wed, Feb 27, 2019",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,131,123,8,Home,100.8,True,2019
+201903100MIN,"Sun, Mar 10, 2019",MIN,NYK,Minnesota Timberwolves,New York Knicks,103,92,11,Home,97.0,True,2019
+201903210CHO,"Thu, Mar 21, 2019",CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,113,106,7,Home,103.0,True,2019
+201903230MEM,"Sat, Mar 23, 2019",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,99,112,-13,Home,96.2,True,2019
+201903300MIN,"Sat, Mar 30, 2019",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,109,118,-9,Home,98.4,True,2019
+201904050MIN,"Fri, Apr 5, 2019",MIN,MIA,Minnesota Timberwolves,Miami Heat,111,109,2,Home,100.8,True,2019
+201904090MIN,"Tue, Apr 9, 2019",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,100,120,-20,Home,103.7,True,2019
+201810190MEM,"Fri, Oct 19, 2018",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,131,117,14,Home,106.0,True,2019
+201810270MEM,"Sat, Oct 27, 2018",MEM,PHO,Memphis Grizzlies,Phoenix Suns,117,96,21,Home,97.8,True,2019
+201811040PHO,"Sun, Nov 4, 2018",PHO,MEM,Phoenix Suns,Memphis Grizzlies,102,100,2,Home,91.6,True,2019
+201811100MEM,"Sat, Nov 10, 2018",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,112,106,6,Home,94.3,True,2019
+201811140MIL,"Wed, Nov 14, 2018",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,113,116,-3,Home,99.0,True,2019
+201811250MEM,"Sun, Nov 25, 2018",MEM,NYK,Memphis Grizzlies,New York Knicks,98,103,-5,Home,93.8,True,2019
+201811270MEM,"Tue, Nov 27, 2018",MEM,TOR,Memphis Grizzlies,Toronto Raptors,114,122,-8,Home,92.2,True,2019
+201812020PHI,"Sun, Dec 2, 2018",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,103,95,8,Home,98.7,True,2019
+201812140MEM,"Fri, Dec 14, 2018",MEM,MIA,Memphis Grizzlies,Miami Heat,97,100,-3,Home,88.0,True,2019
+201812290MEM,"Sat, Dec 29, 2018",MEM,BOS,Memphis Grizzlies,Boston Celtics,103,112,-9,Home,95.0,True,2019
+201901120MIA,"Sat, Jan 12, 2019",MIA,MEM,Miami Heat,Memphis Grizzlies,112,108,4,Home,91.2,True,2019
+201901160MEM,"Wed, Jan 16, 2019",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,101,111,-10,Home,103.5,True,2019
+201901180BOS,"Fri, Jan 18, 2019",BOS,MEM,Boston Celtics,Memphis Grizzlies,122,116,6,Home,100.0,True,2019
+201901190TOR,"Sat, Jan 19, 2019",TOR,MEM,Toronto Raptors,Memphis Grizzlies,119,90,29,Home,97.0,True,2019
+201901230MEM,"Wed, Jan 23, 2019",MEM,CHO,Memphis Grizzlies,Charlotte Hornets,107,118,-11,Home,93.3,True,2019
+201902010CHO,"Fri, Feb 1, 2019",CHO,MEM,Charlotte Hornets,Memphis Grizzlies,100,92,8,Home,88.4,True,2019
+201902030NYK,"Sun, Feb 3, 2019",NYK,MEM,New York Knicks,Memphis Grizzlies,84,96,-12,Home,92.3,True,2019
+201903100MEM,"Sun, Mar 10, 2019",MEM,ORL,Memphis Grizzlies,Orlando Magic,105,97,8,Home,95.8,True,2019
+201903130ATL,"Wed, Mar 13, 2019",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,132,111,21,Home,101.1,True,2019
+201903220ORL,"Fri, Mar 22, 2019",ORL,MEM,Orlando Magic,Memphis Grizzlies,123,119,4,Home,95.9,True,2019
+201903300PHO,"Sat, Mar 30, 2019",PHO,MEM,Phoenix Suns,Memphis Grizzlies,115,120,-5,Home,100.6,True,2019
+201810170ORL,"Wed, Oct 17, 2018",ORL,MIA,Orlando Magic,Miami Heat,104,101,3,Home,103.5,True,2019
+201810200MIA,"Sat, Oct 20, 2018",MIA,CHO,Miami Heat,Charlotte Hornets,112,113,-1,Home,99.5,True,2019
+201810240MIA,"Wed, Oct 24, 2018",MIA,NYK,Miami Heat,New York Knicks,110,87,23,Home,99.6,True,2019
+201810300CHO,"Tue, Oct 30, 2018",CHO,MIA,Charlotte Hornets,Miami Heat,125,113,12,Home,98.1,True,2019
+201811030ATL,"Sat, Nov 3, 2018",ATL,MIA,Atlanta Hawks,Miami Heat,123,118,5,Home,100.5,True,2019
+201811120MIA,"Mon, Nov 12, 2018",MIA,PHI,Miami Heat,Philadelphia 76ers,114,124,-10,Home,96.5,True,2019
+201811250TOR,"Sun, Nov 25, 2018",TOR,MIA,Toronto Raptors,Miami Heat,125,115,10,Home,96.0,True,2019
+201811270MIA,"Tue, Nov 27, 2018",MIA,ATL,Miami Heat,Atlanta Hawks,113,115,-2,Home,106.7,True,2019
+201812040MIA,"Tue, Dec 4, 2018",MIA,ORL,Miami Heat,Orlando Magic,90,105,-15,Home,90.3,True,2019
+201812070PHO,"Fri, Dec 7, 2018",PHO,MIA,Phoenix Suns,Miami Heat,98,115,-17,Home,99.7,True,2019
+201812220MIA,"Sat, Dec 22, 2018",MIA,MIL,Miami Heat,Milwaukee Bucks,94,87,7,Home,99.6,True,2019
+201812230ORL,"Sun, Dec 23, 2018",ORL,MIA,Orlando Magic,Miami Heat,91,115,-24,Home,91.0,True,2019
+201812260MIA,"Wed, Dec 26, 2018",MIA,TOR,Miami Heat,Toronto Raptors,104,106,-2,Home,92.9,True,2019
+201901060ATL,"Sun, Jan 6, 2019",ATL,MIA,Atlanta Hawks,Miami Heat,106,82,24,Home,97.3,True,2019
+201901100MIA,"Thu, Jan 10, 2019",MIA,BOS,Miami Heat,Boston Celtics,115,99,16,Home,94.4,True,2019
+201901150MIL,"Tue, Jan 15, 2019",MIL,MIA,Milwaukee Bucks,Miami Heat,124,86,38,Home,102.2,True,2019
+201901210BOS,"Mon, Jan 21, 2019",BOS,MIA,Boston Celtics,Miami Heat,107,99,8,Home,98.8,True,2019
+201901270NYK,"Sun, Jan 27, 2019",NYK,MIA,New York Knicks,Miami Heat,97,106,-9,Home,96.6,True,2019
+201902210PHI,"Thu, Feb 21, 2019",PHI,MIA,Philadelphia 76ers,Miami Heat,106,102,4,Home,99.0,True,2019
+201902250MIA,"Mon, Feb 25, 2019",MIA,PHO,Miami Heat,Phoenix Suns,121,124,-3,Home,103.6,True,2019
+201903040MIA,"Mon, Mar 4, 2019",MIA,ATL,Miami Heat,Atlanta Hawks,114,113,1,Home,97.6,True,2019
+201903060CHO,"Wed, Mar 6, 2019",CHO,MIA,Charlotte Hornets,Miami Heat,84,91,-7,Home,93.3,True,2019
+201903100MIA,"Sun, Mar 10, 2019",MIA,TOR,Miami Heat,Toronto Raptors,104,125,-21,Home,100.2,True,2019
+201903150MIA,"Fri, Mar 15, 2019",MIA,MIL,Miami Heat,Milwaukee Bucks,98,113,-15,Home,103.8,True,2019
+201903170MIA,"Sun, Mar 17, 2019",MIA,CHO,Miami Heat,Charlotte Hornets,93,75,18,Home,88.1,True,2019
+201903220MIL,"Fri, Mar 22, 2019",MIL,MIA,Milwaukee Bucks,Miami Heat,116,87,29,Home,94.6,True,2019
+201903260MIA,"Tue, Mar 26, 2019",MIA,ORL,Miami Heat,Orlando Magic,99,104,-5,Home,97.1,True,2019
+201903300NYK,"Sat, Mar 30, 2019",NYK,MIA,New York Knicks,Miami Heat,92,100,-8,Home,97.6,True,2019
+201904010BOS,"Mon, Apr 1, 2019",BOS,MIA,Boston Celtics,Miami Heat,110,105,5,Home,98.4,True,2019
+201904030MIA,"Wed, Apr 3, 2019",MIA,BOS,Miami Heat,Boston Celtics,102,112,-10,Home,97.8,True,2019
+201904070TOR,"Sun, Apr 7, 2019",TOR,MIA,Toronto Raptors,Miami Heat,117,109,8,Home,94.8,True,2019
+201904090MIA,"Tue, Apr 9, 2019",MIA,PHI,Miami Heat,Philadelphia 76ers,122,99,23,Home,103.5,True,2019
+201810160BOS,"Tue, Oct 16, 2018",BOS,PHI,Boston Celtics,Philadelphia 76ers,105,87,18,Home,104.3,True,2019
+201810190TOR,"Fri, Oct 19, 2018",TOR,BOS,Toronto Raptors,Boston Celtics,113,101,12,Home,97.8,True,2019
+201810200NYK,"Sat, Oct 20, 2018",NYK,BOS,New York Knicks,Boston Celtics,101,103,-2,Home,99.3,True,2019
+201810220BOS,"Mon, Oct 22, 2018",BOS,ORL,Boston Celtics,Orlando Magic,90,93,-3,Home,96.4,True,2019
+201811010BOS,"Thu, Nov 1, 2018",BOS,MIL,Boston Celtics,Milwaukee Bucks,117,113,4,Home,100.8,True,2019
+201811080PHO,"Thu, Nov 8, 2018",PHO,BOS,Phoenix Suns,Boston Celtics,109,116,-7,Home,98.1,True,2019
+201811160BOS,"Fri, Nov 16, 2018",BOS,TOR,Boston Celtics,Toronto Raptors,123,116,7,Home,97.3,True,2019
+201811190CHO,"Mon, Nov 19, 2018",CHO,BOS,Charlotte Hornets,Boston Celtics,117,112,5,Home,100.4,True,2019
+201811210BOS,"Wed, Nov 21, 2018",BOS,NYK,Boston Celtics,New York Knicks,109,117,-8,Home,101.8,True,2019
+201811230ATL,"Fri, Nov 23, 2018",ATL,BOS,Atlanta Hawks,Boston Celtics,96,114,-18,Home,106.6,True,2019
+201812060BOS,"Thu, Dec 6, 2018",BOS,NYK,Boston Celtics,New York Knicks,128,100,28,Home,100.2,True,2019
+201812140BOS,"Fri, Dec 14, 2018",BOS,ATL,Boston Celtics,Atlanta Hawks,129,108,21,Home,106.5,True,2019
+201812190BOS,"Wed, Dec 19, 2018",BOS,PHO,Boston Celtics,Phoenix Suns,103,111,-8,Home,96.4,True,2019
+201812210BOS,"Fri, Dec 21, 2018",BOS,MIL,Boston Celtics,Milwaukee Bucks,107,120,-13,Home,99.7,True,2019
+201812230BOS,"Sun, Dec 23, 2018",BOS,CHO,Boston Celtics,Charlotte Hornets,119,103,16,Home,96.9,True,2019
+201812250BOS,"Tue, Dec 25, 2018",BOS,PHI,Boston Celtics,Philadelphia 76ers,121,114,7,Home,100.9,True,2019
+201901120ORL,"Sat, Jan 12, 2019",ORL,BOS,Orlando Magic,Boston Celtics,105,103,2,Home,98.3,True,2019
+201901160BOS,"Wed, Jan 16, 2019",BOS,TOR,Boston Celtics,Toronto Raptors,117,108,9,Home,94.8,True,2019
+201901190ATL,"Sat, Jan 19, 2019",ATL,BOS,Atlanta Hawks,Boston Celtics,105,113,-8,Home,101.1,True,2019
+201901300BOS,"Wed, Jan 30, 2019",BOS,CHO,Boston Celtics,Charlotte Hornets,126,94,32,Home,94.1,True,2019
+201902010NYK,"Fri, Feb 1, 2019",NYK,BOS,New York Knicks,Boston Celtics,99,113,-14,Home,98.1,True,2019
+201902120PHI,"Tue, Feb 12, 2019",PHI,BOS,Philadelphia 76ers,Boston Celtics,109,112,-3,Home,94.3,True,2019
+201902210MIL,"Thu, Feb 21, 2019",MIL,BOS,Milwaukee Bucks,Boston Celtics,98,97,1,Home,97.8,True,2019
+201902260TOR,"Tue, Feb 26, 2019",TOR,BOS,Toronto Raptors,Boston Celtics,118,95,23,Home,98.8,True,2019
+201903160BOS,"Sat, Mar 16, 2019",BOS,ATL,Boston Celtics,Atlanta Hawks,129,120,9,Home,106.6,True,2019
+201903200PHI,"Wed, Mar 20, 2019",PHI,BOS,Philadelphia 76ers,Boston Celtics,118,115,3,Home,97.4,True,2019
+201903230CHO,"Sat, Mar 23, 2019",CHO,BOS,Charlotte Hornets,Boston Celtics,124,117,7,Home,101.0,True,2019
+201904070BOS,"Sun, Apr 7, 2019",BOS,ORL,Boston Celtics,Orlando Magic,108,116,-8,Home,99.9,True,2019
+201904280MIL,"Sun, Apr 28, 2019",MIL,BOS,Milwaukee Bucks,Boston Celtics,90,112,-22,Home,98.3,True,2019
+201904300MIL,"Tue, Apr 30, 2019",MIL,BOS,Milwaukee Bucks,Boston Celtics,123,102,21,Home,101.6,True,2019
+201905030BOS,"Fri, May 3, 2019",BOS,MIL,Boston Celtics,Milwaukee Bucks,116,123,-7,Home,104.8,True,2019
+201905060BOS,"Mon, May 6, 2019",BOS,MIL,Boston Celtics,Milwaukee Bucks,101,113,-12,Home,104.3,True,2019
+201905080MIL,"Wed, May 8, 2019",MIL,BOS,Milwaukee Bucks,Boston Celtics,116,91,25,Home,105.8,True,2019
+201810170CHO,"Wed, Oct 17, 2018",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,112,113,-1,Home,102.6,True,2019
+201810220MIL,"Mon, Oct 22, 2018",MIL,NYK,Milwaukee Bucks,New York Knicks,124,113,11,Home,100.9,True,2019
+201810240MIL,"Wed, Oct 24, 2018",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,123,108,15,Home,111.3,True,2019
+201810270MIL,"Sat, Oct 27, 2018",MIL,ORL,Milwaukee Bucks,Orlando Magic,113,91,22,Home,105.4,True,2019
+201810290MIL,"Mon, Oct 29, 2018",MIL,TOR,Milwaukee Bucks,Toronto Raptors,124,109,15,Home,107.8,True,2019
+201811230MIL,"Fri, Nov 23, 2018",MIL,PHO,Milwaukee Bucks,Phoenix Suns,114,116,-2,Home,103.9,True,2019
+201811260CHO,"Mon, Nov 26, 2018",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,110,107,3,Home,99.7,True,2019
+201812010NYK,"Sat, Dec 1, 2018",NYK,MIL,New York Knicks,Milwaukee Bucks,136,134,2,Home,102.0,True,2019
+201812090TOR,"Sun, Dec 9, 2018",TOR,MIL,Toronto Raptors,Milwaukee Bucks,99,104,-5,Home,94.3,True,2019
+201812250NYK,"Tue, Dec 25, 2018",NYK,MIL,New York Knicks,Milwaukee Bucks,95,109,-14,Home,103.4,True,2019
+201812270MIL,"Thu, Dec 27, 2018",MIL,NYK,Milwaukee Bucks,New York Knicks,112,96,16,Home,102.3,True,2019
+201901040MIL,"Fri, Jan 4, 2019",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,144,112,32,Home,112.3,True,2019
+201901050MIL,"Sat, Jan 5, 2019",MIL,TOR,Milwaukee Bucks,Toronto Raptors,116,123,-7,Home,101.0,True,2019
+201901130ATL,"Sun, Jan 13, 2019",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,114,133,-19,Home,110.2,True,2019
+201901190ORL,"Sat, Jan 19, 2019",ORL,MIL,Orlando Magic,Milwaukee Bucks,108,118,-10,Home,98.9,True,2019
+201901250MIL,"Fri, Jan 25, 2019",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,108,99,9,Home,103.2,True,2019
+201901310TOR,"Thu, Jan 31, 2019",TOR,MIL,Toronto Raptors,Milwaukee Bucks,92,105,-13,Home,100.4,True,2019
+201902090MIL,"Sat, Feb 9, 2019",MIL,ORL,Milwaukee Bucks,Orlando Magic,83,103,-20,Home,98.4,True,2019
+201903040PHO,"Mon, Mar 4, 2019",PHO,MIL,Phoenix Suns,Milwaukee Bucks,114,105,9,Home,100.6,True,2019
+201903090MIL,"Sat, Mar 9, 2019",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,131,114,17,Home,100.9,True,2019
+201903170MIL,"Sun, Mar 17, 2019",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,125,130,-5,Home,106.4,True,2019
+201903310ATL,"Sun, Mar 31, 2019",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,136,135,1,Home,105.9,True,2019
+201904040PHI,"Thu, Apr 4, 2019",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,122,128,-6,Home,110.7,True,2019
+201904070MIL,"Sun, Apr 7, 2019",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,115,107,8,Home,107.7,True,2019
+201905150MIL,"Wed, May 15, 2019",MIL,TOR,Milwaukee Bucks,Toronto Raptors,108,100,8,Home,100.7,True,2019
+201905170MIL,"Fri, May 17, 2019",MIL,TOR,Milwaukee Bucks,Toronto Raptors,125,103,22,Home,101.7,True,2019
+201905190TOR,"Sun, May 19, 2019",TOR,MIL,Toronto Raptors,Milwaukee Bucks,118,112,6,Home,99.6,True,2019
+201905210TOR,"Tue, May 21, 2019",TOR,MIL,Toronto Raptors,Milwaukee Bucks,120,102,18,Home,95.9,True,2019
+201905230MIL,"Thu, May 23, 2019",MIL,TOR,Milwaukee Bucks,Toronto Raptors,99,105,-6,Home,92.6,True,2019
+201905250TOR,"Sat, May 25, 2019",TOR,MIL,Toronto Raptors,Milwaukee Bucks,100,94,6,Home,85.6,True,2019
+201810190ORL,"Fri, Oct 19, 2018",ORL,CHO,Orlando Magic,Charlotte Hornets,88,120,-32,Home,100.9,True,2019
+201810200PHI,"Sat, Oct 20, 2018",PHI,ORL,Philadelphia 76ers,Orlando Magic,116,115,1,Home,95.5,True,2019
+201811110NYK,"Sun, Nov 11, 2018",NYK,ORL,New York Knicks,Orlando Magic,89,115,-26,Home,103.3,True,2019
+201811140ORL,"Wed, Nov 14, 2018",ORL,PHI,Orlando Magic,Philadelphia 76ers,111,106,5,Home,93.7,True,2019
+201811180ORL,"Sun, Nov 18, 2018",ORL,NYK,Orlando Magic,New York Knicks,131,117,14,Home,98.5,True,2019
+201811200ORL,"Tue, Nov 20, 2018",ORL,TOR,Orlando Magic,Toronto Raptors,91,93,-2,Home,96.3,True,2019
+201811300PHO,"Fri, Nov 30, 2018",PHO,ORL,Phoenix Suns,Orlando Magic,85,99,-14,Home,91.3,True,2019
+201812260ORL,"Wed, Dec 26, 2018",ORL,PHO,Orlando Magic,Phoenix Suns,120,122,-2,Home,96.4,True,2019
+201812280ORL,"Fri, Dec 28, 2018",ORL,TOR,Orlando Magic,Toronto Raptors,116,87,29,Home,100.6,True,2019
+201812310CHO,"Mon, Dec 31, 2018",CHO,ORL,Charlotte Hornets,Orlando Magic,125,100,25,Home,97.9,True,2019
+201901210ATL,"Mon, Jan 21, 2019",ATL,ORL,Atlanta Hawks,Orlando Magic,103,122,-19,Home,99.3,True,2019
+201902100ATL,"Sun, Feb 10, 2019",ATL,ORL,Atlanta Hawks,Orlando Magic,108,124,-16,Home,95.7,True,2019
+201902140ORL,"Thu, Feb 14, 2019",ORL,CHO,Orlando Magic,Charlotte Hornets,127,89,38,Home,96.9,True,2019
+201902240TOR,"Sun, Feb 24, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,98,113,-15,Home,100.0,True,2019
+201902260NYK,"Tue, Feb 26, 2019",NYK,ORL,New York Knicks,Orlando Magic,108,103,5,Home,98.1,True,2019
+201903050PHI,"Tue, Mar 5, 2019",PHI,ORL,Philadelphia 76ers,Orlando Magic,114,106,8,Home,97.9,True,2019
+201903170ORL,"Sun, Mar 17, 2019",ORL,ATL,Orlando Magic,Atlanta Hawks,101,91,10,Home,103.0,True,2019
+201903250ORL,"Mon, Mar 25, 2019",ORL,PHI,Orlando Magic,Philadelphia 76ers,119,98,21,Home,91.2,True,2019
+201904010TOR,"Mon, Apr 1, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,121,109,12,Home,99.4,True,2019
+201904030ORL,"Wed, Apr 3, 2019",ORL,NYK,Orlando Magic,New York Knicks,114,100,14,Home,97.1,True,2019
+201904050ORL,"Fri, Apr 5, 2019",ORL,ATL,Orlando Magic,Atlanta Hawks,149,113,36,Home,110.9,True,2019
+201904100CHO,"Wed, Apr 10, 2019",CHO,ORL,Charlotte Hornets,Orlando Magic,114,122,-8,Home,91.9,True,2019
+201904130TOR,"Sat, Apr 13, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,101,104,-3,Home,97.9,True,2019
+201904160TOR,"Tue, Apr 16, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,111,82,29,Home,93.7,True,2019
+201904190ORL,"Fri, Apr 19, 2019",ORL,TOR,Orlando Magic,Toronto Raptors,93,98,-5,Home,95.3,True,2019
+201904210ORL,"Sun, Apr 21, 2019",ORL,TOR,Orlando Magic,Toronto Raptors,85,107,-22,Home,91.9,True,2019
+201904230TOR,"Tue, Apr 23, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,115,96,19,Home,98.8,True,2019
+201810270PHI,"Sat, Oct 27, 2018",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,105,103,2,Home,100.4,True,2019
+201810290PHI,"Mon, Oct 29, 2018",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,113,92,21,Home,105.5,True,2019
+201810300TOR,"Tue, Oct 30, 2018",TOR,PHI,Toronto Raptors,Philadelphia 76ers,129,112,17,Home,107.1,True,2019
+201811090PHI,"Fri, Nov 9, 2018",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,133,132,1,Home,102.1,True,2019
+201811170CHO,"Sat, Nov 17, 2018",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,119,122,-3,Home,105.5,True,2019
+201811190PHI,"Mon, Nov 19, 2018",PHI,PHO,Philadelphia 76ers,Phoenix Suns,119,114,5,Home,104.5,True,2019
+201811280PHI,"Wed, Nov 28, 2018",PHI,NYK,Philadelphia 76ers,New York Knicks,117,91,26,Home,100.4,True,2019
+201812050TOR,"Wed, Dec 5, 2018",TOR,PHI,Toronto Raptors,Philadelphia 76ers,113,102,11,Home,101.8,True,2019
+201812190PHI,"Wed, Dec 19, 2018",PHI,NYK,Philadelphia 76ers,New York Knicks,131,109,22,Home,99.5,True,2019
+201812220PHI,"Sat, Dec 22, 2018",PHI,TOR,Philadelphia 76ers,Toronto Raptors,126,101,25,Home,107.2,True,2019
+201901020PHO,"Wed, Jan 2, 2019",PHO,PHI,Phoenix Suns,Philadelphia 76ers,127,132,-5,Home,106.6,True,2019
+201901110PHI,"Fri, Jan 11, 2019",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,121,123,-2,Home,98.1,True,2019
+201901130NYK,"Sun, Jan 13, 2019",NYK,PHI,New York Knicks,Philadelphia 76ers,105,108,-3,Home,100.2,True,2019
+201902050PHI,"Tue, Feb 5, 2019",PHI,TOR,Philadelphia 76ers,Toronto Raptors,107,119,-12,Home,96.1,True,2019
+201902130NYK,"Wed, Feb 13, 2019",NYK,PHI,New York Knicks,Philadelphia 76ers,111,126,-15,Home,105.0,True,2019
+201903190CHO,"Tue, Mar 19, 2019",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,114,118,-4,Home,98.4,True,2019
+201903230ATL,"Sat, Mar 23, 2019",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,129,127,2,Home,106.7,True,2019
+201904030ATL,"Wed, Apr 3, 2019",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,130,122,8,Home,101.5,True,2019
+201904270TOR,"Sat, Apr 27, 2019",TOR,PHI,Toronto Raptors,Philadelphia 76ers,108,95,13,Home,96.5,True,2019
+201904290TOR,"Mon, Apr 29, 2019",TOR,PHI,Toronto Raptors,Philadelphia 76ers,89,94,-5,Home,94.3,True,2019
+201905020PHI,"Thu, May 2, 2019",PHI,TOR,Philadelphia 76ers,Toronto Raptors,116,95,21,Home,93.5,True,2019
+201905050PHI,"Sun, May 5, 2019",PHI,TOR,Philadelphia 76ers,Toronto Raptors,96,101,-5,Home,91.0,True,2019
+201905070TOR,"Tue, May 7, 2019",TOR,PHI,Toronto Raptors,Philadelphia 76ers,125,89,36,Home,99.1,True,2019
+201905090PHI,"Thu, May 9, 2019",PHI,TOR,Philadelphia 76ers,Toronto Raptors,112,101,11,Home,96.1,True,2019
+201905120TOR,"Sun, May 12, 2019",TOR,PHI,Toronto Raptors,Philadelphia 76ers,92,90,2,Home,87.6,True,2019
+201810170NYK,"Wed, Oct 17, 2018",NYK,ATL,New York Knicks,Atlanta Hawks,126,107,19,Home,113.5,True,2019
+201811070ATL,"Wed, Nov 7, 2018",ATL,NYK,Atlanta Hawks,New York Knicks,107,112,-5,Home,101.5,True,2019
+201811100TOR,"Sat, Nov 10, 2018",TOR,NYK,Toronto Raptors,New York Knicks,128,112,16,Home,100.0,True,2019
+201812090NYK,"Sun, Dec 9, 2018",NYK,CHO,New York Knicks,Charlotte Hornets,107,119,-12,Home,102.8,True,2019
+201812140CHO,"Fri, Dec 14, 2018",CHO,NYK,Charlotte Hornets,New York Knicks,124,126,-2,Home,100.3,True,2019
+201812170NYK,"Mon, Dec 17, 2018",NYK,PHO,New York Knicks,Phoenix Suns,110,128,-18,Home,104.2,True,2019
+201812210NYK,"Fri, Dec 21, 2018",NYK,ATL,New York Knicks,Atlanta Hawks,107,114,-7,Home,100.6,True,2019
+201901280CHO,"Mon, Jan 28, 2019",CHO,NYK,Charlotte Hornets,New York Knicks,101,92,9,Home,94.7,True,2019
+201902090NYK,"Sat, Feb 9, 2019",NYK,TOR,New York Knicks,Toronto Raptors,99,104,-5,Home,98.7,True,2019
+201902140ATL,"Thu, Feb 14, 2019",ATL,NYK,Atlanta Hawks,New York Knicks,91,106,-15,Home,97.0,True,2019
+201903060PHO,"Wed, Mar 6, 2019",PHO,NYK,Phoenix Suns,New York Knicks,107,96,11,Home,98.1,True,2019
+201903180TOR,"Mon, Mar 18, 2019",TOR,NYK,Toronto Raptors,New York Knicks,128,92,36,Home,103.6,True,2019
+201903280NYK,"Thu, Mar 28, 2019",NYK,TOR,New York Knicks,Toronto Raptors,92,117,-25,Home,98.6,True,2019
+201810220TOR,"Mon, Oct 22, 2018",TOR,CHO,Toronto Raptors,Charlotte Hornets,127,106,21,Home,100.2,True,2019
+201811020PHO,"Fri, Nov 2, 2018",PHO,TOR,Phoenix Suns,Toronto Raptors,98,107,-9,Home,97.5,True,2019
+201811210ATL,"Wed, Nov 21, 2018",ATL,TOR,Atlanta Hawks,Toronto Raptors,108,124,-16,Home,99.7,True,2019
+201901080TOR,"Tue, Jan 8, 2019",TOR,ATL,Toronto Raptors,Atlanta Hawks,104,101,3,Home,103.8,True,2019
+201901170TOR,"Thu, Jan 17, 2019",TOR,PHO,Toronto Raptors,Phoenix Suns,111,109,2,Home,98.5,True,2019
+201902070ATL,"Thu, Feb 7, 2019",ATL,TOR,Atlanta Hawks,Toronto Raptors,101,119,-18,Home,96.9,True,2019
+201903240TOR,"Sun, Mar 24, 2019",TOR,CHO,Toronto Raptors,Charlotte Hornets,114,115,-1,Home,90.7,True,2019
+201904050CHO,"Fri, Apr 5, 2019",CHO,TOR,Charlotte Hornets,Toronto Raptors,113,111,2,Home,96.5,True,2019
+201901060PHO,"Sun, Jan 6, 2019",PHO,CHO,Phoenix Suns,Charlotte Hornets,113,119,-6,Home,102.8,True,2019
+201901190CHO,"Sat, Jan 19, 2019",CHO,PHO,Charlotte Hornets,Phoenix Suns,135,115,20,Home,98.0,True,2019
+201902020PHO,"Sat, Feb 2, 2019",PHO,ATL,Phoenix Suns,Atlanta Hawks,112,118,-6,Home,101.8,True,2019
+201902230ATL,"Sat, Feb 23, 2019",ATL,PHO,Atlanta Hawks,Phoenix Suns,120,112,8,Home,105.4,True,2019
+201811060CHO,"Tue, Nov 6, 2018",CHO,ATL,Charlotte Hornets,Atlanta Hawks,113,102,11,Home,108.0,True,2019
+201811250ATL,"Sun, Nov 25, 2018",ATL,CHO,Atlanta Hawks,Charlotte Hornets,124,123,1,Home,101.6,True,2019
+201811280CHO,"Wed, Nov 28, 2018",CHO,ATL,Charlotte Hornets,Atlanta Hawks,108,94,14,Home,104.0,True,2019
+201902090ATL,"Sat, Feb 9, 2019",ATL,CHO,Atlanta Hawks,Charlotte Hornets,120,129,-9,Home,98.2,True,2019

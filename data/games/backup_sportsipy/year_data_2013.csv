@@ -1,0 +1,1315 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201210310DET,"Wed, Oct 31, 2012",DET,HOU,Detroit Pistons,Houston Rockets,96,105,-9,Home,94.6,True,2013
+201211020ATL,"Fri, Nov 2, 2012",ATL,HOU,Atlanta Hawks,Houston Rockets,102,109,-7,Home,97.4,True,2013
+201211030HOU,"Sat, Nov 3, 2012",HOU,POR,Houston Rockets,Portland Trail Blazers,85,95,-10,Home,93.0,True,2013
+201211070HOU,"Wed, Nov 7, 2012",HOU,DEN,Houston Rockets,Denver Nuggets,87,93,-6,Home,93.1,True,2013
+201211090MEM,"Fri, Nov 9, 2012",MEM,HOU,Memphis Grizzlies,Houston Rockets,93,85,8,Home,89.5,True,2013
+201211100HOU,"Sat, Nov 10, 2012",HOU,DET,Houston Rockets,Detroit Pistons,96,82,14,Home,93.1,True,2013
+201211120HOU,"Mon, Nov 12, 2012",HOU,MIA,Houston Rockets,Miami Heat,110,113,-3,Home,92.6,True,2013
+201211140HOU,"Wed, Nov 14, 2012",HOU,NOH,Houston Rockets,New Orleans Hornets,100,96,4,Home,90.8,True,2013
+201211160POR,"Fri, Nov 16, 2012",POR,HOU,Portland Trail Blazers,Houston Rockets,119,117,2,Home,91.2,True,2013
+201211180LAL,"Sun, Nov 18, 2012",LAL,HOU,Los Angeles Lakers,Houston Rockets,119,108,11,Home,99.7,True,2013
+201211190UTA,"Mon, Nov 19, 2012",UTA,HOU,Utah Jazz,Houston Rockets,102,91,11,Home,97.2,True,2013
+201211210HOU,"Wed, Nov 21, 2012",HOU,CHI,Houston Rockets,Chicago Bulls,93,89,4,Home,98.1,True,2013
+201211230HOU,"Fri, Nov 23, 2012",HOU,NYK,Houston Rockets,New York Knicks,131,103,28,Home,99.6,True,2013
+201211270HOU,"Tue, Nov 27, 2012",HOU,TOR,Houston Rockets,Toronto Raptors,117,101,16,Home,94.0,True,2013
+201211280OKC,"Wed, Nov 28, 2012",OKC,HOU,Oklahoma City Thunder,Houston Rockets,120,98,22,Home,94.9,True,2013
+201212010HOU,"Sat, Dec 1, 2012",HOU,UTA,Houston Rockets,Utah Jazz,124,116,8,Home,98.0,True,2013
+201212040HOU,"Tue, Dec 4, 2012",HOU,LAL,Houston Rockets,Los Angeles Lakers,107,105,2,Home,98.8,True,2013
+201212070SAS,"Fri, Dec 7, 2012",SAS,HOU,San Antonio Spurs,Houston Rockets,114,92,22,Home,103.2,True,2013
+201212080HOU,"Sat, Dec 8, 2012",HOU,DAL,Houston Rockets,Dallas Mavericks,109,116,-7,Home,100.8,True,2013
+201212100HOU,"Mon, Dec 10, 2012",HOU,SAS,Houston Rockets,San Antonio Spurs,126,134,-8,Home,102.6,True,2013
+201212120HOU,"Wed, Dec 12, 2012",HOU,WAS,Houston Rockets,Washington Wizards,99,93,6,Home,99.1,True,2013
+201212140HOU,"Fri, Dec 14, 2012",HOU,BOS,Houston Rockets,Boston Celtics,101,89,12,Home,94.0,True,2013
+201212160TOR,"Sun, Dec 16, 2012",TOR,HOU,Toronto Raptors,Houston Rockets,103,96,7,Home,94.1,True,2013
+201212170NYK,"Mon, Dec 17, 2012",NYK,HOU,New York Knicks,Houston Rockets,96,109,-13,Home,98.6,True,2013
+201212190HOU,"Wed, Dec 19, 2012",HOU,PHI,Houston Rockets,Philadelphia 76ers,125,103,22,Home,93.0,True,2013
+201212220HOU,"Sat, Dec 22, 2012",HOU,MEM,Houston Rockets,Memphis Grizzlies,121,96,25,Home,96.4,True,2013
+201212250CHI,"Tue, Dec 25, 2012",CHI,HOU,Chicago Bulls,Houston Rockets,97,120,-23,Home,92.0,True,2013
+201212260MIN,"Wed, Dec 26, 2012",MIN,HOU,Minnesota Timberwolves,Houston Rockets,84,87,-3,Home,93.5,True,2013
+201212280SAS,"Fri, Dec 28, 2012",SAS,HOU,San Antonio Spurs,Houston Rockets,122,116,6,Home,104.5,True,2013
+201212290HOU,"Sat, Dec 29, 2012",HOU,OKC,Houston Rockets,Oklahoma City Thunder,94,124,-30,Home,110.1,True,2013
+201212310HOU,"Mon, Dec 31, 2012",HOU,ATL,Houston Rockets,Atlanta Hawks,123,104,19,Home,99.5,True,2013
+201301020HOU,"Wed, Jan 2, 2013",HOU,NOH,Houston Rockets,New Orleans Hornets,104,92,12,Home,92.4,True,2013
+201301040MIL,"Fri, Jan 4, 2013",MIL,HOU,Milwaukee Bucks,Houston Rockets,101,115,-14,Home,101.4,True,2013
+201301050CLE,"Sat, Jan 5, 2013",CLE,HOU,Cleveland Cavaliers,Houston Rockets,104,112,-8,Home,95.5,True,2013
+201301080HOU,"Tue, Jan 8, 2013",HOU,LAL,Houston Rockets,Los Angeles Lakers,125,112,13,Home,102.6,True,2013
+201301090NOH,"Wed, Jan 9, 2013",NOH,HOU,New Orleans Hornets,Houston Rockets,88,79,9,Home,89.0,True,2013
+201301110BOS,"Fri, Jan 11, 2013",BOS,HOU,Boston Celtics,Houston Rockets,103,91,12,Home,92.6,True,2013
+201301120PHI,"Sat, Jan 12, 2013",PHI,HOU,Philadelphia 76ers,Houston Rockets,107,100,7,Home,97.5,True,2013
+201301150HOU,"Tue, Jan 15, 2013",HOU,LAC,Houston Rockets,Los Angeles Clippers,109,117,-8,Home,92.6,True,2013
+201301160DAL,"Wed, Jan 16, 2013",DAL,HOU,Dallas Mavericks,Houston Rockets,105,100,5,Home,101.4,True,2013
+201301180IND,"Fri, Jan 18, 2013",IND,HOU,Indiana Pacers,Houston Rockets,105,95,10,Home,90.5,True,2013
+201301190MIN,"Sat, Jan 19, 2013",MIN,HOU,Minnesota Timberwolves,Houston Rockets,92,79,13,Home,83.9,True,2013
+201301210CHA,"Mon, Jan 21, 2013",CHA,HOU,Charlotte Bobcats,Houston Rockets,94,100,-6,Home,91.3,True,2013
+201301230HOU,"Wed, Jan 23, 2013",HOU,DEN,Houston Rockets,Denver Nuggets,95,105,-10,Home,99.0,True,2013
+201301250NOH,"Fri, Jan 25, 2013",NOH,HOU,New Orleans Hornets,Houston Rockets,82,100,-18,Home,88.0,True,2013
+201301260HOU,"Sat, Jan 26, 2013",HOU,BRK,Houston Rockets,Brooklyn Nets,119,106,13,Home,91.1,True,2013
+201301280UTA,"Mon, Jan 28, 2013",UTA,HOU,Utah Jazz,Houston Rockets,80,125,-45,Home,88.3,True,2013
+201301300DEN,"Wed, Jan 30, 2013",DEN,HOU,Denver Nuggets,Houston Rockets,118,110,8,Home,106.0,True,2013
+201302020HOU,"Sat, Feb 2, 2013",HOU,CHA,Houston Rockets,Charlotte Bobcats,109,95,14,Home,91.0,True,2013
+201302050HOU,"Tue, Feb 5, 2013",HOU,GSW,Houston Rockets,Golden State Warriors,140,109,31,Home,97.8,True,2013
+201302060MIA,"Wed, Feb 6, 2013",MIA,HOU,Miami Heat,Houston Rockets,114,108,6,Home,95.4,True,2013
+201302080HOU,"Fri, Feb 8, 2013",HOU,POR,Houston Rockets,Portland Trail Blazers,118,103,15,Home,89.3,True,2013
+201302100SAC,"Sun, Feb 10, 2013",SAC,HOU,Sacramento Kings,Houston Rockets,117,111,6,Home,94.7,True,2013
+201302120GSW,"Tue, Feb 12, 2013",GSW,HOU,Golden State Warriors,Houston Rockets,107,116,-9,Home,101.1,True,2013
+201302130LAC,"Wed, Feb 13, 2013",LAC,HOU,Los Angeles Clippers,Houston Rockets,106,96,10,Home,96.7,True,2013
+201302200HOU,"Wed, Feb 20, 2013",HOU,OKC,Houston Rockets,Oklahoma City Thunder,122,119,3,Home,106.7,True,2013
+201302220BRK,"Fri, Feb 22, 2013",BRK,HOU,Brooklyn Nets,Houston Rockets,96,106,-10,Home,90.5,True,2013
+201302230WAS,"Sat, Feb 23, 2013",WAS,HOU,Washington Wizards,Houston Rockets,105,103,2,Home,89.9,True,2013
+201302270HOU,"Wed, Feb 27, 2013",HOU,MIL,Houston Rockets,Milwaukee Bucks,107,110,-3,Home,102.9,True,2013
+201303010ORL,"Fri, Mar 1, 2013",ORL,HOU,Orlando Magic,Houston Rockets,110,118,-8,Home,90.8,True,2013
+201303030HOU,"Sun, Mar 3, 2013",HOU,DAL,Houston Rockets,Dallas Mavericks,136,103,33,Home,98.2,True,2013
+201303060DAL,"Wed, Mar 6, 2013",DAL,HOU,Dallas Mavericks,Houston Rockets,112,108,4,Home,93.5,True,2013
+201303080GSW,"Fri, Mar 8, 2013",GSW,HOU,Golden State Warriors,Houston Rockets,88,94,-6,Home,94.5,True,2013
+201303090PHO,"Sat, Mar 9, 2013",PHO,HOU,Phoenix Suns,Houston Rockets,107,105,2,Home,94.2,True,2013
+201303130HOU,"Wed, Mar 13, 2013",HOU,PHO,Houston Rockets,Phoenix Suns,111,81,30,Home,98.1,True,2013
+201303150HOU,"Fri, Mar 15, 2013",HOU,MIN,Houston Rockets,Minnesota Timberwolves,108,100,8,Home,92.0,True,2013
+201303170HOU,"Sun, Mar 17, 2013",HOU,GSW,Houston Rockets,Golden State Warriors,78,108,-30,Home,96.5,True,2013
+201303200HOU,"Wed, Mar 20, 2013",HOU,UTA,Houston Rockets,Utah Jazz,100,93,7,Home,94.5,True,2013
+201303220HOU,"Fri, Mar 22, 2013",HOU,CLE,Houston Rockets,Cleveland Cavaliers,116,78,38,Home,95.6,True,2013
+201303240HOU,"Sun, Mar 24, 2013",HOU,SAS,Houston Rockets,San Antonio Spurs,96,95,1,Home,91.6,True,2013
+201303270HOU,"Wed, Mar 27, 2013",HOU,IND,Houston Rockets,Indiana Pacers,91,100,-9,Home,90.5,True,2013
+201303290MEM,"Fri, Mar 29, 2013",MEM,HOU,Memphis Grizzlies,Houston Rockets,103,94,9,Home,85.6,True,2013
+201303300HOU,"Sat, Mar 30, 2013",HOU,LAC,Houston Rockets,Los Angeles Clippers,98,81,17,Home,95.4,True,2013
+201304010HOU,"Mon, Apr 1, 2013",HOU,ORL,Houston Rockets,Orlando Magic,111,103,8,Home,94.0,True,2013
+201304030SAC,"Wed, Apr 3, 2013",SAC,HOU,Sacramento Kings,Houston Rockets,102,112,-10,Home,98.1,True,2013
+201304050POR,"Fri, Apr 5, 2013",POR,HOU,Portland Trail Blazers,Houston Rockets,98,116,-18,Home,94.6,True,2013
+201304060DEN,"Sat, Apr 6, 2013",DEN,HOU,Denver Nuggets,Houston Rockets,132,114,18,Home,101.9,True,2013
+201304090HOU,"Tue, Apr 9, 2013",HOU,PHO,Houston Rockets,Phoenix Suns,101,98,3,Home,96.3,True,2013
+201304120HOU,"Fri, Apr 12, 2013",HOU,MEM,Houston Rockets,Memphis Grizzlies,78,82,-4,Home,86.8,True,2013
+201304140HOU,"Sun, Apr 14, 2013",HOU,SAC,Houston Rockets,Sacramento Kings,121,100,21,Home,103.4,True,2013
+201304150PHO,"Mon, Apr 15, 2013",PHO,HOU,Phoenix Suns,Houston Rockets,119,112,7,Home,104.9,True,2013
+201304170LAL,"Wed, Apr 17, 2013",LAL,HOU,Los Angeles Lakers,Houston Rockets,99,95,4,Home,87.6,True,2013
+201304210OKC,"Sun, Apr 21, 2013",OKC,HOU,Oklahoma City Thunder,Houston Rockets,120,91,29,Home,101.7,True,2013
+201304240OKC,"Wed, Apr 24, 2013",OKC,HOU,Oklahoma City Thunder,Houston Rockets,105,102,3,Home,95.5,True,2013
+201304270HOU,"Sat, Apr 27, 2013",HOU,OKC,Houston Rockets,Oklahoma City Thunder,101,104,-3,Home,96.3,True,2013
+201304290HOU,"Mon, Apr 29, 2013",HOU,OKC,Houston Rockets,Oklahoma City Thunder,105,103,2,Home,92.4,True,2013
+201305010OKC,"Wed, May 1, 2013",OKC,HOU,Oklahoma City Thunder,Houston Rockets,100,107,-7,Home,92.0,True,2013
+201305030HOU,"Fri, May 3, 2013",HOU,OKC,Houston Rockets,Oklahoma City Thunder,94,103,-9,Home,88.7,True,2013
+201211020PHO,"Fri, Nov 2, 2012",PHO,DET,Phoenix Suns,Detroit Pistons,92,89,3,Home,92.6,True,2013
+201211040LAL,"Sun, Nov 4, 2012",LAL,DET,Los Angeles Lakers,Detroit Pistons,108,79,29,Home,86.3,True,2013
+201211060DEN,"Tue, Nov 6, 2012",DEN,DET,Denver Nuggets,Detroit Pistons,109,97,12,Home,91.7,True,2013
+201211070SAC,"Wed, Nov 7, 2012",SAC,DET,Sacramento Kings,Detroit Pistons,105,103,2,Home,89.8,True,2013
+201211090OKC,"Fri, Nov 9, 2012",OKC,DET,Oklahoma City Thunder,Detroit Pistons,105,94,11,Home,90.3,True,2013
+201211120DET,"Mon, Nov 12, 2012",DET,OKC,Detroit Pistons,Oklahoma City Thunder,90,92,-2,Home,90.7,True,2013
+201211140PHI,"Wed, Nov 14, 2012",PHI,DET,Philadelphia 76ers,Detroit Pistons,76,94,-18,Home,89.1,True,2013
+201211160DET,"Fri, Nov 16, 2012",DET,ORL,Detroit Pistons,Orlando Magic,106,110,-4,Home,94.6,True,2013
+201211180DET,"Sun, Nov 18, 2012",DET,BOS,Detroit Pistons,Boston Celtics,103,83,20,Home,89.1,True,2013
+201211210ORL,"Wed, Nov 21, 2012",ORL,DET,Orlando Magic,Detroit Pistons,90,74,16,Home,93.9,True,2013
+201211230DET,"Fri, Nov 23, 2012",DET,TOR,Detroit Pistons,Toronto Raptors,91,90,1,Home,87.3,True,2013
+201211250NYK,"Sun, Nov 25, 2012",NYK,DET,New York Knicks,Detroit Pistons,121,100,21,Home,92.4,True,2013
+201211260DET,"Mon, Nov 26, 2012",DET,POR,Detroit Pistons,Portland Trail Blazers,108,101,7,Home,91.4,True,2013
+201211280DET,"Wed, Nov 28, 2012",DET,PHO,Detroit Pistons,Phoenix Suns,117,77,40,Home,93.1,True,2013
+201211300MEM,"Fri, Nov 30, 2012",MEM,DET,Memphis Grizzlies,Detroit Pistons,90,78,12,Home,90.7,True,2013
+201212010DAL,"Sat, Dec 1, 2012",DAL,DET,Dallas Mavericks,Detroit Pistons,92,77,15,Home,91.7,True,2013
+201212030DET,"Mon, Dec 3, 2012",DET,CLE,Detroit Pistons,Cleveland Cavaliers,89,79,10,Home,87.2,True,2013
+201212050DET,"Wed, Dec 5, 2012",DET,GSW,Detroit Pistons,Golden State Warriors,97,104,-7,Home,89.7,True,2013
+201212070DET,"Fri, Dec 7, 2012",DET,CHI,Detroit Pistons,Chicago Bulls,104,108,-4,Home,84.1,True,2013
+201212080CLE,"Sat, Dec 8, 2012",CLE,DET,Cleveland Cavaliers,Detroit Pistons,97,104,-7,Home,86.2,True,2013
+201212100PHI,"Mon, Dec 10, 2012",PHI,DET,Philadelphia 76ers,Detroit Pistons,104,97,7,Home,89.9,True,2013
+201212110DET,"Tue, Dec 11, 2012",DET,DEN,Detroit Pistons,Denver Nuggets,94,101,-7,Home,94.3,True,2013
+201212140BRK,"Fri, Dec 14, 2012",BRK,DET,Brooklyn Nets,Detroit Pistons,107,105,2,Home,81.4,True,2013
+201212150DET,"Sat, Dec 15, 2012",DET,IND,Detroit Pistons,Indiana Pacers,77,88,-11,Home,86.1,True,2013
+201212170DET,"Mon, Dec 17, 2012",DET,LAC,Detroit Pistons,Los Angeles Clippers,76,88,-12,Home,82.7,True,2013
+201212190TOR,"Wed, Dec 19, 2012",TOR,DET,Toronto Raptors,Detroit Pistons,97,91,6,Home,78.1,True,2013
+201212210DET,"Fri, Dec 21, 2012",DET,WAS,Detroit Pistons,Washington Wizards,100,68,32,Home,90.6,True,2013
+201212220WAS,"Sat, Dec 22, 2012",WAS,DET,Washington Wizards,Detroit Pistons,87,96,-9,Home,91.5,True,2013
+201212260ATL,"Wed, Dec 26, 2012",ATL,DET,Atlanta Hawks,Detroit Pistons,126,119,7,Home,91.2,True,2013
+201212280DET,"Fri, Dec 28, 2012",DET,MIA,Detroit Pistons,Miami Heat,109,99,10,Home,87.5,True,2013
+201212300DET,"Sun, Dec 30, 2012",DET,MIL,Detroit Pistons,Milwaukee Bucks,96,94,2,Home,85.1,True,2013
+201301010DET,"Tue, Jan 1, 2013",DET,SAC,Detroit Pistons,Sacramento Kings,103,97,6,Home,87.6,True,2013
+201301040DET,"Fri, Jan 4, 2013",DET,ATL,Detroit Pistons,Atlanta Hawks,85,84,1,Home,90.8,True,2013
+201301060DET,"Sun, Jan 6, 2013",DET,CHA,Detroit Pistons,Charlotte Bobcats,101,108,-7,Home,85.0,True,2013
+201301110MIL,"Fri, Jan 11, 2013",MIL,DET,Milwaukee Bucks,Detroit Pistons,87,103,-16,Home,95.9,True,2013
+201301120DET,"Sat, Jan 12, 2013",DET,UTA,Detroit Pistons,Utah Jazz,87,90,-3,Home,83.5,True,2013
+201301170DET,"Thu, Jan 17, 2013",DET,NYK,Detroit Pistons,New York Knicks,87,102,-15,Home,89.9,True,2013
+201301200DET,"Sun, Jan 20, 2013",DET,BOS,Detroit Pistons,Boston Celtics,103,88,15,Home,98.4,True,2013
+201301220DET,"Tue, Jan 22, 2013",DET,ORL,Detroit Pistons,Orlando Magic,105,90,15,Home,92.2,True,2013
+201301230CHI,"Wed, Jan 23, 2013",CHI,DET,Chicago Bulls,Detroit Pistons,85,82,3,Home,81.7,True,2013
+201301250MIA,"Fri, Jan 25, 2013",MIA,DET,Miami Heat,Detroit Pistons,110,88,22,Home,87.3,True,2013
+201301270ORL,"Sun, Jan 27, 2013",ORL,DET,Orlando Magic,Detroit Pistons,102,104,-2,Home,91.1,True,2013
+201301290DET,"Tue, Jan 29, 2013",DET,MIL,Detroit Pistons,Milwaukee Bucks,90,117,-27,Home,92.8,True,2013
+201301300IND,"Wed, Jan 30, 2013",IND,DET,Indiana Pacers,Detroit Pistons,98,79,19,Home,92.3,True,2013
+201302010DET,"Fri, Feb 1, 2013",DET,CLE,Detroit Pistons,Cleveland Cavaliers,117,99,18,Home,98.5,True,2013
+201302030DET,"Sun, Feb 3, 2013",DET,LAL,Detroit Pistons,Los Angeles Lakers,97,98,-1,Home,99.0,True,2013
+201302040NYK,"Mon, Feb 4, 2013",NYK,DET,New York Knicks,Detroit Pistons,99,85,14,Home,85.9,True,2013
+201302060DET,"Wed, Feb 6, 2013",DET,BRK,Detroit Pistons,Brooklyn Nets,90,93,-3,Home,88.2,True,2013
+201302080DET,"Fri, Feb 8, 2013",DET,SAS,Detroit Pistons,San Antonio Spurs,119,109,10,Home,90.7,True,2013
+201302090MIL,"Sat, Feb 9, 2013",MIL,DET,Milwaukee Bucks,Detroit Pistons,100,105,-5,Home,97.3,True,2013
+201302110DET,"Mon, Feb 11, 2013",DET,NOH,Detroit Pistons,New Orleans Hornets,86,105,-19,Home,91.5,True,2013
+201302130DET,"Wed, Feb 13, 2013",DET,WAS,Detroit Pistons,Washington Wizards,96,85,11,Home,90.4,True,2013
+201302190DET,"Tue, Feb 19, 2013",DET,MEM,Detroit Pistons,Memphis Grizzlies,91,105,-14,Home,92.9,True,2013
+201302200CHA,"Wed, Feb 20, 2013",CHA,DET,Charlotte Bobcats,Detroit Pistons,99,105,-6,Home,88.6,True,2013
+201302220IND,"Fri, Feb 22, 2013",IND,DET,Indiana Pacers,Detroit Pistons,114,82,32,Home,96.9,True,2013
+201302230DET,"Sat, Feb 23, 2013",DET,IND,Detroit Pistons,Indiana Pacers,72,90,-18,Home,90.3,True,2013
+201302250DET,"Mon, Feb 25, 2013",DET,ATL,Detroit Pistons,Atlanta Hawks,103,114,-11,Home,95.5,True,2013
+201302270WAS,"Wed, Feb 27, 2013",WAS,DET,Washington Wizards,Detroit Pistons,95,96,-1,Home,90.9,True,2013
+201303010NOH,"Fri, Mar 1, 2013",NOH,DET,New Orleans Hornets,Detroit Pistons,100,95,5,Home,86.2,True,2013
+201303030SAS,"Sun, Mar 3, 2013",SAS,DET,San Antonio Spurs,Detroit Pistons,114,75,39,Home,98.0,True,2013
+201303060DET,"Wed, Mar 6, 2013",DET,NYK,Detroit Pistons,New York Knicks,77,87,-10,Home,87.4,True,2013
+201303080DET,"Fri, Mar 8, 2013",DET,DAL,Detroit Pistons,Dallas Mavericks,99,102,-3,Home,92.7,True,2013
+201303100LAC,"Sun, Mar 10, 2013",LAC,DET,Los Angeles Clippers,Detroit Pistons,129,97,32,Home,88.7,True,2013
+201303110UTA,"Mon, Mar 11, 2013",UTA,DET,Utah Jazz,Detroit Pistons,103,90,13,Home,86.0,True,2013
+201303130GSW,"Wed, Mar 13, 2013",GSW,DET,Golden State Warriors,Detroit Pistons,105,97,8,Home,85.9,True,2013
+201303160POR,"Sat, Mar 16, 2013",POR,DET,Portland Trail Blazers,Detroit Pistons,112,101,11,Home,90.6,True,2013
+201303180DET,"Mon, Mar 18, 2013",DET,BRK,Detroit Pistons,Brooklyn Nets,82,119,-37,Home,86.6,True,2013
+201303220MIA,"Fri, Mar 22, 2013",MIA,DET,Miami Heat,Detroit Pistons,103,89,14,Home,92.3,True,2013
+201303230CHA,"Sat, Mar 23, 2013",CHA,DET,Charlotte Bobcats,Detroit Pistons,91,92,-1,Home,90.8,True,2013
+201303260DET,"Tue, Mar 26, 2013",DET,MIN,Detroit Pistons,Minnesota Timberwolves,82,105,-23,Home,86.3,True,2013
+201303290DET,"Fri, Mar 29, 2013",DET,TOR,Detroit Pistons,Toronto Raptors,82,99,-17,Home,84.6,True,2013
+201303310CHI,"Sun, Mar 31, 2013",CHI,DET,Chicago Bulls,Detroit Pistons,95,94,1,Home,89.3,True,2013
+201304010TOR,"Mon, Apr 1, 2013",TOR,DET,Toronto Raptors,Detroit Pistons,98,108,-10,Home,85.4,True,2013
+201304030BOS,"Wed, Apr 3, 2013",BOS,DET,Boston Celtics,Detroit Pistons,98,93,5,Home,90.6,True,2013
+201304060MIN,"Sat, Apr 6, 2013",MIN,DET,Minnesota Timberwolves,Detroit Pistons,107,101,6,Home,95.4,True,2013
+201304070DET,"Sun, Apr 7, 2013",DET,CHI,Detroit Pistons,Chicago Bulls,99,85,14,Home,84.7,True,2013
+201304100CLE,"Wed, Apr 10, 2013",CLE,DET,Cleveland Cavaliers,Detroit Pistons,104,111,-7,Home,93.4,True,2013
+201304120DET,"Fri, Apr 12, 2013",DET,CHA,Detroit Pistons,Charlotte Bobcats,113,93,20,Home,96.4,True,2013
+201304150DET,"Mon, Apr 15, 2013",DET,PHI,Detroit Pistons,Philadelphia 76ers,109,101,8,Home,91.9,True,2013
+201304170BRK,"Wed, Apr 17, 2013",BRK,DET,Brooklyn Nets,Detroit Pistons,103,99,4,Home,101.4,True,2013
+201211040OKC,"Sun, Nov 4, 2012",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,95,104,-9,Home,89.7,True,2013
+201211070ATL,"Wed, Nov 7, 2012",ATL,IND,Atlanta Hawks,Indiana Pacers,89,86,3,Home,90.2,True,2013
+201211090ATL,"Fri, Nov 9, 2012",ATL,MIA,Atlanta Hawks,Miami Heat,89,95,-6,Home,88.9,True,2013
+201211110LAC,"Sun, Nov 11, 2012",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,89,76,13,Home,88.9,True,2013
+201211120POR,"Mon, Nov 12, 2012",POR,ATL,Portland Trail Blazers,Atlanta Hawks,87,95,-8,Home,95.9,True,2013
+201211140GSW,"Wed, Nov 14, 2012",GSW,ATL,Golden State Warriors,Atlanta Hawks,92,88,4,Home,91.6,True,2013
+201211160SAC,"Fri, Nov 16, 2012",SAC,ATL,Sacramento Kings,Atlanta Hawks,96,112,-16,Home,92.4,True,2013
+201211190ATL,"Mon, Nov 19, 2012",ATL,ORL,Atlanta Hawks,Orlando Magic,81,72,9,Home,94.8,True,2013
+201211210ATL,"Wed, Nov 21, 2012",ATL,WAS,Atlanta Hawks,Washington Wizards,101,100,1,Home,89.7,True,2013
+201211230CHA,"Fri, Nov 23, 2012",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,91,101,-10,Home,97.0,True,2013
+201211240ATL,"Sat, Nov 24, 2012",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,104,93,11,Home,92.8,True,2013
+201211280ATL,"Wed, Nov 28, 2012",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,94,91,3,Home,88.8,True,2013
+201211300ATL,"Fri, Nov 30, 2012",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,111,113,-2,Home,90.3,True,2013
+201212050ATL,"Wed, Dec 5, 2012",ATL,DEN,Atlanta Hawks,Denver Nuggets,108,104,4,Home,95.4,True,2013
+201212070ATL,"Fri, Dec 7, 2012",ATL,WAS,Atlanta Hawks,Washington Wizards,104,95,9,Home,89.3,True,2013
+201212080MEM,"Sat, Dec 8, 2012",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,83,93,-10,Home,86.8,True,2013
+201212100MIA,"Mon, Dec 10, 2012",MIA,ATL,Miami Heat,Atlanta Hawks,101,92,9,Home,87.4,True,2013
+201212120ORL,"Wed, Dec 12, 2012",ORL,ATL,Orlando Magic,Atlanta Hawks,80,86,-6,Home,89.3,True,2013
+201212130ATL,"Thu, Dec 13, 2012",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,113,90,23,Home,90.5,True,2013
+201212150ATL,"Sat, Dec 15, 2012",ATL,GSW,Atlanta Hawks,Golden State Warriors,93,115,-22,Home,100.1,True,2013
+201212180WAS,"Tue, Dec 18, 2012",WAS,ATL,Washington Wizards,Atlanta Hawks,95,100,-5,Home,88.9,True,2013
+201212190ATL,"Wed, Dec 19, 2012",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,92,100,-8,Home,93.4,True,2013
+201212210PHI,"Fri, Dec 21, 2012",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,99,80,19,Home,84.4,True,2013
+201212220ATL,"Sat, Dec 22, 2012",ATL,CHI,Atlanta Hawks,Chicago Bulls,92,75,17,Home,85.2,True,2013
+201212280CLE,"Fri, Dec 28, 2012",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,94,102,-8,Home,90.1,True,2013
+201212290ATL,"Sat, Dec 29, 2012",ATL,IND,Atlanta Hawks,Indiana Pacers,109,100,9,Home,88.0,True,2013
+201301010NOH,"Tue, Jan 1, 2013",NOH,ATL,New Orleans Hornets,Atlanta Hawks,86,95,-9,Home,82.9,True,2013
+201301050ATL,"Sat, Jan 5, 2013",ATL,BOS,Atlanta Hawks,Boston Celtics,81,89,-8,Home,84.0,True,2013
+201301080MIN,"Tue, Jan 8, 2013",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,108,103,5,Home,91.2,True,2013
+201301090CLE,"Wed, Jan 9, 2013",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,99,83,16,Home,86.7,True,2013
+201301110ATL,"Fri, Jan 11, 2013",ATL,UTA,Atlanta Hawks,Utah Jazz,103,95,8,Home,90.6,True,2013
+201301120WAS,"Sat, Jan 12, 2013",WAS,ATL,Washington Wizards,Atlanta Hawks,93,83,10,Home,95.7,True,2013
+201301140CHI,"Mon, Jan 14, 2013",CHI,ATL,Chicago Bulls,Atlanta Hawks,97,58,39,Home,87.8,True,2013
+201301160ATL,"Wed, Jan 16, 2013",ATL,BRK,Atlanta Hawks,Brooklyn Nets,109,95,14,Home,84.5,True,2013
+201301180BRK,"Fri, Jan 18, 2013",BRK,ATL,Brooklyn Nets,Atlanta Hawks,94,89,5,Home,94.7,True,2013
+201301190ATL,"Sat, Jan 19, 2013",ATL,SAS,Atlanta Hawks,San Antonio Spurs,93,98,-5,Home,93.3,True,2013
+201301210ATL,"Mon, Jan 21, 2013",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,104,96,8,Home,91.4,True,2013
+201301230CHA,"Wed, Jan 23, 2013",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,92,104,-12,Home,93.4,True,2013
+201301250ATL,"Fri, Jan 25, 2013",ATL,BOS,Atlanta Hawks,Boston Celtics,123,111,12,Home,90.0,True,2013
+201301270NYK,"Sun, Jan 27, 2013",NYK,ATL,New York Knicks,Atlanta Hawks,106,104,2,Home,85.1,True,2013
+201301300ATL,"Wed, Jan 30, 2013",ATL,TOR,Atlanta Hawks,Toronto Raptors,93,92,1,Home,94.9,True,2013
+201302020ATL,"Sat, Feb 2, 2013",ATL,CHI,Atlanta Hawks,Chicago Bulls,76,93,-17,Home,85.2,True,2013
+201302050IND,"Tue, Feb 5, 2013",IND,ATL,Indiana Pacers,Atlanta Hawks,114,103,11,Home,99.7,True,2013
+201302060ATL,"Wed, Feb 6, 2013",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,103,92,11,Home,89.5,True,2013
+201302080ATL,"Fri, Feb 8, 2013",ATL,NOH,Atlanta Hawks,New Orleans Hornets,100,111,-11,Home,94.3,True,2013
+201302110DAL,"Mon, Feb 11, 2013",DAL,ATL,Dallas Mavericks,Atlanta Hawks,101,105,-4,Home,97.3,True,2013
+201302130ORL,"Wed, Feb 13, 2013",ORL,ATL,Orlando Magic,Atlanta Hawks,76,108,-32,Home,92.2,True,2013
+201302200ATL,"Wed, Feb 20, 2013",ATL,MIA,Atlanta Hawks,Miami Heat,90,103,-13,Home,92.7,True,2013
+201302220ATL,"Fri, Feb 22, 2013",ATL,SAC,Atlanta Hawks,Sacramento Kings,122,108,14,Home,96.2,True,2013
+201302230MIL,"Sat, Feb 23, 2013",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,102,103,-1,Home,96.3,True,2013
+201302270UTA,"Wed, Feb 27, 2013",UTA,ATL,Utah Jazz,Atlanta Hawks,91,102,-11,Home,88.8,True,2013
+201303010PHO,"Fri, Mar 1, 2013",PHO,ATL,Phoenix Suns,Atlanta Hawks,92,87,5,Home,93.7,True,2013
+201303030LAL,"Sun, Mar 3, 2013",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,99,98,1,Home,98.7,True,2013
+201303040DEN,"Mon, Mar 4, 2013",DEN,ATL,Denver Nuggets,Atlanta Hawks,104,88,16,Home,94.4,True,2013
+201303060ATL,"Wed, Mar 6, 2013",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,107,96,11,Home,92.6,True,2013
+201303080BOS,"Fri, Mar 8, 2013",BOS,ATL,Boston Celtics,Atlanta Hawks,107,102,5,Home,88.5,True,2013
+201303090ATL,"Sat, Mar 9, 2013",ATL,BRK,Atlanta Hawks,Brooklyn Nets,80,93,-13,Home,88.3,True,2013
+201303120MIA,"Tue, Mar 12, 2013",MIA,ATL,Miami Heat,Atlanta Hawks,98,81,17,Home,93.4,True,2013
+201303130ATL,"Wed, Mar 13, 2013",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,96,92,4,Home,91.5,True,2013
+201303150ATL,"Fri, Mar 15, 2013",ATL,PHO,Atlanta Hawks,Phoenix Suns,107,94,13,Home,102.7,True,2013
+201303170BRK,"Sun, Mar 17, 2013",BRK,ATL,Brooklyn Nets,Atlanta Hawks,93,105,-12,Home,89.8,True,2013
+201303180ATL,"Mon, Mar 18, 2013",ATL,DAL,Atlanta Hawks,Dallas Mavericks,113,127,-14,Home,95.9,True,2013
+201303200ATL,"Wed, Mar 20, 2013",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,98,90,8,Home,92.7,True,2013
+201303220ATL,"Fri, Mar 22, 2013",ATL,POR,Atlanta Hawks,Portland Trail Blazers,93,104,-11,Home,92.6,True,2013
+201303240MIL,"Sun, Mar 24, 2013",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,99,104,-5,Home,92.6,True,2013
+201303250IND,"Mon, Mar 25, 2013",IND,ATL,Indiana Pacers,Atlanta Hawks,100,94,6,Home,94.4,True,2013
+201303270TOR,"Wed, Mar 27, 2013",TOR,ATL,Toronto Raptors,Atlanta Hawks,88,107,-19,Home,92.6,True,2013
+201303290BOS,"Fri, Mar 29, 2013",BOS,ATL,Boston Celtics,Atlanta Hawks,118,107,11,Home,95.6,True,2013
+201303300ATL,"Sat, Mar 30, 2013",ATL,ORL,Atlanta Hawks,Orlando Magic,97,88,9,Home,96.6,True,2013
+201304010ATL,"Mon, Apr 1, 2013",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,102,94,8,Home,91.7,True,2013
+201304030ATL,"Wed, Apr 3, 2013",ATL,NYK,Atlanta Hawks,New York Knicks,82,95,-13,Home,82.9,True,2013
+201304050ATL,"Fri, Apr 5, 2013",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,90,101,-11,Home,89.8,True,2013
+201304060SAS,"Sat, Apr 6, 2013",SAS,ATL,San Antonio Spurs,Atlanta Hawks,99,97,2,Home,95.5,True,2013
+201304100PHI,"Wed, Apr 10, 2013",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,101,124,-23,Home,97.9,True,2013
+201304120ATL,"Fri, Apr 12, 2013",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,109,104,5,Home,102.7,True,2013
+201304160ATL,"Tue, Apr 16, 2013",ATL,TOR,Atlanta Hawks,Toronto Raptors,96,113,-17,Home,94.4,True,2013
+201304170NYK,"Wed, Apr 17, 2013",NYK,ATL,New York Knicks,Atlanta Hawks,98,92,6,Home,92.2,True,2013
+201304210IND,"Sun, Apr 21, 2013",IND,ATL,Indiana Pacers,Atlanta Hawks,107,90,17,Home,90.1,True,2013
+201304240IND,"Wed, Apr 24, 2013",IND,ATL,Indiana Pacers,Atlanta Hawks,113,98,15,Home,91.1,True,2013
+201304270ATL,"Sat, Apr 27, 2013",ATL,IND,Atlanta Hawks,Indiana Pacers,90,69,21,Home,93.6,True,2013
+201304290ATL,"Mon, Apr 29, 2013",ATL,IND,Atlanta Hawks,Indiana Pacers,102,91,11,Home,90.4,True,2013
+201305010IND,"Wed, May 1, 2013",IND,ATL,Indiana Pacers,Atlanta Hawks,106,83,23,Home,89.3,True,2013
+201305030ATL,"Fri, May 3, 2013",ATL,IND,Atlanta Hawks,Indiana Pacers,73,81,-8,Home,91.3,True,2013
+201210310POR,"Wed, Oct 31, 2012",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,116,106,10,Home,93.8,True,2013
+201211020OKC,"Fri, Nov 2, 2012",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,106,92,14,Home,94.6,True,2013
+201211050DAL,"Mon, Nov 5, 2012",DAL,POR,Dallas Mavericks,Portland Trail Blazers,114,91,23,Home,89.4,True,2013
+201211080POR,"Thu, Nov 8, 2012",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,90,103,-13,Home,89.2,True,2013
+201211100POR,"Sat, Nov 10, 2012",POR,SAS,Portland Trail Blazers,San Antonio Spurs,109,112,-3,Home,97.2,True,2013
+201211130SAC,"Tue, Nov 13, 2012",SAC,POR,Sacramento Kings,Portland Trail Blazers,86,103,-17,Home,85.2,True,2013
+201211180POR,"Sun, Nov 18, 2012",POR,CHI,Portland Trail Blazers,Chicago Bulls,102,94,8,Home,92.5,True,2013
+201211210PHO,"Wed, Nov 21, 2012",PHO,POR,Phoenix Suns,Portland Trail Blazers,114,87,27,Home,90.0,True,2013
+201211230POR,"Fri, Nov 23, 2012",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,103,95,8,Home,89.3,True,2013
+201211250BRK,"Sun, Nov 25, 2012",BRK,POR,Brooklyn Nets,Portland Trail Blazers,98,85,13,Home,89.0,True,2013
+201211280WAS,"Wed, Nov 28, 2012",WAS,POR,Washington Wizards,Portland Trail Blazers,84,82,2,Home,84.1,True,2013
+201211300BOS,"Fri, Nov 30, 2012",BOS,POR,Boston Celtics,Portland Trail Blazers,96,78,18,Home,93.4,True,2013
+201212010CLE,"Sat, Dec 1, 2012",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,117,118,-1,Home,85.3,True,2013
+201212030CHA,"Mon, Dec 3, 2012",CHA,POR,Charlotte Bobcats,Portland Trail Blazers,112,118,-6,Home,91.4,True,2013
+201212050IND,"Wed, Dec 5, 2012",IND,POR,Indiana Pacers,Portland Trail Blazers,99,92,7,Home,86.6,True,2013
+201212080POR,"Sat, Dec 8, 2012",POR,SAC,Portland Trail Blazers,Sacramento Kings,80,99,-19,Home,91.3,True,2013
+201212100POR,"Mon, Dec 10, 2012",POR,TOR,Portland Trail Blazers,Toronto Raptors,92,74,18,Home,88.9,True,2013
+201212130POR,"Thu, Dec 13, 2012",POR,SAS,Portland Trail Blazers,San Antonio Spurs,98,90,8,Home,94.3,True,2013
+201212160POR,"Sun, Dec 16, 2012",POR,NOH,Portland Trail Blazers,New Orleans Hornets,95,94,1,Home,79.6,True,2013
+201212200POR,"Thu, Dec 20, 2012",POR,DEN,Portland Trail Blazers,Denver Nuggets,101,93,8,Home,98.1,True,2013
+201212220POR,"Sat, Dec 22, 2012",POR,PHO,Portland Trail Blazers,Phoenix Suns,96,93,3,Home,89.3,True,2013
+201212230SAC,"Sun, Dec 23, 2012",SAC,POR,Sacramento Kings,Portland Trail Blazers,108,96,12,Home,92.1,True,2013
+201212260POR,"Wed, Dec 26, 2012",POR,SAC,Portland Trail Blazers,Sacramento Kings,109,91,18,Home,90.6,True,2013
+201212280LAL,"Fri, Dec 28, 2012",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,104,87,17,Home,89.7,True,2013
+201212290POR,"Sat, Dec 29, 2012",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,89,85,4,Home,86.4,True,2013
+201301010NYK,"Tue, Jan 1, 2013",NYK,POR,New York Knicks,Portland Trail Blazers,100,105,-5,Home,89.3,True,2013
+201301020TOR,"Wed, Jan 2, 2013",TOR,POR,Toronto Raptors,Portland Trail Blazers,102,79,23,Home,85.7,True,2013
+201301040MEM,"Fri, Jan 4, 2013",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,84,86,-2,Home,84.6,True,2013
+201301050MIN,"Sat, Jan 5, 2013",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,97,102,-5,Home,89.7,True,2013
+201301070POR,"Mon, Jan 7, 2013",POR,ORL,Portland Trail Blazers,Orlando Magic,125,119,6,Home,91.4,True,2013
+201301100POR,"Thu, Jan 10, 2013",POR,MIA,Portland Trail Blazers,Miami Heat,92,90,2,Home,93.6,True,2013
+201301110GSW,"Fri, Jan 11, 2013",GSW,POR,Golden State Warriors,Portland Trail Blazers,103,97,6,Home,94.7,True,2013
+201301130POR,"Sun, Jan 13, 2013",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,83,87,-4,Home,89.3,True,2013
+201301150DEN,"Tue, Jan 15, 2013",DEN,POR,Denver Nuggets,Portland Trail Blazers,115,111,4,Home,93.8,True,2013
+201301160POR,"Wed, Jan 16, 2013",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,88,93,-5,Home,92.0,True,2013
+201301190POR,"Sat, Jan 19, 2013",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,104,110,-6,Home,103.4,True,2013
+201301210POR,"Mon, Jan 21, 2013",POR,WAS,Portland Trail Blazers,Washington Wizards,95,98,-3,Home,91.9,True,2013
+201301230POR,"Wed, Jan 23, 2013",POR,IND,Portland Trail Blazers,Indiana Pacers,100,80,20,Home,88.7,True,2013
+201301260POR,"Sat, Jan 26, 2013",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,101,100,1,Home,85.9,True,2013
+201301270LAC,"Sun, Jan 27, 2013",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,96,83,13,Home,87.9,True,2013
+201301290POR,"Tue, Jan 29, 2013",POR,DAL,Portland Trail Blazers,Dallas Mavericks,106,104,2,Home,93.7,True,2013
+201302010UTA,"Fri, Feb 1, 2013",UTA,POR,Utah Jazz,Portland Trail Blazers,86,77,9,Home,88.2,True,2013
+201302020POR,"Sat, Feb 2, 2013",POR,UTA,Portland Trail Blazers,Utah Jazz,105,99,6,Home,90.4,True,2013
+201302040MIN,"Mon, Feb 4, 2013",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,98,100,-2,Home,94.0,True,2013
+201302060DAL,"Wed, Feb 6, 2013",DAL,POR,Dallas Mavericks,Portland Trail Blazers,105,99,6,Home,89.6,True,2013
+201302100ORL,"Sun, Feb 10, 2013",ORL,POR,Orlando Magic,Portland Trail Blazers,110,104,6,Home,94.7,True,2013
+201302120MIA,"Tue, Feb 12, 2013",MIA,POR,Miami Heat,Portland Trail Blazers,117,104,13,Home,86.3,True,2013
+201302130NOH,"Wed, Feb 13, 2013",NOH,POR,New Orleans Hornets,Portland Trail Blazers,99,63,36,Home,85.6,True,2013
+201302190POR,"Tue, Feb 19, 2013",POR,PHO,Portland Trail Blazers,Phoenix Suns,98,102,-4,Home,92.9,True,2013
+201302220LAL,"Fri, Feb 22, 2013",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,111,107,4,Home,103.3,True,2013
+201302240POR,"Sun, Feb 24, 2013",POR,BOS,Portland Trail Blazers,Boston Celtics,92,86,6,Home,91.2,True,2013
+201302270POR,"Wed, Feb 27, 2013",POR,DEN,Portland Trail Blazers,Denver Nuggets,109,111,-2,Home,99.3,True,2013
+201303020POR,"Sat, Mar 2, 2013",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,109,94,15,Home,94.6,True,2013
+201303040POR,"Mon, Mar 4, 2013",POR,CHA,Portland Trail Blazers,Charlotte Bobcats,122,105,17,Home,88.8,True,2013
+201303060MEM,"Wed, Mar 6, 2013",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,91,85,6,Home,86.9,True,2013
+201303080SAS,"Fri, Mar 8, 2013",SAS,POR,San Antonio Spurs,Portland Trail Blazers,106,136,-30,Home,94.4,True,2013
+201303100NOH,"Sun, Mar 10, 2013",NOH,POR,New Orleans Hornets,Portland Trail Blazers,98,96,2,Home,82.7,True,2013
+201303120POR,"Tue, Mar 12, 2013",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,97,102,-5,Home,90.3,True,2013
+201303140POR,"Thu, Mar 14, 2013",POR,NYK,Portland Trail Blazers,New York Knicks,105,90,15,Home,89.9,True,2013
+201303180PHI,"Mon, Mar 18, 2013",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,101,100,1,Home,94.9,True,2013
+201303190MIL,"Tue, Mar 19, 2013",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,102,95,7,Home,87.6,True,2013
+201303210CHI,"Thu, Mar 21, 2013",CHI,POR,Chicago Bulls,Portland Trail Blazers,89,99,-10,Home,91.9,True,2013
+201303240OKC,"Sun, Mar 24, 2013",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,103,83,20,Home,90.7,True,2013
+201303270POR,"Wed, Mar 27, 2013",POR,BRK,Portland Trail Blazers,Brooklyn Nets,93,111,-18,Home,91.7,True,2013
+201303290POR,"Fri, Mar 29, 2013",POR,UTA,Portland Trail Blazers,Utah Jazz,95,105,-10,Home,89.3,True,2013
+201303300GSW,"Sat, Mar 30, 2013",GSW,POR,Golden State Warriors,Portland Trail Blazers,125,98,27,Home,95.5,True,2013
+201304010UTA,"Mon, Apr 1, 2013",UTA,POR,Utah Jazz,Portland Trail Blazers,112,102,10,Home,85.7,True,2013
+201304030POR,"Wed, Apr 3, 2013",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,76,94,-18,Home,85.5,True,2013
+201304070POR,"Sun, Apr 7, 2013",POR,DAL,Portland Trail Blazers,Dallas Mavericks,91,96,-5,Home,93.0,True,2013
+201304100POR,"Wed, Apr 10, 2013",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,106,113,-7,Home,91.5,True,2013
+201304120POR,"Fri, Apr 12, 2013",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,90,106,-16,Home,91.6,True,2013
+201304140DEN,"Sun, Apr 14, 2013",DEN,POR,Denver Nuggets,Portland Trail Blazers,118,109,9,Home,101.0,True,2013
+201304160LAC,"Tue, Apr 16, 2013",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,93,77,16,Home,85.8,True,2013
+201304170POR,"Wed, Apr 17, 2013",POR,GSW,Portland Trail Blazers,Golden State Warriors,88,99,-11,Home,94.5,True,2013
+201210310PHI,"Wed, Oct 31, 2012",PHI,DEN,Philadelphia 76ers,Denver Nuggets,84,75,9,Home,92.9,True,2013
+201211020ORL,"Fri, Nov 2, 2012",ORL,DEN,Orlando Magic,Denver Nuggets,102,89,13,Home,91.8,True,2013
+201211030MIA,"Sat, Nov 3, 2012",MIA,DEN,Miami Heat,Denver Nuggets,119,116,3,Home,94.4,True,2013
+201211090DEN,"Fri, Nov 9, 2012",DEN,UTA,Denver Nuggets,Utah Jazz,104,84,20,Home,97.1,True,2013
+201211100GSW,"Sat, Nov 10, 2012",GSW,DEN,Golden State Warriors,Denver Nuggets,101,107,-6,Home,91.5,True,2013
+201211120PHO,"Mon, Nov 12, 2012",PHO,DEN,Phoenix Suns,Denver Nuggets,110,100,10,Home,90.0,True,2013
+201211150DEN,"Thu, Nov 15, 2012",DEN,MIA,Denver Nuggets,Miami Heat,93,98,-5,Home,85.3,True,2013
+201211170SAS,"Sat, Nov 17, 2012",SAS,DEN,San Antonio Spurs,Denver Nuggets,126,100,26,Home,95.6,True,2013
+201211190MEM,"Mon, Nov 19, 2012",MEM,DEN,Memphis Grizzlies,Denver Nuggets,92,97,-5,Home,86.4,True,2013
+201211210MIN,"Wed, Nov 21, 2012",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,94,101,-7,Home,94.2,True,2013
+201211230DEN,"Fri, Nov 23, 2012",DEN,GSW,Denver Nuggets,Golden State Warriors,102,91,11,Home,93.4,True,2013
+201211250DEN,"Sun, Nov 25, 2012",DEN,NOH,Denver Nuggets,New Orleans Hornets,102,84,18,Home,88.4,True,2013
+201211260UTA,"Mon, Nov 26, 2012",UTA,DEN,Utah Jazz,Denver Nuggets,105,103,2,Home,88.1,True,2013
+201211290GSW,"Thu, Nov 29, 2012",GSW,DEN,Golden State Warriors,Denver Nuggets,106,105,1,Home,97.1,True,2013
+201211300LAL,"Fri, Nov 30, 2012",LAL,DEN,Los Angeles Lakers,Denver Nuggets,122,103,19,Home,94.0,True,2013
+201212030DEN,"Mon, Dec 3, 2012",DEN,TOR,Denver Nuggets,Toronto Raptors,113,110,3,Home,98.1,True,2013
+201212070IND,"Fri, Dec 7, 2012",IND,DEN,Indiana Pacers,Denver Nuggets,89,92,-3,Home,90.0,True,2013
+201212090NYK,"Sun, Dec 9, 2012",NYK,DEN,New York Knicks,Denver Nuggets,112,106,6,Home,94.8,True,2013
+201212120MIN,"Wed, Dec 12, 2012",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,108,105,3,Home,97.0,True,2013
+201212140DEN,"Fri, Dec 14, 2012",DEN,MEM,Denver Nuggets,Memphis Grizzlies,99,94,5,Home,91.1,True,2013
+201212160SAC,"Sun, Dec 16, 2012",SAC,DEN,Sacramento Kings,Denver Nuggets,97,122,-25,Home,89.2,True,2013
+201212180DEN,"Tue, Dec 18, 2012",DEN,SAS,Denver Nuggets,San Antonio Spurs,112,106,6,Home,105.5,True,2013
+201212220DEN,"Sat, Dec 22, 2012",DEN,CHA,Denver Nuggets,Charlotte Bobcats,110,88,22,Home,95.9,True,2013
+201212250LAC,"Tue, Dec 25, 2012",LAC,DEN,Los Angeles Clippers,Denver Nuggets,112,100,12,Home,98.1,True,2013
+201212260DEN,"Wed, Dec 26, 2012",DEN,LAL,Denver Nuggets,Los Angeles Lakers,126,114,12,Home,95.4,True,2013
+201212280DAL,"Fri, Dec 28, 2012",DAL,DEN,Dallas Mavericks,Denver Nuggets,85,106,-21,Home,96.8,True,2013
+201212290MEM,"Sat, Dec 29, 2012",MEM,DEN,Memphis Grizzlies,Denver Nuggets,81,72,9,Home,80.5,True,2013
+201301010DEN,"Tue, Jan 1, 2013",DEN,LAC,Denver Nuggets,Los Angeles Clippers,92,78,14,Home,89.3,True,2013
+201301030DEN,"Thu, Jan 3, 2013",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,97,101,-4,Home,89.3,True,2013
+201301050DEN,"Sat, Jan 5, 2013",DEN,UTA,Denver Nuggets,Utah Jazz,110,91,19,Home,96.7,True,2013
+201301060LAL,"Sun, Jan 6, 2013",LAL,DEN,Los Angeles Lakers,Denver Nuggets,105,112,-7,Home,96.9,True,2013
+201301090DEN,"Wed, Jan 9, 2013",DEN,ORL,Denver Nuggets,Orlando Magic,108,105,3,Home,96.0,True,2013
+201301110DEN,"Fri, Jan 11, 2013",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,98,91,7,Home,95.3,True,2013
+201301130DEN,"Sun, Jan 13, 2013",DEN,GSW,Denver Nuggets,Golden State Warriors,116,105,11,Home,95.4,True,2013
+201301160OKC,"Wed, Jan 16, 2013",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,117,97,20,Home,92.1,True,2013
+201301180DEN,"Fri, Jan 18, 2013",DEN,WAS,Denver Nuggets,Washington Wizards,108,112,-4,Home,99.1,True,2013
+201301200DEN,"Sun, Jan 20, 2013",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,121,118,3,Home,97.2,True,2013
+201301260DEN,"Sat, Jan 26, 2013",DEN,SAC,Denver Nuggets,Sacramento Kings,121,93,28,Home,100.7,True,2013
+201301280DEN,"Mon, Jan 28, 2013",DEN,IND,Denver Nuggets,Indiana Pacers,102,101,1,Home,93.2,True,2013
+201302010DEN,"Fri, Feb 1, 2013",DEN,NOH,Denver Nuggets,New Orleans Hornets,113,98,15,Home,94.1,True,2013
+201302050DEN,"Tue, Feb 5, 2013",DEN,MIL,Denver Nuggets,Milwaukee Bucks,112,104,8,Home,105.7,True,2013
+201302070DEN,"Thu, Feb 7, 2013",DEN,CHI,Denver Nuggets,Chicago Bulls,128,96,32,Home,89.0,True,2013
+201302090CLE,"Sat, Feb 9, 2013",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,103,111,-8,Home,97.3,True,2013
+201302100BOS,"Sun, Feb 10, 2013",BOS,DEN,Boston Celtics,Denver Nuggets,118,114,4,Home,94.0,True,2013
+201302120TOR,"Tue, Feb 12, 2013",TOR,DEN,Toronto Raptors,Denver Nuggets,109,108,1,Home,92.1,True,2013
+201302130BRK,"Wed, Feb 13, 2013",BRK,DEN,Brooklyn Nets,Denver Nuggets,119,108,11,Home,88.1,True,2013
+201302190DEN,"Tue, Feb 19, 2013",DEN,BOS,Denver Nuggets,Boston Celtics,97,90,7,Home,87.8,True,2013
+201302220WAS,"Fri, Feb 22, 2013",WAS,DEN,Washington Wizards,Denver Nuggets,119,113,6,Home,98.8,True,2013
+201302230CHA,"Sat, Feb 23, 2013",CHA,DEN,Charlotte Bobcats,Denver Nuggets,99,113,-14,Home,97.0,True,2013
+201302250DEN,"Mon, Feb 25, 2013",DEN,LAL,Denver Nuggets,Los Angeles Lakers,119,108,11,Home,96.1,True,2013
+201303010DEN,"Fri, Mar 1, 2013",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,105,103,2,Home,104.3,True,2013
+201303050SAC,"Tue, Mar 5, 2013",SAC,DEN,Sacramento Kings,Denver Nuggets,113,120,-7,Home,96.6,True,2013
+201303070DEN,"Thu, Mar 7, 2013",DEN,LAC,Denver Nuggets,Los Angeles Clippers,107,92,15,Home,87.3,True,2013
+201303090DEN,"Sat, Mar 9, 2013",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,111,88,23,Home,100.9,True,2013
+201303110PHO,"Mon, Mar 11, 2013",PHO,DEN,Phoenix Suns,Denver Nuggets,93,108,-15,Home,96.1,True,2013
+201303130DEN,"Wed, Mar 13, 2013",DEN,NYK,Denver Nuggets,New York Knicks,117,94,23,Home,96.4,True,2013
+201303150DEN,"Fri, Mar 15, 2013",DEN,MEM,Denver Nuggets,Memphis Grizzlies,87,80,7,Home,84.9,True,2013
+201303180CHI,"Mon, Mar 18, 2013",CHI,DEN,Chicago Bulls,Denver Nuggets,118,119,-1,Home,92.5,True,2013
+201303190OKC,"Tue, Mar 19, 2013",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,104,114,-10,Home,99.3,True,2013
+201303210DEN,"Thu, Mar 21, 2013",DEN,PHI,Denver Nuggets,Philadelphia 76ers,101,100,1,Home,94.7,True,2013
+201303230DEN,"Sat, Mar 23, 2013",DEN,SAC,Denver Nuggets,Sacramento Kings,101,95,6,Home,95.4,True,2013
+201303250NOH,"Mon, Mar 25, 2013",NOH,DEN,New Orleans Hornets,Denver Nuggets,110,86,24,Home,82.1,True,2013
+201303270SAS,"Wed, Mar 27, 2013",SAS,DEN,San Antonio Spurs,Denver Nuggets,100,99,1,Home,92.5,True,2013
+201303290DEN,"Fri, Mar 29, 2013",DEN,BRK,Denver Nuggets,Brooklyn Nets,109,87,22,Home,88.9,True,2013
+201304030UTA,"Wed, Apr 3, 2013",UTA,DEN,Utah Jazz,Denver Nuggets,96,113,-17,Home,91.3,True,2013
+201304040DEN,"Thu, Apr 4, 2013",DEN,DAL,Denver Nuggets,Dallas Mavericks,95,94,1,Home,89.6,True,2013
+201304100DEN,"Wed, Apr 10, 2013",DEN,SAS,Denver Nuggets,San Antonio Spurs,96,86,10,Home,93.7,True,2013
+201304120DAL,"Fri, Apr 12, 2013",DAL,DEN,Dallas Mavericks,Denver Nuggets,108,105,3,Home,95.2,True,2013
+201304150MIL,"Mon, Apr 15, 2013",MIL,DEN,Milwaukee Bucks,Denver Nuggets,111,112,-1,Home,100.2,True,2013
+201304170DEN,"Wed, Apr 17, 2013",DEN,PHO,Denver Nuggets,Phoenix Suns,118,98,20,Home,99.9,True,2013
+201304200DEN,"Sat, Apr 20, 2013",DEN,GSW,Denver Nuggets,Golden State Warriors,97,95,2,Home,100.1,True,2013
+201304230DEN,"Tue, Apr 23, 2013",DEN,GSW,Denver Nuggets,Golden State Warriors,117,131,-14,Home,99.9,True,2013
+201304260GSW,"Fri, Apr 26, 2013",GSW,DEN,Golden State Warriors,Denver Nuggets,110,108,2,Home,98.9,True,2013
+201304280GSW,"Sun, Apr 28, 2013",GSW,DEN,Golden State Warriors,Denver Nuggets,115,101,14,Home,95.4,True,2013
+201304300DEN,"Tue, Apr 30, 2013",DEN,GSW,Denver Nuggets,Golden State Warriors,107,100,7,Home,95.8,True,2013
+201305020GSW,"Thu, May 2, 2013",GSW,DEN,Golden State Warriors,Denver Nuggets,92,88,4,Home,89.8,True,2013
+201210310LAC,"Wed, Oct 31, 2012",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,101,92,9,Home,97.4,True,2013
+201211020GSW,"Fri, Nov 2, 2012",GSW,MEM,Golden State Warriors,Memphis Grizzlies,94,104,-10,Home,93.3,True,2013
+201211050MEM,"Mon, Nov 5, 2012",MEM,UTA,Memphis Grizzlies,Utah Jazz,103,94,9,Home,95.6,True,2013
+201211070MIL,"Wed, Nov 7, 2012",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,90,108,-18,Home,91.7,True,2013
+201211110MEM,"Sun, Nov 11, 2012",MEM,MIA,Memphis Grizzlies,Miami Heat,104,86,18,Home,90.8,True,2013
+201211140OKC,"Wed, Nov 14, 2012",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,97,107,-10,Home,89.2,True,2013
+201211160MEM,"Fri, Nov 16, 2012",MEM,NYK,Memphis Grizzlies,New York Knicks,105,95,10,Home,85.5,True,2013
+201211170CHA,"Sat, Nov 17, 2012",CHA,MEM,Charlotte Bobcats,Memphis Grizzlies,87,94,-7,Home,93.5,True,2013
+201211230MEM,"Fri, Nov 23, 2012",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,106,98,8,Home,86.7,True,2013
+201211260MEM,"Mon, Nov 26, 2012",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,84,78,6,Home,80.5,True,2013
+201211280MEM,"Wed, Nov 28, 2012",MEM,TOR,Memphis Grizzlies,Toronto Raptors,103,82,21,Home,90.7,True,2013
+201212010SAS,"Sat, Dec 1, 2012",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,99,95,4,Home,92.0,True,2013
+201212040MEM,"Tue, Dec 4, 2012",MEM,PHO,Memphis Grizzlies,Phoenix Suns,108,98,10,Home,88.1,True,2013
+201212070NOH,"Fri, Dec 7, 2012",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,89,96,-7,Home,85.6,True,2013
+201212120PHO,"Wed, Dec 12, 2012",PHO,MEM,Phoenix Suns,Memphis Grizzlies,82,80,2,Home,81.1,True,2013
+201212150UTA,"Sat, Dec 15, 2012",UTA,MEM,Utah Jazz,Memphis Grizzlies,86,99,-13,Home,88.4,True,2013
+201212170MEM,"Mon, Dec 17, 2012",MEM,CHI,Memphis Grizzlies,Chicago Bulls,80,71,9,Home,86.2,True,2013
+201212190MEM,"Wed, Dec 19, 2012",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,90,80,10,Home,94.2,True,2013
+201212210MEM,"Fri, Dec 21, 2012",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,92,82,10,Home,91.9,True,2013
+201212260MEM,"Wed, Dec 26, 2012",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,89,99,-10,Home,88.3,True,2013
+201212310IND,"Mon, Dec 31, 2012",IND,MEM,Indiana Pacers,Memphis Grizzlies,88,83,5,Home,85.0,True,2013
+201301020BOS,"Wed, Jan 2, 2013",BOS,MEM,Boston Celtics,Memphis Grizzlies,83,93,-10,Home,83.3,True,2013
+201301060PHO,"Sun, Jan 6, 2013",PHO,MEM,Phoenix Suns,Memphis Grizzlies,81,92,-11,Home,86.7,True,2013
+201301070SAC,"Mon, Jan 7, 2013",SAC,MEM,Sacramento Kings,Memphis Grizzlies,81,113,-32,Home,86.1,True,2013
+201301090GSW,"Wed, Jan 9, 2013",GSW,MEM,Golden State Warriors,Memphis Grizzlies,87,94,-7,Home,88.4,True,2013
+201301110MEM,"Fri, Jan 11, 2013",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,101,98,3,Home,85.7,True,2013
+201301120DAL,"Sat, Jan 12, 2013",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,104,83,21,Home,85.4,True,2013
+201301140MEM,"Mon, Jan 14, 2013",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,73,99,-26,Home,83.4,True,2013
+201301160SAS,"Wed, Jan 16, 2013",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,103,82,21,Home,87.1,True,2013
+201301180MEM,"Fri, Jan 18, 2013",MEM,SAC,Memphis Grizzlies,Sacramento Kings,85,69,16,Home,87.1,True,2013
+201301190CHI,"Sat, Jan 19, 2013",CHI,MEM,Chicago Bulls,Memphis Grizzlies,82,85,-3,Home,81.2,True,2013
+201301210MEM,"Mon, Jan 21, 2013",MEM,IND,Memphis Grizzlies,Indiana Pacers,81,82,-1,Home,82.3,True,2013
+201301230MEM,"Wed, Jan 23, 2013",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,106,93,13,Home,93.0,True,2013
+201301250MEM,"Fri, Jan 25, 2013",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,101,77,24,Home,86.9,True,2013
+201301270MEM,"Sun, Jan 27, 2013",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,83,91,-8,Home,84.3,True,2013
+201301280PHI,"Mon, Jan 28, 2013",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,100,103,-3,Home,87.8,True,2013
+201301310OKC,"Thu, Jan 31, 2013",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,106,89,17,Home,94.1,True,2013
+201302010MEM,"Fri, Feb 1, 2013",MEM,WAS,Memphis Grizzlies,Washington Wizards,85,76,9,Home,88.9,True,2013
+201302050MEM,"Tue, Feb 5, 2013",MEM,PHO,Memphis Grizzlies,Phoenix Suns,90,96,-6,Home,89.0,True,2013
+201302080MEM,"Fri, Feb 8, 2013",MEM,GSW,Memphis Grizzlies,Golden State Warriors,99,93,6,Home,89.9,True,2013
+201302100MEM,"Sun, Feb 10, 2013",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,105,88,17,Home,86.4,True,2013
+201302120MEM,"Tue, Feb 12, 2013",MEM,SAC,Memphis Grizzlies,Sacramento Kings,108,101,7,Home,95.8,True,2013
+201302200TOR,"Wed, Feb 20, 2013",TOR,MEM,Toronto Raptors,Memphis Grizzlies,82,88,-6,Home,82.2,True,2013
+201302220MEM,"Fri, Feb 22, 2013",MEM,ORL,Memphis Grizzlies,Orlando Magic,88,82,6,Home,87.7,True,2013
+201302240BRK,"Sun, Feb 24, 2013",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,72,76,-4,Home,77.5,True,2013
+201302270MEM,"Wed, Feb 27, 2013",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,90,84,6,Home,95.0,True,2013
+201303010MIA,"Fri, Mar 1, 2013",MIA,MEM,Miami Heat,Memphis Grizzlies,98,91,7,Home,86.3,True,2013
+201303030ORL,"Sun, Mar 3, 2013",ORL,MEM,Orlando Magic,Memphis Grizzlies,82,108,-26,Home,85.1,True,2013
+201303080CLE,"Fri, Mar 8, 2013",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,92,103,-11,Home,90.1,True,2013
+201303090MEM,"Sat, Mar 9, 2013",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,96,85,11,Home,84.6,True,2013
+201303130LAC,"Wed, Mar 13, 2013",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,85,96,-11,Home,76.1,True,2013
+201303160UTA,"Sat, Mar 16, 2013",UTA,MEM,Utah Jazz,Memphis Grizzlies,90,84,6,Home,82.5,True,2013
+201303180MEM,"Mon, Mar 18, 2013",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,92,77,15,Home,87.7,True,2013
+201303200MEM,"Wed, Mar 20, 2013",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,90,89,1,Home,86.1,True,2013
+201303220NOH,"Fri, Mar 22, 2013",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,90,83,7,Home,81.3,True,2013
+201303230MEM,"Sat, Mar 23, 2013",MEM,BOS,Memphis Grizzlies,Boston Celtics,110,106,4,Home,92.1,True,2013
+201303250WAS,"Mon, Mar 25, 2013",WAS,MEM,Washington Wizards,Memphis Grizzlies,107,94,13,Home,92.3,True,2013
+201303270NYK,"Wed, Mar 27, 2013",NYK,MEM,New York Knicks,Memphis Grizzlies,108,101,7,Home,86.7,True,2013
+201303300MIN,"Sat, Mar 30, 2013",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,86,99,-13,Home,87.4,True,2013
+201304010MEM,"Mon, Apr 1, 2013",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,92,90,2,Home,87.7,True,2013
+201304050LAL,"Fri, Apr 5, 2013",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,86,84,2,Home,88.0,True,2013
+201304070SAC,"Sun, Apr 7, 2013",SAC,MEM,Sacramento Kings,Memphis Grizzlies,87,89,-2,Home,92.0,True,2013
+201304090MEM,"Tue, Apr 9, 2013",MEM,CHA,Memphis Grizzlies,Charlotte Bobcats,94,75,19,Home,84.2,True,2013
+201304130MEM,"Sat, Apr 13, 2013",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,87,91,-4,Home,84.2,True,2013
+201304150DAL,"Mon, Apr 15, 2013",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,97,103,-6,Home,91.0,True,2013
+201304170MEM,"Wed, Apr 17, 2013",MEM,UTA,Memphis Grizzlies,Utah Jazz,86,70,16,Home,82.6,True,2013
+201304200LAC,"Sat, Apr 20, 2013",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,112,91,21,Home,83.0,True,2013
+201304220LAC,"Mon, Apr 22, 2013",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,93,91,2,Home,89.7,True,2013
+201304250MEM,"Thu, Apr 25, 2013",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,94,82,12,Home,85.5,True,2013
+201304270MEM,"Sat, Apr 27, 2013",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,104,83,21,Home,86.5,True,2013
+201304300LAC,"Tue, Apr 30, 2013",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,93,103,-10,Home,87.1,True,2013
+201305030MEM,"Fri, May 3, 2013",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,118,105,13,Home,92.4,True,2013
+201305050OKC,"Sun, May 5, 2013",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,93,91,2,Home,92.3,True,2013
+201305070OKC,"Tue, May 7, 2013",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,93,99,-6,Home,89.5,True,2013
+201305110MEM,"Sat, May 11, 2013",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,87,81,6,Home,91.2,True,2013
+201305130MEM,"Mon, May 13, 2013",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,103,97,6,Home,83.6,True,2013
+201305150OKC,"Wed, May 15, 2013",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,84,88,-4,Home,91.0,True,2013
+201305190SAS,"Sun, May 19, 2013",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,105,83,22,Home,82.8,True,2013
+201305210SAS,"Tue, May 21, 2013",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,93,89,4,Home,88.0,True,2013
+201305250MEM,"Sat, May 25, 2013",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,93,104,-11,Home,84.7,True,2013
+201305270MEM,"Mon, May 27, 2013",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,86,93,-7,Home,89.1,True,2013
+201210300MIA,"Tue, Oct 30, 2012",MIA,BOS,Miami Heat,Boston Celtics,120,107,13,Home,94.5,True,2013
+201211020NYK,"Fri, Nov 2, 2012",NYK,MIA,New York Knicks,Miami Heat,104,84,20,Home,88.4,True,2013
+201211050MIA,"Mon, Nov 5, 2012",MIA,PHO,Miami Heat,Phoenix Suns,124,99,25,Home,100.0,True,2013
+201211070MIA,"Wed, Nov 7, 2012",MIA,BRK,Miami Heat,Brooklyn Nets,103,73,30,Home,88.3,True,2013
+201211140LAC,"Wed, Nov 14, 2012",LAC,MIA,Los Angeles Clippers,Miami Heat,107,100,7,Home,93.8,True,2013
+201211170PHO,"Sat, Nov 17, 2012",PHO,MIA,Phoenix Suns,Miami Heat,88,97,-9,Home,93.1,True,2013
+201211210MIA,"Wed, Nov 21, 2012",MIA,MIL,Miami Heat,Milwaukee Bucks,113,106,7,Home,93.7,True,2013
+201211240MIA,"Sat, Nov 24, 2012",MIA,CLE,Miami Heat,Cleveland Cavaliers,110,108,2,Home,91.0,True,2013
+201211290MIA,"Thu, Nov 29, 2012",MIA,SAS,Miami Heat,San Antonio Spurs,105,100,5,Home,95.8,True,2013
+201212010MIA,"Sat, Dec 1, 2012",MIA,BRK,Miami Heat,Brooklyn Nets,102,89,13,Home,89.7,True,2013
+201212040WAS,"Tue, Dec 4, 2012",WAS,MIA,Washington Wizards,Miami Heat,105,101,4,Home,93.1,True,2013
+201212060MIA,"Thu, Dec 6, 2012",MIA,NYK,Miami Heat,New York Knicks,92,112,-20,Home,93.2,True,2013
+201212080MIA,"Sat, Dec 8, 2012",MIA,NOH,Miami Heat,New Orleans Hornets,106,90,16,Home,91.1,True,2013
+201212120MIA,"Wed, Dec 12, 2012",MIA,GSW,Miami Heat,Golden State Warriors,95,97,-2,Home,93.6,True,2013
+201212150MIA,"Sat, Dec 15, 2012",MIA,WAS,Miami Heat,Washington Wizards,102,72,30,Home,87.9,True,2013
+201212180MIA,"Tue, Dec 18, 2012",MIA,MIN,Miami Heat,Minnesota Timberwolves,103,92,11,Home,87.1,True,2013
+201212200DAL,"Thu, Dec 20, 2012",DAL,MIA,Dallas Mavericks,Miami Heat,95,110,-15,Home,95.4,True,2013
+201212220MIA,"Sat, Dec 22, 2012",MIA,UTA,Miami Heat,Utah Jazz,105,89,16,Home,90.9,True,2013
+201212250MIA,"Tue, Dec 25, 2012",MIA,OKC,Miami Heat,Oklahoma City Thunder,103,97,6,Home,89.2,True,2013
+201212260CHA,"Wed, Dec 26, 2012",CHA,MIA,Charlotte Bobcats,Miami Heat,92,105,-13,Home,94.2,True,2013
+201212290MIL,"Sat, Dec 29, 2012",MIL,MIA,Milwaukee Bucks,Miami Heat,104,85,19,Home,92.5,True,2013
+201212310ORL,"Mon, Dec 31, 2012",ORL,MIA,Orlando Magic,Miami Heat,110,112,-2,Home,84.7,True,2013
+201301020MIA,"Wed, Jan 2, 2013",MIA,DAL,Miami Heat,Dallas Mavericks,119,109,10,Home,94.2,True,2013
+201301040MIA,"Fri, Jan 4, 2013",MIA,CHI,Miami Heat,Chicago Bulls,89,96,-7,Home,84.3,True,2013
+201301060MIA,"Sun, Jan 6, 2013",MIA,WAS,Miami Heat,Washington Wizards,99,71,28,Home,84.4,True,2013
+201301080IND,"Tue, Jan 8, 2013",IND,MIA,Indiana Pacers,Miami Heat,87,77,10,Home,81.3,True,2013
+201301120SAC,"Sat, Jan 12, 2013",SAC,MIA,Sacramento Kings,Miami Heat,99,128,-29,Home,90.1,True,2013
+201301140UTA,"Mon, Jan 14, 2013",UTA,MIA,Utah Jazz,Miami Heat,104,97,7,Home,85.1,True,2013
+201301160GSW,"Wed, Jan 16, 2013",GSW,MIA,Golden State Warriors,Miami Heat,75,92,-17,Home,95.1,True,2013
+201301170LAL,"Thu, Jan 17, 2013",LAL,MIA,Los Angeles Lakers,Miami Heat,90,99,-9,Home,93.8,True,2013
+201301230MIA,"Wed, Jan 23, 2013",MIA,TOR,Miami Heat,Toronto Raptors,123,116,7,Home,85.5,True,2013
+201301270BOS,"Sun, Jan 27, 2013",BOS,MIA,Boston Celtics,Miami Heat,100,98,2,Home,86.0,True,2013
+201301300BRK,"Wed, Jan 30, 2013",BRK,MIA,Brooklyn Nets,Miami Heat,85,105,-20,Home,86.3,True,2013
+201302010IND,"Fri, Feb 1, 2013",IND,MIA,Indiana Pacers,Miami Heat,102,89,13,Home,82.5,True,2013
+201302030TOR,"Sun, Feb 3, 2013",TOR,MIA,Toronto Raptors,Miami Heat,85,100,-15,Home,86.7,True,2013
+201302040MIA,"Mon, Feb 4, 2013",MIA,CHA,Miami Heat,Charlotte Bobcats,99,94,5,Home,87.3,True,2013
+201302080MIA,"Fri, Feb 8, 2013",MIA,LAC,Miami Heat,Los Angeles Clippers,111,89,22,Home,87.4,True,2013
+201302100MIA,"Sun, Feb 10, 2013",MIA,LAL,Miami Heat,Los Angeles Lakers,107,97,10,Home,87.0,True,2013
+201302140OKC,"Thu, Feb 14, 2013",OKC,MIA,Oklahoma City Thunder,Miami Heat,100,110,-10,Home,96.2,True,2013
+201302210CHI,"Thu, Feb 21, 2013",CHI,MIA,Chicago Bulls,Miami Heat,67,86,-19,Home,88.0,True,2013
+201302230PHI,"Sat, Feb 23, 2013",PHI,MIA,Philadelphia 76ers,Miami Heat,90,114,-24,Home,85.1,True,2013
+201302240MIA,"Sun, Feb 24, 2013",MIA,CLE,Miami Heat,Cleveland Cavaliers,109,105,4,Home,88.4,True,2013
+201302260MIA,"Tue, Feb 26, 2013",MIA,SAC,Miami Heat,Sacramento Kings,141,129,12,Home,90.8,True,2013
+201303030NYK,"Sun, Mar 3, 2013",NYK,MIA,New York Knicks,Miami Heat,93,99,-6,Home,92.6,True,2013
+201303040MIN,"Mon, Mar 4, 2013",MIN,MIA,Minnesota Timberwolves,Miami Heat,81,97,-16,Home,94.9,True,2013
+201303060MIA,"Wed, Mar 6, 2013",MIA,ORL,Miami Heat,Orlando Magic,97,96,1,Home,91.8,True,2013
+201303080MIA,"Fri, Mar 8, 2013",MIA,PHI,Miami Heat,Philadelphia 76ers,102,93,9,Home,88.8,True,2013
+201303100MIA,"Sun, Mar 10, 2013",MIA,IND,Miami Heat,Indiana Pacers,105,91,14,Home,86.5,True,2013
+201303130PHI,"Wed, Mar 13, 2013",PHI,MIA,Philadelphia 76ers,Miami Heat,94,98,-4,Home,87.1,True,2013
+201303150MIL,"Fri, Mar 15, 2013",MIL,MIA,Milwaukee Bucks,Miami Heat,94,107,-13,Home,87.8,True,2013
+201303170TOR,"Sun, Mar 17, 2013",TOR,MIA,Toronto Raptors,Miami Heat,91,108,-17,Home,87.0,True,2013
+201303180BOS,"Mon, Mar 18, 2013",BOS,MIA,Boston Celtics,Miami Heat,103,105,-2,Home,96.5,True,2013
+201303200CLE,"Wed, Mar 20, 2013",CLE,MIA,Cleveland Cavaliers,Miami Heat,95,98,-3,Home,84.9,True,2013
+201303240MIA,"Sun, Mar 24, 2013",MIA,CHA,Miami Heat,Charlotte Bobcats,109,77,32,Home,92.3,True,2013
+201303250ORL,"Mon, Mar 25, 2013",ORL,MIA,Orlando Magic,Miami Heat,94,108,-14,Home,91.8,True,2013
+201303270CHI,"Wed, Mar 27, 2013",CHI,MIA,Chicago Bulls,Miami Heat,101,97,4,Home,93.4,True,2013
+201303290NOH,"Fri, Mar 29, 2013",NOH,MIA,New Orleans Hornets,Miami Heat,89,108,-19,Home,85.9,True,2013
+201303310SAS,"Sun, Mar 31, 2013",SAS,MIA,San Antonio Spurs,Miami Heat,86,88,-2,Home,83.5,True,2013
+201304020MIA,"Tue, Apr 2, 2013",MIA,NYK,Miami Heat,New York Knicks,90,102,-12,Home,82.9,True,2013
+201304050CHA,"Fri, Apr 5, 2013",CHA,MIA,Charlotte Bobcats,Miami Heat,79,89,-10,Home,82.3,True,2013
+201304060MIA,"Sat, Apr 6, 2013",MIA,PHI,Miami Heat,Philadelphia 76ers,106,87,19,Home,85.6,True,2013
+201304090MIA,"Tue, Apr 9, 2013",MIA,MIL,Miami Heat,Milwaukee Bucks,94,83,11,Home,93.3,True,2013
+201304100WAS,"Wed, Apr 10, 2013",WAS,MIA,Washington Wizards,Miami Heat,98,103,-5,Home,93.2,True,2013
+201304120MIA,"Fri, Apr 12, 2013",MIA,BOS,Miami Heat,Boston Celtics,109,101,8,Home,91.7,True,2013
+201304140MIA,"Sun, Apr 14, 2013",MIA,CHI,Miami Heat,Chicago Bulls,105,93,12,Home,96.9,True,2013
+201304150CLE,"Mon, Apr 15, 2013",CLE,MIA,Cleveland Cavaliers,Miami Heat,95,96,-1,Home,84.3,True,2013
+201304170MIA,"Wed, Apr 17, 2013",MIA,ORL,Miami Heat,Orlando Magic,105,93,12,Home,90.9,True,2013
+201304210MIA,"Sun, Apr 21, 2013",MIA,MIL,Miami Heat,Milwaukee Bucks,110,87,23,Home,89.9,True,2013
+201304230MIA,"Tue, Apr 23, 2013",MIA,MIL,Miami Heat,Milwaukee Bucks,98,86,12,Home,89.7,True,2013
+201304250MIL,"Thu, Apr 25, 2013",MIL,MIA,Milwaukee Bucks,Miami Heat,91,104,-13,Home,95.2,True,2013
+201304280MIL,"Sun, Apr 28, 2013",MIL,MIA,Milwaukee Bucks,Miami Heat,77,88,-11,Home,85.6,True,2013
+201305060MIA,"Mon, May 6, 2013",MIA,CHI,Miami Heat,Chicago Bulls,86,93,-7,Home,87.1,True,2013
+201305080MIA,"Wed, May 8, 2013",MIA,CHI,Miami Heat,Chicago Bulls,115,78,37,Home,88.0,True,2013
+201305100CHI,"Fri, May 10, 2013",CHI,MIA,Chicago Bulls,Miami Heat,94,104,-10,Home,85.2,True,2013
+201305130CHI,"Mon, May 13, 2013",CHI,MIA,Chicago Bulls,Miami Heat,65,88,-23,Home,82.6,True,2013
+201305150MIA,"Wed, May 15, 2013",MIA,CHI,Miami Heat,Chicago Bulls,94,91,3,Home,83.7,True,2013
+201305220MIA,"Wed, May 22, 2013",MIA,IND,Miami Heat,Indiana Pacers,103,102,1,Home,86.9,True,2013
+201305240MIA,"Fri, May 24, 2013",MIA,IND,Miami Heat,Indiana Pacers,93,97,-4,Home,83.2,True,2013
+201305260IND,"Sun, May 26, 2013",IND,MIA,Indiana Pacers,Miami Heat,96,114,-18,Home,84.7,True,2013
+201305280IND,"Tue, May 28, 2013",IND,MIA,Indiana Pacers,Miami Heat,99,92,7,Home,79.4,True,2013
+201305300MIA,"Thu, May 30, 2013",MIA,IND,Miami Heat,Indiana Pacers,90,79,11,Home,83.5,True,2013
+201306010IND,"Sat, Jun 1, 2013",IND,MIA,Indiana Pacers,Miami Heat,91,77,14,Home,83.6,True,2013
+201306030MIA,"Mon, Jun 3, 2013",MIA,IND,Miami Heat,Indiana Pacers,99,76,23,Home,86.7,True,2013
+201306060MIA,"Thu, Jun 6, 2013",MIA,SAS,Miami Heat,San Antonio Spurs,88,92,-4,Home,85.0,True,2013
+201306090MIA,"Sun, Jun 9, 2013",MIA,SAS,Miami Heat,San Antonio Spurs,103,84,19,Home,83.0,True,2013
+201306110SAS,"Tue, Jun 11, 2013",SAS,MIA,San Antonio Spurs,Miami Heat,113,77,36,Home,86.7,True,2013
+201306130SAS,"Thu, Jun 13, 2013",SAS,MIA,San Antonio Spurs,Miami Heat,93,109,-16,Home,94.0,True,2013
+201306160SAS,"Sun, Jun 16, 2013",SAS,MIA,San Antonio Spurs,Miami Heat,114,104,10,Home,93.2,True,2013
+201306180MIA,"Tue, Jun 18, 2013",MIA,SAS,Miami Heat,San Antonio Spurs,103,100,3,Home,84.5,True,2013
+201306200MIA,"Thu, Jun 20, 2013",MIA,SAS,Miami Heat,San Antonio Spurs,95,88,7,Home,90.7,True,2013
+201210310NOH,"Wed, Oct 31, 2012",NOH,SAS,New Orleans Hornets,San Antonio Spurs,95,99,-4,Home,93.5,True,2013
+201211020NOH,"Fri, Nov 2, 2012",NOH,UTA,New Orleans Hornets,Utah Jazz,88,86,2,Home,84.8,True,2013
+201211030CHI,"Sat, Nov 3, 2012",CHI,NOH,Chicago Bulls,New Orleans Hornets,82,89,-7,Home,89.7,True,2013
+201211070NOH,"Wed, Nov 7, 2012",NOH,PHI,New Orleans Hornets,Philadelphia 76ers,62,77,-15,Home,86.9,True,2013
+201211090NOH,"Fri, Nov 9, 2012",NOH,CHA,New Orleans Hornets,Charlotte Bobcats,107,99,8,Home,86.0,True,2013
+201211160NOH,"Fri, Nov 16, 2012",NOH,OKC,New Orleans Hornets,Oklahoma City Thunder,95,110,-15,Home,85.4,True,2013
+201211170MIL,"Sat, Nov 17, 2012",MIL,NOH,Milwaukee Bucks,New Orleans Hornets,117,113,4,Home,94.8,True,2013
+201211200NOH,"Tue, Nov 20, 2012",NOH,NYK,New Orleans Hornets,New York Knicks,80,102,-22,Home,85.6,True,2013
+201211210IND,"Wed, Nov 21, 2012",IND,NOH,Indiana Pacers,New Orleans Hornets,115,107,8,Home,83.7,True,2013
+201211230PHO,"Fri, Nov 23, 2012",PHO,NOH,Phoenix Suns,New Orleans Hornets,111,108,3,Home,86.9,True,2013
+201211260LAC,"Mon, Nov 26, 2012",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,98,105,-7,Home,87.2,True,2013
+201211280NOH,"Wed, Nov 28, 2012",NOH,UTA,New Orleans Hornets,Utah Jazz,84,96,-12,Home,88.1,True,2013
+201212010NOH,"Sat, Dec 1, 2012",NOH,OKC,New Orleans Hornets,Oklahoma City Thunder,79,100,-21,Home,86.7,True,2013
+201212030NOH,"Mon, Dec 3, 2012",NOH,MIL,New Orleans Hornets,Milwaukee Bucks,102,81,21,Home,78.7,True,2013
+201212050NOH,"Wed, Dec 5, 2012",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,87,103,-16,Home,89.6,True,2013
+201212110NOH,"Tue, Dec 11, 2012",NOH,WAS,New Orleans Hornets,Washington Wizards,70,77,-7,Home,92.0,True,2013
+201212120OKC,"Wed, Dec 12, 2012",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,92,88,4,Home,84.8,True,2013
+201212140NOH,"Fri, Dec 14, 2012",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,102,113,-11,Home,89.0,True,2013
+201212180GSW,"Tue, Dec 18, 2012",GSW,NOH,Golden State Warriors,New Orleans Hornets,103,96,7,Home,87.5,True,2013
+201212190LAC,"Wed, Dec 19, 2012",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,93,77,16,Home,85.7,True,2013
+201212210SAS,"Fri, Dec 21, 2012",SAS,NOH,San Antonio Spurs,New Orleans Hornets,99,94,5,Home,93.0,True,2013
+201212220NOH,"Sat, Dec 22, 2012",NOH,IND,New Orleans Hornets,Indiana Pacers,75,81,-6,Home,81.3,True,2013
+201212260ORL,"Wed, Dec 26, 2012",ORL,NOH,Orlando Magic,New Orleans Hornets,94,97,-3,Home,83.5,True,2013
+201212280NOH,"Fri, Dec 28, 2012",NOH,TOR,New Orleans Hornets,Toronto Raptors,97,104,-7,Home,86.3,True,2013
+201212290CHA,"Sat, Dec 29, 2012",CHA,NOH,Charlotte Bobcats,New Orleans Hornets,95,98,-3,Home,89.6,True,2013
+201301050DAL,"Sat, Jan 5, 2013",DAL,NOH,Dallas Mavericks,New Orleans Hornets,96,99,-3,Home,85.0,True,2013
+201301070NOH,"Mon, Jan 7, 2013",NOH,SAS,New Orleans Hornets,San Antonio Spurs,95,88,7,Home,87.0,True,2013
+201301110NOH,"Fri, Jan 11, 2013",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,104,92,12,Home,87.7,True,2013
+201301130NYK,"Sun, Jan 13, 2013",NYK,NOH,New York Knicks,New Orleans Hornets,100,87,13,Home,89.7,True,2013
+201301150PHI,"Tue, Jan 15, 2013",PHI,NOH,Philadelphia 76ers,New Orleans Hornets,99,111,-12,Home,88.4,True,2013
+201301160BOS,"Wed, Jan 16, 2013",BOS,NOH,Boston Celtics,New Orleans Hornets,78,90,-12,Home,88.7,True,2013
+201301190NOH,"Sat, Jan 19, 2013",NOH,GSW,New Orleans Hornets,Golden State Warriors,112,116,-4,Home,92.9,True,2013
+201301210NOH,"Mon, Jan 21, 2013",NOH,SAC,New Orleans Hornets,Sacramento Kings,114,105,9,Home,90.2,True,2013
+201301230SAS,"Wed, Jan 23, 2013",SAS,NOH,San Antonio Spurs,New Orleans Hornets,106,102,4,Home,92.0,True,2013
+201301290LAL,"Tue, Jan 29, 2013",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,111,106,5,Home,98.1,True,2013
+201301300UTA,"Wed, Jan 30, 2013",UTA,NOH,Utah Jazz,New Orleans Hornets,104,99,5,Home,92.0,True,2013
+201302020MIN,"Sat, Feb 2, 2013",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,115,86,29,Home,93.5,True,2013
+201302060NOH,"Wed, Feb 6, 2013",NOH,PHO,New Orleans Hornets,Phoenix Suns,93,84,9,Home,84.6,True,2013
+201302100TOR,"Sun, Feb 10, 2013",TOR,NOH,Toronto Raptors,New Orleans Hornets,102,89,13,Home,86.4,True,2013
+201302190NOH,"Tue, Feb 19, 2013",NOH,CHI,New Orleans Hornets,Chicago Bulls,87,96,-9,Home,91.8,True,2013
+201302200CLE,"Wed, Feb 20, 2013",CLE,NOH,Cleveland Cavaliers,New Orleans Hornets,105,100,5,Home,85.0,True,2013
+201302220NOH,"Fri, Feb 22, 2013",NOH,DAL,New Orleans Hornets,Dallas Mavericks,100,104,-4,Home,92.2,True,2013
+201302240NOH,"Sun, Feb 24, 2013",NOH,SAC,New Orleans Hornets,Sacramento Kings,110,95,15,Home,87.5,True,2013
+201302260NOH,"Tue, Feb 26, 2013",NOH,BRK,New Orleans Hornets,Brooklyn Nets,97,101,-4,Home,84.2,True,2013
+201302270OKC,"Wed, Feb 27, 2013",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,119,74,45,Home,84.6,True,2013
+201303040NOH,"Mon, Mar 4, 2013",NOH,ORL,New Orleans Hornets,Orlando Magic,102,105,-3,Home,88.6,True,2013
+201303060NOH,"Wed, Mar 6, 2013",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,102,108,-6,Home,94.9,True,2013
+201303120BRK,"Tue, Mar 12, 2013",BRK,NOH,Brooklyn Nets,New Orleans Hornets,108,98,10,Home,82.2,True,2013
+201303150WAS,"Fri, Mar 15, 2013",WAS,NOH,Washington Wizards,New Orleans Hornets,96,87,9,Home,84.1,True,2013
+201303170MIN,"Sun, Mar 17, 2013",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,97,95,2,Home,85.1,True,2013
+201303180NOH,"Mon, Mar 18, 2013",NOH,GSW,New Orleans Hornets,Golden State Warriors,72,93,-21,Home,85.8,True,2013
+201303200NOH,"Wed, Mar 20, 2013",NOH,BOS,New Orleans Hornets,Boston Celtics,87,86,1,Home,86.7,True,2013
+201303270NOH,"Wed, Mar 27, 2013",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,91,105,-14,Home,79.8,True,2013
+201303310NOH,"Sun, Mar 31, 2013",NOH,CLE,New Orleans Hornets,Cleveland Cavaliers,112,92,20,Home,93.5,True,2013
+201304030GSW,"Wed, Apr 3, 2013",GSW,NOH,Golden State Warriors,New Orleans Hornets,98,88,10,Home,90.6,True,2013
+201304050UTA,"Fri, Apr 5, 2013",UTA,NOH,Utah Jazz,New Orleans Hornets,95,83,12,Home,86.1,True,2013
+201304070PHO,"Sun, Apr 7, 2013",PHO,NOH,Phoenix Suns,New Orleans Hornets,92,95,-3,Home,91.1,True,2013
+201304090LAL,"Tue, Apr 9, 2013",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,104,96,8,Home,94.5,True,2013
+201304100SAC,"Wed, Apr 10, 2013",SAC,NOH,Sacramento Kings,New Orleans Hornets,121,110,11,Home,95.9,True,2013
+201304120NOH,"Fri, Apr 12, 2013",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,93,96,-3,Home,88.8,True,2013
+201304140NOH,"Sun, Apr 14, 2013",NOH,DAL,New Orleans Hornets,Dallas Mavericks,89,107,-18,Home,84.1,True,2013
+201304170DAL,"Wed, Apr 17, 2013",DAL,NOH,Dallas Mavericks,New Orleans Hornets,99,87,12,Home,89.2,True,2013
+201210300LAL,"Tue, Oct 30, 2012",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,91,99,-8,Home,91.1,True,2013
+201211020LAL,"Fri, Nov 2, 2012",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,95,105,-10,Home,93.3,True,2013
+201211070UTA,"Wed, Nov 7, 2012",UTA,LAL,Utah Jazz,Los Angeles Lakers,95,86,9,Home,91.9,True,2013
+201211090LAL,"Fri, Nov 9, 2012",LAL,GSW,Los Angeles Lakers,Golden State Warriors,101,77,24,Home,98.1,True,2013
+201211110LAL,"Sun, Nov 11, 2012",LAL,SAC,Los Angeles Lakers,Sacramento Kings,103,90,13,Home,89.4,True,2013
+201211130LAL,"Tue, Nov 13, 2012",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,82,84,-2,Home,86.6,True,2013
+201211160LAL,"Fri, Nov 16, 2012",LAL,PHO,Los Angeles Lakers,Phoenix Suns,114,102,12,Home,95.1,True,2013
+201211200LAL,"Tue, Nov 20, 2012",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,95,90,5,Home,89.7,True,2013
+201211210SAC,"Wed, Nov 21, 2012",SAC,LAL,Sacramento Kings,Los Angeles Lakers,113,97,16,Home,95.2,True,2013
+201211240DAL,"Sat, Nov 24, 2012",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,89,115,-26,Home,104.0,True,2013
+201211270LAL,"Tue, Nov 27, 2012",LAL,IND,Los Angeles Lakers,Indiana Pacers,77,79,-2,Home,96.7,True,2013
+201212020LAL,"Sun, Dec 2, 2012",LAL,ORL,Los Angeles Lakers,Orlando Magic,103,113,-10,Home,100.1,True,2013
+201212070OKC,"Fri, Dec 7, 2012",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,114,108,6,Home,95.5,True,2013
+201212090LAL,"Sun, Dec 9, 2012",LAL,UTA,Los Angeles Lakers,Utah Jazz,110,117,-7,Home,86.0,True,2013
+201212110CLE,"Tue, Dec 11, 2012",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,100,94,6,Home,96.4,True,2013
+201212130NYK,"Thu, Dec 13, 2012",NYK,LAL,New York Knicks,Los Angeles Lakers,116,107,9,Home,92.9,True,2013
+201212140WAS,"Fri, Dec 14, 2012",WAS,LAL,Washington Wizards,Los Angeles Lakers,96,102,-6,Home,94.3,True,2013
+201212160PHI,"Sun, Dec 16, 2012",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,98,111,-13,Home,92.0,True,2013
+201212180LAL,"Tue, Dec 18, 2012",LAL,CHA,Los Angeles Lakers,Charlotte Bobcats,101,100,1,Home,90.5,True,2013
+201212220GSW,"Sat, Dec 22, 2012",GSW,LAL,Golden State Warriors,Los Angeles Lakers,115,118,-3,Home,100.6,True,2013
+201212250LAL,"Tue, Dec 25, 2012",LAL,NYK,Los Angeles Lakers,New York Knicks,100,94,6,Home,91.6,True,2013
+201301010LAL,"Tue, Jan 1, 2013",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,99,103,-4,Home,98.6,True,2013
+201301040LAC,"Fri, Jan 4, 2013",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,107,102,5,Home,91.5,True,2013
+201301090SAS,"Wed, Jan 9, 2013",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,108,105,3,Home,101.3,True,2013
+201301110LAL,"Fri, Jan 11, 2013",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,101,116,-15,Home,101.6,True,2013
+201301130LAL,"Sun, Jan 13, 2013",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,113,93,20,Home,95.1,True,2013
+201301150LAL,"Tue, Jan 15, 2013",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,104,88,16,Home,91.0,True,2013
+201301200TOR,"Sun, Jan 20, 2013",TOR,LAL,Toronto Raptors,Los Angeles Lakers,108,103,5,Home,94.1,True,2013
+201301210CHI,"Mon, Jan 21, 2013",CHI,LAL,Chicago Bulls,Los Angeles Lakers,95,83,12,Home,87.7,True,2013
+201301250LAL,"Fri, Jan 25, 2013",LAL,UTA,Los Angeles Lakers,Utah Jazz,102,84,18,Home,87.7,True,2013
+201301270LAL,"Sun, Jan 27, 2013",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,105,96,9,Home,91.4,True,2013
+201301300PHO,"Wed, Jan 30, 2013",PHO,LAL,Phoenix Suns,Los Angeles Lakers,92,86,6,Home,91.7,True,2013
+201302010MIN,"Fri, Feb 1, 2013",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,100,111,-11,Home,97.5,True,2013
+201302050BRK,"Tue, Feb 5, 2013",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,83,92,-9,Home,92.9,True,2013
+201302070BOS,"Thu, Feb 7, 2013",BOS,LAL,Boston Celtics,Los Angeles Lakers,116,95,21,Home,95.0,True,2013
+201302080CHA,"Fri, Feb 8, 2013",CHA,LAL,Charlotte Bobcats,Los Angeles Lakers,93,100,-7,Home,97.0,True,2013
+201302120LAL,"Tue, Feb 12, 2013",LAL,PHO,Los Angeles Lakers,Phoenix Suns,91,85,6,Home,97.0,True,2013
+201302140LAL,"Thu, Feb 14, 2013",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,101,125,-24,Home,93.0,True,2013
+201302200LAL,"Wed, Feb 20, 2013",LAL,BOS,Los Angeles Lakers,Boston Celtics,113,99,14,Home,93.4,True,2013
+201302240DAL,"Sun, Feb 24, 2013",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,99,103,-4,Home,93.7,True,2013
+201302280LAL,"Thu, Feb 28, 2013",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,116,94,22,Home,92.4,True,2013
+201303050OKC,"Tue, Mar 5, 2013",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,122,105,17,Home,90.8,True,2013
+201303080LAL,"Fri, Mar 8, 2013",LAL,TOR,Los Angeles Lakers,Toronto Raptors,118,116,2,Home,95.5,True,2013
+201303100LAL,"Sun, Mar 10, 2013",LAL,CHI,Los Angeles Lakers,Chicago Bulls,90,81,9,Home,84.5,True,2013
+201303120ORL,"Tue, Mar 12, 2013",ORL,LAL,Orlando Magic,Los Angeles Lakers,97,106,-9,Home,95.7,True,2013
+201303150IND,"Fri, Mar 15, 2013",IND,LAL,Indiana Pacers,Los Angeles Lakers,93,99,-6,Home,98.2,True,2013
+201303170LAL,"Sun, Mar 17, 2013",LAL,SAC,Los Angeles Lakers,Sacramento Kings,113,102,11,Home,92.7,True,2013
+201303180PHO,"Mon, Mar 18, 2013",PHO,LAL,Phoenix Suns,Los Angeles Lakers,99,76,23,Home,94.8,True,2013
+201303220LAL,"Fri, Mar 22, 2013",LAL,WAS,Los Angeles Lakers,Washington Wizards,100,103,-3,Home,95.4,True,2013
+201303250GSW,"Mon, Mar 25, 2013",GSW,LAL,Golden State Warriors,Los Angeles Lakers,109,103,6,Home,98.3,True,2013
+201303270MIN,"Wed, Mar 27, 2013",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,117,120,-3,Home,105.3,True,2013
+201303280MIL,"Thu, Mar 28, 2013",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,113,103,10,Home,97.0,True,2013
+201303300SAC,"Sat, Mar 30, 2013",SAC,LAL,Sacramento Kings,Los Angeles Lakers,98,103,-5,Home,83.8,True,2013
+201304020LAL,"Tue, Apr 2, 2013",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,101,81,20,Home,90.6,True,2013
+201304070LAC,"Sun, Apr 7, 2013",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,109,95,14,Home,86.9,True,2013
+201304120LAL,"Fri, Apr 12, 2013",LAL,GSW,Los Angeles Lakers,Golden State Warriors,118,116,2,Home,94.6,True,2013
+201304140LAL,"Sun, Apr 14, 2013",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,91,86,5,Home,93.3,True,2013
+201304210SAS,"Sun, Apr 21, 2013",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,91,79,12,Home,94.0,True,2013
+201304240SAS,"Wed, Apr 24, 2013",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,102,91,11,Home,85.5,True,2013
+201304260LAL,"Fri, Apr 26, 2013",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,89,120,-31,Home,95.9,True,2013
+201304280LAL,"Sun, Apr 28, 2013",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,82,103,-21,Home,92.0,True,2013
+201210310UTA,"Wed, Oct 31, 2012",UTA,DAL,Utah Jazz,Dallas Mavericks,113,94,19,Home,100.5,True,2013
+201211030SAS,"Sat, Nov 3, 2012",SAS,UTA,San Antonio Spurs,Utah Jazz,110,100,10,Home,92.1,True,2013
+201211100UTA,"Sat, Nov 10, 2012",UTA,PHO,Utah Jazz,Phoenix Suns,94,81,13,Home,93.3,True,2013
+201211120TOR,"Mon, Nov 12, 2012",TOR,UTA,Toronto Raptors,Utah Jazz,133,140,-7,Home,87.7,True,2013
+201211140BOS,"Wed, Nov 14, 2012",BOS,UTA,Boston Celtics,Utah Jazz,98,93,5,Home,86.6,True,2013
+201211160PHI,"Fri, Nov 16, 2012",PHI,UTA,Philadelphia 76ers,Utah Jazz,99,93,6,Home,87.6,True,2013
+201211170WAS,"Sat, Nov 17, 2012",WAS,UTA,Washington Wizards,Utah Jazz,76,83,-7,Home,84.9,True,2013
+201211230UTA,"Fri, Nov 23, 2012",UTA,SAC,Utah Jazz,Sacramento Kings,104,102,2,Home,89.1,True,2013
+201211240SAC,"Sat, Nov 24, 2012",SAC,UTA,Sacramento Kings,Utah Jazz,108,97,11,Home,86.4,True,2013
+201211300OKC,"Fri, Nov 30, 2012",OKC,UTA,Oklahoma City Thunder,Utah Jazz,106,94,12,Home,91.5,True,2013
+201212030UTA,"Mon, Dec 3, 2012",UTA,LAC,Utah Jazz,Los Angeles Clippers,104,105,-1,Home,90.7,True,2013
+201212050UTA,"Wed, Dec 5, 2012",UTA,ORL,Utah Jazz,Orlando Magic,87,81,6,Home,89.6,True,2013
+201212070UTA,"Fri, Dec 7, 2012",UTA,TOR,Utah Jazz,Toronto Raptors,131,99,32,Home,97.8,True,2013
+201212120UTA,"Wed, Dec 12, 2012",UTA,SAS,Utah Jazz,San Antonio Spurs,99,96,3,Home,93.7,True,2013
+201212140PHO,"Fri, Dec 14, 2012",PHO,UTA,Phoenix Suns,Utah Jazz,99,84,15,Home,89.5,True,2013
+201212180BRK,"Tue, Dec 18, 2012",BRK,UTA,Brooklyn Nets,Utah Jazz,90,92,-2,Home,84.8,True,2013
+201212190IND,"Wed, Dec 19, 2012",IND,UTA,Indiana Pacers,Utah Jazz,104,84,20,Home,93.5,True,2013
+201212230ORL,"Sun, Dec 23, 2012",ORL,UTA,Orlando Magic,Utah Jazz,93,97,-4,Home,88.4,True,2013
+201212260UTA,"Wed, Dec 26, 2012",UTA,GSW,Utah Jazz,Golden State Warriors,83,94,-11,Home,91.8,True,2013
+201212280UTA,"Fri, Dec 28, 2012",UTA,LAC,Utah Jazz,Los Angeles Clippers,114,116,-2,Home,94.8,True,2013
+201212300LAC,"Sun, Dec 30, 2012",LAC,UTA,Los Angeles Clippers,Utah Jazz,107,96,11,Home,94.5,True,2013
+201301020UTA,"Wed, Jan 2, 2013",UTA,MIN,Utah Jazz,Minnesota Timberwolves,106,84,22,Home,88.6,True,2013
+201301040PHO,"Fri, Jan 4, 2013",PHO,UTA,Phoenix Suns,Utah Jazz,80,87,-7,Home,91.1,True,2013
+201301070UTA,"Mon, Jan 7, 2013",UTA,DAL,Utah Jazz,Dallas Mavericks,100,94,6,Home,92.2,True,2013
+201301090CHA,"Wed, Jan 9, 2013",CHA,UTA,Charlotte Bobcats,Utah Jazz,102,112,-10,Home,96.2,True,2013
+201301190UTA,"Sat, Jan 19, 2013",UTA,CLE,Utah Jazz,Cleveland Cavaliers,109,98,11,Home,88.7,True,2013
+201301230UTA,"Wed, Jan 23, 2013",UTA,WAS,Utah Jazz,Washington Wizards,92,88,4,Home,97.7,True,2013
+201301260UTA,"Sat, Jan 26, 2013",UTA,IND,Utah Jazz,Indiana Pacers,114,110,4,Home,84.8,True,2013
+201302040UTA,"Mon, Feb 4, 2013",UTA,SAC,Utah Jazz,Sacramento Kings,98,91,7,Home,84.5,True,2013
+201302060UTA,"Wed, Feb 6, 2013",UTA,MIL,Utah Jazz,Milwaukee Bucks,100,86,14,Home,95.4,True,2013
+201302080UTA,"Fri, Feb 8, 2013",UTA,CHI,Utah Jazz,Chicago Bulls,89,93,-4,Home,79.8,True,2013
+201302090SAC,"Sat, Feb 9, 2013",SAC,UTA,Sacramento Kings,Utah Jazz,120,109,11,Home,98.4,True,2013
+201302120UTA,"Tue, Feb 12, 2013",UTA,OKC,Utah Jazz,Oklahoma City Thunder,109,94,15,Home,90.1,True,2013
+201302130MIN,"Wed, Feb 13, 2013",MIN,UTA,Minnesota Timberwolves,Utah Jazz,93,97,-4,Home,95.7,True,2013
+201302190UTA,"Tue, Feb 19, 2013",UTA,GSW,Utah Jazz,Golden State Warriors,115,101,14,Home,91.7,True,2013
+201302230LAC,"Sat, Feb 23, 2013",LAC,UTA,Los Angeles Clippers,Utah Jazz,107,94,13,Home,97.4,True,2013
+201302250UTA,"Mon, Feb 25, 2013",UTA,BOS,Utah Jazz,Boston Celtics,107,110,-3,Home,85.3,True,2013
+201303010UTA,"Fri, Mar 1, 2013",UTA,CHA,Utah Jazz,Charlotte Bobcats,98,68,30,Home,87.1,True,2013
+201303040MIL,"Mon, Mar 4, 2013",MIL,UTA,Milwaukee Bucks,Utah Jazz,109,108,1,Home,94.6,True,2013
+201303060CLE,"Wed, Mar 6, 2013",CLE,UTA,Cleveland Cavaliers,Utah Jazz,104,101,3,Home,96.1,True,2013
+201303080CHI,"Fri, Mar 8, 2013",CHI,UTA,Chicago Bulls,Utah Jazz,89,88,1,Home,82.9,True,2013
+201303090NYK,"Sat, Mar 9, 2013",NYK,UTA,New York Knicks,Utah Jazz,113,84,29,Home,91.2,True,2013
+201303130OKC,"Wed, Mar 13, 2013",OKC,UTA,Oklahoma City Thunder,Utah Jazz,110,87,23,Home,95.8,True,2013
+201303180UTA,"Mon, Mar 18, 2013",UTA,NYK,Utah Jazz,New York Knicks,83,90,-7,Home,81.7,True,2013
+201303220SAS,"Fri, Mar 22, 2013",SAS,UTA,San Antonio Spurs,Utah Jazz,104,97,7,Home,93.1,True,2013
+201303240DAL,"Sun, Mar 24, 2013",DAL,UTA,Dallas Mavericks,Utah Jazz,113,108,5,Home,95.1,True,2013
+201303250UTA,"Mon, Mar 25, 2013",UTA,PHI,Utah Jazz,Philadelphia 76ers,107,91,16,Home,90.5,True,2013
+201303270UTA,"Wed, Mar 27, 2013",UTA,PHO,Utah Jazz,Phoenix Suns,103,88,15,Home,92.5,True,2013
+201303300UTA,"Sat, Mar 30, 2013",UTA,BRK,Utah Jazz,Brooklyn Nets,116,107,9,Home,90.2,True,2013
+201304070GSW,"Sun, Apr 7, 2013",GSW,UTA,Golden State Warriors,Utah Jazz,90,97,-7,Home,88.7,True,2013
+201304090UTA,"Tue, Apr 9, 2013",UTA,OKC,Utah Jazz,Oklahoma City Thunder,80,90,-10,Home,90.2,True,2013
+201304120UTA,"Fri, Apr 12, 2013",UTA,MIN,Utah Jazz,Minnesota Timberwolves,107,100,7,Home,88.0,True,2013
+201304150MIN,"Mon, Apr 15, 2013",MIN,UTA,Minnesota Timberwolves,Utah Jazz,80,96,-16,Home,91.8,True,2013
+201210310CHI,"Wed, Oct 31, 2012",CHI,SAC,Chicago Bulls,Sacramento Kings,93,87,6,Home,94.9,True,2013
+201211020CLE,"Fri, Nov 2, 2012",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,86,115,-29,Home,94.0,True,2013
+201211060CHI,"Tue, Nov 6, 2012",CHI,ORL,Chicago Bulls,Orlando Magic,99,93,6,Home,91.5,True,2013
+201211080CHI,"Thu, Nov 8, 2012",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,91,97,-6,Home,95.5,True,2013
+201211100CHI,"Sat, Nov 10, 2012",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,87,80,7,Home,84.9,True,2013
+201211120CHI,"Mon, Nov 12, 2012",CHI,BOS,Chicago Bulls,Boston Celtics,95,101,-6,Home,89.3,True,2013
+201211140PHO,"Wed, Nov 14, 2012",PHO,CHI,Phoenix Suns,Chicago Bulls,106,112,-6,Home,88.3,True,2013
+201211170LAC,"Sat, Nov 17, 2012",LAC,CHI,Los Angeles Clippers,Chicago Bulls,101,80,21,Home,87.2,True,2013
+201211240MIL,"Sat, Nov 24, 2012",MIL,CHI,Milwaukee Bucks,Chicago Bulls,86,93,-7,Home,87.9,True,2013
+201211260CHI,"Mon, Nov 26, 2012",CHI,MIL,Chicago Bulls,Milwaukee Bucks,92,93,-1,Home,86.3,True,2013
+201211280CHI,"Wed, Nov 28, 2012",CHI,DAL,Chicago Bulls,Dallas Mavericks,101,78,23,Home,88.7,True,2013
+201212010CHI,"Sat, Dec 1, 2012",CHI,PHI,Chicago Bulls,Philadelphia 76ers,93,88,5,Home,88.5,True,2013
+201212040CHI,"Tue, Dec 4, 2012",CHI,IND,Chicago Bulls,Indiana Pacers,76,80,-4,Home,85.2,True,2013
+201212050CLE,"Wed, Dec 5, 2012",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,85,95,-10,Home,87.7,True,2013
+201212080CHI,"Sat, Dec 8, 2012",CHI,NYK,Chicago Bulls,New York Knicks,93,85,8,Home,92.3,True,2013
+201212110CHI,"Tue, Dec 11, 2012",CHI,LAC,Chicago Bulls,Los Angeles Clippers,89,94,-5,Home,89.9,True,2013
+201212120PHI,"Wed, Dec 12, 2012",PHI,CHI,Philadelphia 76ers,Chicago Bulls,89,96,-7,Home,90.0,True,2013
+201212150CHI,"Sat, Dec 15, 2012",CHI,BRK,Chicago Bulls,Brooklyn Nets,83,82,1,Home,85.5,True,2013
+201212180CHI,"Tue, Dec 18, 2012",CHI,BOS,Chicago Bulls,Boston Celtics,100,89,11,Home,83.6,True,2013
+201212210NYK,"Fri, Dec 21, 2012",NYK,CHI,New York Knicks,Chicago Bulls,106,110,-4,Home,98.8,True,2013
+201212290CHI,"Sat, Dec 29, 2012",CHI,WAS,Chicago Bulls,Washington Wizards,87,77,10,Home,89.4,True,2013
+201212310CHI,"Mon, Dec 31, 2012",CHI,CHA,Chicago Bulls,Charlotte Bobcats,81,91,-10,Home,93.6,True,2013
+201301020ORL,"Wed, Jan 2, 2013",ORL,CHI,Orlando Magic,Chicago Bulls,94,96,-2,Home,83.8,True,2013
+201301070CHI,"Mon, Jan 7, 2013",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,118,92,26,Home,92.1,True,2013
+201301090CHI,"Wed, Jan 9, 2013",CHI,MIL,Chicago Bulls,Milwaukee Bucks,96,104,-8,Home,97.5,True,2013
+201301110NYK,"Fri, Jan 11, 2013",NYK,CHI,New York Knicks,Chicago Bulls,101,108,-7,Home,92.2,True,2013
+201301120CHI,"Sat, Jan 12, 2013",CHI,PHO,Chicago Bulls,Phoenix Suns,81,97,-16,Home,88.0,True,2013
+201301160TOR,"Wed, Jan 16, 2013",TOR,CHI,Toronto Raptors,Chicago Bulls,105,107,-2,Home,87.7,True,2013
+201301180BOS,"Fri, Jan 18, 2013",BOS,CHI,Boston Celtics,Chicago Bulls,99,100,-1,Home,90.5,True,2013
+201301250CHI,"Fri, Jan 25, 2013",CHI,GSW,Chicago Bulls,Golden State Warriors,103,87,16,Home,91.4,True,2013
+201301260WAS,"Sat, Jan 26, 2013",WAS,CHI,Washington Wizards,Chicago Bulls,86,73,13,Home,84.7,True,2013
+201301280CHI,"Mon, Jan 28, 2013",CHI,CHA,Chicago Bulls,Charlotte Bobcats,93,85,8,Home,85.0,True,2013
+201301300MIL,"Wed, Jan 30, 2013",MIL,CHI,Milwaukee Bucks,Chicago Bulls,88,104,-16,Home,89.8,True,2013
+201302010BRK,"Fri, Feb 1, 2013",BRK,CHI,Brooklyn Nets,Chicago Bulls,93,89,4,Home,84.6,True,2013
+201302040IND,"Mon, Feb 4, 2013",IND,CHI,Indiana Pacers,Chicago Bulls,111,101,10,Home,91.6,True,2013
+201302110CHI,"Mon, Feb 11, 2013",CHI,SAS,Chicago Bulls,San Antonio Spurs,89,103,-14,Home,87.8,True,2013
+201302130BOS,"Wed, Feb 13, 2013",BOS,CHI,Boston Celtics,Chicago Bulls,71,69,2,Home,83.7,True,2013
+201302220CHA,"Fri, Feb 22, 2013",CHA,CHI,Charlotte Bobcats,Chicago Bulls,75,105,-30,Home,85.6,True,2013
+201302240OKC,"Sun, Feb 24, 2013",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,102,72,30,Home,92.4,True,2013
+201302260CHI,"Tue, Feb 26, 2013",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,98,101,-3,Home,84.7,True,2013
+201302280CHI,"Thu, Feb 28, 2013",CHI,PHI,Chicago Bulls,Philadelphia 76ers,93,82,11,Home,91.4,True,2013
+201303020CHI,"Sat, Mar 2, 2013",CHI,BRK,Chicago Bulls,Brooklyn Nets,96,85,11,Home,91.6,True,2013
+201303030IND,"Sun, Mar 3, 2013",IND,CHI,Indiana Pacers,Chicago Bulls,97,92,5,Home,88.1,True,2013
+201303060SAS,"Wed, Mar 6, 2013",SAS,CHI,San Antonio Spurs,Chicago Bulls,101,83,18,Home,86.7,True,2013
+201303130SAC,"Wed, Mar 13, 2013",SAC,CHI,Sacramento Kings,Chicago Bulls,121,79,42,Home,90.7,True,2013
+201303150GSW,"Fri, Mar 15, 2013",GSW,CHI,Golden State Warriors,Chicago Bulls,95,113,-18,Home,92.7,True,2013
+201303230CHI,"Sat, Mar 23, 2013",CHI,IND,Chicago Bulls,Indiana Pacers,87,84,3,Home,85.4,True,2013
+201303240MIN,"Sun, Mar 24, 2013",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,97,104,-7,Home,89.7,True,2013
+201303300DAL,"Sat, Mar 30, 2013",DAL,CHI,Dallas Mavericks,Chicago Bulls,100,98,2,Home,87.1,True,2013
+201304020WAS,"Tue, Apr 2, 2013",WAS,CHI,Washington Wizards,Chicago Bulls,90,86,4,Home,88.3,True,2013
+201304040BRK,"Thu, Apr 4, 2013",BRK,CHI,Brooklyn Nets,Chicago Bulls,90,92,-2,Home,88.1,True,2013
+201304050CHI,"Fri, Apr 5, 2013",CHI,ORL,Chicago Bulls,Orlando Magic,87,86,1,Home,87.4,True,2013
+201304090CHI,"Tue, Apr 9, 2013",CHI,TOR,Chicago Bulls,Toronto Raptors,98,101,-3,Home,87.0,True,2013
+201304110CHI,"Thu, Apr 11, 2013",CHI,NYK,Chicago Bulls,New York Knicks,118,111,7,Home,92.8,True,2013
+201304120TOR,"Fri, Apr 12, 2013",TOR,CHI,Toronto Raptors,Chicago Bulls,97,88,9,Home,86.6,True,2013
+201304150ORL,"Mon, Apr 15, 2013",ORL,CHI,Orlando Magic,Chicago Bulls,84,102,-18,Home,85.1,True,2013
+201304170CHI,"Wed, Apr 17, 2013",CHI,WAS,Chicago Bulls,Washington Wizards,95,92,3,Home,89.3,True,2013
+201304200BRK,"Sat, Apr 20, 2013",BRK,CHI,Brooklyn Nets,Chicago Bulls,106,89,17,Home,84.8,True,2013
+201304220BRK,"Mon, Apr 22, 2013",BRK,CHI,Brooklyn Nets,Chicago Bulls,82,90,-8,Home,89.7,True,2013
+201304250CHI,"Thu, Apr 25, 2013",CHI,BRK,Chicago Bulls,Brooklyn Nets,79,76,3,Home,89.1,True,2013
+201304270CHI,"Sat, Apr 27, 2013",CHI,BRK,Chicago Bulls,Brooklyn Nets,142,134,8,Home,93.2,True,2013
+201304290BRK,"Mon, Apr 29, 2013",BRK,CHI,Brooklyn Nets,Chicago Bulls,110,91,19,Home,83.5,True,2013
+201305020CHI,"Thu, May 2, 2013",CHI,BRK,Chicago Bulls,Brooklyn Nets,92,95,-3,Home,91.6,True,2013
+201305040BRK,"Sat, May 4, 2013",BRK,CHI,Brooklyn Nets,Chicago Bulls,93,99,-6,Home,79.9,True,2013
+201211040NYK,"Sun, Nov 4, 2012",NYK,PHI,New York Knicks,Philadelphia 76ers,100,84,16,Home,89.6,True,2013
+201211050PHI,"Mon, Nov 5, 2012",PHI,NYK,Philadelphia 76ers,New York Knicks,88,110,-22,Home,88.3,True,2013
+201211090NYK,"Fri, Nov 9, 2012",NYK,DAL,New York Knicks,Dallas Mavericks,104,94,10,Home,98.0,True,2013
+201211130ORL,"Tue, Nov 13, 2012",ORL,NYK,Orlando Magic,New York Knicks,89,99,-10,Home,90.7,True,2013
+201211150SAS,"Thu, Nov 15, 2012",SAS,NYK,San Antonio Spurs,New York Knicks,100,104,-4,Home,90.5,True,2013
+201211180NYK,"Sun, Nov 18, 2012",NYK,IND,New York Knicks,Indiana Pacers,88,76,12,Home,87.8,True,2013
+201211210DAL,"Wed, Nov 21, 2012",DAL,NYK,Dallas Mavericks,New York Knicks,114,111,3,Home,94.4,True,2013
+201211260BRK,"Mon, Nov 26, 2012",BRK,NYK,Brooklyn Nets,New York Knicks,96,89,7,Home,81.3,True,2013
+201211280MIL,"Wed, Nov 28, 2012",MIL,NYK,Milwaukee Bucks,New York Knicks,88,102,-14,Home,90.0,True,2013
+201211300NYK,"Fri, Nov 30, 2012",NYK,WAS,New York Knicks,Washington Wizards,108,87,21,Home,90.2,True,2013
+201212020NYK,"Sun, Dec 2, 2012",NYK,PHO,New York Knicks,Phoenix Suns,106,99,7,Home,89.3,True,2013
+201212050CHA,"Wed, Dec 5, 2012",CHA,NYK,Charlotte Bobcats,New York Knicks,98,100,-2,Home,89.8,True,2013
+201212110BRK,"Tue, Dec 11, 2012",BRK,NYK,Brooklyn Nets,New York Knicks,97,100,-3,Home,83.3,True,2013
+201212150NYK,"Sat, Dec 15, 2012",NYK,CLE,New York Knicks,Cleveland Cavaliers,103,102,1,Home,89.7,True,2013
+201212190NYK,"Wed, Dec 19, 2012",NYK,BRK,New York Knicks,Brooklyn Nets,100,86,14,Home,82.4,True,2013
+201212230NYK,"Sun, Dec 23, 2012",NYK,MIN,New York Knicks,Minnesota Timberwolves,94,91,3,Home,92.0,True,2013
+201212260PHO,"Wed, Dec 26, 2012",PHO,NYK,Phoenix Suns,New York Knicks,97,99,-2,Home,94.7,True,2013
+201212280SAC,"Fri, Dec 28, 2012",SAC,NYK,Sacramento Kings,New York Knicks,106,105,1,Home,88.9,True,2013
+201301030NYK,"Thu, Jan 3, 2013",NYK,SAS,New York Knicks,San Antonio Spurs,100,83,17,Home,89.3,True,2013
+201301050ORL,"Sat, Jan 5, 2013",ORL,NYK,Orlando Magic,New York Knicks,106,114,-8,Home,93.2,True,2013
+201301070NYK,"Mon, Jan 7, 2013",NYK,BOS,New York Knicks,Boston Celtics,96,102,-6,Home,82.9,True,2013
+201301100IND,"Thu, Jan 10, 2013",IND,NYK,Indiana Pacers,New York Knicks,81,76,5,Home,83.1,True,2013
+201301210NYK,"Mon, Jan 21, 2013",NYK,BRK,New York Knicks,Brooklyn Nets,85,88,-3,Home,87.8,True,2013
+201301240BOS,"Thu, Jan 24, 2013",BOS,NYK,Boston Celtics,New York Knicks,86,89,-3,Home,90.4,True,2013
+201301260PHI,"Sat, Jan 26, 2013",PHI,NYK,Philadelphia 76ers,New York Knicks,97,80,17,Home,88.8,True,2013
+201301300NYK,"Wed, Jan 30, 2013",NYK,ORL,New York Knicks,Orlando Magic,113,97,16,Home,83.2,True,2013
+201302010NYK,"Fri, Feb 1, 2013",NYK,MIL,New York Knicks,Milwaukee Bucks,96,86,10,Home,87.6,True,2013
+201302020NYK,"Sat, Feb 2, 2013",NYK,SAC,New York Knicks,Sacramento Kings,120,81,39,Home,93.5,True,2013
+201302060WAS,"Wed, Feb 6, 2013",WAS,NYK,Washington Wizards,New York Knicks,106,96,10,Home,87.1,True,2013
+201302080MIN,"Fri, Feb 8, 2013",MIN,NYK,Minnesota Timberwolves,New York Knicks,94,100,-6,Home,86.2,True,2013
+201302100NYK,"Sun, Feb 10, 2013",NYK,LAC,New York Knicks,Los Angeles Clippers,88,102,-14,Home,86.2,True,2013
+201302130NYK,"Wed, Feb 13, 2013",NYK,TOR,New York Knicks,Toronto Raptors,88,92,-4,Home,81.6,True,2013
+201302200IND,"Wed, Feb 20, 2013",IND,NYK,Indiana Pacers,New York Knicks,125,91,34,Home,101.1,True,2013
+201302220TOR,"Fri, Feb 22, 2013",TOR,NYK,Toronto Raptors,New York Knicks,100,98,2,Home,90.3,True,2013
+201302240NYK,"Sun, Feb 24, 2013",NYK,PHI,New York Knicks,Philadelphia 76ers,99,93,6,Home,91.2,True,2013
+201302270NYK,"Wed, Feb 27, 2013",NYK,GSW,New York Knicks,Golden State Warriors,109,105,4,Home,92.1,True,2013
+201303010WAS,"Fri, Mar 1, 2013",WAS,NYK,Washington Wizards,New York Knicks,88,96,-8,Home,88.8,True,2013
+201303040CLE,"Mon, Mar 4, 2013",CLE,NYK,Cleveland Cavaliers,New York Knicks,97,102,-5,Home,88.8,True,2013
+201303070NYK,"Thu, Mar 7, 2013",NYK,OKC,New York Knicks,Oklahoma City Thunder,94,95,-1,Home,89.7,True,2013
+201303110GSW,"Mon, Mar 11, 2013",GSW,NYK,Golden State Warriors,New York Knicks,92,63,29,Home,86.7,True,2013
+201303170LAC,"Sun, Mar 17, 2013",LAC,NYK,Los Angeles Clippers,New York Knicks,93,80,13,Home,87.3,True,2013
+201303200NYK,"Wed, Mar 20, 2013",NYK,ORL,New York Knicks,Orlando Magic,106,94,12,Home,84.7,True,2013
+201303220TOR,"Fri, Mar 22, 2013",TOR,NYK,Toronto Raptors,New York Knicks,94,99,-5,Home,85.1,True,2013
+201303230NYK,"Sat, Mar 23, 2013",NYK,TOR,New York Knicks,Toronto Raptors,110,84,26,Home,88.2,True,2013
+201303260BOS,"Tue, Mar 26, 2013",BOS,NYK,Boston Celtics,New York Knicks,85,100,-15,Home,88.2,True,2013
+201303290NYK,"Fri, Mar 29, 2013",NYK,CHA,New York Knicks,Charlotte Bobcats,111,102,9,Home,89.3,True,2013
+201303310NYK,"Sun, Mar 31, 2013",NYK,BOS,New York Knicks,Boston Celtics,108,89,19,Home,84.0,True,2013
+201304050NYK,"Fri, Apr 5, 2013",NYK,MIL,New York Knicks,Milwaukee Bucks,101,83,18,Home,87.3,True,2013
+201304070OKC,"Sun, Apr 7, 2013",OKC,NYK,Oklahoma City Thunder,New York Knicks,120,125,-5,Home,88.4,True,2013
+201304090NYK,"Tue, Apr 9, 2013",NYK,WAS,New York Knicks,Washington Wizards,120,99,21,Home,91.4,True,2013
+201304120CLE,"Fri, Apr 12, 2013",CLE,NYK,Cleveland Cavaliers,New York Knicks,91,101,-10,Home,87.7,True,2013
+201304140NYK,"Sun, Apr 14, 2013",NYK,IND,New York Knicks,Indiana Pacers,90,80,10,Home,87.4,True,2013
+201304150CHA,"Mon, Apr 15, 2013",CHA,NYK,Charlotte Bobcats,New York Knicks,106,95,11,Home,86.8,True,2013
+201304200NYK,"Sat, Apr 20, 2013",NYK,BOS,New York Knicks,Boston Celtics,85,78,7,Home,87.4,True,2013
+201304230NYK,"Tue, Apr 23, 2013",NYK,BOS,New York Knicks,Boston Celtics,87,71,16,Home,85.6,True,2013
+201304260BOS,"Fri, Apr 26, 2013",BOS,NYK,Boston Celtics,New York Knicks,76,90,-14,Home,82.9,True,2013
+201304280BOS,"Sun, Apr 28, 2013",BOS,NYK,Boston Celtics,New York Knicks,97,90,7,Home,88.5,True,2013
+201305010NYK,"Wed, May 1, 2013",NYK,BOS,New York Knicks,Boston Celtics,86,92,-6,Home,86.3,True,2013
+201305030BOS,"Fri, May 3, 2013",BOS,NYK,Boston Celtics,New York Knicks,80,88,-8,Home,86.8,True,2013
+201305050NYK,"Sun, May 5, 2013",NYK,IND,New York Knicks,Indiana Pacers,95,102,-7,Home,91.0,True,2013
+201305070NYK,"Tue, May 7, 2013",NYK,IND,New York Knicks,Indiana Pacers,105,79,26,Home,84.6,True,2013
+201305110IND,"Sat, May 11, 2013",IND,NYK,Indiana Pacers,New York Knicks,82,71,11,Home,84.3,True,2013
+201305140IND,"Tue, May 14, 2013",IND,NYK,Indiana Pacers,New York Knicks,93,82,11,Home,84.7,True,2013
+201305160NYK,"Thu, May 16, 2013",NYK,IND,New York Knicks,Indiana Pacers,85,75,10,Home,85.3,True,2013
+201305180IND,"Sat, May 18, 2013",IND,NYK,Indiana Pacers,New York Knicks,106,99,7,Home,83.6,True,2013
+201210310TOR,"Wed, Oct 31, 2012",TOR,IND,Toronto Raptors,Indiana Pacers,88,90,-2,Home,91.1,True,2013
+201211030BRK,"Sat, Nov 3, 2012",BRK,TOR,Brooklyn Nets,Toronto Raptors,107,100,7,Home,97.8,True,2013
+201211040TOR,"Sun, Nov 4, 2012",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,105,86,19,Home,89.5,True,2013
+201211060OKC,"Tue, Nov 6, 2012",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,108,88,20,Home,98.8,True,2013
+201211070DAL,"Wed, Nov 7, 2012",DAL,TOR,Dallas Mavericks,Toronto Raptors,109,104,5,Home,90.6,True,2013
+201211100TOR,"Sat, Nov 10, 2012",TOR,PHI,Toronto Raptors,Philadelphia 76ers,83,93,-10,Home,88.5,True,2013
+201211130IND,"Tue, Nov 13, 2012",IND,TOR,Indiana Pacers,Toronto Raptors,72,74,-2,Home,82.2,True,2013
+201211170BOS,"Sat, Nov 17, 2012",BOS,TOR,Boston Celtics,Toronto Raptors,107,89,18,Home,88.3,True,2013
+201211180TOR,"Sun, Nov 18, 2012",TOR,ORL,Toronto Raptors,Orlando Magic,97,86,11,Home,90.5,True,2013
+201211200PHI,"Tue, Nov 20, 2012",PHI,TOR,Philadelphia 76ers,Toronto Raptors,106,98,8,Home,91.2,True,2013
+201211210CHA,"Wed, Nov 21, 2012",CHA,TOR,Charlotte Bobcats,Toronto Raptors,98,97,1,Home,93.3,True,2013
+201211250TOR,"Sun, Nov 25, 2012",TOR,SAS,Toronto Raptors,San Antonio Spurs,106,111,-5,Home,92.7,True,2013
+201211300TOR,"Fri, Nov 30, 2012",TOR,PHO,Toronto Raptors,Phoenix Suns,101,97,4,Home,92.6,True,2013
+201212050SAC,"Wed, Dec 5, 2012",SAC,TOR,Sacramento Kings,Toronto Raptors,107,100,7,Home,97.7,True,2013
+201212090LAC,"Sun, Dec 9, 2012",LAC,TOR,Los Angeles Clippers,Toronto Raptors,102,83,19,Home,84.9,True,2013
+201212120TOR,"Wed, Dec 12, 2012",TOR,BRK,Toronto Raptors,Brooklyn Nets,88,94,-6,Home,86.9,True,2013
+201212140TOR,"Fri, Dec 14, 2012",TOR,DAL,Toronto Raptors,Dallas Mavericks,95,74,21,Home,88.8,True,2013
+201212180CLE,"Tue, Dec 18, 2012",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,99,113,-14,Home,85.4,True,2013
+201212210TOR,"Fri, Dec 21, 2012",TOR,ORL,Toronto Raptors,Orlando Magic,93,90,3,Home,88.4,True,2013
+201212260SAS,"Wed, Dec 26, 2012",SAS,TOR,San Antonio Spurs,Toronto Raptors,100,80,20,Home,87.6,True,2013
+201212290ORL,"Sat, Dec 29, 2012",ORL,TOR,Orlando Magic,Toronto Raptors,88,123,-35,Home,87.2,True,2013
+201301040TOR,"Fri, Jan 4, 2013",TOR,SAC,Toronto Raptors,Sacramento Kings,96,105,-9,Home,93.0,True,2013
+201301060TOR,"Sun, Jan 6, 2013",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,92,104,-12,Home,90.2,True,2013
+201301090TOR,"Wed, Jan 9, 2013",TOR,PHI,Toronto Raptors,Philadelphia 76ers,90,72,18,Home,84.8,True,2013
+201301110TOR,"Fri, Jan 11, 2013",TOR,CHA,Toronto Raptors,Charlotte Bobcats,99,78,21,Home,78.9,True,2013
+201301130TOR,"Sun, Jan 13, 2013",TOR,MIL,Toronto Raptors,Milwaukee Bucks,96,107,-11,Home,88.5,True,2013
+201301150BRK,"Tue, Jan 15, 2013",BRK,TOR,Brooklyn Nets,Toronto Raptors,113,106,7,Home,87.5,True,2013
+201301180PHI,"Fri, Jan 18, 2013",PHI,TOR,Philadelphia 76ers,Toronto Raptors,108,101,7,Home,88.0,True,2013
+201301240ORL,"Thu, Jan 24, 2013",ORL,TOR,Orlando Magic,Toronto Raptors,95,97,-2,Home,89.0,True,2013
+201301260TOR,"Sat, Jan 26, 2013",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,98,99,-1,Home,91.0,True,2013
+201301280TOR,"Mon, Jan 28, 2013",TOR,GSW,Toronto Raptors,Golden State Warriors,102,114,-12,Home,93.3,True,2013
+201302010TOR,"Fri, Feb 1, 2013",TOR,LAC,Toronto Raptors,Los Angeles Clippers,98,73,25,Home,87.3,True,2013
+201302060TOR,"Wed, Feb 6, 2013",TOR,BOS,Toronto Raptors,Boston Celtics,95,99,-4,Home,92.8,True,2013
+201302080IND,"Fri, Feb 8, 2013",IND,TOR,Indiana Pacers,Toronto Raptors,98,100,-2,Home,87.4,True,2013
+201302190WAS,"Tue, Feb 19, 2013",WAS,TOR,Washington Wizards,Toronto Raptors,88,96,-8,Home,92.1,True,2013
+201302250TOR,"Mon, Feb 25, 2013",TOR,WAS,Toronto Raptors,Washington Wizards,84,90,-6,Home,94.0,True,2013
+201302270CLE,"Wed, Feb 27, 2013",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,103,92,11,Home,90.2,True,2013
+201303010TOR,"Fri, Mar 1, 2013",TOR,IND,Toronto Raptors,Indiana Pacers,81,93,-12,Home,85.9,True,2013
+201303020MIL,"Sat, Mar 2, 2013",MIL,TOR,Milwaukee Bucks,Toronto Raptors,122,114,8,Home,95.2,True,2013
+201303040GSW,"Mon, Mar 4, 2013",GSW,TOR,Golden State Warriors,Toronto Raptors,125,118,7,Home,100.2,True,2013
+201303060PHO,"Wed, Mar 6, 2013",PHO,TOR,Phoenix Suns,Toronto Raptors,71,98,-27,Home,95.7,True,2013
+201303100TOR,"Sun, Mar 10, 2013",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,100,96,4,Home,98.0,True,2013
+201303130BOS,"Wed, Mar 13, 2013",BOS,TOR,Boston Celtics,Toronto Raptors,112,88,24,Home,96.1,True,2013
+201303150TOR,"Fri, Mar 15, 2013",TOR,CHA,Toronto Raptors,Charlotte Bobcats,92,78,14,Home,86.7,True,2013
+201303200CHA,"Wed, Mar 20, 2013",CHA,TOR,Charlotte Bobcats,Toronto Raptors,107,101,6,Home,91.0,True,2013
+201303310WAS,"Sun, Mar 31, 2013",WAS,TOR,Washington Wizards,Toronto Raptors,109,92,17,Home,90.4,True,2013
+201304030TOR,"Wed, Apr 3, 2013",TOR,WAS,Toronto Raptors,Washington Wizards,88,78,10,Home,92.5,True,2013
+201304050MIN,"Fri, Apr 5, 2013",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,93,95,-2,Home,90.3,True,2013
+201304060MIL,"Sat, Apr 6, 2013",MIL,TOR,Milwaukee Bucks,Toronto Raptors,100,83,17,Home,94.2,True,2013
+201304140TOR,"Sun, Apr 14, 2013",TOR,BRK,Toronto Raptors,Brooklyn Nets,93,87,6,Home,88.5,True,2013
+201304170TOR,"Wed, Apr 17, 2013",TOR,BOS,Toronto Raptors,Boston Celtics,114,90,24,Home,91.2,True,2013
+201211010SAS,"Thu, Nov 1, 2012",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,86,84,2,Home,91.1,True,2013
+201211110OKC,"Sun, Nov 11, 2012",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,106,91,15,Home,95.6,True,2013
+201211180OKC,"Sun, Nov 18, 2012",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,119,109,10,Home,93.3,True,2013
+201211210OKC,"Wed, Nov 21, 2012",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,117,111,6,Home,90.7,True,2013
+201211230BOS,"Fri, Nov 23, 2012",BOS,OKC,Boston Celtics,Oklahoma City Thunder,108,100,8,Home,95.2,True,2013
+201211240PHI,"Sat, Nov 24, 2012",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,109,116,-7,Home,86.9,True,2013
+201211260OKC,"Mon, Nov 26, 2012",OKC,CHA,Oklahoma City Thunder,Charlotte Bobcats,114,69,45,Home,88.9,True,2013
+201212040BRK,"Tue, Dec 4, 2012",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,111,117,-6,Home,91.4,True,2013
+201212090OKC,"Sun, Dec 9, 2012",OKC,IND,Oklahoma City Thunder,Indiana Pacers,104,93,11,Home,84.8,True,2013
+201212140OKC,"Fri, Dec 14, 2012",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,113,103,10,Home,92.6,True,2013
+201212170OKC,"Mon, Dec 17, 2012",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,107,93,14,Home,92.6,True,2013
+201212200MIN,"Thu, Dec 20, 2012",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,99,93,6,Home,94.9,True,2013
+201212270OKC,"Thu, Dec 27, 2012",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,111,105,6,Home,90.6,True,2013
+201212310OKC,"Mon, Dec 31, 2012",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,114,96,18,Home,86.9,True,2013
+201301020OKC,"Wed, Jan 2, 2013",OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,93,110,-17,Home,90.4,True,2013
+201301040OKC,"Fri, Jan 4, 2013",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,109,85,24,Home,93.9,True,2013
+201301070WAS,"Mon, Jan 7, 2013",WAS,OKC,Washington Wizards,Oklahoma City Thunder,101,99,2,Home,90.7,True,2013
+201301090OKC,"Wed, Jan 9, 2013",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,106,84,22,Home,87.9,True,2013
+201301140PHO,"Mon, Jan 14, 2013",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,90,102,-12,Home,91.3,True,2013
+201301180DAL,"Fri, Jan 18, 2013",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,114,117,-3,Home,96.1,True,2013
+201301220LAC,"Tue, Jan 22, 2013",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,97,109,-12,Home,87.6,True,2013
+201301230GSW,"Wed, Jan 23, 2013",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,104,99,5,Home,96.7,True,2013
+201301250SAC,"Fri, Jan 25, 2013",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,95,105,-10,Home,101.4,True,2013
+201302020CLE,"Sat, Feb 2, 2013",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,115,110,5,Home,96.2,True,2013
+201302040OKC,"Mon, Feb 4, 2013",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,112,91,21,Home,100.7,True,2013
+201302060OKC,"Wed, Feb 6, 2013",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,119,98,21,Home,104.0,True,2013
+201302080OKC,"Fri, Feb 8, 2013",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,127,96,31,Home,92.1,True,2013
+201302100PHO,"Sun, Feb 10, 2013",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,69,97,-28,Home,94.0,True,2013
+201302220OKC,"Fri, Feb 22, 2013",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,127,111,16,Home,97.8,True,2013
+201303030LAC,"Sun, Mar 3, 2013",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,104,108,-4,Home,92.9,True,2013
+201303080CHA,"Fri, Mar 8, 2013",CHA,OKC,Charlotte Bobcats,Oklahoma City Thunder,94,116,-22,Home,86.9,True,2013
+201303100OKC,"Sun, Mar 10, 2013",OKC,BOS,Oklahoma City Thunder,Boston Celtics,91,79,12,Home,92.1,True,2013
+201303110SAS,"Mon, Mar 11, 2013",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,105,93,12,Home,88.9,True,2013
+201303150OKC,"Fri, Mar 15, 2013",OKC,ORL,Oklahoma City Thunder,Orlando Magic,117,104,13,Home,102.2,True,2013
+201303170DAL,"Sun, Mar 17, 2013",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,101,107,-6,Home,94.2,True,2013
+201303220ORL,"Fri, Mar 22, 2013",ORL,OKC,Orlando Magic,Oklahoma City Thunder,89,97,-8,Home,96.0,True,2013
+201303270OKC,"Wed, Mar 27, 2013",OKC,WAS,Oklahoma City Thunder,Washington Wizards,103,80,23,Home,88.5,True,2013
+201303290MIN,"Fri, Mar 29, 2013",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,101,93,8,Home,90.2,True,2013
+201303300MIL,"Sat, Mar 30, 2013",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,99,109,-10,Home,90.8,True,2013
+201304040OKC,"Thu, Apr 4, 2013",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,100,88,12,Home,88.5,True,2013
+201304050IND,"Fri, Apr 5, 2013",IND,OKC,Indiana Pacers,Oklahoma City Thunder,75,97,-22,Home,82.4,True,2013
+201304110GSW,"Thu, Apr 11, 2013",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,97,116,-19,Home,100.5,True,2013
+201304150OKC,"Mon, Apr 15, 2013",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,104,95,9,Home,94.0,True,2013
+201304170OKC,"Wed, Apr 17, 2013",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,89,95,-6,Home,86.7,True,2013
+201211050SAS,"Mon, Nov 5, 2012",SAS,IND,San Antonio Spurs,Indiana Pacers,101,79,22,Home,87.8,True,2013
+201211070LAC,"Wed, Nov 7, 2012",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,106,84,22,Home,93.3,True,2013
+201211090SAC,"Fri, Nov 9, 2012",SAC,SAS,Sacramento Kings,San Antonio Spurs,86,97,-11,Home,95.0,True,2013
+201211190SAS,"Mon, Nov 19, 2012",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,87,92,-5,Home,91.3,True,2013
+201211210BOS,"Wed, Nov 21, 2012",BOS,SAS,Boston Celtics,San Antonio Spurs,100,112,-12,Home,94.7,True,2013
+201211230IND,"Fri, Nov 23, 2012",IND,SAS,Indiana Pacers,San Antonio Spurs,97,104,-7,Home,92.9,True,2013
+201211260WAS,"Mon, Nov 26, 2012",WAS,SAS,Washington Wizards,San Antonio Spurs,92,118,-26,Home,90.7,True,2013
+201211280ORL,"Wed, Nov 28, 2012",ORL,SAS,Orlando Magic,San Antonio Spurs,89,110,-21,Home,94.7,True,2013
+201212050SAS,"Wed, Dec 5, 2012",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,110,99,11,Home,97.4,True,2013
+201212080CHA,"Sat, Dec 8, 2012",CHA,SAS,Charlotte Bobcats,San Antonio Spurs,102,132,-30,Home,95.0,True,2013
+201212150SAS,"Sat, Dec 15, 2012",SAS,BOS,San Antonio Spurs,Boston Celtics,103,88,15,Home,87.8,True,2013
+201212230SAS,"Sun, Dec 23, 2012",SAS,DAL,San Antonio Spurs,Dallas Mavericks,129,91,38,Home,97.8,True,2013
+201212300DAL,"Sun, Dec 30, 2012",DAL,SAS,Dallas Mavericks,San Antonio Spurs,86,111,-25,Home,94.2,True,2013
+201212310SAS,"Mon, Dec 31, 2012",SAS,BRK,San Antonio Spurs,Brooklyn Nets,104,73,31,Home,86.5,True,2013
+201301020MIL,"Wed, Jan 2, 2013",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,110,117,-7,Home,98.6,True,2013
+201301050SAS,"Sat, Jan 5, 2013",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,109,86,23,Home,100.5,True,2013
+201301130SAS,"Sun, Jan 13, 2013",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,106,88,18,Home,93.7,True,2013
+201301180SAS,"Fri, Jan 18, 2013",SAS,GSW,San Antonio Spurs,Golden State Warriors,95,88,7,Home,90.5,True,2013
+201301210PHI,"Mon, Jan 21, 2013",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,85,90,-5,Home,95.8,True,2013
+201301250DAL,"Fri, Jan 25, 2013",DAL,SAS,Dallas Mavericks,San Antonio Spurs,107,113,-6,Home,103.1,True,2013
+201301260SAS,"Sat, Jan 26, 2013",SAS,PHO,San Antonio Spurs,Phoenix Suns,108,99,9,Home,92.8,True,2013
+201301300SAS,"Wed, Jan 30, 2013",SAS,CHA,San Antonio Spurs,Charlotte Bobcats,102,78,24,Home,92.7,True,2013
+201302020SAS,"Sat, Feb 2, 2013",SAS,WAS,San Antonio Spurs,Washington Wizards,96,86,10,Home,97.4,True,2013
+201302060MIN,"Wed, Feb 6, 2013",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,94,104,-10,Home,93.4,True,2013
+201302100BRK,"Sun, Feb 10, 2013",BRK,SAS,Brooklyn Nets,San Antonio Spurs,86,111,-25,Home,80.3,True,2013
+201302130CLE,"Wed, Feb 13, 2013",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,95,96,-1,Home,92.3,True,2013
+201302190SAC,"Tue, Feb 19, 2013",SAC,SAS,Sacramento Kings,San Antonio Spurs,102,108,-6,Home,98.8,True,2013
+201302210LAC,"Thu, Feb 21, 2013",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,90,116,-26,Home,90.2,True,2013
+201302220GSW,"Fri, Feb 22, 2013",GSW,SAS,Golden State Warriors,San Antonio Spurs,107,101,6,Home,96.6,True,2013
+201302240PHO,"Sun, Feb 24, 2013",PHO,SAS,Phoenix Suns,San Antonio Spurs,87,97,-10,Home,98.5,True,2013
+201302270SAS,"Wed, Feb 27, 2013",SAS,PHO,San Antonio Spurs,Phoenix Suns,101,105,-4,Home,91.2,True,2013
+201303010SAS,"Fri, Mar 1, 2013",SAS,SAC,San Antonio Spurs,Sacramento Kings,130,102,28,Home,103.8,True,2013
+201303120MIN,"Tue, Mar 12, 2013",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,107,83,24,Home,94.9,True,2013
+201303140SAS,"Thu, Mar 14, 2013",SAS,DAL,San Antonio Spurs,Dallas Mavericks,92,91,1,Home,91.6,True,2013
+201303160SAS,"Sat, Mar 16, 2013",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,119,113,6,Home,96.3,True,2013
+201303200SAS,"Wed, Mar 20, 2013",SAS,GSW,San Antonio Spurs,Golden State Warriors,104,93,11,Home,91.9,True,2013
+201303290SAS,"Fri, Mar 29, 2013",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,104,102,2,Home,84.6,True,2013
+201304030SAS,"Wed, Apr 3, 2013",SAS,ORL,San Antonio Spurs,Orlando Magic,98,84,14,Home,96.7,True,2013
+201304120SAS,"Fri, Apr 12, 2013",SAS,SAC,San Antonio Spurs,Sacramento Kings,108,101,7,Home,96.9,True,2013
+201304150GSW,"Mon, Apr 15, 2013",GSW,SAS,Golden State Warriors,San Antonio Spurs,116,106,10,Home,105.5,True,2013
+201304170SAS,"Wed, Apr 17, 2013",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,95,108,-13,Home,99.9,True,2013
+201305060SAS,"Mon, May 6, 2013",SAS,GSW,San Antonio Spurs,Golden State Warriors,129,127,2,Home,95.9,True,2013
+201305080SAS,"Wed, May 8, 2013",SAS,GSW,San Antonio Spurs,Golden State Warriors,91,100,-9,Home,88.4,True,2013
+201305100GSW,"Fri, May 10, 2013",GSW,SAS,Golden State Warriors,San Antonio Spurs,92,102,-10,Home,90.0,True,2013
+201305120GSW,"Sun, May 12, 2013",GSW,SAS,Golden State Warriors,San Antonio Spurs,97,87,10,Home,89.3,True,2013
+201305140SAS,"Tue, May 14, 2013",SAS,GSW,San Antonio Spurs,Golden State Warriors,109,91,18,Home,89.3,True,2013
+201305160GSW,"Thu, May 16, 2013",GSW,SAS,Golden State Warriors,San Antonio Spurs,82,94,-12,Home,91.1,True,2013
+201211030DAL,"Sat, Nov 3, 2012",DAL,CHA,Dallas Mavericks,Charlotte Bobcats,126,99,27,Home,96.7,True,2013
+201211100CHA,"Sat, Nov 10, 2012",CHA,DAL,Charlotte Bobcats,Dallas Mavericks,101,97,4,Home,91.1,True,2013
+201211120DAL,"Mon, Nov 12, 2012",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,82,90,-8,Home,88.8,True,2013
+201211140DAL,"Wed, Nov 14, 2012",DAL,WAS,Dallas Mavericks,Washington Wizards,107,101,6,Home,89.5,True,2013
+201211160IND,"Fri, Nov 16, 2012",IND,DAL,Indiana Pacers,Dallas Mavericks,103,83,20,Home,92.6,True,2013
+201211170CLE,"Sat, Nov 17, 2012",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,95,103,-8,Home,95.0,True,2013
+201211190DAL,"Mon, Nov 19, 2012",DAL,GSW,Dallas Mavericks,Golden State Warriors,101,105,-4,Home,93.9,True,2013
+201211270PHI,"Tue, Nov 27, 2012",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,100,98,2,Home,92.1,True,2013
+201212050LAC,"Wed, Dec 5, 2012",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,112,90,22,Home,101.5,True,2013
+201212060PHO,"Thu, Dec 6, 2012",PHO,DAL,Phoenix Suns,Dallas Mavericks,94,97,-3,Home,91.6,True,2013
+201212100DAL,"Mon, Dec 10, 2012",DAL,SAC,Dallas Mavericks,Sacramento Kings,119,96,23,Home,94.5,True,2013
+201212120BOS,"Wed, Dec 12, 2012",BOS,DAL,Boston Celtics,Dallas Mavericks,117,115,2,Home,95.9,True,2013
+201212150MIN,"Sat, Dec 15, 2012",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,114,106,8,Home,91.8,True,2013
+201212180DAL,"Tue, Dec 18, 2012",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,107,100,7,Home,88.0,True,2013
+201301010WAS,"Tue, Jan 1, 2013",WAS,DAL,Washington Wizards,Dallas Mavericks,94,103,-9,Home,90.2,True,2013
+201301090LAC,"Wed, Jan 9, 2013",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,99,93,6,Home,91.7,True,2013
+201301100SAC,"Thu, Jan 10, 2013",SAC,DAL,Sacramento Kings,Dallas Mavericks,112,117,-5,Home,95.5,True,2013
+201301140DAL,"Mon, Jan 14, 2013",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,113,98,15,Home,88.9,True,2013
+201301200ORL,"Sun, Jan 20, 2013",ORL,DAL,Orlando Magic,Dallas Mavericks,105,111,-6,Home,94.1,True,2013
+201301270DAL,"Sun, Jan 27, 2013",DAL,PHO,Dallas Mavericks,Phoenix Suns,110,95,15,Home,95.5,True,2013
+201301310GSW,"Thu, Jan 31, 2013",GSW,DAL,Golden State Warriors,Dallas Mavericks,100,97,3,Home,93.0,True,2013
+201302010PHO,"Fri, Feb 1, 2013",PHO,DAL,Phoenix Suns,Dallas Mavericks,99,109,-10,Home,99.4,True,2013
+201302090DAL,"Sat, Feb 9, 2013",DAL,GSW,Dallas Mavericks,Golden State Warriors,116,91,25,Home,95.8,True,2013
+201302130DAL,"Wed, Feb 13, 2013",DAL,SAC,Dallas Mavericks,Sacramento Kings,123,100,23,Home,98.7,True,2013
+201302200DAL,"Wed, Feb 20, 2013",DAL,ORL,Dallas Mavericks,Orlando Magic,111,96,15,Home,95.0,True,2013
+201302260DAL,"Tue, Feb 26, 2013",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,90,95,-5,Home,95.7,True,2013
+201303010BRK,"Fri, Mar 1, 2013",BRK,DAL,Brooklyn Nets,Dallas Mavericks,90,98,-8,Home,91.2,True,2013
+201303100MIN,"Sun, Mar 10, 2013",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,77,100,-23,Home,92.2,True,2013
+201303120MIL,"Tue, Mar 12, 2013",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,108,115,-7,Home,97.7,True,2013
+201303150DAL,"Fri, Mar 15, 2013",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,96,86,10,Home,94.8,True,2013
+201303200DAL,"Wed, Mar 20, 2013",DAL,BRK,Dallas Mavericks,Brooklyn Nets,96,113,-17,Home,90.2,True,2013
+201303220DAL,"Fri, Mar 22, 2013",DAL,BOS,Dallas Mavericks,Boston Celtics,104,94,10,Home,91.7,True,2013
+201303260DAL,"Tue, Mar 26, 2013",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,109,102,7,Home,90.0,True,2013
+201303280DAL,"Thu, Mar 28, 2013",DAL,IND,Dallas Mavericks,Indiana Pacers,78,103,-25,Home,91.0,True,2013
+201304050SAC,"Fri, Apr 5, 2013",SAC,DAL,Sacramento Kings,Dallas Mavericks,108,117,-9,Home,97.3,True,2013
+201304100DAL,"Wed, Apr 10, 2013",DAL,PHO,Dallas Mavericks,Phoenix Suns,91,102,-11,Home,91.5,True,2013
+201210300CLE,"Tue, Oct 30, 2012",CLE,WAS,Cleveland Cavaliers,Washington Wizards,94,84,10,Home,87.9,True,2013
+201211030WAS,"Sat, Nov 3, 2012",WAS,BOS,Washington Wizards,Boston Celtics,86,89,-3,Home,91.0,True,2013
+201211070BOS,"Wed, Nov 7, 2012",BOS,WAS,Boston Celtics,Washington Wizards,100,94,6,Home,93.9,True,2013
+201211090WAS,"Fri, Nov 9, 2012",WAS,MIL,Washington Wizards,Milwaukee Bucks,91,101,-10,Home,97.3,True,2013
+201211100IND,"Sat, Nov 10, 2012",IND,WAS,Indiana Pacers,Washington Wizards,89,85,4,Home,87.7,True,2013
+201211130CHA,"Tue, Nov 13, 2012",CHA,WAS,Charlotte Bobcats,Washington Wizards,92,76,16,Home,90.7,True,2013
+201211190WAS,"Mon, Nov 19, 2012",WAS,IND,Washington Wizards,Indiana Pacers,89,96,-7,Home,92.3,True,2013
+201211240WAS,"Sat, Nov 24, 2012",WAS,CHA,Washington Wizards,Charlotte Bobcats,106,108,-2,Home,88.6,True,2013
+201212080WAS,"Sat, Dec 8, 2012",WAS,GSW,Washington Wizards,Golden State Warriors,97,101,-4,Home,96.4,True,2013
+201212190ORL,"Wed, Dec 19, 2012",ORL,WAS,Orlando Magic,Washington Wizards,90,83,7,Home,89.5,True,2013
+201212260WAS,"Wed, Dec 26, 2012",WAS,CLE,Washington Wizards,Cleveland Cavaliers,84,87,-3,Home,88.1,True,2013
+201212280WAS,"Fri, Dec 28, 2012",WAS,ORL,Washington Wizards,Orlando Magic,105,97,8,Home,92.8,True,2013
+201301020IND,"Wed, Jan 2, 2013",IND,WAS,Indiana Pacers,Washington Wizards,89,81,8,Home,94.7,True,2013
+201301040WAS,"Fri, Jan 4, 2013",WAS,BRK,Washington Wizards,Brooklyn Nets,113,115,-2,Home,91.9,True,2013
+201301140WAS,"Mon, Jan 14, 2013",WAS,ORL,Washington Wizards,Orlando Magic,120,91,29,Home,93.5,True,2013
+201301160SAC,"Wed, Jan 16, 2013",SAC,WAS,Sacramento Kings,Washington Wizards,95,94,1,Home,95.1,True,2013
+201301190LAC,"Sat, Jan 19, 2013",LAC,WAS,Los Angeles Clippers,Washington Wizards,94,87,7,Home,92.6,True,2013
+201301250WAS,"Fri, Jan 25, 2013",WAS,MIN,Washington Wizards,Minnesota Timberwolves,114,101,13,Home,96.7,True,2013
+201301280WAS,"Mon, Jan 28, 2013",WAS,SAC,Washington Wizards,Sacramento Kings,94,96,-2,Home,94.0,True,2013
+201301300PHI,"Wed, Jan 30, 2013",PHI,WAS,Philadelphia 76ers,Washington Wizards,92,84,8,Home,93.3,True,2013
+201302040WAS,"Mon, Feb 4, 2013",WAS,LAC,Washington Wizards,Los Angeles Clippers,98,90,8,Home,94.0,True,2013
+201302080WAS,"Fri, Feb 8, 2013",WAS,BRK,Washington Wizards,Brooklyn Nets,89,74,15,Home,91.8,True,2013
+201302110MIL,"Mon, Feb 11, 2013",MIL,WAS,Milwaukee Bucks,Washington Wizards,90,102,-12,Home,93.3,True,2013
+201303030WAS,"Sun, Mar 3, 2013",WAS,PHI,Washington Wizards,Philadelphia 76ers,90,87,3,Home,90.8,True,2013
+201303060MIN,"Wed, Mar 6, 2013",MIN,WAS,Minnesota Timberwolves,Washington Wizards,87,82,5,Home,91.8,True,2013
+201303080BRK,"Fri, Mar 8, 2013",BRK,WAS,Brooklyn Nets,Washington Wizards,95,78,17,Home,92.5,True,2013
+201303090WAS,"Sat, Mar 9, 2013",WAS,CHA,Washington Wizards,Charlotte Bobcats,104,87,17,Home,90.5,True,2013
+201303120CLE,"Tue, Mar 12, 2013",CLE,WAS,Cleveland Cavaliers,Washington Wizards,95,90,5,Home,89.2,True,2013
+201303130WAS,"Wed, Mar 13, 2013",WAS,MIL,Washington Wizards,Milwaukee Bucks,106,93,13,Home,93.8,True,2013
+201303160WAS,"Sat, Mar 16, 2013",WAS,PHO,Washington Wizards,Phoenix Suns,127,105,22,Home,93.1,True,2013
+201303180CHA,"Mon, Mar 18, 2013",CHA,WAS,Charlotte Bobcats,Washington Wizards,119,114,5,Home,94.2,True,2013
+201303200PHO,"Wed, Mar 20, 2013",PHO,WAS,Phoenix Suns,Washington Wizards,79,88,-9,Home,90.5,True,2013
+201303230GSW,"Sat, Mar 23, 2013",GSW,WAS,Golden State Warriors,Washington Wizards,101,92,9,Home,93.6,True,2013
+201303290ORL,"Fri, Mar 29, 2013",ORL,WAS,Orlando Magic,Washington Wizards,97,92,5,Home,87.8,True,2013
+201304060WAS,"Sat, Apr 6, 2013",WAS,IND,Washington Wizards,Indiana Pacers,104,85,19,Home,94.2,True,2013
+201304070BOS,"Sun, Apr 7, 2013",BOS,WAS,Boston Celtics,Washington Wizards,107,96,11,Home,93.3,True,2013
+201304120WAS,"Fri, Apr 12, 2013",WAS,PHI,Washington Wizards,Philadelphia 76ers,86,97,-11,Home,96.2,True,2013
+201304150BRK,"Mon, Apr 15, 2013",BRK,WAS,Brooklyn Nets,Washington Wizards,106,101,5,Home,94.6,True,2013
+201211020BOS,"Fri, Nov 2, 2012",BOS,MIL,Boston Celtics,Milwaukee Bucks,88,99,-11,Home,94.8,True,2013
+201211090BOS,"Fri, Nov 9, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,100,106,-6,Home,95.2,True,2013
+201211100MIL,"Sat, Nov 10, 2012",MIL,BOS,Milwaukee Bucks,Boston Celtics,92,96,-4,Home,91.0,True,2013
+201211150BRK,"Thu, Nov 15, 2012",BRK,BOS,Brooklyn Nets,Boston Celtics,102,97,5,Home,86.9,True,2013
+201211250ORL,"Sun, Nov 25, 2012",ORL,BOS,Orlando Magic,Boston Celtics,110,116,-6,Home,95.0,True,2013
+201211280BOS,"Wed, Nov 28, 2012",BOS,BRK,Boston Celtics,Brooklyn Nets,83,95,-12,Home,91.0,True,2013
+201212010MIL,"Sat, Dec 1, 2012",MIL,BOS,Milwaukee Bucks,Boston Celtics,91,88,3,Home,91.4,True,2013
+201212050BOS,"Wed, Dec 5, 2012",BOS,MIN,Boston Celtics,Minnesota Timberwolves,104,94,10,Home,96.9,True,2013
+201212070PHI,"Fri, Dec 7, 2012",PHI,BOS,Philadelphia 76ers,Boston Celtics,95,94,1,Home,91.3,True,2013
+201212080BOS,"Sat, Dec 8, 2012",BOS,PHI,Boston Celtics,Philadelphia 76ers,92,79,13,Home,79.5,True,2013
+201212190BOS,"Wed, Dec 19, 2012",BOS,CLE,Boston Celtics,Cleveland Cavaliers,103,91,12,Home,87.1,True,2013
+201212210BOS,"Fri, Dec 21, 2012",BOS,MIL,Boston Celtics,Milwaukee Bucks,94,99,-5,Home,92.6,True,2013
+201212250BRK,"Tue, Dec 25, 2012",BRK,BOS,Brooklyn Nets,Boston Celtics,76,93,-17,Home,83.7,True,2013
+201212270LAC,"Thu, Dec 27, 2012",LAC,BOS,Los Angeles Clippers,Boston Celtics,106,77,29,Home,89.9,True,2013
+201212290GSW,"Sat, Dec 29, 2012",GSW,BOS,Golden State Warriors,Boston Celtics,101,83,18,Home,92.2,True,2013
+201212300SAC,"Sun, Dec 30, 2012",SAC,BOS,Sacramento Kings,Boston Celtics,118,96,22,Home,93.5,True,2013
+201301040BOS,"Fri, Jan 4, 2013",BOS,IND,Boston Celtics,Indiana Pacers,94,75,19,Home,95.5,True,2013
+201301090BOS,"Wed, Jan 9, 2013",BOS,PHO,Boston Celtics,Phoenix Suns,87,79,8,Home,85.4,True,2013
+201301140BOS,"Mon, Jan 14, 2013",BOS,CHA,Boston Celtics,Charlotte Bobcats,100,89,11,Home,87.2,True,2013
+201301220CLE,"Tue, Jan 22, 2013",CLE,BOS,Cleveland Cavaliers,Boston Celtics,95,90,5,Home,92.0,True,2013
+201301300BOS,"Wed, Jan 30, 2013",BOS,SAC,Boston Celtics,Sacramento Kings,99,81,18,Home,89.9,True,2013
+201302010BOS,"Fri, Feb 1, 2013",BOS,ORL,Boston Celtics,Orlando Magic,97,84,13,Home,93.8,True,2013
+201302030BOS,"Sun, Feb 3, 2013",BOS,LAC,Boston Celtics,Los Angeles Clippers,106,104,2,Home,92.7,True,2013
+201302110CHA,"Mon, Feb 11, 2013",CHA,BOS,Charlotte Bobcats,Boston Celtics,94,91,3,Home,88.8,True,2013
+201302220PHO,"Fri, Feb 22, 2013",PHO,BOS,Phoenix Suns,Boston Celtics,88,113,-25,Home,92.1,True,2013
+201303010BOS,"Fri, Mar 1, 2013",BOS,GSW,Boston Celtics,Golden State Warriors,94,86,8,Home,99.7,True,2013
+201303050PHI,"Tue, Mar 5, 2013",PHI,BOS,Philadelphia 76ers,Boston Celtics,101,109,-8,Home,98.7,True,2013
+201303060IND,"Wed, Mar 6, 2013",IND,BOS,Indiana Pacers,Boston Celtics,81,83,-2,Home,89.2,True,2013
+201303120CHA,"Tue, Mar 12, 2013",CHA,BOS,Charlotte Bobcats,Boston Celtics,100,74,26,Home,81.5,True,2013
+201303160BOS,"Sat, Mar 16, 2013",BOS,CHA,Boston Celtics,Charlotte Bobcats,105,88,17,Home,89.4,True,2013
+201303270CLE,"Wed, Mar 27, 2013",CLE,BOS,Cleveland Cavaliers,Boston Celtics,92,93,-1,Home,99.5,True,2013
+201304010MIN,"Mon, Apr 1, 2013",MIN,BOS,Minnesota Timberwolves,Boston Celtics,110,100,10,Home,95.7,True,2013
+201304050BOS,"Fri, Apr 5, 2013",BOS,CLE,Boston Celtics,Cleveland Cavaliers,91,97,-6,Home,96.7,True,2013
+201304100BOS,"Wed, Apr 10, 2013",BOS,BRK,Boston Celtics,Brooklyn Nets,93,101,-8,Home,87.3,True,2013
+201304130ORL,"Sat, Apr 13, 2013",ORL,BOS,Orlando Magic,Boston Celtics,88,120,-32,Home,94.6,True,2013
+201211120PHI,"Mon, Nov 12, 2012",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,96,105,-9,Home,102.3,True,2013
+201211180PHI,"Sun, Nov 18, 2012",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,86,79,7,Home,84.3,True,2013
+201211210CLE,"Wed, Nov 21, 2012",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,92,83,9,Home,88.8,True,2013
+201211250PHI,"Sun, Nov 25, 2012",PHI,PHO,Philadelphia 76ers,Phoenix Suns,104,101,3,Home,91.2,True,2013
+201211300CHA,"Fri, Nov 30, 2012",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,98,104,-6,Home,85.1,True,2013
+201212040PHI,"Tue, Dec 4, 2012",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,88,105,-17,Home,91.7,True,2013
+201212140IND,"Fri, Dec 14, 2012",IND,PHI,Indiana Pacers,Philadelphia 76ers,95,85,10,Home,88.8,True,2013
+201212230BRK,"Sun, Dec 23, 2012",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,95,92,3,Home,84.6,True,2013
+201212280GSW,"Fri, Dec 28, 2012",GSW,PHI,Golden State Warriors,Philadelphia 76ers,96,89,7,Home,96.8,True,2013
+201301020PHO,"Wed, Jan 2, 2013",PHO,PHI,Phoenix Suns,Philadelphia 76ers,95,89,6,Home,93.1,True,2013
+201301080PHI,"Tue, Jan 8, 2013",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,89,109,-20,Home,89.1,True,2013
+201301220MIL,"Tue, Jan 22, 2013",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,110,102,8,Home,92.0,True,2013
+201302010PHI,"Fri, Feb 1, 2013",PHI,SAC,Philadelphia 76ers,Sacramento Kings,89,80,9,Home,91.3,True,2013
+201302040PHI,"Mon, Feb 4, 2013",PHI,ORL,Philadelphia 76ers,Orlando Magic,78,61,17,Home,84.1,True,2013
+201302060PHI,"Wed, Feb 6, 2013",PHI,IND,Philadelphia 76ers,Indiana Pacers,69,88,-19,Home,86.0,True,2013
+201302090PHI,"Sat, Feb 9, 2013",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,87,76,11,Home,88.6,True,2013
+201302110PHI,"Mon, Feb 11, 2013",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,90,107,-17,Home,85.7,True,2013
+201302130MIL,"Wed, Feb 13, 2013",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,94,92,2,Home,88.1,True,2013
+201302200MIN,"Wed, Feb 20, 2013",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,94,87,7,Home,92.2,True,2013
+201302260PHI,"Tue, Feb 26, 2013",PHI,ORL,Philadelphia 76ers,Orlando Magic,84,98,-14,Home,89.6,True,2013
+201303020PHI,"Sat, Mar 2, 2013",PHI,GSW,Philadelphia 76ers,Golden State Warriors,104,97,7,Home,99.1,True,2013
+201303100ORL,"Sun, Mar 10, 2013",ORL,PHI,Orlando Magic,Philadelphia 76ers,99,91,8,Home,94.2,True,2013
+201303110PHI,"Mon, Mar 11, 2013",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,106,97,9,Home,84.5,True,2013
+201303160PHI,"Sat, Mar 16, 2013",PHI,IND,Philadelphia 76ers,Indiana Pacers,98,91,7,Home,88.5,True,2013
+201303200LAC,"Wed, Mar 20, 2013",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,101,72,29,Home,90.5,True,2013
+201303240SAC,"Sun, Mar 24, 2013",SAC,PHI,Sacramento Kings,Philadelphia 76ers,103,117,-14,Home,93.0,True,2013
+201303270PHI,"Wed, Mar 27, 2013",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,100,92,8,Home,91.8,True,2013
+201303290CLE,"Fri, Mar 29, 2013",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,87,97,-10,Home,86.7,True,2013
+201303300PHI,"Sat, Mar 30, 2013",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,100,92,8,Home,86.9,True,2013
+201304030CHA,"Wed, Apr 3, 2013",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,88,83,5,Home,91.0,True,2013
+201304090BRK,"Tue, Apr 9, 2013",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,104,83,21,Home,86.3,True,2013
+201304140PHI,"Sun, Apr 14, 2013",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,91,77,14,Home,91.7,True,2013
+201304170IND,"Wed, Apr 17, 2013",IND,PHI,Indiana Pacers,Philadelphia 76ers,95,105,-10,Home,94.1,True,2013
+201211020MIN,"Fri, Nov 2, 2012",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,92,80,12,Home,92.1,True,2013
+201211050BRK,"Mon, Nov 5, 2012",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,96,107,-11,Home,84.5,True,2013
+201211070MIN,"Wed, Nov 7, 2012",MIN,ORL,Minnesota Timberwolves,Orlando Magic,90,75,15,Home,91.0,True,2013
+201211090MIN,"Fri, Nov 9, 2012",MIN,IND,Minnesota Timberwolves,Indiana Pacers,96,94,2,Home,88.6,True,2013
+201211140MIN,"Wed, Nov 14, 2012",MIN,CHA,Minnesota Timberwolves,Charlotte Bobcats,87,89,-2,Home,94.0,True,2013
+201211160MIN,"Fri, Nov 16, 2012",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,98,106,-8,Home,90.9,True,2013
+201211240GSW,"Sat, Nov 24, 2012",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,96,85,11,Home,88.7,True,2013
+201211270SAC,"Tue, Nov 27, 2012",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,89,97,-8,Home,93.4,True,2013
+201211280LAC,"Wed, Nov 28, 2012",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,101,95,6,Home,88.8,True,2013
+201211300MIN,"Fri, Nov 30, 2012",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,95,85,10,Home,94.8,True,2013
+201212070MIN,"Fri, Dec 7, 2012",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,91,73,18,Home,93.8,True,2013
+201212170ORL,"Mon, Dec 17, 2012",ORL,MIN,Orlando Magic,Minnesota Timberwolves,102,93,9,Home,97.4,True,2013
+201212290MIN,"Sat, Dec 29, 2012",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,111,107,4,Home,98.4,True,2013
+201301170MIN,"Thu, Jan 17, 2013",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,77,90,-13,Home,91.3,True,2013
+201301230MIN,"Wed, Jan 23, 2013",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,83,91,-8,Home,89.7,True,2013
+201301260CHA,"Sat, Jan 26, 2013",CHA,MIN,Charlotte Bobcats,Minnesota Timberwolves,102,101,1,Home,92.3,True,2013
+201301300MIN,"Wed, Jan 30, 2013",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,90,96,-6,Home,90.9,True,2013
+201302110CLE,"Mon, Feb 11, 2013",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,92,100,-8,Home,91.2,True,2013
+201302240MIN,"Sun, Feb 24, 2013",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,99,100,-1,Home,97.8,True,2013
+201302260PHO,"Tue, Feb 26, 2013",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,84,83,1,Home,91.3,True,2013
+201303130IND,"Wed, Mar 13, 2013",IND,MIN,Indiana Pacers,Minnesota Timberwolves,107,91,16,Home,88.3,True,2013
+201303210SAC,"Thu, Mar 21, 2013",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,101,98,3,Home,95.6,True,2013
+201303220PHO,"Fri, Mar 22, 2013",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,86,117,-31,Home,100.0,True,2013
+201304030MIL,"Wed, Apr 3, 2013",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,98,107,-9,Home,94.4,True,2013
+201304090GSW,"Tue, Apr 9, 2013",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,105,89,16,Home,100.3,True,2013
+201304100LAC,"Wed, Apr 10, 2013",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,111,95,16,Home,93.1,True,2013
+201304130MIN,"Sat, Apr 13, 2013",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,105,93,12,Home,97.7,True,2013
+201211030MIL,"Sat, Nov 3, 2012",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,105,102,3,Home,99.4,True,2013
+201211140MIL,"Wed, Nov 14, 2012",MIL,IND,Milwaukee Bucks,Indiana Pacers,99,85,14,Home,92.5,True,2013
+201211190CHA,"Mon, Nov 19, 2012",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,102,98,4,Home,98.5,True,2013
+201212070MIL,"Fri, Dec 7, 2012",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,108,93,15,Home,91.3,True,2013
+201212090BRK,"Sun, Dec 9, 2012",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,88,97,-9,Home,93.7,True,2013
+201212120MIL,"Wed, Dec 12, 2012",MIL,SAC,Milwaukee Bucks,Sacramento Kings,98,85,13,Home,91.5,True,2013
+201212140CLE,"Fri, Dec 14, 2012",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,86,90,-4,Home,91.0,True,2013
+201212150MIL,"Sat, Dec 15, 2012",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,85,111,-26,Home,90.6,True,2013
+201212180MIL,"Tue, Dec 18, 2012",MIL,IND,Milwaukee Bucks,Indiana Pacers,98,93,5,Home,94.8,True,2013
+201212220MIL,"Sat, Dec 22, 2012",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,82,94,-12,Home,92.4,True,2013
+201212260MIL,"Wed, Dec 26, 2012",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,108,93,15,Home,94.6,True,2013
+201301050IND,"Sat, Jan 5, 2013",IND,MIL,Indiana Pacers,Milwaukee Bucks,95,80,15,Home,87.3,True,2013
+201301080MIL,"Tue, Jan 8, 2013",MIL,PHO,Milwaukee Bucks,Phoenix Suns,108,99,9,Home,93.6,True,2013
+201301170PHO,"Thu, Jan 17, 2013",PHO,MIL,Phoenix Suns,Milwaukee Bucks,94,98,-4,Home,103.8,True,2013
+201301250CLE,"Fri, Jan 25, 2013",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,113,108,5,Home,101.7,True,2013
+201301260MIL,"Sat, Jan 26, 2013",MIL,GSW,Milwaukee Bucks,Golden State Warriors,109,102,7,Home,97.7,True,2013
+201302020MIL,"Sat, Feb 2, 2013",MIL,ORL,Milwaukee Bucks,Orlando Magic,107,98,9,Home,97.3,True,2013
+201302190BRK,"Tue, Feb 19, 2013",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,113,111,2,Home,87.7,True,2013
+201302200MIL,"Wed, Feb 20, 2013",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,94,97,-3,Home,96.8,True,2013
+201303060LAC,"Wed, Mar 6, 2013",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,117,101,16,Home,92.3,True,2013
+201303090GSW,"Sat, Mar 9, 2013",GSW,MIL,Golden State Warriors,Milwaukee Bucks,93,103,-10,Home,94.6,True,2013
+201303100SAC,"Sun, Mar 10, 2013",SAC,MIL,Sacramento Kings,Milwaukee Bucks,113,115,-2,Home,100.1,True,2013
+201303170MIL,"Sun, Mar 17, 2013",MIL,ORL,Milwaukee Bucks,Orlando Magic,115,109,6,Home,99.0,True,2013
+201303220IND,"Fri, Mar 22, 2013",IND,MIL,Indiana Pacers,Milwaukee Bucks,102,78,24,Home,93.2,True,2013
+201304010MIL,"Mon, Apr 1, 2013",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,131,102,29,Home,99.6,True,2013
+201304100ORL,"Wed, Apr 10, 2013",ORL,MIL,Orlando Magic,Milwaukee Bucks,113,103,10,Home,97.7,True,2013
+201304130CHA,"Sat, Apr 13, 2013",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,95,85,10,Home,91.9,True,2013
+201211050LAC,"Mon, Nov 5, 2012",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,101,108,-7,Home,96.0,True,2013
+201211070GSW,"Wed, Nov 7, 2012",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,106,96,10,Home,96.8,True,2013
+201211090PHO,"Fri, Nov 9, 2012",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,107,105,2,Home,98.0,True,2013
+201211130BRK,"Tue, Nov 13, 2012",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,114,101,13,Home,88.9,True,2013
+201211230ORL,"Fri, Nov 23, 2012",ORL,CLE,Orlando Magic,Cleveland Cavaliers,108,104,4,Home,90.1,True,2013
+201211270CLE,"Tue, Nov 27, 2012",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,78,91,-13,Home,93.1,True,2013
+201212120IND,"Wed, Dec 12, 2012",IND,CLE,Indiana Pacers,Cleveland Cavaliers,96,81,15,Home,88.8,True,2013
+201212210CLE,"Fri, Dec 21, 2012",CLE,IND,Cleveland Cavaliers,Indiana Pacers,89,99,-10,Home,96.9,True,2013
+201212290BRK,"Sat, Dec 29, 2012",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,103,100,3,Home,90.9,True,2013
+201301020CLE,"Wed, Jan 2, 2013",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,94,97,-3,Home,91.1,True,2013
+201301040CHA,"Fri, Jan 4, 2013",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,104,106,-2,Home,97.3,True,2013
+201301140SAC,"Mon, Jan 14, 2013",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,124,118,6,Home,89.7,True,2013
+201301290CLE,"Tue, Jan 29, 2013",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,95,108,-13,Home,91.8,True,2013
+201302060CLE,"Wed, Feb 6, 2013",CLE,CHA,Cleveland Cavaliers,Charlotte Bobcats,122,95,27,Home,92.4,True,2013
+201302080CLE,"Fri, Feb 8, 2013",CLE,ORL,Cleveland Cavaliers,Orlando Magic,119,108,11,Home,96.3,True,2013
+201302230ORL,"Sat, Feb 23, 2013",ORL,CLE,Orlando Magic,Cleveland Cavaliers,94,118,-24,Home,89.6,True,2013
+201303010CLE,"Fri, Mar 1, 2013",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,89,105,-16,Home,87.6,True,2013
+201303180CLE,"Mon, Mar 18, 2013",CLE,IND,Cleveland Cavaliers,Indiana Pacers,90,111,-21,Home,95.2,True,2013
+201304030CLE,"Wed, Apr 3, 2013",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,95,113,-18,Home,94.2,True,2013
+201304070CLE,"Sun, Apr 7, 2013",CLE,ORL,Cleveland Cavaliers,Orlando Magic,91,85,6,Home,92.0,True,2013
+201304090IND,"Tue, Apr 9, 2013",IND,CLE,Indiana Pacers,Cleveland Cavaliers,99,94,5,Home,88.3,True,2013
+201304170CHA,"Wed, Apr 17, 2013",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,105,98,7,Home,93.7,True,2013
+201211030LAC,"Sat, Nov 3, 2012",LAC,GSW,Los Angeles Clippers,Golden State Warriors,110,114,-4,Home,97.1,True,2013
+201211230BRK,"Fri, Nov 23, 2012",BRK,LAC,Brooklyn Nets,Los Angeles Clippers,86,76,10,Home,81.8,True,2013
+201212010LAC,"Sat, Dec 1, 2012",LAC,SAC,Los Angeles Clippers,Sacramento Kings,116,81,35,Home,88.6,True,2013
+201212080LAC,"Sat, Dec 8, 2012",LAC,PHO,Los Angeles Clippers,Phoenix Suns,117,99,18,Home,94.6,True,2013
+201212120CHA,"Wed, Dec 12, 2012",CHA,LAC,Charlotte Bobcats,Los Angeles Clippers,94,100,-6,Home,88.9,True,2013
+201212210LAC,"Fri, Dec 21, 2012",LAC,SAC,Los Angeles Clippers,Sacramento Kings,97,85,12,Home,93.4,True,2013
+201212230PHO,"Sun, Dec 23, 2012",PHO,LAC,Phoenix Suns,Los Angeles Clippers,77,103,-26,Home,92.1,True,2013
+201301020GSW,"Wed, Jan 2, 2013",GSW,LAC,Golden State Warriors,Los Angeles Clippers,115,94,21,Home,98.0,True,2013
+201301050LAC,"Sat, Jan 5, 2013",LAC,GSW,Los Angeles Clippers,Golden State Warriors,115,89,26,Home,91.7,True,2013
+201301120LAC,"Sat, Jan 12, 2013",LAC,ORL,Los Angeles Clippers,Orlando Magic,101,104,-3,Home,88.8,True,2013
+201301210GSW,"Mon, Jan 21, 2013",GSW,LAC,Golden State Warriors,Los Angeles Clippers,106,99,7,Home,93.6,True,2013
+201301240PHO,"Thu, Jan 24, 2013",PHO,LAC,Phoenix Suns,Los Angeles Clippers,93,88,5,Home,92.0,True,2013
+201302060ORL,"Wed, Feb 6, 2013",ORL,LAC,Orlando Magic,Los Angeles Clippers,76,86,-10,Home,92.0,True,2013
+201302260LAC,"Tue, Feb 26, 2013",LAC,CHA,Los Angeles Clippers,Charlotte Bobcats,106,84,22,Home,93.3,True,2013
+201302280IND,"Thu, Feb 28, 2013",IND,LAC,Indiana Pacers,Los Angeles Clippers,91,99,-8,Home,88.7,True,2013
+201303190SAC,"Tue, Mar 19, 2013",SAC,LAC,Sacramento Kings,Los Angeles Clippers,116,101,15,Home,93.5,True,2013
+201303230LAC,"Sat, Mar 23, 2013",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,101,95,6,Home,87.9,True,2013
+201304010LAC,"Mon, Apr 1, 2013",LAC,IND,Los Angeles Clippers,Indiana Pacers,106,109,-3,Home,87.7,True,2013
+201304030LAC,"Wed, Apr 3, 2013",LAC,PHO,Los Angeles Clippers,Phoenix Suns,126,101,25,Home,92.4,True,2013
+201304170SAC,"Wed, Apr 17, 2013",SAC,LAC,Sacramento Kings,Los Angeles Clippers,108,112,-4,Home,96.1,True,2013
+201211020CHA,"Fri, Nov 2, 2012",CHA,IND,Charlotte Bobcats,Indiana Pacers,90,89,1,Home,93.4,True,2013
+201211030IND,"Sat, Nov 3, 2012",IND,SAC,Indiana Pacers,Sacramento Kings,106,98,8,Home,88.1,True,2013
+201211300SAC,"Fri, Nov 30, 2012",SAC,IND,Sacramento Kings,Indiana Pacers,92,97,-5,Home,88.7,True,2013
+201212010GSW,"Sat, Dec 1, 2012",GSW,IND,Golden State Warriors,Indiana Pacers,103,92,11,Home,90.5,True,2013
+201212280IND,"Fri, Dec 28, 2012",IND,PHO,Indiana Pacers,Phoenix Suns,97,91,6,Home,87.3,True,2013
+201301120IND,"Sat, Jan 12, 2013",IND,CHA,Indiana Pacers,Charlotte Bobcats,96,88,8,Home,88.0,True,2013
+201301130BRK,"Sun, Jan 13, 2013",BRK,IND,Brooklyn Nets,Indiana Pacers,97,86,11,Home,85.9,True,2013
+201301150CHA,"Tue, Jan 15, 2013",CHA,IND,Charlotte Bobcats,Indiana Pacers,76,103,-27,Home,91.5,True,2013
+201301160ORL,"Wed, Jan 16, 2013",ORL,IND,Orlando Magic,Indiana Pacers,97,86,11,Home,90.5,True,2013
+201302110IND,"Mon, Feb 11, 2013",IND,BRK,Indiana Pacers,Brooklyn Nets,84,89,-5,Home,82.9,True,2013
+201302130IND,"Wed, Feb 13, 2013",IND,CHA,Indiana Pacers,Charlotte Bobcats,101,77,24,Home,88.9,True,2013
+201302260IND,"Tue, Feb 26, 2013",IND,GSW,Indiana Pacers,Golden State Warriors,108,97,11,Home,91.0,True,2013
+201303080ORL,"Fri, Mar 8, 2013",ORL,IND,Orlando Magic,Indiana Pacers,86,115,-29,Home,92.5,True,2013
+201303190IND,"Tue, Mar 19, 2013",IND,ORL,Indiana Pacers,Orlando Magic,95,73,22,Home,94.4,True,2013
+201303300PHO,"Sat, Mar 30, 2013",PHO,IND,Phoenix Suns,Indiana Pacers,104,112,-8,Home,93.5,True,2013
+201304120IND,"Fri, Apr 12, 2013",IND,BRK,Indiana Pacers,Brooklyn Nets,109,117,-8,Home,92.5,True,2013
+201211070CHA,"Wed, Nov 7, 2012",CHA,PHO,Charlotte Bobcats,Phoenix Suns,110,117,-7,Home,91.1,True,2013
+201212100CHA,"Mon, Dec 10, 2012",CHA,GSW,Charlotte Bobcats,Golden State Warriors,96,104,-8,Home,94.0,True,2013
+201212150CHA,"Sat, Dec 15, 2012",CHA,ORL,Charlotte Bobcats,Orlando Magic,98,107,-9,Home,89.9,True,2013
+201212190PHO,"Wed, Dec 19, 2012",PHO,CHA,Phoenix Suns,Charlotte Bobcats,121,104,17,Home,89.9,True,2013
+201212210GSW,"Fri, Dec 21, 2012",GSW,CHA,Golden State Warriors,Charlotte Bobcats,115,100,15,Home,89.6,True,2013
+201212280BRK,"Fri, Dec 28, 2012",BRK,CHA,Brooklyn Nets,Charlotte Bobcats,97,81,16,Home,83.9,True,2013
+201301180ORL,"Fri, Jan 18, 2013",ORL,CHA,Orlando Magic,Charlotte Bobcats,100,106,-6,Home,90.8,True,2013
+201301190CHA,"Sat, Jan 19, 2013",CHA,SAC,Charlotte Bobcats,Sacramento Kings,93,97,-4,Home,88.5,True,2013
+201302190ORL,"Tue, Feb 19, 2013",ORL,CHA,Orlando Magic,Charlotte Bobcats,92,105,-13,Home,95.9,True,2013
+201303030SAC,"Sun, Mar 3, 2013",SAC,CHA,Sacramento Kings,Charlotte Bobcats,119,83,36,Home,97.2,True,2013
+201303060CHA,"Wed, Mar 6, 2013",CHA,BRK,Charlotte Bobcats,Brooklyn Nets,78,99,-21,Home,93.8,True,2013
+201303270CHA,"Wed, Mar 27, 2013",CHA,ORL,Charlotte Bobcats,Orlando Magic,114,108,6,Home,93.5,True,2013
+201304060BRK,"Sat, Apr 6, 2013",BRK,CHA,Brooklyn Nets,Charlotte Bobcats,105,96,9,Home,88.9,True,2013
+201211090ORL,"Fri, Nov 9, 2012",ORL,BRK,Orlando Magic,Brooklyn Nets,68,107,-39,Home,85.7,True,2013
+201211110BRK,"Sun, Nov 11, 2012",BRK,ORL,Brooklyn Nets,Orlando Magic,82,74,8,Home,89.4,True,2013
+201211180SAC,"Sun, Nov 18, 2012",SAC,BRK,Sacramento Kings,Brooklyn Nets,90,99,-9,Home,87.1,True,2013
+201211210GSW,"Wed, Nov 21, 2012",GSW,BRK,Golden State Warriors,Brooklyn Nets,102,93,9,Home,83.0,True,2013
+201211300ORL,"Fri, Nov 30, 2012",ORL,BRK,Orlando Magic,Brooklyn Nets,86,98,-12,Home,83.3,True,2013
+201212070BRK,"Fri, Dec 7, 2012",BRK,GSW,Brooklyn Nets,Golden State Warriors,102,109,-7,Home,90.5,True,2013
+201301050BRK,"Sat, Jan 5, 2013",BRK,SAC,Brooklyn Nets,Sacramento Kings,113,93,20,Home,83.1,True,2013
+201301110BRK,"Fri, Jan 11, 2013",BRK,PHO,Brooklyn Nets,Phoenix Suns,99,79,20,Home,86.2,True,2013
+201301280BRK,"Mon, Jan 28, 2013",BRK,ORL,Brooklyn Nets,Orlando Magic,97,77,20,Home,85.5,True,2013
+201303240PHO,"Sun, Mar 24, 2013",PHO,BRK,Phoenix Suns,Brooklyn Nets,100,102,-2,Home,87.1,True,2013
+201210310PHO,"Wed, Oct 31, 2012",PHO,GSW,Phoenix Suns,Golden State Warriors,85,87,-2,Home,93.8,True,2013
+201211050SAC,"Mon, Nov 5, 2012",SAC,GSW,Sacramento Kings,Golden State Warriors,94,92,2,Home,92.6,True,2013
+201212030GSW,"Mon, Dec 3, 2012",GSW,ORL,Golden State Warriors,Orlando Magic,94,102,-8,Home,91.8,True,2013
+201212140ORL,"Fri, Dec 14, 2012",ORL,GSW,Orlando Magic,Golden State Warriors,99,85,14,Home,91.2,True,2013
+201212190SAC,"Wed, Dec 19, 2012",SAC,GSW,Sacramento Kings,Golden State Warriors,131,127,4,Home,98.4,True,2013
+201302020GSW,"Sat, Feb 2, 2013",GSW,PHO,Golden State Warriors,Phoenix Suns,113,93,20,Home,93.3,True,2013
+201302200GSW,"Wed, Feb 20, 2013",GSW,PHO,Golden State Warriors,Phoenix Suns,108,98,10,Home,90.3,True,2013
+201303060GSW,"Wed, Mar 6, 2013",GSW,SAC,Golden State Warriors,Sacramento Kings,87,83,4,Home,95.4,True,2013
+201303270GSW,"Wed, Mar 27, 2013",GSW,SAC,Golden State Warriors,Sacramento Kings,98,105,-7,Home,93.7,True,2013
+201304050PHO,"Fri, Apr 5, 2013",PHO,GSW,Phoenix Suns,Golden State Warriors,107,111,-4,Home,92.8,True,2013
+201212070SAC,"Fri, Dec 7, 2012",SAC,ORL,Sacramento Kings,Orlando Magic,91,82,9,Home,97.2,True,2013
+201212170PHO,"Mon, Dec 17, 2012",PHO,SAC,Phoenix Suns,Sacramento Kings,101,90,11,Home,89.6,True,2013
+201301230SAC,"Wed, Jan 23, 2013",SAC,PHO,Sacramento Kings,Phoenix Suns,96,106,-10,Home,93.5,True,2013
+201302270ORL,"Wed, Feb 27, 2013",ORL,SAC,Orlando Magic,Sacramento Kings,101,125,-24,Home,101.2,True,2013
+201303080SAC,"Fri, Mar 8, 2013",SAC,PHO,Sacramento Kings,Phoenix Suns,121,112,9,Home,98.2,True,2013
+201303280PHO,"Thu, Mar 28, 2013",PHO,SAC,Phoenix Suns,Sacramento Kings,103,117,-14,Home,96.2,True,2013
+201211040ORL,"Sun, Nov 4, 2012",ORL,PHO,Orlando Magic,Phoenix Suns,115,94,21,Home,94.5,True,2013
+201212090PHO,"Sun, Dec 9, 2012",PHO,ORL,Phoenix Suns,Orlando Magic,90,98,-8,Home,91.5,True,2013

@@ -1,0 +1,1312 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201410280LAL,"Tue, Oct 28, 2014",LAL,HOU,Los Angeles Lakers,Houston Rockets,90,108,-18,Home,90.9,True,2015
+201410290UTA,"Wed, Oct 29, 2014",UTA,HOU,Utah Jazz,Houston Rockets,93,104,-11,Home,87.8,True,2015
+201411010HOU,"Sat, Nov 1, 2014",HOU,BOS,Houston Rockets,Boston Celtics,104,90,14,Home,97.6,True,2015
+201411030PHI,"Mon, Nov 3, 2014",PHI,HOU,Philadelphia 76ers,Houston Rockets,93,104,-11,Home,92.9,True,2015
+201411040MIA,"Tue, Nov 4, 2014",MIA,HOU,Miami Heat,Houston Rockets,91,108,-17,Home,84.9,True,2015
+201411060HOU,"Thu, Nov 6, 2014",HOU,SAS,Houston Rockets,San Antonio Spurs,98,81,17,Home,96.6,True,2015
+201411080HOU,"Sat, Nov 8, 2014",HOU,GSW,Houston Rockets,Golden State Warriors,87,98,-11,Home,100.8,True,2015
+201411120MIN,"Wed, Nov 12, 2014",MIN,HOU,Minnesota Timberwolves,Houston Rockets,101,113,-12,Home,94.7,True,2015
+201411140HOU,"Fri, Nov 14, 2014",HOU,PHI,Houston Rockets,Philadelphia 76ers,88,87,1,Home,97.2,True,2015
+201411160OKC,"Sun, Nov 16, 2014",OKC,HOU,Oklahoma City Thunder,Houston Rockets,65,69,-4,Home,81.6,True,2015
+201411170MEM,"Mon, Nov 17, 2014",MEM,HOU,Memphis Grizzlies,Houston Rockets,119,93,26,Home,93.8,True,2015
+201411190HOU,"Wed, Nov 19, 2014",HOU,LAL,Houston Rockets,Los Angeles Lakers,92,98,-6,Home,94.3,True,2015
+201411220HOU,"Sat, Nov 22, 2014",HOU,DAL,Houston Rockets,Dallas Mavericks,95,92,3,Home,92.1,True,2015
+201411240HOU,"Mon, Nov 24, 2014",HOU,NYK,Houston Rockets,New York Knicks,91,86,5,Home,88.2,True,2015
+201411260HOU,"Wed, Nov 26, 2014",HOU,SAC,Houston Rockets,Sacramento Kings,102,89,13,Home,90.4,True,2015
+201411280HOU,"Fri, Nov 28, 2014",HOU,LAC,Houston Rockets,Los Angeles Clippers,85,102,-17,Home,91.5,True,2015
+201411290MIL,"Sat, Nov 29, 2014",MIL,HOU,Milwaukee Bucks,Houston Rockets,103,117,-14,Home,89.6,True,2015
+201412030HOU,"Wed, Dec 3, 2014",HOU,MEM,Houston Rockets,Memphis Grizzlies,105,96,9,Home,96.0,True,2015
+201412050MIN,"Fri, Dec 5, 2014",MIN,HOU,Minnesota Timberwolves,Houston Rockets,112,114,-2,Home,95.1,True,2015
+201412060HOU,"Sat, Dec 6, 2014",HOU,PHO,Houston Rockets,Phoenix Suns,100,95,5,Home,94.7,True,2015
+201412100GSW,"Wed, Dec 10, 2014",GSW,HOU,Golden State Warriors,Houston Rockets,105,93,12,Home,97.1,True,2015
+201412110SAC,"Thu, Dec 11, 2014",SAC,HOU,Sacramento Kings,Houston Rockets,109,113,-4,Home,94.3,True,2015
+201412130HOU,"Sat, Dec 13, 2014",HOU,DEN,Houston Rockets,Denver Nuggets,108,96,12,Home,102.6,True,2015
+201412170DEN,"Wed, Dec 17, 2014",DEN,HOU,Denver Nuggets,Houston Rockets,111,115,-4,Home,97.3,True,2015
+201412180HOU,"Thu, Dec 18, 2014",HOU,NOP,Houston Rockets,New Orleans Pelicans,90,99,-9,Home,90.4,True,2015
+201412200HOU,"Sat, Dec 20, 2014",HOU,ATL,Houston Rockets,Atlanta Hawks,97,104,-7,Home,92.8,True,2015
+201412220HOU,"Mon, Dec 22, 2014",HOU,POR,Houston Rockets,Portland Trail Blazers,110,95,15,Home,100.6,True,2015
+201412260MEM,"Fri, Dec 26, 2014",MEM,HOU,Memphis Grizzlies,Houston Rockets,111,117,-6,Home,91.2,True,2015
+201412280SAS,"Sun, Dec 28, 2014",SAS,HOU,San Antonio Spurs,Houston Rockets,110,106,4,Home,99.8,True,2015
+201412290HOU,"Mon, Dec 29, 2014",HOU,WAS,Houston Rockets,Washington Wizards,103,104,-1,Home,96.7,True,2015
+201412310HOU,"Wed, Dec 31, 2014",HOU,CHO,Houston Rockets,Charlotte Hornets,102,83,19,Home,94.3,True,2015
+201501020NOP,"Fri, Jan 2, 2015",NOP,HOU,New Orleans Pelicans,Houston Rockets,111,83,28,Home,96.1,True,2015
+201501030HOU,"Sat, Jan 3, 2015",HOU,MIA,Houston Rockets,Miami Heat,115,79,36,Home,91.3,True,2015
+201501050CHI,"Mon, Jan 5, 2015",CHI,HOU,Chicago Bulls,Houston Rockets,114,105,9,Home,97.2,True,2015
+201501070CLE,"Wed, Jan 7, 2015",CLE,HOU,Cleveland Cavaliers,Houston Rockets,93,105,-12,Home,89.9,True,2015
+201501080NYK,"Thu, Jan 8, 2015",NYK,HOU,New York Knicks,Houston Rockets,96,120,-24,Home,99.3,True,2015
+201501100HOU,"Sat, Jan 10, 2015",HOU,UTA,Houston Rockets,Utah Jazz,97,82,15,Home,94.9,True,2015
+201501120BRK,"Mon, Jan 12, 2015",BRK,HOU,Brooklyn Nets,Houston Rockets,99,113,-14,Home,94.3,True,2015
+201501140ORL,"Wed, Jan 14, 2015",ORL,HOU,Orlando Magic,Houston Rockets,120,113,7,Home,101.7,True,2015
+201501150HOU,"Thu, Jan 15, 2015",HOU,OKC,Houston Rockets,Oklahoma City Thunder,112,101,11,Home,95.2,True,2015
+201501170HOU,"Sat, Jan 17, 2015",HOU,GSW,Houston Rockets,Golden State Warriors,106,131,-25,Home,106.2,True,2015
+201501190HOU,"Mon, Jan 19, 2015",HOU,IND,Houston Rockets,Indiana Pacers,110,98,12,Home,98.0,True,2015
+201501210GSW,"Wed, Jan 21, 2015",GSW,HOU,Golden State Warriors,Houston Rockets,126,113,13,Home,100.8,True,2015
+201501230PHO,"Fri, Jan 23, 2015",PHO,HOU,Phoenix Suns,Houston Rockets,111,113,-2,Home,98.7,True,2015
+201501250LAL,"Sun, Jan 25, 2015",LAL,HOU,Los Angeles Lakers,Houston Rockets,87,99,-12,Home,97.2,True,2015
+201501280HOU,"Wed, Jan 28, 2015",HOU,DAL,Houston Rockets,Dallas Mavericks,99,94,5,Home,97.6,True,2015
+201501300BOS,"Fri, Jan 30, 2015",BOS,HOU,Boston Celtics,Houston Rockets,87,93,-6,Home,93.9,True,2015
+201501310DET,"Sat, Jan 31, 2015",DET,HOU,Detroit Pistons,Houston Rockets,114,101,13,Home,94.7,True,2015
+201502040HOU,"Wed, Feb 4, 2015",HOU,CHI,Houston Rockets,Chicago Bulls,101,90,11,Home,93.0,True,2015
+201502060HOU,"Fri, Feb 6, 2015",HOU,MIL,Houston Rockets,Milwaukee Bucks,117,111,6,Home,100.0,True,2015
+201502080HOU,"Sun, Feb 8, 2015",HOU,POR,Houston Rockets,Portland Trail Blazers,98,109,-11,Home,90.6,True,2015
+201502100PHO,"Tue, Feb 10, 2015",PHO,HOU,Phoenix Suns,Houston Rockets,118,127,-9,Home,98.8,True,2015
+201502110LAC,"Wed, Feb 11, 2015",LAC,HOU,Los Angeles Clippers,Houston Rockets,110,95,15,Home,98.7,True,2015
+201502200DAL,"Fri, Feb 20, 2015",DAL,HOU,Dallas Mavericks,Houston Rockets,111,100,11,Home,103.5,True,2015
+201502210HOU,"Sat, Feb 21, 2015",HOU,TOR,Houston Rockets,Toronto Raptors,98,76,22,Home,104.5,True,2015
+201502230HOU,"Mon, Feb 23, 2015",HOU,MIN,Houston Rockets,Minnesota Timberwolves,113,102,11,Home,103.0,True,2015
+201502250HOU,"Wed, Feb 25, 2015",HOU,LAC,Houston Rockets,Los Angeles Clippers,110,105,5,Home,97.4,True,2015
+201502270HOU,"Fri, Feb 27, 2015",HOU,BRK,Houston Rockets,Brooklyn Nets,102,98,4,Home,94.9,True,2015
+201503010HOU,"Sun, Mar 1, 2015",HOU,CLE,Houston Rockets,Cleveland Cavaliers,105,103,2,Home,86.7,True,2015
+201503030ATL,"Tue, Mar 3, 2015",ATL,HOU,Atlanta Hawks,Houston Rockets,104,96,8,Home,97.6,True,2015
+201503040HOU,"Wed, Mar 4, 2015",HOU,MEM,Houston Rockets,Memphis Grizzlies,100,102,-2,Home,88.4,True,2015
+201503060HOU,"Fri, Mar 6, 2015",HOU,DET,Houston Rockets,Detroit Pistons,103,93,10,Home,101.2,True,2015
+201503070DEN,"Sat, Mar 7, 2015",DEN,HOU,Denver Nuggets,Houston Rockets,100,114,-14,Home,105.8,True,2015
+201503110POR,"Wed, Mar 11, 2015",POR,HOU,Portland Trail Blazers,Houston Rockets,105,100,5,Home,98.1,True,2015
+201503120UTA,"Thu, Mar 12, 2015",UTA,HOU,Utah Jazz,Houston Rockets,109,91,18,Home,88.6,True,2015
+201503150LAC,"Sun, Mar 15, 2015",LAC,HOU,Los Angeles Clippers,Houston Rockets,98,100,-2,Home,101.1,True,2015
+201503170HOU,"Tue, Mar 17, 2015",HOU,ORL,Houston Rockets,Orlando Magic,107,94,13,Home,91.1,True,2015
+201503190HOU,"Thu, Mar 19, 2015",HOU,DEN,Houston Rockets,Denver Nuggets,118,108,10,Home,106.3,True,2015
+201503210HOU,"Sat, Mar 21, 2015",HOU,PHO,Houston Rockets,Phoenix Suns,102,117,-15,Home,102.7,True,2015
+201503230IND,"Mon, Mar 23, 2015",IND,HOU,Indiana Pacers,Houston Rockets,100,110,-10,Home,95.5,True,2015
+201503250NOP,"Wed, Mar 25, 2015",NOP,HOU,New Orleans Pelicans,Houston Rockets,93,95,-2,Home,89.1,True,2015
+201503270HOU,"Fri, Mar 27, 2015",HOU,MIN,Houston Rockets,Minnesota Timberwolves,120,110,10,Home,93.9,True,2015
+201503290WAS,"Sun, Mar 29, 2015",WAS,HOU,Washington Wizards,Houston Rockets,91,99,-8,Home,95.7,True,2015
+201503300TOR,"Mon, Mar 30, 2015",TOR,HOU,Toronto Raptors,Houston Rockets,99,96,3,Home,93.3,True,2015
+201504010HOU,"Wed, Apr 1, 2015",HOU,SAC,Houston Rockets,Sacramento Kings,115,111,4,Home,102.0,True,2015
+201504020DAL,"Thu, Apr 2, 2015",DAL,HOU,Dallas Mavericks,Houston Rockets,101,108,-7,Home,96.6,True,2015
+201504050OKC,"Sun, Apr 5, 2015",OKC,HOU,Oklahoma City Thunder,Houston Rockets,112,115,-3,Home,99.6,True,2015
+201504080SAS,"Wed, Apr 8, 2015",SAS,HOU,San Antonio Spurs,Houston Rockets,110,98,12,Home,93.5,True,2015
+201504100HOU,"Fri, Apr 10, 2015",HOU,SAS,Houston Rockets,San Antonio Spurs,103,104,-1,Home,96.6,True,2015
+201504120HOU,"Sun, Apr 12, 2015",HOU,NOP,Houston Rockets,New Orleans Pelicans,121,114,7,Home,94.4,True,2015
+201504130CHO,"Mon, Apr 13, 2015",CHO,HOU,Charlotte Hornets,Houston Rockets,90,100,-10,Home,95.3,True,2015
+201504150HOU,"Wed, Apr 15, 2015",HOU,UTA,Houston Rockets,Utah Jazz,117,91,26,Home,104.7,True,2015
+201504180HOU,"Sat, Apr 18, 2015",HOU,DAL,Houston Rockets,Dallas Mavericks,118,108,10,Home,106.5,True,2015
+201504210HOU,"Tue, Apr 21, 2015",HOU,DAL,Houston Rockets,Dallas Mavericks,111,99,12,Home,94.6,True,2015
+201504240DAL,"Fri, Apr 24, 2015",DAL,HOU,Dallas Mavericks,Houston Rockets,128,130,-2,Home,98.1,True,2015
+201504260DAL,"Sun, Apr 26, 2015",DAL,HOU,Dallas Mavericks,Houston Rockets,121,109,12,Home,100.6,True,2015
+201504280HOU,"Tue, Apr 28, 2015",HOU,DAL,Houston Rockets,Dallas Mavericks,103,94,9,Home,107.3,True,2015
+201505040HOU,"Mon, May 4, 2015",HOU,LAC,Houston Rockets,Los Angeles Clippers,101,117,-16,Home,107.6,True,2015
+201505060HOU,"Wed, May 6, 2015",HOU,LAC,Houston Rockets,Los Angeles Clippers,115,109,6,Home,103.8,True,2015
+201505080LAC,"Fri, May 8, 2015",LAC,HOU,Los Angeles Clippers,Houston Rockets,124,99,25,Home,98.3,True,2015
+201505100LAC,"Sun, May 10, 2015",LAC,HOU,Los Angeles Clippers,Houston Rockets,128,95,33,Home,103.9,True,2015
+201505120HOU,"Tue, May 12, 2015",HOU,LAC,Houston Rockets,Los Angeles Clippers,124,103,21,Home,96.6,True,2015
+201505140LAC,"Thu, May 14, 2015",LAC,HOU,Los Angeles Clippers,Houston Rockets,107,119,-12,Home,103.3,True,2015
+201505170HOU,"Sun, May 17, 2015",HOU,LAC,Houston Rockets,Los Angeles Clippers,113,100,13,Home,103.1,True,2015
+201505190GSW,"Tue, May 19, 2015",GSW,HOU,Golden State Warriors,Houston Rockets,110,106,4,Home,96.7,True,2015
+201505210GSW,"Thu, May 21, 2015",GSW,HOU,Golden State Warriors,Houston Rockets,99,98,1,Home,89.9,True,2015
+201505230HOU,"Sat, May 23, 2015",HOU,GSW,Houston Rockets,Golden State Warriors,80,115,-35,Home,98.9,True,2015
+201505250HOU,"Mon, May 25, 2015",HOU,GSW,Houston Rockets,Golden State Warriors,128,115,13,Home,106.0,True,2015
+201505270GSW,"Wed, May 27, 2015",GSW,HOU,Golden State Warriors,Houston Rockets,104,90,14,Home,98.9,True,2015
+201410290PHO,"Wed, Oct 29, 2014",PHO,LAL,Phoenix Suns,Los Angeles Lakers,119,99,20,Home,93.7,True,2015
+201410310LAL,"Fri, Oct 31, 2014",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,111,118,-7,Home,96.8,True,2015
+201411010GSW,"Sat, Nov 1, 2014",GSW,LAL,Golden State Warriors,Los Angeles Lakers,127,104,23,Home,100.8,True,2015
+201411040LAL,"Tue, Nov 4, 2014",LAL,PHO,Los Angeles Lakers,Phoenix Suns,106,112,-6,Home,99.5,True,2015
+201411090LAL,"Sun, Nov 9, 2014",LAL,CHO,Los Angeles Lakers,Charlotte Hornets,107,92,15,Home,89.7,True,2015
+201411110MEM,"Tue, Nov 11, 2014",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,107,102,5,Home,88.3,True,2015
+201411120NOP,"Wed, Nov 12, 2014",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,109,102,7,Home,93.3,True,2015
+201411140LAL,"Fri, Nov 14, 2014",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,80,93,-13,Home,89.2,True,2015
+201411160LAL,"Sun, Nov 16, 2014",LAL,GSW,Los Angeles Lakers,Golden State Warriors,115,136,-21,Home,102.7,True,2015
+201411180ATL,"Tue, Nov 18, 2014",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,109,114,-5,Home,91.2,True,2015
+201411210DAL,"Fri, Nov 21, 2014",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,140,106,34,Home,90.0,True,2015
+201411230LAL,"Sun, Nov 23, 2014",LAL,DEN,Los Angeles Lakers,Denver Nuggets,94,101,-7,Home,95.6,True,2015
+201411260LAL,"Wed, Nov 26, 2014",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,93,99,-6,Home,90.4,True,2015
+201411280LAL,"Fri, Nov 28, 2014",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,119,120,-1,Home,98.3,True,2015
+201411300LAL,"Sun, Nov 30, 2014",LAL,TOR,Los Angeles Lakers,Toronto Raptors,129,122,7,Home,97.8,True,2015
+201412020DET,"Tue, Dec 2, 2014",DET,LAL,Detroit Pistons,Los Angeles Lakers,96,106,-10,Home,94.9,True,2015
+201412030WAS,"Wed, Dec 3, 2014",WAS,LAL,Washington Wizards,Los Angeles Lakers,111,95,16,Home,97.3,True,2015
+201412050BOS,"Fri, Dec 5, 2014",BOS,LAL,Boston Celtics,Los Angeles Lakers,113,96,17,Home,103.5,True,2015
+201412070LAL,"Sun, Dec 7, 2014",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,87,104,-17,Home,93.9,True,2015
+201412090LAL,"Tue, Dec 9, 2014",LAL,SAC,Los Angeles Lakers,Sacramento Kings,98,95,3,Home,93.1,True,2015
+201412120SAS,"Fri, Dec 12, 2014",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,110,112,-2,Home,92.6,True,2015
+201412140MIN,"Sun, Dec 14, 2014",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,94,100,-6,Home,94.3,True,2015
+201412150IND,"Mon, Dec 15, 2014",IND,LAL,Indiana Pacers,Los Angeles Lakers,110,91,19,Home,94.5,True,2015
+201412190LAL,"Fri, Dec 19, 2014",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,103,104,-1,Home,93.6,True,2015
+201412210SAC,"Sun, Dec 21, 2014",SAC,LAL,Sacramento Kings,Los Angeles Lakers,108,101,7,Home,95.6,True,2015
+201412230LAL,"Tue, Dec 23, 2014",LAL,GSW,Los Angeles Lakers,Golden State Warriors,115,105,10,Home,96.9,True,2015
+201412250CHI,"Thu, Dec 25, 2014",CHI,LAL,Chicago Bulls,Los Angeles Lakers,113,93,20,Home,86.7,True,2015
+201412260DAL,"Fri, Dec 26, 2014",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,102,98,4,Home,97.4,True,2015
+201412280LAL,"Sun, Dec 28, 2014",LAL,PHO,Los Angeles Lakers,Phoenix Suns,107,116,-9,Home,100.5,True,2015
+201412300DEN,"Tue, Dec 30, 2014",DEN,LAL,Denver Nuggets,Los Angeles Lakers,103,111,-8,Home,98.4,True,2015
+201501020LAL,"Fri, Jan 2, 2015",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,106,109,-3,Home,95.8,True,2015
+201501040LAL,"Sun, Jan 4, 2015",LAL,IND,Los Angeles Lakers,Indiana Pacers,88,87,1,Home,89.4,True,2015
+201501050POR,"Mon, Jan 5, 2015",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,98,94,4,Home,91.7,True,2015
+201501070LAC,"Wed, Jan 7, 2015",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,114,89,25,Home,93.7,True,2015
+201501090LAL,"Fri, Jan 9, 2015",LAL,ORL,Los Angeles Lakers,Orlando Magic,101,84,17,Home,94.8,True,2015
+201501110LAL,"Sun, Jan 11, 2015",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,94,106,-12,Home,95.6,True,2015
+201501130LAL,"Tue, Jan 13, 2015",LAL,MIA,Los Angeles Lakers,Miami Heat,75,78,-3,Home,93.6,True,2015
+201501150LAL,"Thu, Jan 15, 2015",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,102,109,-7,Home,87.4,True,2015
+201501160UTA,"Fri, Jan 16, 2015",UTA,LAL,Utah Jazz,Los Angeles Lakers,94,85,9,Home,86.8,True,2015
+201501190PHO,"Mon, Jan 19, 2015",PHO,LAL,Phoenix Suns,Los Angeles Lakers,115,100,15,Home,99.1,True,2015
+201501210NOP,"Wed, Jan 21, 2015",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,96,80,16,Home,92.2,True,2015
+201501230SAS,"Fri, Jan 23, 2015",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,99,85,14,Home,90.4,True,2015
+201501270LAL,"Tue, Jan 27, 2015",LAL,WAS,Los Angeles Lakers,Washington Wizards,92,98,-6,Home,95.4,True,2015
+201501290LAL,"Thu, Jan 29, 2015",LAL,CHI,Los Angeles Lakers,Chicago Bulls,123,118,5,Home,88.7,True,2015
+201502010NYK,"Sun, Feb 1, 2015",NYK,LAL,New York Knicks,Los Angeles Lakers,92,80,12,Home,86.8,True,2015
+201502040MIL,"Wed, Feb 4, 2015",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,113,105,8,Home,87.7,True,2015
+201502060ORL,"Fri, Feb 6, 2015",ORL,LAL,Orlando Magic,Los Angeles Lakers,103,97,6,Home,87.8,True,2015
+201502080CLE,"Sun, Feb 8, 2015",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,120,105,15,Home,95.5,True,2015
+201502100LAL,"Tue, Feb 10, 2015",LAL,DEN,Los Angeles Lakers,Denver Nuggets,96,106,-10,Home,90.2,True,2015
+201502110POR,"Wed, Feb 11, 2015",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,102,86,16,Home,89.3,True,2015
+201502200LAL,"Fri, Feb 20, 2015",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,105,114,-9,Home,95.2,True,2015
+201502220LAL,"Sun, Feb 22, 2015",LAL,BOS,Los Angeles Lakers,Boston Celtics,118,111,7,Home,99.6,True,2015
+201502250UTA,"Wed, Feb 25, 2015",UTA,LAL,Utah Jazz,Los Angeles Lakers,97,100,-3,Home,92.2,True,2015
+201502270LAL,"Fri, Feb 27, 2015",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,101,93,8,Home,96.1,True,2015
+201503010LAL,"Sun, Mar 1, 2015",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,101,108,-7,Home,97.0,True,2015
+201503030CHO,"Tue, Mar 3, 2015",CHO,LAL,Charlotte Hornets,Los Angeles Lakers,104,103,1,Home,97.7,True,2015
+201503040MIA,"Wed, Mar 4, 2015",MIA,LAL,Miami Heat,Los Angeles Lakers,100,94,6,Home,99.4,True,2015
+201503060MEM,"Fri, Mar 6, 2015",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,97,90,7,Home,90.9,True,2015
+201503080LAL,"Sun, Mar 8, 2015",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,93,100,-7,Home,88.3,True,2015
+201503100LAL,"Tue, Mar 10, 2015",LAL,DET,Los Angeles Lakers,Detroit Pistons,93,85,8,Home,88.1,True,2015
+201503120LAL,"Thu, Mar 12, 2015",LAL,NYK,Los Angeles Lakers,New York Knicks,94,101,-7,Home,91.7,True,2015
+201503150LAL,"Sun, Mar 15, 2015",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,86,91,-5,Home,89.4,True,2015
+201503160GSW,"Mon, Mar 16, 2015",GSW,LAL,Golden State Warriors,Los Angeles Lakers,108,105,3,Home,99.2,True,2015
+201503190LAL,"Thu, Mar 19, 2015",LAL,UTA,Los Angeles Lakers,Utah Jazz,73,80,-7,Home,86.8,True,2015
+201503220LAL,"Sun, Mar 22, 2015",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,101,87,14,Home,89.0,True,2015
+201503240OKC,"Tue, Mar 24, 2015",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,127,117,10,Home,96.5,True,2015
+201503250MIN,"Wed, Mar 25, 2015",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,99,101,-2,Home,88.1,True,2015
+201503270TOR,"Fri, Mar 27, 2015",TOR,LAL,Toronto Raptors,Los Angeles Lakers,94,83,11,Home,86.3,True,2015
+201503290BRK,"Sun, Mar 29, 2015",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,107,99,8,Home,96.2,True,2015
+201503300PHI,"Mon, Mar 30, 2015",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,111,113,-2,Home,91.3,True,2015
+201504010LAL,"Wed, Apr 1, 2015",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,92,113,-21,Home,82.4,True,2015
+201504030LAL,"Fri, Apr 3, 2015",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,77,107,-30,Home,93.7,True,2015
+201504050LAL,"Sun, Apr 5, 2015",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,78,106,-28,Home,85.3,True,2015
+201504070LAC,"Tue, Apr 7, 2015",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,105,100,5,Home,95.7,True,2015
+201504080DEN,"Wed, Apr 8, 2015",DEN,LAL,Denver Nuggets,Los Angeles Lakers,119,101,18,Home,94.1,True,2015
+201504100LAL,"Fri, Apr 10, 2015",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,106,98,8,Home,90.0,True,2015
+201504120LAL,"Sun, Apr 12, 2015",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,106,120,-14,Home,97.7,True,2015
+201504130SAC,"Mon, Apr 13, 2015",SAC,LAL,Sacramento Kings,Los Angeles Lakers,102,92,10,Home,92.0,True,2015
+201504150LAL,"Wed, Apr 15, 2015",LAL,SAC,Los Angeles Lakers,Sacramento Kings,99,122,-23,Home,101.3,True,2015
+201410300DAL,"Thu, Oct 30, 2014",DAL,UTA,Dallas Mavericks,Utah Jazz,120,102,18,Home,89.5,True,2015
+201411010UTA,"Sat, Nov 1, 2014",UTA,PHO,Utah Jazz,Phoenix Suns,118,91,27,Home,97.7,True,2015
+201411030LAC,"Mon, Nov 3, 2014",LAC,UTA,Los Angeles Clippers,Utah Jazz,107,101,6,Home,92.9,True,2015
+201411050UTA,"Wed, Nov 5, 2014",UTA,CLE,Utah Jazz,Cleveland Cavaliers,102,100,2,Home,87.1,True,2015
+201411070UTA,"Fri, Nov 7, 2014",UTA,DAL,Utah Jazz,Dallas Mavericks,82,105,-23,Home,87.0,True,2015
+201411090DET,"Sun, Nov 9, 2014",DET,UTA,Detroit Pistons,Utah Jazz,96,97,-1,Home,90.5,True,2015
+201411100IND,"Mon, Nov 10, 2014",IND,UTA,Indiana Pacers,Utah Jazz,97,86,11,Home,87.2,True,2015
+201411120ATL,"Wed, Nov 12, 2014",ATL,UTA,Atlanta Hawks,Utah Jazz,100,97,3,Home,89.7,True,2015
+201411140NYK,"Fri, Nov 14, 2014",NYK,UTA,New York Knicks,Utah Jazz,100,102,-2,Home,87.7,True,2015
+201411150TOR,"Sat, Nov 15, 2014",TOR,UTA,Toronto Raptors,Utah Jazz,111,93,18,Home,86.9,True,2015
+201411180UTA,"Tue, Nov 18, 2014",UTA,OKC,Utah Jazz,Oklahoma City Thunder,98,81,17,Home,91.5,True,2015
+201411210GSW,"Fri, Nov 21, 2014",GSW,UTA,Golden State Warriors,Utah Jazz,101,88,13,Home,94.7,True,2015
+201411220UTA,"Sat, Nov 22, 2014",UTA,NOP,Utah Jazz,New Orleans Pelicans,94,106,-12,Home,89.6,True,2015
+201411240UTA,"Mon, Nov 24, 2014",UTA,CHI,Utah Jazz,Chicago Bulls,95,97,-2,Home,89.8,True,2015
+201411260OKC,"Wed, Nov 26, 2014",OKC,UTA,Oklahoma City Thunder,Utah Jazz,97,82,15,Home,91.0,True,2015
+201411290UTA,"Sat, Nov 29, 2014",UTA,LAC,Utah Jazz,Los Angeles Clippers,96,112,-16,Home,87.6,True,2015
+201412010UTA,"Mon, Dec 1, 2014",UTA,DEN,Utah Jazz,Denver Nuggets,101,103,-2,Home,94.2,True,2015
+201412030UTA,"Wed, Dec 3, 2014",UTA,TOR,Utah Jazz,Toronto Raptors,104,123,-19,Home,87.0,True,2015
+201412050UTA,"Fri, Dec 5, 2014",UTA,ORL,Utah Jazz,Orlando Magic,93,98,-5,Home,82.3,True,2015
+201412080SAC,"Mon, Dec 8, 2014",SAC,UTA,Sacramento Kings,Utah Jazz,101,92,9,Home,93.5,True,2015
+201412090UTA,"Tue, Dec 9, 2014",UTA,SAS,Utah Jazz,San Antonio Spurs,100,96,4,Home,95.7,True,2015
+201412120UTA,"Fri, Dec 12, 2014",UTA,MIA,Utah Jazz,Miami Heat,95,100,-5,Home,84.7,True,2015
+201412140WAS,"Sun, Dec 14, 2014",WAS,UTA,Washington Wizards,Utah Jazz,93,84,9,Home,92.5,True,2015
+201412160NOP,"Tue, Dec 16, 2014",NOP,UTA,New Orleans Pelicans,Utah Jazz,119,111,8,Home,91.3,True,2015
+201412170MIA,"Wed, Dec 17, 2014",MIA,UTA,Miami Heat,Utah Jazz,87,105,-18,Home,87.3,True,2015
+201412190ORL,"Fri, Dec 19, 2014",ORL,UTA,Orlando Magic,Utah Jazz,94,101,-7,Home,89.7,True,2015
+201412200CHO,"Sat, Dec 20, 2014",CHO,UTA,Charlotte Hornets,Utah Jazz,104,86,18,Home,82.7,True,2015
+201412220MEM,"Mon, Dec 22, 2014",MEM,UTA,Memphis Grizzlies,Utah Jazz,91,97,-6,Home,86.7,True,2015
+201412270UTA,"Sat, Dec 27, 2014",UTA,PHI,Utah Jazz,Philadelphia 76ers,88,71,17,Home,90.5,True,2015
+201412290LAC,"Mon, Dec 29, 2014",LAC,UTA,Los Angeles Clippers,Utah Jazz,101,97,4,Home,94.8,True,2015
+201412300UTA,"Tue, Dec 30, 2014",UTA,MIN,Utah Jazz,Minnesota Timberwolves,100,94,6,Home,88.0,True,2015
+201501020UTA,"Fri, Jan 2, 2015",UTA,ATL,Utah Jazz,Atlanta Hawks,92,98,-6,Home,90.1,True,2015
+201501030MIN,"Sat, Jan 3, 2015",MIN,UTA,Minnesota Timberwolves,Utah Jazz,89,101,-12,Home,84.1,True,2015
+201501050UTA,"Mon, Jan 5, 2015",UTA,IND,Utah Jazz,Indiana Pacers,101,105,-4,Home,87.1,True,2015
+201501070CHI,"Wed, Jan 7, 2015",CHI,UTA,Chicago Bulls,Utah Jazz,77,97,-20,Home,87.7,True,2015
+201501090OKC,"Fri, Jan 9, 2015",OKC,UTA,Oklahoma City Thunder,Utah Jazz,99,94,5,Home,95.5,True,2015
+201501130UTA,"Tue, Jan 13, 2015",UTA,GSW,Utah Jazz,Golden State Warriors,105,116,-11,Home,94.8,True,2015
+201501180SAS,"Sun, Jan 18, 2015",SAS,UTA,San Antonio Spurs,Utah Jazz,89,69,20,Home,87.5,True,2015
+201501210CLE,"Wed, Jan 21, 2015",CLE,UTA,Cleveland Cavaliers,Utah Jazz,106,92,14,Home,89.3,True,2015
+201501220MIL,"Thu, Jan 22, 2015",MIL,UTA,Milwaukee Bucks,Utah Jazz,99,101,-2,Home,91.0,True,2015
+201501240UTA,"Sat, Jan 24, 2015",UTA,BRK,Utah Jazz,Brooklyn Nets,108,73,35,Home,90.2,True,2015
+201501260UTA,"Mon, Jan 26, 2015",UTA,BOS,Utah Jazz,Boston Celtics,90,99,-9,Home,91.3,True,2015
+201501280UTA,"Wed, Jan 28, 2015",UTA,LAC,Utah Jazz,Los Angeles Clippers,89,94,-5,Home,81.4,True,2015
+201501300UTA,"Fri, Jan 30, 2015",UTA,GSW,Utah Jazz,Golden State Warriors,110,100,10,Home,96.7,True,2015
+201502030POR,"Tue, Feb 3, 2015",POR,UTA,Portland Trail Blazers,Utah Jazz,103,102,1,Home,90.6,True,2015
+201502040UTA,"Wed, Feb 4, 2015",UTA,MEM,Utah Jazz,Memphis Grizzlies,90,100,-10,Home,85.4,True,2015
+201502060PHO,"Fri, Feb 6, 2015",PHO,UTA,Phoenix Suns,Utah Jazz,100,93,7,Home,92.2,True,2015
+201502070UTA,"Sat, Feb 7, 2015",UTA,SAC,Utah Jazz,Sacramento Kings,102,90,12,Home,87.7,True,2015
+201502090NOP,"Mon, Feb 9, 2015",NOP,UTA,New Orleans Pelicans,Utah Jazz,96,100,-4,Home,84.1,True,2015
+201502110DAL,"Wed, Feb 11, 2015",DAL,UTA,Dallas Mavericks,Utah Jazz,87,82,5,Home,89.2,True,2015
+201502200UTA,"Fri, Feb 20, 2015",UTA,POR,Utah Jazz,Portland Trail Blazers,92,76,16,Home,87.1,True,2015
+201502230UTA,"Mon, Feb 23, 2015",UTA,SAS,Utah Jazz,San Antonio Spurs,90,81,9,Home,94.6,True,2015
+201502270DEN,"Fri, Feb 27, 2015",DEN,UTA,Denver Nuggets,Utah Jazz,82,104,-22,Home,89.7,True,2015
+201502280UTA,"Sat, Feb 28, 2015",UTA,MIL,Utah Jazz,Milwaukee Bucks,82,75,7,Home,92.8,True,2015
+201503030MEM,"Tue, Mar 3, 2015",MEM,UTA,Memphis Grizzlies,Utah Jazz,82,93,-11,Home,87.8,True,2015
+201503040BOS,"Wed, Mar 4, 2015",BOS,UTA,Boston Celtics,Utah Jazz,85,84,1,Home,84.6,True,2015
+201503060PHI,"Fri, Mar 6, 2015",PHI,UTA,Philadelphia 76ers,Utah Jazz,83,89,-6,Home,92.3,True,2015
+201503080BRK,"Sun, Mar 8, 2015",BRK,UTA,Brooklyn Nets,Utah Jazz,88,95,-7,Home,84.7,True,2015
+201503100UTA,"Tue, Mar 10, 2015",UTA,NYK,Utah Jazz,New York Knicks,87,82,5,Home,86.7,True,2015
+201503140UTA,"Sat, Mar 14, 2015",UTA,DET,Utah Jazz,Detroit Pistons,88,85,3,Home,85.4,True,2015
+201503160UTA,"Mon, Mar 16, 2015",UTA,CHO,Utah Jazz,Charlotte Hornets,94,66,28,Home,84.4,True,2015
+201503180UTA,"Wed, Mar 18, 2015",UTA,WAS,Utah Jazz,Washington Wizards,84,88,-4,Home,86.1,True,2015
+201503210GSW,"Sat, Mar 21, 2015",GSW,UTA,Golden State Warriors,Utah Jazz,106,91,15,Home,88.4,True,2015
+201503230UTA,"Mon, Mar 23, 2015",UTA,MIN,Utah Jazz,Minnesota Timberwolves,104,106,-2,Home,84.5,True,2015
+201503250UTA,"Wed, Mar 25, 2015",UTA,POR,Utah Jazz,Portland Trail Blazers,89,92,-3,Home,88.3,True,2015
+201503270DEN,"Fri, Mar 27, 2015",DEN,UTA,Denver Nuggets,Utah Jazz,107,91,16,Home,92.1,True,2015
+201503280UTA,"Sat, Mar 28, 2015",UTA,OKC,Utah Jazz,Oklahoma City Thunder,94,89,5,Home,94.4,True,2015
+201503300MIN,"Mon, Mar 30, 2015",MIN,UTA,Minnesota Timberwolves,Utah Jazz,84,104,-20,Home,85.6,True,2015
+201504010UTA,"Wed, Apr 1, 2015",UTA,DEN,Utah Jazz,Denver Nuggets,98,84,14,Home,89.2,True,2015
+201504040PHO,"Sat, Apr 4, 2015",PHO,UTA,Phoenix Suns,Utah Jazz,87,85,2,Home,87.4,True,2015
+201504050SAC,"Sun, Apr 5, 2015",SAC,UTA,Sacramento Kings,Utah Jazz,95,101,-6,Home,97.3,True,2015
+201504080UTA,"Wed, Apr 8, 2015",UTA,SAC,Utah Jazz,Sacramento Kings,103,91,12,Home,86.6,True,2015
+201504100UTA,"Fri, Apr 10, 2015",UTA,MEM,Utah Jazz,Memphis Grizzlies,88,89,-1,Home,85.6,True,2015
+201504110POR,"Sat, Apr 11, 2015",POR,UTA,Portland Trail Blazers,Utah Jazz,105,111,-6,Home,96.9,True,2015
+201504130UTA,"Mon, Apr 13, 2015",UTA,DAL,Utah Jazz,Dallas Mavericks,109,92,17,Home,94.0,True,2015
+201410290BOS,"Wed, Oct 29, 2014",BOS,BRK,Boston Celtics,Brooklyn Nets,121,105,16,Home,99.3,True,2015
+201411030DAL,"Mon, Nov 3, 2014",DAL,BOS,Dallas Mavericks,Boston Celtics,118,113,5,Home,98.9,True,2015
+201411050BOS,"Wed, Nov 5, 2014",BOS,TOR,Boston Celtics,Toronto Raptors,107,110,-3,Home,94.5,True,2015
+201411070BOS,"Fri, Nov 7, 2014",BOS,IND,Boston Celtics,Indiana Pacers,101,98,3,Home,90.5,True,2015
+201411080CHI,"Sat, Nov 8, 2014",CHI,BOS,Chicago Bulls,Boston Celtics,101,106,-5,Home,93.2,True,2015
+201411120BOS,"Wed, Nov 12, 2014",BOS,OKC,Boston Celtics,Oklahoma City Thunder,94,109,-15,Home,88.2,True,2015
+201411140BOS,"Fri, Nov 14, 2014",BOS,CLE,Boston Celtics,Cleveland Cavaliers,121,122,-1,Home,102.1,True,2015
+201411170BOS,"Mon, Nov 17, 2014",BOS,PHO,Boston Celtics,Phoenix Suns,114,118,-4,Home,107.0,True,2015
+201411190PHI,"Wed, Nov 19, 2014",PHI,BOS,Philadelphia 76ers,Boston Celtics,90,101,-11,Home,98.7,True,2015
+201411210MEM,"Fri, Nov 21, 2014",MEM,BOS,Memphis Grizzlies,Boston Celtics,117,100,17,Home,99.2,True,2015
+201411230BOS,"Sun, Nov 23, 2014",BOS,POR,Boston Celtics,Portland Trail Blazers,88,94,-6,Home,95.4,True,2015
+201411280BOS,"Fri, Nov 28, 2014",BOS,CHI,Boston Celtics,Chicago Bulls,102,109,-7,Home,98.9,True,2015
+201411300BOS,"Sun, Nov 30, 2014",BOS,SAS,Boston Celtics,San Antonio Spurs,89,111,-22,Home,94.6,True,2015
+201412020ATL,"Tue, Dec 2, 2014",ATL,BOS,Atlanta Hawks,Boston Celtics,109,105,4,Home,98.9,True,2015
+201412030BOS,"Wed, Dec 3, 2014",BOS,DET,Boston Celtics,Detroit Pistons,109,102,7,Home,95.4,True,2015
+201412070BOS,"Sun, Dec 7, 2014",BOS,WAS,Boston Celtics,Washington Wizards,101,93,8,Home,102.3,True,2015
+201412080WAS,"Mon, Dec 8, 2014",WAS,BOS,Washington Wizards,Boston Celtics,133,132,1,Home,96.9,True,2015
+201412100CHO,"Wed, Dec 10, 2014",CHO,BOS,Charlotte Hornets,Boston Celtics,96,87,9,Home,97.7,True,2015
+201412120BOS,"Fri, Dec 12, 2014",BOS,NYK,Boston Celtics,New York Knicks,95,101,-6,Home,91.7,True,2015
+201412150PHI,"Mon, Dec 15, 2014",PHI,BOS,Philadelphia 76ers,Boston Celtics,87,105,-18,Home,104.3,True,2015
+201412170BOS,"Wed, Dec 17, 2014",BOS,ORL,Boston Celtics,Orlando Magic,109,92,17,Home,92.3,True,2015
+201412190BOS,"Fri, Dec 19, 2014",BOS,MIN,Boston Celtics,Minnesota Timberwolves,114,98,16,Home,92.1,True,2015
+201412210MIA,"Sun, Dec 21, 2014",MIA,BOS,Miami Heat,Boston Celtics,100,84,16,Home,88.2,True,2015
+201412230ORL,"Tue, Dec 23, 2014",ORL,BOS,Orlando Magic,Boston Celtics,100,95,5,Home,98.2,True,2015
+201412260BOS,"Fri, Dec 26, 2014",BOS,BRK,Boston Celtics,Brooklyn Nets,107,109,-2,Home,97.6,True,2015
+201412270WAS,"Sat, Dec 27, 2014",WAS,BOS,Washington Wizards,Boston Celtics,101,88,13,Home,99.2,True,2015
+201412310BOS,"Wed, Dec 31, 2014",BOS,SAC,Boston Celtics,Sacramento Kings,106,84,22,Home,100.8,True,2015
+201501020BOS,"Fri, Jan 2, 2015",BOS,DAL,Boston Celtics,Dallas Mavericks,101,119,-18,Home,96.0,True,2015
+201501030CHI,"Sat, Jan 3, 2015",CHI,BOS,Chicago Bulls,Boston Celtics,109,104,5,Home,97.8,True,2015
+201501050BOS,"Mon, Jan 5, 2015",BOS,CHO,Boston Celtics,Charlotte Hornets,95,104,-9,Home,90.5,True,2015
+201501070BRK,"Wed, Jan 7, 2015",BRK,BOS,Brooklyn Nets,Boston Celtics,81,89,-8,Home,88.5,True,2015
+201501090IND,"Fri, Jan 9, 2015",IND,BOS,Indiana Pacers,Boston Celtics,107,103,4,Home,93.3,True,2015
+201501100TOR,"Sat, Jan 10, 2015",TOR,BOS,Toronto Raptors,Boston Celtics,109,96,13,Home,97.1,True,2015
+201501120BOS,"Mon, Jan 12, 2015",BOS,NOP,Boston Celtics,New Orleans Pelicans,108,100,8,Home,90.8,True,2015
+201501140BOS,"Wed, Jan 14, 2015",BOS,ATL,Boston Celtics,Atlanta Hawks,91,105,-14,Home,88.5,True,2015
+201501160BOS,"Fri, Jan 16, 2015",BOS,CHI,Boston Celtics,Chicago Bulls,103,119,-16,Home,91.9,True,2015
+201501190LAC,"Mon, Jan 19, 2015",LAC,BOS,Los Angeles Clippers,Boston Celtics,102,93,9,Home,90.3,True,2015
+201501220POR,"Thu, Jan 22, 2015",POR,BOS,Portland Trail Blazers,Boston Celtics,89,90,-1,Home,92.3,True,2015
+201501230DEN,"Fri, Jan 23, 2015",DEN,BOS,Denver Nuggets,Boston Celtics,99,100,-1,Home,92.0,True,2015
+201501250GSW,"Sun, Jan 25, 2015",GSW,BOS,Golden State Warriors,Boston Celtics,114,111,3,Home,103.4,True,2015
+201501280MIN,"Wed, Jan 28, 2015",MIN,BOS,Minnesota Timberwolves,Boston Celtics,110,98,12,Home,95.8,True,2015
+201502010BOS,"Sun, Feb 1, 2015",BOS,MIA,Boston Celtics,Miami Heat,75,83,-8,Home,90.6,True,2015
+201502030NYK,"Tue, Feb 3, 2015",NYK,BOS,New York Knicks,Boston Celtics,97,108,-11,Home,88.0,True,2015
+201502040BOS,"Wed, Feb 4, 2015",BOS,DEN,Boston Celtics,Denver Nuggets,104,100,4,Home,94.5,True,2015
+201502060BOS,"Fri, Feb 6, 2015",BOS,PHI,Boston Celtics,Philadelphia 76ers,107,96,11,Home,96.0,True,2015
+201502070MIL,"Sat, Feb 7, 2015",MIL,BOS,Milwaukee Bucks,Boston Celtics,96,93,3,Home,90.1,True,2015
+201502110BOS,"Wed, Feb 11, 2015",BOS,ATL,Boston Celtics,Atlanta Hawks,89,88,1,Home,92.6,True,2015
+201502200SAC,"Fri, Feb 20, 2015",SAC,BOS,Sacramento Kings,Boston Celtics,109,101,8,Home,98.8,True,2015
+201502230PHO,"Mon, Feb 23, 2015",PHO,BOS,Phoenix Suns,Boston Celtics,110,115,-5,Home,103.9,True,2015
+201502250BOS,"Wed, Feb 25, 2015",BOS,NYK,Boston Celtics,New York Knicks,115,94,21,Home,96.4,True,2015
+201502270BOS,"Fri, Feb 27, 2015",BOS,CHO,Boston Celtics,Charlotte Hornets,106,98,8,Home,94.9,True,2015
+201503010BOS,"Sun, Mar 1, 2015",BOS,GSW,Boston Celtics,Golden State Warriors,101,106,-5,Home,96.9,True,2015
+201503030CLE,"Tue, Mar 3, 2015",CLE,BOS,Cleveland Cavaliers,Boston Celtics,110,79,31,Home,93.0,True,2015
+201503060NOP,"Fri, Mar 6, 2015",NOP,BOS,New Orleans Pelicans,Boston Celtics,98,104,-6,Home,93.1,True,2015
+201503080ORL,"Sun, Mar 8, 2015",ORL,BOS,Orlando Magic,Boston Celtics,103,98,5,Home,92.6,True,2015
+201503090MIA,"Mon, Mar 9, 2015",MIA,BOS,Miami Heat,Boston Celtics,90,100,-10,Home,86.3,True,2015
+201503110BOS,"Wed, Mar 11, 2015",BOS,MEM,Boston Celtics,Memphis Grizzlies,95,92,3,Home,92.4,True,2015
+201503130BOS,"Fri, Mar 13, 2015",BOS,ORL,Boston Celtics,Orlando Magic,95,88,7,Home,99.6,True,2015
+201503140IND,"Sat, Mar 14, 2015",IND,BOS,Indiana Pacers,Boston Celtics,89,93,-4,Home,93.0,True,2015
+201503160BOS,"Mon, Mar 16, 2015",BOS,PHI,Boston Celtics,Philadelphia 76ers,108,89,19,Home,98.8,True,2015
+201503180OKC,"Wed, Mar 18, 2015",OKC,BOS,Oklahoma City Thunder,Boston Celtics,122,118,4,Home,101.7,True,2015
+201503200SAS,"Fri, Mar 20, 2015",SAS,BOS,San Antonio Spurs,Boston Celtics,101,89,12,Home,95.4,True,2015
+201503220BOS,"Sun, Mar 22, 2015",BOS,DET,Boston Celtics,Detroit Pistons,97,105,-8,Home,94.2,True,2015
+201503230BRK,"Mon, Mar 23, 2015",BRK,BOS,Brooklyn Nets,Boston Celtics,91,110,-19,Home,95.6,True,2015
+201503250BOS,"Wed, Mar 25, 2015",BOS,MIA,Boston Celtics,Miami Heat,86,93,-7,Home,91.0,True,2015
+201503270NYK,"Fri, Mar 27, 2015",NYK,BOS,New York Knicks,Boston Celtics,92,96,-4,Home,92.7,True,2015
+201503290BOS,"Sun, Mar 29, 2015",BOS,LAC,Boston Celtics,Los Angeles Clippers,106,119,-13,Home,100.0,True,2015
+201503300CHO,"Mon, Mar 30, 2015",CHO,BOS,Charlotte Hornets,Boston Celtics,104,116,-12,Home,90.6,True,2015
+201504010BOS,"Wed, Apr 1, 2015",BOS,IND,Boston Celtics,Indiana Pacers,100,87,13,Home,93.8,True,2015
+201504030BOS,"Fri, Apr 3, 2015",BOS,MIL,Boston Celtics,Milwaukee Bucks,101,110,-9,Home,100.4,True,2015
+201504040TOR,"Sat, Apr 4, 2015",TOR,BOS,Toronto Raptors,Boston Celtics,116,117,-1,Home,95.9,True,2015
+201504080DET,"Wed, Apr 8, 2015",DET,BOS,Detroit Pistons,Boston Celtics,103,113,-10,Home,93.9,True,2015
+201504100CLE,"Fri, Apr 10, 2015",CLE,BOS,Cleveland Cavaliers,Boston Celtics,90,99,-9,Home,93.5,True,2015
+201504120BOS,"Sun, Apr 12, 2015",BOS,CLE,Boston Celtics,Cleveland Cavaliers,117,78,39,Home,95.5,True,2015
+201504140BOS,"Tue, Apr 14, 2015",BOS,TOR,Boston Celtics,Toronto Raptors,95,93,2,Home,97.8,True,2015
+201504150MIL,"Wed, Apr 15, 2015",MIL,BOS,Milwaukee Bucks,Boston Celtics,100,105,-5,Home,96.0,True,2015
+201504190CLE,"Sun, Apr 19, 2015",CLE,BOS,Cleveland Cavaliers,Boston Celtics,113,100,13,Home,91.8,True,2015
+201504210CLE,"Tue, Apr 21, 2015",CLE,BOS,Cleveland Cavaliers,Boston Celtics,99,91,8,Home,90.0,True,2015
+201504230BOS,"Thu, Apr 23, 2015",BOS,CLE,Boston Celtics,Cleveland Cavaliers,95,103,-8,Home,94.1,True,2015
+201504260BOS,"Sun, Apr 26, 2015",BOS,CLE,Boston Celtics,Cleveland Cavaliers,93,101,-8,Home,96.8,True,2015
+201410290IND,"Wed, Oct 29, 2014",IND,PHI,Indiana Pacers,Philadelphia 76ers,103,91,12,Home,94.1,True,2015
+201410310MIL,"Fri, Oct 31, 2014",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,93,81,12,Home,96.7,True,2015
+201411010PHI,"Sat, Nov 1, 2014",PHI,MIA,Philadelphia 76ers,Miami Heat,96,114,-18,Home,98.9,True,2015
+201411050PHI,"Wed, Nov 5, 2014",PHI,ORL,Philadelphia 76ers,Orlando Magic,89,91,-2,Home,100.2,True,2015
+201411070PHI,"Fri, Nov 7, 2014",PHI,CHI,Philadelphia 76ers,Chicago Bulls,115,118,-3,Home,94.5,True,2015
+201411090TOR,"Sun, Nov 9, 2014",TOR,PHI,Toronto Raptors,Philadelphia 76ers,120,88,32,Home,99.7,True,2015
+201411130DAL,"Thu, Nov 13, 2014",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,123,70,53,Home,99.6,True,2015
+201411170SAS,"Mon, Nov 17, 2014",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,100,75,25,Home,99.5,True,2015
+201411210PHI,"Fri, Nov 21, 2014",PHI,PHO,Philadelphia 76ers,Phoenix Suns,96,122,-26,Home,97.0,True,2015
+201411220NYK,"Sat, Nov 22, 2014",NYK,PHI,New York Knicks,Philadelphia 76ers,91,83,8,Home,88.9,True,2015
+201411240PHI,"Mon, Nov 24, 2014",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,104,114,-10,Home,93.7,True,2015
+201411260PHI,"Wed, Nov 26, 2014",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,91,99,-8,Home,99.4,True,2015
+201411290PHI,"Sat, Nov 29, 2014",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,103,110,-7,Home,98.0,True,2015
+201412010PHI,"Mon, Dec 1, 2014",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,103,109,-6,Home,99.4,True,2015
+201412030MIN,"Wed, Dec 3, 2014",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,77,85,-8,Home,96.0,True,2015
+201412050PHI,"Fri, Dec 5, 2014",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,91,103,-12,Home,92.5,True,2015
+201412060DET,"Sat, Dec 6, 2014",DET,PHI,Detroit Pistons,Philadelphia 76ers,101,108,-7,Home,95.7,True,2015
+201412100ATL,"Wed, Dec 10, 2014",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,95,79,16,Home,91.4,True,2015
+201412120BRK,"Fri, Dec 12, 2014",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,88,70,18,Home,88.9,True,2015
+201412130PHI,"Sat, Dec 13, 2014",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,115,120,-5,Home,94.4,True,2015
+201412190PHI,"Fri, Dec 19, 2014",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,91,109,-18,Home,98.9,True,2015
+201412210ORL,"Sun, Dec 21, 2014",ORL,PHI,Orlando Magic,Philadelphia 76ers,88,96,-8,Home,93.3,True,2015
+201412230MIA,"Tue, Dec 23, 2014",MIA,PHI,Miami Heat,Philadelphia 76ers,87,91,-4,Home,88.7,True,2015
+201412260POR,"Fri, Dec 26, 2014",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,114,93,21,Home,102.6,True,2015
+201412300GSW,"Tue, Dec 30, 2014",GSW,PHI,Golden State Warriors,Philadelphia 76ers,126,86,40,Home,100.6,True,2015
+201501020PHO,"Fri, Jan 2, 2015",PHO,PHI,Phoenix Suns,Philadelphia 76ers,112,96,16,Home,95.1,True,2015
+201501030LAC,"Sat, Jan 3, 2015",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,127,91,36,Home,94.4,True,2015
+201501050PHI,"Mon, Jan 5, 2015",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,95,92,3,Home,91.2,True,2015
+201501070PHI,"Wed, Jan 7, 2015",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,77,97,-20,Home,98.7,True,2015
+201501090BRK,"Fri, Jan 9, 2015",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,88,90,-2,Home,89.2,True,2015
+201501100PHI,"Sat, Jan 10, 2015",PHI,IND,Philadelphia 76ers,Indiana Pacers,93,92,1,Home,93.3,True,2015
+201501130PHI,"Tue, Jan 13, 2015",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,87,105,-18,Home,90.6,True,2015
+201501140TOR,"Wed, Jan 14, 2015",TOR,PHI,Toronto Raptors,Philadelphia 76ers,100,84,16,Home,95.0,True,2015
+201501160PHI,"Fri, Jan 16, 2015",PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,96,81,15,Home,89.2,True,2015
+201501170DET,"Sat, Jan 17, 2015",DET,PHI,Detroit Pistons,Philadelphia 76ers,107,89,18,Home,93.5,True,2015
+201501190WAS,"Mon, Jan 19, 2015",WAS,PHI,Washington Wizards,Philadelphia 76ers,111,76,35,Home,96.5,True,2015
+201501210PHI,"Wed, Jan 21, 2015",PHI,NYK,Philadelphia 76ers,New York Knicks,91,98,-7,Home,88.4,True,2015
+201501230PHI,"Fri, Jan 23, 2015",PHI,TOR,Philadelphia 76ers,Toronto Raptors,86,91,-5,Home,88.7,True,2015
+201501240MEM,"Sat, Jan 24, 2015",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,101,83,18,Home,97.5,True,2015
+201501260NOP,"Mon, Jan 26, 2015",NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,99,74,25,Home,85.1,True,2015
+201501280PHI,"Wed, Jan 28, 2015",PHI,DET,Philadelphia 76ers,Detroit Pistons,89,69,20,Home,85.8,True,2015
+201501300PHI,"Fri, Jan 30, 2015",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,103,94,9,Home,91.9,True,2015
+201501310ATL,"Sat, Jan 31, 2015",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,91,85,6,Home,88.8,True,2015
+201502020CLE,"Mon, Feb 2, 2015",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,97,84,13,Home,91.4,True,2015
+201502030PHI,"Tue, Feb 3, 2015",PHI,DEN,Philadelphia 76ers,Denver Nuggets,105,98,7,Home,100.0,True,2015
+201502070PHI,"Sat, Feb 7, 2015",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,89,81,8,Home,96.6,True,2015
+201502090PHI,"Mon, Feb 9, 2015",PHI,GSW,Philadelphia 76ers,Golden State Warriors,84,89,-5,Home,100.1,True,2015
+201502200PHI,"Fri, Feb 20, 2015",PHI,IND,Philadelphia 76ers,Indiana Pacers,95,106,-11,Home,96.6,True,2015
+201502220ORL,"Sun, Feb 22, 2015",ORL,PHI,Orlando Magic,Philadelphia 76ers,103,98,5,Home,93.3,True,2015
+201502230MIA,"Mon, Feb 23, 2015",MIA,PHI,Miami Heat,Philadelphia 76ers,119,108,11,Home,96.4,True,2015
+201502250MIL,"Wed, Feb 25, 2015",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,104,88,16,Home,97.5,True,2015
+201502270PHI,"Fri, Feb 27, 2015",PHI,WAS,Philadelphia 76ers,Washington Wizards,89,81,8,Home,96.9,True,2015
+201503010IND,"Sun, Mar 1, 2015",IND,PHI,Indiana Pacers,Philadelphia 76ers,94,74,20,Home,95.3,True,2015
+201503020PHI,"Mon, Mar 2, 2015",PHI,TOR,Philadelphia 76ers,Toronto Raptors,103,114,-11,Home,88.3,True,2015
+201503040OKC,"Wed, Mar 4, 2015",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,123,118,5,Home,102.8,True,2015
+201503070PHI,"Sat, Mar 7, 2015",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,92,84,8,Home,97.1,True,2015
+201503110PHI,"Wed, Mar 11, 2015",PHI,CHI,Philadelphia 76ers,Chicago Bulls,95,104,-9,Home,95.0,True,2015
+201503130PHI,"Fri, Mar 13, 2015",PHI,SAC,Philadelphia 76ers,Sacramento Kings,114,107,7,Home,102.5,True,2015
+201503140PHI,"Sat, Mar 14, 2015",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,87,94,-7,Home,101.3,True,2015
+201503180PHI,"Wed, Mar 18, 2015",PHI,DET,Philadelphia 76ers,Detroit Pistons,94,83,11,Home,91.2,True,2015
+201503200PHI,"Fri, Mar 20, 2015",PHI,NYK,Philadelphia 76ers,New York Knicks,97,81,16,Home,88.1,True,2015
+201503240SAC,"Tue, Mar 24, 2015",SAC,PHI,Sacramento Kings,Philadelphia 76ers,107,106,1,Home,100.0,True,2015
+201503250DEN,"Wed, Mar 25, 2015",DEN,PHI,Denver Nuggets,Philadelphia 76ers,85,99,-14,Home,95.0,True,2015
+201503270PHI,"Fri, Mar 27, 2015",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,98,119,-21,Home,102.2,True,2015
+201503290CLE,"Sun, Mar 29, 2015",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,87,86,1,Home,90.1,True,2015
+201504010WAS,"Wed, Apr 1, 2015",WAS,PHI,Washington Wizards,Philadelphia 76ers,106,93,13,Home,93.4,True,2015
+201504040CHO,"Sat, Apr 4, 2015",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,92,91,1,Home,90.0,True,2015
+201504050NYK,"Sun, Apr 5, 2015",NYK,PHI,New York Knicks,Philadelphia 76ers,101,91,10,Home,86.4,True,2015
+201504080PHI,"Wed, Apr 8, 2015",PHI,WAS,Philadelphia 76ers,Washington Wizards,90,119,-29,Home,88.9,True,2015
+201504110CHI,"Sat, Apr 11, 2015",CHI,PHI,Chicago Bulls,Philadelphia 76ers,114,107,7,Home,98.7,True,2015
+201504130PHI,"Mon, Apr 13, 2015",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,97,107,-10,Home,102.6,True,2015
+201504150PHI,"Wed, Apr 15, 2015",PHI,MIA,Philadelphia 76ers,Miami Heat,101,105,-4,Home,96.4,True,2015
+201410290MIA,"Wed, Oct 29, 2014",MIA,WAS,Miami Heat,Washington Wizards,107,95,12,Home,91.1,True,2015
+201411020MIA,"Sun, Nov 2, 2014",MIA,TOR,Miami Heat,Toronto Raptors,107,102,5,Home,91.1,True,2015
+201411050CHO,"Wed, Nov 5, 2014",CHO,MIA,Charlotte Hornets,Miami Heat,96,89,7,Home,90.3,True,2015
+201411080MIA,"Sat, Nov 8, 2014",MIA,MIN,Miami Heat,Minnesota Timberwolves,102,92,10,Home,93.1,True,2015
+201411090DAL,"Sun, Nov 9, 2014",DAL,MIA,Dallas Mavericks,Miami Heat,96,105,-9,Home,89.7,True,2015
+201411120MIA,"Wed, Nov 12, 2014",MIA,IND,Miami Heat,Indiana Pacers,75,81,-6,Home,78.4,True,2015
+201411140ATL,"Fri, Nov 14, 2014",ATL,MIA,Atlanta Hawks,Miami Heat,114,103,11,Home,93.1,True,2015
+201411160MIA,"Sun, Nov 16, 2014",MIA,MIL,Miami Heat,Milwaukee Bucks,84,91,-7,Home,93.6,True,2015
+201411170BRK,"Mon, Nov 17, 2014",BRK,MIA,Brooklyn Nets,Miami Heat,83,95,-12,Home,82.4,True,2015
+201411200MIA,"Thu, Nov 20, 2014",MIA,LAC,Miami Heat,Los Angeles Clippers,93,110,-17,Home,88.3,True,2015
+201411220ORL,"Sat, Nov 22, 2014",ORL,MIA,Orlando Magic,Miami Heat,92,99,-7,Home,85.2,True,2015
+201411230MIA,"Sun, Nov 23, 2014",MIA,CHO,Miami Heat,Charlotte Hornets,94,93,1,Home,88.3,True,2015
+201411250MIA,"Tue, Nov 25, 2014",MIA,GSW,Miami Heat,Golden State Warriors,97,114,-17,Home,91.0,True,2015
+201411300NYK,"Sun, Nov 30, 2014",NYK,MIA,New York Knicks,Miami Heat,79,86,-7,Home,85.6,True,2015
+201412010WAS,"Mon, Dec 1, 2014",WAS,MIA,Washington Wizards,Miami Heat,107,86,21,Home,87.1,True,2015
+201412030MIA,"Wed, Dec 3, 2014",MIA,ATL,Miami Heat,Atlanta Hawks,102,112,-10,Home,92.0,True,2015
+201412050MIL,"Fri, Dec 5, 2014",MIL,MIA,Milwaukee Bucks,Miami Heat,109,85,24,Home,91.8,True,2015
+201412070MEM,"Sun, Dec 7, 2014",MEM,MIA,Memphis Grizzlies,Miami Heat,103,87,16,Home,82.3,True,2015
+201412090PHO,"Tue, Dec 9, 2014",PHO,MIA,Phoenix Suns,Miami Heat,97,103,-6,Home,88.1,True,2015
+201412100DEN,"Wed, Dec 10, 2014",DEN,MIA,Denver Nuggets,Miami Heat,102,82,20,Home,84.1,True,2015
+201412140MIA,"Sun, Dec 14, 2014",MIA,CHI,Miami Heat,Chicago Bulls,75,93,-18,Home,87.3,True,2015
+201412160BRK,"Tue, Dec 16, 2014",BRK,MIA,Brooklyn Nets,Miami Heat,91,95,-4,Home,93.0,True,2015
+201412190MIA,"Fri, Dec 19, 2014",MIA,WAS,Miami Heat,Washington Wizards,103,105,-2,Home,89.4,True,2015
+201412250MIA,"Thu, Dec 25, 2014",MIA,CLE,Miami Heat,Cleveland Cavaliers,101,91,10,Home,88.0,True,2015
+201412270MIA,"Sat, Dec 27, 2014",MIA,MEM,Miami Heat,Memphis Grizzlies,95,103,-8,Home,87.4,True,2015
+201412290MIA,"Mon, Dec 29, 2014",MIA,ORL,Miami Heat,Orlando Magic,101,102,-1,Home,87.5,True,2015
+201412310IND,"Wed, Dec 31, 2014",IND,MIA,Indiana Pacers,Miami Heat,106,95,11,Home,86.8,True,2015
+201501040MIA,"Sun, Jan 4, 2015",MIA,BRK,Miami Heat,Brooklyn Nets,88,84,4,Home,86.6,True,2015
+201501080POR,"Thu, Jan 8, 2015",POR,MIA,Portland Trail Blazers,Miami Heat,99,83,16,Home,87.9,True,2015
+201501110LAC,"Sun, Jan 11, 2015",LAC,MIA,Los Angeles Clippers,Miami Heat,90,104,-14,Home,86.0,True,2015
+201501140GSW,"Wed, Jan 14, 2015",GSW,MIA,Golden State Warriors,Miami Heat,104,89,15,Home,87.9,True,2015
+201501160SAC,"Fri, Jan 16, 2015",SAC,MIA,Sacramento Kings,Miami Heat,83,95,-12,Home,86.3,True,2015
+201501200MIA,"Tue, Jan 20, 2015",MIA,OKC,Miami Heat,Oklahoma City Thunder,86,94,-8,Home,91.1,True,2015
+201501210CHO,"Wed, Jan 21, 2015",CHO,MIA,Charlotte Hornets,Miami Heat,78,76,2,Home,84.0,True,2015
+201501230MIA,"Fri, Jan 23, 2015",MIA,IND,Miami Heat,Indiana Pacers,89,87,2,Home,93.6,True,2015
+201501250CHI,"Sun, Jan 25, 2015",CHI,MIA,Chicago Bulls,Miami Heat,84,96,-12,Home,88.2,True,2015
+201501270MIA,"Tue, Jan 27, 2015",MIA,MIL,Miami Heat,Milwaukee Bucks,102,109,-7,Home,91.2,True,2015
+201501300MIA,"Fri, Jan 30, 2015",MIA,DAL,Miami Heat,Dallas Mavericks,72,93,-21,Home,86.9,True,2015
+201502030DET,"Tue, Feb 3, 2015",DET,MIA,Detroit Pistons,Miami Heat,108,91,17,Home,83.5,True,2015
+201502040MIN,"Wed, Feb 4, 2015",MIN,MIA,Minnesota Timberwolves,Miami Heat,102,101,1,Home,93.1,True,2015
+201502060SAS,"Fri, Feb 6, 2015",SAS,MIA,San Antonio Spurs,Miami Heat,98,85,13,Home,87.2,True,2015
+201502090MIA,"Mon, Feb 9, 2015",MIA,NYK,Miami Heat,New York Knicks,109,95,14,Home,89.3,True,2015
+201502110CLE,"Wed, Feb 11, 2015",CLE,MIA,Cleveland Cavaliers,Miami Heat,113,93,20,Home,90.8,True,2015
+201502200NYK,"Fri, Feb 20, 2015",NYK,MIA,New York Knicks,Miami Heat,87,111,-24,Home,100.7,True,2015
+201502210MIA,"Sat, Feb 21, 2015",MIA,NOP,Miami Heat,New Orleans Pelicans,91,105,-14,Home,93.1,True,2015
+201502250ORL,"Wed, Feb 25, 2015",ORL,MIA,Orlando Magic,Miami Heat,90,93,-3,Home,88.3,True,2015
+201502270NOP,"Fri, Feb 27, 2015",NOP,MIA,New Orleans Pelicans,Miami Heat,104,102,2,Home,88.4,True,2015
+201502280MIA,"Sat, Feb 28, 2015",MIA,ATL,Miami Heat,Atlanta Hawks,91,93,-2,Home,95.5,True,2015
+201503020MIA,"Mon, Mar 2, 2015",MIA,PHO,Miami Heat,Phoenix Suns,115,98,17,Home,96.8,True,2015
+201503060WAS,"Fri, Mar 6, 2015",WAS,MIA,Washington Wizards,Miami Heat,99,97,2,Home,92.0,True,2015
+201503070MIA,"Sat, Mar 7, 2015",MIA,SAC,Miami Heat,Sacramento Kings,114,109,5,Home,92.7,True,2015
+201503110MIA,"Wed, Mar 11, 2015",MIA,BRK,Miami Heat,Brooklyn Nets,104,98,6,Home,94.3,True,2015
+201503130TOR,"Fri, Mar 13, 2015",TOR,MIA,Toronto Raptors,Miami Heat,102,92,10,Home,99.8,True,2015
+201503160MIA,"Mon, Mar 16, 2015",MIA,CLE,Miami Heat,Cleveland Cavaliers,106,92,14,Home,94.3,True,2015
+201503180MIA,"Wed, Mar 18, 2015",MIA,POR,Miami Heat,Portland Trail Blazers,108,104,4,Home,91.2,True,2015
+201503200MIA,"Fri, Mar 20, 2015",MIA,DEN,Miami Heat,Denver Nuggets,108,91,17,Home,92.7,True,2015
+201503220OKC,"Sun, Mar 22, 2015",OKC,MIA,Oklahoma City Thunder,Miami Heat,93,75,18,Home,89.2,True,2015
+201503240MIL,"Tue, Mar 24, 2015",MIL,MIA,Milwaukee Bucks,Miami Heat,89,88,1,Home,90.8,True,2015
+201503270ATL,"Fri, Mar 27, 2015",ATL,MIA,Atlanta Hawks,Miami Heat,99,86,13,Home,92.4,True,2015
+201503290MIA,"Sun, Mar 29, 2015",MIA,DET,Miami Heat,Detroit Pistons,109,102,7,Home,88.1,True,2015
+201503310MIA,"Tue, Mar 31, 2015",MIA,SAS,Miami Heat,San Antonio Spurs,81,95,-14,Home,89.4,True,2015
+201504020CLE,"Thu, Apr 2, 2015",CLE,MIA,Cleveland Cavaliers,Miami Heat,114,88,26,Home,91.6,True,2015
+201504040DET,"Sat, Apr 4, 2015",DET,MIA,Detroit Pistons,Miami Heat,99,98,1,Home,88.6,True,2015
+201504050IND,"Sun, Apr 5, 2015",IND,MIA,Indiana Pacers,Miami Heat,112,89,23,Home,92.7,True,2015
+201504070MIA,"Tue, Apr 7, 2015",MIA,CHO,Miami Heat,Charlotte Hornets,105,100,5,Home,92.7,True,2015
+201504090MIA,"Thu, Apr 9, 2015",MIA,CHI,Miami Heat,Chicago Bulls,78,89,-11,Home,89.8,True,2015
+201504110MIA,"Sat, Apr 11, 2015",MIA,TOR,Miami Heat,Toronto Raptors,104,107,-3,Home,90.0,True,2015
+201504130MIA,"Mon, Apr 13, 2015",MIA,ORL,Miami Heat,Orlando Magic,100,93,7,Home,92.5,True,2015
+201410280SAS,"Tue, Oct 28, 2014",SAS,DAL,San Antonio Spurs,Dallas Mavericks,101,100,1,Home,86.1,True,2015
+201410310PHO,"Fri, Oct 31, 2014",PHO,SAS,Phoenix Suns,San Antonio Spurs,94,89,5,Home,92.5,True,2015
+201411050SAS,"Wed, Nov 5, 2014",SAS,ATL,San Antonio Spurs,Atlanta Hawks,94,92,2,Home,94.5,True,2015
+201411080SAS,"Sat, Nov 8, 2014",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,99,100,-1,Home,92.0,True,2015
+201411100LAC,"Mon, Nov 10, 2014",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,85,89,-4,Home,88.2,True,2015
+201411110GSW,"Tue, Nov 11, 2014",GSW,SAS,Golden State Warriors,San Antonio Spurs,100,113,-13,Home,96.9,True,2015
+201411150SAC,"Sat, Nov 15, 2014",SAC,SAS,Sacramento Kings,San Antonio Spurs,94,91,3,Home,93.3,True,2015
+201411190CLE,"Wed, Nov 19, 2014",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,90,92,-2,Home,90.2,True,2015
+201411210MIN,"Fri, Nov 21, 2014",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,92,121,-29,Home,96.6,True,2015
+201411220SAS,"Sat, Nov 22, 2014",SAS,BRK,San Antonio Spurs,Brooklyn Nets,99,87,12,Home,91.2,True,2015
+201411260SAS,"Wed, Nov 26, 2014",SAS,IND,San Antonio Spurs,Indiana Pacers,106,100,6,Home,95.6,True,2015
+201411280SAS,"Fri, Nov 28, 2014",SAS,SAC,San Antonio Spurs,Sacramento Kings,112,104,8,Home,91.4,True,2015
+201412030BRK,"Wed, Dec 3, 2014",BRK,SAS,Brooklyn Nets,San Antonio Spurs,95,93,2,Home,86.4,True,2015
+201412050MEM,"Fri, Dec 5, 2014",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,101,107,-6,Home,91.5,True,2015
+201412060SAS,"Sat, Dec 6, 2014",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,123,101,22,Home,96.6,True,2015
+201412100SAS,"Wed, Dec 10, 2014",SAS,NYK,San Antonio Spurs,New York Knicks,109,95,14,Home,86.7,True,2015
+201412140DEN,"Sun, Dec 14, 2014",DEN,SAS,Denver Nuggets,San Antonio Spurs,91,99,-8,Home,92.6,True,2015
+201412150POR,"Mon, Dec 15, 2014",POR,SAS,Portland Trail Blazers,San Antonio Spurs,108,95,13,Home,94.5,True,2015
+201412170SAS,"Wed, Dec 17, 2014",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,116,117,-1,Home,83.6,True,2015
+201412190SAS,"Fri, Dec 19, 2014",SAS,POR,San Antonio Spurs,Portland Trail Blazers,119,129,-10,Home,88.3,True,2015
+201412200DAL,"Sat, Dec 20, 2014",DAL,SAS,Dallas Mavericks,San Antonio Spurs,99,93,6,Home,91.8,True,2015
+201412220SAS,"Mon, Dec 22, 2014",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,125,118,7,Home,95.1,True,2015
+201412250SAS,"Thu, Dec 25, 2014",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,106,114,-8,Home,95.1,True,2015
+201412260NOP,"Fri, Dec 26, 2014",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,97,90,7,Home,95.0,True,2015
+201412300MEM,"Tue, Dec 30, 2014",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,95,87,8,Home,91.2,True,2015
+201412310SAS,"Wed, Dec 31, 2014",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,95,93,2,Home,90.0,True,2015
+201501030SAS,"Sat, Jan 3, 2015",SAS,WAS,San Antonio Spurs,Washington Wizards,101,92,9,Home,83.4,True,2015
+201501060SAS,"Tue, Jan 6, 2015",SAS,DET,San Antonio Spurs,Detroit Pistons,104,105,-1,Home,95.4,True,2015
+201501090SAS,"Fri, Jan 9, 2015",SAS,PHO,San Antonio Spurs,Phoenix Suns,100,95,5,Home,101.4,True,2015
+201501100MIN,"Sat, Jan 10, 2015",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,93,108,-15,Home,94.7,True,2015
+201501130WAS,"Tue, Jan 13, 2015",WAS,SAS,Washington Wizards,San Antonio Spurs,101,93,8,Home,93.7,True,2015
+201501140CHO,"Wed, Jan 14, 2015",CHO,SAS,Charlotte Hornets,San Antonio Spurs,93,98,-5,Home,95.2,True,2015
+201501160SAS,"Fri, Jan 16, 2015",SAS,POR,San Antonio Spurs,Portland Trail Blazers,110,96,14,Home,95.0,True,2015
+201501200DEN,"Tue, Jan 20, 2015",DEN,SAS,Denver Nuggets,San Antonio Spurs,99,109,-10,Home,94.4,True,2015
+201501220CHI,"Thu, Jan 22, 2015",CHI,SAS,Chicago Bulls,San Antonio Spurs,104,81,23,Home,89.8,True,2015
+201501250SAS,"Sun, Jan 25, 2015",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,101,95,6,Home,91.3,True,2015
+201501280SAS,"Wed, Jan 28, 2015",SAS,CHO,San Antonio Spurs,Charlotte Hornets,95,86,9,Home,92.2,True,2015
+201501310SAS,"Sat, Jan 31, 2015",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,85,105,-20,Home,96.8,True,2015
+201502040SAS,"Wed, Feb 4, 2015",SAS,ORL,San Antonio Spurs,Orlando Magic,110,103,7,Home,95.1,True,2015
+201502080TOR,"Sun, Feb 8, 2015",TOR,SAS,Toronto Raptors,San Antonio Spurs,87,82,5,Home,91.3,True,2015
+201502090IND,"Mon, Feb 9, 2015",IND,SAS,Indiana Pacers,San Antonio Spurs,93,95,-2,Home,92.5,True,2015
+201502110DET,"Wed, Feb 11, 2015",DET,SAS,Detroit Pistons,San Antonio Spurs,87,104,-17,Home,85.2,True,2015
+201502190LAC,"Thu, Feb 19, 2015",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,119,115,4,Home,102.3,True,2015
+201502200GSW,"Fri, Feb 20, 2015",GSW,SAS,Golden State Warriors,San Antonio Spurs,110,99,11,Home,94.9,True,2015
+201502250POR,"Wed, Feb 25, 2015",POR,SAS,Portland Trail Blazers,San Antonio Spurs,111,95,16,Home,90.9,True,2015
+201502270SAC,"Fri, Feb 27, 2015",SAC,SAS,Sacramento Kings,San Antonio Spurs,96,107,-11,Home,95.9,True,2015
+201502280PHO,"Sat, Feb 28, 2015",PHO,SAS,Phoenix Suns,San Antonio Spurs,74,101,-27,Home,101.3,True,2015
+201503040SAS,"Wed, Mar 4, 2015",SAS,SAC,San Antonio Spurs,Sacramento Kings,112,85,27,Home,98.8,True,2015
+201503060SAS,"Fri, Mar 6, 2015",SAS,DEN,San Antonio Spurs,Denver Nuggets,120,111,9,Home,98.7,True,2015
+201503080SAS,"Sun, Mar 8, 2015",SAS,CHI,San Antonio Spurs,Chicago Bulls,116,105,11,Home,97.3,True,2015
+201503100SAS,"Tue, Mar 10, 2015",SAS,TOR,San Antonio Spurs,Toronto Raptors,117,107,10,Home,92.7,True,2015
+201503120SAS,"Thu, Mar 12, 2015",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,125,128,-3,Home,91.7,True,2015
+201503150SAS,"Sun, Mar 15, 2015",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,123,97,26,Home,96.9,True,2015
+201503170NYK,"Tue, Mar 17, 2015",NYK,SAS,New York Knicks,San Antonio Spurs,104,100,4,Home,88.2,True,2015
+201503180MIL,"Wed, Mar 18, 2015",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,103,114,-11,Home,92.9,True,2015
+201503220ATL,"Sun, Mar 22, 2015",ATL,SAS,Atlanta Hawks,San Antonio Spurs,95,114,-19,Home,93.5,True,2015
+201503240DAL,"Tue, Mar 24, 2015",DAL,SAS,Dallas Mavericks,San Antonio Spurs,101,94,7,Home,97.8,True,2015
+201503250SAS,"Wed, Mar 25, 2015",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,130,91,39,Home,93.9,True,2015
+201503270SAS,"Fri, Mar 27, 2015",SAS,DAL,San Antonio Spurs,Dallas Mavericks,94,76,18,Home,89.7,True,2015
+201503290SAS,"Sun, Mar 29, 2015",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,103,89,14,Home,90.3,True,2015
+201504010ORL,"Wed, Apr 1, 2015",ORL,SAS,Orlando Magic,San Antonio Spurs,91,103,-12,Home,92.7,True,2015
+201504030SAS,"Fri, Apr 3, 2015",SAS,DEN,San Antonio Spurs,Denver Nuggets,123,93,30,Home,95.3,True,2015
+201504050SAS,"Sun, Apr 5, 2015",SAS,GSW,San Antonio Spurs,Golden State Warriors,107,92,15,Home,94.0,True,2015
+201504070OKC,"Tue, Apr 7, 2015",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,88,113,-25,Home,96.4,True,2015
+201504120SAS,"Sun, Apr 12, 2015",SAS,PHO,San Antonio Spurs,Phoenix Suns,107,91,16,Home,90.7,True,2015
+201504150NOP,"Wed, Apr 15, 2015",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,108,103,5,Home,94.5,True,2015
+201504190LAC,"Sun, Apr 19, 2015",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,107,92,15,Home,97.2,True,2015
+201504220LAC,"Wed, Apr 22, 2015",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,107,111,-4,Home,90.9,True,2015
+201504240SAS,"Fri, Apr 24, 2015",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,100,73,27,Home,89.2,True,2015
+201504260SAS,"Sun, Apr 26, 2015",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,105,114,-9,Home,95.7,True,2015
+201504280LAC,"Tue, Apr 28, 2015",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,107,111,-4,Home,101.3,True,2015
+201504300SAS,"Thu, Apr 30, 2015",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,96,102,-6,Home,91.3,True,2015
+201505020LAC,"Sat, May 2, 2015",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,111,109,2,Home,92.6,True,2015
+201410290SAC,"Wed, Oct 29, 2014",SAC,GSW,Sacramento Kings,Golden State Warriors,77,95,-18,Home,101.8,True,2015
+201411020POR,"Sun, Nov 2, 2014",POR,GSW,Portland Trail Blazers,Golden State Warriors,90,95,-5,Home,98.0,True,2015
+201411050GSW,"Wed, Nov 5, 2014",GSW,LAC,Golden State Warriors,Los Angeles Clippers,121,104,17,Home,100.7,True,2015
+201411090PHO,"Sun, Nov 9, 2014",PHO,GSW,Phoenix Suns,Golden State Warriors,107,95,12,Home,101.4,True,2015
+201411130GSW,"Thu, Nov 13, 2014",GSW,BRK,Golden State Warriors,Brooklyn Nets,107,99,8,Home,96.1,True,2015
+201411150GSW,"Sat, Nov 15, 2014",GSW,CHO,Golden State Warriors,Charlotte Hornets,112,87,25,Home,95.5,True,2015
+201411230OKC,"Sun, Nov 23, 2014",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,86,91,-5,Home,96.6,True,2015
+201411260ORL,"Wed, Nov 26, 2014",ORL,GSW,Orlando Magic,Golden State Warriors,96,111,-15,Home,98.5,True,2015
+201411280CHO,"Fri, Nov 28, 2014",CHO,GSW,Charlotte Hornets,Golden State Warriors,101,106,-5,Home,98.4,True,2015
+201411300DET,"Sun, Nov 30, 2014",DET,GSW,Detroit Pistons,Golden State Warriors,93,104,-11,Home,95.9,True,2015
+201412020GSW,"Tue, Dec 2, 2014",GSW,ORL,Golden State Warriors,Orlando Magic,98,97,1,Home,92.4,True,2015
+201412040GSW,"Thu, Dec 4, 2014",GSW,NOP,Golden State Warriors,New Orleans Pelicans,112,85,27,Home,98.4,True,2015
+201412060CHI,"Sat, Dec 6, 2014",CHI,GSW,Chicago Bulls,Golden State Warriors,102,112,-10,Home,94.5,True,2015
+201412080MIN,"Mon, Dec 8, 2014",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,86,102,-16,Home,97.6,True,2015
+201412130DAL,"Sat, Dec 13, 2014",DAL,GSW,Dallas Mavericks,Golden State Warriors,98,105,-7,Home,97.4,True,2015
+201412140NOP,"Sun, Dec 14, 2014",NOP,GSW,New Orleans Pelicans,Golden State Warriors,122,128,-6,Home,99.7,True,2015
+201412160MEM,"Tue, Dec 16, 2014",MEM,GSW,Memphis Grizzlies,Golden State Warriors,105,98,7,Home,98.1,True,2015
+201412180GSW,"Thu, Dec 18, 2014",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,114,109,5,Home,98.1,True,2015
+201412220GSW,"Mon, Dec 22, 2014",GSW,SAC,Golden State Warriors,Sacramento Kings,128,108,20,Home,101.2,True,2015
+201412250LAC,"Thu, Dec 25, 2014",LAC,GSW,Los Angeles Clippers,Golden State Warriors,100,86,14,Home,97.8,True,2015
+201412270GSW,"Sat, Dec 27, 2014",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,110,97,13,Home,102.3,True,2015
+201501020GSW,"Fri, Jan 2, 2015",GSW,TOR,Golden State Warriors,Toronto Raptors,126,105,21,Home,94.5,True,2015
+201501050GSW,"Mon, Jan 5, 2015",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,117,91,26,Home,101.2,True,2015
+201501070GSW,"Wed, Jan 7, 2015",GSW,IND,Golden State Warriors,Indiana Pacers,117,102,15,Home,99.8,True,2015
+201501090GSW,"Fri, Jan 9, 2015",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,112,94,18,Home,94.5,True,2015
+201501160OKC,"Fri, Jan 16, 2015",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,127,115,12,Home,102.5,True,2015
+201501190GSW,"Mon, Jan 19, 2015",GSW,DEN,Golden State Warriors,Denver Nuggets,122,79,43,Home,99.5,True,2015
+201501230GSW,"Fri, Jan 23, 2015",GSW,SAC,Golden State Warriors,Sacramento Kings,126,101,25,Home,103.8,True,2015
+201501270GSW,"Tue, Jan 27, 2015",GSW,CHI,Golden State Warriors,Chicago Bulls,111,113,-2,Home,99.1,True,2015
+201501310GSW,"Sat, Jan 31, 2015",GSW,PHO,Golden State Warriors,Phoenix Suns,106,87,19,Home,99.3,True,2015
+201502030SAC,"Tue, Feb 3, 2015",SAC,GSW,Sacramento Kings,Golden State Warriors,96,121,-25,Home,98.0,True,2015
+201502040GSW,"Wed, Feb 4, 2015",GSW,DAL,Golden State Warriors,Dallas Mavericks,128,114,14,Home,98.8,True,2015
+201502060ATL,"Fri, Feb 6, 2015",ATL,GSW,Atlanta Hawks,Golden State Warriors,124,116,8,Home,100.8,True,2015
+201502070NYK,"Sat, Feb 7, 2015",NYK,GSW,New York Knicks,Golden State Warriors,92,106,-14,Home,90.6,True,2015
+201502110MIN,"Wed, Feb 11, 2015",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,91,94,-3,Home,97.0,True,2015
+201502220IND,"Sun, Feb 22, 2015",IND,GSW,Indiana Pacers,Golden State Warriors,104,98,6,Home,94.6,True,2015
+201502240WAS,"Tue, Feb 24, 2015",WAS,GSW,Washington Wizards,Golden State Warriors,107,114,-7,Home,102.0,True,2015
+201502260CLE,"Thu, Feb 26, 2015",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,110,99,11,Home,98.7,True,2015
+201502270TOR,"Fri, Feb 27, 2015",TOR,GSW,Toronto Raptors,Golden State Warriors,89,113,-24,Home,97.6,True,2015
+201503020BRK,"Mon, Mar 2, 2015",BRK,GSW,Brooklyn Nets,Golden State Warriors,110,108,2,Home,94.4,True,2015
+201503040GSW,"Wed, Mar 4, 2015",GSW,MIL,Golden State Warriors,Milwaukee Bucks,102,93,9,Home,95.2,True,2015
+201503060GSW,"Fri, Mar 6, 2015",GSW,DAL,Golden State Warriors,Dallas Mavericks,104,89,15,Home,102.4,True,2015
+201503080GSW,"Sun, Mar 8, 2015",GSW,LAC,Golden State Warriors,Los Angeles Clippers,106,98,8,Home,95.0,True,2015
+201503090PHO,"Mon, Mar 9, 2015",PHO,GSW,Phoenix Suns,Golden State Warriors,80,98,-18,Home,97.2,True,2015
+201503110GSW,"Wed, Mar 11, 2015",GSW,DET,Golden State Warriors,Detroit Pistons,105,98,7,Home,94.5,True,2015
+201503130DEN,"Fri, Mar 13, 2015",DEN,GSW,Denver Nuggets,Golden State Warriors,114,103,11,Home,96.7,True,2015
+201503140GSW,"Sat, Mar 14, 2015",GSW,NYK,Golden State Warriors,New York Knicks,125,94,31,Home,95.2,True,2015
+201503180GSW,"Wed, Mar 18, 2015",GSW,ATL,Golden State Warriors,Atlanta Hawks,114,95,19,Home,97.3,True,2015
+201503200GSW,"Fri, Mar 20, 2015",GSW,NOP,Golden State Warriors,New Orleans Pelicans,112,96,16,Home,94.8,True,2015
+201503230GSW,"Mon, Mar 23, 2015",GSW,WAS,Golden State Warriors,Washington Wizards,107,76,31,Home,94.4,True,2015
+201503240POR,"Tue, Mar 24, 2015",POR,GSW,Portland Trail Blazers,Golden State Warriors,108,122,-14,Home,94.8,True,2015
+201503270MEM,"Fri, Mar 27, 2015",MEM,GSW,Memphis Grizzlies,Golden State Warriors,84,107,-23,Home,92.7,True,2015
+201503280MIL,"Sat, Mar 28, 2015",MIL,GSW,Milwaukee Bucks,Golden State Warriors,95,108,-13,Home,99.6,True,2015
+201503310LAC,"Tue, Mar 31, 2015",LAC,GSW,Los Angeles Clippers,Golden State Warriors,106,110,-4,Home,95.0,True,2015
+201504020GSW,"Thu, Apr 2, 2015",GSW,PHO,Golden State Warriors,Phoenix Suns,107,106,1,Home,99.3,True,2015
+201504040DAL,"Sat, Apr 4, 2015",DAL,GSW,Dallas Mavericks,Golden State Warriors,110,123,-13,Home,105.3,True,2015
+201504070NOP,"Tue, Apr 7, 2015",NOP,GSW,New Orleans Pelicans,Golden State Warriors,103,100,3,Home,97.7,True,2015
+201504090GSW,"Thu, Apr 9, 2015",GSW,POR,Golden State Warriors,Portland Trail Blazers,116,105,11,Home,96.6,True,2015
+201504110GSW,"Sat, Apr 11, 2015",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,110,101,9,Home,96.8,True,2015
+201504130GSW,"Mon, Apr 13, 2015",GSW,MEM,Golden State Warriors,Memphis Grizzlies,111,107,4,Home,100.1,True,2015
+201504150GSW,"Wed, Apr 15, 2015",GSW,DEN,Golden State Warriors,Denver Nuggets,133,126,7,Home,105.3,True,2015
+201504180GSW,"Sat, Apr 18, 2015",GSW,NOP,Golden State Warriors,New Orleans Pelicans,106,99,7,Home,97.5,True,2015
+201504200GSW,"Mon, Apr 20, 2015",GSW,NOP,Golden State Warriors,New Orleans Pelicans,97,87,10,Home,91.2,True,2015
+201504230NOP,"Thu, Apr 23, 2015",NOP,GSW,New Orleans Pelicans,Golden State Warriors,119,123,-4,Home,90.5,True,2015
+201504250NOP,"Sat, Apr 25, 2015",NOP,GSW,New Orleans Pelicans,Golden State Warriors,98,109,-11,Home,87.2,True,2015
+201505030GSW,"Sun, May 3, 2015",GSW,MEM,Golden State Warriors,Memphis Grizzlies,101,86,15,Home,89.7,True,2015
+201505050GSW,"Tue, May 5, 2015",GSW,MEM,Golden State Warriors,Memphis Grizzlies,90,97,-7,Home,94.9,True,2015
+201505090MEM,"Sat, May 9, 2015",MEM,GSW,Memphis Grizzlies,Golden State Warriors,99,89,10,Home,91.9,True,2015
+201505110MEM,"Mon, May 11, 2015",MEM,GSW,Memphis Grizzlies,Golden State Warriors,84,101,-17,Home,94.3,True,2015
+201505130GSW,"Wed, May 13, 2015",GSW,MEM,Golden State Warriors,Memphis Grizzlies,98,78,20,Home,86.6,True,2015
+201505150MEM,"Fri, May 15, 2015",MEM,GSW,Memphis Grizzlies,Golden State Warriors,95,108,-13,Home,91.3,True,2015
+201506040GSW,"Thu, Jun 4, 2015",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,108,100,8,Home,87.3,True,2015
+201506070GSW,"Sun, Jun 7, 2015",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,93,95,-2,Home,91.0,True,2015
+201506090CLE,"Tue, Jun 9, 2015",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,96,91,5,Home,90.9,True,2015
+201506110CLE,"Thu, Jun 11, 2015",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,82,103,-21,Home,88.8,True,2015
+201506140GSW,"Sun, Jun 14, 2015",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,104,91,13,Home,89.7,True,2015
+201506160CLE,"Tue, Jun 16, 2015",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,97,105,-8,Home,96.9,True,2015
+201410290MEM,"Wed, Oct 29, 2014",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,105,101,4,Home,95.7,True,2015
+201410300MIN,"Thu, Oct 30, 2014",MIN,DET,Minnesota Timberwolves,Detroit Pistons,97,91,6,Home,90.3,True,2015
+201411010MIN,"Sat, Nov 1, 2014",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,105,106,-1,Home,93.3,True,2015
+201411050BRK,"Wed, Nov 5, 2014",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,91,98,-7,Home,96.8,True,2015
+201411070ORL,"Fri, Nov 7, 2014",ORL,MIN,Orlando Magic,Minnesota Timberwolves,112,103,9,Home,95.1,True,2015
+201411140NOP,"Fri, Nov 14, 2014",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,139,91,48,Home,99.3,True,2015
+201411150DAL,"Sat, Nov 15, 2014",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,131,117,14,Home,98.9,True,2015
+201411190MIN,"Wed, Nov 19, 2014",MIN,NYK,Minnesota Timberwolves,New York Knicks,115,99,16,Home,92.6,True,2015
+201411220MIN,"Sat, Nov 22, 2014",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,101,113,-12,Home,94.0,True,2015
+201411260MIN,"Wed, Nov 26, 2014",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,86,103,-17,Home,94.6,True,2015
+201411300POR,"Sun, Nov 30, 2014",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,107,93,14,Home,99.0,True,2015
+201412010LAC,"Mon, Dec 1, 2014",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,127,101,26,Home,99.6,True,2015
+201412100MIN,"Wed, Dec 10, 2014",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,90,82,8,Home,91.2,True,2015
+201412120MIN,"Fri, Dec 12, 2014",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,92,111,-19,Home,94.1,True,2015
+201412160WAS,"Tue, Dec 16, 2014",WAS,MIN,Washington Wizards,Minnesota Timberwolves,109,95,14,Home,92.2,True,2015
+201412210MIN,"Sun, Dec 21, 2014",MIN,IND,Minnesota Timberwolves,Indiana Pacers,96,100,-4,Home,93.0,True,2015
+201412230CLE,"Tue, Dec 23, 2014",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,125,104,21,Home,98.4,True,2015
+201412260DEN,"Fri, Dec 26, 2014",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,106,102,4,Home,101.4,True,2015
+201501010MIN,"Thu, Jan 1, 2015",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,107,110,-3,Home,95.8,True,2015
+201501050MIN,"Mon, Jan 5, 2015",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,101,110,-9,Home,91.5,True,2015
+201501070MIN,"Wed, Jan 7, 2015",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,111,113,-2,Home,99.5,True,2015
+201501090MIL,"Fri, Jan 9, 2015",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,98,84,14,Home,90.5,True,2015
+201501130IND,"Tue, Jan 13, 2015",IND,MIN,Indiana Pacers,Minnesota Timberwolves,101,110,-9,Home,98.8,True,2015
+201501160PHO,"Fri, Jan 16, 2015",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,110,99,11,Home,90.6,True,2015
+201501170DEN,"Sat, Jan 17, 2015",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,105,113,-8,Home,94.6,True,2015
+201501190CHO,"Mon, Jan 19, 2015",CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,105,80,25,Home,93.3,True,2015
+201501210MIN,"Wed, Jan 21, 2015",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,75,98,-23,Home,85.2,True,2015
+201501230MIN,"Fri, Jan 23, 2015",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,84,92,-8,Home,91.6,True,2015
+201501250ATL,"Sun, Jan 25, 2015",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,112,100,12,Home,84.9,True,2015
+201501260OKC,"Mon, Jan 26, 2015",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,92,84,8,Home,94.6,True,2015
+201501310MIN,"Sat, Jan 31, 2015",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,90,106,-16,Home,87.7,True,2015
+201502020DAL,"Mon, Feb 2, 2015",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,100,94,6,Home,91.3,True,2015
+201502060MIN,"Fri, Feb 6, 2015",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,90,89,1,Home,90.9,True,2015
+201502080DET,"Sun, Feb 8, 2015",DET,MIN,Detroit Pistons,Minnesota Timberwolves,101,112,-11,Home,91.9,True,2015
+201502090MIN,"Mon, Feb 9, 2015",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,105,117,-12,Home,92.0,True,2015
+201502200MIN,"Fri, Feb 20, 2015",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,111,109,2,Home,97.3,True,2015
+201502250MIN,"Wed, Feb 25, 2015",MIN,WAS,Minnesota Timberwolves,Washington Wizards,97,77,20,Home,97.5,True,2015
+201502270CHI,"Fri, Feb 27, 2015",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,96,89,7,Home,88.0,True,2015
+201502280MIN,"Sat, Feb 28, 2015",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,97,101,-4,Home,93.1,True,2015
+201503020MIN,"Mon, Mar 2, 2015",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,105,110,-5,Home,99.3,True,2015
+201503040MIN,"Wed, Mar 4, 2015",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,85,100,-15,Home,91.6,True,2015
+201503070MIN,"Sat, Mar 7, 2015",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,121,113,8,Home,93.5,True,2015
+201503090LAC,"Mon, Mar 9, 2015",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,89,76,13,Home,91.3,True,2015
+201503110PHO,"Wed, Mar 11, 2015",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,106,97,9,Home,89.1,True,2015
+201503130OKC,"Fri, Mar 13, 2015",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,113,99,14,Home,97.1,True,2015
+201503160MIN,"Mon, Mar 16, 2015",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,106,122,-16,Home,95.9,True,2015
+201503180TOR,"Wed, Mar 18, 2015",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,105,100,5,Home,95.1,True,2015
+201503190NYK,"Thu, Mar 19, 2015",NYK,MIN,New York Knicks,Minnesota Timberwolves,92,95,-3,Home,89.8,True,2015
+201503220MIN,"Sun, Mar 22, 2015",MIN,CHO,Minnesota Timberwolves,Charlotte Hornets,98,109,-11,Home,89.0,True,2015
+201503290NOP,"Sun, Mar 29, 2015",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,110,88,22,Home,91.7,True,2015
+201504010MIN,"Wed, Apr 1, 2015",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,99,113,-14,Home,88.9,True,2015
+201504030MIN,"Fri, Apr 3, 2015",MIN,ORL,Minnesota Timberwolves,Orlando Magic,84,97,-13,Home,93.9,True,2015
+201504070SAC,"Tue, Apr 7, 2015",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,116,111,5,Home,97.8,True,2015
+201504080POR,"Wed, Apr 8, 2015",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,116,91,25,Home,95.4,True,2015
+201504130MIN,"Mon, Apr 13, 2015",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,88,100,-12,Home,90.4,True,2015
+201504150MIN,"Wed, Apr 15, 2015",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,113,138,-25,Home,99.5,True,2015
+201410290POR,"Wed, Oct 29, 2014",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,106,89,17,Home,88.8,True,2015
+201410300LAC,"Thu, Oct 30, 2014",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,93,90,3,Home,90.9,True,2015
+201411010OKC,"Sat, Nov 1, 2014",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,102,91,11,Home,95.6,True,2015
+201411030BRK,"Mon, Nov 3, 2014",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,116,85,31,Home,90.1,True,2015
+201411040TOR,"Tue, Nov 4, 2014",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,100,88,12,Home,89.4,True,2015
+201411070OKC,"Fri, Nov 7, 2014",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,89,91,-2,Home,87.1,True,2015
+201411090OKC,"Sun, Nov 9, 2014",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,101,93,8,Home,88.9,True,2015
+201411110MIL,"Tue, Nov 11, 2014",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,85,78,7,Home,92.4,True,2015
+201411140OKC,"Fri, Nov 14, 2014",OKC,DET,Oklahoma City Thunder,Detroit Pistons,89,96,-7,Home,88.1,True,2015
+201411190DEN,"Wed, Nov 19, 2014",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,107,100,7,Home,84.8,True,2015
+201411210OKC,"Fri, Nov 21, 2014",OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,92,94,-2,Home,87.5,True,2015
+201411280OKC,"Fri, Nov 28, 2014",OKC,NYK,Oklahoma City Thunder,New York Knicks,105,78,27,Home,88.6,True,2015
+201412020NOP,"Tue, Dec 2, 2014",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,112,104,8,Home,101.9,True,2015
+201412070DET,"Sun, Dec 7, 2014",DET,OKC,Detroit Pistons,Oklahoma City Thunder,94,96,-2,Home,91.0,True,2015
+201412090OKC,"Tue, Dec 9, 2014",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,114,101,13,Home,99.9,True,2015
+201412110OKC,"Thu, Dec 11, 2014",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,103,94,9,Home,93.7,True,2015
+201412140OKC,"Sun, Dec 14, 2014",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,112,88,24,Home,98.5,True,2015
+201412160SAC,"Tue, Dec 16, 2014",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,92,104,-12,Home,93.0,True,2015
+201412210OKC,"Sun, Dec 21, 2014",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,99,101,-2,Home,91.1,True,2015
+201412230OKC,"Tue, Dec 23, 2014",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,111,115,-4,Home,93.7,True,2015
+201412260OKC,"Fri, Dec 26, 2014",OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,98,75,23,Home,94.2,True,2015
+201412280DAL,"Sun, Dec 28, 2014",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,112,107,5,Home,102.2,True,2015
+201412310OKC,"Wed, Dec 31, 2014",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,137,134,3,Home,97.7,True,2015
+201501020OKC,"Fri, Jan 2, 2015",OKC,WAS,Oklahoma City Thunder,Washington Wizards,109,102,7,Home,94.6,True,2015
+201501070SAC,"Wed, Jan 7, 2015",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,104,83,21,Home,104.3,True,2015
+201501180ORL,"Sun, Jan 18, 2015",ORL,OKC,Orlando Magic,Oklahoma City Thunder,99,127,-28,Home,105.4,True,2015
+201501210WAS,"Wed, Jan 21, 2015",WAS,OKC,Washington Wizards,Oklahoma City Thunder,103,105,-2,Home,96.4,True,2015
+201501230ATL,"Fri, Jan 23, 2015",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,103,93,10,Home,93.1,True,2015
+201501250CLE,"Sun, Jan 25, 2015",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,108,98,10,Home,94.1,True,2015
+201501280NYK,"Wed, Jan 28, 2015",NYK,OKC,New York Knicks,Oklahoma City Thunder,100,92,8,Home,95.6,True,2015
+201501310MEM,"Sat, Jan 31, 2015",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,85,74,11,Home,87.3,True,2015
+201502020OKC,"Mon, Feb 2, 2015",OKC,ORL,Oklahoma City Thunder,Orlando Magic,104,97,7,Home,91.6,True,2015
+201502040NOP,"Wed, Feb 4, 2015",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,91,102,-11,Home,90.4,True,2015
+201502060OKC,"Fri, Feb 6, 2015",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,113,116,-3,Home,100.6,True,2015
+201502080OKC,"Sun, Feb 8, 2015",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,131,108,23,Home,97.8,True,2015
+201502090DEN,"Mon, Feb 9, 2015",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,114,124,-10,Home,95.5,True,2015
+201502110OKC,"Wed, Feb 11, 2015",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,105,89,16,Home,95.6,True,2015
+201502190OKC,"Thu, Feb 19, 2015",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,104,89,15,Home,98.3,True,2015
+201502210CHO,"Sat, Feb 21, 2015",CHO,OKC,Charlotte Hornets,Oklahoma City Thunder,103,110,-7,Home,97.6,True,2015
+201502220OKC,"Sun, Feb 22, 2015",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,119,94,25,Home,100.8,True,2015
+201502240OKC,"Tue, Feb 24, 2015",OKC,IND,Oklahoma City Thunder,Indiana Pacers,105,92,13,Home,96.3,True,2015
+201502260PHO,"Thu, Feb 26, 2015",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,117,113,4,Home,97.2,True,2015
+201502270POR,"Fri, Feb 27, 2015",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,115,112,3,Home,97.4,True,2015
+201503050CHI,"Thu, Mar 5, 2015",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,108,105,3,Home,94.7,True,2015
+201503080OKC,"Sun, Mar 8, 2015",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,108,104,4,Home,94.1,True,2015
+201503110OKC,"Wed, Mar 11, 2015",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,108,120,-12,Home,95.8,True,2015
+201503150OKC,"Sun, Mar 15, 2015",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,109,100,9,Home,93.8,True,2015
+201503160DAL,"Mon, Mar 16, 2015",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,119,115,4,Home,106.1,True,2015
+201503200OKC,"Fri, Mar 20, 2015",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,123,115,8,Home,95.0,True,2015
+201503290PHO,"Sun, Mar 29, 2015",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,97,109,-12,Home,99.9,True,2015
+201504010OKC,"Wed, Apr 1, 2015",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,131,135,-4,Home,100.7,True,2015
+201504030MEM,"Fri, Apr 3, 2015",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,100,92,8,Home,96.8,True,2015
+201504100OKC,"Fri, Apr 10, 2015",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,116,103,13,Home,94.4,True,2015
+201504120IND,"Sun, Apr 12, 2015",IND,OKC,Indiana Pacers,Oklahoma City Thunder,116,104,12,Home,97.3,True,2015
+201504130OKC,"Mon, Apr 13, 2015",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,101,90,11,Home,94.0,True,2015
+201410310IND,"Fri, Oct 31, 2014",IND,MEM,Indiana Pacers,Memphis Grizzlies,89,97,-8,Home,87.1,True,2015
+201411010CHO,"Sat, Nov 1, 2014",CHO,MEM,Charlotte Hornets,Memphis Grizzlies,69,71,-2,Home,93.1,True,2015
+201411030MEM,"Mon, Nov 3, 2014",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,93,81,12,Home,93.3,True,2015
+201411050PHO,"Wed, Nov 5, 2014",PHO,MEM,Phoenix Suns,Memphis Grizzlies,91,102,-11,Home,91.7,True,2015
+201411080MIL,"Sat, Nov 8, 2014",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,93,92,1,Home,88.4,True,2015
+201411130MEM,"Thu, Nov 13, 2014",MEM,SAC,Memphis Grizzlies,Sacramento Kings,111,110,1,Home,90.0,True,2015
+201411150MEM,"Sat, Nov 15, 2014",MEM,DET,Memphis Grizzlies,Detroit Pistons,95,88,7,Home,87.2,True,2015
+201411190TOR,"Wed, Nov 19, 2014",TOR,MEM,Toronto Raptors,Memphis Grizzlies,96,92,4,Home,87.4,True,2015
+201411230MEM,"Sun, Nov 23, 2014",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,107,91,16,Home,94.9,True,2015
+201411280POR,"Fri, Nov 28, 2014",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,99,112,-13,Home,94.1,True,2015
+201411300SAC,"Sun, Nov 30, 2014",SAC,MEM,Sacramento Kings,Memphis Grizzlies,85,97,-12,Home,92.1,True,2015
+201412090MEM,"Tue, Dec 9, 2014",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,114,105,9,Home,90.2,True,2015
+201412120MEM,"Fri, Dec 12, 2014",MEM,CHO,Memphis Grizzlies,Charlotte Hornets,113,107,6,Home,91.0,True,2015
+201412190MEM,"Fri, Dec 19, 2014",MEM,CHI,Memphis Grizzlies,Chicago Bulls,97,103,-6,Home,89.4,True,2015
+201412210CLE,"Sun, Dec 21, 2014",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,105,91,14,Home,88.0,True,2015
+201501030DEN,"Sat, Jan 3, 2015",DEN,MEM,Denver Nuggets,Memphis Grizzlies,114,85,29,Home,95.0,True,2015
+201501050MEM,"Mon, Jan 5, 2015",MEM,NYK,Memphis Grizzlies,New York Knicks,105,83,22,Home,94.4,True,2015
+201501070ATL,"Wed, Jan 7, 2015",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,96,86,10,Home,91.8,True,2015
+201501090NOP,"Fri, Jan 9, 2015",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,106,95,11,Home,87.3,True,2015
+201501110MEM,"Sun, Jan 11, 2015",MEM,PHO,Memphis Grizzlies,Phoenix Suns,122,110,12,Home,99.0,True,2015
+201501140BRK,"Wed, Jan 14, 2015",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,92,103,-11,Home,89.4,True,2015
+201501160ORL,"Fri, Jan 16, 2015",ORL,MEM,Orlando Magic,Memphis Grizzlies,96,106,-10,Home,97.9,True,2015
+201501170MEM,"Sat, Jan 17, 2015",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,102,98,4,Home,88.6,True,2015
+201501190MEM,"Mon, Jan 19, 2015",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,95,103,-8,Home,92.5,True,2015
+201501210MEM,"Wed, Jan 21, 2015",MEM,TOR,Memphis Grizzlies,Toronto Raptors,92,86,6,Home,88.7,True,2015
+201501260MEM,"Mon, Jan 26, 2015",MEM,ORL,Memphis Grizzlies,Orlando Magic,103,94,9,Home,92.9,True,2015
+201501270DAL,"Tue, Jan 27, 2015",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,90,109,-19,Home,89.7,True,2015
+201501290MEM,"Thu, Jan 29, 2015",MEM,DEN,Memphis Grizzlies,Denver Nuggets,99,69,30,Home,94.8,True,2015
+201502020PHO,"Mon, Feb 2, 2015",PHO,MEM,Phoenix Suns,Memphis Grizzlies,101,102,-1,Home,93.5,True,2015
+201502080MEM,"Sun, Feb 8, 2015",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,94,88,6,Home,93.1,True,2015
+201502100MEM,"Tue, Feb 10, 2015",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,95,86,9,Home,91.5,True,2015
+201502220POR,"Sun, Feb 22, 2015",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,92,98,-6,Home,92.7,True,2015
+201502230LAC,"Mon, Feb 23, 2015",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,87,90,-3,Home,91.3,True,2015
+201502250SAC,"Wed, Feb 25, 2015",SAC,MEM,Sacramento Kings,Memphis Grizzlies,102,90,12,Home,94.6,True,2015
+201502270MEM,"Fri, Feb 27, 2015",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,79,97,-18,Home,91.9,True,2015
+201503070NOP,"Sat, Mar 7, 2015",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,95,89,6,Home,93.0,True,2015
+201503090CHI,"Mon, Mar 9, 2015",CHI,MEM,Chicago Bulls,Memphis Grizzlies,91,101,-10,Home,92.3,True,2015
+201503120WAS,"Thu, Mar 12, 2015",WAS,MEM,Washington Wizards,Memphis Grizzlies,107,87,20,Home,95.4,True,2015
+201503140MEM,"Sat, Mar 14, 2015",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,96,83,13,Home,88.4,True,2015
+201503160MEM,"Mon, Mar 16, 2015",MEM,DEN,Memphis Grizzlies,Denver Nuggets,92,81,11,Home,90.8,True,2015
+201503170DET,"Tue, Mar 17, 2015",DET,MEM,Detroit Pistons,Memphis Grizzlies,105,95,10,Home,89.9,True,2015
+201503200DAL,"Fri, Mar 20, 2015",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,101,112,-11,Home,98.1,True,2015
+201503210MEM,"Sat, Mar 21, 2015",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,97,86,11,Home,93.1,True,2015
+201503230NYK,"Mon, Mar 23, 2015",NYK,MEM,New York Knicks,Memphis Grizzlies,82,103,-21,Home,88.4,True,2015
+201503250MEM,"Wed, Mar 25, 2015",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,89,111,-22,Home,91.3,True,2015
+201503300MEM,"Mon, Mar 30, 2015",MEM,SAC,Memphis Grizzlies,Sacramento Kings,97,83,14,Home,86.9,True,2015
+201504040MEM,"Sat, Apr 4, 2015",MEM,WAS,Memphis Grizzlies,Washington Wizards,83,92,-9,Home,91.9,True,2015
+201504080MEM,"Wed, Apr 8, 2015",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,110,74,36,Home,85.9,True,2015
+201504110LAC,"Sat, Apr 11, 2015",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,94,86,8,Home,93.4,True,2015
+201504150MEM,"Wed, Apr 15, 2015",MEM,IND,Memphis Grizzlies,Indiana Pacers,95,83,12,Home,81.3,True,2015
+201504190MEM,"Sun, Apr 19, 2015",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,100,86,14,Home,97.0,True,2015
+201504220MEM,"Wed, Apr 22, 2015",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,97,82,15,Home,83.9,True,2015
+201504250POR,"Sat, Apr 25, 2015",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,109,115,-6,Home,92.2,True,2015
+201504270POR,"Mon, Apr 27, 2015",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,99,92,7,Home,88.9,True,2015
+201504290MEM,"Wed, Apr 29, 2015",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,99,93,6,Home,95.3,True,2015
+201411010NOP,"Sat, Nov 1, 2014",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,104,109,-5,Home,97.0,True,2015
+201411060POR,"Thu, Nov 6, 2014",POR,DAL,Portland Trail Blazers,Dallas Mavericks,108,87,21,Home,91.3,True,2015
+201411110DAL,"Tue, Nov 11, 2014",DAL,SAC,Dallas Mavericks,Sacramento Kings,106,98,8,Home,90.5,True,2015
+201411170CHO,"Mon, Nov 17, 2014",CHO,DAL,Charlotte Hornets,Dallas Mavericks,80,107,-27,Home,87.2,True,2015
+201411190WAS,"Wed, Nov 19, 2014",WAS,DAL,Washington Wizards,Dallas Mavericks,102,105,-3,Home,94.3,True,2015
+201411240DAL,"Mon, Nov 24, 2014",DAL,IND,Dallas Mavericks,Indiana Pacers,100,111,-11,Home,94.5,True,2015
+201411260DAL,"Wed, Nov 26, 2014",DAL,NYK,Dallas Mavericks,New York Knicks,109,102,7,Home,91.9,True,2015
+201411280TOR,"Fri, Nov 28, 2014",TOR,DAL,Toronto Raptors,Dallas Mavericks,102,106,-4,Home,96.1,True,2015
+201412020CHI,"Tue, Dec 2, 2014",CHI,DAL,Chicago Bulls,Dallas Mavericks,129,132,-3,Home,94.6,True,2015
+201412030MIL,"Wed, Dec 3, 2014",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,105,107,-2,Home,96.8,True,2015
+201412050DAL,"Fri, Dec 5, 2014",DAL,PHO,Dallas Mavericks,Phoenix Suns,106,118,-12,Home,93.4,True,2015
+201412070DAL,"Sun, Dec 7, 2014",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,125,102,23,Home,94.3,True,2015
+201412100DAL,"Wed, Dec 10, 2014",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,112,107,5,Home,89.9,True,2015
+201412160NYK,"Tue, Dec 16, 2014",NYK,DAL,New York Knicks,Dallas Mavericks,87,107,-20,Home,89.2,True,2015
+201412170DET,"Wed, Dec 17, 2014",DET,DAL,Detroit Pistons,Dallas Mavericks,106,117,-11,Home,97.0,True,2015
+201412220DAL,"Mon, Dec 22, 2014",DAL,ATL,Dallas Mavericks,Atlanta Hawks,102,105,-3,Home,100.5,True,2015
+201412230PHO,"Tue, Dec 23, 2014",PHO,DAL,Phoenix Suns,Dallas Mavericks,124,115,9,Home,104.6,True,2015
+201412300DAL,"Tue, Dec 30, 2014",DAL,WAS,Dallas Mavericks,Washington Wizards,114,87,27,Home,96.8,True,2015
+201501040CLE,"Sun, Jan 4, 2015",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,90,109,-19,Home,88.7,True,2015
+201501050BRK,"Mon, Jan 5, 2015",BRK,DAL,Brooklyn Nets,Dallas Mavericks,88,96,-8,Home,88.6,True,2015
+201501070DAL,"Wed, Jan 7, 2015",DAL,DET,Dallas Mavericks,Detroit Pistons,95,108,-13,Home,98.3,True,2015
+201501100LAC,"Sat, Jan 10, 2015",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,120,100,20,Home,95.7,True,2015
+201501130SAC,"Tue, Jan 13, 2015",SAC,DAL,Sacramento Kings,Dallas Mavericks,104,108,-4,Home,96.2,True,2015
+201501140DEN,"Wed, Jan 14, 2015",DEN,DAL,Denver Nuggets,Dallas Mavericks,114,107,7,Home,101.7,True,2015
+201501160DAL,"Fri, Jan 16, 2015",DAL,DEN,Dallas Mavericks,Denver Nuggets,97,89,8,Home,95.1,True,2015
+201501230DAL,"Fri, Jan 23, 2015",DAL,CHI,Dallas Mavericks,Chicago Bulls,98,102,-4,Home,89.9,True,2015
+201501250NOP,"Sun, Jan 25, 2015",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,109,106,3,Home,85.7,True,2015
+201501310ORL,"Sat, Jan 31, 2015",ORL,DAL,Orlando Magic,Dallas Mavericks,93,108,-15,Home,91.2,True,2015
+201502050SAC,"Thu, Feb 5, 2015",SAC,DAL,Sacramento Kings,Dallas Mavericks,78,101,-23,Home,98.2,True,2015
+201502070DAL,"Sat, Feb 7, 2015",DAL,POR,Dallas Mavericks,Portland Trail Blazers,111,101,10,Home,93.8,True,2015
+201502090DAL,"Mon, Feb 9, 2015",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,98,115,-17,Home,90.8,True,2015
+201502220DAL,"Sun, Feb 22, 2015",DAL,CHO,Dallas Mavericks,Charlotte Hornets,92,81,11,Home,94.5,True,2015
+201502240DAL,"Tue, Feb 24, 2015",DAL,TOR,Dallas Mavericks,Toronto Raptors,99,92,7,Home,96.8,True,2015
+201502250ATL,"Wed, Feb 25, 2015",ATL,DAL,Atlanta Hawks,Dallas Mavericks,104,87,17,Home,89.0,True,2015
+201502280DAL,"Sat, Feb 28, 2015",DAL,BRK,Dallas Mavericks,Brooklyn Nets,94,104,-10,Home,90.3,True,2015
+201503020DAL,"Mon, Mar 2, 2015",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,102,93,9,Home,82.3,True,2015
+201503050POR,"Thu, Mar 5, 2015",POR,DAL,Portland Trail Blazers,Dallas Mavericks,94,75,19,Home,97.3,True,2015
+201503100DAL,"Tue, Mar 10, 2015",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,94,127,-33,Home,96.1,True,2015
+201503130DAL,"Fri, Mar 13, 2015",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,129,99,30,Home,91.4,True,2015
+201503180DAL,"Wed, Mar 18, 2015",DAL,ORL,Dallas Mavericks,Orlando Magic,107,102,5,Home,99.0,True,2015
+201503220PHO,"Sun, Mar 22, 2015",PHO,DAL,Phoenix Suns,Dallas Mavericks,98,92,6,Home,96.7,True,2015
+201503290IND,"Sun, Mar 29, 2015",IND,DAL,Indiana Pacers,Dallas Mavericks,104,99,5,Home,98.2,True,2015
+201504080DAL,"Wed, Apr 8, 2015",DAL,PHO,Dallas Mavericks,Phoenix Suns,107,104,3,Home,91.6,True,2015
+201504100DEN,"Fri, Apr 10, 2015",DEN,DAL,Denver Nuggets,Dallas Mavericks,143,144,-1,Home,99.3,True,2015
+201504150DAL,"Wed, Apr 15, 2015",DAL,POR,Dallas Mavericks,Portland Trail Blazers,114,98,16,Home,102.4,True,2015
+201410290NYK,"Wed, Oct 29, 2014",NYK,CHI,New York Knicks,Chicago Bulls,80,104,-24,Home,87.0,True,2015
+201410300CLE,"Thu, Oct 30, 2014",CLE,NYK,Cleveland Cavaliers,New York Knicks,90,95,-5,Home,83.1,True,2015
+201411020NYK,"Sun, Nov 2, 2014",NYK,CHO,New York Knicks,Charlotte Hornets,96,93,3,Home,86.3,True,2015
+201411040NYK,"Tue, Nov 4, 2014",NYK,WAS,New York Knicks,Washington Wizards,83,98,-15,Home,88.4,True,2015
+201411050DET,"Wed, Nov 5, 2014",DET,NYK,Detroit Pistons,New York Knicks,98,95,3,Home,88.3,True,2015
+201411070BRK,"Fri, Nov 7, 2014",BRK,NYK,Brooklyn Nets,New York Knicks,110,99,11,Home,94.0,True,2015
+201411080ATL,"Sat, Nov 8, 2014",ATL,NYK,Atlanta Hawks,New York Knicks,103,96,7,Home,88.9,True,2015
+201411100NYK,"Mon, Nov 10, 2014",NYK,ATL,New York Knicks,Atlanta Hawks,85,91,-6,Home,87.5,True,2015
+201411120NYK,"Wed, Nov 12, 2014",NYK,ORL,New York Knicks,Orlando Magic,95,97,-2,Home,86.7,True,2015
+201411160NYK,"Sun, Nov 16, 2014",NYK,DEN,New York Knicks,Denver Nuggets,109,93,16,Home,95.6,True,2015
+201411180MIL,"Tue, Nov 18, 2014",MIL,NYK,Milwaukee Bucks,New York Knicks,117,113,4,Home,87.3,True,2015
+201412020NYK,"Tue, Dec 2, 2014",NYK,BRK,New York Knicks,Brooklyn Nets,93,98,-5,Home,86.3,True,2015
+201412040NYK,"Thu, Dec 4, 2014",NYK,CLE,New York Knicks,Cleveland Cavaliers,87,90,-3,Home,90.5,True,2015
+201412050CHO,"Fri, Dec 5, 2014",CHO,NYK,Charlotte Hornets,New York Knicks,103,102,1,Home,89.3,True,2015
+201412070NYK,"Sun, Dec 7, 2014",NYK,POR,New York Knicks,Portland Trail Blazers,99,103,-4,Home,90.5,True,2015
+201412090NOP,"Tue, Dec 9, 2014",NOP,NYK,New Orleans Pelicans,New York Knicks,104,93,11,Home,88.1,True,2015
+201412140NYK,"Sun, Dec 14, 2014",NYK,TOR,New York Knicks,Toronto Raptors,90,95,-5,Home,88.4,True,2015
+201412180CHI,"Thu, Dec 18, 2014",CHI,NYK,Chicago Bulls,New York Knicks,103,97,6,Home,86.0,True,2015
+201412200NYK,"Sat, Dec 20, 2014",NYK,PHO,New York Knicks,Phoenix Suns,90,99,-9,Home,87.9,True,2015
+201412210TOR,"Sun, Dec 21, 2014",TOR,NYK,Toronto Raptors,New York Knicks,118,108,10,Home,90.5,True,2015
+201412250NYK,"Thu, Dec 25, 2014",NYK,WAS,New York Knicks,Washington Wizards,91,102,-11,Home,86.8,True,2015
+201412270SAC,"Sat, Dec 27, 2014",SAC,NYK,Sacramento Kings,New York Knicks,135,129,6,Home,96.8,True,2015
+201412280POR,"Sun, Dec 28, 2014",POR,NYK,Portland Trail Blazers,New York Knicks,101,79,22,Home,90.6,True,2015
+201412310LAC,"Wed, Dec 31, 2014",LAC,NYK,Los Angeles Clippers,New York Knicks,99,78,21,Home,91.5,True,2015
+201501020NYK,"Fri, Jan 2, 2015",NYK,DET,New York Knicks,Detroit Pistons,81,97,-16,Home,88.5,True,2015
+201501040NYK,"Sun, Jan 4, 2015",NYK,MIL,New York Knicks,Milwaukee Bucks,82,95,-13,Home,90.3,True,2015
+201501070WAS,"Wed, Jan 7, 2015",WAS,NYK,Washington Wizards,New York Knicks,101,91,10,Home,91.7,True,2015
+201501100NYK,"Sat, Jan 10, 2015",NYK,CHO,New York Knicks,Charlotte Hornets,82,110,-28,Home,94.5,True,2015
+201501150MIL,"Thu, Jan 15, 2015",MIL,NYK,Milwaukee Bucks,New York Knicks,95,79,16,Home,90.0,True,2015
+201501190NYK,"Mon, Jan 19, 2015",NYK,NOP,New York Knicks,New Orleans Pelicans,99,92,7,Home,78.3,True,2015
+201501230NYK,"Fri, Jan 23, 2015",NYK,ORL,New York Knicks,Orlando Magic,113,106,7,Home,99.7,True,2015
+201501240CHO,"Sat, Jan 24, 2015",CHO,NYK,Charlotte Hornets,New York Knicks,76,71,5,Home,86.1,True,2015
+201501290IND,"Thu, Jan 29, 2015",IND,NYK,Indiana Pacers,New York Knicks,103,82,21,Home,89.0,True,2015
+201502060BRK,"Fri, Feb 6, 2015",BRK,NYK,Brooklyn Nets,New York Knicks,92,88,4,Home,85.8,True,2015
+201502110ORL,"Wed, Feb 11, 2015",ORL,NYK,Orlando Magic,New York Knicks,89,83,6,Home,88.7,True,2015
+201502220NYK,"Sun, Feb 22, 2015",NYK,CLE,New York Knicks,Cleveland Cavaliers,83,101,-18,Home,91.9,True,2015
+201502270DET,"Fri, Feb 27, 2015",DET,NYK,Detroit Pistons,New York Knicks,115,121,-6,Home,90.1,True,2015
+201502280NYK,"Sat, Feb 28, 2015",NYK,TOR,New York Knicks,Toronto Raptors,103,98,5,Home,92.5,True,2015
+201503030NYK,"Tue, Mar 3, 2015",NYK,SAC,New York Knicks,Sacramento Kings,86,124,-38,Home,100.2,True,2015
+201503040IND,"Wed, Mar 4, 2015",IND,NYK,Indiana Pacers,New York Knicks,105,82,23,Home,91.8,True,2015
+201503070NYK,"Sat, Mar 7, 2015",NYK,IND,New York Knicks,Indiana Pacers,86,92,-6,Home,86.9,True,2015
+201503090DEN,"Mon, Mar 9, 2015",DEN,NYK,Denver Nuggets,New York Knicks,106,78,28,Home,91.4,True,2015
+201503150PHO,"Sun, Mar 15, 2015",PHO,NYK,Phoenix Suns,New York Knicks,102,89,13,Home,91.2,True,2015
+201503220TOR,"Sun, Mar 22, 2015",TOR,NYK,Toronto Raptors,New York Knicks,106,89,17,Home,90.9,True,2015
+201503250NYK,"Wed, Mar 25, 2015",NYK,LAC,New York Knicks,Los Angeles Clippers,80,111,-31,Home,96.6,True,2015
+201503280CHI,"Sat, Mar 28, 2015",CHI,NYK,Chicago Bulls,New York Knicks,111,80,31,Home,90.4,True,2015
+201504010NYK,"Wed, Apr 1, 2015",NYK,BRK,New York Knicks,Brooklyn Nets,98,100,-2,Home,88.0,True,2015
+201504030WAS,"Fri, Apr 3, 2015",WAS,NYK,Washington Wizards,New York Knicks,101,87,14,Home,93.1,True,2015
+201504080NYK,"Wed, Apr 8, 2015",NYK,IND,New York Knicks,Indiana Pacers,86,102,-16,Home,93.6,True,2015
+201504100NYK,"Fri, Apr 10, 2015",NYK,MIL,New York Knicks,Milwaukee Bucks,91,99,-8,Home,99.5,True,2015
+201504110ORL,"Sat, Apr 11, 2015",ORL,NYK,Orlando Magic,New York Knicks,79,80,-1,Home,90.2,True,2015
+201504130ATL,"Mon, Apr 13, 2015",ATL,NYK,Atlanta Hawks,New York Knicks,108,112,-4,Home,91.1,True,2015
+201504150NYK,"Wed, Apr 15, 2015",NYK,DET,New York Knicks,Detroit Pistons,90,112,-22,Home,93.5,True,2015
+201410310SAC,"Fri, Oct 31, 2014",SAC,POR,Sacramento Kings,Portland Trail Blazers,103,94,9,Home,88.6,True,2015
+201411020LAC,"Sun, Nov 2, 2014",LAC,SAC,Los Angeles Clippers,Sacramento Kings,92,98,-6,Home,90.6,True,2015
+201411030DEN,"Mon, Nov 3, 2014",DEN,SAC,Denver Nuggets,Sacramento Kings,105,110,-5,Home,100.4,True,2015
+201411050SAC,"Wed, Nov 5, 2014",SAC,DEN,Sacramento Kings,Denver Nuggets,131,109,22,Home,99.5,True,2015
+201411070PHO,"Fri, Nov 7, 2014",PHO,SAC,Phoenix Suns,Sacramento Kings,112,114,-2,Home,89.5,True,2015
+201411180SAC,"Tue, Nov 18, 2014",SAC,NOP,Sacramento Kings,New Orleans Pelicans,100,106,-6,Home,91.7,True,2015
+201411200SAC,"Thu, Nov 20, 2014",SAC,CHI,Sacramento Kings,Chicago Bulls,103,88,15,Home,90.1,True,2015
+201411250NOP,"Tue, Nov 25, 2014",NOP,SAC,New Orleans Pelicans,Sacramento Kings,89,99,-10,Home,85.9,True,2015
+201412020SAC,"Tue, Dec 2, 2014",SAC,TOR,Sacramento Kings,Toronto Raptors,109,117,-8,Home,90.9,True,2015
+201412050SAC,"Fri, Dec 5, 2014",SAC,IND,Sacramento Kings,Indiana Pacers,102,101,1,Home,92.4,True,2015
+201412060SAC,"Sat, Dec 6, 2014",SAC,ORL,Sacramento Kings,Orlando Magic,96,105,-9,Home,88.4,True,2015
+201412130SAC,"Sat, Dec 13, 2014",SAC,DET,Sacramento Kings,Detroit Pistons,90,95,-5,Home,91.9,True,2015
+201412180SAC,"Thu, Dec 18, 2014",SAC,MIL,Sacramento Kings,Milwaukee Bucks,107,108,-1,Home,96.3,True,2015
+201412260SAC,"Fri, Dec 26, 2014",SAC,PHO,Sacramento Kings,Phoenix Suns,106,115,-9,Home,94.3,True,2015
+201412290BRK,"Mon, Dec 29, 2014",BRK,SAC,Brooklyn Nets,Sacramento Kings,107,99,8,Home,91.6,True,2015
+201501040DET,"Sun, Jan 4, 2015",DET,SAC,Detroit Pistons,Sacramento Kings,114,95,19,Home,100.4,True,2015
+201501090SAC,"Fri, Jan 9, 2015",SAC,DEN,Sacramento Kings,Denver Nuggets,108,118,-10,Home,95.9,True,2015
+201501110SAC,"Sun, Jan 11, 2015",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,103,84,19,Home,89.6,True,2015
+201501170SAC,"Sat, Jan 17, 2015",SAC,LAC,Sacramento Kings,Los Angeles Clippers,108,117,-9,Home,93.8,True,2015
+201501190POR,"Mon, Jan 19, 2015",POR,SAC,Portland Trail Blazers,Sacramento Kings,98,94,4,Home,98.5,True,2015
+201501210SAC,"Wed, Jan 21, 2015",SAC,BRK,Sacramento Kings,Brooklyn Nets,100,103,-3,Home,95.4,True,2015
+201501280TOR,"Wed, Jan 28, 2015",TOR,SAC,Toronto Raptors,Sacramento Kings,119,102,17,Home,94.3,True,2015
+201501300CLE,"Fri, Jan 30, 2015",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,101,90,11,Home,97.7,True,2015
+201501310IND,"Sat, Jan 31, 2015",IND,SAC,Indiana Pacers,Sacramento Kings,94,99,-5,Home,93.3,True,2015
+201502080SAC,"Sun, Feb 8, 2015",SAC,PHO,Sacramento Kings,Phoenix Suns,85,83,2,Home,93.8,True,2015
+201502100CHI,"Tue, Feb 10, 2015",CHI,SAC,Chicago Bulls,Sacramento Kings,104,86,18,Home,86.4,True,2015
+201502110MIL,"Wed, Feb 11, 2015",MIL,SAC,Milwaukee Bucks,Sacramento Kings,111,103,8,Home,97.1,True,2015
+201502210LAC,"Sat, Feb 21, 2015",LAC,SAC,Los Angeles Clippers,Sacramento Kings,126,99,27,Home,107.1,True,2015
+201503010SAC,"Sun, Mar 1, 2015",SAC,POR,Sacramento Kings,Portland Trail Blazers,99,110,-11,Home,96.4,True,2015
+201503060ORL,"Fri, Mar 6, 2015",ORL,SAC,Orlando Magic,Sacramento Kings,119,114,5,Home,92.1,True,2015
+201503090ATL,"Mon, Mar 9, 2015",ATL,SAC,Atlanta Hawks,Sacramento Kings,130,105,25,Home,89.7,True,2015
+201503110CHO,"Wed, Mar 11, 2015",CHO,SAC,Charlotte Hornets,Sacramento Kings,106,113,-7,Home,101.7,True,2015
+201503140WAS,"Sat, Mar 14, 2015",WAS,SAC,Washington Wizards,Sacramento Kings,113,97,16,Home,91.4,True,2015
+201503160SAC,"Mon, Mar 16, 2015",SAC,ATL,Sacramento Kings,Atlanta Hawks,103,110,-7,Home,99.3,True,2015
+201503180SAC,"Wed, Mar 18, 2015",SAC,LAC,Sacramento Kings,Los Angeles Clippers,105,116,-11,Home,93.4,True,2015
+201503200SAC,"Fri, Mar 20, 2015",SAC,CHO,Sacramento Kings,Charlotte Hornets,101,91,10,Home,99.0,True,2015
+201503220SAC,"Sun, Mar 22, 2015",SAC,WAS,Sacramento Kings,Washington Wizards,109,86,23,Home,94.9,True,2015
+201503250PHO,"Wed, Mar 25, 2015",PHO,SAC,Phoenix Suns,Sacramento Kings,99,108,-9,Home,100.4,True,2015
+201503270NOP,"Fri, Mar 27, 2015",NOP,SAC,New Orleans Pelicans,Sacramento Kings,102,88,14,Home,87.0,True,2015
+201504030SAC,"Fri, Apr 3, 2015",SAC,NOP,Sacramento Kings,New Orleans Pelicans,95,101,-6,Home,90.9,True,2015
+201504120DEN,"Sun, Apr 12, 2015",DEN,SAC,Denver Nuggets,Sacramento Kings,122,111,11,Home,102.9,True,2015
+201411080LAC,"Sat, Nov 8, 2014",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,106,102,4,Home,93.2,True,2015
+201411150LAC,"Sat, Nov 15, 2014",LAC,PHO,Los Angeles Clippers,Phoenix Suns,120,107,13,Home,100.6,True,2015
+201411170LAC,"Mon, Nov 17, 2014",LAC,CHI,Los Angeles Clippers,Chicago Bulls,89,105,-16,Home,90.1,True,2015
+201411190ORL,"Wed, Nov 19, 2014",ORL,LAC,Orlando Magic,Los Angeles Clippers,90,114,-24,Home,94.4,True,2015
+201411240CHO,"Mon, Nov 24, 2014",CHO,LAC,Charlotte Hornets,Los Angeles Clippers,92,113,-21,Home,88.9,True,2015
+201411260DET,"Wed, Nov 26, 2014",DET,LAC,Detroit Pistons,Los Angeles Clippers,98,104,-6,Home,89.4,True,2015
+201412030LAC,"Wed, Dec 3, 2014",LAC,ORL,Los Angeles Clippers,Orlando Magic,114,86,28,Home,98.2,True,2015
+201412060LAC,"Sat, Dec 6, 2014",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,120,100,20,Home,88.8,True,2015
+201412080LAC,"Mon, Dec 8, 2014",LAC,PHO,Los Angeles Clippers,Phoenix Suns,121,120,1,Home,96.7,True,2015
+201412100IND,"Wed, Dec 10, 2014",IND,LAC,Indiana Pacers,Los Angeles Clippers,96,103,-7,Home,94.5,True,2015
+201412120WAS,"Fri, Dec 12, 2014",WAS,LAC,Washington Wizards,Los Angeles Clippers,104,96,8,Home,91.2,True,2015
+201412130MIL,"Sat, Dec 13, 2014",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,111,106,5,Home,95.7,True,2015
+201412150LAC,"Mon, Dec 15, 2014",LAC,DET,Los Angeles Clippers,Detroit Pistons,113,91,22,Home,89.3,True,2015
+201412170LAC,"Wed, Dec 17, 2014",LAC,IND,Los Angeles Clippers,Indiana Pacers,102,100,2,Home,94.6,True,2015
+201412190DEN,"Fri, Dec 19, 2014",DEN,LAC,Denver Nuggets,Los Angeles Clippers,109,106,3,Home,98.1,True,2015
+201412200LAC,"Sat, Dec 20, 2014",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,106,102,4,Home,93.8,True,2015
+201412230ATL,"Tue, Dec 23, 2014",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,107,104,3,Home,94.6,True,2015
+201412270LAC,"Sat, Dec 27, 2014",LAC,TOR,Los Angeles Clippers,Toronto Raptors,98,110,-12,Home,90.2,True,2015
+201501050LAC,"Mon, Jan 5, 2015",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,98,107,-9,Home,99.2,True,2015
+201501140POR,"Wed, Jan 14, 2015",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,94,100,-6,Home,94.1,True,2015
+201501160LAC,"Fri, Jan 16, 2015",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,121,126,-5,Home,101.2,True,2015
+201501220LAC,"Thu, Jan 22, 2015",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,123,84,39,Home,94.7,True,2015
+201501250PHO,"Sun, Jan 25, 2015",PHO,LAC,Phoenix Suns,Los Angeles Clippers,100,120,-20,Home,95.9,True,2015
+201501260LAC,"Mon, Jan 26, 2015",LAC,DEN,Los Angeles Clippers,Denver Nuggets,102,98,4,Home,90.5,True,2015
+201501300NOP,"Fri, Jan 30, 2015",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,108,103,5,Home,90.2,True,2015
+201502020BRK,"Mon, Feb 2, 2015",BRK,LAC,Brooklyn Nets,Los Angeles Clippers,102,100,2,Home,96.3,True,2015
+201502050CLE,"Thu, Feb 5, 2015",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,105,94,11,Home,94.5,True,2015
+201502060TOR,"Fri, Feb 6, 2015",TOR,LAC,Toronto Raptors,Los Angeles Clippers,123,107,16,Home,90.1,True,2015
+201503010CHI,"Sun, Mar 1, 2015",CHI,LAC,Chicago Bulls,Los Angeles Clippers,86,96,-10,Home,90.8,True,2015
+201503040LAC,"Wed, Mar 4, 2015",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,93,98,-5,Home,93.0,True,2015
+201503170LAC,"Tue, Mar 17, 2015",LAC,CHO,Los Angeles Clippers,Charlotte Hornets,99,92,7,Home,93.1,True,2015
+201503200LAC,"Fri, Mar 20, 2015",LAC,WAS,Los Angeles Clippers,Washington Wizards,113,99,14,Home,96.1,True,2015
+201503220LAC,"Sun, Mar 22, 2015",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,107,100,7,Home,91.0,True,2015
+201504010POR,"Wed, Apr 1, 2015",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,122,126,-4,Home,93.6,True,2015
+201504040DEN,"Sat, Apr 4, 2015",DEN,LAC,Denver Nuggets,Los Angeles Clippers,92,107,-15,Home,94.0,True,2015
+201504130LAC,"Mon, Apr 13, 2015",LAC,DEN,Los Angeles Clippers,Denver Nuggets,110,103,7,Home,94.2,True,2015
+201504140PHO,"Tue, Apr 14, 2015",PHO,LAC,Phoenix Suns,Los Angeles Clippers,101,112,-11,Home,92.3,True,2015
+201410290CHO,"Wed, Oct 29, 2014",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,108,106,2,Home,91.6,True,2015
+201411010WAS,"Sat, Nov 1, 2014",WAS,MIL,Washington Wizards,Milwaukee Bucks,108,97,11,Home,98.6,True,2015
+201411040IND,"Tue, Nov 4, 2014",IND,MIL,Indiana Pacers,Milwaukee Bucks,81,87,-6,Home,87.0,True,2015
+201411050MIL,"Wed, Nov 5, 2014",MIL,CHI,Milwaukee Bucks,Chicago Bulls,86,95,-9,Home,92.1,True,2015
+201411070DET,"Fri, Nov 7, 2014",DET,MIL,Detroit Pistons,Milwaukee Bucks,98,95,3,Home,89.1,True,2015
+201411140ORL,"Fri, Nov 14, 2014",ORL,MIL,Orlando Magic,Milwaukee Bucks,101,85,16,Home,95.2,True,2015
+201411190BRK,"Wed, Nov 19, 2014",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,118,122,-4,Home,86.0,True,2015
+201411210TOR,"Fri, Nov 21, 2014",TOR,MIL,Toronto Raptors,Milwaukee Bucks,124,82,42,Home,92.3,True,2015
+201411220MIL,"Sat, Nov 22, 2014",MIL,WAS,Milwaukee Bucks,Washington Wizards,100,111,-11,Home,95.9,True,2015
+201411250MIL,"Tue, Nov 25, 2014",MIL,DET,Milwaukee Bucks,Detroit Pistons,98,86,12,Home,91.9,True,2015
+201411280DET,"Fri, Nov 28, 2014",DET,MIL,Detroit Pistons,Milwaukee Bucks,88,104,-16,Home,91.2,True,2015
+201412020CLE,"Tue, Dec 2, 2014",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,111,108,3,Home,98.4,True,2015
+201412150PHO,"Mon, Dec 15, 2014",PHO,MIL,Phoenix Suns,Milwaukee Bucks,94,96,-2,Home,92.3,True,2015
+201412170POR,"Wed, Dec 17, 2014",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,104,97,7,Home,93.9,True,2015
+201412230MIL,"Tue, Dec 23, 2014",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,101,108,-7,Home,97.7,True,2015
+201412260ATL,"Fri, Dec 26, 2014",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,77,107,-30,Home,95.3,True,2015
+201412270MIL,"Sat, Dec 27, 2014",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,85,90,-5,Home,89.2,True,2015
+201412290CHO,"Mon, Dec 29, 2014",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,94,104,-10,Home,97.9,True,2015
+201412310CLE,"Wed, Dec 31, 2014",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,80,96,-16,Home,89.4,True,2015
+201501020MIL,"Fri, Jan 2, 2015",MIL,IND,Milwaukee Bucks,Indiana Pacers,91,94,-3,Home,92.7,True,2015
+201501060MIL,"Tue, Jan 6, 2015",MIL,PHO,Milwaukee Bucks,Phoenix Suns,96,102,-6,Home,98.2,True,2015
+201501100CHI,"Sat, Jan 10, 2015",CHI,MIL,Chicago Bulls,Milwaukee Bucks,95,87,8,Home,83.7,True,2015
+201501190MIL,"Mon, Jan 19, 2015",MIL,TOR,Milwaukee Bucks,Toronto Raptors,89,92,-3,Home,91.7,True,2015
+201501240MIL,"Sat, Jan 24, 2015",MIL,DET,Milwaukee Bucks,Detroit Pistons,101,86,15,Home,96.0,True,2015
+201501290ORL,"Thu, Jan 29, 2015",ORL,MIL,Orlando Magic,Milwaukee Bucks,100,115,-15,Home,101.9,True,2015
+201501310MIL,"Sat, Jan 31, 2015",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,95,88,7,Home,96.9,True,2015
+201502020TOR,"Mon, Feb 2, 2015",TOR,MIL,Toronto Raptors,Milwaukee Bucks,75,82,-7,Home,88.5,True,2015
+201502090MIL,"Mon, Feb 9, 2015",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,103,97,6,Home,90.2,True,2015
+201502200MIL,"Fri, Feb 20, 2015",MIL,DEN,Milwaukee Bucks,Denver Nuggets,89,81,8,Home,93.0,True,2015
+201502220MIL,"Sun, Feb 22, 2015",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,86,97,-11,Home,94.7,True,2015
+201502230CHI,"Mon, Feb 23, 2015",CHI,MIL,Chicago Bulls,Milwaukee Bucks,87,71,16,Home,88.7,True,2015
+201503030DEN,"Tue, Mar 3, 2015",DEN,MIL,Denver Nuggets,Milwaukee Bucks,106,95,11,Home,97.9,True,2015
+201503070MIL,"Sat, Mar 7, 2015",MIL,WAS,Milwaukee Bucks,Washington Wizards,91,85,6,Home,90.6,True,2015
+201503090MIL,"Mon, Mar 9, 2015",MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,103,114,-11,Home,88.2,True,2015
+201503110MIL,"Wed, Mar 11, 2015",MIL,ORL,Milwaukee Bucks,Orlando Magic,97,91,6,Home,94.1,True,2015
+201503120IND,"Thu, Mar 12, 2015",IND,MIL,Indiana Pacers,Milwaukee Bucks,109,103,6,Home,95.6,True,2015
+201503170NOP,"Tue, Mar 17, 2015",NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,85,84,1,Home,94.3,True,2015
+201503200BRK,"Fri, Mar 20, 2015",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,129,127,2,Home,88.4,True,2015
+201503220MIL,"Sun, Mar 22, 2015",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,90,108,-18,Home,93.1,True,2015
+201503260MIL,"Thu, Mar 26, 2015",MIL,IND,Milwaukee Bucks,Indiana Pacers,111,107,4,Home,94.5,True,2015
+201503300ATL,"Mon, Mar 30, 2015",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,101,88,13,Home,83.5,True,2015
+201504010MIL,"Wed, Apr 1, 2015",MIL,CHI,Milwaukee Bucks,Chicago Bulls,95,91,4,Home,93.0,True,2015
+201504040MIL,"Sat, Apr 4, 2015",MIL,ORL,Milwaukee Bucks,Orlando Magic,90,97,-7,Home,90.4,True,2015
+201504080MIL,"Wed, Apr 8, 2015",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,99,104,-5,Home,91.7,True,2015
+201504120MIL,"Sun, Apr 12, 2015",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,96,73,23,Home,96.3,True,2015
+201504180CHI,"Sat, Apr 18, 2015",CHI,MIL,Chicago Bulls,Milwaukee Bucks,103,91,12,Home,98.4,True,2015
+201504200CHI,"Mon, Apr 20, 2015",CHI,MIL,Chicago Bulls,Milwaukee Bucks,91,82,9,Home,91.0,True,2015
+201504230MIL,"Thu, Apr 23, 2015",MIL,CHI,Milwaukee Bucks,Chicago Bulls,106,113,-7,Home,84.9,True,2015
+201504250MIL,"Sat, Apr 25, 2015",MIL,CHI,Milwaukee Bucks,Chicago Bulls,92,90,2,Home,94.5,True,2015
+201504270CHI,"Mon, Apr 27, 2015",CHI,MIL,Chicago Bulls,Milwaukee Bucks,88,94,-6,Home,92.4,True,2015
+201504300MIL,"Thu, Apr 30, 2015",MIL,CHI,Milwaukee Bucks,Chicago Bulls,66,120,-54,Home,94.4,True,2015
+201411120PHO,"Wed, Nov 12, 2014",PHO,BRK,Phoenix Suns,Brooklyn Nets,112,104,8,Home,98.5,True,2015
+201411140PHO,"Fri, Nov 14, 2014",PHO,CHO,Phoenix Suns,Charlotte Hornets,95,103,-8,Home,89.3,True,2015
+201411190DET,"Wed, Nov 19, 2014",DET,PHO,Detroit Pistons,Phoenix Suns,86,88,-2,Home,91.3,True,2015
+201411220IND,"Sat, Nov 22, 2014",IND,PHO,Indiana Pacers,Phoenix Suns,83,106,-23,Home,90.2,True,2015
+201411240TOR,"Mon, Nov 24, 2014",TOR,PHO,Toronto Raptors,Phoenix Suns,104,100,4,Home,96.0,True,2015
+201411260PHO,"Wed, Nov 26, 2014",PHO,DEN,Phoenix Suns,Denver Nuggets,120,112,8,Home,97.7,True,2015
+201411280DEN,"Fri, Nov 28, 2014",DEN,PHO,Denver Nuggets,Phoenix Suns,122,97,25,Home,101.3,True,2015
+201411300PHO,"Sun, Nov 30, 2014",PHO,ORL,Phoenix Suns,Orlando Magic,90,93,-3,Home,98.1,True,2015
+201412020PHO,"Tue, Dec 2, 2014",PHO,IND,Phoenix Suns,Indiana Pacers,116,99,17,Home,100.3,True,2015
+201412120PHO,"Fri, Dec 12, 2014",PHO,DET,Phoenix Suns,Detroit Pistons,103,105,-2,Home,97.2,True,2015
+201412170CHO,"Wed, Dec 17, 2014",CHO,PHO,Charlotte Hornets,Phoenix Suns,106,111,-5,Home,90.3,True,2015
+201412210WAS,"Sun, Dec 21, 2014",WAS,PHO,Washington Wizards,Phoenix Suns,92,104,-12,Home,90.9,True,2015
+201412300NOP,"Tue, Dec 30, 2014",NOP,PHO,New Orleans Pelicans,Phoenix Suns,110,106,4,Home,88.7,True,2015
+201501040PHO,"Sun, Jan 4, 2015",PHO,TOR,Phoenix Suns,Toronto Raptors,125,109,16,Home,106.1,True,2015
+201501130PHO,"Tue, Jan 13, 2015",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,107,100,7,Home,88.8,True,2015
+201501210PHO,"Wed, Jan 21, 2015",PHO,POR,Phoenix Suns,Portland Trail Blazers,118,113,5,Home,102.3,True,2015
+201501280PHO,"Wed, Jan 28, 2015",PHO,WAS,Phoenix Suns,Washington Wizards,106,98,8,Home,94.6,True,2015
+201501300PHO,"Fri, Jan 30, 2015",PHO,CHI,Phoenix Suns,Chicago Bulls,99,93,6,Home,96.6,True,2015
+201502050POR,"Thu, Feb 5, 2015",POR,PHO,Portland Trail Blazers,Phoenix Suns,108,87,21,Home,98.3,True,2015
+201502210CHI,"Sat, Feb 21, 2015",CHI,PHO,Chicago Bulls,Phoenix Suns,112,107,5,Home,95.8,True,2015
+201502250DEN,"Wed, Feb 25, 2015",DEN,PHO,Denver Nuggets,Phoenix Suns,96,110,-14,Home,98.8,True,2015
+201503040ORL,"Wed, Mar 4, 2015",ORL,PHO,Orlando Magic,Phoenix Suns,100,105,-5,Home,99.6,True,2015
+201503060BRK,"Fri, Mar 6, 2015",BRK,PHO,Brooklyn Nets,Phoenix Suns,100,108,-8,Home,97.0,True,2015
+201503070CLE,"Sat, Mar 7, 2015",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,89,79,10,Home,84.2,True,2015
+201503130PHO,"Fri, Mar 13, 2015",PHO,ATL,Phoenix Suns,Atlanta Hawks,87,96,-9,Home,91.1,True,2015
+201503190PHO,"Thu, Mar 19, 2015",PHO,NOP,Phoenix Suns,New Orleans Pelicans,74,72,2,Home,86.8,True,2015
+201503270PHO,"Fri, Mar 27, 2015",PHO,POR,Phoenix Suns,Portland Trail Blazers,81,87,-6,Home,92.3,True,2015
+201503300POR,"Mon, Mar 30, 2015",POR,PHO,Portland Trail Blazers,Phoenix Suns,109,86,23,Home,93.8,True,2015
+201504070ATL,"Tue, Apr 7, 2015",ATL,PHO,Atlanta Hawks,Phoenix Suns,96,69,27,Home,94.4,True,2015
+201504100NOP,"Fri, Apr 10, 2015",NOP,PHO,New Orleans Pelicans,Phoenix Suns,90,75,15,Home,87.2,True,2015
+201410290DEN,"Wed, Oct 29, 2014",DEN,DET,Denver Nuggets,Detroit Pistons,89,79,10,Home,96.4,True,2015
+201411070DEN,"Fri, Nov 7, 2014",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,101,110,-9,Home,96.7,True,2015
+201411090POR,"Sun, Nov 9, 2014",POR,DEN,Portland Trail Blazers,Denver Nuggets,116,100,16,Home,97.9,True,2015
+201411120DEN,"Wed, Nov 12, 2014",DEN,POR,Denver Nuggets,Portland Trail Blazers,113,130,-17,Home,99.8,True,2015
+201411140IND,"Fri, Nov 14, 2014",IND,DEN,Indiana Pacers,Denver Nuggets,87,108,-21,Home,91.8,True,2015
+201411170CLE,"Mon, Nov 17, 2014",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,97,106,-9,Home,94.0,True,2015
+201411210DEN,"Fri, Nov 21, 2014",DEN,NOP,Denver Nuggets,New Orleans Pelicans,117,97,20,Home,93.7,True,2015
+201411250DEN,"Tue, Nov 25, 2014",DEN,CHI,Denver Nuggets,Chicago Bulls,114,109,5,Home,94.8,True,2015
+201412020DEN,"Tue, Dec 2, 2014",DEN,POR,Denver Nuggets,Portland Trail Blazers,103,105,-2,Home,97.5,True,2015
+201412050WAS,"Fri, Dec 5, 2014",WAS,DEN,Washington Wizards,Denver Nuggets,119,89,30,Home,98.7,True,2015
+201412070ATL,"Sun, Dec 7, 2014",ATL,DEN,Atlanta Hawks,Denver Nuggets,96,84,12,Home,92.5,True,2015
+201412080TOR,"Mon, Dec 8, 2014",TOR,DEN,Toronto Raptors,Denver Nuggets,112,107,5,Home,89.7,True,2015
+201412200DEN,"Sat, Dec 20, 2014",DEN,IND,Denver Nuggets,Indiana Pacers,76,73,3,Home,94.9,True,2015
+201412220CHO,"Mon, Dec 22, 2014",CHO,DEN,Charlotte Hornets,Denver Nuggets,110,82,28,Home,94.4,True,2015
+201412230BRK,"Tue, Dec 23, 2014",BRK,DEN,Brooklyn Nets,Denver Nuggets,102,96,6,Home,92.5,True,2015
+201412280DEN,"Sun, Dec 28, 2014",DEN,TOR,Denver Nuggets,Toronto Raptors,102,116,-14,Home,93.3,True,2015
+201501010CHI,"Thu, Jan 1, 2015",CHI,DEN,Chicago Bulls,Denver Nuggets,106,101,5,Home,94.4,True,2015
+201501070DEN,"Wed, Jan 7, 2015",DEN,ORL,Denver Nuggets,Orlando Magic,93,90,3,Home,97.9,True,2015
+201501250DEN,"Sun, Jan 25, 2015",DEN,WAS,Denver Nuggets,Washington Wizards,115,117,-2,Home,95.0,True,2015
+201501280NOP,"Wed, Jan 28, 2015",NOP,DEN,New Orleans Pelicans,Denver Nuggets,85,93,-8,Home,83.7,True,2015
+201501310DEN,"Sat, Jan 31, 2015",DEN,CHO,Denver Nuggets,Charlotte Hornets,86,104,-18,Home,102.2,True,2015
+201502060DET,"Fri, Feb 6, 2015",DET,DEN,Detroit Pistons,Denver Nuggets,98,88,10,Home,95.4,True,2015
+201502230DEN,"Mon, Feb 23, 2015",DEN,BRK,Denver Nuggets,Brooklyn Nets,82,110,-28,Home,94.8,True,2015
+201503010DEN,"Sun, Mar 1, 2015",DEN,NOP,Denver Nuggets,New Orleans Pelicans,92,99,-7,Home,91.7,True,2015
+201503110DEN,"Wed, Mar 11, 2015",DEN,ATL,Denver Nuggets,Atlanta Hawks,115,102,13,Home,97.9,True,2015
+201503150NOP,"Sun, Mar 15, 2015",NOP,DEN,New Orleans Pelicans,Denver Nuggets,111,118,-7,Home,90.8,True,2015
+201503220ORL,"Sun, Mar 22, 2015",ORL,DEN,Orlando Magic,Denver Nuggets,100,119,-19,Home,96.4,True,2015
+201503280POR,"Sat, Mar 28, 2015",POR,DEN,Portland Trail Blazers,Denver Nuggets,120,114,6,Home,99.6,True,2015
+201410280NOP,"Tue, Oct 28, 2014",NOP,ORL,New Orleans Pelicans,Orlando Magic,101,84,17,Home,95.2,True,2015
+201411040NOP,"Tue, Nov 4, 2014",NOP,CHO,New Orleans Pelicans,Charlotte Hornets,100,91,9,Home,89.1,True,2015
+201411100CLE,"Mon, Nov 10, 2014",CLE,NOP,Cleveland Cavaliers,New Orleans Pelicans,118,111,7,Home,88.8,True,2015
+201411170POR,"Mon, Nov 17, 2014",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,102,93,9,Home,90.9,True,2015
+201411280ATL,"Fri, Nov 28, 2014",ATL,NOP,Atlanta Hawks,New Orleans Pelicans,100,91,9,Home,89.4,True,2015
+201411290WAS,"Sat, Nov 29, 2014",WAS,NOP,Washington Wizards,New Orleans Pelicans,83,80,3,Home,84.1,True,2015
+201412120NOP,"Fri, Dec 12, 2014",NOP,CLE,New Orleans Pelicans,Cleveland Cavaliers,119,114,5,Home,90.9,True,2015
+201412200NOP,"Sat, Dec 20, 2014",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,88,114,-26,Home,94.0,True,2015
+201412230IND,"Tue, Dec 23, 2014",IND,NOP,Indiana Pacers,New Orleans Pelicans,96,84,12,Home,92.9,True,2015
+201412270CHI,"Sat, Dec 27, 2014",CHI,NOP,Chicago Bulls,New Orleans Pelicans,107,100,7,Home,94.6,True,2015
+201501050NOP,"Mon, Jan 5, 2015",NOP,WAS,New Orleans Pelicans,Washington Wizards,85,92,-7,Home,85.6,True,2015
+201501070CHO,"Wed, Jan 7, 2015",CHO,NOP,Charlotte Hornets,New Orleans Pelicans,98,94,4,Home,94.6,True,2015
+201501140DET,"Wed, Jan 14, 2015",DET,NOP,Detroit Pistons,New Orleans Pelicans,94,105,-11,Home,87.2,True,2015
+201501180TOR,"Sun, Jan 18, 2015",TOR,NOP,Toronto Raptors,New Orleans Pelicans,93,95,-2,Home,92.5,True,2015
+201502020NOP,"Mon, Feb 2, 2015",NOP,ATL,New Orleans Pelicans,Atlanta Hawks,115,100,15,Home,89.9,True,2015
+201502070NOP,"Sat, Feb 7, 2015",NOP,CHI,New Orleans Pelicans,Chicago Bulls,72,107,-35,Home,87.8,True,2015
+201502110NOP,"Wed, Feb 11, 2015",NOP,IND,New Orleans Pelicans,Indiana Pacers,93,106,-13,Home,88.0,True,2015
+201502200ORL,"Fri, Feb 20, 2015",ORL,NOP,Orlando Magic,New Orleans Pelicans,95,84,11,Home,86.5,True,2015
+201502230NOP,"Mon, Feb 23, 2015",NOP,TOR,New Orleans Pelicans,Toronto Raptors,100,97,3,Home,88.1,True,2015
+201502250NOP,"Wed, Feb 25, 2015",NOP,BRK,New Orleans Pelicans,Brooklyn Nets,102,96,6,Home,97.5,True,2015
+201503040NOP,"Wed, Mar 4, 2015",NOP,DET,New Orleans Pelicans,Detroit Pistons,88,85,3,Home,94.1,True,2015
+201503100BRK,"Tue, Mar 10, 2015",BRK,NOP,Brooklyn Nets,New Orleans Pelicans,91,111,-20,Home,91.5,True,2015
+201504040POR,"Sat, Apr 4, 2015",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,99,90,9,Home,84.8,True,2015
+201410290TOR,"Wed, Oct 29, 2014",TOR,ATL,Toronto Raptors,Atlanta Hawks,109,102,7,Home,93.5,True,2015
+201411010ATL,"Sat, Nov 1, 2014",ATL,IND,Atlanta Hawks,Indiana Pacers,102,92,10,Home,92.7,True,2015
+201411070CHO,"Fri, Nov 7, 2014",CHO,ATL,Charlotte Hornets,Atlanta Hawks,122,119,3,Home,94.1,True,2015
+201411150CLE,"Sat, Nov 15, 2014",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,127,94,33,Home,97.4,True,2015
+201411210ATL,"Fri, Nov 21, 2014",ATL,DET,Atlanta Hawks,Detroit Pistons,99,89,10,Home,90.4,True,2015
+201411250WAS,"Tue, Nov 25, 2014",WAS,ATL,Washington Wizards,Atlanta Hawks,102,106,-4,Home,96.0,True,2015
+201411260ATL,"Wed, Nov 26, 2014",ATL,TOR,Atlanta Hawks,Toronto Raptors,115,126,-11,Home,92.8,True,2015
+201411290ATL,"Sat, Nov 29, 2014",ATL,CHO,Atlanta Hawks,Charlotte Hornets,105,75,30,Home,88.9,True,2015
+201412050BRK,"Fri, Dec 5, 2014",BRK,ATL,Brooklyn Nets,Atlanta Hawks,75,98,-23,Home,94.6,True,2015
+201412080IND,"Mon, Dec 8, 2014",IND,ATL,Indiana Pacers,Atlanta Hawks,92,108,-16,Home,98.7,True,2015
+201412120ATL,"Fri, Dec 12, 2014",ATL,ORL,Atlanta Hawks,Orlando Magic,87,81,6,Home,93.1,True,2015
+201412130ORL,"Sat, Dec 13, 2014",ORL,ATL,Orlando Magic,Atlanta Hawks,100,99,1,Home,90.7,True,2015
+201412150ATL,"Mon, Dec 15, 2014",ATL,CHI,Atlanta Hawks,Chicago Bulls,93,86,7,Home,93.7,True,2015
+201412170CLE,"Wed, Dec 17, 2014",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,98,127,-29,Home,86.4,True,2015
+201412300ATL,"Tue, Dec 30, 2014",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,109,101,8,Home,97.8,True,2015
+201501030POR,"Sat, Jan 3, 2015",POR,ATL,Portland Trail Blazers,Atlanta Hawks,107,115,-8,Home,101.6,True,2015
+201501090DET,"Fri, Jan 9, 2015",DET,ATL,Detroit Pistons,Atlanta Hawks,103,106,-3,Home,98.3,True,2015
+201501110ATL,"Sun, Jan 11, 2015",ATL,WAS,Atlanta Hawks,Washington Wizards,120,89,31,Home,91.7,True,2015
+201501160TOR,"Fri, Jan 16, 2015",TOR,ATL,Toronto Raptors,Atlanta Hawks,89,110,-21,Home,89.4,True,2015
+201501170CHI,"Sat, Jan 17, 2015",CHI,ATL,Chicago Bulls,Atlanta Hawks,99,107,-8,Home,92.3,True,2015
+201501190ATL,"Mon, Jan 19, 2015",ATL,DET,Atlanta Hawks,Detroit Pistons,93,82,11,Home,92.3,True,2015
+201501210ATL,"Wed, Jan 21, 2015",ATL,IND,Atlanta Hawks,Indiana Pacers,110,91,19,Home,95.1,True,2015
+201501280ATL,"Wed, Jan 28, 2015",ATL,BRK,Atlanta Hawks,Brooklyn Nets,113,102,11,Home,89.9,True,2015
+201501300ATL,"Fri, Jan 30, 2015",ATL,POR,Atlanta Hawks,Portland Trail Blazers,105,99,6,Home,98.1,True,2015
+201502040ATL,"Wed, Feb 4, 2015",ATL,WAS,Atlanta Hawks,Washington Wizards,105,96,9,Home,95.7,True,2015
+201502200ATL,"Fri, Feb 20, 2015",ATL,TOR,Atlanta Hawks,Toronto Raptors,80,105,-25,Home,96.9,True,2015
+201502270ATL,"Fri, Feb 27, 2015",ATL,ORL,Atlanta Hawks,Orlando Magic,95,88,7,Home,90.8,True,2015
+201503060ATL,"Fri, Mar 6, 2015",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,106,97,9,Home,88.9,True,2015
+201503250ORL,"Wed, Mar 25, 2015",ORL,ATL,Orlando Magic,Atlanta Hawks,83,95,-12,Home,91.8,True,2015
+201503280CHO,"Sat, Mar 28, 2015",CHO,ATL,Charlotte Hornets,Atlanta Hawks,115,100,15,Home,90.9,True,2015
+201503310DET,"Tue, Mar 31, 2015",DET,ATL,Detroit Pistons,Atlanta Hawks,105,95,10,Home,91.0,True,2015
+201504040ATL,"Sat, Apr 4, 2015",ATL,BRK,Atlanta Hawks,Brooklyn Nets,131,99,32,Home,94.3,True,2015
+201504080BRK,"Wed, Apr 8, 2015",BRK,ATL,Brooklyn Nets,Atlanta Hawks,111,114,-3,Home,94.8,True,2015
+201504100ATL,"Fri, Apr 10, 2015",ATL,CHO,Atlanta Hawks,Charlotte Hornets,104,80,24,Home,90.5,True,2015
+201504120WAS,"Sun, Apr 12, 2015",WAS,ATL,Washington Wizards,Atlanta Hawks,108,99,9,Home,99.2,True,2015
+201504150CHI,"Wed, Apr 15, 2015",CHI,ATL,Chicago Bulls,Atlanta Hawks,91,85,6,Home,99.0,True,2015
+201504190ATL,"Sun, Apr 19, 2015",ATL,BRK,Atlanta Hawks,Brooklyn Nets,99,92,7,Home,93.6,True,2015
+201504220ATL,"Wed, Apr 22, 2015",ATL,BRK,Atlanta Hawks,Brooklyn Nets,96,91,5,Home,94.1,True,2015
+201504250BRK,"Sat, Apr 25, 2015",BRK,ATL,Brooklyn Nets,Atlanta Hawks,91,83,8,Home,95.2,True,2015
+201504270BRK,"Mon, Apr 27, 2015",BRK,ATL,Brooklyn Nets,Atlanta Hawks,120,115,5,Home,89.7,True,2015
+201504290ATL,"Wed, Apr 29, 2015",ATL,BRK,Atlanta Hawks,Brooklyn Nets,107,97,10,Home,91.4,True,2015
+201505010BRK,"Fri, May 1, 2015",BRK,ATL,Brooklyn Nets,Atlanta Hawks,87,111,-24,Home,97.1,True,2015
+201505030ATL,"Sun, May 3, 2015",ATL,WAS,Atlanta Hawks,Washington Wizards,98,104,-6,Home,92.4,True,2015
+201505050ATL,"Tue, May 5, 2015",ATL,WAS,Atlanta Hawks,Washington Wizards,106,90,16,Home,93.5,True,2015
+201505090WAS,"Sat, May 9, 2015",WAS,ATL,Washington Wizards,Atlanta Hawks,103,101,2,Home,93.0,True,2015
+201505110WAS,"Mon, May 11, 2015",WAS,ATL,Washington Wizards,Atlanta Hawks,101,106,-5,Home,94.9,True,2015
+201505130ATL,"Wed, May 13, 2015",ATL,WAS,Atlanta Hawks,Washington Wizards,82,81,1,Home,96.8,True,2015
+201505150WAS,"Fri, May 15, 2015",WAS,ATL,Washington Wizards,Atlanta Hawks,91,94,-3,Home,93.3,True,2015
+201505200ATL,"Wed, May 20, 2015",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,89,97,-8,Home,90.3,True,2015
+201505220ATL,"Fri, May 22, 2015",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,82,94,-12,Home,86.9,True,2015
+201505240CLE,"Sun, May 24, 2015",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,114,111,3,Home,90.8,True,2015
+201505260CLE,"Tue, May 26, 2015",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,118,88,30,Home,93.6,True,2015
+201411040POR,"Tue, Nov 4, 2014",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,101,82,19,Home,88.1,True,2015
+201411110POR,"Tue, Nov 11, 2014",POR,CHO,Portland Trail Blazers,Charlotte Hornets,102,100,2,Home,92.8,True,2015
+201411150POR,"Sat, Nov 15, 2014",POR,BRK,Portland Trail Blazers,Brooklyn Nets,97,87,10,Home,89.2,True,2015
+201411210POR,"Fri, Nov 21, 2014",POR,CHI,Portland Trail Blazers,Chicago Bulls,105,87,18,Home,97.4,True,2015
+201411260CHO,"Wed, Nov 26, 2014",CHO,POR,Charlotte Hornets,Portland Trail Blazers,97,105,-8,Home,95.3,True,2015
+201412040POR,"Thu, Dec 4, 2014",POR,IND,Portland Trail Blazers,Indiana Pacers,88,82,6,Home,98.7,True,2015
+201412090DET,"Tue, Dec 9, 2014",DET,POR,Detroit Pistons,Portland Trail Blazers,86,98,-12,Home,88.4,True,2015
+201412120CHI,"Fri, Dec 12, 2014",CHI,POR,Chicago Bulls,Portland Trail Blazers,115,106,9,Home,90.0,True,2015
+201412130IND,"Sat, Dec 13, 2014",IND,POR,Indiana Pacers,Portland Trail Blazers,85,95,-10,Home,93.6,True,2015
+201412300POR,"Tue, Dec 30, 2014",POR,TOR,Portland Trail Blazers,Toronto Raptors,102,97,5,Home,89.0,True,2015
+201501100POR,"Sat, Jan 10, 2015",POR,ORL,Portland Trail Blazers,Orlando Magic,103,92,11,Home,98.6,True,2015
+201501240POR,"Sat, Jan 24, 2015",POR,WAS,Portland Trail Blazers,Washington Wizards,103,96,7,Home,97.4,True,2015
+201501280CLE,"Wed, Jan 28, 2015",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,99,94,5,Home,82.2,True,2015
+201503130POR,"Fri, Mar 13, 2015",POR,DET,Portland Trail Blazers,Detroit Pistons,118,99,19,Home,89.1,True,2015
+201503150TOR,"Sun, Mar 15, 2015",TOR,POR,Toronto Raptors,Portland Trail Blazers,97,113,-16,Home,93.4,True,2015
+201503160WAS,"Mon, Mar 16, 2015",WAS,POR,Washington Wizards,Portland Trail Blazers,105,97,8,Home,91.6,True,2015
+201503200ORL,"Fri, Mar 20, 2015",ORL,POR,Orlando Magic,Portland Trail Blazers,111,104,7,Home,91.2,True,2015
+201504060BRK,"Mon, Apr 6, 2015",BRK,POR,Brooklyn Nets,Portland Trail Blazers,106,96,10,Home,91.8,True,2015
+201410300ORL,"Thu, Oct 30, 2014",ORL,WAS,Orlando Magic,Washington Wizards,98,105,-7,Home,95.7,True,2015
+201411050WAS,"Wed, Nov 5, 2014",WAS,IND,Washington Wizards,Indiana Pacers,96,94,2,Home,92.0,True,2015
+201411070TOR,"Fri, Nov 7, 2014",TOR,WAS,Toronto Raptors,Washington Wizards,103,84,19,Home,93.4,True,2015
+201411080IND,"Sat, Nov 8, 2014",IND,WAS,Indiana Pacers,Washington Wizards,90,97,-7,Home,93.5,True,2015
+201411120WAS,"Wed, Nov 12, 2014",WAS,DET,Washington Wizards,Detroit Pistons,107,103,4,Home,95.3,True,2015
+201411150WAS,"Sat, Nov 15, 2014",WAS,ORL,Washington Wizards,Orlando Magic,98,93,5,Home,90.8,True,2015
+201411210WAS,"Fri, Nov 21, 2014",WAS,CLE,Washington Wizards,Cleveland Cavaliers,91,78,13,Home,93.2,True,2015
+201411260CLE,"Wed, Nov 26, 2014",CLE,WAS,Cleveland Cavaliers,Washington Wizards,113,87,26,Home,88.4,True,2015
+201412100ORL,"Wed, Dec 10, 2014",ORL,WAS,Orlando Magic,Washington Wizards,89,91,-2,Home,85.4,True,2015
+201412230WAS,"Tue, Dec 23, 2014",WAS,CHI,Washington Wizards,Chicago Bulls,91,99,-8,Home,95.6,True,2015
+201501090WAS,"Fri, Jan 9, 2015",WAS,CHI,Washington Wizards,Chicago Bulls,102,86,16,Home,94.1,True,2015
+201501140CHI,"Wed, Jan 14, 2015",CHI,WAS,Chicago Bulls,Washington Wizards,99,105,-6,Home,91.3,True,2015
+201501160WAS,"Fri, Jan 16, 2015",WAS,BRK,Washington Wizards,Brooklyn Nets,80,102,-22,Home,91.2,True,2015
+201501170BRK,"Sat, Jan 17, 2015",BRK,WAS,Brooklyn Nets,Washington Wizards,90,99,-9,Home,88.1,True,2015
+201501310WAS,"Sat, Jan 31, 2015",WAS,TOR,Washington Wizards,Toronto Raptors,116,120,-4,Home,94.5,True,2015
+201502020WAS,"Mon, Feb 2, 2015",WAS,CHO,Washington Wizards,Charlotte Hornets,88,92,-4,Home,90.1,True,2015
+201502050CHO,"Thu, Feb 5, 2015",CHO,WAS,Charlotte Hornets,Washington Wizards,94,87,7,Home,89.9,True,2015
+201502070WAS,"Sat, Feb 7, 2015",WAS,BRK,Washington Wizards,Brooklyn Nets,114,77,37,Home,90.9,True,2015
+201502090WAS,"Mon, Feb 9, 2015",WAS,ORL,Washington Wizards,Orlando Magic,96,80,16,Home,91.4,True,2015
+201502110TOR,"Wed, Feb 11, 2015",TOR,WAS,Toronto Raptors,Washington Wizards,95,93,2,Home,89.9,True,2015
+201502200WAS,"Fri, Feb 20, 2015",WAS,CLE,Washington Wizards,Cleveland Cavaliers,89,127,-38,Home,97.6,True,2015
+201502220DET,"Sun, Feb 22, 2015",DET,WAS,Detroit Pistons,Washington Wizards,106,89,17,Home,90.9,True,2015
+201502280WAS,"Sat, Feb 28, 2015",WAS,DET,Washington Wizards,Detroit Pistons,99,95,4,Home,91.1,True,2015
+201503030CHI,"Tue, Mar 3, 2015",CHI,WAS,Chicago Bulls,Washington Wizards,97,92,5,Home,92.5,True,2015
+201503090CHO,"Mon, Mar 9, 2015",CHO,WAS,Charlotte Hornets,Washington Wizards,69,95,-26,Home,90.7,True,2015
+201503250WAS,"Wed, Mar 25, 2015",WAS,IND,Washington Wizards,Indiana Pacers,101,103,-2,Home,95.2,True,2015
+201503270WAS,"Fri, Mar 27, 2015",WAS,CHO,Washington Wizards,Charlotte Hornets,110,107,3,Home,98.1,True,2015
+201504100BRK,"Fri, Apr 10, 2015",BRK,WAS,Brooklyn Nets,Washington Wizards,117,80,37,Home,89.4,True,2015
+201504140IND,"Tue, Apr 14, 2015",IND,WAS,Indiana Pacers,Washington Wizards,99,95,4,Home,88.3,True,2015
+201504150CLE,"Wed, Apr 15, 2015",CLE,WAS,Cleveland Cavaliers,Washington Wizards,113,108,5,Home,91.3,True,2015
+201504180TOR,"Sat, Apr 18, 2015",TOR,WAS,Toronto Raptors,Washington Wizards,86,93,-7,Home,86.7,True,2015
+201504210TOR,"Tue, Apr 21, 2015",TOR,WAS,Toronto Raptors,Washington Wizards,106,117,-11,Home,96.5,True,2015
+201504240WAS,"Fri, Apr 24, 2015",WAS,TOR,Washington Wizards,Toronto Raptors,106,99,7,Home,99.6,True,2015
+201504260WAS,"Sun, Apr 26, 2015",WAS,TOR,Washington Wizards,Toronto Raptors,125,94,31,Home,93.2,True,2015
+201411190IND,"Wed, Nov 19, 2014",IND,CHO,Indiana Pacers,Charlotte Hornets,88,86,2,Home,83.3,True,2015
+201411210CHO,"Fri, Nov 21, 2014",CHO,ORL,Charlotte Hornets,Orlando Magic,100,105,-5,Home,94.5,True,2015
+201412030CHO,"Wed, Dec 3, 2014",CHO,CHI,Charlotte Hornets,Chicago Bulls,95,102,-7,Home,95.6,True,2015
+201412130CHO,"Sat, Dec 13, 2014",CHO,BRK,Charlotte Hornets,Brooklyn Nets,87,114,-27,Home,87.4,True,2015
+201412150CLE,"Mon, Dec 15, 2014",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,97,88,9,Home,91.4,True,2015
+201412270CHO,"Sat, Dec 27, 2014",CHO,ORL,Charlotte Hornets,Orlando Magic,94,102,-8,Home,92.2,True,2015
+201501020CHO,"Fri, Jan 2, 2015",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,87,91,-4,Home,91.7,True,2015
+201501030ORL,"Sat, Jan 3, 2015",ORL,CHO,Orlando Magic,Charlotte Hornets,90,98,-8,Home,88.9,True,2015
+201501080TOR,"Thu, Jan 8, 2015",TOR,CHO,Toronto Raptors,Charlotte Hornets,95,103,-8,Home,96.0,True,2015
+201501170CHO,"Sat, Jan 17, 2015",CHO,IND,Charlotte Hornets,Indiana Pacers,80,71,9,Home,91.3,True,2015
+201501230CLE,"Fri, Jan 23, 2015",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,129,90,39,Home,98.3,True,2015
+201502080CHO,"Sun, Feb 8, 2015",CHO,IND,Charlotte Hornets,Indiana Pacers,102,103,-1,Home,94.5,True,2015
+201502100CHO,"Tue, Feb 10, 2015",CHO,DET,Charlotte Hornets,Detroit Pistons,78,106,-28,Home,88.0,True,2015
+201502250CHI,"Wed, Feb 25, 2015",CHI,CHO,Chicago Bulls,Charlotte Hornets,86,98,-12,Home,88.6,True,2015
+201503010ORL,"Sun, Mar 1, 2015",ORL,CHO,Orlando Magic,Charlotte Hornets,83,98,-15,Home,93.4,True,2015
+201503040BRK,"Wed, Mar 4, 2015",BRK,CHO,Brooklyn Nets,Charlotte Hornets,91,115,-24,Home,92.7,True,2015
+201503060CHO,"Fri, Mar 6, 2015",CHO,TOR,Charlotte Hornets,Toronto Raptors,103,94,9,Home,95.1,True,2015
+201503080DET,"Sun, Mar 8, 2015",DET,CHO,Detroit Pistons,Charlotte Hornets,101,108,-7,Home,93.4,True,2015
+201503130CHO,"Fri, Mar 13, 2015",CHO,CHI,Charlotte Hornets,Chicago Bulls,101,91,10,Home,93.9,True,2015
+201503230CHI,"Mon, Mar 23, 2015",CHI,CHO,Chicago Bulls,Charlotte Hornets,98,86,12,Home,91.6,True,2015
+201503250CHO,"Wed, Mar 25, 2015",CHO,BRK,Charlotte Hornets,Brooklyn Nets,88,91,-3,Home,98.4,True,2015
+201504010CHO,"Wed, Apr 1, 2015",CHO,DET,Charlotte Hornets,Detroit Pistons,102,78,24,Home,93.0,True,2015
+201504030IND,"Fri, Apr 3, 2015",IND,CHO,Indiana Pacers,Charlotte Hornets,93,74,19,Home,94.5,True,2015
+201504080CHO,"Wed, Apr 8, 2015",CHO,TOR,Charlotte Hornets,Toronto Raptors,74,92,-18,Home,82.0,True,2015
+201504120DET,"Sun, Apr 12, 2015",DET,CHO,Detroit Pistons,Charlotte Hornets,116,77,39,Home,92.0,True,2015
+201504150TOR,"Wed, Apr 15, 2015",TOR,CHO,Toronto Raptors,Charlotte Hornets,92,87,5,Home,81.3,True,2015
+201410310CHI,"Fri, Oct 31, 2014",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,108,114,-6,Home,91.5,True,2015
+201411040CHI,"Tue, Nov 4, 2014",CHI,ORL,Chicago Bulls,Orlando Magic,98,90,8,Home,88.5,True,2015
+201411100CHI,"Mon, Nov 10, 2014",CHI,DET,Chicago Bulls,Detroit Pistons,102,91,11,Home,95.9,True,2015
+201411130TOR,"Thu, Nov 13, 2014",TOR,CHI,Toronto Raptors,Chicago Bulls,93,100,-7,Home,95.0,True,2015
+201411150CHI,"Sat, Nov 15, 2014",CHI,IND,Chicago Bulls,Indiana Pacers,90,99,-9,Home,91.2,True,2015
+201411300BRK,"Sun, Nov 30, 2014",BRK,CHI,Brooklyn Nets,Chicago Bulls,84,102,-18,Home,95.7,True,2015
+201412100CHI,"Wed, Dec 10, 2014",CHI,BRK,Chicago Bulls,Brooklyn Nets,105,80,25,Home,91.7,True,2015
+201412220CHI,"Mon, Dec 22, 2014",CHI,TOR,Chicago Bulls,Toronto Raptors,129,120,9,Home,95.3,True,2015
+201412290IND,"Mon, Dec 29, 2014",IND,CHI,Indiana Pacers,Chicago Bulls,90,92,-2,Home,93.2,True,2015
+201412300CHI,"Tue, Dec 30, 2014",CHI,BRK,Chicago Bulls,Brooklyn Nets,82,96,-14,Home,89.6,True,2015
+201501120CHI,"Mon, Jan 12, 2015",CHI,ORL,Chicago Bulls,Orlando Magic,114,121,-7,Home,100.0,True,2015
+201501190CLE,"Mon, Jan 19, 2015",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,108,94,14,Home,89.2,True,2015
+201502080ORL,"Sun, Feb 8, 2015",ORL,CHI,Orlando Magic,Chicago Bulls,97,98,-1,Home,90.4,True,2015
+201502120CHI,"Thu, Feb 12, 2015",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,113,98,15,Home,96.7,True,2015
+201502200DET,"Fri, Feb 20, 2015",DET,CHI,Detroit Pistons,Chicago Bulls,100,91,9,Home,93.3,True,2015
+201503060IND,"Fri, Mar 6, 2015",IND,CHI,Indiana Pacers,Chicago Bulls,98,84,14,Home,88.0,True,2015
+201503180CHI,"Wed, Mar 18, 2015",CHI,IND,Chicago Bulls,Indiana Pacers,103,86,17,Home,93.6,True,2015
+201503200CHI,"Fri, Mar 20, 2015",CHI,TOR,Chicago Bulls,Toronto Raptors,108,92,16,Home,82.8,True,2015
+201503210DET,"Sat, Mar 21, 2015",DET,CHI,Detroit Pistons,Chicago Bulls,107,91,16,Home,90.3,True,2015
+201503250TOR,"Wed, Mar 25, 2015",TOR,CHI,Toronto Raptors,Chicago Bulls,103,116,-13,Home,86.0,True,2015
+201504030CHI,"Fri, Apr 3, 2015",CHI,DET,Chicago Bulls,Detroit Pistons,88,82,6,Home,83.3,True,2015
+201504050CLE,"Sun, Apr 5, 2015",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,99,94,5,Home,90.3,True,2015
+201504080ORL,"Wed, Apr 8, 2015",ORL,CHI,Orlando Magic,Chicago Bulls,105,103,2,Home,92.5,True,2015
+201504130BRK,"Mon, Apr 13, 2015",BRK,CHI,Brooklyn Nets,Chicago Bulls,86,113,-27,Home,91.2,True,2015
+201505040CLE,"Mon, May 4, 2015",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,92,99,-7,Home,84.4,True,2015
+201505060CLE,"Wed, May 6, 2015",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,106,91,15,Home,86.6,True,2015
+201505080CHI,"Fri, May 8, 2015",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,99,96,3,Home,88.0,True,2015
+201505100CHI,"Sun, May 10, 2015",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,84,86,-2,Home,89.6,True,2015
+201505120CLE,"Tue, May 12, 2015",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,106,101,5,Home,88.8,True,2015
+201505140CHI,"Thu, May 14, 2015",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,73,94,-21,Home,79.2,True,2015
+201411220CLE,"Sat, Nov 22, 2014",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,93,110,-17,Home,95.6,True,2015
+201411240CLE,"Mon, Nov 24, 2014",CLE,ORL,Cleveland Cavaliers,Orlando Magic,106,74,32,Home,88.1,True,2015
+201411290CLE,"Sat, Nov 29, 2014",CLE,IND,Cleveland Cavaliers,Indiana Pacers,109,97,12,Home,90.2,True,2015
+201412050TOR,"Fri, Dec 5, 2014",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,91,105,-14,Home,88.7,True,2015
+201412080BRK,"Mon, Dec 8, 2014",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,88,110,-22,Home,89.2,True,2015
+201412090CLE,"Tue, Dec 9, 2014",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,105,101,4,Home,84.1,True,2015
+201412190CLE,"Fri, Dec 19, 2014",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,95,91,4,Home,93.2,True,2015
+201412260ORL,"Fri, Dec 26, 2014",ORL,CLE,Orlando Magic,Cleveland Cavaliers,89,98,-9,Home,88.5,True,2015
+201412280CLE,"Sun, Dec 28, 2014",CLE,DET,Cleveland Cavaliers,Detroit Pistons,80,103,-23,Home,91.4,True,2015
+201501270DET,"Tue, Jan 27, 2015",DET,CLE,Detroit Pistons,Cleveland Cavaliers,95,103,-8,Home,93.5,True,2015
+201502060IND,"Fri, Feb 6, 2015",IND,CLE,Indiana Pacers,Cleveland Cavaliers,103,99,4,Home,89.3,True,2015
+201502240DET,"Tue, Feb 24, 2015",DET,CLE,Detroit Pistons,Cleveland Cavaliers,93,102,-9,Home,95.3,True,2015
+201502270IND,"Fri, Feb 27, 2015",IND,CLE,Indiana Pacers,Cleveland Cavaliers,93,86,7,Home,93.3,True,2015
+201503040TOR,"Wed, Mar 4, 2015",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,112,120,-8,Home,88.0,True,2015
+201503150ORL,"Sun, Mar 15, 2015",ORL,CLE,Orlando Magic,Cleveland Cavaliers,108,123,-15,Home,95.3,True,2015
+201503180CLE,"Wed, Mar 18, 2015",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,117,92,25,Home,89.3,True,2015
+201503200CLE,"Fri, Mar 20, 2015",CLE,IND,Cleveland Cavaliers,Indiana Pacers,95,92,3,Home,86.6,True,2015
+201503270BRK,"Fri, Mar 27, 2015",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,106,98,8,Home,97.8,True,2015
+201504130CLE,"Mon, Apr 13, 2015",CLE,DET,Cleveland Cavaliers,Detroit Pistons,109,97,12,Home,86.0,True,2015
+201411010DET,"Sat, Nov 1, 2014",DET,BRK,Detroit Pistons,Brooklyn Nets,90,102,-12,Home,86.8,True,2015
+201411090BRK,"Sun, Nov 9, 2014",BRK,ORL,Brooklyn Nets,Orlando Magic,104,96,8,Home,91.6,True,2015
+201412170TOR,"Wed, Dec 17, 2014",TOR,BRK,Toronto Raptors,Brooklyn Nets,105,89,16,Home,86.3,True,2015
+201412210BRK,"Sun, Dec 21, 2014",BRK,DET,Brooklyn Nets,Detroit Pistons,110,105,5,Home,97.4,True,2015
+201412270BRK,"Sat, Dec 27, 2014",BRK,IND,Brooklyn Nets,Indiana Pacers,85,110,-25,Home,95.7,True,2015
+201501020ORL,"Fri, Jan 2, 2015",ORL,BRK,Orlando Magic,Brooklyn Nets,98,100,-2,Home,97.6,True,2015
+201501100DET,"Sat, Jan 10, 2015",DET,BRK,Detroit Pistons,Brooklyn Nets,98,93,5,Home,92.3,True,2015
+201501300BRK,"Fri, Jan 30, 2015",BRK,TOR,Brooklyn Nets,Toronto Raptors,122,127,-5,Home,93.4,True,2015
+201502040TOR,"Wed, Feb 4, 2015",TOR,BRK,Toronto Raptors,Brooklyn Nets,93,109,-16,Home,85.5,True,2015
+201503210IND,"Sat, Mar 21, 2015",IND,BRK,Indiana Pacers,Brooklyn Nets,111,123,-12,Home,93.1,True,2015
+201503310BRK,"Tue, Mar 31, 2015",BRK,IND,Brooklyn Nets,Indiana Pacers,111,106,5,Home,92.9,True,2015
+201504030BRK,"Fri, Apr 3, 2015",BRK,TOR,Brooklyn Nets,Toronto Raptors,114,109,5,Home,89.0,True,2015
+201504150BRK,"Wed, Apr 15, 2015",BRK,ORL,Brooklyn Nets,Orlando Magic,101,88,13,Home,92.2,True,2015
+201411010ORL,"Sat, Nov 1, 2014",ORL,TOR,Orlando Magic,Toronto Raptors,95,108,-13,Home,93.5,True,2015
+201411110TOR,"Tue, Nov 11, 2014",TOR,ORL,Toronto Raptors,Orlando Magic,104,100,4,Home,96.0,True,2015
+201411170DET,"Mon, Nov 17, 2014",DET,ORL,Detroit Pistons,Orlando Magic,93,107,-14,Home,90.5,True,2015
+201411280IND,"Fri, Nov 28, 2014",IND,ORL,Indiana Pacers,Orlando Magic,98,83,15,Home,91.1,True,2015
+201412150TOR,"Mon, Dec 15, 2014",TOR,ORL,Toronto Raptors,Orlando Magic,95,82,13,Home,87.4,True,2015
+201412300ORL,"Tue, Dec 30, 2014",ORL,DET,Orlando Magic,Detroit Pistons,86,109,-23,Home,94.7,True,2015
+201501210DET,"Wed, Jan 21, 2015",DET,ORL,Detroit Pistons,Orlando Magic,128,118,10,Home,104.1,True,2015
+201501250ORL,"Sun, Jan 25, 2015",ORL,IND,Orlando Magic,Indiana Pacers,99,106,-7,Home,95.2,True,2015
+201503100IND,"Tue, Mar 10, 2015",IND,ORL,Indiana Pacers,Orlando Magic,118,86,32,Home,89.7,True,2015
+201503270ORL,"Fri, Mar 27, 2015",ORL,DET,Orlando Magic,Detroit Pistons,97,111,-14,Home,92.0,True,2015
+201504100ORL,"Fri, Apr 10, 2015",ORL,TOR,Orlando Magic,Toronto Raptors,99,101,-2,Home,93.4,True,2015
+201412120TOR,"Fri, Dec 12, 2014",TOR,IND,Toronto Raptors,Indiana Pacers,106,94,12,Home,92.6,True,2015
+201412260DET,"Fri, Dec 26, 2014",DET,IND,Detroit Pistons,Indiana Pacers,119,109,10,Home,96.8,True,2015
+201501160IND,"Fri, Jan 16, 2015",IND,DET,Indiana Pacers,Detroit Pistons,96,98,-2,Home,91.8,True,2015
+201501270IND,"Tue, Jan 27, 2015",IND,TOR,Indiana Pacers,Toronto Raptors,91,104,-13,Home,90.4,True,2015
+201502040IND,"Wed, Feb 4, 2015",IND,DET,Indiana Pacers,Detroit Pistons,114,109,5,Home,87.9,True,2015
+201503160IND,"Mon, Mar 16, 2015",IND,TOR,Indiana Pacers,Toronto Raptors,98,117,-19,Home,97.7,True,2015
+201504100DET,"Fri, Apr 10, 2015",DET,IND,Detroit Pistons,Indiana Pacers,103,107,-4,Home,90.2,True,2015
+201412190DET,"Fri, Dec 19, 2014",DET,TOR,Detroit Pistons,Toronto Raptors,100,110,-10,Home,95.6,True,2015
+201501120TOR,"Mon, Jan 12, 2015",TOR,DET,Toronto Raptors,Detroit Pistons,111,114,-3,Home,97.8,True,2015
+201501250TOR,"Sun, Jan 25, 2015",TOR,DET,Toronto Raptors,Detroit Pistons,114,110,4,Home,95.4,True,2015
+201503240DET,"Tue, Mar 24, 2015",DET,TOR,Detroit Pistons,Toronto Raptors,108,104,4,Home,85.4,True,2015
