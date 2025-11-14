@@ -21,7 +21,7 @@ requests==2.32.2
 scikit-learn==1.3.2
 scipy==1.11.3
 six==1.16.0
-sportsipy @ git+https://github.com/davidjkrause/sportsipy.git@6d9d9eb04bebf3c01f257df59f4885bf8e8c69fd
+nba_api>=1.10.0
 threadpoolctl==3.2.0
 tzdata==2023.3
 urllib3==2.1.0

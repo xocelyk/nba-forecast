@@ -1,0 +1,1172 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+202012260POR,"Sat, Dec 26, 2020",POR,HOU,Portland Trail Blazers,Houston Rockets,128,126,2,Home,97.2,True,2021
+202012280DEN,"Mon, Dec 28, 2020",DEN,HOU,Denver Nuggets,Houston Rockets,124,111,13,Home,103.8,True,2021
+202012310HOU,"Thu, Dec 31, 2020",HOU,SAC,Houston Rockets,Sacramento Kings,122,119,3,Home,104.2,True,2021
+202101020HOU,"Sat, Jan 2, 2021",HOU,SAC,Houston Rockets,Sacramento Kings,102,94,8,Home,96.7,True,2021
+202101040HOU,"Mon, Jan 4, 2021",HOU,DAL,Houston Rockets,Dallas Mavericks,100,113,-13,Home,94.5,True,2021
+202101060IND,"Wed, Jan 6, 2021",IND,HOU,Indiana Pacers,Houston Rockets,114,107,7,Home,100.5,True,2021
+202101080HOU,"Fri, Jan 8, 2021",HOU,ORL,Houston Rockets,Orlando Magic,132,90,42,Home,96.5,True,2021
+202101100HOU,"Sun, Jan 10, 2021",HOU,LAL,Houston Rockets,Los Angeles Lakers,102,120,-18,Home,105.3,True,2021
+202101120HOU,"Tue, Jan 12, 2021",HOU,LAL,Houston Rockets,Los Angeles Lakers,100,117,-17,Home,104.0,True,2021
+202101140SAS,"Thu, Jan 14, 2021",SAS,HOU,San Antonio Spurs,Houston Rockets,105,109,-4,Home,98.8,True,2021
+202101160SAS,"Sat, Jan 16, 2021",SAS,HOU,San Antonio Spurs,Houston Rockets,103,91,12,Home,102.8,True,2021
+202101180CHI,"Mon, Jan 18, 2021",CHI,HOU,Chicago Bulls,Houston Rockets,125,120,5,Home,107.5,True,2021
+202101200HOU,"Wed, Jan 20, 2021",HOU,PHO,Houston Rockets,Phoenix Suns,103,109,-6,Home,103.8,True,2021
+202101220DET,"Fri, Jan 22, 2021",DET,HOU,Detroit Pistons,Houston Rockets,102,103,-1,Home,101.0,True,2021
+202101230DAL,"Sat, Jan 23, 2021",DAL,HOU,Dallas Mavericks,Houston Rockets,108,133,-25,Home,98.3,True,2021
+202101260HOU,"Tue, Jan 26, 2021",HOU,WAS,Houston Rockets,Washington Wizards,107,88,19,Home,101.7,True,2021
+202101280HOU,"Thu, Jan 28, 2021",HOU,POR,Houston Rockets,Portland Trail Blazers,104,101,3,Home,98.9,True,2021
+202101300NOP,"Sat, Jan 30, 2021",NOP,HOU,New Orleans Pelicans,Houston Rockets,112,126,-14,Home,105.8,True,2021
+202102010OKC,"Mon, Feb 1, 2021",OKC,HOU,Oklahoma City Thunder,Houston Rockets,106,136,-30,Home,104.5,True,2021
+202102030OKC,"Wed, Feb 3, 2021",OKC,HOU,Oklahoma City Thunder,Houston Rockets,104,87,17,Home,107.0,True,2021
+202102040MEM,"Thu, Feb 4, 2021",MEM,HOU,Memphis Grizzlies,Houston Rockets,103,115,-12,Home,97.5,True,2021
+202102060HOU,"Sat, Feb 6, 2021",HOU,SAS,Houston Rockets,San Antonio Spurs,106,111,-5,Home,103.0,True,2021
+202102080CHO,"Mon, Feb 8, 2021",CHO,HOU,Charlotte Hornets,Houston Rockets,119,94,25,Home,95.3,True,2021
+202102090NOP,"Tue, Feb 9, 2021",NOP,HOU,New Orleans Pelicans,Houston Rockets,130,101,29,Home,96.2,True,2021
+202102110HOU,"Thu, Feb 11, 2021",HOU,MIA,Houston Rockets,Miami Heat,94,101,-7,Home,96.5,True,2021
+202102130NYK,"Sat, Feb 13, 2021",NYK,HOU,New York Knicks,Houston Rockets,121,99,22,Home,96.5,True,2021
+202102150WAS,"Mon, Feb 15, 2021",WAS,HOU,Washington Wizards,Houston Rockets,131,119,12,Home,110.4,True,2021
+202102170PHI,"Wed, Feb 17, 2021",PHI,HOU,Philadelphia 76ers,Houston Rockets,118,113,5,Home,106.3,True,2021
+202102220HOU,"Mon, Feb 22, 2021",HOU,CHI,Houston Rockets,Chicago Bulls,100,120,-20,Home,99.1,True,2021
+202102240CLE,"Wed, Feb 24, 2021",CLE,HOU,Cleveland Cavaliers,Houston Rockets,112,96,16,Home,93.4,True,2021
+202102260TOR,"Fri, Feb 26, 2021",TOR,HOU,Toronto Raptors,Houston Rockets,122,111,11,Home,99.4,True,2021
+202102280HOU,"Sun, Feb 28, 2021",HOU,MEM,Houston Rockets,Memphis Grizzlies,84,133,-49,Home,109.0,True,2021
+202103010HOU,"Mon, Mar 1, 2021",HOU,CLE,Houston Rockets,Cleveland Cavaliers,90,101,-11,Home,94.8,True,2021
+202103030HOU,"Wed, Mar 3, 2021",HOU,BRK,Houston Rockets,Brooklyn Nets,114,132,-18,Home,98.2,True,2021
+202103110SAC,"Thu, Mar 11, 2021",SAC,HOU,Sacramento Kings,Houston Rockets,125,105,20,Home,106.6,True,2021
+202103120UTA,"Fri, Mar 12, 2021",UTA,HOU,Utah Jazz,Houston Rockets,114,99,15,Home,102.7,True,2021
+202103140HOU,"Sun, Mar 14, 2021",HOU,BOS,Houston Rockets,Boston Celtics,107,134,-27,Home,103.0,True,2021
+202103160HOU,"Tue, Mar 16, 2021",HOU,ATL,Houston Rockets,Atlanta Hawks,107,119,-12,Home,93.4,True,2021
+202103170HOU,"Wed, Mar 17, 2021",HOU,GSW,Houston Rockets,Golden State Warriors,94,108,-14,Home,102.0,True,2021
+202103190HOU,"Fri, Mar 19, 2021",HOU,DET,Houston Rockets,Detroit Pistons,100,113,-13,Home,97.0,True,2021
+202103210HOU,"Sun, Mar 21, 2021",HOU,OKC,Houston Rockets,Oklahoma City Thunder,112,114,-2,Home,97.1,True,2021
+202103220HOU,"Mon, Mar 22, 2021",HOU,TOR,Houston Rockets,Toronto Raptors,117,99,18,Home,99.0,True,2021
+202103240HOU,"Wed, Mar 24, 2021",HOU,CHO,Houston Rockets,Charlotte Hornets,97,122,-25,Home,91.7,True,2021
+202103260MIN,"Fri, Mar 26, 2021",MIN,HOU,Minnesota Timberwolves,Houston Rockets,107,101,6,Home,103.2,True,2021
+202103270MIN,"Sat, Mar 27, 2021",MIN,HOU,Minnesota Timberwolves,Houston Rockets,107,129,-22,Home,96.2,True,2021
+202103290HOU,"Mon, Mar 29, 2021",HOU,MEM,Houston Rockets,Memphis Grizzlies,110,120,-10,Home,103.2,True,2021
+202103310BRK,"Wed, Mar 31, 2021",BRK,HOU,Brooklyn Nets,Houston Rockets,120,108,12,Home,93.4,True,2021
+202104020BOS,"Fri, Apr 2, 2021",BOS,HOU,Boston Celtics,Houston Rockets,118,102,16,Home,95.7,True,2021
+202104040HOU,"Sun, Apr 4, 2021",HOU,NOP,Houston Rockets,New Orleans Pelicans,115,122,-7,Home,105.4,True,2021
+202104050HOU,"Mon, Apr 5, 2021",HOU,PHO,Houston Rockets,Phoenix Suns,130,133,-3,Home,103.7,True,2021
+202104070HOU,"Wed, Apr 7, 2021",HOU,DAL,Houston Rockets,Dallas Mavericks,102,93,9,Home,92.3,True,2021
+202104090LAC,"Fri, Apr 9, 2021",LAC,HOU,Los Angeles Clippers,Houston Rockets,126,109,17,Home,96.3,True,2021
+202104100GSW,"Sat, Apr 10, 2021",GSW,HOU,Golden State Warriors,Houston Rockets,125,109,16,Home,102.1,True,2021
+202104120PHO,"Mon, Apr 12, 2021",PHO,HOU,Phoenix Suns,Houston Rockets,126,120,6,Home,102.2,True,2021
+202104140HOU,"Wed, Apr 14, 2021",HOU,IND,Houston Rockets,Indiana Pacers,124,132,-8,Home,109.1,True,2021
+202104160HOU,"Fri, Apr 16, 2021",HOU,DEN,Houston Rockets,Denver Nuggets,99,128,-29,Home,96.4,True,2021
+202104180ORL,"Sun, Apr 18, 2021",ORL,HOU,Orlando Magic,Houston Rockets,110,114,-4,Home,99.8,True,2021
+202104190MIA,"Mon, Apr 19, 2021",MIA,HOU,Miami Heat,Houston Rockets,113,91,22,Home,97.1,True,2021
+202104210HOU,"Wed, Apr 21, 2021",HOU,UTA,Houston Rockets,Utah Jazz,89,112,-23,Home,101.2,True,2021
+202104230HOU,"Fri, Apr 23, 2021",HOU,LAC,Houston Rockets,Los Angeles Clippers,104,109,-5,Home,102.8,True,2021
+202104240DEN,"Sat, Apr 24, 2021",DEN,HOU,Denver Nuggets,Houston Rockets,129,116,13,Home,102.5,True,2021
+202104270HOU,"Tue, Apr 27, 2021",HOU,MIN,Houston Rockets,Minnesota Timberwolves,107,114,-7,Home,103.8,True,2021
+202104290HOU,"Thu, Apr 29, 2021",HOU,MIL,Houston Rockets,Milwaukee Bucks,143,136,7,Home,107.9,True,2021
+202105010HOU,"Sat, May 1, 2021",HOU,GSW,Houston Rockets,Golden State Warriors,87,113,-26,Home,105.5,True,2021
+202105020HOU,"Sun, May 2, 2021",HOU,NYK,Houston Rockets,New York Knicks,97,122,-25,Home,96.4,True,2021
+202105050HOU,"Wed, May 5, 2021",HOU,PHI,Houston Rockets,Philadelphia 76ers,115,135,-20,Home,98.7,True,2021
+202105070MIL,"Fri, May 7, 2021",MIL,HOU,Milwaukee Bucks,Houston Rockets,141,133,8,Home,109.3,True,2021
+202105080UTA,"Sat, May 8, 2021",UTA,HOU,Utah Jazz,Houston Rockets,124,116,8,Home,102.5,True,2021
+202105100POR,"Mon, May 10, 2021",POR,HOU,Portland Trail Blazers,Houston Rockets,140,129,11,Home,102.4,True,2021
+202105120LAL,"Wed, May 12, 2021",LAL,HOU,Los Angeles Lakers,Houston Rockets,124,122,2,Home,102.3,True,2021
+202105140HOU,"Fri, May 14, 2021",HOU,LAC,Houston Rockets,Los Angeles Clippers,122,115,7,Home,101.7,True,2021
+202105160ATL,"Sun, May 16, 2021",ATL,HOU,Atlanta Hawks,Houston Rockets,124,95,29,Home,102.2,True,2021
+202012230POR,"Wed, Dec 23, 2020",POR,UTA,Portland Trail Blazers,Utah Jazz,100,120,-20,Home,98.3,True,2021
+202012280LAL,"Mon, Dec 28, 2020",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,107,115,-8,Home,99.9,True,2021
+202012300LAC,"Wed, Dec 30, 2020",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,128,105,23,Home,101.3,True,2021
+202101010GSW,"Fri, Jan 1, 2021",GSW,POR,Golden State Warriors,Portland Trail Blazers,98,123,-25,Home,104.4,True,2021
+202101030GSW,"Sun, Jan 3, 2021",GSW,POR,Golden State Warriors,Portland Trail Blazers,137,122,15,Home,107.2,True,2021
+202101050POR,"Tue, Jan 5, 2021",POR,CHI,Portland Trail Blazers,Chicago Bulls,108,111,-3,Home,100.3,True,2021
+202101070POR,"Thu, Jan 7, 2021",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,135,117,18,Home,106.6,True,2021
+202101090SAC,"Sat, Jan 9, 2021",SAC,POR,Sacramento Kings,Portland Trail Blazers,99,125,-26,Home,104.9,True,2021
+202101110POR,"Mon, Jan 11, 2021",POR,TOR,Portland Trail Blazers,Toronto Raptors,112,111,1,Home,98.5,True,2021
+202101130SAC,"Wed, Jan 13, 2021",SAC,POR,Sacramento Kings,Portland Trail Blazers,126,132,-6,Home,96.6,True,2021
+202101140POR,"Thu, Jan 14, 2021",POR,IND,Portland Trail Blazers,Indiana Pacers,87,111,-24,Home,94.1,True,2021
+202101160POR,"Sat, Jan 16, 2021",POR,ATL,Portland Trail Blazers,Atlanta Hawks,112,106,6,Home,100.6,True,2021
+202101180POR,"Mon, Jan 18, 2021",POR,SAS,Portland Trail Blazers,San Antonio Spurs,104,125,-21,Home,97.4,True,2021
+202101240POR,"Sun, Jan 24, 2021",POR,NYK,Portland Trail Blazers,New York Knicks,116,113,3,Home,93.1,True,2021
+202101250POR,"Mon, Jan 25, 2021",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,122,125,-3,Home,97.2,True,2021
+202101300CHI,"Sat, Jan 30, 2021",CHI,POR,Chicago Bulls,Portland Trail Blazers,122,123,-1,Home,93.1,True,2021
+202102010MIL,"Mon, Feb 1, 2021",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,134,106,28,Home,102.9,True,2021
+202102020WAS,"Tue, Feb 2, 2021",WAS,POR,Washington Wizards,Portland Trail Blazers,121,132,-11,Home,96.6,True,2021
+202102040PHI,"Thu, Feb 4, 2021",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,105,121,-16,Home,97.9,True,2021
+202102060NYK,"Sat, Feb 6, 2021",NYK,POR,New York Knicks,Portland Trail Blazers,110,99,11,Home,96.2,True,2021
+202102090POR,"Tue, Feb 9, 2021",POR,ORL,Portland Trail Blazers,Orlando Magic,106,97,9,Home,96.1,True,2021
+202102110POR,"Thu, Feb 11, 2021",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,118,114,4,Home,93.9,True,2021
+202102120POR,"Fri, Feb 12, 2021",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,129,110,19,Home,101.0,True,2021
+202102140DAL,"Sun, Feb 14, 2021",DAL,POR,Dallas Mavericks,Portland Trail Blazers,118,121,-3,Home,93.1,True,2021
+202102160OKC,"Tue, Feb 16, 2021",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,104,115,-11,Home,97.9,True,2021
+202102170NOP,"Wed, Feb 17, 2021",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,124,126,-2,Home,94.2,True,2021
+202102200POR,"Sat, Feb 20, 2021",POR,WAS,Portland Trail Blazers,Washington Wizards,111,118,-7,Home,104.8,True,2021
+202102220PHO,"Mon, Feb 22, 2021",PHO,POR,Phoenix Suns,Portland Trail Blazers,132,100,32,Home,95.4,True,2021
+202102230DEN,"Tue, Feb 23, 2021",DEN,POR,Denver Nuggets,Portland Trail Blazers,111,106,5,Home,90.7,True,2021
+202102260LAL,"Fri, Feb 26, 2021",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,102,93,9,Home,93.1,True,2021
+202103010POR,"Mon, Mar 1, 2021",POR,CHO,Portland Trail Blazers,Charlotte Hornets,123,111,12,Home,96.4,True,2021
+202103030POR,"Wed, Mar 3, 2021",POR,GSW,Portland Trail Blazers,Golden State Warriors,108,106,2,Home,96.1,True,2021
+202103040POR,"Thu, Mar 4, 2021",POR,SAC,Portland Trail Blazers,Sacramento Kings,123,119,4,Home,95.5,True,2021
+202103110POR,"Thu, Mar 11, 2021",POR,PHO,Portland Trail Blazers,Phoenix Suns,121,127,-6,Home,96.6,True,2021
+202103130MIN,"Sat, Mar 13, 2021",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,121,125,-4,Home,99.5,True,2021
+202103140MIN,"Sun, Mar 14, 2021",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,114,112,2,Home,97.0,True,2021
+202103160POR,"Tue, Mar 16, 2021",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,125,124,1,Home,99.1,True,2021
+202103180POR,"Thu, Mar 18, 2021",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,101,93,8,Home,93.3,True,2021
+202103190POR,"Fri, Mar 19, 2021",POR,DAL,Portland Trail Blazers,Dallas Mavericks,125,119,6,Home,91.9,True,2021
+202103210POR,"Sun, Mar 21, 2021",POR,DAL,Portland Trail Blazers,Dallas Mavericks,92,132,-40,Home,93.2,True,2021
+202103230POR,"Tue, Mar 23, 2021",POR,BRK,Portland Trail Blazers,Brooklyn Nets,112,116,-4,Home,93.2,True,2021
+202103250MIA,"Thu, Mar 25, 2021",MIA,POR,Miami Heat,Portland Trail Blazers,122,125,-3,Home,96.2,True,2021
+202103260ORL,"Fri, Mar 26, 2021",ORL,POR,Orlando Magic,Portland Trail Blazers,105,112,-7,Home,98.8,True,2021
+202103280TOR,"Sun, Mar 28, 2021",TOR,POR,Toronto Raptors,Portland Trail Blazers,117,122,-5,Home,99.0,True,2021
+202103310DET,"Wed, Mar 31, 2021",DET,POR,Detroit Pistons,Portland Trail Blazers,101,124,-23,Home,100.7,True,2021
+202104020POR,"Fri, Apr 2, 2021",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,109,127,-18,Home,106.8,True,2021
+202104030POR,"Sat, Apr 3, 2021",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,133,85,48,Home,102.3,True,2021
+202104060LAC,"Tue, Apr 6, 2021",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,133,116,17,Home,98.9,True,2021
+202104080UTA,"Thu, Apr 8, 2021",UTA,POR,Utah Jazz,Portland Trail Blazers,122,103,19,Home,97.3,True,2021
+202104100POR,"Sat, Apr 10, 2021",POR,DET,Portland Trail Blazers,Detroit Pistons,118,103,15,Home,96.7,True,2021
+202104110POR,"Sun, Apr 11, 2021",POR,MIA,Portland Trail Blazers,Miami Heat,98,107,-9,Home,91.0,True,2021
+202104130POR,"Tue, Apr 13, 2021",POR,BOS,Portland Trail Blazers,Boston Celtics,115,116,-1,Home,100.3,True,2021
+202104160SAS,"Fri, Apr 16, 2021",SAS,POR,San Antonio Spurs,Portland Trail Blazers,106,107,-1,Home,95.7,True,2021
+202104180CHO,"Sun, Apr 18, 2021",CHO,POR,Charlotte Hornets,Portland Trail Blazers,109,101,8,Home,95.6,True,2021
+202104200POR,"Tue, Apr 20, 2021",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,112,113,-1,Home,93.1,True,2021
+202104210POR,"Wed, Apr 21, 2021",POR,DEN,Portland Trail Blazers,Denver Nuggets,105,106,-1,Home,91.4,True,2021
+202104230POR,"Fri, Apr 23, 2021",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,128,130,-2,Home,103.5,True,2021
+202104250POR,"Sun, Apr 25, 2021",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,113,120,-7,Home,108.4,True,2021
+202104270IND,"Tue, Apr 27, 2021",IND,POR,Indiana Pacers,Portland Trail Blazers,112,133,-21,Home,102.1,True,2021
+202104280MEM,"Wed, Apr 28, 2021",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,109,130,-21,Home,101.7,True,2021
+202104300BRK,"Fri, Apr 30, 2021",BRK,POR,Brooklyn Nets,Portland Trail Blazers,109,128,-19,Home,98.9,True,2021
+202105020BOS,"Sun, May 2, 2021",BOS,POR,Boston Celtics,Portland Trail Blazers,119,129,-10,Home,101.2,True,2021
+202105030ATL,"Mon, May 3, 2021",ATL,POR,Atlanta Hawks,Portland Trail Blazers,123,114,9,Home,98.1,True,2021
+202105050CLE,"Wed, May 5, 2021",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,105,141,-36,Home,99.2,True,2021
+202105070POR,"Fri, May 7, 2021",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,106,101,5,Home,98.7,True,2021
+202105080POR,"Sat, May 8, 2021",POR,SAS,Portland Trail Blazers,San Antonio Spurs,124,102,22,Home,99.2,True,2021
+202105120UTA,"Wed, May 12, 2021",UTA,POR,Utah Jazz,Portland Trail Blazers,98,105,-7,Home,89.0,True,2021
+202105130PHO,"Thu, May 13, 2021",PHO,POR,Phoenix Suns,Portland Trail Blazers,118,117,1,Home,98.7,True,2021
+202105160POR,"Sun, May 16, 2021",POR,DEN,Portland Trail Blazers,Denver Nuggets,132,116,16,Home,97.9,True,2021
+202105220DEN,"Sat, May 22, 2021",DEN,POR,Denver Nuggets,Portland Trail Blazers,109,123,-14,Home,92.2,True,2021
+202105240DEN,"Mon, May 24, 2021",DEN,POR,Denver Nuggets,Portland Trail Blazers,128,109,19,Home,96.4,True,2021
+202105270POR,"Thu, May 27, 2021",POR,DEN,Portland Trail Blazers,Denver Nuggets,115,120,-5,Home,94.5,True,2021
+202105290POR,"Sat, May 29, 2021",POR,DEN,Portland Trail Blazers,Denver Nuggets,115,95,20,Home,93.9,True,2021
+202106010DEN,"Tue, Jun 1, 2021",DEN,POR,Denver Nuggets,Portland Trail Blazers,147,140,7,Home,94.6,True,2021
+202106030POR,"Thu, Jun 3, 2021",POR,DEN,Portland Trail Blazers,Denver Nuggets,115,126,-11,Home,96.0,True,2021
+202012230DEN,"Wed, Dec 23, 2020",DEN,SAC,Denver Nuggets,Sacramento Kings,122,124,-2,Home,99.1,True,2021
+202012250DEN,"Fri, Dec 25, 2020",DEN,LAC,Denver Nuggets,Los Angeles Clippers,108,121,-13,Home,92.8,True,2021
+202012290SAC,"Tue, Dec 29, 2020",SAC,DEN,Sacramento Kings,Denver Nuggets,125,115,10,Home,99.1,True,2021
+202101010DEN,"Fri, Jan 1, 2021",DEN,PHO,Denver Nuggets,Phoenix Suns,103,106,-3,Home,92.6,True,2021
+202101030MIN,"Sun, Jan 3, 2021",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,109,124,-15,Home,97.2,True,2021
+202101050DEN,"Tue, Jan 5, 2021",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,123,116,7,Home,102.3,True,2021
+202101070DEN,"Thu, Jan 7, 2021",DEN,DAL,Denver Nuggets,Dallas Mavericks,117,124,-7,Home,96.0,True,2021
+202101090PHI,"Sat, Jan 9, 2021",PHI,DEN,Philadelphia 76ers,Denver Nuggets,103,115,-12,Home,96.8,True,2021
+202101100NYK,"Sun, Jan 10, 2021",NYK,DEN,New York Knicks,Denver Nuggets,89,114,-25,Home,91.6,True,2021
+202101120BRK,"Tue, Jan 12, 2021",BRK,DEN,Brooklyn Nets,Denver Nuggets,122,116,6,Home,95.9,True,2021
+202101140DEN,"Thu, Jan 14, 2021",DEN,GSW,Denver Nuggets,Golden State Warriors,114,104,10,Home,103.7,True,2021
+202101170DEN,"Sun, Jan 17, 2021",DEN,UTA,Denver Nuggets,Utah Jazz,105,109,-4,Home,89.6,True,2021
+202101190DEN,"Tue, Jan 19, 2021",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,119,101,18,Home,103.1,True,2021
+202101220PHO,"Fri, Jan 22, 2021",PHO,DEN,Phoenix Suns,Denver Nuggets,126,130,-4,Home,96.5,True,2021
+202101230PHO,"Sat, Jan 23, 2021",PHO,DEN,Phoenix Suns,Denver Nuggets,112,120,-8,Home,92.3,True,2021
+202101250DAL,"Mon, Jan 25, 2021",DAL,DEN,Dallas Mavericks,Denver Nuggets,113,117,-4,Home,93.8,True,2021
+202101270MIA,"Wed, Jan 27, 2021",MIA,DEN,Miami Heat,Denver Nuggets,82,109,-27,Home,93.9,True,2021
+202101290SAS,"Fri, Jan 29, 2021",SAS,DEN,San Antonio Spurs,Denver Nuggets,119,109,10,Home,94.1,True,2021
+202101310DEN,"Sun, Jan 31, 2021",DEN,UTA,Denver Nuggets,Utah Jazz,128,117,11,Home,93.8,True,2021
+202102040LAL,"Thu, Feb 4, 2021",LAL,DEN,Los Angeles Lakers,Denver Nuggets,114,93,21,Home,95.0,True,2021
+202102060SAC,"Sat, Feb 6, 2021",SAC,DEN,Sacramento Kings,Denver Nuggets,119,114,5,Home,96.4,True,2021
+202102080DEN,"Mon, Feb 8, 2021",DEN,MIL,Denver Nuggets,Milwaukee Bucks,112,125,-13,Home,97.5,True,2021
+202102100DEN,"Wed, Feb 10, 2021",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,133,95,38,Home,99.1,True,2021
+202102120DEN,"Fri, Feb 12, 2021",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,97,95,2,Home,95.0,True,2021
+202102140DEN,"Sun, Feb 14, 2021",DEN,LAL,Denver Nuggets,Los Angeles Lakers,122,105,17,Home,99.0,True,2021
+202102160BOS,"Tue, Feb 16, 2021",BOS,DEN,Boston Celtics,Denver Nuggets,112,99,13,Home,96.0,True,2021
+202102170WAS,"Wed, Feb 17, 2021",WAS,DEN,Washington Wizards,Denver Nuggets,130,128,2,Home,101.4,True,2021
+202102190CLE,"Fri, Feb 19, 2021",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,103,120,-17,Home,94.6,True,2021
+202102210ATL,"Sun, Feb 21, 2021",ATL,DEN,Atlanta Hawks,Denver Nuggets,123,115,8,Home,97.3,True,2021
+202102250DEN,"Thu, Feb 25, 2021",DEN,WAS,Denver Nuggets,Washington Wizards,110,112,-2,Home,97.1,True,2021
+202102270OKC,"Sat, Feb 27, 2021",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,96,126,-30,Home,100.3,True,2021
+202103010CHI,"Mon, Mar 1, 2021",CHI,DEN,Chicago Bulls,Denver Nuggets,112,118,-6,Home,97.8,True,2021
+202103020MIL,"Tue, Mar 2, 2021",MIL,DEN,Milwaukee Bucks,Denver Nuggets,97,128,-31,Home,95.9,True,2021
+202103040IND,"Thu, Mar 4, 2021",IND,DEN,Indiana Pacers,Denver Nuggets,103,113,-10,Home,95.8,True,2021
+202103120MEM,"Fri, Mar 12, 2021",MEM,DEN,Memphis Grizzlies,Denver Nuggets,102,103,-1,Home,95.9,True,2021
+202103130DEN,"Sat, Mar 13, 2021",DEN,DAL,Denver Nuggets,Dallas Mavericks,103,116,-13,Home,90.5,True,2021
+202103150DEN,"Mon, Mar 15, 2021",DEN,IND,Denver Nuggets,Indiana Pacers,121,106,15,Home,94.3,True,2021
+202103170DEN,"Wed, Mar 17, 2021",DEN,CHO,Denver Nuggets,Charlotte Hornets,129,104,25,Home,100.9,True,2021
+202103190DEN,"Fri, Mar 19, 2021",DEN,CHI,Denver Nuggets,Chicago Bulls,131,127,4,Home,95.3,True,2021
+202103210DEN,"Sun, Mar 21, 2021",DEN,NOP,Denver Nuggets,New Orleans Pelicans,108,113,-5,Home,96.2,True,2021
+202103230ORL,"Tue, Mar 23, 2021",ORL,DEN,Orlando Magic,Denver Nuggets,99,110,-11,Home,93.7,True,2021
+202103240TOR,"Wed, Mar 24, 2021",TOR,DEN,Toronto Raptors,Denver Nuggets,135,111,24,Home,96.3,True,2021
+202103260NOP,"Fri, Mar 26, 2021",NOP,DEN,New Orleans Pelicans,Denver Nuggets,108,113,-5,Home,90.4,True,2021
+202103280DEN,"Sun, Mar 28, 2021",DEN,ATL,Denver Nuggets,Atlanta Hawks,126,102,24,Home,93.1,True,2021
+202103300DEN,"Tue, Mar 30, 2021",DEN,PHI,Denver Nuggets,Philadelphia 76ers,104,95,9,Home,95.4,True,2021
+202104010LAC,"Thu, Apr 1, 2021",LAC,DEN,Los Angeles Clippers,Denver Nuggets,94,101,-7,Home,88.6,True,2021
+202104040DEN,"Sun, Apr 4, 2021",DEN,ORL,Denver Nuggets,Orlando Magic,119,109,10,Home,94.8,True,2021
+202104060DEN,"Tue, Apr 6, 2021",DEN,DET,Denver Nuggets,Detroit Pistons,134,119,15,Home,93.8,True,2021
+202104070DEN,"Wed, Apr 7, 2021",DEN,SAS,Denver Nuggets,San Antonio Spurs,106,96,10,Home,101.9,True,2021
+202104090DEN,"Fri, Apr 9, 2021",DEN,SAS,Denver Nuggets,San Antonio Spurs,121,119,2,Home,98.8,True,2021
+202104110DEN,"Sun, Apr 11, 2021",DEN,BOS,Denver Nuggets,Boston Celtics,87,105,-18,Home,91.6,True,2021
+202104120GSW,"Mon, Apr 12, 2021",GSW,DEN,Golden State Warriors,Denver Nuggets,116,107,9,Home,100.7,True,2021
+202104140DEN,"Wed, Apr 14, 2021",DEN,MIA,Denver Nuggets,Miami Heat,123,106,17,Home,90.3,True,2021
+202104190DEN,"Mon, Apr 19, 2021",DEN,MEM,Denver Nuggets,Memphis Grizzlies,139,137,2,Home,100.1,True,2021
+202104230GSW,"Fri, Apr 23, 2021",GSW,DEN,Golden State Warriors,Denver Nuggets,118,97,21,Home,97.8,True,2021
+202104260DEN,"Mon, Apr 26, 2021",DEN,MEM,Denver Nuggets,Memphis Grizzlies,120,96,24,Home,103.9,True,2021
+202104280DEN,"Wed, Apr 28, 2021",DEN,NOP,Denver Nuggets,New Orleans Pelicans,114,112,2,Home,108.7,True,2021
+202104290DEN,"Thu, Apr 29, 2021",DEN,TOR,Denver Nuggets,Toronto Raptors,121,111,10,Home,97.2,True,2021
+202105010LAC,"Sat, May 1, 2021",LAC,DEN,Los Angeles Clippers,Denver Nuggets,104,110,-6,Home,88.3,True,2021
+202105030LAL,"Mon, May 3, 2021",LAL,DEN,Los Angeles Lakers,Denver Nuggets,93,89,4,Home,94.1,True,2021
+202105050DEN,"Wed, May 5, 2021",DEN,NYK,Denver Nuggets,New York Knicks,113,97,16,Home,103.9,True,2021
+202105070UTA,"Fri, May 7, 2021",UTA,DEN,Utah Jazz,Denver Nuggets,127,120,7,Home,97.2,True,2021
+202105080DEN,"Sat, May 8, 2021",DEN,BRK,Denver Nuggets,Brooklyn Nets,119,125,-6,Home,97.4,True,2021
+202105110CHO,"Tue, May 11, 2021",CHO,DEN,Charlotte Hornets,Denver Nuggets,112,117,-5,Home,98.9,True,2021
+202105130MIN,"Thu, May 13, 2021",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,103,114,-11,Home,96.5,True,2021
+202105140DET,"Fri, May 14, 2021",DET,DEN,Detroit Pistons,Denver Nuggets,91,104,-13,Home,91.9,True,2021
+202106070PHO,"Mon, Jun 7, 2021",PHO,DEN,Phoenix Suns,Denver Nuggets,122,105,17,Home,94.2,True,2021
+202106090PHO,"Wed, Jun 9, 2021",PHO,DEN,Phoenix Suns,Denver Nuggets,123,98,25,Home,97.7,True,2021
+202106110DEN,"Fri, Jun 11, 2021",DEN,PHO,Denver Nuggets,Phoenix Suns,102,116,-14,Home,95.3,True,2021
+202106130DEN,"Sun, Jun 13, 2021",DEN,PHO,Denver Nuggets,Phoenix Suns,118,125,-7,Home,104.6,True,2021
+202012260SAC,"Sat, Dec 26, 2020",SAC,PHO,Sacramento Kings,Phoenix Suns,106,103,3,Home,101.3,True,2021
+202012270SAC,"Sun, Dec 27, 2020",SAC,PHO,Sacramento Kings,Phoenix Suns,100,116,-16,Home,97.9,True,2021
+202101040GSW,"Mon, Jan 4, 2021",GSW,SAC,Golden State Warriors,Sacramento Kings,137,106,31,Home,109.0,True,2021
+202101060SAC,"Wed, Jan 6, 2021",SAC,CHI,Sacramento Kings,Chicago Bulls,128,124,4,Home,98.3,True,2021
+202101080SAC,"Fri, Jan 8, 2021",SAC,TOR,Sacramento Kings,Toronto Raptors,123,144,-21,Home,98.9,True,2021
+202101110SAC,"Mon, Jan 11, 2021",SAC,IND,Sacramento Kings,Indiana Pacers,127,122,5,Home,103.9,True,2021
+202101150SAC,"Fri, Jan 15, 2021",SAC,LAC,Sacramento Kings,Los Angeles Clippers,100,138,-38,Home,94.2,True,2021
+202101170SAC,"Sun, Jan 17, 2021",SAC,NOP,Sacramento Kings,New Orleans Pelicans,123,128,-5,Home,97.7,True,2021
+202101200LAC,"Wed, Jan 20, 2021",LAC,SAC,Los Angeles Clippers,Sacramento Kings,115,96,19,Home,103.3,True,2021
+202101220SAC,"Fri, Jan 22, 2021",SAC,NYK,Sacramento Kings,New York Knicks,103,94,9,Home,95.4,True,2021
+202101270ORL,"Wed, Jan 27, 2021",ORL,SAC,Orlando Magic,Sacramento Kings,107,121,-14,Home,98.0,True,2021
+202101290TOR,"Fri, Jan 29, 2021",TOR,SAC,Toronto Raptors,Sacramento Kings,124,126,-2,Home,100.0,True,2021
+202101300MIA,"Sat, Jan 30, 2021",MIA,SAC,Miami Heat,Sacramento Kings,105,104,1,Home,92.5,True,2021
+202102010NOP,"Mon, Feb 1, 2021",NOP,SAC,New Orleans Pelicans,Sacramento Kings,109,118,-9,Home,102.0,True,2021
+202102030SAC,"Wed, Feb 3, 2021",SAC,BOS,Sacramento Kings,Boston Celtics,116,111,5,Home,97.5,True,2021
+202102070LAC,"Sun, Feb 7, 2021",LAC,SAC,Los Angeles Clippers,Sacramento Kings,110,113,-3,Home,100.0,True,2021
+202102090SAC,"Tue, Feb 9, 2021",SAC,PHI,Sacramento Kings,Philadelphia 76ers,111,119,-8,Home,105.9,True,2021
+202102120SAC,"Fri, Feb 12, 2021",SAC,ORL,Sacramento Kings,Orlando Magic,112,123,-11,Home,99.0,True,2021
+202102140SAC,"Sun, Feb 14, 2021",SAC,MEM,Sacramento Kings,Memphis Grizzlies,110,124,-14,Home,101.5,True,2021
+202102150SAC,"Mon, Feb 15, 2021",SAC,BRK,Sacramento Kings,Brooklyn Nets,125,136,-11,Home,97.5,True,2021
+202102180SAC,"Thu, Feb 18, 2021",SAC,MIA,Sacramento Kings,Miami Heat,110,118,-8,Home,101.7,True,2021
+202102200CHI,"Sat, Feb 20, 2021",CHI,SAC,Chicago Bulls,Sacramento Kings,122,114,8,Home,99.5,True,2021
+202102210MIL,"Sun, Feb 21, 2021",MIL,SAC,Milwaukee Bucks,Sacramento Kings,128,115,13,Home,105.2,True,2021
+202102230BRK,"Tue, Feb 23, 2021",BRK,SAC,Brooklyn Nets,Sacramento Kings,127,118,9,Home,100.8,True,2021
+202102250NYK,"Thu, Feb 25, 2021",NYK,SAC,New York Knicks,Sacramento Kings,140,121,19,Home,103.5,True,2021
+202102260DET,"Fri, Feb 26, 2021",DET,SAC,Detroit Pistons,Sacramento Kings,107,110,-3,Home,97.3,True,2021
+202102280SAC,"Sun, Feb 28, 2021",SAC,CHO,Sacramento Kings,Charlotte Hornets,126,127,-1,Home,99.5,True,2021
+202103030SAC,"Wed, Mar 3, 2021",SAC,LAL,Sacramento Kings,Los Angeles Lakers,123,120,3,Home,92.8,True,2021
+202103130ATL,"Sat, Mar 13, 2021",ATL,SAC,Atlanta Hawks,Sacramento Kings,121,106,15,Home,91.3,True,2021
+202103150CHO,"Mon, Mar 15, 2021",CHO,SAC,Charlotte Hornets,Sacramento Kings,122,116,6,Home,100.1,True,2021
+202103170WAS,"Wed, Mar 17, 2021",WAS,SAC,Washington Wizards,Sacramento Kings,119,121,-2,Home,108.0,True,2021
+202103190BOS,"Fri, Mar 19, 2021",BOS,SAC,Boston Celtics,Sacramento Kings,96,107,-11,Home,93.5,True,2021
+202103200PHI,"Sat, Mar 20, 2021",PHI,SAC,Philadelphia 76ers,Sacramento Kings,129,105,24,Home,98.8,True,2021
+202103220CLE,"Mon, Mar 22, 2021",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,105,119,-14,Home,100.4,True,2021
+202103240SAC,"Wed, Mar 24, 2021",SAC,ATL,Sacramento Kings,Atlanta Hawks,110,108,2,Home,95.1,True,2021
+202103250SAC,"Thu, Mar 25, 2021",SAC,GSW,Sacramento Kings,Golden State Warriors,141,119,22,Home,97.0,True,2021
+202103270SAC,"Sat, Mar 27, 2021",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,100,98,2,Home,93.8,True,2021
+202103290SAS,"Mon, Mar 29, 2021",SAS,SAC,San Antonio Spurs,Sacramento Kings,115,132,-17,Home,95.8,True,2021
+202103310SAS,"Wed, Mar 31, 2021",SAS,SAC,San Antonio Spurs,Sacramento Kings,120,106,14,Home,99.5,True,2021
+202104020SAC,"Fri, Apr 2, 2021",SAC,LAL,Sacramento Kings,Los Angeles Lakers,94,115,-21,Home,100.0,True,2021
+202104030SAC,"Sat, Apr 3, 2021",SAC,MIL,Sacramento Kings,Milwaukee Bucks,128,129,-1,Home,101.4,True,2021
+202104050MIN,"Mon, Apr 5, 2021",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,116,106,10,Home,100.2,True,2021
+202104080SAC,"Thu, Apr 8, 2021",SAC,DET,Sacramento Kings,Detroit Pistons,101,113,-12,Home,100.7,True,2021
+202104100UTA,"Sat, Apr 10, 2021",UTA,SAC,Utah Jazz,Sacramento Kings,128,112,16,Home,100.9,True,2021
+202104120NOP,"Mon, Apr 12, 2021",NOP,SAC,New Orleans Pelicans,Sacramento Kings,117,110,7,Home,105.0,True,2021
+202104140SAC,"Wed, Apr 14, 2021",SAC,WAS,Sacramento Kings,Washington Wizards,111,123,-12,Home,110.2,True,2021
+202104150PHO,"Thu, Apr 15, 2021",PHO,SAC,Phoenix Suns,Sacramento Kings,122,114,8,Home,94.0,True,2021
+202104180DAL,"Sun, Apr 18, 2021",DAL,SAC,Dallas Mavericks,Sacramento Kings,107,121,-14,Home,95.2,True,2021
+202104200SAC,"Tue, Apr 20, 2021",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,120,134,-14,Home,100.7,True,2021
+202104210SAC,"Wed, Apr 21, 2021",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,128,125,3,Home,95.6,True,2021
+202104250GSW,"Sun, Apr 25, 2021",GSW,SAC,Golden State Warriors,Sacramento Kings,117,113,4,Home,98.2,True,2021
+202104260SAC,"Mon, Apr 26, 2021",SAC,DAL,Sacramento Kings,Dallas Mavericks,113,106,7,Home,92.2,True,2021
+202104280SAC,"Wed, Apr 28, 2021",SAC,UTA,Sacramento Kings,Utah Jazz,105,154,-49,Home,100.3,True,2021
+202104300LAL,"Fri, Apr 30, 2021",LAL,SAC,Los Angeles Lakers,Sacramento Kings,106,110,-4,Home,99.1,True,2021
+202105020DAL,"Sun, May 2, 2021",DAL,SAC,Dallas Mavericks,Sacramento Kings,99,111,-12,Home,95.9,True,2021
+202105040OKC,"Tue, May 4, 2021",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,99,103,-4,Home,99.6,True,2021
+202105050IND,"Wed, May 5, 2021",IND,SAC,Indiana Pacers,Sacramento Kings,93,104,-11,Home,99.6,True,2021
+202105070SAC,"Fri, May 7, 2021",SAC,SAS,Sacramento Kings,San Antonio Spurs,104,113,-9,Home,101.3,True,2021
+202105090SAC,"Sun, May 9, 2021",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,126,98,28,Home,99.9,True,2021
+202105110SAC,"Tue, May 11, 2021",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,122,106,16,Home,102.7,True,2021
+202105130MEM,"Thu, May 13, 2021",MEM,SAC,Memphis Grizzlies,Sacramento Kings,116,110,6,Home,97.2,True,2021
+202105140MEM,"Fri, May 14, 2021",MEM,SAC,Memphis Grizzlies,Sacramento Kings,107,106,1,Home,101.3,True,2021
+202105160SAC,"Sun, May 16, 2021",SAC,UTA,Sacramento Kings,Utah Jazz,99,121,-22,Home,101.2,True,2021
+202012230PHO,"Wed, Dec 23, 2020",PHO,DAL,Phoenix Suns,Dallas Mavericks,106,102,4,Home,100.4,True,2021
+202012250LAL,"Fri, Dec 25, 2020",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,138,115,23,Home,98.9,True,2021
+202012270LAC,"Sun, Dec 27, 2020",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,73,124,-51,Home,90.9,True,2021
+202012300DAL,"Wed, Dec 30, 2020",DAL,CHO,Dallas Mavericks,Charlotte Hornets,99,118,-19,Home,100.6,True,2021
+202101010DAL,"Fri, Jan 1, 2021",DAL,MIA,Dallas Mavericks,Miami Heat,93,83,10,Home,97.5,True,2021
+202101030CHI,"Sun, Jan 3, 2021",CHI,DAL,Chicago Bulls,Dallas Mavericks,118,108,10,Home,101.2,True,2021
+202101090DAL,"Sat, Jan 9, 2021",DAL,ORL,Dallas Mavericks,Orlando Magic,112,98,14,Home,96.0,True,2021
+202101130CHO,"Wed, Jan 13, 2021",CHO,DAL,Charlotte Hornets,Dallas Mavericks,93,104,-11,Home,98.0,True,2021
+202101150MIL,"Fri, Jan 15, 2021",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,112,109,3,Home,99.6,True,2021
+202101170DAL,"Sun, Jan 17, 2021",DAL,CHI,Dallas Mavericks,Chicago Bulls,101,117,-16,Home,104.9,True,2021
+202101180TOR,"Mon, Jan 18, 2021",TOR,DAL,Toronto Raptors,Dallas Mavericks,116,93,23,Home,98.7,True,2021
+202101200IND,"Wed, Jan 20, 2021",IND,DAL,Indiana Pacers,Dallas Mavericks,112,124,-12,Home,100.9,True,2021
+202101220SAS,"Fri, Jan 22, 2021",SAS,DAL,San Antonio Spurs,Dallas Mavericks,117,122,-5,Home,97.9,True,2021
+202101270UTA,"Wed, Jan 27, 2021",UTA,DAL,Utah Jazz,Dallas Mavericks,116,104,12,Home,96.4,True,2021
+202101290UTA,"Fri, Jan 29, 2021",UTA,DAL,Utah Jazz,Dallas Mavericks,120,101,19,Home,96.5,True,2021
+202101300DAL,"Sat, Jan 30, 2021",DAL,PHO,Dallas Mavericks,Phoenix Suns,105,111,-6,Home,97.1,True,2021
+202102010DAL,"Mon, Feb 1, 2021",DAL,PHO,Dallas Mavericks,Phoenix Suns,108,109,-1,Home,100.7,True,2021
+202102030ATL,"Wed, Feb 3, 2021",ATL,DAL,Atlanta Hawks,Dallas Mavericks,116,122,-6,Home,98.4,True,2021
+202102040DAL,"Thu, Feb 4, 2021",DAL,GSW,Dallas Mavericks,Golden State Warriors,116,147,-31,Home,101.6,True,2021
+202102060DAL,"Sat, Feb 6, 2021",DAL,GSW,Dallas Mavericks,Golden State Warriors,134,132,2,Home,104.7,True,2021
+202102080DAL,"Mon, Feb 8, 2021",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,127,122,5,Home,102.9,True,2021
+202102100DAL,"Wed, Feb 10, 2021",DAL,ATL,Dallas Mavericks,Atlanta Hawks,118,117,1,Home,96.7,True,2021
+202102120DAL,"Fri, Feb 12, 2021",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,143,130,13,Home,97.5,True,2021
+202102220DAL,"Mon, Feb 22, 2021",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,102,92,10,Home,100.7,True,2021
+202102230DAL,"Tue, Feb 23, 2021",DAL,BOS,Dallas Mavericks,Boston Celtics,110,107,3,Home,93.4,True,2021
+202102250PHI,"Thu, Feb 25, 2021",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,111,97,14,Home,95.6,True,2021
+202102270BRK,"Sat, Feb 27, 2021",BRK,DAL,Brooklyn Nets,Dallas Mavericks,98,115,-17,Home,94.6,True,2021
+202103010ORL,"Mon, Mar 1, 2021",ORL,DAL,Orlando Magic,Dallas Mavericks,124,130,-6,Home,100.6,True,2021
+202103030DAL,"Wed, Mar 3, 2021",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,87,78,9,Home,95.8,True,2021
+202103100DAL,"Wed, Mar 10, 2021",DAL,SAS,Dallas Mavericks,San Antonio Spurs,115,104,11,Home,91.5,True,2021
+202103110OKC,"Thu, Mar 11, 2021",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,116,108,8,Home,92.1,True,2021
+202103150DAL,"Mon, Mar 15, 2021",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,99,109,-10,Home,89.7,True,2021
+202103170DAL,"Wed, Mar 17, 2021",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,105,89,16,Home,94.7,True,2021
+202103240MIN,"Wed, Mar 24, 2021",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,108,128,-20,Home,101.2,True,2021
+202103260DAL,"Fri, Mar 26, 2021",DAL,IND,Dallas Mavericks,Indiana Pacers,94,109,-15,Home,94.1,True,2021
+202103270NOP,"Sat, Mar 27, 2021",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,112,103,9,Home,88.9,True,2021
+202103290OKC,"Mon, Mar 29, 2021",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,106,127,-21,Home,100.3,True,2021
+202103310BOS,"Wed, Mar 31, 2021",BOS,DAL,Boston Celtics,Dallas Mavericks,108,113,-5,Home,100.0,True,2021
+202104020NYK,"Fri, Apr 2, 2021",NYK,DAL,New York Knicks,Dallas Mavericks,86,99,-13,Home,95.1,True,2021
+202104030WAS,"Sat, Apr 3, 2021",WAS,DAL,Washington Wizards,Dallas Mavericks,87,109,-22,Home,93.2,True,2021
+202104050DAL,"Mon, Apr 5, 2021",DAL,UTA,Dallas Mavericks,Utah Jazz,111,103,8,Home,90.0,True,2021
+202104080DAL,"Thu, Apr 8, 2021",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,116,101,15,Home,98.7,True,2021
+202104110DAL,"Sun, Apr 11, 2021",DAL,SAS,Dallas Mavericks,San Antonio Spurs,117,119,-2,Home,97.4,True,2021
+202104120DAL,"Mon, Apr 12, 2021",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,95,113,-18,Home,94.6,True,2021
+202104140MEM,"Wed, Apr 14, 2021",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,113,114,-1,Home,95.2,True,2021
+202104160DAL,"Fri, Apr 16, 2021",DAL,NYK,Dallas Mavericks,New York Knicks,109,117,-8,Home,94.5,True,2021
+202104210DAL,"Wed, Apr 21, 2021",DAL,DET,Dallas Mavericks,Detroit Pistons,127,117,10,Home,96.8,True,2021
+202104220DAL,"Thu, Apr 22, 2021",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,115,110,5,Home,98.4,True,2021
+202104240DAL,"Sat, Apr 24, 2021",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,108,93,15,Home,94.3,True,2021
+202104270GSW,"Tue, Apr 27, 2021",GSW,DAL,Golden State Warriors,Dallas Mavericks,103,133,-30,Home,102.4,True,2021
+202104290DET,"Thu, Apr 29, 2021",DET,DAL,Detroit Pistons,Dallas Mavericks,105,115,-10,Home,99.3,True,2021
+202105010DAL,"Sat, May 1, 2021",DAL,WAS,Dallas Mavericks,Washington Wizards,125,124,1,Home,98.6,True,2021
+202105040MIA,"Tue, May 4, 2021",MIA,DAL,Miami Heat,Dallas Mavericks,113,127,-14,Home,94.9,True,2021
+202105060DAL,"Thu, May 6, 2021",DAL,BRK,Dallas Mavericks,Brooklyn Nets,113,109,4,Home,100.9,True,2021
+202105070DAL,"Fri, May 7, 2021",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,110,90,20,Home,92.8,True,2021
+202105090CLE,"Sun, May 9, 2021",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,97,124,-27,Home,98.3,True,2021
+202105110MEM,"Tue, May 11, 2021",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,133,104,29,Home,92.6,True,2021
+202105120DAL,"Wed, May 12, 2021",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,125,107,18,Home,101.5,True,2021
+202105140DAL,"Fri, May 14, 2021",DAL,TOR,Dallas Mavericks,Toronto Raptors,114,110,4,Home,96.1,True,2021
+202105160MIN,"Sun, May 16, 2021",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,136,121,15,Home,98.4,True,2021
+202105220LAC,"Sat, May 22, 2021",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,103,113,-10,Home,85.6,True,2021
+202105250LAC,"Tue, May 25, 2021",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,121,127,-6,Home,96.8,True,2021
+202105280DAL,"Fri, May 28, 2021",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,108,118,-10,Home,84.8,True,2021
+202105300DAL,"Sun, May 30, 2021",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,81,106,-25,Home,91.3,True,2021
+202106020LAC,"Wed, Jun 2, 2021",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,100,105,-5,Home,91.2,True,2021
+202106040DAL,"Fri, Jun 4, 2021",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,97,104,-7,Home,95.1,True,2021
+202106060LAC,"Sun, Jun 6, 2021",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,126,111,15,Home,92.0,True,2021
+202012230IND,"Wed, Dec 23, 2020",IND,NYK,Indiana Pacers,New York Knicks,121,107,14,Home,106.0,True,2021
+202012260CHI,"Sat, Dec 26, 2020",CHI,IND,Chicago Bulls,Indiana Pacers,106,125,-19,Home,106.0,True,2021
+202012270IND,"Sun, Dec 27, 2020",IND,BOS,Indiana Pacers,Boston Celtics,108,107,1,Home,100.3,True,2021
+202012290IND,"Tue, Dec 29, 2020",IND,BOS,Indiana Pacers,Boston Celtics,111,116,-5,Home,98.3,True,2021
+202012310IND,"Thu, Dec 31, 2020",IND,CLE,Indiana Pacers,Cleveland Cavaliers,119,99,20,Home,99.1,True,2021
+202101020IND,"Sat, Jan 2, 2021",IND,NYK,Indiana Pacers,New York Knicks,102,106,-4,Home,92.4,True,2021
+202101040NOP,"Mon, Jan 4, 2021",NOP,IND,New Orleans Pelicans,Indiana Pacers,116,118,-2,Home,98.2,True,2021
+202101090IND,"Sat, Jan 9, 2021",IND,PHO,Indiana Pacers,Phoenix Suns,117,125,-8,Home,98.0,True,2021
+202101120GSW,"Tue, Jan 12, 2021",GSW,IND,Golden State Warriors,Indiana Pacers,95,104,-9,Home,100.8,True,2021
+202101170LAC,"Sun, Jan 17, 2021",LAC,IND,Los Angeles Clippers,Indiana Pacers,129,96,33,Home,102.6,True,2021
+202101220IND,"Fri, Jan 22, 2021",IND,ORL,Indiana Pacers,Orlando Magic,120,118,2,Home,92.5,True,2021
+202101240IND,"Sun, Jan 24, 2021",IND,TOR,Indiana Pacers,Toronto Raptors,102,107,-5,Home,100.4,True,2021
+202101250IND,"Mon, Jan 25, 2021",IND,TOR,Indiana Pacers,Toronto Raptors,129,114,15,Home,99.6,True,2021
+202101270CHO,"Wed, Jan 27, 2021",CHO,IND,Charlotte Hornets,Indiana Pacers,106,116,-10,Home,94.0,True,2021
+202101290CHO,"Fri, Jan 29, 2021",CHO,IND,Charlotte Hornets,Indiana Pacers,108,105,3,Home,96.6,True,2021
+202101310IND,"Sun, Jan 31, 2021",IND,PHI,Indiana Pacers,Philadelphia 76ers,110,119,-9,Home,100.1,True,2021
+202102020IND,"Tue, Feb 2, 2021",IND,MEM,Indiana Pacers,Memphis Grizzlies,134,116,18,Home,104.2,True,2021
+202102030MIL,"Wed, Feb 3, 2021",MIL,IND,Milwaukee Bucks,Indiana Pacers,130,110,20,Home,106.4,True,2021
+202102050IND,"Fri, Feb 5, 2021",IND,NOP,Indiana Pacers,New Orleans Pelicans,113,114,-1,Home,96.3,True,2021
+202102070IND,"Sun, Feb 7, 2021",IND,UTA,Indiana Pacers,Utah Jazz,95,103,-8,Home,98.5,True,2021
+202102100BRK,"Wed, Feb 10, 2021",BRK,IND,Brooklyn Nets,Indiana Pacers,104,94,10,Home,91.8,True,2021
+202102110DET,"Thu, Feb 11, 2021",DET,IND,Detroit Pistons,Indiana Pacers,95,111,-16,Home,86.2,True,2021
+202102130ATL,"Sat, Feb 13, 2021",ATL,IND,Atlanta Hawks,Indiana Pacers,113,125,-12,Home,101.1,True,2021
+202102150IND,"Mon, Feb 15, 2021",IND,CHI,Indiana Pacers,Chicago Bulls,112,120,-8,Home,103.4,True,2021
+202102170MIN,"Wed, Feb 17, 2021",MIN,IND,Minnesota Timberwolves,Indiana Pacers,128,134,-6,Home,101.4,True,2021
+202102240IND,"Wed, Feb 24, 2021",IND,GSW,Indiana Pacers,Golden State Warriors,107,111,-4,Home,104.3,True,2021
+202102260BOS,"Fri, Feb 26, 2021",BOS,IND,Boston Celtics,Indiana Pacers,118,112,6,Home,97.7,True,2021
+202102270NYK,"Sat, Feb 27, 2021",NYK,IND,New York Knicks,Indiana Pacers,110,107,3,Home,102.5,True,2021
+202103010PHI,"Mon, Mar 1, 2021",PHI,IND,Philadelphia 76ers,Indiana Pacers,130,114,16,Home,107.2,True,2021
+202103030CLE,"Wed, Mar 3, 2021",CLE,IND,Cleveland Cavaliers,Indiana Pacers,111,114,-3,Home,98.1,True,2021
+202103120LAL,"Fri, Mar 12, 2021",LAL,IND,Los Angeles Lakers,Indiana Pacers,105,100,5,Home,100.4,True,2021
+202103130PHO,"Sat, Mar 13, 2021",PHO,IND,Phoenix Suns,Indiana Pacers,111,122,-11,Home,101.5,True,2021
+202103170IND,"Wed, Mar 17, 2021",IND,BRK,Indiana Pacers,Brooklyn Nets,115,124,-9,Home,104.2,True,2021
+202103190MIA,"Fri, Mar 19, 2021",MIA,IND,Miami Heat,Indiana Pacers,110,137,-27,Home,101.0,True,2021
+202103210MIA,"Sun, Mar 21, 2021",MIA,IND,Miami Heat,Indiana Pacers,106,109,-3,Home,94.1,True,2021
+202103220MIL,"Mon, Mar 22, 2021",MIL,IND,Milwaukee Bucks,Indiana Pacers,140,113,27,Home,107.0,True,2021
+202103240IND,"Wed, Mar 24, 2021",IND,DET,Indiana Pacers,Detroit Pistons,116,111,5,Home,99.2,True,2021
+202103290WAS,"Mon, Mar 29, 2021",WAS,IND,Washington Wizards,Indiana Pacers,132,124,8,Home,111.8,True,2021
+202103310IND,"Wed, Mar 31, 2021",IND,MIA,Indiana Pacers,Miami Heat,87,92,-5,Home,90.5,True,2021
+202104020IND,"Fri, Apr 2, 2021",IND,CHO,Indiana Pacers,Charlotte Hornets,97,114,-17,Home,101.9,True,2021
+202104030SAS,"Sat, Apr 3, 2021",SAS,IND,San Antonio Spurs,Indiana Pacers,133,139,-6,Home,97.0,True,2021
+202104060IND,"Tue, Apr 6, 2021",IND,CHI,Indiana Pacers,Chicago Bulls,97,113,-16,Home,101.6,True,2021
+202104070IND,"Wed, Apr 7, 2021",IND,MIN,Indiana Pacers,Minnesota Timberwolves,141,137,4,Home,105.1,True,2021
+202104090ORL,"Fri, Apr 9, 2021",ORL,IND,Orlando Magic,Indiana Pacers,106,111,-5,Home,104.1,True,2021
+202104110MEM,"Sun, Apr 11, 2021",MEM,IND,Memphis Grizzlies,Indiana Pacers,125,132,-7,Home,101.2,True,2021
+202104130IND,"Tue, Apr 13, 2021",IND,LAC,Indiana Pacers,Los Angeles Clippers,115,126,-11,Home,105.4,True,2021
+202104160UTA,"Fri, Apr 16, 2021",UTA,IND,Utah Jazz,Indiana Pacers,119,111,8,Home,105.0,True,2021
+202104180ATL,"Sun, Apr 18, 2021",ATL,IND,Atlanta Hawks,Indiana Pacers,129,117,12,Home,101.8,True,2021
+202104190IND,"Mon, Apr 19, 2021",IND,SAS,Indiana Pacers,San Antonio Spurs,94,109,-15,Home,102.7,True,2021
+202104210IND,"Wed, Apr 21, 2021",IND,OKC,Indiana Pacers,Oklahoma City Thunder,122,116,6,Home,105.6,True,2021
+202104240IND,"Sat, Apr 24, 2021",IND,DET,Indiana Pacers,Detroit Pistons,115,109,6,Home,104.2,True,2021
+202104250ORL,"Sun, Apr 25, 2021",ORL,IND,Orlando Magic,Indiana Pacers,112,131,-19,Home,103.6,True,2021
+202104290IND,"Thu, Apr 29, 2021",IND,BRK,Indiana Pacers,Brooklyn Nets,113,130,-17,Home,105.0,True,2021
+202105010OKC,"Sat, May 1, 2021",OKC,IND,Oklahoma City Thunder,Indiana Pacers,95,152,-57,Home,110.3,True,2021
+202105030WAS,"Mon, May 3, 2021",WAS,IND,Washington Wizards,Indiana Pacers,154,141,13,Home,118.2,True,2021
+202105060IND,"Thu, May 6, 2021",IND,ATL,Indiana Pacers,Atlanta Hawks,133,126,7,Home,103.0,True,2021
+202105080IND,"Sat, May 8, 2021",IND,WAS,Indiana Pacers,Washington Wizards,132,133,-1,Home,108.6,True,2021
+202105100CLE,"Mon, May 10, 2021",CLE,IND,Cleveland Cavaliers,Indiana Pacers,102,111,-9,Home,95.7,True,2021
+202105110IND,"Tue, May 11, 2021",IND,PHI,Indiana Pacers,Philadelphia 76ers,103,94,9,Home,95.3,True,2021
+202105130IND,"Thu, May 13, 2021",IND,MIL,Indiana Pacers,Milwaukee Bucks,133,142,-9,Home,107.8,True,2021
+202105150IND,"Sat, May 15, 2021",IND,LAL,Indiana Pacers,Los Angeles Lakers,115,122,-7,Home,100.5,True,2021
+202105160TOR,"Sun, May 16, 2021",TOR,IND,Toronto Raptors,Indiana Pacers,113,125,-12,Home,102.5,True,2021
+202105180IND,"Tue, May 18, 2021",IND,CHO,Indiana Pacers,Charlotte Hornets,144,117,27,Home,111.2,True,2021
+202105200WAS,"Thu, May 20, 2021",WAS,IND,Washington Wizards,Indiana Pacers,142,115,27,Home,111.3,True,2021
+202012230ORL,"Wed, Dec 23, 2020",ORL,MIA,Orlando Magic,Miami Heat,113,107,6,Home,104.9,True,2021
+202012260WAS,"Sat, Dec 26, 2020",WAS,ORL,Washington Wizards,Orlando Magic,120,130,-10,Home,110.3,True,2021
+202012270WAS,"Sun, Dec 27, 2020",WAS,ORL,Washington Wizards,Orlando Magic,113,120,-7,Home,99.0,True,2021
+202012290OKC,"Tue, Dec 29, 2020",OKC,ORL,Oklahoma City Thunder,Orlando Magic,107,118,-11,Home,102.5,True,2021
+202012310ORL,"Thu, Dec 31, 2020",ORL,PHI,Orlando Magic,Philadelphia 76ers,92,116,-24,Home,103.0,True,2021
+202101020ORL,"Sat, Jan 2, 2021",ORL,OKC,Orlando Magic,Oklahoma City Thunder,99,108,-9,Home,99.3,True,2021
+202101040ORL,"Mon, Jan 4, 2021",ORL,CLE,Orlando Magic,Cleveland Cavaliers,103,83,20,Home,91.5,True,2021
+202101060ORL,"Wed, Jan 6, 2021",ORL,CLE,Orlando Magic,Cleveland Cavaliers,105,94,11,Home,92.8,True,2021
+202101110ORL,"Mon, Jan 11, 2021",ORL,MIL,Orlando Magic,Milwaukee Bucks,99,121,-22,Home,98.1,True,2021
+202101150BOS,"Fri, Jan 15, 2021",BOS,ORL,Boston Celtics,Orlando Magic,124,97,27,Home,97.6,True,2021
+202101160BRK,"Sat, Jan 16, 2021",BRK,ORL,Brooklyn Nets,Orlando Magic,122,115,7,Home,102.5,True,2021
+202101180NYK,"Mon, Jan 18, 2021",NYK,ORL,New York Knicks,Orlando Magic,91,84,7,Home,91.7,True,2021
+202101200MIN,"Wed, Jan 20, 2021",MIN,ORL,Minnesota Timberwolves,Orlando Magic,96,97,-1,Home,94.5,True,2021
+202101240ORL,"Sun, Jan 24, 2021",ORL,CHO,Orlando Magic,Charlotte Hornets,104,107,-3,Home,95.1,True,2021
+202101250ORL,"Mon, Jan 25, 2021",ORL,CHO,Orlando Magic,Charlotte Hornets,117,108,9,Home,100.8,True,2021
+202101290ORL,"Fri, Jan 29, 2021",ORL,LAC,Orlando Magic,Los Angeles Clippers,90,116,-26,Home,99.2,True,2021
+202101310TOR,"Sun, Jan 31, 2021",TOR,ORL,Toronto Raptors,Orlando Magic,115,102,13,Home,97.8,True,2021
+202102020ORL,"Tue, Feb 2, 2021",ORL,TOR,Orlando Magic,Toronto Raptors,108,123,-15,Home,98.7,True,2021
+202102050ORL,"Fri, Feb 5, 2021",ORL,CHI,Orlando Magic,Chicago Bulls,123,119,4,Home,100.7,True,2021
+202102060ORL,"Sat, Feb 6, 2021",ORL,CHI,Orlando Magic,Chicago Bulls,92,118,-26,Home,93.4,True,2021
+202102110GSW,"Thu, Feb 11, 2021",GSW,ORL,Golden State Warriors,Orlando Magic,111,105,6,Home,101.3,True,2021
+202102140PHO,"Sun, Feb 14, 2021",PHO,ORL,Phoenix Suns,Orlando Magic,109,90,19,Home,96.4,True,2021
+202102170ORL,"Wed, Feb 17, 2021",ORL,NYK,Orlando Magic,New York Knicks,107,89,18,Home,97.7,True,2021
+202102190ORL,"Fri, Feb 19, 2021",ORL,GSW,Orlando Magic,Golden State Warriors,124,120,4,Home,105.5,True,2021
+202102210ORL,"Sun, Feb 21, 2021",ORL,DET,Orlando Magic,Detroit Pistons,105,96,9,Home,99.3,True,2021
+202102230ORL,"Tue, Feb 23, 2021",ORL,DET,Orlando Magic,Detroit Pistons,93,105,-12,Home,99.0,True,2021
+202102250BRK,"Thu, Feb 25, 2021",BRK,ORL,Brooklyn Nets,Orlando Magic,129,92,37,Home,104.2,True,2021
+202102270ORL,"Sat, Feb 27, 2021",ORL,UTA,Orlando Magic,Utah Jazz,109,124,-15,Home,95.1,True,2021
+202103030ORL,"Wed, Mar 3, 2021",ORL,ATL,Orlando Magic,Atlanta Hawks,112,115,-3,Home,95.5,True,2021
+202103110MIA,"Thu, Mar 11, 2021",MIA,ORL,Miami Heat,Orlando Magic,111,103,8,Home,98.5,True,2021
+202103120SAS,"Fri, Mar 12, 2021",SAS,ORL,San Antonio Spurs,Orlando Magic,104,77,27,Home,94.6,True,2021
+202103140ORL,"Sun, Mar 14, 2021",ORL,MIA,Orlando Magic,Miami Heat,97,102,-5,Home,95.9,True,2021
+202103180NYK,"Thu, Mar 18, 2021",NYK,ORL,New York Knicks,Orlando Magic,94,93,1,Home,90.7,True,2021
+202103190ORL,"Fri, Mar 19, 2021",ORL,BRK,Orlando Magic,Brooklyn Nets,121,113,8,Home,98.8,True,2021
+202103210BOS,"Sun, Mar 21, 2021",BOS,ORL,Boston Celtics,Orlando Magic,112,96,16,Home,91.7,True,2021
+202103240ORL,"Wed, Mar 24, 2021",ORL,PHO,Orlando Magic,Phoenix Suns,112,111,1,Home,97.3,True,2021
+202103280LAL,"Sun, Mar 28, 2021",LAL,ORL,Los Angeles Lakers,Orlando Magic,96,93,3,Home,94.5,True,2021
+202103300LAC,"Tue, Mar 30, 2021",LAC,ORL,Los Angeles Clippers,Orlando Magic,96,103,-7,Home,92.9,True,2021
+202104010NOP,"Thu, Apr 1, 2021",NOP,ORL,New Orleans Pelicans,Orlando Magic,110,115,-5,Home,100.4,True,2021
+202104030UTA,"Sat, Apr 3, 2021",UTA,ORL,Utah Jazz,Orlando Magic,137,91,46,Home,99.4,True,2021
+202104070ORL,"Wed, Apr 7, 2021",ORL,WAS,Orlando Magic,Washington Wizards,116,131,-15,Home,99.2,True,2021
+202104110ORL,"Sun, Apr 11, 2021",ORL,MIL,Orlando Magic,Milwaukee Bucks,87,124,-37,Home,98.0,True,2021
+202104120ORL,"Mon, Apr 12, 2021",ORL,SAS,Orlando Magic,San Antonio Spurs,97,120,-23,Home,96.5,True,2021
+202104140CHI,"Wed, Apr 14, 2021",CHI,ORL,Chicago Bulls,Orlando Magic,106,115,-9,Home,91.8,True,2021
+202104160TOR,"Fri, Apr 16, 2021",TOR,ORL,Toronto Raptors,Orlando Magic,113,102,11,Home,93.8,True,2021
+202104200ATL,"Tue, Apr 20, 2021",ATL,ORL,Atlanta Hawks,Orlando Magic,112,96,16,Home,99.8,True,2021
+202104220ORL,"Thu, Apr 22, 2021",ORL,NOP,Orlando Magic,New Orleans Pelicans,100,135,-35,Home,98.1,True,2021
+202104260ORL,"Mon, Apr 26, 2021",ORL,LAL,Orlando Magic,Los Angeles Lakers,103,114,-11,Home,92.1,True,2021
+202104280CLE,"Wed, Apr 28, 2021",CLE,ORL,Cleveland Cavaliers,Orlando Magic,104,109,-5,Home,98.2,True,2021
+202104300MEM,"Fri, Apr 30, 2021",MEM,ORL,Memphis Grizzlies,Orlando Magic,92,75,17,Home,97.8,True,2021
+202105010ORL,"Sat, May 1, 2021",ORL,MEM,Orlando Magic,Memphis Grizzlies,112,111,1,Home,100.0,True,2021
+202105030DET,"Mon, May 3, 2021",DET,ORL,Detroit Pistons,Orlando Magic,112,119,-7,Home,98.1,True,2021
+202105050ORL,"Wed, May 5, 2021",ORL,BOS,Orlando Magic,Boston Celtics,96,132,-36,Home,101.5,True,2021
+202105070CHO,"Fri, May 7, 2021",CHO,ORL,Charlotte Hornets,Orlando Magic,122,112,10,Home,100.3,True,2021
+202105090ORL,"Sun, May 9, 2021",ORL,MIN,Orlando Magic,Minnesota Timberwolves,96,128,-32,Home,102.5,True,2021
+202105110MIL,"Tue, May 11, 2021",MIL,ORL,Milwaukee Bucks,Orlando Magic,114,102,12,Home,103.2,True,2021
+202105130ATL,"Thu, May 13, 2021",ATL,ORL,Atlanta Hawks,Orlando Magic,116,93,23,Home,95.7,True,2021
+202105140PHI,"Fri, May 14, 2021",PHI,ORL,Philadelphia 76ers,Orlando Magic,122,97,25,Home,96.1,True,2021
+202105160PHI,"Sun, May 16, 2021",PHI,ORL,Philadelphia 76ers,Orlando Magic,128,117,11,Home,101.7,True,2021
+202012220LAL,"Tue, Dec 22, 2020",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,109,116,-7,Home,103.5,True,2021
+202012270LAL,"Sun, Dec 27, 2020",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,127,91,36,Home,106.7,True,2021
+202012300SAS,"Wed, Dec 30, 2020",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,107,121,-14,Home,99.4,True,2021
+202101010SAS,"Fri, Jan 1, 2021",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,103,109,-6,Home,100.5,True,2021
+202101030MEM,"Sun, Jan 3, 2021",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,94,108,-14,Home,93.3,True,2021
+202101050MEM,"Tue, Jan 5, 2021",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,92,94,-2,Home,98.3,True,2021
+202101070LAL,"Thu, Jan 7, 2021",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,109,118,-9,Home,97.8,True,2021
+202101080LAL,"Fri, Jan 8, 2021",LAL,CHI,Los Angeles Lakers,Chicago Bulls,117,115,2,Home,97.3,True,2021
+202101130OKC,"Wed, Jan 13, 2021",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,99,128,-29,Home,96.8,True,2021
+202101150LAL,"Fri, Jan 15, 2021",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,112,95,17,Home,95.9,True,2021
+202101180LAL,"Mon, Jan 18, 2021",LAL,GSW,Los Angeles Lakers,Golden State Warriors,113,115,-2,Home,100.3,True,2021
+202101210MIL,"Thu, Jan 21, 2021",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,106,113,-7,Home,98.6,True,2021
+202101230CHI,"Sat, Jan 23, 2021",CHI,LAL,Chicago Bulls,Los Angeles Lakers,90,101,-11,Home,101.4,True,2021
+202101250CLE,"Mon, Jan 25, 2021",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,108,115,-7,Home,94.1,True,2021
+202101270PHI,"Wed, Jan 27, 2021",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,107,106,1,Home,98.5,True,2021
+202101280DET,"Thu, Jan 28, 2021",DET,LAL,Detroit Pistons,Los Angeles Lakers,107,92,15,Home,91.2,True,2021
+202101300BOS,"Sat, Jan 30, 2021",BOS,LAL,Boston Celtics,Los Angeles Lakers,95,96,-1,Home,92.1,True,2021
+202102010ATL,"Mon, Feb 1, 2021",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,99,107,-8,Home,93.4,True,2021
+202102060LAL,"Sat, Feb 6, 2021",LAL,DET,Los Angeles Lakers,Detroit Pistons,135,129,6,Home,94.3,True,2021
+202102080LAL,"Mon, Feb 8, 2021",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,119,112,7,Home,101.2,True,2021
+202102100LAL,"Wed, Feb 10, 2021",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,114,113,1,Home,98.5,True,2021
+202102120LAL,"Fri, Feb 12, 2021",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,115,105,10,Home,99.8,True,2021
+202102160MIN,"Tue, Feb 16, 2021",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,104,112,-8,Home,97.5,True,2021
+202102180LAL,"Thu, Feb 18, 2021",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,98,109,-11,Home,92.0,True,2021
+202102200LAL,"Sat, Feb 20, 2021",LAL,MIA,Los Angeles Lakers,Miami Heat,94,96,-2,Home,97.3,True,2021
+202102220LAL,"Mon, Feb 22, 2021",LAL,WAS,Los Angeles Lakers,Washington Wizards,124,127,-3,Home,107.1,True,2021
+202102240UTA,"Wed, Feb 24, 2021",UTA,LAL,Utah Jazz,Los Angeles Lakers,114,89,25,Home,92.2,True,2021
+202102280LAL,"Sun, Feb 28, 2021",LAL,GSW,Los Angeles Lakers,Golden State Warriors,117,91,26,Home,107.4,True,2021
+202103020LAL,"Tue, Mar 2, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,104,114,-10,Home,92.9,True,2021
+202103150GSW,"Mon, Mar 15, 2021",GSW,LAL,Golden State Warriors,Los Angeles Lakers,97,128,-31,Home,100.4,True,2021
+202103160LAL,"Tue, Mar 16, 2021",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,137,121,16,Home,101.0,True,2021
+202103180LAL,"Thu, Mar 18, 2021",LAL,CHO,Los Angeles Lakers,Charlotte Hornets,116,105,11,Home,100.5,True,2021
+202103200LAL,"Sat, Mar 20, 2021",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,94,99,-5,Home,91.8,True,2021
+202103210PHO,"Sun, Mar 21, 2021",PHO,LAL,Phoenix Suns,Los Angeles Lakers,111,94,17,Home,97.8,True,2021
+202103230NOP,"Tue, Mar 23, 2021",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,128,111,17,Home,101.9,True,2021
+202103250LAL,"Thu, Mar 25, 2021",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,101,109,-8,Home,101.9,True,2021
+202103260LAL,"Fri, Mar 26, 2021",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,100,86,14,Home,100.6,True,2021
+202103310LAL,"Wed, Mar 31, 2021",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,97,112,-15,Home,102.0,True,2021
+202104040LAC,"Sun, Apr 4, 2021",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,104,86,18,Home,95.8,True,2021
+202104060TOR,"Tue, Apr 6, 2021",TOR,LAL,Toronto Raptors,Los Angeles Lakers,101,110,-9,Home,97.4,True,2021
+202104080MIA,"Thu, Apr 8, 2021",MIA,LAL,Miami Heat,Los Angeles Lakers,110,104,6,Home,98.4,True,2021
+202104100BRK,"Sat, Apr 10, 2021",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,101,126,-25,Home,101.5,True,2021
+202104120NYK,"Mon, Apr 12, 2021",NYK,LAL,New York Knicks,Los Angeles Lakers,111,96,15,Home,101.8,True,2021
+202104130CHO,"Tue, Apr 13, 2021",CHO,LAL,Charlotte Hornets,Los Angeles Lakers,93,101,-8,Home,91.0,True,2021
+202104150LAL,"Thu, Apr 15, 2021",LAL,BOS,Los Angeles Lakers,Boston Celtics,113,121,-8,Home,102.0,True,2021
+202104170LAL,"Sat, Apr 17, 2021",LAL,UTA,Los Angeles Lakers,Utah Jazz,127,115,12,Home,97.2,True,2021
+202104190LAL,"Mon, Apr 19, 2021",LAL,UTA,Los Angeles Lakers,Utah Jazz,97,111,-14,Home,93.8,True,2021
+202104280WAS,"Wed, Apr 28, 2021",WAS,LAL,Washington Wizards,Los Angeles Lakers,116,107,9,Home,99.8,True,2021
+202105020LAL,"Sun, May 2, 2021",LAL,TOR,Los Angeles Lakers,Toronto Raptors,114,121,-7,Home,103.8,True,2021
+202105060LAC,"Thu, May 6, 2021",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,118,94,24,Home,97.2,True,2021
+202105090LAL,"Sun, May 9, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,123,110,13,Home,94.7,True,2021
+202105110LAL,"Tue, May 11, 2021",LAL,NYK,Los Angeles Lakers,New York Knicks,101,99,2,Home,89.6,True,2021
+202105160NOP,"Sun, May 16, 2021",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,98,110,-12,Home,100.4,True,2021
+202105190LAL,"Wed, May 19, 2021",LAL,GSW,Los Angeles Lakers,Golden State Warriors,103,100,3,Home,98.1,True,2021
+202105230PHO,"Sun, May 23, 2021",PHO,LAL,Phoenix Suns,Los Angeles Lakers,99,90,9,Home,87.3,True,2021
+202105250PHO,"Tue, May 25, 2021",PHO,LAL,Phoenix Suns,Los Angeles Lakers,102,109,-7,Home,90.0,True,2021
+202105270LAL,"Thu, May 27, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,109,95,14,Home,98.4,True,2021
+202105300LAL,"Sun, May 30, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,92,100,-8,Home,94.5,True,2021
+202106010PHO,"Tue, Jun 1, 2021",PHO,LAL,Phoenix Suns,Los Angeles Lakers,115,85,30,Home,100.1,True,2021
+202106030LAL,"Thu, Jun 3, 2021",LAL,PHO,Los Angeles Lakers,Phoenix Suns,100,113,-13,Home,87.4,True,2021
+202012230MEM,"Wed, Dec 23, 2020",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,119,131,-12,Home,107.7,True,2021
+202012260SAS,"Sat, Dec 26, 2020",SAS,TOR,San Antonio Spurs,Toronto Raptors,119,114,5,Home,104.1,True,2021
+202012270NOP,"Sun, Dec 27, 2020",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,98,95,3,Home,100.9,True,2021
+202101030SAS,"Sun, Jan 3, 2021",SAS,UTA,San Antonio Spurs,Utah Jazz,109,130,-21,Home,105.8,True,2021
+202101050LAC,"Tue, Jan 5, 2021",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,113,116,-3,Home,97.0,True,2021
+202101090MIN,"Sat, Jan 9, 2021",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,122,125,-3,Home,95.9,True,2021
+202101100MIN,"Sun, Jan 10, 2021",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,96,88,8,Home,96.0,True,2021
+202101120OKC,"Tue, Jan 12, 2021",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,102,112,-10,Home,100.0,True,2021
+202101200GSW,"Wed, Jan 20, 2021",GSW,SAS,Golden State Warriors,San Antonio Spurs,121,99,22,Home,102.1,True,2021
+202101240SAS,"Sun, Jan 24, 2021",SAS,WAS,San Antonio Spurs,Washington Wizards,121,101,20,Home,100.3,True,2021
+202101270SAS,"Wed, Jan 27, 2021",SAS,BOS,San Antonio Spurs,Boston Celtics,110,106,4,Home,97.8,True,2021
+202101300SAS,"Sat, Jan 30, 2021",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,112,129,-17,Home,99.0,True,2021
+202102010SAS,"Mon, Feb 1, 2021",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,102,133,-31,Home,100.0,True,2021
+202102030SAS,"Wed, Feb 3, 2021",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,111,108,3,Home,101.1,True,2021
+202102080SAS,"Mon, Feb 8, 2021",SAS,GSW,San Antonio Spurs,Golden State Warriors,105,100,5,Home,103.4,True,2021
+202102090SAS,"Tue, Feb 9, 2021",SAS,GSW,San Antonio Spurs,Golden State Warriors,91,114,-23,Home,98.1,True,2021
+202102120ATL,"Fri, Feb 12, 2021",ATL,SAS,Atlanta Hawks,San Antonio Spurs,114,125,-11,Home,102.1,True,2021
+202102140CHO,"Sun, Feb 14, 2021",CHO,SAS,Charlotte Hornets,San Antonio Spurs,110,122,-12,Home,101.4,True,2021
+202102240OKC,"Wed, Feb 24, 2021",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,102,99,3,Home,98.3,True,2021
+202102270SAS,"Sat, Feb 27, 2021",SAS,NOP,San Antonio Spurs,New Orleans Pelicans,117,114,3,Home,95.0,True,2021
+202103010SAS,"Mon, Mar 1, 2021",SAS,BRK,San Antonio Spurs,Brooklyn Nets,113,124,-11,Home,90.0,True,2021
+202103020SAS,"Tue, Mar 2, 2021",SAS,NYK,San Antonio Spurs,New York Knicks,119,93,26,Home,93.7,True,2021
+202103040SAS,"Thu, Mar 4, 2021",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,102,107,-5,Home,101.9,True,2021
+202103140PHI,"Sun, Mar 14, 2021",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,134,99,35,Home,96.4,True,2021
+202103150DET,"Mon, Mar 15, 2021",DET,SAS,Detroit Pistons,San Antonio Spurs,99,109,-10,Home,93.8,True,2021
+202103170CHI,"Wed, Mar 17, 2021",CHI,SAS,Chicago Bulls,San Antonio Spurs,99,106,-7,Home,95.6,True,2021
+202103190CLE,"Fri, Mar 19, 2021",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,110,116,-6,Home,96.1,True,2021
+202103200MIL,"Sat, Mar 20, 2021",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,120,113,7,Home,103.2,True,2021
+202103220SAS,"Mon, Mar 22, 2021",SAS,CHO,San Antonio Spurs,Charlotte Hornets,97,100,-3,Home,92.6,True,2021
+202103240SAS,"Wed, Mar 24, 2021",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,101,134,-33,Home,102.3,True,2021
+202103250SAS,"Thu, Mar 25, 2021",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,85,98,-13,Home,90.0,True,2021
+202103270SAS,"Sat, Mar 27, 2021",SAS,CHI,San Antonio Spurs,Chicago Bulls,120,104,16,Home,102.5,True,2021
+202104010SAS,"Thu, Apr 1, 2021",SAS,ATL,San Antonio Spurs,Atlanta Hawks,129,134,-5,Home,92.6,True,2021
+202104050SAS,"Mon, Apr 5, 2021",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,101,125,-24,Home,95.9,True,2021
+202104140TOR,"Wed, Apr 14, 2021",TOR,SAS,Toronto Raptors,San Antonio Spurs,117,112,5,Home,97.4,True,2021
+202104170PHO,"Sat, Apr 17, 2021",PHO,SAS,Phoenix Suns,San Antonio Spurs,85,111,-26,Home,97.3,True,2021
+202104210SAS,"Wed, Apr 21, 2021",SAS,MIA,San Antonio Spurs,Miami Heat,87,107,-20,Home,87.1,True,2021
+202104220SAS,"Thu, Apr 22, 2021",SAS,DET,San Antonio Spurs,Detroit Pistons,106,91,15,Home,91.2,True,2021
+202104240NOP,"Sat, Apr 24, 2021",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,108,110,-2,Home,106.6,True,2021
+202104260WAS,"Mon, Apr 26, 2021",WAS,SAS,Washington Wizards,San Antonio Spurs,143,146,-3,Home,97.4,True,2021
+202104280MIA,"Wed, Apr 28, 2021",MIA,SAS,Miami Heat,San Antonio Spurs,116,111,5,Home,97.5,True,2021
+202104300BOS,"Fri, Apr 30, 2021",BOS,SAS,Boston Celtics,San Antonio Spurs,143,140,3,Home,100.7,True,2021
+202105020SAS,"Sun, May 2, 2021",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,111,113,-2,Home,93.0,True,2021
+202105030UTA,"Mon, May 3, 2021",UTA,SAS,Utah Jazz,San Antonio Spurs,110,99,11,Home,95.9,True,2021
+202105050UTA,"Wed, May 5, 2021",UTA,SAS,Utah Jazz,San Antonio Spurs,126,94,32,Home,98.1,True,2021
+202105100SAS,"Mon, May 10, 2021",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,146,125,21,Home,102.6,True,2021
+202105120BRK,"Wed, May 12, 2021",BRK,SAS,Brooklyn Nets,San Antonio Spurs,128,116,12,Home,99.9,True,2021
+202105130NYK,"Thu, May 13, 2021",NYK,SAS,New York Knicks,San Antonio Spurs,102,98,4,Home,94.3,True,2021
+202105150SAS,"Sat, May 15, 2021",SAS,PHO,San Antonio Spurs,Phoenix Suns,103,140,-37,Home,105.5,True,2021
+202105160SAS,"Sun, May 16, 2021",SAS,PHO,San Antonio Spurs,Phoenix Suns,121,123,-2,Home,102.8,True,2021
+202105190MEM,"Wed, May 19, 2021",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,100,96,4,Home,97.4,True,2021
+202012230CHI,"Wed, Dec 23, 2020",CHI,ATL,Chicago Bulls,Atlanta Hawks,104,124,-20,Home,103.9,True,2021
+202012270CHI,"Sun, Dec 27, 2020",CHI,GSW,Chicago Bulls,Golden State Warriors,128,129,-1,Home,115.2,True,2021
+202012290WAS,"Tue, Dec 29, 2020",WAS,CHI,Washington Wizards,Chicago Bulls,107,115,-8,Home,105.6,True,2021
+202012310WAS,"Thu, Dec 31, 2020",WAS,CHI,Washington Wizards,Chicago Bulls,130,133,-3,Home,105.6,True,2021
+202101010MIL,"Fri, Jan 1, 2021",MIL,CHI,Milwaukee Bucks,Chicago Bulls,126,96,30,Home,108.2,True,2021
+202101100LAC,"Sun, Jan 10, 2021",LAC,CHI,Los Angeles Clippers,Chicago Bulls,130,127,3,Home,100.6,True,2021
+202101150OKC,"Fri, Jan 15, 2021",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,127,125,2,Home,105.3,True,2021
+202101220CHO,"Fri, Jan 22, 2021",CHO,CHI,Charlotte Hornets,Chicago Bulls,110,123,-13,Home,100.8,True,2021
+202101250CHI,"Mon, Jan 25, 2021",CHI,BOS,Chicago Bulls,Boston Celtics,103,119,-16,Home,100.1,True,2021
+202102010CHI,"Mon, Feb 1, 2021",CHI,NYK,Chicago Bulls,New York Knicks,110,102,8,Home,97.3,True,2021
+202102030CHI,"Wed, Feb 3, 2021",CHI,NYK,Chicago Bulls,New York Knicks,103,107,-4,Home,98.0,True,2021
+202102080CHI,"Mon, Feb 8, 2021",CHI,WAS,Chicago Bulls,Washington Wizards,101,105,-4,Home,101.1,True,2021
+202102100CHI,"Wed, Feb 10, 2021",CHI,NOP,Chicago Bulls,New Orleans Pelicans,129,116,13,Home,93.4,True,2021
+202102120CHI,"Fri, Feb 12, 2021",CHI,LAC,Chicago Bulls,Los Angeles Clippers,106,125,-19,Home,95.7,True,2021
+202102170CHI,"Wed, Feb 17, 2021",CHI,DET,Chicago Bulls,Detroit Pistons,105,102,3,Home,98.3,True,2021
+202102190PHI,"Fri, Feb 19, 2021",PHI,CHI,Philadelphia 76ers,Chicago Bulls,112,105,7,Home,97.0,True,2021
+202102240CHI,"Wed, Feb 24, 2021",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,133,126,7,Home,102.1,True,2021
+202102260CHI,"Fri, Feb 26, 2021",CHI,PHO,Chicago Bulls,Phoenix Suns,97,106,-9,Home,94.3,True,2021
+202103030NOP,"Wed, Mar 3, 2021",NOP,CHI,New Orleans Pelicans,Chicago Bulls,124,128,-4,Home,101.6,True,2021
+202103110CHI,"Thu, Mar 11, 2021",CHI,PHI,Chicago Bulls,Philadelphia 76ers,105,127,-22,Home,100.9,True,2021
+202103120CHI,"Fri, Mar 12, 2021",CHI,MIA,Chicago Bulls,Miami Heat,90,101,-11,Home,96.1,True,2021
+202103140CHI,"Sun, Mar 14, 2021",CHI,TOR,Chicago Bulls,Toronto Raptors,118,95,23,Home,101.0,True,2021
+202103160CHI,"Tue, Mar 16, 2021",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,123,102,21,Home,97.4,True,2021
+202103210DET,"Sun, Mar 21, 2021",DET,CHI,Detroit Pistons,Chicago Bulls,86,100,-14,Home,95.2,True,2021
+202103220CHI,"Mon, Mar 22, 2021",CHI,UTA,Chicago Bulls,Utah Jazz,95,120,-25,Home,96.3,True,2021
+202103240CHI,"Wed, Mar 24, 2021",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,94,103,-9,Home,92.4,True,2021
+202103290GSW,"Mon, Mar 29, 2021",GSW,CHI,Golden State Warriors,Chicago Bulls,116,102,14,Home,97.9,True,2021
+202103310PHO,"Wed, Mar 31, 2021",PHO,CHI,Phoenix Suns,Chicago Bulls,121,116,5,Home,94.2,True,2021
+202104020UTA,"Fri, Apr 2, 2021",UTA,CHI,Utah Jazz,Chicago Bulls,113,106,7,Home,93.5,True,2021
+202104040CHI,"Sun, Apr 4, 2021",CHI,BRK,Chicago Bulls,Brooklyn Nets,115,107,8,Home,94.2,True,2021
+202104080TOR,"Thu, Apr 8, 2021",TOR,CHI,Toronto Raptors,Chicago Bulls,113,122,-9,Home,97.8,True,2021
+202104090ATL,"Fri, Apr 9, 2021",ATL,CHI,Atlanta Hawks,Chicago Bulls,120,108,12,Home,95.6,True,2021
+202104110MIN,"Sun, Apr 11, 2021",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,121,117,4,Home,100.9,True,2021
+202104120MEM,"Mon, Apr 12, 2021",MEM,CHI,Memphis Grizzlies,Chicago Bulls,101,90,11,Home,100.1,True,2021
+202104160CHI,"Fri, Apr 16, 2021",CHI,MEM,Chicago Bulls,Memphis Grizzlies,115,126,-11,Home,96.2,True,2021
+202104170CHI,"Sat, Apr 17, 2021",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,106,96,10,Home,89.4,True,2021
+202104190BOS,"Mon, Apr 19, 2021",BOS,CHI,Boston Celtics,Chicago Bulls,96,102,-6,Home,95.2,True,2021
+202104210CLE,"Wed, Apr 21, 2021",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,121,105,16,Home,96.7,True,2021
+202104220CHI,"Thu, Apr 22, 2021",CHI,CHO,Chicago Bulls,Charlotte Hornets,108,91,17,Home,95.6,True,2021
+202104240MIA,"Sat, Apr 24, 2021",MIA,CHI,Miami Heat,Chicago Bulls,106,101,5,Home,93.5,True,2021
+202104260MIA,"Mon, Apr 26, 2021",MIA,CHI,Miami Heat,Chicago Bulls,102,110,-8,Home,93.5,True,2021
+202104280NYK,"Wed, Apr 28, 2021",NYK,CHI,New York Knicks,Chicago Bulls,113,94,19,Home,93.1,True,2021
+202104300CHI,"Fri, Apr 30, 2021",CHI,MIL,Chicago Bulls,Milwaukee Bucks,98,108,-10,Home,98.8,True,2021
+202105010ATL,"Sat, May 1, 2021",ATL,CHI,Atlanta Hawks,Chicago Bulls,108,97,11,Home,94.2,True,2021
+202105030CHI,"Mon, May 3, 2021",CHI,PHI,Chicago Bulls,Philadelphia 76ers,94,106,-12,Home,93.1,True,2021
+202105060CHO,"Thu, May 6, 2021",CHO,CHI,Charlotte Hornets,Chicago Bulls,99,120,-21,Home,99.1,True,2021
+202105070CHI,"Fri, May 7, 2021",CHI,BOS,Chicago Bulls,Boston Celtics,121,99,22,Home,96.6,True,2021
+202105090DET,"Sun, May 9, 2021",DET,CHI,Detroit Pistons,Chicago Bulls,96,108,-12,Home,93.6,True,2021
+202105110CHI,"Tue, May 11, 2021",CHI,BRK,Chicago Bulls,Brooklyn Nets,107,115,-8,Home,95.1,True,2021
+202105130CHI,"Thu, May 13, 2021",CHI,TOR,Chicago Bulls,Toronto Raptors,114,102,12,Home,96.9,True,2021
+202105150BRK,"Sat, May 15, 2021",BRK,CHI,Brooklyn Nets,Chicago Bulls,105,91,14,Home,92.8,True,2021
+202105160CHI,"Sun, May 16, 2021",CHI,MIL,Chicago Bulls,Milwaukee Bucks,118,112,6,Home,101.7,True,2021
+202012290PHO,"Tue, Dec 29, 2020",PHO,NOP,Phoenix Suns,New Orleans Pelicans,111,86,25,Home,90.4,True,2021
+202012310UTA,"Thu, Dec 31, 2020",UTA,PHO,Utah Jazz,Phoenix Suns,95,106,-11,Home,95.3,True,2021
+202101030PHO,"Sun, Jan 3, 2021",PHO,LAC,Phoenix Suns,Los Angeles Clippers,107,112,-5,Home,91.5,True,2021
+202101060PHO,"Wed, Jan 6, 2021",PHO,TOR,Phoenix Suns,Toronto Raptors,123,115,8,Home,93.6,True,2021
+202101080DET,"Fri, Jan 8, 2021",DET,PHO,Detroit Pistons,Phoenix Suns,110,105,5,Home,96.1,True,2021
+202101110WAS,"Mon, Jan 11, 2021",WAS,PHO,Washington Wizards,Phoenix Suns,128,107,21,Home,96.4,True,2021
+202101180MEM,"Mon, Jan 18, 2021",MEM,PHO,Memphis Grizzlies,Phoenix Suns,108,104,4,Home,97.1,True,2021
+202101270PHO,"Wed, Jan 27, 2021",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,97,102,-5,Home,100.4,True,2021
+202101280PHO,"Thu, Jan 28, 2021",PHO,GSW,Phoenix Suns,Golden State Warriors,114,93,21,Home,101.6,True,2021
+202102030NOP,"Wed, Feb 3, 2021",NOP,PHO,New Orleans Pelicans,Phoenix Suns,123,101,22,Home,91.6,True,2021
+202102050PHO,"Fri, Feb 5, 2021",PHO,DET,Phoenix Suns,Detroit Pistons,109,92,17,Home,98.7,True,2021
+202102070PHO,"Sun, Feb 7, 2021",PHO,BOS,Phoenix Suns,Boston Celtics,100,91,9,Home,86.6,True,2021
+202102080PHO,"Mon, Feb 8, 2021",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,119,113,6,Home,93.9,True,2021
+202102100PHO,"Wed, Feb 10, 2021",PHO,MIL,Phoenix Suns,Milwaukee Bucks,125,124,1,Home,95.6,True,2021
+202102130PHO,"Sat, Feb 13, 2021",PHO,PHI,Phoenix Suns,Philadelphia 76ers,120,111,9,Home,92.7,True,2021
+202102160PHO,"Tue, Feb 16, 2021",PHO,BRK,Phoenix Suns,Brooklyn Nets,124,128,-4,Home,93.9,True,2021
+202102190NOP,"Fri, Feb 19, 2021",NOP,PHO,New Orleans Pelicans,Phoenix Suns,114,132,-18,Home,99.6,True,2021
+202102200MEM,"Sat, Feb 20, 2021",MEM,PHO,Memphis Grizzlies,Phoenix Suns,97,128,-31,Home,95.0,True,2021
+202102240PHO,"Wed, Feb 24, 2021",PHO,CHO,Phoenix Suns,Charlotte Hornets,121,124,-3,Home,103.1,True,2021
+202102280MIN,"Sun, Feb 28, 2021",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,99,118,-19,Home,105.2,True,2021
+202103040PHO,"Thu, Mar 4, 2021",PHO,GSW,Phoenix Suns,Golden State Warriors,120,98,22,Home,102.4,True,2021
+202103150PHO,"Mon, Mar 15, 2021",PHO,MEM,Phoenix Suns,Memphis Grizzlies,122,99,23,Home,97.4,True,2021
+202103180PHO,"Thu, Mar 18, 2021",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,119,123,-4,Home,105.6,True,2021
+202103190PHO,"Fri, Mar 19, 2021",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,113,101,12,Home,101.7,True,2021
+202103230MIA,"Tue, Mar 23, 2021",MIA,PHO,Miami Heat,Phoenix Suns,100,110,-10,Home,88.9,True,2021
+202103260TOR,"Fri, Mar 26, 2021",TOR,PHO,Toronto Raptors,Phoenix Suns,100,104,-4,Home,96.4,True,2021
+202103280CHO,"Sun, Mar 28, 2021",CHO,PHO,Charlotte Hornets,Phoenix Suns,97,101,-4,Home,86.9,True,2021
+202103300PHO,"Tue, Mar 30, 2021",PHO,ATL,Phoenix Suns,Atlanta Hawks,117,110,7,Home,94.9,True,2021
+202104020PHO,"Fri, Apr 2, 2021",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,140,103,37,Home,100.9,True,2021
+202104070PHO,"Wed, Apr 7, 2021",PHO,UTA,Phoenix Suns,Utah Jazz,117,113,4,Home,99.2,True,2021
+202104080LAC,"Thu, Apr 8, 2021",LAC,PHO,Los Angeles Clippers,Phoenix Suns,113,103,10,Home,87.5,True,2021
+202104100PHO,"Sat, Apr 10, 2021",PHO,WAS,Phoenix Suns,Washington Wizards,134,106,28,Home,105.5,True,2021
+202104130PHO,"Tue, Apr 13, 2021",PHO,MIA,Phoenix Suns,Miami Heat,106,86,20,Home,96.5,True,2021
+202104190MIL,"Mon, Apr 19, 2021",MIL,PHO,Milwaukee Bucks,Phoenix Suns,127,128,-1,Home,100.1,True,2021
+202104210PHI,"Wed, Apr 21, 2021",PHI,PHO,Philadelphia 76ers,Phoenix Suns,113,116,-3,Home,90.5,True,2021
+202104220BOS,"Thu, Apr 22, 2021",BOS,PHO,Boston Celtics,Phoenix Suns,99,86,13,Home,95.6,True,2021
+202104250BRK,"Sun, Apr 25, 2021",BRK,PHO,Brooklyn Nets,Phoenix Suns,128,119,9,Home,95.9,True,2021
+202104260NYK,"Mon, Apr 26, 2021",NYK,PHO,New York Knicks,Phoenix Suns,110,118,-8,Home,92.9,True,2021
+202104280PHO,"Wed, Apr 28, 2021",PHO,LAC,Phoenix Suns,Los Angeles Clippers,109,101,8,Home,90.5,True,2021
+202104300PHO,"Fri, Apr 30, 2021",PHO,UTA,Phoenix Suns,Utah Jazz,121,100,21,Home,94.3,True,2021
+202105020OKC,"Sun, May 2, 2021",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,120,123,-3,Home,97.4,True,2021
+202105040CLE,"Tue, May 4, 2021",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,118,134,-16,Home,95.2,True,2021
+202105050ATL,"Wed, May 5, 2021",ATL,PHO,Atlanta Hawks,Phoenix Suns,135,103,32,Home,90.5,True,2021
+202105070PHO,"Fri, May 7, 2021",PHO,NYK,Phoenix Suns,New York Knicks,128,105,23,Home,98.9,True,2021
+202105110GSW,"Tue, May 11, 2021",GSW,PHO,Golden State Warriors,Phoenix Suns,122,116,6,Home,93.1,True,2021
+202106200PHO,"Sun, Jun 20, 2021",PHO,LAC,Phoenix Suns,Los Angeles Clippers,120,114,6,Home,92.0,True,2021
+202106220PHO,"Tue, Jun 22, 2021",PHO,LAC,Phoenix Suns,Los Angeles Clippers,104,103,1,Home,89.7,True,2021
+202106240LAC,"Thu, Jun 24, 2021",LAC,PHO,Los Angeles Clippers,Phoenix Suns,106,92,14,Home,91.9,True,2021
+202106260LAC,"Sat, Jun 26, 2021",LAC,PHO,Los Angeles Clippers,Phoenix Suns,80,84,-4,Home,89.8,True,2021
+202106280PHO,"Mon, Jun 28, 2021",PHO,LAC,Phoenix Suns,Los Angeles Clippers,102,116,-14,Home,97.5,True,2021
+202106300LAC,"Wed, Jun 30, 2021",LAC,PHO,Los Angeles Clippers,Phoenix Suns,103,130,-27,Home,93.4,True,2021
+202107060PHO,"Tue, Jul 6, 2021",PHO,MIL,Phoenix Suns,Milwaukee Bucks,118,105,13,Home,98.9,True,2021
+202107080PHO,"Thu, Jul 8, 2021",PHO,MIL,Phoenix Suns,Milwaukee Bucks,118,108,10,Home,91.8,True,2021
+202107110MIL,"Sun, Jul 11, 2021",MIL,PHO,Milwaukee Bucks,Phoenix Suns,120,100,20,Home,95.3,True,2021
+202107140MIL,"Wed, Jul 14, 2021",MIL,PHO,Milwaukee Bucks,Phoenix Suns,109,103,6,Home,95.1,True,2021
+202107170PHO,"Sat, Jul 17, 2021",PHO,MIL,Phoenix Suns,Milwaukee Bucks,119,123,-4,Home,91.5,True,2021
+202107200MIL,"Tue, Jul 20, 2021",MIL,PHO,Milwaukee Bucks,Phoenix Suns,105,98,7,Home,100.1,True,2021
+202012230MIN,"Wed, Dec 23, 2020",MIN,DET,Minnesota Timberwolves,Detroit Pistons,111,101,10,Home,98.5,True,2021
+202012260DET,"Sat, Dec 26, 2020",DET,CLE,Detroit Pistons,Cleveland Cavaliers,119,128,-9,Home,100.6,True,2021
+202012280ATL,"Mon, Dec 28, 2020",ATL,DET,Atlanta Hawks,Detroit Pistons,128,120,8,Home,97.8,True,2021
+202012290DET,"Tue, Dec 29, 2020",DET,GSW,Detroit Pistons,Golden State Warriors,106,116,-10,Home,102.2,True,2021
+202101010DET,"Fri, Jan 1, 2021",DET,BOS,Detroit Pistons,Boston Celtics,96,93,3,Home,100.7,True,2021
+202101030DET,"Sun, Jan 3, 2021",DET,BOS,Detroit Pistons,Boston Celtics,120,122,-2,Home,95.3,True,2021
+202101040MIL,"Mon, Jan 4, 2021",MIL,DET,Milwaukee Bucks,Detroit Pistons,125,115,10,Home,102.7,True,2021
+202101060MIL,"Wed, Jan 6, 2021",MIL,DET,Milwaukee Bucks,Detroit Pistons,130,115,15,Home,101.5,True,2021
+202101100DET,"Sun, Jan 10, 2021",DET,UTA,Detroit Pistons,Utah Jazz,86,96,-10,Home,88.1,True,2021
+202101130DET,"Wed, Jan 13, 2021",DET,MIL,Detroit Pistons,Milwaukee Bucks,101,110,-9,Home,97.7,True,2021
+202101160MIA,"Sat, Jan 16, 2021",MIA,DET,Miami Heat,Detroit Pistons,100,120,-20,Home,94.5,True,2021
+202101180MIA,"Mon, Jan 18, 2021",MIA,DET,Miami Heat,Detroit Pistons,113,107,6,Home,95.2,True,2021
+202101200ATL,"Wed, Jan 20, 2021",ATL,DET,Atlanta Hawks,Detroit Pistons,123,115,8,Home,96.7,True,2021
+202101230DET,"Sat, Jan 23, 2021",DET,PHI,Detroit Pistons,Philadelphia 76ers,110,114,-4,Home,102.3,True,2021
+202101250DET,"Mon, Jan 25, 2021",DET,PHI,Detroit Pistons,Philadelphia 76ers,119,104,15,Home,93.4,True,2021
+202101270CLE,"Wed, Jan 27, 2021",CLE,DET,Cleveland Cavaliers,Detroit Pistons,122,107,15,Home,101.6,True,2021
+202101300GSW,"Sat, Jan 30, 2021",GSW,DET,Golden State Warriors,Detroit Pistons,118,91,27,Home,96.9,True,2021
+202102020UTA,"Tue, Feb 2, 2021",UTA,DET,Utah Jazz,Detroit Pistons,117,105,12,Home,99.6,True,2021
+202102090DET,"Tue, Feb 9, 2021",DET,BRK,Detroit Pistons,Brooklyn Nets,122,111,11,Home,97.4,True,2021
+202102120BOS,"Fri, Feb 12, 2021",BOS,DET,Boston Celtics,Detroit Pistons,102,108,-6,Home,96.3,True,2021
+202102140DET,"Sun, Feb 14, 2021",DET,NOP,Detroit Pistons,New Orleans Pelicans,123,112,11,Home,91.3,True,2021
+202102190MEM,"Fri, Feb 19, 2021",MEM,DET,Memphis Grizzlies,Detroit Pistons,109,95,14,Home,96.7,True,2021
+202102240NOP,"Wed, Feb 24, 2021",NOP,DET,New Orleans Pelicans,Detroit Pistons,128,118,10,Home,99.9,True,2021
+202102280DET,"Sun, Feb 28, 2021",DET,NYK,Detroit Pistons,New York Knicks,90,109,-19,Home,92.8,True,2021
+202103030TOR,"Wed, Mar 3, 2021",TOR,DET,Toronto Raptors,Detroit Pistons,105,129,-24,Home,96.5,True,2021
+202103040NYK,"Thu, Mar 4, 2021",NYK,DET,New York Knicks,Detroit Pistons,114,104,10,Home,90.6,True,2021
+202103110CHO,"Thu, Mar 11, 2021",CHO,DET,Charlotte Hornets,Detroit Pistons,105,102,3,Home,93.5,True,2021
+202103130BRK,"Sat, Mar 13, 2021",BRK,DET,Brooklyn Nets,Detroit Pistons,100,95,5,Home,94.0,True,2021
+202103170DET,"Wed, Mar 17, 2021",DET,TOR,Detroit Pistons,Toronto Raptors,116,112,4,Home,95.3,True,2021
+202103260DET,"Fri, Mar 26, 2021",DET,BRK,Detroit Pistons,Brooklyn Nets,111,113,-2,Home,91.5,True,2021
+202103270WAS,"Sat, Mar 27, 2021",WAS,DET,Washington Wizards,Detroit Pistons,106,92,14,Home,103.9,True,2021
+202103290DET,"Mon, Mar 29, 2021",DET,TOR,Detroit Pistons,Toronto Raptors,118,104,14,Home,96.9,True,2021
+202104010DET,"Thu, Apr 1, 2021",DET,WAS,Detroit Pistons,Washington Wizards,120,91,29,Home,103.2,True,2021
+202104030DET,"Sat, Apr 3, 2021",DET,NYK,Detroit Pistons,New York Knicks,81,125,-44,Home,89.9,True,2021
+202104050OKC,"Mon, Apr 5, 2021",OKC,DET,Oklahoma City Thunder,Detroit Pistons,108,132,-24,Home,104.9,True,2021
+202104110LAC,"Sun, Apr 11, 2021",LAC,DET,Los Angeles Clippers,Detroit Pistons,131,124,7,Home,94.9,True,2021
+202104140DET,"Wed, Apr 14, 2021",DET,LAC,Detroit Pistons,Los Angeles Clippers,98,100,-2,Home,95.5,True,2021
+202104160DET,"Fri, Apr 16, 2021",DET,OKC,Detroit Pistons,Oklahoma City Thunder,110,104,6,Home,107.3,True,2021
+202104170WAS,"Sat, Apr 17, 2021",WAS,DET,Washington Wizards,Detroit Pistons,121,100,21,Home,102.5,True,2021
+202104190DET,"Mon, Apr 19, 2021",DET,CLE,Detroit Pistons,Cleveland Cavaliers,109,105,4,Home,100.4,True,2021
+202104260DET,"Mon, Apr 26, 2021",DET,ATL,Detroit Pistons,Atlanta Hawks,100,86,14,Home,96.4,True,2021
+202105010CHO,"Sat, May 1, 2021",CHO,DET,Charlotte Hornets,Detroit Pistons,107,94,13,Home,93.5,True,2021
+202105040DET,"Tue, May 4, 2021",DET,CHO,Detroit Pistons,Charlotte Hornets,99,102,-3,Home,93.8,True,2021
+202105060DET,"Thu, May 6, 2021",DET,MEM,Detroit Pistons,Memphis Grizzlies,111,97,14,Home,95.1,True,2021
+202105080PHI,"Sat, May 8, 2021",PHI,DET,Philadelphia 76ers,Detroit Pistons,118,104,14,Home,96.5,True,2021
+202105110DET,"Tue, May 11, 2021",DET,MIN,Detroit Pistons,Minnesota Timberwolves,100,119,-19,Home,108.0,True,2021
+202105160DET,"Sun, May 16, 2021",DET,MIA,Detroit Pistons,Miami Heat,107,120,-13,Home,98.4,True,2021
+202012230PHI,"Wed, Dec 23, 2020",PHI,WAS,Philadelphia 76ers,Washington Wizards,113,107,6,Home,105.7,True,2021
+202101010MIN,"Fri, Jan 1, 2021",MIN,WAS,Minnesota Timberwolves,Washington Wizards,109,130,-21,Home,104.7,True,2021
+202101030BRK,"Sun, Jan 3, 2021",BRK,WAS,Brooklyn Nets,Washington Wizards,122,123,-1,Home,108.0,True,2021
+202101060PHI,"Wed, Jan 6, 2021",PHI,WAS,Philadelphia 76ers,Washington Wizards,141,136,5,Home,109.7,True,2021
+202101080BOS,"Fri, Jan 8, 2021",BOS,WAS,Boston Celtics,Washington Wizards,116,107,9,Home,105.0,True,2021
+202101090WAS,"Sat, Jan 9, 2021",WAS,MIA,Washington Wizards,Miami Heat,124,128,-4,Home,108.3,True,2021
+202101270NOP,"Wed, Jan 27, 2021",NOP,WAS,New Orleans Pelicans,Washington Wizards,124,106,18,Home,98.5,True,2021
+202101290WAS,"Fri, Jan 29, 2021",WAS,ATL,Washington Wizards,Atlanta Hawks,100,116,-16,Home,98.4,True,2021
+202101310WAS,"Sun, Jan 31, 2021",WAS,BRK,Washington Wizards,Brooklyn Nets,149,146,3,Home,112.7,True,2021
+202102030MIA,"Wed, Feb 3, 2021",MIA,WAS,Miami Heat,Washington Wizards,100,103,-3,Home,95.3,True,2021
+202102050MIA,"Fri, Feb 5, 2021",MIA,WAS,Miami Heat,Washington Wizards,122,95,27,Home,100.8,True,2021
+202102070CHO,"Sun, Feb 7, 2021",CHO,WAS,Charlotte Hornets,Washington Wizards,119,97,22,Home,100.9,True,2021
+202102100WAS,"Wed, Feb 10, 2021",WAS,TOR,Washington Wizards,Toronto Raptors,115,137,-22,Home,103.6,True,2021
+202102120WAS,"Fri, Feb 12, 2021",WAS,NYK,Washington Wizards,New York Knicks,91,109,-18,Home,101.6,True,2021
+202102140WAS,"Sun, Feb 14, 2021",WAS,BOS,Washington Wizards,Boston Celtics,104,91,13,Home,103.5,True,2021
+202102230LAC,"Tue, Feb 23, 2021",LAC,WAS,Los Angeles Clippers,Washington Wizards,135,116,19,Home,101.3,True,2021
+202102270WAS,"Sat, Feb 27, 2021",WAS,MIN,Washington Wizards,Minnesota Timberwolves,128,112,16,Home,111.5,True,2021
+202102280BOS,"Sun, Feb 28, 2021",BOS,WAS,Boston Celtics,Washington Wizards,111,110,1,Home,101.3,True,2021
+202103020WAS,"Tue, Mar 2, 2021",WAS,MEM,Washington Wizards,Memphis Grizzlies,111,125,-14,Home,106.4,True,2021
+202103040WAS,"Thu, Mar 4, 2021",WAS,LAC,Washington Wizards,Los Angeles Clippers,119,117,2,Home,99.8,True,2021
+202103100MEM,"Wed, Mar 10, 2021",MEM,WAS,Memphis Grizzlies,Washington Wizards,127,112,15,Home,108.9,True,2021
+202103120WAS,"Fri, Mar 12, 2021",WAS,PHI,Washington Wizards,Philadelphia 76ers,101,127,-26,Home,101.9,True,2021
+202103130WAS,"Sat, Mar 13, 2021",WAS,MIL,Washington Wizards,Milwaukee Bucks,119,125,-6,Home,111.0,True,2021
+202103150WAS,"Mon, Mar 15, 2021",WAS,MIL,Washington Wizards,Milwaukee Bucks,122,133,-11,Home,107.9,True,2021
+202103180WAS,"Thu, Mar 18, 2021",WAS,UTA,Washington Wizards,Utah Jazz,131,122,9,Home,108.8,True,2021
+202103210BRK,"Sun, Mar 21, 2021",BRK,WAS,Brooklyn Nets,Washington Wizards,113,106,7,Home,94.3,True,2021
+202103230NYK,"Tue, Mar 23, 2021",NYK,WAS,New York Knicks,Washington Wizards,131,113,18,Home,99.4,True,2021
+202103250NYK,"Thu, Mar 25, 2021",NYK,WAS,New York Knicks,Washington Wizards,106,102,4,Home,102.3,True,2021
+202103300WAS,"Tue, Mar 30, 2021",WAS,CHO,Washington Wizards,Charlotte Hornets,104,114,-10,Home,101.7,True,2021
+202104050TOR,"Mon, Apr 5, 2021",TOR,WAS,Toronto Raptors,Washington Wizards,103,101,2,Home,102.3,True,2021
+202104090GSW,"Fri, Apr 9, 2021",GSW,WAS,Golden State Warriors,Washington Wizards,107,110,-3,Home,102.3,True,2021
+202104120UTA,"Mon, Apr 12, 2021",UTA,WAS,Utah Jazz,Washington Wizards,121,125,-4,Home,100.7,True,2021
+202104160WAS,"Fri, Apr 16, 2021",WAS,NOP,Washington Wizards,New Orleans Pelicans,117,115,2,Home,104.7,True,2021
+202104190WAS,"Mon, Apr 19, 2021",WAS,OKC,Washington Wizards,Oklahoma City Thunder,119,107,12,Home,104.3,True,2021
+202104210WAS,"Wed, Apr 21, 2021",WAS,GSW,Washington Wizards,Golden State Warriors,118,114,4,Home,112.8,True,2021
+202104230OKC,"Fri, Apr 23, 2021",OKC,WAS,Oklahoma City Thunder,Washington Wizards,109,129,-20,Home,103.8,True,2021
+202104250WAS,"Sun, Apr 25, 2021",WAS,CLE,Washington Wizards,Cleveland Cavaliers,119,110,9,Home,95.9,True,2021
+202104300CLE,"Fri, Apr 30, 2021",CLE,WAS,Cleveland Cavaliers,Washington Wizards,93,122,-29,Home,102.2,True,2021
+202105050MIL,"Wed, May 5, 2021",MIL,WAS,Milwaukee Bucks,Washington Wizards,135,134,1,Home,108.2,True,2021
+202105060TOR,"Thu, May 6, 2021",TOR,WAS,Toronto Raptors,Washington Wizards,129,131,-2,Home,98.2,True,2021
+202105100ATL,"Mon, May 10, 2021",ATL,WAS,Atlanta Hawks,Washington Wizards,125,124,1,Home,104.3,True,2021
+202105120ATL,"Wed, May 12, 2021",ATL,WAS,Atlanta Hawks,Washington Wizards,120,116,4,Home,104.4,True,2021
+202105140WAS,"Fri, May 14, 2021",WAS,CLE,Washington Wizards,Cleveland Cavaliers,120,105,15,Home,101.3,True,2021
+202105160WAS,"Sun, May 16, 2021",WAS,CHO,Washington Wizards,Charlotte Hornets,115,110,5,Home,102.3,True,2021
+202105180BOS,"Tue, May 18, 2021",BOS,WAS,Boston Celtics,Washington Wizards,118,100,18,Home,100.7,True,2021
+202105230PHI,"Sun, May 23, 2021",PHI,WAS,Philadelphia 76ers,Washington Wizards,125,118,7,Home,101.8,True,2021
+202105260PHI,"Wed, May 26, 2021",PHI,WAS,Philadelphia 76ers,Washington Wizards,120,95,25,Home,99.4,True,2021
+202105290WAS,"Sat, May 29, 2021",WAS,PHI,Washington Wizards,Philadelphia 76ers,103,132,-29,Home,101.1,True,2021
+202105310WAS,"Mon, May 31, 2021",WAS,PHI,Washington Wizards,Philadelphia 76ers,122,114,8,Home,106.0,True,2021
+202106020PHI,"Wed, Jun 2, 2021",PHI,WAS,Philadelphia 76ers,Washington Wizards,129,112,17,Home,99.9,True,2021
+202012230TOR,"Wed, Dec 23, 2020",TOR,NOP,Toronto Raptors,New Orleans Pelicans,99,113,-14,Home,104.0,True,2021
+202012250MIA,"Fri, Dec 25, 2020",MIA,NOP,Miami Heat,New Orleans Pelicans,111,98,13,Home,96.8,True,2021
+202012310OKC,"Thu, Dec 31, 2020",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,80,113,-33,Home,97.1,True,2021
+202101020NOP,"Sat, Jan 2, 2021",NOP,TOR,New Orleans Pelicans,Toronto Raptors,120,116,4,Home,98.0,True,2021
+202101060NOP,"Wed, Jan 6, 2021",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,110,111,-1,Home,103.1,True,2021
+202101080NOP,"Fri, Jan 8, 2021",NOP,CHO,New Orleans Pelicans,Charlotte Hornets,110,118,-8,Home,94.0,True,2021
+202101130LAC,"Wed, Jan 13, 2021",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,111,106,5,Home,90.9,True,2021
+202101190UTA,"Tue, Jan 19, 2021",UTA,NOP,Utah Jazz,New Orleans Pelicans,118,102,16,Home,95.8,True,2021
+202101210UTA,"Thu, Jan 21, 2021",UTA,NOP,Utah Jazz,New Orleans Pelicans,129,118,11,Home,103.1,True,2021
+202101230MIN,"Sat, Jan 23, 2021",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,120,110,10,Home,103.6,True,2021
+202101290NOP,"Fri, Jan 29, 2021",NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,131,126,5,Home,103.0,True,2021
+202102060NOP,"Sat, Feb 6, 2021",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,118,109,9,Home,93.7,True,2021
+202102160MEM,"Tue, Feb 16, 2021",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,113,144,-31,Home,104.5,True,2021
+202102210NOP,"Sun, Feb 21, 2021",NOP,BOS,New Orleans Pelicans,Boston Celtics,120,115,5,Home,98.0,True,2021
+202102250MIL,"Thu, Feb 25, 2021",MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,129,125,4,Home,102.5,True,2021
+202103010NOP,"Mon, Mar 1, 2021",NOP,UTA,New Orleans Pelicans,Utah Jazz,129,124,5,Home,103.6,True,2021
+202103040NOP,"Thu, Mar 4, 2021",NOP,MIA,New Orleans Pelicans,Miami Heat,93,103,-10,Home,87.6,True,2021
+202103110NOP,"Thu, Mar 11, 2021",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,105,135,-30,Home,104.2,True,2021
+202103120NOP,"Fri, Mar 12, 2021",NOP,CLE,New Orleans Pelicans,Cleveland Cavaliers,116,82,34,Home,97.4,True,2021
+202103140NOP,"Sun, Mar 14, 2021",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,135,115,20,Home,101.9,True,2021
+202103290BOS,"Mon, Mar 29, 2021",BOS,NOP,Boston Celtics,New Orleans Pelicans,109,115,-6,Home,100.5,True,2021
+202104020NOP,"Fri, Apr 2, 2021",NOP,ATL,New Orleans Pelicans,Atlanta Hawks,103,126,-23,Home,104.6,True,2021
+202104060ATL,"Tue, Apr 6, 2021",ATL,NOP,Atlanta Hawks,New Orleans Pelicans,123,107,16,Home,96.9,True,2021
+202104070BRK,"Wed, Apr 7, 2021",BRK,NOP,Brooklyn Nets,New Orleans Pelicans,139,111,28,Home,102.6,True,2021
+202104090NOP,"Fri, Apr 9, 2021",NOP,PHI,New Orleans Pelicans,Philadelphia 76ers,101,94,7,Home,103.7,True,2021
+202104110CLE,"Sun, Apr 11, 2021",CLE,NOP,Cleveland Cavaliers,New Orleans Pelicans,109,116,-7,Home,98.2,True,2021
+202104140NOP,"Wed, Apr 14, 2021",NOP,NYK,New Orleans Pelicans,New York Knicks,106,116,-10,Home,96.3,True,2021
+202104180NYK,"Sun, Apr 18, 2021",NYK,NOP,New York Knicks,New Orleans Pelicans,122,112,10,Home,92.5,True,2021
+202104200NOP,"Tue, Apr 20, 2021",NOP,BRK,New Orleans Pelicans,Brooklyn Nets,129,134,-5,Home,104.4,True,2021
+202104260NOP,"Mon, Apr 26, 2021",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,120,103,17,Home,99.8,True,2021
+202104290OKC,"Thu, Apr 29, 2021",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,95,109,-14,Home,105.1,True,2021
+202105010MIN,"Sat, May 1, 2021",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,136,140,-4,Home,107.5,True,2021
+202105030NOP,"Mon, May 3, 2021",NOP,GSW,New Orleans Pelicans,Golden State Warriors,108,123,-15,Home,102.7,True,2021
+202105040NOP,"Tue, May 4, 2021",NOP,GSW,New Orleans Pelicans,Golden State Warriors,108,103,5,Home,103.2,True,2021
+202105070PHI,"Fri, May 7, 2021",PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,109,107,2,Home,99.8,True,2021
+202105090CHO,"Sun, May 9, 2021",CHO,NOP,Charlotte Hornets,New Orleans Pelicans,110,112,-2,Home,104.7,True,2021
+202105100MEM,"Mon, May 10, 2021",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,115,110,5,Home,101.6,True,2021
+202105140GSW,"Fri, May 14, 2021",GSW,NOP,Golden State Warriors,New Orleans Pelicans,125,122,3,Home,103.7,True,2021
+202012260CHO,"Sat, Dec 26, 2020",CHO,OKC,Charlotte Hornets,Oklahoma City Thunder,107,109,-2,Home,104.1,True,2021
+202012280OKC,"Mon, Dec 28, 2020",OKC,UTA,Oklahoma City Thunder,Utah Jazz,109,110,-1,Home,99.2,True,2021
+202101040MIA,"Mon, Jan 4, 2021",MIA,OKC,Miami Heat,Oklahoma City Thunder,118,90,28,Home,98.1,True,2021
+202101080NYK,"Fri, Jan 8, 2021",NYK,OKC,New York Knicks,Oklahoma City Thunder,89,101,-12,Home,95.4,True,2021
+202101100BRK,"Sun, Jan 10, 2021",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,116,129,-13,Home,103.9,True,2021
+202101220LAC,"Fri, Jan 22, 2021",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,120,106,14,Home,97.0,True,2021
+202101240LAC,"Sun, Jan 24, 2021",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,108,100,8,Home,98.1,True,2021
+202101290OKC,"Fri, Jan 29, 2021",OKC,BRK,Oklahoma City Thunder,Brooklyn Nets,125,147,-22,Home,105.5,True,2021
+202102050OKC,"Fri, Feb 5, 2021",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,103,106,-3,Home,99.7,True,2021
+202102060OKC,"Sat, Feb 6, 2021",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,120,118,2,Home,101.9,True,2021
+202102140OKC,"Sun, Feb 14, 2021",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,114,109,5,Home,100.9,True,2021
+202102170MEM,"Wed, Feb 17, 2021",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,122,113,9,Home,100.7,True,2021
+202102190MIL,"Fri, Feb 19, 2021",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,98,85,13,Home,95.6,True,2021
+202102210CLE,"Sun, Feb 21, 2021",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,101,117,-16,Home,94.6,True,2021
+202102220OKC,"Mon, Feb 22, 2021",OKC,MIA,Oklahoma City Thunder,Miami Heat,94,108,-14,Home,92.9,True,2021
+202102260OKC,"Fri, Feb 26, 2021",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,118,109,9,Home,95.9,True,2021
+202103130OKC,"Sat, Mar 13, 2021",OKC,NYK,Oklahoma City Thunder,New York Knicks,97,119,-22,Home,97.0,True,2021
+202103140OKC,"Sun, Mar 14, 2021",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,128,122,6,Home,100.6,True,2021
+202103180ATL,"Thu, Mar 18, 2021",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,116,93,23,Home,97.1,True,2021
+202103220MIN,"Mon, Mar 22, 2021",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,103,112,-9,Home,96.1,True,2021
+202103240OKC,"Wed, Mar 24, 2021",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,107,116,-9,Home,105.6,True,2021
+202103270OKC,"Sat, Mar 27, 2021",OKC,BOS,Oklahoma City Thunder,Boston Celtics,94,111,-17,Home,100.5,True,2021
+202103310OKC,"Wed, Mar 31, 2021",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,113,103,10,Home,96.0,True,2021
+202104070OKC,"Wed, Apr 7, 2021",OKC,CHO,Oklahoma City Thunder,Charlotte Hornets,102,113,-11,Home,99.9,True,2021
+202104080OKC,"Thu, Apr 8, 2021",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,102,129,-27,Home,98.4,True,2021
+202104100OKC,"Sat, Apr 10, 2021",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,93,117,-24,Home,99.6,True,2021
+202104130UTA,"Tue, Apr 13, 2021",UTA,OKC,Utah Jazz,Oklahoma City Thunder,106,96,10,Home,94.4,True,2021
+202104140OKC,"Wed, Apr 14, 2021",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,109,147,-38,Home,106.8,True,2021
+202104180TOR,"Sun, Apr 18, 2021",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,112,106,6,Home,100.1,True,2021
+202104260PHI,"Mon, Apr 26, 2021",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,121,90,31,Home,103.0,True,2021
+202104270BOS,"Tue, Apr 27, 2021",BOS,OKC,Boston Celtics,Oklahoma City Thunder,115,119,-4,Home,111.3,True,2021
+202105060GSW,"Thu, May 6, 2021",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,118,97,21,Home,98.6,True,2021
+202105080GSW,"Sat, May 8, 2021",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,136,97,39,Home,103.5,True,2021
+202105140OKC,"Fri, May 14, 2021",OKC,UTA,Oklahoma City Thunder,Utah Jazz,93,109,-16,Home,94.0,True,2021
+202105160OKC,"Sun, May 16, 2021",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,117,112,5,Home,98.0,True,2021
+202012260MEM,"Sat, Dec 26, 2020",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,112,122,-10,Home,104.4,True,2021
+202012280BRK,"Mon, Dec 28, 2020",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,111,116,-5,Home,99.1,True,2021
+202012300BOS,"Wed, Dec 30, 2020",BOS,MEM,Boston Celtics,Memphis Grizzlies,126,107,19,Home,104.8,True,2021
+202101010CHO,"Fri, Jan 1, 2021",CHO,MEM,Charlotte Hornets,Memphis Grizzlies,93,108,-15,Home,99.0,True,2021
+202101070MEM,"Thu, Jan 7, 2021",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,90,94,-4,Home,91.9,True,2021
+202101080MEM,"Fri, Jan 8, 2021",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,115,110,5,Home,103.3,True,2021
+202101110CLE,"Mon, Jan 11, 2021",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,91,101,-10,Home,93.6,True,2021
+202101130MIN,"Wed, Jan 13, 2021",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,107,118,-11,Home,99.3,True,2021
+202101160MEM,"Sat, Jan 16, 2021",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,106,104,2,Home,103.2,True,2021
+202102080MEM,"Mon, Feb 8, 2021",MEM,TOR,Memphis Grizzlies,Toronto Raptors,113,128,-15,Home,92.8,True,2021
+202102100MEM,"Wed, Feb 10, 2021",MEM,CHO,Memphis Grizzlies,Charlotte Hornets,130,114,16,Home,96.1,True,2021
+202102250MEM,"Thu, Feb 25, 2021",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,122,94,28,Home,96.1,True,2021
+202102260MEM,"Fri, Feb 26, 2021",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,99,119,-20,Home,101.1,True,2021
+202103040MEM,"Thu, Mar 4, 2021",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,111,112,-1,Home,104.2,True,2021
+202103170MEM,"Wed, Mar 17, 2021",MEM,MIA,Memphis Grizzlies,Miami Heat,89,85,4,Home,95.6,True,2021
+202103190MEM,"Fri, Mar 19, 2021",MEM,GSW,Memphis Grizzlies,Golden State Warriors,103,116,-13,Home,102.4,True,2021
+202103200MEM,"Sat, Mar 20, 2021",MEM,GSW,Memphis Grizzlies,Golden State Warriors,111,103,8,Home,105.2,True,2021
+202103220MEM,"Mon, Mar 22, 2021",MEM,BOS,Memphis Grizzlies,Boston Celtics,132,126,6,Home,96.9,True,2021
+202103260UTA,"Fri, Mar 26, 2021",UTA,MEM,Utah Jazz,Memphis Grizzlies,117,114,3,Home,96.3,True,2021
+202103270UTA,"Sat, Mar 27, 2021",UTA,MEM,Utah Jazz,Memphis Grizzlies,126,110,16,Home,105.7,True,2021
+202103310MEM,"Wed, Mar 31, 2021",MEM,UTA,Memphis Grizzlies,Utah Jazz,107,111,-4,Home,98.9,True,2021
+202104020MEM,"Fri, Apr 2, 2021",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,120,108,12,Home,99.0,True,2021
+202104040PHI,"Sun, Apr 4, 2021",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,100,116,-16,Home,95.0,True,2021
+202104060MIA,"Tue, Apr 6, 2021",MIA,MEM,Miami Heat,Memphis Grizzlies,112,124,-12,Home,94.6,True,2021
+202104070ATL,"Wed, Apr 7, 2021",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,113,131,-18,Home,100.9,True,2021
+202104090NYK,"Fri, Apr 9, 2021",NYK,MEM,New York Knicks,Memphis Grizzlies,133,129,4,Home,98.9,True,2021
+202104170MIL,"Sat, Apr 17, 2021",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,115,128,-13,Home,101.4,True,2021
+202104210LAC,"Wed, Apr 21, 2021",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,117,105,12,Home,96.1,True,2021
+202105030MEM,"Mon, May 3, 2021",MEM,NYK,Memphis Grizzlies,New York Knicks,104,118,-14,Home,94.1,True,2021
+202105050MIN,"Wed, May 5, 2021",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,135,139,-4,Home,105.7,True,2021
+202105080TOR,"Sat, May 8, 2021",TOR,MEM,Toronto Raptors,Memphis Grizzlies,99,109,-10,Home,98.7,True,2021
+202105160GSW,"Sun, May 16, 2021",GSW,MEM,Golden State Warriors,Memphis Grizzlies,113,101,12,Home,96.2,True,2021
+202105210GSW,"Fri, May 21, 2021",GSW,MEM,Golden State Warriors,Memphis Grizzlies,112,117,-5,Home,95.6,True,2021
+202105230UTA,"Sun, May 23, 2021",UTA,MEM,Utah Jazz,Memphis Grizzlies,109,112,-3,Home,96.1,True,2021
+202105260UTA,"Wed, May 26, 2021",UTA,MEM,Utah Jazz,Memphis Grizzlies,141,129,12,Home,100.7,True,2021
+202105290MEM,"Sat, May 29, 2021",MEM,UTA,Memphis Grizzlies,Utah Jazz,111,121,-10,Home,96.6,True,2021
+202105310MEM,"Mon, May 31, 2021",MEM,UTA,Memphis Grizzlies,Utah Jazz,113,120,-7,Home,99.6,True,2021
+202106020UTA,"Wed, Jun 2, 2021",UTA,MEM,Utah Jazz,Memphis Grizzlies,126,110,16,Home,102.2,True,2021
+202012230CLE,"Wed, Dec 23, 2020",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,121,114,7,Home,101.5,True,2021
+202012270CHO,"Sun, Dec 27, 2020",CHO,BRK,Charlotte Hornets,Brooklyn Nets,106,104,2,Home,102.6,True,2021
+202101020PHI,"Sat, Jan 2, 2021",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,127,112,15,Home,100.6,True,2021
+202101040PHI,"Mon, Jan 4, 2021",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,118,101,17,Home,101.2,True,2021
+202101060ATL,"Wed, Jan 6, 2021",ATL,CHO,Atlanta Hawks,Charlotte Hornets,94,102,-8,Home,100.2,True,2021
+202101090CHO,"Sat, Jan 9, 2021",CHO,ATL,Charlotte Hornets,Atlanta Hawks,113,105,8,Home,95.0,True,2021
+202101110CHO,"Mon, Jan 11, 2021",CHO,NYK,Charlotte Hornets,New York Knicks,109,88,21,Home,90.8,True,2021
+202101140TOR,"Thu, Jan 14, 2021",TOR,CHO,Toronto Raptors,Charlotte Hornets,111,108,3,Home,94.0,True,2021
+202101160TOR,"Sat, Jan 16, 2021",TOR,CHO,Toronto Raptors,Charlotte Hornets,116,113,3,Home,101.1,True,2021
+202101300CHO,"Sat, Jan 30, 2021",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,126,114,12,Home,99.5,True,2021
+202102010MIA,"Mon, Feb 1, 2021",MIA,CHO,Miami Heat,Charlotte Hornets,121,129,-8,Home,93.1,True,2021
+202102030CHO,"Wed, Feb 3, 2021",CHO,PHI,Charlotte Hornets,Philadelphia 76ers,111,118,-7,Home,99.1,True,2021
+202102050CHO,"Fri, Feb 5, 2021",CHO,UTA,Charlotte Hornets,Utah Jazz,121,138,-17,Home,102.0,True,2021
+202102120CHO,"Fri, Feb 12, 2021",CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,120,114,6,Home,103.2,True,2021
+202102200CHO,"Sat, Feb 20, 2021",CHO,GSW,Charlotte Hornets,Golden State Warriors,102,100,2,Home,97.1,True,2021
+202102220UTA,"Mon, Feb 22, 2021",UTA,CHO,Utah Jazz,Charlotte Hornets,132,110,22,Home,104.1,True,2021
+202102260GSW,"Fri, Feb 26, 2021",GSW,CHO,Golden State Warriors,Charlotte Hornets,130,121,9,Home,107.4,True,2021
+202103030MIN,"Wed, Mar 3, 2021",MIN,CHO,Minnesota Timberwolves,Charlotte Hornets,102,135,-33,Home,108.8,True,2021
+202103130CHO,"Sat, Mar 13, 2021",CHO,TOR,Charlotte Hornets,Toronto Raptors,114,104,10,Home,105.8,True,2021
+202103200LAC,"Sat, Mar 20, 2021",LAC,CHO,Los Angeles Clippers,Charlotte Hornets,125,98,27,Home,91.7,True,2021
+202103260CHO,"Fri, Mar 26, 2021",CHO,MIA,Charlotte Hornets,Miami Heat,110,105,5,Home,95.2,True,2021
+202104010BRK,"Thu, Apr 1, 2021",BRK,CHO,Brooklyn Nets,Charlotte Hornets,111,89,22,Home,92.7,True,2021
+202104040BOS,"Sun, Apr 4, 2021",BOS,CHO,Boston Celtics,Charlotte Hornets,116,86,30,Home,90.6,True,2021
+202104090MIL,"Fri, Apr 9, 2021",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,119,127,-8,Home,106.5,True,2021
+202104110CHO,"Sun, Apr 11, 2021",CHO,ATL,Charlotte Hornets,Atlanta Hawks,101,105,-4,Home,91.6,True,2021
+202104140CHO,"Wed, Apr 14, 2021",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,90,103,-13,Home,89.1,True,2021
+202104160BRK,"Fri, Apr 16, 2021",BRK,CHO,Brooklyn Nets,Charlotte Hornets,130,115,15,Home,101.4,True,2021
+202104200NYK,"Tue, Apr 20, 2021",NYK,CHO,New York Knicks,Charlotte Hornets,109,97,12,Home,85.4,True,2021
+202104230CHO,"Fri, Apr 23, 2021",CHO,CLE,Charlotte Hornets,Cleveland Cavaliers,108,102,6,Home,88.7,True,2021
+202104250CHO,"Sun, Apr 25, 2021",CHO,BOS,Charlotte Hornets,Boston Celtics,125,104,21,Home,97.0,True,2021
+202104270CHO,"Tue, Apr 27, 2021",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,104,114,-10,Home,101.8,True,2021
+202104280BOS,"Wed, Apr 28, 2021",BOS,CHO,Boston Celtics,Charlotte Hornets,120,111,9,Home,94.5,True,2021
+202105020CHO,"Sun, May 2, 2021",CHO,MIA,Charlotte Hornets,Miami Heat,111,121,-10,Home,96.3,True,2021
+202105130CHO,"Thu, May 13, 2021",CHO,LAC,Charlotte Hornets,Los Angeles Clippers,90,113,-23,Home,91.9,True,2021
+202105150NYK,"Sat, May 15, 2021",NYK,CHO,New York Knicks,Charlotte Hornets,118,109,9,Home,89.5,True,2021
+202012290MIA,"Tue, Dec 29, 2020",MIA,MIL,Miami Heat,Milwaukee Bucks,97,144,-47,Home,103.4,True,2021
+202012300MIA,"Wed, Dec 30, 2020",MIA,MIL,Miami Heat,Milwaukee Bucks,119,108,11,Home,103.3,True,2021
+202101060MIA,"Wed, Jan 6, 2021",MIA,BOS,Miami Heat,Boston Celtics,105,107,-2,Home,92.3,True,2021
+202101120PHI,"Tue, Jan 12, 2021",PHI,MIA,Philadelphia 76ers,Miami Heat,137,134,3,Home,102.0,True,2021
+202101140PHI,"Thu, Jan 14, 2021",PHI,MIA,Philadelphia 76ers,Miami Heat,125,108,17,Home,102.7,True,2021
+202101200TOR,"Wed, Jan 20, 2021",TOR,MIA,Toronto Raptors,Miami Heat,102,111,-9,Home,94.5,True,2021
+202101220TOR,"Fri, Jan 22, 2021",TOR,MIA,Toronto Raptors,Miami Heat,101,81,20,Home,94.5,True,2021
+202101230BRK,"Sat, Jan 23, 2021",BRK,MIA,Brooklyn Nets,Miami Heat,128,124,4,Home,103.4,True,2021
+202101250BRK,"Mon, Jan 25, 2021",BRK,MIA,Brooklyn Nets,Miami Heat,98,85,13,Home,93.5,True,2021
+202101280MIA,"Thu, Jan 28, 2021",MIA,LAC,Miami Heat,Los Angeles Clippers,105,109,-4,Home,97.0,True,2021
+202102070NYK,"Sun, Feb 7, 2021",NYK,MIA,New York Knicks,Miami Heat,103,109,-6,Home,93.8,True,2021
+202102090MIA,"Tue, Feb 9, 2021",MIA,NYK,Miami Heat,New York Knicks,98,96,2,Home,91.2,True,2021
+202102130UTA,"Sat, Feb 13, 2021",UTA,MIA,Utah Jazz,Miami Heat,112,94,18,Home,100.5,True,2021
+202102150LAC,"Mon, Feb 15, 2021",LAC,MIA,Los Angeles Clippers,Miami Heat,125,118,7,Home,97.3,True,2021
+202102170GSW,"Wed, Feb 17, 2021",GSW,MIA,Golden State Warriors,Miami Heat,120,112,8,Home,98.4,True,2021
+202102240MIA,"Wed, Feb 24, 2021",MIA,TOR,Miami Heat,Toronto Raptors,116,108,8,Home,90.6,True,2021
+202102260MIA,"Fri, Feb 26, 2021",MIA,UTA,Miami Heat,Utah Jazz,124,116,8,Home,99.7,True,2021
+202102280MIA,"Sun, Feb 28, 2021",MIA,ATL,Miami Heat,Atlanta Hawks,109,99,10,Home,94.7,True,2021
+202103020MIA,"Tue, Mar 2, 2021",MIA,ATL,Miami Heat,Atlanta Hawks,80,94,-14,Home,85.5,True,2021
+202103160MIA,"Tue, Mar 16, 2021",MIA,CLE,Miami Heat,Cleveland Cavaliers,113,98,15,Home,89.4,True,2021
+202103290NYK,"Mon, Mar 29, 2021",NYK,MIA,New York Knicks,Miami Heat,88,98,-10,Home,92.5,True,2021
+202104010MIA,"Thu, Apr 1, 2021",MIA,GSW,Miami Heat,Golden State Warriors,116,109,7,Home,98.8,True,2021
+202104030MIA,"Sat, Apr 3, 2021",MIA,CLE,Miami Heat,Cleveland Cavaliers,115,101,14,Home,94.1,True,2021
+202104160MIN,"Fri, Apr 16, 2021",MIN,MIA,Minnesota Timberwolves,Miami Heat,119,111,8,Home,97.5,True,2021
+202104180MIA,"Sun, Apr 18, 2021",MIA,BRK,Miami Heat,Brooklyn Nets,109,107,2,Home,92.6,True,2021
+202104230ATL,"Fri, Apr 23, 2021",ATL,MIA,Atlanta Hawks,Miami Heat,118,103,15,Home,91.4,True,2021
+202105010CLE,"Sat, May 1, 2021",CLE,MIA,Cleveland Cavaliers,Miami Heat,107,124,-17,Home,89.6,True,2021
+202105070MIA,"Fri, May 7, 2021",MIA,MIN,Miami Heat,Minnesota Timberwolves,121,112,9,Home,102.2,True,2021
+202105090BOS,"Sun, May 9, 2021",BOS,MIA,Boston Celtics,Miami Heat,124,130,-6,Home,99.4,True,2021
+202105110BOS,"Tue, May 11, 2021",BOS,MIA,Boston Celtics,Miami Heat,121,129,-8,Home,100.1,True,2021
+202105130MIA,"Thu, May 13, 2021",MIA,PHI,Miami Heat,Philadelphia 76ers,106,94,12,Home,88.0,True,2021
+202105150MIL,"Sat, May 15, 2021",MIL,MIA,Milwaukee Bucks,Miami Heat,122,108,14,Home,100.1,True,2021
+202105220MIL,"Sat, May 22, 2021",MIL,MIA,Milwaukee Bucks,Miami Heat,109,107,2,Home,99.8,True,2021
+202105240MIL,"Mon, May 24, 2021",MIL,MIA,Milwaukee Bucks,Miami Heat,132,98,34,Home,96.0,True,2021
+202105270MIA,"Thu, May 27, 2021",MIA,MIL,Miami Heat,Milwaukee Bucks,84,113,-29,Home,98.9,True,2021
+202105290MIA,"Sat, May 29, 2021",MIA,MIL,Miami Heat,Milwaukee Bucks,103,120,-17,Home,99.4,True,2021
+202012260NYK,"Sat, Dec 26, 2020",NYK,PHI,New York Knicks,Philadelphia 76ers,89,109,-20,Home,93.9,True,2021
+202012270NYK,"Sun, Dec 27, 2020",NYK,MIL,New York Knicks,Milwaukee Bucks,130,110,20,Home,100.5,True,2021
+202012290CLE,"Tue, Dec 29, 2020",CLE,NYK,Cleveland Cavaliers,New York Knicks,86,95,-9,Home,95.6,True,2021
+202012310TOR,"Thu, Dec 31, 2020",TOR,NYK,Toronto Raptors,New York Knicks,100,83,17,Home,99.2,True,2021
+202101040ATL,"Mon, Jan 4, 2021",ATL,NYK,Atlanta Hawks,New York Knicks,108,113,-5,Home,97.4,True,2021
+202101060NYK,"Wed, Jan 6, 2021",NYK,UTA,New York Knicks,Utah Jazz,112,100,12,Home,96.4,True,2021
+202101130NYK,"Wed, Jan 13, 2021",NYK,BRK,New York Knicks,Brooklyn Nets,109,116,-7,Home,91.1,True,2021
+202101150CLE,"Fri, Jan 15, 2021",CLE,NYK,Cleveland Cavaliers,New York Knicks,106,103,3,Home,93.2,True,2021
+202101170BOS,"Sun, Jan 17, 2021",BOS,NYK,Boston Celtics,New York Knicks,75,105,-30,Home,95.0,True,2021
+202101210GSW,"Thu, Jan 21, 2021",GSW,NYK,Golden State Warriors,New York Knicks,104,119,-15,Home,100.3,True,2021
+202101260UTA,"Tue, Jan 26, 2021",UTA,NYK,Utah Jazz,New York Knicks,108,94,14,Home,89.2,True,2021
+202101290NYK,"Fri, Jan 29, 2021",NYK,CLE,New York Knicks,Cleveland Cavaliers,102,81,21,Home,88.8,True,2021
+202101310NYK,"Sun, Jan 31, 2021",NYK,LAC,New York Knicks,Los Angeles Clippers,115,129,-14,Home,91.3,True,2021
+202102150NYK,"Mon, Feb 15, 2021",NYK,ATL,New York Knicks,Atlanta Hawks,123,112,11,Home,93.2,True,2021
+202102210NYK,"Sun, Feb 21, 2021",NYK,MIN,New York Knicks,Minnesota Timberwolves,103,99,4,Home,96.0,True,2021
+202102230NYK,"Tue, Feb 23, 2021",NYK,GSW,New York Knicks,Golden State Warriors,106,114,-8,Home,98.7,True,2021
+202103110MIL,"Thu, Mar 11, 2021",MIL,NYK,Milwaukee Bucks,New York Knicks,134,101,33,Home,99.4,True,2021
+202103150BRK,"Mon, Mar 15, 2021",BRK,NYK,Brooklyn Nets,New York Knicks,117,112,5,Home,96.1,True,2021
+202103160PHI,"Tue, Mar 16, 2021",PHI,NYK,Philadelphia 76ers,New York Knicks,99,96,3,Home,95.1,True,2021
+202103210NYK,"Sun, Mar 21, 2021",NYK,PHI,New York Knicks,Philadelphia 76ers,100,101,-1,Home,90.8,True,2021
+202103270MIL,"Sat, Mar 27, 2021",MIL,NYK,Milwaukee Bucks,New York Knicks,96,102,-6,Home,93.5,True,2021
+202103310MIN,"Wed, Mar 31, 2021",MIN,NYK,Minnesota Timberwolves,New York Knicks,102,101,1,Home,95.8,True,2021
+202104050BRK,"Mon, Apr 5, 2021",BRK,NYK,Brooklyn Nets,New York Knicks,114,112,2,Home,100.2,True,2021
+202104070BOS,"Wed, Apr 7, 2021",BOS,NYK,Boston Celtics,New York Knicks,101,99,2,Home,96.0,True,2021
+202104110NYK,"Sun, Apr 11, 2021",NYK,TOR,New York Knicks,Toronto Raptors,102,96,6,Home,97.6,True,2021
+202104210NYK,"Wed, Apr 21, 2021",NYK,ATL,New York Knicks,Atlanta Hawks,137,127,10,Home,96.9,True,2021
+202104240NYK,"Sat, Apr 24, 2021",NYK,TOR,New York Knicks,Toronto Raptors,120,103,17,Home,92.1,True,2021
+202105090LAC,"Sun, May 9, 2021",LAC,NYK,Los Angeles Clippers,New York Knicks,100,106,-6,Home,95.7,True,2021
+202105160NYK,"Sun, May 16, 2021",NYK,BOS,New York Knicks,Boston Celtics,96,92,4,Home,92.6,True,2021
+202105230NYK,"Sun, May 23, 2021",NYK,ATL,New York Knicks,Atlanta Hawks,105,107,-2,Home,94.2,True,2021
+202105260NYK,"Wed, May 26, 2021",NYK,ATL,New York Knicks,Atlanta Hawks,101,92,9,Home,97.5,True,2021
+202105280ATL,"Fri, May 28, 2021",ATL,NYK,Atlanta Hawks,New York Knicks,105,94,11,Home,90.2,True,2021
+202105300ATL,"Sun, May 30, 2021",ATL,NYK,Atlanta Hawks,New York Knicks,113,96,17,Home,92.6,True,2021
+202106020NYK,"Wed, Jun 2, 2021",NYK,ATL,New York Knicks,Atlanta Hawks,89,103,-14,Home,90.5,True,2021
+202012270CLE,"Sun, Dec 27, 2020",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,118,94,24,Home,100.4,True,2021
+202012290PHI,"Tue, Dec 29, 2020",PHI,TOR,Philadelphia 76ers,Toronto Raptors,100,93,7,Home,103.8,True,2021
+202101070BRK,"Thu, Jan 7, 2021",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,122,109,13,Home,109.6,True,2021
+202101110ATL,"Mon, Jan 11, 2021",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,112,94,18,Home,98.6,True,2021
+202101200PHI,"Wed, Jan 20, 2021",PHI,BOS,Philadelphia 76ers,Boston Celtics,117,109,8,Home,97.3,True,2021
+202101220PHI,"Fri, Jan 22, 2021",PHI,BOS,Philadelphia 76ers,Boston Celtics,122,110,12,Home,97.5,True,2021
+202101290MIN,"Fri, Jan 29, 2021",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,94,118,-24,Home,100.7,True,2021
+202102060PHI,"Sat, Feb 6, 2021",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,124,108,16,Home,102.0,True,2021
+202102150UTA,"Mon, Feb 15, 2021",UTA,PHI,Utah Jazz,Philadelphia 76ers,134,123,11,Home,101.0,True,2021
+202102210TOR,"Sun, Feb 21, 2021",TOR,PHI,Toronto Raptors,Philadelphia 76ers,110,103,7,Home,96.0,True,2021
+202102230TOR,"Tue, Feb 23, 2021",TOR,PHI,Toronto Raptors,Philadelphia 76ers,102,109,-7,Home,97.4,True,2021
+202102270PHI,"Sat, Feb 27, 2021",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,109,112,-3,Home,98.3,True,2021
+202103030PHI,"Wed, Mar 3, 2021",PHI,UTA,Philadelphia 76ers,Utah Jazz,131,123,8,Home,99.7,True,2021
+202103170PHI,"Wed, Mar 17, 2021",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,105,109,-4,Home,106.8,True,2021
+202103230GSW,"Tue, Mar 23, 2021",GSW,PHI,Golden State Warriors,Philadelphia 76ers,98,108,-10,Home,98.0,True,2021
+202103270LAC,"Sat, Mar 27, 2021",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,122,112,10,Home,97.7,True,2021
+202104010CLE,"Thu, Apr 1, 2021",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,94,114,-20,Home,100.0,True,2021
+202104030PHI,"Sat, Apr 3, 2021",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,122,113,9,Home,96.6,True,2021
+202104060BOS,"Tue, Apr 6, 2021",BOS,PHI,Boston Celtics,Philadelphia 76ers,96,106,-10,Home,92.6,True,2021
+202104140PHI,"Wed, Apr 14, 2021",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,123,117,6,Home,100.0,True,2021
+202104160PHI,"Fri, Apr 16, 2021",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,106,103,3,Home,96.6,True,2021
+202104190PHI,"Mon, Apr 19, 2021",PHI,GSW,Philadelphia 76ers,Golden State Warriors,96,107,-11,Home,97.6,True,2021
+202104220MIL,"Thu, Apr 22, 2021",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,124,117,7,Home,98.9,True,2021
+202104240MIL,"Sat, Apr 24, 2021",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,132,94,38,Home,102.2,True,2021
+202104280PHI,"Wed, Apr 28, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,127,83,44,Home,90.4,True,2021
+202104300PHI,"Fri, Apr 30, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,126,104,22,Home,97.6,True,2021
+202106060PHI,"Sun, Jun 6, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,124,128,-4,Home,106.4,True,2021
+202106080PHI,"Tue, Jun 8, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,118,102,16,Home,94.9,True,2021
+202106110ATL,"Fri, Jun 11, 2021",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,111,127,-16,Home,93.3,True,2021
+202106140ATL,"Mon, Jun 14, 2021",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,103,100,3,Home,97.9,True,2021
+202106160PHI,"Wed, Jun 16, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,106,109,-3,Home,96.9,True,2021
+202106180ATL,"Fri, Jun 18, 2021",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,99,104,-5,Home,100.5,True,2021
+202106200PHI,"Sun, Jun 20, 2021",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,96,103,-7,Home,98.5,True,2021
+202101020ATL,"Sat, Jan 2, 2021",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,91,96,-5,Home,95.1,True,2021
+202101090MIL,"Sat, Jan 9, 2021",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,100,90,10,Home,93.1,True,2021
+202101120CLE,"Tue, Jan 12, 2021",CLE,UTA,Cleveland Cavaliers,Utah Jazz,87,117,-30,Home,93.2,True,2021
+202101200CLE,"Wed, Jan 20, 2021",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,147,135,12,Home,97.3,True,2021
+202101220CLE,"Fri, Jan 22, 2021",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,125,113,12,Home,96.8,True,2021
+202101240BOS,"Sun, Jan 24, 2021",BOS,CLE,Boston Celtics,Cleveland Cavaliers,141,103,38,Home,103.6,True,2021
+202101310MIN,"Sun, Jan 31, 2021",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,109,104,5,Home,98.8,True,2021
+202102010CLE,"Mon, Feb 1, 2021",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,100,98,2,Home,93.6,True,2021
+202102030CLE,"Wed, Feb 3, 2021",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,99,121,-22,Home,92.8,True,2021
+202102050CLE,"Fri, Feb 5, 2021",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,105,123,-18,Home,102.0,True,2021
+202102060CLE,"Sat, Feb 6, 2021",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,99,124,-25,Home,97.5,True,2021
+202102140LAC,"Sun, Feb 14, 2021",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,128,111,17,Home,101.6,True,2021
+202102150GSW,"Mon, Feb 15, 2021",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,129,98,31,Home,102.8,True,2021
+202102230CLE,"Tue, Feb 23, 2021",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,112,111,1,Home,92.8,True,2021
+202103140ATL,"Sun, Mar 14, 2021",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,100,82,18,Home,84.6,True,2021
+202103170CLE,"Wed, Mar 17, 2021",CLE,BOS,Cleveland Cavaliers,Boston Celtics,117,110,7,Home,94.9,True,2021
+202103210CLE,"Sun, Mar 21, 2021",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,116,105,11,Home,106.3,True,2021
+202103290UTA,"Mon, Mar 29, 2021",UTA,CLE,Utah Jazz,Cleveland Cavaliers,114,75,39,Home,93.0,True,2021
+202104100CLE,"Sat, Apr 10, 2021",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,115,135,-20,Home,103.8,True,2021
+202104150CLE,"Thu, Apr 15, 2021",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,101,119,-18,Home,98.2,True,2021
+202104260TOR,"Mon, Apr 26, 2021",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,112,96,16,Home,92.6,True,2021
+202105120CLE,"Wed, May 12, 2021",CLE,BOS,Cleveland Cavaliers,Boston Celtics,102,94,8,Home,98.2,True,2021
+202105160BRK,"Sun, May 16, 2021",BRK,CLE,Brooklyn Nets,Cleveland Cavaliers,123,109,14,Home,98.3,True,2021
+202101040TOR,"Mon, Jan 4, 2021",TOR,BOS,Toronto Raptors,Boston Celtics,114,126,-12,Home,104.7,True,2021
+202101100GSW,"Sun, Jan 10, 2021",GSW,TOR,Golden State Warriors,Toronto Raptors,106,105,1,Home,100.1,True,2021
+202101270TOR,"Wed, Jan 27, 2021",TOR,MIL,Toronto Raptors,Milwaukee Bucks,108,115,-7,Home,100.2,True,2021
+202102050BRK,"Fri, Feb 5, 2021",BRK,TOR,Brooklyn Nets,Toronto Raptors,117,123,-6,Home,99.4,True,2021
+202102060ATL,"Sat, Feb 6, 2021",ATL,TOR,Atlanta Hawks,Toronto Raptors,132,121,11,Home,100.5,True,2021
+202102110BOS,"Thu, Feb 11, 2021",BOS,TOR,Boston Celtics,Toronto Raptors,120,106,14,Home,99.4,True,2021
+202102140TOR,"Sun, Feb 14, 2021",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,112,116,-4,Home,101.5,True,2021
+202102160MIL,"Tue, Feb 16, 2021",MIL,TOR,Milwaukee Bucks,Toronto Raptors,113,124,-11,Home,105.0,True,2021
+202102180MIL,"Thu, Feb 18, 2021",MIL,TOR,Milwaukee Bucks,Toronto Raptors,96,110,-14,Home,94.6,True,2021
+202102190MIN,"Fri, Feb 19, 2021",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,81,86,-5,Home,91.9,True,2021
+202103040BOS,"Thu, Mar 4, 2021",BOS,TOR,Boston Celtics,Toronto Raptors,132,125,7,Home,98.4,True,2021
+202103110TOR,"Thu, Mar 11, 2021",TOR,ATL,Toronto Raptors,Atlanta Hawks,120,121,-1,Home,105.0,True,2021
+202103190TOR,"Fri, Mar 19, 2021",TOR,UTA,Toronto Raptors,Utah Jazz,112,115,-3,Home,94.2,True,2021
+202104020TOR,"Fri, Apr 2, 2021",TOR,GSW,Toronto Raptors,Golden State Warriors,130,77,53,Home,99.3,True,2021
+202104130TOR,"Tue, Apr 13, 2021",TOR,ATL,Toronto Raptors,Atlanta Hawks,103,108,-5,Home,97.7,True,2021
+202104210TOR,"Wed, Apr 21, 2021",TOR,BRK,Toronto Raptors,Brooklyn Nets,114,103,11,Home,98.7,True,2021
+202104270TOR,"Tue, Apr 27, 2021",TOR,BRK,Toronto Raptors,Brooklyn Nets,103,116,-13,Home,92.8,True,2021
+202105010UTA,"Sat, May 1, 2021",UTA,TOR,Utah Jazz,Toronto Raptors,106,102,4,Home,95.1,True,2021
+202105040LAC,"Tue, May 4, 2021",LAC,TOR,Los Angeles Clippers,Toronto Raptors,105,100,5,Home,95.0,True,2021
+202105110TOR,"Tue, May 11, 2021",TOR,LAC,Toronto Raptors,Los Angeles Clippers,96,115,-19,Home,95.1,True,2021
+202012220BRK,"Tue, Dec 22, 2020",BRK,GSW,Brooklyn Nets,Golden State Warriors,125,99,26,Home,110.5,True,2021
+202012250BOS,"Fri, Dec 25, 2020",BOS,BRK,Boston Celtics,Brooklyn Nets,95,123,-28,Home,95.2,True,2021
+202012300BRK,"Wed, Dec 30, 2020",BRK,ATL,Brooklyn Nets,Atlanta Hawks,145,141,4,Home,106.4,True,2021
+202101010BRK,"Fri, Jan 1, 2021",BRK,ATL,Brooklyn Nets,Atlanta Hawks,96,114,-18,Home,97.3,True,2021
+202101050BRK,"Tue, Jan 5, 2021",BRK,UTA,Brooklyn Nets,Utah Jazz,130,96,34,Home,102.3,True,2021
+202101180BRK,"Mon, Jan 18, 2021",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,125,123,2,Home,104.1,True,2021
+202101270ATL,"Wed, Jan 27, 2021",ATL,BRK,Atlanta Hawks,Brooklyn Nets,128,132,-4,Home,89.3,True,2021
+202102020BRK,"Tue, Feb 2, 2021",BRK,LAC,Brooklyn Nets,Los Angeles Clippers,124,120,4,Home,99.9,True,2021
+202102130GSW,"Sat, Feb 13, 2021",GSW,BRK,Golden State Warriors,Brooklyn Nets,117,134,-17,Home,106.0,True,2021
+202102210LAC,"Sun, Feb 21, 2021",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,108,112,-4,Home,94.2,True,2021
+202103110BRK,"Thu, Mar 11, 2021",BRK,BOS,Brooklyn Nets,Boston Celtics,121,109,12,Home,97.3,True,2021
+202103240UTA,"Wed, Mar 24, 2021",UTA,BRK,Utah Jazz,Brooklyn Nets,118,88,30,Home,96.0,True,2021
+202103290BRK,"Mon, Mar 29, 2021",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,112,107,5,Home,103.2,True,2021
+202104130MIN,"Tue, Apr 13, 2021",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,97,127,-30,Home,104.5,True,2021
+202104230BRK,"Fri, Apr 23, 2021",BRK,BOS,Brooklyn Nets,Boston Celtics,109,104,5,Home,102.3,True,2021
+202105020MIL,"Sun, May 2, 2021",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,117,114,3,Home,103.2,True,2021
+202105040MIL,"Tue, May 4, 2021",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,124,118,6,Home,102.1,True,2021
+202105220BRK,"Sat, May 22, 2021",BRK,BOS,Brooklyn Nets,Boston Celtics,104,93,11,Home,91.3,True,2021
+202105250BRK,"Tue, May 25, 2021",BRK,BOS,Brooklyn Nets,Boston Celtics,130,108,22,Home,98.1,True,2021
+202105280BOS,"Fri, May 28, 2021",BOS,BRK,Boston Celtics,Brooklyn Nets,125,119,6,Home,94.9,True,2021
+202105300BOS,"Sun, May 30, 2021",BOS,BRK,Boston Celtics,Brooklyn Nets,126,141,-15,Home,94.9,True,2021
+202106010BRK,"Tue, Jun 1, 2021",BRK,BOS,Brooklyn Nets,Boston Celtics,123,109,14,Home,95.0,True,2021
+202106050BRK,"Sat, Jun 5, 2021",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,115,107,8,Home,104.7,True,2021
+202106070BRK,"Mon, Jun 7, 2021",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,125,86,39,Home,92.8,True,2021
+202106100MIL,"Thu, Jun 10, 2021",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,86,83,3,Home,97.7,True,2021
+202106130MIL,"Sun, Jun 13, 2021",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,107,96,11,Home,103.4,True,2021
+202106150BRK,"Tue, Jun 15, 2021",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,114,108,6,Home,95.3,True,2021
+202106170MIL,"Thu, Jun 17, 2021",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,104,89,15,Home,91.6,True,2021
+202106190BRK,"Sat, Jun 19, 2021",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,111,115,-4,Home,84.9,True,2021
+202012260UTA,"Sat, Dec 26, 2020",UTA,MIN,Utah Jazz,Minnesota Timberwolves,111,116,-5,Home,102.3,True,2021
+202101010UTA,"Fri, Jan 1, 2021",UTA,LAC,Utah Jazz,Los Angeles Clippers,106,100,6,Home,90.1,True,2021
+202101080MIL,"Fri, Jan 8, 2021",MIL,UTA,Milwaukee Bucks,Utah Jazz,118,131,-13,Home,104.4,True,2021
+202101150UTA,"Fri, Jan 15, 2021",UTA,ATL,Utah Jazz,Atlanta Hawks,116,92,24,Home,103.1,True,2021
+202101230UTA,"Sat, Jan 23, 2021",UTA,GSW,Utah Jazz,Golden State Warriors,127,108,19,Home,103.9,True,2021
+202102040ATL,"Thu, Feb 4, 2021",ATL,UTA,Atlanta Hawks,Utah Jazz,91,112,-21,Home,95.4,True,2021
+202102090UTA,"Tue, Feb 9, 2021",UTA,BOS,Utah Jazz,Boston Celtics,122,108,14,Home,90.4,True,2021
+202102120UTA,"Fri, Feb 12, 2021",UTA,MIL,Utah Jazz,Milwaukee Bucks,129,115,14,Home,104.8,True,2021
+202102170LAC,"Wed, Feb 17, 2021",LAC,UTA,Los Angeles Clippers,Utah Jazz,96,114,-18,Home,99.5,True,2021
+202102190LAC,"Fri, Feb 19, 2021",LAC,UTA,Los Angeles Clippers,Utah Jazz,116,112,4,Home,96.7,True,2021
+202103140GSW,"Sun, Mar 14, 2021",GSW,UTA,Golden State Warriors,Utah Jazz,131,119,12,Home,101.7,True,2021
+202103160BOS,"Tue, Mar 16, 2021",BOS,UTA,Boston Celtics,Utah Jazz,109,117,-8,Home,93.1,True,2021
+202104240UTA,"Sat, Apr 24, 2021",UTA,MIN,Utah Jazz,Minnesota Timberwolves,96,101,-5,Home,98.7,True,2021
+202104260MIN,"Mon, Apr 26, 2021",MIN,UTA,Minnesota Timberwolves,Utah Jazz,105,104,1,Home,96.8,True,2021
+202105100GSW,"Mon, May 10, 2021",GSW,UTA,Golden State Warriors,Utah Jazz,119,116,3,Home,98.4,True,2021
+202106080UTA,"Tue, Jun 8, 2021",UTA,LAC,Utah Jazz,Los Angeles Clippers,112,109,3,Home,92.3,True,2021
+202106100UTA,"Thu, Jun 10, 2021",UTA,LAC,Utah Jazz,Los Angeles Clippers,117,111,6,Home,96.6,True,2021
+202106120LAC,"Sat, Jun 12, 2021",LAC,UTA,Los Angeles Clippers,Utah Jazz,132,106,26,Home,93.0,True,2021
+202106140LAC,"Mon, Jun 14, 2021",LAC,UTA,Los Angeles Clippers,Utah Jazz,118,104,14,Home,90.5,True,2021
+202106160UTA,"Wed, Jun 16, 2021",UTA,LAC,Utah Jazz,Los Angeles Clippers,111,119,-8,Home,93.1,True,2021
+202106180LAC,"Fri, Jun 18, 2021",LAC,UTA,Los Angeles Clippers,Utah Jazz,131,119,12,Home,88.2,True,2021
+202012230BOS,"Wed, Dec 23, 2020",BOS,MIL,Boston Celtics,Milwaukee Bucks,122,121,1,Home,99.9,True,2021
+202102020GSW,"Tue, Feb 2, 2021",GSW,BOS,Golden State Warriors,Boston Celtics,107,111,-4,Home,96.4,True,2021
+202102050LAC,"Fri, Feb 5, 2021",LAC,BOS,Los Angeles Clippers,Boston Celtics,115,119,-4,Home,94.0,True,2021
+202102170BOS,"Wed, Feb 17, 2021",BOS,ATL,Boston Celtics,Atlanta Hawks,114,122,-8,Home,97.2,True,2021
+202102190BOS,"Fri, Feb 19, 2021",BOS,ATL,Boston Celtics,Atlanta Hawks,121,109,12,Home,99.8,True,2021
+202102240ATL,"Wed, Feb 24, 2021",ATL,BOS,Atlanta Hawks,Boston Celtics,127,112,15,Home,94.8,True,2021
+202103020BOS,"Tue, Mar 2, 2021",BOS,LAC,Boston Celtics,Los Angeles Clippers,117,112,5,Home,86.9,True,2021
+202103240MIL,"Wed, Mar 24, 2021",MIL,BOS,Milwaukee Bucks,Boston Celtics,121,119,2,Home,98.9,True,2021
+202103260MIL,"Fri, Mar 26, 2021",MIL,BOS,Milwaukee Bucks,Boston Celtics,114,122,-8,Home,100.1,True,2021
+202104090BOS,"Fri, Apr 9, 2021",BOS,MIN,Boston Celtics,Minnesota Timberwolves,145,136,9,Home,100.4,True,2021
+202104170BOS,"Sat, Apr 17, 2021",BOS,GSW,Boston Celtics,Golden State Warriors,119,114,5,Home,95.6,True,2021
+202105150MIN,"Sat, May 15, 2021",MIN,BOS,Minnesota Timberwolves,Boston Celtics,108,124,-16,Home,101.6,True,2021
+202101180ATL,"Mon, Jan 18, 2021",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,108,97,11,Home,104.7,True,2021
+202101220MIN,"Fri, Jan 22, 2021",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,98,116,-18,Home,98.2,True,2021
+202101240MIL,"Sun, Jan 24, 2021",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,129,115,14,Home,97.4,True,2021
+202101260ATL,"Tue, Jan 26, 2021",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,108,99,9,Home,94.6,True,2021
+202103220LAC,"Mon, Mar 22, 2021",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,119,110,9,Home,92.0,True,2021
+202103260GSW,"Fri, Mar 26, 2021",GSW,ATL,Golden State Warriors,Atlanta Hawks,108,124,-16,Home,95.4,True,2021
+202104040ATL,"Sun, Apr 4, 2021",ATL,GSW,Atlanta Hawks,Golden State Warriors,117,111,6,Home,104.9,True,2021
+202104150ATL,"Thu, Apr 15, 2021",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,109,120,-11,Home,94.6,True,2021
+202104250ATL,"Sun, Apr 25, 2021",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,111,104,7,Home,99.1,True,2021
+202106230MIL,"Wed, Jun 23, 2021",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,113,116,-3,Home,100.2,True,2021
+202106250MIL,"Fri, Jun 25, 2021",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,125,91,34,Home,98.7,True,2021
+202106270ATL,"Sun, Jun 27, 2021",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,102,113,-11,Home,91.6,True,2021
+202106290ATL,"Tue, Jun 29, 2021",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,110,88,22,Home,92.3,True,2021
+202107010MIL,"Thu, Jul 1, 2021",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,123,112,11,Home,96.3,True,2021
+202107030ATL,"Sat, Jul 3, 2021",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,107,118,-11,Home,99.0,True,2021
+202012250MIL,"Fri, Dec 25, 2020",MIL,GSW,Milwaukee Bucks,Golden State Warriors,138,99,39,Home,107.5,True,2021
+202101060GSW,"Wed, Jan 6, 2021",GSW,LAC,Golden State Warriors,Los Angeles Clippers,101,108,-7,Home,96.3,True,2021
+202101080GSW,"Fri, Jan 8, 2021",GSW,LAC,Golden State Warriors,Los Angeles Clippers,115,105,10,Home,93.7,True,2021
+202101250GSW,"Mon, Jan 25, 2021",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,130,108,22,Home,102.5,True,2021
+202101270GSW,"Wed, Jan 27, 2021",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,123,111,12,Home,103.8,True,2021
+202103110LAC,"Thu, Mar 11, 2021",LAC,GSW,Los Angeles Clippers,Golden State Warriors,130,104,26,Home,107.9,True,2021
+202104060GSW,"Tue, Apr 6, 2021",GSW,MIL,Golden State Warriors,Milwaukee Bucks,122,121,1,Home,100.6,True,2021
+202104290MIN,"Thu, Apr 29, 2021",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,126,114,12,Home,99.5,True,2021
+202012290LAC,"Tue, Dec 29, 2020",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,124,101,23,Home,98.1,True,2021
+202102100MIN,"Wed, Feb 10, 2021",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,112,119,-7,Home,98.0,True,2021
+202102230MIL,"Tue, Feb 23, 2021",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,139,112,27,Home,105.8,True,2021
+202104140MIN,"Wed, Apr 14, 2021",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,105,130,-25,Home,111.7,True,2021
+202104180LAC,"Sun, Apr 18, 2021",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,124,105,19,Home,100.1,True,2021
+202102280MIL,"Sun, Feb 28, 2021",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,105,100,5,Home,94.2,True,2021
+202103290LAC,"Mon, Mar 29, 2021",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,129,105,24,Home,95.5,True,2021

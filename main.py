@@ -90,6 +90,16 @@ def load_team_data(
 
     abbrs = list(names_to_abbr.values())
     abbr_to_name = {v: k for k, v in names_to_abbr.items()}
+
+    # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
+    # PHO -> PHX (Phoenix changed their abbreviation after 2020)
+    # This mapping must match the one in data_loader.py
+    abbr_mapping = {"PHO": "PHX"}
+    abbrs = [abbr_mapping.get(abbr, abbr) for abbr in abbrs]
+    abbr_to_name = {
+        abbr_mapping.get(abbr, abbr): name for abbr, name in abbr_to_name.items()
+    }
+
     return abbrs, names_to_abbr, abbr_to_name
 
 
@@ -98,7 +108,7 @@ def load_game_data(
 ) -> pd.DataFrame:
     if update:
         try:
-            games = data_loader.update_data(names_to_abbr, preload=True)
+            games = data_loader.update_data(names_to_abbr, year=year, preload=True)
             games = utils.add_playoff_indicator(games)
         except Exception as e:
             logging.error(f"Error updating game data: {e}")
@@ -112,9 +122,20 @@ def load_game_data(
                 columns={"team_abbr": "team", "opponent_abbr": "opponent"}, inplace=True
             )
             games["date"] = pd.to_datetime(games["date"], format="mixed")
+
+            # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
+            # PHO -> PHX (Phoenix changed their abbreviation after 2020)
+            # This mapping must match the one in data_loader.py
+            abbr_mapping = {"PHO": "PHX"}
+            games["team"] = games["team"].replace(abbr_mapping)
+            games["opponent"] = games["opponent"].replace(abbr_mapping)
+
             games = utils.add_playoff_indicator(games)
         except Exception as e:
             logging.error(f"Error loading game data: {e}")
+            import traceback
+
+            traceback.print_exc()
             sys.exit(1)
     return games
 
@@ -266,6 +287,21 @@ def add_simulation_results(
         lambda x: sim_report.loc[x, "losses"]
     )
 
+    # Log simulation results before normalization
+    logger.info("\nSimulation Results (before 82-game normalization):")
+    logger.info(
+        f"{'Team':<6} {'Current':<10} {'Sim Wins':<10} {'Sim Losses':<12} {'Total Games':<12}"
+    )
+    logger.info("-" * 60)
+    for idx, row in df_final.head(10).iterrows():
+        current_record = f"{row['wins']}-{row['losses']}"
+        sim_wins = row["expected_wins"]
+        sim_losses = row["expected_losses"]
+        total_games = sim_wins + sim_losses
+        logger.info(
+            f"{row['team']:<6} {current_record:<10} {sim_wins:<10.2f} {sim_losses:<12.2f} {total_games:<12.2f}"
+        )
+
     # correction for midseason tournament
     df_final["expected_wins_temp"] = df_final.apply(
         lambda row: row["expected_wins"]
@@ -282,6 +318,21 @@ def add_simulation_results(
     df_final["expected_wins"] = df_final["expected_wins_temp"]
     df_final["expected_losses"] = df_final["expected_losses_temp"]
     df_final.drop(columns=["expected_wins_temp", "expected_losses_temp"], inplace=True)
+
+    # Log after normalization
+    logger.info("\nAfter 82-game normalization:")
+    logger.info(
+        f"{'Team':<6} {'Normalized Wins':<16} {'Normalized Losses':<18} {'Projected Record':<18}"
+    )
+    logger.info("-" * 60)
+    for idx, row in df_final.head(10).iterrows():
+        norm_wins = row["expected_wins"]
+        norm_losses = row["expected_losses"]
+        proj_record = f"{norm_wins:.1f}-{norm_losses:.1f}"
+        logger.info(
+            f"{row['team']:<6} {norm_wins:<16.2f} {norm_losses:<18.2f} {proj_record:<18}"
+        )
+    logger.info("")
 
     df_final["expected_record"] = df_final.apply(
         lambda x: str(round(x["expected_wins"], 1))
@@ -392,10 +443,24 @@ def main():
     logger.info("Loading game data...")
     games = load_game_data(YEAR, update, names_to_abbr)
 
+    # Filter out invalid rows with NaN team values
+    invalid_rows = games["team"].isna().sum()
+    if invalid_rows > 0:
+        logger.warning(f"Removing {invalid_rows} invalid rows with missing team data")
+        games = games[games["team"].notna() & games["opponent"].notna()]
+
     completed_games = games[games["completed"]]
     future_games = games[~games["completed"]]
     mean_pace = completed_games["pace"].mean()
     std_pace = completed_games["pace"].std()
+
+    # Fallback to league average pace if no pace data available (early season)
+    if pd.isna(mean_pace):
+        logger.warning(
+            "No pace data available for completed games. Using league average pace of 100.0"
+        )
+        mean_pace = 100.0
+        std_pace = 3.0
 
     # Calculate EM ratings
     em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR)
@@ -407,8 +472,9 @@ def main():
     df_final = add_statistics(df_final, completed_games)
 
     logger.info("Loading training data...")
+    # Always use update=True to include current year games via this_year_games parameter
     training_data = data_loader.load_training_data(
-        abbrs, update=update, reset=reset, this_year_games=games
+        abbrs, update=True, reset=reset, this_year_games=games, stop_year=YEAR
     )
     logger.info("Training models...")
     models = train_models(training_data)
@@ -435,6 +501,7 @@ def main():
 
     # Add predictive ratings
     df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
+    print(df_final)
 
     # Add simulation results
     df_final = add_simulation_results(df_final, sim_report, future_games)
@@ -443,6 +510,39 @@ def main():
     df_final = format_for_csv(df_final)
     df_final.to_csv(os.path.join(env.DATA_DIR, f"main_{YEAR}.csv"), index=False)
     logger.info(f"Results saved to main_{YEAR}.csv")
+
+    # Display final standings
+    logger.info("")
+    logger.info("=" * 120)
+    logger.info(f"FINAL STANDINGS - {YEAR} SEASON PROJECTION")
+    logger.info("=" * 120)
+    logger.info(
+        f"{'Rank':<6} {'Team':<30} {'Record':<10} {'EM':<8} {'Pred':<8} {'Proj':<12} {'Playoffs':<10} {'Finals':<10} {'Champion':<10}"
+    )
+    logger.info("-" * 120)
+
+    # Show top 10 teams
+    for idx, row in df_final.head(10).iterrows():
+        logger.info(
+            f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
+            f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "
+            f"{row['Projected Record']:<12} {row['Playoffs']:>9.1%} "
+            f"{row['Finals']:>9.1%} {row['Champion']:>9.1%}"
+        )
+
+    # Find and highlight OKC if not in top 10
+    okc_row = df_final[df_final["Team"] == "Oklahoma City Thunder"]
+    if not okc_row.empty and okc_row["Rank"].values[0] > 10:
+        logger.info("..." + " " * 107)
+        row = okc_row.iloc[0]
+        logger.info(
+            f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
+            f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "
+            f"{row['Projected Record']:<12} {row['Playoffs']:>9.1%} "
+            f"{row['Finals']:>9.1%} {row['Champion']:>9.1%}"
+        )
+
+    logger.info("=" * 120)
     logger.info("Simulation complete!")
 
 

@@ -1,0 +1,1313 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+200910270POR,"Tue, Oct 27, 2009",POR,HOU,Portland Trail Blazers,Houston Rockets,96,87,9,Home,96.6,True,2010
+200910280GSW,"Wed, Oct 28, 2009",GSW,HOU,Golden State Warriors,Houston Rockets,107,108,-1,Home,97.7,True,2010
+200910310HOU,"Sat, Oct 31, 2009",HOU,POR,Houston Rockets,Portland Trail Blazers,111,107,4,Home,87.9,True,2010
+200911020UTA,"Mon, Nov 2, 2009",UTA,HOU,Utah Jazz,Houston Rockets,96,113,-17,Home,94.2,True,2010
+200911040HOU,"Wed, Nov 4, 2009",HOU,LAL,Houston Rockets,Los Angeles Lakers,102,103,-1,Home,86.9,True,2010
+200911060HOU,"Fri, Nov 6, 2009",HOU,OKC,Houston Rockets,Oklahoma City Thunder,105,94,11,Home,95.9,True,2010
+200911100DAL,"Tue, Nov 10, 2009",DAL,HOU,Dallas Mavericks,Houston Rockets,121,103,18,Home,96.5,True,2010
+200911110HOU,"Wed, Nov 11, 2009",HOU,MEM,Houston Rockets,Memphis Grizzlies,104,79,25,Home,96.8,True,2010
+200911130SAC,"Fri, Nov 13, 2009",SAC,HOU,Sacramento Kings,Houston Rockets,109,100,9,Home,94.7,True,2010
+200911150LAL,"Sun, Nov 15, 2009",LAL,HOU,Los Angeles Lakers,Houston Rockets,91,101,-10,Home,101.4,True,2010
+200911170HOU,"Tue, Nov 17, 2009",HOU,PHO,Houston Rockets,Phoenix Suns,105,111,-6,Home,95.9,True,2010
+200911180MIN,"Wed, Nov 18, 2009",MIN,HOU,Minnesota Timberwolves,Houston Rockets,84,97,-13,Home,91.4,True,2010
+200911200ATL,"Fri, Nov 20, 2009",ATL,HOU,Atlanta Hawks,Houston Rockets,105,103,2,Home,86.6,True,2010
+200911210HOU,"Sat, Nov 21, 2009",HOU,SAC,Houston Rockets,Sacramento Kings,113,106,7,Home,94.6,True,2010
+200911250HOU,"Wed, Nov 25, 2009",HOU,DAL,Houston Rockets,Dallas Mavericks,99,130,-31,Home,95.1,True,2010
+200911270HOU,"Fri, Nov 27, 2009",HOU,SAS,Houston Rockets,San Antonio Spurs,84,92,-8,Home,89.8,True,2010
+200911290OKC,"Sun, Nov 29, 2009",OKC,HOU,Oklahoma City Thunder,Houston Rockets,91,100,-9,Home,89.9,True,2010
+200912020LAC,"Wed, Dec 2, 2009",LAC,HOU,Los Angeles Clippers,Houston Rockets,85,102,-17,Home,86.9,True,2010
+200912030GSW,"Thu, Dec 3, 2009",GSW,HOU,Golden State Warriors,Houston Rockets,109,111,-2,Home,103.2,True,2010
+200912050POR,"Sat, Dec 5, 2009",POR,HOU,Portland Trail Blazers,Houston Rockets,90,89,1,Home,82.0,True,2010
+200912090HOU,"Wed, Dec 9, 2009",HOU,CLE,Houston Rockets,Cleveland Cavaliers,95,85,10,Home,94.7,True,2010
+200912110PHI,"Fri, Dec 11, 2009",PHI,HOU,Philadelphia 76ers,Houston Rockets,91,96,-5,Home,91.1,True,2010
+200912130TOR,"Sun, Dec 13, 2009",TOR,HOU,Toronto Raptors,Houston Rockets,101,88,13,Home,89.6,True,2010
+200912150HOU,"Tue, Dec 15, 2009",HOU,DET,Houston Rockets,Detroit Pistons,107,96,11,Home,91.1,True,2010
+200912160DEN,"Wed, Dec 16, 2009",DEN,HOU,Denver Nuggets,Houston Rockets,111,101,10,Home,95.9,True,2010
+200912180DAL,"Fri, Dec 18, 2009",DAL,HOU,Dallas Mavericks,Houston Rockets,108,116,-8,Home,92.0,True,2010
+200912190HOU,"Sat, Dec 19, 2009",HOU,OKC,Houston Rockets,Oklahoma City Thunder,95,90,5,Home,85.9,True,2010
+200912220HOU,"Tue, Dec 22, 2009",HOU,LAC,Houston Rockets,Los Angeles Clippers,108,99,9,Home,91.3,True,2010
+200912230ORL,"Wed, Dec 23, 2009",ORL,HOU,Orlando Magic,Houston Rockets,102,87,15,Home,94.1,True,2010
+200912260NJN,"Sat, Dec 26, 2009",NJN,HOU,New Jersey Nets,Houston Rockets,93,98,-5,Home,88.5,True,2010
+200912270CLE,"Sun, Dec 27, 2009",CLE,HOU,Cleveland Cavaliers,Houston Rockets,108,83,25,Home,96.5,True,2010
+200912290HOU,"Tue, Dec 29, 2009",HOU,NOH,Houston Rockets,New Orleans Hornets,108,100,8,Home,89.5,True,2010
+200912310HOU,"Thu, Dec 31, 2009",HOU,DAL,Houston Rockets,Dallas Mavericks,97,94,3,Home,94.3,True,2010
+201001020NOH,"Sat, Jan 2, 2010",NOH,HOU,New Orleans Hornets,Houston Rockets,99,95,4,Home,88.3,True,2010
+201001050LAL,"Tue, Jan 5, 2010",LAL,HOU,Los Angeles Lakers,Houston Rockets,88,79,9,Home,91.4,True,2010
+201001060PHO,"Wed, Jan 6, 2010",PHO,HOU,Phoenix Suns,Houston Rockets,118,110,8,Home,98.6,True,2010
+201001090HOU,"Sat, Jan 9, 2010",HOU,NYK,Houston Rockets,New York Knicks,105,96,9,Home,88.8,True,2010
+201001120CHA,"Tue, Jan 12, 2010",CHA,HOU,Charlotte Bobcats,Houston Rockets,102,94,8,Home,86.7,True,2010
+201001130HOU,"Wed, Jan 13, 2010",HOU,MIN,Houston Rockets,Minnesota Timberwolves,120,114,6,Home,90.4,True,2010
+201001150HOU,"Fri, Jan 15, 2010",HOU,MIA,Houston Rockets,Miami Heat,106,115,-9,Home,91.4,True,2010
+201001180HOU,"Mon, Jan 18, 2010",HOU,MIL,Houston Rockets,Milwaukee Bucks,101,98,3,Home,87.1,True,2010
+201001220SAS,"Fri, Jan 22, 2010",SAS,HOU,San Antonio Spurs,Houston Rockets,109,116,-7,Home,97.7,True,2010
+201001230HOU,"Sat, Jan 23, 2010",HOU,CHI,Houston Rockets,Chicago Bulls,97,104,-7,Home,89.4,True,2010
+201001250HOU,"Mon, Jan 25, 2010",HOU,ATL,Houston Rockets,Atlanta Hawks,95,102,-7,Home,89.5,True,2010
+201001270HOU,"Wed, Jan 27, 2010",HOU,DEN,Houston Rockets,Denver Nuggets,92,97,-5,Home,95.8,True,2010
+201001290HOU,"Fri, Jan 29, 2010",HOU,POR,Houston Rockets,Portland Trail Blazers,104,100,4,Home,91.1,True,2010
+201001310HOU,"Sun, Jan 31, 2010",HOU,PHO,Houston Rockets,Phoenix Suns,111,115,-4,Home,94.0,True,2010
+201002020HOU,"Tue, Feb 2, 2010",HOU,GSW,Houston Rockets,Golden State Warriors,119,97,22,Home,99.2,True,2010
+201002050MEM,"Fri, Feb 5, 2010",MEM,HOU,Memphis Grizzlies,Houston Rockets,83,101,-18,Home,91.4,True,2010
+201002060HOU,"Sat, Feb 6, 2010",HOU,PHI,Houston Rockets,Philadelphia 76ers,95,102,-7,Home,89.2,True,2010
+201002090MIA,"Tue, Feb 9, 2010",MIA,HOU,Miami Heat,Houston Rockets,99,66,33,Home,90.4,True,2010
+201002160HOU,"Tue, Feb 16, 2010",HOU,UTA,Houston Rockets,Utah Jazz,95,104,-9,Home,97.9,True,2010
+201002170MIL,"Wed, Feb 17, 2010",MIL,HOU,Milwaukee Bucks,Houston Rockets,99,127,-28,Home,99.4,True,2010
+201002200HOU,"Sat, Feb 20, 2010",HOU,IND,Houston Rockets,Indiana Pacers,115,125,-10,Home,103.6,True,2010
+201002210NOH,"Sun, Feb 21, 2010",NOH,HOU,New Orleans Hornets,Houston Rockets,102,94,8,Home,99.4,True,2010
+201002240HOU,"Wed, Feb 24, 2010",HOU,ORL,Houston Rockets,Orlando Magic,92,110,-18,Home,90.2,True,2010
+201002260HOU,"Fri, Feb 26, 2010",HOU,SAS,Houston Rockets,San Antonio Spurs,109,104,5,Home,94.5,True,2010
+201002270UTA,"Sat, Feb 27, 2010",UTA,HOU,Utah Jazz,Houston Rockets,133,110,23,Home,98.0,True,2010
+201003010HOU,"Mon, Mar 1, 2010",HOU,TOR,Houston Rockets,Toronto Raptors,116,92,24,Home,99.0,True,2010
+201003030HOU,"Wed, Mar 3, 2010",HOU,SAC,Houston Rockets,Sacramento Kings,81,84,-3,Home,86.8,True,2010
+201003060MIN,"Sat, Mar 6, 2010",MIN,HOU,Minnesota Timberwolves,Houston Rockets,98,112,-14,Home,98.8,True,2010
+201003070DET,"Sun, Mar 7, 2010",DET,HOU,Detroit Pistons,Houston Rockets,110,107,3,Home,88.5,True,2010
+201003090WAS,"Tue, Mar 9, 2010",WAS,HOU,Washington Wizards,Houston Rockets,88,96,-8,Home,93.7,True,2010
+201003130HOU,"Sat, Mar 13, 2010",HOU,NJN,Houston Rockets,New Jersey Nets,116,108,8,Home,94.4,True,2010
+201003150HOU,"Mon, Mar 15, 2010",HOU,DEN,Houston Rockets,Denver Nuggets,125,123,2,Home,95.7,True,2010
+201003170HOU,"Wed, Mar 17, 2010",HOU,MEM,Houston Rockets,Memphis Grizzlies,107,94,13,Home,95.4,True,2010
+201003190HOU,"Fri, Mar 19, 2010",HOU,BOS,Houston Rockets,Boston Celtics,87,94,-7,Home,87.1,True,2010
+201003210NYK,"Sun, Mar 21, 2010",NYK,HOU,New York Knicks,Houston Rockets,112,116,-4,Home,99.1,True,2010
+201003220CHI,"Mon, Mar 22, 2010",CHI,HOU,Chicago Bulls,Houston Rockets,98,88,10,Home,94.2,True,2010
+201003240OKC,"Wed, Mar 24, 2010",OKC,HOU,Oklahoma City Thunder,Houston Rockets,122,104,18,Home,95.6,True,2010
+201003250HOU,"Thu, Mar 25, 2010",HOU,LAC,Houston Rockets,Los Angeles Clippers,93,99,-6,Home,95.3,True,2010
+201003270HOU,"Sat, Mar 27, 2010",HOU,LAL,Houston Rockets,Los Angeles Lakers,101,109,-8,Home,90.5,True,2010
+201003300HOU,"Tue, Mar 30, 2010",HOU,WAS,Houston Rockets,Washington Wizards,98,94,4,Home,89.7,True,2010
+201003310SAS,"Wed, Mar 31, 2010",SAS,HOU,San Antonio Spurs,Houston Rockets,119,102,17,Home,98.9,True,2010
+201004020BOS,"Fri, Apr 2, 2010",BOS,HOU,Boston Celtics,Houston Rockets,114,119,-5,Home,88.7,True,2010
+201004040IND,"Sun, Apr 4, 2010",IND,HOU,Indiana Pacers,Houston Rockets,133,102,31,Home,99.0,True,2010
+201004060MEM,"Tue, Apr 6, 2010",MEM,HOU,Memphis Grizzlies,Houston Rockets,103,113,-10,Home,96.8,True,2010
+201004070HOU,"Wed, Apr 7, 2010",HOU,UTA,Houston Rockets,Utah Jazz,113,96,17,Home,98.6,True,2010
+201004090HOU,"Fri, Apr 9, 2010",HOU,CHA,Houston Rockets,Charlotte Bobcats,97,90,7,Home,90.7,True,2010
+201004110PHO,"Sun, Apr 11, 2010",PHO,HOU,Phoenix Suns,Houston Rockets,116,106,10,Home,99.7,True,2010
+201004120SAC,"Mon, Apr 12, 2010",SAC,HOU,Sacramento Kings,Houston Rockets,107,117,-10,Home,97.7,True,2010
+201004140HOU,"Wed, Apr 14, 2010",HOU,NOH,Houston Rockets,New Orleans Hornets,115,123,-8,Home,96.2,True,2010
+200910290POR,"Thu, Oct 29, 2009",POR,DEN,Portland Trail Blazers,Denver Nuggets,94,97,-3,Home,85.2,True,2010
+200911010OKC,"Sun, Nov 1, 2009",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,74,83,-9,Home,81.8,True,2010
+200911030POR,"Tue, Nov 3, 2009",POR,ATL,Portland Trail Blazers,Atlanta Hawks,91,97,-6,Home,86.9,True,2010
+200911060POR,"Fri, Nov 6, 2009",POR,SAS,Portland Trail Blazers,San Antonio Spurs,96,84,12,Home,86.7,True,2010
+200911080POR,"Sun, Nov 8, 2009",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,116,93,23,Home,95.0,True,2010
+200911100MEM,"Tue, Nov 10, 2009",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,79,93,-14,Home,84.8,True,2010
+200911110MIN,"Wed, Nov 11, 2009",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,84,107,-23,Home,89.2,True,2010
+200911130NOH,"Fri, Nov 13, 2009",NOH,POR,New Orleans Hornets,Portland Trail Blazers,78,86,-8,Home,86.9,True,2010
+200911140CHA,"Sat, Nov 14, 2009",CHA,POR,Charlotte Bobcats,Portland Trail Blazers,74,80,-6,Home,79.4,True,2010
+200911160ATL,"Mon, Nov 16, 2009",ATL,POR,Atlanta Hawks,Portland Trail Blazers,99,95,4,Home,85.4,True,2010
+200911180POR,"Wed, Nov 18, 2009",POR,DET,Portland Trail Blazers,Detroit Pistons,87,81,6,Home,85.1,True,2010
+200911200GSW,"Fri, Nov 20, 2009",GSW,POR,Golden State Warriors,Portland Trail Blazers,108,94,14,Home,96.0,True,2010
+200911210POR,"Sat, Nov 21, 2009",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,106,78,28,Home,82.2,True,2010
+200911230POR,"Mon, Nov 23, 2009",POR,CHI,Portland Trail Blazers,Chicago Bulls,122,98,24,Home,85.4,True,2010
+200911250POR,"Wed, Nov 25, 2009",POR,NJN,Portland Trail Blazers,New Jersey Nets,93,83,10,Home,82.3,True,2010
+200911270POR,"Fri, Nov 27, 2009",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,96,106,-10,Home,85.2,True,2010
+200911280UTA,"Sat, Nov 28, 2009",UTA,POR,Utah Jazz,Portland Trail Blazers,108,92,16,Home,87.3,True,2010
+200912010POR,"Tue, Dec 1, 2009",POR,MIA,Portland Trail Blazers,Miami Heat,100,107,-7,Home,87.3,True,2010
+200912070NYK,"Mon, Dec 7, 2009",NYK,POR,New York Knicks,Portland Trail Blazers,93,84,9,Home,85.7,True,2010
+200912090IND,"Wed, Dec 9, 2009",IND,POR,Indiana Pacers,Portland Trail Blazers,91,102,-11,Home,91.7,True,2010
+200912110CLE,"Fri, Dec 11, 2009",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,104,99,5,Home,90.8,True,2010
+200912120MIL,"Sat, Dec 12, 2009",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,108,101,7,Home,86.2,True,2010
+200912150POR,"Tue, Dec 15, 2009",POR,SAC,Portland Trail Blazers,Sacramento Kings,95,88,7,Home,84.2,True,2010
+200912170POR,"Thu, Dec 17, 2009",POR,PHO,Portland Trail Blazers,Phoenix Suns,105,102,3,Home,89.0,True,2010
+200912190ORL,"Sat, Dec 19, 2009",ORL,POR,Orlando Magic,Portland Trail Blazers,92,83,9,Home,91.6,True,2010
+200912200MIA,"Sun, Dec 20, 2009",MIA,POR,Miami Heat,Portland Trail Blazers,95,102,-7,Home,82.1,True,2010
+200912220DAL,"Tue, Dec 22, 2009",DAL,POR,Dallas Mavericks,Portland Trail Blazers,81,85,-4,Home,88.5,True,2010
+200912230SAS,"Wed, Dec 23, 2009",SAS,POR,San Antonio Spurs,Portland Trail Blazers,94,98,-4,Home,82.6,True,2010
+200912250POR,"Fri, Dec 25, 2009",POR,DEN,Portland Trail Blazers,Denver Nuggets,107,96,11,Home,84.1,True,2010
+200912280POR,"Mon, Dec 28, 2009",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,93,104,-11,Home,84.7,True,2010
+200912300POR,"Wed, Dec 30, 2009",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,103,99,4,Home,90.4,True,2010
+201001020POR,"Sat, Jan 2, 2010",POR,GSW,Portland Trail Blazers,Golden State Warriors,105,89,16,Home,90.7,True,2010
+201001040LAC,"Mon, Jan 4, 2010",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,105,95,10,Home,88.3,True,2010
+201001050POR,"Tue, Jan 5, 2010",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,105,109,-4,Home,86.8,True,2010
+201001080POR,"Fri, Jan 8, 2010",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,107,98,9,Home,84.5,True,2010
+201001100POR,"Sun, Jan 10, 2010",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,94,106,-12,Home,81.9,True,2010
+201001130POR,"Wed, Jan 13, 2010",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,120,108,12,Home,91.5,True,2010
+201001150POR,"Fri, Jan 15, 2010",POR,ORL,Portland Trail Blazers,Orlando Magic,102,87,15,Home,87.0,True,2010
+201001180WAS,"Mon, Jan 18, 2010",WAS,POR,Washington Wizards,Portland Trail Blazers,97,92,5,Home,83.2,True,2010
+201001200PHI,"Wed, Jan 20, 2010",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,90,98,-8,Home,81.7,True,2010
+201001220BOS,"Fri, Jan 22, 2010",BOS,POR,Boston Celtics,Portland Trail Blazers,98,95,3,Home,85.1,True,2010
+201001230DET,"Sat, Jan 23, 2010",DET,POR,Detroit Pistons,Portland Trail Blazers,93,97,-4,Home,85.6,True,2010
+201001250POR,"Mon, Jan 25, 2010",POR,NOH,Portland Trail Blazers,New Orleans Hornets,97,98,-1,Home,85.2,True,2010
+201001270POR,"Wed, Jan 27, 2010",POR,UTA,Portland Trail Blazers,Utah Jazz,95,106,-11,Home,89.2,True,2010
+201001300DAL,"Sat, Jan 30, 2010",DAL,POR,Dallas Mavericks,Portland Trail Blazers,112,114,-2,Home,88.8,True,2010
+201002010POR,"Mon, Feb 1, 2010",POR,CHA,Portland Trail Blazers,Charlotte Bobcats,98,79,19,Home,83.2,True,2010
+201002030UTA,"Wed, Feb 3, 2010",UTA,POR,Utah Jazz,Portland Trail Blazers,118,105,13,Home,86.8,True,2010
+201002040POR,"Thu, Feb 4, 2010",POR,SAS,Portland Trail Blazers,San Antonio Spurs,96,93,3,Home,85.9,True,2010
+201002060POR,"Sat, Feb 6, 2010",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,82,99,-17,Home,85.7,True,2010
+201002090POR,"Tue, Feb 9, 2010",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,77,89,-12,Home,89.6,True,2010
+201002100PHO,"Wed, Feb 10, 2010",PHO,POR,Phoenix Suns,Portland Trail Blazers,101,108,-7,Home,91.8,True,2010
+201002160POR,"Tue, Feb 16, 2010",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,109,87,22,Home,87.1,True,2010
+201002190POR,"Fri, Feb 19, 2010",POR,BOS,Portland Trail Blazers,Boston Celtics,76,96,-20,Home,88.5,True,2010
+201002210POR,"Sun, Feb 21, 2010",POR,UTA,Portland Trail Blazers,Utah Jazz,89,93,-4,Home,83.3,True,2010
+201002230NJN,"Tue, Feb 23, 2010",NJN,POR,New Jersey Nets,Portland Trail Blazers,93,102,-9,Home,79.9,True,2010
+201002240TOR,"Wed, Feb 24, 2010",TOR,POR,Toronto Raptors,Portland Trail Blazers,87,101,-14,Home,87.4,True,2010
+201002260CHI,"Fri, Feb 26, 2010",CHI,POR,Chicago Bulls,Portland Trail Blazers,115,111,4,Home,89.5,True,2010
+201002270MIN,"Sat, Feb 27, 2010",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,91,110,-19,Home,92.7,True,2010
+201003010MEM,"Mon, Mar 1, 2010",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,93,103,-10,Home,92.9,True,2010
+201003030POR,"Wed, Mar 3, 2010",POR,IND,Portland Trail Blazers,Indiana Pacers,102,79,23,Home,89.6,True,2010
+201003070DEN,"Sun, Mar 7, 2010",DEN,POR,Denver Nuggets,Portland Trail Blazers,118,106,12,Home,92.3,True,2010
+201003090POR,"Tue, Mar 9, 2010",POR,SAC,Portland Trail Blazers,Sacramento Kings,88,81,7,Home,86.1,True,2010
+201003110GSW,"Thu, Mar 11, 2010",GSW,POR,Golden State Warriors,Portland Trail Blazers,105,110,-5,Home,91.7,True,2010
+201003120SAC,"Fri, Mar 12, 2010",SAC,POR,Sacramento Kings,Portland Trail Blazers,94,110,-16,Home,89.2,True,2010
+201003140POR,"Sun, Mar 14, 2010",POR,TOR,Portland Trail Blazers,Toronto Raptors,109,98,11,Home,79.9,True,2010
+201003190POR,"Fri, Mar 19, 2010",POR,WAS,Portland Trail Blazers,Washington Wizards,76,74,2,Home,82.6,True,2010
+201003210PHO,"Sun, Mar 21, 2010",PHO,POR,Phoenix Suns,Portland Trail Blazers,93,87,6,Home,87.5,True,2010
+201003250POR,"Thu, Mar 25, 2010",POR,DAL,Portland Trail Blazers,Dallas Mavericks,101,89,12,Home,87.3,True,2010
+201003270NOH,"Sat, Mar 27, 2010",NOH,POR,New Orleans Hornets,Portland Trail Blazers,101,112,-11,Home,82.2,True,2010
+201003280OKC,"Sun, Mar 28, 2010",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,87,92,-5,Home,83.4,True,2010
+201003310POR,"Wed, Mar 31, 2010",POR,NYK,Portland Trail Blazers,New York Knicks,118,90,28,Home,89.9,True,2010
+201004010DEN,"Thu, Apr 1, 2010",DEN,POR,Denver Nuggets,Portland Trail Blazers,109,92,17,Home,90.1,True,2010
+201004030SAC,"Sat, Apr 3, 2010",SAC,POR,Sacramento Kings,Portland Trail Blazers,87,98,-11,Home,85.3,True,2010
+201004070LAC,"Wed, Apr 7, 2010",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,85,93,-8,Home,86.3,True,2010
+201004090POR,"Fri, Apr 9, 2010",POR,DAL,Portland Trail Blazers,Dallas Mavericks,77,83,-6,Home,85.7,True,2010
+201004110LAL,"Sun, Apr 11, 2010",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,88,91,-3,Home,85.2,True,2010
+201004120POR,"Mon, Apr 12, 2010",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,103,95,8,Home,86.1,True,2010
+201004140POR,"Wed, Apr 14, 2010",POR,GSW,Portland Trail Blazers,Golden State Warriors,116,122,-6,Home,98.9,True,2010
+201004180PHO,"Sun, Apr 18, 2010",PHO,POR,Phoenix Suns,Portland Trail Blazers,100,105,-5,Home,91.2,True,2010
+201004200PHO,"Tue, Apr 20, 2010",PHO,POR,Phoenix Suns,Portland Trail Blazers,119,90,29,Home,86.3,True,2010
+201004220POR,"Thu, Apr 22, 2010",POR,PHO,Portland Trail Blazers,Phoenix Suns,89,108,-19,Home,86.8,True,2010
+201004240POR,"Sat, Apr 24, 2010",POR,PHO,Portland Trail Blazers,Phoenix Suns,96,87,9,Home,85.9,True,2010
+201004260PHO,"Mon, Apr 26, 2010",PHO,POR,Phoenix Suns,Portland Trail Blazers,107,88,19,Home,82.2,True,2010
+201004290POR,"Thu, Apr 29, 2010",POR,PHO,Portland Trail Blazers,Phoenix Suns,90,99,-9,Home,88.5,True,2010
+200910300PHO,"Fri, Oct 30, 2009",PHO,GSW,Phoenix Suns,Golden State Warriors,123,101,22,Home,109.4,True,2010
+200911040GSW,"Wed, Nov 4, 2009",GSW,MEM,Golden State Warriors,Memphis Grizzlies,113,105,8,Home,98.4,True,2010
+200911060GSW,"Fri, Nov 6, 2009",GSW,LAC,Golden State Warriors,Los Angeles Clippers,90,118,-28,Home,98.4,True,2010
+200911080SAC,"Sun, Nov 8, 2009",SAC,GSW,Sacramento Kings,Golden State Warriors,120,107,13,Home,100.3,True,2010
+200911090GSW,"Mon, Nov 9, 2009",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,146,105,41,Home,106.6,True,2010
+200911110IND,"Wed, Nov 11, 2009",IND,GSW,Indiana Pacers,Golden State Warriors,108,94,14,Home,102.1,True,2010
+200911130NYK,"Fri, Nov 13, 2009",NYK,GSW,New York Knicks,Golden State Warriors,107,121,-14,Home,101.2,True,2010
+200911140MIL,"Sat, Nov 14, 2009",MIL,GSW,Milwaukee Bucks,Golden State Warriors,129,125,4,Home,101.6,True,2010
+200911170CLE,"Tue, Nov 17, 2009",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,114,108,6,Home,95.3,True,2010
+200911180BOS,"Wed, Nov 18, 2009",BOS,GSW,Boston Celtics,Golden State Warriors,109,95,14,Home,97.8,True,2010
+200911240DAL,"Tue, Nov 24, 2009",DAL,GSW,Dallas Mavericks,Golden State Warriors,103,111,-8,Home,103.1,True,2010
+200911250SAS,"Wed, Nov 25, 2009",SAS,GSW,San Antonio Spurs,Golden State Warriors,118,104,14,Home,103.4,True,2010
+200911280GSW,"Sat, Nov 28, 2009",GSW,LAL,Golden State Warriors,Los Angeles Lakers,97,130,-33,Home,103.6,True,2010
+200911300GSW,"Mon, Nov 30, 2009",GSW,IND,Golden State Warriors,Indiana Pacers,126,107,19,Home,109.5,True,2010
+200912010DEN,"Tue, Dec 1, 2009",DEN,GSW,Denver Nuggets,Golden State Warriors,135,107,28,Home,104.3,True,2010
+200912050GSW,"Sat, Dec 5, 2009",GSW,ORL,Golden State Warriors,Orlando Magic,118,126,-8,Home,101.7,True,2010
+200912070OKC,"Mon, Dec 7, 2009",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,104,88,16,Home,100.5,True,2010
+200912090NJN,"Wed, Dec 9, 2009",NJN,GSW,New Jersey Nets,Golden State Warriors,89,105,-16,Home,96.6,True,2010
+200912110CHI,"Fri, Dec 11, 2009",CHI,GSW,Chicago Bulls,Golden State Warriors,96,91,5,Home,93.7,True,2010
+200912120DET,"Sat, Dec 12, 2009",DET,GSW,Detroit Pistons,Golden State Warriors,104,95,9,Home,94.6,True,2010
+200912140PHI,"Mon, Dec 14, 2009",PHI,GSW,Philadelphia 76ers,Golden State Warriors,117,101,16,Home,95.9,True,2010
+200912160GSW,"Wed, Dec 16, 2009",GSW,SAS,Golden State Warriors,San Antonio Spurs,91,103,-12,Home,97.9,True,2010
+200912180GSW,"Fri, Dec 18, 2009",GSW,WAS,Golden State Warriors,Washington Wizards,109,118,-9,Home,106.5,True,2010
+200912220MEM,"Tue, Dec 22, 2009",MEM,GSW,Memphis Grizzlies,Golden State Warriors,121,108,13,Home,103.0,True,2010
+200912230NOH,"Wed, Dec 23, 2009",NOH,GSW,New Orleans Hornets,Golden State Warriors,108,102,6,Home,98.7,True,2010
+200912260GSW,"Sat, Dec 26, 2009",GSW,PHO,Golden State Warriors,Phoenix Suns,132,127,5,Home,106.4,True,2010
+200912280GSW,"Mon, Dec 28, 2009",GSW,BOS,Golden State Warriors,Boston Celtics,103,99,4,Home,102.2,True,2010
+200912290LAL,"Tue, Dec 29, 2009",LAL,GSW,Los Angeles Lakers,Golden State Warriors,124,118,6,Home,101.9,True,2010
+201001050DEN,"Tue, Jan 5, 2010",DEN,GSW,Denver Nuggets,Golden State Warriors,123,122,1,Home,99.4,True,2010
+201001060MIN,"Wed, Jan 6, 2010",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,101,107,-6,Home,97.4,True,2010
+201001080GSW,"Fri, Jan 8, 2010",GSW,SAC,Golden State Warriors,Sacramento Kings,108,101,7,Home,97.5,True,2010
+201001110GSW,"Mon, Jan 11, 2010",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,114,117,-3,Home,102.5,True,2010
+201001130GSW,"Wed, Jan 13, 2010",GSW,MIA,Golden State Warriors,Miami Heat,102,115,-13,Home,88.1,True,2010
+201001150GSW,"Fri, Jan 15, 2010",GSW,MIL,Golden State Warriors,Milwaukee Bucks,104,113,-9,Home,101.9,True,2010
+201001180GSW,"Mon, Jan 18, 2010",GSW,CHI,Golden State Warriors,Chicago Bulls,114,97,17,Home,105.4,True,2010
+201001200GSW,"Wed, Jan 20, 2010",GSW,DEN,Golden State Warriors,Denver Nuggets,118,123,-5,Home,93.6,True,2010
+201001220GSW,"Fri, Jan 22, 2010",GSW,NJN,Golden State Warriors,New Jersey Nets,111,79,32,Home,94.7,True,2010
+201001230PHO,"Sat, Jan 23, 2010",PHO,GSW,Phoenix Suns,Golden State Warriors,112,103,9,Home,97.7,True,2010
+201001260SAC,"Tue, Jan 26, 2010",SAC,GSW,Sacramento Kings,Golden State Warriors,99,96,3,Home,103.9,True,2010
+201001270GSW,"Wed, Jan 27, 2010",GSW,NOH,Golden State Warriors,New Orleans Hornets,110,123,-13,Home,104.9,True,2010
+201001290GSW,"Fri, Jan 29, 2010",GSW,CHA,Golden State Warriors,Charlotte Bobcats,110,121,-11,Home,98.1,True,2010
+201001310OKC,"Sun, Jan 31, 2010",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,112,104,8,Home,96.7,True,2010
+201002030DAL,"Wed, Feb 3, 2010",DAL,GSW,Dallas Mavericks,Golden State Warriors,110,101,9,Home,92.9,True,2010
+201002060GSW,"Sat, Feb 6, 2010",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,95,104,-9,Home,103.4,True,2010
+201002080GSW,"Mon, Feb 8, 2010",GSW,DAL,Golden State Warriors,Dallas Mavericks,117,127,-10,Home,99.6,True,2010
+201002100GSW,"Wed, Feb 10, 2010",GSW,LAC,Golden State Warriors,Los Angeles Clippers,132,102,30,Home,95.2,True,2010
+201002160LAL,"Tue, Feb 16, 2010",LAL,GSW,Los Angeles Lakers,Golden State Warriors,104,94,10,Home,104.5,True,2010
+201002170GSW,"Wed, Feb 17, 2010",GSW,SAC,Golden State Warriors,Sacramento Kings,130,98,32,Home,102.6,True,2010
+201002190GSW,"Fri, Feb 19, 2010",GSW,UTA,Golden State Warriors,Utah Jazz,89,100,-11,Home,98.0,True,2010
+201002210GSW,"Sun, Feb 21, 2010",GSW,ATL,Golden State Warriors,Atlanta Hawks,108,104,4,Home,96.9,True,2010
+201002230GSW,"Tue, Feb 23, 2010",GSW,PHI,Golden State Warriors,Philadelphia 76ers,102,110,-8,Home,102.5,True,2010
+201002250GSW,"Thu, Feb 25, 2010",GSW,DEN,Golden State Warriors,Denver Nuggets,112,127,-15,Home,99.7,True,2010
+201002270GSW,"Sat, Feb 27, 2010",GSW,DET,Golden State Warriors,Detroit Pistons,95,88,7,Home,101.4,True,2010
+201003020MIA,"Tue, Mar 2, 2010",MIA,GSW,Miami Heat,Golden State Warriors,110,106,4,Home,99.9,True,2010
+201003030ORL,"Wed, Mar 3, 2010",ORL,GSW,Orlando Magic,Golden State Warriors,117,90,27,Home,96.2,True,2010
+201003050ATL,"Fri, Mar 5, 2010",ATL,GSW,Atlanta Hawks,Golden State Warriors,127,122,5,Home,91.5,True,2010
+201003060CHA,"Sat, Mar 6, 2010",CHA,GSW,Charlotte Bobcats,Golden State Warriors,101,90,11,Home,91.9,True,2010
+201003080NOH,"Mon, Mar 8, 2010",NOH,GSW,New Orleans Hornets,Golden State Warriors,135,131,4,Home,100.8,True,2010
+201003130GSW,"Sat, Mar 13, 2010",GSW,TOR,Golden State Warriors,Toronto Raptors,124,112,12,Home,94.9,True,2010
+201003150GSW,"Mon, Mar 15, 2010",GSW,LAL,Golden State Warriors,Los Angeles Lakers,121,124,-3,Home,101.3,True,2010
+201003170GSW,"Wed, Mar 17, 2010",GSW,NOH,Golden State Warriors,New Orleans Hornets,131,121,10,Home,102.5,True,2010
+201003190SAS,"Fri, Mar 19, 2010",SAS,GSW,San Antonio Spurs,Golden State Warriors,147,116,31,Home,104.9,True,2010
+201003200MEM,"Sat, Mar 20, 2010",MEM,GSW,Memphis Grizzlies,Golden State Warriors,123,107,16,Home,104.1,True,2010
+201003220GSW,"Mon, Mar 22, 2010",GSW,PHO,Golden State Warriors,Phoenix Suns,131,133,-2,Home,110.0,True,2010
+201003240GSW,"Wed, Mar 24, 2010",GSW,MEM,Golden State Warriors,Memphis Grizzlies,128,110,18,Home,103.9,True,2010
+201003270GSW,"Sat, Mar 27, 2010",GSW,DAL,Golden State Warriors,Dallas Mavericks,90,111,-21,Home,104.8,True,2010
+201003280LAC,"Sun, Mar 28, 2010",LAC,GSW,Los Angeles Clippers,Golden State Warriors,103,121,-18,Home,96.9,True,2010
+201003310UTA,"Wed, Mar 31, 2010",UTA,GSW,Utah Jazz,Golden State Warriors,128,104,24,Home,106.2,True,2010
+201004020GSW,"Fri, Apr 2, 2010",GSW,NYK,Golden State Warriors,New York Knicks,128,117,11,Home,103.1,True,2010
+201004040TOR,"Sun, Apr 4, 2010",TOR,GSW,Toronto Raptors,Golden State Warriors,112,113,-1,Home,100.6,True,2010
+201004060WAS,"Tue, Apr 6, 2010",WAS,GSW,Washington Wizards,Golden State Warriors,112,94,18,Home,89.2,True,2010
+201004070MIN,"Wed, Apr 7, 2010",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,107,116,-9,Home,96.6,True,2010
+201004100LAC,"Sat, Apr 10, 2010",LAC,GSW,Los Angeles Clippers,Golden State Warriors,107,104,3,Home,101.8,True,2010
+201004110GSW,"Sun, Apr 11, 2010",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,120,117,3,Home,101.4,True,2010
+201004130GSW,"Tue, Apr 13, 2010",GSW,UTA,Golden State Warriors,Utah Jazz,94,103,-9,Home,99.9,True,2010
+200910280DEN,"Wed, Oct 28, 2009",DEN,UTA,Denver Nuggets,Utah Jazz,114,105,9,Home,96.6,True,2010
+200910300UTA,"Fri, Oct 30, 2009",UTA,LAC,Utah Jazz,Los Angeles Clippers,111,98,13,Home,95.1,True,2010
+200911030DAL,"Tue, Nov 3, 2009",DAL,UTA,Dallas Mavericks,Utah Jazz,96,85,11,Home,92.8,True,2010
+200911050UTA,"Thu, Nov 5, 2009",UTA,SAS,Utah Jazz,San Antonio Spurs,113,99,14,Home,87.0,True,2010
+200911070UTA,"Sat, Nov 7, 2009",UTA,SAC,Utah Jazz,Sacramento Kings,99,104,-5,Home,87.4,True,2010
+200911090NYK,"Mon, Nov 9, 2009",NYK,UTA,New York Knicks,Utah Jazz,93,95,-2,Home,94.2,True,2010
+200911110BOS,"Wed, Nov 11, 2009",BOS,UTA,Boston Celtics,Utah Jazz,105,86,19,Home,86.3,True,2010
+200911130PHI,"Fri, Nov 13, 2009",PHI,UTA,Philadelphia 76ers,Utah Jazz,90,112,-22,Home,88.4,True,2010
+200911140CLE,"Sat, Nov 14, 2009",CLE,UTA,Cleveland Cavaliers,Utah Jazz,107,103,4,Home,91.2,True,2010
+200911180UTA,"Wed, Nov 18, 2009",UTA,TOR,Utah Jazz,Toronto Raptors,104,91,13,Home,92.5,True,2010
+200911190SAS,"Thu, Nov 19, 2009",SAS,UTA,San Antonio Spurs,Utah Jazz,83,90,-7,Home,84.3,True,2010
+200911210UTA,"Sat, Nov 21, 2009",UTA,DET,Utah Jazz,Detroit Pistons,100,97,3,Home,85.8,True,2010
+200911240UTA,"Tue, Nov 24, 2009",UTA,OKC,Utah Jazz,Oklahoma City Thunder,94,104,-10,Home,94.8,True,2010
+200911260UTA,"Thu, Nov 26, 2009",UTA,CHI,Utah Jazz,Chicago Bulls,105,86,19,Home,87.2,True,2010
+200911300UTA,"Mon, Nov 30, 2009",UTA,MEM,Utah Jazz,Memphis Grizzlies,120,93,27,Home,93.2,True,2010
+200912040UTA,"Fri, Dec 4, 2009",UTA,IND,Utah Jazz,Indiana Pacers,96,87,9,Home,95.8,True,2010
+200912050MIN,"Sat, Dec 5, 2009",MIN,UTA,Minnesota Timberwolves,Utah Jazz,108,101,7,Home,92.7,True,2010
+200912070UTA,"Mon, Dec 7, 2009",UTA,SAS,Utah Jazz,San Antonio Spurs,104,101,3,Home,88.1,True,2010
+200912090LAL,"Wed, Dec 9, 2009",LAL,UTA,Los Angeles Lakers,Utah Jazz,101,77,24,Home,88.5,True,2010
+200912100UTA,"Thu, Dec 10, 2009",UTA,ORL,Utah Jazz,Orlando Magic,120,111,9,Home,96.1,True,2010
+200912120UTA,"Sat, Dec 12, 2009",UTA,LAL,Utah Jazz,Los Angeles Lakers,102,94,8,Home,91.1,True,2010
+200912140UTA,"Mon, Dec 14, 2009",UTA,MIN,Utah Jazz,Minnesota Timberwolves,108,110,-2,Home,98.6,True,2010
+200912160NJN,"Wed, Dec 16, 2009",NJN,UTA,New Jersey Nets,Utah Jazz,92,108,-16,Home,86.9,True,2010
+200912180ATL,"Fri, Dec 18, 2009",ATL,UTA,Atlanta Hawks,Utah Jazz,96,83,13,Home,95.7,True,2010
+200912190CHA,"Sat, Dec 19, 2009",CHA,UTA,Charlotte Bobcats,Utah Jazz,102,110,-8,Home,98.7,True,2010
+200912210ORL,"Mon, Dec 21, 2009",ORL,UTA,Orlando Magic,Utah Jazz,104,99,5,Home,98.8,True,2010
+200912230MIA,"Wed, Dec 23, 2009",MIA,UTA,Miami Heat,Utah Jazz,80,70,10,Home,87.3,True,2010
+200912260UTA,"Sat, Dec 26, 2009",UTA,PHI,Utah Jazz,Philadelphia 76ers,97,76,21,Home,92.7,True,2010
+200912300MIN,"Wed, Dec 30, 2009",MIN,UTA,Minnesota Timberwolves,Utah Jazz,103,107,-4,Home,95.2,True,2010
+200912310OKC,"Thu, Dec 31, 2009",OKC,UTA,Oklahoma City Thunder,Utah Jazz,87,86,1,Home,92.2,True,2010
+201001020UTA,"Sat, Jan 2, 2010",UTA,DEN,Utah Jazz,Denver Nuggets,95,105,-10,Home,96.6,True,2010
+201001040UTA,"Mon, Jan 4, 2010",UTA,NOH,Utah Jazz,New Orleans Hornets,87,91,-4,Home,88.4,True,2010
+201001060UTA,"Wed, Jan 6, 2010",UTA,MEM,Utah Jazz,Memphis Grizzlies,117,94,23,Home,97.8,True,2010
+201001080MEM,"Fri, Jan 8, 2010",MEM,UTA,Memphis Grizzlies,Utah Jazz,91,89,2,Home,89.7,True,2010
+201001090DAL,"Sat, Jan 9, 2010",DAL,UTA,Dallas Mavericks,Utah Jazz,93,111,-18,Home,86.0,True,2010
+201001110UTA,"Mon, Jan 11, 2010",UTA,MIA,Utah Jazz,Miami Heat,118,89,29,Home,90.6,True,2010
+201001140UTA,"Thu, Jan 14, 2010",UTA,CLE,Utah Jazz,Cleveland Cavaliers,97,96,1,Home,95.7,True,2010
+201001160UTA,"Sat, Jan 16, 2010",UTA,MIL,Utah Jazz,Milwaukee Bucks,112,95,17,Home,100.7,True,2010
+201001170DEN,"Sun, Jan 17, 2010",DEN,UTA,Denver Nuggets,Utah Jazz,119,112,7,Home,102.9,True,2010
+201001200SAS,"Wed, Jan 20, 2010",SAS,UTA,San Antonio Spurs,Utah Jazz,98,105,-7,Home,97.4,True,2010
+201001230UTA,"Sat, Jan 23, 2010",UTA,NJN,Utah Jazz,New Jersey Nets,116,83,33,Home,90.8,True,2010
+201001250UTA,"Mon, Jan 25, 2010",UTA,PHO,Utah Jazz,Phoenix Suns,124,115,9,Home,96.1,True,2010
+201001290UTA,"Fri, Jan 29, 2010",UTA,SAC,Utah Jazz,Sacramento Kings,101,94,7,Home,91.8,True,2010
+201002010UTA,"Mon, Feb 1, 2010",UTA,DAL,Utah Jazz,Dallas Mavericks,104,92,12,Home,89.1,True,2010
+201002060UTA,"Sat, Feb 6, 2010",UTA,DEN,Utah Jazz,Denver Nuggets,116,106,10,Home,100.1,True,2010
+201002090LAC,"Tue, Feb 9, 2010",LAC,UTA,Los Angeles Clippers,Utah Jazz,99,109,-10,Home,90.3,True,2010
+201002100UTA,"Wed, Feb 10, 2010",UTA,LAL,Utah Jazz,Los Angeles Lakers,81,96,-15,Home,92.3,True,2010
+201002170NOH,"Wed, Feb 17, 2010",NOH,UTA,New Orleans Hornets,Utah Jazz,90,98,-8,Home,96.0,True,2010
+201002220UTA,"Mon, Feb 22, 2010",UTA,ATL,Utah Jazz,Atlanta Hawks,100,105,-5,Home,83.3,True,2010
+201002240UTA,"Wed, Feb 24, 2010",UTA,CHA,Utah Jazz,Charlotte Bobcats,102,93,9,Home,85.6,True,2010
+201002260SAC,"Fri, Feb 26, 2010",SAC,UTA,Sacramento Kings,Utah Jazz,103,99,4,Home,93.4,True,2010
+201003010LAC,"Mon, Mar 1, 2010",LAC,UTA,Los Angeles Clippers,Utah Jazz,108,104,4,Home,94.6,True,2010
+201003040PHO,"Thu, Mar 4, 2010",PHO,UTA,Phoenix Suns,Utah Jazz,108,116,-8,Home,91.1,True,2010
+201003060UTA,"Sat, Mar 6, 2010",UTA,LAC,Utah Jazz,Los Angeles Clippers,107,85,22,Home,94.9,True,2010
+201003090CHI,"Tue, Mar 9, 2010",CHI,UTA,Chicago Bulls,Utah Jazz,108,132,-24,Home,95.3,True,2010
+201003100DET,"Wed, Mar 10, 2010",DET,UTA,Detroit Pistons,Utah Jazz,104,115,-11,Home,87.6,True,2010
+201003120MIL,"Fri, Mar 12, 2010",MIL,UTA,Milwaukee Bucks,Utah Jazz,95,87,8,Home,93.0,True,2010
+201003140OKC,"Sun, Mar 14, 2010",OKC,UTA,Oklahoma City Thunder,Utah Jazz,119,111,8,Home,92.7,True,2010
+201003150UTA,"Mon, Mar 15, 2010",UTA,WAS,Utah Jazz,Washington Wizards,112,89,23,Home,93.8,True,2010
+201003170UTA,"Wed, Mar 17, 2010",UTA,MIN,Utah Jazz,Minnesota Timberwolves,122,100,22,Home,99.1,True,2010
+201003190PHO,"Fri, Mar 19, 2010",PHO,UTA,Phoenix Suns,Utah Jazz,110,100,10,Home,99.8,True,2010
+201003200UTA,"Sat, Mar 20, 2010",UTA,NOH,Utah Jazz,New Orleans Hornets,106,86,20,Home,88.1,True,2010
+201003220UTA,"Mon, Mar 22, 2010",UTA,BOS,Utah Jazz,Boston Celtics,110,97,13,Home,94.7,True,2010
+201003240TOR,"Wed, Mar 24, 2010",TOR,UTA,Toronto Raptors,Utah Jazz,87,113,-26,Home,94.6,True,2010
+201003260IND,"Fri, Mar 26, 2010",IND,UTA,Indiana Pacers,Utah Jazz,122,106,16,Home,99.9,True,2010
+201003270WAS,"Sat, Mar 27, 2010",WAS,UTA,Washington Wizards,Utah Jazz,87,103,-16,Home,92.5,True,2010
+201003290UTA,"Mon, Mar 29, 2010",UTA,NYK,Utah Jazz,New York Knicks,103,98,5,Home,95.0,True,2010
+201004020LAL,"Fri, Apr 2, 2010",LAL,UTA,Los Angeles Lakers,Utah Jazz,106,92,14,Home,95.9,True,2010
+201004060UTA,"Tue, Apr 6, 2010",UTA,OKC,Utah Jazz,Oklahoma City Thunder,140,139,1,Home,98.2,True,2010
+201004090NOH,"Fri, Apr 9, 2010",NOH,UTA,New Orleans Hornets,Utah Jazz,103,114,-11,Home,93.6,True,2010
+201004140UTA,"Wed, Apr 14, 2010",UTA,PHO,Utah Jazz,Phoenix Suns,86,100,-14,Home,93.9,True,2010
+201004170DEN,"Sat, Apr 17, 2010",DEN,UTA,Denver Nuggets,Utah Jazz,126,113,13,Home,92.7,True,2010
+201004190DEN,"Mon, Apr 19, 2010",DEN,UTA,Denver Nuggets,Utah Jazz,111,114,-3,Home,100.0,True,2010
+201004230UTA,"Fri, Apr 23, 2010",UTA,DEN,Utah Jazz,Denver Nuggets,105,93,12,Home,91.3,True,2010
+201004250UTA,"Sun, Apr 25, 2010",UTA,DEN,Utah Jazz,Denver Nuggets,117,106,11,Home,96.4,True,2010
+201004280DEN,"Wed, Apr 28, 2010",DEN,UTA,Denver Nuggets,Utah Jazz,116,102,14,Home,93.9,True,2010
+201004300UTA,"Fri, Apr 30, 2010",UTA,DEN,Utah Jazz,Denver Nuggets,112,104,8,Home,98.5,True,2010
+201005020LAL,"Sun, May 2, 2010",LAL,UTA,Los Angeles Lakers,Utah Jazz,104,99,5,Home,91.6,True,2010
+201005040LAL,"Tue, May 4, 2010",LAL,UTA,Los Angeles Lakers,Utah Jazz,111,103,8,Home,95.7,True,2010
+201005080UTA,"Sat, May 8, 2010",UTA,LAL,Utah Jazz,Los Angeles Lakers,110,111,-1,Home,85.7,True,2010
+201005100UTA,"Mon, May 10, 2010",UTA,LAL,Utah Jazz,Los Angeles Lakers,96,111,-15,Home,89.9,True,2010
+200910270LAL,"Tue, Oct 27, 2009",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,99,92,7,Home,97.5,True,2010
+200910300LAL,"Fri, Oct 30, 2009",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,80,94,-14,Home,91.0,True,2010
+200911010LAL,"Sun, Nov 1, 2009",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,118,110,8,Home,100.5,True,2010
+200911030OKC,"Tue, Nov 3, 2009",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,98,101,-3,Home,90.9,True,2010
+200911060LAL,"Fri, Nov 6, 2009",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,114,98,16,Home,86.9,True,2010
+200911080LAL,"Sun, Nov 8, 2009",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,104,88,16,Home,89.8,True,2010
+200911120LAL,"Thu, Nov 12, 2009",LAL,PHO,Los Angeles Lakers,Phoenix Suns,121,102,19,Home,104.3,True,2010
+200911130DEN,"Fri, Nov 13, 2009",DEN,LAL,Denver Nuggets,Los Angeles Lakers,105,79,26,Home,94.3,True,2010
+200911170LAL,"Tue, Nov 17, 2009",LAL,DET,Los Angeles Lakers,Detroit Pistons,106,93,13,Home,90.9,True,2010
+200911190LAL,"Thu, Nov 19, 2009",LAL,CHI,Los Angeles Lakers,Chicago Bulls,108,93,15,Home,96.3,True,2010
+200911220LAL,"Sun, Nov 22, 2009",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,101,85,16,Home,94.8,True,2010
+200911240LAL,"Tue, Nov 24, 2009",LAL,NYK,Los Angeles Lakers,New York Knicks,100,90,10,Home,99.8,True,2010
+200911290LAL,"Sun, Nov 29, 2009",LAL,NJN,Los Angeles Lakers,New Jersey Nets,106,87,19,Home,94.0,True,2010
+200912010LAL,"Tue, Dec 1, 2009",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,110,99,11,Home,98.6,True,2010
+200912040LAL,"Fri, Dec 4, 2009",LAL,MIA,Los Angeles Lakers,Miami Heat,108,107,1,Home,90.5,True,2010
+200912060LAL,"Sun, Dec 6, 2009",LAL,PHO,Los Angeles Lakers,Phoenix Suns,108,88,20,Home,88.7,True,2010
+200912110LAL,"Fri, Dec 11, 2009",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,104,92,12,Home,96.7,True,2010
+200912150CHI,"Tue, Dec 15, 2009",CHI,LAL,Chicago Bulls,Los Angeles Lakers,87,96,-9,Home,91.2,True,2010
+200912160MIL,"Wed, Dec 16, 2009",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,106,107,-1,Home,94.4,True,2010
+200912190NJN,"Sat, Dec 19, 2009",NJN,LAL,New Jersey Nets,Los Angeles Lakers,84,103,-19,Home,91.0,True,2010
+200912200DET,"Sun, Dec 20, 2009",DET,LAL,Detroit Pistons,Los Angeles Lakers,81,93,-12,Home,94.9,True,2010
+200912220LAL,"Tue, Dec 22, 2009",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,111,108,3,Home,97.2,True,2010
+200912250LAL,"Fri, Dec 25, 2009",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,87,102,-15,Home,93.4,True,2010
+200912260SAC,"Sat, Dec 26, 2009",SAC,LAL,Sacramento Kings,Los Angeles Lakers,103,112,-9,Home,88.2,True,2010
+200912280PHO,"Mon, Dec 28, 2009",PHO,LAL,Phoenix Suns,Los Angeles Lakers,118,103,15,Home,96.9,True,2010
+201001010LAL,"Fri, Jan 1, 2010",LAL,SAC,Los Angeles Lakers,Sacramento Kings,109,108,1,Home,93.2,True,2010
+201001030LAL,"Sun, Jan 3, 2010",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,131,96,35,Home,93.2,True,2010
+201001060LAC,"Wed, Jan 6, 2010",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,102,91,11,Home,93.1,True,2010
+201001100LAL,"Sun, Jan 10, 2010",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,95,77,18,Home,95.1,True,2010
+201001120SAS,"Tue, Jan 12, 2010",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,105,85,20,Home,88.1,True,2010
+201001130DAL,"Wed, Jan 13, 2010",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,95,100,-5,Home,86.2,True,2010
+201001150LAL,"Fri, Jan 15, 2010",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,126,86,40,Home,96.9,True,2010
+201001180LAL,"Mon, Jan 18, 2010",LAL,ORL,Los Angeles Lakers,Orlando Magic,98,92,6,Home,90.3,True,2010
+201001210CLE,"Thu, Jan 21, 2010",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,93,87,6,Home,86.6,True,2010
+201001220NYK,"Fri, Jan 22, 2010",NYK,LAL,New York Knicks,Los Angeles Lakers,105,115,-10,Home,90.2,True,2010
+201001240TOR,"Sun, Jan 24, 2010",TOR,LAL,Toronto Raptors,Los Angeles Lakers,106,105,1,Home,92.8,True,2010
+201001260WAS,"Tue, Jan 26, 2010",WAS,LAL,Washington Wizards,Los Angeles Lakers,103,115,-12,Home,87.1,True,2010
+201001270IND,"Wed, Jan 27, 2010",IND,LAL,Indiana Pacers,Los Angeles Lakers,96,118,-22,Home,97.2,True,2010
+201001290PHI,"Fri, Jan 29, 2010",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,91,99,-8,Home,91.0,True,2010
+201001310BOS,"Sun, Jan 31, 2010",BOS,LAL,Boston Celtics,Los Angeles Lakers,89,90,-1,Home,87.8,True,2010
+201002010MEM,"Mon, Feb 1, 2010",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,95,93,2,Home,92.6,True,2010
+201002030LAL,"Wed, Feb 3, 2010",LAL,CHA,Los Angeles Lakers,Charlotte Bobcats,99,97,2,Home,81.6,True,2010
+201002050LAL,"Fri, Feb 5, 2010",LAL,DEN,Los Angeles Lakers,Denver Nuggets,113,126,-13,Home,97.4,True,2010
+201002080LAL,"Mon, Feb 8, 2010",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,101,89,12,Home,91.3,True,2010
+201002180LAL,"Thu, Feb 18, 2010",LAL,BOS,Los Angeles Lakers,Boston Celtics,86,87,-1,Home,89.5,True,2010
+201002230MEM,"Tue, Feb 23, 2010",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,98,99,-1,Home,97.2,True,2010
+201002240DAL,"Wed, Feb 24, 2010",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,101,96,5,Home,92.2,True,2010
+201002260LAL,"Fri, Feb 26, 2010",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,99,90,9,Home,86.8,True,2010
+201002280LAL,"Sun, Feb 28, 2010",LAL,DEN,Los Angeles Lakers,Denver Nuggets,95,89,6,Home,94.6,True,2010
+201003020LAL,"Tue, Mar 2, 2010",LAL,IND,Los Angeles Lakers,Indiana Pacers,122,99,23,Home,96.8,True,2010
+201003040MIA,"Thu, Mar 4, 2010",MIA,LAL,Miami Heat,Los Angeles Lakers,114,111,3,Home,88.5,True,2010
+201003050CHA,"Fri, Mar 5, 2010",CHA,LAL,Charlotte Bobcats,Los Angeles Lakers,98,83,15,Home,93.1,True,2010
+201003070ORL,"Sun, Mar 7, 2010",ORL,LAL,Orlando Magic,Los Angeles Lakers,96,94,2,Home,89.5,True,2010
+201003090LAL,"Tue, Mar 9, 2010",LAL,TOR,Los Angeles Lakers,Toronto Raptors,109,107,2,Home,92.4,True,2010
+201003120PHO,"Fri, Mar 12, 2010",PHO,LAL,Phoenix Suns,Los Angeles Lakers,96,102,-6,Home,88.7,True,2010
+201003160SAC,"Tue, Mar 16, 2010",SAC,LAL,Sacramento Kings,Los Angeles Lakers,99,106,-7,Home,92.4,True,2010
+201003190LAL,"Fri, Mar 19, 2010",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,104,96,8,Home,98.0,True,2010
+201003210LAL,"Sun, Mar 21, 2010",LAL,WAS,Los Angeles Lakers,Washington Wizards,99,92,7,Home,83.1,True,2010
+201003240SAS,"Wed, Mar 24, 2010",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,83,92,-9,Home,85.8,True,2010
+201003260OKC,"Fri, Mar 26, 2010",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,91,75,16,Home,87.7,True,2010
+201003290NOH,"Mon, Mar 29, 2010",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,108,100,8,Home,86.9,True,2010
+201003310ATL,"Wed, Mar 31, 2010",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,109,92,17,Home,83.3,True,2010
+201004040LAL,"Sun, Apr 4, 2010",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,81,100,-19,Home,87.6,True,2010
+201004080DEN,"Thu, Apr 8, 2010",DEN,LAL,Denver Nuggets,Los Angeles Lakers,98,96,2,Home,86.8,True,2010
+201004090MIN,"Fri, Apr 9, 2010",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,88,97,-9,Home,88.3,True,2010
+201004130LAL,"Tue, Apr 13, 2010",LAL,SAC,Los Angeles Lakers,Sacramento Kings,106,100,6,Home,90.2,True,2010
+201004140LAC,"Wed, Apr 14, 2010",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,107,91,16,Home,94.1,True,2010
+201004180LAL,"Sun, Apr 18, 2010",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,87,79,8,Home,83.2,True,2010
+201004200LAL,"Tue, Apr 20, 2010",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,95,92,3,Home,94.5,True,2010
+201004220OKC,"Thu, Apr 22, 2010",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,101,96,5,Home,88.3,True,2010
+201004240OKC,"Sat, Apr 24, 2010",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,110,89,21,Home,91.4,True,2010
+201004270LAL,"Tue, Apr 27, 2010",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,111,87,24,Home,93.3,True,2010
+201004300OKC,"Fri, Apr 30, 2010",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,94,95,-1,Home,87.6,True,2010
+201005170LAL,"Mon, May 17, 2010",LAL,PHO,Los Angeles Lakers,Phoenix Suns,128,107,21,Home,92.4,True,2010
+201005190LAL,"Wed, May 19, 2010",LAL,PHO,Los Angeles Lakers,Phoenix Suns,124,112,12,Home,96.7,True,2010
+201005230PHO,"Sun, May 23, 2010",PHO,LAL,Phoenix Suns,Los Angeles Lakers,118,109,9,Home,97.7,True,2010
+201005250PHO,"Tue, May 25, 2010",PHO,LAL,Phoenix Suns,Los Angeles Lakers,115,106,9,Home,85.9,True,2010
+201005270LAL,"Thu, May 27, 2010",LAL,PHO,Los Angeles Lakers,Phoenix Suns,103,101,2,Home,89.2,True,2010
+201005290PHO,"Sat, May 29, 2010",PHO,LAL,Phoenix Suns,Los Angeles Lakers,103,111,-8,Home,86.6,True,2010
+201006030LAL,"Thu, Jun 3, 2010",LAL,BOS,Los Angeles Lakers,Boston Celtics,102,89,13,Home,86.0,True,2010
+201006060LAL,"Sun, Jun 6, 2010",LAL,BOS,Los Angeles Lakers,Boston Celtics,94,103,-9,Home,91.5,True,2010
+201006080BOS,"Tue, Jun 8, 2010",BOS,LAL,Boston Celtics,Los Angeles Lakers,84,91,-7,Home,82.2,True,2010
+201006100BOS,"Thu, Jun 10, 2010",BOS,LAL,Boston Celtics,Los Angeles Lakers,96,89,7,Home,85.1,True,2010
+201006130BOS,"Sun, Jun 13, 2010",BOS,LAL,Boston Celtics,Los Angeles Lakers,92,86,6,Home,83.0,True,2010
+201006150LAL,"Tue, Jun 15, 2010",LAL,BOS,Los Angeles Lakers,Boston Celtics,89,67,22,Home,87.0,True,2010
+201006170LAL,"Thu, Jun 17, 2010",LAL,BOS,Los Angeles Lakers,Boston Celtics,83,79,4,Home,83.0,True,2010
+200910280OKC,"Wed, Oct 28, 2009",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,102,89,13,Home,88.7,True,2010
+200910300DET,"Fri, Oct 30, 2009",DET,OKC,Detroit Pistons,Oklahoma City Thunder,83,91,-8,Home,89.3,True,2010
+200911080OKC,"Sun, Nov 8, 2009",OKC,ORL,Oklahoma City Thunder,Orlando Magic,102,74,28,Home,87.1,True,2010
+200911100SAC,"Tue, Nov 10, 2009",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,101,98,3,Home,96.8,True,2010
+200911110LAC,"Wed, Nov 11, 2009",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,79,83,-4,Home,86.1,True,2010
+200911140SAS,"Sat, Nov 14, 2009",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,98,101,-3,Home,94.1,True,2010
+200911150OKC,"Sun, Nov 15, 2009",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,93,101,-8,Home,88.7,True,2010
+200911170MIA,"Tue, Nov 17, 2009",MIA,OKC,Miami Heat,Oklahoma City Thunder,87,100,-13,Home,87.7,True,2010
+200911180ORL,"Wed, Nov 18, 2009",ORL,OKC,Orlando Magic,Oklahoma City Thunder,108,94,14,Home,96.9,True,2010
+200911200OKC,"Fri, Nov 20, 2009",OKC,WAS,Oklahoma City Thunder,Washington Wizards,127,108,19,Home,98.6,True,2010
+200911270OKC,"Fri, Nov 27, 2009",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,108,90,18,Home,90.5,True,2010
+200912020OKC,"Wed, Dec 2, 2009",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,117,106,11,Home,88.0,True,2010
+200912040OKC,"Fri, Dec 4, 2009",OKC,BOS,Oklahoma City Thunder,Boston Celtics,87,105,-18,Home,87.0,True,2010
+200912110MEM,"Fri, Dec 11, 2009",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,94,102,-8,Home,91.2,True,2010
+200912130OKC,"Sun, Dec 13, 2009",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,89,102,-13,Home,90.6,True,2010
+200912140DEN,"Mon, Dec 14, 2009",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,102,93,9,Home,95.7,True,2010
+200912160OKC,"Wed, Dec 16, 2009",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,86,100,-14,Home,88.2,True,2010
+200912180OKC,"Fri, Dec 18, 2009",OKC,DET,Oklahoma City Thunder,Detroit Pistons,109,98,11,Home,84.5,True,2010
+200912230PHO,"Wed, Dec 23, 2009",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,113,117,-4,Home,98.5,True,2010
+200912260OKC,"Sat, Dec 26, 2009",OKC,CHA,Oklahoma City Thunder,Charlotte Bobcats,98,91,7,Home,90.2,True,2010
+200912280NJN,"Mon, Dec 28, 2009",NJN,OKC,New Jersey Nets,Oklahoma City Thunder,89,105,-16,Home,90.6,True,2010
+200912290WAS,"Tue, Dec 29, 2009",WAS,OKC,Washington Wizards,Oklahoma City Thunder,98,110,-12,Home,92.8,True,2010
+201001020MIL,"Sat, Jan 2, 2010",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,103,97,6,Home,90.6,True,2010
+201001040CHI,"Mon, Jan 4, 2010",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,85,98,-13,Home,91.5,True,2010
+201001060OKC,"Wed, Jan 6, 2010",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,92,97,-5,Home,84.6,True,2010
+201001090OKC,"Sat, Jan 9, 2010",OKC,IND,Oklahoma City Thunder,Indiana Pacers,108,102,6,Home,102.0,True,2010
+201001110OKC,"Mon, Jan 11, 2010",OKC,NYK,Oklahoma City Thunder,New York Knicks,106,88,18,Home,96.6,True,2010
+201001130OKC,"Wed, Jan 13, 2010",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,108,109,-1,Home,89.9,True,2010
+201001150DAL,"Fri, Jan 15, 2010",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,99,98,1,Home,94.9,True,2010
+201001160OKC,"Sat, Jan 16, 2010",OKC,MIA,Oklahoma City Thunder,Miami Heat,98,80,18,Home,91.1,True,2010
+201001180ATL,"Mon, Jan 18, 2010",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,91,94,-3,Home,84.0,True,2010
+201001200MIN,"Wed, Jan 20, 2010",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,92,94,-2,Home,92.3,True,2010
+201001220MEM,"Fri, Jan 22, 2010",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,86,84,2,Home,88.6,True,2010
+201001230CLE,"Sat, Jan 23, 2010",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,100,99,1,Home,90.3,True,2010
+201001270OKC,"Wed, Jan 27, 2010",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,86,96,-10,Home,93.4,True,2010
+201001290OKC,"Fri, Jan 29, 2010",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,101,84,17,Home,90.3,True,2010
+201002020OKC,"Tue, Feb 2, 2010",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,106,99,7,Home,83.0,True,2010
+201002030NOH,"Wed, Feb 3, 2010",NOH,OKC,New Orleans Hornets,Oklahoma City Thunder,99,103,-4,Home,92.9,True,2010
+201002160OKC,"Tue, Feb 16, 2010",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,99,86,13,Home,94.9,True,2010
+201002200NYK,"Sat, Feb 20, 2010",NYK,OKC,New York Knicks,Oklahoma City Thunder,118,121,-3,Home,98.3,True,2010
+201002210MIN,"Sun, Feb 21, 2010",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,107,109,-2,Home,96.1,True,2010
+201002230OKC,"Tue, Feb 23, 2010",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,102,104,-2,Home,94.1,True,2010
+201002240SAS,"Wed, Feb 24, 2010",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,95,87,8,Home,89.0,True,2010
+201002260OKC,"Fri, Feb 26, 2010",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,109,92,17,Home,97.9,True,2010
+201002280OKC,"Sun, Feb 28, 2010",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,119,99,20,Home,99.3,True,2010
+201003020OKC,"Tue, Mar 2, 2010",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,113,107,6,Home,89.4,True,2010
+201003030DEN,"Wed, Mar 3, 2010",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,119,90,29,Home,99.7,True,2010
+201003050LAC,"Fri, Mar 5, 2010",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,87,104,-17,Home,95.3,True,2010
+201003070SAC,"Sun, Mar 7, 2010",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,102,108,-6,Home,91.1,True,2010
+201003100OKC,"Wed, Mar 10, 2010",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,98,83,15,Home,90.2,True,2010
+201003120OKC,"Fri, Mar 12, 2010",OKC,NJN,Oklahoma City Thunder,New Jersey Nets,104,102,2,Home,92.0,True,2010
+201003170CHA,"Wed, Mar 17, 2010",CHA,OKC,Charlotte Bobcats,Oklahoma City Thunder,100,92,8,Home,92.3,True,2010
+201003190TOR,"Fri, Mar 19, 2010",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,89,115,-26,Home,94.9,True,2010
+201003210IND,"Sun, Mar 21, 2010",IND,OKC,Indiana Pacers,Oklahoma City Thunder,121,101,20,Home,94.2,True,2010
+201003220OKC,"Mon, Mar 22, 2010",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,96,99,-3,Home,91.5,True,2010
+201003300PHI,"Tue, Mar 30, 2010",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,93,111,-18,Home,94.3,True,2010
+201003310BOS,"Wed, Mar 31, 2010",BOS,OKC,Boston Celtics,Oklahoma City Thunder,104,109,-5,Home,88.1,True,2010
+201004030DAL,"Sat, Apr 3, 2010",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,116,121,-5,Home,97.5,True,2010
+201004040OKC,"Sun, Apr 4, 2010",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,116,108,8,Home,94.5,True,2010
+201004070OKC,"Wed, Apr 7, 2010",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,94,98,-4,Home,94.6,True,2010
+201004090OKC,"Fri, Apr 9, 2010",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,96,91,5,Home,93.4,True,2010
+201004140OKC,"Wed, Apr 14, 2010",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,114,105,9,Home,93.1,True,2010
+200910270DAL,"Tue, Oct 27, 2009",DAL,WAS,Dallas Mavericks,Washington Wizards,91,102,-11,Home,89.5,True,2010
+200910310LAC,"Sat, Oct 31, 2009",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,84,93,-9,Home,92.9,True,2010
+200911040NOH,"Wed, Nov 4, 2009",NOH,DAL,New Orleans Hornets,Dallas Mavericks,114,107,7,Home,87.4,True,2010
+200911070DAL,"Sat, Nov 7, 2009",DAL,TOR,Dallas Mavericks,Toronto Raptors,129,101,28,Home,95.3,True,2010
+200911110SAS,"Wed, Nov 11, 2009",SAS,DAL,San Antonio Spurs,Dallas Mavericks,92,83,9,Home,89.1,True,2010
+200911130MIN,"Fri, Nov 13, 2009",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,77,89,-12,Home,98.7,True,2010
+200911150DET,"Sun, Nov 15, 2009",DET,DAL,Detroit Pistons,Dallas Mavericks,90,95,-5,Home,86.4,True,2010
+200911160MIL,"Mon, Nov 16, 2009",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,113,115,-2,Home,90.8,True,2010
+200911180DAL,"Wed, Nov 18, 2009",DAL,SAS,Dallas Mavericks,San Antonio Spurs,99,94,5,Home,86.5,True,2010
+200911200DAL,"Fri, Nov 20, 2009",DAL,SAC,Dallas Mavericks,Sacramento Kings,104,102,2,Home,96.3,True,2010
+200911270IND,"Fri, Nov 27, 2009",IND,DAL,Indiana Pacers,Dallas Mavericks,92,113,-21,Home,94.8,True,2010
+200911280CLE,"Sat, Nov 28, 2009",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,111,95,16,Home,85.1,True,2010
+200911300DAL,"Mon, Nov 30, 2009",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,104,102,2,Home,91.5,True,2010
+200912020NJN,"Wed, Dec 2, 2009",NJN,DAL,New Jersey Nets,Dallas Mavericks,101,117,-16,Home,93.4,True,2010
+200912040MEM,"Fri, Dec 4, 2009",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,98,82,16,Home,87.9,True,2010
+200912050DAL,"Sat, Dec 5, 2009",DAL,ATL,Dallas Mavericks,Atlanta Hawks,75,80,-5,Home,86.5,True,2010
+200912080DAL,"Tue, Dec 8, 2009",DAL,PHO,Dallas Mavericks,Phoenix Suns,102,101,1,Home,95.1,True,2010
+200912110MIA,"Fri, Dec 11, 2009",MIA,DAL,Miami Heat,Dallas Mavericks,93,106,-13,Home,91.1,True,2010
+200912120DAL,"Sat, Dec 12, 2009",DAL,CHA,Dallas Mavericks,Charlotte Bobcats,98,97,1,Home,84.9,True,2010
+200912140DAL,"Mon, Dec 14, 2009",DAL,NOH,Dallas Mavericks,New Orleans Hornets,94,90,4,Home,91.4,True,2010
+200912200DAL,"Sun, Dec 20, 2009",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,102,95,7,Home,88.0,True,2010
+200912260DAL,"Sat, Dec 26, 2009",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,106,101,5,Home,89.0,True,2010
+200912270DEN,"Sun, Dec 27, 2009",DEN,DAL,Denver Nuggets,Dallas Mavericks,96,104,-8,Home,99.8,True,2010
+201001020SAC,"Sat, Jan 2, 2010",SAC,DAL,Sacramento Kings,Dallas Mavericks,91,99,-8,Home,96.7,True,2010
+201001050DAL,"Tue, Jan 5, 2010",DAL,DET,Dallas Mavericks,Detroit Pistons,98,93,5,Home,88.9,True,2010
+201001080SAS,"Fri, Jan 8, 2010",SAS,DAL,San Antonio Spurs,Dallas Mavericks,103,112,-9,Home,89.8,True,2010
+201001170TOR,"Sun, Jan 17, 2010",TOR,DAL,Toronto Raptors,Dallas Mavericks,110,88,22,Home,88.9,True,2010
+201001180BOS,"Mon, Jan 18, 2010",BOS,DAL,Boston Celtics,Dallas Mavericks,90,99,-9,Home,88.7,True,2010
+201001200WAS,"Wed, Jan 20, 2010",WAS,DAL,Washington Wizards,Dallas Mavericks,93,94,-1,Home,86.9,True,2010
+201001220PHI,"Fri, Jan 22, 2010",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,92,81,11,Home,93.6,True,2010
+201001240NYK,"Sun, Jan 24, 2010",NYK,DAL,New York Knicks,Dallas Mavericks,78,128,-50,Home,89.2,True,2010
+201001260DAL,"Tue, Jan 26, 2010",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,108,107,1,Home,87.3,True,2010
+201001280PHO,"Thu, Jan 28, 2010",PHO,DAL,Phoenix Suns,Dallas Mavericks,112,106,6,Home,90.9,True,2010
+201002050DAL,"Fri, Feb 5, 2010",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,108,117,-9,Home,96.8,True,2010
+201002090DEN,"Tue, Feb 9, 2010",DEN,DAL,Denver Nuggets,Dallas Mavericks,127,91,36,Home,94.5,True,2010
+201002170DAL,"Wed, Feb 17, 2010",DAL,PHO,Dallas Mavericks,Phoenix Suns,107,97,10,Home,93.0,True,2010
+201002190ORL,"Fri, Feb 19, 2010",ORL,DAL,Orlando Magic,Dallas Mavericks,85,95,-10,Home,91.2,True,2010
+201002200DAL,"Sat, Feb 20, 2010",DAL,MIA,Dallas Mavericks,Miami Heat,97,91,6,Home,84.7,True,2010
+201002220DAL,"Mon, Feb 22, 2010",DAL,IND,Dallas Mavericks,Indiana Pacers,91,82,9,Home,101.6,True,2010
+201002260ATL,"Fri, Feb 26, 2010",ATL,DAL,Atlanta Hawks,Dallas Mavericks,103,111,-8,Home,85.0,True,2010
+201002280DAL,"Sun, Feb 28, 2010",DAL,NOH,Dallas Mavericks,New Orleans Hornets,108,100,8,Home,91.7,True,2010
+201003010CHA,"Mon, Mar 1, 2010",CHA,DAL,Charlotte Bobcats,Dallas Mavericks,84,89,-5,Home,92.8,True,2010
+201003030DAL,"Wed, Mar 3, 2010",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,112,109,3,Home,92.6,True,2010
+201003050DAL,"Fri, Mar 5, 2010",DAL,SAC,Dallas Mavericks,Sacramento Kings,108,100,8,Home,91.3,True,2010
+201003060CHI,"Sat, Mar 6, 2010",CHI,DAL,Chicago Bulls,Dallas Mavericks,116,122,-6,Home,92.4,True,2010
+201003080MIN,"Mon, Mar 8, 2010",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,112,125,-13,Home,107.2,True,2010
+201003100DAL,"Wed, Mar 10, 2010",DAL,NJN,Dallas Mavericks,New Jersey Nets,96,87,9,Home,88.7,True,2010
+201003130DAL,"Sat, Mar 13, 2010",DAL,NYK,Dallas Mavericks,New York Knicks,94,128,-34,Home,92.8,True,2010
+201003170DAL,"Wed, Mar 17, 2010",DAL,CHI,Dallas Mavericks,Chicago Bulls,113,106,7,Home,93.5,True,2010
+201003200DAL,"Sat, Mar 20, 2010",DAL,BOS,Dallas Mavericks,Boston Celtics,93,102,-9,Home,92.6,True,2010
+201003220NOH,"Mon, Mar 22, 2010",NOH,DAL,New Orleans Hornets,Dallas Mavericks,115,99,16,Home,91.3,True,2010
+201003230DAL,"Tue, Mar 23, 2010",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,106,96,10,Home,89.5,True,2010
+201003290DAL,"Mon, Mar 29, 2010",DAL,DEN,Dallas Mavericks,Denver Nuggets,109,93,16,Home,88.1,True,2010
+201003310MEM,"Wed, Mar 31, 2010",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,102,106,-4,Home,93.6,True,2010
+201004010DAL,"Thu, Apr 1, 2010",DAL,ORL,Dallas Mavericks,Orlando Magic,82,97,-15,Home,86.2,True,2010
+201004070DAL,"Wed, Apr 7, 2010",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,110,84,26,Home,89.2,True,2010
+201004100SAC,"Sat, Apr 10, 2010",SAC,DAL,Sacramento Kings,Dallas Mavericks,108,126,-18,Home,94.7,True,2010
+201004120LAC,"Mon, Apr 12, 2010",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,94,117,-23,Home,91.2,True,2010
+201004140DAL,"Wed, Apr 14, 2010",DAL,SAS,Dallas Mavericks,San Antonio Spurs,96,89,7,Home,96.7,True,2010
+201004180DAL,"Sun, Apr 18, 2010",DAL,SAS,Dallas Mavericks,San Antonio Spurs,100,94,6,Home,91.0,True,2010
+201004210DAL,"Wed, Apr 21, 2010",DAL,SAS,Dallas Mavericks,San Antonio Spurs,88,102,-14,Home,83.3,True,2010
+201004230SAS,"Fri, Apr 23, 2010",SAS,DAL,San Antonio Spurs,Dallas Mavericks,94,90,4,Home,83.8,True,2010
+201004250SAS,"Sun, Apr 25, 2010",SAS,DAL,San Antonio Spurs,Dallas Mavericks,92,89,3,Home,88.0,True,2010
+201004270DAL,"Tue, Apr 27, 2010",DAL,SAS,Dallas Mavericks,San Antonio Spurs,103,81,22,Home,95.4,True,2010
+201004290SAS,"Thu, Apr 29, 2010",SAS,DAL,San Antonio Spurs,Dallas Mavericks,97,87,10,Home,85.0,True,2010
+200910280MEM,"Wed, Oct 28, 2009",MEM,DET,Memphis Grizzlies,Detroit Pistons,74,96,-22,Home,81.9,True,2010
+200910300MEM,"Fri, Oct 30, 2009",MEM,TOR,Memphis Grizzlies,Toronto Raptors,115,107,8,Home,93.9,True,2010
+200911010DEN,"Sun, Nov 1, 2009",DEN,MEM,Denver Nuggets,Memphis Grizzlies,133,123,10,Home,103.6,True,2010
+200911020SAC,"Mon, Nov 2, 2009",SAC,MEM,Sacramento Kings,Memphis Grizzlies,127,116,11,Home,98.3,True,2010
+200911070LAC,"Sat, Nov 7, 2009",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,113,110,3,Home,99.6,True,2010
+200911140MEM,"Sat, Nov 14, 2009",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,97,87,10,Home,98.1,True,2010
+200911180MEM,"Wed, Nov 18, 2009",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,106,91,15,Home,89.1,True,2010
+200911200PHI,"Fri, Nov 20, 2009",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,97,102,-5,Home,91.0,True,2010
+200911210MEM,"Sat, Nov 21, 2009",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,98,103,-5,Home,97.7,True,2010
+200911230MEM,"Mon, Nov 23, 2009",MEM,SAC,Memphis Grizzlies,Sacramento Kings,116,105,11,Home,99.2,True,2010
+200911250PHO,"Wed, Nov 25, 2009",PHO,MEM,Phoenix Suns,Memphis Grizzlies,126,111,15,Home,92.0,True,2010
+200911290LAC,"Sun, Nov 29, 2009",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,98,88,10,Home,89.9,True,2010
+200912020MIN,"Wed, Dec 2, 2009",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,95,97,-2,Home,89.4,True,2010
+200912080MEM,"Tue, Dec 8, 2009",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,111,109,2,Home,90.3,True,2010
+200912130MIA,"Sun, Dec 13, 2009",MIA,MEM,Miami Heat,Memphis Grizzlies,90,118,-28,Home,92.1,True,2010
+200912140MEM,"Mon, Dec 14, 2009",MEM,BOS,Memphis Grizzlies,Boston Celtics,105,110,-5,Home,87.8,True,2010
+200912160ATL,"Wed, Dec 16, 2009",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,110,97,13,Home,92.2,True,2010
+200912180MEM,"Fri, Dec 18, 2009",MEM,IND,Memphis Grizzlies,Indiana Pacers,107,94,13,Home,94.3,True,2010
+200912200MEM,"Sun, Dec 20, 2009",MEM,DEN,Memphis Grizzlies,Denver Nuggets,102,96,6,Home,94.2,True,2010
+200912280MEM,"Mon, Dec 28, 2009",MEM,WAS,Memphis Grizzlies,Washington Wizards,116,111,5,Home,92.8,True,2010
+200912300IND,"Wed, Dec 30, 2009",IND,MEM,Indiana Pacers,Memphis Grizzlies,110,121,-11,Home,99.0,True,2010
+201001020PHO,"Sat, Jan 2, 2010",PHO,MEM,Phoenix Suns,Memphis Grizzlies,103,128,-25,Home,94.0,True,2010
+201001090CHA,"Sat, Jan 9, 2010",CHA,MEM,Charlotte Bobcats,Memphis Grizzlies,89,87,2,Home,95.1,True,2010
+201001120MEM,"Tue, Jan 12, 2010",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,104,102,2,Home,88.4,True,2010
+201001150MEM,"Fri, Jan 15, 2010",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,135,110,25,Home,97.0,True,2010
+201001160MEM,"Sat, Jan 16, 2010",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,92,86,6,Home,92.5,True,2010
+201001180MEM,"Mon, Jan 18, 2010",MEM,PHO,Memphis Grizzlies,Phoenix Suns,125,118,7,Home,104.1,True,2010
+201001200NOH,"Wed, Jan 20, 2010",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,113,111,2,Home,93.0,True,2010
+201001250MEM,"Mon, Jan 25, 2010",MEM,ORL,Memphis Grizzlies,Orlando Magic,99,94,5,Home,91.5,True,2010
+201001270DET,"Wed, Jan 27, 2010",DET,MEM,Detroit Pistons,Memphis Grizzlies,93,99,-6,Home,84.3,True,2010
+201001290SAS,"Fri, Jan 29, 2010",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,104,97,7,Home,91.2,True,2010
+201001300MEM,"Sat, Jan 30, 2010",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,102,109,-7,Home,85.9,True,2010
+201002020CLE,"Tue, Feb 2, 2010",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,105,89,16,Home,97.4,True,2010
+201002060MIN,"Sat, Feb 6, 2010",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,109,102,7,Home,89.8,True,2010
+201002090MEM,"Tue, Feb 9, 2010",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,94,108,-14,Home,86.6,True,2010
+201002160MEM,"Tue, Feb 16, 2010",MEM,PHO,Memphis Grizzlies,Phoenix Suns,95,109,-14,Home,97.4,True,2010
+201002170TOR,"Wed, Feb 17, 2010",TOR,MEM,Toronto Raptors,Memphis Grizzlies,102,109,-7,Home,87.7,True,2010
+201002190MEM,"Fri, Feb 19, 2010",MEM,MIA,Memphis Grizzlies,Miami Heat,87,100,-13,Home,87.7,True,2010
+201002210NJN,"Sun, Feb 21, 2010",NJN,MEM,New Jersey Nets,Memphis Grizzlies,94,104,-10,Home,89.2,True,2010
+201002240WAS,"Wed, Feb 24, 2010",WAS,MEM,Washington Wizards,Memphis Grizzlies,94,99,-5,Home,87.5,True,2010
+201002260MEM,"Fri, Feb 26, 2010",MEM,CHA,Memphis Grizzlies,Charlotte Bobcats,89,93,-4,Home,88.6,True,2010
+201002270NYK,"Sat, Feb 27, 2010",NYK,MEM,New York Knicks,Memphis Grizzlies,109,120,-11,Home,92.8,True,2010
+201003030NOH,"Wed, Mar 3, 2010",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,100,104,-4,Home,97.0,True,2010
+201003040CHI,"Thu, Mar 4, 2010",CHI,MEM,Chicago Bulls,Memphis Grizzlies,96,105,-9,Home,91.8,True,2010
+201003060MEM,"Sat, Mar 6, 2010",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,92,102,-10,Home,87.9,True,2010
+201003080MEM,"Mon, Mar 8, 2010",MEM,NJN,Memphis Grizzlies,New Jersey Nets,107,101,6,Home,94.7,True,2010
+201003100BOS,"Wed, Mar 10, 2010",BOS,MEM,Boston Celtics,Memphis Grizzlies,91,111,-20,Home,92.0,True,2010
+201003120MEM,"Fri, Mar 12, 2010",MEM,NYK,Memphis Grizzlies,New York Knicks,119,112,7,Home,96.7,True,2010
+201003130MEM,"Sat, Mar 13, 2010",MEM,DEN,Memphis Grizzlies,Denver Nuggets,108,125,-17,Home,88.7,True,2010
+201003160MEM,"Tue, Mar 16, 2010",MEM,CHI,Memphis Grizzlies,Chicago Bulls,104,97,7,Home,98.0,True,2010
+201003220SAC,"Mon, Mar 22, 2010",SAC,MEM,Sacramento Kings,Memphis Grizzlies,85,102,-17,Home,91.6,True,2010
+201003280MIL,"Sun, Mar 28, 2010",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,108,103,5,Home,92.3,True,2010
+201004020MEM,"Fri, Apr 2, 2010",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,107,96,11,Home,96.3,True,2010
+201004040ORL,"Sun, Apr 4, 2010",ORL,MEM,Orlando Magic,Memphis Grizzlies,107,92,15,Home,92.5,True,2010
+201004090SAS,"Fri, Apr 9, 2010",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,99,107,-8,Home,91.8,True,2010
+201004100MEM,"Sat, Apr 10, 2010",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,101,120,-19,Home,94.3,True,2010
+201004120DEN,"Mon, Apr 12, 2010",DEN,MEM,Denver Nuggets,Memphis Grizzlies,123,101,22,Home,100.5,True,2010
+200910300NOH,"Fri, Oct 30, 2009",NOH,SAC,New Orleans Hornets,Sacramento Kings,97,92,5,Home,87.7,True,2010
+200910310SAS,"Sat, Oct 31, 2009",SAS,SAC,San Antonio Spurs,Sacramento Kings,113,94,19,Home,91.9,True,2010
+200911040SAC,"Wed, Nov 4, 2009",SAC,ATL,Sacramento Kings,Atlanta Hawks,105,113,-8,Home,93.7,True,2010
+200911170SAC,"Tue, Nov 17, 2009",SAC,CHI,Sacramento Kings,Chicago Bulls,87,101,-14,Home,93.1,True,2010
+200911250SAC,"Wed, Nov 25, 2009",SAC,NYK,Sacramento Kings,New York Knicks,111,97,14,Home,97.1,True,2010
+200911270SAC,"Fri, Nov 27, 2009",SAC,NJN,Sacramento Kings,New Jersey Nets,109,96,13,Home,96.8,True,2010
+200911290SAC,"Sun, Nov 29, 2009",SAC,NOH,Sacramento Kings,New Orleans Hornets,112,96,16,Home,89.1,True,2010
+200912020SAC,"Wed, Dec 2, 2009",SAC,IND,Sacramento Kings,Indiana Pacers,110,105,5,Home,97.2,True,2010
+200912050PHO,"Sat, Dec 5, 2009",PHO,SAC,Phoenix Suns,Sacramento Kings,115,107,8,Home,90.3,True,2010
+200912060SAC,"Sun, Dec 6, 2009",SAC,MIA,Sacramento Kings,Miami Heat,102,115,-13,Home,91.9,True,2010
+200912080NOH,"Tue, Dec 8, 2009",NOH,SAC,New Orleans Hornets,Sacramento Kings,96,94,2,Home,87.6,True,2010
+200912090SAS,"Wed, Dec 9, 2009",SAS,SAC,San Antonio Spurs,Sacramento Kings,118,106,12,Home,99.2,True,2010
+200912120SAC,"Sat, Dec 12, 2009",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,120,100,20,Home,102.3,True,2010
+200912160SAC,"Wed, Dec 16, 2009",SAC,WAS,Sacramento Kings,Washington Wizards,112,109,3,Home,96.1,True,2010
+200912180MIN,"Fri, Dec 18, 2009",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,112,96,16,Home,105.1,True,2010
+200912190MIL,"Sat, Dec 19, 2009",MIL,SAC,Milwaukee Bucks,Sacramento Kings,95,96,-1,Home,89.2,True,2010
+200912210CHI,"Mon, Dec 21, 2009",CHI,SAC,Chicago Bulls,Sacramento Kings,98,102,-4,Home,94.2,True,2010
+200912230SAC,"Wed, Dec 23, 2009",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,104,117,-13,Home,85.2,True,2010
+200912280SAC,"Mon, Dec 28, 2009",SAC,DEN,Sacramento Kings,Denver Nuggets,106,101,5,Home,96.4,True,2010
+200912300SAC,"Wed, Dec 30, 2009",SAC,PHI,Sacramento Kings,Philadelphia 76ers,106,116,-10,Home,93.9,True,2010
+201001050SAC,"Tue, Jan 5, 2010",SAC,PHO,Sacramento Kings,Phoenix Suns,109,113,-4,Home,100.9,True,2010
+201001090SAC,"Sat, Jan 9, 2010",SAC,DEN,Sacramento Kings,Denver Nuggets,102,100,2,Home,90.0,True,2010
+201001120SAC,"Tue, Jan 12, 2010",SAC,ORL,Sacramento Kings,Orlando Magic,88,109,-21,Home,92.5,True,2010
+201001150PHI,"Fri, Jan 15, 2010",PHI,SAC,Philadelphia 76ers,Sacramento Kings,98,86,12,Home,90.9,True,2010
+201001160WAS,"Sat, Jan 16, 2010",WAS,SAC,Washington Wizards,Sacramento Kings,96,86,10,Home,88.5,True,2010
+201001180CHA,"Mon, Jan 18, 2010",CHA,SAC,Charlotte Bobcats,Sacramento Kings,105,103,2,Home,95.1,True,2010
+201001200ATL,"Wed, Jan 20, 2010",ATL,SAC,Atlanta Hawks,Sacramento Kings,108,97,11,Home,91.6,True,2010
+201001220ORL,"Fri, Jan 22, 2010",ORL,SAC,Orlando Magic,Sacramento Kings,100,84,16,Home,100.5,True,2010
+201001230MIA,"Sat, Jan 23, 2010",MIA,SAC,Miami Heat,Sacramento Kings,115,84,31,Home,89.0,True,2010
+201001300SAC,"Sat, Jan 30, 2010",SAC,CHA,Sacramento Kings,Charlotte Bobcats,96,103,-7,Home,96.3,True,2010
+201002010DEN,"Mon, Feb 1, 2010",DEN,SAC,Denver Nuggets,Sacramento Kings,112,109,3,Home,94.2,True,2010
+201002030SAC,"Wed, Feb 3, 2010",SAC,SAS,Sacramento Kings,San Antonio Spurs,113,115,-2,Home,94.1,True,2010
+201002050SAC,"Fri, Feb 5, 2010",SAC,PHO,Sacramento Kings,Phoenix Suns,102,114,-12,Home,92.6,True,2010
+201002070TOR,"Sun, Feb 7, 2010",TOR,SAC,Toronto Raptors,Sacramento Kings,115,104,11,Home,94.5,True,2010
+201002090NYK,"Tue, Feb 9, 2010",NYK,SAC,New York Knicks,Sacramento Kings,114,118,-4,Home,94.0,True,2010
+201002100DET,"Wed, Feb 10, 2010",DET,SAC,Detroit Pistons,Sacramento Kings,97,103,-6,Home,90.5,True,2010
+201002160SAC,"Tue, Feb 16, 2010",SAC,BOS,Sacramento Kings,Boston Celtics,92,95,-3,Home,95.6,True,2010
+201002200LAC,"Sat, Feb 20, 2010",LAC,SAC,Los Angeles Clippers,Sacramento Kings,99,89,10,Home,98.5,True,2010
+201002210PHO,"Sun, Feb 21, 2010",PHO,SAC,Phoenix Suns,Sacramento Kings,104,88,16,Home,87.7,True,2010
+201002230SAC,"Tue, Feb 23, 2010",SAC,DET,Sacramento Kings,Detroit Pistons,89,101,-12,Home,86.0,True,2010
+201002280SAC,"Sun, Feb 28, 2010",SAC,LAC,Sacramento Kings,Los Angeles Clippers,97,92,5,Home,95.4,True,2010
+201003100SAC,"Wed, Mar 10, 2010",SAC,TOR,Sacramento Kings,Toronto Raptors,113,90,23,Home,94.0,True,2010
+201003140SAC,"Sun, Mar 14, 2010",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,114,100,14,Home,104.0,True,2010
+201003190SAC,"Fri, Mar 19, 2010",SAC,MIL,Sacramento Kings,Milwaukee Bucks,108,114,-6,Home,90.8,True,2010
+201003210LAC,"Sun, Mar 21, 2010",LAC,SAC,Los Angeles Clippers,Sacramento Kings,89,102,-13,Home,96.6,True,2010
+201003240NJN,"Wed, Mar 24, 2010",NJN,SAC,New Jersey Nets,Sacramento Kings,93,79,14,Home,88.2,True,2010
+201003260BOS,"Fri, Mar 26, 2010",BOS,SAC,Boston Celtics,Sacramento Kings,94,86,8,Home,94.0,True,2010
+201003280CLE,"Sun, Mar 28, 2010",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,97,90,7,Home,91.4,True,2010
+201003300IND,"Tue, Mar 30, 2010",IND,SAC,Indiana Pacers,Sacramento Kings,102,95,7,Home,96.3,True,2010
+201003310MIN,"Wed, Mar 31, 2010",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,108,99,9,Home,93.3,True,2010
+201004060SAC,"Tue, Apr 6, 2010",SAC,SAS,Sacramento Kings,San Antonio Spurs,86,95,-9,Home,88.6,True,2010
+201004080SAC,"Thu, Apr 8, 2010",SAC,LAC,Sacramento Kings,Los Angeles Clippers,116,94,22,Home,90.1,True,2010
+200910280LAC,"Wed, Oct 28, 2009",LAC,PHO,Los Angeles Clippers,Phoenix Suns,107,109,-2,Home,94.5,True,2010
+200911010PHO,"Sun, Nov 1, 2009",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,120,112,8,Home,97.2,True,2010
+200911030MIA,"Tue, Nov 3, 2009",MIA,PHO,Miami Heat,Phoenix Suns,96,104,-8,Home,93.3,True,2010
+200911040ORL,"Wed, Nov 4, 2009",ORL,PHO,Orlando Magic,Phoenix Suns,122,100,22,Home,97.4,True,2010
+200911060BOS,"Fri, Nov 6, 2009",BOS,PHO,Boston Celtics,Phoenix Suns,103,110,-7,Home,93.7,True,2010
+200911080WAS,"Sun, Nov 8, 2009",WAS,PHO,Washington Wizards,Phoenix Suns,90,102,-12,Home,99.1,True,2010
+200911090PHI,"Mon, Nov 9, 2009",PHI,PHO,Philadelphia 76ers,Phoenix Suns,115,119,-4,Home,93.4,True,2010
+200911110PHO,"Wed, Nov 11, 2009",PHO,NOH,Phoenix Suns,New Orleans Hornets,124,104,20,Home,92.3,True,2010
+200911150PHO,"Sun, Nov 15, 2009",PHO,TOR,Phoenix Suns,Toronto Raptors,101,100,1,Home,91.0,True,2010
+200911190NOH,"Thu, Nov 19, 2009",NOH,PHO,New Orleans Hornets,Phoenix Suns,110,103,7,Home,89.2,True,2010
+200911220PHO,"Sun, Nov 22, 2009",PHO,DET,Phoenix Suns,Detroit Pistons,117,91,26,Home,87.0,True,2010
+200911270MIN,"Fri, Nov 27, 2009",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,95,120,-25,Home,100.0,True,2010
+200911290TOR,"Sun, Nov 29, 2009",TOR,PHO,Toronto Raptors,Phoenix Suns,94,113,-19,Home,95.4,True,2010
+200912010NYK,"Tue, Dec 1, 2009",NYK,PHO,New York Knicks,Phoenix Suns,126,99,27,Home,94.6,True,2010
+200912020CLE,"Wed, Dec 2, 2009",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,107,90,17,Home,92.3,True,2010
+200912110PHO,"Fri, Dec 11, 2009",PHO,ORL,Phoenix Suns,Orlando Magic,106,103,3,Home,96.0,True,2010
+200912120DEN,"Sat, Dec 12, 2009",DEN,PHO,Denver Nuggets,Phoenix Suns,105,99,6,Home,92.1,True,2010
+200912150PHO,"Tue, Dec 15, 2009",PHO,SAS,Phoenix Suns,San Antonio Spurs,116,104,12,Home,93.7,True,2010
+200912190PHO,"Sat, Dec 19, 2009",PHO,WAS,Phoenix Suns,Washington Wizards,121,95,26,Home,98.3,True,2010
+200912210PHO,"Mon, Dec 21, 2009",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,91,109,-18,Home,94.4,True,2010
+200912250PHO,"Fri, Dec 25, 2009",PHO,LAC,Phoenix Suns,Los Angeles Clippers,124,93,31,Home,95.3,True,2010
+200912300PHO,"Wed, Dec 30, 2009",PHO,BOS,Phoenix Suns,Boston Celtics,116,98,18,Home,93.4,True,2010
+201001080PHO,"Fri, Jan 8, 2010",PHO,MIA,Phoenix Suns,Miami Heat,105,109,-4,Home,97.7,True,2010
+201001110PHO,"Mon, Jan 11, 2010",PHO,MIL,Phoenix Suns,Milwaukee Bucks,105,101,4,Home,102.3,True,2010
+201001130IND,"Wed, Jan 13, 2010",IND,PHO,Indiana Pacers,Phoenix Suns,122,114,8,Home,102.1,True,2010
+201001150ATL,"Fri, Jan 15, 2010",ATL,PHO,Atlanta Hawks,Phoenix Suns,102,101,1,Home,90.3,True,2010
+201001160CHA,"Sat, Jan 16, 2010",CHA,PHO,Charlotte Bobcats,Phoenix Suns,125,99,26,Home,96.3,True,2010
+201001200PHO,"Wed, Jan 20, 2010",PHO,NJN,Phoenix Suns,New Jersey Nets,118,94,24,Home,94.7,True,2010
+201001220PHO,"Fri, Jan 22, 2010",PHO,CHI,Phoenix Suns,Chicago Bulls,104,115,-11,Home,93.4,True,2010
+201001260PHO,"Tue, Jan 26, 2010",PHO,CHA,Phoenix Suns,Charlotte Bobcats,109,114,-5,Home,86.1,True,2010
+201002010NOH,"Mon, Feb 1, 2010",NOH,PHO,New Orleans Hornets,Phoenix Suns,100,109,-9,Home,95.1,True,2010
+201002030DEN,"Wed, Feb 3, 2010",DEN,PHO,Denver Nuggets,Phoenix Suns,97,109,-12,Home,92.2,True,2010
+201002190PHO,"Fri, Feb 19, 2010",PHO,ATL,Phoenix Suns,Atlanta Hawks,88,80,8,Home,89.3,True,2010
+201002240PHO,"Wed, Feb 24, 2010",PHO,PHI,Phoenix Suns,Philadelphia 76ers,106,95,11,Home,91.4,True,2010
+201002260PHO,"Fri, Feb 26, 2010",PHO,LAC,Phoenix Suns,Los Angeles Clippers,125,112,13,Home,94.8,True,2010
+201002280SAS,"Sun, Feb 28, 2010",SAS,PHO,San Antonio Spurs,Phoenix Suns,113,110,3,Home,95.1,True,2010
+201003010PHO,"Mon, Mar 1, 2010",PHO,DEN,Phoenix Suns,Denver Nuggets,101,85,16,Home,88.1,True,2010
+201003030LAC,"Wed, Mar 3, 2010",LAC,PHO,Los Angeles Clippers,Phoenix Suns,101,127,-26,Home,93.6,True,2010
+201003060PHO,"Sat, Mar 6, 2010",PHO,IND,Phoenix Suns,Indiana Pacers,113,105,8,Home,94.3,True,2010
+201003140PHO,"Sun, Mar 14, 2010",PHO,NOH,Phoenix Suns,New Orleans Hornets,120,106,14,Home,97.8,True,2010
+201003160PHO,"Tue, Mar 16, 2010",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,152,114,38,Home,99.6,True,2010
+201003260PHO,"Fri, Mar 26, 2010",PHO,NYK,Phoenix Suns,New York Knicks,132,96,36,Home,97.9,True,2010
+201003280MIN,"Sun, Mar 28, 2010",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,105,111,-6,Home,100.8,True,2010
+201003300CHI,"Tue, Mar 30, 2010",CHI,PHO,Chicago Bulls,Phoenix Suns,105,111,-6,Home,92.2,True,2010
+201003310NJN,"Wed, Mar 31, 2010",NJN,PHO,New Jersey Nets,Phoenix Suns,105,116,-11,Home,91.5,True,2010
+201004020DET,"Fri, Apr 2, 2010",DET,PHO,Detroit Pistons,Phoenix Suns,94,109,-15,Home,84.5,True,2010
+201004030MIL,"Sat, Apr 3, 2010",MIL,PHO,Milwaukee Bucks,Phoenix Suns,107,98,9,Home,88.0,True,2010
+201004070PHO,"Wed, Apr 7, 2010",PHO,SAS,Phoenix Suns,San Antonio Spurs,112,101,11,Home,89.9,True,2010
+201004130PHO,"Tue, Apr 13, 2010",PHO,DEN,Phoenix Suns,Denver Nuggets,123,101,22,Home,93.1,True,2010
+201005030PHO,"Mon, May 3, 2010",PHO,SAS,Phoenix Suns,San Antonio Spurs,111,102,9,Home,97.8,True,2010
+201005050PHO,"Wed, May 5, 2010",PHO,SAS,Phoenix Suns,San Antonio Spurs,110,102,8,Home,93.1,True,2010
+201005070SAS,"Fri, May 7, 2010",SAS,PHO,San Antonio Spurs,Phoenix Suns,96,110,-14,Home,90.7,True,2010
+201005090SAS,"Sun, May 9, 2010",SAS,PHO,San Antonio Spurs,Phoenix Suns,101,107,-6,Home,96.3,True,2010
+200910280MIN,"Wed, Oct 28, 2009",MIN,NJN,Minnesota Timberwolves,New Jersey Nets,95,93,2,Home,98.0,True,2010
+200910300MIN,"Fri, Oct 30, 2009",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,87,104,-17,Home,92.4,True,2010
+200911020LAC,"Mon, Nov 2, 2009",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,93,90,3,Home,89.6,True,2010
+200911040MIN,"Wed, Nov 4, 2009",MIN,BOS,Minnesota Timberwolves,Boston Celtics,90,92,-2,Home,90.1,True,2010
+200911060MIN,"Fri, Nov 6, 2009",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,72,87,-15,Home,91.1,True,2010
+200911230LAC,"Mon, Nov 23, 2009",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,91,87,4,Home,88.9,True,2010
+200911250MIN,"Wed, Nov 25, 2009",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,111,124,-13,Home,103.5,True,2010
+200911290DEN,"Sun, Nov 29, 2009",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,100,106,-6,Home,97.9,True,2010
+200912040NOH,"Fri, Dec 4, 2009",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,98,89,9,Home,93.3,True,2010
+200912080TOR,"Tue, Dec 8, 2009",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,94,88,6,Home,94.1,True,2010
+200912090MIN,"Wed, Dec 9, 2009",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,96,97,-1,Home,92.2,True,2010
+200912160MIN,"Wed, Dec 16, 2009",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,95,120,-25,Home,97.0,True,2010
+200912200BOS,"Sun, Dec 20, 2009",BOS,MIN,Boston Celtics,Minnesota Timberwolves,122,104,18,Home,97.6,True,2010
+200912220MIN,"Tue, Dec 22, 2009",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,87,112,-25,Home,92.8,True,2010
+200912230NJN,"Wed, Dec 23, 2009",NJN,MIN,New Jersey Nets,Minnesota Timberwolves,99,103,-4,Home,95.9,True,2010
+200912260MIN,"Sat, Dec 26, 2009",MIN,WAS,Minnesota Timberwolves,Washington Wizards,101,89,12,Home,97.8,True,2010
+200912290SAS,"Tue, Dec 29, 2009",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,117,99,18,Home,98.1,True,2010
+201001010MIN,"Fri, Jan 1, 2010",MIN,ORL,Minnesota Timberwolves,Orlando Magic,94,106,-12,Home,90.7,True,2010
+201001020IND,"Sat, Jan 2, 2010",IND,MIN,Indiana Pacers,Minnesota Timberwolves,122,111,11,Home,98.8,True,2010
+201001080MIN,"Fri, Jan 8, 2010",MIN,IND,Minnesota Timberwolves,Indiana Pacers,116,109,7,Home,102.5,True,2010
+201001090CHI,"Sat, Jan 9, 2010",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,110,96,14,Home,100.2,True,2010
+201001110DEN,"Mon, Jan 11, 2010",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,105,94,11,Home,97.4,True,2010
+201001180MIN,"Mon, Jan 18, 2010",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,108,103,5,Home,90.5,True,2010
+201001220MIN,"Fri, Jan 22, 2010",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,94,96,-2,Home,89.7,True,2010
+201001230MIL,"Sat, Jan 23, 2010",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,127,94,33,Home,98.7,True,2010
+201001260NYK,"Tue, Jan 26, 2010",NYK,MIN,New York Knicks,Minnesota Timberwolves,132,105,27,Home,102.9,True,2010
+201001270CLE,"Wed, Jan 27, 2010",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,109,95,14,Home,91.8,True,2010
+201001290MIN,"Fri, Jan 29, 2010",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,111,97,14,Home,97.8,True,2010
+201001310MIN,"Sun, Jan 31, 2010",MIN,NYK,Minnesota Timberwolves,New York Knicks,112,91,21,Home,96.3,True,2010
+201002090PHI,"Tue, Feb 9, 2010",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,119,97,22,Home,96.3,True,2010
+201002100MIN,"Wed, Feb 10, 2010",MIN,CHA,Minnesota Timberwolves,Charlotte Bobcats,92,93,-1,Home,86.3,True,2010
+201002160DET,"Tue, Feb 16, 2010",DET,MIN,Detroit Pistons,Minnesota Timberwolves,108,85,23,Home,93.5,True,2010
+201002170WAS,"Wed, Feb 17, 2010",WAS,MIN,Washington Wizards,Minnesota Timberwolves,108,99,9,Home,94.1,True,2010
+201002190MIN,"Fri, Feb 19, 2010",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,94,100,-6,Home,95.4,True,2010
+201002230MIA,"Tue, Feb 23, 2010",MIA,MIN,Miami Heat,Minnesota Timberwolves,88,91,-3,Home,92.5,True,2010
+201002240ATL,"Wed, Feb 24, 2010",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,98,92,6,Home,93.0,True,2010
+201003100MIN,"Wed, Mar 10, 2010",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,102,110,-8,Home,96.7,True,2010
+201003120MIN,"Fri, Mar 12, 2010",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,85,103,-18,Home,91.1,True,2010
+201003220MIN,"Mon, Mar 22, 2010",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,100,106,-6,Home,91.9,True,2010
+201003240CHA,"Wed, Mar 24, 2010",CHA,MIN,Charlotte Bobcats,Minnesota Timberwolves,108,95,13,Home,96.6,True,2010
+201003260ORL,"Fri, Mar 26, 2010",ORL,MIN,Orlando Magic,Minnesota Timberwolves,106,97,9,Home,93.0,True,2010
+201004030MIN,"Sat, Apr 3, 2010",MIN,MIA,Minnesota Timberwolves,Miami Heat,84,97,-13,Home,89.5,True,2010
+201004110NOH,"Sun, Apr 11, 2010",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,114,86,28,Home,98.3,True,2010
+201004120SAS,"Mon, Apr 12, 2010",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,133,111,22,Home,102.6,True,2010
+201004140MIN,"Wed, Apr 14, 2010",MIN,DET,Minnesota Timberwolves,Detroit Pistons,98,103,-5,Home,88.9,True,2010
+200910280ATL,"Wed, Oct 28, 2009",ATL,IND,Atlanta Hawks,Indiana Pacers,120,109,11,Home,100.8,True,2010
+200910300ATL,"Fri, Oct 30, 2009",ATL,WAS,Atlanta Hawks,Washington Wizards,100,89,11,Home,92.1,True,2010
+200911060CHA,"Fri, Nov 6, 2009",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,103,83,20,Home,91.5,True,2010
+200911070ATL,"Sat, Nov 7, 2009",ATL,DEN,Atlanta Hawks,Denver Nuggets,125,100,25,Home,95.1,True,2010
+200911110NYK,"Wed, Nov 11, 2009",NYK,ATL,New York Knicks,Atlanta Hawks,101,114,-13,Home,97.2,True,2010
+200911130BOS,"Fri, Nov 13, 2009",BOS,ATL,Boston Celtics,Atlanta Hawks,86,97,-11,Home,87.6,True,2010
+200911140ATL,"Sat, Nov 14, 2009",ATL,NOH,Atlanta Hawks,New Orleans Hornets,121,98,23,Home,97.1,True,2010
+200911180ATL,"Wed, Nov 18, 2009",ATL,MIA,Atlanta Hawks,Miami Heat,105,90,15,Home,89.5,True,2010
+200911210NOH,"Sat, Nov 21, 2009",NOH,ATL,New Orleans Hornets,Atlanta Hawks,96,88,8,Home,86.4,True,2010
+200911260ATL,"Thu, Nov 26, 2009",ATL,ORL,Atlanta Hawks,Orlando Magic,76,93,-17,Home,87.1,True,2010
+200911270PHI,"Fri, Nov 27, 2009",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,86,100,-14,Home,87.7,True,2010
+200911290DET,"Sun, Nov 29, 2009",DET,ATL,Detroit Pistons,Atlanta Hawks,94,88,6,Home,81.4,True,2010
+200912020ATL,"Wed, Dec 2, 2009",ATL,TOR,Atlanta Hawks,Toronto Raptors,146,115,31,Home,96.7,True,2010
+200912040ATL,"Fri, Dec 4, 2009",ATL,NYK,Atlanta Hawks,New York Knicks,107,114,-7,Home,89.2,True,2010
+200912090ATL,"Wed, Dec 9, 2009",ATL,CHI,Atlanta Hawks,Chicago Bulls,118,83,35,Home,94.4,True,2010
+200912110TOR,"Fri, Dec 11, 2009",TOR,ATL,Toronto Raptors,Atlanta Hawks,89,111,-22,Home,87.7,True,2010
+200912130ATL,"Sun, Dec 13, 2009",ATL,NJN,Atlanta Hawks,New Jersey Nets,130,107,23,Home,98.1,True,2010
+200912190CHI,"Sat, Dec 19, 2009",CHI,ATL,Chicago Bulls,Atlanta Hawks,101,98,3,Home,83.6,True,2010
+200912230DEN,"Wed, Dec 23, 2009",DEN,ATL,Denver Nuggets,Atlanta Hawks,124,104,20,Home,96.0,True,2010
+200912260IND,"Sat, Dec 26, 2009",IND,ATL,Indiana Pacers,Atlanta Hawks,98,110,-12,Home,96.9,True,2010
+200912290ATL,"Tue, Dec 29, 2009",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,84,95,-11,Home,90.8,True,2010
+200912300CLE,"Wed, Dec 30, 2009",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,106,101,5,Home,89.2,True,2010
+201001010ATL,"Fri, Jan 1, 2010",ATL,NYK,Atlanta Hawks,New York Knicks,108,112,-4,Home,87.7,True,2010
+201001040MIA,"Mon, Jan 4, 2010",MIA,ATL,Miami Heat,Atlanta Hawks,92,75,17,Home,82.9,True,2010
+201001060ATL,"Wed, Jan 6, 2010",ATL,NJN,Atlanta Hawks,New Jersey Nets,119,89,30,Home,91.0,True,2010
+201001080ATL,"Fri, Jan 8, 2010",ATL,BOS,Atlanta Hawks,Boston Celtics,93,85,8,Home,86.3,True,2010
+201001090ORL,"Sat, Jan 9, 2010",ORL,ATL,Orlando Magic,Atlanta Hawks,113,81,32,Home,91.5,True,2010
+201001110BOS,"Mon, Jan 11, 2010",BOS,ATL,Boston Celtics,Atlanta Hawks,96,102,-6,Home,85.8,True,2010
+201001130ATL,"Wed, Jan 13, 2010",ATL,WAS,Atlanta Hawks,Washington Wizards,94,82,12,Home,84.1,True,2010
+201001220ATL,"Fri, Jan 22, 2010",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,103,89,14,Home,85.1,True,2010
+201001270SAS,"Wed, Jan 27, 2010",SAS,ATL,San Antonio Spurs,Atlanta Hawks,105,90,15,Home,91.3,True,2010
+201001290ATL,"Fri, Jan 29, 2010",ATL,BOS,Atlanta Hawks,Boston Celtics,100,91,9,Home,93.9,True,2010
+201001300ORL,"Sat, Jan 30, 2010",ORL,ATL,Orlando Magic,Atlanta Hawks,104,86,18,Home,89.3,True,2010
+201002030ATL,"Wed, Feb 3, 2010",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,103,97,6,Home,93.3,True,2010
+201002050ATL,"Fri, Feb 5, 2010",ATL,CHI,Atlanta Hawks,Chicago Bulls,91,81,10,Home,85.7,True,2010
+201002100ATL,"Wed, Feb 10, 2010",ATL,MIA,Atlanta Hawks,Miami Heat,76,94,-18,Home,81.1,True,2010
+201002170LAC,"Wed, Feb 17, 2010",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,92,110,-18,Home,91.9,True,2010
+201002280ATL,"Sun, Feb 28, 2010",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,106,102,4,Home,88.9,True,2010
+201003010CHI,"Mon, Mar 1, 2010",CHI,ATL,Chicago Bulls,Atlanta Hawks,92,116,-24,Home,94.4,True,2010
+201003030ATL,"Wed, Mar 3, 2010",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,112,93,19,Home,95.7,True,2010
+201003060MIA,"Sat, Mar 6, 2010",MIA,ATL,Miami Heat,Atlanta Hawks,100,94,6,Home,84.9,True,2010
+201003080NYK,"Mon, Mar 8, 2010",NYK,ATL,New York Knicks,Atlanta Hawks,99,98,1,Home,93.2,True,2010
+201003110WAS,"Thu, Mar 11, 2010",WAS,ATL,Washington Wizards,Atlanta Hawks,99,105,-6,Home,88.1,True,2010
+201003130ATL,"Sat, Mar 13, 2010",ATL,DET,Atlanta Hawks,Detroit Pistons,112,99,13,Home,86.3,True,2010
+201003160NJN,"Tue, Mar 16, 2010",NJN,ATL,New Jersey Nets,Atlanta Hawks,84,108,-24,Home,90.2,True,2010
+201003170TOR,"Wed, Mar 17, 2010",TOR,ATL,Toronto Raptors,Atlanta Hawks,106,105,1,Home,93.9,True,2010
+201003190ATL,"Fri, Mar 19, 2010",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,93,92,1,Home,83.1,True,2010
+201003210ATL,"Sun, Mar 21, 2010",ATL,SAS,Atlanta Hawks,San Antonio Spurs,119,114,5,Home,86.7,True,2010
+201003220MIL,"Mon, Mar 22, 2010",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,98,95,3,Home,83.1,True,2010
+201003240ATL,"Wed, Mar 24, 2010",ATL,ORL,Atlanta Hawks,Orlando Magic,86,84,2,Home,89.1,True,2010
+201003260PHI,"Fri, Mar 26, 2010",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,105,98,7,Home,90.4,True,2010
+201003280ATL,"Sun, Mar 28, 2010",ATL,IND,Atlanta Hawks,Indiana Pacers,94,84,10,Home,87.9,True,2010
+201004020CLE,"Fri, Apr 2, 2010",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,93,88,5,Home,88.4,True,2010
+201004030ATL,"Sat, Apr 3, 2010",ATL,DET,Atlanta Hawks,Detroit Pistons,91,85,6,Home,79.9,True,2010
+201004060CHA,"Tue, Apr 6, 2010",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,109,100,9,Home,83.1,True,2010
+201004070DET,"Wed, Apr 7, 2010",DET,ATL,Detroit Pistons,Atlanta Hawks,90,88,2,Home,90.2,True,2010
+201004090ATL,"Fri, Apr 9, 2010",ATL,TOR,Atlanta Hawks,Toronto Raptors,107,101,6,Home,91.1,True,2010
+201004100WAS,"Sat, Apr 10, 2010",WAS,ATL,Washington Wizards,Atlanta Hawks,95,105,-10,Home,84.7,True,2010
+201004120MIL,"Mon, Apr 12, 2010",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,96,104,-8,Home,87.3,True,2010
+201004140ATL,"Wed, Apr 14, 2010",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,99,83,16,Home,92.3,True,2010
+201004170ATL,"Sat, Apr 17, 2010",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,102,92,10,Home,86.2,True,2010
+201004200ATL,"Tue, Apr 20, 2010",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,96,86,10,Home,86.4,True,2010
+201004240MIL,"Sat, Apr 24, 2010",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,107,89,18,Home,86.3,True,2010
+201004260MIL,"Mon, Apr 26, 2010",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,111,104,7,Home,85.7,True,2010
+201004280ATL,"Wed, Apr 28, 2010",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,87,91,-4,Home,85.0,True,2010
+201004300MIL,"Fri, Apr 30, 2010",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,69,83,-14,Home,83.7,True,2010
+201005020ATL,"Sun, May 2, 2010",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,95,74,21,Home,79.2,True,2010
+201005040ORL,"Tue, May 4, 2010",ORL,ATL,Orlando Magic,Atlanta Hawks,114,71,43,Home,91.4,True,2010
+201005060ORL,"Thu, May 6, 2010",ORL,ATL,Orlando Magic,Atlanta Hawks,112,98,14,Home,80.9,True,2010
+201005080ATL,"Sat, May 8, 2010",ATL,ORL,Atlanta Hawks,Orlando Magic,75,105,-30,Home,82.2,True,2010
+201005100ATL,"Mon, May 10, 2010",ATL,ORL,Atlanta Hawks,Orlando Magic,84,98,-14,Home,83.8,True,2010
+200910280SAS,"Wed, Oct 28, 2009",SAS,NOH,San Antonio Spurs,New Orleans Hornets,113,96,17,Home,91.3,True,2010
+200910290CHI,"Thu, Oct 29, 2009",CHI,SAS,Chicago Bulls,San Antonio Spurs,92,85,7,Home,90.2,True,2010
+200911090SAS,"Mon, Nov 9, 2009",SAS,TOR,San Antonio Spurs,Toronto Raptors,131,124,7,Home,92.2,True,2010
+200911210SAS,"Sat, Nov 21, 2009",SAS,WAS,San Antonio Spurs,Washington Wizards,106,84,22,Home,92.3,True,2010
+200911230SAS,"Mon, Nov 23, 2009",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,112,98,14,Home,88.2,True,2010
+200911290SAS,"Sun, Nov 29, 2009",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,97,89,8,Home,86.1,True,2010
+200912030SAS,"Thu, Dec 3, 2009",SAS,BOS,San Antonio Spurs,Boston Celtics,83,90,-7,Home,93.1,True,2010
+200912050SAS,"Sat, Dec 5, 2009",SAS,DEN,San Antonio Spurs,Denver Nuggets,99,106,-7,Home,94.2,True,2010
+200912110SAS,"Fri, Dec 11, 2009",SAS,CHA,San Antonio Spurs,Charlotte Bobcats,104,85,19,Home,95.4,True,2010
+200912130LAC,"Sun, Dec 13, 2009",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,90,115,-25,Home,89.6,True,2010
+200912190SAS,"Sat, Dec 19, 2009",SAS,IND,San Antonio Spurs,Indiana Pacers,100,99,1,Home,89.1,True,2010
+200912210SAS,"Mon, Dec 21, 2009",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,103,87,16,Home,84.0,True,2010
+200912260MIL,"Sat, Dec 26, 2009",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,97,112,-15,Home,90.3,True,2010
+200912270NYK,"Sun, Dec 27, 2009",NYK,SAS,New York Knicks,San Antonio Spurs,88,95,-7,Home,89.5,True,2010
+200912310SAS,"Thu, Dec 31, 2009",SAS,MIA,San Antonio Spurs,Miami Heat,108,78,30,Home,94.7,True,2010
+201001020WAS,"Sat, Jan 2, 2010",WAS,SAS,Washington Wizards,San Antonio Spurs,86,97,-11,Home,88.5,True,2010
+201001030TOR,"Sun, Jan 3, 2010",TOR,SAS,Toronto Raptors,San Antonio Spurs,91,86,5,Home,90.9,True,2010
+201001060SAS,"Wed, Jan 6, 2010",SAS,DET,San Antonio Spurs,Detroit Pistons,112,92,20,Home,88.3,True,2010
+201001100SAS,"Sun, Jan 10, 2010",SAS,NJN,San Antonio Spurs,New Jersey Nets,97,85,12,Home,87.6,True,2010
+201001150CHA,"Fri, Jan 15, 2010",CHA,SAS,Charlotte Bobcats,San Antonio Spurs,92,76,16,Home,85.5,True,2010
+201001180NOH,"Mon, Jan 18, 2010",NOH,SAS,New Orleans Hornets,San Antonio Spurs,90,97,-7,Home,86.5,True,2010
+201001250SAS,"Mon, Jan 25, 2010",SAS,CHI,San Antonio Spurs,Chicago Bulls,93,98,-5,Home,90.0,True,2010
+201001310SAS,"Sun, Jan 31, 2010",SAS,DEN,San Antonio Spurs,Denver Nuggets,89,103,-14,Home,91.3,True,2010
+201002060LAC,"Sat, Feb 6, 2010",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,81,98,-17,Home,94.8,True,2010
+201002110DEN,"Thu, Feb 11, 2010",DEN,SAS,Denver Nuggets,San Antonio Spurs,92,111,-19,Home,94.4,True,2010
+201002170IND,"Wed, Feb 17, 2010",IND,SAS,Indiana Pacers,San Antonio Spurs,87,90,-3,Home,95.1,True,2010
+201002190PHI,"Fri, Feb 19, 2010",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,106,94,12,Home,92.4,True,2010
+201002210DET,"Sun, Feb 21, 2010",DET,SAS,Detroit Pistons,San Antonio Spurs,109,101,8,Home,84.3,True,2010
+201003010NOH,"Mon, Mar 1, 2010",NOH,SAS,New Orleans Hornets,San Antonio Spurs,92,106,-14,Home,87.6,True,2010
+201003050SAS,"Fri, Mar 5, 2010",SAS,NOH,San Antonio Spurs,New Orleans Hornets,102,91,11,Home,86.0,True,2010
+201003080CLE,"Mon, Mar 8, 2010",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,97,95,2,Home,92.4,True,2010
+201003100SAS,"Wed, Mar 10, 2010",SAS,NYK,San Antonio Spurs,New York Knicks,97,87,10,Home,88.8,True,2010
+201003130SAS,"Sat, Mar 13, 2010",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,118,88,30,Home,93.7,True,2010
+201003160MIA,"Tue, Mar 16, 2010",MIA,SAS,Miami Heat,San Antonio Spurs,76,88,-12,Home,90.9,True,2010
+201003170ORL,"Wed, Mar 17, 2010",ORL,SAS,Orlando Magic,San Antonio Spurs,110,84,26,Home,87.6,True,2010
+201003260SAS,"Fri, Mar 26, 2010",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,102,97,5,Home,93.7,True,2010
+201003280BOS,"Sun, Mar 28, 2010",BOS,SAS,Boston Celtics,San Antonio Spurs,73,94,-21,Home,84.9,True,2010
+201003290NJN,"Mon, Mar 29, 2010",NJN,SAS,New Jersey Nets,San Antonio Spurs,90,84,6,Home,87.9,True,2010
+201004020SAS,"Fri, Apr 2, 2010",SAS,ORL,San Antonio Spurs,Orlando Magic,112,100,12,Home,90.9,True,2010
+201004100DEN,"Sat, Apr 10, 2010",DEN,SAS,Denver Nuggets,San Antonio Spurs,85,104,-19,Home,93.5,True,2010
+200911090LAC,"Mon, Nov 9, 2009",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,84,112,-28,Home,93.1,True,2010
+200911130LAC,"Fri, Nov 13, 2009",LAC,TOR,Los Angeles Clippers,Toronto Raptors,89,104,-15,Home,83.9,True,2010
+200911170NOH,"Tue, Nov 17, 2009",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,110,102,8,Home,92.8,True,2010
+200911200LAC,"Fri, Nov 20, 2009",LAC,DEN,Los Angeles Clippers,Denver Nuggets,106,99,7,Home,91.0,True,2010
+200911250IND,"Wed, Nov 25, 2009",IND,LAC,Indiana Pacers,Los Angeles Clippers,86,73,13,Home,92.2,True,2010
+200911270DET,"Fri, Nov 27, 2009",DET,LAC,Detroit Pistons,Los Angeles Clippers,96,104,-8,Home,85.2,True,2010
+200912050LAC,"Sat, Dec 5, 2009",LAC,IND,Los Angeles Clippers,Indiana Pacers,88,72,16,Home,94.6,True,2010
+200912080LAC,"Tue, Dec 8, 2009",LAC,ORL,Los Angeles Clippers,Orlando Magic,86,97,-11,Home,91.4,True,2010
+200912140LAC,"Mon, Dec 14, 2009",LAC,WAS,Los Angeles Clippers,Washington Wizards,97,95,2,Home,95.8,True,2010
+200912180NYK,"Fri, Dec 18, 2009",NYK,LAC,New York Knicks,Los Angeles Clippers,95,91,4,Home,86.4,True,2010
+200912190PHI,"Sat, Dec 19, 2009",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,107,112,-5,Home,86.3,True,2010
+200912270LAC,"Sun, Dec 27, 2009",LAC,BOS,Los Angeles Clippers,Boston Celtics,92,90,2,Home,87.2,True,2010
+200912310LAC,"Thu, Dec 31, 2009",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,104,88,16,Home,91.8,True,2010
+201001100LAC,"Sun, Jan 10, 2010",LAC,MIA,Los Angeles Clippers,Miami Heat,94,84,10,Home,90.4,True,2010
+201001130NOH,"Wed, Jan 13, 2010",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,108,94,14,Home,87.9,True,2010
+201001160LAC,"Sat, Jan 16, 2010",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,101,102,-1,Home,82.9,True,2010
+201001180LAC,"Mon, Jan 18, 2010",LAC,NJN,Los Angeles Clippers,New Jersey Nets,106,95,11,Home,88.8,True,2010
+201001200LAC,"Wed, Jan 20, 2010",LAC,CHI,Los Angeles Clippers,Chicago Bulls,104,97,7,Home,101.6,True,2010
+201001210DEN,"Thu, Jan 21, 2010",DEN,LAC,Denver Nuggets,Los Angeles Clippers,105,85,20,Home,92.2,True,2010
+201001240WAS,"Sun, Jan 24, 2010",WAS,LAC,Washington Wizards,Los Angeles Clippers,78,92,-14,Home,88.4,True,2010
+201001250BOS,"Mon, Jan 25, 2010",BOS,LAC,Boston Celtics,Los Angeles Clippers,95,89,6,Home,95.1,True,2010
+201001270NJN,"Wed, Jan 27, 2010",NJN,LAC,New Jersey Nets,Los Angeles Clippers,103,87,16,Home,91.0,True,2010
+201001310CLE,"Sun, Jan 31, 2010",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,114,89,25,Home,89.7,True,2010
+201002020CHI,"Tue, Feb 2, 2010",CHI,LAC,Chicago Bulls,Los Angeles Clippers,82,90,-8,Home,94.4,True,2010
+201002220LAC,"Mon, Feb 22, 2010",LAC,CHA,Los Angeles Clippers,Charlotte Bobcats,98,94,4,Home,89.4,True,2010
+201002240LAC,"Wed, Feb 24, 2010",LAC,DET,Los Angeles Clippers,Detroit Pistons,97,91,6,Home,84.6,True,2010
+201003090ORL,"Tue, Mar 9, 2010",ORL,LAC,Orlando Magic,Los Angeles Clippers,113,87,26,Home,90.9,True,2010
+201003100MIA,"Wed, Mar 10, 2010",MIA,LAC,Miami Heat,Los Angeles Clippers,108,97,11,Home,89.2,True,2010
+201003120CHA,"Fri, Mar 12, 2010",CHA,LAC,Charlotte Bobcats,Los Angeles Clippers,106,98,8,Home,93.0,True,2010
+201003150LAC,"Mon, Mar 15, 2010",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,100,108,-8,Home,93.6,True,2010
+201003170LAC,"Wed, Mar 17, 2010",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,101,93,8,Home,91.3,True,2010
+201003300MIL,"Tue, Mar 30, 2010",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,107,89,18,Home,87.5,True,2010
+201003310TOR,"Wed, Mar 31, 2010",TOR,LAC,Toronto Raptors,Los Angeles Clippers,114,92,22,Home,89.3,True,2010
+201004030DEN,"Sat, Apr 3, 2010",DEN,LAC,Denver Nuggets,Los Angeles Clippers,98,90,8,Home,91.4,True,2010
+201004040LAC,"Sun, Apr 4, 2010",LAC,NYK,Los Angeles Clippers,New York Knicks,107,113,-6,Home,99.3,True,2010
+200910270CLE,"Tue, Oct 27, 2009",CLE,BOS,Cleveland Cavaliers,Boston Celtics,89,95,-6,Home,88.6,True,2010
+200910280TOR,"Wed, Oct 28, 2009",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,101,91,10,Home,96.8,True,2010
+200910310CLE,"Sat, Oct 31, 2009",CLE,CHA,Cleveland Cavaliers,Charlotte Bobcats,90,79,11,Home,80.7,True,2010
+200911030CLE,"Tue, Nov 3, 2009",CLE,WAS,Cleveland Cavaliers,Washington Wizards,102,90,12,Home,87.4,True,2010
+200911050CLE,"Thu, Nov 5, 2009",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,85,86,-1,Home,91.6,True,2010
+200911060NYK,"Fri, Nov 6, 2009",NYK,CLE,New York Knicks,Cleveland Cavaliers,91,100,-9,Home,95.3,True,2010
+200911110ORL,"Wed, Nov 11, 2009",ORL,CLE,Orlando Magic,Cleveland Cavaliers,93,102,-9,Home,93.6,True,2010
+200911120MIA,"Thu, Nov 12, 2009",MIA,CLE,Miami Heat,Cleveland Cavaliers,104,111,-7,Home,94.4,True,2010
+200911180WAS,"Wed, Nov 18, 2009",WAS,CLE,Washington Wizards,Cleveland Cavaliers,108,91,17,Home,91.8,True,2010
+200911200IND,"Fri, Nov 20, 2009",IND,CLE,Indiana Pacers,Cleveland Cavaliers,95,105,-10,Home,92.2,True,2010
+200911210CLE,"Sat, Nov 21, 2009",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,97,91,6,Home,87.8,True,2010
+200911250DET,"Wed, Nov 25, 2009",DET,CLE,Detroit Pistons,Cleveland Cavaliers,88,98,-10,Home,84.3,True,2010
+200911270CHA,"Fri, Nov 27, 2009",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,94,87,7,Home,90.6,True,2010
+200912040CLE,"Fri, Dec 4, 2009",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,101,87,14,Home,83.6,True,2010
+200912060MIL,"Sun, Dec 6, 2009",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,86,101,-15,Home,95.6,True,2010
+200912150CLE,"Tue, Dec 15, 2009",CLE,NJN,Cleveland Cavaliers,New Jersey Nets,99,89,10,Home,82.2,True,2010
+200912160PHI,"Wed, Dec 16, 2009",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,101,108,-7,Home,86.9,True,2010
+200912180CLE,"Fri, Dec 18, 2009",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,85,82,3,Home,86.3,True,2010
+201001020NJN,"Sat, Jan 2, 2010",NJN,CLE,New Jersey Nets,Cleveland Cavaliers,86,94,-8,Home,88.9,True,2010
+201001030CLE,"Sun, Jan 3, 2010",CLE,CHA,Cleveland Cavaliers,Charlotte Bobcats,88,91,-3,Home,79.6,True,2010
+201001060CLE,"Wed, Jan 6, 2010",CLE,WAS,Cleveland Cavaliers,Washington Wizards,121,98,23,Home,92.2,True,2010
+201001080DEN,"Fri, Jan 8, 2010",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,99,97,2,Home,93.4,True,2010
+201001190CLE,"Tue, Jan 19, 2010",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,108,100,8,Home,93.7,True,2010
+201001250MIA,"Mon, Jan 25, 2010",MIA,CLE,Miami Heat,Cleveland Cavaliers,91,92,-1,Home,86.0,True,2010
+201001290IND,"Fri, Jan 29, 2010",IND,CLE,Indiana Pacers,Cleveland Cavaliers,73,94,-21,Home,98.0,True,2010
+201002040CLE,"Thu, Feb 4, 2010",CLE,MIA,Cleveland Cavaliers,Miami Heat,102,86,16,Home,87.4,True,2010
+201002060CLE,"Sat, Feb 6, 2010",CLE,NYK,Cleveland Cavaliers,New York Knicks,113,106,7,Home,89.6,True,2010
+201002090CLE,"Tue, Feb 9, 2010",CLE,NJN,Cleveland Cavaliers,New Jersey Nets,104,97,7,Home,81.6,True,2010
+201002110CLE,"Thu, Feb 11, 2010",CLE,ORL,Cleveland Cavaliers,Orlando Magic,115,106,9,Home,89.7,True,2010
+201002180CLE,"Thu, Feb 18, 2010",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,116,118,-2,Home,90.2,True,2010
+201002190CHA,"Fri, Feb 19, 2010",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,110,93,17,Home,90.4,True,2010
+201002210ORL,"Sun, Feb 21, 2010",ORL,CLE,Orlando Magic,Cleveland Cavaliers,101,95,6,Home,90.3,True,2010
+201002230CLE,"Tue, Feb 23, 2010",CLE,NOH,Cleveland Cavaliers,New Orleans Hornets,105,95,10,Home,90.0,True,2010
+201002250BOS,"Thu, Feb 25, 2010",BOS,CLE,Boston Celtics,Cleveland Cavaliers,88,108,-20,Home,90.0,True,2010
+201002260TOR,"Fri, Feb 26, 2010",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,118,126,-8,Home,87.7,True,2010
+201003010CLE,"Mon, Mar 1, 2010",CLE,NYK,Cleveland Cavaliers,New York Knicks,124,93,31,Home,103.8,True,2010
+201003030NJN,"Wed, Mar 3, 2010",NJN,CLE,New Jersey Nets,Cleveland Cavaliers,92,111,-19,Home,90.9,True,2010
+201003050CLE,"Fri, Mar 5, 2010",CLE,DET,Cleveland Cavaliers,Detroit Pistons,99,92,7,Home,90.0,True,2010
+201003060MIL,"Sat, Mar 6, 2010",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,92,85,7,Home,93.5,True,2010
+201003120PHI,"Fri, Mar 12, 2010",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,95,100,-5,Home,86.3,True,2010
+201003140CLE,"Sun, Mar 14, 2010",CLE,BOS,Cleveland Cavaliers,Boston Celtics,104,93,11,Home,90.1,True,2010
+201003160DET,"Tue, Mar 16, 2010",DET,CLE,Detroit Pistons,Cleveland Cavaliers,101,113,-12,Home,90.4,True,2010
+201003170CLE,"Wed, Mar 17, 2010",CLE,IND,Cleveland Cavaliers,Indiana Pacers,99,94,5,Home,91.7,True,2010
+201003190CHI,"Fri, Mar 19, 2010",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,85,92,-7,Home,91.7,True,2010
+201003210CLE,"Sun, Mar 21, 2010",CLE,DET,Cleveland Cavaliers,Detroit Pistons,104,79,25,Home,83.5,True,2010
+201003240NOH,"Wed, Mar 24, 2010",NOH,CLE,New Orleans Hornets,Cleveland Cavaliers,92,105,-13,Home,84.6,True,2010
+201003310CLE,"Wed, Mar 31, 2010",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,101,98,3,Home,95.3,True,2010
+201004040BOS,"Sun, Apr 4, 2010",BOS,CLE,Boston Celtics,Cleveland Cavaliers,117,113,4,Home,98.2,True,2010
+201004060CLE,"Tue, Apr 6, 2010",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,113,101,12,Home,93.7,True,2010
+201004080CHI,"Thu, Apr 8, 2010",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,109,108,1,Home,96.5,True,2010
+201004090CLE,"Fri, Apr 9, 2010",CLE,IND,Cleveland Cavaliers,Indiana Pacers,113,116,-3,Home,97.0,True,2010
+201004110CLE,"Sun, Apr 11, 2010",CLE,ORL,Cleveland Cavaliers,Orlando Magic,92,98,-6,Home,86.9,True,2010
+201004170CLE,"Sat, Apr 17, 2010",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,96,83,13,Home,95.7,True,2010
+201004190CLE,"Mon, Apr 19, 2010",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,112,102,10,Home,86.6,True,2010
+201004220CHI,"Thu, Apr 22, 2010",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,108,106,2,Home,93.3,True,2010
+201004250CHI,"Sun, Apr 25, 2010",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,98,121,-23,Home,97.2,True,2010
+201004270CLE,"Tue, Apr 27, 2010",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,96,94,2,Home,86.8,True,2010
+201005010CLE,"Sat, May 1, 2010",CLE,BOS,Cleveland Cavaliers,Boston Celtics,101,93,8,Home,90.1,True,2010
+201005030CLE,"Mon, May 3, 2010",CLE,BOS,Cleveland Cavaliers,Boston Celtics,86,104,-18,Home,94.2,True,2010
+201005070BOS,"Fri, May 7, 2010",BOS,CLE,Boston Celtics,Cleveland Cavaliers,95,124,-29,Home,86.2,True,2010
+201005090BOS,"Sun, May 9, 2010",BOS,CLE,Boston Celtics,Cleveland Cavaliers,97,87,10,Home,95.0,True,2010
+201005110CLE,"Tue, May 11, 2010",CLE,BOS,Cleveland Cavaliers,Boston Celtics,88,120,-32,Home,92.0,True,2010
+201005130BOS,"Thu, May 13, 2010",BOS,CLE,Boston Celtics,Cleveland Cavaliers,94,85,9,Home,96.5,True,2010
+200910280ORL,"Wed, Oct 28, 2009",ORL,PHI,Orlando Magic,Philadelphia 76ers,120,106,14,Home,93.9,True,2010
+200910300PHI,"Fri, Oct 30, 2009",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,99,86,13,Home,98.0,True,2010
+200910310NYK,"Sat, Oct 31, 2009",NYK,PHI,New York Knicks,Philadelphia 76ers,127,141,-14,Home,97.9,True,2010
+200911030PHI,"Tue, Nov 3, 2009",PHI,BOS,Philadelphia 76ers,Boston Celtics,74,105,-31,Home,88.9,True,2010
+200911060PHI,"Fri, Nov 6, 2009",PHI,NJN,Philadelphia 76ers,New Jersey Nets,97,94,3,Home,88.8,True,2010
+200911080DET,"Sun, Nov 8, 2009",DET,PHI,Detroit Pistons,Philadelphia 76ers,88,81,7,Home,83.9,True,2010
+200911110NJN,"Wed, Nov 11, 2009",NJN,PHI,New Jersey Nets,Philadelphia 76ers,79,82,-3,Home,87.1,True,2010
+200911140CHI,"Sat, Nov 14, 2009",CHI,PHI,Chicago Bulls,Philadelphia 76ers,94,88,6,Home,95.4,True,2010
+200911180PHI,"Wed, Nov 18, 2009",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,86,84,2,Home,84.6,True,2010
+200911240WAS,"Tue, Nov 24, 2009",WAS,PHI,Washington Wizards,Philadelphia 76ers,108,107,1,Home,91.0,True,2010
+200911250BOS,"Wed, Nov 25, 2009",BOS,PHI,Boston Celtics,Philadelphia 76ers,113,110,3,Home,92.5,True,2010
+200912050CHA,"Sat, Dec 5, 2009",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,106,105,1,Home,95.4,True,2010
+200912070PHI,"Mon, Dec 7, 2009",PHI,DEN,Philadelphia 76ers,Denver Nuggets,83,93,-10,Home,85.0,True,2010
+200912090PHI,"Wed, Dec 9, 2009",PHI,DET,Philadelphia 76ers,Detroit Pistons,86,90,-4,Home,78.9,True,2010
+200912180BOS,"Fri, Dec 18, 2009",BOS,PHI,Boston Celtics,Philadelphia 76ers,97,98,-1,Home,91.8,True,2010
+200912220WAS,"Tue, Dec 22, 2009",WAS,PHI,Washington Wizards,Philadelphia 76ers,105,98,7,Home,92.6,True,2010
+201001030DEN,"Sun, Jan 3, 2010",DEN,PHI,Denver Nuggets,Philadelphia 76ers,105,108,-3,Home,96.1,True,2010
+201001050PHI,"Tue, Jan 5, 2010",PHI,WAS,Philadelphia 76ers,Washington Wizards,97,104,-7,Home,93.6,True,2010
+201001080PHI,"Fri, Jan 8, 2010",PHI,TOR,Philadelphia 76ers,Toronto Raptors,106,108,-2,Home,97.6,True,2010
+201001090DET,"Sat, Jan 9, 2010",DET,PHI,Detroit Pistons,Philadelphia 76ers,94,104,-10,Home,90.0,True,2010
+201001110PHI,"Mon, Jan 11, 2010",PHI,NOH,Philadelphia 76ers,New Orleans Hornets,96,92,4,Home,88.0,True,2010
+201001130PHI,"Wed, Jan 13, 2010",PHI,NYK,Philadelphia 76ers,New York Knicks,92,93,-1,Home,86.2,True,2010
+201001230IND,"Sat, Jan 23, 2010",IND,PHI,Indiana Pacers,Philadelphia 76ers,97,107,-10,Home,98.8,True,2010
+201001250PHI,"Mon, Jan 25, 2010",PHI,IND,Philadelphia 76ers,Indiana Pacers,98,109,-11,Home,94.1,True,2010
+201001270MIL,"Wed, Jan 27, 2010",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,91,88,3,Home,86.1,True,2010
+201001310NJN,"Sun, Jan 31, 2010",NJN,PHI,New Jersey Nets,Philadelphia 76ers,79,83,-4,Home,91.1,True,2010
+201002030PHI,"Wed, Feb 3, 2010",PHI,CHI,Philadelphia 76ers,Chicago Bulls,106,103,3,Home,90.6,True,2010
+201002050NOH,"Fri, Feb 5, 2010",NOH,PHI,New Orleans Hornets,Philadelphia 76ers,94,101,-7,Home,90.0,True,2010
+201002100TOR,"Wed, Feb 10, 2010",TOR,PHI,Toronto Raptors,Philadelphia 76ers,104,93,11,Home,98.4,True,2010
+201002160PHI,"Tue, Feb 16, 2010",PHI,MIA,Philadelphia 76ers,Miami Heat,78,105,-27,Home,87.3,True,2010
+201002200CHI,"Sat, Feb 20, 2010",CHI,PHI,Chicago Bulls,Philadelphia 76ers,122,90,32,Home,92.9,True,2010
+201003010PHI,"Mon, Mar 1, 2010",PHI,ORL,Philadelphia 76ers,Orlando Magic,105,126,-21,Home,90.8,True,2010
+201003050PHI,"Fri, Mar 5, 2010",PHI,BOS,Philadelphia 76ers,Boston Celtics,86,96,-10,Home,87.8,True,2010
+201003070TOR,"Sun, Mar 7, 2010",TOR,PHI,Toronto Raptors,Philadelphia 76ers,101,114,-13,Home,91.6,True,2010
+201003090IND,"Tue, Mar 9, 2010",IND,PHI,Indiana Pacers,Philadelphia 76ers,107,96,11,Home,93.8,True,2010
+201003100PHI,"Wed, Mar 10, 2010",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,87,102,-15,Home,92.8,True,2010
+201003140MIA,"Sun, Mar 14, 2010",MIA,PHI,Miami Heat,Philadelphia 76ers,104,91,13,Home,89.0,True,2010
+201003150PHI,"Mon, Mar 15, 2010",PHI,NYK,Philadelphia 76ers,New York Knicks,84,94,-10,Home,85.9,True,2010
+201003170PHI,"Wed, Mar 17, 2010",PHI,NJN,Philadelphia 76ers,New Jersey Nets,108,97,11,Home,90.5,True,2010
+201003190NYK,"Fri, Mar 19, 2010",NYK,PHI,New York Knicks,Philadelphia 76ers,92,88,4,Home,85.7,True,2010
+201003200PHI,"Sat, Mar 20, 2010",PHI,CHI,Philadelphia 76ers,Chicago Bulls,84,98,-14,Home,93.7,True,2010
+201003220PHI,"Mon, Mar 22, 2010",PHI,ORL,Philadelphia 76ers,Orlando Magic,93,109,-16,Home,85.6,True,2010
+201003240MIL,"Wed, Mar 24, 2010",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,86,101,-15,Home,89.2,True,2010
+201003310CHA,"Wed, Mar 31, 2010",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,103,84,19,Home,95.5,True,2010
+201004030PHI,"Sat, Apr 3, 2010",PHI,TOR,Philadelphia 76ers,Toronto Raptors,123,128,-5,Home,89.8,True,2010
+201004060PHI,"Tue, Apr 6, 2010",PHI,DET,Philadelphia 76ers,Detroit Pistons,103,124,-21,Home,88.8,True,2010
+201004070MIA,"Wed, Apr 7, 2010",MIA,PHI,Miami Heat,Philadelphia 76ers,99,95,4,Home,92.8,True,2010
+201004090PHI,"Fri, Apr 9, 2010",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,90,95,-5,Home,90.4,True,2010
+201004120PHI,"Mon, Apr 12, 2010",PHI,MIA,Philadelphia 76ers,Miami Heat,105,107,-2,Home,85.7,True,2010
+201004140ORL,"Wed, Apr 14, 2010",ORL,PHI,Orlando Magic,Philadelphia 76ers,125,111,14,Home,91.8,True,2010
+200911010TOR,"Sun, Nov 1, 2009",TOR,ORL,Toronto Raptors,Orlando Magic,116,125,-9,Home,91.6,True,2010
+200911040TOR,"Wed, Nov 4, 2009",TOR,DET,Toronto Raptors,Detroit Pistons,110,99,11,Home,89.2,True,2010
+200911060NOH,"Fri, Nov 6, 2009",NOH,TOR,New Orleans Hornets,Toronto Raptors,90,107,-17,Home,86.8,True,2010
+200911110TOR,"Wed, Nov 11, 2009",TOR,CHI,Toronto Raptors,Chicago Bulls,99,89,10,Home,95.2,True,2010
+200911170DEN,"Tue, Nov 17, 2009",DEN,TOR,Denver Nuggets,Toronto Raptors,130,112,18,Home,98.4,True,2010
+200911200TOR,"Fri, Nov 20, 2009",TOR,MIA,Toronto Raptors,Miami Heat,120,113,7,Home,96.1,True,2010
+200911220TOR,"Sun, Nov 22, 2009",TOR,ORL,Toronto Raptors,Orlando Magic,96,104,-8,Home,88.5,True,2010
+200911240TOR,"Tue, Nov 24, 2009",TOR,IND,Toronto Raptors,Indiana Pacers,123,112,11,Home,98.8,True,2010
+200911250CHA,"Wed, Nov 25, 2009",CHA,TOR,Charlotte Bobcats,Toronto Raptors,116,81,35,Home,95.9,True,2010
+200911270BOS,"Fri, Nov 27, 2009",BOS,TOR,Boston Celtics,Toronto Raptors,116,103,13,Home,92.6,True,2010
+200912010TOR,"Tue, Dec 1, 2009",TOR,WAS,Toronto Raptors,Washington Wizards,102,106,-4,Home,96.0,True,2010
+200912040WAS,"Fri, Dec 4, 2009",WAS,TOR,Washington Wizards,Toronto Raptors,107,109,-2,Home,88.9,True,2010
+200912050CHI,"Sat, Dec 5, 2009",CHI,TOR,Chicago Bulls,Toronto Raptors,78,110,-32,Home,86.9,True,2010
+200912090MIL,"Wed, Dec 9, 2009",MIL,TOR,Milwaukee Bucks,Toronto Raptors,117,95,22,Home,90.7,True,2010
+200912150MIA,"Tue, Dec 15, 2009",MIA,TOR,Miami Heat,Toronto Raptors,115,95,20,Home,95.0,True,2010
+200912160ORL,"Wed, Dec 16, 2009",ORL,TOR,Orlando Magic,Toronto Raptors,118,99,19,Home,90.8,True,2010
+200912180TOR,"Fri, Dec 18, 2009",TOR,NJN,Toronto Raptors,New Jersey Nets,118,95,23,Home,92.1,True,2010
+200912200TOR,"Sun, Dec 20, 2009",TOR,NOH,Toronto Raptors,New Orleans Hornets,98,92,6,Home,95.5,True,2010
+200912230DET,"Wed, Dec 23, 2009",DET,TOR,Detroit Pistons,Toronto Raptors,64,94,-30,Home,79.3,True,2010
+200912270TOR,"Sun, Dec 27, 2009",TOR,DET,Toronto Raptors,Detroit Pistons,102,95,7,Home,88.2,True,2010
+200912300TOR,"Wed, Dec 30, 2009",TOR,CHA,Toronto Raptors,Charlotte Bobcats,107,103,4,Home,91.1,True,2010
+201001020BOS,"Sat, Jan 2, 2010",BOS,TOR,Boston Celtics,Toronto Raptors,103,96,7,Home,89.1,True,2010
+201001060ORL,"Wed, Jan 6, 2010",ORL,TOR,Orlando Magic,Toronto Raptors,103,108,-5,Home,92.8,True,2010
+201001100TOR,"Sun, Jan 10, 2010",TOR,BOS,Toronto Raptors,Boston Celtics,107,114,-7,Home,92.1,True,2010
+201001110IND,"Mon, Jan 11, 2010",IND,TOR,Indiana Pacers,Toronto Raptors,105,101,4,Home,100.6,True,2010
+201001150NYK,"Fri, Jan 15, 2010",NYK,TOR,New York Knicks,Toronto Raptors,104,112,-8,Home,95.3,True,2010
+201001200MIL,"Wed, Jan 20, 2010",MIL,TOR,Milwaukee Bucks,Toronto Raptors,113,107,6,Home,90.1,True,2010
+201001220TOR,"Fri, Jan 22, 2010",TOR,MIL,Toronto Raptors,Milwaukee Bucks,101,96,5,Home,93.4,True,2010
+201001270TOR,"Wed, Jan 27, 2010",TOR,MIA,Toronto Raptors,Miami Heat,111,103,8,Home,91.7,True,2010
+201001280NYK,"Thu, Jan 28, 2010",NYK,TOR,New York Knicks,Toronto Raptors,104,106,-2,Home,100.7,True,2010
+201001310TOR,"Sun, Jan 31, 2010",TOR,IND,Toronto Raptors,Indiana Pacers,117,102,15,Home,95.4,True,2010
+201002020IND,"Tue, Feb 2, 2010",IND,TOR,Indiana Pacers,Toronto Raptors,130,115,15,Home,104.6,True,2010
+201002030TOR,"Wed, Feb 3, 2010",TOR,NJN,Toronto Raptors,New Jersey Nets,108,99,9,Home,91.2,True,2010
+201002190NJN,"Fri, Feb 19, 2010",NJN,TOR,New Jersey Nets,Toronto Raptors,89,106,-17,Home,92.5,True,2010
+201002200TOR,"Sat, Feb 20, 2010",TOR,WAS,Toronto Raptors,Washington Wizards,109,104,5,Home,86.0,True,2010
+201003050TOR,"Fri, Mar 5, 2010",TOR,NYK,Toronto Raptors,New York Knicks,102,96,6,Home,92.0,True,2010
+201003200NJN,"Sat, Mar 20, 2010",NJN,TOR,New Jersey Nets,Toronto Raptors,90,100,-10,Home,89.6,True,2010
+201003260TOR,"Fri, Mar 26, 2010",TOR,DEN,Toronto Raptors,Denver Nuggets,96,97,-1,Home,95.3,True,2010
+201003280MIA,"Sun, Mar 28, 2010",MIA,TOR,Miami Heat,Toronto Raptors,97,94,3,Home,86.9,True,2010
+201003290CHA,"Mon, Mar 29, 2010",CHA,TOR,Charlotte Bobcats,Toronto Raptors,101,103,-2,Home,87.9,True,2010
+201004070TOR,"Wed, Apr 7, 2010",TOR,BOS,Toronto Raptors,Boston Celtics,104,115,-11,Home,89.4,True,2010
+201004110TOR,"Sun, Apr 11, 2010",TOR,CHI,Toronto Raptors,Chicago Bulls,88,104,-16,Home,93.8,True,2010
+201004120DET,"Mon, Apr 12, 2010",DET,TOR,Detroit Pistons,Toronto Raptors,97,111,-14,Home,87.4,True,2010
+201004140TOR,"Wed, Apr 14, 2010",TOR,NYK,Toronto Raptors,New York Knicks,131,113,18,Home,95.3,True,2010
+200910310MIL,"Sat, Oct 31, 2009",MIL,DET,Milwaukee Bucks,Detroit Pistons,96,85,11,Home,87.8,True,2010
+200911030DET,"Tue, Nov 3, 2009",DET,ORL,Detroit Pistons,Orlando Magic,85,80,5,Home,87.1,True,2010
+200911060ORL,"Fri, Nov 6, 2009",ORL,DET,Orlando Magic,Detroit Pistons,110,103,7,Home,91.2,True,2010
+200911110DET,"Wed, Nov 11, 2009",DET,CHA,Detroit Pistons,Charlotte Bobcats,98,75,23,Home,81.9,True,2010
+200911140WAS,"Sat, Nov 14, 2009",WAS,DET,Washington Wizards,Detroit Pistons,103,106,-3,Home,90.4,True,2010
+200912020CHI,"Wed, Dec 2, 2009",CHI,DET,Chicago Bulls,Detroit Pistons,92,85,7,Home,85.6,True,2010
+200912040DET,"Fri, Dec 4, 2009",DET,MIL,Detroit Pistons,Milwaukee Bucks,105,96,9,Home,96.3,True,2010
+200912060DET,"Sun, Dec 6, 2009",DET,WAS,Detroit Pistons,Washington Wizards,98,94,4,Home,89.8,True,2010
+200912100DET,"Thu, Dec 10, 2009",DET,DEN,Detroit Pistons,Denver Nuggets,101,99,2,Home,89.3,True,2010
+200912160NOH,"Wed, Dec 16, 2009",NOH,DET,New Orleans Hornets,Detroit Pistons,95,87,8,Home,85.6,True,2010
+200912220CHA,"Tue, Dec 22, 2009",CHA,DET,Charlotte Bobcats,Detroit Pistons,88,76,12,Home,90.8,True,2010
+200912290DET,"Tue, Dec 29, 2009",DET,NYK,Detroit Pistons,New York Knicks,87,104,-17,Home,83.8,True,2010
+200912310DET,"Thu, Dec 31, 2009",DET,CHI,Detroit Pistons,Chicago Bulls,87,98,-11,Home,91.2,True,2010
+201001110CHI,"Mon, Jan 11, 2010",CHI,DET,Chicago Bulls,Detroit Pistons,120,87,33,Home,92.1,True,2010
+201001120WAS,"Tue, Jan 12, 2010",WAS,DET,Washington Wizards,Detroit Pistons,90,99,-9,Home,83.8,True,2010
+201001150DET,"Fri, Jan 15, 2010",DET,NOH,Detroit Pistons,New Orleans Hornets,110,104,6,Home,90.3,True,2010
+201001160DET,"Sat, Jan 16, 2010",DET,NYK,Detroit Pistons,New York Knicks,94,90,4,Home,91.2,True,2010
+201001180NYK,"Mon, Jan 18, 2010",NYK,DET,New York Knicks,Detroit Pistons,99,91,8,Home,92.3,True,2010
+201001200DET,"Wed, Jan 20, 2010",DET,BOS,Detroit Pistons,Boston Celtics,92,86,6,Home,93.0,True,2010
+201001220DET,"Fri, Jan 22, 2010",DET,IND,Detroit Pistons,Indiana Pacers,93,105,-12,Home,93.5,True,2010
+201001290DET,"Fri, Jan 29, 2010",DET,MIA,Detroit Pistons,Miami Heat,65,92,-27,Home,77.3,True,2010
+201001310DET,"Sun, Jan 31, 2010",DET,ORL,Detroit Pistons,Orlando Magic,86,91,-5,Home,86.6,True,2010
+201002020NJN,"Tue, Feb 2, 2010",NJN,DET,New Jersey Nets,Detroit Pistons,93,97,-4,Home,88.2,True,2010
+201002050IND,"Fri, Feb 5, 2010",IND,DET,Indiana Pacers,Detroit Pistons,107,83,24,Home,89.9,True,2010
+201002060DET,"Sat, Feb 6, 2010",DET,NJN,Detroit Pistons,New Jersey Nets,99,92,7,Home,83.1,True,2010
+201002090MIL,"Tue, Feb 9, 2010",MIL,DET,Milwaukee Bucks,Detroit Pistons,81,93,-12,Home,81.1,True,2010
+201002170ORL,"Wed, Feb 17, 2010",ORL,DET,Orlando Magic,Detroit Pistons,116,91,25,Home,92.9,True,2010
+201002190DET,"Fri, Feb 19, 2010",DET,MIL,Detroit Pistons,Milwaukee Bucks,85,91,-6,Home,88.1,True,2010
+201002260DEN,"Fri, Feb 26, 2010",DEN,DET,Denver Nuggets,Detroit Pistons,107,102,5,Home,94.3,True,2010
+201003020DET,"Tue, Mar 2, 2010",DET,BOS,Detroit Pistons,Boston Celtics,100,105,-5,Home,90.2,True,2010
+201003030NYK,"Wed, Mar 3, 2010",NYK,DET,New York Knicks,Detroit Pistons,128,104,24,Home,94.9,True,2010
+201003120DET,"Fri, Mar 12, 2010",DET,WAS,Detroit Pistons,Washington Wizards,101,87,14,Home,89.1,True,2010
+201003150BOS,"Mon, Mar 15, 2010",BOS,DET,Boston Celtics,Detroit Pistons,119,93,26,Home,88.2,True,2010
+201003190IND,"Fri, Mar 19, 2010",IND,DET,Indiana Pacers,Detroit Pistons,106,102,4,Home,88.0,True,2010
+201003230DET,"Tue, Mar 23, 2010",DET,IND,Detroit Pistons,Indiana Pacers,83,98,-15,Home,91.4,True,2010
+201003260NJN,"Fri, Mar 26, 2010",NJN,DET,New Jersey Nets,Detroit Pistons,118,110,8,Home,90.1,True,2010
+201003280DET,"Sun, Mar 28, 2010",DET,CHI,Detroit Pistons,Chicago Bulls,103,110,-7,Home,87.7,True,2010
+201003310DET,"Wed, Mar 31, 2010",DET,MIA,Detroit Pistons,Miami Heat,81,98,-17,Home,81.9,True,2010
+201004090MIA,"Fri, Apr 9, 2010",MIA,DET,Miami Heat,Detroit Pistons,99,106,-7,Home,81.2,True,2010
+201004100CHA,"Sat, Apr 10, 2010",CHA,DET,Charlotte Bobcats,Detroit Pistons,99,95,4,Home,84.2,True,2010
+200911030IND,"Tue, Nov 3, 2009",IND,DEN,Indiana Pacers,Denver Nuggets,93,111,-18,Home,99.7,True,2010
+200911040NJN,"Wed, Nov 4, 2009",NJN,DEN,New Jersey Nets,Denver Nuggets,94,122,-28,Home,98.5,True,2010
+200911060MIA,"Fri, Nov 6, 2009",MIA,DEN,Miami Heat,Denver Nuggets,96,88,8,Home,89.3,True,2010
+200911100CHI,"Tue, Nov 10, 2009",CHI,DEN,Chicago Bulls,Denver Nuggets,89,90,-1,Home,89.9,True,2010
+200911110MIL,"Wed, Nov 11, 2009",MIL,DEN,Milwaukee Bucks,Denver Nuggets,108,102,6,Home,96.5,True,2010
+200911210DEN,"Sat, Nov 21, 2009",DEN,CHI,Denver Nuggets,Chicago Bulls,112,93,19,Home,96.1,True,2010
+200911240DEN,"Tue, Nov 24, 2009",DEN,NJN,Denver Nuggets,New Jersey Nets,101,87,14,Home,103.0,True,2010
+200911270DEN,"Fri, Nov 27, 2009",DEN,NYK,Denver Nuggets,New York Knicks,128,125,3,Home,95.8,True,2010
+200912030DEN,"Thu, Dec 3, 2009",DEN,MIA,Denver Nuggets,Miami Heat,114,96,18,Home,91.3,True,2010
+200912080CHA,"Tue, Dec 8, 2009",CHA,DEN,Charlotte Bobcats,Denver Nuggets,107,95,12,Home,95.3,True,2010
+200912180NOH,"Fri, Dec 18, 2009",NOH,DEN,New Orleans Hornets,Denver Nuggets,98,92,6,Home,88.9,True,2010
+201001130DEN,"Wed, Jan 13, 2010",DEN,ORL,Denver Nuggets,Orlando Magic,115,97,18,Home,95.8,True,2010
+201001230DEN,"Sat, Jan 23, 2010",DEN,NOH,Denver Nuggets,New Orleans Hornets,116,110,6,Home,89.7,True,2010
+201001250DEN,"Mon, Jan 25, 2010",DEN,CHA,Denver Nuggets,Charlotte Bobcats,104,93,11,Home,89.5,True,2010
+201002190WAS,"Fri, Feb 19, 2010",WAS,DEN,Washington Wizards,Denver Nuggets,107,97,10,Home,90.0,True,2010
+201002210DEN,"Sun, Feb 21, 2010",DEN,BOS,Denver Nuggets,Boston Celtics,114,105,9,Home,96.7,True,2010
+201003050DEN,"Fri, Mar 5, 2010",DEN,IND,Denver Nuggets,Indiana Pacers,122,114,8,Home,107.1,True,2010
+201003120NOH,"Fri, Mar 12, 2010",NOH,DEN,New Orleans Hornets,Denver Nuggets,95,102,-7,Home,98.0,True,2010
+201003160DEN,"Tue, Mar 16, 2010",DEN,WAS,Denver Nuggets,Washington Wizards,97,87,10,Home,88.7,True,2010
+201003180DEN,"Thu, Mar 18, 2010",DEN,NOH,Denver Nuggets,New Orleans Hornets,93,80,13,Home,89.7,True,2010
+201003200DEN,"Sat, Mar 20, 2010",DEN,MIL,Denver Nuggets,Milwaukee Bucks,97,102,-5,Home,89.6,True,2010
+201003230NYK,"Tue, Mar 23, 2010",NYK,DEN,New York Knicks,Denver Nuggets,109,104,5,Home,90.9,True,2010
+201003240BOS,"Wed, Mar 24, 2010",BOS,DEN,Boston Celtics,Denver Nuggets,113,99,14,Home,93.0,True,2010
+201003280ORL,"Sun, Mar 28, 2010",ORL,DEN,Orlando Magic,Denver Nuggets,103,97,6,Home,84.7,True,2010
+200910300NJN,"Fri, Oct 30, 2009",NJN,ORL,New Jersey Nets,Orlando Magic,85,95,-10,Home,89.5,True,2010
+200911100CHA,"Tue, Nov 10, 2009",CHA,ORL,Charlotte Bobcats,Orlando Magic,81,93,-12,Home,88.7,True,2010
+200911130ORL,"Fri, Nov 13, 2009",ORL,NJN,Orlando Magic,New Jersey Nets,88,72,16,Home,91.7,True,2010
+200911160ORL,"Mon, Nov 16, 2009",ORL,CHA,Orlando Magic,Charlotte Bobcats,97,91,6,Home,90.4,True,2010
+200911200BOS,"Fri, Nov 20, 2009",BOS,ORL,Boston Celtics,Orlando Magic,78,83,-5,Home,90.3,True,2010
+200911250ORL,"Wed, Nov 25, 2009",ORL,MIA,Orlando Magic,Miami Heat,98,99,-1,Home,90.8,True,2010
+200911280MIL,"Sat, Nov 28, 2009",MIL,ORL,Milwaukee Bucks,Orlando Magic,98,100,-2,Home,88.9,True,2010
+200911290NYK,"Sun, Nov 29, 2009",NYK,ORL,New York Knicks,Orlando Magic,102,114,-12,Home,93.8,True,2010
+200912020ORL,"Wed, Dec 2, 2009",ORL,NYK,Orlando Magic,New York Knicks,118,104,14,Home,96.1,True,2010
+200912140ORL,"Mon, Dec 14, 2009",ORL,IND,Orlando Magic,Indiana Pacers,106,98,8,Home,93.6,True,2010
+200912170MIA,"Thu, Dec 17, 2009",MIA,ORL,Miami Heat,Orlando Magic,104,86,18,Home,87.6,True,2010
+200912250ORL,"Fri, Dec 25, 2009",ORL,BOS,Orlando Magic,Boston Celtics,77,86,-9,Home,94.5,True,2010
+200912300ORL,"Wed, Dec 30, 2009",ORL,MIL,Orlando Magic,Milwaukee Bucks,117,92,25,Home,91.5,True,2010
+201001020CHI,"Sat, Jan 2, 2010",CHI,ORL,Chicago Bulls,Orlando Magic,101,93,8,Home,92.6,True,2010
+201001050IND,"Tue, Jan 5, 2010",IND,ORL,Indiana Pacers,Orlando Magic,97,90,7,Home,96.6,True,2010
+201001080WAS,"Fri, Jan 8, 2010",WAS,ORL,Washington Wizards,Orlando Magic,104,97,7,Home,93.1,True,2010
+201001200ORL,"Wed, Jan 20, 2010",ORL,IND,Orlando Magic,Indiana Pacers,109,98,11,Home,98.9,True,2010
+201001230CHA,"Sat, Jan 23, 2010",CHA,ORL,Charlotte Bobcats,Orlando Magic,95,106,-11,Home,87.7,True,2010
+201001280ORL,"Thu, Jan 28, 2010",ORL,BOS,Orlando Magic,Boston Celtics,96,94,2,Home,88.0,True,2010
+201002020ORL,"Tue, Feb 2, 2010",ORL,MIL,Orlando Magic,Milwaukee Bucks,99,82,17,Home,91.6,True,2010
+201002050ORL,"Fri, Feb 5, 2010",ORL,WAS,Orlando Magic,Washington Wizards,91,92,-1,Home,96.0,True,2010
+201002070BOS,"Sun, Feb 7, 2010",BOS,ORL,Boston Celtics,Orlando Magic,89,96,-7,Home,87.2,True,2010
+201002080ORL,"Mon, Feb 8, 2010",ORL,NOH,Orlando Magic,New Orleans Hornets,123,117,6,Home,99.8,True,2010
+201002100CHI,"Wed, Feb 10, 2010",CHI,ORL,Chicago Bulls,Orlando Magic,87,107,-20,Home,97.4,True,2010
+201002260NOH,"Fri, Feb 26, 2010",NOH,ORL,New Orleans Hornets,Orlando Magic,100,93,7,Home,88.8,True,2010
+201002280ORL,"Sun, Feb 28, 2010",ORL,MIA,Orlando Magic,Miami Heat,96,80,16,Home,81.5,True,2010
+201003050NJN,"Fri, Mar 5, 2010",NJN,ORL,New Jersey Nets,Orlando Magic,87,97,-10,Home,89.4,True,2010
+201003110ORL,"Thu, Mar 11, 2010",ORL,CHI,Orlando Magic,Chicago Bulls,111,82,29,Home,92.5,True,2010
+201003130WAS,"Sat, Mar 13, 2010",WAS,ORL,Washington Wizards,Orlando Magic,95,109,-14,Home,88.0,True,2010
+201003140ORL,"Sun, Mar 14, 2010",ORL,CHA,Orlando Magic,Charlotte Bobcats,89,96,-7,Home,85.6,True,2010
+201003180MIA,"Thu, Mar 18, 2010",MIA,ORL,Miami Heat,Orlando Magic,102,108,-6,Home,85.8,True,2010
+201004070ORL,"Wed, Apr 7, 2010",ORL,WAS,Orlando Magic,Washington Wizards,121,94,27,Home,89.1,True,2010
+201004090ORL,"Fri, Apr 9, 2010",ORL,NYK,Orlando Magic,New York Knicks,118,103,15,Home,85.0,True,2010
+201004120IND,"Mon, Apr 12, 2010",IND,ORL,Indiana Pacers,Orlando Magic,98,118,-20,Home,101.7,True,2010
+201004180ORL,"Sun, Apr 18, 2010",ORL,CHA,Orlando Magic,Charlotte Bobcats,98,89,9,Home,83.9,True,2010
+201004210ORL,"Wed, Apr 21, 2010",ORL,CHA,Orlando Magic,Charlotte Bobcats,92,77,15,Home,80.3,True,2010
+201004240CHA,"Sat, Apr 24, 2010",CHA,ORL,Charlotte Bobcats,Orlando Magic,86,90,-4,Home,88.4,True,2010
+201004260CHA,"Mon, Apr 26, 2010",CHA,ORL,Charlotte Bobcats,Orlando Magic,90,99,-9,Home,84.6,True,2010
+201005160ORL,"Sun, May 16, 2010",ORL,BOS,Orlando Magic,Boston Celtics,88,92,-4,Home,90.4,True,2010
+201005180ORL,"Tue, May 18, 2010",ORL,BOS,Orlando Magic,Boston Celtics,92,95,-3,Home,88.3,True,2010
+201005220BOS,"Sat, May 22, 2010",BOS,ORL,Boston Celtics,Orlando Magic,94,71,23,Home,85.4,True,2010
+201005240BOS,"Mon, May 24, 2010",BOS,ORL,Boston Celtics,Orlando Magic,92,96,-4,Home,85.1,True,2010
+201005260ORL,"Wed, May 26, 2010",ORL,BOS,Orlando Magic,Boston Celtics,113,92,21,Home,87.1,True,2010
+201005280BOS,"Fri, May 28, 2010",BOS,ORL,Boston Celtics,Orlando Magic,96,84,12,Home,85.4,True,2010
+200910310WAS,"Sat, Oct 31, 2009",WAS,NJN,Washington Wizards,New Jersey Nets,123,104,19,Home,90.5,True,2010
+200911020CHA,"Mon, Nov 2, 2009",CHA,NJN,Charlotte Bobcats,New Jersey Nets,79,68,11,Home,87.1,True,2010
+200911070NJN,"Sat, Nov 7, 2009",NJN,BOS,New Jersey Nets,Boston Celtics,76,86,-10,Home,90.2,True,2010
+200911140MIA,"Sat, Nov 14, 2009",MIA,NJN,Miami Heat,New Jersey Nets,81,80,1,Home,79.5,True,2010
+200911170NJN,"Tue, Nov 17, 2009",NJN,IND,New Jersey Nets,Indiana Pacers,83,91,-8,Home,94.3,True,2010
+200911180MIL,"Wed, Nov 18, 2009",MIL,NJN,Milwaukee Bucks,New Jersey Nets,99,85,14,Home,90.6,True,2010
+200911210NJN,"Sat, Nov 21, 2009",NJN,NYK,New Jersey Nets,New York Knicks,91,98,-7,Home,94.0,True,2010
+200912040NJN,"Fri, Dec 4, 2009",NJN,CHA,New Jersey Nets,Charlotte Bobcats,97,91,6,Home,93.3,True,2010
+200912060NYK,"Sun, Dec 6, 2009",NYK,NJN,New York Knicks,New Jersey Nets,106,97,9,Home,90.8,True,2010
+200912080CHI,"Tue, Dec 8, 2009",CHI,NJN,Chicago Bulls,New Jersey Nets,101,103,-2,Home,94.9,True,2010
+200912110IND,"Fri, Dec 11, 2009",IND,NJN,Indiana Pacers,New Jersey Nets,107,91,16,Home,95.9,True,2010
+200912300NJN,"Wed, Dec 30, 2009",NJN,NYK,New Jersey Nets,New York Knicks,104,95,9,Home,94.2,True,2010
+201001050NJN,"Tue, Jan 5, 2010",NJN,MIL,New Jersey Nets,Milwaukee Bucks,76,98,-22,Home,86.6,True,2010
+201001080NOH,"Fri, Jan 8, 2010",NOH,NJN,New Orleans Hornets,New Jersey Nets,103,99,4,Home,89.8,True,2010
+201001130NJN,"Wed, Jan 13, 2010",NJN,BOS,New Jersey Nets,Boston Celtics,87,111,-24,Home,92.2,True,2010
+201001150NJN,"Fri, Jan 15, 2010",NJN,IND,New Jersey Nets,Indiana Pacers,105,121,-16,Home,98.3,True,2010
+201001290NJN,"Fri, Jan 29, 2010",NJN,WAS,New Jersey Nets,Washington Wizards,79,81,-2,Home,83.9,True,2010
+201002050BOS,"Fri, Feb 5, 2010",BOS,NJN,Boston Celtics,New Jersey Nets,96,87,9,Home,85.3,True,2010
+201002100NJN,"Wed, Feb 10, 2010",NJN,MIL,New Jersey Nets,Milwaukee Bucks,77,97,-20,Home,89.5,True,2010
+201002160CHA,"Tue, Feb 16, 2010",CHA,NJN,Charlotte Bobcats,New Jersey Nets,94,103,-9,Home,91.4,True,2010
+201002170NJN,"Wed, Feb 17, 2010",NJN,MIA,New Jersey Nets,Miami Heat,84,87,-3,Home,88.6,True,2010
+201002270BOS,"Sat, Feb 27, 2010",BOS,NJN,Boston Celtics,New Jersey Nets,96,104,-8,Home,91.1,True,2010
+201002280NJN,"Sun, Feb 28, 2010",NJN,WAS,New Jersey Nets,Washington Wizards,85,89,-4,Home,88.1,True,2010
+201003060NYK,"Sat, Mar 6, 2010",NYK,NJN,New York Knicks,New Jersey Nets,93,113,-20,Home,90.7,True,2010
+201003220NJN,"Mon, Mar 22, 2010",NJN,MIA,New Jersey Nets,Miami Heat,89,99,-10,Home,84.9,True,2010
+201003270CHI,"Sat, Mar 27, 2010",CHI,NJN,Chicago Bulls,New Jersey Nets,106,83,23,Home,89.4,True,2010
+201004030NJN,"Sat, Apr 3, 2010",NJN,NOH,New Jersey Nets,New Orleans Hornets,115,87,28,Home,92.8,True,2010
+201004040WAS,"Sun, Apr 4, 2010",WAS,NJN,Washington Wizards,New Jersey Nets,109,99,10,Home,92.9,True,2010
+201004070MIL,"Wed, Apr 7, 2010",MIL,NJN,Milwaukee Bucks,New Jersey Nets,108,89,19,Home,92.8,True,2010
+201004090NJN,"Fri, Apr 9, 2010",NJN,CHI,New Jersey Nets,Chicago Bulls,127,116,11,Home,93.6,True,2010
+201004100IND,"Sat, Apr 10, 2010",IND,NJN,Indiana Pacers,New Jersey Nets,115,102,13,Home,90.0,True,2010
+201004120NJN,"Mon, Apr 12, 2010",NJN,CHA,New Jersey Nets,Charlotte Bobcats,95,105,-10,Home,93.3,True,2010
+201004140MIA,"Wed, Apr 14, 2010",MIA,NJN,Miami Heat,New Jersey Nets,94,86,8,Home,79.4,True,2010
+200911010BOS,"Sun, Nov 1, 2009",BOS,NOH,Boston Celtics,New Orleans Hornets,97,87,10,Home,92.7,True,2010
+200911020NYK,"Mon, Nov 2, 2009",NYK,NOH,New York Knicks,New Orleans Hornets,117,111,6,Home,97.5,True,2010
+200911220MIA,"Sun, Nov 22, 2009",MIA,NOH,Miami Heat,New Orleans Hornets,102,101,1,Home,93.2,True,2010
+200911250NOH,"Wed, Nov 25, 2009",NOH,MIL,New Orleans Hornets,Milwaukee Bucks,102,99,3,Home,98.4,True,2010
+200912110NOH,"Fri, Dec 11, 2009",NOH,NYK,New Orleans Hornets,New York Knicks,96,113,-17,Home,93.6,True,2010
+200912260CHI,"Sat, Dec 26, 2009",CHI,NOH,Chicago Bulls,New Orleans Hornets,96,85,11,Home,95.4,True,2010
+200912300NOH,"Wed, Dec 30, 2009",NOH,MIA,New Orleans Hornets,Miami Heat,95,91,4,Home,88.3,True,2010
+201001100WAS,"Sun, Jan 10, 2010",WAS,NOH,Washington Wizards,New Orleans Hornets,110,115,-5,Home,94.8,True,2010
+201001160IND,"Sat, Jan 16, 2010",IND,NOH,Indiana Pacers,New Orleans Hornets,96,101,-5,Home,96.5,True,2010
+201001290NOH,"Fri, Jan 29, 2010",NOH,CHI,New Orleans Hornets,Chicago Bulls,106,108,-2,Home,94.2,True,2010
+201002060CHA,"Sat, Feb 6, 2010",CHA,NOH,Charlotte Bobcats,New Orleans Hornets,99,104,-5,Home,90.1,True,2010
+201002100NOH,"Wed, Feb 10, 2010",NOH,BOS,New Orleans Hornets,Boston Celtics,93,85,8,Home,98.4,True,2010
+201002190NOH,"Fri, Feb 19, 2010",NOH,IND,New Orleans Hornets,Indiana Pacers,107,101,6,Home,99.2,True,2010
+201002240MIL,"Wed, Feb 24, 2010",MIL,NOH,Milwaukee Bucks,New Orleans Hornets,115,95,20,Home,91.8,True,2010
+201003310NOH,"Wed, Mar 31, 2010",NOH,WAS,New Orleans Hornets,Washington Wizards,91,96,-5,Home,84.9,True,2010
+201004070NOH,"Wed, Apr 7, 2010",NOH,CHA,New Orleans Hornets,Charlotte Bobcats,103,104,-1,Home,93.8,True,2010
+200910280MIA,"Wed, Oct 28, 2009",MIA,NYK,Miami Heat,New York Knicks,115,93,22,Home,95.9,True,2010
+200910300CHA,"Fri, Oct 30, 2009",CHA,NYK,Charlotte Bobcats,New York Knicks,102,100,2,Home,90.0,True,2010
+200911040NYK,"Wed, Nov 4, 2009",NYK,IND,New York Knicks,Indiana Pacers,89,101,-12,Home,99.2,True,2010
+200911070MIL,"Sat, Nov 7, 2009",MIL,NYK,Milwaukee Bucks,New York Knicks,102,87,15,Home,96.5,True,2010
+200911180IND,"Wed, Nov 18, 2009",IND,NYK,Indiana Pacers,New York Knicks,103,110,-7,Home,98.9,True,2010
+200911220NYK,"Sun, Nov 22, 2009",NYK,BOS,New York Knicks,Boston Celtics,105,107,-2,Home,92.6,True,2010
+200912150CHA,"Tue, Dec 15, 2009",CHA,NYK,Charlotte Bobcats,New York Knicks,94,87,7,Home,94.5,True,2010
+200912170CHI,"Thu, Dec 17, 2009",CHI,NYK,Chicago Bulls,New York Knicks,98,89,9,Home,92.0,True,2010
+200912200NYK,"Sun, Dec 20, 2009",NYK,CHA,New York Knicks,Charlotte Bobcats,98,94,4,Home,90.5,True,2010
+200912220NYK,"Tue, Dec 22, 2009",NYK,CHI,New York Knicks,Chicago Bulls,88,81,7,Home,92.8,True,2010
+200912250NYK,"Fri, Dec 25, 2009",NYK,MIA,New York Knicks,Miami Heat,87,93,-6,Home,89.8,True,2010
+201001030NYK,"Sun, Jan 3, 2010",NYK,IND,New York Knicks,Indiana Pacers,132,89,43,Home,99.7,True,2010
+201001070NYK,"Thu, Jan 7, 2010",NYK,CHA,New York Knicks,Charlotte Bobcats,97,93,4,Home,87.7,True,2010
+201001300WAS,"Sat, Jan 30, 2010",WAS,NYK,Washington Wizards,New York Knicks,106,96,10,Home,90.3,True,2010
+201002030NYK,"Wed, Feb 3, 2010",NYK,WAS,New York Knicks,Washington Wizards,107,85,22,Home,87.5,True,2010
+201002050NYK,"Fri, Feb 5, 2010",NYK,MIL,New York Knicks,Milwaukee Bucks,107,114,-7,Home,95.1,True,2010
+201002160CHI,"Tue, Feb 16, 2010",CHI,NYK,Chicago Bulls,New York Knicks,118,85,33,Home,95.2,True,2010
+201002170NYK,"Wed, Feb 17, 2010",NYK,CHI,New York Knicks,Chicago Bulls,109,115,-6,Home,96.0,True,2010
+201002220NYK,"Mon, Feb 22, 2010",NYK,MIL,New York Knicks,Milwaukee Bucks,67,83,-16,Home,89.4,True,2010
+201002230BOS,"Tue, Feb 23, 2010",BOS,NYK,Boston Celtics,New York Knicks,110,106,4,Home,94.5,True,2010
+201002260WAS,"Fri, Feb 26, 2010",WAS,NYK,Washington Wizards,New York Knicks,116,118,-2,Home,97.7,True,2010
+201003170BOS,"Wed, Mar 17, 2010",BOS,NYK,Boston Celtics,New York Knicks,109,97,12,Home,94.6,True,2010
+201004060NYK,"Tue, Apr 6, 2010",NYK,BOS,New York Knicks,Boston Celtics,104,101,3,Home,93.4,True,2010
+201004070IND,"Wed, Apr 7, 2010",IND,NYK,Indiana Pacers,New York Knicks,113,105,8,Home,89.9,True,2010
+201004110NYK,"Sun, Apr 11, 2010",NYK,MIA,New York Knicks,Miami Heat,98,111,-13,Home,89.7,True,2010
+201004120NYK,"Mon, Apr 12, 2010",NYK,WAS,New York Knicks,Washington Wizards,114,103,11,Home,90.5,True,2010
+200910280BOS,"Wed, Oct 28, 2009",BOS,CHA,Boston Celtics,Charlotte Bobcats,92,59,33,Home,85.4,True,2010
+200911070CHI,"Sat, Nov 7, 2009",CHI,CHA,Chicago Bulls,Charlotte Bobcats,93,90,3,Home,89.1,True,2010
+200911200MIL,"Fri, Nov 20, 2009",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,95,88,7,Home,87.1,True,2010
+200911220CHA,"Sun, Nov 22, 2009",CHA,IND,Charlotte Bobcats,Indiana Pacers,104,88,16,Home,95.5,True,2010
+200911280WAS,"Sat, Nov 28, 2009",WAS,CHA,Washington Wizards,Charlotte Bobcats,76,92,-16,Home,87.1,True,2010
+200912010CHA,"Tue, Dec 1, 2009",CHA,BOS,Charlotte Bobcats,Boston Celtics,90,108,-18,Home,86.7,True,2010
+200912160IND,"Wed, Dec 16, 2009",IND,CHA,Indiana Pacers,Charlotte Bobcats,101,98,3,Home,97.3,True,2010
+200912280CHA,"Mon, Dec 28, 2009",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,94,84,10,Home,93.1,True,2010
+201001020MIA,"Sat, Jan 2, 2010",MIA,CHA,Miami Heat,Charlotte Bobcats,97,107,-10,Home,86.3,True,2010
+201001050CHA,"Tue, Jan 5, 2010",CHA,CHI,Charlotte Bobcats,Chicago Bulls,113,108,5,Home,100.7,True,2010
+201001200CHA,"Wed, Jan 20, 2010",CHA,MIA,Charlotte Bobcats,Miami Heat,104,65,39,Home,90.2,True,2010
+201002090CHA,"Tue, Feb 9, 2010",CHA,WAS,Charlotte Bobcats,Washington Wizards,94,92,2,Home,86.7,True,2010
+201002200MIL,"Sat, Feb 20, 2010",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,93,88,5,Home,90.4,True,2010
+201003030BOS,"Wed, Mar 3, 2010",BOS,CHA,Boston Celtics,Charlotte Bobcats,104,80,24,Home,89.0,True,2010
+201003090CHA,"Tue, Mar 9, 2010",CHA,MIA,Charlotte Bobcats,Miami Heat,83,78,5,Home,86.1,True,2010
+201003160IND,"Tue, Mar 16, 2010",IND,CHA,Indiana Pacers,Charlotte Bobcats,99,94,5,Home,91.0,True,2010
+201003200MIA,"Sat, Mar 20, 2010",MIA,CHA,Miami Heat,Charlotte Bobcats,77,71,6,Home,86.2,True,2010
+201003230WAS,"Tue, Mar 23, 2010",WAS,CHA,Washington Wizards,Charlotte Bobcats,86,95,-9,Home,85.3,True,2010
+201003260CHA,"Fri, Mar 26, 2010",CHA,WAS,Charlotte Bobcats,Washington Wizards,107,96,11,Home,90.8,True,2010
+201004020CHA,"Fri, Apr 2, 2010",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,87,86,1,Home,80.5,True,2010
+201004030CHI,"Sat, Apr 3, 2010",CHI,CHA,Chicago Bulls,Charlotte Bobcats,96,88,8,Home,86.6,True,2010
+201004140CHA,"Wed, Apr 14, 2010",CHA,CHI,Charlotte Bobcats,Chicago Bulls,89,98,-9,Home,89.9,True,2010
+200910300IND,"Fri, Oct 30, 2009",IND,MIA,Indiana Pacers,Miami Heat,83,96,-13,Home,88.8,True,2010
+200911010MIA,"Sun, Nov 1, 2009",MIA,CHI,Miami Heat,Chicago Bulls,95,87,8,Home,91.3,True,2010
+200911040WAS,"Wed, Nov 4, 2009",WAS,MIA,Washington Wizards,Miami Heat,89,93,-4,Home,88.3,True,2010
+200911100MIA,"Tue, Nov 10, 2009",MIA,WAS,Miami Heat,Washington Wizards,90,76,14,Home,89.2,True,2010
+200911270MIA,"Fri, Nov 27, 2009",MIA,WAS,Miami Heat,Washington Wizards,84,94,-10,Home,86.7,True,2010
+200911290MIA,"Sun, Nov 29, 2009",MIA,BOS,Miami Heat,Boston Celtics,85,92,-7,Home,87.6,True,2010
+200912270MIA,"Sun, Dec 27, 2009",MIA,IND,Miami Heat,Indiana Pacers,114,80,34,Home,101.0,True,2010
+201001060MIA,"Wed, Jan 6, 2010",MIA,BOS,Miami Heat,Boston Celtics,106,112,-6,Home,91.7,True,2010
+201001190MIA,"Tue, Jan 19, 2010",MIA,IND,Miami Heat,Indiana Pacers,113,83,30,Home,95.6,True,2010
+201001220WAS,"Fri, Jan 22, 2010",WAS,MIA,Washington Wizards,Miami Heat,88,112,-24,Home,85.6,True,2010
+201001300MIL,"Sat, Jan 30, 2010",MIL,MIA,Milwaukee Bucks,Miami Heat,95,84,11,Home,88.5,True,2010
+201002010MIA,"Mon, Feb 1, 2010",MIA,MIL,Miami Heat,Milwaukee Bucks,81,97,-16,Home,87.3,True,2010
+201002030BOS,"Wed, Feb 3, 2010",BOS,MIA,Boston Celtics,Miami Heat,107,102,5,Home,90.4,True,2010
+201002060CHI,"Sat, Feb 6, 2010",CHI,MIA,Chicago Bulls,Miami Heat,95,91,4,Home,94.1,True,2010
+201002270MIA,"Sat, Feb 27, 2010",MIA,MIL,Miami Heat,Milwaukee Bucks,71,94,-23,Home,85.1,True,2010
+201003120MIA,"Fri, Mar 12, 2010",MIA,CHI,Miami Heat,Chicago Bulls,108,95,13,Home,92.1,True,2010
+201003250CHI,"Thu, Mar 25, 2010",CHI,MIA,Chicago Bulls,Miami Heat,74,103,-29,Home,88.2,True,2010
+201003260MIL,"Fri, Mar 26, 2010",MIL,MIA,Milwaukee Bucks,Miami Heat,74,87,-13,Home,83.2,True,2010
+201004020IND,"Fri, Apr 2, 2010",IND,MIA,Indiana Pacers,Miami Heat,96,105,-9,Home,86.2,True,2010
+201004170BOS,"Sat, Apr 17, 2010",BOS,MIA,Boston Celtics,Miami Heat,85,76,9,Home,88.7,True,2010
+201004200BOS,"Tue, Apr 20, 2010",BOS,MIA,Boston Celtics,Miami Heat,106,77,29,Home,88.2,True,2010
+201004230MIA,"Fri, Apr 23, 2010",MIA,BOS,Miami Heat,Boston Celtics,98,100,-2,Home,89.1,True,2010
+201004250MIA,"Sun, Apr 25, 2010",MIA,BOS,Miami Heat,Boston Celtics,101,92,9,Home,91.4,True,2010
+201004270BOS,"Tue, Apr 27, 2010",BOS,MIA,Boston Celtics,Miami Heat,96,86,10,Home,90.5,True,2010
+200911030CHI,"Tue, Nov 3, 2009",CHI,MIL,Chicago Bulls,Milwaukee Bucks,83,81,2,Home,92.2,True,2010
+200911300MIL,"Mon, Nov 30, 2009",MIL,CHI,Milwaukee Bucks,Chicago Bulls,99,97,2,Home,89.3,True,2010
+200912020WAS,"Wed, Dec 2, 2009",WAS,MIL,Washington Wizards,Milwaukee Bucks,104,102,2,Home,99.4,True,2010
+200912080BOS,"Tue, Dec 8, 2009",BOS,MIL,Boston Celtics,Milwaukee Bucks,98,89,9,Home,90.4,True,2010
+200912210IND,"Mon, Dec 21, 2009",IND,MIL,Indiana Pacers,Milwaukee Bucks,81,84,-3,Home,97.5,True,2010
+200912230MIL,"Wed, Dec 23, 2009",MIL,WAS,Milwaukee Bucks,Washington Wizards,97,109,-12,Home,98.6,True,2010
+201001080MIL,"Fri, Jan 8, 2010",MIL,CHI,Milwaukee Bucks,Chicago Bulls,96,93,3,Home,90.1,True,2010
+201002060MIL,"Sat, Feb 6, 2010",MIL,IND,Milwaukee Bucks,Indiana Pacers,93,81,12,Home,88.0,True,2010
+201002250IND,"Thu, Feb 25, 2010",IND,MIL,Indiana Pacers,Milwaukee Bucks,110,112,-2,Home,91.4,True,2010
+201003030MIL,"Wed, Mar 3, 2010",MIL,WAS,Milwaukee Bucks,Washington Wizards,100,87,13,Home,92.7,True,2010
+201003050WAS,"Fri, Mar 5, 2010",WAS,MIL,Washington Wizards,Milwaukee Bucks,74,102,-28,Home,85.7,True,2010
+201003090MIL,"Tue, Mar 9, 2010",MIL,BOS,Milwaukee Bucks,Boston Celtics,86,84,2,Home,85.0,True,2010
+201003140MIL,"Sun, Mar 14, 2010",MIL,IND,Milwaukee Bucks,Indiana Pacers,98,94,4,Home,92.6,True,2010
+201004060CHI,"Tue, Apr 6, 2010",CHI,MIL,Chicago Bulls,Milwaukee Bucks,74,79,-5,Home,86.5,True,2010
+201004100MIL,"Sat, Apr 10, 2010",MIL,BOS,Milwaukee Bucks,Boston Celtics,90,105,-15,Home,85.0,True,2010
+201004140BOS,"Wed, Apr 14, 2010",BOS,MIL,Boston Celtics,Milwaukee Bucks,95,106,-11,Home,83.9,True,2010
+200910300BOS,"Fri, Oct 30, 2009",BOS,CHI,Boston Celtics,Chicago Bulls,118,90,28,Home,89.6,True,2010
+200912120CHI,"Sat, Dec 12, 2009",CHI,BOS,Chicago Bulls,Boston Celtics,80,106,-26,Home,96.8,True,2010
+200912290CHI,"Tue, Dec 29, 2009",CHI,IND,Chicago Bulls,Indiana Pacers,104,95,9,Home,95.4,True,2010
+201001140BOS,"Thu, Jan 14, 2010",BOS,CHI,Boston Celtics,Chicago Bulls,83,96,-13,Home,89.1,True,2010
+201001150CHI,"Fri, Jan 15, 2010",CHI,WAS,Chicago Bulls,Washington Wizards,121,119,2,Home,86.4,True,2010
+201002090IND,"Tue, Feb 9, 2010",IND,CHI,Indiana Pacers,Chicago Bulls,101,109,-8,Home,101.7,True,2010
+201002220WAS,"Mon, Feb 22, 2010",WAS,CHI,Washington Wizards,Chicago Bulls,101,95,6,Home,90.6,True,2010
+201002240CHI,"Wed, Feb 24, 2010",CHI,IND,Chicago Bulls,Indiana Pacers,120,110,10,Home,102.7,True,2010
+201002270IND,"Sat, Feb 27, 2010",IND,CHI,Indiana Pacers,Chicago Bulls,100,90,10,Home,92.5,True,2010
+201004020WAS,"Fri, Apr 2, 2010",WAS,CHI,Washington Wizards,Chicago Bulls,87,95,-8,Home,88.4,True,2010
+201004130CHI,"Tue, Apr 13, 2010",CHI,BOS,Chicago Bulls,Boston Celtics,101,93,8,Home,89.5,True,2010
+200911060IND,"Fri, Nov 6, 2009",IND,WAS,Indiana Pacers,Washington Wizards,102,86,16,Home,95.7,True,2010
+200911140IND,"Sat, Nov 14, 2009",IND,BOS,Indiana Pacers,Boston Celtics,113,104,9,Home,91.4,True,2010
+200912120WAS,"Sat, Dec 12, 2009",WAS,IND,Washington Wizards,Indiana Pacers,113,114,-1,Home,95.9,True,2010
+200912220BOS,"Tue, Dec 22, 2009",BOS,IND,Boston Celtics,Indiana Pacers,103,94,9,Home,92.1,True,2010
+201003120BOS,"Fri, Mar 12, 2010",BOS,IND,Boston Celtics,Indiana Pacers,122,103,19,Home,101.7,True,2010
+201003240IND,"Wed, Mar 24, 2010",IND,WAS,Indiana Pacers,Washington Wizards,99,82,17,Home,95.8,True,2010
+201004140WAS,"Wed, Apr 14, 2010",WAS,IND,Washington Wizards,Indiana Pacers,98,97,1,Home,97.4,True,2010
+200912100WAS,"Thu, Dec 10, 2009",WAS,BOS,Washington Wizards,Boston Celtics,102,104,-2,Home,94.7,True,2010
+201002010WAS,"Mon, Feb 1, 2010",WAS,BOS,Washington Wizards,Boston Celtics,88,99,-11,Home,89.1,True,2010
+201003070BOS,"Sun, Mar 7, 2010",BOS,WAS,Boston Celtics,Washington Wizards,86,83,3,Home,88.8,True,2010
+201004090BOS,"Fri, Apr 9, 2010",BOS,WAS,Boston Celtics,Washington Wizards,96,106,-10,Home,96.2,True,2010

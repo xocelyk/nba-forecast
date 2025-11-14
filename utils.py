@@ -1,3 +1,4 @@
+import datetime
 import json
 import os
 import time
@@ -78,13 +79,19 @@ NBA_REG_SEASON_END_DATES = {
     2023: "2023-04-09",
     2024: "2024-04-14",
     2025: "2025-04-13",
+    2026: "2026-04-12",  # TODO: check this
 }
 
+import logging
 
-def get_playoff_start_date(year: int):
+logger = logging.getLogger(__name__)
+
+
+def get_playoff_start_date(year: int) -> pd.Timestamp:
     """Return the start date of the playoffs for ``year``."""
     end_date = NBA_REG_SEASON_END_DATES.get(year)
     if end_date is None:
+        logger.warning(f"No end date found for year {year}, falling back to mid-April")
         # Fall back to mid-April if we have no data
         end_date = f"{year}-04-13"
     return pd.to_datetime(end_date) + pd.Timedelta(days=1)
@@ -294,6 +301,9 @@ def get_em_ratings(
 
     # Only use games from last day_cap days
     df = df[df["date"] > (df["date"].max() - pd.Timedelta(days=day_cap))]
+
+    # Filter out games with teams not in teams_dict (e.g., international exhibition games)
+    df = df[df["team"].isin(teams_dict.keys()) & df["opponent"].isin(teams_dict.keys())]
 
     games = df[["team", "opponent", "margin"]]
     margin_fn = lambda margin: np.clip(margin, -cap, cap)

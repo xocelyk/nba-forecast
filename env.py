@@ -47,8 +47,8 @@ class Config:
     win_prob_label: str = "win"
     win_margin_model_params: Dict[str, float] = field(
         default_factory=lambda: {
-            "n_estimators": 127,
-            "max_depth": 3,
+            "n_estimators": 100,
+            "max_depth": 4,
             "learning_rate": 0.05277779665608899,
             "subsample": 0.9828987652763124,
             "colsample_bytree": 0.6867888479797172,

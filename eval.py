@@ -1,3 +1,4 @@
+import logging
 import os
 import pickle
 
@@ -7,17 +8,19 @@ from matplotlib import pyplot as plt
 from scipy.interpolate import UnivariateSpline
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, LogisticRegression
-from sklearn.metrics import log_loss
+from sklearn.metrics import log_loss, mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier, XGBRegressor
 
 import env
 
+logger = logging.getLogger(__name__)
+
 
 def get_win_margin_model_heavy(games):
     games = games[games["completed"] == True]
     x_features = env.x_features_heavy
-    X = games[x_features]
+    X = games[x_features].copy()
     y = games["margin"]
     params = {
         "max_depth": 5,
@@ -32,7 +35,40 @@ def get_win_margin_model_heavy(games):
         "random_state": 996,
     }
     model = XGBRegressor(**params)
-    model.fit(X, y)
+
+    # Add Gaussian noise to win total and prev year rating columns for data augmentation
+    noise_std = 1.0
+    noise_columns = [
+        "team_win_total_future",
+        "opponent_win_total_future",
+        "last_year_team_rating",
+        "last_year_opp_rating",
+    ]
+    for col in noise_columns:
+        if col in X.columns:
+            noise = np.random.normal(0, noise_std, size=len(X))
+            X[col] = X[col] + noise
+
+    # Calculate sample weights: linear scale from 0.2 (oldest year) to 1.0 (newest year)
+    if "year" in games.columns:
+        years_array = games["year"].values
+        min_year = years_array.min()
+        max_year = years_array.max()
+        year_range = max_year - min_year
+
+        if year_range > 0:
+            # Linear scaling from 0.2 to 1.0
+            sample_weights = 0.2 + 0.8 * (years_array - min_year) / year_range
+            # Downweight 2020 (COVID bubble year) by dividing by 2
+            sample_weights[years_array == 2020] /= 2
+        else:
+            # If only one year, use uniform weights
+            sample_weights = np.ones(len(games))
+
+        model.fit(X, y, sample_weight=sample_weights)
+    else:
+        model.fit(X, y)
+
     return model
 
 
@@ -41,11 +77,44 @@ def get_win_probability_model_heavy(games):
     games["win"] = games["margin"] > 0
     games["win"] = games["win"].astype(int)
     x_features = env.x_features_heavy
-    X = games[x_features]
+    X = games[x_features].copy()
     y = games["win"]
     params = env.win_prob_model_params
     model = XGBClassifier(**params)
-    model.fit(X, y)
+
+    # Add Gaussian noise to win total and prev year rating columns for data augmentation
+    noise_std = 1.0
+    noise_columns = [
+        "team_win_total_future",
+        "opponent_win_total_future",
+        "last_year_team_rating",
+        "last_year_opp_rating",
+    ]
+    for col in noise_columns:
+        if col in X.columns:
+            noise = np.random.normal(0, noise_std, size=len(X))
+            X[col] = X[col] + noise
+
+    # Calculate sample weights: linear scale from 0.2 (oldest year) to 1.0 (newest year)
+    if "year" in games.columns:
+        years_array = games["year"].values
+        min_year = years_array.min()
+        max_year = years_array.max()
+        year_range = max_year - min_year
+
+        if year_range > 0:
+            # Linear scaling from 0.2 to 1.0
+            sample_weights = 0.2 + 0.8 * (years_array - min_year) / year_range
+            # Downweight 2020 (COVID bubble year) by dividing by 2
+            sample_weights[years_array == 2020] /= 2
+        else:
+            # If only one year, use uniform weights
+            sample_weights = np.ones(len(games))
+
+        model.fit(X, y, sample_weight=sample_weights)
+    else:
+        model.fit(X, y)
+
     return model
 
 
@@ -88,8 +157,9 @@ def get_win_margin_model(games, features=None):
         2021,
         2022,
         2023,
+        2024,
     ]
-    test_years = [2024]
+    test_years = [2025]
     omit_years = []
 
     # Filter completed games first
@@ -111,12 +181,57 @@ def get_win_margin_model(games, features=None):
     X_train, y_train = train[x_features], train["margin"]
     X_test, y_test = test[x_features], test["margin"]
 
-    # Train the model
-    model.fit(X_train, y_train)
+    # Add Gaussian noise to win total and prev year rating columns for data augmentation
+    X_train = X_train.copy()
+    noise_std = 1.0
+    noise_columns = [
+        "team_win_total_future",
+        "opponent_win_total_future",
+        "last_year_team_rating",
+        "last_year_opp_rating",
+    ]
+    for col in noise_columns:
+        if col in X_train.columns:
+            noise = np.random.normal(0, noise_std, size=len(X_train))
+            X_train[col] = X_train[col] + noise
+
+    # Calculate sample weights: linear scale from 0.2 (oldest year) to 1.0 (newest year)
+    train_years_array = train["year"].values
+    min_year = train_years_array.min()
+    max_year = train_years_array.max()
+    year_range = max_year - min_year
+
+    if year_range > 0:
+        # Linear scaling from 0.2 to 1.0
+        sample_weights = 0.2 + 0.8 * (train_years_array - min_year) / year_range
+        # Downweight 2020 (COVID bubble year) by dividing by 2
+        sample_weights[train_years_array == 2020] /= 2
+    else:
+        # If only one year, use uniform weights
+        sample_weights = np.ones(len(train))
+
+    # Train the model with sample weights
+    model.fit(X_train, y_train, sample_weight=sample_weights)
 
     # Make predictions and calculate errors on test set
     preds = model.predict(X_test)
     errors = preds - y_test
+
+    # Log test performance metrics
+    test_rmse = np.sqrt(mean_squared_error(y_test, preds))
+    test_mae = mean_absolute_error(y_test, preds)
+    test_r2 = r2_score(y_test, preds)
+    test_mean_error = np.mean(errors)
+
+    logger.info("=" * 60)
+    logger.info("Win Margin Model - Test Performance")
+    logger.info("=" * 60)
+    logger.info(f"Test samples: {len(y_test)}")
+    logger.info(f"Test RMSE: {test_rmse:.3f}")
+    logger.info(f"Test MAE: {test_mae:.3f}")
+    logger.info(f"Test R²: {test_r2:.3f}")
+    logger.info(f"Test Mean Error (bias): {test_mean_error:.3f}")
+    logger.info("=" * 60)
 
     # Round the number of games into the season for error analysis
     test_with_round = test.copy()

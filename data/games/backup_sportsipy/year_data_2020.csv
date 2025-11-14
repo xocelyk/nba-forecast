@@ -1,0 +1,1144 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201910240HOU,"Thu, Oct 24, 2019",HOU,MIL,Houston Rockets,Milwaukee Bucks,111,117,-6,Home,109.8,True,2020
+201910260HOU,"Sat, Oct 26, 2019",HOU,NOP,Houston Rockets,New Orleans Pelicans,126,123,3,Home,112.6,True,2020
+201910280HOU,"Mon, Oct 28, 2019",HOU,OKC,Houston Rockets,Oklahoma City Thunder,116,112,4,Home,101.8,True,2020
+201910300WAS,"Wed, Oct 30, 2019",WAS,HOU,Washington Wizards,Houston Rockets,158,159,-1,Home,109.7,True,2020
+201911010BRK,"Fri, Nov 1, 2019",BRK,HOU,Brooklyn Nets,Houston Rockets,123,116,7,Home,108.2,True,2020
+201911030MIA,"Sun, Nov 3, 2019",MIA,HOU,Miami Heat,Houston Rockets,129,100,29,Home,107.9,True,2020
+201911040MEM,"Mon, Nov 4, 2019",MEM,HOU,Memphis Grizzlies,Houston Rockets,100,107,-7,Home,103.6,True,2020
+201911060HOU,"Wed, Nov 6, 2019",HOU,GSW,Houston Rockets,Golden State Warriors,129,112,17,Home,101.6,True,2020
+201911090CHI,"Sat, Nov 9, 2019",CHI,HOU,Chicago Bulls,Houston Rockets,94,117,-23,Home,107.1,True,2020
+201911110NOP,"Mon, Nov 11, 2019",NOP,HOU,New Orleans Pelicans,Houston Rockets,116,122,-6,Home,107.9,True,2020
+201911130HOU,"Wed, Nov 13, 2019",HOU,LAC,Houston Rockets,Los Angeles Clippers,102,93,9,Home,100.3,True,2020
+201911150HOU,"Fri, Nov 15, 2019",HOU,IND,Houston Rockets,Indiana Pacers,111,102,9,Home,97.5,True,2020
+201911160MIN,"Sat, Nov 16, 2019",MIN,HOU,Minnesota Timberwolves,Houston Rockets,105,125,-20,Home,97.1,True,2020
+201911180HOU,"Mon, Nov 18, 2019",HOU,POR,Houston Rockets,Portland Trail Blazers,132,108,24,Home,107.7,True,2020
+201911200DEN,"Wed, Nov 20, 2019",DEN,HOU,Denver Nuggets,Houston Rockets,105,95,10,Home,96.8,True,2020
+201911220LAC,"Fri, Nov 22, 2019",LAC,HOU,Los Angeles Clippers,Houston Rockets,122,119,3,Home,104.0,True,2020
+201911240HOU,"Sun, Nov 24, 2019",HOU,DAL,Houston Rockets,Dallas Mavericks,123,137,-14,Home,107.9,True,2020
+201911270HOU,"Wed, Nov 27, 2019",HOU,MIA,Houston Rockets,Miami Heat,117,108,9,Home,100.5,True,2020
+201911300HOU,"Sat, Nov 30, 2019",HOU,ATL,Houston Rockets,Atlanta Hawks,158,111,47,Home,102.6,True,2020
+201912030SAS,"Tue, Dec 3, 2019",SAS,HOU,San Antonio Spurs,Houston Rockets,135,133,2,Home,102.0,True,2020
+201912050TOR,"Thu, Dec 5, 2019",TOR,HOU,Toronto Raptors,Houston Rockets,109,119,-10,Home,102.4,True,2020
+201912070HOU,"Sat, Dec 7, 2019",HOU,PHO,Houston Rockets,Phoenix Suns,115,109,6,Home,107.3,True,2020
+201912090HOU,"Mon, Dec 9, 2019",HOU,SAC,Houston Rockets,Sacramento Kings,118,119,-1,Home,97.8,True,2020
+201912110CLE,"Wed, Dec 11, 2019",CLE,HOU,Cleveland Cavaliers,Houston Rockets,110,116,-6,Home,93.3,True,2020
+201912130ORL,"Fri, Dec 13, 2019",ORL,HOU,Orlando Magic,Houston Rockets,107,130,-23,Home,89.8,True,2020
+201912140HOU,"Sat, Dec 14, 2019",HOU,DET,Houston Rockets,Detroit Pistons,107,115,-8,Home,105.0,True,2020
+201912160HOU,"Mon, Dec 16, 2019",HOU,SAS,Houston Rockets,San Antonio Spurs,109,107,2,Home,107.3,True,2020
+201912190LAC,"Thu, Dec 19, 2019",LAC,HOU,Los Angeles Clippers,Houston Rockets,117,122,-5,Home,104.0,True,2020
+201912210PHO,"Sat, Dec 21, 2019",PHO,HOU,Phoenix Suns,Houston Rockets,125,139,-14,Home,100.3,True,2020
+201912230SAC,"Mon, Dec 23, 2019",SAC,HOU,Sacramento Kings,Houston Rockets,104,113,-9,Home,100.5,True,2020
+201912250GSW,"Wed, Dec 25, 2019",GSW,HOU,Golden State Warriors,Houston Rockets,116,104,12,Home,102.1,True,2020
+201912280HOU,"Sat, Dec 28, 2019",HOU,BRK,Houston Rockets,Brooklyn Nets,108,98,10,Home,103.7,True,2020
+201912290NOP,"Sun, Dec 29, 2019",NOP,HOU,New Orleans Pelicans,Houston Rockets,127,112,15,Home,98.6,True,2020
+201912310HOU,"Tue, Dec 31, 2019",HOU,DEN,Houston Rockets,Denver Nuggets,130,104,26,Home,99.1,True,2020
+202001030HOU,"Fri, Jan 3, 2020",HOU,PHI,Houston Rockets,Philadelphia 76ers,118,108,10,Home,101.2,True,2020
+202001080ATL,"Wed, Jan 8, 2020",ATL,HOU,Atlanta Hawks,Houston Rockets,115,122,-7,Home,106.5,True,2020
+202001090OKC,"Thu, Jan 9, 2020",OKC,HOU,Oklahoma City Thunder,Houston Rockets,113,92,21,Home,98.4,True,2020
+202001110HOU,"Sat, Jan 11, 2020",HOU,MIN,Houston Rockets,Minnesota Timberwolves,139,109,30,Home,112.2,True,2020
+202001140MEM,"Tue, Jan 14, 2020",MEM,HOU,Memphis Grizzlies,Houston Rockets,121,110,11,Home,98.4,True,2020
+202001150HOU,"Wed, Jan 15, 2020",HOU,POR,Houston Rockets,Portland Trail Blazers,107,117,-10,Home,102.0,True,2020
+202001180HOU,"Sat, Jan 18, 2020",HOU,LAL,Houston Rockets,Los Angeles Lakers,115,124,-9,Home,108.0,True,2020
+202001200HOU,"Mon, Jan 20, 2020",HOU,OKC,Houston Rockets,Oklahoma City Thunder,107,112,-5,Home,104.5,True,2020
+202001220HOU,"Wed, Jan 22, 2020",HOU,DEN,Houston Rockets,Denver Nuggets,121,105,16,Home,97.8,True,2020
+202001240MIN,"Fri, Jan 24, 2020",MIN,HOU,Minnesota Timberwolves,Houston Rockets,124,131,-7,Home,107.9,True,2020
+202001260DEN,"Sun, Jan 26, 2020",DEN,HOU,Denver Nuggets,Houston Rockets,117,110,7,Home,99.3,True,2020
+202001270UTA,"Mon, Jan 27, 2020",UTA,HOU,Utah Jazz,Houston Rockets,117,126,-9,Home,109.5,True,2020
+202001290POR,"Wed, Jan 29, 2020",POR,HOU,Portland Trail Blazers,Houston Rockets,125,112,13,Home,105.9,True,2020
+202001310HOU,"Fri, Jan 31, 2020",HOU,DAL,Houston Rockets,Dallas Mavericks,128,121,7,Home,102.5,True,2020
+202002020HOU,"Sun, Feb 2, 2020",HOU,NOP,Houston Rockets,New Orleans Pelicans,117,109,8,Home,106.1,True,2020
+202002040HOU,"Tue, Feb 4, 2020",HOU,CHO,Houston Rockets,Charlotte Hornets,125,110,15,Home,99.5,True,2020
+202002060LAL,"Thu, Feb 6, 2020",LAL,HOU,Los Angeles Lakers,Houston Rockets,111,121,-10,Home,102.8,True,2020
+202002070PHO,"Fri, Feb 7, 2020",PHO,HOU,Phoenix Suns,Houston Rockets,127,91,36,Home,99.8,True,2020
+202002090HOU,"Sun, Feb 9, 2020",HOU,UTA,Houston Rockets,Utah Jazz,113,114,-1,Home,97.1,True,2020
+202002110HOU,"Tue, Feb 11, 2020",HOU,BOS,Houston Rockets,Boston Celtics,116,105,11,Home,102.5,True,2020
+202002200GSW,"Thu, Feb 20, 2020",GSW,HOU,Golden State Warriors,Houston Rockets,105,135,-30,Home,99.3,True,2020
+202002220UTA,"Sat, Feb 22, 2020",UTA,HOU,Utah Jazz,Houston Rockets,110,120,-10,Home,103.2,True,2020
+202002240HOU,"Mon, Feb 24, 2020",HOU,NYK,Houston Rockets,New York Knicks,123,112,11,Home,104.1,True,2020
+202002260HOU,"Wed, Feb 26, 2020",HOU,MEM,Houston Rockets,Memphis Grizzlies,140,112,28,Home,104.8,True,2020
+202002290BOS,"Sat, Feb 29, 2020",BOS,HOU,Boston Celtics,Houston Rockets,110,111,-1,Home,97.1,True,2020
+202003020NYK,"Mon, Mar 2, 2020",NYK,HOU,New York Knicks,Houston Rockets,125,123,2,Home,105.3,True,2020
+202003050HOU,"Thu, Mar 5, 2020",HOU,LAC,Houston Rockets,Los Angeles Clippers,105,120,-15,Home,104.8,True,2020
+202003070CHO,"Sat, Mar 7, 2020",CHO,HOU,Charlotte Hornets,Houston Rockets,108,99,9,Home,89.8,True,2020
+202003080HOU,"Sun, Mar 8, 2020",HOU,ORL,Houston Rockets,Orlando Magic,106,126,-20,Home,102.4,True,2020
+202003100HOU,"Tue, Mar 10, 2020",HOU,MIN,Houston Rockets,Minnesota Timberwolves,117,111,6,Home,100.4,True,2020
+202007310DAL,"Fri, Jul 31, 2020",DAL,HOU,Dallas Mavericks,Houston Rockets,149,153,-4,Home,109.9,True,2020
+202008020HOU,"Sun, Aug 2, 2020",HOU,MIL,Houston Rockets,Milwaukee Bucks,120,116,4,Home,105.4,True,2020
+202008040POR,"Tue, Aug 4, 2020",POR,HOU,Portland Trail Blazers,Houston Rockets,110,102,8,Home,100.8,True,2020
+202008060HOU,"Thu, Aug 6, 2020",HOU,LAL,Houston Rockets,Los Angeles Lakers,113,97,16,Home,104.8,True,2020
+202008090SAC,"Sun, Aug 9, 2020",SAC,HOU,Sacramento Kings,Houston Rockets,112,129,-17,Home,108.2,True,2020
+202008110SAS,"Tue, Aug 11, 2020",SAS,HOU,San Antonio Spurs,Houston Rockets,123,105,18,Home,111.7,True,2020
+202008120HOU,"Wed, Aug 12, 2020",HOU,IND,Houston Rockets,Indiana Pacers,104,108,-4,Home,109.4,True,2020
+202008140HOU,"Fri, Aug 14, 2020",HOU,PHI,Houston Rockets,Philadelphia 76ers,96,134,-38,Home,102.3,True,2020
+202008180HOU,"Tue, Aug 18, 2020",HOU,OKC,Houston Rockets,Oklahoma City Thunder,123,108,15,Home,98.0,True,2020
+202008200HOU,"Thu, Aug 20, 2020",HOU,OKC,Houston Rockets,Oklahoma City Thunder,111,98,13,Home,91.3,True,2020
+202008220OKC,"Sat, Aug 22, 2020",OKC,HOU,Oklahoma City Thunder,Houston Rockets,119,107,12,Home,102.1,True,2020
+202008240OKC,"Mon, Aug 24, 2020",OKC,HOU,Oklahoma City Thunder,Houston Rockets,117,114,3,Home,100.2,True,2020
+202008290HOU,"Sat, Aug 29, 2020",HOU,OKC,Houston Rockets,Oklahoma City Thunder,114,80,34,Home,103.7,True,2020
+202008310OKC,"Mon, Aug 31, 2020",OKC,HOU,Oklahoma City Thunder,Houston Rockets,104,100,4,Home,105.0,True,2020
+202009020HOU,"Wed, Sep 2, 2020",HOU,OKC,Houston Rockets,Oklahoma City Thunder,104,102,2,Home,96.4,True,2020
+202009040LAL,"Fri, Sep 4, 2020",LAL,HOU,Los Angeles Lakers,Houston Rockets,97,112,-15,Home,97.7,True,2020
+202009060LAL,"Sun, Sep 6, 2020",LAL,HOU,Los Angeles Lakers,Houston Rockets,117,109,8,Home,95.3,True,2020
+202009080HOU,"Tue, Sep 8, 2020",HOU,LAL,Houston Rockets,Los Angeles Lakers,102,112,-10,Home,89.3,True,2020
+202009100HOU,"Thu, Sep 10, 2020",HOU,LAL,Houston Rockets,Los Angeles Lakers,100,110,-10,Home,95.2,True,2020
+202009120LAL,"Sat, Sep 12, 2020",LAL,HOU,Los Angeles Lakers,Houston Rockets,119,96,23,Home,98.5,True,2020
+201910260MIL,"Sat, Oct 26, 2019",MIL,MIA,Milwaukee Bucks,Miami Heat,126,131,-5,Home,109.8,True,2020
+201910280MIL,"Mon, Oct 28, 2019",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,129,112,17,Home,104.9,True,2020
+201910300BOS,"Wed, Oct 30, 2019",BOS,MIL,Boston Celtics,Milwaukee Bucks,116,105,11,Home,102.4,True,2020
+201911010ORL,"Fri, Nov 1, 2019",ORL,MIL,Orlando Magic,Milwaukee Bucks,91,123,-32,Home,101.5,True,2020
+201911020MIL,"Sat, Nov 2, 2019",MIL,TOR,Milwaukee Bucks,Toronto Raptors,115,105,10,Home,98.9,True,2020
+201911040MIN,"Mon, Nov 4, 2019",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,106,134,-28,Home,111.0,True,2020
+201911060LAC,"Wed, Nov 6, 2019",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,124,129,-5,Home,113.3,True,2020
+201911080UTA,"Fri, Nov 8, 2019",UTA,MIL,Utah Jazz,Milwaukee Bucks,103,100,3,Home,102.7,True,2020
+201911100OKC,"Sun, Nov 10, 2019",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,119,121,-2,Home,107.2,True,2020
+201911140MIL,"Thu, Nov 14, 2019",MIL,CHI,Milwaukee Bucks,Chicago Bulls,124,115,9,Home,112.1,True,2020
+201911160IND,"Sat, Nov 16, 2019",IND,MIL,Indiana Pacers,Milwaukee Bucks,83,102,-19,Home,101.6,True,2020
+201911180CHI,"Mon, Nov 18, 2019",CHI,MIL,Chicago Bulls,Milwaukee Bucks,101,115,-14,Home,102.0,True,2020
+201911200ATL,"Wed, Nov 20, 2019",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,127,135,-8,Home,111.0,True,2020
+201911210MIL,"Thu, Nov 21, 2019",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,137,129,8,Home,106.5,True,2020
+201911230MIL,"Sat, Nov 23, 2019",MIL,DET,Milwaukee Bucks,Detroit Pistons,104,90,14,Home,102.5,True,2020
+201911250MIL,"Mon, Nov 25, 2019",MIL,UTA,Milwaukee Bucks,Utah Jazz,122,118,4,Home,100.8,True,2020
+201911270MIL,"Wed, Nov 27, 2019",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,111,102,9,Home,102.6,True,2020
+201911290CLE,"Fri, Nov 29, 2019",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,110,119,-9,Home,98.1,True,2020
+201911300MIL,"Sat, Nov 30, 2019",MIL,CHO,Milwaukee Bucks,Charlotte Hornets,137,96,41,Home,100.7,True,2020
+201912020MIL,"Mon, Dec 2, 2019",MIL,NYK,Milwaukee Bucks,New York Knicks,132,88,44,Home,99.9,True,2020
+201912040DET,"Wed, Dec 4, 2019",DET,MIL,Detroit Pistons,Milwaukee Bucks,103,127,-24,Home,103.0,True,2020
+201912060MIL,"Fri, Dec 6, 2019",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,119,91,28,Home,105.4,True,2020
+201912090MIL,"Mon, Dec 9, 2019",MIL,ORL,Milwaukee Bucks,Orlando Magic,110,101,9,Home,102.2,True,2020
+201912110MIL,"Wed, Dec 11, 2019",MIL,NOP,Milwaukee Bucks,New Orleans Pelicans,127,112,15,Home,107.2,True,2020
+201912130MEM,"Fri, Dec 13, 2019",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,114,127,-13,Home,107.7,True,2020
+201912140MIL,"Sat, Dec 14, 2019",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,125,108,17,Home,99.6,True,2020
+201912160MIL,"Mon, Dec 16, 2019",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,116,120,-4,Home,104.9,True,2020
+201912190MIL,"Thu, Dec 19, 2019",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,111,104,7,Home,96.4,True,2020
+201912210NYK,"Sat, Dec 21, 2019",NYK,MIL,New York Knicks,Milwaukee Bucks,102,123,-21,Home,109.3,True,2020
+201912220MIL,"Sun, Dec 22, 2019",MIL,IND,Milwaukee Bucks,Indiana Pacers,117,89,28,Home,101.8,True,2020
+201912250PHI,"Wed, Dec 25, 2019",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,121,109,12,Home,98.1,True,2020
+201912270ATL,"Fri, Dec 27, 2019",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,86,112,-26,Home,106.8,True,2020
+201912280MIL,"Sat, Dec 28, 2019",MIL,ORL,Milwaukee Bucks,Orlando Magic,111,100,11,Home,99.9,True,2020
+201912300CHI,"Mon, Dec 30, 2019",CHI,MIL,Chicago Bulls,Milwaukee Bucks,102,123,-21,Home,101.7,True,2020
+202001010MIL,"Wed, Jan 1, 2020",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,106,104,2,Home,107.5,True,2020
+202001040MIL,"Sat, Jan 4, 2020",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,127,118,9,Home,101.8,True,2020
+202001060SAS,"Mon, Jan 6, 2020",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,126,104,22,Home,95.9,True,2020
+202001080GSW,"Wed, Jan 8, 2020",GSW,MIL,Golden State Warriors,Milwaukee Bucks,98,107,-9,Home,101.4,True,2020
+202001100SAC,"Fri, Jan 10, 2020",SAC,MIL,Sacramento Kings,Milwaukee Bucks,106,127,-21,Home,109.8,True,2020
+202001110POR,"Sat, Jan 11, 2020",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,101,122,-21,Home,108.4,True,2020
+202001140MIL,"Tue, Jan 14, 2020",MIL,NYK,Milwaukee Bucks,New York Knicks,128,102,26,Home,109.1,True,2020
+202001160MIL,"Thu, Jan 16, 2020",MIL,BOS,Milwaukee Bucks,Boston Celtics,128,123,5,Home,104.1,True,2020
+202001180BRK,"Sat, Jan 18, 2020",BRK,MIL,Brooklyn Nets,Milwaukee Bucks,97,117,-20,Home,109.2,True,2020
+202001200MIL,"Mon, Jan 20, 2020",MIL,CHI,Milwaukee Bucks,Chicago Bulls,111,98,13,Home,106.6,True,2020
+202001240CHO,"Fri, Jan 24, 2020",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,103,116,-13,Home,100.2,True,2020
+202001280MIL,"Tue, Jan 28, 2020",MIL,WAS,Milwaukee Bucks,Washington Wizards,151,131,20,Home,104.7,True,2020
+202001310MIL,"Fri, Jan 31, 2020",MIL,DEN,Milwaukee Bucks,Denver Nuggets,115,127,-12,Home,108.9,True,2020
+202002020MIL,"Sun, Feb 2, 2020",MIL,PHO,Milwaukee Bucks,Phoenix Suns,129,108,21,Home,106.5,True,2020
+202002040NOP,"Tue, Feb 4, 2020",NOP,MIL,New Orleans Pelicans,Milwaukee Bucks,108,120,-12,Home,116.1,True,2020
+202002060MIL,"Thu, Feb 6, 2020",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,112,101,11,Home,104.5,True,2020
+202002080ORL,"Sat, Feb 8, 2020",ORL,MIL,Orlando Magic,Milwaukee Bucks,95,111,-16,Home,102.8,True,2020
+202002100MIL,"Mon, Feb 10, 2020",MIL,SAC,Milwaukee Bucks,Sacramento Kings,123,111,12,Home,109.3,True,2020
+202002120IND,"Wed, Feb 12, 2020",IND,MIL,Indiana Pacers,Milwaukee Bucks,118,111,7,Home,102.8,True,2020
+202002200DET,"Thu, Feb 20, 2020",DET,MIL,Detroit Pistons,Milwaukee Bucks,106,126,-20,Home,102.4,True,2020
+202002220MIL,"Sat, Feb 22, 2020",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,119,98,21,Home,103.8,True,2020
+202002240WAS,"Mon, Feb 24, 2020",WAS,MIL,Washington Wizards,Milwaukee Bucks,134,137,-3,Home,106.4,True,2020
+202002250TOR,"Tue, Feb 25, 2020",TOR,MIL,Toronto Raptors,Milwaukee Bucks,97,108,-11,Home,102.8,True,2020
+202002280MIL,"Fri, Feb 28, 2020",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,133,86,47,Home,106.8,True,2020
+202003010CHO,"Sun, Mar 1, 2020",CHO,MIL,Charlotte Hornets,Milwaukee Bucks,85,93,-8,Home,95.5,True,2020
+202003020MIA,"Mon, Mar 2, 2020",MIA,MIL,Miami Heat,Milwaukee Bucks,105,89,16,Home,96.4,True,2020
+202003040MIL,"Wed, Mar 4, 2020",MIL,IND,Milwaukee Bucks,Indiana Pacers,119,100,19,Home,106.7,True,2020
+202003060LAL,"Fri, Mar 6, 2020",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,113,103,10,Home,111.1,True,2020
+202003080PHO,"Sun, Mar 8, 2020",PHO,MIL,Phoenix Suns,Milwaukee Bucks,140,131,9,Home,104.4,True,2020
+202003090DEN,"Mon, Mar 9, 2020",DEN,MIL,Denver Nuggets,Milwaukee Bucks,109,95,14,Home,102.3,True,2020
+202007310MIL,"Fri, Jul 31, 2020",MIL,BOS,Milwaukee Bucks,Boston Celtics,119,112,7,Home,104.5,True,2020
+202008040MIL,"Tue, Aug 4, 2020",MIL,BRK,Milwaukee Bucks,Brooklyn Nets,116,119,-3,Home,107.5,True,2020
+202008060MIL,"Thu, Aug 6, 2020",MIL,MIA,Milwaukee Bucks,Miami Heat,130,116,14,Home,104.0,True,2020
+202008080DAL,"Sat, Aug 8, 2020",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,136,132,4,Home,105.6,True,2020
+202008100MIL,"Mon, Aug 10, 2020",MIL,TOR,Milwaukee Bucks,Toronto Raptors,106,114,-8,Home,104.0,True,2020
+202008110WAS,"Tue, Aug 11, 2020",WAS,MIL,Washington Wizards,Milwaukee Bucks,113,126,-13,Home,104.2,True,2020
+202008130MEM,"Thu, Aug 13, 2020",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,119,106,13,Home,109.7,True,2020
+202008180MIL,"Tue, Aug 18, 2020",MIL,ORL,Milwaukee Bucks,Orlando Magic,110,122,-12,Home,106.5,True,2020
+202008200MIL,"Thu, Aug 20, 2020",MIL,ORL,Milwaukee Bucks,Orlando Magic,111,96,15,Home,101.9,True,2020
+202008220ORL,"Sat, Aug 22, 2020",ORL,MIL,Orlando Magic,Milwaukee Bucks,107,121,-14,Home,102.2,True,2020
+202008240ORL,"Mon, Aug 24, 2020",ORL,MIL,Orlando Magic,Milwaukee Bucks,106,121,-15,Home,104.0,True,2020
+202008290MIL,"Sat, Aug 29, 2020",MIL,ORL,Milwaukee Bucks,Orlando Magic,118,104,14,Home,104.9,True,2020
+202008310MIL,"Mon, Aug 31, 2020",MIL,MIA,Milwaukee Bucks,Miami Heat,104,115,-11,Home,96.7,True,2020
+202009020MIL,"Wed, Sep 2, 2020",MIL,MIA,Milwaukee Bucks,Miami Heat,114,116,-2,Home,96.0,True,2020
+202009040MIA,"Fri, Sep 4, 2020",MIA,MIL,Miami Heat,Milwaukee Bucks,115,100,15,Home,95.4,True,2020
+202009060MIA,"Sun, Sep 6, 2020",MIA,MIL,Miami Heat,Milwaukee Bucks,115,118,-3,Home,94.2,True,2020
+202009080MIL,"Tue, Sep 8, 2020",MIL,MIA,Milwaukee Bucks,Miami Heat,94,103,-9,Home,97.7,True,2020
+201910220TOR,"Tue, Oct 22, 2019",TOR,NOP,Toronto Raptors,New Orleans Pelicans,130,122,8,Home,102.2,True,2020
+201910250NOP,"Fri, Oct 25, 2019",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,116,123,-7,Home,102.8,True,2020
+201910280NOP,"Mon, Oct 28, 2019",NOP,GSW,New Orleans Pelicans,Golden State Warriors,123,134,-11,Home,112.1,True,2020
+201910310NOP,"Thu, Oct 31, 2019",NOP,DEN,New Orleans Pelicans,Denver Nuggets,122,107,15,Home,102.8,True,2020
+201911020OKC,"Sat, Nov 2, 2019",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,115,104,11,Home,101.3,True,2020
+201911040BRK,"Mon, Nov 4, 2019",BRK,NOP,Brooklyn Nets,New Orleans Pelicans,135,125,10,Home,113.5,True,2020
+201911080NOP,"Fri, Nov 8, 2019",NOP,TOR,New Orleans Pelicans,Toronto Raptors,104,122,-18,Home,109.1,True,2020
+201911090CHO,"Sat, Nov 9, 2019",CHO,NOP,Charlotte Hornets,New Orleans Pelicans,110,115,-5,Home,106.0,True,2020
+201911140NOP,"Thu, Nov 14, 2019",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,132,127,5,Home,104.8,True,2020
+201911160MIA,"Sat, Nov 16, 2019",MIA,NOP,Miami Heat,New Orleans Pelicans,109,94,15,Home,95.0,True,2020
+201911170NOP,"Sun, Nov 17, 2019",NOP,GSW,New Orleans Pelicans,Golden State Warriors,108,100,8,Home,97.6,True,2020
+201911190NOP,"Tue, Nov 19, 2019",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,115,104,11,Home,100.1,True,2020
+201911210PHO,"Thu, Nov 21, 2019",PHO,NOP,Phoenix Suns,New Orleans Pelicans,121,124,-3,Home,103.6,True,2020
+201911230UTA,"Sat, Nov 23, 2019",UTA,NOP,Utah Jazz,New Orleans Pelicans,128,120,8,Home,105.9,True,2020
+201911240LAC,"Sun, Nov 24, 2019",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,134,109,25,Home,99.8,True,2020
+201911270NOP,"Wed, Nov 27, 2019",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,110,114,-4,Home,100.1,True,2020
+201911290OKC,"Fri, Nov 29, 2019",OKC,NOP,Oklahoma City Thunder,New Orleans Pelicans,109,104,5,Home,100.2,True,2020
+201912010NOP,"Sun, Dec 1, 2019",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,104,107,-3,Home,97.8,True,2020
+201912030NOP,"Tue, Dec 3, 2019",NOP,DAL,New Orleans Pelicans,Dallas Mavericks,97,118,-21,Home,98.9,True,2020
+201912050NOP,"Thu, Dec 5, 2019",NOP,PHO,New Orleans Pelicans,Phoenix Suns,132,139,-7,Home,104.2,True,2020
+201912070DAL,"Sat, Dec 7, 2019",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,130,84,46,Home,101.4,True,2020
+201912090NOP,"Mon, Dec 9, 2019",NOP,DET,New Orleans Pelicans,Detroit Pistons,103,105,-2,Home,101.0,True,2020
+201912130PHI,"Fri, Dec 13, 2019",PHI,NOP,Philadelphia 76ers,New Orleans Pelicans,116,109,7,Home,98.8,True,2020
+201912150NOP,"Sun, Dec 15, 2019",NOP,ORL,New Orleans Pelicans,Orlando Magic,119,130,-11,Home,98.4,True,2020
+201912170NOP,"Tue, Dec 17, 2019",NOP,BRK,New Orleans Pelicans,Brooklyn Nets,101,108,-7,Home,97.2,True,2020
+201912180MIN,"Wed, Dec 18, 2019",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,99,107,-8,Home,100.1,True,2020
+201912200GSW,"Fri, Dec 20, 2019",GSW,NOP,Golden State Warriors,New Orleans Pelicans,106,102,4,Home,101.5,True,2020
+201912230POR,"Mon, Dec 23, 2019",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,94,102,-8,Home,98.5,True,2020
+201912250DEN,"Wed, Dec 25, 2019",DEN,NOP,Denver Nuggets,New Orleans Pelicans,100,112,-12,Home,95.5,True,2020
+201912280NOP,"Sat, Dec 28, 2019",NOP,IND,New Orleans Pelicans,Indiana Pacers,120,98,22,Home,100.6,True,2020
+202001030LAL,"Fri, Jan 3, 2020",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,123,113,10,Home,102.4,True,2020
+202001040SAC,"Sat, Jan 4, 2020",SAC,NOP,Sacramento Kings,New Orleans Pelicans,115,117,-2,Home,105.0,True,2020
+202001060NOP,"Mon, Jan 6, 2020",NOP,UTA,New Orleans Pelicans,Utah Jazz,126,128,-2,Home,98.9,True,2020
+202001080NOP,"Wed, Jan 8, 2020",NOP,CHI,New Orleans Pelicans,Chicago Bulls,123,108,15,Home,100.2,True,2020
+202001100NYK,"Fri, Jan 10, 2020",NYK,NOP,New York Knicks,New Orleans Pelicans,111,123,-12,Home,105.3,True,2020
+202001110BOS,"Sat, Jan 11, 2020",BOS,NOP,Boston Celtics,New Orleans Pelicans,140,105,35,Home,105.6,True,2020
+202001130DET,"Mon, Jan 13, 2020",DET,NOP,Detroit Pistons,New Orleans Pelicans,110,117,-7,Home,101.5,True,2020
+202001160NOP,"Thu, Jan 16, 2020",NOP,UTA,New Orleans Pelicans,Utah Jazz,138,132,6,Home,100.7,True,2020
+202001180NOP,"Sat, Jan 18, 2020",NOP,LAC,New Orleans Pelicans,Los Angeles Clippers,130,133,-3,Home,108.8,True,2020
+202001200MEM,"Mon, Jan 20, 2020",MEM,NOP,Memphis Grizzlies,New Orleans Pelicans,116,126,-10,Home,107.9,True,2020
+202001220NOP,"Wed, Jan 22, 2020",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,117,121,-4,Home,100.9,True,2020
+202001240NOP,"Fri, Jan 24, 2020",NOP,DEN,New Orleans Pelicans,Denver Nuggets,106,113,-7,Home,96.7,True,2020
+202001260NOP,"Sun, Jan 26, 2020",NOP,BOS,New Orleans Pelicans,Boston Celtics,123,108,15,Home,103.9,True,2020
+202001280CLE,"Tue, Jan 28, 2020",CLE,NOP,Cleveland Cavaliers,New Orleans Pelicans,111,125,-14,Home,101.9,True,2020
+202001310NOP,"Fri, Jan 31, 2020",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,139,111,28,Home,105.5,True,2020
+202002060CHI,"Thu, Feb 6, 2020",CHI,NOP,Chicago Bulls,New Orleans Pelicans,119,125,-6,Home,105.7,True,2020
+202002080IND,"Sat, Feb 8, 2020",IND,NOP,Indiana Pacers,New Orleans Pelicans,117,124,-7,Home,104.3,True,2020
+202002110NOP,"Tue, Feb 11, 2020",NOP,POR,New Orleans Pelicans,Portland Trail Blazers,138,117,21,Home,103.8,True,2020
+202002130NOP,"Thu, Feb 13, 2020",NOP,OKC,New Orleans Pelicans,Oklahoma City Thunder,118,123,-5,Home,103.6,True,2020
+202002210POR,"Fri, Feb 21, 2020",POR,NOP,Portland Trail Blazers,New Orleans Pelicans,115,128,-13,Home,104.5,True,2020
+202002230GSW,"Sun, Feb 23, 2020",GSW,NOP,Golden State Warriors,New Orleans Pelicans,101,115,-14,Home,99.7,True,2020
+202002250LAL,"Tue, Feb 25, 2020",LAL,NOP,Los Angeles Lakers,New Orleans Pelicans,118,109,9,Home,110.6,True,2020
+202002280NOP,"Fri, Feb 28, 2020",NOP,CLE,New Orleans Pelicans,Cleveland Cavaliers,116,104,12,Home,98.8,True,2020
+202003010NOP,"Sun, Mar 1, 2020",NOP,LAL,New Orleans Pelicans,Los Angeles Lakers,114,122,-8,Home,105.8,True,2020
+202003030NOP,"Tue, Mar 3, 2020",NOP,MIN,New Orleans Pelicans,Minnesota Timberwolves,134,139,-5,Home,110.4,True,2020
+202003040DAL,"Wed, Mar 4, 2020",DAL,NOP,Dallas Mavericks,New Orleans Pelicans,127,123,4,Home,103.1,True,2020
+202003060NOP,"Fri, Mar 6, 2020",NOP,MIA,New Orleans Pelicans,Miami Heat,110,104,6,Home,102.3,True,2020
+202003080MIN,"Sun, Mar 8, 2020",MIN,NOP,Minnesota Timberwolves,New Orleans Pelicans,107,120,-13,Home,114.5,True,2020
+202007300NOP,"Thu, Jul 30, 2020",NOP,UTA,New Orleans Pelicans,Utah Jazz,104,106,-2,Home,101.6,True,2020
+202008010LAC,"Sat, Aug 1, 2020",LAC,NOP,Los Angeles Clippers,New Orleans Pelicans,126,103,23,Home,103.4,True,2020
+202008030NOP,"Mon, Aug 3, 2020",NOP,MEM,New Orleans Pelicans,Memphis Grizzlies,109,99,10,Home,102.4,True,2020
+202008060SAC,"Thu, Aug 6, 2020",SAC,NOP,Sacramento Kings,New Orleans Pelicans,140,125,15,Home,100.3,True,2020
+202008070NOP,"Fri, Aug 7, 2020",NOP,WAS,New Orleans Pelicans,Washington Wizards,118,107,11,Home,101.4,True,2020
+202008090NOP,"Sun, Aug 9, 2020",NOP,SAS,New Orleans Pelicans,San Antonio Spurs,113,122,-9,Home,104.0,True,2020
+202008110SAC,"Tue, Aug 11, 2020",SAC,NOP,Sacramento Kings,New Orleans Pelicans,112,106,6,Home,100.7,True,2020
+202008130ORL,"Thu, Aug 13, 2020",ORL,NOP,Orlando Magic,New Orleans Pelicans,133,127,6,Home,101.1,True,2020
+201910230UTA,"Wed, Oct 23, 2019",UTA,OKC,Utah Jazz,Oklahoma City Thunder,100,95,5,Home,98.8,True,2020
+201910250OKC,"Fri, Oct 25, 2019",OKC,WAS,Oklahoma City Thunder,Washington Wizards,85,97,-12,Home,103.9,True,2020
+201910270OKC,"Sun, Oct 27, 2019",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,120,92,28,Home,102.6,True,2020
+201910300OKC,"Wed, Oct 30, 2019",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,99,102,-3,Home,103.1,True,2020
+201911050OKC,"Tue, Nov 5, 2019",OKC,ORL,Oklahoma City Thunder,Orlando Magic,102,94,8,Home,92.4,True,2020
+201911070SAS,"Thu, Nov 7, 2019",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,121,112,9,Home,97.8,True,2020
+201911090OKC,"Sat, Nov 9, 2019",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,114,108,6,Home,98.1,True,2020
+201911120IND,"Tue, Nov 12, 2019",IND,OKC,Indiana Pacers,Oklahoma City Thunder,111,85,26,Home,97.9,True,2020
+201911150OKC,"Fri, Nov 15, 2019",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,127,119,8,Home,89.4,True,2020
+201911180LAC,"Mon, Nov 18, 2019",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,90,88,2,Home,94.0,True,2020
+201911190LAL,"Tue, Nov 19, 2019",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,112,107,5,Home,96.6,True,2020
+201911220OKC,"Fri, Nov 22, 2019",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,127,130,-3,Home,103.7,True,2020
+201911250GSW,"Mon, Nov 25, 2019",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,97,100,-3,Home,94.8,True,2020
+201911270POR,"Wed, Nov 27, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,136,119,17,Home,100.8,True,2020
+201912040OKC,"Wed, Dec 4, 2019",OKC,IND,Oklahoma City Thunder,Indiana Pacers,100,107,-7,Home,88.7,True,2020
+201912060OKC,"Fri, Dec 6, 2019",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,139,127,12,Home,94.2,True,2020
+201912080POR,"Sun, Dec 8, 2019",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,96,108,-12,Home,93.9,True,2020
+201912090UTA,"Mon, Dec 9, 2019",UTA,OKC,Utah Jazz,Oklahoma City Thunder,90,104,-14,Home,100.2,True,2020
+201912110SAC,"Wed, Dec 11, 2019",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,94,93,1,Home,96.3,True,2020
+201912140DEN,"Sat, Dec 14, 2019",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,110,102,8,Home,97.7,True,2020
+201912160OKC,"Mon, Dec 16, 2019",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,109,106,3,Home,97.9,True,2020
+201912180OKC,"Wed, Dec 18, 2019",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,126,122,4,Home,101.7,True,2020
+201912200OKC,"Fri, Dec 20, 2019",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,126,108,18,Home,98.9,True,2020
+201912220OKC,"Sun, Dec 22, 2019",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,118,112,6,Home,99.0,True,2020
+201912260OKC,"Thu, Dec 26, 2019",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,97,110,-13,Home,96.0,True,2020
+201912270CHO,"Fri, Dec 27, 2019",CHO,OKC,Charlotte Hornets,Oklahoma City Thunder,102,104,-2,Home,94.3,True,2020
+201912290TOR,"Sun, Dec 29, 2019",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,97,98,-1,Home,93.7,True,2020
+201912310OKC,"Tue, Dec 31, 2019",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,106,101,5,Home,93.6,True,2020
+202001020SAS,"Thu, Jan 2, 2020",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,103,109,-6,Home,89.9,True,2020
+202001040CLE,"Sat, Jan 4, 2020",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,106,121,-15,Home,95.9,True,2020
+202001060PHI,"Mon, Jan 6, 2020",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,120,113,7,Home,97.4,True,2020
+202001070BRK,"Tue, Jan 7, 2020",BRK,OKC,Brooklyn Nets,Oklahoma City Thunder,103,111,-8,Home,98.7,True,2020
+202001110OKC,"Sat, Jan 11, 2020",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,110,125,-15,Home,100.6,True,2020
+202001130MIN,"Mon, Jan 13, 2020",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,104,117,-13,Home,98.7,True,2020
+202001150OKC,"Wed, Jan 15, 2020",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,121,130,-9,Home,104.7,True,2020
+202001170OKC,"Fri, Jan 17, 2020",OKC,MIA,Oklahoma City Thunder,Miami Heat,108,115,-7,Home,95.6,True,2020
+202001180OKC,"Sat, Jan 18, 2020",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,119,106,13,Home,97.0,True,2020
+202001220ORL,"Wed, Jan 22, 2020",ORL,OKC,Orlando Magic,Oklahoma City Thunder,114,120,-6,Home,100.3,True,2020
+202001240OKC,"Fri, Jan 24, 2020",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,140,111,29,Home,103.3,True,2020
+202001250MIN,"Sat, Jan 25, 2020",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,104,113,-9,Home,99.8,True,2020
+202001270OKC,"Mon, Jan 27, 2020",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,97,107,-10,Home,95.4,True,2020
+202001290SAC,"Wed, Jan 29, 2020",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,100,120,-20,Home,96.2,True,2020
+202001310PHO,"Fri, Jan 31, 2020",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,107,111,-4,Home,95.8,True,2020
+202002050OKC,"Wed, Feb 5, 2020",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,109,103,6,Home,100.6,True,2020
+202002070OKC,"Fri, Feb 7, 2020",OKC,DET,Oklahoma City Thunder,Detroit Pistons,108,101,7,Home,88.6,True,2020
+202002090OKC,"Sun, Feb 9, 2020",OKC,BOS,Oklahoma City Thunder,Boston Celtics,111,112,-1,Home,92.3,True,2020
+202002110OKC,"Tue, Feb 11, 2020",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,106,114,-8,Home,98.3,True,2020
+202002210OKC,"Fri, Feb 21, 2020",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,113,101,12,Home,95.2,True,2020
+202002230OKC,"Sun, Feb 23, 2020",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,131,103,28,Home,102.9,True,2020
+202002250CHI,"Tue, Feb 25, 2020",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,122,124,-2,Home,95.2,True,2020
+202002270OKC,"Thu, Feb 27, 2020",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,112,108,4,Home,94.5,True,2020
+202003030OKC,"Tue, Mar 3, 2020",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,94,109,-15,Home,95.6,True,2020
+202003040DET,"Wed, Mar 4, 2020",DET,OKC,Detroit Pistons,Oklahoma City Thunder,107,114,-7,Home,95.8,True,2020
+202003060NYK,"Fri, Mar 6, 2020",NYK,OKC,New York Knicks,Oklahoma City Thunder,103,126,-23,Home,96.6,True,2020
+202003080BOS,"Sun, Mar 8, 2020",BOS,OKC,Boston Celtics,Oklahoma City Thunder,104,105,-1,Home,101.3,True,2020
+202008010OKC,"Sat, Aug 1, 2020",OKC,UTA,Oklahoma City Thunder,Utah Jazz,110,94,16,Home,95.4,True,2020
+202008030OKC,"Mon, Aug 3, 2020",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,113,121,-8,Home,94.8,True,2020
+202008050LAL,"Wed, Aug 5, 2020",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,86,105,-19,Home,100.8,True,2020
+202008070MEM,"Fri, Aug 7, 2020",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,121,92,29,Home,97.9,True,2020
+202008090OKC,"Sun, Aug 9, 2020",OKC,WAS,Oklahoma City Thunder,Washington Wizards,121,103,18,Home,98.0,True,2020
+202008100PHO,"Mon, Aug 10, 2020",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,128,101,27,Home,106.8,True,2020
+202008120OKC,"Wed, Aug 12, 2020",OKC,MIA,Oklahoma City Thunder,Miami Heat,116,115,1,Home,99.7,True,2020
+202008140LAC,"Fri, Aug 14, 2020",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,107,103,4,Home,101.7,True,2020
+201910230DAL,"Wed, Oct 23, 2019",DAL,WAS,Dallas Mavericks,Washington Wizards,108,100,8,Home,103.7,True,2020
+201910260SAS,"Sat, Oct 26, 2019",SAS,WAS,San Antonio Spurs,Washington Wizards,124,122,2,Home,101.6,True,2020
+201911020WAS,"Sat, Nov 2, 2019",WAS,MIN,Washington Wizards,Minnesota Timberwolves,109,131,-22,Home,115.5,True,2020
+201911040WAS,"Mon, Nov 4, 2019",WAS,DET,Washington Wizards,Detroit Pistons,115,99,16,Home,95.7,True,2020
+201911060IND,"Wed, Nov 6, 2019",IND,WAS,Indiana Pacers,Washington Wizards,121,106,15,Home,100.5,True,2020
+201911080WAS,"Fri, Nov 8, 2019",WAS,CLE,Washington Wizards,Cleveland Cavaliers,100,113,-13,Home,95.9,True,2020
+201911130BOS,"Wed, Nov 13, 2019",BOS,WAS,Boston Celtics,Washington Wizards,140,133,7,Home,104.8,True,2020
+201911150MIN,"Fri, Nov 15, 2019",MIN,WAS,Minnesota Timberwolves,Washington Wizards,116,137,-21,Home,110.2,True,2020
+201911170ORL,"Sun, Nov 17, 2019",ORL,WAS,Orlando Magic,Washington Wizards,125,121,4,Home,99.7,True,2020
+201911200WAS,"Wed, Nov 20, 2019",WAS,SAS,Washington Wizards,San Antonio Spurs,138,132,6,Home,105.9,True,2020
+201911220WAS,"Fri, Nov 22, 2019",WAS,CHO,Washington Wizards,Charlotte Hornets,125,118,7,Home,103.9,True,2020
+201911240WAS,"Sun, Nov 24, 2019",WAS,SAC,Washington Wizards,Sacramento Kings,106,113,-7,Home,98.4,True,2020
+201911260DEN,"Tue, Nov 26, 2019",DEN,WAS,Denver Nuggets,Washington Wizards,117,104,13,Home,108.9,True,2020
+201911270PHO,"Wed, Nov 27, 2019",PHO,WAS,Phoenix Suns,Washington Wizards,132,140,-8,Home,104.9,True,2020
+201911290LAL,"Fri, Nov 29, 2019",LAL,WAS,Los Angeles Lakers,Washington Wizards,125,103,22,Home,106.8,True,2020
+201912010LAC,"Sun, Dec 1, 2019",LAC,WAS,Los Angeles Clippers,Washington Wizards,150,125,25,Home,114.4,True,2020
+201912030WAS,"Tue, Dec 3, 2019",WAS,ORL,Washington Wizards,Orlando Magic,120,127,-7,Home,103.8,True,2020
+201912050WAS,"Thu, Dec 5, 2019",WAS,PHI,Washington Wizards,Philadelphia 76ers,119,113,6,Home,99.5,True,2020
+201912060MIA,"Fri, Dec 6, 2019",MIA,WAS,Miami Heat,Washington Wizards,112,103,9,Home,96.1,True,2020
+201912080WAS,"Sun, Dec 8, 2019",WAS,LAC,Washington Wizards,Los Angeles Clippers,119,135,-16,Home,104.6,True,2020
+201912100CHO,"Tue, Dec 10, 2019",CHO,WAS,Charlotte Hornets,Washington Wizards,114,107,7,Home,95.9,True,2020
+201912140MEM,"Sat, Dec 14, 2019",MEM,WAS,Memphis Grizzlies,Washington Wizards,128,111,17,Home,104.8,True,2020
+201912160DET,"Mon, Dec 16, 2019",DET,WAS,Detroit Pistons,Washington Wizards,119,133,-14,Home,100.6,True,2020
+201912180WAS,"Wed, Dec 18, 2019",WAS,CHI,Washington Wizards,Chicago Bulls,109,110,-1,Home,96.9,True,2020
+201912200TOR,"Fri, Dec 20, 2019",TOR,WAS,Toronto Raptors,Washington Wizards,122,118,4,Home,104.7,True,2020
+201912210PHI,"Sat, Dec 21, 2019",PHI,WAS,Philadelphia 76ers,Washington Wizards,125,108,17,Home,101.9,True,2020
+201912230NYK,"Mon, Dec 23, 2019",NYK,WAS,New York Knicks,Washington Wizards,115,121,-6,Home,100.5,True,2020
+201912260DET,"Thu, Dec 26, 2019",DET,WAS,Detroit Pistons,Washington Wizards,132,102,30,Home,96.8,True,2020
+201912280WAS,"Sat, Dec 28, 2019",WAS,NYK,Washington Wizards,New York Knicks,100,107,-7,Home,103.9,True,2020
+201912300WAS,"Mon, Dec 30, 2019",WAS,MIA,Washington Wizards,Miami Heat,123,105,18,Home,96.0,True,2020
+202001010WAS,"Wed, Jan 1, 2020",WAS,ORL,Washington Wizards,Orlando Magic,101,122,-21,Home,102.3,True,2020
+202001030WAS,"Fri, Jan 3, 2020",WAS,POR,Washington Wizards,Portland Trail Blazers,103,122,-19,Home,94.6,True,2020
+202001040WAS,"Sat, Jan 4, 2020",WAS,DEN,Washington Wizards,Denver Nuggets,128,114,14,Home,99.5,True,2020
+202001060WAS,"Mon, Jan 6, 2020",WAS,BOS,Washington Wizards,Boston Celtics,99,94,5,Home,101.2,True,2020
+202001080ORL,"Wed, Jan 8, 2020",ORL,WAS,Orlando Magic,Washington Wizards,123,89,34,Home,103.1,True,2020
+202001100WAS,"Fri, Jan 10, 2020",WAS,ATL,Washington Wizards,Atlanta Hawks,111,101,10,Home,108.7,True,2020
+202001120WAS,"Sun, Jan 12, 2020",WAS,UTA,Washington Wizards,Utah Jazz,116,127,-11,Home,97.8,True,2020
+202001150CHI,"Wed, Jan 15, 2020",CHI,WAS,Chicago Bulls,Washington Wizards,115,106,9,Home,98.6,True,2020
+202001170TOR,"Fri, Jan 17, 2020",TOR,WAS,Toronto Raptors,Washington Wizards,140,111,29,Home,109.1,True,2020
+202001200WAS,"Mon, Jan 20, 2020",WAS,DET,Washington Wizards,Detroit Pistons,106,100,6,Home,101.0,True,2020
+202001220MIA,"Wed, Jan 22, 2020",MIA,WAS,Miami Heat,Washington Wizards,134,129,5,Home,98.9,True,2020
+202001230CLE,"Thu, Jan 23, 2020",CLE,WAS,Cleveland Cavaliers,Washington Wizards,112,124,-12,Home,95.9,True,2020
+202001260ATL,"Sun, Jan 26, 2020",ATL,WAS,Atlanta Hawks,Washington Wizards,152,133,19,Home,107.1,True,2020
+202001300WAS,"Thu, Jan 30, 2020",WAS,CHO,Washington Wizards,Charlotte Hornets,121,107,14,Home,94.2,True,2020
+202002010WAS,"Sat, Feb 1, 2020",WAS,BRK,Washington Wizards,Brooklyn Nets,113,107,6,Home,101.4,True,2020
+202002030WAS,"Mon, Feb 3, 2020",WAS,GSW,Washington Wizards,Golden State Warriors,117,125,-8,Home,101.9,True,2020
+202002070WAS,"Fri, Feb 7, 2020",WAS,DAL,Washington Wizards,Dallas Mavericks,119,118,1,Home,97.2,True,2020
+202002090WAS,"Sun, Feb 9, 2020",WAS,MEM,Washington Wizards,Memphis Grizzlies,99,106,-7,Home,108.8,True,2020
+202002110WAS,"Tue, Feb 11, 2020",WAS,CHI,Washington Wizards,Chicago Bulls,126,114,12,Home,106.3,True,2020
+202002120NYK,"Wed, Feb 12, 2020",NYK,WAS,New York Knicks,Washington Wizards,96,114,-18,Home,103.6,True,2020
+202002210WAS,"Fri, Feb 21, 2020",WAS,CLE,Washington Wizards,Cleveland Cavaliers,108,113,-5,Home,103.1,True,2020
+202002230CHI,"Sun, Feb 23, 2020",CHI,WAS,Chicago Bulls,Washington Wizards,126,117,9,Home,105.6,True,2020
+202002260WAS,"Wed, Feb 26, 2020",WAS,BRK,Washington Wizards,Brooklyn Nets,110,106,4,Home,101.8,True,2020
+202002280UTA,"Fri, Feb 28, 2020",UTA,WAS,Utah Jazz,Washington Wizards,129,119,10,Home,101.2,True,2020
+202003010GSW,"Sun, Mar 1, 2020",GSW,WAS,Golden State Warriors,Washington Wizards,110,124,-14,Home,100.2,True,2020
+202003030SAC,"Tue, Mar 3, 2020",SAC,WAS,Sacramento Kings,Washington Wizards,133,126,7,Home,104.9,True,2020
+202003040POR,"Wed, Mar 4, 2020",POR,WAS,Portland Trail Blazers,Washington Wizards,125,104,21,Home,100.7,True,2020
+202003060WAS,"Fri, Mar 6, 2020",WAS,ATL,Washington Wizards,Atlanta Hawks,118,112,6,Home,98.3,True,2020
+202003080WAS,"Sun, Mar 8, 2020",WAS,MIA,Washington Wizards,Miami Heat,89,100,-11,Home,92.8,True,2020
+202003100WAS,"Tue, Mar 10, 2020",WAS,NYK,Washington Wizards,New York Knicks,122,115,7,Home,100.0,True,2020
+202007310WAS,"Fri, Jul 31, 2020",WAS,PHO,Washington Wizards,Phoenix Suns,112,125,-13,Home,106.3,True,2020
+202008020BRK,"Sun, Aug 2, 2020",BRK,WAS,Brooklyn Nets,Washington Wizards,118,110,8,Home,100.2,True,2020
+202008030WAS,"Mon, Aug 3, 2020",WAS,IND,Washington Wizards,Indiana Pacers,100,111,-11,Home,99.5,True,2020
+202008050WAS,"Wed, Aug 5, 2020",WAS,PHI,Washington Wizards,Philadelphia 76ers,98,107,-9,Home,100.1,True,2020
+202008130BOS,"Thu, Aug 13, 2020",BOS,WAS,Boston Celtics,Washington Wizards,90,96,-6,Home,97.1,True,2020
+201910230BRK,"Wed, Oct 23, 2019",BRK,MIN,Brooklyn Nets,Minnesota Timberwolves,126,127,-1,Home,105.2,True,2020
+201910250BRK,"Fri, Oct 25, 2019",BRK,NYK,Brooklyn Nets,New York Knicks,113,109,4,Home,107.3,True,2020
+201910270MEM,"Sun, Oct 27, 2019",MEM,BRK,Memphis Grizzlies,Brooklyn Nets,134,133,1,Home,106.8,True,2020
+201910300BRK,"Wed, Oct 30, 2019",BRK,IND,Brooklyn Nets,Indiana Pacers,108,118,-10,Home,100.9,True,2020
+201911020DET,"Sat, Nov 2, 2019",DET,BRK,Detroit Pistons,Brooklyn Nets,113,109,4,Home,103.3,True,2020
+201911080POR,"Fri, Nov 8, 2019",POR,BRK,Portland Trail Blazers,Brooklyn Nets,115,119,-4,Home,100.5,True,2020
+201911100PHO,"Sun, Nov 10, 2019",PHO,BRK,Phoenix Suns,Brooklyn Nets,138,112,26,Home,108.3,True,2020
+201911120UTA,"Tue, Nov 12, 2019",UTA,BRK,Utah Jazz,Brooklyn Nets,119,114,5,Home,104.1,True,2020
+201911140DEN,"Thu, Nov 14, 2019",DEN,BRK,Denver Nuggets,Brooklyn Nets,101,93,8,Home,98.7,True,2020
+201911160CHI,"Sat, Nov 16, 2019",CHI,BRK,Chicago Bulls,Brooklyn Nets,111,117,-6,Home,107.7,True,2020
+201911180BRK,"Mon, Nov 18, 2019",BRK,IND,Brooklyn Nets,Indiana Pacers,86,115,-29,Home,99.0,True,2020
+201911200BRK,"Wed, Nov 20, 2019",BRK,CHO,Brooklyn Nets,Charlotte Hornets,101,91,10,Home,98.1,True,2020
+201911220BRK,"Fri, Nov 22, 2019",BRK,SAC,Brooklyn Nets,Sacramento Kings,116,97,19,Home,99.2,True,2020
+201911240NYK,"Sun, Nov 24, 2019",NYK,BRK,New York Knicks,Brooklyn Nets,101,103,-2,Home,92.2,True,2020
+201911250CLE,"Mon, Nov 25, 2019",CLE,BRK,Cleveland Cavaliers,Brooklyn Nets,106,108,-2,Home,95.3,True,2020
+201911270BOS,"Wed, Nov 27, 2019",BOS,BRK,Boston Celtics,Brooklyn Nets,121,110,11,Home,98.4,True,2020
+201911290BRK,"Fri, Nov 29, 2019",BRK,BOS,Brooklyn Nets,Boston Celtics,112,107,5,Home,102.0,True,2020
+201912010BRK,"Sun, Dec 1, 2019",BRK,MIA,Brooklyn Nets,Miami Heat,106,109,-3,Home,97.7,True,2020
+201912040ATL,"Wed, Dec 4, 2019",ATL,BRK,Atlanta Hawks,Brooklyn Nets,118,130,-12,Home,103.0,True,2020
+201912060CHO,"Fri, Dec 6, 2019",CHO,BRK,Charlotte Hornets,Brooklyn Nets,104,111,-7,Home,94.2,True,2020
+201912080BRK,"Sun, Dec 8, 2019",BRK,DEN,Brooklyn Nets,Denver Nuggets,105,102,3,Home,96.2,True,2020
+201912110BRK,"Wed, Dec 11, 2019",BRK,CHO,Brooklyn Nets,Charlotte Hornets,108,113,-5,Home,93.4,True,2020
+201912140TOR,"Sat, Dec 14, 2019",TOR,BRK,Toronto Raptors,Brooklyn Nets,110,102,8,Home,109.7,True,2020
+201912150BRK,"Sun, Dec 15, 2019",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,109,89,20,Home,101.4,True,2020
+201912190SAS,"Thu, Dec 19, 2019",SAS,BRK,San Antonio Spurs,Brooklyn Nets,118,105,13,Home,103.9,True,2020
+201912210BRK,"Sat, Dec 21, 2019",BRK,ATL,Brooklyn Nets,Atlanta Hawks,122,112,10,Home,111.2,True,2020
+201912260BRK,"Thu, Dec 26, 2019",BRK,NYK,Brooklyn Nets,New York Knicks,82,94,-12,Home,96.2,True,2020
+201912300MIN,"Mon, Dec 30, 2019",MIN,BRK,Minnesota Timberwolves,Brooklyn Nets,122,115,7,Home,106.7,True,2020
+202001020DAL,"Thu, Jan 2, 2020",DAL,BRK,Dallas Mavericks,Brooklyn Nets,123,111,12,Home,95.5,True,2020
+202001040BRK,"Sat, Jan 4, 2020",BRK,TOR,Brooklyn Nets,Toronto Raptors,102,121,-19,Home,97.5,True,2020
+202001060ORL,"Mon, Jan 6, 2020",ORL,BRK,Orlando Magic,Brooklyn Nets,101,89,12,Home,100.7,True,2020
+202001100BRK,"Fri, Jan 10, 2020",BRK,MIA,Brooklyn Nets,Miami Heat,117,113,4,Home,95.7,True,2020
+202001120BRK,"Sun, Jan 12, 2020",BRK,ATL,Brooklyn Nets,Atlanta Hawks,108,86,22,Home,106.9,True,2020
+202001140BRK,"Tue, Jan 14, 2020",BRK,UTA,Brooklyn Nets,Utah Jazz,107,118,-11,Home,96.7,True,2020
+202001150PHI,"Wed, Jan 15, 2020",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,117,106,11,Home,98.4,True,2020
+202001200BRK,"Mon, Jan 20, 2020",BRK,PHI,Brooklyn Nets,Philadelphia 76ers,111,117,-6,Home,102.8,True,2020
+202001230BRK,"Thu, Jan 23, 2020",BRK,LAL,Brooklyn Nets,Los Angeles Lakers,113,128,-15,Home,104.3,True,2020
+202001250DET,"Sat, Jan 25, 2020",DET,BRK,Detroit Pistons,Brooklyn Nets,111,121,-10,Home,92.8,True,2020
+202001260NYK,"Sun, Jan 26, 2020",NYK,BRK,New York Knicks,Brooklyn Nets,110,97,13,Home,95.1,True,2020
+202001290BRK,"Wed, Jan 29, 2020",BRK,DET,Brooklyn Nets,Detroit Pistons,125,115,10,Home,98.4,True,2020
+202001310BRK,"Fri, Jan 31, 2020",BRK,CHI,Brooklyn Nets,Chicago Bulls,133,118,15,Home,101.2,True,2020
+202002030BRK,"Mon, Feb 3, 2020",BRK,PHO,Brooklyn Nets,Phoenix Suns,119,97,22,Home,99.5,True,2020
+202002050BRK,"Wed, Feb 5, 2020",BRK,GSW,Brooklyn Nets,Golden State Warriors,129,88,41,Home,101.7,True,2020
+202002080TOR,"Sat, Feb 8, 2020",TOR,BRK,Toronto Raptors,Brooklyn Nets,119,118,1,Home,95.6,True,2020
+202002100IND,"Mon, Feb 10, 2020",IND,BRK,Indiana Pacers,Brooklyn Nets,105,106,-1,Home,94.6,True,2020
+202002120BRK,"Wed, Feb 12, 2020",BRK,TOR,Brooklyn Nets,Toronto Raptors,101,91,10,Home,98.5,True,2020
+202002200PHI,"Thu, Feb 20, 2020",PHI,BRK,Philadelphia 76ers,Brooklyn Nets,112,104,8,Home,94.8,True,2020
+202002220CHO,"Sat, Feb 22, 2020",CHO,BRK,Charlotte Hornets,Brooklyn Nets,86,115,-29,Home,96.6,True,2020
+202002240BRK,"Mon, Feb 24, 2020",BRK,ORL,Brooklyn Nets,Orlando Magic,113,115,-2,Home,97.2,True,2020
+202002280ATL,"Fri, Feb 28, 2020",ATL,BRK,Atlanta Hawks,Brooklyn Nets,141,118,23,Home,101.7,True,2020
+202002290MIA,"Sat, Feb 29, 2020",MIA,BRK,Miami Heat,Brooklyn Nets,116,113,3,Home,95.5,True,2020
+202003030BOS,"Tue, Mar 3, 2020",BOS,BRK,Boston Celtics,Brooklyn Nets,120,129,-9,Home,100.0,True,2020
+202003040BRK,"Wed, Mar 4, 2020",BRK,MEM,Brooklyn Nets,Memphis Grizzlies,79,118,-39,Home,93.8,True,2020
+202003060BRK,"Fri, Mar 6, 2020",BRK,SAS,Brooklyn Nets,San Antonio Spurs,139,120,19,Home,106.1,True,2020
+202003080BRK,"Sun, Mar 8, 2020",BRK,CHI,Brooklyn Nets,Chicago Bulls,110,107,3,Home,103.1,True,2020
+202003100LAL,"Tue, Mar 10, 2020",LAL,BRK,Los Angeles Lakers,Brooklyn Nets,102,104,-2,Home,95.0,True,2020
+202007310BRK,"Fri, Jul 31, 2020",BRK,ORL,Brooklyn Nets,Orlando Magic,118,128,-10,Home,103.0,True,2020
+202008050BOS,"Wed, Aug 5, 2020",BOS,BRK,Boston Celtics,Brooklyn Nets,149,115,34,Home,110.2,True,2020
+202008070BRK,"Fri, Aug 7, 2020",BRK,SAC,Brooklyn Nets,Sacramento Kings,119,106,13,Home,99.1,True,2020
+202008090LAC,"Sun, Aug 9, 2020",LAC,BRK,Los Angeles Clippers,Brooklyn Nets,120,129,-9,Home,100.1,True,2020
+202008110ORL,"Tue, Aug 11, 2020",ORL,BRK,Orlando Magic,Brooklyn Nets,96,108,-12,Home,100.3,True,2020
+202008130BRK,"Thu, Aug 13, 2020",BRK,POR,Brooklyn Nets,Portland Trail Blazers,133,134,-1,Home,104.8,True,2020
+202008170TOR,"Mon, Aug 17, 2020",TOR,BRK,Toronto Raptors,Brooklyn Nets,134,110,24,Home,101.0,True,2020
+202008190TOR,"Wed, Aug 19, 2020",TOR,BRK,Toronto Raptors,Brooklyn Nets,104,99,5,Home,100.5,True,2020
+202008210BRK,"Fri, Aug 21, 2020",BRK,TOR,Brooklyn Nets,Toronto Raptors,92,117,-25,Home,100.8,True,2020
+202008230BRK,"Sun, Aug 23, 2020",BRK,TOR,Brooklyn Nets,Toronto Raptors,122,150,-28,Home,109.3,True,2020
+201910230MIA,"Wed, Oct 23, 2019",MIA,MEM,Miami Heat,Memphis Grizzlies,120,101,19,Home,112.0,True,2020
+201910270MIN,"Sun, Oct 27, 2019",MIN,MIA,Minnesota Timberwolves,Miami Heat,116,109,7,Home,103.9,True,2020
+201910290MIA,"Tue, Oct 29, 2019",MIA,ATL,Miami Heat,Atlanta Hawks,112,97,15,Home,102.1,True,2020
+201910310ATL,"Thu, Oct 31, 2019",ATL,MIA,Atlanta Hawks,Miami Heat,97,106,-9,Home,95.3,True,2020
+201911050DEN,"Tue, Nov 5, 2019",DEN,MIA,Denver Nuggets,Miami Heat,109,89,20,Home,98.6,True,2020
+201911070PHO,"Thu, Nov 7, 2019",PHO,MIA,Phoenix Suns,Miami Heat,108,124,-16,Home,99.2,True,2020
+201911080LAL,"Fri, Nov 8, 2019",LAL,MIA,Los Angeles Lakers,Miami Heat,95,80,15,Home,94.3,True,2020
+201911120MIA,"Tue, Nov 12, 2019",MIA,DET,Miami Heat,Detroit Pistons,117,108,9,Home,98.5,True,2020
+201911140CLE,"Thu, Nov 14, 2019",CLE,MIA,Cleveland Cavaliers,Miami Heat,97,108,-11,Home,98.1,True,2020
+201911200MIA,"Wed, Nov 20, 2019",MIA,CLE,Miami Heat,Cleveland Cavaliers,124,100,24,Home,99.9,True,2020
+201911220CHI,"Fri, Nov 22, 2019",CHI,MIA,Chicago Bulls,Miami Heat,108,116,-8,Home,97.3,True,2020
+201911230PHI,"Sat, Nov 23, 2019",PHI,MIA,Philadelphia 76ers,Miami Heat,113,86,27,Home,93.7,True,2020
+201911250MIA,"Mon, Nov 25, 2019",MIA,CHO,Miami Heat,Charlotte Hornets,117,100,17,Home,98.0,True,2020
+201911290MIA,"Fri, Nov 29, 2019",MIA,GSW,Miami Heat,Golden State Warriors,122,105,17,Home,96.6,True,2020
+201912030TOR,"Tue, Dec 3, 2019",TOR,MIA,Toronto Raptors,Miami Heat,110,121,-11,Home,96.5,True,2020
+201912040BOS,"Wed, Dec 4, 2019",BOS,MIA,Boston Celtics,Miami Heat,112,93,19,Home,92.0,True,2020
+201912080MIA,"Sun, Dec 8, 2019",MIA,CHI,Miami Heat,Chicago Bulls,110,105,5,Home,89.6,True,2020
+201912100MIA,"Tue, Dec 10, 2019",MIA,ATL,Miami Heat,Atlanta Hawks,135,121,14,Home,99.7,True,2020
+201912130MIA,"Fri, Dec 13, 2019",MIA,LAL,Miami Heat,Los Angeles Lakers,110,113,-3,Home,99.0,True,2020
+201912140DAL,"Sat, Dec 14, 2019",DAL,MIA,Dallas Mavericks,Miami Heat,118,122,-4,Home,97.8,True,2020
+201912160MEM,"Mon, Dec 16, 2019",MEM,MIA,Memphis Grizzlies,Miami Heat,118,111,7,Home,97.1,True,2020
+201912180PHI,"Wed, Dec 18, 2019",PHI,MIA,Philadelphia 76ers,Miami Heat,104,108,-4,Home,92.3,True,2020
+201912200MIA,"Fri, Dec 20, 2019",MIA,NYK,Miami Heat,New York Knicks,129,114,15,Home,100.3,True,2020
+201912230MIA,"Mon, Dec 23, 2019",MIA,UTA,Miami Heat,Utah Jazz,107,104,3,Home,98.7,True,2020
+201912270MIA,"Fri, Dec 27, 2019",MIA,IND,Miami Heat,Indiana Pacers,113,112,1,Home,95.1,True,2020
+201912280MIA,"Sat, Dec 28, 2019",MIA,PHI,Miami Heat,Philadelphia 76ers,117,116,1,Home,92.5,True,2020
+202001020MIA,"Thu, Jan 2, 2020",MIA,TOR,Miami Heat,Toronto Raptors,84,76,8,Home,89.0,True,2020
+202001030ORL,"Fri, Jan 3, 2020",ORL,MIA,Orlando Magic,Miami Heat,105,85,20,Home,95.3,True,2020
+202001050MIA,"Sun, Jan 5, 2020",MIA,POR,Miami Heat,Portland Trail Blazers,122,111,11,Home,95.2,True,2020
+202001080IND,"Wed, Jan 8, 2020",IND,MIA,Indiana Pacers,Miami Heat,108,122,-14,Home,99.0,True,2020
+202001120NYK,"Sun, Jan 12, 2020",NYK,MIA,New York Knicks,Miami Heat,124,121,3,Home,95.3,True,2020
+202001150MIA,"Wed, Jan 15, 2020",MIA,SAS,Miami Heat,San Antonio Spurs,106,100,6,Home,94.5,True,2020
+202001190SAS,"Sun, Jan 19, 2020",SAS,MIA,San Antonio Spurs,Miami Heat,107,102,5,Home,93.2,True,2020
+202001200MIA,"Mon, Jan 20, 2020",MIA,SAC,Miami Heat,Sacramento Kings,118,113,5,Home,96.9,True,2020
+202001240MIA,"Fri, Jan 24, 2020",MIA,LAC,Miami Heat,Los Angeles Clippers,117,122,-5,Home,100.5,True,2020
+202001270MIA,"Mon, Jan 27, 2020",MIA,ORL,Miami Heat,Orlando Magic,113,92,21,Home,90.0,True,2020
+202001280MIA,"Tue, Jan 28, 2020",MIA,BOS,Miami Heat,Boston Celtics,101,109,-8,Home,96.4,True,2020
+202002010ORL,"Sat, Feb 1, 2020",ORL,MIA,Orlando Magic,Miami Heat,89,102,-13,Home,89.8,True,2020
+202002030MIA,"Mon, Feb 3, 2020",MIA,PHI,Miami Heat,Philadelphia 76ers,137,106,31,Home,92.0,True,2020
+202002050LAC,"Wed, Feb 5, 2020",LAC,MIA,Los Angeles Clippers,Miami Heat,128,111,17,Home,98.9,True,2020
+202002070SAC,"Fri, Feb 7, 2020",SAC,MIA,Sacramento Kings,Miami Heat,105,97,8,Home,96.3,True,2020
+202002090POR,"Sun, Feb 9, 2020",POR,MIA,Portland Trail Blazers,Miami Heat,115,109,6,Home,101.2,True,2020
+202002100GSW,"Mon, Feb 10, 2020",GSW,MIA,Golden State Warriors,Miami Heat,101,113,-12,Home,98.6,True,2020
+202002120UTA,"Wed, Feb 12, 2020",UTA,MIA,Utah Jazz,Miami Heat,116,101,15,Home,97.8,True,2020
+202002200ATL,"Thu, Feb 20, 2020",ATL,MIA,Atlanta Hawks,Miami Heat,129,124,5,Home,108.9,True,2020
+202002220MIA,"Sat, Feb 22, 2020",MIA,CLE,Miami Heat,Cleveland Cavaliers,124,105,19,Home,98.0,True,2020
+202002240CLE,"Mon, Feb 24, 2020",CLE,MIA,Cleveland Cavaliers,Miami Heat,125,119,6,Home,97.0,True,2020
+202002260MIA,"Wed, Feb 26, 2020",MIA,MIN,Miami Heat,Minnesota Timberwolves,126,129,-3,Home,109.3,True,2020
+202002280MIA,"Fri, Feb 28, 2020",MIA,DAL,Miami Heat,Dallas Mavericks,126,118,8,Home,96.7,True,2020
+202003040MIA,"Wed, Mar 4, 2020",MIA,ORL,Miami Heat,Orlando Magic,116,113,3,Home,92.9,True,2020
+202003110MIA,"Wed, Mar 11, 2020",MIA,CHO,Miami Heat,Charlotte Hornets,98,109,-11,Home,89.1,True,2020
+202008010DEN,"Sat, Aug 1, 2020",DEN,MIA,Denver Nuggets,Miami Heat,105,125,-20,Home,98.7,True,2020
+202008030MIA,"Mon, Aug 3, 2020",MIA,TOR,Miami Heat,Toronto Raptors,103,107,-4,Home,98.3,True,2020
+202008040MIA,"Tue, Aug 4, 2020",MIA,BOS,Miami Heat,Boston Celtics,112,106,6,Home,93.6,True,2020
+202008080MIA,"Sat, Aug 8, 2020",MIA,PHO,Miami Heat,Phoenix Suns,112,119,-7,Home,99.6,True,2020
+202008100MIA,"Mon, Aug 10, 2020",MIA,IND,Miami Heat,Indiana Pacers,114,92,22,Home,104.4,True,2020
+202008140IND,"Fri, Aug 14, 2020",IND,MIA,Indiana Pacers,Miami Heat,109,92,17,Home,100.3,True,2020
+202008180IND,"Tue, Aug 18, 2020",IND,MIA,Indiana Pacers,Miami Heat,101,113,-12,Home,91.1,True,2020
+202008200IND,"Thu, Aug 20, 2020",IND,MIA,Indiana Pacers,Miami Heat,100,109,-9,Home,97.9,True,2020
+202008220MIA,"Sat, Aug 22, 2020",MIA,IND,Miami Heat,Indiana Pacers,124,115,9,Home,102.8,True,2020
+202008240MIA,"Mon, Aug 24, 2020",MIA,IND,Miami Heat,Indiana Pacers,99,87,12,Home,91.8,True,2020
+202009150BOS,"Tue, Sep 15, 2020",BOS,MIA,Boston Celtics,Miami Heat,114,117,-3,Home,90.0,True,2020
+202009170BOS,"Thu, Sep 17, 2020",BOS,MIA,Boston Celtics,Miami Heat,101,106,-5,Home,93.2,True,2020
+202009190MIA,"Sat, Sep 19, 2020",MIA,BOS,Miami Heat,Boston Celtics,106,117,-11,Home,99.0,True,2020
+202009230MIA,"Wed, Sep 23, 2020",MIA,BOS,Miami Heat,Boston Celtics,112,109,3,Home,96.7,True,2020
+202009250BOS,"Fri, Sep 25, 2020",BOS,MIA,Boston Celtics,Miami Heat,121,108,13,Home,101.2,True,2020
+202009270MIA,"Sun, Sep 27, 2020",MIA,BOS,Miami Heat,Boston Celtics,125,113,12,Home,99.9,True,2020
+202009300LAL,"Wed, Sep 30, 2020",LAL,MIA,Los Angeles Lakers,Miami Heat,116,98,18,Home,96.4,True,2020
+202010020LAL,"Fri, Oct 2, 2020",LAL,MIA,Los Angeles Lakers,Miami Heat,124,114,10,Home,91.2,True,2020
+202010040MIA,"Sun, Oct 4, 2020",MIA,LAL,Miami Heat,Los Angeles Lakers,115,104,11,Home,97.7,True,2020
+202010060MIA,"Tue, Oct 6, 2020",MIA,LAL,Miami Heat,Los Angeles Lakers,96,102,-6,Home,89.7,True,2020
+202010090LAL,"Fri, Oct 9, 2020",LAL,MIA,Los Angeles Lakers,Miami Heat,108,111,-3,Home,92.0,True,2020
+202010110MIA,"Sun, Oct 11, 2020",MIA,LAL,Miami Heat,Los Angeles Lakers,93,106,-13,Home,92.1,True,2020
+201910250MEM,"Fri, Oct 25, 2019",MEM,CHI,Memphis Grizzlies,Chicago Bulls,102,110,-8,Home,104.0,True,2020
+201910290LAL,"Tue, Oct 29, 2019",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,120,91,29,Home,108.9,True,2020
+201911020MEM,"Sat, Nov 2, 2019",MEM,PHO,Memphis Grizzlies,Phoenix Suns,105,114,-9,Home,102.5,True,2020
+201911060MEM,"Wed, Nov 6, 2019",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,137,121,16,Home,106.9,True,2020
+201911080ORL,"Fri, Nov 8, 2019",ORL,MEM,Orlando Magic,Memphis Grizzlies,118,86,32,Home,101.5,True,2020
+201911090MEM,"Sat, Nov 9, 2019",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,122,138,-16,Home,104.9,True,2020
+201911110SAS,"Mon, Nov 11, 2019",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,109,113,-4,Home,99.2,True,2020
+201911130CHO,"Wed, Nov 13, 2019",CHO,MEM,Charlotte Hornets,Memphis Grizzlies,117,119,-2,Home,102.2,True,2020
+201911150MEM,"Fri, Nov 15, 2019",MEM,UTA,Memphis Grizzlies,Utah Jazz,107,106,1,Home,101.9,True,2020
+201911170MEM,"Sun, Nov 17, 2019",MEM,DEN,Memphis Grizzlies,Denver Nuggets,114,131,-17,Home,101.7,True,2020
+201911190MEM,"Tue, Nov 19, 2019",MEM,GSW,Memphis Grizzlies,Golden State Warriors,95,114,-19,Home,99.3,True,2020
+201911230MEM,"Sat, Nov 23, 2019",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,108,109,-1,Home,99.3,True,2020
+201911250IND,"Mon, Nov 25, 2019",IND,MEM,Indiana Pacers,Memphis Grizzlies,126,114,12,Home,99.9,True,2020
+201911270MEM,"Wed, Nov 27, 2019",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,119,121,-2,Home,105.9,True,2020
+201911290MEM,"Fri, Nov 29, 2019",MEM,UTA,Memphis Grizzlies,Utah Jazz,94,103,-9,Home,95.0,True,2020
+201912010MIN,"Sun, Dec 1, 2019",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,107,115,-8,Home,104.5,True,2020
+201912020MEM,"Mon, Dec 2, 2019",MEM,IND,Memphis Grizzlies,Indiana Pacers,104,117,-13,Home,98.4,True,2020
+201912040CHI,"Wed, Dec 4, 2019",CHI,MEM,Chicago Bulls,Memphis Grizzlies,106,99,7,Home,102.1,True,2020
+201912070UTA,"Sat, Dec 7, 2019",UTA,MEM,Utah Jazz,Memphis Grizzlies,126,112,14,Home,99.1,True,2020
+201912090GSW,"Mon, Dec 9, 2019",GSW,MEM,Golden State Warriors,Memphis Grizzlies,102,110,-8,Home,105.7,True,2020
+201912110PHO,"Wed, Dec 11, 2019",PHO,MEM,Phoenix Suns,Memphis Grizzlies,108,115,-7,Home,108.0,True,2020
+201912200CLE,"Fri, Dec 20, 2019",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,114,107,7,Home,99.2,True,2020
+201912210MEM,"Sat, Dec 21, 2019",MEM,SAC,Memphis Grizzlies,Sacramento Kings,119,115,4,Home,100.4,True,2020
+201912230MEM,"Mon, Dec 23, 2019",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,115,145,-30,Home,103.1,True,2020
+201912280DEN,"Sat, Dec 28, 2019",DEN,MEM,Denver Nuggets,Memphis Grizzlies,119,110,9,Home,100.8,True,2020
+201912290MEM,"Sun, Dec 29, 2019",MEM,CHO,Memphis Grizzlies,Charlotte Hornets,117,104,13,Home,99.3,True,2020
+202001020SAC,"Thu, Jan 2, 2020",SAC,MEM,Sacramento Kings,Memphis Grizzlies,128,123,5,Home,107.3,True,2020
+202001040LAC,"Sat, Jan 4, 2020",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,114,140,-26,Home,106.1,True,2020
+202001050PHO,"Sun, Jan 5, 2020",PHO,MEM,Phoenix Suns,Memphis Grizzlies,114,121,-7,Home,102.4,True,2020
+202001070MEM,"Tue, Jan 7, 2020",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,119,112,7,Home,103.1,True,2020
+202001100MEM,"Fri, Jan 10, 2020",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,134,121,13,Home,101.4,True,2020
+202001120MEM,"Sun, Jan 12, 2020",MEM,GSW,Memphis Grizzlies,Golden State Warriors,122,102,20,Home,107.4,True,2020
+202001170MEM,"Fri, Jan 17, 2020",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,113,109,4,Home,100.9,True,2020
+202001220BOS,"Wed, Jan 22, 2020",BOS,MEM,Boston Celtics,Memphis Grizzlies,119,95,24,Home,98.4,True,2020
+202001240DET,"Fri, Jan 24, 2020",DET,MEM,Detroit Pistons,Memphis Grizzlies,112,125,-13,Home,98.0,True,2020
+202001260MEM,"Sun, Jan 26, 2020",MEM,PHO,Memphis Grizzlies,Phoenix Suns,114,109,5,Home,109.4,True,2020
+202001280MEM,"Tue, Jan 28, 2020",MEM,DEN,Memphis Grizzlies,Denver Nuggets,104,96,8,Home,97.0,True,2020
+202001290NYK,"Wed, Jan 29, 2020",NYK,MEM,New York Knicks,Memphis Grizzlies,106,127,-21,Home,104.2,True,2020
+202002030MEM,"Mon, Feb 3, 2020",MEM,DET,Memphis Grizzlies,Detroit Pistons,96,82,14,Home,96.6,True,2020
+202002050DAL,"Wed, Feb 5, 2020",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,107,121,-14,Home,97.0,True,2020
+202002070PHI,"Fri, Feb 7, 2020",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,119,107,12,Home,106.8,True,2020
+202002120MEM,"Wed, Feb 12, 2020",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,111,104,7,Home,99.7,True,2020
+202002200SAC,"Thu, Feb 20, 2020",SAC,MEM,Sacramento Kings,Memphis Grizzlies,129,125,4,Home,103.5,True,2020
+202002210LAL,"Fri, Feb 21, 2020",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,117,105,12,Home,103.8,True,2020
+202002240LAC,"Mon, Feb 24, 2020",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,124,97,27,Home,99.5,True,2020
+202002280MEM,"Fri, Feb 28, 2020",MEM,SAC,Memphis Grizzlies,Sacramento Kings,101,104,-3,Home,99.5,True,2020
+202002290MEM,"Sat, Feb 29, 2020",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,105,88,17,Home,90.0,True,2020
+202003020ATL,"Mon, Mar 2, 2020",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,88,127,-39,Home,102.7,True,2020
+202003060DAL,"Fri, Mar 6, 2020",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,121,96,25,Home,98.3,True,2020
+202003070MEM,"Sat, Mar 7, 2020",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,118,101,17,Home,102.4,True,2020
+202003100MEM,"Tue, Mar 10, 2020",MEM,ORL,Memphis Grizzlies,Orlando Magic,115,120,-5,Home,102.4,True,2020
+202007310POR,"Fri, Jul 31, 2020",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,140,135,5,Home,101.1,True,2020
+202008020MEM,"Sun, Aug 2, 2020",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,106,108,-2,Home,104.0,True,2020
+202008050UTA,"Wed, Aug 5, 2020",UTA,MEM,Utah Jazz,Memphis Grizzlies,124,115,9,Home,103.1,True,2020
+202008090TOR,"Sun, Aug 9, 2020",TOR,MEM,Toronto Raptors,Memphis Grizzlies,108,99,9,Home,105.2,True,2020
+202008110MEM,"Tue, Aug 11, 2020",MEM,BOS,Memphis Grizzlies,Boston Celtics,107,122,-15,Home,96.0,True,2020
+202008150POR,"Sat, Aug 15, 2020",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,126,122,4,Home,104.1,True,2020
+201910240GSW,"Thu, Oct 24, 2019",GSW,LAC,Golden State Warriors,Los Angeles Clippers,122,141,-19,Home,105.5,True,2020
+201910300GSW,"Wed, Oct 30, 2019",GSW,PHO,Golden State Warriors,Phoenix Suns,110,121,-11,Home,105.6,True,2020
+201911010GSW,"Fri, Nov 1, 2019",GSW,SAS,Golden State Warriors,San Antonio Spurs,110,127,-17,Home,97.0,True,2020
+201911020GSW,"Sat, Nov 2, 2019",GSW,CHO,Golden State Warriors,Charlotte Hornets,87,93,-6,Home,91.9,True,2020
+201911040GSW,"Mon, Nov 4, 2019",GSW,POR,Golden State Warriors,Portland Trail Blazers,127,118,9,Home,99.2,True,2020
+201911080MIN,"Fri, Nov 8, 2019",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,125,119,6,Home,105.5,True,2020
+201911110GSW,"Mon, Nov 11, 2019",GSW,UTA,Golden State Warriors,Utah Jazz,108,122,-14,Home,100.5,True,2020
+201911130LAL,"Wed, Nov 13, 2019",LAL,GSW,Los Angeles Lakers,Golden State Warriors,120,94,26,Home,100.2,True,2020
+201911150GSW,"Fri, Nov 15, 2019",GSW,BOS,Golden State Warriors,Boston Celtics,100,105,-5,Home,102.1,True,2020
+201911200DAL,"Wed, Nov 20, 2019",DAL,GSW,Dallas Mavericks,Golden State Warriors,142,94,48,Home,99.3,True,2020
+201911220UTA,"Fri, Nov 22, 2019",UTA,GSW,Utah Jazz,Golden State Warriors,113,109,4,Home,99.4,True,2020
+201911270GSW,"Wed, Nov 27, 2019",GSW,CHI,Golden State Warriors,Chicago Bulls,104,90,14,Home,97.3,True,2020
+201912010ORL,"Sun, Dec 1, 2019",ORL,GSW,Orlando Magic,Golden State Warriors,100,96,4,Home,92.9,True,2020
+201912020ATL,"Mon, Dec 2, 2019",ATL,GSW,Atlanta Hawks,Golden State Warriors,104,79,25,Home,92.0,True,2020
+201912040CHO,"Wed, Dec 4, 2019",CHO,GSW,Charlotte Hornets,Golden State Warriors,106,91,15,Home,91.6,True,2020
+201912060CHI,"Fri, Dec 6, 2019",CHI,GSW,Chicago Bulls,Golden State Warriors,98,100,-2,Home,92.1,True,2020
+201912110GSW,"Wed, Dec 11, 2019",GSW,NYK,Golden State Warriors,New York Knicks,122,124,-2,Home,98.3,True,2020
+201912130UTA,"Fri, Dec 13, 2019",UTA,GSW,Utah Jazz,Golden State Warriors,114,106,8,Home,96.8,True,2020
+201912150GSW,"Sun, Dec 15, 2019",GSW,SAC,Golden State Warriors,Sacramento Kings,79,100,-21,Home,93.2,True,2020
+201912180POR,"Wed, Dec 18, 2019",POR,GSW,Portland Trail Blazers,Golden State Warriors,122,112,10,Home,101.4,True,2020
+201912230GSW,"Mon, Dec 23, 2019",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,113,104,9,Home,103.6,True,2020
+201912270GSW,"Fri, Dec 27, 2019",GSW,PHO,Golden State Warriors,Phoenix Suns,105,96,9,Home,99.1,True,2020
+201912280GSW,"Sat, Dec 28, 2019",GSW,DAL,Golden State Warriors,Dallas Mavericks,121,141,-20,Home,103.0,True,2020
+201912310SAS,"Tue, Dec 31, 2019",SAS,GSW,San Antonio Spurs,Golden State Warriors,117,113,4,Home,91.6,True,2020
+202001020MIN,"Thu, Jan 2, 2020",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,99,84,15,Home,93.9,True,2020
+202001040GSW,"Sat, Jan 4, 2020",GSW,DET,Golden State Warriors,Detroit Pistons,104,111,-7,Home,98.8,True,2020
+202001060SAC,"Mon, Jan 6, 2020",SAC,GSW,Sacramento Kings,Golden State Warriors,111,98,13,Home,104.7,True,2020
+202001100LAC,"Fri, Jan 10, 2020",LAC,GSW,Los Angeles Clippers,Golden State Warriors,109,100,9,Home,101.9,True,2020
+202001140GSW,"Tue, Jan 14, 2020",GSW,DAL,Golden State Warriors,Dallas Mavericks,97,124,-27,Home,96.2,True,2020
+202001160GSW,"Thu, Jan 16, 2020",GSW,DEN,Golden State Warriors,Denver Nuggets,131,134,-3,Home,102.6,True,2020
+202001180GSW,"Sat, Jan 18, 2020",GSW,ORL,Golden State Warriors,Orlando Magic,109,95,14,Home,98.0,True,2020
+202001200POR,"Mon, Jan 20, 2020",POR,GSW,Portland Trail Blazers,Golden State Warriors,129,124,5,Home,100.3,True,2020
+202001220GSW,"Wed, Jan 22, 2020",GSW,UTA,Golden State Warriors,Utah Jazz,96,129,-33,Home,94.0,True,2020
+202001240GSW,"Fri, Jan 24, 2020",GSW,IND,Golden State Warriors,Indiana Pacers,118,129,-11,Home,99.8,True,2020
+202001280PHI,"Tue, Jan 28, 2020",PHI,GSW,Philadelphia 76ers,Golden State Warriors,115,104,11,Home,102.9,True,2020
+202001300BOS,"Thu, Jan 30, 2020",BOS,GSW,Boston Celtics,Golden State Warriors,119,104,15,Home,101.7,True,2020
+202002010CLE,"Sat, Feb 1, 2020",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,112,131,-19,Home,98.9,True,2020
+202002080GSW,"Sat, Feb 8, 2020",GSW,LAL,Golden State Warriors,Los Angeles Lakers,120,125,-5,Home,106.9,True,2020
+202002120PHO,"Wed, Feb 12, 2020",PHO,GSW,Phoenix Suns,Golden State Warriors,112,106,6,Home,101.5,True,2020
+202002250GSW,"Tue, Feb 25, 2020",GSW,SAC,Golden State Warriors,Sacramento Kings,94,112,-18,Home,98.1,True,2020
+202002270GSW,"Thu, Feb 27, 2020",GSW,LAL,Golden State Warriors,Los Angeles Lakers,86,116,-30,Home,104.8,True,2020
+202002290PHO,"Sat, Feb 29, 2020",PHO,GSW,Phoenix Suns,Golden State Warriors,99,115,-16,Home,98.6,True,2020
+202003030DEN,"Tue, Mar 3, 2020",DEN,GSW,Denver Nuggets,Golden State Warriors,100,116,-16,Home,94.4,True,2020
+202003050GSW,"Thu, Mar 5, 2020",GSW,TOR,Golden State Warriors,Toronto Raptors,113,121,-8,Home,104.8,True,2020
+202003070GSW,"Sat, Mar 7, 2020",GSW,PHI,Golden State Warriors,Philadelphia 76ers,118,114,4,Home,90.9,True,2020
+202003100GSW,"Tue, Mar 10, 2020",GSW,LAC,Golden State Warriors,Los Angeles Clippers,107,131,-24,Home,95.5,True,2020
+201910230CHO,"Wed, Oct 23, 2019",CHO,CHI,Charlotte Hornets,Chicago Bulls,126,125,1,Home,101.6,True,2020
+201910260CHI,"Sat, Oct 26, 2019",CHI,TOR,Chicago Bulls,Toronto Raptors,84,108,-24,Home,104.0,True,2020
+201910280NYK,"Mon, Oct 28, 2019",NYK,CHI,New York Knicks,Chicago Bulls,105,98,7,Home,94.2,True,2020
+201910300CLE,"Wed, Oct 30, 2019",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,117,111,6,Home,95.0,True,2020
+201911010CHI,"Fri, Nov 1, 2019",CHI,DET,Chicago Bulls,Detroit Pistons,112,106,6,Home,101.0,True,2020
+201911030IND,"Sun, Nov 3, 2019",IND,CHI,Indiana Pacers,Chicago Bulls,108,95,13,Home,103.2,True,2020
+201911050CHI,"Tue, Nov 5, 2019",CHI,LAL,Chicago Bulls,Los Angeles Lakers,112,118,-6,Home,103.4,True,2020
+201911060ATL,"Wed, Nov 6, 2019",ATL,CHI,Atlanta Hawks,Chicago Bulls,93,113,-20,Home,103.9,True,2020
+201911120CHI,"Tue, Nov 12, 2019",CHI,NYK,Chicago Bulls,New York Knicks,120,102,18,Home,102.5,True,2020
+201911200CHI,"Wed, Nov 20, 2019",CHI,DET,Chicago Bulls,Detroit Pistons,109,89,20,Home,99.9,True,2020
+201911230CHO,"Sat, Nov 23, 2019",CHO,CHI,Charlotte Hornets,Chicago Bulls,115,116,-1,Home,97.1,True,2020
+201911250CHI,"Mon, Nov 25, 2019",CHI,POR,Chicago Bulls,Portland Trail Blazers,94,117,-23,Home,100.5,True,2020
+201911290POR,"Fri, Nov 29, 2019",POR,CHI,Portland Trail Blazers,Chicago Bulls,107,103,4,Home,100.6,True,2020
+201912020SAC,"Mon, Dec 2, 2019",SAC,CHI,Sacramento Kings,Chicago Bulls,106,113,-7,Home,99.1,True,2020
+201912090CHI,"Mon, Dec 9, 2019",CHI,TOR,Chicago Bulls,Toronto Raptors,92,93,-1,Home,98.3,True,2020
+201912110CHI,"Wed, Dec 11, 2019",CHI,ATL,Chicago Bulls,Atlanta Hawks,136,102,34,Home,105.9,True,2020
+201912130CHI,"Fri, Dec 13, 2019",CHI,CHO,Chicago Bulls,Charlotte Hornets,73,83,-10,Home,94.9,True,2020
+201912140CHI,"Sat, Dec 14, 2019",CHI,LAC,Chicago Bulls,Los Angeles Clippers,109,106,3,Home,98.5,True,2020
+201912210DET,"Sat, Dec 21, 2019",DET,CHI,Detroit Pistons,Chicago Bulls,107,119,-12,Home,96.3,True,2020
+201912230ORL,"Mon, Dec 23, 2019",ORL,CHI,Orlando Magic,Chicago Bulls,103,95,8,Home,96.8,True,2020
+201912280CHI,"Sat, Dec 28, 2019",CHI,ATL,Chicago Bulls,Atlanta Hawks,116,81,35,Home,97.9,True,2020
+202001020CHI,"Thu, Jan 2, 2020",CHI,UTA,Chicago Bulls,Utah Jazz,98,102,-4,Home,93.2,True,2020
+202001040CHI,"Sat, Jan 4, 2020",CHI,BOS,Chicago Bulls,Boston Celtics,104,111,-7,Home,95.0,True,2020
+202001060DAL,"Mon, Jan 6, 2020",DAL,CHI,Dallas Mavericks,Chicago Bulls,118,110,8,Home,92.3,True,2020
+202001100CHI,"Fri, Jan 10, 2020",CHI,IND,Chicago Bulls,Indiana Pacers,105,116,-11,Home,93.8,True,2020
+202001110DET,"Sat, Jan 11, 2020",DET,CHI,Detroit Pistons,Chicago Bulls,99,108,-9,Home,93.6,True,2020
+202001130BOS,"Mon, Jan 13, 2020",BOS,CHI,Boston Celtics,Chicago Bulls,113,101,12,Home,96.1,True,2020
+202001170PHI,"Fri, Jan 17, 2020",PHI,CHI,Philadelphia 76ers,Chicago Bulls,100,89,11,Home,91.5,True,2020
+202001180CHI,"Sat, Jan 18, 2020",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,118,116,2,Home,100.7,True,2020
+202001220CHI,"Wed, Jan 22, 2020",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,117,110,7,Home,100.8,True,2020
+202001240CHI,"Fri, Jan 24, 2020",CHI,SAC,Chicago Bulls,Sacramento Kings,81,98,-17,Home,94.1,True,2020
+202001250CLE,"Sat, Jan 25, 2020",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,106,118,-12,Home,96.4,True,2020
+202001270CHI,"Mon, Jan 27, 2020",CHI,SAS,Chicago Bulls,San Antonio Spurs,110,109,1,Home,93.6,True,2020
+202001290IND,"Wed, Jan 29, 2020",IND,CHI,Indiana Pacers,Chicago Bulls,115,106,9,Home,91.8,True,2020
+202002020TOR,"Sun, Feb 2, 2020",TOR,CHI,Toronto Raptors,Chicago Bulls,129,102,27,Home,95.9,True,2020
+202002090PHI,"Sun, Feb 9, 2020",PHI,CHI,Philadelphia 76ers,Chicago Bulls,118,111,7,Home,97.1,True,2020
+202002200CHI,"Thu, Feb 20, 2020",CHI,CHO,Chicago Bulls,Charlotte Hornets,93,103,-10,Home,92.9,True,2020
+202002220CHI,"Sat, Feb 22, 2020",CHI,PHO,Chicago Bulls,Phoenix Suns,104,112,-8,Home,100.2,True,2020
+202002290NYK,"Sat, Feb 29, 2020",NYK,CHI,New York Knicks,Chicago Bulls,125,115,10,Home,93.6,True,2020
+202003020CHI,"Mon, Mar 2, 2020",CHI,DAL,Chicago Bulls,Dallas Mavericks,109,107,2,Home,99.1,True,2020
+202003040MIN,"Wed, Mar 4, 2020",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,115,108,7,Home,97.2,True,2020
+202003060CHI,"Fri, Mar 6, 2020",CHI,IND,Chicago Bulls,Indiana Pacers,102,108,-6,Home,99.6,True,2020
+202003100CHI,"Tue, Mar 10, 2020",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,108,103,5,Home,96.5,True,2020
+201910220LAC,"Tue, Oct 22, 2019",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,112,102,10,Home,95.3,True,2020
+201910260PHO,"Sat, Oct 26, 2019",PHO,LAC,Phoenix Suns,Los Angeles Clippers,130,122,8,Home,104.9,True,2020
+201910280LAC,"Mon, Oct 28, 2019",LAC,CHO,Los Angeles Clippers,Charlotte Hornets,111,96,15,Home,100.4,True,2020
+201910300UTA,"Wed, Oct 30, 2019",UTA,LAC,Utah Jazz,Los Angeles Clippers,110,96,14,Home,97.8,True,2020
+201910310LAC,"Thu, Oct 31, 2019",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,103,97,6,Home,100.6,True,2020
+201911030LAC,"Sun, Nov 3, 2019",LAC,UTA,Los Angeles Clippers,Utah Jazz,105,94,11,Home,94.9,True,2020
+201911070LAC,"Thu, Nov 7, 2019",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,107,101,6,Home,103.6,True,2020
+201911110LAC,"Mon, Nov 11, 2019",LAC,TOR,Los Angeles Clippers,Toronto Raptors,98,88,10,Home,100.1,True,2020
+201911160LAC,"Sat, Nov 16, 2019",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,150,101,49,Home,109.6,True,2020
+201911200LAC,"Wed, Nov 20, 2019",LAC,BOS,Los Angeles Clippers,Boston Celtics,107,104,3,Home,95.6,True,2020
+201911260DAL,"Tue, Nov 26, 2019",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,99,114,-15,Home,103.7,True,2020
+201911290SAS,"Fri, Nov 29, 2019",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,107,97,10,Home,99.1,True,2020
+201912030LAC,"Tue, Dec 3, 2019",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,117,97,20,Home,99.1,True,2020
+201912090IND,"Mon, Dec 9, 2019",IND,LAC,Indiana Pacers,Los Angeles Clippers,99,110,-11,Home,105.2,True,2020
+201912110TOR,"Wed, Dec 11, 2019",TOR,LAC,Toronto Raptors,Los Angeles Clippers,92,112,-20,Home,99.8,True,2020
+201912130MIN,"Fri, Dec 13, 2019",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,117,124,-7,Home,107.4,True,2020
+201912170LAC,"Tue, Dec 17, 2019",LAC,PHO,Los Angeles Clippers,Phoenix Suns,120,99,21,Home,105.7,True,2020
+201912210SAS,"Sat, Dec 21, 2019",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,109,134,-25,Home,103.1,True,2020
+201912250LAL,"Wed, Dec 25, 2019",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,106,111,-5,Home,100.7,True,2020
+201912280LAC,"Sat, Dec 28, 2019",LAC,UTA,Los Angeles Clippers,Utah Jazz,107,120,-13,Home,96.1,True,2020
+201912310SAC,"Tue, Dec 31, 2019",SAC,LAC,Sacramento Kings,Los Angeles Clippers,87,105,-18,Home,90.6,True,2020
+202001020LAC,"Thu, Jan 2, 2020",LAC,DET,Los Angeles Clippers,Detroit Pistons,126,112,14,Home,104.9,True,2020
+202001050LAC,"Sun, Jan 5, 2020",LAC,NYK,Los Angeles Clippers,New York Knicks,135,132,3,Home,105.9,True,2020
+202001120DEN,"Sun, Jan 12, 2020",DEN,LAC,Denver Nuggets,Los Angeles Clippers,114,104,10,Home,96.4,True,2020
+202001140LAC,"Tue, Jan 14, 2020",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,128,103,25,Home,99.5,True,2020
+202001160LAC,"Thu, Jan 16, 2020",LAC,ORL,Los Angeles Clippers,Orlando Magic,122,95,27,Home,100.8,True,2020
+202001210DAL,"Tue, Jan 21, 2020",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,107,110,-3,Home,98.1,True,2020
+202001220ATL,"Wed, Jan 22, 2020",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,102,95,7,Home,99.4,True,2020
+202001260ORL,"Sun, Jan 26, 2020",ORL,LAC,Orlando Magic,Los Angeles Clippers,97,112,-15,Home,94.8,True,2020
+202001300LAC,"Thu, Jan 30, 2020",LAC,SAC,Los Angeles Clippers,Sacramento Kings,103,124,-21,Home,97.3,True,2020
+202002010LAC,"Sat, Feb 1, 2020",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,118,106,12,Home,106.5,True,2020
+202002030LAC,"Mon, Feb 3, 2020",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,108,105,3,Home,100.4,True,2020
+202002080MIN,"Sat, Feb 8, 2020",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,142,115,27,Home,104.4,True,2020
+202002090CLE,"Sun, Feb 9, 2020",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,92,133,-41,Home,101.6,True,2020
+202002110PHI,"Tue, Feb 11, 2020",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,110,103,7,Home,97.5,True,2020
+202002130BOS,"Thu, Feb 13, 2020",BOS,LAC,Boston Celtics,Los Angeles Clippers,141,133,8,Home,102.3,True,2020
+202002220LAC,"Sat, Feb 22, 2020",LAC,SAC,Los Angeles Clippers,Sacramento Kings,103,112,-9,Home,101.2,True,2020
+202002260PHO,"Wed, Feb 26, 2020",PHO,LAC,Phoenix Suns,Los Angeles Clippers,92,102,-10,Home,93.4,True,2020
+202002280LAC,"Fri, Feb 28, 2020",LAC,DEN,Los Angeles Clippers,Denver Nuggets,132,103,29,Home,95.4,True,2020
+202003010LAC,"Sun, Mar 1, 2020",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,136,130,6,Home,98.1,True,2020
+202003080LAC,"Sun, Mar 8, 2020",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,103,112,-9,Home,99.4,True,2020
+202007300LAL,"Thu, Jul 30, 2020",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,103,101,2,Home,99.8,True,2020
+202008040LAC,"Tue, Aug 4, 2020",LAC,PHO,Los Angeles Clippers,Phoenix Suns,115,117,-2,Home,97.3,True,2020
+202008060DAL,"Thu, Aug 6, 2020",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,111,126,-15,Home,93.2,True,2020
+202008080POR,"Sat, Aug 8, 2020",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,117,122,-5,Home,99.0,True,2020
+202008120DEN,"Wed, Aug 12, 2020",DEN,LAC,Denver Nuggets,Los Angeles Clippers,111,124,-13,Home,95.8,True,2020
+202008170LAC,"Mon, Aug 17, 2020",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,118,110,8,Home,103.5,True,2020
+202008190LAC,"Wed, Aug 19, 2020",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,114,127,-13,Home,104.6,True,2020
+202008210DAL,"Fri, Aug 21, 2020",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,122,130,-8,Home,98.7,True,2020
+202008230DAL,"Sun, Aug 23, 2020",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,135,133,2,Home,100.0,True,2020
+202008250LAC,"Tue, Aug 25, 2020",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,154,111,43,Home,104.1,True,2020
+202008300DAL,"Sun, Aug 30, 2020",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,97,111,-14,Home,99.9,True,2020
+202009030LAC,"Thu, Sep 3, 2020",LAC,DEN,Los Angeles Clippers,Denver Nuggets,120,97,23,Home,95.7,True,2020
+202009050LAC,"Sat, Sep 5, 2020",LAC,DEN,Los Angeles Clippers,Denver Nuggets,101,110,-9,Home,94.7,True,2020
+202009070DEN,"Mon, Sep 7, 2020",DEN,LAC,Denver Nuggets,Los Angeles Clippers,107,113,-6,Home,99.8,True,2020
+202009090DEN,"Wed, Sep 9, 2020",DEN,LAC,Denver Nuggets,Los Angeles Clippers,85,96,-11,Home,88.0,True,2020
+202009110LAC,"Fri, Sep 11, 2020",LAC,DEN,Los Angeles Clippers,Denver Nuggets,105,111,-6,Home,93.6,True,2020
+202009130DEN,"Sun, Sep 13, 2020",DEN,LAC,Denver Nuggets,Los Angeles Clippers,111,98,13,Home,92.1,True,2020
+202009150LAC,"Tue, Sep 15, 2020",LAC,DEN,Los Angeles Clippers,Denver Nuggets,89,104,-15,Home,91.9,True,2020
+201910230IND,"Wed, Oct 23, 2019",IND,DET,Indiana Pacers,Detroit Pistons,110,119,-9,Home,100.2,True,2020
+201910260CLE,"Sat, Oct 26, 2019",CLE,IND,Cleveland Cavaliers,Indiana Pacers,110,99,11,Home,99.2,True,2020
+201910280DET,"Mon, Oct 28, 2019",DET,IND,Detroit Pistons,Indiana Pacers,96,94,2,Home,93.1,True,2020
+201911010IND,"Fri, Nov 1, 2019",IND,CLE,Indiana Pacers,Cleveland Cavaliers,102,95,7,Home,106.2,True,2020
+201911050CHO,"Tue, Nov 5, 2019",CHO,IND,Charlotte Hornets,Indiana Pacers,122,120,2,Home,96.2,True,2020
+201911080IND,"Fri, Nov 8, 2019",IND,DET,Indiana Pacers,Detroit Pistons,112,106,6,Home,95.5,True,2020
+201911100ORL,"Sun, Nov 10, 2019",ORL,IND,Orlando Magic,Indiana Pacers,102,109,-7,Home,91.5,True,2020
+201911230IND,"Sat, Nov 23, 2019",IND,ORL,Indiana Pacers,Orlando Magic,111,106,5,Home,98.0,True,2020
+201911270IND,"Wed, Nov 27, 2019",IND,UTA,Indiana Pacers,Utah Jazz,121,102,19,Home,99.0,True,2020
+201911290IND,"Fri, Nov 29, 2019",IND,ATL,Indiana Pacers,Atlanta Hawks,105,104,1,Home,97.7,True,2020
+201911300PHI,"Sat, Nov 30, 2019",PHI,IND,Philadelphia 76ers,Indiana Pacers,119,116,3,Home,99.8,True,2020
+201912060DET,"Fri, Dec 6, 2019",DET,IND,Detroit Pistons,Indiana Pacers,108,101,7,Home,96.8,True,2020
+201912070NYK,"Sat, Dec 7, 2019",NYK,IND,New York Knicks,Indiana Pacers,103,104,-1,Home,99.2,True,2020
+201912110IND,"Wed, Dec 11, 2019",IND,BOS,Indiana Pacers,Boston Celtics,122,117,5,Home,102.4,True,2020
+201912130ATL,"Fri, Dec 13, 2019",ATL,IND,Atlanta Hawks,Indiana Pacers,100,110,-10,Home,105.0,True,2020
+201912150IND,"Sun, Dec 15, 2019",IND,CHO,Indiana Pacers,Charlotte Hornets,107,85,22,Home,96.1,True,2020
+201912170IND,"Tue, Dec 17, 2019",IND,LAL,Indiana Pacers,Los Angeles Lakers,105,102,3,Home,92.3,True,2020
+201912200IND,"Fri, Dec 20, 2019",IND,SAC,Indiana Pacers,Sacramento Kings,119,105,14,Home,92.5,True,2020
+201912230IND,"Mon, Dec 23, 2019",IND,TOR,Indiana Pacers,Toronto Raptors,120,115,5,Home,93.3,True,2020
+201912310IND,"Tue, Dec 31, 2019",IND,PHI,Indiana Pacers,Philadelphia 76ers,115,97,18,Home,95.0,True,2020
+202001020IND,"Thu, Jan 2, 2020",IND,DEN,Indiana Pacers,Denver Nuggets,116,124,-8,Home,91.6,True,2020
+202001040ATL,"Sat, Jan 4, 2020",ATL,IND,Atlanta Hawks,Indiana Pacers,116,111,5,Home,98.2,True,2020
+202001060CHO,"Mon, Jan 6, 2020",CHO,IND,Charlotte Hornets,Indiana Pacers,104,115,-11,Home,91.5,True,2020
+202001130IND,"Mon, Jan 13, 2020",IND,PHI,Indiana Pacers,Philadelphia 76ers,101,95,6,Home,93.7,True,2020
+202001150MIN,"Wed, Jan 15, 2020",MIN,IND,Minnesota Timberwolves,Indiana Pacers,99,104,-5,Home,97.9,True,2020
+202001170IND,"Fri, Jan 17, 2020",IND,MIN,Indiana Pacers,Minnesota Timberwolves,116,114,2,Home,99.8,True,2020
+202001190DEN,"Sun, Jan 19, 2020",DEN,IND,Denver Nuggets,Indiana Pacers,107,115,-8,Home,95.1,True,2020
+202001200UTA,"Mon, Jan 20, 2020",UTA,IND,Utah Jazz,Indiana Pacers,118,88,30,Home,98.3,True,2020
+202001220PHO,"Wed, Jan 22, 2020",PHO,IND,Phoenix Suns,Indiana Pacers,87,112,-25,Home,96.5,True,2020
+202001260POR,"Sun, Jan 26, 2020",POR,IND,Portland Trail Blazers,Indiana Pacers,139,129,10,Home,100.2,True,2020
+202002010IND,"Sat, Feb 1, 2020",IND,NYK,Indiana Pacers,New York Knicks,85,92,-7,Home,89.1,True,2020
+202002030IND,"Mon, Feb 3, 2020",IND,DAL,Indiana Pacers,Dallas Mavericks,103,112,-9,Home,93.8,True,2020
+202002050TOR,"Wed, Feb 5, 2020",TOR,IND,Toronto Raptors,Indiana Pacers,119,118,1,Home,97.7,True,2020
+202002070IND,"Fri, Feb 7, 2020",IND,TOR,Indiana Pacers,Toronto Raptors,106,115,-9,Home,101.7,True,2020
+202002210NYK,"Fri, Feb 21, 2020",NYK,IND,New York Knicks,Indiana Pacers,98,106,-8,Home,99.1,True,2020
+202002230TOR,"Sun, Feb 23, 2020",TOR,IND,Toronto Raptors,Indiana Pacers,127,81,46,Home,104.0,True,2020
+202002250IND,"Tue, Feb 25, 2020",IND,CHO,Indiana Pacers,Charlotte Hornets,119,80,39,Home,97.0,True,2020
+202002270IND,"Thu, Feb 27, 2020",IND,POR,Indiana Pacers,Portland Trail Blazers,106,100,6,Home,96.4,True,2020
+202002290CLE,"Sat, Feb 29, 2020",CLE,IND,Cleveland Cavaliers,Indiana Pacers,104,113,-9,Home,97.4,True,2020
+202003020SAS,"Mon, Mar 2, 2020",SAS,IND,San Antonio Spurs,Indiana Pacers,111,116,-5,Home,94.9,True,2020
+202003080DAL,"Sun, Mar 8, 2020",DAL,IND,Dallas Mavericks,Indiana Pacers,109,112,-3,Home,99.6,True,2020
+202003100IND,"Tue, Mar 10, 2020",IND,BOS,Indiana Pacers,Boston Celtics,111,114,-3,Home,97.1,True,2020
+202008010IND,"Sat, Aug 1, 2020",IND,PHI,Indiana Pacers,Philadelphia 76ers,127,121,6,Home,102.1,True,2020
+202008040IND,"Tue, Aug 4, 2020",IND,ORL,Indiana Pacers,Orlando Magic,120,109,11,Home,96.5,True,2020
+202008060PHO,"Thu, Aug 6, 2020",PHO,IND,Phoenix Suns,Indiana Pacers,114,99,15,Home,101.5,True,2020
+202008080IND,"Sat, Aug 8, 2020",IND,LAL,Indiana Pacers,Los Angeles Lakers,116,111,5,Home,102.6,True,2020
+201910250CHO,"Fri, Oct 25, 2019",CHO,MIN,Charlotte Hornets,Minnesota Timberwolves,99,121,-22,Home,103.9,True,2020
+201910300PHI,"Wed, Oct 30, 2019",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,117,95,22,Home,106.2,True,2020
+201911100MIN,"Sun, Nov 10, 2019",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,98,100,-2,Home,97.2,True,2020
+201911110DET,"Mon, Nov 11, 2019",DET,MIN,Detroit Pistons,Minnesota Timberwolves,114,120,-6,Home,99.8,True,2020
+201911130MIN,"Wed, Nov 13, 2019",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,129,114,15,Home,101.6,True,2020
+201911180UTA,"Mon, Nov 18, 2019",UTA,MIN,Utah Jazz,Minnesota Timberwolves,102,112,-10,Home,106.5,True,2020
+201911200MIN,"Wed, Nov 20, 2019",MIN,UTA,Minnesota Timberwolves,Utah Jazz,95,103,-8,Home,95.3,True,2020
+201911230MIN,"Sat, Nov 23, 2019",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,98,100,-2,Home,101.0,True,2020
+201911250ATL,"Mon, Nov 25, 2019",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,113,125,-12,Home,105.5,True,2020
+201911270SAS,"Wed, Nov 27, 2019",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,101,113,-12,Home,99.9,True,2020
+201912040DAL,"Wed, Dec 4, 2019",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,121,114,7,Home,93.8,True,2020
+201912080LAL,"Sun, Dec 8, 2019",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,142,125,17,Home,101.3,True,2020
+201912090PHO,"Mon, Dec 9, 2019",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,125,109,16,Home,98.9,True,2020
+201912110MIN,"Wed, Dec 11, 2019",MIN,UTA,Minnesota Timberwolves,Utah Jazz,116,127,-11,Home,95.7,True,2020
+201912200DEN,"Fri, Dec 20, 2019",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,109,100,9,Home,95.6,True,2020
+201912210POR,"Sat, Dec 21, 2019",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,113,106,7,Home,101.2,True,2020
+201912260SAC,"Thu, Dec 26, 2019",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,104,105,-1,Home,92.7,True,2020
+201912280MIN,"Sat, Dec 28, 2019",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,88,94,-6,Home,103.1,True,2020
+202001050CLE,"Sun, Jan 5, 2020",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,103,118,-15,Home,99.2,True,2020
+202001090MIN,"Thu, Jan 9, 2020",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,116,102,14,Home,98.0,True,2020
+202001180MIN,"Sat, Jan 18, 2020",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,112,122,-10,Home,105.4,True,2020
+202001200MIN,"Mon, Jan 20, 2020",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,100,107,-7,Home,93.2,True,2020
+202001270MIN,"Mon, Jan 27, 2020",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,129,133,-4,Home,98.8,True,2020
+202002030SAC,"Mon, Feb 3, 2020",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,113,109,4,Home,95.4,True,2020
+202002050MIN,"Wed, Feb 5, 2020",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,120,127,-7,Home,107.9,True,2020
+202002100TOR,"Mon, Feb 10, 2020",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,137,126,11,Home,108.7,True,2020
+202002120MIN,"Wed, Feb 12, 2020",MIN,CHO,Minnesota Timberwolves,Charlotte Hornets,108,115,-7,Home,101.7,True,2020
+202002210MIN,"Fri, Feb 21, 2020",MIN,BOS,Minnesota Timberwolves,Boston Celtics,117,127,-10,Home,102.3,True,2020
+202002230DEN,"Sun, Feb 23, 2020",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,128,116,12,Home,104.6,True,2020
+202002240DAL,"Mon, Feb 24, 2020",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,139,123,16,Home,110.0,True,2020
+202002280ORL,"Fri, Feb 28, 2020",ORL,MIN,Orlando Magic,Minnesota Timberwolves,136,125,11,Home,111.0,True,2020
+202003010MIN,"Sun, Mar 1, 2020",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,91,111,-20,Home,106.2,True,2020
+202003060MIN,"Fri, Mar 6, 2020",MIN,ORL,Minnesota Timberwolves,Orlando Magic,118,132,-14,Home,101.2,True,2020
+201910230POR,"Wed, Oct 23, 2019",POR,DEN,Portland Trail Blazers,Denver Nuggets,100,108,-8,Home,99.9,True,2020
+201910250SAC,"Fri, Oct 25, 2019",SAC,POR,Sacramento Kings,Portland Trail Blazers,112,122,-10,Home,102.1,True,2020
+201910270DAL,"Sun, Oct 27, 2019",DAL,POR,Dallas Mavericks,Portland Trail Blazers,119,121,-2,Home,106.7,True,2020
+201910280SAS,"Mon, Oct 28, 2019",SAS,POR,San Antonio Spurs,Portland Trail Blazers,113,110,3,Home,109.1,True,2020
+201911020POR,"Sat, Nov 2, 2019",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,128,129,-1,Home,104.3,True,2020
+201911100POR,"Sun, Nov 10, 2019",POR,ATL,Portland Trail Blazers,Atlanta Hawks,124,113,11,Home,104.2,True,2020
+201911120SAC,"Tue, Nov 12, 2019",SAC,POR,Sacramento Kings,Portland Trail Blazers,107,99,8,Home,97.9,True,2020
+201911130POR,"Wed, Nov 13, 2019",POR,TOR,Portland Trail Blazers,Toronto Raptors,106,114,-8,Home,97.2,True,2020
+201911160SAS,"Sat, Nov 16, 2019",SAS,POR,San Antonio Spurs,Portland Trail Blazers,116,121,-5,Home,104.2,True,2020
+201911230CLE,"Sat, Nov 23, 2019",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,110,104,6,Home,99.1,True,2020
+201912040POR,"Wed, Dec 4, 2019",POR,SAC,Portland Trail Blazers,Sacramento Kings,127,116,11,Home,99.0,True,2020
+201912060POR,"Fri, Dec 6, 2019",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,113,136,-23,Home,109.3,True,2020
+201912100POR,"Tue, Dec 10, 2019",POR,NYK,Portland Trail Blazers,New York Knicks,115,87,28,Home,99.6,True,2020
+201912120DEN,"Thu, Dec 12, 2019",DEN,POR,Denver Nuggets,Portland Trail Blazers,114,99,15,Home,89.2,True,2020
+201912160PHO,"Mon, Dec 16, 2019",PHO,POR,Phoenix Suns,Portland Trail Blazers,110,111,-1,Home,103.0,True,2020
+201912200POR,"Fri, Dec 20, 2019",POR,ORL,Portland Trail Blazers,Orlando Magic,118,103,15,Home,102.4,True,2020
+201912260UTA,"Thu, Dec 26, 2019",UTA,POR,Utah Jazz,Portland Trail Blazers,121,115,6,Home,94.8,True,2020
+201912280POR,"Sat, Dec 28, 2019",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,120,128,-8,Home,100.5,True,2020
+201912300POR,"Mon, Dec 30, 2019",POR,PHO,Portland Trail Blazers,Phoenix Suns,116,122,-6,Home,98.1,True,2020
+202001010NYK,"Wed, Jan 1, 2020",NYK,POR,New York Knicks,Portland Trail Blazers,117,93,24,Home,98.5,True,2020
+202001070TOR,"Tue, Jan 7, 2020",TOR,POR,Toronto Raptors,Portland Trail Blazers,99,101,-2,Home,96.0,True,2020
+202001130POR,"Mon, Jan 13, 2020",POR,CHO,Portland Trail Blazers,Charlotte Hornets,115,112,3,Home,94.0,True,2020
+202001170DAL,"Fri, Jan 17, 2020",DAL,POR,Dallas Mavericks,Portland Trail Blazers,120,112,8,Home,97.2,True,2020
+202001230POR,"Thu, Jan 23, 2020",POR,DAL,Portland Trail Blazers,Dallas Mavericks,125,133,-8,Home,96.6,True,2020
+202001310LAL,"Fri, Jan 31, 2020",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,119,127,-8,Home,104.9,True,2020
+202002010POR,"Sat, Feb 1, 2020",POR,UTA,Portland Trail Blazers,Utah Jazz,124,107,17,Home,93.9,True,2020
+202002040DEN,"Tue, Feb 4, 2020",DEN,POR,Denver Nuggets,Portland Trail Blazers,127,99,28,Home,98.0,True,2020
+202002060POR,"Thu, Feb 6, 2020",POR,SAS,Portland Trail Blazers,San Antonio Spurs,125,117,8,Home,98.4,True,2020
+202002070UTA,"Fri, Feb 7, 2020",UTA,POR,Utah Jazz,Portland Trail Blazers,117,114,3,Home,101.3,True,2020
+202002230POR,"Sun, Feb 23, 2020",POR,DET,Portland Trail Blazers,Detroit Pistons,107,104,3,Home,91.7,True,2020
+202002250POR,"Tue, Feb 25, 2020",POR,BOS,Portland Trail Blazers,Boston Celtics,106,118,-12,Home,101.0,True,2020
+202002290ATL,"Sat, Feb 29, 2020",ATL,POR,Atlanta Hawks,Portland Trail Blazers,129,117,12,Home,104.7,True,2020
+202003020ORL,"Mon, Mar 2, 2020",ORL,POR,Orlando Magic,Portland Trail Blazers,107,130,-23,Home,98.0,True,2020
+202003060PHO,"Fri, Mar 6, 2020",PHO,POR,Phoenix Suns,Portland Trail Blazers,127,117,10,Home,98.2,True,2020
+202003070POR,"Sat, Mar 7, 2020",POR,SAC,Portland Trail Blazers,Sacramento Kings,111,123,-12,Home,97.7,True,2020
+202003100POR,"Tue, Mar 10, 2020",POR,PHO,Portland Trail Blazers,Phoenix Suns,121,105,16,Home,98.5,True,2020
+202008020BOS,"Sun, Aug 2, 2020",BOS,POR,Boston Celtics,Portland Trail Blazers,128,124,4,Home,97.4,True,2020
+202008060DEN,"Thu, Aug 6, 2020",DEN,POR,Denver Nuggets,Portland Trail Blazers,115,125,-10,Home,94.1,True,2020
+202008090POR,"Sun, Aug 9, 2020",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,124,121,3,Home,103.5,True,2020
+202008110DAL,"Tue, Aug 11, 2020",DAL,POR,Dallas Mavericks,Portland Trail Blazers,131,134,-3,Home,104.3,True,2020
+202008180LAL,"Tue, Aug 18, 2020",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,93,100,-7,Home,101.1,True,2020
+202008200LAL,"Thu, Aug 20, 2020",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,111,88,23,Home,95.3,True,2020
+202008220POR,"Sat, Aug 22, 2020",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,108,116,-8,Home,102.9,True,2020
+202008240POR,"Mon, Aug 24, 2020",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,115,135,-20,Home,99.4,True,2020
+202008290LAL,"Sat, Aug 29, 2020",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,131,122,9,Home,109.2,True,2020
+201910250DEN,"Fri, Oct 25, 2019",DEN,PHO,Denver Nuggets,Phoenix Suns,108,107,1,Home,97.4,True,2020
+201910280SAC,"Mon, Oct 28, 2019",SAC,DEN,Sacramento Kings,Denver Nuggets,94,101,-7,Home,92.0,True,2020
+201910290DEN,"Tue, Oct 29, 2019",DEN,DAL,Denver Nuggets,Dallas Mavericks,106,109,-3,Home,91.1,True,2020
+201911020ORL,"Sat, Nov 2, 2019",ORL,DEN,Orlando Magic,Denver Nuggets,87,91,-4,Home,93.6,True,2020
+201911080DEN,"Fri, Nov 8, 2019",DEN,PHI,Denver Nuggets,Philadelphia 76ers,100,97,3,Home,96.5,True,2020
+201911120DEN,"Tue, Nov 12, 2019",DEN,ATL,Denver Nuggets,Atlanta Hawks,121,125,-4,Home,97.9,True,2020
+201911220DEN,"Fri, Nov 22, 2019",DEN,BOS,Denver Nuggets,Boston Celtics,96,92,4,Home,96.4,True,2020
+201911240DEN,"Sun, Nov 24, 2019",DEN,PHO,Denver Nuggets,Phoenix Suns,116,104,12,Home,90.5,True,2020
+201911300SAC,"Sat, Nov 30, 2019",SAC,DEN,Sacramento Kings,Denver Nuggets,100,97,3,Home,92.1,True,2020
+201912030DEN,"Tue, Dec 3, 2019",DEN,LAL,Denver Nuggets,Los Angeles Lakers,96,105,-9,Home,98.2,True,2020
+201912050NYK,"Thu, Dec 5, 2019",NYK,DEN,New York Knicks,Denver Nuggets,92,129,-37,Home,98.8,True,2020
+201912060BOS,"Fri, Dec 6, 2019",BOS,DEN,Boston Celtics,Denver Nuggets,108,95,13,Home,95.8,True,2020
+201912100PHI,"Tue, Dec 10, 2019",PHI,DEN,Philadelphia 76ers,Denver Nuggets,97,92,5,Home,96.1,True,2020
+201912150DEN,"Sun, Dec 15, 2019",DEN,NYK,Denver Nuggets,New York Knicks,111,105,6,Home,92.4,True,2020
+201912180DEN,"Wed, Dec 18, 2019",DEN,ORL,Denver Nuggets,Orlando Magic,113,104,9,Home,96.5,True,2020
+201912220LAL,"Sun, Dec 22, 2019",LAL,DEN,Los Angeles Lakers,Denver Nuggets,104,128,-24,Home,92.3,True,2020
+201912230PHO,"Mon, Dec 23, 2019",PHO,DEN,Phoenix Suns,Denver Nuggets,111,113,-2,Home,99.7,True,2020
+201912290DEN,"Sun, Dec 29, 2019",DEN,SAC,Denver Nuggets,Sacramento Kings,120,115,5,Home,93.5,True,2020
+202001060ATL,"Mon, Jan 6, 2020",ATL,DEN,Atlanta Hawks,Denver Nuggets,115,123,-8,Home,96.4,True,2020
+202001080DAL,"Wed, Jan 8, 2020",DAL,DEN,Dallas Mavericks,Denver Nuggets,106,107,-1,Home,93.6,True,2020
+202001110DEN,"Sat, Jan 11, 2020",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,103,111,-8,Home,95.1,True,2020
+202001150DEN,"Wed, Jan 15, 2020",DEN,CHO,Denver Nuggets,Charlotte Hornets,100,86,14,Home,93.4,True,2020
+202001300DEN,"Thu, Jan 30, 2020",DEN,UTA,Denver Nuggets,Utah Jazz,106,100,6,Home,93.7,True,2020
+202002020DET,"Sun, Feb 2, 2020",DET,DEN,Detroit Pistons,Denver Nuggets,128,123,5,Home,90.8,True,2020
+202002050UTA,"Wed, Feb 5, 2020",UTA,DEN,Utah Jazz,Denver Nuggets,95,98,-3,Home,96.0,True,2020
+202002080PHO,"Sat, Feb 8, 2020",PHO,DEN,Phoenix Suns,Denver Nuggets,108,117,-9,Home,95.9,True,2020
+202002100DEN,"Mon, Feb 10, 2020",DEN,SAS,Denver Nuggets,San Antonio Spurs,127,120,7,Home,91.7,True,2020
+202002120DEN,"Wed, Feb 12, 2020",DEN,LAL,Denver Nuggets,Los Angeles Lakers,116,120,-4,Home,94.7,True,2020
+202002250DEN,"Tue, Feb 25, 2020",DEN,DET,Denver Nuggets,Detroit Pistons,115,98,17,Home,92.0,True,2020
+202003010DEN,"Sun, Mar 1, 2020",DEN,TOR,Denver Nuggets,Toronto Raptors,133,118,15,Home,102.6,True,2020
+202003050CHO,"Thu, Mar 5, 2020",CHO,DEN,Charlotte Hornets,Denver Nuggets,112,114,-2,Home,89.4,True,2020
+202003070CLE,"Sat, Mar 7, 2020",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,104,102,2,Home,93.9,True,2020
+202003110DAL,"Wed, Mar 11, 2020",DAL,DEN,Dallas Mavericks,Denver Nuggets,113,97,16,Home,97.6,True,2020
+202008050SAS,"Wed, Aug 5, 2020",SAS,DEN,San Antonio Spurs,Denver Nuggets,126,132,-6,Home,98.2,True,2020
+202008080DEN,"Sat, Aug 8, 2020",DEN,UTA,Denver Nuggets,Utah Jazz,134,132,2,Home,97.1,True,2020
+202008100LAL,"Mon, Aug 10, 2020",LAL,DEN,Los Angeles Lakers,Denver Nuggets,124,121,3,Home,88.8,True,2020
+202008140TOR,"Fri, Aug 14, 2020",TOR,DEN,Toronto Raptors,Denver Nuggets,117,109,8,Home,100.7,True,2020
+202008170DEN,"Mon, Aug 17, 2020",DEN,UTA,Denver Nuggets,Utah Jazz,135,125,10,Home,94.0,True,2020
+202008190DEN,"Wed, Aug 19, 2020",DEN,UTA,Denver Nuggets,Utah Jazz,105,124,-19,Home,85.6,True,2020
+202008210UTA,"Fri, Aug 21, 2020",UTA,DEN,Utah Jazz,Denver Nuggets,124,87,37,Home,91.2,True,2020
+202008230UTA,"Sun, Aug 23, 2020",UTA,DEN,Utah Jazz,Denver Nuggets,129,127,2,Home,91.2,True,2020
+202008250DEN,"Tue, Aug 25, 2020",DEN,UTA,Denver Nuggets,Utah Jazz,117,107,10,Home,94.5,True,2020
+202008300UTA,"Sun, Aug 30, 2020",UTA,DEN,Utah Jazz,Denver Nuggets,107,119,-12,Home,90.3,True,2020
+202009010DEN,"Tue, Sep 1, 2020",DEN,UTA,Denver Nuggets,Utah Jazz,80,78,2,Home,87.3,True,2020
+202009180LAL,"Fri, Sep 18, 2020",LAL,DEN,Los Angeles Lakers,Denver Nuggets,126,114,12,Home,97.9,True,2020
+202009200LAL,"Sun, Sep 20, 2020",LAL,DEN,Los Angeles Lakers,Denver Nuggets,105,103,2,Home,97.4,True,2020
+202009220DEN,"Tue, Sep 22, 2020",DEN,LAL,Denver Nuggets,Los Angeles Lakers,114,106,8,Home,97.7,True,2020
+202009240DEN,"Thu, Sep 24, 2020",DEN,LAL,Denver Nuggets,Los Angeles Lakers,108,114,-6,Home,89.7,True,2020
+202009260LAL,"Sat, Sep 26, 2020",LAL,DEN,Los Angeles Lakers,Denver Nuggets,117,107,10,Home,98.2,True,2020
+201911010DAL,"Fri, Nov 1, 2019",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,110,119,-9,Home,99.5,True,2020
+201911030CLE,"Sun, Nov 3, 2019",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,111,131,-20,Home,99.5,True,2020
+201911060DAL,"Wed, Nov 6, 2019",DAL,ORL,Dallas Mavericks,Orlando Magic,107,106,1,Home,99.1,True,2020
+201911080DAL,"Fri, Nov 8, 2019",DAL,NYK,Dallas Mavericks,New York Knicks,102,106,-4,Home,100.3,True,2020
+201911110BOS,"Mon, Nov 11, 2019",BOS,DAL,Boston Celtics,Dallas Mavericks,116,106,10,Home,92.6,True,2020
+201911140NYK,"Thu, Nov 14, 2019",NYK,DAL,New York Knicks,Dallas Mavericks,106,103,3,Home,95.4,True,2020
+201911160DAL,"Sat, Nov 16, 2019",DAL,TOR,Dallas Mavericks,Toronto Raptors,110,102,8,Home,100.2,True,2020
+201911180DAL,"Mon, Nov 18, 2019",DAL,SAS,Dallas Mavericks,San Antonio Spurs,117,110,7,Home,94.1,True,2020
+201911220DAL,"Fri, Nov 22, 2019",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,143,101,42,Home,95.0,True,2020
+201911290PHO,"Fri, Nov 29, 2019",PHO,DAL,Phoenix Suns,Dallas Mavericks,113,120,-7,Home,99.0,True,2020
+201912010LAL,"Sun, Dec 1, 2019",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,100,114,-14,Home,99.6,True,2020
+201912080DAL,"Sun, Dec 8, 2019",DAL,SAC,Dallas Mavericks,Sacramento Kings,106,110,-4,Home,88.8,True,2020
+201912120DET,"Thu, Dec 12, 2019",DET,DAL,Detroit Pistons,Dallas Mavericks,111,122,-11,Home,97.5,True,2020
+201912180DAL,"Wed, Dec 18, 2019",DAL,BOS,Dallas Mavericks,Boston Celtics,103,109,-6,Home,94.5,True,2020
+201912200PHI,"Fri, Dec 20, 2019",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,98,117,-19,Home,100.1,True,2020
+201912220TOR,"Sun, Dec 22, 2019",TOR,DAL,Toronto Raptors,Dallas Mavericks,110,107,3,Home,101.0,True,2020
+201912260DAL,"Thu, Dec 26, 2019",DAL,SAS,Dallas Mavericks,San Antonio Spurs,102,98,4,Home,96.6,True,2020
+201912290LAL,"Sun, Dec 29, 2019",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,108,95,13,Home,98.1,True,2020
+202001040DAL,"Sat, Jan 4, 2020",DAL,CHO,Dallas Mavericks,Charlotte Hornets,120,123,-3,Home,89.2,True,2020
+202001100DAL,"Fri, Jan 10, 2020",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,114,129,-15,Home,98.3,True,2020
+202001110DAL,"Sat, Jan 11, 2020",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,109,91,18,Home,92.0,True,2020
+202001150SAC,"Wed, Jan 15, 2020",SAC,DAL,Sacramento Kings,Dallas Mavericks,123,127,-4,Home,99.2,True,2020
+202001250UTA,"Sat, Jan 25, 2020",UTA,DAL,Utah Jazz,Dallas Mavericks,112,107,5,Home,99.2,True,2020
+202001280DAL,"Tue, Jan 28, 2020",DAL,PHO,Dallas Mavericks,Phoenix Suns,104,133,-29,Home,97.5,True,2020
+202002010DAL,"Sat, Feb 1, 2020",DAL,ATL,Dallas Mavericks,Atlanta Hawks,123,100,23,Home,99.1,True,2020
+202002080CHO,"Sat, Feb 8, 2020",CHO,DAL,Charlotte Hornets,Dallas Mavericks,100,116,-16,Home,89.4,True,2020
+202002100DAL,"Mon, Feb 10, 2020",DAL,UTA,Dallas Mavericks,Utah Jazz,119,123,-4,Home,97.1,True,2020
+202002120DAL,"Wed, Feb 12, 2020",DAL,SAC,Dallas Mavericks,Sacramento Kings,130,111,19,Home,101.1,True,2020
+202002210ORL,"Fri, Feb 21, 2020",ORL,DAL,Orlando Magic,Dallas Mavericks,106,122,-16,Home,100.3,True,2020
+202002220ATL,"Sat, Feb 22, 2020",ATL,DAL,Atlanta Hawks,Dallas Mavericks,111,107,4,Home,102.8,True,2020
+202002260SAS,"Wed, Feb 26, 2020",SAS,DAL,San Antonio Spurs,Dallas Mavericks,103,109,-6,Home,103.7,True,2020
+202003100SAS,"Tue, Mar 10, 2020",SAS,DAL,San Antonio Spurs,Dallas Mavericks,119,109,10,Home,100.3,True,2020
+202008020PHO,"Sun, Aug 2, 2020",PHO,DAL,Phoenix Suns,Dallas Mavericks,117,115,2,Home,105.3,True,2020
+202008040SAC,"Tue, Aug 4, 2020",SAC,DAL,Sacramento Kings,Dallas Mavericks,110,114,-4,Home,98.4,True,2020
+202008100UTA,"Mon, Aug 10, 2020",UTA,DAL,Utah Jazz,Dallas Mavericks,114,122,-8,Home,92.0,True,2020
+202008130PHO,"Thu, Aug 13, 2020",PHO,DAL,Phoenix Suns,Dallas Mavericks,128,102,26,Home,95.2,True,2020
+201910240DET,"Thu, Oct 24, 2019",DET,ATL,Detroit Pistons,Atlanta Hawks,100,117,-17,Home,96.8,True,2020
+201910260ATL,"Sat, Oct 26, 2019",ATL,ORL,Atlanta Hawks,Orlando Magic,103,99,4,Home,98.8,True,2020
+201910280ATL,"Mon, Oct 28, 2019",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,103,105,-2,Home,107.2,True,2020
+201911050ATL,"Tue, Nov 5, 2019",ATL,SAS,Atlanta Hawks,San Antonio Spurs,108,100,8,Home,102.8,True,2020
+201911080ATL,"Fri, Nov 8, 2019",ATL,SAC,Atlanta Hawks,Sacramento Kings,109,121,-12,Home,90.2,True,2020
+201911140PHO,"Thu, Nov 14, 2019",PHO,ATL,Phoenix Suns,Atlanta Hawks,128,112,16,Home,109.9,True,2020
+201911170LAL,"Sun, Nov 17, 2019",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,122,101,21,Home,101.0,True,2020
+201911220DET,"Fri, Nov 22, 2019",DET,ATL,Detroit Pistons,Atlanta Hawks,128,103,25,Home,98.3,True,2020
+201911230ATL,"Sat, Nov 23, 2019",ATL,TOR,Atlanta Hawks,Toronto Raptors,116,119,-3,Home,100.0,True,2020
+201912080CHO,"Sun, Dec 8, 2019",CHO,ATL,Charlotte Hornets,Atlanta Hawks,107,122,-15,Home,97.6,True,2020
+201912150ATL,"Sun, Dec 15, 2019",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,96,101,-5,Home,105.4,True,2020
+201912170NYK,"Tue, Dec 17, 2019",NYK,ATL,New York Knicks,Atlanta Hawks,143,120,23,Home,105.3,True,2020
+201912190ATL,"Thu, Dec 19, 2019",ATL,UTA,Atlanta Hawks,Utah Jazz,106,111,-5,Home,104.8,True,2020
+201912230CLE,"Mon, Dec 23, 2019",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,121,118,3,Home,113.1,True,2020
+201912300ORL,"Mon, Dec 30, 2019",ORL,ATL,Orlando Magic,Atlanta Hawks,93,101,-8,Home,95.6,True,2020
+202001030BOS,"Fri, Jan 3, 2020",BOS,ATL,Boston Celtics,Atlanta Hawks,109,106,3,Home,104.2,True,2020
+202001140ATL,"Tue, Jan 14, 2020",ATL,PHO,Atlanta Hawks,Phoenix Suns,123,110,13,Home,100.5,True,2020
+202001170SAS,"Fri, Jan 17, 2020",SAS,ATL,San Antonio Spurs,Atlanta Hawks,120,121,-1,Home,104.7,True,2020
+202001180ATL,"Sat, Jan 18, 2020",ATL,DET,Atlanta Hawks,Detroit Pistons,103,136,-33,Home,102.2,True,2020
+202001200ATL,"Mon, Jan 20, 2020",ATL,TOR,Atlanta Hawks,Toronto Raptors,117,122,-5,Home,109.8,True,2020
+202001280TOR,"Tue, Jan 28, 2020",TOR,ATL,Toronto Raptors,Atlanta Hawks,130,114,16,Home,108.7,True,2020
+202001300ATL,"Thu, Jan 30, 2020",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,127,117,10,Home,105.3,True,2020
+202002030ATL,"Mon, Feb 3, 2020",ATL,BOS,Atlanta Hawks,Boston Celtics,115,123,-8,Home,100.5,True,2020
+202002070BOS,"Fri, Feb 7, 2020",BOS,ATL,Boston Celtics,Atlanta Hawks,112,107,5,Home,96.9,True,2020
+202002090ATL,"Sun, Feb 9, 2020",ATL,NYK,Atlanta Hawks,New York Knicks,140,135,5,Home,99.6,True,2020
+202002100ORL,"Mon, Feb 10, 2020",ORL,ATL,Orlando Magic,Atlanta Hawks,135,126,9,Home,99.6,True,2020
+202002120CLE,"Wed, Feb 12, 2020",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,127,105,22,Home,102.0,True,2020
+202002240PHI,"Mon, Feb 24, 2020",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,129,112,17,Home,102.5,True,2020
+202002260ATL,"Wed, Feb 26, 2020",ATL,ORL,Atlanta Hawks,Orlando Magic,120,130,-10,Home,102.6,True,2020
+202003090ATL,"Mon, Mar 9, 2020",ATL,CHO,Atlanta Hawks,Charlotte Hornets,143,138,5,Home,88.6,True,2020
+202003110ATL,"Wed, Mar 11, 2020",ATL,NYK,Atlanta Hawks,New York Knicks,131,136,-5,Home,104.1,True,2020
+201910230SAS,"Wed, Oct 23, 2019",SAS,NYK,San Antonio Spurs,New York Knicks,120,111,9,Home,108.9,True,2020
+201911030SAS,"Sun, Nov 3, 2019",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,96,103,-7,Home,103.9,True,2020
+201911090SAS,"Sat, Nov 9, 2019",SAS,BOS,San Antonio Spurs,Boston Celtics,115,135,-20,Home,103.8,True,2020
+201911150ORL,"Fri, Nov 15, 2019",ORL,SAS,Orlando Magic,San Antonio Spurs,111,109,2,Home,94.7,True,2020
+201911220PHI,"Fri, Nov 22, 2019",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,115,104,11,Home,98.2,True,2020
+201911230NYK,"Sat, Nov 23, 2019",NYK,SAS,New York Knicks,San Antonio Spurs,104,111,-7,Home,98.5,True,2020
+201911250SAS,"Mon, Nov 25, 2019",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,104,114,-10,Home,94.6,True,2020
+201912010DET,"Sun, Dec 1, 2019",DET,SAS,Detroit Pistons,San Antonio Spurs,132,98,34,Home,97.2,True,2020
+201912060SAS,"Fri, Dec 6, 2019",SAS,SAC,San Antonio Spurs,Sacramento Kings,105,104,1,Home,93.8,True,2020
+201912120SAS,"Thu, Dec 12, 2019",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,109,117,-8,Home,97.0,True,2020
+201912140PHO,"Sat, Dec 14, 2019",PHO,SAS,Phoenix Suns,San Antonio Spurs,119,121,-2,Home,107.3,True,2020
+201912280SAS,"Sat, Dec 28, 2019",SAS,DET,San Antonio Spurs,Detroit Pistons,136,109,27,Home,102.5,True,2020
+202001080BOS,"Wed, Jan 8, 2020",BOS,SAS,Boston Celtics,San Antonio Spurs,114,129,-15,Home,104.9,True,2020
+202001120TOR,"Sun, Jan 12, 2020",TOR,SAS,Toronto Raptors,San Antonio Spurs,104,105,-1,Home,100.7,True,2020
+202001200PHO,"Mon, Jan 20, 2020",PHO,SAS,Phoenix Suns,San Antonio Spurs,118,120,-2,Home,96.5,True,2020
+202001240SAS,"Fri, Jan 24, 2020",SAS,PHO,San Antonio Spurs,Phoenix Suns,99,103,-4,Home,94.0,True,2020
+202001260SAS,"Sun, Jan 26, 2020",SAS,TOR,San Antonio Spurs,Toronto Raptors,106,110,-4,Home,98.2,True,2020
+202001290SAS,"Wed, Jan 29, 2020",SAS,UTA,San Antonio Spurs,Utah Jazz,127,120,7,Home,100.0,True,2020
+202002010SAS,"Sat, Feb 1, 2020",SAS,CHO,San Antonio Spurs,Charlotte Hornets,114,90,24,Home,97.4,True,2020
+202002040LAL,"Tue, Feb 4, 2020",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,129,102,27,Home,95.6,True,2020
+202002080SAC,"Sat, Feb 8, 2020",SAC,SAS,Sacramento Kings,San Antonio Spurs,122,102,20,Home,94.4,True,2020
+202002210UTA,"Fri, Feb 21, 2020",UTA,SAS,Utah Jazz,San Antonio Spurs,104,113,-9,Home,101.2,True,2020
+202002290SAS,"Sat, Feb 29, 2020",SAS,ORL,San Antonio Spurs,Orlando Magic,114,113,1,Home,100.6,True,2020
+202003030CHO,"Tue, Mar 3, 2020",CHO,SAS,Charlotte Hornets,San Antonio Spurs,103,104,-1,Home,90.7,True,2020
+202003080CLE,"Sun, Mar 8, 2020",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,132,129,3,Home,104.1,True,2020
+202007310SAS,"Fri, Jul 31, 2020",SAS,SAC,San Antonio Spurs,Sacramento Kings,129,120,9,Home,107.1,True,2020
+202008030PHI,"Mon, Aug 3, 2020",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,132,130,2,Home,102.6,True,2020
+202008070SAS,"Fri, Aug 7, 2020",SAS,UTA,San Antonio Spurs,Utah Jazz,119,111,8,Home,104.2,True,2020
+202008130UTA,"Thu, Aug 13, 2020",UTA,SAS,Utah Jazz,San Antonio Spurs,118,112,6,Home,98.5,True,2020
+201910250BOS,"Fri, Oct 25, 2019",BOS,TOR,Boston Celtics,Toronto Raptors,112,106,6,Home,101.2,True,2020
+201910280TOR,"Mon, Oct 28, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,104,95,9,Home,104.5,True,2020
+201910300TOR,"Wed, Oct 30, 2019",TOR,DET,Toronto Raptors,Detroit Pistons,125,113,12,Home,102.8,True,2020
+201911060TOR,"Wed, Nov 6, 2019",TOR,SAC,Toronto Raptors,Sacramento Kings,124,120,4,Home,102.1,True,2020
+201911100LAL,"Sun, Nov 10, 2019",LAL,TOR,Los Angeles Lakers,Toronto Raptors,104,113,-9,Home,100.8,True,2020
+201911180TOR,"Mon, Nov 18, 2019",TOR,CHO,Toronto Raptors,Charlotte Hornets,132,96,36,Home,95.9,True,2020
+201911200TOR,"Wed, Nov 20, 2019",TOR,ORL,Toronto Raptors,Orlando Magic,113,97,16,Home,94.3,True,2020
+201911250TOR,"Mon, Nov 25, 2019",TOR,PHI,Toronto Raptors,Philadelphia 76ers,101,96,5,Home,93.8,True,2020
+201911270TOR,"Wed, Nov 27, 2019",TOR,NYK,Toronto Raptors,New York Knicks,126,98,28,Home,96.1,True,2020
+201911290ORL,"Fri, Nov 29, 2019",ORL,TOR,Orlando Magic,Toronto Raptors,83,90,-7,Home,95.9,True,2020
+201912010TOR,"Sun, Dec 1, 2019",TOR,UTA,Toronto Raptors,Utah Jazz,130,110,20,Home,104.1,True,2020
+201912080PHI,"Sun, Dec 8, 2019",PHI,TOR,Philadelphia 76ers,Toronto Raptors,110,104,6,Home,98.7,True,2020
+201912160TOR,"Mon, Dec 16, 2019",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,133,113,20,Home,96.5,True,2020
+201912180DET,"Wed, Dec 18, 2019",DET,TOR,Detroit Pistons,Toronto Raptors,99,112,-13,Home,99.3,True,2020
+201912250TOR,"Wed, Dec 25, 2019",TOR,BOS,Toronto Raptors,Boston Celtics,102,118,-16,Home,99.2,True,2020
+201912280BOS,"Sat, Dec 28, 2019",BOS,TOR,Boston Celtics,Toronto Raptors,97,113,-16,Home,97.5,True,2020
+201912310TOR,"Tue, Dec 31, 2019",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,117,97,20,Home,95.7,True,2020
+202001080CHO,"Wed, Jan 8, 2020",CHO,TOR,Charlotte Hornets,Toronto Raptors,110,112,-2,Home,88.4,True,2020
+202001220TOR,"Wed, Jan 22, 2020",TOR,PHI,Toronto Raptors,Philadelphia 76ers,107,95,12,Home,96.7,True,2020
+202001240NYK,"Fri, Jan 24, 2020",NYK,TOR,New York Knicks,Toronto Raptors,112,118,-6,Home,91.4,True,2020
+202001300CLE,"Thu, Jan 30, 2020",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,109,115,-6,Home,98.9,True,2020
+202001310DET,"Fri, Jan 31, 2020",DET,TOR,Detroit Pistons,Toronto Raptors,92,105,-13,Home,94.2,True,2020
+202002210TOR,"Fri, Feb 21, 2020",TOR,PHO,Toronto Raptors,Phoenix Suns,118,101,17,Home,104.2,True,2020
+202002280TOR,"Fri, Feb 28, 2020",TOR,CHO,Toronto Raptors,Charlotte Hornets,96,99,-3,Home,94.5,True,2020
+202003030PHO,"Tue, Mar 3, 2020",PHO,TOR,Phoenix Suns,Toronto Raptors,114,123,-9,Home,104.8,True,2020
+202003080SAC,"Sun, Mar 8, 2020",SAC,TOR,Sacramento Kings,Toronto Raptors,113,118,-5,Home,99.1,True,2020
+202003090UTA,"Mon, Mar 9, 2020",UTA,TOR,Utah Jazz,Toronto Raptors,92,101,-9,Home,92.0,True,2020
+202008010TOR,"Sat, Aug 1, 2020",TOR,LAL,Toronto Raptors,Los Angeles Lakers,107,92,15,Home,101.2,True,2020
+202008050ORL,"Wed, Aug 5, 2020",ORL,TOR,Orlando Magic,Toronto Raptors,99,109,-10,Home,101.5,True,2020
+202008070TOR,"Fri, Aug 7, 2020",TOR,BOS,Toronto Raptors,Boston Celtics,100,122,-22,Home,105.0,True,2020
+202008120PHI,"Wed, Aug 12, 2020",PHI,TOR,Philadelphia 76ers,Toronto Raptors,121,125,-4,Home,105.3,True,2020
+202008300TOR,"Sun, Aug 30, 2020",TOR,BOS,Toronto Raptors,Boston Celtics,94,112,-18,Home,104.6,True,2020
+202009010TOR,"Tue, Sep 1, 2020",TOR,BOS,Toronto Raptors,Boston Celtics,99,102,-3,Home,99.5,True,2020
+202009030BOS,"Thu, Sep 3, 2020",BOS,TOR,Boston Celtics,Toronto Raptors,103,104,-1,Home,98.8,True,2020
+202009050BOS,"Sat, Sep 5, 2020",BOS,TOR,Boston Celtics,Toronto Raptors,93,100,-7,Home,94.5,True,2020
+202009070TOR,"Mon, Sep 7, 2020",TOR,BOS,Toronto Raptors,Boston Celtics,89,111,-22,Home,92.8,True,2020
+202009090BOS,"Wed, Sep 9, 2020",BOS,TOR,Boston Celtics,Toronto Raptors,122,125,-3,Home,90.9,True,2020
+202009110TOR,"Fri, Sep 11, 2020",TOR,BOS,Toronto Raptors,Boston Celtics,87,92,-5,Home,93.1,True,2020
+201910230PHO,"Wed, Oct 23, 2019",PHO,SAC,Phoenix Suns,Sacramento Kings,124,95,29,Home,108.7,True,2020
+201910280PHO,"Mon, Oct 28, 2019",PHO,UTA,Phoenix Suns,Utah Jazz,95,96,-1,Home,102.5,True,2020
+201911040PHO,"Mon, Nov 4, 2019",PHO,PHI,Phoenix Suns,Philadelphia 76ers,114,109,5,Home,103.9,True,2020
+201911120PHO,"Tue, Nov 12, 2019",PHO,LAL,Phoenix Suns,Los Angeles Lakers,115,123,-8,Home,102.3,True,2020
+201911180PHO,"Mon, Nov 18, 2019",PHO,BOS,Phoenix Suns,Boston Celtics,85,99,-14,Home,98.6,True,2020
+201911190SAC,"Tue, Nov 19, 2019",SAC,PHO,Sacramento Kings,Phoenix Suns,120,116,4,Home,97.2,True,2020
+201912020CHO,"Mon, Dec 2, 2019",CHO,PHO,Charlotte Hornets,Phoenix Suns,104,109,-5,Home,97.1,True,2020
+201912040ORL,"Wed, Dec 4, 2019",ORL,PHO,Orlando Magic,Phoenix Suns,128,114,14,Home,99.3,True,2020
+201912280SAC,"Sat, Dec 28, 2019",SAC,PHO,Sacramento Kings,Phoenix Suns,110,112,-2,Home,97.0,True,2020
+202001010LAL,"Wed, Jan 1, 2020",LAL,PHO,Los Angeles Lakers,Phoenix Suns,117,107,10,Home,99.7,True,2020
+202001030PHO,"Fri, Jan 3, 2020",PHO,NYK,Phoenix Suns,New York Knicks,120,112,8,Home,104.5,True,2020
+202001070PHO,"Tue, Jan 7, 2020",PHO,SAC,Phoenix Suns,Sacramento Kings,103,114,-11,Home,98.5,True,2020
+202001100PHO,"Fri, Jan 10, 2020",PHO,ORL,Phoenix Suns,Orlando Magic,98,94,4,Home,94.4,True,2020
+202001120PHO,"Sun, Jan 12, 2020",PHO,CHO,Phoenix Suns,Charlotte Hornets,100,92,8,Home,96.2,True,2020
+202001160NYK,"Thu, Jan 16, 2020",NYK,PHO,New York Knicks,Phoenix Suns,98,121,-23,Home,104.5,True,2020
+202001180BOS,"Sat, Jan 18, 2020",BOS,PHO,Boston Celtics,Phoenix Suns,119,123,-4,Home,107.8,True,2020
+202002050DET,"Wed, Feb 5, 2020",DET,PHO,Detroit Pistons,Phoenix Suns,116,108,8,Home,90.6,True,2020
+202002100LAL,"Mon, Feb 10, 2020",LAL,PHO,Los Angeles Lakers,Phoenix Suns,125,100,25,Home,98.7,True,2020
+202002240UTA,"Mon, Feb 24, 2020",UTA,PHO,Utah Jazz,Phoenix Suns,111,131,-20,Home,97.7,True,2020
+202002280PHO,"Fri, Feb 28, 2020",PHO,DET,Phoenix Suns,Detroit Pistons,111,113,-2,Home,94.3,True,2020
+202008110PHI,"Tue, Aug 11, 2020",PHI,PHO,Philadelphia 76ers,Phoenix Suns,117,130,-13,Home,92.3,True,2020
+201910260UTA,"Sat, Oct 26, 2019",UTA,SAC,Utah Jazz,Sacramento Kings,113,81,32,Home,99.5,True,2020
+201910300SAC,"Wed, Oct 30, 2019",SAC,CHO,Sacramento Kings,Charlotte Hornets,111,118,-7,Home,101.4,True,2020
+201911010SAC,"Fri, Nov 1, 2019",SAC,UTA,Sacramento Kings,Utah Jazz,102,101,1,Home,93.9,True,2020
+201911030NYK,"Sun, Nov 3, 2019",NYK,SAC,New York Knicks,Sacramento Kings,92,113,-21,Home,96.4,True,2020
+201911150LAL,"Fri, Nov 15, 2019",LAL,SAC,Los Angeles Lakers,Sacramento Kings,99,97,2,Home,90.8,True,2020
+201911170SAC,"Sun, Nov 17, 2019",SAC,BOS,Sacramento Kings,Boston Celtics,100,99,1,Home,94.1,True,2020
+201911250BOS,"Mon, Nov 25, 2019",BOS,SAC,Boston Celtics,Sacramento Kings,103,102,1,Home,89.9,True,2020
+201911270PHI,"Wed, Nov 27, 2019",PHI,SAC,Philadelphia 76ers,Sacramento Kings,97,91,6,Home,98.1,True,2020
+201912130SAC,"Fri, Dec 13, 2019",SAC,NYK,Sacramento Kings,New York Knicks,101,103,-2,Home,90.5,True,2020
+201912170CHO,"Tue, Dec 17, 2019",CHO,SAC,Charlotte Hornets,Sacramento Kings,110,102,8,Home,91.5,True,2020
+202001130SAC,"Mon, Jan 13, 2020",SAC,ORL,Sacramento Kings,Orlando Magic,112,114,-2,Home,98.9,True,2020
+202001180UTA,"Sat, Jan 18, 2020",UTA,SAC,Utah Jazz,Sacramento Kings,123,101,22,Home,92.3,True,2020
+202001220DET,"Wed, Jan 22, 2020",DET,SAC,Detroit Pistons,Sacramento Kings,127,106,21,Home,104.6,True,2020
+202002010SAC,"Sat, Feb 1, 2020",SAC,LAL,Sacramento Kings,Los Angeles Lakers,113,129,-16,Home,100.7,True,2020
+202003010SAC,"Sun, Mar 1, 2020",SAC,DET,Sacramento Kings,Detroit Pistons,106,100,6,Home,93.8,True,2020
+202003050SAC,"Thu, Mar 5, 2020",SAC,PHI,Sacramento Kings,Philadelphia 76ers,108,125,-17,Home,98.9,True,2020
+202008020ORL,"Sun, Aug 2, 2020",ORL,SAC,Orlando Magic,Sacramento Kings,132,116,16,Home,102.8,True,2020
+202008130LAL,"Thu, Aug 13, 2020",LAL,SAC,Los Angeles Lakers,Sacramento Kings,122,136,-14,Home,104.6,True,2020
+201910230ORL,"Wed, Oct 23, 2019",ORL,CLE,Orlando Magic,Cleveland Cavaliers,94,85,9,Home,98.7,True,2020
+201911050CLE,"Tue, Nov 5, 2019",CLE,BOS,Cleveland Cavaliers,Boston Celtics,113,119,-6,Home,100.5,True,2020
+201911100NYK,"Sun, Nov 10, 2019",NYK,CLE,New York Knicks,Cleveland Cavaliers,87,108,-21,Home,98.2,True,2020
+201911120PHI,"Tue, Nov 12, 2019",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,98,97,1,Home,96.2,True,2020
+201911170CLE,"Sun, Nov 17, 2019",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,95,114,-19,Home,99.9,True,2020
+201911180NYK,"Mon, Nov 18, 2019",NYK,CLE,New York Knicks,Cleveland Cavaliers,123,105,18,Home,96.4,True,2020
+201911270CLE,"Wed, Nov 27, 2019",CLE,ORL,Cleveland Cavaliers,Orlando Magic,104,116,-12,Home,102.2,True,2020
+201912030CLE,"Tue, Dec 3, 2019",CLE,DET,Cleveland Cavaliers,Detroit Pistons,94,127,-33,Home,95.5,True,2020
+201912060CLE,"Fri, Dec 6, 2019",CLE,ORL,Cleveland Cavaliers,Orlando Magic,87,93,-6,Home,93.7,True,2020
+201912070PHI,"Sat, Dec 7, 2019",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,141,94,47,Home,101.5,True,2020
+201912090BOS,"Mon, Dec 9, 2019",BOS,CLE,Boston Celtics,Cleveland Cavaliers,110,88,22,Home,95.0,True,2020
+201912180CLE,"Wed, Dec 18, 2019",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,100,98,2,Home,91.3,True,2020
+201912270BOS,"Fri, Dec 27, 2019",BOS,CLE,Boston Celtics,Cleveland Cavaliers,129,117,12,Home,100.3,True,2020
+202001020CLE,"Thu, Jan 2, 2020",CLE,CHO,Cleveland Cavaliers,Charlotte Hornets,106,109,-3,Home,92.5,True,2020
+202001070CLE,"Tue, Jan 7, 2020",CLE,DET,Cleveland Cavaliers,Detroit Pistons,113,115,-2,Home,95.9,True,2020
+202001090DET,"Thu, Jan 9, 2020",DET,CLE,Detroit Pistons,Cleveland Cavaliers,112,115,-3,Home,90.0,True,2020
+202001130LAL,"Mon, Jan 13, 2020",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,128,99,29,Home,99.4,True,2020
+202001200CLE,"Mon, Jan 20, 2020",CLE,NYK,Cleveland Cavaliers,New York Knicks,86,106,-20,Home,93.4,True,2020
+202001270DET,"Mon, Jan 27, 2020",DET,CLE,Detroit Pistons,Cleveland Cavaliers,100,115,-15,Home,98.6,True,2020
+202002030CLE,"Mon, Feb 3, 2020",CLE,NYK,Cleveland Cavaliers,New York Knicks,134,139,-5,Home,97.8,True,2020
+202002260CLE,"Wed, Feb 26, 2020",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,108,94,14,Home,92.3,True,2020
+202003020CLE,"Mon, Mar 2, 2020",CLE,UTA,Cleveland Cavaliers,Utah Jazz,113,126,-13,Home,93.5,True,2020
+202003040CLE,"Wed, Mar 4, 2020",CLE,BOS,Cleveland Cavaliers,Boston Celtics,106,112,-6,Home,92.7,True,2020
+201910300ORL,"Wed, Oct 30, 2019",ORL,NYK,Orlando Magic,New York Knicks,95,83,12,Home,86.8,True,2020
+201911130ORL,"Wed, Nov 13, 2019",ORL,PHI,Orlando Magic,Philadelphia 76ers,112,97,15,Home,102.4,True,2020
+201911250DET,"Mon, Nov 25, 2019",DET,ORL,Detroit Pistons,Orlando Magic,103,88,15,Home,92.1,True,2020
+201912110ORL,"Wed, Dec 11, 2019",ORL,LAL,Orlando Magic,Los Angeles Lakers,87,96,-9,Home,93.1,True,2020
+201912170UTA,"Tue, Dec 17, 2019",UTA,ORL,Utah Jazz,Orlando Magic,109,102,7,Home,98.6,True,2020
+201912270ORL,"Fri, Dec 27, 2019",ORL,PHI,Orlando Magic,Philadelphia 76ers,98,97,1,Home,101.3,True,2020
+202001040ORL,"Sat, Jan 4, 2020",ORL,UTA,Orlando Magic,Utah Jazz,96,109,-13,Home,90.8,True,2020
+202001150LAL,"Wed, Jan 15, 2020",LAL,ORL,Los Angeles Lakers,Orlando Magic,118,119,-1,Home,103.5,True,2020
+202001200CHO,"Mon, Jan 20, 2020",CHO,ORL,Charlotte Hornets,Orlando Magic,83,106,-23,Home,89.2,True,2020
+202001240ORL,"Fri, Jan 24, 2020",ORL,BOS,Orlando Magic,Boston Celtics,98,109,-11,Home,95.8,True,2020
+202002030CHO,"Mon, Feb 3, 2020",CHO,ORL,Charlotte Hornets,Orlando Magic,100,112,-12,Home,88.4,True,2020
+202002050BOS,"Wed, Feb 5, 2020",BOS,ORL,Boston Celtics,Orlando Magic,116,100,16,Home,95.9,True,2020
+202002060NYK,"Thu, Feb 6, 2020",NYK,ORL,New York Knicks,Orlando Magic,105,103,2,Home,99.3,True,2020
+202002120ORL,"Wed, Feb 12, 2020",ORL,DET,Orlando Magic,Detroit Pistons,116,112,4,Home,95.8,True,2020
+202008070PHI,"Fri, Aug 7, 2020",PHI,ORL,Philadelphia 76ers,Orlando Magic,108,101,7,Home,96.7,True,2020
+202008090BOS,"Sun, Aug 9, 2020",BOS,ORL,Boston Celtics,Orlando Magic,122,119,3,Home,99.3,True,2020
+201910260DET,"Sat, Oct 26, 2019",DET,PHI,Detroit Pistons,Philadelphia 76ers,111,117,-6,Home,110.7,True,2020
+201911060DET,"Wed, Nov 6, 2019",DET,NYK,Detroit Pistons,New York Knicks,122,102,20,Home,95.7,True,2020
+201911150CHO,"Fri, Nov 15, 2019",CHO,DET,Charlotte Hornets,Detroit Pistons,109,106,3,Home,95.8,True,2020
+201911270CHO,"Wed, Nov 27, 2019",CHO,DET,Charlotte Hornets,Detroit Pistons,102,101,1,Home,89.3,True,2020
+201911290DET,"Fri, Nov 29, 2019",DET,CHO,Detroit Pistons,Charlotte Hornets,107,110,-3,Home,87.6,True,2020
+201912200BOS,"Fri, Dec 20, 2019",BOS,DET,Boston Celtics,Detroit Pistons,114,93,21,Home,101.9,True,2020
+201912230DET,"Mon, Dec 23, 2019",DET,PHI,Detroit Pistons,Philadelphia 76ers,109,125,-16,Home,94.7,True,2020
+201912300UTA,"Mon, Dec 30, 2019",UTA,DET,Utah Jazz,Detroit Pistons,104,81,23,Home,94.5,True,2020
+202001050LAL,"Sun, Jan 5, 2020",LAL,DET,Los Angeles Lakers,Detroit Pistons,106,99,7,Home,101.5,True,2020
+202001150BOS,"Wed, Jan 15, 2020",BOS,DET,Boston Celtics,Detroit Pistons,103,116,-13,Home,93.2,True,2020
+202002080DET,"Sat, Feb 8, 2020",DET,NYK,Detroit Pistons,New York Knicks,92,95,-3,Home,87.6,True,2020
+202002100DET,"Mon, Feb 10, 2020",DET,CHO,Detroit Pistons,Charlotte Hornets,76,87,-11,Home,87.0,True,2020
+202003070DET,"Sat, Mar 7, 2020",DET,UTA,Detroit Pistons,Utah Jazz,105,111,-6,Home,90.7,True,2020
+202003080NYK,"Sun, Mar 8, 2020",NYK,DET,New York Knicks,Detroit Pistons,96,84,12,Home,89.8,True,2020
+202003110PHI,"Wed, Mar 11, 2020",PHI,DET,Philadelphia 76ers,Detroit Pistons,124,106,18,Home,94.7,True,2020
+201910230PHI,"Wed, Oct 23, 2019",PHI,BOS,Philadelphia 76ers,Boston Celtics,107,93,14,Home,101.8,True,2020
+201911060UTA,"Wed, Nov 6, 2019",UTA,PHI,Utah Jazz,Philadelphia 76ers,106,104,2,Home,98.2,True,2020
+201911100PHI,"Sun, Nov 10, 2019",PHI,CHO,Philadelphia 76ers,Charlotte Hornets,114,106,8,Home,99.0,True,2020
+201911200PHI,"Wed, Nov 20, 2019",PHI,NYK,Philadelphia 76ers,New York Knicks,109,104,5,Home,96.7,True,2020
+201911290NYK,"Fri, Nov 29, 2019",NYK,PHI,New York Knicks,Philadelphia 76ers,95,101,-6,Home,95.2,True,2020
+201912020PHI,"Mon, Dec 2, 2019",PHI,UTA,Philadelphia 76ers,Utah Jazz,103,94,9,Home,103.3,True,2020
+201912120BOS,"Thu, Dec 12, 2019",BOS,PHI,Boston Celtics,Philadelphia 76ers,109,115,-6,Home,92.4,True,2020
+202001090PHI,"Thu, Jan 9, 2020",PHI,BOS,Philadelphia 76ers,Boston Celtics,109,98,11,Home,93.7,True,2020
+202001180NYK,"Sat, Jan 18, 2020",NYK,PHI,New York Knicks,Philadelphia 76ers,87,90,-3,Home,93.9,True,2020
+202001250PHI,"Sat, Jan 25, 2020",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,108,91,17,Home,98.7,True,2020
+202002010BOS,"Sat, Feb 1, 2020",BOS,PHI,Boston Celtics,Philadelphia 76ers,116,95,21,Home,95.7,True,2020
+202002270PHI,"Thu, Feb 27, 2020",PHI,NYK,Philadelphia 76ers,New York Knicks,115,106,9,Home,90.1,True,2020
+202003030LAL,"Tue, Mar 3, 2020",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,120,107,13,Home,95.0,True,2020
+202008170BOS,"Mon, Aug 17, 2020",BOS,PHI,Boston Celtics,Philadelphia 76ers,109,101,8,Home,90.4,True,2020
+202008190BOS,"Wed, Aug 19, 2020",BOS,PHI,Boston Celtics,Philadelphia 76ers,128,101,27,Home,94.1,True,2020
+202008210PHI,"Fri, Aug 21, 2020",PHI,BOS,Philadelphia 76ers,Boston Celtics,94,102,-8,Home,100.0,True,2020
+202008230PHI,"Sun, Aug 23, 2020",PHI,BOS,Philadelphia 76ers,Boston Celtics,106,110,-4,Home,94.8,True,2020
+201910250LAL,"Fri, Oct 25, 2019",LAL,UTA,Los Angeles Lakers,Utah Jazz,95,86,9,Home,96.7,True,2020
+201910270LAL,"Sun, Oct 27, 2019",LAL,CHO,Los Angeles Lakers,Charlotte Hornets,120,101,19,Home,99.5,True,2020
+201912040UTA,"Wed, Dec 4, 2019",UTA,LAL,Utah Jazz,Los Angeles Lakers,96,121,-25,Home,98.5,True,2020
+202001070LAL,"Tue, Jan 7, 2020",LAL,NYK,Los Angeles Lakers,New York Knicks,117,87,30,Home,100.8,True,2020
+202001200BOS,"Mon, Jan 20, 2020",BOS,LAL,Boston Celtics,Los Angeles Lakers,139,107,32,Home,101.0,True,2020
+202001220NYK,"Wed, Jan 22, 2020",NYK,LAL,New York Knicks,Los Angeles Lakers,92,100,-8,Home,92.6,True,2020
+202002230LAL,"Sun, Feb 23, 2020",LAL,BOS,Los Angeles Lakers,Boston Celtics,114,112,2,Home,102.5,True,2020
+202008030UTA,"Mon, Aug 3, 2020",UTA,LAL,Utah Jazz,Los Angeles Lakers,108,116,-8,Home,104.7,True,2020
+201912210CHO,"Sat, Dec 21, 2019",CHO,UTA,Charlotte Hornets,Utah Jazz,107,114,-7,Home,95.2,True,2020
+202001080UTA,"Wed, Jan 8, 2020",UTA,NYK,Utah Jazz,New York Knicks,128,104,24,Home,93.6,True,2020
+202001100UTA,"Fri, Jan 10, 2020",UTA,CHO,Utah Jazz,Charlotte Hornets,109,92,17,Home,92.3,True,2020
+202002260UTA,"Wed, Feb 26, 2020",UTA,BOS,Utah Jazz,Boston Celtics,103,114,-11,Home,89.0,True,2020
+202003040NYK,"Wed, Mar 4, 2020",NYK,UTA,New York Knicks,Utah Jazz,104,112,-8,Home,94.0,True,2020
+202003060BOS,"Fri, Mar 6, 2020",BOS,UTA,Boston Celtics,Utah Jazz,94,99,-5,Home,94.2,True,2020
+201911070CHO,"Thu, Nov 7, 2019",CHO,BOS,Charlotte Hornets,Boston Celtics,87,108,-21,Home,103.1,True,2020
+201911160NYK,"Sat, Nov 16, 2019",NYK,CHO,New York Knicks,Charlotte Hornets,102,103,-1,Home,90.8,True,2020
+201912220BOS,"Sun, Dec 22, 2019",BOS,CHO,Boston Celtics,Charlotte Hornets,119,93,26,Home,92.3,True,2020
+201912310CHO,"Tue, Dec 31, 2019",CHO,BOS,Charlotte Hornets,Boston Celtics,92,109,-17,Home,96.6,True,2020
+202001280CHO,"Tue, Jan 28, 2020",CHO,NYK,Charlotte Hornets,New York Knicks,97,92,5,Home,93.6,True,2020
+202002260CHO,"Wed, Feb 26, 2020",CHO,NYK,Charlotte Hornets,New York Knicks,107,101,6,Home,93.6,True,2020
+201910260NYK,"Sat, Oct 26, 2019",NYK,BOS,New York Knicks,Boston Celtics,95,118,-23,Home,101.9,True,2020
+201911010BOS,"Fri, Nov 1, 2019",BOS,NYK,Boston Celtics,New York Knicks,104,102,2,Home,96.9,True,2020
+201912010NYK,"Sun, Dec 1, 2019",NYK,BOS,New York Knicks,Boston Celtics,104,113,-9,Home,95.5,True,2020

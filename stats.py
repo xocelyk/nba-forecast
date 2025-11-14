@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 from utils import HCA
 
@@ -20,17 +21,17 @@ def get_regular_season_wins_losses(game_df):
     """Return win/loss totals using only the first 82 games for each team."""
 
     # Initialize dictionaries for all teams that appear in the data
-    teams = set(game_df['team']).union(set(game_df['opponent']))
+    teams = set(game_df["team"]).union(set(game_df["opponent"]))
     wins = {team: 0 for team in teams}
     losses = {team: 0 for team in teams}
 
     # Sort by date to ensure chronological order
-    sorted_games = game_df.sort_values('date')
+    sorted_games = game_df.sort_values("date")
 
     for _, row in sorted_games.iterrows():
-        home = row['team']
-        away = row['opponent']
-        margin = row['margin']
+        home = row["team"]
+        away = row["opponent"]
+        margin = row["margin"]
 
         # Update home team record if they haven't reached 82 games
         if wins[home] + losses[home] < 82:
@@ -52,12 +53,17 @@ def get_regular_season_wins_losses(game_df):
 
     return wins, losses
 
+
 def get_offensive_efficiency(data):
+    # TODO: Fix missing pace data issue - pace should be fetched from nba_api for all completed games
+    # WORKAROUND: Use default pace when missing
+    DEFAULT_PACE = 100.0  # League average pace
+
     off_eff = {}
     for idx, row in data.iterrows():
         home_points = row["team_score"]
         away_points = row["opponent_score"]
-        pace = row["pace"]
+        pace = row["pace"] if pd.notna(row["pace"]) else DEFAULT_PACE
         home_off_eff = home_points / pace
         away_off_eff = away_points / pace
         home = row["team"]
@@ -74,11 +80,15 @@ def get_offensive_efficiency(data):
 
 
 def get_defensive_efficiency(data):
+    # TODO: Fix missing pace data issue - pace should be fetched from nba_api for all completed games
+    # WORKAROUND: Use default pace when missing
+    DEFAULT_PACE = 100.0  # League average pace
+
     def_eff = {}
     for idx, row in data.iterrows():
         home_points = row["team_score"]
         away_points = row["opponent_score"]
-        pace = row["pace"]
+        pace = row["pace"] if pd.notna(row["pace"]) else DEFAULT_PACE
         home_def_eff = away_points / pace
         away_def_eff = home_points / pace
         home = row["team"]
@@ -98,18 +108,24 @@ def get_adjusted_efficiencies(data, off_eff, def_eff):
     """
     gets both adjusted defensive efficiency and adjusted offensive efficiency
     """
+    # TODO: Fix missing pace data issue - pace should be fetched from nba_api for all completed games
+    # WORKAROUND: Use default pace when missing
+    DEFAULT_PACE = 100.0  # League average pace
 
     adj_off_eff = off_eff.copy()
     adj_def_eff = def_eff.copy()
 
-    average_ppp = np.mean(data["team_score"] / data["pace"])
+    # Fill NaN pace values with default
+    pace_data = data["pace"].fillna(DEFAULT_PACE)
+    average_ppp = np.mean(data["team_score"] / pace_data)
 
     for _ in range(100):
         game_offensive_efficiencies = {team: [] for team in off_eff.keys()}
         game_defensive_efficiencies = {team: [] for team in off_eff.keys()}
         for idx, row in data.iterrows():
-            team_ppp = (row["team_score"] + HCA / 2) / row["pace"]
-            opponent_ppp = (row["opponent_score"] - HCA / 2) / row["pace"]
+            pace = row["pace"] if pd.notna(row["pace"]) else DEFAULT_PACE
+            team_ppp = (row["team_score"] + HCA / 2) / pace
+            opponent_ppp = (row["opponent_score"] - HCA / 2) / pace
             team_game_adjusted_offensive_efficiency = (
                 team_ppp - average_ppp + adj_def_eff[row["opponent"]]
             )
@@ -188,9 +204,13 @@ def get_adjusted_defensive_efficiency(data, off_eff):
 
 
 def get_pace(data):
+    # TODO: Fix missing pace data issue - pace should be fetched from nba_api for all completed games
+    # WORKAROUND: Use default pace when missing
+    DEFAULT_PACE = 100.0  # League average pace
+
     paces = {}
     for idx, row in data.iterrows():
-        pace = row["pace"]
+        pace = row["pace"] if pd.notna(row["pace"]) else DEFAULT_PACE
         home = row["team"]
         away = row["opponent"]
         if home not in paces:

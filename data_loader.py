@@ -4,40 +4,33 @@ import time
 
 import numpy as np
 import pandas as pd
-from sportsipy.nba.boxscore import Boxscore
-from sportsipy.nba.schedule import Schedule
 
 import env
+import nba_api_loader
 import utils
 
 
-def get_team_names(year: int = 2025):
+def get_team_names(year: int = 2026):
     """Return a mapping of team names to abbreviations for the given year."""
-    names_to_abbr = {"Houston Rockets": "HOU"}
-    schedule = Schedule("HOU", year=year)
-    for game in schedule:
-        game_df = game.dataframe
-        opponent_name = game_df["opponent_name"].iloc[0]
-        opponent_abbr = game_df["opponent_abbr"].iloc[0]
-        if opponent_name not in names_to_abbr:
-            names_to_abbr[opponent_name] = opponent_abbr
-    return names_to_abbr
+    loader = nba_api_loader.get_loader()
+    return loader.get_team_names(year)
 
 
-def load_year_data(year: int = 2025):
+def load_year_data(year: int = 2026):
     """Load completed game rows from the CSV for ``year``."""
     filename = os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
-    df = pd.read_csv(filename)
+    # Read game_id as string to preserve leading zeros
+    df = pd.read_csv(filename, dtype={"game_id": str})
     df = df[df["completed"] == True]
 
     data = []
     for _, row in df.iterrows():
-        boxscore_id = row["boxscore_id"]
-        date_str = f"{boxscore_id[4:6]}/{boxscore_id[6:8]}/{boxscore_id[0:4]}"
-        date_val = pd.to_datetime(date_str)
+        game_id = str(row["game_id"])  # Ensure string format
+        # Date is now directly from CSV, no parsing from game_id needed
+        date_val = pd.to_datetime(row["date"])
         data.append(
             [
-                boxscore_id,
+                game_id,
                 date_val,
                 row["team"],
                 row["opponent"],
@@ -52,74 +45,100 @@ def load_year_data(year: int = 2025):
     return data
 
 
-def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
-    """Scrape game data and return a DataFrame."""
+def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
+    """Load game data using nba_api and return a DataFrame."""
+    loader = nba_api_loader.get_loader()
+
+    # Load existing data if preloading
     if preload:
-        data = load_year_data(year)
-        boxscore_tracked = [row[0] for row in data]
+        try:
+            existing_data = load_year_data(year)
+            existing_game_ids = set(
+                [str(row[0]) for row in existing_data]
+            )  # Ensure strings
+        except FileNotFoundError:
+            existing_data = []
+            existing_game_ids = set()
     else:
-        data = []
-        boxscore_tracked = []
+        existing_data = []
+        existing_game_ids = set()
 
-    abbr_to_name = {v: k for k, v in names_to_abbr.items()}
-    for abbr in names_to_abbr.values():
-        schedule = Schedule(abbr, year=year)
-        time.sleep(5)
-        for game in schedule:
-            if not game.boxscore_index or game.boxscore_index in boxscore_tracked:
-                continue
-            if game.location == "Home":
-                row = [
-                    game.boxscore_index,
-                    game.date,
-                    abbr,
-                    game.opponent_abbr,
-                    game.points_scored,
-                    game.points_allowed,
-                    "Home",
-                ]
-            else:
-                row = [
-                    game.boxscore_index,
-                    game.date,
-                    game.opponent_abbr,
-                    abbr,
-                    game.points_allowed,
-                    game.points_scored,
-                    "Home",
-                ]
-            pace = None
-            if game.points_scored is not None:
-                pace = Boxscore(game.boxscore_index).pace
-                time.sleep(5)
-            row.append(pace)
-            completed = str(row[-3]).isdigit() and str(row[-4]).isdigit()
-            row.append(completed)
-            row.append(year)
-            data.append(row)
-            boxscore_tracked.append(game.boxscore_index)
+    # Fetch full season schedule from nba_api (single API call!)
+    games_df = loader.get_season_schedule(year)
 
-    columns = [
-        "boxscore_id",
-        "date",
-        "team",
-        "opponent",
-        "team_score",
-        "opponent_score",
-        "location",
-        "pace",
-        "completed",
-        "year",
-    ]
-    data_df = pd.DataFrame(data, columns=columns)
-    data_df["date"] = pd.to_datetime(data_df["date"], format="mixed")
-    data_df["team_name"] = data_df["team"].map(abbr_to_name)
-    data_df["opponent_name"] = data_df["opponent"].map(abbr_to_name)
-    data_df["margin"] = data_df["team_score"] - data_df["opponent_score"]
+    # Filter to only new games if preloading
+    if preload and existing_game_ids:
+        new_games = games_df[~games_df["game_id"].isin(existing_game_ids)]
+        print(f"Found {len(new_games)} new games (total: {len(games_df)})")
+    else:
+        new_games = games_df
+
+    # Add pace data for new completed games
+    completed_games = new_games[new_games["completed"] == True]
+    if len(completed_games) > 0:
+        print(f"Fetching pace for {len(completed_games)} completed games...")
+        new_games = loader.add_pace_to_games(new_games)
+
+    # Combine with existing data
+    if preload and existing_data:
+        # Convert existing data back to DataFrame
+        existing_df = pd.DataFrame(
+            existing_data,
+            columns=[
+                "game_id",
+                "date",
+                "team",
+                "opponent",
+                "team_score",
+                "opponent_score",
+                "location",
+                "pace",
+                "completed",
+                "year",
+            ],
+        )
+        # Ensure game_id is string (prevent pandas from converting to int)
+        existing_df["game_id"] = existing_df["game_id"].astype(str)
+
+        # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
+        # PHO -> PHX (Phoenix changed their abbreviation after 2020)
+        abbr_mapping = {"PHO": "PHX"}
+        existing_df["team"] = existing_df["team"].replace(abbr_mapping)
+        existing_df["opponent"] = existing_df["opponent"].replace(abbr_mapping)
+
+        # Add missing columns
+        abbr_to_name = {v: k for k, v in names_to_abbr.items()}
+        # Update abbr_to_name to use PHX instead of PHO
+        abbr_to_name = {
+            abbr_mapping.get(abbr, abbr): name for abbr, name in abbr_to_name.items()
+        }
+
+        existing_df["team_name"] = existing_df["team"].map(abbr_to_name)
+        existing_df["opponent_name"] = existing_df["opponent"].map(abbr_to_name)
+        existing_df["margin"] = (
+            existing_df["team_score"] - existing_df["opponent_score"]
+        )
+
+        # Combine
+        data_df = pd.concat([existing_df, new_games], ignore_index=True)
+    else:
+        data_df = new_games
+
+    # Ensure standard column order and types
+    data_df["date"] = pd.to_datetime(data_df["date"])
     data_df = utils.add_playoff_indicator(data_df)
+
+    # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
+    # PHO -> PHX (Phoenix changed their abbreviation after 2020)
+    # This mapping must match the one in main.py
+    abbr_mapping = {"PHO": "PHX"}
+    data_df["team"] = data_df["team"].replace(abbr_mapping)
+    data_df["opponent"] = data_df["opponent"].replace(abbr_mapping)
+
+    # Select and order columns
     data_df = data_df[
         [
-            "boxscore_id",
+            "game_id",
             "date",
             "team",
             "opponent",
@@ -134,8 +153,13 @@ def update_data(names_to_abbr, year: int = 2025, preload: bool = True):
             "year",
         ]
     ]
-    data_df.set_index("boxscore_id", inplace=True)
+
+    # Set index and save
+    data_df.set_index("game_id", inplace=True)
     data_df.to_csv(os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv"))
+
+    print(f"Saved {len(data_df)} games to year_data_{year}.csv")
+
     return data_df
 
 
@@ -167,7 +191,7 @@ def load_training_data(
     update: bool = True,
     reset: bool = False,
     start_year: int = 2010,
-    stop_year: int = 2025,
+    stop_year: int = 2026,
     this_year_games=None,
 ):
     """Return a training DataFrame built from historical game data."""
@@ -201,6 +225,45 @@ def load_training_data(
                     inplace=True,
                 )
             year_data["date"] = pd.to_datetime(year_data["date"], format="mixed")
+
+            # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
+            # PHO -> PHX (Phoenix changed their abbreviation after 2020)
+            # After 2020, all data uses PHX instead of PHO
+            abbr_mapping = {"PHO": "PHX"}
+            year_data["team"] = year_data["team"].replace(abbr_mapping)
+            year_data["opponent"] = year_data["opponent"].replace(abbr_mapping)
+
+            # Filter to only NBA teams to remove exhibition games, All-Star placeholder teams, etc.
+            # Use heuristic: keep teams that appear frequently (NBA teams play 82 games)
+            all_teams_in_data = set(year_data["team"]).union(set(year_data["opponent"]))
+
+            # Filter out obvious non-NBA abbreviations (must be 3-letter uppercase string)
+            valid_candidates = {
+                t
+                for t in all_teams_in_data
+                if isinstance(t, str) and len(t) == 3 and t.isalpha() and t.isupper()
+            }
+
+            # Count games per team to identify NBA teams (should have ~82 games or more)
+            team_counts = (
+                year_data["team"].value_counts() + year_data["opponent"].value_counts()
+            )
+
+            # Keep teams with significant game counts (filters out exhibition/All-Star teams)
+            # NBA teams: 29-30 teams × ~82 games each
+            # Non-NBA: usually just 1-2 exhibition games
+            min_games = 20  # Threshold to filter out exhibition teams
+            valid_nba_teams = {
+                team
+                for team in valid_candidates
+                if team in team_counts and team_counts[team] >= min_games
+            }
+
+            year_data = year_data[
+                year_data["team"].isin(valid_nba_teams)
+                & year_data["opponent"].isin(valid_nba_teams)
+            ]
+
             end_year_ratings_dct[year] = {}
             abbrs = list(set(year_data["team"]).union(set(year_data["opponent"])))
             completed_year_data = year_data[year_data["completed"] == True]
@@ -254,24 +317,29 @@ def load_training_data(
                     end_year_ratings_df.to_csv(
                         f"data/end_year_ratings/{year - 1}.csv", index=False
                     )
-                    year_data["last_year_team_rating"] = year_data.apply(
-                        lambda x: end_year_ratings_dct[year - 1][x["team"]], axis=1
+                    year_data["last_year_team_rating"] = year_data["team"].map(
+                        end_year_ratings_dct[year - 1]
                     )
-                    year_data["last_year_opp_rating"] = year_data.apply(
-                        lambda x: end_year_ratings_dct[year - 1][x["opponent"]], axis=1
+                    year_data["last_year_opp_rating"] = year_data["opponent"].map(
+                        end_year_ratings_dct[year - 1]
                     )
                     year_data["num_games_into_season"] = year_data.apply(
                         lambda x: len(year_data[year_data["date"] < x["date"]]), axis=1
                     )
-                    year_data["team_win_total_future"] = year_data.apply(
-                        lambda x: win_totals_futures[str(year)][x["team"]], axis=1
+                    year_data["team_win_total_future"] = year_data["team"].map(
+                        win_totals_futures[str(year)]
                     )
-                    year_data["opp_win_total_future"] = year_data.apply(
-                        lambda x: win_totals_futures[str(year)][x["opponent"]], axis=1
+                    year_data["opp_win_total_future"] = year_data["opponent"].map(
+                        win_totals_futures[str(year)]
                     )
-                    year_data["margin"] = (
-                        year_data["team_score"] - year_data["opponent_score"]
-                    )
+                    # Only calculate margin if not already present (preserves correct completed status)
+                    if (
+                        "margin" not in year_data.columns
+                        or year_data["margin"].isna().all()
+                    ):
+                        year_data["margin"] = (
+                            year_data["team_score"] - year_data["opponent_score"]
+                        )
 
                     year_data_temp = []
                     for i, date in enumerate(sorted(year_data["date"].unique())):
@@ -297,11 +365,11 @@ def load_training_data(
                                 for team in end_year_ratings_dct[year - 1].keys()
                             }
 
-                        games_on_date["team_rating"] = games_on_date.apply(
-                            lambda x: cur_ratings[x["team"]], axis=1
+                        games_on_date["team_rating"] = games_on_date["team"].map(
+                            cur_ratings
                         )
-                        games_on_date["opp_rating"] = games_on_date.apply(
-                            lambda x: cur_ratings[x["opponent"]], axis=1
+                        games_on_date["opp_rating"] = games_on_date["opponent"].map(
+                            cur_ratings
                         )
                         games_on_date = games_on_date[
                             [

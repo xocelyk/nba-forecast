@@ -1,0 +1,1312 @@
+boxscore_id,date,team_abbr,opponent_abbr,team_name,opponent_name,team_score,opponent_score,margin,location,pace,completed,year
+201010260LAL,"Tue, Oct 26, 2010",LAL,HOU,Los Angeles Lakers,Houston Rockets,112,110,2,Home,102.6,True,2011
+201010270GSW,"Wed, Oct 27, 2010",GSW,HOU,Golden State Warriors,Houston Rockets,132,128,4,Home,99.5,True,2011
+201010300HOU,"Sat, Oct 30, 2010",HOU,DEN,Houston Rockets,Denver Nuggets,94,107,-13,Home,98.9,True,2011
+201011030HOU,"Wed, Nov 3, 2010",HOU,NOH,Houston Rockets,New Orleans Hornets,99,107,-8,Home,94.8,True,2011
+201011060SAS,"Sat, Nov 6, 2010",SAS,HOU,San Antonio Spurs,Houston Rockets,124,121,3,Home,96.8,True,2011
+201011070HOU,"Sun, Nov 7, 2010",HOU,MIN,Houston Rockets,Minnesota Timberwolves,120,94,26,Home,99.8,True,2011
+201011100WAS,"Wed, Nov 10, 2010",WAS,HOU,Washington Wizards,Houston Rockets,98,91,7,Home,96.5,True,2011
+201011120IND,"Fri, Nov 12, 2010",IND,HOU,Indiana Pacers,Houston Rockets,99,102,-3,Home,94.6,True,2011
+201011140NYK,"Sun, Nov 14, 2010",NYK,HOU,New York Knicks,Houston Rockets,96,104,-8,Home,97.4,True,2011
+201011160HOU,"Tue, Nov 16, 2010",HOU,CHI,Houston Rockets,Chicago Bulls,92,95,-3,Home,88.1,True,2011
+201011170OKC,"Wed, Nov 17, 2010",OKC,HOU,Oklahoma City Thunder,Houston Rockets,116,99,17,Home,92.4,True,2011
+201011190TOR,"Fri, Nov 19, 2010",TOR,HOU,Toronto Raptors,Houston Rockets,106,96,10,Home,95.6,True,2011
+201011220HOU,"Mon, Nov 22, 2010",HOU,PHO,Houston Rockets,Phoenix Suns,116,123,-7,Home,98.7,True,2011
+201011240HOU,"Wed, Nov 24, 2010",HOU,GSW,Houston Rockets,Golden State Warriors,111,101,10,Home,93.7,True,2011
+201011260CHA,"Fri, Nov 26, 2010",CHA,HOU,Charlotte Bobcats,Houston Rockets,99,89,10,Home,93.6,True,2011
+201011280HOU,"Sun, Nov 28, 2010",HOU,OKC,Houston Rockets,Oklahoma City Thunder,99,98,1,Home,85.0,True,2011
+201011290DAL,"Mon, Nov 29, 2010",DAL,HOU,Dallas Mavericks,Houston Rockets,101,91,10,Home,91.9,True,2011
+201012010HOU,"Wed, Dec 1, 2010",HOU,LAL,Houston Rockets,Los Angeles Lakers,109,99,10,Home,89.6,True,2011
+201012030MEM,"Fri, Dec 3, 2010",MEM,HOU,Memphis Grizzlies,Houston Rockets,111,127,-16,Home,90.9,True,2011
+201012040CHI,"Sat, Dec 4, 2010",CHI,HOU,Chicago Bulls,Houston Rockets,119,116,3,Home,96.4,True,2011
+201012070HOU,"Tue, Dec 7, 2010",HOU,DET,Houston Rockets,Detroit Pistons,97,83,14,Home,87.9,True,2011
+201012100MIL,"Fri, Dec 10, 2010",MIL,HOU,Milwaukee Bucks,Houston Rockets,97,91,6,Home,93.8,True,2011
+201012110HOU,"Sat, Dec 11, 2010",HOU,CLE,Houston Rockets,Cleveland Cavaliers,110,95,15,Home,91.4,True,2011
+201012140HOU,"Tue, Dec 14, 2010",HOU,SAC,Houston Rockets,Sacramento Kings,118,105,13,Home,96.1,True,2011
+201012150OKC,"Wed, Dec 15, 2010",OKC,HOU,Oklahoma City Thunder,Houston Rockets,117,105,12,Home,91.1,True,2011
+201012170HOU,"Fri, Dec 17, 2010",HOU,MEM,Houston Rockets,Memphis Grizzlies,103,87,16,Home,97.5,True,2011
+201012190SAC,"Sun, Dec 19, 2010",SAC,HOU,Sacramento Kings,Houston Rockets,93,102,-9,Home,92.4,True,2011
+201012200GSW,"Mon, Dec 20, 2010",GSW,HOU,Golden State Warriors,Houston Rockets,112,121,-9,Home,94.5,True,2011
+201012220LAC,"Wed, Dec 22, 2010",LAC,HOU,Los Angeles Clippers,Houston Rockets,92,97,-5,Home,97.4,True,2011
+201012270HOU,"Mon, Dec 27, 2010",HOU,WAS,Houston Rockets,Washington Wizards,100,93,7,Home,91.3,True,2011
+201012290HOU,"Wed, Dec 29, 2010",HOU,MIA,Houston Rockets,Miami Heat,119,125,-6,Home,98.9,True,2011
+201012310HOU,"Fri, Dec 31, 2010",HOU,TOR,Houston Rockets,Toronto Raptors,114,105,9,Home,101.5,True,2011
+201101020POR,"Sun, Jan 2, 2011",POR,HOU,Portland Trail Blazers,Houston Rockets,100,85,15,Home,89.0,True,2011
+201101030DEN,"Mon, Jan 3, 2011",DEN,HOU,Denver Nuggets,Houston Rockets,113,106,7,Home,96.0,True,2011
+201101050HOU,"Wed, Jan 5, 2011",HOU,POR,Houston Rockets,Portland Trail Blazers,100,103,-3,Home,91.5,True,2011
+201101070ORL,"Fri, Jan 7, 2011",ORL,HOU,Orlando Magic,Houston Rockets,110,95,15,Home,94.9,True,2011
+201101080HOU,"Sat, Jan 8, 2011",HOU,UTA,Houston Rockets,Utah Jazz,99,103,-4,Home,89.1,True,2011
+201101100BOS,"Mon, Jan 10, 2011",BOS,HOU,Boston Celtics,Houston Rockets,102,108,-6,Home,86.6,True,2011
+201101120HOU,"Wed, Jan 12, 2011",HOU,OKC,Houston Rockets,Oklahoma City Thunder,112,118,-6,Home,94.6,True,2011
+201101140HOU,"Fri, Jan 14, 2011",HOU,NOH,Houston Rockets,New Orleans Hornets,105,110,-5,Home,87.8,True,2011
+201101150ATL,"Sat, Jan 15, 2011",ATL,HOU,Atlanta Hawks,Houston Rockets,106,112,-6,Home,93.5,True,2011
+201101170HOU,"Mon, Jan 17, 2011",HOU,MIL,Houston Rockets,Milwaukee Bucks,93,84,9,Home,90.1,True,2011
+201101190HOU,"Wed, Jan 19, 2011",HOU,NYK,Houston Rockets,New York Knicks,104,89,15,Home,93.5,True,2011
+201101210MEM,"Fri, Jan 21, 2011",MEM,HOU,Memphis Grizzlies,Houston Rockets,115,110,5,Home,95.5,True,2011
+201101220HOU,"Sat, Jan 22, 2011",HOU,ORL,Houston Rockets,Orlando Magic,104,118,-14,Home,91.7,True,2011
+201101240MIN,"Mon, Jan 24, 2011",MIN,HOU,Minnesota Timberwolves,Houston Rockets,125,129,-4,Home,105.3,True,2011
+201101260HOU,"Wed, Jan 26, 2011",HOU,LAC,Houston Rockets,Los Angeles Clippers,96,83,13,Home,93.2,True,2011
+201101270DAL,"Thu, Jan 27, 2011",DAL,HOU,Dallas Mavericks,Houston Rockets,111,106,5,Home,94.4,True,2011
+201101290SAS,"Sat, Jan 29, 2011",SAS,HOU,San Antonio Spurs,Houston Rockets,108,95,13,Home,88.8,True,2011
+201102010LAL,"Tue, Feb 1, 2011",LAL,HOU,Los Angeles Lakers,Houston Rockets,114,106,8,Home,89.0,True,2011
+201102020UTA,"Wed, Feb 2, 2011",UTA,HOU,Utah Jazz,Houston Rockets,96,97,-1,Home,84.5,True,2011
+201102050HOU,"Sat, Feb 5, 2011",HOU,MEM,Houston Rockets,Memphis Grizzlies,95,93,2,Home,84.6,True,2011
+201102070DEN,"Mon, Feb 7, 2011",DEN,HOU,Denver Nuggets,Houston Rockets,103,108,-5,Home,102.6,True,2011
+201102080HOU,"Tue, Feb 8, 2011",HOU,MIN,Houston Rockets,Minnesota Timberwolves,108,112,-4,Home,94.0,True,2011
+201102120HOU,"Sat, Feb 12, 2011",HOU,DAL,Houston Rockets,Dallas Mavericks,102,106,-4,Home,89.0,True,2011
+201102140HOU,"Mon, Feb 14, 2011",HOU,DEN,Houston Rockets,Denver Nuggets,121,102,19,Home,94.5,True,2011
+201102160HOU,"Wed, Feb 16, 2011",HOU,PHI,Houston Rockets,Philadelphia 76ers,105,114,-9,Home,94.2,True,2011
+201102220DET,"Tue, Feb 22, 2011",DET,HOU,Detroit Pistons,Houston Rockets,100,108,-8,Home,88.0,True,2011
+201102230CLE,"Wed, Feb 23, 2011",CLE,HOU,Cleveland Cavaliers,Houston Rockets,119,124,-5,Home,98.2,True,2011
+201102260HOU,"Sat, Feb 26, 2011",HOU,NJN,Houston Rockets,New Jersey Nets,123,108,15,Home,98.0,True,2011
+201102270NOH,"Sun, Feb 27, 2011",NOH,HOU,New Orleans Hornets,Houston Rockets,89,91,-2,Home,83.3,True,2011
+201103010POR,"Tue, Mar 1, 2011",POR,HOU,Portland Trail Blazers,Houston Rockets,87,103,-16,Home,87.3,True,2011
+201103020LAC,"Wed, Mar 2, 2011",LAC,HOU,Los Angeles Clippers,Houston Rockets,106,103,3,Home,94.2,True,2011
+201103050HOU,"Sat, Mar 5, 2011",HOU,IND,Houston Rockets,Indiana Pacers,112,95,17,Home,100.7,True,2011
+201103070SAC,"Mon, Mar 7, 2011",SAC,HOU,Sacramento Kings,Houston Rockets,101,123,-22,Home,94.9,True,2011
+201103080PHO,"Tue, Mar 8, 2011",PHO,HOU,Phoenix Suns,Houston Rockets,113,110,3,Home,96.3,True,2011
+201103120HOU,"Sat, Mar 12, 2011",HOU,SAS,Houston Rockets,San Antonio Spurs,107,115,-8,Home,99.9,True,2011
+201103140HOU,"Mon, Mar 14, 2011",HOU,PHO,Houston Rockets,Phoenix Suns,95,93,2,Home,92.0,True,2011
+201103160HOU,"Wed, Mar 16, 2011",HOU,CHA,Houston Rockets,Charlotte Bobcats,94,78,16,Home,89.3,True,2011
+201103180HOU,"Fri, Mar 18, 2011",HOU,BOS,Houston Rockets,Boston Celtics,93,77,16,Home,87.2,True,2011
+201103200HOU,"Sun, Mar 20, 2011",HOU,UTA,Houston Rockets,Utah Jazz,110,108,2,Home,94.8,True,2011
+201103230HOU,"Wed, Mar 23, 2011",HOU,GSW,Houston Rockets,Golden State Warriors,131,112,19,Home,97.6,True,2011
+201103270MIA,"Sun, Mar 27, 2011",MIA,HOU,Miami Heat,Houston Rockets,125,119,6,Home,97.2,True,2011
+201103290NJN,"Tue, Mar 29, 2011",NJN,HOU,New Jersey Nets,Houston Rockets,87,112,-25,Home,93.3,True,2011
+201103300PHI,"Wed, Mar 30, 2011",PHI,HOU,Philadelphia 76ers,Houston Rockets,108,97,11,Home,90.8,True,2011
+201104010HOU,"Fri, Apr 1, 2011",HOU,SAS,Houston Rockets,San Antonio Spurs,119,114,5,Home,93.7,True,2011
+201104030HOU,"Sun, Apr 3, 2011",HOU,ATL,Houston Rockets,Atlanta Hawks,114,109,5,Home,92.2,True,2011
+201104050HOU,"Tue, Apr 5, 2011",HOU,SAC,Houston Rockets,Sacramento Kings,101,104,-3,Home,100.7,True,2011
+201104060NOH,"Wed, Apr 6, 2011",NOH,HOU,New Orleans Hornets,Houston Rockets,101,93,8,Home,89.8,True,2011
+201104090HOU,"Sat, Apr 9, 2011",HOU,LAC,Houston Rockets,Los Angeles Clippers,99,78,21,Home,87.2,True,2011
+201104110HOU,"Mon, Apr 11, 2011",HOU,DAL,Houston Rockets,Dallas Mavericks,91,98,-7,Home,92.8,True,2011
+201104130MIN,"Wed, Apr 13, 2011",MIN,HOU,Minnesota Timberwolves,Houston Rockets,102,121,-19,Home,100.4,True,2011
+201010290PHO,"Fri, Oct 29, 2010",PHO,LAL,Phoenix Suns,Los Angeles Lakers,106,114,-8,Home,94.3,True,2011
+201010310LAL,"Sun, Oct 31, 2010",LAL,GSW,Los Angeles Lakers,Golden State Warriors,107,83,24,Home,97.1,True,2011
+201011020LAL,"Tue, Nov 2, 2010",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,124,105,19,Home,96.6,True,2011
+201011030SAC,"Wed, Nov 3, 2010",SAC,LAL,Sacramento Kings,Los Angeles Lakers,100,112,-12,Home,94.0,True,2011
+201011050LAL,"Fri, Nov 5, 2010",LAL,TOR,Los Angeles Lakers,Toronto Raptors,108,103,5,Home,93.8,True,2011
+201011070LAL,"Sun, Nov 7, 2010",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,121,96,25,Home,93.5,True,2011
+201011090LAL,"Tue, Nov 9, 2010",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,99,94,5,Home,95.6,True,2011
+201011110DEN,"Thu, Nov 11, 2010",DEN,LAL,Denver Nuggets,Los Angeles Lakers,118,112,6,Home,97.9,True,2011
+201011140LAL,"Sun, Nov 14, 2010",LAL,PHO,Los Angeles Lakers,Phoenix Suns,116,121,-5,Home,94.1,True,2011
+201011160MIL,"Tue, Nov 16, 2010",MIL,LAL,Milwaukee Bucks,Los Angeles Lakers,107,118,-11,Home,93.9,True,2011
+201011170DET,"Wed, Nov 17, 2010",DET,LAL,Detroit Pistons,Los Angeles Lakers,90,103,-13,Home,90.1,True,2011
+201011190MIN,"Fri, Nov 19, 2010",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,95,112,-17,Home,100.4,True,2011
+201011210LAL,"Sun, Nov 21, 2010",LAL,GSW,Los Angeles Lakers,Golden State Warriors,117,89,28,Home,91.8,True,2011
+201011230LAL,"Tue, Nov 23, 2010",LAL,CHI,Los Angeles Lakers,Chicago Bulls,98,91,7,Home,91.1,True,2011
+201011260UTA,"Fri, Nov 26, 2010",UTA,LAL,Utah Jazz,Los Angeles Lakers,102,96,6,Home,88.4,True,2011
+201011280LAL,"Sun, Nov 28, 2010",LAL,IND,Los Angeles Lakers,Indiana Pacers,92,95,-3,Home,92.7,True,2011
+201011300MEM,"Tue, Nov 30, 2010",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,98,96,2,Home,85.7,True,2011
+201012030LAL,"Fri, Dec 3, 2010",LAL,SAC,Los Angeles Lakers,Sacramento Kings,113,80,33,Home,93.7,True,2011
+201012070LAL,"Tue, Dec 7, 2010",LAL,WAS,Los Angeles Lakers,Washington Wizards,115,108,7,Home,90.7,True,2011
+201012080LAC,"Wed, Dec 8, 2010",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,86,87,-1,Home,95.1,True,2011
+201012100CHI,"Fri, Dec 10, 2010",CHI,LAL,Chicago Bulls,Los Angeles Lakers,88,84,4,Home,92.9,True,2011
+201012120NJN,"Sun, Dec 12, 2010",NJN,LAL,New Jersey Nets,Los Angeles Lakers,92,99,-7,Home,93.8,True,2011
+201012140WAS,"Tue, Dec 14, 2010",WAS,LAL,Washington Wizards,Los Angeles Lakers,89,103,-14,Home,86.9,True,2011
+201012150IND,"Wed, Dec 15, 2010",IND,LAL,Indiana Pacers,Los Angeles Lakers,94,109,-15,Home,87.4,True,2011
+201012170PHI,"Fri, Dec 17, 2010",PHI,LAL,Philadelphia 76ers,Los Angeles Lakers,81,93,-12,Home,91.3,True,2011
+201012190TOR,"Sun, Dec 19, 2010",TOR,LAL,Toronto Raptors,Los Angeles Lakers,110,120,-10,Home,98.0,True,2011
+201012210LAL,"Tue, Dec 21, 2010",LAL,MIL,Los Angeles Lakers,Milwaukee Bucks,79,98,-19,Home,81.4,True,2011
+201012250LAL,"Sat, Dec 25, 2010",LAL,MIA,Los Angeles Lakers,Miami Heat,80,96,-16,Home,86.4,True,2011
+201012280SAS,"Tue, Dec 28, 2010",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,97,82,15,Home,92.5,True,2011
+201012290NOH,"Wed, Dec 29, 2010",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,88,103,-15,Home,90.7,True,2011
+201012310LAL,"Fri, Dec 31, 2010",LAL,PHI,Los Angeles Lakers,Philadelphia 76ers,102,98,4,Home,91.9,True,2011
+201101020LAL,"Sun, Jan 2, 2011",LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,85,104,-19,Home,92.1,True,2011
+201101040LAL,"Tue, Jan 4, 2011",LAL,DET,Los Angeles Lakers,Detroit Pistons,108,83,25,Home,86.9,True,2011
+201101050PHO,"Wed, Jan 5, 2011",PHO,LAL,Phoenix Suns,Los Angeles Lakers,95,99,-4,Home,85.8,True,2011
+201101070LAL,"Fri, Jan 7, 2011",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,101,97,4,Home,84.3,True,2011
+201101090LAL,"Sun, Jan 9, 2011",LAL,NYK,Los Angeles Lakers,New York Knicks,109,87,22,Home,98.9,True,2011
+201101110LAL,"Tue, Jan 11, 2011",LAL,CLE,Los Angeles Lakers,Cleveland Cavaliers,112,57,55,Home,88.9,True,2011
+201101120GSW,"Wed, Jan 12, 2011",GSW,LAL,Golden State Warriors,Los Angeles Lakers,110,115,-5,Home,89.9,True,2011
+201101140LAL,"Fri, Jan 14, 2011",LAL,NJN,Los Angeles Lakers,New Jersey Nets,100,88,12,Home,86.7,True,2011
+201101160LAC,"Sun, Jan 16, 2011",LAC,LAL,Los Angeles Clippers,Los Angeles Lakers,99,92,7,Home,90.0,True,2011
+201101170LAL,"Mon, Jan 17, 2011",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,101,94,7,Home,90.3,True,2011
+201101190DAL,"Wed, Jan 19, 2011",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,109,100,9,Home,84.1,True,2011
+201101210DEN,"Fri, Jan 21, 2011",DEN,LAL,Denver Nuggets,Los Angeles Lakers,97,107,-10,Home,86.2,True,2011
+201101250LAL,"Tue, Jan 25, 2011",LAL,UTA,Los Angeles Lakers,Utah Jazz,120,91,29,Home,92.9,True,2011
+201101280LAL,"Fri, Jan 28, 2011",LAL,SAC,Los Angeles Lakers,Sacramento Kings,95,100,-5,Home,86.4,True,2011
+201101300LAL,"Sun, Jan 30, 2011",LAL,BOS,Los Angeles Lakers,Boston Celtics,96,109,-13,Home,87.2,True,2011
+201102030LAL,"Thu, Feb 3, 2011",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,88,89,-1,Home,86.5,True,2011
+201102050NOH,"Sat, Feb 5, 2011",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,95,101,-6,Home,82.1,True,2011
+201102070MEM,"Mon, Feb 7, 2011",MEM,LAL,Memphis Grizzlies,Los Angeles Lakers,84,93,-9,Home,87.7,True,2011
+201102100BOS,"Thu, Feb 10, 2011",BOS,LAL,Boston Celtics,Los Angeles Lakers,86,92,-6,Home,84.3,True,2011
+201102110NYK,"Fri, Feb 11, 2011",NYK,LAL,New York Knicks,Los Angeles Lakers,96,113,-17,Home,99.1,True,2011
+201102130ORL,"Sun, Feb 13, 2011",ORL,LAL,Orlando Magic,Los Angeles Lakers,89,75,14,Home,84.9,True,2011
+201102140CHA,"Mon, Feb 14, 2011",CHA,LAL,Charlotte Bobcats,Los Angeles Lakers,109,89,20,Home,85.9,True,2011
+201102160CLE,"Wed, Feb 16, 2011",CLE,LAL,Cleveland Cavaliers,Los Angeles Lakers,104,99,5,Home,93.7,True,2011
+201102220LAL,"Tue, Feb 22, 2011",LAL,ATL,Los Angeles Lakers,Atlanta Hawks,104,80,24,Home,89.1,True,2011
+201102230POR,"Wed, Feb 23, 2011",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,101,106,-5,Home,84.6,True,2011
+201102250LAL,"Fri, Feb 25, 2011",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,108,95,13,Home,87.6,True,2011
+201102270OKC,"Sun, Feb 27, 2011",OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,87,90,-3,Home,86.7,True,2011
+201103010MIN,"Tue, Mar 1, 2011",MIN,LAL,Minnesota Timberwolves,Los Angeles Lakers,79,90,-11,Home,85.8,True,2011
+201103040LAL,"Fri, Mar 4, 2011",LAL,CHA,Los Angeles Lakers,Charlotte Bobcats,92,84,8,Home,90.3,True,2011
+201103060SAS,"Sun, Mar 6, 2011",SAS,LAL,San Antonio Spurs,Los Angeles Lakers,83,99,-16,Home,83.8,True,2011
+201103080ATL,"Tue, Mar 8, 2011",ATL,LAL,Atlanta Hawks,Los Angeles Lakers,87,101,-14,Home,81.8,True,2011
+201103100MIA,"Thu, Mar 10, 2011",MIA,LAL,Miami Heat,Los Angeles Lakers,94,88,6,Home,82.1,True,2011
+201103120DAL,"Sat, Mar 12, 2011",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,91,96,-5,Home,88.8,True,2011
+201103140LAL,"Mon, Mar 14, 2011",LAL,ORL,Los Angeles Lakers,Orlando Magic,97,84,13,Home,85.1,True,2011
+201103180LAL,"Fri, Mar 18, 2011",LAL,MIN,Los Angeles Lakers,Minnesota Timberwolves,106,98,8,Home,92.8,True,2011
+201103200LAL,"Sun, Mar 20, 2011",LAL,POR,Los Angeles Lakers,Portland Trail Blazers,84,80,4,Home,82.0,True,2011
+201103220LAL,"Tue, Mar 22, 2011",LAL,PHO,Los Angeles Lakers,Phoenix Suns,139,137,2,Home,87.6,True,2011
+201103250LAL,"Fri, Mar 25, 2011",LAL,LAC,Los Angeles Lakers,Los Angeles Clippers,112,104,8,Home,96.5,True,2011
+201103270LAL,"Sun, Mar 27, 2011",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,102,84,18,Home,85.0,True,2011
+201103310LAL,"Thu, Mar 31, 2011",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,110,82,28,Home,94.0,True,2011
+201104010UTA,"Fri, Apr 1, 2011",UTA,LAL,Utah Jazz,Los Angeles Lakers,85,96,-11,Home,86.2,True,2011
+201104030LAL,"Sun, Apr 3, 2011",LAL,DEN,Los Angeles Lakers,Denver Nuggets,90,95,-5,Home,96.6,True,2011
+201104050LAL,"Tue, Apr 5, 2011",LAL,UTA,Los Angeles Lakers,Utah Jazz,85,86,-1,Home,94.4,True,2011
+201104060GSW,"Wed, Apr 6, 2011",GSW,LAL,Golden State Warriors,Los Angeles Lakers,95,87,8,Home,91.4,True,2011
+201104080POR,"Fri, Apr 8, 2011",POR,LAL,Portland Trail Blazers,Los Angeles Lakers,93,86,7,Home,86.5,True,2011
+201104100LAL,"Sun, Apr 10, 2011",LAL,OKC,Los Angeles Lakers,Oklahoma City Thunder,106,120,-14,Home,91.8,True,2011
+201104120LAL,"Tue, Apr 12, 2011",LAL,SAS,Los Angeles Lakers,San Antonio Spurs,102,93,9,Home,93.3,True,2011
+201104130SAC,"Wed, Apr 13, 2011",SAC,LAL,Sacramento Kings,Los Angeles Lakers,108,116,-8,Home,93.6,True,2011
+201104170LAL,"Sun, Apr 17, 2011",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,100,109,-9,Home,90.4,True,2011
+201104200LAL,"Wed, Apr 20, 2011",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,87,78,9,Home,85.4,True,2011
+201104220NOH,"Fri, Apr 22, 2011",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,86,100,-14,Home,84.2,True,2011
+201104240NOH,"Sun, Apr 24, 2011",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,93,88,5,Home,80.9,True,2011
+201104260LAL,"Tue, Apr 26, 2011",LAL,NOH,Los Angeles Lakers,New Orleans Hornets,106,90,16,Home,87.1,True,2011
+201104280NOH,"Thu, Apr 28, 2011",NOH,LAL,New Orleans Hornets,Los Angeles Lakers,80,98,-18,Home,81.5,True,2011
+201105020LAL,"Mon, May 2, 2011",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,94,96,-2,Home,89.7,True,2011
+201105040LAL,"Wed, May 4, 2011",LAL,DAL,Los Angeles Lakers,Dallas Mavericks,81,93,-12,Home,85.8,True,2011
+201105060DAL,"Fri, May 6, 2011",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,98,92,6,Home,82.5,True,2011
+201105080DAL,"Sun, May 8, 2011",DAL,LAL,Dallas Mavericks,Los Angeles Lakers,122,86,36,Home,92.5,True,2011
+201010290GSW,"Fri, Oct 29, 2010",GSW,LAC,Golden State Warriors,Los Angeles Clippers,109,91,18,Home,95.6,True,2011
+201011030GSW,"Wed, Nov 3, 2010",GSW,MEM,Golden State Warriors,Memphis Grizzlies,115,109,6,Home,101.5,True,2011
+201011050GSW,"Fri, Nov 5, 2010",GSW,UTA,Golden State Warriors,Utah Jazz,85,78,7,Home,93.2,True,2011
+201011070DET,"Sun, Nov 7, 2010",DET,GSW,Detroit Pistons,Golden State Warriors,102,97,5,Home,90.6,True,2011
+201011080TOR,"Mon, Nov 8, 2010",TOR,GSW,Toronto Raptors,Golden State Warriors,102,109,-7,Home,95.6,True,2011
+201011100NYK,"Wed, Nov 10, 2010",NYK,GSW,New York Knicks,Golden State Warriors,117,122,-5,Home,104.6,True,2011
+201011110CHI,"Thu, Nov 11, 2010",CHI,GSW,Chicago Bulls,Golden State Warriors,120,90,30,Home,93.8,True,2011
+201011130MIL,"Sat, Nov 13, 2010",MIL,GSW,Milwaukee Bucks,Golden State Warriors,79,72,7,Home,87.7,True,2011
+201011150GSW,"Mon, Nov 15, 2010",GSW,DET,Golden State Warriors,Detroit Pistons,101,97,4,Home,93.2,True,2011
+201011190GSW,"Fri, Nov 19, 2010",GSW,NYK,Golden State Warriors,New York Knicks,119,125,-6,Home,96.0,True,2011
+201011220GSW,"Mon, Nov 22, 2010",GSW,DEN,Golden State Warriors,Denver Nuggets,89,106,-17,Home,91.3,True,2011
+201011260MEM,"Fri, Nov 26, 2010",MEM,GSW,Memphis Grizzlies,Golden State Warriors,116,111,5,Home,96.1,True,2011
+201011270MIN,"Sat, Nov 27, 2010",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,94,104,-10,Home,89.5,True,2011
+201011300GSW,"Tue, Nov 30, 2010",GSW,SAS,Golden State Warriors,San Antonio Spurs,98,118,-20,Home,99.8,True,2011
+201012020GSW,"Thu, Dec 2, 2010",GSW,PHO,Golden State Warriors,Phoenix Suns,101,107,-6,Home,94.4,True,2011
+201012050OKC,"Sun, Dec 5, 2010",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,114,109,5,Home,96.2,True,2011
+201012070DAL,"Tue, Dec 7, 2010",DAL,GSW,Dallas Mavericks,Golden State Warriors,105,100,5,Home,97.3,True,2011
+201012080SAS,"Wed, Dec 8, 2010",SAS,GSW,San Antonio Spurs,Golden State Warriors,111,94,17,Home,92.5,True,2011
+201012100GSW,"Fri, Dec 10, 2010",GSW,MIA,Golden State Warriors,Miami Heat,84,106,-22,Home,87.7,True,2011
+201012130UTA,"Mon, Dec 13, 2010",UTA,GSW,Utah Jazz,Golden State Warriors,108,95,13,Home,94.0,True,2011
+201012140GSW,"Tue, Dec 14, 2010",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,108,99,9,Home,96.4,True,2011
+201012180POR,"Sat, Dec 18, 2010",POR,GSW,Portland Trail Blazers,Golden State Warriors,96,95,1,Home,89.1,True,2011
+201012210SAC,"Tue, Dec 21, 2010",SAC,GSW,Sacramento Kings,Golden State Warriors,109,117,-8,Home,100.1,True,2011
+201012250GSW,"Sat, Dec 25, 2010",GSW,POR,Golden State Warriors,Portland Trail Blazers,109,102,7,Home,92.6,True,2011
+201012270GSW,"Mon, Dec 27, 2010",GSW,PHI,Golden State Warriors,Philadelphia 76ers,110,95,15,Home,93.8,True,2011
+201012290ATL,"Wed, Dec 29, 2010",ATL,GSW,Atlanta Hawks,Golden State Warriors,103,93,10,Home,92.6,True,2011
+201012310CHA,"Fri, Dec 31, 2010",CHA,GSW,Charlotte Bobcats,Golden State Warriors,95,96,-1,Home,88.8,True,2011
+201101010MIA,"Sat, Jan 1, 2011",MIA,GSW,Miami Heat,Golden State Warriors,114,107,7,Home,95.4,True,2011
+201101030ORL,"Mon, Jan 3, 2011",ORL,GSW,Orlando Magic,Golden State Warriors,110,90,20,Home,96.4,True,2011
+201101050NOH,"Wed, Jan 5, 2011",NOH,GSW,New Orleans Hornets,Golden State Warriors,103,110,-7,Home,91.7,True,2011
+201101070GSW,"Fri, Jan 7, 2011",GSW,CLE,Golden State Warriors,Cleveland Cavaliers,116,98,18,Home,97.1,True,2011
+201101090LAC,"Sun, Jan 9, 2011",LAC,GSW,Los Angeles Clippers,Golden State Warriors,105,91,14,Home,99.7,True,2011
+201101140GSW,"Fri, Jan 14, 2011",GSW,LAC,Golden State Warriors,Los Angeles Clippers,122,112,10,Home,97.5,True,2011
+201101170GSW,"Mon, Jan 17, 2011",GSW,NJN,Golden State Warriors,New Jersey Nets,109,100,9,Home,88.0,True,2011
+201101190GSW,"Wed, Jan 19, 2011",GSW,IND,Golden State Warriors,Indiana Pacers,110,108,2,Home,97.0,True,2011
+201101210GSW,"Fri, Jan 21, 2011",GSW,SAC,Golden State Warriors,Sacramento Kings,119,112,7,Home,101.3,True,2011
+201101220LAC,"Sat, Jan 22, 2011",LAC,GSW,Los Angeles Clippers,Golden State Warriors,113,109,4,Home,92.6,True,2011
+201101240GSW,"Mon, Jan 24, 2011",GSW,SAS,Golden State Warriors,San Antonio Spurs,102,113,-11,Home,95.3,True,2011
+201101260GSW,"Wed, Jan 26, 2011",GSW,NOH,Golden State Warriors,New Orleans Hornets,103,112,-9,Home,96.7,True,2011
+201101280GSW,"Fri, Jan 28, 2011",GSW,CHA,Golden State Warriors,Charlotte Bobcats,113,121,-8,Home,89.4,True,2011
+201101300GSW,"Sun, Jan 30, 2011",GSW,UTA,Golden State Warriors,Utah Jazz,96,81,15,Home,89.5,True,2011
+201102030GSW,"Thu, Feb 3, 2011",GSW,MIL,Golden State Warriors,Milwaukee Bucks,100,94,6,Home,88.5,True,2011
+201102050GSW,"Sat, Feb 5, 2011",GSW,CHI,Golden State Warriors,Chicago Bulls,101,90,11,Home,89.9,True,2011
+201102070GSW,"Mon, Feb 7, 2011",GSW,PHO,Golden State Warriors,Phoenix Suns,92,104,-12,Home,90.3,True,2011
+201102090GSW,"Wed, Feb 9, 2011",GSW,DEN,Golden State Warriors,Denver Nuggets,116,114,2,Home,97.5,True,2011
+201102100PHO,"Thu, Feb 10, 2011",PHO,GSW,Phoenix Suns,Golden State Warriors,112,88,24,Home,94.5,True,2011
+201102130GSW,"Sun, Feb 13, 2011",GSW,OKC,Golden State Warriors,Oklahoma City Thunder,100,94,6,Home,87.6,True,2011
+201102150GSW,"Tue, Feb 15, 2011",GSW,NOH,Golden State Warriors,New Orleans Hornets,102,89,13,Home,84.0,True,2011
+201102160UTA,"Wed, Feb 16, 2011",UTA,GSW,Utah Jazz,Golden State Warriors,100,107,-7,Home,93.3,True,2011
+201102220GSW,"Tue, Feb 22, 2011",GSW,BOS,Golden State Warriors,Boston Celtics,93,115,-22,Home,95.8,True,2011
+201102250GSW,"Fri, Feb 25, 2011",GSW,ATL,Golden State Warriors,Atlanta Hawks,79,95,-16,Home,86.1,True,2011
+201102270MIN,"Sun, Feb 27, 2011",MIN,GSW,Minnesota Timberwolves,Golden State Warriors,126,123,3,Home,101.8,True,2011
+201103010IND,"Tue, Mar 1, 2011",IND,GSW,Indiana Pacers,Golden State Warriors,109,100,9,Home,96.1,True,2011
+201103020WAS,"Wed, Mar 2, 2011",WAS,GSW,Washington Wizards,Golden State Warriors,102,106,-4,Home,97.8,True,2011
+201103040BOS,"Fri, Mar 4, 2011",BOS,GSW,Boston Celtics,Golden State Warriors,107,103,4,Home,89.3,True,2011
+201103060PHI,"Sun, Mar 6, 2011",PHI,GSW,Philadelphia 76ers,Golden State Warriors,125,117,8,Home,99.6,True,2011
+201103080CLE,"Tue, Mar 8, 2011",CLE,GSW,Cleveland Cavaliers,Golden State Warriors,85,95,-10,Home,88.1,True,2011
+201103090NJN,"Wed, Mar 9, 2011",NJN,GSW,New Jersey Nets,Golden State Warriors,94,90,4,Home,89.6,True,2011
+201103110GSW,"Fri, Mar 11, 2011",GSW,ORL,Golden State Warriors,Orlando Magic,123,120,3,Home,91.1,True,2011
+201103130GSW,"Sun, Mar 13, 2011",GSW,MIN,Golden State Warriors,Minnesota Timberwolves,100,77,23,Home,96.8,True,2011
+201103140SAC,"Mon, Mar 14, 2011",SAC,GSW,Sacramento Kings,Golden State Warriors,129,119,10,Home,104.5,True,2011
+201103160GSW,"Wed, Mar 16, 2011",GSW,DAL,Golden State Warriors,Dallas Mavericks,106,112,-6,Home,92.4,True,2011
+201103180PHO,"Fri, Mar 18, 2011",PHO,GSW,Phoenix Suns,Golden State Warriors,108,97,11,Home,96.3,True,2011
+201103200DAL,"Sun, Mar 20, 2011",DAL,GSW,Dallas Mavericks,Golden State Warriors,101,73,28,Home,93.0,True,2011
+201103210SAS,"Mon, Mar 21, 2011",SAS,GSW,San Antonio Spurs,Golden State Warriors,111,96,15,Home,95.6,True,2011
+201103250GSW,"Fri, Mar 25, 2011",GSW,TOR,Golden State Warriors,Toronto Raptors,138,100,38,Home,97.9,True,2011
+201103270GSW,"Sun, Mar 27, 2011",GSW,WAS,Golden State Warriors,Washington Wizards,114,104,10,Home,94.6,True,2011
+201103290OKC,"Tue, Mar 29, 2011",OKC,GSW,Oklahoma City Thunder,Golden State Warriors,115,114,1,Home,100.7,True,2011
+201103300MEM,"Wed, Mar 30, 2011",MEM,GSW,Memphis Grizzlies,Golden State Warriors,110,91,19,Home,87.3,True,2011
+201104020GSW,"Sat, Apr 2, 2011",GSW,DAL,Golden State Warriors,Dallas Mavericks,99,92,7,Home,94.5,True,2011
+201104050POR,"Tue, Apr 5, 2011",POR,GSW,Portland Trail Blazers,Golden State Warriors,87,108,-21,Home,84.4,True,2011
+201104100GSW,"Sun, Apr 10, 2011",GSW,SAC,Golden State Warriors,Sacramento Kings,103,104,-1,Home,96.6,True,2011
+201104110DEN,"Mon, Apr 11, 2011",DEN,GSW,Denver Nuggets,Golden State Warriors,134,111,23,Home,101.5,True,2011
+201104130GSW,"Wed, Apr 13, 2011",GSW,POR,Golden State Warriors,Portland Trail Blazers,110,86,24,Home,93.1,True,2011
+201010270DEN,"Wed, Oct 27, 2010",DEN,UTA,Denver Nuggets,Utah Jazz,110,88,22,Home,98.3,True,2011
+201010290NOH,"Fri, Oct 29, 2010",NOH,DEN,New Orleans Hornets,Denver Nuggets,101,95,6,Home,88.9,True,2011
+201011030DEN,"Wed, Nov 3, 2010",DEN,DAL,Denver Nuggets,Dallas Mavericks,101,102,-1,Home,89.8,True,2011
+201011050DEN,"Fri, Nov 5, 2010",DEN,LAC,Denver Nuggets,Los Angeles Clippers,111,104,7,Home,92.6,True,2011
+201011060DAL,"Sat, Nov 6, 2010",DAL,DEN,Dallas Mavericks,Denver Nuggets,92,103,-11,Home,93.8,True,2011
+201011080CHI,"Mon, Nov 8, 2010",CHI,DEN,Chicago Bulls,Denver Nuggets,94,92,2,Home,100.3,True,2011
+201011090IND,"Tue, Nov 9, 2010",IND,DEN,Indiana Pacers,Denver Nuggets,144,113,31,Home,97.6,True,2011
+201011150PHO,"Mon, Nov 15, 2010",PHO,DEN,Phoenix Suns,Denver Nuggets,100,94,6,Home,100.3,True,2011
+201011160DEN,"Tue, Nov 16, 2010",DEN,NYK,Denver Nuggets,New York Knicks,120,118,2,Home,105.9,True,2011
+201011180POR,"Thu, Nov 18, 2010",POR,DEN,Portland Trail Blazers,Denver Nuggets,86,83,3,Home,85.7,True,2011
+201011200DEN,"Sat, Nov 20, 2010",DEN,NJN,Denver Nuggets,New Jersey Nets,107,103,4,Home,90.7,True,2011
+201011260DEN,"Fri, Nov 26, 2010",DEN,CHI,Denver Nuggets,Chicago Bulls,98,97,1,Home,97.0,True,2011
+201011280DEN,"Sun, Nov 28, 2010",DEN,PHO,Denver Nuggets,Phoenix Suns,138,133,5,Home,101.0,True,2011
+201012010DEN,"Wed, Dec 1, 2010",DEN,MIL,Denver Nuggets,Milwaukee Bucks,105,94,11,Home,97.9,True,2011
+201012030DEN,"Fri, Dec 3, 2010",DEN,LAC,Denver Nuggets,Los Angeles Clippers,109,104,5,Home,100.7,True,2011
+201012050DEN,"Sun, Dec 5, 2010",DEN,MEM,Denver Nuggets,Memphis Grizzlies,108,107,1,Home,98.4,True,2011
+201012070CHA,"Tue, Dec 7, 2010",CHA,DEN,Charlotte Bobcats,Denver Nuggets,100,98,2,Home,93.5,True,2011
+201012080BOS,"Wed, Dec 8, 2010",BOS,DEN,Boston Celtics,Denver Nuggets,105,89,16,Home,99.0,True,2011
+201012100TOR,"Fri, Dec 10, 2010",TOR,DEN,Toronto Raptors,Denver Nuggets,116,123,-7,Home,97.9,True,2011
+201012120NYK,"Sun, Dec 12, 2010",NYK,DEN,New York Knicks,Denver Nuggets,129,125,4,Home,94.0,True,2011
+201012140DEN,"Tue, Dec 14, 2010",DEN,ORL,Denver Nuggets,Orlando Magic,111,94,17,Home,92.1,True,2011
+201012160DEN,"Thu, Dec 16, 2010",DEN,SAS,Denver Nuggets,San Antonio Spurs,112,113,-1,Home,94.5,True,2011
+201012180DEN,"Sat, Dec 18, 2010",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,115,113,2,Home,101.4,True,2011
+201012220SAS,"Wed, Dec 22, 2010",SAS,DEN,San Antonio Spurs,Denver Nuggets,109,103,6,Home,88.3,True,2011
+201012250OKC,"Sat, Dec 25, 2010",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,114,106,8,Home,93.2,True,2011
+201012260DEN,"Sun, Dec 26, 2010",DEN,PHI,Denver Nuggets,Philadelphia 76ers,89,95,-6,Home,89.8,True,2011
+201012280DEN,"Tue, Dec 28, 2010",DEN,POR,Denver Nuggets,Portland Trail Blazers,95,77,18,Home,86.7,True,2011
+201012290MIN,"Wed, Dec 29, 2010",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,113,119,-6,Home,98.0,True,2011
+201101010DEN,"Sat, Jan 1, 2011",DEN,SAC,Denver Nuggets,Sacramento Kings,104,86,18,Home,101.2,True,2011
+201101050LAC,"Wed, Jan 5, 2011",LAC,DEN,Los Angeles Clippers,Denver Nuggets,106,93,13,Home,94.4,True,2011
+201101060SAC,"Thu, Jan 6, 2011",SAC,DEN,Sacramento Kings,Denver Nuggets,122,102,20,Home,96.2,True,2011
+201101090DEN,"Sun, Jan 9, 2011",DEN,NOH,Denver Nuggets,New Orleans Hornets,87,96,-9,Home,86.6,True,2011
+201101110DEN,"Tue, Jan 11, 2011",DEN,PHO,Denver Nuggets,Phoenix Suns,132,98,34,Home,98.2,True,2011
+201101130DEN,"Thu, Jan 13, 2011",DEN,MIA,Denver Nuggets,Miami Heat,130,102,28,Home,98.1,True,2011
+201101150DEN,"Sat, Jan 15, 2011",DEN,CLE,Denver Nuggets,Cleveland Cavaliers,127,99,28,Home,103.6,True,2011
+201101160SAS,"Sun, Jan 16, 2011",SAS,DEN,San Antonio Spurs,Denver Nuggets,110,97,13,Home,98.0,True,2011
+201101190DEN,"Wed, Jan 19, 2011",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,112,107,5,Home,89.7,True,2011
+201101230DEN,"Sun, Jan 23, 2011",DEN,IND,Denver Nuggets,Indiana Pacers,121,107,14,Home,97.9,True,2011
+201101250WAS,"Tue, Jan 25, 2011",WAS,DEN,Washington Wizards,Denver Nuggets,109,120,-11,Home,99.3,True,2011
+201101260DET,"Wed, Jan 26, 2011",DET,DEN,Detroit Pistons,Denver Nuggets,100,109,-9,Home,89.1,True,2011
+201101280CLE,"Fri, Jan 28, 2011",CLE,DEN,Cleveland Cavaliers,Denver Nuggets,103,117,-14,Home,97.2,True,2011
+201101300PHI,"Sun, Jan 30, 2011",PHI,DEN,Philadelphia 76ers,Denver Nuggets,110,99,11,Home,88.3,True,2011
+201101310NJN,"Mon, Jan 31, 2011",NJN,DEN,New Jersey Nets,Denver Nuggets,115,99,16,Home,88.4,True,2011
+201102020DEN,"Wed, Feb 2, 2011",DEN,POR,Denver Nuggets,Portland Trail Blazers,109,90,19,Home,91.9,True,2011
+201102040DEN,"Fri, Feb 4, 2011",DEN,UTA,Denver Nuggets,Utah Jazz,106,113,-7,Home,96.4,True,2011
+201102050MIN,"Sat, Feb 5, 2011",MIN,DEN,Minnesota Timberwolves,Denver Nuggets,100,113,-13,Home,97.5,True,2011
+201102100DEN,"Thu, Feb 10, 2011",DEN,DAL,Denver Nuggets,Dallas Mavericks,121,120,1,Home,93.5,True,2011
+201102130MEM,"Sun, Feb 13, 2011",MEM,DEN,Memphis Grizzlies,Denver Nuggets,116,108,8,Home,94.2,True,2011
+201102160MIL,"Wed, Feb 16, 2011",MIL,DEN,Milwaukee Bucks,Denver Nuggets,87,94,-7,Home,94.7,True,2011
+201102220DEN,"Tue, Feb 22, 2011",DEN,MEM,Denver Nuggets,Memphis Grizzlies,120,107,13,Home,98.2,True,2011
+201102240DEN,"Thu, Feb 24, 2011",DEN,BOS,Denver Nuggets,Boston Celtics,89,75,14,Home,92.9,True,2011
+201102250POR,"Fri, Feb 25, 2011",POR,DEN,Portland Trail Blazers,Denver Nuggets,107,106,1,Home,92.7,True,2011
+201102280DEN,"Mon, Feb 28, 2011",DEN,ATL,Denver Nuggets,Atlanta Hawks,100,90,10,Home,91.1,True,2011
+201103020DEN,"Wed, Mar 2, 2011",DEN,CHA,Denver Nuggets,Charlotte Bobcats,120,80,40,Home,94.9,True,2011
+201103030UTA,"Thu, Mar 3, 2011",UTA,DEN,Utah Jazz,Denver Nuggets,101,103,-2,Home,92.0,True,2011
+201103050LAC,"Sat, Mar 5, 2011",LAC,DEN,Los Angeles Clippers,Denver Nuggets,100,94,6,Home,96.7,True,2011
+201103100PHO,"Thu, Mar 10, 2011",PHO,DEN,Phoenix Suns,Denver Nuggets,97,116,-19,Home,104.4,True,2011
+201103120DEN,"Sat, Mar 12, 2011",DEN,DET,Denver Nuggets,Detroit Pistons,131,101,30,Home,93.2,True,2011
+201103140NOH,"Mon, Mar 14, 2011",NOH,DEN,New Orleans Hornets,Denver Nuggets,103,114,-11,Home,93.7,True,2011
+201103160ATL,"Wed, Mar 16, 2011",ATL,DEN,Atlanta Hawks,Denver Nuggets,87,102,-15,Home,87.5,True,2011
+201103180ORL,"Fri, Mar 18, 2011",ORL,DEN,Orlando Magic,Denver Nuggets,85,82,3,Home,90.8,True,2011
+201103190MIA,"Sat, Mar 19, 2011",MIA,DEN,Miami Heat,Denver Nuggets,103,98,5,Home,91.5,True,2011
+201103210DEN,"Mon, Mar 21, 2011",DEN,TOR,Denver Nuggets,Toronto Raptors,123,90,33,Home,106.2,True,2011
+201103230DEN,"Wed, Mar 23, 2011",DEN,SAS,Denver Nuggets,San Antonio Spurs,115,112,3,Home,92.1,True,2011
+201103250DEN,"Fri, Mar 25, 2011",DEN,WAS,Denver Nuggets,Washington Wizards,114,94,20,Home,91.7,True,2011
+201103300DEN,"Wed, Mar 30, 2011",DEN,SAC,Denver Nuggets,Sacramento Kings,104,90,14,Home,95.5,True,2011
+201104010SAC,"Fri, Apr 1, 2011",SAC,DEN,Sacramento Kings,Denver Nuggets,90,99,-9,Home,99.0,True,2011
+201104050DEN,"Tue, Apr 5, 2011",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,94,101,-7,Home,97.8,True,2011
+201104060DAL,"Wed, Apr 6, 2011",DAL,DEN,Dallas Mavericks,Denver Nuggets,96,104,-8,Home,91.1,True,2011
+201104080OKC,"Fri, Apr 8, 2011",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,104,89,15,Home,86.1,True,2011
+201104090DEN,"Sat, Apr 9, 2011",DEN,MIN,Denver Nuggets,Minnesota Timberwolves,130,106,24,Home,101.1,True,2011
+201104130UTA,"Wed, Apr 13, 2011",UTA,DEN,Utah Jazz,Denver Nuggets,107,103,4,Home,92.0,True,2011
+201104170OKC,"Sun, Apr 17, 2011",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,107,103,4,Home,93.2,True,2011
+201104200OKC,"Wed, Apr 20, 2011",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,106,89,17,Home,89.1,True,2011
+201104230DEN,"Sat, Apr 23, 2011",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,94,97,-3,Home,94.8,True,2011
+201104250DEN,"Mon, Apr 25, 2011",DEN,OKC,Denver Nuggets,Oklahoma City Thunder,104,101,3,Home,94.0,True,2011
+201104270OKC,"Wed, Apr 27, 2011",OKC,DEN,Oklahoma City Thunder,Denver Nuggets,100,97,3,Home,97.4,True,2011
+201010270NOH,"Wed, Oct 27, 2010",NOH,MIL,New Orleans Hornets,Milwaukee Bucks,95,91,4,Home,92.4,True,2011
+201010300SAS,"Sat, Oct 30, 2010",SAS,NOH,San Antonio Spurs,New Orleans Hornets,90,99,-9,Home,94.3,True,2011
+201011050NOH,"Fri, Nov 5, 2010",NOH,MIA,New Orleans Hornets,Miami Heat,96,93,3,Home,89.3,True,2011
+201011060MIL,"Sat, Nov 6, 2010",MIL,NOH,Milwaukee Bucks,New Orleans Hornets,81,87,-6,Home,87.7,True,2011
+201011090NOH,"Tue, Nov 9, 2010",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,101,82,19,Home,92.2,True,2011
+201011130NOH,"Sat, Nov 13, 2010",NOH,POR,New Orleans Hornets,Portland Trail Blazers,107,87,20,Home,86.3,True,2011
+201011150DAL,"Mon, Nov 15, 2010",DAL,NOH,Dallas Mavericks,New Orleans Hornets,98,95,3,Home,86.7,True,2011
+201011170NOH,"Wed, Nov 17, 2010",NOH,DAL,New Orleans Hornets,Dallas Mavericks,99,97,2,Home,88.6,True,2011
+201011190NOH,"Fri, Nov 19, 2010",NOH,CLE,New Orleans Hornets,Cleveland Cavaliers,108,101,7,Home,96.6,True,2011
+201011210SAC,"Sun, Nov 21, 2010",SAC,NOH,Sacramento Kings,New Orleans Hornets,71,75,-4,Home,90.0,True,2011
+201011220LAC,"Mon, Nov 22, 2010",LAC,NOH,Los Angeles Clippers,New Orleans Hornets,99,95,4,Home,89.4,True,2011
+201011240UTA,"Wed, Nov 24, 2010",UTA,NOH,Utah Jazz,New Orleans Hornets,105,87,18,Home,90.8,True,2011
+201011260POR,"Fri, Nov 26, 2010",POR,NOH,Portland Trail Blazers,New Orleans Hornets,78,97,-19,Home,82.5,True,2011
+201011280NOH,"Sun, Nov 28, 2010",NOH,SAS,New Orleans Hornets,San Antonio Spurs,95,109,-14,Home,88.4,True,2011
+201011290OKC,"Mon, Nov 29, 2010",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,95,89,6,Home,94.7,True,2011
+201012010NOH,"Wed, Dec 1, 2010",NOH,CHA,New Orleans Hornets,Charlotte Bobcats,89,73,16,Home,83.8,True,2011
+201012030NOH,"Fri, Dec 3, 2010",NOH,NYK,New Orleans Hornets,New York Knicks,92,100,-8,Home,95.7,True,2011
+201012050SAS,"Sun, Dec 5, 2010",SAS,NOH,San Antonio Spurs,New Orleans Hornets,109,84,25,Home,88.6,True,2011
+201012080NOH,"Wed, Dec 8, 2010",NOH,DET,New Orleans Hornets,Detroit Pistons,93,74,19,Home,86.0,True,2011
+201012100NOH,"Fri, Dec 10, 2010",NOH,OKC,New Orleans Hornets,Oklahoma City Thunder,92,97,-5,Home,91.3,True,2011
+201012120PHI,"Sun, Dec 12, 2010",PHI,NOH,Philadelphia 76ers,New Orleans Hornets,88,70,18,Home,91.1,True,2011
+201012130MIA,"Mon, Dec 13, 2010",MIA,NOH,Miami Heat,New Orleans Hornets,96,84,12,Home,82.0,True,2011
+201012150NOH,"Wed, Dec 15, 2010",NOH,SAC,New Orleans Hornets,Sacramento Kings,94,91,3,Home,90.0,True,2011
+201012170NOH,"Fri, Dec 17, 2010",NOH,UTA,New Orleans Hornets,Utah Jazz,100,71,29,Home,86.7,True,2011
+201012190DET,"Sun, Dec 19, 2010",DET,NOH,Detroit Pistons,New Orleans Hornets,111,108,3,Home,90.4,True,2011
+201012200IND,"Mon, Dec 20, 2010",IND,NOH,Indiana Pacers,New Orleans Hornets,94,93,1,Home,90.8,True,2011
+201012220NOH,"Wed, Dec 22, 2010",NOH,NJN,New Orleans Hornets,New Jersey Nets,105,91,14,Home,83.3,True,2011
+201012260NOH,"Sun, Dec 26, 2010",NOH,ATL,New Orleans Hornets,Atlanta Hawks,93,86,7,Home,86.3,True,2011
+201012270MIN,"Mon, Dec 27, 2010",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,113,98,15,Home,92.4,True,2011
+201012310BOS,"Fri, Dec 31, 2010",BOS,NOH,Boston Celtics,New Orleans Hornets,81,83,-2,Home,84.4,True,2011
+201101010WAS,"Sat, Jan 1, 2011",WAS,NOH,Washington Wizards,New Orleans Hornets,81,92,-11,Home,87.9,True,2011
+201101030NOH,"Mon, Jan 3, 2011",NOH,PHI,New Orleans Hornets,Philadelphia 76ers,84,77,7,Home,78.2,True,2011
+201101120NOH,"Wed, Jan 12, 2011",NOH,ORL,New Orleans Hornets,Orlando Magic,92,89,3,Home,85.6,True,2011
+201101150CHA,"Sat, Jan 15, 2011",CHA,NOH,Charlotte Bobcats,New Orleans Hornets,81,88,-7,Home,83.0,True,2011
+201101170NOH,"Mon, Jan 17, 2011",NOH,TOR,New Orleans Hornets,Toronto Raptors,85,81,4,Home,83.7,True,2011
+201101190NOH,"Wed, Jan 19, 2011",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,103,102,1,Home,84.8,True,2011
+201101210ATL,"Fri, Jan 21, 2011",ATL,NOH,Atlanta Hawks,New Orleans Hornets,59,100,-41,Home,85.4,True,2011
+201101220NOH,"Sat, Jan 22, 2011",NOH,SAS,New Orleans Hornets,San Antonio Spurs,96,72,24,Home,84.3,True,2011
+201101240NOH,"Mon, Jan 24, 2011",NOH,OKC,New Orleans Hornets,Oklahoma City Thunder,91,89,2,Home,85.2,True,2011
+201101290SAC,"Sat, Jan 29, 2011",SAC,NOH,Sacramento Kings,New Orleans Hornets,102,96,6,Home,91.4,True,2011
+201101300PHO,"Sun, Jan 30, 2011",PHO,NOH,Phoenix Suns,New Orleans Hornets,104,102,2,Home,92.0,True,2011
+201102010NOH,"Tue, Feb 1, 2011",NOH,WAS,New Orleans Hornets,Washington Wizards,97,89,8,Home,89.1,True,2011
+201102020OKC,"Wed, Feb 2, 2011",OKC,NOH,Oklahoma City Thunder,New Orleans Hornets,104,93,11,Home,86.9,True,2011
+201102070NOH,"Mon, Feb 7, 2011",NOH,MIN,New Orleans Hornets,Minnesota Timberwolves,92,104,-12,Home,88.8,True,2011
+201102090NJN,"Wed, Feb 9, 2011",NJN,NOH,New Jersey Nets,New Orleans Hornets,103,101,2,Home,82.3,True,2011
+201102110ORL,"Fri, Feb 11, 2011",ORL,NOH,Orlando Magic,New Orleans Hornets,93,99,-6,Home,94.2,True,2011
+201102120NOH,"Sat, Feb 12, 2011",NOH,CHI,New Orleans Hornets,Chicago Bulls,88,97,-9,Home,86.1,True,2011
+201102160POR,"Wed, Feb 16, 2011",POR,NOH,Portland Trail Blazers,New Orleans Hornets,103,96,7,Home,80.1,True,2011
+201102230NOH,"Wed, Feb 23, 2011",NOH,LAC,New Orleans Hornets,Los Angeles Clippers,98,87,11,Home,92.9,True,2011
+201102250MIN,"Fri, Feb 25, 2011",MIN,NOH,Minnesota Timberwolves,New Orleans Hornets,81,95,-14,Home,85.3,True,2011
+201103010TOR,"Tue, Mar 1, 2011",TOR,NOH,Toronto Raptors,New Orleans Hornets,96,90,6,Home,88.9,True,2011
+201103020NYK,"Wed, Mar 2, 2011",NYK,NOH,New York Knicks,New Orleans Hornets,107,88,19,Home,89.2,True,2011
+201103040MEM,"Fri, Mar 4, 2011",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,91,98,-7,Home,87.3,True,2011
+201103060CLE,"Sun, Mar 6, 2011",CLE,NOH,Cleveland Cavaliers,New Orleans Hornets,81,96,-15,Home,88.1,True,2011
+201103070CHI,"Mon, Mar 7, 2011",CHI,NOH,Chicago Bulls,New Orleans Hornets,85,77,8,Home,85.0,True,2011
+201103090NOH,"Wed, Mar 9, 2011",NOH,DAL,New Orleans Hornets,Dallas Mavericks,93,92,1,Home,86.2,True,2011
+201103120NOH,"Sat, Mar 12, 2011",NOH,SAC,New Orleans Hornets,Sacramento Kings,115,103,12,Home,95.7,True,2011
+201103160NOH,"Wed, Mar 16, 2011",NOH,PHO,New Orleans Hornets,Phoenix Suns,100,95,5,Home,90.3,True,2011
+201103190NOH,"Sat, Mar 19, 2011",NOH,BOS,New Orleans Hornets,Boston Celtics,85,89,-4,Home,79.5,True,2011
+201103240UTA,"Thu, Mar 24, 2011",UTA,NOH,Utah Jazz,New Orleans Hornets,117,121,-4,Home,84.4,True,2011
+201103250PHO,"Fri, Mar 25, 2011",PHO,NOH,Phoenix Suns,New Orleans Hornets,100,106,-6,Home,88.9,True,2011
+201103300NOH,"Wed, Mar 30, 2011",NOH,POR,New Orleans Hornets,Portland Trail Blazers,95,91,4,Home,79.4,True,2011
+201104010NOH,"Fri, Apr 1, 2011",NOH,MEM,New Orleans Hornets,Memphis Grizzlies,81,93,-12,Home,79.2,True,2011
+201104030NOH,"Sun, Apr 3, 2011",NOH,IND,New Orleans Hornets,Indiana Pacers,108,96,12,Home,87.6,True,2011
+201104080NOH,"Fri, Apr 8, 2011",NOH,PHO,New Orleans Hornets,Phoenix Suns,109,97,12,Home,90.5,True,2011
+201104100MEM,"Sun, Apr 10, 2011",MEM,NOH,Memphis Grizzlies,New Orleans Hornets,111,89,22,Home,90.6,True,2011
+201104110NOH,"Mon, Apr 11, 2011",NOH,UTA,New Orleans Hornets,Utah Jazz,78,90,-12,Home,83.1,True,2011
+201104130DAL,"Wed, Apr 13, 2011",DAL,NOH,Dallas Mavericks,New Orleans Hornets,121,89,32,Home,93.8,True,2011
+201010270SAS,"Wed, Oct 27, 2010",SAS,IND,San Antonio Spurs,Indiana Pacers,122,109,13,Home,100.9,True,2011
+201011010LAC,"Mon, Nov 1, 2010",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,88,97,-9,Home,94.4,True,2011
+201011030PHO,"Wed, Nov 3, 2010",PHO,SAS,Phoenix Suns,San Antonio Spurs,110,112,-2,Home,98.9,True,2011
+201011080CHA,"Mon, Nov 8, 2010",CHA,SAS,Charlotte Bobcats,San Antonio Spurs,91,95,-4,Home,88.4,True,2011
+201011100SAS,"Wed, Nov 10, 2010",SAS,LAC,San Antonio Spurs,Los Angeles Clippers,107,95,12,Home,88.8,True,2011
+201011130SAS,"Sat, Nov 13, 2010",SAS,PHI,San Antonio Spurs,Philadelphia 76ers,116,93,23,Home,98.0,True,2011
+201011140OKC,"Sun, Nov 14, 2010",OKC,SAS,Oklahoma City Thunder,San Antonio Spurs,104,117,-13,Home,100.1,True,2011
+201011170SAS,"Wed, Nov 17, 2010",SAS,CHI,San Antonio Spurs,Chicago Bulls,103,94,9,Home,94.2,True,2011
+201011190UTA,"Fri, Nov 19, 2010",UTA,SAS,Utah Jazz,San Antonio Spurs,82,94,-12,Home,88.2,True,2011
+201011200SAS,"Sat, Nov 20, 2010",SAS,CLE,San Antonio Spurs,Cleveland Cavaliers,116,92,24,Home,92.6,True,2011
+201011220SAS,"Mon, Nov 22, 2010",SAS,ORL,San Antonio Spurs,Orlando Magic,106,97,9,Home,92.8,True,2011
+201011240MIN,"Wed, Nov 24, 2010",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,109,113,-4,Home,94.1,True,2011
+201011260SAS,"Fri, Nov 26, 2010",SAS,DAL,San Antonio Spurs,Dallas Mavericks,94,103,-9,Home,89.3,True,2011
+201012010LAC,"Wed, Dec 1, 2010",LAC,SAS,Los Angeles Clippers,San Antonio Spurs,90,85,5,Home,86.4,True,2011
+201012030SAS,"Fri, Dec 3, 2010",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,107,101,6,Home,94.0,True,2011
+201012100SAS,"Fri, Dec 10, 2010",SAS,ATL,San Antonio Spurs,Atlanta Hawks,108,92,16,Home,91.1,True,2011
+201012120SAS,"Sun, Dec 12, 2010",SAS,POR,San Antonio Spurs,Portland Trail Blazers,95,78,17,Home,82.8,True,2011
+201012150SAS,"Wed, Dec 15, 2010",SAS,MIL,San Antonio Spurs,Milwaukee Bucks,92,90,2,Home,92.9,True,2011
+201012180SAS,"Sat, Dec 18, 2010",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,112,106,6,Home,88.4,True,2011
+201012200SAS,"Mon, Dec 20, 2010",SAS,PHO,San Antonio Spurs,Phoenix Suns,118,110,8,Home,92.8,True,2011
+201012230ORL,"Thu, Dec 23, 2010",ORL,SAS,Orlando Magic,San Antonio Spurs,123,101,22,Home,96.0,True,2011
+201012260SAS,"Sun, Dec 26, 2010",SAS,WAS,San Antonio Spurs,Washington Wizards,94,80,14,Home,89.6,True,2011
+201012300DAL,"Thu, Dec 30, 2010",DAL,SAS,Dallas Mavericks,San Antonio Spurs,93,99,-6,Home,92.4,True,2011
+201101010SAS,"Sat, Jan 1, 2011",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,101,74,27,Home,98.2,True,2011
+201101040NYK,"Tue, Jan 4, 2011",NYK,SAS,New York Knicks,San Antonio Spurs,128,115,13,Home,96.8,True,2011
+201101050BOS,"Wed, Jan 5, 2011",BOS,SAS,Boston Celtics,San Antonio Spurs,105,103,2,Home,90.8,True,2011
+201101070IND,"Fri, Jan 7, 2011",IND,SAS,Indiana Pacers,San Antonio Spurs,87,90,-3,Home,90.7,True,2011
+201101090SAS,"Sun, Jan 9, 2011",SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,94,91,3,Home,89.9,True,2011
+201101110MIN,"Tue, Jan 11, 2011",MIN,SAS,Minnesota Timberwolves,San Antonio Spurs,96,107,-11,Home,98.4,True,2011
+201101120MIL,"Wed, Jan 12, 2011",MIL,SAS,Milwaukee Bucks,San Antonio Spurs,84,91,-7,Home,82.1,True,2011
+201101140SAS,"Fri, Jan 14, 2011",SAS,DAL,San Antonio Spurs,Dallas Mavericks,101,89,12,Home,89.2,True,2011
+201101190SAS,"Wed, Jan 19, 2011",SAS,TOR,San Antonio Spurs,Toronto Raptors,104,95,9,Home,93.2,True,2011
+201101210SAS,"Fri, Jan 21, 2011",SAS,NYK,San Antonio Spurs,New York Knicks,101,92,9,Home,94.8,True,2011
+201101260UTA,"Wed, Jan 26, 2011",UTA,SAS,Utah Jazz,San Antonio Spurs,105,112,-7,Home,94.5,True,2011
+201102010POR,"Tue, Feb 1, 2011",POR,SAS,Portland Trail Blazers,San Antonio Spurs,99,86,13,Home,83.8,True,2011
+201102040SAC,"Fri, Feb 4, 2011",SAC,SAS,Sacramento Kings,San Antonio Spurs,100,113,-13,Home,97.4,True,2011
+201102080DET,"Tue, Feb 8, 2011",DET,SAS,Detroit Pistons,San Antonio Spurs,89,100,-11,Home,85.6,True,2011
+201102090TOR,"Wed, Feb 9, 2011",TOR,SAS,Toronto Raptors,San Antonio Spurs,100,111,-11,Home,88.8,True,2011
+201102110PHI,"Fri, Feb 11, 2011",PHI,SAS,Philadelphia 76ers,San Antonio Spurs,77,71,6,Home,88.3,True,2011
+201102120WAS,"Sat, Feb 12, 2011",WAS,SAS,Washington Wizards,San Antonio Spurs,94,118,-24,Home,90.8,True,2011
+201102140NJN,"Mon, Feb 14, 2011",NJN,SAS,New Jersey Nets,San Antonio Spurs,85,102,-17,Home,89.1,True,2011
+201102170CHI,"Thu, Feb 17, 2011",CHI,SAS,Chicago Bulls,San Antonio Spurs,109,99,10,Home,87.7,True,2011
+201102230SAS,"Wed, Feb 23, 2011",SAS,OKC,San Antonio Spurs,Oklahoma City Thunder,109,105,4,Home,96.6,True,2011
+201102250SAS,"Fri, Feb 25, 2011",SAS,NJN,San Antonio Spurs,New Jersey Nets,106,96,10,Home,96.4,True,2011
+201102270SAS,"Sun, Feb 27, 2011",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,95,88,7,Home,86.3,True,2011
+201103010MEM,"Tue, Mar 1, 2011",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,109,93,16,Home,90.5,True,2011
+201103020CLE,"Wed, Mar 2, 2011",CLE,SAS,Cleveland Cavaliers,San Antonio Spurs,99,109,-10,Home,93.3,True,2011
+201103040SAS,"Fri, Mar 4, 2011",SAS,MIA,San Antonio Spurs,Miami Heat,125,95,30,Home,93.9,True,2011
+201103090SAS,"Wed, Mar 9, 2011",SAS,DET,San Antonio Spurs,Detroit Pistons,111,104,7,Home,88.1,True,2011
+201103110SAS,"Fri, Mar 11, 2011",SAS,SAC,San Antonio Spurs,Sacramento Kings,108,103,5,Home,94.9,True,2011
+201103140MIA,"Mon, Mar 14, 2011",MIA,SAS,Miami Heat,San Antonio Spurs,110,80,30,Home,90.5,True,2011
+201103180DAL,"Fri, Mar 18, 2011",DAL,SAS,Dallas Mavericks,San Antonio Spurs,91,97,-6,Home,90.9,True,2011
+201103190SAS,"Sat, Mar 19, 2011",SAS,CHA,San Antonio Spurs,Charlotte Bobcats,109,98,11,Home,89.6,True,2011
+201103250POR,"Fri, Mar 25, 2011",POR,SAS,Portland Trail Blazers,San Antonio Spurs,98,96,2,Home,90.7,True,2011
+201103270MEM,"Sun, Mar 27, 2011",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,111,104,7,Home,87.7,True,2011
+201103280SAS,"Mon, Mar 28, 2011",SAS,POR,San Antonio Spurs,Portland Trail Blazers,92,100,-8,Home,86.6,True,2011
+201103310SAS,"Thu, Mar 31, 2011",SAS,BOS,San Antonio Spurs,Boston Celtics,97,107,-10,Home,92.8,True,2011
+201104030SAS,"Sun, Apr 3, 2011",SAS,PHO,San Antonio Spurs,Phoenix Suns,114,97,17,Home,95.8,True,2011
+201104050ATL,"Tue, Apr 5, 2011",ATL,SAS,Atlanta Hawks,San Antonio Spurs,90,97,-7,Home,86.2,True,2011
+201104060SAS,"Wed, Apr 6, 2011",SAS,SAC,San Antonio Spurs,Sacramento Kings,124,92,32,Home,91.6,True,2011
+201104090SAS,"Sat, Apr 9, 2011",SAS,UTA,San Antonio Spurs,Utah Jazz,111,102,9,Home,87.0,True,2011
+201104130PHO,"Wed, Apr 13, 2011",PHO,SAS,Phoenix Suns,San Antonio Spurs,106,103,3,Home,92.6,True,2011
+201104170SAS,"Sun, Apr 17, 2011",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,98,101,-3,Home,89.5,True,2011
+201104200SAS,"Wed, Apr 20, 2011",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,93,87,6,Home,95.8,True,2011
+201104230MEM,"Sat, Apr 23, 2011",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,91,88,3,Home,88.9,True,2011
+201104250MEM,"Mon, Apr 25, 2011",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,104,86,18,Home,87.4,True,2011
+201104270SAS,"Wed, Apr 27, 2011",SAS,MEM,San Antonio Spurs,Memphis Grizzlies,110,103,7,Home,92.5,True,2011
+201104290MEM,"Fri, Apr 29, 2011",MEM,SAS,Memphis Grizzlies,San Antonio Spurs,99,91,8,Home,86.6,True,2011
+201010270MIN,"Wed, Oct 27, 2010",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,116,117,-1,Home,102.2,True,2011
+201010290MIN,"Fri, Oct 29, 2010",MIN,MIL,Minnesota Timberwolves,Milwaukee Bucks,96,85,11,Home,97.1,True,2011
+201010300MEM,"Sat, Oct 30, 2010",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,109,89,20,Home,107.3,True,2011
+201011020MIA,"Tue, Nov 2, 2010",MIA,MIN,Miami Heat,Minnesota Timberwolves,129,97,32,Home,100.2,True,2011
+201011030ORL,"Wed, Nov 3, 2010",ORL,MIN,Orlando Magic,Minnesota Timberwolves,128,86,42,Home,98.5,True,2011
+201011050MIN,"Fri, Nov 5, 2010",MIN,ATL,Minnesota Timberwolves,Atlanta Hawks,103,113,-10,Home,96.4,True,2011
+201011100SAC,"Wed, Nov 10, 2010",SAC,MIN,Sacramento Kings,Minnesota Timberwolves,89,98,-9,Home,95.7,True,2011
+201011120MIN,"Fri, Nov 12, 2010",MIN,NYK,Minnesota Timberwolves,New York Knicks,112,103,9,Home,101.9,True,2011
+201011140ATL,"Sun, Nov 14, 2010",ATL,MIN,Atlanta Hawks,Minnesota Timberwolves,111,105,6,Home,95.5,True,2011
+201011150CHA,"Mon, Nov 15, 2010",CHA,MIN,Charlotte Bobcats,Minnesota Timberwolves,113,110,3,Home,99.2,True,2011
+201011170MIN,"Wed, Nov 17, 2010",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,113,111,2,Home,94.4,True,2011
+201011220OKC,"Mon, Nov 22, 2010",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,117,107,10,Home,99.1,True,2011
+201012010DAL,"Wed, Dec 1, 2010",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,100,86,14,Home,96.8,True,2011
+201012040MIN,"Sat, Dec 4, 2010",MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,129,95,34,Home,96.2,True,2011
+201012060NYK,"Mon, Dec 6, 2010",NYK,MIN,New York Knicks,Minnesota Timberwolves,121,114,7,Home,95.0,True,2011
+201012080MIN,"Wed, Dec 8, 2010",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,103,111,-8,Home,99.0,True,2011
+201012100MIN,"Fri, Dec 10, 2010",MIN,DET,Minnesota Timberwolves,Detroit Pistons,109,99,10,Home,90.9,True,2011
+201012110CHI,"Sat, Dec 11, 2010",CHI,MIN,Chicago Bulls,Minnesota Timberwolves,113,82,31,Home,94.0,True,2011
+201012150PHO,"Wed, Dec 15, 2010",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,128,122,6,Home,104.6,True,2011
+201012170POR,"Fri, Dec 17, 2010",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,107,102,5,Home,93.1,True,2011
+201012200LAC,"Mon, Dec 20, 2010",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,113,90,23,Home,94.8,True,2011
+201012220MIN,"Wed, Dec 22, 2010",MIN,UTA,Minnesota Timberwolves,Utah Jazz,107,112,-5,Home,98.7,True,2011
+201012260CLE,"Sun, Dec 26, 2010",CLE,MIN,Cleveland Cavaliers,Minnesota Timberwolves,97,98,-1,Home,96.1,True,2011
+201101010MIN,"Sat, Jan 1, 2011",MIN,NJN,Minnesota Timberwolves,New Jersey Nets,103,88,15,Home,89.0,True,2011
+201101030BOS,"Mon, Jan 3, 2011",BOS,MIN,Boston Celtics,Minnesota Timberwolves,96,93,3,Home,90.1,True,2011
+201101050MIN,"Wed, Jan 5, 2011",MIN,CHA,Minnesota Timberwolves,Charlotte Bobcats,105,108,-3,Home,92.5,True,2011
+201101070MIN,"Fri, Jan 7, 2011",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,98,108,-10,Home,88.8,True,2011
+201101130MIN,"Thu, Jan 13, 2011",MIN,WAS,Minnesota Timberwolves,Washington Wizards,109,97,12,Home,96.8,True,2011
+201101150MIN,"Sat, Jan 15, 2011",MIN,ORL,Minnesota Timberwolves,Orlando Magic,99,108,-9,Home,96.8,True,2011
+201101170POR,"Mon, Jan 17, 2011",POR,MIN,Portland Trail Blazers,Minnesota Timberwolves,113,102,11,Home,93.4,True,2011
+201101190LAC,"Wed, Jan 19, 2011",LAC,MIN,Los Angeles Clippers,Minnesota Timberwolves,126,111,15,Home,101.1,True,2011
+201101260MIN,"Wed, Jan 26, 2011",MIN,OKC,Minnesota Timberwolves,Oklahoma City Thunder,117,118,-1,Home,97.1,True,2011
+201101280UTA,"Fri, Jan 28, 2011",UTA,MIN,Utah Jazz,Minnesota Timberwolves,108,100,8,Home,98.5,True,2011
+201101290MIN,"Sat, Jan 29, 2011",MIN,TOR,Minnesota Timberwolves,Toronto Raptors,103,87,16,Home,101.7,True,2011
+201102020MIN,"Wed, Feb 2, 2011",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,84,102,-18,Home,95.9,True,2011
+201102040TOR,"Fri, Feb 4, 2011",TOR,MIN,Toronto Raptors,Minnesota Timberwolves,111,100,11,Home,94.5,True,2011
+201102110IND,"Fri, Feb 11, 2011",IND,MIN,Indiana Pacers,Minnesota Timberwolves,116,105,11,Home,96.1,True,2011
+201102120MIN,"Sat, Feb 12, 2011",MIN,PHI,Minnesota Timberwolves,Philadelphia 76ers,87,107,-20,Home,94.4,True,2011
+201102140MIN,"Mon, Feb 14, 2011",MIN,POR,Minnesota Timberwolves,Portland Trail Blazers,81,95,-14,Home,83.6,True,2011
+201102160MIN,"Wed, Feb 16, 2011",MIN,LAC,Minnesota Timberwolves,Los Angeles Clippers,90,98,-8,Home,93.1,True,2011
+201102220MIL,"Tue, Feb 22, 2011",MIL,MIN,Milwaukee Bucks,Minnesota Timberwolves,94,88,6,Home,93.7,True,2011
+201102230MIN,"Wed, Feb 23, 2011",MIN,MEM,Minnesota Timberwolves,Memphis Grizzlies,95,104,-9,Home,95.7,True,2011
+201103020DET,"Wed, Mar 2, 2011",DET,MIN,Detroit Pistons,Minnesota Timberwolves,105,116,-11,Home,97.2,True,2011
+201103040PHI,"Fri, Mar 4, 2011",PHI,MIN,Philadelphia 76ers,Minnesota Timberwolves,111,100,11,Home,93.1,True,2011
+201103050WAS,"Sat, Mar 5, 2011",WAS,MIN,Washington Wizards,Minnesota Timberwolves,103,96,7,Home,97.1,True,2011
+201103070MIN,"Mon, Mar 7, 2011",MIN,DAL,Minnesota Timberwolves,Dallas Mavericks,105,108,-3,Home,95.2,True,2011
+201103090MIN,"Wed, Mar 9, 2011",MIN,IND,Minnesota Timberwolves,Indiana Pacers,101,75,26,Home,103.3,True,2011
+201103110MIN,"Fri, Mar 11, 2011",MIN,UTA,Minnesota Timberwolves,Utah Jazz,122,101,21,Home,94.5,True,2011
+201103160UTA,"Wed, Mar 16, 2011",UTA,MIN,Utah Jazz,Minnesota Timberwolves,119,104,15,Home,96.6,True,2011
+201103200MIN,"Sun, Mar 20, 2011",MIN,SAC,Minnesota Timberwolves,Sacramento Kings,95,127,-32,Home,104.9,True,2011
+201103240DAL,"Thu, Mar 24, 2011",DAL,MIN,Dallas Mavericks,Minnesota Timberwolves,104,96,8,Home,94.5,True,2011
+201103250OKC,"Fri, Mar 25, 2011",OKC,MIN,Oklahoma City Thunder,Minnesota Timberwolves,111,103,8,Home,98.2,True,2011
+201103270MIN,"Sun, Mar 27, 2011",MIN,BOS,Minnesota Timberwolves,Boston Celtics,82,85,-3,Home,81.5,True,2011
+201103300MIN,"Wed, Mar 30, 2011",MIN,CHI,Minnesota Timberwolves,Chicago Bulls,91,108,-17,Home,92.5,True,2011
+201104010MIN,"Fri, Apr 1, 2011",MIN,MIA,Minnesota Timberwolves,Miami Heat,92,111,-19,Home,95.7,True,2011
+201104020MEM,"Sat, Apr 2, 2011",MEM,MIN,Memphis Grizzlies,Minnesota Timberwolves,106,89,17,Home,95.1,True,2011
+201104050NJN,"Tue, Apr 5, 2011",NJN,MIN,New Jersey Nets,Minnesota Timberwolves,107,105,2,Home,93.4,True,2011
+201104060MIN,"Wed, Apr 6, 2011",MIN,PHO,Minnesota Timberwolves,Phoenix Suns,98,108,-10,Home,96.9,True,2011
+201104110PHO,"Mon, Apr 11, 2011",PHO,MIN,Phoenix Suns,Minnesota Timberwolves,135,127,8,Home,96.2,True,2011
+201010280ORL,"Thu, Oct 28, 2010",ORL,WAS,Orlando Magic,Washington Wizards,112,83,29,Home,99.1,True,2011
+201010300ATL,"Sat, Oct 30, 2010",ATL,WAS,Atlanta Hawks,Washington Wizards,99,95,4,Home,92.5,True,2011
+201011020WAS,"Tue, Nov 2, 2010",WAS,PHI,Washington Wizards,Philadelphia 76ers,116,115,1,Home,95.6,True,2011
+201011050NYK,"Fri, Nov 5, 2010",NYK,WAS,New York Knicks,Washington Wizards,112,91,21,Home,96.9,True,2011
+201011060WAS,"Sat, Nov 6, 2010",WAS,CLE,Washington Wizards,Cleveland Cavaliers,102,107,-5,Home,97.5,True,2011
+201011120WAS,"Fri, Nov 12, 2010",WAS,CHA,Washington Wizards,Charlotte Bobcats,85,93,-8,Home,84.5,True,2011
+201011130CHI,"Sat, Nov 13, 2010",CHI,WAS,Chicago Bulls,Washington Wizards,103,96,7,Home,93.1,True,2011
+201011160WAS,"Tue, Nov 16, 2010",WAS,TOR,Washington Wizards,Toronto Raptors,109,94,15,Home,92.0,True,2011
+201011170BOS,"Wed, Nov 17, 2010",BOS,WAS,Boston Celtics,Washington Wizards,114,83,31,Home,84.3,True,2011
+201011190WAS,"Fri, Nov 19, 2010",WAS,MEM,Washington Wizards,Memphis Grizzlies,89,86,3,Home,87.6,True,2011
+201011210DET,"Sun, Nov 21, 2010",DET,WAS,Detroit Pistons,Washington Wizards,115,110,5,Home,87.6,True,2011
+201011230WAS,"Tue, Nov 23, 2010",WAS,PHI,Washington Wizards,Philadelphia 76ers,116,114,2,Home,94.5,True,2011
+201011250ATL,"Thu, Nov 25, 2010",ATL,WAS,Atlanta Hawks,Washington Wizards,116,96,20,Home,92.7,True,2011
+201011270WAS,"Sat, Nov 27, 2010",WAS,ORL,Washington Wizards,Orlando Magic,99,100,-1,Home,88.3,True,2011
+201011290MIA,"Mon, Nov 29, 2010",MIA,WAS,Miami Heat,Washington Wizards,105,94,11,Home,95.9,True,2011
+201012010TOR,"Wed, Dec 1, 2010",TOR,WAS,Toronto Raptors,Washington Wizards,127,108,19,Home,97.6,True,2011
+201012030WAS,"Fri, Dec 3, 2010",WAS,POR,Washington Wizards,Portland Trail Blazers,83,79,4,Home,84.7,True,2011
+201012050PHO,"Sun, Dec 5, 2010",PHO,WAS,Phoenix Suns,Washington Wizards,125,108,17,Home,96.1,True,2011
+201012080SAC,"Wed, Dec 8, 2010",SAC,WAS,Sacramento Kings,Washington Wizards,116,91,25,Home,96.5,True,2011
+201012100WAS,"Fri, Dec 10, 2010",WAS,NYK,Washington Wizards,New York Knicks,95,101,-6,Home,97.5,True,2011
+201012160NJN,"Thu, Dec 16, 2010",NJN,WAS,New Jersey Nets,Washington Wizards,97,89,8,Home,97.6,True,2011
+201012180WAS,"Sat, Dec 18, 2010",WAS,MIA,Washington Wizards,Miami Heat,94,95,-1,Home,95.0,True,2011
+201012200WAS,"Mon, Dec 20, 2010",WAS,CHA,Washington Wizards,Charlotte Bobcats,108,75,33,Home,90.6,True,2011
+201012220WAS,"Wed, Dec 22, 2010",WAS,CHI,Washington Wizards,Chicago Bulls,80,87,-7,Home,91.7,True,2011
+201012290WAS,"Wed, Dec 29, 2010",WAS,IND,Washington Wizards,Indiana Pacers,104,90,14,Home,92.8,True,2011
+201012310IND,"Fri, Dec 31, 2010",IND,WAS,Indiana Pacers,Washington Wizards,95,86,9,Home,95.9,True,2011
+201101050PHI,"Wed, Jan 5, 2011",PHI,WAS,Philadelphia 76ers,Washington Wizards,109,97,12,Home,90.1,True,2011
+201101070WAS,"Fri, Jan 7, 2011",WAS,NJN,Washington Wizards,New Jersey Nets,97,77,20,Home,88.4,True,2011
+201101080CHA,"Sat, Jan 8, 2011",CHA,WAS,Charlotte Bobcats,Washington Wizards,104,89,15,Home,91.5,True,2011
+201101110WAS,"Tue, Jan 11, 2011",WAS,SAC,Washington Wizards,Sacramento Kings,136,133,3,Home,103.8,True,2011
+201101150WAS,"Sat, Jan 15, 2011",WAS,TOR,Washington Wizards,Toronto Raptors,98,95,3,Home,91.2,True,2011
+201101170WAS,"Mon, Jan 17, 2011",WAS,UTA,Washington Wizards,Utah Jazz,108,101,7,Home,90.3,True,2011
+201101190MIL,"Wed, Jan 19, 2011",MIL,WAS,Milwaukee Bucks,Washington Wizards,100,87,13,Home,92.4,True,2011
+201101210WAS,"Fri, Jan 21, 2011",WAS,PHO,Washington Wizards,Phoenix Suns,91,109,-18,Home,99.6,True,2011
+201101220WAS,"Sat, Jan 22, 2011",WAS,BOS,Washington Wizards,Boston Celtics,85,83,2,Home,85.9,True,2011
+201101240NYK,"Mon, Jan 24, 2011",NYK,WAS,New York Knicks,Washington Wizards,115,106,9,Home,97.6,True,2011
+201101280OKC,"Fri, Jan 28, 2011",OKC,WAS,Oklahoma City Thunder,Washington Wizards,124,117,7,Home,89.9,True,2011
+201101290MEM,"Sat, Jan 29, 2011",MEM,WAS,Memphis Grizzlies,Washington Wizards,107,93,14,Home,90.0,True,2011
+201101310DAL,"Mon, Jan 31, 2011",DAL,WAS,Dallas Mavericks,Washington Wizards,102,92,10,Home,89.1,True,2011
+201102040WAS,"Fri, Feb 4, 2011",WAS,ORL,Washington Wizards,Orlando Magic,92,110,-18,Home,95.6,True,2011
+201102050WAS,"Sat, Feb 5, 2011",WAS,ATL,Washington Wizards,Atlanta Hawks,92,99,-7,Home,85.4,True,2011
+201102090WAS,"Wed, Feb 9, 2011",WAS,MIL,Washington Wizards,Milwaukee Bucks,100,85,15,Home,90.0,True,2011
+201102130CLE,"Sun, Feb 13, 2011",CLE,WAS,Cleveland Cavaliers,Washington Wizards,100,115,-15,Home,94.6,True,2011
+201102160ORL,"Wed, Feb 16, 2011",ORL,WAS,Orlando Magic,Washington Wizards,101,76,25,Home,92.3,True,2011
+201102220WAS,"Tue, Feb 22, 2011",WAS,IND,Washington Wizards,Indiana Pacers,96,113,-17,Home,108.3,True,2011
+201102230PHI,"Wed, Feb 23, 2011",PHI,WAS,Philadelphia 76ers,Washington Wizards,117,94,23,Home,93.8,True,2011
+201102250MIA,"Fri, Feb 25, 2011",MIA,WAS,Miami Heat,Washington Wizards,121,113,8,Home,97.0,True,2011
+201102260WAS,"Sat, Feb 26, 2011",WAS,DAL,Washington Wizards,Dallas Mavericks,99,105,-6,Home,98.3,True,2011
+201102280WAS,"Mon, Feb 28, 2011",WAS,CHI,Washington Wizards,Chicago Bulls,77,105,-28,Home,91.8,True,2011
+201103060DET,"Sun, Mar 6, 2011",DET,WAS,Detroit Pistons,Washington Wizards,113,102,11,Home,93.3,True,2011
+201103080WAS,"Tue, Mar 8, 2011",WAS,MIL,Washington Wizards,Milwaukee Bucks,76,95,-19,Home,92.1,True,2011
+201103120WAS,"Sat, Mar 12, 2011",WAS,LAC,Washington Wizards,Los Angeles Clippers,101,122,-21,Home,98.2,True,2011
+201103140WAS,"Mon, Mar 14, 2011",WAS,OKC,Washington Wizards,Oklahoma City Thunder,89,116,-27,Home,95.8,True,2011
+201103150CHI,"Tue, Mar 15, 2011",CHI,WAS,Chicago Bulls,Washington Wizards,98,79,19,Home,86.8,True,2011
+201103180TOR,"Fri, Mar 18, 2011",TOR,WAS,Toronto Raptors,Washington Wizards,116,107,9,Home,92.6,True,2011
+201103200WAS,"Sun, Mar 20, 2011",WAS,NJN,Washington Wizards,New Jersey Nets,98,92,6,Home,87.4,True,2011
+201103220POR,"Tue, Mar 22, 2011",POR,WAS,Portland Trail Blazers,Washington Wizards,111,76,35,Home,95.3,True,2011
+201103230LAC,"Wed, Mar 23, 2011",LAC,WAS,Los Angeles Clippers,Washington Wizards,127,119,8,Home,93.5,True,2011
+201103280UTA,"Mon, Mar 28, 2011",UTA,WAS,Utah Jazz,Washington Wizards,95,100,-5,Home,89.4,True,2011
+201103300WAS,"Wed, Mar 30, 2011",WAS,MIA,Washington Wizards,Miami Heat,107,123,-16,Home,90.9,True,2011
+201104010WAS,"Fri, Apr 1, 2011",WAS,CLE,Washington Wizards,Cleveland Cavaliers,115,107,8,Home,90.3,True,2011
+201104030CHA,"Sun, Apr 3, 2011",CHA,WAS,Charlotte Bobcats,Washington Wizards,91,97,-6,Home,93.4,True,2011
+201104050WAS,"Tue, Apr 5, 2011",WAS,DET,Washington Wizards,Detroit Pistons,107,105,2,Home,98.1,True,2011
+201104060IND,"Wed, Apr 6, 2011",IND,WAS,Indiana Pacers,Washington Wizards,136,112,24,Home,105.8,True,2011
+201104080BOS,"Fri, Apr 8, 2011",BOS,WAS,Boston Celtics,Washington Wizards,104,88,16,Home,93.9,True,2011
+201104090WAS,"Sat, Apr 9, 2011",WAS,ATL,Washington Wizards,Atlanta Hawks,115,83,32,Home,92.7,True,2011
+201104110WAS,"Mon, Apr 11, 2011",WAS,BOS,Washington Wizards,Boston Celtics,95,94,1,Home,92.3,True,2011
+201104130CLE,"Wed, Apr 13, 2011",CLE,WAS,Cleveland Cavaliers,Washington Wizards,100,93,7,Home,90.9,True,2011
+201010290CHA,"Fri, Oct 29, 2010",CHA,IND,Charlotte Bobcats,Indiana Pacers,101,104,-3,Home,89.0,True,2011
+201010300IND,"Sat, Oct 30, 2010",IND,PHI,Indiana Pacers,Philadelphia 76ers,99,86,13,Home,97.0,True,2011
+201011030PHI,"Wed, Nov 3, 2010",PHI,IND,Philadelphia 76ers,Indiana Pacers,101,75,26,Home,93.8,True,2011
+201011050IND,"Fri, Nov 5, 2010",IND,MIL,Indiana Pacers,Milwaukee Bucks,90,94,-4,Home,100.5,True,2011
+201011130CLE,"Sat, Nov 13, 2010",CLE,IND,Cleveland Cavaliers,Indiana Pacers,85,99,-14,Home,90.6,True,2011
+201011160IND,"Tue, Nov 16, 2010",IND,ATL,Indiana Pacers,Atlanta Hawks,92,102,-10,Home,85.0,True,2011
+201011180IND,"Thu, Nov 18, 2010",IND,LAC,Indiana Pacers,Los Angeles Clippers,107,80,27,Home,92.2,True,2011
+201011200IND,"Sat, Nov 20, 2010",IND,ORL,Indiana Pacers,Orlando Magic,86,90,-4,Home,91.6,True,2011
+201011220MIA,"Mon, Nov 22, 2010",MIA,IND,Miami Heat,Indiana Pacers,77,93,-16,Home,93.2,True,2011
+201011230IND,"Tue, Nov 23, 2010",IND,CLE,Indiana Pacers,Cleveland Cavaliers,100,89,11,Home,93.3,True,2011
+201011260IND,"Fri, Nov 26, 2010",IND,OKC,Indiana Pacers,Oklahoma City Thunder,106,110,-4,Home,92.4,True,2011
+201011300SAC,"Tue, Nov 30, 2010",SAC,IND,Sacramento Kings,Indiana Pacers,98,107,-9,Home,96.9,True,2011
+201012010UTA,"Wed, Dec 1, 2010",UTA,IND,Utah Jazz,Indiana Pacers,110,88,22,Home,86.3,True,2011
+201012030PHO,"Fri, Dec 3, 2010",PHO,IND,Phoenix Suns,Indiana Pacers,105,97,8,Home,97.8,True,2011
+201012060IND,"Mon, Dec 6, 2010",IND,TOR,Indiana Pacers,Toronto Raptors,124,100,24,Home,101.9,True,2011
+201012080MIL,"Wed, Dec 8, 2010",MIL,IND,Milwaukee Bucks,Indiana Pacers,97,95,2,Home,90.6,True,2011
+201012100IND,"Fri, Dec 10, 2010",IND,CHA,Indiana Pacers,Charlotte Bobcats,100,92,8,Home,96.8,True,2011
+201012110ATL,"Sat, Dec 11, 2010",ATL,IND,Atlanta Hawks,Indiana Pacers,97,83,14,Home,93.6,True,2011
+201012130CHI,"Mon, Dec 13, 2010",CHI,IND,Chicago Bulls,Indiana Pacers,92,73,19,Home,89.8,True,2011
+201012170IND,"Fri, Dec 17, 2010",IND,CLE,Indiana Pacers,Cleveland Cavaliers,108,99,9,Home,103.8,True,2011
+201012190BOS,"Sun, Dec 19, 2010",BOS,IND,Boston Celtics,Indiana Pacers,99,88,11,Home,97.0,True,2011
+201012260IND,"Sun, Dec 26, 2010",IND,MEM,Indiana Pacers,Memphis Grizzlies,90,104,-14,Home,99.8,True,2011
+201012280IND,"Tue, Dec 28, 2010",IND,BOS,Indiana Pacers,Boston Celtics,83,95,-12,Home,89.8,True,2011
+201101020NYK,"Sun, Jan 2, 2011",NYK,IND,New York Knicks,Indiana Pacers,98,92,6,Home,93.6,True,2011
+201101080ATL,"Sat, Jan 8, 2011",ATL,IND,Atlanta Hawks,Indiana Pacers,108,93,15,Home,95.2,True,2011
+201101110PHI,"Tue, Jan 11, 2011",PHI,IND,Philadelphia 76ers,Indiana Pacers,103,111,-8,Home,92.7,True,2011
+201101120IND,"Wed, Jan 12, 2011",IND,DAL,Indiana Pacers,Dallas Mavericks,102,89,13,Home,85.5,True,2011
+201101140IND,"Fri, Jan 14, 2011",IND,CHI,Indiana Pacers,Chicago Bulls,86,99,-13,Home,91.6,True,2011
+201101170LAC,"Mon, Jan 17, 2011",LAC,IND,Los Angeles Clippers,Indiana Pacers,114,107,7,Home,95.7,True,2011
+201101220POR,"Sat, Jan 22, 2011",POR,IND,Portland Trail Blazers,Indiana Pacers,97,92,5,Home,90.3,True,2011
+201101260IND,"Wed, Jan 26, 2011",IND,ORL,Indiana Pacers,Orlando Magic,96,111,-15,Home,95.1,True,2011
+201101280IND,"Fri, Jan 28, 2011",IND,NJN,Indiana Pacers,New Jersey Nets,124,92,32,Home,90.2,True,2011
+201101290CHI,"Sat, Jan 29, 2011",CHI,IND,Chicago Bulls,Indiana Pacers,110,89,21,Home,92.2,True,2011
+201101310IND,"Mon, Jan 31, 2011",IND,TOR,Indiana Pacers,Toronto Raptors,104,93,11,Home,101.5,True,2011
+201102020CLE,"Wed, Feb 2, 2011",CLE,IND,Cleveland Cavaliers,Indiana Pacers,112,117,-5,Home,98.5,True,2011
+201102040IND,"Fri, Feb 4, 2011",IND,POR,Indiana Pacers,Portland Trail Blazers,100,87,13,Home,97.2,True,2011
+201102060NJN,"Sun, Feb 6, 2011",NJN,IND,New Jersey Nets,Indiana Pacers,86,105,-19,Home,89.7,True,2011
+201102080MIA,"Tue, Feb 8, 2011",MIA,IND,Miami Heat,Indiana Pacers,117,112,5,Home,93.6,True,2011
+201102090IND,"Wed, Feb 9, 2011",IND,CHA,Indiana Pacers,Charlotte Bobcats,104,103,1,Home,91.4,True,2011
+201102120MIL,"Sat, Feb 12, 2011",MIL,IND,Milwaukee Bucks,Indiana Pacers,97,103,-6,Home,92.3,True,2011
+201102150IND,"Tue, Feb 15, 2011",IND,MIA,Indiana Pacers,Miami Heat,103,110,-7,Home,98.8,True,2011
+201102160DET,"Wed, Feb 16, 2011",DET,IND,Detroit Pistons,Indiana Pacers,115,109,6,Home,85.0,True,2011
+201102230IND,"Wed, Feb 23, 2011",IND,DET,Indiana Pacers,Detroit Pistons,102,101,1,Home,91.9,True,2011
+201102250IND,"Fri, Feb 25, 2011",IND,UTA,Indiana Pacers,Utah Jazz,84,95,-11,Home,89.8,True,2011
+201102270IND,"Sun, Feb 27, 2011",IND,PHO,Indiana Pacers,Phoenix Suns,108,110,-2,Home,92.5,True,2011
+201103020OKC,"Wed, Mar 2, 2011",OKC,IND,Oklahoma City Thunder,Indiana Pacers,113,89,24,Home,100.8,True,2011
+201103040DAL,"Fri, Mar 4, 2011",DAL,IND,Dallas Mavericks,Indiana Pacers,116,108,8,Home,95.7,True,2011
+201103080IND,"Tue, Mar 8, 2011",IND,PHI,Indiana Pacers,Philadelphia 76ers,100,110,-10,Home,96.9,True,2011
+201103110TOR,"Fri, Mar 11, 2011",TOR,IND,Toronto Raptors,Indiana Pacers,108,98,10,Home,88.7,True,2011
+201103130NYK,"Sun, Mar 13, 2011",NYK,IND,New York Knicks,Indiana Pacers,93,106,-13,Home,91.1,True,2011
+201103150IND,"Tue, Mar 15, 2011",IND,NYK,Indiana Pacers,New York Knicks,119,117,2,Home,101.6,True,2011
+201103160BOS,"Wed, Mar 16, 2011",BOS,IND,Boston Celtics,Indiana Pacers,92,80,12,Home,84.6,True,2011
+201103180IND,"Fri, Mar 18, 2011",IND,CHI,Indiana Pacers,Chicago Bulls,115,108,7,Home,88.6,True,2011
+201103190MEM,"Sat, Mar 19, 2011",MEM,IND,Memphis Grizzlies,Indiana Pacers,99,78,21,Home,93.2,True,2011
+201103210NJN,"Mon, Mar 21, 2011",NJN,IND,New Jersey Nets,Indiana Pacers,98,102,-4,Home,94.1,True,2011
+201103230CHA,"Wed, Mar 23, 2011",CHA,IND,Charlotte Bobcats,Indiana Pacers,88,111,-23,Home,90.1,True,2011
+201103250IND,"Fri, Mar 25, 2011",IND,SAC,Indiana Pacers,Sacramento Kings,93,110,-17,Home,99.2,True,2011
+201103260DET,"Sat, Mar 26, 2011",DET,IND,Detroit Pistons,Indiana Pacers,100,88,12,Home,89.8,True,2011
+201103280IND,"Mon, Mar 28, 2011",IND,BOS,Indiana Pacers,Boston Celtics,107,100,7,Home,89.7,True,2011
+201103300IND,"Wed, Mar 30, 2011",IND,DET,Indiana Pacers,Detroit Pistons,111,101,10,Home,94.7,True,2011
+201104010IND,"Fri, Apr 1, 2011",IND,MIL,Indiana Pacers,Milwaukee Bucks,89,88,1,Home,85.6,True,2011
+201104080IND,"Fri, Apr 8, 2011",IND,ATL,Indiana Pacers,Atlanta Hawks,114,102,12,Home,93.4,True,2011
+201104100IND,"Sun, Apr 10, 2011",IND,NYK,Indiana Pacers,New York Knicks,109,110,-1,Home,100.2,True,2011
+201104130ORL,"Wed, Apr 13, 2011",ORL,IND,Orlando Magic,Indiana Pacers,92,74,18,Home,98.6,True,2011
+201104160CHI,"Sat, Apr 16, 2011",CHI,IND,Chicago Bulls,Indiana Pacers,104,99,5,Home,84.9,True,2011
+201104180CHI,"Mon, Apr 18, 2011",CHI,IND,Chicago Bulls,Indiana Pacers,96,90,6,Home,94.1,True,2011
+201104210IND,"Thu, Apr 21, 2011",IND,CHI,Indiana Pacers,Chicago Bulls,84,88,-4,Home,85.9,True,2011
+201104230IND,"Sat, Apr 23, 2011",IND,CHI,Indiana Pacers,Chicago Bulls,89,84,5,Home,86.6,True,2011
+201104260CHI,"Tue, Apr 26, 2011",CHI,IND,Chicago Bulls,Indiana Pacers,116,89,27,Home,93.2,True,2011
+201010270TOR,"Wed, Oct 27, 2010",TOR,NYK,Toronto Raptors,New York Knicks,93,98,-5,Home,96.9,True,2011
+201010290BOS,"Fri, Oct 29, 2010",BOS,NYK,Boston Celtics,New York Knicks,105,101,4,Home,97.6,True,2011
+201010300NYK,"Sat, Oct 30, 2010",NYK,POR,New York Knicks,Portland Trail Blazers,95,100,-5,Home,94.2,True,2011
+201011040CHI,"Thu, Nov 4, 2010",CHI,NYK,Chicago Bulls,New York Knicks,112,120,-8,Home,98.6,True,2011
+201011070NYK,"Sun, Nov 7, 2010",NYK,PHI,New York Knicks,Philadelphia 76ers,96,106,-10,Home,99.9,True,2011
+201011090MIL,"Tue, Nov 9, 2010",MIL,NYK,Milwaukee Bucks,New York Knicks,107,80,27,Home,90.4,True,2011
+201011170SAC,"Wed, Nov 17, 2010",SAC,NYK,Sacramento Kings,New York Knicks,106,113,-7,Home,93.2,True,2011
+201011200LAC,"Sat, Nov 20, 2010",LAC,NYK,Los Angeles Clippers,New York Knicks,115,124,-9,Home,96.8,True,2011
+201011230NYK,"Tue, Nov 23, 2010",NYK,CHA,New York Knicks,Charlotte Bobcats,110,107,3,Home,97.2,True,2011
+201011240CHA,"Wed, Nov 24, 2010",CHA,NYK,Charlotte Bobcats,New York Knicks,95,99,-4,Home,89.6,True,2011
+201011270NYK,"Sat, Nov 27, 2010",NYK,ATL,New York Knicks,Atlanta Hawks,90,99,-9,Home,86.3,True,2011
+201011280DET,"Sun, Nov 28, 2010",DET,NYK,Detroit Pistons,New York Knicks,116,125,-9,Home,86.5,True,2011
+201011300NYK,"Tue, Nov 30, 2010",NYK,NJN,New York Knicks,New Jersey Nets,111,100,11,Home,93.1,True,2011
+201012050TOR,"Sun, Dec 5, 2010",TOR,NYK,Toronto Raptors,New York Knicks,99,116,-17,Home,92.5,True,2011
+201012080NYK,"Wed, Dec 8, 2010",NYK,TOR,New York Knicks,Toronto Raptors,113,110,3,Home,99.8,True,2011
+201012150NYK,"Wed, Dec 15, 2010",NYK,BOS,New York Knicks,Boston Celtics,116,118,-2,Home,96.4,True,2011
+201012170NYK,"Fri, Dec 17, 2010",NYK,MIA,New York Knicks,Miami Heat,91,113,-22,Home,97.3,True,2011
+201012180CLE,"Sat, Dec 18, 2010",CLE,NYK,Cleveland Cavaliers,New York Knicks,109,102,7,Home,99.5,True,2011
+201012220NYK,"Wed, Dec 22, 2010",NYK,OKC,New York Knicks,Oklahoma City Thunder,112,98,14,Home,96.9,True,2011
+201012250NYK,"Sat, Dec 25, 2010",NYK,CHI,New York Knicks,Chicago Bulls,103,95,8,Home,102.3,True,2011
+201012280MIA,"Tue, Dec 28, 2010",MIA,NYK,Miami Heat,New York Knicks,106,98,8,Home,90.3,True,2011
+201012300ORL,"Thu, Dec 30, 2010",ORL,NYK,Orlando Magic,New York Knicks,112,103,9,Home,95.9,True,2011
+201101070PHO,"Fri, Jan 7, 2011",PHO,NYK,Phoenix Suns,New York Knicks,96,121,-25,Home,101.3,True,2011
+201101110POR,"Tue, Jan 11, 2011",POR,NYK,Portland Trail Blazers,New York Knicks,86,100,-14,Home,90.8,True,2011
+201101120UTA,"Wed, Jan 12, 2011",UTA,NYK,Utah Jazz,New York Knicks,131,125,6,Home,94.5,True,2011
+201101140NYK,"Fri, Jan 14, 2011",NYK,SAC,New York Knicks,Sacramento Kings,83,93,-10,Home,101.7,True,2011
+201101170NYK,"Mon, Jan 17, 2011",NYK,PHO,New York Knicks,Phoenix Suns,121,129,-8,Home,100.8,True,2011
+201101220OKC,"Sat, Jan 22, 2011",OKC,NYK,Oklahoma City Thunder,New York Knicks,101,98,3,Home,93.6,True,2011
+201101270NYK,"Thu, Jan 27, 2011",NYK,MIA,New York Knicks,Miami Heat,93,88,5,Home,90.2,True,2011
+201101280ATL,"Fri, Jan 28, 2011",ATL,NYK,Atlanta Hawks,New York Knicks,111,102,9,Home,90.2,True,2011
+201101300NYK,"Sun, Jan 30, 2011",NYK,DET,New York Knicks,Detroit Pistons,124,106,18,Home,87.0,True,2011
+201102020NYK,"Wed, Feb 2, 2011",NYK,DAL,New York Knicks,Dallas Mavericks,97,113,-16,Home,97.2,True,2011
+201102040PHI,"Fri, Feb 4, 2011",PHI,NYK,Philadelphia 76ers,New York Knicks,100,98,2,Home,94.7,True,2011
+201102060NYK,"Sun, Feb 6, 2011",NYK,PHI,New York Knicks,Philadelphia 76ers,117,103,14,Home,88.7,True,2011
+201102090NYK,"Wed, Feb 9, 2011",NYK,LAC,New York Knicks,Los Angeles Clippers,108,116,-8,Home,92.0,True,2011
+201102120NJN,"Sat, Feb 12, 2011",NJN,NYK,New Jersey Nets,New York Knicks,95,105,-10,Home,96.5,True,2011
+201102160NYK,"Wed, Feb 16, 2011",NYK,ATL,New York Knicks,Atlanta Hawks,102,90,12,Home,91.6,True,2011
+201102230NYK,"Wed, Feb 23, 2011",NYK,MIL,New York Knicks,Milwaukee Bucks,114,108,6,Home,97.4,True,2011
+201102250CLE,"Fri, Feb 25, 2011",CLE,NYK,Cleveland Cavaliers,New York Knicks,115,109,6,Home,102.7,True,2011
+201102270MIA,"Sun, Feb 27, 2011",MIA,NYK,Miami Heat,New York Knicks,86,91,-5,Home,94.9,True,2011
+201103010ORL,"Tue, Mar 1, 2011",ORL,NYK,Orlando Magic,New York Knicks,116,110,6,Home,97.7,True,2011
+201103040NYK,"Fri, Mar 4, 2011",NYK,CLE,New York Knicks,Cleveland Cavaliers,115,119,-4,Home,91.4,True,2011
+201103060ATL,"Sun, Mar 6, 2011",ATL,NYK,Atlanta Hawks,New York Knicks,79,92,-13,Home,87.7,True,2011
+201103070NYK,"Mon, Mar 7, 2011",NYK,UTA,New York Knicks,Utah Jazz,131,109,22,Home,96.5,True,2011
+201103090MEM,"Wed, Mar 9, 2011",MEM,NYK,Memphis Grizzlies,New York Knicks,108,110,-2,Home,91.9,True,2011
+201103100DAL,"Thu, Mar 10, 2011",DAL,NYK,Dallas Mavericks,New York Knicks,127,109,18,Home,94.4,True,2011
+201103170NYK,"Thu, Mar 17, 2011",NYK,MEM,New York Knicks,Memphis Grizzlies,120,99,21,Home,89.3,True,2011
+201103180DET,"Fri, Mar 18, 2011",DET,NYK,Detroit Pistons,New York Knicks,99,95,4,Home,88.2,True,2011
+201103200MIL,"Sun, Mar 20, 2011",MIL,NYK,Milwaukee Bucks,New York Knicks,100,95,5,Home,89.0,True,2011
+201103210NYK,"Mon, Mar 21, 2011",NYK,BOS,New York Knicks,Boston Celtics,86,96,-10,Home,87.3,True,2011
+201103230NYK,"Wed, Mar 23, 2011",NYK,ORL,New York Knicks,Orlando Magic,99,111,-12,Home,89.8,True,2011
+201103250NYK,"Fri, Mar 25, 2011",NYK,MIL,New York Knicks,Milwaukee Bucks,96,102,-6,Home,89.8,True,2011
+201103260CHA,"Sat, Mar 26, 2011",CHA,NYK,Charlotte Bobcats,New York Knicks,114,106,8,Home,91.9,True,2011
+201103280NYK,"Mon, Mar 28, 2011",NYK,ORL,New York Knicks,Orlando Magic,113,106,7,Home,92.0,True,2011
+201103300NYK,"Wed, Mar 30, 2011",NYK,NJN,New York Knicks,New Jersey Nets,120,116,4,Home,97.3,True,2011
+201104030NYK,"Sun, Apr 3, 2011",NYK,CLE,New York Knicks,Cleveland Cavaliers,123,107,16,Home,98.9,True,2011
+201104050NYK,"Tue, Apr 5, 2011",NYK,TOR,New York Knicks,Toronto Raptors,131,118,13,Home,97.3,True,2011
+201104060PHI,"Wed, Apr 6, 2011",PHI,NYK,Philadelphia 76ers,New York Knicks,92,97,-5,Home,86.2,True,2011
+201104080NJN,"Fri, Apr 8, 2011",NJN,NYK,New Jersey Nets,New York Knicks,93,116,-23,Home,98.1,True,2011
+201104120NYK,"Tue, Apr 12, 2011",NYK,CHI,New York Knicks,Chicago Bulls,90,103,-13,Home,93.3,True,2011
+201104130BOS,"Wed, Apr 13, 2011",BOS,NYK,Boston Celtics,New York Knicks,112,102,10,Home,97.7,True,2011
+201104170BOS,"Sun, Apr 17, 2011",BOS,NYK,Boston Celtics,New York Knicks,87,85,2,Home,83.3,True,2011
+201104190BOS,"Tue, Apr 19, 2011",BOS,NYK,Boston Celtics,New York Knicks,96,93,3,Home,88.1,True,2011
+201104220NYK,"Fri, Apr 22, 2011",NYK,BOS,New York Knicks,Boston Celtics,96,113,-17,Home,92.5,True,2011
+201104240NYK,"Sun, Apr 24, 2011",NYK,BOS,New York Knicks,Boston Celtics,89,101,-12,Home,97.1,True,2011
+201010270OKC,"Wed, Oct 27, 2010",OKC,CHI,Oklahoma City Thunder,Chicago Bulls,106,95,11,Home,98.9,True,2011
+201010300CHI,"Sat, Oct 30, 2010",CHI,DET,Chicago Bulls,Detroit Pistons,101,91,10,Home,98.0,True,2011
+201011010CHI,"Mon, Nov 1, 2010",CHI,POR,Chicago Bulls,Portland Trail Blazers,110,98,12,Home,88.4,True,2011
+201011050BOS,"Fri, Nov 5, 2010",BOS,CHI,Boston Celtics,Chicago Bulls,110,105,5,Home,92.7,True,2011
+201011190DAL,"Fri, Nov 19, 2010",DAL,CHI,Dallas Mavericks,Chicago Bulls,83,88,-5,Home,82.6,True,2011
+201011240PHO,"Wed, Nov 24, 2010",PHO,CHI,Phoenix Suns,Chicago Bulls,115,123,-8,Home,90.0,True,2011
+201011270SAC,"Sat, Nov 27, 2010",SAC,CHI,Sacramento Kings,Chicago Bulls,85,96,-11,Home,90.1,True,2011
+201012010CHI,"Wed, Dec 1, 2010",CHI,ORL,Chicago Bulls,Orlando Magic,78,107,-29,Home,84.9,True,2011
+201012030BOS,"Fri, Dec 3, 2010",BOS,CHI,Boston Celtics,Chicago Bulls,104,92,12,Home,89.7,True,2011
+201012060CHI,"Mon, Dec 6, 2010",CHI,OKC,Chicago Bulls,Oklahoma City Thunder,99,90,9,Home,92.1,True,2011
+201012080CLE,"Wed, Dec 8, 2010",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,83,88,-5,Home,91.1,True,2011
+201012150TOR,"Wed, Dec 15, 2010",TOR,CHI,Toronto Raptors,Chicago Bulls,93,110,-17,Home,88.8,True,2011
+201012180CHI,"Sat, Dec 18, 2010",CHI,LAC,Chicago Bulls,Los Angeles Clippers,99,100,-1,Home,90.8,True,2011
+201012210CHI,"Tue, Dec 21, 2010",CHI,PHI,Chicago Bulls,Philadelphia 76ers,121,76,45,Home,91.9,True,2011
+201012260DET,"Sun, Dec 26, 2010",DET,CHI,Detroit Pistons,Chicago Bulls,92,95,-3,Home,82.4,True,2011
+201012280CHI,"Tue, Dec 28, 2010",CHI,MIL,Chicago Bulls,Milwaukee Bucks,90,77,13,Home,86.8,True,2011
+201012310CHI,"Fri, Dec 31, 2010",CHI,NJN,Chicago Bulls,New Jersey Nets,90,81,9,Home,87.5,True,2011
+201101010CHI,"Sat, Jan 1, 2011",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,100,91,9,Home,95.4,True,2011
+201101040CHI,"Tue, Jan 4, 2011",CHI,TOR,Chicago Bulls,Toronto Raptors,111,91,20,Home,94.0,True,2011
+201101050NJN,"Wed, Jan 5, 2011",NJN,CHI,New Jersey Nets,Chicago Bulls,96,94,2,Home,88.3,True,2011
+201101070PHI,"Fri, Jan 7, 2011",PHI,CHI,Philadelphia 76ers,Chicago Bulls,105,99,6,Home,90.6,True,2011
+201101080CHI,"Sat, Jan 8, 2011",CHI,BOS,Chicago Bulls,Boston Celtics,90,79,11,Home,86.5,True,2011
+201101100CHI,"Mon, Jan 10, 2011",CHI,DET,Chicago Bulls,Detroit Pistons,95,82,13,Home,85.9,True,2011
+201101120CHA,"Wed, Jan 12, 2011",CHA,CHI,Charlotte Bobcats,Chicago Bulls,96,91,5,Home,89.0,True,2011
+201101150CHI,"Sat, Jan 15, 2011",CHI,MIA,Chicago Bulls,Miami Heat,99,96,3,Home,87.7,True,2011
+201101170MEM,"Mon, Jan 17, 2011",MEM,CHI,Memphis Grizzlies,Chicago Bulls,84,96,-12,Home,84.0,True,2011
+201101180CHI,"Tue, Jan 18, 2011",CHI,CHA,Chicago Bulls,Charlotte Bobcats,82,83,-1,Home,84.4,True,2011
+201101200CHI,"Thu, Jan 20, 2011",CHI,DAL,Chicago Bulls,Dallas Mavericks,82,77,5,Home,84.5,True,2011
+201101220CHI,"Sat, Jan 22, 2011",CHI,CLE,Chicago Bulls,Cleveland Cavaliers,92,79,13,Home,94.3,True,2011
+201101240CHI,"Mon, Jan 24, 2011",CHI,MIL,Chicago Bulls,Milwaukee Bucks,92,83,9,Home,85.0,True,2011
+201101280CHI,"Fri, Jan 28, 2011",CHI,ORL,Chicago Bulls,Orlando Magic,99,90,9,Home,91.1,True,2011
+201102020LAC,"Wed, Feb 2, 2011",LAC,CHI,Los Angeles Clippers,Chicago Bulls,88,106,-18,Home,84.0,True,2011
+201102070POR,"Mon, Feb 7, 2011",POR,CHI,Portland Trail Blazers,Chicago Bulls,109,103,6,Home,87.0,True,2011
+201102090UTA,"Wed, Feb 9, 2011",UTA,CHI,Utah Jazz,Chicago Bulls,86,91,-5,Home,88.9,True,2011
+201102150CHI,"Tue, Feb 15, 2011",CHI,CHA,Chicago Bulls,Charlotte Bobcats,106,94,12,Home,88.5,True,2011
+201102230TOR,"Wed, Feb 23, 2011",TOR,CHI,Toronto Raptors,Chicago Bulls,118,113,5,Home,96.2,True,2011
+201102240CHI,"Thu, Feb 24, 2011",CHI,MIA,Chicago Bulls,Miami Heat,93,89,4,Home,93.4,True,2011
+201102260MIL,"Sat, Feb 26, 2011",MIL,CHI,Milwaukee Bucks,Chicago Bulls,75,83,-8,Home,79.4,True,2011
+201103020ATL,"Wed, Mar 2, 2011",ATL,CHI,Atlanta Hawks,Chicago Bulls,83,80,3,Home,81.9,True,2011
+201103040ORL,"Fri, Mar 4, 2011",ORL,CHI,Orlando Magic,Chicago Bulls,81,89,-8,Home,88.1,True,2011
+201103060MIA,"Sun, Mar 6, 2011",MIA,CHI,Miami Heat,Chicago Bulls,86,87,-1,Home,84.0,True,2011
+201103090CHA,"Wed, Mar 9, 2011",CHA,CHI,Charlotte Bobcats,Chicago Bulls,84,101,-17,Home,80.6,True,2011
+201103110CHI,"Fri, Mar 11, 2011",CHI,ATL,Chicago Bulls,Atlanta Hawks,94,76,18,Home,82.4,True,2011
+201103120CHI,"Sat, Mar 12, 2011",CHI,UTA,Chicago Bulls,Utah Jazz,118,100,18,Home,91.0,True,2011
+201103170NJN,"Thu, Mar 17, 2011",NJN,CHI,New Jersey Nets,Chicago Bulls,73,84,-11,Home,82.7,True,2011
+201103210CHI,"Mon, Mar 21, 2011",CHI,SAC,Chicago Bulls,Sacramento Kings,132,92,40,Home,92.2,True,2011
+201103220ATL,"Tue, Mar 22, 2011",ATL,CHI,Atlanta Hawks,Chicago Bulls,81,114,-33,Home,84.2,True,2011
+201103250CHI,"Fri, Mar 25, 2011",CHI,MEM,Chicago Bulls,Memphis Grizzlies,99,96,3,Home,86.2,True,2011
+201103260MIL,"Sat, Mar 26, 2011",MIL,CHI,Milwaukee Bucks,Chicago Bulls,87,95,-8,Home,87.7,True,2011
+201103280CHI,"Mon, Mar 28, 2011",CHI,PHI,Chicago Bulls,Philadelphia 76ers,85,97,-12,Home,94.1,True,2011
+201104010DET,"Fri, Apr 1, 2011",DET,CHI,Detroit Pistons,Chicago Bulls,96,101,-5,Home,91.9,True,2011
+201104020CHI,"Sat, Apr 2, 2011",CHI,TOR,Chicago Bulls,Toronto Raptors,113,106,7,Home,87.5,True,2011
+201104050CHI,"Tue, Apr 5, 2011",CHI,PHO,Chicago Bulls,Phoenix Suns,97,94,3,Home,90.8,True,2011
+201104070CHI,"Thu, Apr 7, 2011",CHI,BOS,Chicago Bulls,Boston Celtics,97,81,16,Home,85.2,True,2011
+201104080CLE,"Fri, Apr 8, 2011",CLE,CHI,Cleveland Cavaliers,Chicago Bulls,82,93,-11,Home,91.9,True,2011
+201104100ORL,"Sun, Apr 10, 2011",ORL,CHI,Orlando Magic,Chicago Bulls,99,102,-3,Home,85.8,True,2011
+201104130CHI,"Wed, Apr 13, 2011",CHI,NJN,Chicago Bulls,New Jersey Nets,97,92,5,Home,86.5,True,2011
+201105020CHI,"Mon, May 2, 2011",CHI,ATL,Chicago Bulls,Atlanta Hawks,95,103,-8,Home,86.8,True,2011
+201105040CHI,"Wed, May 4, 2011",CHI,ATL,Chicago Bulls,Atlanta Hawks,86,73,13,Home,87.5,True,2011
+201105060ATL,"Fri, May 6, 2011",ATL,CHI,Atlanta Hawks,Chicago Bulls,82,99,-17,Home,79.5,True,2011
+201105080ATL,"Sun, May 8, 2011",ATL,CHI,Atlanta Hawks,Chicago Bulls,100,88,12,Home,87.9,True,2011
+201105100CHI,"Tue, May 10, 2011",CHI,ATL,Chicago Bulls,Atlanta Hawks,95,83,12,Home,79.8,True,2011
+201105120ATL,"Thu, May 12, 2011",ATL,CHI,Atlanta Hawks,Chicago Bulls,73,93,-20,Home,83.9,True,2011
+201105150CHI,"Sun, May 15, 2011",CHI,MIA,Chicago Bulls,Miami Heat,103,82,21,Home,82.6,True,2011
+201105180CHI,"Wed, May 18, 2011",CHI,MIA,Chicago Bulls,Miami Heat,75,85,-10,Home,82.4,True,2011
+201105220MIA,"Sun, May 22, 2011",MIA,CHI,Miami Heat,Chicago Bulls,96,85,11,Home,82.0,True,2011
+201105240MIA,"Tue, May 24, 2011",MIA,CHI,Miami Heat,Chicago Bulls,101,93,8,Home,89.6,True,2011
+201105260CHI,"Thu, May 26, 2011",CHI,MIA,Chicago Bulls,Miami Heat,80,83,-3,Home,87.1,True,2011
+201010290DET,"Fri, Oct 29, 2010",DET,OKC,Detroit Pistons,Oklahoma City Thunder,104,105,-1,Home,93.7,True,2011
+201010310OKC,"Sun, Oct 31, 2010",OKC,UTA,Oklahoma City Thunder,Utah Jazz,99,120,-21,Home,100.1,True,2011
+201011030LAC,"Wed, Nov 3, 2010",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,107,92,15,Home,93.7,True,2011
+201011040POR,"Thu, Nov 4, 2010",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,106,107,-1,Home,83.0,True,2011
+201011070OKC,"Sun, Nov 7, 2010",OKC,BOS,Oklahoma City Thunder,Boston Celtics,83,92,-9,Home,88.0,True,2011
+201011100OKC,"Wed, Nov 10, 2010",OKC,PHI,Oklahoma City Thunder,Philadelphia 76ers,109,103,6,Home,94.9,True,2011
+201011120OKC,"Fri, Nov 12, 2010",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,110,108,2,Home,85.9,True,2011
+201011150UTA,"Mon, Nov 15, 2010",UTA,OKC,Utah Jazz,Oklahoma City Thunder,108,115,-7,Home,87.4,True,2011
+201011190BOS,"Fri, Nov 19, 2010",BOS,OKC,Boston Celtics,Oklahoma City Thunder,84,89,-5,Home,89.2,True,2011
+201011200MIL,"Sat, Nov 20, 2010",MIL,OKC,Milwaukee Bucks,Oklahoma City Thunder,81,82,-1,Home,89.5,True,2011
+201011240OKC,"Wed, Nov 24, 2010",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,103,111,-8,Home,93.6,True,2011
+201012010NJN,"Wed, Dec 1, 2010",NJN,OKC,New Jersey Nets,Oklahoma City Thunder,120,123,-3,Home,85.4,True,2011
+201012030TOR,"Fri, Dec 3, 2010",TOR,OKC,Toronto Raptors,Oklahoma City Thunder,111,99,12,Home,95.2,True,2011
+201012120OKC,"Sun, Dec 12, 2010",OKC,CLE,Oklahoma City Thunder,Cleveland Cavaliers,106,77,29,Home,89.1,True,2011
+201012170OKC,"Fri, Dec 17, 2010",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,102,87,15,Home,91.0,True,2011
+201012190OKC,"Sun, Dec 19, 2010",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,110,113,-3,Home,94.7,True,2011
+201012210CHA,"Tue, Dec 21, 2010",CHA,OKC,Charlotte Bobcats,Oklahoma City Thunder,81,99,-18,Home,88.0,True,2011
+201012270OKC,"Mon, Dec 27, 2010",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,93,103,-10,Home,93.6,True,2011
+201012290OKC,"Wed, Dec 29, 2010",OKC,NJN,Oklahoma City Thunder,New Jersey Nets,114,93,21,Home,97.7,True,2011
+201012310OKC,"Fri, Dec 31, 2010",OKC,ATL,Oklahoma City Thunder,Atlanta Hawks,103,94,9,Home,91.4,True,2011
+201101040MEM,"Tue, Jan 4, 2011",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,110,105,5,Home,96.6,True,2011
+201101060DAL,"Thu, Jan 6, 2011",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,95,99,-4,Home,88.2,True,2011
+201101080OKC,"Sat, Jan 8, 2011",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,109,100,9,Home,95.4,True,2011
+201101130OKC,"Thu, Jan 13, 2011",OKC,ORL,Oklahoma City Thunder,Orlando Magic,125,124,1,Home,91.0,True,2011
+201101300OKC,"Sun, Jan 30, 2011",OKC,MIA,Oklahoma City Thunder,Miami Heat,103,108,-5,Home,94.2,True,2011
+201102040PHO,"Fri, Feb 4, 2011",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,107,111,-4,Home,94.2,True,2011
+201102050UTA,"Sat, Feb 5, 2011",UTA,OKC,Utah Jazz,Oklahoma City Thunder,105,121,-16,Home,87.4,True,2011
+201102080OKC,"Tue, Feb 8, 2011",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,101,105,-4,Home,89.7,True,2011
+201102120SAC,"Sat, Feb 12, 2011",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,97,99,-2,Home,95.0,True,2011
+201102150OKC,"Tue, Feb 15, 2011",OKC,SAC,Oklahoma City Thunder,Sacramento Kings,126,96,30,Home,100.3,True,2011
+201102220OKC,"Tue, Feb 22, 2011",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,111,88,23,Home,90.2,True,2011
+201102250ORL,"Fri, Feb 25, 2011",ORL,OKC,Orlando Magic,Oklahoma City Thunder,111,88,23,Home,91.8,True,2011
+201103040ATL,"Fri, Mar 4, 2011",ATL,OKC,Atlanta Hawks,Oklahoma City Thunder,104,111,-7,Home,89.5,True,2011
+201103060OKC,"Sun, Mar 6, 2011",OKC,PHO,Oklahoma City Thunder,Phoenix Suns,122,118,4,Home,99.3,True,2011
+201103070MEM,"Mon, Mar 7, 2011",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,107,101,6,Home,88.1,True,2011
+201103090PHI,"Wed, Mar 9, 2011",PHI,OKC,Philadelphia 76ers,Oklahoma City Thunder,105,110,-5,Home,89.3,True,2011
+201103110OKC,"Fri, Mar 11, 2011",OKC,DET,Oklahoma City Thunder,Detroit Pistons,104,94,10,Home,83.4,True,2011
+201103130CLE,"Sun, Mar 13, 2011",CLE,OKC,Cleveland Cavaliers,Oklahoma City Thunder,75,95,-20,Home,89.6,True,2011
+201103160MIA,"Wed, Mar 16, 2011",MIA,OKC,Miami Heat,Oklahoma City Thunder,85,96,-11,Home,88.6,True,2011
+201103180OKC,"Fri, Mar 18, 2011",OKC,CHA,Oklahoma City Thunder,Charlotte Bobcats,99,82,17,Home,87.0,True,2011
+201103200OKC,"Sun, Mar 20, 2011",OKC,TOR,Oklahoma City Thunder,Toronto Raptors,93,95,-2,Home,89.7,True,2011
+201103230OKC,"Wed, Mar 23, 2011",OKC,UTA,Oklahoma City Thunder,Utah Jazz,106,94,12,Home,85.2,True,2011
+201103270OKC,"Sun, Mar 27, 2011",OKC,POR,Oklahoma City Thunder,Portland Trail Blazers,99,90,9,Home,85.2,True,2011
+201103300PHO,"Wed, Mar 30, 2011",PHO,OKC,Phoenix Suns,Oklahoma City Thunder,98,116,-18,Home,88.7,True,2011
+201104010POR,"Fri, Apr 1, 2011",POR,OKC,Portland Trail Blazers,Oklahoma City Thunder,98,91,7,Home,80.3,True,2011
+201104020LAC,"Sat, Apr 2, 2011",LAC,OKC,Los Angeles Clippers,Oklahoma City Thunder,98,92,6,Home,91.9,True,2011
+201104060OKC,"Wed, Apr 6, 2011",OKC,LAC,Oklahoma City Thunder,Los Angeles Clippers,112,108,4,Home,95.7,True,2011
+201104110SAC,"Mon, Apr 11, 2011",SAC,OKC,Sacramento Kings,Oklahoma City Thunder,112,120,-8,Home,96.5,True,2011
+201104130OKC,"Wed, Apr 13, 2011",OKC,MIL,Oklahoma City Thunder,Milwaukee Bucks,106,110,-4,Home,92.8,True,2011
+201105010OKC,"Sun, May 1, 2011",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,101,114,-13,Home,90.1,True,2011
+201105030OKC,"Tue, May 3, 2011",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,111,102,9,Home,93.3,True,2011
+201105070MEM,"Sat, May 7, 2011",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,101,93,8,Home,85.4,True,2011
+201105090MEM,"Mon, May 9, 2011",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,123,133,-10,Home,87.1,True,2011
+201105110OKC,"Wed, May 11, 2011",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,99,72,27,Home,89.1,True,2011
+201105130MEM,"Fri, May 13, 2011",MEM,OKC,Memphis Grizzlies,Oklahoma City Thunder,95,83,12,Home,93.6,True,2011
+201105150OKC,"Sun, May 15, 2011",OKC,MEM,Oklahoma City Thunder,Memphis Grizzlies,105,90,15,Home,84.4,True,2011
+201105170DAL,"Tue, May 17, 2011",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,121,112,9,Home,90.0,True,2011
+201105190DAL,"Thu, May 19, 2011",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,100,106,-6,Home,85.5,True,2011
+201105210OKC,"Sat, May 21, 2011",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,87,93,-6,Home,89.0,True,2011
+201105230OKC,"Mon, May 23, 2011",OKC,DAL,Oklahoma City Thunder,Dallas Mavericks,105,112,-7,Home,93.8,True,2011
+201105250DAL,"Wed, May 25, 2011",DAL,OKC,Dallas Mavericks,Oklahoma City Thunder,100,96,4,Home,89.1,True,2011
+201010290TOR,"Fri, Oct 29, 2010",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,101,81,20,Home,94.7,True,2011
+201011010SAC,"Mon, Nov 1, 2010",SAC,TOR,Sacramento Kings,Toronto Raptors,111,108,3,Home,90.4,True,2011
+201011030UTA,"Wed, Nov 3, 2010",UTA,TOR,Utah Jazz,Toronto Raptors,125,108,17,Home,100.1,True,2011
+201011060POR,"Sat, Nov 6, 2010",POR,TOR,Portland Trail Blazers,Toronto Raptors,97,84,13,Home,88.4,True,2011
+201011100TOR,"Wed, Nov 10, 2010",TOR,CHA,Toronto Raptors,Charlotte Bobcats,96,101,-5,Home,90.6,True,2011
+201011120ORL,"Fri, Nov 12, 2010",ORL,TOR,Orlando Magic,Toronto Raptors,106,110,-4,Home,94.1,True,2011
+201011130MIA,"Sat, Nov 13, 2010",MIA,TOR,Miami Heat,Toronto Raptors,109,100,9,Home,90.2,True,2011
+201011170PHI,"Wed, Nov 17, 2010",PHI,TOR,Philadelphia 76ers,Toronto Raptors,86,94,-8,Home,92.4,True,2011
+201011210TOR,"Sun, Nov 21, 2010",TOR,BOS,Toronto Raptors,Boston Celtics,102,101,1,Home,91.1,True,2011
+201011240TOR,"Wed, Nov 24, 2010",TOR,PHI,Toronto Raptors,Philadelphia 76ers,106,90,16,Home,90.1,True,2011
+201011260BOS,"Fri, Nov 26, 2010",BOS,TOR,Boston Celtics,Toronto Raptors,110,101,9,Home,91.2,True,2011
+201011280TOR,"Sun, Nov 28, 2010",TOR,ATL,Toronto Raptors,Atlanta Hawks,78,96,-18,Home,89.5,True,2011
+201012110DET,"Sat, Dec 11, 2010",DET,TOR,Detroit Pistons,Toronto Raptors,116,120,-4,Home,95.1,True,2011
+201012140CHA,"Tue, Dec 14, 2010",CHA,TOR,Charlotte Bobcats,Toronto Raptors,97,91,6,Home,91.4,True,2011
+201012170TOR,"Fri, Dec 17, 2010",TOR,NJN,Toronto Raptors,New Jersey Nets,98,92,6,Home,89.5,True,2011
+201012220TOR,"Wed, Dec 22, 2010",TOR,DET,Toronto Raptors,Detroit Pistons,93,115,-22,Home,96.2,True,2011
+201012270MEM,"Mon, Dec 27, 2010",MEM,TOR,Memphis Grizzlies,Toronto Raptors,96,85,11,Home,94.1,True,2011
+201012280DAL,"Tue, Dec 28, 2010",DAL,TOR,Dallas Mavericks,Toronto Raptors,76,84,-8,Home,84.1,True,2011
+201101020TOR,"Sun, Jan 2, 2011",TOR,BOS,Toronto Raptors,Boston Celtics,79,93,-14,Home,90.1,True,2011
+201101050CLE,"Wed, Jan 5, 2011",CLE,TOR,Cleveland Cavaliers,Toronto Raptors,105,120,-15,Home,90.3,True,2011
+201101070BOS,"Fri, Jan 7, 2011",BOS,TOR,Boston Celtics,Toronto Raptors,122,102,20,Home,90.0,True,2011
+201101090TOR,"Sun, Jan 9, 2011",TOR,SAC,Toronto Raptors,Sacramento Kings,118,112,6,Home,97.3,True,2011
+201101120TOR,"Wed, Jan 12, 2011",TOR,ATL,Toronto Raptors,Atlanta Hawks,101,104,-3,Home,94.1,True,2011
+201101140TOR,"Fri, Jan 14, 2011",TOR,DET,Toronto Raptors,Detroit Pistons,95,101,-6,Home,85.8,True,2011
+201101210ORL,"Fri, Jan 21, 2011",ORL,TOR,Orlando Magic,Toronto Raptors,112,72,40,Home,87.9,True,2011
+201101220MIA,"Sat, Jan 22, 2011",MIA,TOR,Miami Heat,Toronto Raptors,120,103,17,Home,92.1,True,2011
+201101240TOR,"Mon, Jan 24, 2011",TOR,MEM,Toronto Raptors,Memphis Grizzlies,98,100,-2,Home,90.4,True,2011
+201101260TOR,"Wed, Jan 26, 2011",TOR,PHI,Toronto Raptors,Philadelphia 76ers,94,107,-13,Home,88.5,True,2011
+201101280TOR,"Fri, Jan 28, 2011",TOR,MIL,Toronto Raptors,Milwaukee Bucks,110,116,-6,Home,90.1,True,2011
+201102020ATL,"Wed, Feb 2, 2011",ATL,TOR,Atlanta Hawks,Toronto Raptors,100,87,13,Home,84.7,True,2011
+201102080MIL,"Tue, Feb 8, 2011",MIL,TOR,Milwaukee Bucks,Toronto Raptors,92,74,18,Home,89.6,True,2011
+201102110TOR,"Fri, Feb 11, 2011",TOR,POR,Toronto Raptors,Portland Trail Blazers,96,102,-6,Home,85.1,True,2011
+201102130TOR,"Sun, Feb 13, 2011",TOR,LAC,Toronto Raptors,Los Angeles Clippers,98,93,5,Home,90.8,True,2011
+201102160TOR,"Wed, Feb 16, 2011",TOR,MIA,Toronto Raptors,Miami Heat,95,103,-8,Home,93.9,True,2011
+201102220CHA,"Tue, Feb 22, 2011",CHA,TOR,Charlotte Bobcats,Toronto Raptors,114,101,13,Home,95.0,True,2011
+201102250TOR,"Fri, Feb 25, 2011",TOR,PHO,Toronto Raptors,Phoenix Suns,92,110,-18,Home,94.4,True,2011
+201102270TOR,"Sun, Feb 27, 2011",TOR,DAL,Toronto Raptors,Dallas Mavericks,96,114,-18,Home,91.3,True,2011
+201103040NJN,"Fri, Mar 4, 2011",NJN,TOR,New Jersey Nets,Toronto Raptors,116,103,13,Home,93.5,True,2011
+201103050NJN,"Sat, Mar 5, 2011",NJN,TOR,New Jersey Nets,Toronto Raptors,137,136,1,Home,87.3,True,2011
+201103090TOR,"Wed, Mar 9, 2011",TOR,UTA,Toronto Raptors,Utah Jazz,94,96,-2,Home,84.9,True,2011
+201103130TOR,"Sun, Mar 13, 2011",TOR,CHA,Toronto Raptors,Charlotte Bobcats,90,95,-5,Home,88.3,True,2011
+201103160DET,"Wed, Mar 16, 2011",DET,TOR,Detroit Pistons,Toronto Raptors,107,93,14,Home,89.9,True,2011
+201103230PHO,"Wed, Mar 23, 2011",PHO,TOR,Phoenix Suns,Toronto Raptors,114,106,8,Home,98.2,True,2011
+201103260LAC,"Sat, Mar 26, 2011",LAC,TOR,Los Angeles Clippers,Toronto Raptors,94,90,4,Home,94.3,True,2011
+201103300TOR,"Wed, Mar 30, 2011",TOR,MIL,Toronto Raptors,Milwaukee Bucks,98,104,-6,Home,85.5,True,2011
+201104030TOR,"Sun, Apr 3, 2011",TOR,ORL,Toronto Raptors,Orlando Magic,102,98,4,Home,84.0,True,2011
+201104060TOR,"Wed, Apr 6, 2011",TOR,CLE,Toronto Raptors,Cleveland Cavaliers,96,104,-8,Home,90.7,True,2011
+201104080PHI,"Fri, Apr 8, 2011",PHI,TOR,Philadelphia 76ers,Toronto Raptors,98,93,5,Home,91.0,True,2011
+201104100TOR,"Sun, Apr 10, 2011",TOR,NJN,Toronto Raptors,New Jersey Nets,99,92,7,Home,87.1,True,2011
+201104110MIL,"Mon, Apr 11, 2011",MIL,TOR,Milwaukee Bucks,Toronto Raptors,93,86,7,Home,92.7,True,2011
+201104130TOR,"Wed, Apr 13, 2011",TOR,MIA,Toronto Raptors,Miami Heat,79,97,-18,Home,83.9,True,2011
+201010260POR,"Tue, Oct 26, 2010",POR,PHO,Portland Trail Blazers,Phoenix Suns,106,92,14,Home,89.6,True,2011
+201010280UTA,"Thu, Oct 28, 2010",UTA,PHO,Utah Jazz,Phoenix Suns,94,110,-16,Home,95.0,True,2011
+201011050PHO,"Fri, Nov 5, 2010",PHO,MEM,Phoenix Suns,Memphis Grizzlies,123,118,5,Home,97.4,True,2011
+201011070ATL,"Sun, Nov 7, 2010",ATL,PHO,Atlanta Hawks,Phoenix Suns,114,118,-4,Home,92.1,True,2011
+201011080MEM,"Mon, Nov 8, 2010",MEM,PHO,Memphis Grizzlies,Phoenix Suns,109,99,10,Home,94.3,True,2011
+201011120PHO,"Fri, Nov 12, 2010",PHO,SAC,Phoenix Suns,Sacramento Kings,103,89,14,Home,85.7,True,2011
+201011170MIA,"Wed, Nov 17, 2010",MIA,PHO,Miami Heat,Phoenix Suns,123,96,27,Home,96.7,True,2011
+201011180ORL,"Thu, Nov 18, 2010",ORL,PHO,Orlando Magic,Phoenix Suns,105,89,16,Home,87.5,True,2011
+201011200CHA,"Sat, Nov 20, 2010",CHA,PHO,Charlotte Bobcats,Phoenix Suns,123,105,18,Home,97.3,True,2011
+201011260PHO,"Fri, Nov 26, 2010",PHO,LAC,Phoenix Suns,Los Angeles Clippers,116,108,8,Home,94.5,True,2011
+201012070POR,"Tue, Dec 7, 2010",POR,PHO,Portland Trail Blazers,Phoenix Suns,106,99,7,Home,93.8,True,2011
+201012080PHO,"Wed, Dec 8, 2010",PHO,MEM,Phoenix Suns,Memphis Grizzlies,98,104,-6,Home,85.3,True,2011
+201012100PHO,"Fri, Dec 10, 2010",PHO,POR,Phoenix Suns,Portland Trail Blazers,94,101,-7,Home,87.6,True,2011
+201012170DAL,"Fri, Dec 17, 2010",DAL,PHO,Dallas Mavericks,Phoenix Suns,106,91,15,Home,97.3,True,2011
+201012230PHO,"Thu, Dec 23, 2010",PHO,MIA,Phoenix Suns,Miami Heat,83,95,-12,Home,90.4,True,2011
+201012260LAC,"Sun, Dec 26, 2010",LAC,PHO,Los Angeles Clippers,Phoenix Suns,108,103,5,Home,93.7,True,2011
+201012290PHO,"Wed, Dec 29, 2010",PHO,PHI,Phoenix Suns,Philadelphia 76ers,110,123,-13,Home,91.9,True,2011
+201012310PHO,"Fri, Dec 31, 2010",PHO,DET,Phoenix Suns,Detroit Pistons,92,75,17,Home,84.4,True,2011
+201101020SAC,"Sun, Jan 2, 2011",SAC,PHO,Sacramento Kings,Phoenix Suns,94,89,5,Home,87.7,True,2011
+201101090PHO,"Sun, Jan 9, 2011",PHO,CLE,Phoenix Suns,Cleveland Cavaliers,108,100,8,Home,99.3,True,2011
+201101120PHO,"Wed, Jan 12, 2011",PHO,NJN,Phoenix Suns,New Jersey Nets,118,109,9,Home,93.4,True,2011
+201101140PHO,"Fri, Jan 14, 2011",PHO,POR,Phoenix Suns,Portland Trail Blazers,115,111,4,Home,96.4,True,2011
+201101190CLE,"Wed, Jan 19, 2011",CLE,PHO,Cleveland Cavaliers,Phoenix Suns,98,106,-8,Home,99.5,True,2011
+201101220DET,"Sat, Jan 22, 2011",DET,PHO,Detroit Pistons,Phoenix Suns,75,74,1,Home,81.6,True,2011
+201101240PHI,"Mon, Jan 24, 2011",PHI,PHO,Philadelphia 76ers,Phoenix Suns,105,95,10,Home,90.3,True,2011
+201101260PHO,"Wed, Jan 26, 2011",PHO,CHA,Phoenix Suns,Charlotte Bobcats,107,114,-7,Home,84.6,True,2011
+201101280PHO,"Fri, Jan 28, 2011",PHO,BOS,Phoenix Suns,Boston Celtics,88,71,17,Home,95.5,True,2011
+201102020PHO,"Wed, Feb 2, 2011",PHO,MIL,Phoenix Suns,Milwaukee Bucks,92,77,15,Home,87.1,True,2011
+201102110UTA,"Fri, Feb 11, 2011",UTA,PHO,Utah Jazz,Phoenix Suns,83,95,-12,Home,86.4,True,2011
+201102130PHO,"Sun, Feb 13, 2011",PHO,SAC,Phoenix Suns,Sacramento Kings,108,113,-5,Home,97.3,True,2011
+201102150PHO,"Tue, Feb 15, 2011",PHO,UTA,Phoenix Suns,Utah Jazz,102,101,1,Home,96.2,True,2011
+201102170PHO,"Thu, Feb 17, 2011",PHO,DAL,Phoenix Suns,Dallas Mavericks,106,112,-6,Home,96.7,True,2011
+201102230PHO,"Wed, Feb 23, 2011",PHO,ATL,Phoenix Suns,Atlanta Hawks,105,97,8,Home,86.7,True,2011
+201102280NJN,"Mon, Feb 28, 2011",NJN,PHO,New Jersey Nets,Phoenix Suns,103,104,-1,Home,92.3,True,2011
+201103020BOS,"Wed, Mar 2, 2011",BOS,PHO,Boston Celtics,Phoenix Suns,115,103,12,Home,93.8,True,2011
+201103040MIL,"Fri, Mar 4, 2011",MIL,PHO,Milwaukee Bucks,Phoenix Suns,88,102,-14,Home,91.5,True,2011
+201103130PHO,"Sun, Mar 13, 2011",PHO,ORL,Phoenix Suns,Orlando Magic,88,111,-23,Home,95.7,True,2011
+201103200LAC,"Sun, Mar 20, 2011",LAC,PHO,Los Angeles Clippers,Phoenix Suns,99,108,-9,Home,90.2,True,2011
+201103270PHO,"Sun, Mar 27, 2011",PHO,DAL,Phoenix Suns,Dallas Mavericks,83,91,-8,Home,90.0,True,2011
+201103290SAC,"Tue, Mar 29, 2011",SAC,PHO,Sacramento Kings,Phoenix Suns,116,113,3,Home,104.0,True,2011
+201104010PHO,"Fri, Apr 1, 2011",PHO,LAC,Phoenix Suns,Los Angeles Clippers,111,98,13,Home,97.1,True,2011
+201104100DAL,"Sun, Apr 10, 2011",DAL,PHO,Dallas Mavericks,Phoenix Suns,115,90,25,Home,91.9,True,2011
+201010270DAL,"Wed, Oct 27, 2010",DAL,CHA,Dallas Mavericks,Charlotte Bobcats,101,86,15,Home,92.3,True,2011
+201010300MIL,"Sat, Oct 30, 2010",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,98,88,10,Home,84.7,True,2011
+201011030NJN,"Wed, Nov 3, 2010",NJN,CHA,New Jersey Nets,Charlotte Bobcats,83,85,-2,Home,86.1,True,2011
+201011050DET,"Fri, Nov 5, 2010",DET,CHA,Detroit Pistons,Charlotte Bobcats,97,90,7,Home,86.0,True,2011
+201011060CHA,"Sat, Nov 6, 2010",CHA,ORL,Charlotte Bobcats,Orlando Magic,88,91,-3,Home,90.4,True,2011
+201011130CHA,"Sat, Nov 13, 2010",CHA,UTA,Charlotte Bobcats,Utah Jazz,95,96,-1,Home,84.5,True,2011
+201011190MIA,"Fri, Nov 19, 2010",MIA,CHA,Miami Heat,Charlotte Bobcats,95,87,8,Home,91.8,True,2011
+201011270MIL,"Sat, Nov 27, 2010",MIL,CHA,Milwaukee Bucks,Charlotte Bobcats,104,101,3,Home,87.7,True,2011
+201012030CHA,"Fri, Dec 3, 2010",CHA,NJN,Charlotte Bobcats,New Jersey Nets,91,84,7,Home,92.5,True,2011
+201012040PHI,"Sat, Dec 4, 2010",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,109,91,18,Home,86.3,True,2011
+201012110CHA,"Sat, Dec 11, 2010",CHA,BOS,Charlotte Bobcats,Boston Celtics,62,93,-31,Home,88.7,True,2011
+201012150MEM,"Wed, Dec 15, 2010",MEM,CHA,Memphis Grizzlies,Charlotte Bobcats,113,80,33,Home,95.2,True,2011
+201012170ATL,"Fri, Dec 17, 2010",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,90,85,5,Home,83.0,True,2011
+201012270CHA,"Mon, Dec 27, 2010",CHA,DET,Charlotte Bobcats,Detroit Pistons,105,100,5,Home,94.3,True,2011
+201012290CHA,"Wed, Dec 29, 2010",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,101,92,9,Home,87.6,True,2011
+201101030CHA,"Mon, Jan 3, 2011",CHA,MIA,Charlotte Bobcats,Miami Heat,82,96,-14,Home,86.0,True,2011
+201101100CHA,"Mon, Jan 10, 2011",CHA,MEM,Charlotte Bobcats,Memphis Grizzlies,96,82,14,Home,90.6,True,2011
+201101140BOS,"Fri, Jan 14, 2011",BOS,CHA,Boston Celtics,Charlotte Bobcats,99,94,5,Home,84.8,True,2011
+201101170PHI,"Mon, Jan 17, 2011",PHI,CHA,Philadelphia 76ers,Charlotte Bobcats,96,92,4,Home,90.9,True,2011
+201101200CHA,"Thu, Jan 20, 2011",CHA,PHI,Charlotte Bobcats,Philadelphia 76ers,100,97,3,Home,88.5,True,2011
+201101220CHA,"Sat, Jan 22, 2011",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,87,103,-16,Home,84.0,True,2011
+201101250SAC,"Tue, Jan 25, 2011",SAC,CHA,Sacramento Kings,Charlotte Bobcats,89,94,-5,Home,90.7,True,2011
+201101290LAC,"Sat, Jan 29, 2011",LAC,CHA,Los Angeles Clippers,Charlotte Bobcats,103,88,15,Home,87.8,True,2011
+201101310UTA,"Mon, Jan 31, 2011",UTA,CHA,Utah Jazz,Charlotte Bobcats,83,78,5,Home,88.5,True,2011
+201102020DET,"Wed, Feb 2, 2011",DET,CHA,Detroit Pistons,Charlotte Bobcats,87,97,-10,Home,87.4,True,2011
+201102040CHA,"Fri, Feb 4, 2011",CHA,MIA,Charlotte Bobcats,Miami Heat,97,109,-12,Home,84.4,True,2011
+201102050CHA,"Sat, Feb 5, 2011",CHA,DAL,Charlotte Bobcats,Dallas Mavericks,92,101,-9,Home,85.4,True,2011
+201102070CHA,"Mon, Feb 7, 2011",CHA,BOS,Charlotte Bobcats,Boston Celtics,94,89,5,Home,94.9,True,2011
+201102110CHA,"Fri, Feb 11, 2011",CHA,NJN,Charlotte Bobcats,New Jersey Nets,89,94,-5,Home,90.9,True,2011
+201102120ATL,"Sat, Feb 12, 2011",ATL,CHA,Atlanta Hawks,Charlotte Bobcats,86,88,-2,Home,86.1,True,2011
+201102250CHA,"Fri, Feb 25, 2011",CHA,SAC,Charlotte Bobcats,Sacramento Kings,110,98,12,Home,91.5,True,2011
+201102270ORL,"Sun, Feb 27, 2011",ORL,CHA,Orlando Magic,Charlotte Bobcats,100,86,14,Home,89.1,True,2011
+201103050POR,"Sat, Mar 5, 2011",POR,CHA,Portland Trail Blazers,Charlotte Bobcats,93,69,24,Home,80.7,True,2011
+201103070CHA,"Mon, Mar 7, 2011",CHA,LAC,Charlotte Bobcats,Los Angeles Clippers,87,92,-5,Home,90.8,True,2011
+201103110CHA,"Fri, Mar 11, 2011",CHA,POR,Charlotte Bobcats,Portland Trail Blazers,97,92,5,Home,92.9,True,2011
+201103250BOS,"Fri, Mar 25, 2011",BOS,CHA,Boston Celtics,Charlotte Bobcats,81,83,-2,Home,85.8,True,2011
+201103280CHA,"Mon, Mar 28, 2011",CHA,MIL,Charlotte Bobcats,Milwaukee Bucks,87,86,1,Home,82.0,True,2011
+201103300CHA,"Wed, Mar 30, 2011",CHA,CLE,Charlotte Bobcats,Cleveland Cavaliers,98,97,1,Home,82.5,True,2011
+201104010ORL,"Fri, Apr 1, 2011",ORL,CHA,Orlando Magic,Charlotte Bobcats,89,77,12,Home,83.4,True,2011
+201104050CLE,"Tue, Apr 5, 2011",CLE,CHA,Cleveland Cavaliers,Charlotte Bobcats,99,89,10,Home,91.1,True,2011
+201104060CHA,"Wed, Apr 6, 2011",CHA,ORL,Charlotte Bobcats,Orlando Magic,102,111,-9,Home,83.0,True,2011
+201104080MIA,"Fri, Apr 8, 2011",MIA,CHA,Miami Heat,Charlotte Bobcats,112,103,9,Home,92.1,True,2011
+201104100CHA,"Sun, Apr 10, 2011",CHA,DET,Charlotte Bobcats,Detroit Pistons,101,112,-11,Home,89.4,True,2011
+201104110NJN,"Mon, Apr 11, 2011",NJN,CHA,New Jersey Nets,Charlotte Bobcats,103,105,-2,Home,81.9,True,2011
+201104130CHA,"Wed, Apr 13, 2011",CHA,ATL,Charlotte Bobcats,Atlanta Hawks,96,85,11,Home,87.3,True,2011
+201010290DAL,"Fri, Oct 29, 2010",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,90,91,-1,Home,92.1,True,2011
+201010310LAC,"Sun, Oct 31, 2010",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,83,99,-16,Home,93.2,True,2011
+201011080DAL,"Mon, Nov 8, 2010",DAL,BOS,Dallas Mavericks,Boston Celtics,89,87,2,Home,87.9,True,2011
+201011100MEM,"Wed, Nov 10, 2010",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,91,106,-15,Home,89.2,True,2011
+201011120DAL,"Fri, Nov 12, 2010",DAL,PHI,Dallas Mavericks,Philadelphia 76ers,99,90,9,Home,86.7,True,2011
+201011200ATL,"Sat, Nov 20, 2010",ATL,DAL,Atlanta Hawks,Dallas Mavericks,93,98,-5,Home,89.2,True,2011
+201011230DAL,"Tue, Nov 23, 2010",DAL,DET,Dallas Mavericks,Detroit Pistons,88,84,4,Home,86.1,True,2011
+201011270DAL,"Sat, Nov 27, 2010",DAL,MIA,Dallas Mavericks,Miami Heat,106,95,11,Home,92.3,True,2011
+201012030UTA,"Fri, Dec 3, 2010",UTA,DAL,Utah Jazz,Dallas Mavericks,81,93,-12,Home,88.7,True,2011
+201012040SAC,"Sat, Dec 4, 2010",SAC,DAL,Sacramento Kings,Dallas Mavericks,103,105,-2,Home,92.4,True,2011
+201012090DAL,"Thu, Dec 9, 2010",DAL,NJN,Dallas Mavericks,New Jersey Nets,102,89,13,Home,91.5,True,2011
+201012110DAL,"Sat, Dec 11, 2010",DAL,UTA,Dallas Mavericks,Utah Jazz,103,97,6,Home,87.9,True,2011
+201012130DAL,"Mon, Dec 13, 2010",DAL,MIL,Dallas Mavericks,Milwaukee Bucks,99,103,-4,Home,90.4,True,2011
+201012150DAL,"Wed, Dec 15, 2010",DAL,POR,Dallas Mavericks,Portland Trail Blazers,103,98,5,Home,87.3,True,2011
+201012200MIA,"Mon, Dec 20, 2010",MIA,DAL,Miami Heat,Dallas Mavericks,96,98,-2,Home,88.4,True,2011
+201012210ORL,"Tue, Dec 21, 2010",ORL,DAL,Orlando Magic,Dallas Mavericks,99,105,-6,Home,91.4,True,2011
+201101010MIL,"Sat, Jan 1, 2011",MIL,DAL,Milwaukee Bucks,Dallas Mavericks,99,87,12,Home,93.6,True,2011
+201101020CLE,"Sun, Jan 2, 2011",CLE,DAL,Cleveland Cavaliers,Dallas Mavericks,95,104,-9,Home,88.5,True,2011
+201101040DAL,"Tue, Jan 4, 2011",DAL,POR,Dallas Mavericks,Portland Trail Blazers,84,81,3,Home,80.9,True,2011
+201101080DAL,"Sat, Jan 8, 2011",DAL,ORL,Dallas Mavericks,Orlando Magic,107,117,-10,Home,93.3,True,2011
+201101150MEM,"Sat, Jan 15, 2011",MEM,DAL,Memphis Grizzlies,Dallas Mavericks,89,70,19,Home,85.5,True,2011
+201101170DET,"Mon, Jan 17, 2011",DET,DAL,Detroit Pistons,Dallas Mavericks,103,89,14,Home,81.6,True,2011
+201101220NJN,"Sat, Jan 22, 2011",NJN,DAL,New Jersey Nets,Dallas Mavericks,86,87,-1,Home,88.7,True,2011
+201101250DAL,"Tue, Jan 25, 2011",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,112,105,7,Home,89.1,True,2011
+201101290DAL,"Sat, Jan 29, 2011",DAL,ATL,Dallas Mavericks,Atlanta Hawks,102,91,11,Home,87.8,True,2011
+201102040BOS,"Fri, Feb 4, 2011",BOS,DAL,Boston Celtics,Dallas Mavericks,97,101,-4,Home,87.0,True,2011
+201102070DAL,"Mon, Feb 7, 2011",DAL,CLE,Dallas Mavericks,Cleveland Cavaliers,99,96,3,Home,93.4,True,2011
+201102090SAC,"Wed, Feb 9, 2011",SAC,DAL,Sacramento Kings,Dallas Mavericks,100,102,-2,Home,90.7,True,2011
+201102160DAL,"Wed, Feb 16, 2011",DAL,SAC,Dallas Mavericks,Sacramento Kings,116,100,16,Home,100.1,True,2011
+201102230DAL,"Wed, Feb 23, 2011",DAL,UTA,Dallas Mavericks,Utah Jazz,118,99,19,Home,96.9,True,2011
+201103010PHI,"Tue, Mar 1, 2011",PHI,DAL,Philadelphia 76ers,Dallas Mavericks,93,101,-8,Home,95.5,True,2011
+201103060DAL,"Sun, Mar 6, 2011",DAL,MEM,Dallas Mavericks,Memphis Grizzlies,103,104,-1,Home,89.6,True,2011
+201103150POR,"Tue, Mar 15, 2011",POR,DAL,Portland Trail Blazers,Dallas Mavericks,104,101,3,Home,82.1,True,2011
+201103260UTA,"Sat, Mar 26, 2011",UTA,DAL,Utah Jazz,Dallas Mavericks,77,94,-17,Home,88.9,True,2011
+201103300LAC,"Wed, Mar 30, 2011",LAC,DAL,Los Angeles Clippers,Dallas Mavericks,100,106,-6,Home,95.5,True,2011
+201104030POR,"Sun, Apr 3, 2011",POR,DAL,Portland Trail Blazers,Dallas Mavericks,104,96,8,Home,88.5,True,2011
+201104080DAL,"Fri, Apr 8, 2011",DAL,LAC,Dallas Mavericks,Los Angeles Clippers,107,96,11,Home,96.0,True,2011
+201104160DAL,"Sat, Apr 16, 2011",DAL,POR,Dallas Mavericks,Portland Trail Blazers,89,81,8,Home,81.0,True,2011
+201104190DAL,"Tue, Apr 19, 2011",DAL,POR,Dallas Mavericks,Portland Trail Blazers,101,89,12,Home,81.6,True,2011
+201104210POR,"Thu, Apr 21, 2011",POR,DAL,Portland Trail Blazers,Dallas Mavericks,97,92,5,Home,85.5,True,2011
+201104230POR,"Sat, Apr 23, 2011",POR,DAL,Portland Trail Blazers,Dallas Mavericks,84,82,2,Home,81.5,True,2011
+201104250DAL,"Mon, Apr 25, 2011",DAL,POR,Dallas Mavericks,Portland Trail Blazers,93,82,11,Home,83.2,True,2011
+201104280POR,"Thu, Apr 28, 2011",POR,DAL,Portland Trail Blazers,Dallas Mavericks,96,103,-7,Home,81.1,True,2011
+201105310MIA,"Tue, May 31, 2011",MIA,DAL,Miami Heat,Dallas Mavericks,92,84,8,Home,82.7,True,2011
+201106020MIA,"Thu, Jun 2, 2011",MIA,DAL,Miami Heat,Dallas Mavericks,93,95,-2,Home,88.0,True,2011
+201106050DAL,"Sun, Jun 5, 2011",DAL,MIA,Dallas Mavericks,Miami Heat,86,88,-2,Home,82.1,True,2011
+201106070DAL,"Tue, Jun 7, 2011",DAL,MIA,Dallas Mavericks,Miami Heat,86,83,3,Home,82.1,True,2011
+201106090DAL,"Thu, Jun 9, 2011",DAL,MIA,Dallas Mavericks,Miami Heat,112,103,9,Home,86.4,True,2011
+201106120MIA,"Sun, Jun 12, 2011",MIA,DAL,Miami Heat,Dallas Mavericks,95,105,-10,Home,92.0,True,2011
+201010270MEM,"Wed, Oct 27, 2010",MEM,ATL,Memphis Grizzlies,Atlanta Hawks,104,119,-15,Home,99.0,True,2011
+201011060SAC,"Sat, Nov 6, 2010",SAC,MEM,Sacramento Kings,Memphis Grizzlies,91,100,-9,Home,92.2,True,2011
+201011130MEM,"Sat, Nov 13, 2010",MEM,BOS,Memphis Grizzlies,Boston Celtics,110,116,-6,Home,90.0,True,2011
+201011150ORL,"Mon, Nov 15, 2010",ORL,MEM,Orlando Magic,Memphis Grizzlies,89,72,17,Home,88.3,True,2011
+201011160MEM,"Tue, Nov 16, 2010",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,99,100,-1,Home,91.7,True,2011
+201011200MEM,"Sat, Nov 20, 2010",MEM,MIA,Memphis Grizzlies,Miami Heat,97,95,2,Home,85.1,True,2011
+201011240MEM,"Wed, Nov 24, 2010",MEM,DET,Memphis Grizzlies,Detroit Pistons,105,84,21,Home,88.0,True,2011
+201011270CLE,"Sat, Nov 27, 2010",CLE,MEM,Cleveland Cavaliers,Memphis Grizzlies,92,86,6,Home,94.6,True,2011
+201012010ATL,"Wed, Dec 1, 2010",ATL,MEM,Atlanta Hawks,Memphis Grizzlies,112,109,3,Home,91.1,True,2011
+201012060UTA,"Mon, Dec 6, 2010",UTA,MEM,Utah Jazz,Memphis Grizzlies,94,85,9,Home,87.5,True,2011
+201012110LAC,"Sat, Dec 11, 2010",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,83,84,-1,Home,89.1,True,2011
+201012130MEM,"Mon, Dec 13, 2010",MEM,POR,Memphis Grizzlies,Portland Trail Blazers,86,73,13,Home,86.6,True,2011
+201012210MEM,"Tue, Dec 21, 2010",MEM,NJN,Memphis Grizzlies,New Jersey Nets,94,101,-7,Home,93.1,True,2011
+201012290SAC,"Wed, Dec 29, 2010",SAC,MEM,Sacramento Kings,Memphis Grizzlies,100,98,2,Home,96.5,True,2011
+201101010UTA,"Sat, Jan 1, 2011",UTA,MEM,Utah Jazz,Memphis Grizzlies,98,92,6,Home,89.3,True,2011
+201101070MEM,"Fri, Jan 7, 2011",MEM,UTA,Memphis Grizzlies,Utah Jazz,110,99,11,Home,93.8,True,2011
+201101120DET,"Wed, Jan 12, 2011",DET,MEM,Detroit Pistons,Memphis Grizzlies,99,107,-8,Home,90.5,True,2011
+201101220MIL,"Sat, Jan 22, 2011",MIL,MEM,Milwaukee Bucks,Memphis Grizzlies,81,94,-13,Home,86.5,True,2011
+201101260NJN,"Wed, Jan 26, 2011",NJN,MEM,New Jersey Nets,Memphis Grizzlies,93,88,5,Home,83.9,True,2011
+201101280PHI,"Fri, Jan 28, 2011",PHI,MEM,Philadelphia 76ers,Memphis Grizzlies,94,99,-5,Home,87.4,True,2011
+201101310MEM,"Mon, Jan 31, 2011",MEM,ORL,Memphis Grizzlies,Orlando Magic,100,97,3,Home,87.8,True,2011
+201102040MEM,"Fri, Feb 4, 2011",MEM,CLE,Memphis Grizzlies,Cleveland Cavaliers,112,105,7,Home,93.3,True,2011
+201102110MEM,"Fri, Feb 11, 2011",MEM,MIL,Memphis Grizzlies,Milwaukee Bucks,89,86,3,Home,90.3,True,2011
+201102150MEM,"Tue, Feb 15, 2011",MEM,PHI,Memphis Grizzlies,Philadelphia 76ers,102,91,11,Home,87.8,True,2011
+201102260MEM,"Sat, Feb 26, 2011",MEM,SAC,Memphis Grizzlies,Sacramento Kings,120,92,28,Home,98.0,True,2011
+201103120MIA,"Sat, Mar 12, 2011",MIA,MEM,Miami Heat,Memphis Grizzlies,118,85,33,Home,91.0,True,2011
+201103140MEM,"Mon, Mar 14, 2011",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,105,82,23,Home,91.5,True,2011
+201103210MEM,"Mon, Mar 21, 2011",MEM,UTA,Memphis Grizzlies,Utah Jazz,103,85,18,Home,85.4,True,2011
+201103230BOS,"Wed, Mar 23, 2011",BOS,MEM,Boston Celtics,Memphis Grizzlies,87,90,-3,Home,91.9,True,2011
+201104050MEM,"Tue, Apr 5, 2011",MEM,LAC,Memphis Grizzlies,Los Angeles Clippers,81,82,-1,Home,92.5,True,2011
+201104080MEM,"Fri, Apr 8, 2011",MEM,SAC,Memphis Grizzlies,Sacramento Kings,101,96,5,Home,95.9,True,2011
+201104120POR,"Tue, Apr 12, 2011",POR,MEM,Portland Trail Blazers,Memphis Grizzlies,102,89,13,Home,83.5,True,2011
+201104130LAC,"Wed, Apr 13, 2011",LAC,MEM,Los Angeles Clippers,Memphis Grizzlies,110,103,7,Home,97.5,True,2011
+201010270NJN,"Wed, Oct 27, 2010",NJN,DET,New Jersey Nets,Detroit Pistons,101,98,3,Home,89.8,True,2011
+201011020DET,"Tue, Nov 2, 2010",DET,BOS,Detroit Pistons,Boston Celtics,86,109,-23,Home,87.1,True,2011
+201011030ATL,"Wed, Nov 3, 2010",ATL,DET,Atlanta Hawks,Detroit Pistons,94,85,9,Home,84.5,True,2011
+201011090POR,"Tue, Nov 9, 2010",POR,DET,Portland Trail Blazers,Detroit Pistons,100,78,22,Home,89.2,True,2011
+201011120LAC,"Fri, Nov 12, 2010",LAC,DET,Los Angeles Clippers,Detroit Pistons,107,113,-6,Home,91.5,True,2011
+201011140SAC,"Sun, Nov 14, 2010",SAC,DET,Sacramento Kings,Detroit Pistons,94,100,-6,Home,85.9,True,2011
+201011260DET,"Fri, Nov 26, 2010",DET,MIL,Detroit Pistons,Milwaukee Bucks,103,89,14,Home,85.2,True,2011
+201011300ORL,"Tue, Nov 30, 2010",ORL,DET,Orlando Magic,Detroit Pistons,90,79,11,Home,82.8,True,2011
+201012010MIA,"Wed, Dec 1, 2010",MIA,DET,Miami Heat,Detroit Pistons,97,72,25,Home,84.5,True,2011
+201012030DET,"Fri, Dec 3, 2010",DET,ORL,Detroit Pistons,Orlando Magic,91,104,-13,Home,83.8,True,2011
+201012050DET,"Sun, Dec 5, 2010",DET,CLE,Detroit Pistons,Cleveland Cavaliers,102,92,10,Home,89.6,True,2011
+201012140DET,"Tue, Dec 14, 2010",DET,ATL,Detroit Pistons,Atlanta Hawks,103,80,23,Home,86.7,True,2011
+201012170DET,"Fri, Dec 17, 2010",DET,LAC,Detroit Pistons,Los Angeles Clippers,88,109,-21,Home,90.4,True,2011
+201012290DET,"Wed, Dec 29, 2010",DET,BOS,Detroit Pistons,Boston Celtics,104,92,12,Home,87.6,True,2011
+201101030UTA,"Mon, Jan 3, 2011",UTA,DET,Utah Jazz,Detroit Pistons,102,97,5,Home,84.9,True,2011
+201101080DET,"Sat, Jan 8, 2011",DET,PHI,Detroit Pistons,Philadelphia 76ers,112,109,3,Home,93.0,True,2011
+201101150DET,"Sat, Jan 15, 2011",DET,SAC,Detroit Pistons,Sacramento Kings,110,106,4,Home,89.6,True,2011
+201101190BOS,"Wed, Jan 19, 2011",BOS,DET,Boston Celtics,Detroit Pistons,86,82,4,Home,89.1,True,2011
+201101210NJN,"Fri, Jan 21, 2011",NJN,DET,New Jersey Nets,Detroit Pistons,89,74,15,Home,82.9,True,2011
+201101240ORL,"Mon, Jan 24, 2011",ORL,DET,Orlando Magic,Detroit Pistons,96,103,-7,Home,89.8,True,2011
+201101280MIA,"Fri, Jan 28, 2011",MIA,DET,Miami Heat,Detroit Pistons,88,87,1,Home,80.7,True,2011
+201102040DET,"Fri, Feb 4, 2011",DET,NJN,Detroit Pistons,New Jersey Nets,92,82,10,Home,79.9,True,2011
+201102050MIL,"Sat, Feb 5, 2011",MIL,DET,Milwaukee Bucks,Detroit Pistons,78,89,-11,Home,86.6,True,2011
+201102090CLE,"Wed, Feb 9, 2011",CLE,DET,Cleveland Cavaliers,Detroit Pistons,94,103,-9,Home,89.2,True,2011
+201102110DET,"Fri, Feb 11, 2011",DET,MIA,Detroit Pistons,Miami Heat,92,106,-14,Home,88.6,True,2011
+201102130DET,"Sun, Feb 13, 2011",DET,POR,Detroit Pistons,Portland Trail Blazers,100,105,-5,Home,86.4,True,2011
+201102140DET,"Mon, Feb 14, 2011",DET,ATL,Detroit Pistons,Atlanta Hawks,79,94,-15,Home,76.1,True,2011
+201102250PHI,"Fri, Feb 25, 2011",PHI,DET,Philadelphia 76ers,Detroit Pistons,110,94,16,Home,94.8,True,2011
+201102260DET,"Sat, Feb 26, 2011",DET,UTA,Detroit Pistons,Utah Jazz,120,116,4,Home,94.2,True,2011
+201103010MIL,"Tue, Mar 1, 2011",MIL,DET,Milwaukee Bucks,Detroit Pistons,92,90,2,Home,90.0,True,2011
+201103200ATL,"Sun, Mar 20, 2011",ATL,DET,Atlanta Hawks,Detroit Pistons,104,96,8,Home,84.6,True,2011
+201103230DET,"Wed, Mar 23, 2011",DET,MIA,Detroit Pistons,Miami Heat,94,100,-6,Home,83.7,True,2011
+201103250CLE,"Fri, Mar 25, 2011",CLE,DET,Cleveland Cavaliers,Detroit Pistons,97,91,6,Home,88.7,True,2011
+201104030BOS,"Sun, Apr 3, 2011",BOS,DET,Boston Celtics,Detroit Pistons,101,90,11,Home,85.8,True,2011
+201104060DET,"Wed, Apr 6, 2011",DET,NJN,Detroit Pistons,New Jersey Nets,116,109,7,Home,91.5,True,2011
+201104080DET,"Fri, Apr 8, 2011",DET,MIL,Detroit Pistons,Milwaukee Bucks,110,100,10,Home,91.1,True,2011
+201104110DET,"Mon, Apr 11, 2011",DET,CLE,Detroit Pistons,Cleveland Cavaliers,101,110,-9,Home,91.0,True,2011
+201104130PHI,"Wed, Apr 13, 2011",PHI,DET,Philadelphia 76ers,Detroit Pistons,100,104,-4,Home,94.6,True,2011
+201011020MIL,"Tue, Nov 2, 2010",MIL,POR,Milwaukee Bucks,Portland Trail Blazers,76,90,-14,Home,84.9,True,2011
+201011030BOS,"Wed, Nov 3, 2010",BOS,MIL,Boston Celtics,Milwaukee Bucks,105,102,3,Home,88.1,True,2011
+201011100ATL,"Wed, Nov 10, 2010",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,91,108,-17,Home,91.2,True,2011
+201011190PHI,"Fri, Nov 19, 2010",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,90,79,11,Home,88.7,True,2011
+201011240CLE,"Wed, Nov 24, 2010",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,83,81,2,Home,88.9,True,2011
+201011290UTA,"Mon, Nov 29, 2010",UTA,MIL,Utah Jazz,Milwaukee Bucks,109,88,21,Home,88.5,True,2011
+201012040MIL,"Sat, Dec 4, 2010",MIL,ORL,Milwaukee Bucks,Orlando Magic,96,85,11,Home,91.4,True,2011
+201012060MIL,"Mon, Dec 6, 2010",MIL,MIA,Milwaukee Bucks,Miami Heat,78,88,-10,Home,85.9,True,2011
+201012180MIL,"Sat, Dec 18, 2010",MIL,UTA,Milwaukee Bucks,Utah Jazz,86,95,-9,Home,86.0,True,2011
+201012200POR,"Mon, Dec 20, 2010",POR,MIL,Portland Trail Blazers,Milwaukee Bucks,106,80,26,Home,82.8,True,2011
+201012230SAC,"Thu, Dec 23, 2010",SAC,MIL,Sacramento Kings,Milwaukee Bucks,79,84,-5,Home,93.1,True,2011
+201012270MIL,"Mon, Dec 27, 2010",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,80,95,-15,Home,87.4,True,2011
+201101040MIA,"Tue, Jan 4, 2011",MIA,MIL,Miami Heat,Milwaukee Bucks,101,89,12,Home,88.0,True,2011
+201101050ORL,"Wed, Jan 5, 2011",ORL,MIL,Orlando Magic,Milwaukee Bucks,97,87,10,Home,91.0,True,2011
+201101070MIL,"Fri, Jan 7, 2011",MIL,MIA,Milwaukee Bucks,Miami Heat,95,101,-6,Home,92.0,True,2011
+201101080NJN,"Sat, Jan 8, 2011",NJN,MIL,New Jersey Nets,Milwaukee Bucks,92,115,-23,Home,89.3,True,2011
+201101140PHI,"Fri, Jan 14, 2011",PHI,MIL,Philadelphia 76ers,Milwaukee Bucks,95,94,1,Home,83.6,True,2011
+201101210CLE,"Fri, Jan 21, 2011",CLE,MIL,Cleveland Cavaliers,Milwaukee Bucks,88,102,-14,Home,90.1,True,2011
+201101260MIL,"Wed, Jan 26, 2011",MIL,ATL,Milwaukee Bucks,Atlanta Hawks,98,90,8,Home,89.5,True,2011
+201101290MIL,"Sat, Jan 29, 2011",MIL,NJN,Milwaukee Bucks,New Jersey Nets,91,81,10,Home,82.3,True,2011
+201101310LAC,"Mon, Jan 31, 2011",LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,105,98,7,Home,87.2,True,2011
+201102140MIL,"Mon, Feb 14, 2011",MIL,LAC,Milwaukee Bucks,Los Angeles Clippers,102,78,24,Home,84.5,True,2011
+201103060MIL,"Sun, Mar 6, 2011",MIL,BOS,Milwaukee Bucks,Boston Celtics,83,89,-6,Home,87.2,True,2011
+201103090MIL,"Wed, Mar 9, 2011",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,110,90,20,Home,93.6,True,2011
+201103120MIL,"Sat, Mar 12, 2011",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,102,74,28,Home,84.7,True,2011
+201103130BOS,"Sun, Mar 13, 2011",BOS,MIL,Boston Celtics,Milwaukee Bucks,87,56,31,Home,86.7,True,2011
+201103150ATL,"Tue, Mar 15, 2011",ATL,MIL,Atlanta Hawks,Milwaukee Bucks,110,85,25,Home,91.1,True,2011
+201103160MIL,"Wed, Mar 16, 2011",MIL,ORL,Milwaukee Bucks,Orlando Magic,89,93,-4,Home,80.1,True,2011
+201103180MIL,"Fri, Mar 18, 2011",MIL,NJN,Milwaukee Bucks,New Jersey Nets,110,95,15,Home,88.8,True,2011
+201103230MIL,"Wed, Mar 23, 2011",MIL,SAC,Milwaukee Bucks,Sacramento Kings,90,97,-7,Home,88.4,True,2011
+201104020MIL,"Sat, Apr 2, 2011",MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,93,87,6,Home,87.0,True,2011
+201104050ORL,"Tue, Apr 5, 2011",ORL,MIL,Orlando Magic,Milwaukee Bucks,78,72,6,Home,92.6,True,2011
+201104060MIA,"Wed, Apr 6, 2011",MIA,MIL,Miami Heat,Milwaukee Bucks,85,90,-5,Home,84.6,True,2011
+201104090MIL,"Sat, Apr 9, 2011",MIL,CLE,Milwaukee Bucks,Cleveland Cavaliers,108,101,7,Home,91.1,True,2011
+201010270CLE,"Wed, Oct 27, 2010",CLE,BOS,Cleveland Cavaliers,Boston Celtics,95,87,8,Home,93.1,True,2011
+201010300CLE,"Sat, Oct 30, 2010",CLE,SAC,Cleveland Cavaliers,Sacramento Kings,104,107,-3,Home,91.3,True,2011
+201011020CLE,"Tue, Nov 2, 2010",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,88,100,-12,Home,87.6,True,2011
+201011050PHI,"Fri, Nov 5, 2010",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,116,123,-7,Home,96.7,True,2011
+201011090NJN,"Tue, Nov 9, 2010",NJN,CLE,New Jersey Nets,Cleveland Cavaliers,91,93,-2,Home,86.0,True,2011
+201011100CLE,"Wed, Nov 10, 2010",CLE,NJN,Cleveland Cavaliers,New Jersey Nets,87,95,-8,Home,88.3,True,2011
+201011160CLE,"Tue, Nov 16, 2010",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,101,93,8,Home,93.2,True,2011
+201011260ORL,"Fri, Nov 26, 2010",ORL,CLE,Orlando Magic,Cleveland Cavaliers,111,100,11,Home,92.3,True,2011
+201011300CLE,"Tue, Nov 30, 2010",CLE,BOS,Cleveland Cavaliers,Boston Celtics,87,106,-19,Home,97.9,True,2011
+201012020CLE,"Thu, Dec 2, 2010",CLE,MIA,Cleveland Cavaliers,Miami Heat,90,118,-28,Home,91.7,True,2011
+201012070PHI,"Tue, Dec 7, 2010",PHI,CLE,Philadelphia 76ers,Cleveland Cavaliers,117,97,20,Home,89.6,True,2011
+201012150MIA,"Wed, Dec 15, 2010",MIA,CLE,Miami Heat,Cleveland Cavaliers,101,95,6,Home,90.2,True,2011
+201012200CLE,"Mon, Dec 20, 2010",CLE,UTA,Cleveland Cavaliers,Utah Jazz,90,101,-11,Home,83.3,True,2011
+201012220ATL,"Wed, Dec 22, 2010",ATL,CLE,Atlanta Hawks,Cleveland Cavaliers,98,84,14,Home,82.2,True,2011
+201012280CLE,"Tue, Dec 28, 2010",CLE,ORL,Cleveland Cavaliers,Orlando Magic,95,110,-15,Home,97.4,True,2011
+201101140UTA,"Fri, Jan 14, 2011",UTA,CLE,Utah Jazz,Cleveland Cavaliers,121,99,22,Home,94.2,True,2011
+201101240NJN,"Mon, Jan 24, 2011",NJN,CLE,New Jersey Nets,Cleveland Cavaliers,103,101,2,Home,92.6,True,2011
+201101250BOS,"Tue, Jan 25, 2011",BOS,CLE,Boston Celtics,Cleveland Cavaliers,112,95,17,Home,93.7,True,2011
+201101300ORL,"Sun, Jan 30, 2011",ORL,CLE,Orlando Magic,Cleveland Cavaliers,103,87,16,Home,95.7,True,2011
+201101310MIA,"Mon, Jan 31, 2011",MIA,CLE,Miami Heat,Cleveland Cavaliers,117,90,27,Home,93.2,True,2011
+201102050CLE,"Sat, Feb 5, 2011",CLE,POR,Cleveland Cavaliers,Portland Trail Blazers,105,111,-6,Home,87.1,True,2011
+201102110CLE,"Fri, Feb 11, 2011",CLE,LAC,Cleveland Cavaliers,Los Angeles Clippers,126,119,7,Home,92.3,True,2011
+201102270CLE,"Sun, Feb 27, 2011",CLE,PHI,Cleveland Cavaliers,Philadelphia 76ers,91,95,-4,Home,92.3,True,2011
+201103160SAC,"Wed, Mar 16, 2011",SAC,CLE,Sacramento Kings,Cleveland Cavaliers,93,97,-4,Home,96.3,True,2011
+201103170POR,"Thu, Mar 17, 2011",POR,CLE,Portland Trail Blazers,Cleveland Cavaliers,111,70,41,Home,82.5,True,2011
+201103190LAC,"Sat, Mar 19, 2011",LAC,CLE,Los Angeles Clippers,Cleveland Cavaliers,100,92,8,Home,90.4,True,2011
+201103210CLE,"Mon, Mar 21, 2011",CLE,ORL,Cleveland Cavaliers,Orlando Magic,86,97,-11,Home,92.9,True,2011
+201103230CLE,"Wed, Mar 23, 2011",CLE,NJN,Cleveland Cavaliers,New Jersey Nets,94,98,-4,Home,91.2,True,2011
+201103270CLE,"Sun, Mar 27, 2011",CLE,ATL,Cleveland Cavaliers,Atlanta Hawks,83,99,-16,Home,93.6,True,2011
+201103290CLE,"Tue, Mar 29, 2011",CLE,MIA,Cleveland Cavaliers,Miami Heat,102,90,12,Home,88.0,True,2011
+201010290NJN,"Fri, Oct 29, 2010",NJN,SAC,New Jersey Nets,Sacramento Kings,106,100,6,Home,101.2,True,2011
+201011190SAC,"Fri, Nov 19, 2010",SAC,NJN,Sacramento Kings,New Jersey Nets,86,81,5,Home,80.7,True,2011
+201011220UTA,"Mon, Nov 22, 2010",UTA,SAC,Utah Jazz,Sacramento Kings,94,83,11,Home,87.1,True,2011
+201011250LAC,"Thu, Nov 25, 2010",LAC,SAC,Los Angeles Clippers,Sacramento Kings,100,82,18,Home,88.5,True,2011
+201012060LAC,"Mon, Dec 6, 2010",LAC,SAC,Los Angeles Clippers,Sacramento Kings,98,91,7,Home,90.9,True,2011
+201012110SAC,"Sat, Dec 11, 2010",SAC,MIA,Sacramento Kings,Miami Heat,83,104,-21,Home,92.6,True,2011
+201012270SAC,"Mon, Dec 27, 2010",SAC,LAC,Sacramento Kings,Los Angeles Clippers,99,100,-1,Home,86.2,True,2011
+201101040SAC,"Tue, Jan 4, 2011",SAC,ATL,Sacramento Kings,Atlanta Hawks,102,108,-6,Home,96.9,True,2011
+201101120BOS,"Wed, Jan 12, 2011",BOS,SAC,Boston Celtics,Sacramento Kings,119,95,24,Home,99.0,True,2011
+201101170ATL,"Mon, Jan 17, 2011",ATL,SAC,Atlanta Hawks,Sacramento Kings,100,98,2,Home,89.6,True,2011
+201101190SAC,"Wed, Jan 19, 2011",SAC,POR,Sacramento Kings,Portland Trail Blazers,90,94,-4,Home,87.6,True,2011
+201101240POR,"Mon, Jan 24, 2011",POR,SAC,Portland Trail Blazers,Sacramento Kings,81,96,-15,Home,84.5,True,2011
+201102010SAC,"Tue, Feb 1, 2011",SAC,BOS,Sacramento Kings,Boston Celtics,90,95,-5,Home,94.0,True,2011
+201102070SAC,"Mon, Feb 7, 2011",SAC,UTA,Sacramento Kings,Utah Jazz,104,107,-3,Home,98.3,True,2011
+201102220MIA,"Tue, Feb 22, 2011",MIA,SAC,Miami Heat,Sacramento Kings,117,97,20,Home,93.8,True,2011
+201102230ORL,"Wed, Feb 23, 2011",ORL,SAC,Orlando Magic,Sacramento Kings,105,111,-6,Home,99.4,True,2011
+201102280SAC,"Mon, Feb 28, 2011",SAC,LAC,Sacramento Kings,Los Angeles Clippers,105,99,6,Home,101.9,True,2011
+201103020SAC,"Wed, Mar 2, 2011",SAC,POR,Sacramento Kings,Portland Trail Blazers,102,107,-5,Home,90.4,True,2011
+201103050UTA,"Sat, Mar 5, 2011",UTA,SAC,Utah Jazz,Sacramento Kings,109,102,7,Home,95.4,True,2011
+201103090SAC,"Wed, Mar 9, 2011",SAC,ORL,Sacramento Kings,Orlando Magic,102,106,-4,Home,100.5,True,2011
+201103180SAC,"Fri, Mar 18, 2011",SAC,PHI,Sacramento Kings,Philadelphia 76ers,80,102,-22,Home,100.6,True,2011
+201103270PHI,"Sun, Mar 27, 2011",PHI,SAC,Philadelphia 76ers,Sacramento Kings,111,114,-3,Home,95.3,True,2011
+201104030SAC,"Sun, Apr 3, 2011",SAC,UTA,Sacramento Kings,Utah Jazz,106,97,9,Home,90.0,True,2011
+201010270LAC,"Wed, Oct 27, 2010",LAC,POR,Los Angeles Clippers,Portland Trail Blazers,88,98,-10,Home,87.4,True,2011
+201011060UTA,"Sat, Nov 6, 2010",UTA,LAC,Utah Jazz,Los Angeles Clippers,109,107,2,Home,83.9,True,2011
+201011150LAC,"Mon, Nov 15, 2010",LAC,NJN,Los Angeles Clippers,New Jersey Nets,96,110,-14,Home,82.3,True,2011
+201011280LAC,"Sun, Nov 28, 2010",LAC,UTA,Los Angeles Clippers,Utah Jazz,97,109,-12,Home,85.7,True,2011
+201012050POR,"Sun, Dec 5, 2010",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,100,91,9,Home,87.8,True,2011
+201012120LAC,"Sun, Dec 12, 2010",LAC,ORL,Los Angeles Clippers,Orlando Magic,85,94,-9,Home,87.1,True,2011
+201012150PHI,"Wed, Dec 15, 2010",PHI,LAC,Philadelphia 76ers,Los Angeles Clippers,105,91,14,Home,87.2,True,2011
+201012290LAC,"Wed, Dec 29, 2010",LAC,UTA,Los Angeles Clippers,Utah Jazz,95,103,-8,Home,85.8,True,2011
+201101020LAC,"Sun, Jan 2, 2011",LAC,ATL,Los Angeles Clippers,Atlanta Hawks,98,107,-9,Home,93.2,True,2011
+201101120LAC,"Wed, Jan 12, 2011",LAC,MIA,Los Angeles Clippers,Miami Heat,111,105,6,Home,94.8,True,2011
+201101200POR,"Thu, Jan 20, 2011",POR,LAC,Portland Trail Blazers,Los Angeles Clippers,108,93,15,Home,86.0,True,2011
+201102040ATL,"Fri, Feb 4, 2011",ATL,LAC,Atlanta Hawks,Los Angeles Clippers,101,100,1,Home,90.4,True,2011
+201102060MIA,"Sun, Feb 6, 2011",MIA,LAC,Miami Heat,Los Angeles Clippers,97,79,18,Home,93.0,True,2011
+201102080ORL,"Tue, Feb 8, 2011",ORL,LAC,Orlando Magic,Los Angeles Clippers,101,85,16,Home,91.6,True,2011
+201102260LAC,"Sat, Feb 26, 2011",LAC,BOS,Los Angeles Clippers,Boston Celtics,92,99,-7,Home,89.7,True,2011
+201103090BOS,"Wed, Mar 9, 2011",BOS,LAC,Boston Celtics,Los Angeles Clippers,103,108,-5,Home,91.1,True,2011
+201103110NJN,"Fri, Mar 11, 2011",NJN,LAC,New Jersey Nets,Los Angeles Clippers,102,98,4,Home,91.2,True,2011
+201103160LAC,"Wed, Mar 16, 2011",LAC,PHI,Los Angeles Clippers,Philadelphia 76ers,94,104,-10,Home,98.1,True,2011
+201010260BOS,"Tue, Oct 26, 2010",BOS,MIA,Boston Celtics,Miami Heat,88,80,8,Home,88.5,True,2011
+201010270PHI,"Wed, Oct 27, 2010",PHI,MIA,Philadelphia 76ers,Miami Heat,87,97,-10,Home,91.5,True,2011
+201010290MIA,"Fri, Oct 29, 2010",MIA,ORL,Miami Heat,Orlando Magic,96,70,26,Home,87.8,True,2011
+201010310NJN,"Sun, Oct 31, 2010",NJN,MIA,New Jersey Nets,Miami Heat,78,101,-23,Home,85.7,True,2011
+201011060MIA,"Sat, Nov 6, 2010",MIA,NJN,Miami Heat,New Jersey Nets,101,89,12,Home,91.8,True,2011
+201011090MIA,"Tue, Nov 9, 2010",MIA,UTA,Miami Heat,Utah Jazz,114,116,-2,Home,91.9,True,2011
+201011110MIA,"Thu, Nov 11, 2010",MIA,BOS,Miami Heat,Boston Celtics,107,112,-5,Home,90.0,True,2011
+201011240ORL,"Wed, Nov 24, 2010",ORL,MIA,Orlando Magic,Miami Heat,104,95,9,Home,88.5,True,2011
+201011260MIA,"Fri, Nov 26, 2010",MIA,PHI,Miami Heat,Philadelphia 76ers,99,90,9,Home,85.9,True,2011
+201012040MIA,"Sat, Dec 4, 2010",MIA,ATL,Miami Heat,Atlanta Hawks,89,77,12,Home,84.5,True,2011
+201012080UTA,"Wed, Dec 8, 2010",UTA,MIA,Utah Jazz,Miami Heat,98,111,-13,Home,88.1,True,2011
+201101090POR,"Sun, Jan 9, 2011",POR,MIA,Portland Trail Blazers,Miami Heat,100,107,-7,Home,86.3,True,2011
+201101180MIA,"Tue, Jan 18, 2011",MIA,ATL,Miami Heat,Atlanta Hawks,89,93,-4,Home,83.2,True,2011
+201102030ORL,"Thu, Feb 3, 2011",ORL,MIA,Orlando Magic,Miami Heat,100,104,-4,Home,88.5,True,2011
+201102130BOS,"Sun, Feb 13, 2011",BOS,MIA,Boston Celtics,Miami Heat,85,82,3,Home,86.7,True,2011
+201103030MIA,"Thu, Mar 3, 2011",MIA,ORL,Miami Heat,Orlando Magic,96,99,-3,Home,85.9,True,2011
+201103080MIA,"Tue, Mar 8, 2011",MIA,POR,Miami Heat,Portland Trail Blazers,96,105,-9,Home,83.3,True,2011
+201103180ATL,"Fri, Mar 18, 2011",ATL,MIA,Atlanta Hawks,Miami Heat,85,106,-21,Home,87.9,True,2011
+201103250MIA,"Fri, Mar 25, 2011",MIA,PHI,Miami Heat,Philadelphia 76ers,111,99,12,Home,94.1,True,2011
+201104030NJN,"Sun, Apr 3, 2011",NJN,MIA,New Jersey Nets,Miami Heat,94,108,-14,Home,95.6,True,2011
+201104100MIA,"Sun, Apr 10, 2011",MIA,BOS,Miami Heat,Boston Celtics,100,77,23,Home,83.7,True,2011
+201104110ATL,"Mon, Apr 11, 2011",ATL,MIA,Atlanta Hawks,Miami Heat,90,98,-8,Home,85.5,True,2011
+201104160MIA,"Sat, Apr 16, 2011",MIA,PHI,Miami Heat,Philadelphia 76ers,97,89,8,Home,86.0,True,2011
+201104180MIA,"Mon, Apr 18, 2011",MIA,PHI,Miami Heat,Philadelphia 76ers,94,73,21,Home,85.1,True,2011
+201104210PHI,"Thu, Apr 21, 2011",PHI,MIA,Philadelphia 76ers,Miami Heat,94,100,-6,Home,82.0,True,2011
+201104240PHI,"Sun, Apr 24, 2011",PHI,MIA,Philadelphia 76ers,Miami Heat,86,82,4,Home,86.2,True,2011
+201104270MIA,"Wed, Apr 27, 2011",MIA,PHI,Miami Heat,Philadelphia 76ers,97,91,6,Home,85.0,True,2011
+201105010MIA,"Sun, May 1, 2011",MIA,BOS,Miami Heat,Boston Celtics,99,90,9,Home,89.5,True,2011
+201105030MIA,"Tue, May 3, 2011",MIA,BOS,Miami Heat,Boston Celtics,102,91,11,Home,86.8,True,2011
+201105070BOS,"Sat, May 7, 2011",BOS,MIA,Boston Celtics,Miami Heat,97,81,16,Home,81.3,True,2011
+201105090BOS,"Mon, May 9, 2011",BOS,MIA,Boston Celtics,Miami Heat,90,98,-8,Home,85.1,True,2011
+201105110MIA,"Wed, May 11, 2011",MIA,BOS,Miami Heat,Boston Celtics,97,87,10,Home,85.8,True,2011
+201011200POR,"Sat, Nov 20, 2010",POR,UTA,Portland Trail Blazers,Utah Jazz,94,103,-9,Home,92.9,True,2011
+201011280NJN,"Sun, Nov 28, 2010",NJN,POR,New Jersey Nets,Portland Trail Blazers,98,96,2,Home,87.0,True,2011
+201011300PHI,"Tue, Nov 30, 2010",PHI,POR,Philadelphia 76ers,Portland Trail Blazers,88,79,9,Home,85.1,True,2011
+201012010BOS,"Wed, Dec 1, 2010",BOS,POR,Boston Celtics,Portland Trail Blazers,99,95,4,Home,86.1,True,2011
+201012090POR,"Thu, Dec 9, 2010",POR,ORL,Portland Trail Blazers,Orlando Magic,97,83,14,Home,90.0,True,2011
+201012270UTA,"Mon, Dec 27, 2010",UTA,POR,Utah Jazz,Portland Trail Blazers,91,96,-5,Home,87.7,True,2011
+201012300POR,"Thu, Dec 30, 2010",POR,UTA,Portland Trail Blazers,Utah Jazz,100,89,11,Home,89.2,True,2011
+201101150POR,"Sat, Jan 15, 2011",POR,NJN,Portland Trail Blazers,New Jersey Nets,96,89,7,Home,80.1,True,2011
+201101270POR,"Thu, Jan 27, 2011",POR,BOS,Portland Trail Blazers,Boston Celtics,78,88,-10,Home,89.4,True,2011
+201102270POR,"Sun, Feb 27, 2011",POR,ATL,Portland Trail Blazers,Atlanta Hawks,83,90,-7,Home,87.1,True,2011
+201103070ORL,"Mon, Mar 7, 2011",ORL,POR,Orlando Magic,Portland Trail Blazers,85,89,-4,Home,84.1,True,2011
+201103120ATL,"Sat, Mar 12, 2011",ATL,POR,Atlanta Hawks,Portland Trail Blazers,91,82,9,Home,86.6,True,2011
+201103190POR,"Sat, Mar 19, 2011",POR,PHI,Portland Trail Blazers,Philadelphia 76ers,110,101,9,Home,85.4,True,2011
+201104070UTA,"Thu, Apr 7, 2011",UTA,POR,Utah Jazz,Portland Trail Blazers,87,98,-11,Home,80.6,True,2011
+201011050ORL,"Fri, Nov 5, 2010",ORL,NJN,Orlando Magic,New Jersey Nets,105,90,15,Home,88.2,True,2011
+201011080ORL,"Mon, Nov 8, 2010",ORL,ATL,Orlando Magic,Atlanta Hawks,93,89,4,Home,90.8,True,2011
+201011100ORL,"Wed, Nov 10, 2010",ORL,UTA,Orlando Magic,Utah Jazz,94,104,-10,Home,91.3,True,2011
+201011130NJN,"Sat, Nov 13, 2010",NJN,ORL,New Jersey Nets,Orlando Magic,90,91,-1,Home,84.0,True,2011
+201012060ORL,"Mon, Dec 6, 2010",ORL,ATL,Orlando Magic,Atlanta Hawks,74,80,-6,Home,88.1,True,2011
+201012100UTA,"Fri, Dec 10, 2010",UTA,ORL,Utah Jazz,Orlando Magic,117,105,12,Home,92.3,True,2011
+201012180ORL,"Sat, Dec 18, 2010",ORL,PHI,Orlando Magic,Philadelphia 76ers,89,97,-8,Home,93.4,True,2011
+201012200ATL,"Mon, Dec 20, 2010",ATL,ORL,Atlanta Hawks,Orlando Magic,91,81,10,Home,91.2,True,2011
+201012250ORL,"Sat, Dec 25, 2010",ORL,BOS,Orlando Magic,Boston Celtics,86,78,8,Home,91.1,True,2011
+201012270NJN,"Mon, Dec 27, 2010",NJN,ORL,New Jersey Nets,Orlando Magic,88,104,-16,Home,92.5,True,2011
+201101170BOS,"Mon, Jan 17, 2011",BOS,ORL,Boston Celtics,Orlando Magic,109,106,3,Home,85.6,True,2011
+201101190ORL,"Wed, Jan 19, 2011",ORL,PHI,Orlando Magic,Philadelphia 76ers,99,98,1,Home,92.9,True,2011
+201102060BOS,"Sun, Feb 6, 2011",BOS,ORL,Boston Celtics,Orlando Magic,91,80,11,Home,89.1,True,2011
+201102090PHI,"Wed, Feb 9, 2011",PHI,ORL,Philadelphia 76ers,Orlando Magic,95,99,-4,Home,93.1,True,2011
+201103250ORL,"Fri, Mar 25, 2011",ORL,NJN,Orlando Magic,New Jersey Nets,95,85,10,Home,84.7,True,2011
+201103300ATL,"Wed, Mar 30, 2011",ATL,ORL,Atlanta Hawks,Orlando Magic,85,82,3,Home,80.8,True,2011
+201104110PHI,"Mon, Apr 11, 2011",PHI,ORL,Philadelphia 76ers,Orlando Magic,85,95,-10,Home,85.0,True,2011
+201104160ORL,"Sat, Apr 16, 2011",ORL,ATL,Orlando Magic,Atlanta Hawks,93,103,-10,Home,89.1,True,2011
+201104190ORL,"Tue, Apr 19, 2011",ORL,ATL,Orlando Magic,Atlanta Hawks,88,82,6,Home,86.2,True,2011
+201104220ATL,"Fri, Apr 22, 2011",ATL,ORL,Atlanta Hawks,Orlando Magic,88,84,4,Home,81.0,True,2011
+201104240ATL,"Sun, Apr 24, 2011",ATL,ORL,Atlanta Hawks,Orlando Magic,88,85,3,Home,91.0,True,2011
+201104260ORL,"Tue, Apr 26, 2011",ORL,ATL,Orlando Magic,Atlanta Hawks,101,76,25,Home,86.3,True,2011
+201104280ATL,"Thu, Apr 28, 2011",ATL,ORL,Atlanta Hawks,Orlando Magic,84,81,3,Home,79.3,True,2011
+201011120ATL,"Fri, Nov 12, 2010",ATL,UTA,Atlanta Hawks,Utah Jazz,86,90,-4,Home,83.5,True,2011
+201011170UTA,"Wed, Nov 17, 2010",UTA,NJN,Utah Jazz,New Jersey Nets,98,88,10,Home,91.8,True,2011
+201101050UTA,"Wed, Jan 5, 2011",UTA,ATL,Utah Jazz,Atlanta Hawks,87,110,-23,Home,85.4,True,2011
+201101190NJN,"Wed, Jan 19, 2011",NJN,UTA,New Jersey Nets,Utah Jazz,103,95,8,Home,87.8,True,2011
+201101210BOS,"Fri, Jan 21, 2011",BOS,UTA,Boston Celtics,Utah Jazz,110,86,24,Home,89.2,True,2011
+201101220PHI,"Sat, Jan 22, 2011",PHI,UTA,Philadelphia 76ers,Utah Jazz,96,85,11,Home,89.3,True,2011
+201102280UTA,"Mon, Feb 28, 2011",UTA,BOS,Utah Jazz,Boston Celtics,102,107,-5,Home,96.7,True,2011
+201103140UTA,"Mon, Mar 14, 2011",UTA,PHI,Utah Jazz,Philadelphia 76ers,112,107,5,Home,90.6,True,2011
+201011220ATL,"Mon, Nov 22, 2010",ATL,BOS,Atlanta Hawks,Boston Celtics,76,99,-23,Home,87.9,True,2011
+201011240BOS,"Wed, Nov 24, 2010",BOS,NJN,Boston Celtics,New Jersey Nets,89,83,6,Home,86.5,True,2011
+201012050NJN,"Sun, Dec 5, 2010",NJN,BOS,New Jersey Nets,Boston Celtics,75,100,-25,Home,93.8,True,2011
+201012090PHI,"Thu, Dec 9, 2010",PHI,BOS,Philadelphia 76ers,Boston Celtics,101,102,-1,Home,85.3,True,2011
+201012160BOS,"Thu, Dec 16, 2010",BOS,ATL,Boston Celtics,Atlanta Hawks,102,90,12,Home,86.9,True,2011
+201012220BOS,"Wed, Dec 22, 2010",BOS,PHI,Boston Celtics,Philadelphia 76ers,84,80,4,Home,84.4,True,2011
+201102160BOS,"Wed, Feb 16, 2011",BOS,NJN,Boston Celtics,New Jersey Nets,94,80,14,Home,84.8,True,2011
+201103110PHI,"Fri, Mar 11, 2011",PHI,BOS,Philadelphia 76ers,Boston Celtics,89,86,3,Home,89.8,True,2011
+201103140NJN,"Mon, Mar 14, 2011",NJN,BOS,New Jersey Nets,Boston Celtics,88,79,9,Home,84.7,True,2011
+201104010ATL,"Fri, Apr 1, 2011",ATL,BOS,Atlanta Hawks,Boston Celtics,88,83,5,Home,85.3,True,2011
+201104050BOS,"Tue, Apr 5, 2011",BOS,PHI,Boston Celtics,Philadelphia 76ers,99,82,17,Home,85.5,True,2011
+201010290PHI,"Fri, Oct 29, 2010",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,101,104,-3,Home,92.3,True,2011
+201011230NJN,"Tue, Nov 23, 2010",NJN,ATL,New Jersey Nets,Atlanta Hawks,107,101,6,Home,84.5,True,2011
+201012030ATL,"Fri, Dec 3, 2010",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,93,88,5,Home,91.2,True,2011
+201012070ATL,"Tue, Dec 7, 2010",ATL,NJN,Atlanta Hawks,New Jersey Nets,116,101,15,Home,88.9,True,2011
+201012190NJN,"Sun, Dec 19, 2010",NJN,ATL,New Jersey Nets,Atlanta Hawks,89,82,7,Home,93.2,True,2011
+201102080ATL,"Tue, Feb 8, 2011",ATL,PHI,Atlanta Hawks,Philadelphia 76ers,83,117,-34,Home,92.8,True,2011
+201103230PHI,"Wed, Mar 23, 2011",PHI,ATL,Philadelphia 76ers,Atlanta Hawks,105,100,5,Home,86.3,True,2011
+201103260ATL,"Sat, Mar 26, 2011",ATL,NJN,Atlanta Hawks,New Jersey Nets,98,87,11,Home,86.6,True,2011
+201011270PHI,"Sat, Nov 27, 2010",PHI,NJN,Philadelphia 76ers,New Jersey Nets,102,86,16,Home,83.7,True,2011
+201012140NJN,"Tue, Dec 14, 2010",NJN,PHI,New Jersey Nets,Philadelphia 76ers,77,82,-5,Home,83.9,True,2011
+201102020NJN,"Wed, Feb 2, 2011",NJN,PHI,New Jersey Nets,Philadelphia 76ers,92,106,-14,Home,89.7,True,2011
+201104010PHI,"Fri, Apr 1, 2011",PHI,NJN,Philadelphia 76ers,New Jersey Nets,115,90,25,Home,86.4,True,2011

@@ -36,7 +36,7 @@ def sample_games_data():
     """Sample game data for testing."""
     return pd.DataFrame(
         {
-            "boxscore_id": ["202501010BOS", "202501020LAL", "202501030MIA"],
+            "game_id": ["0022400001", "0022400002", "0022400003"],
             "date": pd.to_datetime(["2025-01-01", "2025-01-02", "2025-01-03"]),
             "team": ["BOS", "LAL", "MIA"],
             "opponent": ["LAL", "BOS", "DEN"],

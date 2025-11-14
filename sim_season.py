@@ -75,7 +75,8 @@ class Season:
         self.mean_pace = mean_pace
         self.std_pace = std_pace
         self.update_counter = 1
-        self.update_every = 10
+        # TODO: move back to 1
+        self.update_every = 5
         # Vectorized pace assignment instead of list comprehensions
         self.future_games["pace"] = np.random.normal(
             self.mean_pace, self.std_pace, size=len(self.future_games)
@@ -216,17 +217,15 @@ class Season:
         )
 
     def simulate_season(self):
-        season_stop_date = datetime.date(2025, 7, 31)
         date_increment = self.sim_date_increment
-
         # Check if there are any future games to simulate
         if self.future_games.empty:
             logger.info("No future games to simulate - season appears to be complete")
             return
 
+        # Determine simulation window from scheduled future games
         min_date = self.future_games["date"].min()
-        # max_date = self.future_games['date'].max()
-        max_date = season_stop_date
+        max_date = self.future_games["date"].max()
         if pd.isna(min_date) or min_date > max_date:
             logger.info("All future games are beyond season end date")
             return
@@ -467,6 +466,30 @@ class Season:
             :, 1
         ][0]
 
+        # Log OKC games
+        if team == "OKC" or opponent == "OKC":
+            if team == "OKC":
+                okc_expected_margin = expected_margin
+                okc_margin = margin
+                okc_win_prob = win_prob
+                okc_won = team_win
+                matchup = f"OKC vs {opponent}"
+            else:  # opponent == "OKC"
+                okc_expected_margin = -expected_margin
+                okc_margin = -margin
+                okc_win_prob = 1 - win_prob
+                okc_won = not team_win
+                matchup = f"OKC @ {team}"
+
+            result = "W" if okc_won else "L"
+            okc_rating = self.em_ratings.get("OKC", 0.0)
+            logger.info(
+                f"OKC GAME | {matchup:20s} | "
+                f"Rating: {okc_rating:+6.2f} | "
+                f"Expected: {okc_expected_margin:+6.2f} ({okc_win_prob:.1%}) | "
+                f"Result: {result} {okc_margin:+6.2f}"
+            )
+
         row["completed"] = True
         row["team_win"] = team_win
         row["margin"] = margin
@@ -682,7 +705,7 @@ class Season:
 
         # TODO: Make playoff start date dynamic based on year instead of hardcoded
         # playoff start date is 4/20/2026
-        playoff_start_date = datetime.date(2026, 4, 19)
+        playoff_start_date = utils.get_playoff_start_date(self.year).date()
         cur_playoff_results = self.get_cur_playoff_results(playoff_start_date)
 
         # clear all future games - we create them ourselves
@@ -932,7 +955,9 @@ class Season:
             6: True,
         }
         num_games_added = 0
-        playoff_completed = self.get_playoff_games_completed(datetime.date(2025, 4, 19))
+        playoff_completed = self.get_playoff_games_completed(
+            utils.get_playoff_start_date(self.year).date()
+        )
 
         for label, (team1, team2) in matchups.items():
 
@@ -1119,7 +1144,9 @@ class Season:
             6: True,
         }
         num_games_added = 0
-        playoff_completed = self.get_playoff_games_completed(datetime.date(2025, 4, 20))
+        playoff_completed = self.get_playoff_games_completed(
+            utils.get_playoff_start_date(self.year).date()
+        )
 
         for label, (team1, team2) in matchups.items():
 
@@ -1281,7 +1308,10 @@ class Season:
             6: True,
         }
         num_games_added = 0
-        playoff_completed = self.get_playoff_games_completed(datetime.date(2025, 4, 20))
+        # TODO: is this right?
+        playoff_completed = self.get_playoff_games_completed(
+            utils.get_playoff_start_date(self.year).date()
+        )
 
         for label, (team1, team2) in matchups.items():
 
@@ -1442,7 +1472,10 @@ class Season:
             6: True,
         }
         num_games_added = 0
-        playoff_completed = self.get_playoff_games_completed(datetime.date(2025, 4, 20))
+        # TODO: is this right?
+        playoff_completed = self.get_playoff_games_completed(
+            utils.get_playoff_start_date(self.year).date()
+        )
 
         for label, (team1, team2) in matchups.items():
 
@@ -1892,7 +1925,7 @@ class Season:
             "MIN",
             "LAC",
             "DAL",
-            "PHO",
+            "PHX",
             "LAL",
             "NOP",
             "SAC",
@@ -1932,8 +1965,11 @@ class Season:
         wc_df = wc_df[wc_df.index.isin(western_conference)]
 
         # sort teams by their position in eastern_conference and western_conference
-        ec_df = ec_df.loc[eastern_conference]
-        wc_df = wc_df.loc[western_conference]
+        # Only reindex with teams that actually exist in the DataFrames
+        ec_teams_present = [t for t in eastern_conference if t in ec_df.index]
+        wc_teams_present = [t for t in western_conference if t in wc_df.index]
+        ec_df = ec_df.loc[ec_teams_present]
+        wc_df = wc_df.loc[wc_teams_present]
 
         ec_df["team"] = ec_df.index
         wc_df["team"] = wc_df.index
@@ -2227,6 +2263,7 @@ def get_sim_report(season_results_over_sims, playoff_results_over_sims, num_sims
 
 
 def run_single_simulation(
+    year,
     completed_year_games,
     future_year_games,
     margin_model,
@@ -2235,7 +2272,7 @@ def run_single_simulation(
     std_pace,
 ):
     season = Season(
-        2025,
+        year,
         completed_year_games,
         future_year_games,
         margin_model,
@@ -2486,6 +2523,7 @@ def sim_season(
             pool.apply_async(
                 run_single_simulation,
                 args=(
+                    year,
                     completed_year_games,
                     future_year_games,
                     margin_model,
@@ -2503,6 +2541,7 @@ def sim_season(
         for i in range(num_sims):
             logger.info(f"Running simulation {i+1}/{num_sims}...")
             sim_result = run_single_simulation(
+                year,
                 completed_year_games,
                 future_year_games,
                 margin_model,
