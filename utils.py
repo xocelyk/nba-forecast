@@ -294,7 +294,7 @@ def sgd_ratings(
             max_change = np.max(np.abs(ratings - prev_ratings))
             if max_change < convergence_threshold:
                 if verbose:
-                    print(f"Converged after {iteration + 1} iterations")
+                    print(f"Converged after {epoch + 1} iterations")
                 break
 
         prev_ratings = ratings.copy()

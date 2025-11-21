@@ -228,9 +228,10 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         data_df = loader.add_garbage_time_to_games(data_df)
 
     # Add advanced statistics for all completed games
-    if len(all_completed_games) > 0:
-        print(f"Checking for advanced statistics...")
-        data_df = loader.add_advanced_stats_to_games(data_df)
+    # TEMPORARILY DISABLED: Timeouts from NBA API
+    # if len(all_completed_games) > 0:
+    #     print(f"Checking for advanced statistics...")
+    #     data_df = loader.add_advanced_stats_to_games(data_df)
 
     # Select and order columns
     # Include garbage time columns and advanced stats columns if they exist
