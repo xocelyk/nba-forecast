@@ -75,7 +75,7 @@ class Season:
         self.mean_pace = mean_pace
         self.std_pace = std_pace
         self.update_counter = 1
-        self.update_every = 5
+        self.update_every = 1
         # Vectorized pace assignment instead of list comprehensions
         self.future_games["pace"] = np.random.normal(
             self.mean_pace, self.std_pace, size=len(self.future_games)
