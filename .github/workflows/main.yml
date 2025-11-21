@@ -2,6 +2,9 @@ name: Daily Update
 on:
   schedule:
     - cron: '0 11 * * *' # run at 11am UTC
+  push:
+    branches:
+      - main
 
 jobs:
   daily_update:
@@ -39,5 +42,5 @@ jobs:
             git config --global user.email "bot@invalid.email"
             git config --global user.name "GitHub Action Bot"
             git add .
-            git commit -m "Automated data update" || exit 0   # This exits with 0 if there's nothing to commit
+            git commit -m "Automated data update [skip ci]" || exit 0   # This exits with 0 if there's nothing to commit
             git push --force
