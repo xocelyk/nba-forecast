@@ -86,15 +86,25 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+# Cache for parsed playoff start dates to avoid repeated pd.to_datetime() calls
+_PLAYOFF_START_CACHE = {}
+
 
 def get_playoff_start_date(year: int) -> pd.Timestamp:
-    """Return the start date of the playoffs for ``year``."""
+    """Return the start date of the playoffs for ``year``, with caching."""
+    # Check cache first to avoid repeated pd.to_datetime() calls
+    if year in _PLAYOFF_START_CACHE:
+        return _PLAYOFF_START_CACHE[year]
+
     end_date = NBA_REG_SEASON_END_DATES.get(year)
     if end_date is None:
         logger.warning(f"No end date found for year {year}, falling back to mid-April")
         # Fall back to mid-April if we have no data
         end_date = f"{year}-04-13"
-    return pd.to_datetime(end_date) + pd.Timedelta(days=1)
+
+    playoff_start = pd.to_datetime(end_date) + pd.Timedelta(days=1)
+    _PLAYOFF_START_CACHE[year] = playoff_start
+    return playoff_start
 
 
 def is_playoff_date(date, year: int) -> bool:
@@ -105,19 +115,31 @@ def is_playoff_date(date, year: int) -> bool:
 
 def add_playoff_indicator(df: pd.DataFrame) -> pd.DataFrame:
     """Add a binary ``playoff`` column to ``df`` based on ``date`` and ``year``."""
+    # Early exit if playoff column already exists and is valid
+    if "playoff" in df.columns and not df["playoff"].isna().any():
+        return df
+
     df = df.copy()
+
     if "year" not in df.columns:
         # Infer year from date if not available
         df["playoff"] = df["date"].apply(
             lambda d: int(is_playoff_date(d, pd.to_datetime(d).year))
         )
     else:
-        df = df.reset_index(drop=True)
-        playoff_values = []
-        for idx, row in df.iterrows():
-            playoff_val = int(is_playoff_date(row["date"], int(row["year"])))
-            playoff_values.append(playoff_val)
+        # Vectorized approach: group by year and do batch comparison
+        playoff_values = pd.Series(0, index=df.index)
+
+        for year in df["year"].unique():
+            year_mask = df["year"] == year
+            playoff_start = get_playoff_start_date(int(year))
+
+            # Ensure dates are datetime objects
+            dates = pd.to_datetime(df.loc[year_mask, "date"])
+            playoff_values[year_mask] = (dates >= playoff_start).astype(int)
+
         df["playoff"] = playoff_values
+
     return df
 
 

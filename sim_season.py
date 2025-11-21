@@ -252,8 +252,8 @@ class Season:
         # After playing a series of games (e.g. a day), update the ratings for each team
         if self.future_games.empty:
             return
-        self.future_games = utils.add_playoff_indicator(self.future_games)
-        self.completed_games = utils.add_playoff_indicator(self.completed_games)
+        # Playoff indicator already set in __init__ and doesn't change during simulation
+        # Removed redundant add_playoff_indicator() calls for performance (was called 156 times/sim)
         if games_on_date is None:
             games_on_date = self.future_games[self.future_games["completed"] == True]
 
