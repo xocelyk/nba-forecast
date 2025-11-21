@@ -1,0 +1,105 @@
+name: Test Suite
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.11']
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Cache pip dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Create test data directories
+      run: |
+        mkdir -p data/games
+        mkdir -p data/sim_results/archive
+        mkdir -p data/seed_reports/archive
+        mkdir -p data/end_year_ratings
+
+    - name: Run tests with coverage
+      run: |
+        python -m pytest tests/ -v --cov=. --cov-report=term-missing --cov-report=xml --cov-report=html
+
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
+        verbose: true
+
+    - name: Archive coverage reports
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-reports
+        path: |
+          htmlcov/
+          coverage.xml
+
+    - name: Check coverage threshold
+      run: |
+        python -c "
+        import xml.etree.ElementTree as ET
+        tree = ET.parse('coverage.xml')
+        root = tree.getroot()
+        coverage = float(root.attrib['line-rate']) * 100
+        print(f'Current coverage: {coverage:.2f}%')
+        if coverage < 50:
+            print('⚠️  Coverage below threshold (50%)')
+            exit(1)
+        else:
+            print('✅ Coverage threshold met')
+        "
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install linting tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install black flake8 isort
+
+    - name: Check code formatting with black
+      run: black --check --diff .
+
+    - name: Check import sorting with isort
+      run: isort --check-only --diff .
+
+    - name: Lint with flake8
+      run: flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics

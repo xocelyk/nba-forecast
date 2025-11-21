@@ -4,7 +4,7 @@ on:
     - cron: '0 11 * * *' # run at 11am UTC
 
 jobs:
-  run_my_code:
+  daily_update:
     runs-on: ubuntu-latest
     steps:
         - name: Check if we should skip (before Oct 20, 2025)
