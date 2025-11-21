@@ -16,12 +16,104 @@ def get_team_names(year: int = 2026):
     return loader.get_team_names(year)
 
 
+def backfill_garbage_time_for_year(year: int):
+    """
+    Backfill garbage time detection for a specific year's games.
+
+    Args:
+        year: Year to backfill (e.g., 2024)
+    """
+    filename = os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
+
+    # Check if file exists
+    if not os.path.exists(filename):
+        print(f"No data file found for year {year}, skipping backfill")
+        return
+
+    # Load the data
+    df = pd.read_csv(filename, dtype={"game_id": str})
+
+    # Initialize garbage time columns if they don't exist
+    if "garbage_time_detected" not in df.columns:
+        df["garbage_time_detected"] = None
+    if "garbage_time_cutoff_period" not in df.columns:
+        df["garbage_time_cutoff_period"] = None
+    if "garbage_time_cutoff_clock" not in df.columns:
+        df["garbage_time_cutoff_clock"] = None
+    if "garbage_time_cutoff_action_number" not in df.columns:
+        df["garbage_time_cutoff_action_number"] = None
+    if "garbage_time_possessions_before_cutoff" not in df.columns:
+        df["garbage_time_possessions_before_cutoff"] = None
+
+    # Find completed games without garbage time data
+    needs_garbage_time = df["completed"] & df["garbage_time_detected"].isna()
+    games_needing_detection = df[needs_garbage_time]
+
+    if len(games_needing_detection) == 0:
+        print(f"Year {year}: All games already have garbage time data")
+        return
+
+    print(
+        f"Year {year}: Backfilling garbage time for {len(games_needing_detection)} games..."
+    )
+
+    loader = nba_api_loader.get_loader()
+    df_with_garbage_time = loader.add_garbage_time_to_games(df)
+
+    # Save the updated data
+    # Preserve the column order - garbage time columns should be at the end
+    base_columns = [
+        "game_id",
+        "date",
+        "team",
+        "opponent",
+        "team_name",
+        "opponent_name",
+        "team_score",
+        "opponent_score",
+        "margin",
+        "location",
+        "pace",
+        "completed",
+        "year",
+    ]
+
+    garbage_time_columns = [
+        "garbage_time_detected",
+        "garbage_time_cutoff_period",
+        "garbage_time_cutoff_clock",
+        "garbage_time_cutoff_action_number",
+        "garbage_time_possessions_before_cutoff",
+    ]
+
+    columns_to_save = base_columns.copy()
+    for col in garbage_time_columns:
+        if col in df_with_garbage_time.columns:
+            columns_to_save.append(col)
+
+    df_with_garbage_time = df_with_garbage_time[columns_to_save]
+    df_with_garbage_time.to_csv(filename, index=False)
+
+    print(f"Year {year}: Saved updated data with garbage time detection")
+
+
+
 def load_year_data(year: int = 2026):
     """Load completed game rows from the CSV for ``year``."""
     filename = os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
     # Read game_id as string to preserve leading zeros
     df = pd.read_csv(filename, dtype={"game_id": str})
     df = df[df["completed"] == True]
+
+    # Initialize garbage time columns if they don't exist
+    if "garbage_time_detected" not in df.columns:
+        df["garbage_time_detected"] = None
+    if "garbage_time_cutoff_period" not in df.columns:
+        df["garbage_time_cutoff_period"] = None
+    if "garbage_time_cutoff_clock" not in df.columns:
+        df["garbage_time_cutoff_clock"] = None
+    if "garbage_time_possessions_before_cutoff" not in df.columns:
+        df["garbage_time_possessions_before_cutoff"] = None
 
     data = []
     for _, row in df.iterrows():
@@ -76,10 +168,10 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     # Add pace data for new completed games
     completed_games = new_games[new_games["completed"] == True]
     if len(completed_games) > 0:
-        print(f"Fetching pace for {len(completed_games)} completed games...")
+        print(f"Fetching pace for {len(completed_games)} new completed games...")
         new_games = loader.add_pace_to_games(new_games)
 
-    # Combine with existing data
+    # Combine with existing data FIRST, then add garbage time to full dataset
     if preload and existing_data:
         # Convert existing data back to DataFrame
         existing_df = pd.DataFrame(
@@ -102,13 +194,14 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
 
         # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
         # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-        abbr_mapping = {"PHO": "PHX"}
+        # CHA -> CHO (Charlotte API abbreviation vs win totals abbreviation)
+        abbr_mapping = {"PHO": "PHX", "CHA": "CHO"}
         existing_df["team"] = existing_df["team"].replace(abbr_mapping)
         existing_df["opponent"] = existing_df["opponent"].replace(abbr_mapping)
 
         # Add missing columns
         abbr_to_name = {v: k for k, v in names_to_abbr.items()}
-        # Update abbr_to_name to use PHX instead of PHO
+        # Update abbr_to_name to use PHX/CHO instead of PHO/CHA
         abbr_to_name = {
             abbr_mapping.get(abbr, abbr): name for abbr, name in abbr_to_name.items()
         }
@@ -128,31 +221,59 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     data_df["date"] = pd.to_datetime(data_df["date"])
     data_df = utils.add_playoff_indicator(data_df)
 
-    # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-    # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-    # This mapping must match the one in main.py
-    abbr_mapping = {"PHO": "PHX"}
-    data_df["team"] = data_df["team"].replace(abbr_mapping)
-    data_df["opponent"] = data_df["opponent"].replace(abbr_mapping)
+    # Add garbage time detection for all completed games
+    all_completed_games = data_df[data_df["completed"] == True]
+    if len(all_completed_games) > 0:
+        print(f"Detecting garbage time for {len(all_completed_games)} completed games...")
+        data_df = loader.add_garbage_time_to_games(data_df)
+
+    # Add advanced statistics for all completed games
+    if len(all_completed_games) > 0:
+        print(f"Checking for advanced statistics...")
+        data_df = loader.add_advanced_stats_to_games(data_df)
 
     # Select and order columns
-    data_df = data_df[
-        [
-            "game_id",
-            "date",
-            "team",
-            "opponent",
-            "team_name",
-            "opponent_name",
-            "team_score",
-            "opponent_score",
-            "margin",
-            "location",
-            "pace",
-            "completed",
-            "year",
-        ]
+    # Include garbage time columns and advanced stats columns if they exist
+    from advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS
+
+    base_columns = [
+        "game_id",
+        "date",
+        "team",
+        "opponent",
+        "team_name",
+        "opponent_name",
+        "team_score",
+        "opponent_score",
+        "margin",
+        "location",
+        "pace",
+        "completed",
+        "year",
     ]
+
+    garbage_time_columns = [
+        "garbage_time_detected",
+        "garbage_time_cutoff_period",
+        "garbage_time_cutoff_clock",
+        "garbage_time_cutoff_action_number",
+        "garbage_time_possessions_before_cutoff",
+    ]
+
+    # Build column list: base + garbage time + advanced stats
+    columns_to_select = base_columns.copy()
+
+    # Add garbage time columns if they exist
+    for col in garbage_time_columns:
+        if col in data_df.columns:
+            columns_to_select.append(col)
+
+    # Add advanced stats columns if they exist
+    for col in ALL_ADVANCED_STATS_COLUMNS:
+        if col in data_df.columns:
+            columns_to_select.append(col)
+
+    data_df = data_df[columns_to_select]
 
     # Set index and save
     data_df.set_index("game_id", inplace=True)
@@ -203,6 +324,18 @@ def load_training_data(
 
     win_totals_futures = load_regular_season_win_totals_futures()
 
+    # NOTE: Garbage time backfilling is disabled by default
+    # To enable it when implementing effective margin system, uncomment below:
+    # if reset:
+    #     print("\n" + "=" * 80)
+    #     print("BACKFILLING GARBAGE TIME DETECTION FOR HISTORICAL DATA")
+    #     print("=" * 80)
+    #     for year in range(start_year, stop_year + 1):
+    #         backfill_garbage_time_for_year(year)
+    #     print("=" * 80)
+    #     print("BACKFILL COMPLETE")
+    #     print("=" * 80 + "\n")
+
     if update == True:
         all_data = []
         end_year_ratings_dct = {}
@@ -228,8 +361,9 @@ def load_training_data(
 
             # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
             # PHO -> PHX (Phoenix changed their abbreviation after 2020)
+            # CHA -> CHO (Charlotte API abbreviation vs win totals abbreviation)
             # After 2020, all data uses PHX instead of PHO
-            abbr_mapping = {"PHO": "PHX"}
+            abbr_mapping = {"PHO": "PHX", "CHA": "CHO"}
             year_data["team"] = year_data["team"].replace(abbr_mapping)
             year_data["opponent"] = year_data["opponent"].replace(abbr_mapping)
 

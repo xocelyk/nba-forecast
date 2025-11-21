@@ -2218,7 +2218,7 @@ class Season:
             "Central": ["MIL", "IND", "CHI", "DET", "CLE"],
             "Southeast": ["MIA", "ORL", "CHO", "WAS", "ATL"],
             "Northwest": ["DEN", "UTA", "POR", "OKC", "MIN"],
-            "Pacific": ["LAL", "LAC", "PHO", "SAC", "GSW"],
+            "Pacific": ["LAL", "LAC", "PHX", "SAC", "GSW"],
             "Southwest": ["HOU", "DAL", "MEM", "NOP", "SAS"],
         }
         for division, teams in divisions.items():
