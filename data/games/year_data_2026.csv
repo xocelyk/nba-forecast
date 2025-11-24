@@ -221,34 +221,34 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0022500259,2025-11-19,MIN,WAS,Minnesota Timberwolves,Washington Wizards,120.0,109.0,11.0,Home,,True,2026,False,,,,27
 0022500262,2025-11-19,DAL,NYK,Dallas Mavericks,New York Knicks,111.0,113.0,-2.0,Home,,True,2026,False,,,,38
 0022500263,2025-11-19,POR,CHI,Portland Trail Blazers,Chicago Bulls,121.0,122.0,-1.0,Home,,True,2026,False,,,,28
-0022500264,2025-11-20,ORL,LAC,Magic,Clippers,129.0,101.0,28.0,Home,,True,2026,True,4,PT09M39.00S,542,23
-0022500265,2025-11-20,MEM,SAC,Grizzlies,Kings,137.0,96.0,41.0,Home,,True,2026,True,3,PT02M33.00S,510,15
-0022500266,2025-11-20,MIL,PHI,Bucks,76ers,114.0,123.0,-9.0,Home,,True,2026,False,,,,32
-0022500267,2025-11-20,SAS,ATL,Spurs,Hawks,135.0,126.0,9.0,Home,,True,2026,True,4,PT03M16.00S,624,26
-0022500048,2025-11-21,CLE,IND,Cavaliers,Pacers,120.0,109.0,11.0,Home,,True,2026,True,4,PT03M14.00S,706,28
-0022500049,2025-11-21,BOS,BRK,Celtics,Nets,105.0,113.0,-8.0,Home,,True,2026,False,,,,25
-0022500050,2025-11-21,TOR,WAS,Raptors,Wizards,140.0,110.0,30.0,Home,,True,2026,True,3,PT00M29.10S,523,26
-0022500051,2025-11-21,CHI,MIA,Bulls,Heat,107.0,143.0,-36.0,Home,,True,2026,False,,,,25
-0022500052,2025-11-21,DAL,NOP,Mavericks,Pelicans,118.0,115.0,3.0,Home,,True,2026,False,,,,33
-0022500053,2025-11-21,PHX,MIN,Suns,Timberwolves,114.0,113.0,1.0,Home,,True,2026,False,,,,48
-0022500054,2025-11-21,HOU,DEN,Rockets,Nuggets,109.0,112.0,-3.0,Home,,True,2026,False,,,,33
-0022500055,2025-11-21,UTA,OKC,Jazz,Thunder,112.0,144.0,-32.0,Home,,True,2026,False,,,,35
-0022500056,2025-11-21,GSW,POR,Warriors,Trail Blazers,123.0,127.0,-4.0,Home,,True,2026,False,,,,39
-0022500268,2025-11-22,CHO,LAC,Hornets,Clippers,116.0,131.0,-15.0,Home,,True,2026,False,,,,27
-0022500269,2025-11-22,ORL,NYK,Magic,Knicks,0.0,0.0,,Home,,False,2026,,,,,
-0022500270,2025-11-22,NOP,ATL,Pelicans,Hawks,0.0,0.0,,Home,,False,2026,,,,,
-0022500271,2025-11-22,CHI,WAS,Bulls,Wizards,0.0,0.0,,Home,,False,2026,,,,,
-0022500272,2025-11-22,MIL,DET,Bucks,Pistons,0.0,0.0,,Home,,False,2026,,,,,
-0022500273,2025-11-22,DAL,MEM,Mavericks,Grizzlies,0.0,0.0,,Home,,False,2026,,,,,
-0022500274,2025-11-22,DEN,SAC,Nuggets,Kings,0.0,0.0,,Home,,False,2026,,,,,
-0022500275,2025-11-23,PHI,MIA,76ers,Heat,0.0,0.0,,Home,,False,2026,,,,,
-0022500276,2025-11-23,ATL,CHO,Hawks,Hornets,0.0,0.0,,Home,,False,2026,,,,,
-0022500277,2025-11-23,BOS,ORL,Celtics,Magic,0.0,0.0,,Home,,False,2026,,,,,
-0022500278,2025-11-23,CLE,LAC,Cavaliers,Clippers,0.0,0.0,,Home,,False,2026,,,,,
-0022500279,2025-11-23,TOR,BRK,Raptors,Nets,0.0,0.0,,Home,,False,2026,,,,,
-0022500280,2025-11-23,OKC,POR,Thunder,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,
-0022500281,2025-11-23,PHX,SAS,Suns,Spurs,0.0,0.0,,Home,,False,2026,,,,,
-0022500282,2025-11-23,UTA,LAL,Jazz,Lakers,0.0,0.0,,Home,,False,2026,,,,,
+0022500264,2025-11-20,ORL,LAC,Orlando Magic,Los Angeles Clippers,129.0,101.0,28.0,Home,,True,2026,True,4,PT09M39.00S,542,23
+0022500265,2025-11-20,MEM,SAC,Memphis Grizzlies,Sacramento Kings,137.0,96.0,41.0,Home,,True,2026,True,3,PT02M33.00S,510,15
+0022500266,2025-11-20,MIL,PHI,Milwaukee Bucks,Philadelphia 76ers,114.0,123.0,-9.0,Home,,True,2026,False,,,,32
+0022500267,2025-11-20,SAS,ATL,San Antonio Spurs,Atlanta Hawks,135.0,126.0,9.0,Home,,True,2026,True,4,PT03M16.00S,624,26
+0022500048,2025-11-21,CLE,IND,Cleveland Cavaliers,Indiana Pacers,120.0,109.0,11.0,Home,,True,2026,True,4,PT03M14.00S,706,28
+0022500049,2025-11-21,BOS,BRK,Boston Celtics,Brooklyn Nets,105.0,113.0,-8.0,Home,,True,2026,False,,,,25
+0022500050,2025-11-21,TOR,WAS,Toronto Raptors,Washington Wizards,140.0,110.0,30.0,Home,,True,2026,True,3,PT00M29.10S,523,26
+0022500051,2025-11-21,CHI,MIA,Chicago Bulls,Miami Heat,107.0,143.0,-36.0,Home,,True,2026,False,,,,25
+0022500052,2025-11-21,DAL,NOP,Dallas Mavericks,New Orleans Pelicans,118.0,115.0,3.0,Home,,True,2026,False,,,,33
+0022500053,2025-11-21,PHX,MIN,Phoenix Suns,Minnesota Timberwolves,114.0,113.0,1.0,Home,,True,2026,False,,,,48
+0022500054,2025-11-21,HOU,DEN,Houston Rockets,Denver Nuggets,109.0,112.0,-3.0,Home,,True,2026,False,,,,33
+0022500055,2025-11-21,UTA,OKC,Utah Jazz,Oklahoma City Thunder,112.0,144.0,-32.0,Home,,True,2026,False,,,,35
+0022500056,2025-11-21,GSW,POR,Golden State Warriors,Portland Trail Blazers,123.0,127.0,-4.0,Home,,True,2026,False,,,,39
+0022500268,2025-11-22,CHO,LAC,Charlotte Hornets,Los Angeles Clippers,116.0,131.0,-15.0,Home,,True,2026,False,,,,27
+0022500269,2025-11-22,ORL,NYK,Magic,Knicks,133.0,121.0,12.0,Home,,True,2026,True,4,PT04M01.00S,667,30
+0022500270,2025-11-22,NOP,ATL,Pelicans,Hawks,98.0,115.0,-17.0,Home,,True,2026,False,,,,20
+0022500271,2025-11-22,CHI,WAS,Bulls,Wizards,121.0,120.0,1.0,Home,,True,2026,False,,,,29
+0022500272,2025-11-22,MIL,DET,Bucks,Pistons,116.0,129.0,-13.0,Home,,True,2026,False,,,,29
+0022500273,2025-11-22,DAL,MEM,Mavericks,Grizzlies,96.0,102.0,-6.0,Home,,True,2026,False,,,,26
+0022500274,2025-11-22,DEN,SAC,Nuggets,Kings,123.0,128.0,-5.0,Home,,True,2026,False,,,,20
+0022500275,2025-11-23,PHI,MIA,76ers,Heat,117.0,127.0,-10.0,Home,,True,2026,False,,,,27
+0022500276,2025-11-23,ATL,CHO,Hawks,Hornets,113.0,110.0,3.0,Home,,True,2026,False,,,,28
+0022500277,2025-11-23,BOS,ORL,Celtics,Magic,138.0,129.0,9.0,Home,,True,2026,False,,,,17
+0022500278,2025-11-23,CLE,LAC,Cavaliers,Clippers,120.0,105.0,15.0,Home,,True,2026,True,4,PT03M00.00S,644,28
+0022500279,2025-11-23,TOR,BRK,Raptors,Nets,119.0,109.0,10.0,Home,,True,2026,False,,,,27
+0022500280,2025-11-23,OKC,POR,Thunder,Trail Blazers,122.0,95.0,27.0,Home,,True,2026,True,3,PT01M08.00S,548,24
+0022500281,2025-11-23,PHX,SAS,Suns,Spurs,111.0,102.0,9.0,Home,,True,2026,True,4,PT03M01.00S,652,23
+0022500282,2025-11-23,UTA,LAL,Jazz,Lakers,106.0,108.0,-2.0,Home,,True,2026,False,,,,25
 0022500283,2025-11-24,IND,DET,Pacers,Pistons,0.0,0.0,,Home,,False,2026,,,,,
 0022500284,2025-11-24,TOR,CLE,Raptors,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,
 0022500285,2025-11-24,BRK,NYK,Nets,Knicks,0.0,0.0,,Home,,False,2026,,,,,
