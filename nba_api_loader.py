@@ -14,7 +14,9 @@ Key Features:
 """
 
 import logging
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Dict, List, Optional, Tuple
 
 import numpy as np
@@ -44,6 +46,7 @@ class NBAAPILoader:
         """
         self.rate_limit = rate_limit_seconds
         self.last_call_time = 0
+        self._rate_limit_lock = threading.Lock()
         self._teams_cache = None
         self._abbr_to_id = None
         self._id_to_abbr = None
@@ -58,11 +61,12 @@ class NBAAPILoader:
         }
 
     def _rate_limit(self):
-        """Enforce rate limiting between API calls."""
-        elapsed = time.time() - self.last_call_time
-        if elapsed < self.rate_limit:
-            time.sleep(self.rate_limit - elapsed)
-        self.last_call_time = time.time()
+        """Enforce rate limiting between API calls (thread-safe)."""
+        with self._rate_limit_lock:
+            elapsed = time.time() - self.last_call_time
+            if elapsed < self.rate_limit:
+                time.sleep(self.rate_limit - elapsed)
+            self.last_call_time = time.time()
 
     def _init_team_cache(self):
         """Initialize team data cache."""
@@ -367,7 +371,62 @@ class NBAAPILoader:
 
         return games_df
 
-    def add_garbage_time_to_games(self, games_df: pd.DataFrame) -> pd.DataFrame:
+    def _process_single_game_garbage_time(self, idx, game, detector):
+        """
+        Process garbage time detection for a single game.
+
+        Helper function for parallel processing in add_garbage_time_to_games.
+
+        Args:
+            idx: DataFrame index
+            game: Game row from DataFrame
+            detector: GarbageTimeDetector instance
+
+        Returns:
+            Tuple of (idx, result_dict) where result_dict contains:
+                - success: bool
+                - garbage_time_detected: bool or None
+                - cutoff_period: int or None
+                - cutoff_clock: str or None
+                - cutoff_action_number: int or None
+                - possessions_before_cutoff: int or None
+                - error: str or None
+        """
+        game_id = game["game_id"]
+        result_dict = {
+            "success": False,
+            "garbage_time_detected": None,
+            "cutoff_period": None,
+            "cutoff_clock": None,
+            "cutoff_action_number": None,
+            "possessions_before_cutoff": None,
+            "error": None
+        }
+
+        try:
+            result = detector.detect_garbage_time(game_id, max_game_time_minutes=45.0)
+
+            if result is not None:
+                result_dict["success"] = True
+                result_dict["garbage_time_detected"] = result["garbage_time_started"]
+                result_dict["cutoff_period"] = result.get("cutoff_period")
+                result_dict["cutoff_clock"] = result.get("cutoff_clock")
+                result_dict["cutoff_action_number"] = result.get("cutoff_action_number")
+                result_dict["possessions_before_cutoff"] = result.get("total_possessions_before_cutoff")
+            else:
+                logger.warning(f"Could not get garbage time data for game {game_id}")
+                result_dict["success"] = True
+                result_dict["garbage_time_detected"] = False
+
+        except Exception as e:
+            logger.warning(f"Error detecting garbage time for game {game_id}: {e}")
+            result_dict["success"] = True
+            result_dict["garbage_time_detected"] = False
+            result_dict["error"] = str(e)
+
+        return (idx, result_dict)
+
+    def add_garbage_time_to_games(self, games_df: pd.DataFrame, num_workers: int = 1) -> pd.DataFrame:
         """
         Add garbage time detection data to completed games.
 
@@ -377,6 +436,7 @@ class NBAAPILoader:
 
         Args:
             games_df: DataFrame with game data
+            num_workers: Number of parallel workers for processing games (default: 1)
 
         Returns:
             DataFrame with garbage time columns filled for completed games
@@ -415,36 +475,59 @@ class NBAAPILoader:
 
         detector = get_detector()
 
-        # Detect garbage time for each game
-        for idx, game in games_needing_detection.iterrows():
-            game_id = game["game_id"]
+        # Detect garbage time for each game (sequential or parallel depending on num_workers)
+        if num_workers <= 1:
+            # Sequential processing (original behavior)
+            for idx, game in games_needing_detection.iterrows():
+                game_id = game["game_id"]
 
-            try:
-                result = detector.detect_garbage_time(game_id, max_game_time_minutes=45.0)
+                try:
+                    result = detector.detect_garbage_time(game_id, max_game_time_minutes=45.0)
 
-                if result is not None:
-                    games_df.at[idx, "garbage_time_detected"] = result[
-                        "garbage_time_started"
-                    ]
-                    games_df.at[idx, "garbage_time_cutoff_period"] = result.get(
-                        "cutoff_period"
-                    )
-                    games_df.at[idx, "garbage_time_cutoff_clock"] = result.get(
-                        "cutoff_clock"
-                    )
-                    games_df.at[idx, "garbage_time_cutoff_action_number"] = result.get(
-                        "cutoff_action_number"
-                    )
-                    games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
-                        result.get("total_possessions_before_cutoff")
-                    )
-                else:
-                    logger.warning(f"Could not get garbage time data for game {game_id}")
+                    if result is not None:
+                        games_df.at[idx, "garbage_time_detected"] = result[
+                            "garbage_time_started"
+                        ]
+                        games_df.at[idx, "garbage_time_cutoff_period"] = result.get(
+                            "cutoff_period"
+                        )
+                        games_df.at[idx, "garbage_time_cutoff_clock"] = result.get(
+                            "cutoff_clock"
+                        )
+                        games_df.at[idx, "garbage_time_cutoff_action_number"] = result.get(
+                            "cutoff_action_number"
+                        )
+                        games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
+                            result.get("total_possessions_before_cutoff")
+                        )
+                    else:
+                        logger.warning(f"Could not get garbage time data for game {game_id}")
+                        games_df.at[idx, "garbage_time_detected"] = False
+
+                except Exception as e:
+                    logger.warning(f"Error detecting garbage time for game {game_id}: {e}")
                     games_df.at[idx, "garbage_time_detected"] = False
+        else:
+            # Parallel processing with ThreadPoolExecutor
+            logger.info(f"Using {num_workers} parallel workers for garbage time detection")
 
-            except Exception as e:
-                logger.warning(f"Error detecting garbage time for game {game_id}: {e}")
-                games_df.at[idx, "garbage_time_detected"] = False
+            with ThreadPoolExecutor(max_workers=num_workers) as executor:
+                # Submit all games for processing
+                future_to_game = {
+                    executor.submit(self._process_single_game_garbage_time, idx, game, detector): (idx, game)
+                    for idx, game in games_needing_detection.iterrows()
+                }
+
+                # Process results as they complete
+                for future in as_completed(future_to_game):
+                    idx, result_dict = future.result()
+
+                    # Update DataFrame with results
+                    games_df.at[idx, "garbage_time_detected"] = result_dict["garbage_time_detected"]
+                    games_df.at[idx, "garbage_time_cutoff_period"] = result_dict["cutoff_period"]
+                    games_df.at[idx, "garbage_time_cutoff_clock"] = result_dict["cutoff_clock"]
+                    games_df.at[idx, "garbage_time_cutoff_action_number"] = result_dict["cutoff_action_number"]
+                    games_df.at[idx, "garbage_time_possessions_before_cutoff"] = result_dict["possessions_before_cutoff"]
 
         completed_with_garbage_time = (
             games_df["completed"] & games_df["garbage_time_detected"].notna()
