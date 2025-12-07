@@ -165,11 +165,8 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     else:
         new_games = games_df
 
-    # Add pace data for new completed games
-    completed_games = new_games[new_games["completed"] == True]
-    if len(completed_games) > 0:
-        print(f"Fetching pace for {len(completed_games)} new completed games...")
-        new_games = loader.add_pace_to_games(new_games)
+    # DEPRECATED 2024-12-07: Pace now comes from effective_pace via add_effective_stats_to_games()
+    # No longer fetching pace from box score stats
 
     # Combine with existing data FIRST, then add garbage time to full dataset
     if preload and existing_data:
@@ -221,21 +218,19 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     data_df["date"] = pd.to_datetime(data_df["date"])
     data_df = utils.add_playoff_indicator(data_df)
 
-    # Add garbage time detection for all completed games
+    # Add effective stats (includes garbage time detection + effective margin/possessions/pace)
+    # for all completed games
     all_completed_games = data_df[data_df["completed"] == True]
     if len(all_completed_games) > 0:
-        print(f"Detecting garbage time for {len(all_completed_games)} completed games...")
-        data_df = loader.add_garbage_time_to_games(data_df)
+        print(f"Adding effective stats for {len(all_completed_games)} completed games...")
+        data_df = loader.add_effective_stats_to_games(data_df)
 
-    # Add advanced statistics for all completed games
-    # TEMPORARILY DISABLED: Timeouts from NBA API
-    # if len(all_completed_games) > 0:
-    #     print(f"Checking for advanced statistics...")
-    #     data_df = loader.add_advanced_stats_to_games(data_df)
+    # DEPRECATED 2024-12-07: Advanced stats collection disabled
+    # Box score stats (fga, oreb, etc.) are no longer collected
 
     # Select and order columns
-    # Include garbage time columns and advanced stats columns if they exist
-    from advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS
+    # Include only basic game info, garbage time detection, and effective stats
+    # DEPRECATED 2024-12-07: Removed ALL_ADVANCED_STATS_COLUMNS import and box score stats
 
     base_columns = [
         "game_id",
@@ -248,7 +243,6 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         "opponent_score",
         "margin",
         "location",
-        "pace",
         "completed",
         "year",
     ]
@@ -261,7 +255,19 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         "garbage_time_possessions_before_cutoff",
     ]
 
-    # Build column list: base + garbage time + advanced stats
+    effective_stats_columns = [
+        "effective_margin",
+        "effective_possessions",
+        "effective_pace",
+        "team_score_at_cutoff",
+        "opponent_score_at_cutoff",
+    ]
+
+    metadata_columns = [
+        "MISSING_DATA",
+    ]
+
+    # Build column list: base + garbage time + effective stats + metadata
     columns_to_select = base_columns.copy()
 
     # Add garbage time columns if they exist
@@ -269,8 +275,13 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         if col in data_df.columns:
             columns_to_select.append(col)
 
-    # Add advanced stats columns if they exist
-    for col in ALL_ADVANCED_STATS_COLUMNS:
+    # Add effective stats columns if they exist
+    for col in effective_stats_columns:
+        if col in data_df.columns:
+            columns_to_select.append(col)
+
+    # Add metadata columns if they exist
+    for col in metadata_columns:
         if col in data_df.columns:
             columns_to_select.append(col)
 
