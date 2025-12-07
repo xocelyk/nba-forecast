@@ -24,3 +24,6 @@ backfill_effective_stats.py
 backfill_pace.py
 data/playoff_model.pkl
 data/regular_season_model.pkl
+data/predictions/archive
+data/seed_reports/archive
+data/sim_results/archive
