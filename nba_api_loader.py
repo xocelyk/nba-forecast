@@ -22,11 +22,15 @@ from typing import Dict, List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
+import requests
 from nba_api.stats.endpoints import (
     boxscoretraditionalv2,
     scheduleleaguev2,
 )
 from nba_api.stats.static import teams
+
+# CDN endpoint for schedule data (fallback when API is blocked)
+NBA_CDN_SCHEDULE_URL = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
 
 logger = logging.getLogger("nba")
 
@@ -183,7 +187,7 @@ class NBAAPILoader:
                 max_delay=60.0,
             )
 
-            logger.info(f"Retrieved {len(schedule_df)} games from schedule")
+            logger.info(f"Retrieved {len(schedule_df)} games from schedule API")
 
             # Convert to standardized format (home team perspective)
             games = self._process_schedule_data(schedule_df, year)
@@ -191,8 +195,97 @@ class NBAAPILoader:
             return games
 
         except Exception as e:
-            logger.error(f"Error fetching schedule: {e}")
-            raise
+            logger.warning(f"API failed: {e}. Trying CDN fallback...")
+
+            # Try CDN fallback
+            try:
+                games = self._fetch_schedule_from_cdn(year)
+                logger.info(f"Retrieved {len(games)} games from CDN fallback")
+                return games
+            except Exception as cdn_error:
+                logger.error(f"CDN fallback also failed: {cdn_error}")
+                raise e  # Raise original API error
+
+    def _fetch_schedule_from_cdn(self, year: int) -> pd.DataFrame:
+        """
+        Fetch schedule from NBA CDN as fallback.
+
+        The CDN endpoint is less likely to block datacenter IPs since
+        it's designed for high-volume static content delivery.
+
+        Args:
+            year: Season ENDING year (e.g., 2024 for 2023-24 season)
+
+        Returns:
+            DataFrame with complete schedule (home team perspective)
+        """
+        def fetch_cdn():
+            resp = requests.get(
+                NBA_CDN_SCHEDULE_URL,
+                headers={"User-Agent": "Mozilla/5.0"},
+                timeout=60,
+            )
+            resp.raise_for_status()
+            return resp.json()
+
+        data = retry_with_backoff(
+            fetch_cdn,
+            max_retries=2,
+            base_delay=3.0,
+            max_delay=30.0,
+        )
+
+        games = []
+        for game_date in data['leagueSchedule']['gameDates']:
+            for game in game_date['games']:
+                # Skip preseason games
+                game_id = game.get('gameId', '')
+                if game_id.startswith('001'):  # Preseason game IDs start with 001
+                    continue
+
+                game_status = game.get('gameStatus', 1)
+                completed = game_status == 3
+
+                home_team = game.get('homeTeam', {})
+                away_team = game.get('awayTeam', {})
+
+                home_abbr = home_team.get('teamTricode', '')
+                away_abbr = away_team.get('teamTricode', '')
+
+                # Apply abbreviation mapping (BKN → BRK)
+                home_abbr = self.abbr_mapping.get(home_abbr, home_abbr)
+                away_abbr = self.abbr_mapping.get(away_abbr, away_abbr)
+
+                home_score = home_team.get('score')
+                away_score = away_team.get('score')
+
+                if completed and home_score is not None and away_score is not None:
+                    margin = float(home_score - away_score)
+                else:
+                    margin = None
+
+                game_record = {
+                    "game_id": game_id,
+                    "date": pd.to_datetime(game.get('gameDateUTC')),
+                    "team": home_abbr,
+                    "opponent": away_abbr,
+                    "team_name": home_team.get('teamName', ''),
+                    "opponent_name": away_team.get('teamName', ''),
+                    "team_score": float(home_score) if home_score is not None else None,
+                    "opponent_score": float(away_score) if away_score is not None else None,
+                    "margin": margin,
+                    "location": "Home",
+                    "pace": None,
+                    "completed": completed,
+                    "year": year,
+                }
+                games.append(game_record)
+
+        games_df = pd.DataFrame(games)
+        logger.info(
+            f"CDN: Processed {len(games_df)} games ({games_df['completed'].sum()} completed)"
+        )
+        return games_df
 
     def _process_schedule_data(
         self, schedule_df: pd.DataFrame, year: int
