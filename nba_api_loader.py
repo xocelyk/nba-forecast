@@ -14,6 +14,7 @@ Key Features:
 """
 
 import logging
+import random
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -28,6 +29,51 @@ from nba_api.stats.endpoints import (
 from nba_api.stats.static import teams
 
 logger = logging.getLogger("nba")
+
+
+def retry_with_backoff(
+    func,
+    max_retries: int = 3,
+    base_delay: float = 2.0,
+    max_delay: float = 30.0,
+    jitter: bool = True,
+):
+    """
+    Retry a function with exponential backoff.
+
+    Args:
+        func: Callable to retry
+        max_retries: Maximum number of retry attempts
+        base_delay: Initial delay in seconds
+        max_delay: Maximum delay between retries
+        jitter: Add random jitter to prevent thundering herd
+
+    Returns:
+        Result of the function call
+
+    Raises:
+        Last exception if all retries fail
+    """
+    last_exception = None
+
+    for attempt in range(max_retries + 1):
+        try:
+            return func()
+        except Exception as e:
+            last_exception = e
+            if attempt == max_retries:
+                logger.error(f"All {max_retries + 1} attempts failed: {e}")
+                raise
+
+            delay = min(base_delay * (2 ** attempt), max_delay)
+            if jitter:
+                delay = delay * (0.5 + random.random())
+
+            logger.warning(
+                f"Attempt {attempt + 1}/{max_retries + 1} failed: {e}. "
+                f"Retrying in {delay:.1f}s..."
+            )
+            time.sleep(delay)
 
 
 class NBAAPILoader:
@@ -122,9 +168,20 @@ class NBAAPILoader:
             f"Fetching season schedule for {season_str} season (year={year})..."
         )
 
+        def fetch_schedule():
+            schedule = scheduleleaguev2.ScheduleLeagueV2(
+                season=season_str,
+                timeout=60,  # Increase timeout to 60 seconds
+            )
+            return schedule.get_data_frames()[0]
+
         try:
-            schedule = scheduleleaguev2.ScheduleLeagueV2(season=season_str)
-            schedule_df = schedule.get_data_frames()[0]
+            schedule_df = retry_with_backoff(
+                fetch_schedule,
+                max_retries=3,
+                base_delay=5.0,
+                max_delay=60.0,
+            )
 
             logger.info(f"Retrieved {len(schedule_df)} games from schedule")
 
@@ -231,7 +288,7 @@ class NBAAPILoader:
         """
         self._rate_limit()
 
-        try:
+        def fetch_boxscore():
             boxscore = boxscoretraditionalv2.BoxScoreTraditionalV2(
                 game_id=game_id,
                 start_period=0,
@@ -239,9 +296,17 @@ class NBAAPILoader:
                 start_range=0,
                 end_range=2147483647,
                 range_type=0,
+                timeout=60,
             )
+            return boxscore.team_stats.get_data_frame()
 
-            team_stats = boxscore.team_stats.get_data_frame()
+        try:
+            team_stats = retry_with_backoff(
+                fetch_boxscore,
+                max_retries=2,
+                base_delay=3.0,
+                max_delay=30.0,
+            )
 
             if len(team_stats) >= 2:
                 pace = self._calculate_pace(team_stats.iloc[0], team_stats.iloc[1])
