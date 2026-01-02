@@ -19,7 +19,7 @@ from typing import Dict, Optional, Tuple
 import pandas as pd
 from nba_api.stats.endpoints import playbyplayv3
 
-from nba_api_loader import NBA_HEADERS, retry_with_backoff
+from nba_api_loader import retry_with_backoff
 
 logger = logging.getLogger("nba")
 
@@ -62,7 +62,6 @@ class GarbageTimeDetector:
         def fetch_pbp():
             pbp = playbyplayv3.PlayByPlayV3(
                 game_id=game_id,
-                headers=NBA_HEADERS,
                 timeout=60,
             )
             return pbp.play_by_play.get_data_frame()
