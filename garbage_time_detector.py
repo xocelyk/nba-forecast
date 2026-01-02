@@ -19,6 +19,8 @@ from typing import Dict, Optional, Tuple
 import pandas as pd
 from nba_api.stats.endpoints import playbyplayv3
 
+from nba_api_loader import NBA_HEADERS, retry_with_backoff
+
 logger = logging.getLogger("nba")
 
 
@@ -57,9 +59,21 @@ class GarbageTimeDetector:
         """
         self._rate_limit()
 
+        def fetch_pbp():
+            pbp = playbyplayv3.PlayByPlayV3(
+                game_id=game_id,
+                headers=NBA_HEADERS,
+                timeout=60,
+            )
+            return pbp.play_by_play.get_data_frame()
+
         try:
-            pbp = playbyplayv3.PlayByPlayV3(game_id=game_id)
-            df = pbp.play_by_play.get_data_frame()
+            df = retry_with_backoff(
+                fetch_pbp,
+                max_retries=2,
+                base_delay=3.0,
+                max_delay=30.0,
+            )
 
             if df is None or len(df) == 0:
                 logger.warning(f"No play-by-play data for game {game_id}")

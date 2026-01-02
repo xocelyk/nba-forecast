@@ -30,6 +30,19 @@ from nba_api.stats.static import teams
 
 logger = logging.getLogger("nba")
 
+# Browser-like headers to avoid being blocked by NBA.com
+# NBA.com often blocks requests from data center IPs without proper headers
+NBA_HEADERS = {
+    "Host": "stats.nba.com",
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "application/json, text/plain, */*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Referer": "https://www.nba.com/",
+    "Origin": "https://www.nba.com",
+}
+
 
 def retry_with_backoff(
     func,
@@ -171,7 +184,8 @@ class NBAAPILoader:
         def fetch_schedule():
             schedule = scheduleleaguev2.ScheduleLeagueV2(
                 season=season_str,
-                timeout=60,  # Increase timeout to 60 seconds
+                headers=NBA_HEADERS,
+                timeout=60,
             )
             return schedule.get_data_frames()[0]
 
@@ -296,6 +310,7 @@ class NBAAPILoader:
                 start_range=0,
                 end_range=2147483647,
                 range_type=0,
+                headers=NBA_HEADERS,
                 timeout=60,
             )
             return boxscore.team_stats.get_data_frame()
