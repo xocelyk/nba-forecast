@@ -307,7 +307,7 @@ def sgd_ratings(
 
 
 def get_em_ratings(
-    df, cap=20, names=None, num_epochs=100, day_cap=100, hca: float = HCA
+    df, cap=None, names=None, num_epochs=100, day_cap=100, hca: float = HCA
 ):
     if names is None:
         teams_dict = {team: i for i, team in enumerate(df["team"].unique())}
@@ -324,7 +324,11 @@ def get_em_ratings(
     df = df[df["team"].isin(teams_dict.keys()) & df["opponent"].isin(teams_dict.keys())]
 
     games = df[["team", "opponent", "margin"]]
-    margin_fn = lambda margin: np.clip(margin, -cap, cap)
+    margin_fn = (
+        (lambda margin: margin)
+        if cap is None
+        else (lambda margin: np.clip(margin, -cap, cap))
+    )
     ratings = sgd_ratings(
         games, teams_dict, margin_fn=margin_fn, epochs=num_epochs, hca=hca
     )

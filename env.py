@@ -41,6 +41,9 @@ class Config:
             "opponent_days_since_most_recent_game",
             "hca",
             "playoff",
+            "rating_x_season",
+            "win_total_ratio",
+            "trend_1v10_diff",
         ]
     )
     margin_label: str = "margin"

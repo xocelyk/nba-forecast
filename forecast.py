@@ -8,6 +8,19 @@ import env
 import utils
 
 
+def add_engineered_features(df):
+    """Add engineered features for margin prediction."""
+    df = df.copy()
+    df["rating_x_season"] = df["rating_diff"] * (df["num_games_into_season"] / 82.0)
+    df["win_total_ratio"] = df["team_win_total_future"] / (
+        df["opponent_win_total_future"] + 0.1
+    )
+    df["trend_1v10_diff"] = (df["team_last_1_rating"] - df["team_last_10_rating"]) - (
+        df["opponent_last_1_rating"] - df["opponent_last_10_rating"]
+    )
+    return df
+
+
 def predict_margin_today_games(games, win_margin_model):
     # change date to datetime object
     games["date"] = pd.to_datetime(games["date"])
@@ -16,6 +29,7 @@ def predict_margin_today_games(games, win_margin_model):
     games = games[games["date"] == datetime.date.today()]
     if len(games) == 0:
         return None
+    games = add_engineered_features(games)
     games["margin"] = win_margin_model.predict(games[env.x_features])
     return games
 
@@ -31,6 +45,7 @@ def predict_margin_this_week_games(games, win_margin_model):
     if len(games) == 0:
         return None
 
+    games = add_engineered_features(games)
     games["margin"] = win_margin_model.predict(games[env.x_features])
 
     for date in games["date"].unique():
@@ -58,6 +73,7 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
     games = games[games["date"] >= datetime.date.today()]
     if len(games) == 0:
         return None
+    games = add_engineered_features(games)
     games["pred_margin"] = win_margin_model.predict(games[env.x_features])
     games["win_prob"] = win_prob_model.predict_proba(
         games["pred_margin"].values.reshape(-1, 1)
@@ -259,6 +275,11 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "opponent_days_since_most_recent_game": opp_days_since_most_recent_game,
                 "hca": current_hca,
                 "playoff": 1 if playoff_mode else 0,
+                "rating_x_season": (team_rating - opp_rating)
+                * (num_games_into_season / 82.0),
+                "win_total_ratio": team_win_total_future / (opp_win_total_future + 0.1),
+                "trend_1v10_diff": (team_last_1_rating_rating - team_last_10_rating)
+                - (opp_last_1_rating_rating - opp_last_10_rating),
             }
             X_home = pd.DataFrame.from_dict(X_home_dct, orient="index").transpose()
             team_home_margins.append(model.predict(X_home[env.x_features])[0])
@@ -292,6 +313,11 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "opponent_days_since_most_recent_game": team_days_since_most_recent_game,
                 "hca": current_hca,
                 "playoff": 1 if playoff_mode else 0,
+                "rating_x_season": (opp_rating - team_rating)
+                * (num_games_into_season / 82.0),
+                "win_total_ratio": opp_win_total_future / (team_win_total_future + 0.1),
+                "trend_1v10_diff": (opp_last_1_rating_rating - opp_last_10_rating)
+                - (team_last_1_rating_rating - team_last_10_rating),
             }
             X_away = pd.DataFrame.from_dict(X_away_dct, orient="index").transpose()
             team_away_margins.append(-model.predict(X_away[env.x_features])[0])
@@ -333,3 +359,92 @@ def get_expected_wins_losses(all_data, future_games_with_win_probs):
         expected_wins[opponent] += 1 - row["win_prob"]
         expected_losses[opponent] += row["win_prob"]
     return expected_wins, expected_losses
+
+
+def generate_retrospective_predictions(
+    training_data, win_margin_model, win_prob_model, year
+):
+    """
+    Generate predictions for all completed games in the current season.
+    Compares model predictions to actual outcomes for bias analysis.
+    Saves results to data/retrospective_predictions/ with date-stamped archives.
+    """
+    from env import logger
+
+    # Filter to current year completed games
+    games = training_data[
+        (training_data["year"] == year) & (training_data["completed"] == True)
+    ].copy()
+
+    if len(games) == 0:
+        logger.info("No completed games found for retrospective predictions")
+        return None
+
+    # Add engineered features for prediction
+    games = add_engineered_features(games)
+
+    # Generate predictions using model
+    games["pred_margin"] = win_margin_model.predict(games[env.x_features])
+    games["pred_win_prob"] = win_prob_model.predict_proba(
+        games["pred_margin"].values.reshape(-1, 1)
+    )[:, 1]
+
+    # Calculate prediction accuracy metrics
+    games["actual_win"] = (games["margin"] > 0).astype(int)
+    games["margin_error"] = games["pred_margin"] - games["margin"]
+
+    # Build output dataframe
+    output = games[
+        [
+            "date",
+            "team",
+            "opponent",
+            "pred_margin",
+            "margin",
+            "pred_win_prob",
+            "actual_win",
+            "margin_error",
+        ]
+    ].copy()
+
+    output.columns = [
+        "Date",
+        "Home",
+        "Away",
+        "Predicted_Margin",
+        "Actual_Margin",
+        "Predicted_Win_Prob",
+        "Actual_Win",
+        "Margin_Error",
+    ]
+
+    # Sort by date
+    output = output.sort_values("Date").reset_index(drop=True)
+
+    # Save to file with date
+    date_string = datetime.date.today().strftime("%Y-%m-%d")
+
+    # Create directory if needed
+    retro_dir = os.path.join(env.DATA_DIR, "retrospective_predictions")
+    os.makedirs(retro_dir, exist_ok=True)
+
+    # Save current file
+    output.to_csv(
+        os.path.join(retro_dir, "retrospective_predictions.csv"),
+        index=False,
+    )
+
+    # Save dated archive in year subfolder
+    year_string = datetime.date.today().strftime("%Y")
+    archive_dir = os.path.join(retro_dir, year_string)
+    os.makedirs(archive_dir, exist_ok=True)
+    output.to_csv(
+        os.path.join(archive_dir, f"retrospective_predictions_{date_string}.csv"),
+        index=False,
+    )
+
+    logger.info(
+        f"Saved retrospective predictions for {len(output)} games to {retro_dir}"
+    )
+
+    return output

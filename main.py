@@ -488,6 +488,12 @@ def main():
     )
     forecast.predict_margin_this_week_games(training_data, win_margin_model)
 
+    # Generate retrospective predictions for completed games
+    logger.info("Generating retrospective predictions...")
+    forecast.generate_retrospective_predictions(
+        training_data, win_margin_model, win_prob_model, YEAR
+    )
+
     logger.info(f"Starting {num_sims} season simulations...")
     sim_report = simulate_season(
         training_data,

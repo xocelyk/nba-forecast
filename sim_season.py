@@ -533,6 +533,8 @@ class Season:
         games["team_win"] = (margins > 0).astype(int)
         games["margin"] = margins
         games["winner_name"] = np.where(margins > 0, games["team"], games["opponent"])
+        games["expected_margin"] = expected_margins
+        games["simulated"] = True
 
         # # Log OKC games if any
         # okc_mask = (games["team"] == "OKC") | (games["opponent"] == "OKC")
@@ -708,6 +710,19 @@ class Season:
                 ],
                 "hca": self.hca,
                 "playoff": playoff,
+                "rating_x_season": (
+                    games_df["team_rating"] - games_df["opponent_rating"]
+                )
+                * (games_df["num_games_into_season"] / 82.0),
+                "win_total_ratio": games_df["team_win_total_future"]
+                / (games_df["opponent_win_total_future"] + 0.1),
+                "trend_1v10_diff": (
+                    games_df["team_last_1_rating"] - games_df["team_last_10_rating"]
+                )
+                - (
+                    games_df["opponent_last_1_rating"]
+                    - games_df["opponent_last_10_rating"]
+                ),
             }
         )
 
@@ -2360,6 +2375,61 @@ def playoff_results_over_sims_dict_to_df(playoff_results_over_sims):
     return playoff_results_over_sims_df
 
 
+def save_raw_simulation_results(season_results_over_sims):
+    """Save raw simulation results (wins per simulation for each team) to CSV."""
+    import env
+
+    # Create DataFrame with teams as columns and simulations as rows
+    raw_results = {}
+    for team, results in season_results_over_sims.items():
+        raw_results[team] = results["wins"]
+
+    raw_df = pd.DataFrame(raw_results)
+    raw_df.index.name = "simulation"
+
+    # Save to file
+    date_string = datetime.datetime.today().strftime("%Y-%m-%d")
+    raw_df.to_csv(
+        os.path.join(env.DATA_DIR, "sim_results", "sim_raw_results.csv"), index=True
+    )
+    raw_df.to_csv(
+        os.path.join(
+            env.DATA_DIR, "sim_results", "archive", f"sim_raw_results_{date_string}.csv"
+        ),
+        index=True,
+    )
+    logger.info(
+        f"Saved raw simulation results: {len(raw_df)} simulations x {len(raw_df.columns)} teams"
+    )
+
+
+def save_simulated_game_results(games_df):
+    """Save game-level simulation results to CSV."""
+    import env
+
+    # Reorder columns with simulation_id first
+    cols = ["simulation_id"] + [c for c in games_df.columns if c != "simulation_id"]
+    games_df = games_df[cols]
+
+    date_string = datetime.datetime.today().strftime("%Y-%m-%d")
+    games_df.to_csv(
+        os.path.join(env.DATA_DIR, "sim_results", "sim_game_results.csv"),
+        index=False,
+    )
+    games_df.to_csv(
+        os.path.join(
+            env.DATA_DIR,
+            "sim_results",
+            "archive",
+            f"sim_game_results_{date_string}.csv",
+        ),
+        index=False,
+    )
+    logger.info(
+        f"Saved game-level results: {len(games_df)} rows ({games_df['simulation_id'].nunique()} sims)"
+    )
+
+
 def get_sim_report(season_results_over_sims, playoff_results_over_sims, num_sims):
     for team, playoff_results in playoff_results_over_sims.items():
         # convert to percentage
@@ -2381,9 +2451,21 @@ def get_sim_report(season_results_over_sims, playoff_results_over_sims, num_sims
 
     expected_record_dict = {}
     for team, season_results in season_results_over_sims.items():
-        expected_wins = np.mean(season_results["wins"])
-        expected_losses = np.mean(season_results["losses"])
-        expected_record_dict[team] = {"wins": expected_wins, "losses": expected_losses}
+        wins_array = np.array(season_results["wins"])
+        losses_array = np.array(season_results["losses"])
+        expected_record_dict[team] = {
+            "wins": np.mean(wins_array),
+            "losses": np.mean(losses_array),
+            "wins_median": np.median(wins_array),
+            "wins_std": np.std(wins_array),
+            "wins_10th": np.percentile(wins_array, 10),
+            "wins_90th": np.percentile(wins_array, 90),
+            "prob_50_plus": np.mean(wins_array >= 50),
+            "prob_55_plus": np.mean(wins_array >= 55),
+            "prob_60_plus": np.mean(wins_array >= 60),
+            "prob_65_plus": np.mean(wins_array >= 65),
+            "prob_70_plus": np.mean(wins_array >= 70),
+        }
 
     sim_report_df = pd.DataFrame(expected_record_dict)
     sim_report_df = sim_report_df.transpose()
@@ -2402,6 +2484,15 @@ def get_sim_report(season_results_over_sims, playoff_results_over_sims, num_sims
             "team",
             "wins",
             "losses",
+            "wins_median",
+            "wins_std",
+            "wins_10th",
+            "wins_90th",
+            "prob_50_plus",
+            "prob_55_plus",
+            "prob_60_plus",
+            "prob_65_plus",
+            "prob_70_plus",
             "champion",
             "finals",
             "conference_finals",
@@ -2509,12 +2600,35 @@ def run_single_simulation(
     globals()["print"] = original_print
 
     seeds = season.end_season_standings
+
+    # Extract simulated games for game-level results
+    simulated_games = season.completed_games[
+        season.completed_games.get("simulated", False) == True
+    ].copy()
+    columns_to_keep = [
+        "date",
+        "team",
+        "opponent",
+        "margin",
+        "team_win",
+        "winner_name",
+        "playoff",
+        "playoff_label",
+        "team_rating",
+        "opponent_rating",
+        "expected_margin",
+    ]
+    simulated_games = simulated_games[
+        [c for c in columns_to_keep if c in simulated_games.columns]
+    ]
+
     result_dict = {
         "wins_dict": wins_dict,
         "losses_dict": losses_dict,
         "playoff_results": playoff_results,
         "seeds": seeds,
         "finals_games": finals_games_data,
+        "simulated_games": simulated_games,
     }
 
     return result_dict
@@ -2744,6 +2858,21 @@ def sim_season(
             season_results_over_sims[team]["wins"].append(wins)
         for team, losses in losses_dict.items():
             season_results_over_sims[team]["losses"].append(losses)
+
+    # Save raw simulation results before aggregating
+    save_raw_simulation_results(season_results_over_sims)
+
+    # Collect and save game-level simulation results
+    all_simulated_games = []
+    for sim_id, result in enumerate(output):
+        if "simulated_games" in result:
+            games_df = result["simulated_games"].copy()
+            games_df["simulation_id"] = sim_id
+            all_simulated_games.append(games_df)
+
+    if all_simulated_games:
+        combined_games = pd.concat(all_simulated_games, ignore_index=True)
+        save_simulated_game_results(combined_games)
 
     sim_report_df = get_sim_report(
         season_results_over_sims, playoff_results_over_sims, num_sims

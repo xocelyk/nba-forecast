@@ -328,8 +328,11 @@ def load_training_data(
     start_year: int = 2010,
     stop_year: int = 2026,
     this_year_games=None,
+    regenerate_years: list = None,
 ):
     """Return a training DataFrame built from historical game data."""
+    if regenerate_years is None:
+        regenerate_years = []
     all_data_archive = pd.read_csv(os.path.join(env.DATA_DIR, "train_data.csv"))
     all_data_archive.drop(
         [c for c in all_data_archive.columns if "Unnamed" in c], axis=1, inplace=True
@@ -359,7 +362,9 @@ def load_training_data(
                 year_data = this_year_games
                 year_data["date"] = pd.to_datetime(year_data["date"], format="mixed")
             else:
-                year_data = pd.read_csv(f"data/games/year_data_{year}.csv", dtype={"game_id": str})
+                year_data = pd.read_csv(
+                    f"data/games/year_data_{year}.csv", dtype={"game_id": str}
+                )
             year_data = year_data.sort_values("date")
             if "team_abbr" in year_data.columns and "team" not in year_data.columns:
                 year_data["team"] = year_data["team_abbr"]
@@ -437,7 +442,7 @@ def load_training_data(
                 first_year = False
                 continue
             else:
-                if reset or year == stop_year:
+                if reset or year == stop_year or year in regenerate_years:
                     for team in abbrs:
                         if team not in end_year_ratings_dct[year - 1].keys():
                             # Some teams have changed names over the seasons--hard coding the changes for now
@@ -594,6 +599,22 @@ def load_training_data(
                         lambda x: win_totals_futures[str(x["year"])][x["opponent"]],
                         axis=1,
                     ).astype(float)
+
+                    # Add engineered features
+                    year_data["rating_x_season"] = year_data["rating_diff"] * (
+                        year_data["num_games_into_season"] / 82.0
+                    )
+                    year_data["win_total_ratio"] = year_data[
+                        "team_win_total_future"
+                    ] / (year_data["opponent_win_total_future"] + 0.1)
+                    year_data["trend_1v10_diff"] = (
+                        year_data["team_last_1_rating"]
+                        - year_data["team_last_10_rating"]
+                    ) - (
+                        year_data["opponent_last_1_rating"]
+                        - year_data["opponent_last_10_rating"]
+                    )
+
                     # year_data to list of dictionaries
                     year_data = year_data.to_dict("records")
                     all_data += year_data
