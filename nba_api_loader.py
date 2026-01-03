@@ -214,7 +214,8 @@ class NBAAPILoader:
             Pace value (possessions per 48 min) or None if unavailable
         """
         client = get_client()
-        boxscore = client.get_boxscore(game_id)
+        # Use short timeout (5s) with no retries for pace - fall back to CDN quickly
+        boxscore = client.get_boxscore(game_id, timeout=5, max_retries=0)
 
         if boxscore is None:
             logger.warning(f"Could not get boxscore for game {game_id}")

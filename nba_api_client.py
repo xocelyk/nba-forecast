@@ -213,7 +213,12 @@ class NBAApiClient:
     # Boxscore
     # -------------------------------------------------------------------------
 
-    def get_boxscore(self, game_id: str) -> Optional[Dict[str, Any]]:
+    def get_boxscore(
+        self,
+        game_id: str,
+        timeout: Optional[int] = None,
+        max_retries: Optional[int] = None,
+    ) -> Optional[Dict[str, Any]]:
         """
         Get boxscore data for a game.
 
@@ -221,14 +226,20 @@ class NBAApiClient:
 
         Args:
             game_id: NBA game ID
+            timeout: Override default timeout (seconds)
+            max_retries: Override default max retries (0 = try once, no retries)
 
         Returns:
             Dict with team statistics or None if unavailable
         """
         self._rate_limit()
 
+        # Use provided values or fall back to instance defaults
+        req_timeout = timeout if timeout is not None else self.timeout
+        req_retries = max_retries if max_retries is not None else self.max_retries
+
         try:
-            return self._fetch_boxscore_api(game_id)
+            return self._fetch_boxscore_api(game_id, req_timeout, req_retries)
         except Exception as e:
             if self.use_cdn_fallback:
                 logger.warning(f"Boxscore API failed for {game_id}: {e}. Trying CDN...")
@@ -240,7 +251,9 @@ class NBAApiClient:
             logger.error(f"Boxscore fetch failed: {e}")
             return None
 
-    def _fetch_boxscore_api(self, game_id: str) -> Dict[str, Any]:
+    def _fetch_boxscore_api(
+        self, game_id: str, timeout: int, max_retries: int
+    ) -> Dict[str, Any]:
         """Fetch boxscore from stats.nba.com API."""
 
         def fetch():
@@ -251,13 +264,13 @@ class NBAApiClient:
                 start_range=0,
                 end_range=2147483647,
                 range_type=0,
-                timeout=self.timeout,
+                timeout=timeout,
             )
             return boxscore.team_stats.get_data_frame()
 
         team_stats = retry_with_backoff(
             fetch,
-            max_retries=self.max_retries,
+            max_retries=max_retries,
             base_delay=self.retry_delay,
             max_delay=30.0,
         )
