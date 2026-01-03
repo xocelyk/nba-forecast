@@ -135,7 +135,10 @@ class GarbageTimeDetector:
         return None
 
     def detect_garbage_time(
-        self, game_id: str, pbp_df: Optional[pd.DataFrame] = None, max_game_time_minutes: float = 45.0
+        self,
+        game_id: str,
+        pbp_df: Optional[pd.DataFrame] = None,
+        max_game_time_minutes: float = 45.0,
     ) -> Dict:
         """
         Detect when a game becomes "effectively over" using safe-lead heuristic.
@@ -228,8 +231,16 @@ class GarbageTimeDetector:
             # Need to know home/away team IDs - get from first row
             if idx == 0:
                 # Infer home/away team IDs from first action
-                first_home_score = pbp_df["scoreHome"].dropna().iloc[0] if len(pbp_df["scoreHome"].dropna()) > 0 else 0
-                first_away_score = pbp_df["scoreAway"].dropna().iloc[0] if len(pbp_df["scoreAway"].dropna()) > 0 else 0
+                first_home_score = (
+                    pbp_df["scoreHome"].dropna().iloc[0]
+                    if len(pbp_df["scoreHome"].dropna()) > 0
+                    else 0
+                )
+                first_away_score = (
+                    pbp_df["scoreAway"].dropna().iloc[0]
+                    if len(pbp_df["scoreAway"].dropna()) > 0
+                    else 0
+                )
 
                 # Find home and away team IDs from team actions
                 home_team_id = None
@@ -266,12 +277,18 @@ class GarbageTimeDetector:
 
             if period <= 4:
                 # Regulation
-                game_time_elapsed = (period - 1) * period_length + (period_length - clock_seconds)
+                game_time_elapsed = (period - 1) * period_length + (
+                    period_length - clock_seconds
+                )
             else:
                 # Overtime
                 regulation_time = 4 * period_length  # 48 minutes
                 ot_periods_completed = period - 5
-                game_time_elapsed = regulation_time + ot_periods_completed * ot_length + (ot_length - clock_seconds)
+                game_time_elapsed = (
+                    regulation_time
+                    + ot_periods_completed * ot_length
+                    + (ot_length - clock_seconds)
+                )
 
             game_time_elapsed_minutes = game_time_elapsed / 60.0
 
@@ -335,9 +352,7 @@ class GarbageTimeDetector:
 
         return cutoff_info
 
-    def get_stats_before_cutoff(
-        self, game_id: str, cutoff_action_number: int
-    ) -> Dict:
+    def get_stats_before_cutoff(self, game_id: str, cutoff_action_number: int) -> Dict:
         """
         Calculate game stats up to a specific action number.
 

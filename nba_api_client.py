@@ -66,7 +66,7 @@ def retry_with_backoff(
                 logger.error(f"All {max_retries + 1} attempts failed: {e}")
                 raise
 
-            delay = min(base_delay * (2 ** attempt), max_delay)
+            delay = min(base_delay * (2**attempt), max_delay)
             if jitter:
                 delay = delay * (0.5 + random.random())
 
@@ -167,6 +167,7 @@ class NBAApiClient:
 
     def _fetch_schedule_cdn(self) -> pd.DataFrame:
         """Fetch schedule from CDN."""
+
         def fetch():
             resp = requests.get(
                 CDN_SCHEDULE_URL,
@@ -189,18 +190,20 @@ class NBAApiClient:
             for game in game_date["games"]:
                 home = game.get("homeTeam", {})
                 away = game.get("awayTeam", {})
-                rows.append({
-                    "gameId": game.get("gameId"),
-                    "gameDate": game.get("gameDateUTC"),
-                    "gameStatus": game.get("gameStatus"),
-                    "gameLabel": game.get("gameLabel", ""),
-                    "homeTeam_teamTricode": home.get("teamTricode"),
-                    "homeTeam_teamName": home.get("teamName"),
-                    "homeTeam_score": home.get("score"),
-                    "awayTeam_teamTricode": away.get("teamTricode"),
-                    "awayTeam_teamName": away.get("teamName"),
-                    "awayTeam_score": away.get("score"),
-                })
+                rows.append(
+                    {
+                        "gameId": game.get("gameId"),
+                        "gameDate": game.get("gameDateUTC"),
+                        "gameStatus": game.get("gameStatus"),
+                        "gameLabel": game.get("gameLabel", ""),
+                        "homeTeam_teamTricode": home.get("teamTricode"),
+                        "homeTeam_teamName": home.get("teamName"),
+                        "homeTeam_score": home.get("score"),
+                        "awayTeam_teamTricode": away.get("teamTricode"),
+                        "awayTeam_teamName": away.get("teamName"),
+                        "awayTeam_score": away.get("score"),
+                    }
+                )
 
         df = pd.DataFrame(rows)
         logger.info(f"Retrieved {len(df)} games from CDN")
@@ -239,6 +242,7 @@ class NBAApiClient:
 
     def _fetch_boxscore_api(self, game_id: str) -> Dict[str, Any]:
         """Fetch boxscore from stats.nba.com API."""
+
         def fetch():
             boxscore = boxscoretraditionalv2.BoxScoreTraditionalV2(
                 game_id=game_id,
@@ -287,6 +291,7 @@ class NBAApiClient:
 
     def _fetch_boxscore_cdn(self, game_id: str) -> Dict[str, Any]:
         """Fetch boxscore from CDN."""
+
         def fetch():
             url = CDN_BOXSCORE_URL.format(game_id=game_id)
             resp = requests.get(
@@ -350,7 +355,9 @@ class NBAApiClient:
             return self._fetch_playbyplay_api(game_id)
         except Exception as e:
             if self.use_cdn_fallback:
-                logger.warning(f"PlayByPlay API failed for {game_id}: {e}. Trying CDN...")
+                logger.warning(
+                    f"PlayByPlay API failed for {game_id}: {e}. Trying CDN..."
+                )
                 try:
                     return self._fetch_playbyplay_cdn(game_id)
                 except Exception as cdn_e:
@@ -361,6 +368,7 @@ class NBAApiClient:
 
     def _fetch_playbyplay_api(self, game_id: str) -> pd.DataFrame:
         """Fetch play-by-play from stats.nba.com API."""
+
         def fetch():
             pbp = playbyplayv3.PlayByPlayV3(
                 game_id=game_id,
@@ -383,6 +391,7 @@ class NBAApiClient:
 
     def _fetch_playbyplay_cdn(self, game_id: str) -> pd.DataFrame:
         """Fetch play-by-play from CDN."""
+
         def fetch():
             url = CDN_PLAYBYPLAY_URL.format(game_id=game_id)
             resp = requests.get(
@@ -407,21 +416,23 @@ class NBAApiClient:
         # Transform CDN format to match API format
         rows = []
         for action in actions:
-            rows.append({
-                "actionNumber": action.get("actionNumber"),
-                "clock": action.get("clock"),
-                "period": action.get("period"),
-                "teamId": action.get("teamId"),
-                "teamTricode": action.get("teamTricode"),
-                "actionType": action.get("actionType"),
-                "subType": action.get("subType"),
-                "descriptor": action.get("descriptor"),
-                "scoreHome": action.get("scoreHome"),
-                "scoreAway": action.get("scoreAway"),
-                "personId": action.get("personId"),
-                "playerName": action.get("playerName"),
-                "description": action.get("description"),
-            })
+            rows.append(
+                {
+                    "actionNumber": action.get("actionNumber"),
+                    "clock": action.get("clock"),
+                    "period": action.get("period"),
+                    "teamId": action.get("teamId"),
+                    "teamTricode": action.get("teamTricode"),
+                    "actionType": action.get("actionType"),
+                    "subType": action.get("subType"),
+                    "descriptor": action.get("descriptor"),
+                    "scoreHome": action.get("scoreHome"),
+                    "scoreAway": action.get("scoreAway"),
+                    "personId": action.get("personId"),
+                    "playerName": action.get("playerName"),
+                    "description": action.get("description"),
+                }
+            )
 
         df = pd.DataFrame(rows)
         logger.info(f"Retrieved {len(df)} actions from CDN for game {game_id}")
@@ -449,7 +460,9 @@ class NBAApiClient:
             return self._fetch_advanced_stats_api(game_id)
         except Exception as e:
             if self.use_cdn_fallback:
-                logger.warning(f"Advanced stats API failed for {game_id}: {e}. Trying CDN...")
+                logger.warning(
+                    f"Advanced stats API failed for {game_id}: {e}. Trying CDN..."
+                )
                 try:
                     return self._fetch_advanced_stats_cdn(game_id)
                 except Exception as cdn_e:
@@ -546,6 +559,7 @@ class NBAApiClient:
 
     def _fetch_advanced_stats_cdn(self, game_id: str) -> Dict[str, Any]:
         """Fetch advanced stats from CDN boxscore."""
+
         def fetch():
             url = CDN_BOXSCORE_URL.format(game_id=game_id)
             resp = requests.get(

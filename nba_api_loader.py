@@ -271,6 +271,7 @@ class NBAAPILoader:
             if minutes_str.startswith("PT"):
                 # ISO 8601 duration format (e.g., "PT240M00.00S")
                 import re
+
                 match = re.match(r"PT(\d+)M", minutes_str)
                 if match:
                     team_minutes = float(match.group(1))
@@ -393,7 +394,7 @@ class NBAAPILoader:
             "cutoff_clock": None,
             "cutoff_action_number": None,
             "possessions_before_cutoff": None,
-            "error": None
+            "error": None,
         }
 
         try:
@@ -405,7 +406,9 @@ class NBAAPILoader:
                 result_dict["cutoff_period"] = result.get("cutoff_period")
                 result_dict["cutoff_clock"] = result.get("cutoff_clock")
                 result_dict["cutoff_action_number"] = result.get("cutoff_action_number")
-                result_dict["possessions_before_cutoff"] = result.get("total_possessions_before_cutoff")
+                result_dict["possessions_before_cutoff"] = result.get(
+                    "total_possessions_before_cutoff"
+                )
             else:
                 logger.warning(f"Could not get garbage time data for game {game_id}")
                 result_dict["success"] = True
@@ -419,7 +422,9 @@ class NBAAPILoader:
 
         return (idx, result_dict)
 
-    def add_garbage_time_to_games(self, games_df: pd.DataFrame, num_workers: int = 1) -> pd.DataFrame:
+    def add_garbage_time_to_games(
+        self, games_df: pd.DataFrame, num_workers: int = 1
+    ) -> pd.DataFrame:
         """
         Add garbage time detection data to completed games.
 
@@ -475,7 +480,9 @@ class NBAAPILoader:
                 game_id = game["game_id"]
 
                 try:
-                    result = detector.detect_garbage_time(game_id, max_game_time_minutes=45.0)
+                    result = detector.detect_garbage_time(
+                        game_id, max_game_time_minutes=45.0
+                    )
 
                     if result is not None:
                         games_df.at[idx, "garbage_time_detected"] = result[
@@ -487,27 +494,35 @@ class NBAAPILoader:
                         games_df.at[idx, "garbage_time_cutoff_clock"] = result.get(
                             "cutoff_clock"
                         )
-                        games_df.at[idx, "garbage_time_cutoff_action_number"] = result.get(
-                            "cutoff_action_number"
+                        games_df.at[idx, "garbage_time_cutoff_action_number"] = (
+                            result.get("cutoff_action_number")
                         )
                         games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
                             result.get("total_possessions_before_cutoff")
                         )
                     else:
-                        logger.warning(f"Could not get garbage time data for game {game_id}")
+                        logger.warning(
+                            f"Could not get garbage time data for game {game_id}"
+                        )
                         games_df.at[idx, "garbage_time_detected"] = False
 
                 except Exception as e:
-                    logger.warning(f"Error detecting garbage time for game {game_id}: {e}")
+                    logger.warning(
+                        f"Error detecting garbage time for game {game_id}: {e}"
+                    )
                     games_df.at[idx, "garbage_time_detected"] = False
         else:
             # Parallel processing with ThreadPoolExecutor
-            logger.info(f"Using {num_workers} parallel workers for garbage time detection")
+            logger.info(
+                f"Using {num_workers} parallel workers for garbage time detection"
+            )
 
             with ThreadPoolExecutor(max_workers=num_workers) as executor:
                 # Submit all games for processing
                 future_to_game = {
-                    executor.submit(self._process_single_game_garbage_time, idx, game, detector): (idx, game)
+                    executor.submit(
+                        self._process_single_game_garbage_time, idx, game, detector
+                    ): (idx, game)
                     for idx, game in games_needing_detection.iterrows()
                 }
 
@@ -516,17 +531,27 @@ class NBAAPILoader:
                     idx, result_dict = future.result()
 
                     # Update DataFrame with results
-                    games_df.at[idx, "garbage_time_detected"] = result_dict["garbage_time_detected"]
-                    games_df.at[idx, "garbage_time_cutoff_period"] = result_dict["cutoff_period"]
-                    games_df.at[idx, "garbage_time_cutoff_clock"] = result_dict["cutoff_clock"]
-                    games_df.at[idx, "garbage_time_cutoff_action_number"] = result_dict["cutoff_action_number"]
-                    games_df.at[idx, "garbage_time_possessions_before_cutoff"] = result_dict["possessions_before_cutoff"]
+                    games_df.at[idx, "garbage_time_detected"] = result_dict[
+                        "garbage_time_detected"
+                    ]
+                    games_df.at[idx, "garbage_time_cutoff_period"] = result_dict[
+                        "cutoff_period"
+                    ]
+                    games_df.at[idx, "garbage_time_cutoff_clock"] = result_dict[
+                        "cutoff_clock"
+                    ]
+                    games_df.at[idx, "garbage_time_cutoff_action_number"] = result_dict[
+                        "cutoff_action_number"
+                    ]
+                    games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
+                        result_dict["possessions_before_cutoff"]
+                    )
 
         completed_with_garbage_time = (
             games_df["completed"] & games_df["garbage_time_detected"].notna()
         )
-        games_with_garbage_time = (
-            games_df["completed"] & (games_df["garbage_time_detected"] == True)
+        games_with_garbage_time = games_df["completed"] & (
+            games_df["garbage_time_detected"] == True
         )
         logger.info(
             f"Garbage time detection complete: {completed_with_garbage_time.sum()} games processed, "
@@ -559,45 +584,42 @@ class NBAAPILoader:
 
         return {
             # Traditional stats (home team)
-            'fgm': home.get('fgm'),
-            'fga': home.get('fga'),
-            'fg3m': home.get('fg3m'),
-            'fg3a': home.get('fg3a'),
-            'ftm': home.get('ftm'),
-            'fta': home.get('fta'),
-            'oreb': home.get('oreb'),
-            'dreb': home.get('dreb'),
-            'ast': home.get('ast'),
-            'stl': home.get('stl'),
-            'blk': home.get('blk'),
-            'tov': home.get('tov'),
-
+            "fgm": home.get("fgm"),
+            "fga": home.get("fga"),
+            "fg3m": home.get("fg3m"),
+            "fg3a": home.get("fg3a"),
+            "ftm": home.get("ftm"),
+            "fta": home.get("fta"),
+            "oreb": home.get("oreb"),
+            "dreb": home.get("dreb"),
+            "ast": home.get("ast"),
+            "stl": home.get("stl"),
+            "blk": home.get("blk"),
+            "tov": home.get("tov"),
             # Traditional stats (away team / opponent)
-            'opp_fgm': away.get('fgm'),
-            'opp_fga': away.get('fga'),
-            'opp_fg3m': away.get('fg3m'),
-            'opp_fg3a': away.get('fg3a'),
-            'opp_ftm': away.get('ftm'),
-            'opp_fta': away.get('fta'),
-            'opp_oreb': away.get('oreb'),
-            'opp_dreb': away.get('dreb'),
-            'opp_ast': away.get('ast'),
-            'opp_stl': away.get('stl'),
-            'opp_blk': away.get('blk'),
-            'opp_tov': away.get('tov'),
-
+            "opp_fgm": away.get("fgm"),
+            "opp_fga": away.get("fga"),
+            "opp_fg3m": away.get("fg3m"),
+            "opp_fg3a": away.get("fg3a"),
+            "opp_ftm": away.get("ftm"),
+            "opp_fta": away.get("fta"),
+            "opp_oreb": away.get("oreb"),
+            "opp_dreb": away.get("dreb"),
+            "opp_ast": away.get("ast"),
+            "opp_stl": away.get("stl"),
+            "opp_blk": away.get("blk"),
+            "opp_tov": away.get("tov"),
             # Advanced stats (home team)
-            'pace': home.get('pace'),
-            'off_rating': home.get('off_rating'),
-            'def_rating': home.get('def_rating'),
-            'efg_pct': home.get('efg_pct'),
-            'ts_pct': home.get('ts_pct'),
-
+            "pace": home.get("pace"),
+            "off_rating": home.get("off_rating"),
+            "def_rating": home.get("def_rating"),
+            "efg_pct": home.get("efg_pct"),
+            "ts_pct": home.get("ts_pct"),
             # Advanced stats (away team / opponent)
-            'opp_off_rating': away.get('off_rating'),
-            'opp_def_rating': away.get('def_rating'),
-            'opp_efg_pct': away.get('efg_pct'),
-            'opp_ts_pct': away.get('ts_pct'),
+            "opp_off_rating": away.get("off_rating"),
+            "opp_def_rating": away.get("def_rating"),
+            "opp_efg_pct": away.get("efg_pct"),
+            "opp_ts_pct": away.get("ts_pct"),
         }
 
     def add_advanced_stats_to_games(self, games_df: pd.DataFrame) -> pd.DataFrame:
