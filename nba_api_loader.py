@@ -14,7 +14,6 @@ Key Features:
 """
 
 import logging
-import random
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -22,62 +21,11 @@ from typing import Dict, List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
-import requests
-from nba_api.stats.endpoints import (
-    boxscoretraditionalv2,
-    scheduleleaguev2,
-)
 from nba_api.stats.static import teams
 
-# CDN endpoint for schedule data (fallback when API is blocked)
-NBA_CDN_SCHEDULE_URL = "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json"
+from nba_api_client import get_client
 
 logger = logging.getLogger("nba")
-
-
-def retry_with_backoff(
-    func,
-    max_retries: int = 3,
-    base_delay: float = 2.0,
-    max_delay: float = 30.0,
-    jitter: bool = True,
-):
-    """
-    Retry a function with exponential backoff.
-
-    Args:
-        func: Callable to retry
-        max_retries: Maximum number of retry attempts
-        base_delay: Initial delay in seconds
-        max_delay: Maximum delay between retries
-        jitter: Add random jitter to prevent thundering herd
-
-    Returns:
-        Result of the function call
-
-    Raises:
-        Last exception if all retries fail
-    """
-    last_exception = None
-
-    for attempt in range(max_retries + 1):
-        try:
-            return func()
-        except Exception as e:
-            last_exception = e
-            if attempt == max_retries:
-                logger.error(f"All {max_retries + 1} attempts failed: {e}")
-                raise
-
-            delay = min(base_delay * (2 ** attempt), max_delay)
-            if jitter:
-                delay = delay * (0.5 + random.random())
-
-            logger.warning(
-                f"Attempt {attempt + 1}/{max_retries + 1} failed: {e}. "
-                f"Retrying in {delay:.1f}s..."
-            )
-            time.sleep(delay)
 
 
 class NBAAPILoader:
@@ -153,8 +101,7 @@ class NBAAPILoader:
         """
         Get full season schedule for all teams.
 
-        Uses ScheduleLeagueV2 endpoint which returns all games in a single call.
-        Much faster than querying each team individually.
+        Uses NBAApiClient with automatic CDN fallback.
 
         Args:
             year: Season ENDING year (e.g., 2024 for 2023-24 season)
@@ -164,128 +111,16 @@ class NBAAPILoader:
         Returns:
             DataFrame with complete schedule (home team perspective)
         """
-        self._rate_limit()
-
         # Convert year to NBA season format (e.g., 2024 -> "2023-24")
         season_str = f"{year-1}-{str(year)[-2:]}"
-        logger.info(
-            f"Fetching season schedule for {season_str} season (year={year})..."
-        )
 
-        def fetch_schedule():
-            schedule = scheduleleaguev2.ScheduleLeagueV2(
-                season=season_str,
-                timeout=60,
-            )
-            return schedule.get_data_frames()[0]
+        client = get_client()
+        schedule_df = client.get_schedule(season_str)
 
-        try:
-            schedule_df = retry_with_backoff(
-                fetch_schedule,
-                max_retries=3,
-                base_delay=5.0,
-                max_delay=60.0,
-            )
+        # Convert to standardized format (home team perspective)
+        games = self._process_schedule_data(schedule_df, year)
 
-            logger.info(f"Retrieved {len(schedule_df)} games from schedule API")
-
-            # Convert to standardized format (home team perspective)
-            games = self._process_schedule_data(schedule_df, year)
-
-            return games
-
-        except Exception as e:
-            logger.warning(f"API failed: {e}. Trying CDN fallback...")
-
-            # Try CDN fallback
-            try:
-                games = self._fetch_schedule_from_cdn(year)
-                logger.info(f"Retrieved {len(games)} games from CDN fallback")
-                return games
-            except Exception as cdn_error:
-                logger.error(f"CDN fallback also failed: {cdn_error}")
-                raise e  # Raise original API error
-
-    def _fetch_schedule_from_cdn(self, year: int) -> pd.DataFrame:
-        """
-        Fetch schedule from NBA CDN as fallback.
-
-        The CDN endpoint is less likely to block datacenter IPs since
-        it's designed for high-volume static content delivery.
-
-        Args:
-            year: Season ENDING year (e.g., 2024 for 2023-24 season)
-
-        Returns:
-            DataFrame with complete schedule (home team perspective)
-        """
-        def fetch_cdn():
-            resp = requests.get(
-                NBA_CDN_SCHEDULE_URL,
-                headers={"User-Agent": "Mozilla/5.0"},
-                timeout=60,
-            )
-            resp.raise_for_status()
-            return resp.json()
-
-        data = retry_with_backoff(
-            fetch_cdn,
-            max_retries=2,
-            base_delay=3.0,
-            max_delay=30.0,
-        )
-
-        games = []
-        for game_date in data['leagueSchedule']['gameDates']:
-            for game in game_date['games']:
-                # Skip preseason games
-                game_id = game.get('gameId', '')
-                if game_id.startswith('001'):  # Preseason game IDs start with 001
-                    continue
-
-                game_status = game.get('gameStatus', 1)
-                completed = game_status == 3
-
-                home_team = game.get('homeTeam', {})
-                away_team = game.get('awayTeam', {})
-
-                home_abbr = home_team.get('teamTricode', '')
-                away_abbr = away_team.get('teamTricode', '')
-
-                # Apply abbreviation mapping (BKN → BRK)
-                home_abbr = self.abbr_mapping.get(home_abbr, home_abbr)
-                away_abbr = self.abbr_mapping.get(away_abbr, away_abbr)
-
-                home_score = home_team.get('score')
-                away_score = away_team.get('score')
-
-                if completed and home_score is not None and away_score is not None:
-                    margin = float(home_score - away_score)
-                else:
-                    margin = None
-
-                game_record = {
-                    "game_id": game_id,
-                    "date": pd.to_datetime(game.get('gameDateUTC')),
-                    "team": home_abbr,
-                    "opponent": away_abbr,
-                    "team_name": home_team.get('teamName', ''),
-                    "opponent_name": away_team.get('teamName', ''),
-                    "team_score": float(home_score) if home_score is not None else None,
-                    "opponent_score": float(away_score) if away_score is not None else None,
-                    "margin": margin,
-                    "location": "Home",
-                    "pace": None,
-                    "completed": completed,
-                    "year": year,
-                }
-                games.append(game_record)
-
-        games_df = pd.DataFrame(games)
-        logger.info(
-            f"CDN: Processed {len(games_df)} games ({games_df['completed'].sum()} completed)"
-        )
-        return games_df
+        return games
 
     def _process_schedule_data(
         self, schedule_df: pd.DataFrame, year: int
@@ -370,8 +205,7 @@ class NBAAPILoader:
         """
         Calculate pace statistic for a specific game.
 
-        Uses BoxScoreTraditionalV2 and calculates pace from team stats
-        using the NBA formula: possessions per 48 minutes.
+        Uses NBAApiClient with automatic CDN fallback.
 
         Args:
             game_id: NBA game ID
@@ -379,42 +213,28 @@ class NBAAPILoader:
         Returns:
             Pace value (possessions per 48 min) or None if unavailable
         """
-        self._rate_limit()
+        client = get_client()
+        boxscore = client.get_boxscore(game_id)
 
-        def fetch_boxscore():
-            boxscore = boxscoretraditionalv2.BoxScoreTraditionalV2(
-                game_id=game_id,
-                start_period=0,
-                end_period=10,
-                start_range=0,
-                end_range=2147483647,
-                range_type=0,
-                timeout=60,
-            )
-            return boxscore.team_stats.get_data_frame()
-
-        try:
-            team_stats = retry_with_backoff(
-                fetch_boxscore,
-                max_retries=2,
-                base_delay=3.0,
-                max_delay=30.0,
-            )
-
-            if len(team_stats) >= 2:
-                pace = self._calculate_pace(team_stats.iloc[0], team_stats.iloc[1])
-
-                # Sanity check
-                if pace < 60 or pace > 130:
-                    logger.warning(f"Unusual pace {pace:.1f} for game {game_id}")
-
-                return pace
-
-            logger.warning(f"Insufficient team stats for game {game_id}")
+        if boxscore is None:
+            logger.warning(f"Could not get boxscore for game {game_id}")
             return None
 
+        try:
+            # Convert boxscore dict to Series-like objects for pace calculation
+            home = pd.Series(boxscore["home"])
+            away = pd.Series(boxscore["away"])
+
+            pace = self._calculate_pace(home, away)
+
+            # Sanity check
+            if pace < 60 or pace > 130:
+                logger.warning(f"Unusual pace {pace:.1f} for game {game_id}")
+
+            return pace
+
         except Exception as e:
-            logger.error(f"Error fetching pace for game {game_id}: {e}")
+            logger.error(f"Error calculating pace for game {game_id}: {e}")
             return None
 
     def _calculate_pace(self, team1_stats: pd.Series, team2_stats: pd.Series) -> float:
@@ -441,12 +261,27 @@ class NBAAPILoader:
         avg_poss = (poss1 + poss2) / 2
 
         # Get game minutes from team minutes
-        # MIN format is "MM:SS" (e.g., "240:00" for regulation)
+        # Handles multiple formats:
+        # - "240:00" (API format)
+        # - "PT240M00.00S" (CDN ISO 8601 duration)
+        # - numeric (already in minutes)
         minutes_str = team1_stats["MIN"]
 
-        if isinstance(minutes_str, str) and ":" in minutes_str:
-            parts = minutes_str.split(":")
-            team_minutes = int(parts[0]) + int(parts[1]) / 60.0
+        if isinstance(minutes_str, str):
+            if minutes_str.startswith("PT"):
+                # ISO 8601 duration format (e.g., "PT240M00.00S")
+                import re
+                match = re.match(r"PT(\d+)M", minutes_str)
+                if match:
+                    team_minutes = float(match.group(1))
+                else:
+                    team_minutes = 240.0  # Default to regulation
+            elif ":" in minutes_str:
+                # API format (e.g., "240:00")
+                parts = minutes_str.split(":")
+                team_minutes = int(parts[0]) + int(parts[1]) / 60.0
+            else:
+                team_minutes = float(minutes_str)
         else:
             team_minutes = float(minutes_str)
 
@@ -702,10 +537,9 @@ class NBAAPILoader:
 
     def get_advanced_stats(self, game_id: str) -> Optional[Dict]:
         """
-        Fetch both traditional and advanced statistics for a game using V3 endpoints.
+        Fetch both traditional and advanced statistics for a game.
 
-        Uses BoxScoreTraditionalV3 and BoxScoreAdvancedV3 endpoints to get
-        comprehensive statistics including Four Factors and efficiency metrics.
+        Uses NBAApiClient with automatic CDN fallback.
 
         Args:
             game_id: NBA game ID
@@ -713,116 +547,58 @@ class NBAAPILoader:
         Returns:
             Dict with all statistics or None if unavailable
         """
-        from nba_api.stats.endpoints import boxscoretraditionalv3, boxscoreadvancedv3
+        client = get_client()
+        stats = client.get_advanced_stats(game_id)
 
-        try:
-            # Fetch traditional stats (V3)
-            self._rate_limit()
-            trad_bs = boxscoretraditionalv3.BoxScoreTraditionalV3(game_id=game_id)
-            trad_dfs = trad_bs.get_data_frames()
-
-            if len(trad_dfs) < 1:
-                logger.warning(f"No traditional stats returned for game {game_id}")
-                return None
-
-            # Last DataFrame is team stats
-            team_trad = trad_dfs[-1]
-            if len(team_trad) < 2:
-                logger.warning(f"Insufficient team traditional stats for game {game_id}")
-                return None
-
-            # Fetch advanced stats (V3)
-            self._rate_limit()
-            adv_bs = boxscoreadvancedv3.BoxScoreAdvancedV3(game_id=game_id)
-            adv_dfs = adv_bs.get_data_frames()
-
-            if len(adv_dfs) < 1:
-                logger.warning(f"No advanced stats returned for game {game_id}")
-                return None
-
-            # Last DataFrame is team stats
-            team_adv = adv_dfs[-1]
-            if len(team_adv) < 2:
-                logger.warning(f"Insufficient team advanced stats for game {game_id}")
-                return None
-
-            # Extract stats for home team (first row) and away team (second row)
-            home_trad = team_trad.iloc[0]
-            away_trad = team_trad.iloc[1]
-            home_adv = team_adv.iloc[0]
-            away_adv = team_adv.iloc[1]
-
-            # Combine all stats
-            stats = {
-                # Traditional stats (home team)
-                'fgm': home_trad.get('fieldGoalsMade'),
-                'fga': home_trad.get('fieldGoalsAttempted'),
-                'fg_pct': home_trad.get('fieldGoalsPercentage'),
-                'fg3m': home_trad.get('threePointersMade'),
-                'fg3a': home_trad.get('threePointersAttempted'),
-                'fg3_pct': home_trad.get('threePointersPercentage'),
-                'ftm': home_trad.get('freeThrowsMade'),
-                'fta': home_trad.get('freeThrowsAttempted'),
-                'ft_pct': home_trad.get('freeThrowsPercentage'),
-                'oreb': home_trad.get('reboundsOffensive'),
-                'dreb': home_trad.get('reboundsDefensive'),
-                'reb': home_trad.get('reboundsTotal'),
-                'ast': home_trad.get('assists'),
-                'stl': home_trad.get('steals'),
-                'blk': home_trad.get('blocks'),
-                'tov': home_trad.get('turnovers'),
-                'pf': home_trad.get('foulsPersonal'),
-
-                # Traditional stats (away team / opponent)
-                'opp_fgm': away_trad.get('fieldGoalsMade'),
-                'opp_fga': away_trad.get('fieldGoalsAttempted'),
-                'opp_fg_pct': away_trad.get('fieldGoalsPercentage'),
-                'opp_fg3m': away_trad.get('threePointersMade'),
-                'opp_fg3a': away_trad.get('threePointersAttempted'),
-                'opp_fg3_pct': away_trad.get('threePointersPercentage'),
-                'opp_ftm': away_trad.get('freeThrowsMade'),
-                'opp_fta': away_trad.get('freeThrowsAttempted'),
-                'opp_ft_pct': away_trad.get('freeThrowsPercentage'),
-                'opp_oreb': away_trad.get('reboundsOffensive'),
-                'opp_dreb': away_trad.get('reboundsDefensive'),
-                'opp_reb': away_trad.get('reboundsTotal'),
-                'opp_ast': away_trad.get('assists'),
-                'opp_stl': away_trad.get('steals'),
-                'opp_blk': away_trad.get('blocks'),
-                'opp_tov': away_trad.get('turnovers'),
-                'opp_pf': away_trad.get('foulsPersonal'),
-
-                # Advanced stats (home team)
-                'pace': home_adv.get('pace'),
-                'off_rating': home_adv.get('offensiveRating'),
-                'def_rating': home_adv.get('defensiveRating'),
-                'net_rating': home_adv.get('netRating'),
-                'efg_pct': home_adv.get('effectiveFieldGoalPercentage'),
-                'ts_pct': home_adv.get('trueShootingPercentage'),
-                'tov_pct': home_adv.get('turnoverRatio'),
-                'oreb_pct': home_adv.get('offensiveReboundPercentage'),
-                'dreb_pct': home_adv.get('defensiveReboundPercentage'),
-                'ast_pct': home_adv.get('assistPercentage'),
-                'ast_to': home_adv.get('assistToTurnover'),
-
-                # Advanced stats (away team / opponent)
-                'opp_off_rating': away_adv.get('offensiveRating'),
-                'opp_def_rating': away_adv.get('defensiveRating'),
-                'opp_net_rating': away_adv.get('netRating'),
-                'opp_efg_pct': away_adv.get('effectiveFieldGoalPercentage'),
-                'opp_ts_pct': away_adv.get('trueShootingPercentage'),
-                'opp_tov_pct': away_adv.get('turnoverRatio'),
-                'opp_oreb_pct': away_adv.get('offensiveReboundPercentage'),
-                'opp_dreb_pct': away_adv.get('defensiveReboundPercentage'),
-                'opp_ast_pct': away_adv.get('assistPercentage'),
-                'opp_ast_to': away_adv.get('assistToTurnover'),
-            }
-
-            return stats
-
-        except Exception as e:
-            logger.error(f"Error fetching advanced stats for game {game_id}: {e}")
+        if stats is None:
             return None
+
+        # Convert from home/away structure to flat structure for compatibility
+        home = stats.get("home", {})
+        away = stats.get("away", {})
+
+        return {
+            # Traditional stats (home team)
+            'fgm': home.get('fgm'),
+            'fga': home.get('fga'),
+            'fg3m': home.get('fg3m'),
+            'fg3a': home.get('fg3a'),
+            'ftm': home.get('ftm'),
+            'fta': home.get('fta'),
+            'oreb': home.get('oreb'),
+            'dreb': home.get('dreb'),
+            'ast': home.get('ast'),
+            'stl': home.get('stl'),
+            'blk': home.get('blk'),
+            'tov': home.get('tov'),
+
+            # Traditional stats (away team / opponent)
+            'opp_fgm': away.get('fgm'),
+            'opp_fga': away.get('fga'),
+            'opp_fg3m': away.get('fg3m'),
+            'opp_fg3a': away.get('fg3a'),
+            'opp_ftm': away.get('ftm'),
+            'opp_fta': away.get('fta'),
+            'opp_oreb': away.get('oreb'),
+            'opp_dreb': away.get('dreb'),
+            'opp_ast': away.get('ast'),
+            'opp_stl': away.get('stl'),
+            'opp_blk': away.get('blk'),
+            'opp_tov': away.get('tov'),
+
+            # Advanced stats (home team)
+            'pace': home.get('pace'),
+            'off_rating': home.get('off_rating'),
+            'def_rating': home.get('def_rating'),
+            'efg_pct': home.get('efg_pct'),
+            'ts_pct': home.get('ts_pct'),
+
+            # Advanced stats (away team / opponent)
+            'opp_off_rating': away.get('off_rating'),
+            'opp_def_rating': away.get('def_rating'),
+            'opp_efg_pct': away.get('efg_pct'),
+            'opp_ts_pct': away.get('ts_pct'),
+        }
 
     def add_advanced_stats_to_games(self, games_df: pd.DataFrame) -> pd.DataFrame:
         """

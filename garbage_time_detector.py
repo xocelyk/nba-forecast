@@ -17,9 +17,8 @@ import logging
 from typing import Dict, Optional, Tuple
 
 import pandas as pd
-from nba_api.stats.endpoints import playbyplayv3
 
-from nba_api_loader import retry_with_backoff
+from nba_api_client import get_client
 
 logger = logging.getLogger("nba")
 
@@ -32,24 +31,16 @@ class GarbageTimeDetector:
         Initialize garbage time detector.
 
         Args:
-            rate_limit_seconds: Time to wait between API calls
+            rate_limit_seconds: Time to wait between API calls (now handled by client)
         """
-        self.rate_limit = rate_limit_seconds
-        import time
-
-        self.time_module = time
-        self.last_call_time = 0
-
-    def _rate_limit(self):
-        """Enforce rate limiting between API calls."""
-        elapsed = self.time_module.time() - self.last_call_time
-        if elapsed < self.rate_limit:
-            self.time_module.sleep(self.rate_limit - elapsed)
-        self.last_call_time = self.time_module.time()
+        # Rate limiting is now handled by NBAApiClient
+        pass
 
     def get_play_by_play(self, game_id: str) -> Optional[pd.DataFrame]:
         """
         Fetch play-by-play data for a game.
+
+        Uses NBAApiClient with automatic CDN fallback.
 
         Args:
             game_id: NBA game ID (e.g., "0022401200")
@@ -57,35 +48,8 @@ class GarbageTimeDetector:
         Returns:
             DataFrame with play-by-play actions or None if unavailable
         """
-        self._rate_limit()
-
-        def fetch_pbp():
-            pbp = playbyplayv3.PlayByPlayV3(
-                game_id=game_id,
-                timeout=60,
-            )
-            return pbp.play_by_play.get_data_frame()
-
-        try:
-            df = retry_with_backoff(
-                fetch_pbp,
-                max_retries=2,
-                base_delay=3.0,
-                max_delay=30.0,
-            )
-
-            if df is None or len(df) == 0:
-                logger.warning(f"No play-by-play data for game {game_id}")
-                return None
-
-            logger.info(
-                f"Retrieved {len(df)} play-by-play actions for game {game_id}"
-            )
-            return df
-
-        except Exception as e:
-            logger.error(f"Error fetching play-by-play for game {game_id}: {e}")
-            return None
+        client = get_client()
+        return client.get_playbyplay(game_id)
 
     def _parse_game_clock(self, clock_str: str) -> float:
         """
