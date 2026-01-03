@@ -510,7 +510,7 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0022500482,2026-01-02 00:00:00,NOP,POR,New Orleans Pelicans,Portland Trail Blazers,109.0,122.0,-13.0,Home,96.95398033126294,True,2026,False,,,,28.0
 0022500483,2026-01-02 00:00:00,PHX,SAC,Phoenix Suns,Sacramento Kings,129.0,102.0,27.0,Home,103.907,True,2026,True,4.0,PT06M53.00S,623.0,21.0
 0022500484,2026-01-02 00:00:00,GSW,OKC,Golden State Warriors,Oklahoma City Thunder,94.0,131.0,-37.0,Home,103.53789473684212,True,2026,False,,,,33.0
-0022500485,2026-01-02 05:00:00,LAL,MEM,Lakers,Grizzlies,128.0,121.0,7.0,Home,105.81139204545453,True,2026,False,,,,42.0
+0022500485,2026-01-02 05:00:00,LAL,MEM,Los Angeles Lakers,Memphis Grizzlies,128.0,121.0,7.0,Home,105.81139204545453,True,2026,False,,,,42.0
 0022500486,2026-01-03 05:00:00,MIA,MIN,Heat,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,
 0022500487,2026-01-03 05:00:00,NYK,PHI,Knicks,76ers,0.0,0.0,,Home,,False,2026,,,,,
 0022500488,2026-01-03 05:00:00,TOR,ATL,Raptors,Hawks,0.0,0.0,,Home,,False,2026,,,,,
