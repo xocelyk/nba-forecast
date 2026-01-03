@@ -168,7 +168,9 @@ class Season:
             team_data = utils.duplicate_games(team_data, hca=self.hca)
             team_data = team_data[team_data["team"] == team]
             # Vectorized calculation instead of .apply()
-            team_data["team_adj_margin"] = team_data["margin"] + team_data["opponent_rating"] - self.hca
+            team_data["team_adj_margin"] = (
+                team_data["margin"] + team_data["opponent_rating"] - self.hca
+            )
             if len(team_data) == 0:
                 team_adj_margins = []
             else:
@@ -346,9 +348,7 @@ class Season:
         team_days_diff = (game_dates_series - team_dates_series).dt.days
         # Handle nulls and cap at 10 days
         team_days = np.where(
-            team_dates_series.isna(),
-            10,
-            np.minimum(team_days_diff, 10)
+            team_dates_series.isna(), 10, np.minimum(team_days_diff, 10)
         )
 
         # Calculate days difference for opponent
@@ -356,9 +356,7 @@ class Season:
         opponent_days_diff = (game_dates_series - opponent_dates_series).dt.days
         # Handle nulls and cap at 10 days
         opponent_days = np.where(
-            opponent_dates_series.isna(),
-            10,
-            np.minimum(opponent_days_diff, 10)
+            opponent_dates_series.isna(), 10, np.minimum(opponent_days_diff, 10)
         )
 
         self.future_games["team_days_since_most_recent_game"] = team_days
@@ -470,12 +468,12 @@ class Season:
 
         #     result = "W" if okc_won else "L"
         #     okc_rating = self.em_ratings.get("OKC", 0.0)
-            # logger.info(
-            #     f"OKC GAME | {matchup:20s} | "
-            #     f"Rating: {okc_rating:+6.2f} | "
-            #     f"Expected: {okc_expected_margin:+6.2f} ({okc_win_prob:.1%}) | "
-            #     f"Result: {result} {okc_margin:+6.2f}"
-            # )
+        # logger.info(
+        #     f"OKC GAME | {matchup:20s} | "
+        #     f"Rating: {okc_rating:+6.2f} | "
+        #     f"Expected: {okc_expected_margin:+6.2f} ({okc_win_prob:.1%}) | "
+        #     f"Result: {result} {okc_margin:+6.2f}"
+        # )
 
         row["completed"] = True
         row["team_win"] = team_win
@@ -514,29 +512,27 @@ class Season:
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
-        std_devs = np.array([
-            self.margin_model.num_games_to_std_margin_model_resid(n)
-            for n in games["num_games_into_season"].values
-        ])
+        std_devs = np.array(
+            [
+                self.margin_model.num_games_to_std_margin_model_resid(n)
+                for n in games["num_games_into_season"].values
+            ]
+        )
         noise = np.random.normal(0, std_devs)
 
         # Calculate margins
         margins = noise + expected_margins
 
         # Batch predict win probabilities (for reporting only)
-        win_probs = self.win_prob_model.predict_proba(
-            expected_margins.reshape(-1, 1)
-        )[:, 1]
+        win_probs = self.win_prob_model.predict_proba(expected_margins.reshape(-1, 1))[
+            :, 1
+        ]
 
         # Update game results
         games["completed"] = True
         games["team_win"] = (margins > 0).astype(int)
         games["margin"] = margins
-        games["winner_name"] = np.where(
-            margins > 0,
-            games["team"],
-            games["opponent"]
-        )
+        games["winner_name"] = np.where(margins > 0, games["team"], games["opponent"])
 
         # # Log OKC games if any
         # okc_mask = (games["team"] == "OKC") | (games["opponent"] == "OKC")
@@ -569,7 +565,7 @@ class Season:
         #             f"Rating: {okc_rating:+6.2f} | "
         #             f"Expected: {okc_expected_margin:+6.2f} ({okc_win_prob:.1%}) | "
         #             f"Result: {result} {okc_margin:+6.2f}"
-                # )
+        # )
 
         # Batch update state dictionaries
         for idx in games.index:
@@ -676,33 +672,44 @@ class Season:
             playoff = games_df["playoff"]
 
         # Build the feature DataFrame using vectorized operations
-        data = pd.DataFrame({
-            "team_rating": games_df["team_rating"],
-            "opponent_rating": games_df["opponent_rating"],
-            "rating_diff": games_df["team_rating"] - games_df["opponent_rating"],
-            "team_win_total_future": games_df["team_win_total_future"],
-            "opponent_win_total_future": games_df["opponent_win_total_future"],
-            "last_year_team_rating": games_df["last_year_team_rating"],
-            "last_year_opp_rating": games_df["last_year_opp_rating"],
-            "last_year_rating_diff": games_df["last_year_team_rating"] - games_df["last_year_opp_rating"],
-            "num_games_into_season": games_df["num_games_into_season"],
-            "team_last_10_rating": games_df["team_last_10_rating"],
-            "opponent_last_10_rating": games_df["opponent_last_10_rating"],
-            "last_10_rating_diff": games_df["team_last_10_rating"] - games_df["opponent_last_10_rating"],
-            "team_last_5_rating": games_df["team_last_5_rating"],
-            "opponent_last_5_rating": games_df["opponent_last_5_rating"],
-            "last_5_rating_diff": games_df["team_last_5_rating"] - games_df["opponent_last_5_rating"],
-            "team_last_3_rating": games_df["team_last_3_rating"],
-            "opponent_last_3_rating": games_df["opponent_last_3_rating"],
-            "last_3_rating_diff": games_df["team_last_3_rating"] - games_df["opponent_last_3_rating"],
-            "team_last_1_rating": games_df["team_last_1_rating"],
-            "opponent_last_1_rating": games_df["opponent_last_1_rating"],
-            "last_1_rating_diff": games_df["team_last_1_rating"] - games_df["opponent_last_1_rating"],
-            "team_days_since_most_recent_game": games_df["team_days_since_most_recent_game"],
-            "opponent_days_since_most_recent_game": games_df["opponent_days_since_most_recent_game"],
-            "hca": self.hca,
-            "playoff": playoff,
-        })
+        data = pd.DataFrame(
+            {
+                "team_rating": games_df["team_rating"],
+                "opponent_rating": games_df["opponent_rating"],
+                "rating_diff": games_df["team_rating"] - games_df["opponent_rating"],
+                "team_win_total_future": games_df["team_win_total_future"],
+                "opponent_win_total_future": games_df["opponent_win_total_future"],
+                "last_year_team_rating": games_df["last_year_team_rating"],
+                "last_year_opp_rating": games_df["last_year_opp_rating"],
+                "last_year_rating_diff": games_df["last_year_team_rating"]
+                - games_df["last_year_opp_rating"],
+                "num_games_into_season": games_df["num_games_into_season"],
+                "team_last_10_rating": games_df["team_last_10_rating"],
+                "opponent_last_10_rating": games_df["opponent_last_10_rating"],
+                "last_10_rating_diff": games_df["team_last_10_rating"]
+                - games_df["opponent_last_10_rating"],
+                "team_last_5_rating": games_df["team_last_5_rating"],
+                "opponent_last_5_rating": games_df["opponent_last_5_rating"],
+                "last_5_rating_diff": games_df["team_last_5_rating"]
+                - games_df["opponent_last_5_rating"],
+                "team_last_3_rating": games_df["team_last_3_rating"],
+                "opponent_last_3_rating": games_df["opponent_last_3_rating"],
+                "last_3_rating_diff": games_df["team_last_3_rating"]
+                - games_df["opponent_last_3_rating"],
+                "team_last_1_rating": games_df["team_last_1_rating"],
+                "opponent_last_1_rating": games_df["opponent_last_1_rating"],
+                "last_1_rating_diff": games_df["team_last_1_rating"]
+                - games_df["opponent_last_1_rating"],
+                "team_days_since_most_recent_game": games_df[
+                    "team_days_since_most_recent_game"
+                ],
+                "opponent_days_since_most_recent_game": games_df[
+                    "opponent_days_since_most_recent_game"
+                ],
+                "hca": self.hca,
+                "playoff": playoff,
+            }
+        )
 
         # Ensure column order matches env.x_features
         data = data[env.x_features]
@@ -2311,9 +2318,7 @@ class Season:
                 # Vectorized calculation instead of .apply()
                 masked_df = self.completed_games.loc[mask]
                 self.completed_games.loc[mask, "winner_name"] = np.where(
-                    masked_df["margin"] > 0,
-                    masked_df["team"],
-                    masked_df["opponent"]
+                    masked_df["margin"] > 0, masked_df["team"], masked_df["opponent"]
                 )
                 # Refresh the series data
                 series = self.completed_games[

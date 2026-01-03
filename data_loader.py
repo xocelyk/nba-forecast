@@ -97,7 +97,6 @@ def backfill_garbage_time_for_year(year: int):
     print(f"Year {year}: Saved updated data with garbage time detection")
 
 
-
 def load_year_data(year: int = 2026):
     """Load completed game rows from the CSV for ``year``."""
     filename = os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
@@ -224,7 +223,9 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     # Add garbage time detection for all completed games
     all_completed_games = data_df[data_df["completed"] == True]
     if len(all_completed_games) > 0:
-        print(f"Detecting garbage time for {len(all_completed_games)} completed games...")
+        print(
+            f"Detecting garbage time for {len(all_completed_games)} completed games..."
+        )
         data_df = loader.add_garbage_time_to_games(data_df)
 
     # Add advanced statistics for all completed games
