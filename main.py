@@ -116,7 +116,8 @@ def load_game_data(
     else:
         try:
             games = pd.read_csv(
-                os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
+                os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv"),
+                dtype={"game_id": str},
             )
             games.rename(
                 columns={"team_abbr": "team", "opponent_abbr": "opponent"}, inplace=True

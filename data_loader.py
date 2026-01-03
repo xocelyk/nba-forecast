@@ -111,6 +111,8 @@ def load_year_data(year: int = 2026):
         df["garbage_time_cutoff_period"] = None
     if "garbage_time_cutoff_clock" not in df.columns:
         df["garbage_time_cutoff_clock"] = None
+    if "garbage_time_cutoff_action_number" not in df.columns:
+        df["garbage_time_cutoff_action_number"] = None
     if "garbage_time_possessions_before_cutoff" not in df.columns:
         df["garbage_time_possessions_before_cutoff"] = None
 
@@ -131,6 +133,11 @@ def load_year_data(year: int = 2026):
                 row["pace"],
                 row["completed"],
                 year,
+                row.get("garbage_time_detected"),
+                row.get("garbage_time_cutoff_period"),
+                row.get("garbage_time_cutoff_clock"),
+                row.get("garbage_time_cutoff_action_number"),
+                row.get("garbage_time_possessions_before_cutoff"),
             ]
         )
     return data
@@ -186,6 +193,11 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
                 "pace",
                 "completed",
                 "year",
+                "garbage_time_detected",
+                "garbage_time_cutoff_period",
+                "garbage_time_cutoff_clock",
+                "garbage_time_cutoff_action_number",
+                "garbage_time_possessions_before_cutoff",
             ],
         )
         # Ensure game_id is string (prevent pandas from converting to int)
@@ -347,7 +359,7 @@ def load_training_data(
                 year_data = this_year_games
                 year_data["date"] = pd.to_datetime(year_data["date"], format="mixed")
             else:
-                year_data = pd.read_csv(f"data/games/year_data_{year}.csv")
+                year_data = pd.read_csv(f"data/games/year_data_{year}.csv", dtype={"game_id": str})
             year_data = year_data.sort_values("date")
             if "team_abbr" in year_data.columns and "team" not in year_data.columns:
                 year_data["team"] = year_data["team_abbr"]
@@ -365,7 +377,7 @@ def load_training_data(
             # PHO -> PHX (Phoenix changed their abbreviation after 2020)
             # CHA -> CHO (Charlotte API abbreviation vs win totals abbreviation)
             # After 2020, all data uses PHX instead of PHO
-            abbr_mapping = {"PHO": "PHX", "CHA": "CHO"}
+            abbr_mapping = {"PHO": "PHX", "CHA": "CHO", "BKN": "BRK"}
             year_data["team"] = year_data["team"].replace(abbr_mapping)
             year_data["opponent"] = year_data["opponent"].replace(abbr_mapping)
 
