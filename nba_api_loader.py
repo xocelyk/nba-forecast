@@ -148,7 +148,10 @@ class NBAAPILoader:
                 continue
 
             game_id = row["gameId"]
+            # Parse date and convert to timezone-naive (UTC dates stripped of tz info)
             game_date = pd.to_datetime(row["gameDate"])
+            if game_date.tzinfo is not None:
+                game_date = game_date.tz_convert("UTC").tz_localize(None)
 
             # Home team info
             home_abbr = row["homeTeam_teamTricode"]
