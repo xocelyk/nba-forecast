@@ -12,14 +12,14 @@ from sklearn.metrics import log_loss, mean_absolute_error, mean_squared_error, r
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier, XGBRegressor
 
-import env
+import config
 
 logger = logging.getLogger(__name__)
 
 
 def get_win_margin_model_heavy(games):
     games = games[games["completed"] == True]
-    x_features = env.x_features_heavy
+    x_features = config.x_features_heavy
     X = games[x_features].copy()
     y = games["margin"]
     params = {
@@ -76,10 +76,10 @@ def get_win_probability_model_heavy(games):
     games = games[games["completed"] == True]
     games["win"] = games["margin"] > 0
     games["win"] = games["win"].astype(int)
-    x_features = env.x_features_heavy
+    x_features = config.x_features_heavy
     X = games[x_features].copy()
     y = games["win"]
-    params = env.win_prob_model_params
+    params = config.win_prob_model_params
     model = XGBClassifier(**params)
 
     # Add Gaussian noise to win total and prev year rating columns for data augmentation
@@ -173,8 +173,8 @@ def get_win_margin_model(games, features=None):
     test = games[games["year"].isin(test_years)]
 
     # Use specified features or default to environment features
-    x_features = features if features else env.x_features
-    params = env.win_margin_model_params
+    x_features = features if features else config.x_features
+    params = config.win_margin_model_params
     model = XGBRegressor(**params)
 
     # Prepare training and testing data
@@ -257,7 +257,7 @@ def get_win_margin_model(games, features=None):
     m, std = prediction_interval_stdev(model, X_test, y_test)
 
     # Save the trained model
-    filename = os.path.join(env.DATA_DIR, "win_margin_model_heavy.pkl")
+    filename = os.path.join(config.DATA_DIR, "win_margin_model_heavy.pkl")
     pickle.dump(model, open(filename, "wb"))
 
     return model, m, std, spline
@@ -265,7 +265,7 @@ def get_win_margin_model(games, features=None):
 
 def get_win_probability_model(games, win_margin_model):
     games = games[games["completed"] == True]
-    x_features = env.x_features
+    x_features = config.x_features
     X = games[x_features]
     X["pred_margin"] = win_margin_model.predict(X)
     games["pred_margin"] = X["pred_margin"]
@@ -281,7 +281,7 @@ def get_win_probability_model(games, win_margin_model):
 # Unused function, kept for reference
 def get_win_probability_model_xgb(games, win_margin_model):
     games = games[games["completed"] == True]
-    x_features = env.x_features
+    x_features = config.x_features
     X = games[x_features]
     games["team_win"] = games["margin"] > 0
     params = {

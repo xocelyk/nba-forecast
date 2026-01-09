@@ -8,9 +8,9 @@ import numpy as np
 import pandas as pd
 
 import data_loader
-import env
+import config
 import utils
-from env import logger
+from config import logger
 
 """
 # TODO: update with days since most recent game
@@ -758,7 +758,7 @@ class Season:
                     bayesian_gs_diff,
                 ]
             ],
-            columns=env.x_features,
+            columns=config.x_features,
         )
         return data
 
@@ -770,7 +770,7 @@ class Season:
             games_df: DataFrame containing multiple games to prepare
 
         Returns:
-            DataFrame with features matching env.x_features for all games
+            DataFrame with features matching config.x_features for all games
         """
         # Handle playoff column - use existing if present, otherwise compute vectorized
         if "playoff" not in games_df.columns or games_df["playoff"].isnull().any():
@@ -851,8 +851,8 @@ class Season:
             }
         )
 
-        # Ensure column order matches env.x_features
-        data = data[env.x_features]
+        # Ensure column order matches config.x_features
+        data = data[config.x_features]
         return data
 
     def get_win_loss_report(self):
@@ -970,7 +970,7 @@ class Season:
         self.completed_games["winner_name"] = None
 
         # Use hardcoded seeds or calculated seeds based on environment variable
-        if env.use_hardcoded_seeds:
+        if config.use_hardcoded_seeds:
             # Use hardcoded playoff seeds (current manual configuration)
             east_teams = ["CLE", "BOS", "NYK", "IND", "MIL", "DET", "ORL", "MIA"]
             west_teams = ["OKC", "HOU", "LAL", "DEN", "LAC", "MIN", "GSW", "MEM"]
@@ -2502,7 +2502,7 @@ def playoff_results_over_sims_dict_to_df(playoff_results_over_sims):
 
 def save_raw_simulation_results(season_results_over_sims):
     """Save raw simulation results (wins per simulation for each team) to CSV."""
-    import env
+    import config
 
     # Create DataFrame with teams as columns and simulations as rows
     raw_results = {}
@@ -2515,11 +2515,11 @@ def save_raw_simulation_results(season_results_over_sims):
     # Save to file
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     raw_df.to_csv(
-        os.path.join(env.DATA_DIR, "sim_results", "sim_raw_results.csv"), index=True
+        os.path.join(config.DATA_DIR, "sim_results", "sim_raw_results.csv"), index=True
     )
     raw_df.to_csv(
         os.path.join(
-            env.DATA_DIR, "sim_results", "archive", f"sim_raw_results_{date_string}.csv"
+            config.DATA_DIR, "sim_results", "archive", f"sim_raw_results_{date_string}.csv"
         ),
         index=True,
     )
@@ -2530,7 +2530,7 @@ def save_raw_simulation_results(season_results_over_sims):
 
 def save_simulated_game_results(games_df):
     """Save game-level simulation results to CSV."""
-    import env
+    import config
 
     # Reorder columns with simulation_id first
     cols = ["simulation_id"] + [c for c in games_df.columns if c != "simulation_id"]
@@ -2538,12 +2538,12 @@ def save_simulated_game_results(games_df):
 
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     games_df.to_csv(
-        os.path.join(env.DATA_DIR, "sim_results", "sim_game_results.csv"),
+        os.path.join(config.DATA_DIR, "sim_results", "sim_game_results.csv"),
         index=False,
     )
     games_df.to_csv(
         os.path.join(
-            env.DATA_DIR,
+            config.DATA_DIR,
             "sim_results",
             "archive",
             f"sim_game_results_{date_string}.csv",
@@ -2822,7 +2822,7 @@ def write_seed_report(seeds_results_over_sims):
     ]
     east_df.to_csv(
         os.path.join(
-            env.DATA_DIR,
+            config.DATA_DIR,
             "seed_reports",
             "archive",
             f"east_seed_report_{date_string}.csv",
@@ -2830,11 +2830,11 @@ def write_seed_report(seeds_results_over_sims):
         index=False,
     )
     east_df.to_csv(
-        os.path.join(env.DATA_DIR, "seed_reports", "east_seed_report.csv"), index=False
+        os.path.join(config.DATA_DIR, "seed_reports", "east_seed_report.csv"), index=False
     )
     west_df.to_csv(
         os.path.join(
-            env.DATA_DIR,
+            config.DATA_DIR,
             "seed_reports",
             "archive",
             f"west_seed_report_{date_string}.csv",
@@ -2842,16 +2842,16 @@ def write_seed_report(seeds_results_over_sims):
         index=False,
     )
     west_df.to_csv(
-        os.path.join(env.DATA_DIR, "seed_reports", "west_seed_report.csv"), index=False
+        os.path.join(config.DATA_DIR, "seed_reports", "west_seed_report.csv"), index=False
     )
     seeds_results_over_sims_df.to_csv(
         os.path.join(
-            env.DATA_DIR, "seed_reports", "archive", f"seed_report_{date_string}.csv"
+            config.DATA_DIR, "seed_reports", "archive", f"seed_report_{date_string}.csv"
         ),
         index=False,
     )
     seeds_results_over_sims_df.to_csv(
-        os.path.join(env.DATA_DIR, "seed_reports", "seed_report.csv"), index=False
+        os.path.join(config.DATA_DIR, "seed_reports", "seed_report.csv"), index=False
     )
 
 

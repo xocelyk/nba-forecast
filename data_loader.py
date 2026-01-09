@@ -5,7 +5,7 @@ import time
 import numpy as np
 import pandas as pd
 
-import env
+import config
 import nba_api_loader
 import utils
 
@@ -23,7 +23,7 @@ def backfill_garbage_time_for_year(year: int):
     Args:
         year: Year to backfill (e.g., 2024)
     """
-    filename = os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
+    filename = os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv")
 
     # Check if file exists
     if not os.path.exists(filename):
@@ -99,7 +99,7 @@ def backfill_garbage_time_for_year(year: int):
 
 def load_year_data(year: int = 2026):
     """Load completed game rows from the CSV for ``year``."""
-    filename = os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
+    filename = os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv")
     # Read game_id as string to preserve leading zeros
     df = pd.read_csv(filename, dtype={"game_id": str})
     df = df[df["completed"] == True]
@@ -291,7 +291,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
 
     # Set index and save
     data_df.set_index("game_id", inplace=True)
-    data_df.to_csv(os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv"))
+    data_df.to_csv(os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv"))
 
     print(f"Saved {len(data_df)} games to year_data_{year}.csv")
 
@@ -300,7 +300,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
 
 def load_regular_season_win_totals_futures():
     """Load historical regular-season win total futures."""
-    filename = os.path.join(env.DATA_DIR, "regular_season_win_totals_odds_archive.csv")
+    filename = os.path.join(config.DATA_DIR, "regular_season_win_totals_odds_archive.csv")
     with open(filename, "r") as f:
         reader = csv.reader(f)
         data = list(reader)
@@ -333,7 +333,7 @@ def load_training_data(
     """Return a training DataFrame built from historical game data."""
     if regenerate_years is None:
         regenerate_years = []
-    all_data_archive = pd.read_csv(os.path.join(env.DATA_DIR, "train_data.csv"))
+    all_data_archive = pd.read_csv(os.path.join(config.DATA_DIR, "train_data.csv"))
     all_data_archive.drop(
         [c for c in all_data_archive.columns if "Unnamed" in c], axis=1, inplace=True
     )
@@ -750,14 +750,14 @@ def load_training_data(
     all_data = add_days_since_most_recent_game(all_data)
 
     # Add per-season HCA values
-    hca_map_path = os.path.join(env.DATA_DIR, "hca_by_year.json")
+    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
     hca_map = utils.load_hca_map(hca_map_path)
     if not hca_map or any(int(y) not in hca_map for y in all_data["year"].unique()):
         hca_map = utils.calculate_hca_by_season(all_data)
         utils.save_hca_map(hca_map, hca_map_path)
     all_data["hca"] = all_data["year"].map(hca_map).astype(float)
 
-    all_data.to_csv(os.path.join(env.DATA_DIR, "train_data.csv"), index=False)
+    all_data.to_csv(os.path.join(config.DATA_DIR, "train_data.csv"), index=False)
     return all_data
 
 

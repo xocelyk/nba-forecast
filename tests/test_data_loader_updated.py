@@ -101,7 +101,7 @@ class TestLoadYearData:
         csv_data.to_csv(csv_file, index=False)
 
         # Patch DATA_DIR
-        with patch("env.DATA_DIR", str(tmp_path)):
+        with patch("config.DATA_DIR", str(tmp_path)):
             result = data_loader.load_year_data(year=2025)
 
         # Verify results
@@ -132,7 +132,7 @@ class TestLoadYearData:
         csv_file = csv_path / "year_data_2025.csv"
         csv_data.to_csv(csv_file, index=False)
 
-        with patch("env.DATA_DIR", str(tmp_path)):
+        with patch("config.DATA_DIR", str(tmp_path)):
             result = data_loader.load_year_data(year=2025)
 
         # Should only get completed games
@@ -160,7 +160,7 @@ class TestLoadYearData:
         csv_file = csv_path / "year_data_2025.csv"
         csv_data.to_csv(csv_file, index=False)
 
-        with patch("env.DATA_DIR", str(tmp_path)):
+        with patch("config.DATA_DIR", str(tmp_path)):
             result = data_loader.load_year_data(year=2025)
 
         # Check date is correctly parsed
@@ -208,7 +208,7 @@ class TestUpdateData:
         names_to_abbr = {"Celtics": "BOS", "Lakers": "LAL"}
 
         # Setup temp data dir
-        with patch("env.DATA_DIR", str(tmp_path)):
+        with patch("config.DATA_DIR", str(tmp_path)):
             games_path = tmp_path / "games"
             games_path.mkdir()
 
@@ -280,7 +280,7 @@ class TestUpdateData:
 
         names_to_abbr = {"Celtics": "BOS", "Lakers": "LAL"}
 
-        with patch("env.DATA_DIR", str(tmp_path)):
+        with patch("config.DATA_DIR", str(tmp_path)):
             result = data_loader.update_data(names_to_abbr, year=2025, preload=True)
 
         # Should have both games
@@ -320,7 +320,7 @@ class TestUpdateData:
 
         names_to_abbr = {"Celtics": "BOS", "Lakers": "LAL"}
 
-        with patch("env.DATA_DIR", str(tmp_path)):
+        with patch("config.DATA_DIR", str(tmp_path)):
             games_path = tmp_path / "games"
             games_path.mkdir()
 

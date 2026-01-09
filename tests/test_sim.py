@@ -8,7 +8,7 @@ import pickle
 import pandas as pd
 from scipy.interpolate import UnivariateSpline
 
-import env
+import config
 import sim_season
 import utils
 from eval import get_win_margin_model, get_win_probability_model
@@ -39,12 +39,12 @@ def main():
     print("Loading models and data...")
 
     # Load the trained model
-    model_path = os.path.join(env.DATA_DIR, "win_margin_model_heavy.pkl")
+    model_path = os.path.join(config.DATA_DIR, "win_margin_model_heavy.pkl")
     with open(model_path, "rb") as f:
         win_margin_model = pickle.load(f)
 
     # Load training data
-    train_data_path = os.path.join(env.DATA_DIR, "train_data.csv")
+    train_data_path = os.path.join(config.DATA_DIR, "train_data.csv")
     data = pd.read_csv(train_data_path)
 
     # Get model parameters

@@ -4,7 +4,7 @@ import os
 import numpy as np
 import pandas as pd
 
-import env
+import config
 import utils
 
 
@@ -40,7 +40,7 @@ def predict_margin_today_games(games, win_margin_model):
     if len(games) == 0:
         return None
     games = add_engineered_features(games)
-    games["margin"] = win_margin_model.predict(games[env.x_features])
+    games["margin"] = win_margin_model.predict(games[config.x_features])
     return games
 
 
@@ -56,7 +56,7 @@ def predict_margin_this_week_games(games, win_margin_model):
         return None
 
     games = add_engineered_features(games)
-    games["margin"] = win_margin_model.predict(games[env.x_features])
+    games["margin"] = win_margin_model.predict(games[config.x_features])
 
     for date in games["date"].unique():
         date_games = games[games["date"] == date]
@@ -67,7 +67,7 @@ def predict_margin_this_week_games(games, win_margin_model):
     to_csv_data = pd.DataFrame(
         to_csv_data, columns=["Date", "Home", "Away", "Predicted Home Margin"]
     )
-    to_csv_data.to_csv(os.path.join(env.DATA_DIR, "predicted_margins.csv"), index=False)
+    to_csv_data.to_csv(os.path.join(config.DATA_DIR, "predicted_margins.csv"), index=False)
     return games
 
 
@@ -84,7 +84,7 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
     if len(games) == 0:
         return None
     games = add_engineered_features(games)
-    games["pred_margin"] = win_margin_model.predict(games[env.x_features])
+    games["pred_margin"] = win_margin_model.predict(games[config.x_features])
     games["win_prob"] = win_prob_model.predict_proba(
         games["pred_margin"].values.reshape(-1, 1)
     )[:, 1]
@@ -113,13 +113,13 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
     )
     to_csv_data.to_csv(
         os.path.join(
-            env.DATA_DIR, "predictions", "predicted_margins_and_win_probs.csv"
+            config.DATA_DIR, "predictions", "predicted_margins_and_win_probs.csv"
         ),
         index=False,
     )
     to_csv_data.to_csv(
         os.path.join(
-            env.DATA_DIR,
+            config.DATA_DIR,
             "predictions",
             "archive",
             f"predicted_margins_and_win_probs_{datetime.date.today()}.csv",
@@ -133,7 +133,7 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
     # Load the HCA value for this year
     import json
 
-    hca_map_path = os.path.join(env.DATA_DIR, "hca_by_year.json")
+    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
     with open(hca_map_path, "r") as f:
         hca_map = {int(k): float(v) for k, v in json.load(f).items()}
     current_hca = hca_map.get(year, utils.HCA_PRIOR_MEAN)
@@ -142,7 +142,7 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
     ['team_rating', 'opponent_rating', 'team_win_total_future', 'opponent_win_total_future', 'last_year_team_rating', 'last_year_opp_rating', 'num_games_into_season', \
     'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating'])
     """
-    filename = os.path.join(env.DATA_DIR, "train_data.csv")
+    filename = os.path.join(config.DATA_DIR, "train_data.csv")
     most_recent_games_dict = {}  # team to pandas series of most recent game
     # most recent game is either the most recently played game OR the next game to be played (if no games have been played yet)
     this_year_games = pd.read_csv(filename)[pd.read_csv(filename)["year"] == year]
@@ -307,7 +307,7 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "bayesian_gs_diff": team_bayesian_gs - opp_bayesian_gs,
             }
             X_home = pd.DataFrame.from_dict(X_home_dct, orient="index").transpose()
-            team_home_margins.append(model.predict(X_home[env.x_features])[0])
+            team_home_margins.append(model.predict(X_home[config.x_features])[0])
 
             # play an away game
             X_away_dct = {
@@ -350,7 +350,7 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "bayesian_gs_diff": opp_bayesian_gs - team_bayesian_gs,
             }
             X_away = pd.DataFrame.from_dict(X_away_dct, orient="index").transpose()
-            team_away_margins.append(-model.predict(X_away[env.x_features])[0])
+            team_away_margins.append(-model.predict(X_away[config.x_features])[0])
 
         average_home_margin = np.mean(team_home_margins)
         average_away_margin = np.mean(team_away_margins)
@@ -369,7 +369,7 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
     filename = (
         "predictive_ratings_playoff.csv" if playoff_mode else "predictive_ratings.csv"
     )
-    team_predictive_em_df.to_csv(os.path.join(env.DATA_DIR, filename))
+    team_predictive_em_df.to_csv(os.path.join(config.DATA_DIR, filename))
     return team_predictive_em_df
 
 
@@ -399,7 +399,7 @@ def generate_retrospective_predictions(
     Compares model predictions to actual outcomes for bias analysis.
     Saves results to data/retrospective_predictions/ with date-stamped archives.
     """
-    from env import logger
+    from config import logger
 
     # Filter to current year completed games
     games = training_data[
@@ -414,7 +414,7 @@ def generate_retrospective_predictions(
     games = add_engineered_features(games)
 
     # Generate predictions using model
-    games["pred_margin"] = win_margin_model.predict(games[env.x_features])
+    games["pred_margin"] = win_margin_model.predict(games[config.x_features])
     games["pred_win_prob"] = win_prob_model.predict_proba(
         games["pred_margin"].values.reshape(-1, 1)
     )[:, 1]
@@ -455,7 +455,7 @@ def generate_retrospective_predictions(
     date_string = datetime.date.today().strftime("%Y-%m-%d")
 
     # Create directory if needed
-    retro_dir = os.path.join(env.DATA_DIR, "retrospective_predictions")
+    retro_dir = os.path.join(config.DATA_DIR, "retrospective_predictions")
     os.makedirs(retro_dir, exist_ok=True)
 
     # Save current file

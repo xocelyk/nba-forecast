@@ -12,14 +12,14 @@ import numpy as np
 import pandas as pd
 
 import data_loader
-import env
+import config
 import eval
 import forecast
 import stats
 import utils
 
-# Import logger from env
-from env import logger
+# Import logger from config
+from config import logger
 from sim_season import sim_season
 
 # ignore warnings
@@ -60,14 +60,14 @@ def load_team_data(
 
             # Temp fix
             with open(
-                os.path.join(env.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
+                os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
             ) as f:
                 names_to_abbr = pickle.load(f)
 
         if save_names:
             try:
                 with open(
-                    os.path.join(env.DATA_DIR, f"names_to_abbr_{year}.pkl"), "wb"
+                    os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "wb"
                 ) as f:
                     pickle.dump(names_to_abbr, f)
             except Exception as e:
@@ -76,7 +76,7 @@ def load_team_data(
     else:
         try:
             with open(
-                os.path.join(env.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
+                os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
             ) as f:
                 names_to_abbr = pickle.load(f)
         except FileNotFoundError:
@@ -116,7 +116,7 @@ def load_game_data(
     else:
         try:
             games = pd.read_csv(
-                os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv"),
+                os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv"),
                 dtype={"game_id": str},
             )
             games.rename(
@@ -155,7 +155,7 @@ def calculate_em_ratings(
     ]
     em_ratings_df = pd.DataFrame(ratings_lst, columns=["rank", "team", "rating"])
     em_ratings_df.to_csv(
-        os.path.join(env.DATA_DIR, f"em_ratings_{year}.csv"), index=False
+        os.path.join(config.DATA_DIR, f"em_ratings_{year}.csv"), index=False
     )
     return em_ratings
 
@@ -243,10 +243,10 @@ def simulate_season(
         start_date=start_date,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
-    sim_report.to_csv(os.path.join(env.DATA_DIR, "sim_results", "sim_report.csv"))
+    sim_report.to_csv(os.path.join(config.DATA_DIR, "sim_results", "sim_report.csv"))
     sim_report.to_csv(
         os.path.join(
-            env.DATA_DIR, "sim_results", "archive", f"sim_report_{date_string}.csv"
+            config.DATA_DIR, "sim_results", "archive", f"sim_report_{date_string}.csv"
         )
     )
     return sim_report
@@ -515,7 +515,7 @@ def main():
 
     logger.info("Generating final results...")
     df_final = format_for_csv(df_final)
-    df_final.to_csv(os.path.join(env.DATA_DIR, f"main_{YEAR}.csv"), index=False)
+    df_final.to_csv(os.path.join(config.DATA_DIR, f"main_{YEAR}.csv"), index=False)
     logger.info(f"Results saved to main_{YEAR}.csv")
 
     # Display final standings
