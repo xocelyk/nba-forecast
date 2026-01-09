@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 
 import config
-import nba_api_loader
+from . import nba_api_loader
 import utils
 
 

@@ -18,7 +18,7 @@ from typing import Dict, Optional, Tuple
 
 import pandas as pd
 
-from nba_api_client import get_client
+from loaders.nba_api_client import get_client
 
 logger = logging.getLogger("nba")
 

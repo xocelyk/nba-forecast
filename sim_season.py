@@ -7,7 +7,7 @@ from random import choice
 import numpy as np
 import pandas as pd
 
-import data_loader
+from loaders import data_loader
 import config
 import utils
 from config import logger

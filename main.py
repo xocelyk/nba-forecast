@@ -11,7 +11,7 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 
-import data_loader
+from loaders import data_loader
 import config
 import eval
 import forecast

@@ -23,7 +23,7 @@ import numpy as np
 import pandas as pd
 from nba_api.stats.static import teams
 
-from nba_api_client import get_client
+from .nba_api_client import get_client
 
 logger = logging.getLogger("nba")
 

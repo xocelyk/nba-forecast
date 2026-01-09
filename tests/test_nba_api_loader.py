@@ -15,7 +15,7 @@ from unittest.mock import patch
 import pandas as pd
 import pytest
 
-import nba_api_loader
+from loaders import nba_api_loader
 
 
 class TestNBAAPILoader:

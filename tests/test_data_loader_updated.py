@@ -13,14 +13,14 @@ import numpy as np
 import pandas as pd
 import pytest
 
-import data_loader
+from loaders import data_loader
 
 
 class TestGetTeamNames:
     """Tests for team name/abbreviation mapping function."""
 
     @pytest.mark.unit
-    @patch("nba_api_loader.get_loader")
+    @patch("loaders.nba_api_loader.get_loader")
     def test_get_team_names_basic(self, mock_get_loader):
         """Test basic team name extraction."""
         # Mock the loader
@@ -45,7 +45,7 @@ class TestGetTeamNames:
         assert result["Brooklyn Nets"] == "BRK"
 
     @pytest.mark.unit
-    @patch("nba_api_loader.get_loader")
+    @patch("loaders.nba_api_loader.get_loader")
     def test_get_team_names_all_30_teams(self, mock_get_loader):
         """Test that all 30 NBA teams are returned."""
         # Mock with all 30 teams
@@ -59,7 +59,7 @@ class TestGetTeamNames:
         assert len(result) == 30
 
     @pytest.mark.unit
-    @patch("nba_api_loader.get_loader")
+    @patch("loaders.nba_api_loader.get_loader")
     def test_get_team_names_brooklyn_mapping(self, mock_get_loader):
         """Test Brooklyn Nets abbreviation mapping (BKN → BRK)."""
         mock_loader = MagicMock()
@@ -175,7 +175,7 @@ class TestUpdateData:
     """Tests for update_data function with nba_api."""
 
     @pytest.mark.unit
-    @patch("nba_api_loader.get_loader")
+    @patch("loaders.nba_api_loader.get_loader")
     def test_update_data_basic(self, mock_get_loader, tmp_path):
         """Test basic data update."""
         # Mock loader
@@ -224,7 +224,7 @@ class TestUpdateData:
         mock_loader.add_pace_to_games.assert_called_once()
 
     @pytest.mark.unit
-    @patch("nba_api_loader.get_loader")
+    @patch("loaders.nba_api_loader.get_loader")
     def test_update_data_with_preload(self, mock_get_loader, tmp_path):
         """Test update with preload (incremental update)."""
         # Create existing CSV file
@@ -289,7 +289,7 @@ class TestUpdateData:
         assert "0022400002" in result.index
 
     @pytest.mark.unit
-    @patch("nba_api_loader.get_loader")
+    @patch("loaders.nba_api_loader.get_loader")
     def test_update_data_future_games_no_pace(self, mock_get_loader, tmp_path):
         """Test that future games don't attempt pace calculation."""
         mock_loader = MagicMock()
