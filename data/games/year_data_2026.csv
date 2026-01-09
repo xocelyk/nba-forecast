@@ -553,10 +553,10 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0022500525,2026-01-07 05:00:00,OKC,UTA,Oklahoma City Thunder,Utah Jazz,129.0,125.0,4.0,Home,109.26066363044892,True,2026,False,,,,57.0
 0022500526,2026-01-07 05:00:00,GSW,MIL,Golden State Warriors,Milwaukee Bucks,120.0,113.0,7.0,Home,95.4331241565452,True,2026,False,,,,29.0
 0022500527,2026-01-07 05:00:00,POR,HOU,Portland Trail Blazers,Houston Rockets,103.0,102.0,1.0,Home,103.85335164835163,True,2026,False,,,,45.0
-0022500528,2026-01-08 05:00:00,CHO,IND,Hornets,Pacers,112.0,114.0,-2.0,Home,100.29162162162162,True,2026,False,,,,49.0
+0022500528,2026-01-08 05:00:00,CHO,IND,Charlotte Hornets,Indiana Pacers,112.0,114.0,-2.0,Home,100.29162162162162,True,2026,False,,,,49.0
+0022500530,2026-01-08 05:00:00,MIN,CLE,Minnesota Timberwolves,Cleveland Cavaliers,131.0,122.0,9.0,Home,99.8511188811189,True,2026,False,,,,37.0
+0022500531,2026-01-08 05:00:00,UTA,DAL,Utah Jazz,Dallas Mavericks,116.0,114.0,2.0,Home,99.4941412601626,True,2026,False,,,,33.0
 0022500529,2026-01-08 05:00:00,CHI,MIA,Bulls,Heat,0.0,0.0,,Home,,False,2026,,,,,
-0022500530,2026-01-08 05:00:00,MIN,CLE,Timberwolves,Cavaliers,131.0,122.0,9.0,Home,99.8511188811189,True,2026,False,,,,37.0
-0022500531,2026-01-08 05:00:00,UTA,DAL,Jazz,Mavericks,116.0,114.0,2.0,Home,99.4941412601626,True,2026,False,,,,33.0
 0022500532,2026-01-09 05:00:00,BOS,TOR,Celtics,Raptors,0.0,0.0,,Home,,False,2026,,,,,
 0022500533,2026-01-09 05:00:00,ORL,PHI,Magic,76ers,0.0,0.0,,Home,,False,2026,,,,,
 0022500534,2026-01-09 05:00:00,WAS,NOP,Wizards,Pelicans,0.0,0.0,,Home,,False,2026,,,,,
