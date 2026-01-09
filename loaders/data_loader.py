@@ -343,6 +343,10 @@ def load_training_data(
 
     win_totals_futures = load_regular_season_win_totals_futures()
 
+    # Load HCA map for year-specific home court advantage
+    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
+    hca_map = utils.load_hca_map(hca_map_path)
+
     # NOTE: Garbage time backfilling is disabled by default
     # To enable it when implementing effective margin system, uncomment below:
     # if reset:
@@ -427,17 +431,11 @@ def load_training_data(
             else:
                 year_names = None
 
-            # For end year ratings, take games from last 100 days of season
-            last_date = completed_year_data["date"].max()
-
-            if year == 2020:
-                year_ratings = utils.get_em_ratings(
-                    completed_year_data, names=year_names, day_cap=300
-                )
-            else:
-                year_ratings = utils.get_em_ratings(
-                    completed_year_data, names=year_names, day_cap=100
-                )
+            # For end year ratings, take games from last 200 days of season
+            year_hca = hca_map.get(year, utils.HCA)
+            year_ratings = utils.get_em_ratings(
+                completed_year_data, names=year_names, day_cap=200, hca=year_hca
+            )
             for team, rating in year_ratings.items():
                 end_year_ratings_dct[year][team] = rating
             if first_year:
@@ -511,7 +509,8 @@ def load_training_data(
                             cur_ratings = utils.get_em_ratings(
                                 completed_year_data[
                                     completed_year_data["completed"] == True
-                                ]
+                                ],
+                                hca=year_hca,
                             )
                         else:
                             # If not enough data to get EM ratings for every team, ratings default to 0
@@ -763,9 +762,7 @@ def load_training_data(
 
     all_data = add_days_since_most_recent_game(all_data)
 
-    # Add per-season HCA values
-    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
-    hca_map = utils.load_hca_map(hca_map_path)
+    # Add per-season HCA values (recalculate if any years are missing)
     if not hca_map or any(int(y) not in hca_map for y in all_data["year"].unique()):
         hca_map = utils.calculate_hca_by_season(all_data)
         utils.save_hca_map(hca_map, hca_map_path)

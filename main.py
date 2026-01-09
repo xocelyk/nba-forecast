@@ -138,9 +138,11 @@ def load_game_data(
 
 
 def calculate_em_ratings(
-    completed_games: pd.DataFrame, abbrs: List[str], year: int
+    completed_games: pd.DataFrame, abbrs: List[str], year: int, hca: float = None
 ) -> Dict[str, float]:
-    em_ratings = utils.get_em_ratings(completed_games, names=abbrs)
+    if hca is None:
+        hca = utils.HCA
+    em_ratings = utils.get_em_ratings(completed_games, names=abbrs, hca=hca)
     em_ratings = {
         k: v
         for k, v in sorted(em_ratings.items(), key=lambda item: item[1], reverse=True)
@@ -459,8 +461,13 @@ def main():
         mean_pace = 100.0
         std_pace = 3.0
 
+    # Load HCA map for year-specific home court advantage
+    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
+    hca_map = utils.load_hca_map(hca_map_path)
+    year_hca = hca_map.get(YEAR, utils.HCA)
+
     # Calculate EM ratings
-    em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR)
+    em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR, hca=year_hca)
 
     # Initialize dataframe
     df_final = initialize_dataframe(abbrs, abbr_to_name, em_ratings)

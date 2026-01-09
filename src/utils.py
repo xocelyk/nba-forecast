@@ -213,8 +213,8 @@ def sgd_ratings(
     teams_dict,
     margin_fn=lambda x: x,
     lr=0.1,
-    epochs=100,
-    convergence_threshold=1e-6,
+    epochs=1000,
+    convergence_threshold=1e-7,
     verbose=False,
     hca: float = HCA,
 ):
@@ -307,7 +307,7 @@ def sgd_ratings(
 
 
 def get_em_ratings(
-    df, cap=None, names=None, num_epochs=100, day_cap=100, hca: float = HCA
+    df, cap=None, names=None, num_epochs=1000, day_cap=200, hca: float = HCA
 ):
     if names is None:
         teams_dict = {team: i for i, team in enumerate(df["team"].unique())}
