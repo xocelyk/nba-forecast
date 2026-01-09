@@ -1,6 +1,8 @@
 .DS_Store
 *.ipynb
 __pycache__
-*/archive/
 CLAUDE.md
 visualizations/
+.venv/
+catboost_info/
+.local/
