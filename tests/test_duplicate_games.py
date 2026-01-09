@@ -3,7 +3,7 @@ import pytest
 pytest.importorskip("pandas")
 import pandas as pd
 
-import utils
+from src import utils
 
 
 def test_duplicate_games_basic():

@@ -8,9 +8,9 @@ import numpy as np
 import pandas as pd
 
 from loaders import data_loader
-import config
-import utils
-from config import logger
+from . import config
+from . import utils
+from .config import logger
 
 """
 # TODO: update with days since most recent game
@@ -2502,7 +2502,7 @@ def playoff_results_over_sims_dict_to_df(playoff_results_over_sims):
 
 def save_raw_simulation_results(season_results_over_sims):
     """Save raw simulation results (wins per simulation for each team) to CSV."""
-    import config
+    from . import config
 
     # Create DataFrame with teams as columns and simulations as rows
     raw_results = {}
@@ -2530,7 +2530,7 @@ def save_raw_simulation_results(season_results_over_sims):
 
 def save_simulated_game_results(games_df):
     """Save game-level simulation results to CSV."""
-    import config
+    from . import config
 
     # Reorder columns with simulation_id first
     cols = ["simulation_id"] + [c for c in games_df.columns if c != "simulation_id"]

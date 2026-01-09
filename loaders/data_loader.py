@@ -5,9 +5,9 @@ import time
 import numpy as np
 import pandas as pd
 
-import config
+from src import config
 from . import nba_api_loader
-import utils
+from src import utils
 
 
 def get_team_names(year: int = 2026):
@@ -248,7 +248,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
 
     # Select and order columns
     # Include garbage time columns and advanced stats columns if they exist
-    from advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS
+    from src.advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS
 
     base_columns = [
         "game_id",

@@ -11,7 +11,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-import utils
+from src import utils
 
 
 class TestAddPlayoffIndicator:

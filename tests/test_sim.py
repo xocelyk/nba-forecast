@@ -8,10 +8,10 @@ import pickle
 import pandas as pd
 from scipy.interpolate import UnivariateSpline
 
-import config
-import sim_season
-import utils
-from eval import get_win_margin_model, get_win_probability_model
+from src import config
+from src import sim_season
+from src import utils
+from src.eval import get_win_margin_model, get_win_probability_model
 
 
 def get_smoothed_stdev_for_num_games(num_games, spline):

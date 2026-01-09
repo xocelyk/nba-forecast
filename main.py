@@ -12,15 +12,15 @@ import numpy as np
 import pandas as pd
 
 from loaders import data_loader
-import config
-import eval
-import forecast
-import stats
-import utils
+from src import config
+from src import eval
+from src import forecast
+from src import stats
+from src import utils
 
 # Import logger from config
-from config import logger
-from sim_season import sim_season
+from src.config import logger
+from src.sim_season import sim_season
 
 # ignore warnings
 warnings.filterwarnings("ignore")

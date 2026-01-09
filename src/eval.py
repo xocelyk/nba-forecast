@@ -12,7 +12,7 @@ from sklearn.metrics import log_loss, mean_absolute_error, mean_squared_error, r
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier, XGBRegressor
 
-import config
+from . import config
 
 logger = logging.getLogger(__name__)
 

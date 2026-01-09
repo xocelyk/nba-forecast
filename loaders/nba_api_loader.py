@@ -444,7 +444,7 @@ class NBAAPILoader:
             DataFrame with garbage time columns filled for completed games
         """
         # Lazy import to avoid circular dependency
-        from garbage_time_detector import get_detector
+        from src.garbage_time_detector import get_detector
 
         # Make a copy to avoid modifying original
         games_df = games_df.copy()
@@ -639,7 +639,7 @@ class NBAAPILoader:
         Returns:
             DataFrame with advanced stats columns filled for completed games
         """
-        from advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS, has_advanced_stats
+        from src.advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS, has_advanced_stats
 
         # Make a copy to avoid modifying original
         games_df = games_df.copy()

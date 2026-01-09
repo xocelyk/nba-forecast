@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-from utils import HCA
+from .utils import HCA
 
 
 def get_wins_losses(game_df):

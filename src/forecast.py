@@ -4,8 +4,8 @@ import os
 import numpy as np
 import pandas as pd
 
-import config
-import utils
+from . import config
+from . import utils
 
 
 def add_engineered_features(df):
@@ -399,7 +399,7 @@ def generate_retrospective_predictions(
     Compares model predictions to actual outcomes for bias analysis.
     Saves results to data/retrospective_predictions/ with date-stamped archives.
     """
-    from config import logger
+    from .config import logger
 
     # Filter to current year completed games
     games = training_data[
