@@ -8,8 +8,8 @@ import numpy as np
 import pandas as pd
 
 from loaders import data_loader
-from . import config
-from . import utils
+
+from . import config, utils
 from .config import logger
 
 """
@@ -244,7 +244,10 @@ class Season:
 
         for team in self.teams:
             # Try to get last year's win total from archive
-            if team in win_totals_archive and str(last_year) in win_totals_archive[team]:
+            if (
+                team in win_totals_archive
+                and str(last_year) in win_totals_archive[team]
+            ):
                 last_year_win_totals[team] = win_totals_archive[team][str(last_year)]
             else:
                 # Try alternate abbreviation
@@ -440,9 +443,9 @@ class Season:
             "team_win_total_last_year" not in self.future_games.columns
             or self.future_games["team_win_total_last_year"].isnull().any()
         ):
-            self.future_games["team_win_total_last_year"] = self.future_games["team"].map(
-                self.win_total_last_year
-            )
+            self.future_games["team_win_total_last_year"] = self.future_games[
+                "team"
+            ].map(self.win_total_last_year)
             self.future_games["opponent_win_total_last_year"] = self.future_games[
                 "opponent"
             ].map(self.win_total_last_year)
@@ -714,8 +717,12 @@ class Season:
         rating_product = team_rating * opp_rating
 
         # Bayesian game score features
-        team_bayesian_gs = row.get("team_bayesian_gs", self.bayesian_gs.get(row["team"], 0.0))
-        opp_bayesian_gs = row.get("opp_bayesian_gs", self.bayesian_gs.get(row["opponent"], 0.0))
+        team_bayesian_gs = row.get(
+            "team_bayesian_gs", self.bayesian_gs.get(row["team"], 0.0)
+        )
+        opp_bayesian_gs = row.get(
+            "opp_bayesian_gs", self.bayesian_gs.get(row["opponent"], 0.0)
+        )
         bayesian_gs_diff = team_bayesian_gs - opp_bayesian_gs
 
         data = pd.DataFrame(
@@ -2519,7 +2526,10 @@ def save_raw_simulation_results(season_results_over_sims):
     )
     raw_df.to_csv(
         os.path.join(
-            config.DATA_DIR, "sim_results", "archive", f"sim_raw_results_{date_string}.csv"
+            config.DATA_DIR,
+            "sim_results",
+            "archive",
+            f"sim_raw_results_{date_string}.csv",
         ),
         index=True,
     )
@@ -2830,7 +2840,8 @@ def write_seed_report(seeds_results_over_sims):
         index=False,
     )
     east_df.to_csv(
-        os.path.join(config.DATA_DIR, "seed_reports", "east_seed_report.csv"), index=False
+        os.path.join(config.DATA_DIR, "seed_reports", "east_seed_report.csv"),
+        index=False,
     )
     west_df.to_csv(
         os.path.join(
@@ -2842,7 +2853,8 @@ def write_seed_report(seeds_results_over_sims):
         index=False,
     )
     west_df.to_csv(
-        os.path.join(config.DATA_DIR, "seed_reports", "west_seed_report.csv"), index=False
+        os.path.join(config.DATA_DIR, "seed_reports", "west_seed_report.csv"),
+        index=False,
     )
     seeds_results_over_sims_df.to_csv(
         os.path.join(

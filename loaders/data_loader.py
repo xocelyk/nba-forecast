@@ -5,9 +5,9 @@ import time
 import numpy as np
 import pandas as pd
 
-from src import config
+from src import config, utils
+
 from . import nba_api_loader
-from src import utils
 
 
 def get_team_names(year: int = 2026):
@@ -300,7 +300,9 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
 
 def load_regular_season_win_totals_futures():
     """Load historical regular-season win total futures."""
-    filename = os.path.join(config.DATA_DIR, "regular_season_win_totals_odds_archive.csv")
+    filename = os.path.join(
+        config.DATA_DIR, "regular_season_win_totals_odds_archive.csv"
+    )
     with open(filename, "r") as f:
         reader = csv.reader(f)
         data = list(reader)
@@ -676,7 +678,9 @@ def load_training_data(
                     year_data["opp_bayesian_gs"] = np.nan
 
                     # Track running sums and counts for each team
-                    all_teams = set(year_data["team"].tolist() + year_data["opponent"].tolist())
+                    all_teams = set(
+                        year_data["team"].tolist() + year_data["opponent"].tolist()
+                    )
                     gs_sum = {team: 0.0 for team in all_teams}
                     gs_count = {team: 0 for team in all_teams}
 
@@ -685,11 +689,15 @@ def load_training_data(
                     for team in all_teams:
                         team_rows = year_data[year_data["team"] == team]
                         if len(team_rows) > 0:
-                            prior_ratings[team] = team_rows["last_year_team_rating"].iloc[0]
+                            prior_ratings[team] = team_rows[
+                                "last_year_team_rating"
+                            ].iloc[0]
                         else:
                             opp_rows = year_data[year_data["opponent"] == team]
                             if len(opp_rows) > 0:
-                                prior_ratings[team] = opp_rows["last_year_opp_rating"].iloc[0]
+                                prior_ratings[team] = opp_rows[
+                                    "last_year_opp_rating"
+                                ].iloc[0]
                             else:
                                 prior_ratings[team] = 0.0
 
@@ -703,8 +711,12 @@ def load_training_data(
                         team_prior = prior_ratings.get(team, 0.0)
                         opp_prior = prior_ratings.get(opp, 0.0)
 
-                        team_bayesian = (team_prior * PRIOR_WEIGHT + gs_sum[team]) / (PRIOR_WEIGHT + gs_count[team])
-                        opp_bayesian = (opp_prior * PRIOR_WEIGHT + gs_sum[opp]) / (PRIOR_WEIGHT + gs_count[opp])
+                        team_bayesian = (team_prior * PRIOR_WEIGHT + gs_sum[team]) / (
+                            PRIOR_WEIGHT + gs_count[team]
+                        )
+                        opp_bayesian = (opp_prior * PRIOR_WEIGHT + gs_sum[opp]) / (
+                            PRIOR_WEIGHT + gs_count[opp]
+                        )
 
                         year_data.loc[idx, "team_bayesian_gs"] = team_bayesian
                         year_data.loc[idx, "opp_bayesian_gs"] = opp_bayesian
@@ -720,7 +732,9 @@ def load_training_data(
                             gs_sum[opp] += opp_gs
                             gs_count[opp] += 1
 
-                    year_data["bayesian_gs_diff"] = year_data["team_bayesian_gs"] - year_data["opp_bayesian_gs"]
+                    year_data["bayesian_gs_diff"] = (
+                        year_data["team_bayesian_gs"] - year_data["opp_bayesian_gs"]
+                    )
 
                     # year_data to list of dictionaries
                     year_data = year_data.to_dict("records")

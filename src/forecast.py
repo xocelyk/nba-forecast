@@ -4,8 +4,7 @@ import os
 import numpy as np
 import pandas as pd
 
-from . import config
-from . import utils
+from . import config, utils
 
 
 def add_engineered_features(df):
@@ -67,7 +66,9 @@ def predict_margin_this_week_games(games, win_margin_model):
     to_csv_data = pd.DataFrame(
         to_csv_data, columns=["Date", "Home", "Away", "Predicted Home Margin"]
     )
-    to_csv_data.to_csv(os.path.join(config.DATA_DIR, "predicted_margins.csv"), index=False)
+    to_csv_data.to_csv(
+        os.path.join(config.DATA_DIR, "predicted_margins.csv"), index=False
+    )
     return games
 
 

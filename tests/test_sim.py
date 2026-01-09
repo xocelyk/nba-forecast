@@ -8,9 +8,7 @@ import pickle
 import pandas as pd
 from scipy.interpolate import UnivariateSpline
 
-from src import config
-from src import sim_season
-from src import utils
+from src import config, sim_season, utils
 from src.eval import get_win_margin_model, get_win_probability_model
 
 

@@ -139,7 +139,9 @@ else:
                 mode="lines",
                 name=team,
                 line=dict(color=color, width=2.5),
-                customdata=np.stack([stats["date_str"], stats["rating_rounded"]], axis=-1),
+                customdata=np.stack(
+                    [stats["date_str"], stats["rating_rounded"]], axis=-1
+                ),
                 hovertemplate=f"<b>{team}</b><br>%{{customdata[0]}}<br>Rating: %{{customdata[1]}}<extra></extra>",
             )
         )
@@ -228,8 +230,14 @@ else:
             team_games_timeline.groupby(["date", "opp", "is_home"])
             .agg(
                 mean_margin=("expected_margin_for_team", "mean"),
-                low_margin=("expected_margin_for_team", lambda x: np.percentile(x, pct_low)),
-                high_margin=("expected_margin_for_team", lambda x: np.percentile(x, pct_high)),
+                low_margin=(
+                    "expected_margin_for_team",
+                    lambda x: np.percentile(x, pct_low),
+                ),
+                high_margin=(
+                    "expected_margin_for_team",
+                    lambda x: np.percentile(x, pct_high),
+                ),
                 n=("simulation_id", "count"),
             )
             .reset_index()

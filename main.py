@@ -12,11 +12,7 @@ import numpy as np
 import pandas as pd
 
 from loaders import data_loader
-from src import config
-from src import eval
-from src import forecast
-from src import stats
-from src import utils
+from src import config, eval, forecast, stats, utils
 
 # Import logger from config
 from src.config import logger

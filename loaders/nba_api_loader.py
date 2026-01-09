@@ -639,7 +639,10 @@ class NBAAPILoader:
         Returns:
             DataFrame with advanced stats columns filled for completed games
         """
-        from src.advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS, has_advanced_stats
+        from src.advanced_stats_config import (
+            ALL_ADVANCED_STATS_COLUMNS,
+            has_advanced_stats,
+        )
 
         # Make a copy to avoid modifying original
         games_df = games_df.copy()
