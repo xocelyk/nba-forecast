@@ -615,6 +615,113 @@ def load_training_data(
                         - year_data["opponent_last_10_rating"]
                     )
 
+                    # Get last year's win totals for win_total_change_diff
+                    last_year = year - 1
+                    if str(last_year) in win_totals_futures:
+
+                        def get_last_year_wt(row, team_col):
+                            team = row[team_col]
+                            ly_totals = win_totals_futures.get(str(last_year), {})
+                            if team in ly_totals:
+                                return ly_totals[team]
+                            # Handle abbreviation variations
+                            abbr_map = {
+                                "CHA": "CHO",
+                                "CHO": "CHA",
+                                "PHO": "PHX",
+                                "PHX": "PHO",
+                            }
+                            alt = abbr_map.get(team)
+                            if alt and alt in ly_totals:
+                                return ly_totals[alt]
+                            # Fallback to current year
+                            if team_col == "team":
+                                return row["team_win_total_future"]
+                            else:
+                                return row["opponent_win_total_future"]
+
+                        year_data["team_win_total_last_year"] = year_data.apply(
+                            lambda x: get_last_year_wt(x, "team"), axis=1
+                        ).astype(float)
+                        year_data["opponent_win_total_last_year"] = year_data.apply(
+                            lambda x: get_last_year_wt(x, "opponent"), axis=1
+                        ).astype(float)
+                    else:
+                        year_data["team_win_total_last_year"] = year_data[
+                            "team_win_total_future"
+                        ]
+                        year_data["opponent_win_total_last_year"] = year_data[
+                            "opponent_win_total_future"
+                        ]
+
+                    year_data["win_total_change_diff"] = (
+                        year_data["team_win_total_future"]
+                        - year_data["team_win_total_last_year"]
+                    ) - (
+                        year_data["opponent_win_total_future"]
+                        - year_data["opponent_win_total_last_year"]
+                    )
+
+                    year_data["rating_product"] = (
+                        year_data["team_rating"] * year_data["opponent_rating"]
+                    )
+
+                    # Compute Bayesian game score (prior + incremental updates)
+                    HCA = 3.5
+                    PRIOR_WEIGHT = 5
+                    year_data = year_data.sort_values("date").reset_index(drop=True)
+
+                    # Initialize columns
+                    year_data["team_bayesian_gs"] = np.nan
+                    year_data["opp_bayesian_gs"] = np.nan
+
+                    # Track running sums and counts for each team
+                    all_teams = set(year_data["team"].tolist() + year_data["opponent"].tolist())
+                    gs_sum = {team: 0.0 for team in all_teams}
+                    gs_count = {team: 0 for team in all_teams}
+
+                    # Get prior ratings for each team
+                    prior_ratings = {}
+                    for team in all_teams:
+                        team_rows = year_data[year_data["team"] == team]
+                        if len(team_rows) > 0:
+                            prior_ratings[team] = team_rows["last_year_team_rating"].iloc[0]
+                        else:
+                            opp_rows = year_data[year_data["opponent"] == team]
+                            if len(opp_rows) > 0:
+                                prior_ratings[team] = opp_rows["last_year_opp_rating"].iloc[0]
+                            else:
+                                prior_ratings[team] = 0.0
+
+                    # Process games in chronological order
+                    for idx in year_data.index:
+                        row = year_data.loc[idx]
+                        team = row["team"]
+                        opp = row["opponent"]
+
+                        # Compute current Bayesian GS for each team BEFORE this game
+                        team_prior = prior_ratings.get(team, 0.0)
+                        opp_prior = prior_ratings.get(opp, 0.0)
+
+                        team_bayesian = (team_prior * PRIOR_WEIGHT + gs_sum[team]) / (PRIOR_WEIGHT + gs_count[team])
+                        opp_bayesian = (opp_prior * PRIOR_WEIGHT + gs_sum[opp]) / (PRIOR_WEIGHT + gs_count[opp])
+
+                        year_data.loc[idx, "team_bayesian_gs"] = team_bayesian
+                        year_data.loc[idx, "opp_bayesian_gs"] = opp_bayesian
+
+                        # Update running sums with this game's result (if completed)
+                        if not np.isnan(row["margin"]):
+                            # Game score from team's perspective
+                            team_gs = row["margin"] + row["opponent_rating"] - HCA
+                            opp_gs = -row["margin"] + row["team_rating"] + HCA
+
+                            gs_sum[team] += team_gs
+                            gs_count[team] += 1
+                            gs_sum[opp] += opp_gs
+                            gs_count[opp] += 1
+
+                    year_data["bayesian_gs_diff"] = year_data["team_bayesian_gs"] - year_data["opp_bayesian_gs"]
+
                     # year_data to list of dictionaries
                     year_data = year_data.to_dict("records")
                     all_data += year_data

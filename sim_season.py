@@ -7,6 +7,7 @@ from random import choice
 import numpy as np
 import pandas as pd
 
+import data_loader
 import env
 import utils
 from env import logger
@@ -88,6 +89,7 @@ class Season:
         )
         self.time = time.time()
         self.win_total_futures = self.get_win_total_futures()
+        self.win_total_last_year = self.get_last_year_win_totals()
         self.last_year_ratings = self.get_last_year_ratings()
         self.last_n_games_adj_margins = self.init_last_n_games_adj_margins()
         self.team_last_adj_margin_dict = {
@@ -101,6 +103,11 @@ class Season:
         self.last_game_stats_dict = None
         self.sim_date_increment = sim_date_increment
         self.most_recent_game_date_dict = self.get_most_recent_game_date_dict()
+
+        # Initialize Bayesian game score tracking from completed games
+        self.bayesian_gs_sum, self.bayesian_gs_count, self.bayesian_gs = (
+            self.init_bayesian_gs()
+        )
 
         # Vectorized initialization of days since most recent game
         self.future_games["team_most_recent_game_date"] = self.future_games["team"].map(
@@ -178,6 +185,28 @@ class Season:
             res[team] = team_adj_margins
         return res
 
+    def init_bayesian_gs(self):
+        """Initialize Bayesian game score from completed games."""
+        PRIOR_WEIGHT = 5
+        bayesian_gs_sum = {team: 0.0 for team in self.teams}
+        bayesian_gs_count = {team: 0 for team in self.teams}
+
+        # Use the already-computed adjusted margins from init_last_n_games_adj_margins
+        for team in self.teams:
+            adj_margins = self.last_n_games_adj_margins.get(team, [])
+            bayesian_gs_sum[team] = sum(adj_margins)
+            bayesian_gs_count[team] = len(adj_margins)
+
+        # Compute the Bayesian game score
+        bayesian_gs = {}
+        for team in self.teams:
+            prior = self.last_year_ratings.get(team, 0.0)
+            bayesian_gs[team] = (prior * PRIOR_WEIGHT + bayesian_gs_sum[team]) / (
+                PRIOR_WEIGHT + bayesian_gs_count[team]
+            )
+
+        return bayesian_gs_sum, bayesian_gs_count, bayesian_gs
+
     def get_random_pace(self):
         return np.random.normal(self.mean_pace, self.std_pace)
 
@@ -205,6 +234,31 @@ class Season:
             ].iloc[0]
             last_year_ratings[team] = team_last_year_ratings
         return last_year_ratings
+
+    def get_last_year_win_totals(self):
+        """Create a dict of team to last year's win total from archive."""
+        last_year = self.year - 1
+        win_totals_archive = data_loader.load_regular_season_win_totals_futures()
+        last_year_win_totals = {}
+        abbr_map = {"CHA": "CHO", "CHO": "CHA", "PHO": "PHX", "PHX": "PHO"}
+
+        for team in self.teams:
+            # Try to get last year's win total from archive
+            if team in win_totals_archive and str(last_year) in win_totals_archive[team]:
+                last_year_win_totals[team] = win_totals_archive[team][str(last_year)]
+            else:
+                # Try alternate abbreviation
+                alt = abbr_map.get(team)
+                if (
+                    alt
+                    and alt in win_totals_archive
+                    and str(last_year) in win_totals_archive[alt]
+                ):
+                    last_year_win_totals[team] = win_totals_archive[alt][str(last_year)]
+                else:
+                    # Fallback to current year's win total
+                    last_year_win_totals[team] = self.win_total_futures.get(team, 41.0)
+        return last_year_win_totals
 
     def teams(self):
         return sorted(
@@ -326,6 +380,8 @@ class Season:
             ),
             "team_rating": self.future_games["team"].map(self.em_ratings),
             "opponent_rating": self.future_games["opponent"].map(self.em_ratings),
+            "team_bayesian_gs": self.future_games["team"].map(self.bayesian_gs),
+            "opp_bayesian_gs": self.future_games["opponent"].map(self.bayesian_gs),
         }
 
         # Update all columns at once - more efficient than individual assignments
@@ -378,6 +434,18 @@ class Season:
             self.future_games["opponent_win_total_future"] = self.future_games[
                 "opponent"
             ].map(self.win_total_futures)
+
+        # Add last year win totals for win_total_change_diff feature
+        if (
+            "team_win_total_last_year" not in self.future_games.columns
+            or self.future_games["team_win_total_last_year"].isnull().any()
+        ):
+            self.future_games["team_win_total_last_year"] = self.future_games["team"].map(
+                self.win_total_last_year
+            )
+            self.future_games["opponent_win_total_last_year"] = self.future_games[
+                "opponent"
+            ].map(self.win_total_last_year)
 
         if self.future_games["num_games_into_season"].isnull().any():
             # this only works for playoffs
@@ -587,6 +655,20 @@ class Season:
             self.most_recent_game_date_dict[team] = row["date"]
             self.most_recent_game_date_dict[opponent] = row["date"]
 
+            # Update Bayesian game score
+            self.bayesian_gs_sum[team] += team_adj_margin
+            self.bayesian_gs_count[team] += 1
+            self.bayesian_gs[team] = (
+                self.last_year_ratings.get(team, 0.0) * 5 + self.bayesian_gs_sum[team]
+            ) / (5 + self.bayesian_gs_count[team])
+
+            self.bayesian_gs_sum[opponent] += opponent_adj_margin
+            self.bayesian_gs_count[opponent] += 1
+            self.bayesian_gs[opponent] = (
+                self.last_year_ratings.get(opponent, 0.0) * 5
+                + self.bayesian_gs_sum[opponent]
+            ) / (5 + self.bayesian_gs_count[opponent])
+
         return games
 
     def get_game_data(self, row):
@@ -605,6 +687,12 @@ class Season:
         opponent_last_1_rating = row["opponent_last_1_rating"]
         team_win_total_future = row["team_win_total_future"]
         opponent_win_total_future = row["opponent_win_total_future"]
+        team_win_total_last_year = row.get(
+            "team_win_total_last_year", team_win_total_future
+        )
+        opponent_win_total_last_year = row.get(
+            "opponent_win_total_last_year", opponent_win_total_future
+        )
         team_days_since_most_recent_game = row["team_days_since_most_recent_game"]
         opponent_days_since_most_recent_game = row[
             "opponent_days_since_most_recent_game"
@@ -613,13 +701,29 @@ class Season:
             "playoff", int(utils.is_playoff_date(row["date"], row["year"]))
         )
 
-        # rating_diff = team_rating - opp_rating
+        # Engineered features
+        rating_diff = team_rating - opp_rating
+        rating_x_season = rating_diff * (num_games_into_season / 82.0)
+        win_total_ratio = team_win_total_future / (opponent_win_total_future + 0.1)
+        trend_1v10_diff = (team_last_1_rating - team_last_10_rating) - (
+            opponent_last_1_rating - opponent_last_10_rating
+        )
+        win_total_change_diff = (team_win_total_future - team_win_total_last_year) - (
+            opponent_win_total_future - opponent_win_total_last_year
+        )
+        rating_product = team_rating * opp_rating
+
+        # Bayesian game score features
+        team_bayesian_gs = row.get("team_bayesian_gs", self.bayesian_gs.get(row["team"], 0.0))
+        opp_bayesian_gs = row.get("opp_bayesian_gs", self.bayesian_gs.get(row["opponent"], 0.0))
+        bayesian_gs_diff = team_bayesian_gs - opp_bayesian_gs
+
         data = pd.DataFrame(
             [
                 [
                     team_rating,
                     opp_rating,
-                    team_rating - opp_rating,  # rating_diff
+                    rating_diff,
                     team_win_total_future,
                     opponent_win_total_future,
                     last_year_team_rating,
@@ -644,6 +748,14 @@ class Season:
                     opponent_days_since_most_recent_game,
                     self.hca,
                     playoff,
+                    rating_x_season,
+                    win_total_ratio,
+                    trend_1v10_diff,
+                    win_total_change_diff,
+                    rating_product,
+                    team_bayesian_gs,
+                    opp_bayesian_gs,
+                    bayesian_gs_diff,
                 ]
             ],
             columns=env.x_features,
@@ -723,6 +835,19 @@ class Season:
                     games_df["opponent_last_1_rating"]
                     - games_df["opponent_last_10_rating"]
                 ),
+                "win_total_change_diff": (
+                    games_df["team_win_total_future"]
+                    - games_df["team_win_total_last_year"]
+                )
+                - (
+                    games_df["opponent_win_total_future"]
+                    - games_df["opponent_win_total_last_year"]
+                ),
+                "rating_product": games_df["team_rating"] * games_df["opponent_rating"],
+                "team_bayesian_gs": games_df["team_bayesian_gs"],
+                "opp_bayesian_gs": games_df["opp_bayesian_gs"],
+                "bayesian_gs_diff": games_df["team_bayesian_gs"]
+                - games_df["opp_bayesian_gs"],
             }
         )
 
@@ -2744,7 +2869,8 @@ def sim_season(
     parallel=True,
     start_date=None,
 ):
-    import multiprocessing
+    import os
+    from concurrent.futures import ProcessPoolExecutor, as_completed
 
     teams = data[data["year"] == year]["team"].unique()
     data["date"] = pd.to_datetime(data["date"]).dt.date
@@ -2782,12 +2908,11 @@ def sim_season(
 
     start_time = time.time()
     if parallel:
-        num_cores = multiprocessing.cpu_count()
-        pool = multiprocessing.Pool(num_cores)
-        results = [
-            pool.apply_async(
-                run_single_simulation,
-                args=(
+        num_workers = os.cpu_count() or 4
+        with ProcessPoolExecutor(max_workers=num_workers) as executor:
+            futures = [
+                executor.submit(
+                    run_single_simulation,
                     year,
                     completed_year_games,
                     future_year_games,
@@ -2795,12 +2920,10 @@ def sim_season(
                     win_prob_model,
                     mean_pace,
                     std_pace,
-                ),
-            )
-            for i in range(num_sims)
-        ]
-        output = [p.get() for p in results]
-        pool.close()
+                )
+                for _ in range(num_sims)
+            ]
+            output = [future.result() for future in as_completed(futures)]
     else:
         output = []
         for i in range(num_sims):

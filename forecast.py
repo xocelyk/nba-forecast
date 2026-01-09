@@ -18,6 +18,16 @@ def add_engineered_features(df):
     df["trend_1v10_diff"] = (df["team_last_1_rating"] - df["team_last_10_rating"]) - (
         df["opponent_last_1_rating"] - df["opponent_last_10_rating"]
     )
+
+    # For win_total_change_diff, use current values if last year not available
+    if "team_win_total_last_year" not in df.columns:
+        df["team_win_total_last_year"] = df["team_win_total_future"]
+        df["opponent_win_total_last_year"] = df["opponent_win_total_future"]
+
+    df["win_total_change_diff"] = (
+        df["team_win_total_future"] - df["team_win_total_last_year"]
+    ) - (df["opponent_win_total_future"] - df["opponent_win_total_last_year"])
+    df["rating_product"] = df["team_rating"] * df["opponent_rating"]
     return df
 
 
@@ -213,6 +223,11 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
             else team_df["opponent_win_total_future"].iloc[-1]
         )
         team_days_since_most_recent_game = 3
+        team_bayesian_gs = (
+            team_df["team_bayesian_gs"].iloc[-1]
+            if team_df["team"].iloc[-1] == team
+            else team_df["opp_bayesian_gs"].iloc[-1]
+        )
 
         for opp in teams:
             opp_rating = this_year_ratings[opp]
@@ -245,6 +260,11 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 else opp_df["opponent_win_total_future"].iloc[-1]
             )
             opp_days_since_most_recent_game = 3
+            opp_bayesian_gs = (
+                opp_df["team_bayesian_gs"].iloc[-1]
+                if opp_df["team"].iloc[-1] == opp
+                else opp_df["opp_bayesian_gs"].iloc[-1]
+            )
 
             # play a home game
             X_home_dct = {
@@ -280,6 +300,11 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "win_total_ratio": team_win_total_future / (opp_win_total_future + 0.1),
                 "trend_1v10_diff": (team_last_1_rating_rating - team_last_10_rating)
                 - (opp_last_1_rating_rating - opp_last_10_rating),
+                "win_total_change_diff": 0,  # Assume no year-over-year change for neutral matchups
+                "rating_product": team_rating * opp_rating,
+                "team_bayesian_gs": team_bayesian_gs,
+                "opp_bayesian_gs": opp_bayesian_gs,
+                "bayesian_gs_diff": team_bayesian_gs - opp_bayesian_gs,
             }
             X_home = pd.DataFrame.from_dict(X_home_dct, orient="index").transpose()
             team_home_margins.append(model.predict(X_home[env.x_features])[0])
@@ -318,6 +343,11 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "win_total_ratio": opp_win_total_future / (team_win_total_future + 0.1),
                 "trend_1v10_diff": (opp_last_1_rating_rating - opp_last_10_rating)
                 - (team_last_1_rating_rating - team_last_10_rating),
+                "win_total_change_diff": 0,  # Assume no year-over-year change for neutral matchups
+                "rating_product": opp_rating * team_rating,
+                "team_bayesian_gs": opp_bayesian_gs,
+                "opp_bayesian_gs": team_bayesian_gs,
+                "bayesian_gs_diff": opp_bayesian_gs - team_bayesian_gs,
             }
             X_away = pd.DataFrame.from_dict(X_away_dct, orient="index").transpose()
             team_away_margins.append(-model.predict(X_away[env.x_features])[0])

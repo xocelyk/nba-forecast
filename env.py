@@ -44,6 +44,11 @@ class Config:
             "rating_x_season",
             "win_total_ratio",
             "trend_1v10_diff",
+            "win_total_change_diff",
+            "rating_product",
+            "team_bayesian_gs",
+            "opp_bayesian_gs",
+            "bayesian_gs_diff",
         ]
     )
     margin_label: str = "margin"

@@ -28,7 +28,7 @@ warnings.filterwarnings("ignore")
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="NBA Season Simulator")
-    parser.add_argument("--year", type=int, default=2025, help="Year of the season")
+    parser.add_argument("--year", type=int, default=2026, help="Year of the season")
     parser.add_argument("--update", action="store_true", help="Update data")
     parser.add_argument("--save-names", action="store_true", help="Save team names")
     parser.add_argument(
