@@ -43,4 +43,4 @@ jobs:
             git config --global user.name "GitHub Action Bot"
             git add .
             git commit -m "Automated data update [skip ci]" || exit 0   # This exits with 0 if there's nothing to commit
-            git push --force
+            git push
