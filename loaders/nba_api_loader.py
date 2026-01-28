@@ -142,9 +142,19 @@ class NBAAPILoader:
         """
         games = []
 
+        # Get valid NBA team abbreviations for filtering
+        self._init_team_cache()
+        valid_nba_abbrs = set(self._abbr_to_id.keys())
+
         for _, row in schedule_df.iterrows():
             # Skip preseason games
             if row.get("gameLabel") == "Preseason":
+                continue
+
+            # Skip games involving non-NBA teams (e.g., exhibition games)
+            home_abbr_raw = row["homeTeam_teamTricode"]
+            away_abbr_raw = row["awayTeam_teamTricode"]
+            if home_abbr_raw not in valid_nba_abbrs or away_abbr_raw not in valid_nba_abbrs:
                 continue
 
             game_id = row["gameId"]

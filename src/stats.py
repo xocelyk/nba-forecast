@@ -226,10 +226,14 @@ def get_pace(data):
 
 def get_remaining_sos(ratings_df, future_games):
     # returns a dictionary of remaining strength of schedule for each team
-    remaining_sos = {team: [] for team in ratings_df["team"].unique()}
+    valid_teams = set(ratings_df["team"].unique())
+    remaining_sos = {team: [] for team in valid_teams}
     for idx, row in future_games.iterrows():
         team = row["team"]
         opponent = row["opponent"]
+        # Skip games involving non-NBA teams (e.g., exhibition games)
+        if team not in valid_teams or opponent not in valid_teams:
+            continue
         remaining_sos[team].append(
             ratings_df[ratings_df["team"] == opponent]["predictive_rating"].values[0]
         )
