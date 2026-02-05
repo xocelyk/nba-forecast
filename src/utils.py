@@ -486,7 +486,7 @@ def days_since_most_recent_game(team, date, games, cap=10, hca: float = HCA):
     returns the number of days since the most recent game for the team on the given date
     """
     team_data = games[(games["team"] == team) | (games["opponent"] == team)]
-    team_data = duplicate_games_training_data(team_data, hca=hca)
+    team_data = flip_perspective(team_data, hca=hca)
     team_data = team_data[team_data["date"] < date]
     date = pd.to_datetime(date)
 
@@ -497,176 +497,59 @@ def days_since_most_recent_game(team, date, games, cap=10, hca: float = HCA):
         return min(cap, (date - team_data.iloc[0]["date"]).days)
 
 
-def duplicate_games(df, hca: float = HCA):
-    # Duplicate the DataFrame and rename the columns
-    duplicated_games = df.copy()
+def flip_perspective(df, hca: float = HCA):
+    """Duplicate each game row from the opponent's perspective and concatenate.
 
-    # Create a dictionary to map original columns to their new names
-    col_mapping = {
-        "team": "opponent",
-        "opponent": "team",
-        "team_rating": "opponent_rating",
-        "opponent_rating": "team_rating",
-        "last_year_team_rating": "last_year_opp_rating",
-        "last_year_opp_rating": "last_year_team_rating",
-        "team_last_10_rating": "opponent_last_10_rating",
-        "opponent_last_10_rating": "team_last_10_rating",
-        "team_last_5_rating": "opponent_last_5_rating",
-        "opponent_last_5_rating": "team_last_5_rating",
-        "team_last_3_rating": "opponent_last_3_rating",
-        "opponent_last_3_rating": "team_last_3_rating",
-        "team_last_1_rating": "opponent_last_1_rating",
-        "opponent_last_1_rating": "team_last_1_rating",
-        "team_win_total_future": "opponent_win_total_future",
-        "opponent_win_total_future": "team_win_total_future",
-    }
+    Dynamically discovers team/opponent column pairs and swaps them.
+    Flips margin (accounting for HCA) and team_win (if present).
+    All other columns pass through unchanged.
+    """
+    flipped = df.copy()
 
-    duplicated_games = duplicated_games.rename(columns=col_mapping)
+    # Build swap mapping dynamically from columns present in the DataFrame
+    col_mapping = {}
+    mapped = set()
+    cols = set(df.columns)
 
-    # Recompute rating differential after swapping
-    # if (
-    #     "team_rating" in duplicated_games.columns
-    #     and "opponent_rating" in duplicated_games.columns
-    # ):
-    # duplicated_games["rating_diff"] = (
-    #     duplicated_games["team_rating"] - duplicated_games["opponent_rating"]
-    # )
+    # team <-> opponent
+    if "team" in cols and "opponent" in cols:
+        col_mapping["team"] = "opponent"
+        col_mapping["opponent"] = "team"
+        mapped.update(["team", "opponent"])
 
-    # Adjust columns that require calculation
-    if "hca" in duplicated_games.columns:
-        duplicated_games["margin"] = (
-            -duplicated_games["margin"] + 2 * duplicated_games["hca"]
-        )
-    else:
-        duplicated_games["margin"] = -duplicated_games["margin"] + 2 * hca
-    duplicated_games["team_win"] = 1 - duplicated_games["team_win"]
+    # team_* <-> opponent_*
+    for col in sorted(cols):
+        if col in mapped:
+            continue
+        if col.startswith("team_"):
+            counterpart = "opponent_" + col[5:]
+            if counterpart in cols:
+                col_mapping[col] = counterpart
+                col_mapping[counterpart] = col
+                mapped.update([col, counterpart])
 
-    # Concatenate the original and duplicated DataFrames
-    result_df = pd.concat([df, duplicated_games], ignore_index=True)
+    # *_team_* <-> *_opp_*  (e.g. last_year_team_rating <-> last_year_opp_rating)
+    for col in sorted(cols):
+        if col in mapped:
+            continue
+        if "_team_" in col:
+            counterpart = col.replace("_team_", "_opp_")
+            if counterpart in cols:
+                col_mapping[col] = counterpart
+                col_mapping[counterpart] = col
+                mapped.update([col, counterpart])
 
-    return result_df
+    flipped = flipped.rename(columns=col_mapping)
 
+    # Flip margin (away team saw the negative margin, adjusted for HCA)
+    if "margin" in flipped.columns:
+        if "hca" in flipped.columns:
+            flipped["margin"] = -flipped["margin"] + 2 * flipped["hca"]
+        else:
+            flipped["margin"] = -flipped["margin"] + 2 * hca
 
-# def duplicate_games(df):
-#     '''
-#     duplicates the games in the dataframe so that the team and opponent are switched
-#     '''
-#     features = ['team', 'opponent', 'team_rating', 'opponent_rating', 'last_year_team_rating', 'last_year_opp_rating', 'margin', 'num_games_into_season', 'date', 'year', 'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating', 'completed', 'team_win_total_future', 'opponent_win_total_future', 'pace', 'team_win']
-#     def reverse_game(row):
-#         team = row['opponent']
-#         opponent = row['team']
-#         team_rating = row['opponent_rating']
-#         opponent_rating = row['team_rating']
-#         last_year_team_rating = row['last_year_opp_rating']
-#         last_year_opp_rating = row['last_year_team_rating']
-#         margin = -row['margin'] + 2 * HCA
-#         num_games_into_season = row['num_games_into_season']
-#         date = row['date']
-#         year = row['year']
-#         team_last_10_rating = row['opponent_last_10_rating']
-#         opponent_last_10_rating = row['team_last_10_rating']
-#         team_last_5_rating = row['opponent_last_5_rating']
-#         opponent_last_5_rating = row['team_last_5_rating']
-#         team_last_3_rating = row['opponent_last_3_rating']
-#         opponent_last_3_rating = row['team_last_3_rating']
-#         team_last_1_rating = row['opponent_last_1_rating']
-#         opponent_last_1_rating = row['team_last_1_rating']
-#         completed = row['completed']
-#         team_win_total_future = row['opponent_win_total_future']
-#         opponent_win_total_future = row['team_win_total_future']
-#         pace = row['pace']
-#         team_win = int(not (bool(row['team_win'])))
-#         return [team, opponent, team_rating, opponent_rating, last_year_team_rating, last_year_opp_rating, margin, num_games_into_season, date, year, team_last_10_rating, opponent_last_10_rating, team_last_5_rating, opponent_last_5_rating, team_last_3_rating, opponent_last_3_rating, team_last_1_rating, opponent_last_1_rating, completed, team_win_total_future, opponent_win_total_future, pace, team_win]
+    # Flip team_win if present
+    if "team_win" in flipped.columns:
+        flipped["team_win"] = 1 - flipped["team_win"]
 
-#     duplicated_games = []
-#     for idx, game in df.iterrows():
-#         duplicated_games.append(reverse_game(game))
-#     duplicated_games = pd.DataFrame(duplicated_games, columns=features)
-#     df = pd.concat([df, duplicated_games])
-#     return df
-
-
-def duplicate_games_training_data(df, hca: float = HCA):
-    features = [
-        "team",
-        "opponent",
-        "team_rating",
-        "opponent_rating",
-        # "rating_diff",
-        "last_year_team_rating",
-        "last_year_opp_rating",
-        "margin",
-        "num_games_into_season",
-        "date",
-        "year",
-        "team_last_10_rating",
-        "opponent_last_10_rating",
-        "team_last_5_rating",
-        "opponent_last_5_rating",
-        "team_last_3_rating",
-        "opponent_last_3_rating",
-        "team_last_1_rating",
-        "opponent_last_1_rating",
-        "completed",
-        "team_win_total_future",
-        "opponent_win_total_future",
-        "hca",
-    ]
-
-    def reverse_game(row):
-        team = row["opponent"]
-        opponent = row["team"]
-        team_rating = row["opponent_rating"]
-        opponent_rating = row["team_rating"]
-        last_year_team_rating = row["last_year_opp_rating"]
-        last_year_opp_rating = row["last_year_team_rating"]
-        margin = -row["margin"] + 2 * (row.get("hca", hca))
-        num_games_into_season = row["num_games_into_season"]
-        date = row["date"]
-        year = row["year"]
-        team_last_10_rating = row["opponent_last_10_rating"]
-        opponent_last_10_rating = row["team_last_10_rating"]
-        team_last_5_rating = row["opponent_last_5_rating"]
-        opponent_last_5_rating = row["team_last_5_rating"]
-        team_last_3_rating = row["opponent_last_3_rating"]
-        opponent_last_3_rating = row["team_last_3_rating"]
-        team_last_1_rating = row["opponent_last_1_rating"]
-        opponent_last_1_rating = row["team_last_1_rating"]
-        completed = row["completed"]
-        team_win_total_future = row["opponent_win_total_future"]
-        opponent_win_total_future = row["team_win_total_future"]
-        # rating_diff = team_rating - opponent_rating
-        return [
-            team,
-            opponent,
-            team_rating,
-            opponent_rating,
-            # rating_diff,
-            last_year_team_rating,
-            last_year_opp_rating,
-            margin,
-            num_games_into_season,
-            date,
-            year,
-            team_last_10_rating,
-            opponent_last_10_rating,
-            team_last_5_rating,
-            opponent_last_5_rating,
-            team_last_3_rating,
-            opponent_last_3_rating,
-            team_last_1_rating,
-            opponent_last_1_rating,
-            completed,
-            team_win_total_future,
-            opponent_win_total_future,
-            row.get("hca", hca),
-        ]
-
-    duplicated_games = []
-    for idx, game in df.iterrows():
-        duplicated_games.append(reverse_game(game))
-    duplicated_games = pd.DataFrame(duplicated_games, columns=features)
-    # if "rating_diff" in df.columns:
-    #     df["rating_diff"] = df["team_rating"] - df["opponent_rating"]
-    df = pd.concat([df, duplicated_games])
-    return df
+    return pd.concat([df, flipped], ignore_index=True)

@@ -125,7 +125,7 @@ class TestDuplicateGames:
         games["opponent_rating"] = [2.0, 4.0, -1.0]
         games["team_win"] = [1, 1, 1]  # All home wins
 
-        result = utils.duplicate_games(games, hca=2.5)
+        result = utils.flip_perspective(games, hca=2.5)
 
         # Should double the number of games
         assert len(result) == 2 * len(games)
@@ -147,7 +147,7 @@ class TestDuplicateGames:
         games["opponent_rating"] = [2.0, 4.0, -1.0]
         games["team_win"] = [1, 1, 1]
 
-        result = utils.duplicate_games(games, hca=2.5)
+        result = utils.flip_perspective(games, hca=2.5)
 
         original_games = result.iloc[: len(games)]
         duplicated_games = result.iloc[len(games) :]
@@ -169,7 +169,7 @@ class TestDuplicateGames:
         games["team_win"] = [1, 1, 1]
         hca = 2.5
 
-        result = utils.duplicate_games(games, hca=hca)
+        result = utils.flip_perspective(games, hca=hca)
 
         original_games = result.iloc[: len(games)]
         duplicated_games = result.iloc[len(games) :]
@@ -188,7 +188,7 @@ class TestDuplicateGames:
         games["opponent_rating"] = [0, 0, 0]
         games["team_win"] = [1, 0, 1]  # Mixed wins/losses
 
-        result = utils.duplicate_games(games, hca=2.5)
+        result = utils.flip_perspective(games, hca=2.5)
 
         original_games = result.iloc[: len(games)]
         duplicated_games = result.iloc[len(games) :]
@@ -213,7 +213,7 @@ class TestDuplicateGames:
         games["team_win_total_future"] = [50, 45, 40]
         games["opponent_win_total_future"] = [35, 38, 42]
 
-        result = utils.duplicate_games(games, hca=2.5)
+        result = utils.flip_perspective(games, hca=2.5)
 
         original_games = result.iloc[: len(games)]
         duplicated_games = result.iloc[len(games) :]
@@ -250,7 +250,7 @@ class TestDuplicateGamesTrainingData:
         # Take a subset for testing
         games = sample_training_data.head(3).copy()
 
-        result = utils.duplicate_games_training_data(games, hca=2.5)
+        result = utils.flip_perspective(games, hca=2.5)
 
         # Should double the number of games
         assert len(result) == 2 * len(games)
@@ -276,7 +276,7 @@ class TestDuplicateGamesTrainingData:
         games["hca"] = [3.0, 2.8]  # Custom HCA values
         original_margins = games["margin"].copy()
 
-        result = utils.duplicate_games_training_data(games)
+        result = utils.flip_perspective(games)
 
         duplicated_games = result.iloc[len(games) :]
 
@@ -296,7 +296,7 @@ class TestDuplicateGamesTrainingData:
         hca_value = 2.5
         original_margins = games["margin"].copy()
 
-        result = utils.duplicate_games_training_data(games, hca=hca_value)
+        result = utils.flip_perspective(games, hca=hca_value)
 
         duplicated_games = result.iloc[len(games) :]
 
@@ -362,7 +362,7 @@ class TestDaysSinceMostRecentGame:
     @pytest.mark.unit
     def test_days_since_most_recent_game_basic(self):
         """Test basic days since calculation."""
-        # Create games with required columns for duplicate_games_training_data
+        # Create games with required columns for flip_perspective
         games = pd.DataFrame(
             {
                 "date": pd.to_datetime(["2025-01-01", "2025-01-05", "2025-01-10"]),
