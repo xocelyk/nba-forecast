@@ -457,47 +457,6 @@ def last_n_games(year_data, n, hca: float = HCA):
     return year_data
 
 
-def get_last_n_games_dict(completed_games, n_lst, teams_on_date=None, hca: float = HCA):
-    res = {n: {} for n in n_lst}
-    completed_games.sort_values(by="date", ascending=False, inplace=True)
-    for team in list(
-        set(
-            completed_games["team"].unique().tolist()
-            + completed_games["opponent"].unique().tolist()
-        )
-    ):
-        if teams_on_date:
-            if team not in teams_on_date:
-                continue
-        team_data = (
-            completed_games[
-                (completed_games["team"] == team)
-                | (completed_games["opponent"] == team)
-            ]
-            .sort_values(by="date", ascending=False)
-            .iloc[: max(n_lst)]
-        )
-        team_data = duplicate_games(team_data, hca=hca)
-        team_data = team_data[team_data["team"] == team]
-
-        for n in n_lst:
-            team_vals = {}
-            team_data = team_data.iloc[:n]
-            team_data["team_adj_margin"] = team_data.apply(
-                lambda x: x["margin"] + x["opponent_rating"] - hca, axis=1
-            )
-            if len(team_data) < n:
-                team_val = 0
-            else:
-                vals = []
-                for idx, row in team_data.iterrows():
-                    vals.append(row["team_adj_margin"])
-                team_val = np.mean(vals)
-            team_vals[team] = team_val
-            res[n][team] = team_val
-    return res
-
-
 def add_days_since_most_recent_game_to_df(df, hca: float = HCA):
     for year in df["year"].unique():
         year_data = df[df["year"] == year]
