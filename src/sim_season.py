@@ -39,6 +39,32 @@ class MarginModel:
 
 
 class Season:
+    DIVISIONS = {
+        "Atlantic": ["BOS", "TOR", "BRK", "PHI", "NYK"],
+        "Central": ["MIL", "IND", "CHI", "DET", "CLE"],
+        "Southeast": ["MIA", "ORL", "CHO", "WAS", "ATL"],
+        "Northwest": ["DEN", "UTA", "POR", "OKC", "MIN"],
+        "Pacific": ["LAL", "LAC", "PHX", "SAC", "GSW"],
+        "Southwest": ["HOU", "DAL", "MEM", "NOP", "SAS"],
+    }
+    EASTERN_CONFERENCE = [
+        "BOS", "NYK", "MIL", "CLE", "ORL",
+        "IND", "PHI", "MIA", "CHI", "ATL",
+        "BRK", "TOR", "WAS", "DET", "CHO",
+    ]
+    WESTERN_CONFERENCE = [
+        "OKC", "DEN", "MIN", "LAC", "DAL",
+        "PHX", "LAL", "NOP", "SAC", "GSW",
+        "POR", "UTA", "MEM", "HOU", "SAS",
+    ]
+    TEAM_TO_DIVISION = {
+        team: div for div, teams in DIVISIONS.items() for team in teams
+    }
+    TEAM_TO_CONFERENCE = {
+        **{team: "East" for team in EASTERN_CONFERENCE},
+        **{team: "West" for team in WESTERN_CONFERENCE},
+    }
+
     def __init__(
         self,
         year,
@@ -2202,234 +2228,302 @@ class Season:
             + datetime.timedelta(days=day_increment)
         )
 
-    def get_playoff_standings(self, record_by_team):
-        """
-        takes the end of season results and returns the playoff seeding
+    def _compute_tiebreaker_stats(self, record_by_team):
+        """Pre-compute all data needed for tiebreaking from completed regular
+        season games.  Returns a dict keyed by team abbreviation."""
+        stats = {}
+        for team in record_by_team:
+            wins, losses = record_by_team[team]
+            stats[team] = {
+                "wins": wins,
+                "losses": losses,
+                "head_to_head": {},
+                "conference_wins": 0,
+                "conference_losses": 0,
+                "net_point_differential": 0.0,
+                "division": self.TEAM_TO_DIVISION.get(team),
+            }
 
-        seeding is determined by the following, in order of priority:
-        1. number of wins
-        2. head to head record
-        3. division leader
-        4. conference record
-        5. record against conference eligible playoff teams
-        """
-
-        western_conference = [
-            "OKC",
-            "DEN",
-            "MIN",
-            "LAC",
-            "DAL",
-            "PHX",
-            "LAL",
-            "NOP",
-            "SAC",
-            "GSW",
-            "POR",
-            "UTA",
-            "MEM",
-            "HOU",
-            "SAS",
-        ]
-        eastern_conference = [
-            "BOS",
-            "NYK",
-            "MIL",
-            "CLE",
-            "ORL",
-            "IND",
-            "PHI",
-            "MIA",
-            "CHI",
-            "ATL",
-            "BRK",
-            "TOR",
-            "WAS",
-            "DET",
-            "CHO",
-        ]
-
-        # create dataframes for each conference
-        ec_df = pd.DataFrame.from_dict(
-            record_by_team, orient="index", columns=["wins", "losses"]
-        )
-        ec_df = ec_df[ec_df.index.isin(eastern_conference)]
-        wc_df = pd.DataFrame.from_dict(
-            record_by_team, orient="index", columns=["wins", "losses"]
-        )
-        wc_df = wc_df[wc_df.index.isin(western_conference)]
-
-        # sort teams by their position in eastern_conference and western_conference
-        # Only reindex with teams that actually exist in the DataFrames
-        ec_teams_present = [t for t in eastern_conference if t in ec_df.index]
-        wc_teams_present = [t for t in western_conference if t in wc_df.index]
-        ec_df = ec_df.loc[ec_teams_present]
-        wc_df = wc_df.loc[wc_teams_present]
-
-        ec_df["team"] = ec_df.index
-        wc_df["team"] = wc_df.index
-
-        # first, sort by wins
-        # HACK: add some noise to the wins to break ties
-        ec_df["new_wins"] = ec_df["wins"] + np.random.normal(0, 1e-4, len(ec_df))
-        wc_df["new_wins"] = wc_df["wins"] + np.random.normal(0, 1e-4, len(wc_df))
-        ec_df.sort_values(by="new_wins", ascending=False, inplace=True)
-        wc_df.sort_values(by="new_wins", ascending=False, inplace=True)
-
-        # then, sort by head to head
-        # ec_df = self.sort_by_head_to_head(ec_df)
-        # wc_df = self.sort_by_head_to_head(wc_df)
-
-        # # then, sort by division leader
-        # ec_df = self.sort_by_division_leader(ec_df)
-        # wc_df = self.sort_by_division_leader(wc_df)
-
-        # # then, sort by conference record
-        # ec_df = self.sort_by_conference_record(ec_df)
-        # wc_df = self.sort_by_conference_record(wc_df)
-
-        # # then, sort by conference eligible record
-        # ec_df = self.sort_by_conference_eligible_record(ec_df)
-        # wc_df = self.sort_by_conference_eligible_record(wc_df)
-
-        # # resort by order of priorty
-        # ec_df.sort_values(by=['wins', 'head_to_head', 'division_leader', 'conference_record', 'conference_eligible_record'], ascending=False, inplace=True)
-        # wc_df.sort_values(by=['wins', 'head_to_head', 'division_leader', 'conference_record', 'conference_eligible_record'], ascending=False, inplace=True)
-
-        ec_df["seed"] = [i + 1 for i in range(len(ec_df))]
-        wc_df["seed"] = [i + 1 for i in range(len(wc_df))]
-        ec_df.drop("new_wins", axis=1, inplace=True)
-        wc_df.drop("new_wins", axis=1, inplace=True)
-
-        return ec_df, wc_df
-
-    def sort_by_head_to_head(self, df):
-        """
-        sorts the dataframe by head to head record
-        """
-        df["head_to_head"] = [0 for _ in range(len(df))]
-        # get the head to head records
-        prev_num_wins = None
-        prev_teams = None
-        for team, row in df.iterrows():
-            num_wins = row["wins"]
-            if num_wins == prev_num_wins:
-                prev_teams.append(team)
-            else:
-                if prev_teams:
-                    # sort the teams by head to head record
-                    df = self.sort_teams_by_head_to_head(df)
-                prev_num_wins = num_wins
-                prev_teams = [team]
-
-        return df
-
-    def sort_teams_by_head_to_head(self, df):
-        """
-        sorts the teams by head to head record
-        """
-        teams = df["team"].tolist()
-        # dictionary with the head to head record for each team
-        prev_head_to_head = {}
-        for team in teams:
-            prev_head_to_head[team] = df.loc[team, "head_to_head"]
-
-        # get the head to head records
-        head_to_head = {}
-        for team in teams:
-            head_to_head[team] = 0
-
-        sim_completed_games = utils.duplicate_games(self.completed_games, hca=self.hca)
-        # can do this quicker with apply then sum
-        for idx, game in sim_completed_games.iterrows():
-            if game["team"] in teams and game["opponent"] in teams:
-                if game["team_win"]:
-                    head_to_head[game["team"]] += 1
-                else:
-                    head_to_head[game["opponent"]] += 1
-
-        for team in teams:
-            df.loc[team, "head_to_head"] = max(
-                head_to_head[team], prev_head_to_head[team]
-            )
-
-        # sort the teams by head to head record
-        df.sort_values(by="head_to_head", ascending=False, inplace=True)
-        return df
-
-    def sort_by_division_leader(self, df):
-        """
-        sorts the dataframe by division leader
-        """
-        df["division_leader"] = [0 for _ in range(len(df))]
-        # get the division leaders
-        divisions = {
-            "Atlantic": ["BOS", "TOR", "BRK", "PHI", "NYK"],
-            "Central": ["MIL", "IND", "CHI", "DET", "CLE"],
-            "Southeast": ["MIA", "ORL", "CHO", "WAS", "ATL"],
-            "Northwest": ["DEN", "UTA", "POR", "OKC", "MIN"],
-            "Pacific": ["LAL", "LAC", "PHX", "SAC", "GSW"],
-            "Southwest": ["HOU", "DAL", "MEM", "NOP", "SAS"],
-        }
-        for division, teams in divisions.items():
-            # check if teams in division are in the dataframe
-            if not set(teams).issubset(set(df.index)):
+        regular = self.completed_games[self.completed_games["playoff"] == 0]
+        for _, row in regular.iterrows():
+            home = row["team"]
+            away = row["opponent"]
+            if home not in stats or away not in stats:
                 continue
-            # get the division leader
-            division_df = df.loc[teams]
-            max_division_wins = division_df["wins"].max()
-            division_leaders = division_df[
-                division_df["wins"] == max_division_wins
-            ].index
-            for team in division_leaders:
-                df.loc[team, "division_leader"] = 1
-        return df
+            margin = row["margin"]  # positive means home win
+            home_win = margin > 0
 
-    def sort_by_conference_record(self, conf_df):
-        """
-        sorts the dataframe by conference record
-        """
-        conf_df["conference_record"] = [0 for _ in range(len(conf_df))]
-        # get the conference records
-        for idx, game in self.completed_games.iterrows():
-            if game["team"] in conf_df.index and game["opponent"] in conf_df.index:
-                if game["team_win"]:
-                    conf_df.loc[game["team"], "conference_record"] += 1
+            # point differential
+            stats[home]["net_point_differential"] += margin
+            stats[away]["net_point_differential"] -= margin
+
+            # head-to-head
+            if away not in stats[home]["head_to_head"]:
+                stats[home]["head_to_head"][away] = {"wins": 0, "losses": 0, "games": 0}
+            if home not in stats[away]["head_to_head"]:
+                stats[away]["head_to_head"][home] = {"wins": 0, "losses": 0, "games": 0}
+
+            stats[home]["head_to_head"][away]["games"] += 1
+            stats[away]["head_to_head"][home]["games"] += 1
+            if home_win:
+                stats[home]["head_to_head"][away]["wins"] += 1
+                stats[away]["head_to_head"][home]["losses"] += 1
+            else:
+                stats[home]["head_to_head"][away]["losses"] += 1
+                stats[away]["head_to_head"][home]["wins"] += 1
+
+            # conference record (both teams in same conference)
+            home_conf = self.TEAM_TO_CONFERENCE.get(home)
+            away_conf = self.TEAM_TO_CONFERENCE.get(away)
+            if home_conf == away_conf:
+                if home_win:
+                    stats[home]["conference_wins"] += 1
+                    stats[away]["conference_losses"] += 1
                 else:
-                    conf_df.loc[game["opponent"], "conference_record"] += 1
+                    stats[home]["conference_losses"] += 1
+                    stats[away]["conference_wins"] += 1
 
-        # sort the teams by conference record
-        conf_df.sort_values(by="conference_record", ascending=False, inplace=True)
+        return stats
 
-        return conf_df
+    def _is_division_winner(self, team, record_by_team):
+        """Return True if *team* has the most wins in its division."""
+        div = self.TEAM_TO_DIVISION.get(team)
+        if div is None:
+            return False
+        div_teams = self.DIVISIONS[div]
+        team_wins = record_by_team[team][0]
+        for t in div_teams:
+            if t != team and t in record_by_team and record_by_team[t][0] > team_wins:
+                return False
+        return True
 
-    def sort_by_conference_eligible_record(self, conf_df):
-        # take the top ten teams in the conference in terms of number of wins
-        ten_best_win_counts = sorted(conf_df["wins"].unique(), reverse=True)[:10]
-        ten_best_teams = [
-            team
-            for team in conf_df.index
-            if conf_df.loc[team, "wins"] in ten_best_win_counts
-        ]
-        ten_best_df = conf_df.loc[ten_best_teams]
+    def _all_played_equal_times(self, teams, stats):
+        """Return True if every pair in *teams* played the same number of
+        head-to-head games."""
+        counts = set()
+        for i, t1 in enumerate(teams):
+            for t2 in teams[i + 1:]:
+                h2h = stats[t1]["head_to_head"].get(t2)
+                counts.add(h2h["games"] if h2h else 0)
+        return len(counts) == 1 and 0 not in counts
 
-        ten_best_df["conference_eligible_record"] = [0 for _ in range(len(ten_best_df))]
-        for idx, game in self.completed_games.iterrows():
-            if (
-                game["team"] in ten_best_df.index
-                and game["opponent"] in ten_best_df.index
-            ):
-                if game["team_win"]:
-                    ten_best_df.loc[game["team"], "conference_eligible_record"] += 1
-                else:
-                    ten_best_df.loc[game["opponent"], "conference_eligible_record"] += 1
+    @staticmethod
+    def _get_playoff_eligible_teams(conference_teams, record_by_team):
+        """Top 10 teams in *conference_teams* by wins."""
+        eligible = [t for t in conference_teams if t in record_by_team]
+        eligible.sort(key=lambda t: record_by_team[t][0], reverse=True)
+        return eligible[:10]
 
-        # sort the teams by conference record
-        ten_best_df.sort_values(
-            by="conference_eligible_record", ascending=False, inplace=True
+    def _get_other_conference_teams(self, conference_teams):
+        """Return the list of teams from the opposite conference."""
+        conf_set = set(conference_teams)
+        if conf_set & set(self.EASTERN_CONFERENCE):
+            return list(self.WESTERN_CONFERENCE)
+        return list(self.EASTERN_CONFERENCE)
+
+    @staticmethod
+    def _get_record_vs_teams(team, opponent_set, stats):
+        """Return (wins, losses) for *team* against all teams in
+        *opponent_set*."""
+        wins = losses = 0
+        for opp in opponent_set:
+            h2h = stats[team]["head_to_head"].get(opp)
+            if h2h:
+                wins += h2h["wins"]
+                losses += h2h["losses"]
+        return wins, losses
+
+    def _break_ties(self, tied_teams, stats, conference_teams, record_by_team):
+        """Dispatch to the correct tiebreaker procedure based on number of
+        tied teams.  Returns a list ordered from best to worst."""
+        if len(tied_teams) == 1:
+            return list(tied_teams)
+        if len(tied_teams) == 2:
+            return self._break_two_team_tie(
+                tied_teams[0], tied_teams[1], stats, conference_teams, record_by_team
+            )
+        return self._break_multi_team_tie(
+            tied_teams, stats, conference_teams, record_by_team
         )
 
-        return ten_best_df
+    def _break_two_team_tie(self, team_a, team_b, stats, conference_teams, record_by_team):
+        """NBA two-team tiebreaker sequence.  Returns [winner, loser]."""
+        # 1. Head-to-head
+        h2h = stats[team_a]["head_to_head"].get(team_b)
+        if h2h and h2h["wins"] != h2h["losses"]:
+            return [team_a, team_b] if h2h["wins"] > h2h["losses"] else [team_b, team_a]
+
+        # 2. Division winner (only if same division)
+        if stats[team_a]["division"] == stats[team_b]["division"]:
+            a_div = self._is_division_winner(team_a, record_by_team)
+            b_div = self._is_division_winner(team_b, record_by_team)
+            if a_div and not b_div:
+                return [team_a, team_b]
+            if b_div and not a_div:
+                return [team_b, team_a]
+
+        # 3. Conference record
+        a_conf = stats[team_a]["conference_wins"]
+        b_conf = stats[team_b]["conference_wins"]
+        if a_conf != b_conf:
+            return [team_a, team_b] if a_conf > b_conf else [team_b, team_a]
+
+        # 4. Record vs playoff-eligible teams in own conference
+        own_eligible = self._get_playoff_eligible_teams(conference_teams, record_by_team)
+        a_w, a_l = self._get_record_vs_teams(team_a, own_eligible, stats)
+        b_w, b_l = self._get_record_vs_teams(team_b, own_eligible, stats)
+        if a_w != b_w:
+            return [team_a, team_b] if a_w > b_w else [team_b, team_a]
+
+        # 5. Record vs playoff-eligible teams in other conference
+        other_conf = self._get_other_conference_teams(conference_teams)
+        other_eligible = self._get_playoff_eligible_teams(other_conf, record_by_team)
+        a_w, a_l = self._get_record_vs_teams(team_a, other_eligible, stats)
+        b_w, b_l = self._get_record_vs_teams(team_b, other_eligible, stats)
+        if a_w != b_w:
+            return [team_a, team_b] if a_w > b_w else [team_b, team_a]
+
+        # 6. Net point differential
+        a_pd = stats[team_a]["net_point_differential"]
+        b_pd = stats[team_b]["net_point_differential"]
+        if a_pd != b_pd:
+            return [team_a, team_b] if a_pd > b_pd else [team_b, team_a]
+
+        # 7. Random
+        pair = [team_a, team_b]
+        random.shuffle(pair)
+        return pair
+
+    def _break_multi_team_tie(self, tied_teams, stats, conference_teams, record_by_team):
+        """NBA multi-team (3+) tiebreaker sequence with recursive restart
+        when a step separates one or more teams from the group."""
+        teams = list(tied_teams)
+
+        # Helper: attempt to separate teams using a keyfunc.
+        # Returns (resolved_order, remaining) or None if no separation.
+        def _try_separate(teams_list, keyfunc):
+            scored = [(keyfunc(t), t) for t in teams_list]
+            scored.sort(key=lambda x: x[0], reverse=True)
+            groups = {}
+            for score, t in scored:
+                groups.setdefault(score, []).append(t)
+            unique_scores = sorted(groups.keys(), reverse=True)
+            if len(unique_scores) == 1:
+                return None  # no separation
+            resolved = []
+            for s in unique_scores:
+                resolved.append(groups[s])
+            return resolved
+
+        # Steps applied in order; each returns sub-groups or None
+        steps = []
+
+        # 1. Division winner: division winners rank above non-division-winners
+        def division_winner_key(t):
+            return 1 if self._is_division_winner(t, record_by_team) else 0
+        steps.append(division_winner_key)
+
+        # 2. Head-to-head (only if all pairs played equal number of games)
+        def head_to_head_key(t):
+            wins = 0
+            for opp in teams:
+                if opp == t:
+                    continue
+                h2h = stats[t]["head_to_head"].get(opp)
+                if h2h:
+                    wins += h2h["wins"]
+            return wins
+
+        # 3. Conference record
+        def conference_record_key(t):
+            return stats[t]["conference_wins"]
+        steps.append(conference_record_key)
+
+        # 4. Record vs own-conference playoff-eligible teams
+        own_eligible = self._get_playoff_eligible_teams(conference_teams, record_by_team)
+        def own_conf_eligible_key(t):
+            w, _ = self._get_record_vs_teams(t, own_eligible, stats)
+            return w
+        steps.append(own_conf_eligible_key)
+
+        # 5. Record vs other-conference playoff-eligible teams
+        other_conf = self._get_other_conference_teams(conference_teams)
+        other_eligible = self._get_playoff_eligible_teams(other_conf, record_by_team)
+        def other_conf_eligible_key(t):
+            w, _ = self._get_record_vs_teams(t, other_eligible, stats)
+            return w
+        steps.append(other_conf_eligible_key)
+
+        # 6. Net point differential
+        def point_diff_key(t):
+            return stats[t]["net_point_differential"]
+        steps.append(point_diff_key)
+
+        for i, step_fn in enumerate(steps):
+            # Insert head-to-head as step index 1 (after division winner)
+            if i == 1:
+                # Try head-to-head only if schedule is balanced
+                if self._all_played_equal_times(teams, stats):
+                    result = _try_separate(teams, head_to_head_key)
+                    if result is not None:
+                        final = []
+                        for group in result:
+                            final.extend(self._break_ties(
+                                group, stats, conference_teams, record_by_team
+                            ))
+                        return final
+
+            result = _try_separate(teams, step_fn)
+            if result is not None:
+                final = []
+                for group in result:
+                    final.extend(self._break_ties(
+                        group, stats, conference_teams, record_by_team
+                    ))
+                return final
+
+        # 7. Random (last resort)
+        random.shuffle(teams)
+        return teams
+
+    def get_playoff_standings(self, record_by_team):
+        """Determine playoff seedings for each conference using NBA
+        tiebreaker rules."""
+        stats = self._compute_tiebreaker_stats(record_by_team)
+
+        def seed_conference(conference_teams):
+            teams_present = [t for t in conference_teams if t in record_by_team]
+            # Group teams by win count
+            win_groups = {}
+            for t in teams_present:
+                w = record_by_team[t][0]
+                win_groups.setdefault(w, []).append(t)
+
+            ordered = []
+            for w in sorted(win_groups.keys(), reverse=True):
+                group = win_groups[w]
+                if len(group) == 1:
+                    ordered.extend(group)
+                else:
+                    ordered.extend(self._break_ties(
+                        group, stats, conference_teams, record_by_team
+                    ))
+
+            rows = []
+            for seed, team in enumerate(ordered, 1):
+                rows.append({
+                    "team": team,
+                    "wins": record_by_team[team][0],
+                    "losses": record_by_team[team][1],
+                    "seed": seed,
+                })
+            df = pd.DataFrame(rows)
+            df.index = df["team"]
+            return df
+
+        ec_df = seed_conference(self.EASTERN_CONFERENCE)
+        wc_df = seed_conference(self.WESTERN_CONFERENCE)
+        return ec_df, wc_df
 
     def trim_decided_playoff_series_games(self) -> None:
         """
