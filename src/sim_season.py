@@ -2,6 +2,8 @@ import datetime
 import os
 import random
 import time
+from dataclasses import dataclass, field
+from typing import Optional
 
 import numpy as np
 import pandas as pd
@@ -35,6 +37,34 @@ class MarginModel:
         self.resid_std = margin_model_resid_std
         self.num_games_to_std_margin_model_resid = num_games_to_std_margin_model_resid
         self.resid_mean = margin_model_resid_mean
+
+
+BAYESIAN_PRIOR_WEIGHT = 5
+
+
+@dataclass
+class TeamState:
+    em_rating: float = 0.0
+    adj_margins: list = field(default_factory=list)
+    bayesian_gs_sum: float = 0.0
+    bayesian_gs_count: int = 0
+    bayesian_gs: float = 0.0
+    most_recent_game_date: Optional[datetime.date] = None
+    bayesian_prior: float = 0.0
+
+    def record_game(self, adj_margin: float, game_date: datetime.date) -> None:
+        self.adj_margins.append(adj_margin)
+        self.most_recent_game_date = game_date
+        self.bayesian_gs_sum += adj_margin
+        self.bayesian_gs_count += 1
+        self.bayesian_gs = (
+            self.bayesian_prior * BAYESIAN_PRIOR_WEIGHT + self.bayesian_gs_sum
+        ) / (BAYESIAN_PRIOR_WEIGHT + self.bayesian_gs_count)
+
+    def last_n_adj_margin_mean(self, n: int) -> float:
+        if len(self.adj_margins) < n:
+            return 0.0
+        return float(np.mean(self.adj_margins[-n:]))
 
 
 class Season:
@@ -105,38 +135,27 @@ class Season:
         self.future_games["pace"] = np.random.normal(
             self.mean_pace, self.std_pace, size=len(self.future_games)
         )
-        self.em_ratings = utils.get_em_ratings(
-            self.completed_games, names=self.teams, hca=self.hca
-        )
         self.time = time.time()
         self.win_total_futures = self.get_win_total_futures()
         self.win_total_last_year = self.get_last_year_win_totals()
         self.last_year_ratings = self.get_last_year_ratings()
-        self.last_n_games_adj_margins = self.init_last_n_games_adj_margins()
-        self.team_last_adj_margin_dict = {
-            team: (
-                np.mean(self.last_n_games_adj_margins[team][:1])
-                if len(self.last_n_games_adj_margins[team]) >= 1
-                else 0
-            )
-            for team in self.teams
-        }
-        self.last_game_stats_dict = None
         self.sim_date_increment = sim_date_increment
-        self.most_recent_game_date_dict = self.get_most_recent_game_date_dict()
 
-        # Initialize Bayesian game score tracking from completed games
-        self.bayesian_gs_sum, self.bayesian_gs_count, self.bayesian_gs = (
-            self.init_bayesian_gs()
+        em_ratings = utils.get_em_ratings(
+            self.completed_games, names=self.teams, hca=self.hca
         )
+        self.team_states = self._init_team_states(em_ratings)
 
         # Vectorized initialization of days since most recent game
+        most_recent_dates = {
+            t: ts.most_recent_game_date for t, ts in self.team_states.items()
+        }
         self.future_games["team_most_recent_game_date"] = self.future_games["team"].map(
-            self.most_recent_game_date_dict
+            most_recent_dates
         )
         self.future_games["opponent_most_recent_game_date"] = self.future_games[
             "opponent"
-        ].map(self.most_recent_game_date_dict)
+        ].map(most_recent_dates)
 
         # Vectorized calculation for initial setup
         # Team days since most recent game
@@ -166,25 +185,8 @@ class Season:
         self.end_season_standings = None
         self.regular_season_win_loss_report = None
 
-    def get_most_recent_game_date_dict(self, cap=10):
-        # Create a dict of team to days since most recent game
-        most_recent_game_date_dict = {}
-        # Concatenate completed games with future games
-        for team in self.teams:
-            team_data = self.completed_games.loc[
-                (self.completed_games["team"] == team)
-                | (self.completed_games["opponent"] == team)
-            ]
-            if len(team_data) == 0:
-                most_recent_game_date_dict[team] = None
-            else:
-                team_data = team_data.sort_values(by="date", ascending=False)
-                most_recent_game_date = team_data.iloc[0]["date"]
-                most_recent_game_date_dict[team] = most_recent_game_date
-        return most_recent_game_date_dict
-
-    def init_last_n_games_adj_margins(self):
-        # earliest games first, most recent games last
+    def _compute_initial_adj_margins(self):
+        """Compute initial adjusted margins per team from completed games."""
         completed_games = self.completed_games.copy()
         res = {}
         completed_games.sort_values(by="date", ascending=True, inplace=True)
@@ -195,7 +197,6 @@ class Season:
             ].sort_values(by="date", ascending=True)
             team_data = utils.flip_perspective(team_data, hca=self.hca)
             team_data = team_data[team_data["team"] == team]
-            # Vectorized calculation instead of .apply()
             team_data["team_adj_margin"] = (
                 team_data["margin"] + team_data["opponent_rating"] - self.hca
             )
@@ -206,27 +207,45 @@ class Season:
             res[team] = team_adj_margins
         return res
 
-    def init_bayesian_gs(self):
-        """Initialize Bayesian game score from completed games."""
-        PRIOR_WEIGHT = 5
-        bayesian_gs_sum = {team: 0.0 for team in self.teams}
-        bayesian_gs_count = {team: 0 for team in self.teams}
-
-        # Use the already-computed adjusted margins from init_last_n_games_adj_margins
+    def _compute_most_recent_game_dates(self):
+        """Compute most recent game date per team from completed games."""
+        most_recent = {}
         for team in self.teams:
-            adj_margins = self.last_n_games_adj_margins.get(team, [])
-            bayesian_gs_sum[team] = sum(adj_margins)
-            bayesian_gs_count[team] = len(adj_margins)
+            team_data = self.completed_games.loc[
+                (self.completed_games["team"] == team)
+                | (self.completed_games["opponent"] == team)
+            ]
+            if len(team_data) == 0:
+                most_recent[team] = None
+            else:
+                team_data = team_data.sort_values(by="date", ascending=False)
+                most_recent[team] = team_data.iloc[0]["date"]
+        return most_recent
 
-        # Compute the Bayesian game score
-        bayesian_gs = {}
+    def _init_team_states(self, em_ratings):
+        """Build dict[str, TeamState] from completed games data."""
+        adj_margins_by_team = self._compute_initial_adj_margins()
+        recent_dates = self._compute_most_recent_game_dates()
+
+        team_states = {}
         for team in self.teams:
+            adj_margins = adj_margins_by_team.get(team, [])
             prior = self.last_year_ratings.get(team, 0.0)
-            bayesian_gs[team] = (prior * PRIOR_WEIGHT + bayesian_gs_sum[team]) / (
-                PRIOR_WEIGHT + bayesian_gs_count[team]
+            gs_sum = sum(adj_margins)
+            gs_count = len(adj_margins)
+            bayesian_gs = (prior * BAYESIAN_PRIOR_WEIGHT + gs_sum) / (
+                BAYESIAN_PRIOR_WEIGHT + gs_count
             )
-
-        return bayesian_gs_sum, bayesian_gs_count, bayesian_gs
+            team_states[team] = TeamState(
+                em_rating=em_ratings.get(team, 0.0),
+                adj_margins=list(adj_margins),
+                bayesian_gs_sum=gs_sum,
+                bayesian_gs_count=gs_count,
+                bayesian_gs=bayesian_gs,
+                most_recent_game_date=recent_dates.get(team),
+                bayesian_prior=prior,
+            )
+        return team_states
 
     def get_random_pace(self):
         return np.random.normal(self.mean_pace, self.std_pace)
@@ -345,44 +364,29 @@ class Season:
         )
 
         last_10_games_dict = {
-            team: (
-                np.mean(self.last_n_games_adj_margins[team][-10:])
-                if len(self.last_n_games_adj_margins[team]) >= 10
-                else 0
-            )
-            for team in self.teams
+            t: ts.last_n_adj_margin_mean(10) for t, ts in self.team_states.items()
         }
         last_5_games_dict = {
-            team: (
-                np.mean(self.last_n_games_adj_margins[team][-5:])
-                if len(self.last_n_games_adj_margins[team]) >= 5
-                else 0
-            )
-            for team in self.teams
+            t: ts.last_n_adj_margin_mean(5) for t, ts in self.team_states.items()
         }
         last_3_games_dict = {
-            team: (
-                np.mean(self.last_n_games_adj_margins[team][-3:])
-                if len(self.last_n_games_adj_margins[team]) >= 3
-                else 0
-            )
-            for team in self.teams
+            t: ts.last_n_adj_margin_mean(3) for t, ts in self.team_states.items()
         }
         last_1_games_dict = {
-            team: (
-                np.mean(self.last_n_games_adj_margins[team][-1:])
-                if len(self.last_n_games_adj_margins[team]) >= 1
-                else 0
-            )
-            for team in self.teams
+            t: ts.last_n_adj_margin_mean(1) for t, ts in self.team_states.items()
         }
 
         if self.update_counter is not None:
             self.update_counter += 1
             if self.update_counter % self.update_every == 0:
-                self.em_ratings = utils.get_em_ratings(
+                new_em = utils.get_em_ratings(
                     self.completed_games, names=self.teams, hca=self.hca
                 )
+                for team, rating in new_em.items():
+                    self.team_states[team].em_rating = rating
+
+        em_ratings = {t: ts.em_rating for t, ts in self.team_states.items()}
+        bayesian_gs = {t: ts.bayesian_gs for t, ts in self.team_states.items()}
 
         # Batch update multiple columns to reduce overhead
         rating_updates = {
@@ -402,10 +406,10 @@ class Season:
             "opponent_last_1_rating": self.future_games["opponent"].map(
                 last_1_games_dict
             ),
-            "team_rating": self.future_games["team"].map(self.em_ratings),
-            "opponent_rating": self.future_games["opponent"].map(self.em_ratings),
-            "team_bayesian_gs": self.future_games["team"].map(self.bayesian_gs),
-            "opp_bayesian_gs": self.future_games["opponent"].map(self.bayesian_gs),
+            "team_rating": self.future_games["team"].map(em_ratings),
+            "opponent_rating": self.future_games["opponent"].map(em_ratings),
+            "team_bayesian_gs": self.future_games["team"].map(bayesian_gs),
+            "opp_bayesian_gs": self.future_games["opponent"].map(bayesian_gs),
         }
 
         # Update all columns at once - more efficient than individual assignments
@@ -413,11 +417,12 @@ class Season:
             self.future_games[col_name] = values
 
         # Fully vectorized calculation of days since most recent game
-        team_most_recent_dates = self.future_games["team"].map(
-            self.most_recent_game_date_dict
-        )
+        most_recent_dates = {
+            t: ts.most_recent_game_date for t, ts in self.team_states.items()
+        }
+        team_most_recent_dates = self.future_games["team"].map(most_recent_dates)
         opponent_most_recent_dates = self.future_games["opponent"].map(
-            self.most_recent_game_date_dict
+            most_recent_dates
         )
 
         # Convert to datetime if needed for team dates
@@ -520,66 +525,6 @@ class Season:
         )
         print("Predicted margin:", round(pred_margin, 1))
 
-    def simulate_game(self, row):
-        # TODO (possibly): add simulations of pace, three point percentage, etc
-        # but make sure stats are not independent of each other (otherwise we will regress to mean, decreasing variance)
-        team = row["team"]
-        opponent = row["opponent"]
-        num_games_into_season = row["num_games_into_season"]
-        train_data = self.get_game_data(row)
-        expected_margin = self.margin_model.margin_model.predict(train_data)[0]
-        # Add normally distributed noise based on how deep we are into the season
-        noise = np.random.normal(
-            0,
-            self.margin_model.num_games_to_std_margin_model_resid(
-                num_games_into_season
-            ),
-        )
-        margin = noise + expected_margin
-        team_win = int(margin > 0)
-        # Use the trained win probability model for reporting only; outcome is
-        # determined solely by the noisy margin above
-        # win_prob = self.win_prob_model.predict_proba(np.array([[expected_margin]]))[
-        #     :, 1
-        # ][0]
-
-        # # Log OKC games
-        # if team == "OKC" or opponent == "OKC":
-        #     if team == "OKC":
-        #         okc_expected_margin = expected_margin
-        #         okc_margin = margin
-        #         okc_win_prob = win_prob
-        #         okc_won = team_win
-        #         matchup = f"OKC vs {opponent}"
-        #     else:  # opponent == "OKC"
-        #         okc_expected_margin = -expected_margin
-        #         okc_margin = -margin
-        #         okc_win_prob = 1 - win_prob
-        #         okc_won = not team_win
-        #         matchup = f"OKC @ {team}"
-
-        #     result = "W" if okc_won else "L"
-        #     okc_rating = self.em_ratings.get("OKC", 0.0)
-        # logger.info(
-        #     f"OKC GAME | {matchup:20s} | "
-        #     f"Rating: {okc_rating:+6.2f} | "
-        #     f"Expected: {okc_expected_margin:+6.2f} ({okc_win_prob:.1%}) | "
-        #     f"Result: {result} {okc_margin:+6.2f}"
-        # )
-
-        row["completed"] = True
-        row["team_win"] = team_win
-        row["margin"] = margin
-        row["winner_name"] = team if team_win else opponent
-
-        team_adj_margin = row["margin"] + row["opponent_rating"] - self.hca
-        opponent_adj_margin = -row["margin"] + row["team_rating"] + self.hca
-        self.last_n_games_adj_margins[team].append(team_adj_margin)
-        self.last_n_games_adj_margins[opponent].append(opponent_adj_margin)
-        self.most_recent_game_date_dict[team] = row["date"]
-        self.most_recent_game_date_dict[opponent] = row["date"]
-        return row
-
     def simulate_games_batch(self, games_df):
         """
         Vectorized version of simulate_game() for batch processing multiple games.
@@ -628,70 +573,15 @@ class Season:
         games["expected_margin"] = expected_margins
         games["simulated"] = True
 
-        # # Log OKC games if any
-        # okc_mask = (games["team"] == "OKC") | (games["opponent"] == "OKC")
-        # if okc_mask.any():
-        #     okc_rating = self.em_ratings.get("OKC", 0.0)
-        #     for idx in games[okc_mask].index:
-        #         row = games.loc[idx]
-        #         row_idx = games.index.get_loc(idx)
-        #         expected_margin = expected_margins[row_idx]
-        #         margin = margins[row_idx]
-        #         win_prob = win_probs[row_idx]
-        #         team_win = margins[row_idx] > 0
-
-        #         if row["team"] == "OKC":
-        #             okc_expected_margin = expected_margin
-        #             okc_margin = margin
-        #             okc_win_prob = win_prob
-        #             okc_won = team_win
-        #             matchup = f"OKC vs {row['opponent']}"
-        #         else:  # opponent == "OKC"
-        #             okc_expected_margin = -expected_margin
-        #             okc_margin = -margin
-        #             okc_win_prob = 1 - win_prob
-        #             okc_won = not team_win
-        #             matchup = f"OKC @ {row['team']}"
-
-        #         result = "W" if okc_won else "L"
-        #         logger.info(
-        #             f"OKC GAME | {matchup:20s} | "
-        #             f"Rating: {okc_rating:+6.2f} | "
-        #             f"Expected: {okc_expected_margin:+6.2f} ({okc_win_prob:.1%}) | "
-        #             f"Result: {result} {okc_margin:+6.2f}"
-        # )
-
-        # Batch update state dictionaries
+        # Update team states
         for idx in games.index:
             row = games.loc[idx]
             team = row["team"]
             opponent = row["opponent"]
-
-            # Calculate adjusted margins
             team_adj_margin = row["margin"] + row["opponent_rating"] - self.hca
             opponent_adj_margin = -row["margin"] + row["team_rating"] + self.hca
-
-            # Update last N games adjusted margins
-            self.last_n_games_adj_margins[team].append(team_adj_margin)
-            self.last_n_games_adj_margins[opponent].append(opponent_adj_margin)
-
-            # Update most recent game dates
-            self.most_recent_game_date_dict[team] = row["date"]
-            self.most_recent_game_date_dict[opponent] = row["date"]
-
-            # Update Bayesian game score
-            self.bayesian_gs_sum[team] += team_adj_margin
-            self.bayesian_gs_count[team] += 1
-            self.bayesian_gs[team] = (
-                self.last_year_ratings.get(team, 0.0) * 5 + self.bayesian_gs_sum[team]
-            ) / (5 + self.bayesian_gs_count[team])
-
-            self.bayesian_gs_sum[opponent] += opponent_adj_margin
-            self.bayesian_gs_count[opponent] += 1
-            self.bayesian_gs[opponent] = (
-                self.last_year_ratings.get(opponent, 0.0) * 5
-                + self.bayesian_gs_sum[opponent]
-            ) / (5 + self.bayesian_gs_count[opponent])
+            self.team_states[team].record_game(team_adj_margin, row["date"])
+            self.team_states[opponent].record_game(opponent_adj_margin, row["date"])
 
         return games
 
@@ -739,10 +629,10 @@ class Season:
 
         # Bayesian game score features
         team_bayesian_gs = row.get(
-            "team_bayesian_gs", self.bayesian_gs.get(row["team"], 0.0)
+            "team_bayesian_gs", self.team_states[row["team"]].bayesian_gs
         )
         opp_bayesian_gs = row.get(
-            "opp_bayesian_gs", self.bayesian_gs.get(row["opponent"], 0.0)
+            "opp_bayesian_gs", self.team_states[row["opponent"]].bayesian_gs
         )
         bayesian_gs_diff = team_bayesian_gs - opp_bayesian_gs
 
@@ -1398,6 +1288,8 @@ class Season:
                         label,
                     )
 
+            if additional_dates:
+                self.update_data()
             for date in sorted(additional_dates):
                 self.simulate_day(date, date + datetime.timedelta(days=3), 1)
 
