@@ -74,6 +74,16 @@ class PlayoffState(Enum):
     COMPLETED = auto()
 
 
+@dataclass
+class SimulationResult:
+    wins_dict: dict[str, int]
+    losses_dict: dict[str, int]
+    playoff_results: dict[str, list[str]]
+    seeds: dict[str, int]
+    finals_games: pd.DataFrame
+    simulated_games: pd.DataFrame
+
+
 class Season:
     DIVISIONS = {
         "Atlantic": ["BOS", "TOR", "BRK", "PHI", "NYK"],
@@ -1914,79 +1924,13 @@ def run_single_simulation(
     wins_dict = {team: wins_losses_dict[team][0] for team in wins_losses_dict}
     losses_dict = {team: wins_losses_dict[team][1] for team in wins_losses_dict}
 
-    # Collect finals game data for analysis
-    finals_games_data = []
-
-    # Store original print function to restore later
-    original_print = print
-
-    def capture_finals_data(message):
-        """Custom print function that captures finals game data while still printing"""
-        original_print(message)
-
-        # Look for win probability data in finals game output
-        if isinstance(message, str) and "Win probability for " in message:
-            parts = message.split(": ")
-            if len(parts) >= 2:
-                team = parts[0].split("Win probability for ")[1]
-                prob = float(parts[1])
-
-                # Find the most recent game number
-                game_num = None
-                for line in recent_outputs:
-                    if "FINALS GAME " in line and ":" in line:
-                        try:
-                            game_info = line.split("FINALS GAME ")[1].split(":")[0]
-                            game_num = int(game_info)
-                            break
-                        except:
-                            continue
-
-                if game_num is None:
-                    return  # Can't process without game number
-
-                # Find the winner - only add data when we know the winner
-                winner = None
-                for line in recent_outputs:
-                    if "Winner: " in line:
-                        try:
-                            winner = line.split("Winner: ")[1]
-                            home_win = winner == team
-
-                            # Only add to finals_games_data if we found both game number and winner
-                            finals_games_data.append(
-                                {
-                                    "game_num": game_num,
-                                    "home_team": team,
-                                    "win_prob": prob,
-                                    "home_win": home_win,
-                                }
-                            )
-                            break
-                        except:
-                            continue
-
-    # Replace print temporarily and keep track of recent outputs for parsing
-    recent_outputs = []
-
-    def custom_print(*args, **kwargs):
-        message = " ".join(str(arg) for arg in args)
-        recent_outputs.append(message)
-        if len(recent_outputs) > 20:  # Keep only the last 20 lines
-            recent_outputs.pop(0)
-        capture_finals_data(message)
-
-    # Replace print function during playoffs
-    globals()["print"] = custom_print
-
-    # Run playoffs
     logger.debug("Starting playoffs...")
     playoff_results = season.playoffs()
-
-    # Restore original print function
-    globals()["print"] = original_print
-
     seeds = season.end_season_standings
+
+    finals_games = season.completed_games[
+        season.completed_games["playoff_label"] == "Finals"
+    ].copy()
 
     # Extract simulated games for game-level results
     simulated_games = season.completed_games[
@@ -2009,16 +1953,14 @@ def run_single_simulation(
         [c for c in columns_to_keep if c in simulated_games.columns]
     ]
 
-    result_dict = {
-        "wins_dict": wins_dict,
-        "losses_dict": losses_dict,
-        "playoff_results": playoff_results,
-        "seeds": seeds,
-        "finals_games": finals_games_data,
-        "simulated_games": simulated_games,
-    }
-
-    return result_dict
+    return SimulationResult(
+        wins_dict=wins_dict,
+        losses_dict=losses_dict,
+        playoff_results=playoff_results,
+        seeds=seeds,
+        finals_games=finals_games,
+        simulated_games=simulated_games,
+    )
 
 
 def write_seed_report(seeds_results_over_sims):
@@ -2110,17 +2052,6 @@ def sim_season(
     season_results_over_sims = {team: {"wins": [], "losses": []} for team in teams}
     seed_results_over_sims = {team: {"seed": []} for team in teams}
 
-    # Track Finals game win probabilities across simulations
-    finals_game_stats = {
-        1: {"team_wins": 0, "win_probs": []},
-        2: {"team_wins": 0, "win_probs": []},
-        3: {"team_wins": 0, "win_probs": []},
-        4: {"team_wins": 0, "win_probs": []},
-        5: {"team_wins": 0, "win_probs": []},
-        6: {"team_wins": 0, "win_probs": []},
-        7: {"team_wins": 0, "win_probs": []},
-    }
-
     margin_model = MarginModel(
         win_margin_model,
         margin_model_resid_mean,
@@ -2171,16 +2102,6 @@ def sim_season(
             )
             output.append(sim_result)
 
-            # Collect finals game statistics if available
-            if "finals_games" in sim_result:
-                for game_num, game_data in enumerate(sim_result["finals_games"], 1):
-                    if game_num <= 7:  # Only track up to 7 games
-                        finals_game_stats[game_num]["win_probs"].append(
-                            game_data["win_prob"]
-                        )
-                        if game_data["home_win"]:
-                            finals_game_stats[game_num]["team_wins"] += 1
-
     stop_time = time.time()
     logger.info(
         f"Completed {num_sims} simulations in {stop_time - start_time:.1f} seconds"
@@ -2191,12 +2112,10 @@ def sim_season(
     season_results_over_sims = {team: {"wins": [], "losses": []} for team in teams}
     seed_results_over_sims = {team: {"seed": []} for team in teams}
     for result in output:
-        wins_dict, losses_dict, playoff_results, seeds = (
-            result["wins_dict"],
-            result["losses_dict"],
-            result["playoff_results"],
-            result["seeds"],
-        )
+        wins_dict = result.wins_dict
+        losses_dict = result.losses_dict
+        playoff_results = result.playoff_results
+        seeds = result.seeds
         for round, team_list in playoff_results.items():
             for team in team_list:
                 if team not in playoff_results_over_sims:
@@ -2220,8 +2139,8 @@ def sim_season(
     # Collect and save game-level simulation results
     all_simulated_games = []
     for sim_id, result in enumerate(output):
-        if "simulated_games" in result:
-            games_df = result["simulated_games"].copy()
+        games_df = result.simulated_games.copy()
+        if not games_df.empty:
             games_df["simulation_id"] = sim_id
             all_simulated_games.append(games_df)
 
