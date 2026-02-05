@@ -250,7 +250,7 @@ def get_win_margin_model(games, features=None):
     # Fit a spline to squared errors as a function of num_games_into_season,
     # then take sqrt at query time to get a smooth stdev estimate
     x_games = test["num_games_into_season"].values
-    squared_errors = errors**2
+    squared_errors = (errors**2).values
     sort_idx = np.argsort(x_games)
     x_sorted = x_games[sort_idx]
     sq_err_sorted = squared_errors[sort_idx]
