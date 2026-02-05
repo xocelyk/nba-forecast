@@ -3,6 +3,7 @@ import os
 import random
 import time
 from dataclasses import dataclass, field
+from enum import Enum, auto
 from typing import Optional
 
 import numpy as np
@@ -65,6 +66,12 @@ class TeamState:
         if len(self.adj_margins) < n:
             return 0.0
         return float(np.mean(self.adj_margins[-n:]))
+
+
+class PlayoffState(Enum):
+    NO_PLAYOFFS = auto()
+    IN_PROGRESS = auto()
+    COMPLETED = auto()
 
 
 class Season:
@@ -184,6 +191,7 @@ class Season:
         self.future_games["opponent_days_since_most_recent_game"] = opponent_days_values
         self.end_season_standings = None
         self.regular_season_win_loss_report = None
+        self.playoff_state = None
 
     def _compute_initial_adj_margins(self):
         """Compute initial adjusted margins per team from completed games."""
@@ -585,55 +593,9 @@ class Season:
 
         return games
 
-    def get_game_data(self, row):
-        playoff = row.get(
-            "playoff", int(utils.is_playoff_date(row["date"], row["year"]))
-        )
-        team_bayesian_gs = row.get(
-            "team_bayesian_gs", self.team_states[row["team"]].bayesian_gs
-        )
-        opp_bayesian_gs = row.get(
-            "opp_bayesian_gs", self.team_states[row["opponent"]].bayesian_gs
-        )
-
-        base = {
-            "team_rating": row["team_rating"],
-            "opponent_rating": row["opponent_rating"],
-            "last_year_team_rating": row["last_year_team_rating"],
-            "last_year_opp_rating": row["last_year_opp_rating"],
-            "num_games_into_season": row["num_games_into_season"],
-            "team_last_10_rating": row["team_last_10_rating"],
-            "opponent_last_10_rating": row["opponent_last_10_rating"],
-            "team_last_5_rating": row["team_last_5_rating"],
-            "opponent_last_5_rating": row["opponent_last_5_rating"],
-            "team_last_3_rating": row["team_last_3_rating"],
-            "opponent_last_3_rating": row["opponent_last_3_rating"],
-            "team_last_1_rating": row["team_last_1_rating"],
-            "opponent_last_1_rating": row["opponent_last_1_rating"],
-            "team_win_total_future": row["team_win_total_future"],
-            "opponent_win_total_future": row["opponent_win_total_future"],
-            "team_days_since_most_recent_game": row["team_days_since_most_recent_game"],
-            "opponent_days_since_most_recent_game": row["opponent_days_since_most_recent_game"],
-            "hca": self.hca,
-            "playoff": playoff,
-            "team_bayesian_gs": team_bayesian_gs,
-            "opp_bayesian_gs": opp_bayesian_gs,
-        }
-
-        # Preserve win_total_last_year if available (for win_total_change_diff)
-        team_win_total_last_year = row.get("team_win_total_last_year")
-        if team_win_total_last_year is not None:
-            base["team_win_total_last_year"] = team_win_total_last_year
-            base["opponent_win_total_last_year"] = row.get(
-                "opponent_win_total_last_year", row["opponent_win_total_future"]
-            )
-
-        data = utils.build_model_features(pd.DataFrame([base]))
-        return data[config.x_features]
-
     def get_game_data_batch(self, games_df):
         """
-        Vectorized version of get_game_data() for batch processing multiple games.
+        Prepare model features for a batch of games.
 
         Args:
             games_df: DataFrame containing multiple games to prepare
@@ -784,6 +746,25 @@ class Season:
                 results[idx][team] = [opponent, series_team_wins, series_opponent_wins]
         return results
 
+    def _determine_playoff_state(self, playoff_start_date):
+        """Determine whether playoffs haven't started, are in progress, or are completed."""
+        playoff_games = self.get_playoff_games_completed(playoff_start_date)
+        if playoff_games.empty:
+            return PlayoffState.NO_PLAYOFFS
+
+        cur_results = self.get_cur_playoff_results(playoff_start_date)
+
+        # Check the highest populated round for a 4-win series (= champion found)
+        for round_num in sorted(cur_results.keys(), reverse=True):
+            if not cur_results[round_num]:
+                continue
+            for team, (opponent, wins, losses) in cur_results[round_num].items():
+                if wins >= 4:
+                    return PlayoffState.COMPLETED
+            break  # only check the highest non-empty round
+
+        return PlayoffState.IN_PROGRESS
+
     def playoffs(self):
         playoff_results = {
             "playoffs": [],
@@ -842,191 +823,8 @@ class Season:
             self.future_games["date"] < playoff_start_date
         ]
 
-        # Check if we have any playoff games that need to be simulated
-        playoff_games_completed = self.get_playoff_games_completed(playoff_start_date)
-        if playoff_games_completed.empty:
-            logger.debug("No playoff games found - creating playoff schedule...")
-        else:
-            logger.debug(
-                f"Found {len(playoff_games_completed)} completed playoff games"
-            )
-
-            # Check if playoffs are already completely finished
-            unique_labels = playoff_games_completed["playoff_label"].dropna().unique()
-            logger.debug(f"Playoff series found: {sorted(unique_labels)}")
-
-            # Check if we have enough playoff games to suggest season is complete
-            # A complete playoffs would have at least 15 series * 4 games = 60+ games minimum
-            if len(playoff_games_completed) >= 60:
-                logger.debug(
-                    f"Found {len(playoff_games_completed)} playoff games - season appears complete"
-                )
-
-                # Try to extract results from completed playoff data
-                try:
-                    # Since the exact series labels might not match, let's try to extract
-                    # the champion and other results from the available data
-
-                    # Look for Finals games first
-                    finals_games = playoff_games_completed[
-                        playoff_games_completed["playoff_label"] == "Finals"
-                    ]
-                    if not finals_games.empty:
-                        finals_winner = self.get_series_winner("Finals")
-                        logger.debug(f"Champion found: {finals_winner}")
-                        playoff_results["champion"] = [finals_winner]
-
-                        # Extract finals participants
-                        finals_teams = finals_games[
-                            ["team", "opponent"]
-                        ].values.flatten()
-                        playoff_results["finals"] = list(set(finals_teams))
-
-                        # Create reasonable fallback data
-                        playoff_results["conference_finals"] = list(set(finals_teams))
-                        playoff_results["second_round"] = east_alive + west_alive
-
-                        return playoff_results
-
-                    # If no Finals label found, check if we can reconstruct from existing data
-                    logger.debug(
-                        "No Finals series found - attempting to reconstruct playoff results"
-                    )
-
-                    # Get all unique teams that participated in playoffs
-                    all_playoff_teams = set()
-                    for _, game in playoff_games_completed.iterrows():
-                        all_playoff_teams.add(game["team"])
-                        all_playoff_teams.add(game["opponent"])
-
-                    # Find the team with the most playoff wins as likely champion
-                    team_playoff_wins = {}
-                    for team in all_playoff_teams:
-                        team_games = playoff_games_completed[
-                            (playoff_games_completed["team"] == team)
-                            | (playoff_games_completed["opponent"] == team)
-                        ].copy()
-
-                        # Count wins for this team
-                        wins = 0
-                        for _, game in team_games.iterrows():
-                            if (
-                                game["team"] == team
-                                and game.get("team_win", game["margin"] > 0)
-                            ) or (
-                                game["opponent"] == team
-                                and not game.get("team_win", game["margin"] <= 0)
-                            ):
-                                wins += 1
-                        team_playoff_wins[team] = wins
-
-                    if team_playoff_wins:
-                        # Team with most playoff wins is likely the champion
-                        champion = max(team_playoff_wins, key=team_playoff_wins.get)
-                        logger.debug(
-                            f"Reconstructed champion based on playoff wins: {champion}"
-                        )
-
-                        playoff_results["champion"] = [champion]
-                        playoff_results["finals"] = [champion] + [
-                            team
-                            for team in team_playoff_wins.keys()
-                            if team != champion
-                        ][:1]
-                        playoff_results["conference_finals"] = list(all_playoff_teams)[
-                            :4
-                        ]
-                        playoff_results["second_round"] = list(all_playoff_teams)[:8]
-
-                        return playoff_results
-
-                except Exception as e:
-                    logger.warning(
-                        f"Warning: Could not reconstruct playoff results: {e}"
-                    )
-                    logger.info("Proceeding with normal playoff simulation...")
-
-            # Check if we have a champion already (Finals series completed)
-            finals_games = playoff_games_completed[
-                playoff_games_completed["playoff_label"] == "Finals"
-            ]
-            if not finals_games.empty:
-                try:
-                    # Try to extract champion from completed finals
-                    finals_winner = self.get_series_winner("Finals")
-                    logger.info(f"Season already complete - Champion: {finals_winner}")
-
-                    # Return results based on completed playoff data
-                    playoff_results["champion"] = [finals_winner]
-
-                    # Extract other round results from completed data
-                    try:
-                        # Finals participants
-                        finals_teams = finals_games[
-                            ["team", "opponent"]
-                        ].values.flatten()
-                        finals_participants = list(set(finals_teams))
-                        playoff_results["finals"] = finals_participants
-
-                        # Try to extract conference finals participants
-                        conf_finals_east = playoff_games_completed[
-                            playoff_games_completed["playoff_label"] == "E_1_2"
-                        ]
-                        conf_finals_west = playoff_games_completed[
-                            playoff_games_completed["playoff_label"] == "W_1_2"
-                        ]
-
-                        conf_finals_participants = []
-                        if not conf_finals_east.empty:
-                            east_conf_teams = conf_finals_east[
-                                ["team", "opponent"]
-                            ].values.flatten()
-                            conf_finals_participants.extend(list(set(east_conf_teams)))
-                        if not conf_finals_west.empty:
-                            west_conf_teams = conf_finals_west[
-                                ["team", "opponent"]
-                            ].values.flatten()
-                            conf_finals_participants.extend(list(set(west_conf_teams)))
-                        playoff_results["conference_finals"] = list(
-                            set(conf_finals_participants)
-                        )
-
-                        # Extract second round participants
-                        second_round_labels = ["E_1_4", "E_2_3", "W_1_4", "W_2_3"]
-                        second_round_participants = []
-                        for label in second_round_labels:
-                            round_games = playoff_games_completed[
-                                playoff_games_completed["playoff_label"] == label
-                            ]
-                            if not round_games.empty:
-                                teams = round_games[
-                                    ["team", "opponent"]
-                                ].values.flatten()
-                                second_round_participants.extend(list(set(teams)))
-                        playoff_results["second_round"] = list(
-                            set(second_round_participants)
-                        )
-
-                    except Exception as e:
-                        print(
-                            f"Warning: Could not extract all playoff round participants: {e}"
-                        )
-                        # Set minimal required data
-                        playoff_results["finals"] = finals_participants
-                        playoff_results["conference_finals"] = (
-                            finals_participants  # Fallback
-                        )
-                        playoff_results["second_round"] = (
-                            east_alive + west_alive
-                        )  # Fallback
-
-                    return playoff_results
-
-                except Exception as e:
-                    print(
-                        f"Warning: Could not extract champion from completed finals: {e}"
-                    )
-                    logger.info("Proceeding with normal playoff simulation...")
+        self.playoff_state = self._determine_playoff_state(playoff_start_date)
+        logger.debug(f"Playoff state: {self.playoff_state.name}")
 
         # simulate first round
         east_seeds, west_seeds = self.first_round(
