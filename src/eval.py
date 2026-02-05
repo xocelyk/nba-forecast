@@ -248,13 +248,21 @@ def get_win_margin_model(games, features=None):
     logger.info("=" * 60)
 
     # Fit a spline to squared errors as a function of num_games_into_season,
-    # then take sqrt at query time to get a smooth stdev estimate
-    x_games = test["num_games_into_season"].values
-    squared_errors = (errors**2).values
-    sort_idx = np.argsort(x_games)
-    x_sorted = x_games[sort_idx]
-    sq_err_sorted = squared_errors[sort_idx]
-    variance_spline = UnivariateSpline(x_sorted, sq_err_sorted, s=len(x_sorted) * 50)
+    # then take sqrt at query time to get a smooth stdev estimate.
+    # UnivariateSpline requires strictly increasing x, so group duplicate
+    # x values and use observation counts as weights so that denser regions
+    # have proportionally more influence on the fit.
+    grouped = (
+        pd.DataFrame({"x": test["num_games_into_season"].values, "sq_err": (errors**2).values})
+        .groupby("x")["sq_err"]
+        .agg(["mean", "count"])
+    )
+    x_unique = grouped.index.values.astype(float)
+    y_unique = grouped["mean"].values
+    w_unique = grouped["count"].values.astype(float)
+    variance_spline = UnivariateSpline(
+        x_unique, y_unique, w=w_unique, s=w_unique.sum() * 50
+    )
     stdev_function = StdevFromVarianceSpline(variance_spline)
 
     # Calculate prediction interval standard deviation

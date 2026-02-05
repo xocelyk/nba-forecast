@@ -560,17 +560,6 @@ class Season:
         # Calculate margins
         margins = noise + expected_margins
 
-        # DEBUG: check for NaN margins
-        if np.any(np.isnan(margins)):
-            nan_idx = np.where(np.isnan(margins))[0]
-            for i in nan_idx:
-                print(f"DEBUG NaN margin in simulate_games_batch:")
-                print(f"  expected_margin={expected_margins[i]}, noise={noise[i]}, std_dev={std_devs[i]}")
-                print(f"  num_games_into_season={games.iloc[i]['num_games_into_season']}")
-                print(f"  team={games.iloc[i]['team']}, opp={games.iloc[i]['opponent']}")
-                print(f"  train_data NaN columns: {[c for c in train_data.columns if pd.isna(train_data.iloc[i][c])]}")
-                print(f"  playoff_label={games.iloc[i].get('playoff_label', 'N/A')}")
-
         # Batch predict win probabilities (for reporting only)
         win_probs = self.win_prob_model.predict_proba(expected_margins.reshape(-1, 1))[
             :, 1
@@ -1348,12 +1337,6 @@ class Season:
         ].copy()
         finals_scores = []
         for _, game in series_games.iterrows():
-            if pd.isna(game["margin"]):
-                print(f"DEBUG NaN margin in finals game: {game['team']} vs {game['opponent']} on {game['date']}")
-                print(f"  simulated={game.get('simulated', 'N/A')}, completed={game.get('completed', 'N/A')}")
-                print(f"  team_rating={game.get('team_rating', 'N/A')}, num_games_into_season={game.get('num_games_into_season', 'N/A')}")
-                print(f"  All NaN columns: {[c for c in game.index if pd.isna(game[c])]}")
-                continue
             total_pts = random.randint(180, 240)
             home_score = int((total_pts + game["margin"]) / 2)
             away_score = total_pts - home_score
