@@ -2482,14 +2482,17 @@ class Season:
     @staticmethod
     def remaining_games_in_best_of_7(wins: int, losses: int) -> int:
         """
-        Return how many games are still required for a best-of-7 series
-        given the current wins / losses for *team1*.
+        Return the minimum number of games still needed for a best-of-7
+        series given the current wins / losses for *team1*.
 
-        If either side already has 4 wins the series is over ⇒ 0.
+        This returns how many wins the *leading* team needs to clinch
+        (i.e. the optimistic path).  If the trailing team wins some of
+        those games and extends the series, the caller's while-loop
+        will schedule additional games one at a time.
         """
         if wins >= 4 or losses >= 4:
             return 0
-        return max(0, 7 - (wins + losses))
+        return 4 - max(wins, losses)
 
 
 def playoff_results_over_sims_dict_to_df(playoff_results_over_sims):
