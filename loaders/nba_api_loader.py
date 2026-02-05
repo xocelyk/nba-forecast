@@ -23,6 +23,8 @@ import numpy as np
 import pandas as pd
 from nba_api.stats.static import teams
 
+from src.utils import CANONICAL_TO_NBA_API, normalize_abbr
+
 from .nba_api_client import get_client
 
 logger = logging.getLogger("nba")
@@ -50,13 +52,6 @@ class NBAAPILoader:
         self._id_to_abbr = None
         self._names_to_abbr = None
 
-        # Team abbreviation mapping (nba_api → sportsipy format)
-        # Brooklyn Nets is BKN in nba_api but BRK in sportsipy
-        # Charlotte Hornets is CHA in nba_api but CHO in sportsipy/win totals
-        self.abbr_mapping = {
-            "BKN": "BRK",  # Brooklyn Nets
-            "CHA": "CHO",  # Charlotte Hornets
-        }
 
     def _rate_limit(self):
         """Enforce rate limiting between API calls (thread-safe)."""
@@ -76,11 +71,8 @@ class NBAAPILoader:
             self._id_to_abbr = {
                 team["id"]: team["abbreviation"] for team in self._teams_cache
             }
-            # Apply abbreviation mapping for Brooklyn Nets
             self._names_to_abbr = {
-                team["full_name"]: self.abbr_mapping.get(
-                    team["abbreviation"], team["abbreviation"]
-                )
+                team["full_name"]: normalize_abbr(team["abbreviation"])
                 for team in self._teams_cache
             }
 
@@ -173,9 +165,8 @@ class NBAAPILoader:
             away_name = row["awayTeam_teamName"]
             away_score = row["awayTeam_score"]
 
-            # Apply abbreviation mapping (BKN → BRK)
-            home_abbr = self.abbr_mapping.get(home_abbr, home_abbr)
-            away_abbr = self.abbr_mapping.get(away_abbr, away_abbr)
+            home_abbr = normalize_abbr(home_abbr)
+            away_abbr = normalize_abbr(away_abbr)
 
             # Determine if game is completed
             game_status = row["gameStatus"]
@@ -713,9 +704,8 @@ class NBAAPILoader:
         """
         self._init_team_cache()
 
-        # Reverse mapping if needed (BRK → BKN)
-        reverse_mapping = {v: k for k, v in self.abbr_mapping.items()}
-        original_abbr = reverse_mapping.get(abbreviation, abbreviation)
+        # Reverse mapping if needed (BRK → BKN for API lookup)
+        original_abbr = CANONICAL_TO_NBA_API.get(abbreviation, abbreviation)
 
         return self._abbr_to_id.get(original_abbr)
 

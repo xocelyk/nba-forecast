@@ -35,6 +35,44 @@ x_features = (
     "opponent_days_since_most_recent_game",
 )
 
+# -- Canonical team-abbreviation mapping --------------------------------
+# The NBA API, sportsipy, and win-totals archives each use slightly
+# different abbreviations.  These constants let every module normalise
+# to one canonical set (BRK, CHO, PHX) and convert back when needed.
+
+ABBR_TO_CANONICAL = {
+    "BKN": "BRK",  # Brooklyn Nets
+    "CHA": "CHO",  # Charlotte Hornets
+    "PHO": "PHX",  # Phoenix Suns
+}
+
+# Reverse for NBA API calls (PHX already matches the API, so no entry)
+CANONICAL_TO_NBA_API = {
+    "BRK": "BKN",
+    "CHO": "CHA",
+}
+
+# Bidirectional lookup for win-totals archive searches where either
+# variant might be the key (e.g. some years use "CHA", others "CHO").
+ABBR_ALTERNATES = {}
+for _src, _dst in ABBR_TO_CANONICAL.items():
+    ABBR_ALTERNATES[_src] = _dst
+    ABBR_ALTERNATES[_dst] = _src
+
+
+def normalize_abbr(abbr: str) -> str:
+    """Map a team abbreviation to its canonical form."""
+    return ABBR_TO_CANONICAL.get(abbr, abbr)
+
+
+def normalize_df_teams(df, columns=("team", "opponent")):
+    """Replace non-canonical abbreviations in *columns* of *df* in-place."""
+    for col in columns:
+        if col in df.columns:
+            df[col] = df[col].replace(ABBR_TO_CANONICAL)
+    return df
+
+
 # copying from Sagarin 1/25/23
 MEAN_PACE = 100
 

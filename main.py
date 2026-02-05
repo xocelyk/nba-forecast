@@ -87,13 +87,9 @@ def load_team_data(
     abbrs = list(names_to_abbr.values())
     abbr_to_name = {v: k for k, v in names_to_abbr.items()}
 
-    # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-    # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-    # This mapping must match the one in data_loader.py
-    abbr_mapping = {"PHO": "PHX"}
-    abbrs = [abbr_mapping.get(abbr, abbr) for abbr in abbrs]
+    abbrs = [utils.normalize_abbr(abbr) for abbr in abbrs]
     abbr_to_name = {
-        abbr_mapping.get(abbr, abbr): name for abbr, name in abbr_to_name.items()
+        utils.normalize_abbr(abbr): name for abbr, name in abbr_to_name.items()
     }
 
     return abbrs, names_to_abbr, abbr_to_name
@@ -120,12 +116,7 @@ def load_game_data(
             )
             games["date"] = pd.to_datetime(games["date"], format="mixed")
 
-            # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-            # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-            # This mapping must match the one in data_loader.py
-            abbr_mapping = {"PHO": "PHX"}
-            games["team"] = games["team"].replace(abbr_mapping)
-            games["opponent"] = games["opponent"].replace(abbr_mapping)
+            utils.normalize_df_teams(games)
 
             games = utils.add_playoff_indicator(games)
         except Exception as e:

@@ -203,18 +203,11 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         # Ensure game_id is string (prevent pandas from converting to int)
         existing_df["game_id"] = existing_df["game_id"].astype(str)
 
-        # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-        # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-        # CHA -> CHO (Charlotte API abbreviation vs win totals abbreviation)
-        abbr_mapping = {"PHO": "PHX", "CHA": "CHO"}
-        existing_df["team"] = existing_df["team"].replace(abbr_mapping)
-        existing_df["opponent"] = existing_df["opponent"].replace(abbr_mapping)
+        utils.normalize_df_teams(existing_df)
 
         # Add missing columns
-        abbr_to_name = {v: k for k, v in names_to_abbr.items()}
-        # Update abbr_to_name to use PHX/CHO instead of PHO/CHA
         abbr_to_name = {
-            abbr_mapping.get(abbr, abbr): name for abbr, name in abbr_to_name.items()
+            utils.normalize_abbr(v): k for k, v in names_to_abbr.items()
         }
 
         existing_df["team_name"] = existing_df["team"].map(abbr_to_name)
@@ -384,13 +377,7 @@ def load_training_data(
                 )
             year_data["date"] = pd.to_datetime(year_data["date"], format="mixed")
 
-            # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-            # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-            # CHA -> CHO (Charlotte API abbreviation vs win totals abbreviation)
-            # After 2020, all data uses PHX instead of PHO
-            abbr_mapping = {"PHO": "PHX", "CHA": "CHO", "BKN": "BRK"}
-            year_data["team"] = year_data["team"].replace(abbr_mapping)
-            year_data["opponent"] = year_data["opponent"].replace(abbr_mapping)
+            utils.normalize_df_teams(year_data)
 
             # Filter to only NBA teams to remove exhibition games, All-Star placeholder teams, etc.
             # Use heuristic: keep teams that appear frequently (NBA teams play 82 games)
@@ -626,13 +613,7 @@ def load_training_data(
                             if team in ly_totals:
                                 return ly_totals[team]
                             # Handle abbreviation variations
-                            abbr_map = {
-                                "CHA": "CHO",
-                                "CHO": "CHA",
-                                "PHO": "PHX",
-                                "PHX": "PHO",
-                            }
-                            alt = abbr_map.get(team)
+                            alt = utils.ABBR_ALTERNATES.get(team)
                             if alt and alt in ly_totals:
                                 return ly_totals[alt]
                             # Fallback to current year

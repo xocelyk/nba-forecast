@@ -261,7 +261,7 @@ class Season:
         last_year = self.year - 1
         win_totals_archive = data_loader.load_regular_season_win_totals_futures()
         last_year_win_totals = {}
-        abbr_map = {"CHA": "CHO", "CHO": "CHA", "PHO": "PHX", "PHX": "PHO"}
+        abbr_map = utils.ABBR_ALTERNATES
 
         for team in self.teams:
             # Try to get last year's win total from archive
