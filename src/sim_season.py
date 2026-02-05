@@ -2,7 +2,6 @@ import datetime
 import os
 import random
 import time
-from random import choice
 
 import numpy as np
 import pandas as pd
@@ -1239,244 +1238,66 @@ class Season:
         e1, w1 = self.conference_finals(east_seeds, west_seeds, cur_playoff_results)
         playoff_results["finals"] = [e1, w1]
 
-        if choice([True, False]):
-            team1 = e1
-            team2 = w1
-        else:
-            team1 = w1
-            team2 = e1
-
         # simulate finals
-        champ = self.finals(team1, team2, cur_playoff_results)
+        champ = self.finals(e1, w1, cur_playoff_results)
         playoff_results["champion"] = [champ]
         return playoff_results
 
-    def first_round(self, east_seeds, west_seeds, cur_playoff_results):
-        round_num = 0
-        matchups = {
-            "E_1_8": [east_seeds[1], east_seeds[8]],
-            "E_4_5": [east_seeds[4], east_seeds[5]],
-            "E_2_7": [east_seeds[2], east_seeds[7]],
-            "E_3_6": [east_seeds[3], east_seeds[6]],
-            "W_1_8": [west_seeds[1], west_seeds[8]],
-            "W_4_5": [west_seeds[4], west_seeds[5]],
-            "W_2_7": [west_seeds[2], west_seeds[7]],
-            "W_3_6": [west_seeds[3], west_seeds[6]],
+    def _get_home_team_for_extra_game(self, team1, team2, is_finals=False):
+        """Determine home/away for completion-loop games.
+
+        Rounds 0-2: lower seed number gets home court.
+        Finals: uses full finals home-court tiebreaker.
+        """
+        if is_finals:
+            return self._finals_home_court(team1, team2)
+        # seed-based: lower seed number = higher seed = home court
+        t1_seed = self.seeds.get(team1, 99)
+        t2_seed = self.seeds.get(team2, 99)
+        if t1_seed <= t2_seed:
+            return team1, team2
+        return team2, team1
+
+    def simulate_series(self, matchups, round_num, cur_playoff_results, is_finals=False):
+        """Simulate one round of best-of-7 playoff series.
+
+        Parameters
+        ----------
+        matchups : dict[str, tuple[str, str]]
+            {label: (team1, team2)} where team1 has home-court advantage
+            for the 2-2-1-1-1 pattern.
+        round_num : int
+            Playoff round index (0=first, 1=second, 2=conf finals, 3=finals).
+        cur_playoff_results : dict
+            Current real-world playoff results keyed by round_num.
+        is_finals : bool
+            If True, use regular-season record for home-court in the
+            completion loop instead of seeds.
+
+        Returns
+        -------
+        dict[str, str]
+            {label: winner_team_name}
+        """
+        team1_home_map = {
+            0: True, 1: True, 2: False, 3: False,
+            4: True, 5: False, 6: True,
         }
 
         new_dates = set()
-        team1_home_map = {
-            0: True,
-            1: True,
-            2: False,
-            3: False,
-            4: True,
-            5: False,
-            6: True,
-        }
         num_games_added = 0
         playoff_completed = self.get_playoff_games_completed(
             utils.get_playoff_start_date(self.year).date()
         )
 
         for label, (team1, team2) in matchups.items():
-
-            # ---------------- current series status -----------------
-            if team1 in cur_playoff_results[round_num]:
-                wins, losses = cur_playoff_results[round_num][team1][1:]
-            else:  # no games yet played
-                wins, losses = 0, 0
-
-            # remove already-played games from `future_games`
-            for idx, game in playoff_completed.iterrows():
-                if ((game["team"] == team1) & (game["opponent"] == team2)) or (
-                    (game["team"] == team2) & (game["opponent"] == team1)
-                ):
-                    game["playoff_label"] = label
-                    self.completed_games.loc[idx] = game
-
-            # ---------------- how many still needed? ----------------
-            rem_games = Season.remaining_games_in_best_of_7(wins, losses)
-            if rem_games == 0:  # series already finished – nothing to schedule
-                continue
-
-            # first un-played game's date
-            game_date = self.get_next_date(day_increment=3)
-            num_games_played = wins + losses
-
-            for i in range(rem_games):
-                g_idx = num_games_played + i  # 0-based index within the series
-                team1_home = team1_home_map[g_idx]
-                new_dates.add(game_date)
-
-                if team1_home:
-                    self.append_future_game(
-                        self.future_games, game_date, team1, team2, label
-                    )
-                else:
-                    self.append_future_game(
-                        self.future_games, game_date, team2, team1, label
-                    )
-
-                num_games_added += 1
-                game_date += datetime.timedelta(days=3)
-
-        self.update_data(games_on_date=self.future_games.tail(num_games_added))
-
-        for date in sorted(list(new_dates)):
-            self.simulate_day(date, date + datetime.timedelta(days=3), 1)
-
-        # Continue scheduling and simulating until all series are complete
-        max_attempts = 10  # Prevent infinite loops
-        attempt = 0
-        while attempt < max_attempts:
-            attempt += 1
-            incomplete_series = []
-
-            # Check which series still need more games
-            for label in [
-                "E_1_8",
-                "E_2_7",
-                "E_3_6",
-                "E_4_5",
-                "W_1_8",
-                "W_2_7",
-                "W_3_6",
-                "W_4_5",
-            ]:
-                try:
-                    # Try to get winner - if this fails, series is incomplete
-                    self.get_series_winner(label)
-                except ValueError:
-                    incomplete_series.append(label)
-
-            if not incomplete_series:
-                break  # All series complete
-
-            logger.debug(
-                f"Scheduling additional games for incomplete series: {incomplete_series}"
-            )
-
-            # Schedule more games for incomplete series
-            additional_dates = set()
-            for label in incomplete_series:
-                # Get current series status
-                series_games = self.completed_games[
-                    self.completed_games["playoff_label"] == label
-                ]
-                if not series_games.empty:
-                    wins = series_games["winner_name"].value_counts()
-                    if not wins.empty:
-                        max_wins = wins.max()
-                        games_played = len(series_games)
-                        remaining = self.remaining_games_in_best_of_7(
-                            max_wins, games_played - max_wins
-                        )
-
-                        if remaining > 0:
-                            # Schedule the next game
-                            last_game_date = series_games["date"].max()
-                            next_game_date = last_game_date + datetime.timedelta(days=3)
-                            additional_dates.add(next_game_date)
-
-                            # Get teams for this series
-                            teams_in_series = list(
-                                set(
-                                    series_games["team"].tolist()
-                                    + series_games["opponent"].tolist()
-                                )
-                            )
-                            if len(teams_in_series) == 2:
-                                team1, team2 = teams_in_series
-
-                                # Determine home team for this game (Game 7 should be at higher seed's home)
-                                if games_played == 6:  # This is Game 7
-                                    # Higher seed (lower number) gets home court
-                                    team1_seed = self.seeds.get(team1, 99)
-                                    team2_seed = self.seeds.get(team2, 99)
-                                    if team1_seed < team2_seed:
-                                        home_team, away_team = team1, team2
-                                    else:
-                                        home_team, away_team = team2, team1
-                                else:
-                                    # Use standard alternating pattern
-                                    home_team, away_team = team1, team2
-
-                                self.append_future_game(
-                                    self.future_games,
-                                    next_game_date,
-                                    home_team,
-                                    away_team,
-                                    label,
-                                )
-
-            # Simulate additional games
-            for date in sorted(list(additional_dates)):
-                self.simulate_day(date, date + datetime.timedelta(days=3), 1)
-
-        if attempt >= max_attempts:
-            print(
-                f"Warning: Could not complete all series after {max_attempts} attempts"
-            )
-
-        e1 = self.get_series_winner("E_1_8")
-        e2 = self.get_series_winner("E_2_7")
-        e3 = self.get_series_winner("E_3_6")
-        e4 = self.get_series_winner("E_4_5")
-
-        w1 = self.get_series_winner("W_1_8")
-        w2 = self.get_series_winner("W_2_7")
-        w3 = self.get_series_winner("W_3_6")
-        w4 = self.get_series_winner("W_4_5")
-
-        if self.seeds[e1] > self.seeds[e4]:
-            e1, e4 = e4, e1
-        if self.seeds[e2] > self.seeds[e3]:
-            e2, e3 = e3, e2
-
-        if self.seeds[w1] > self.seeds[w4]:
-            w1, w4 = w4, w1
-        if self.seeds[w2] > self.seeds[w3]:
-            w2, w3 = w3, w2
-
-        east_seeds = {1: e1, 2: e2, 3: e3, 4: e4}
-        west_seeds = {1: w1, 2: w2, 3: w3, 4: w4}
-
-        return east_seeds, west_seeds
-
-    def second_round(self, east_seeds, west_seeds, cur_playoff_results):
-        round_num = 1
-        matchups = {
-            "E_1_4": (east_seeds[1], east_seeds[4]),
-            "E_2_3": (east_seeds[2], east_seeds[3]),
-            "W_1_4": (west_seeds[1], west_seeds[4]),
-            "W_2_3": (west_seeds[2], west_seeds[3]),
-        }
-
-        new_dates = set()
-        team1_home_map = {
-            0: True,
-            1: True,
-            2: False,
-            3: False,
-            4: True,
-            5: False,
-            6: True,
-        }
-        num_games_added = 0
-        playoff_completed = self.get_playoff_games_completed(
-            utils.get_playoff_start_date(self.year).date()
-        )
-
-        for label, (team1, team2) in matchups.items():
-
-            # ---------------- current series status -----------------
+            # current series status
             if team1 in cur_playoff_results[round_num]:
                 wins, losses = cur_playoff_results[round_num][team1][1:]
             else:
                 wins, losses = 0, 0
 
-            # already-played games → completed_games
+            # label already-played games
             for idx, game in playoff_completed.iterrows():
                 if (game["team"] == team1 and game["opponent"] == team2) or (
                     game["team"] == team2 and game["opponent"] == team1
@@ -1484,8 +1305,9 @@ class Season:
                     game["playoff_label"] = label
                     self.completed_games.loc[idx] = game
 
-            # ---------------- how many still needed? ----------------
             rem_games = Season.remaining_games_in_best_of_7(wins, losses)
+            if rem_games == 0:
+                continue
 
             game_date = self.get_next_date(day_increment=3)
             num_played_sofar = wins + losses
@@ -1507,101 +1329,132 @@ class Season:
                 num_games_added += 1
                 game_date += datetime.timedelta(days=3)
 
-        # -------------- SIMULATE anything we just added -------------
+        # simulate anything we just added
         if num_games_added:
             self.update_data(games_on_date=self.future_games.tail(num_games_added))
             for dt in sorted(new_dates):
                 self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
 
-        # Continue scheduling and simulating until all series are complete
-        max_attempts = 10  # Prevent infinite loops
+        # completion loop: schedule one extra game per incomplete series
+        labels = list(matchups.keys())
+        max_attempts = 10
         attempt = 0
         while attempt < max_attempts:
             attempt += 1
             incomplete_series = []
-
-            # Check which series still need more games
-            for label in ["E_1_4", "E_2_3", "W_1_4", "W_2_3"]:
+            for label in labels:
                 try:
-                    # Try to get winner - if this fails, series is incomplete
                     self.get_series_winner(label)
                 except ValueError:
                     incomplete_series.append(label)
 
             if not incomplete_series:
-                break  # All series complete
+                break
 
             logger.debug(
-                f"Scheduling additional games for incomplete second round series: {incomplete_series}"
+                f"Scheduling additional games for incomplete series: {incomplete_series}"
             )
 
-            # Schedule more games for incomplete series
             additional_dates = set()
             for label in incomplete_series:
-                # Get current series status
                 series_games = self.completed_games[
                     self.completed_games["playoff_label"] == label
                 ]
-                if not series_games.empty:
-                    wins = series_games["winner_name"].value_counts()
-                    if not wins.empty:
-                        max_wins = wins.max()
-                        games_played = len(series_games)
-                        remaining = self.remaining_games_in_best_of_7(
-                            max_wins, games_played - max_wins
-                        )
+                if series_games.empty:
+                    continue
 
-                        if remaining > 0:
-                            # Schedule the next game
-                            last_game_date = series_games["date"].max()
-                            next_game_date = last_game_date + datetime.timedelta(days=3)
-                            additional_dates.add(next_game_date)
+                wins = series_games["winner_name"].value_counts()
+                if wins.empty:
+                    continue
 
-                            # Get teams for this series
-                            teams_in_series = list(
-                                set(
-                                    series_games["team"].tolist()
-                                    + series_games["opponent"].tolist()
-                                )
-                            )
-                            if len(teams_in_series) == 2:
-                                team1, team2 = teams_in_series
+                max_wins = wins.max()
+                games_played = len(series_games)
+                remaining = self.remaining_games_in_best_of_7(
+                    max_wins, games_played - max_wins
+                )
+                if remaining <= 0:
+                    continue
 
-                                # Determine home team for this game (Game 7 should be at higher seed's home)
-                                if games_played == 6:  # This is Game 7
-                                    # Higher seed (lower number) gets home court
-                                    team1_seed = self.seeds.get(team1, 99)
-                                    team2_seed = self.seeds.get(team2, 99)
-                                    if team1_seed < team2_seed:
-                                        home_team, away_team = team1, team2
-                                    else:
-                                        home_team, away_team = team2, team1
-                                else:
-                                    # Use standard alternating pattern
-                                    home_team, away_team = team1, team2
+                last_game_date = series_games["date"].max()
+                next_game_date = last_game_date + datetime.timedelta(days=3)
+                additional_dates.add(next_game_date)
 
-                                self.append_future_game(
-                                    self.future_games,
-                                    next_game_date,
-                                    home_team,
-                                    away_team,
-                                    label,
-                                )
+                teams_in_series = list(
+                    set(
+                        series_games["team"].tolist()
+                        + series_games["opponent"].tolist()
+                    )
+                )
+                if len(teams_in_series) == 2:
+                    t1, t2 = teams_in_series
+                    home_team, away_team = self._get_home_team_for_extra_game(
+                        t1, t2, is_finals=is_finals
+                    )
+                    self.append_future_game(
+                        self.future_games,
+                        next_game_date,
+                        home_team,
+                        away_team,
+                        label,
+                    )
 
-            # Simulate additional games
-            for date in sorted(list(additional_dates)):
+            for date in sorted(additional_dates):
                 self.simulate_day(date, date + datetime.timedelta(days=3), 1)
 
         if attempt >= max_attempts:
-            print(
-                f"Warning: Could not complete all second round series after {max_attempts} attempts"
+            logger.warning(
+                f"Could not complete all series after {max_attempts} attempts"
             )
 
-        # -------------- figure out who advanced ---------------------
-        e1 = self.get_series_winner("E_1_4")
-        e2 = self.get_series_winner("E_2_3")
-        w1 = self.get_series_winner("W_1_4")
-        w2 = self.get_series_winner("W_2_3")
+        # collect winners
+        winners = {}
+        for label in labels:
+            winners[label] = self.get_series_winner(label)
+        return winners
+
+    def first_round(self, east_seeds, west_seeds, cur_playoff_results):
+        matchups = {
+            "E_1_8": (east_seeds[1], east_seeds[8]),
+            "E_4_5": (east_seeds[4], east_seeds[5]),
+            "E_2_7": (east_seeds[2], east_seeds[7]),
+            "E_3_6": (east_seeds[3], east_seeds[6]),
+            "W_1_8": (west_seeds[1], west_seeds[8]),
+            "W_4_5": (west_seeds[4], west_seeds[5]),
+            "W_2_7": (west_seeds[2], west_seeds[7]),
+            "W_3_6": (west_seeds[3], west_seeds[6]),
+        }
+        winners = self.simulate_series(matchups, round_num=0,
+                                       cur_playoff_results=cur_playoff_results)
+
+        # re-seed winners: pair 1v8 winner with 4v5 winner, etc.
+        e1, e4 = winners["E_1_8"], winners["E_4_5"]
+        e2, e3 = winners["E_2_7"], winners["E_3_6"]
+        w1, w4 = winners["W_1_8"], winners["W_4_5"]
+        w2, w3 = winners["W_2_7"], winners["W_3_6"]
+
+        if self.seeds[e1] > self.seeds[e4]:
+            e1, e4 = e4, e1
+        if self.seeds[e2] > self.seeds[e3]:
+            e2, e3 = e3, e2
+        if self.seeds[w1] > self.seeds[w4]:
+            w1, w4 = w4, w1
+        if self.seeds[w2] > self.seeds[w3]:
+            w2, w3 = w3, w2
+
+        return {1: e1, 2: e2, 3: e3, 4: e4}, {1: w1, 2: w2, 3: w3, 4: w4}
+
+    def second_round(self, east_seeds, west_seeds, cur_playoff_results):
+        matchups = {
+            "E_1_4": (east_seeds[1], east_seeds[4]),
+            "E_2_3": (east_seeds[2], east_seeds[3]),
+            "W_1_4": (west_seeds[1], west_seeds[4]),
+            "W_2_3": (west_seeds[2], west_seeds[3]),
+        }
+        winners = self.simulate_series(matchups, round_num=1,
+                                       cur_playoff_results=cur_playoff_results)
+
+        e1, e2 = winners["E_1_4"], winners["E_2_3"]
+        w1, w2 = winners["W_1_4"], winners["W_2_3"]
 
         if self.seeds[e1] > self.seeds[e2]:
             e1, e2 = e2, e1
@@ -1611,325 +1464,66 @@ class Season:
         return {1: e1, 2: e2}, {1: w1, 2: w2}
 
     def conference_finals(self, east_seeds, west_seeds, cur_playoff_results):
-        round_num = 2
         matchups = {
             "E_1_2": (east_seeds[1], east_seeds[2]),
             "W_1_2": (west_seeds[1], west_seeds[2]),
         }
+        winners = self.simulate_series(matchups, round_num=2,
+                                       cur_playoff_results=cur_playoff_results)
+        return winners["E_1_2"], winners["W_1_2"]
 
-        new_dates = set()
-        team1_home_map = {
-            0: True,
-            1: True,
-            2: False,
-            3: False,
-            4: True,
-            5: False,
-            6: True,
-        }
-        num_games_added = 0
-        # TODO: is this right?
-        playoff_completed = self.get_playoff_games_completed(
-            utils.get_playoff_start_date(self.year).date()
-        )
+    def _finals_home_court(self, team_a, team_b):
+        """Determine finals home-court advantage.
 
-        for label, (team1, team2) in matchups.items():
+        NBA rule: best regular-season record gets home court.  If tied:
+        h2h record > point differential > coin flip.
+        Returns (home_team, away_team).
+        """
+        a_wins = self.regular_season_win_loss_report[team_a][0]
+        b_wins = self.regular_season_win_loss_report[team_b][0]
+        if a_wins > b_wins:
+            return team_a, team_b
+        if b_wins > a_wins:
+            return team_b, team_a
 
-            if team1 in cur_playoff_results[round_num]:
-                wins, losses = cur_playoff_results[round_num][team1][1:]
-            else:
-                wins, losses = 0, 0
+        # tied record -- use tiebreaker stats
+        stats = self._compute_tiebreaker_stats(self.regular_season_win_loss_report)
 
-            for idx, game in playoff_completed.iterrows():
-                if (game["team"] == team1 and game["opponent"] == team2) or (
-                    game["team"] == team2 and game["opponent"] == team1
-                ):
-                    game["playoff_label"] = label
-                    self.completed_games.loc[idx] = game
+        # h2h record
+        h2h = stats[team_a]["head_to_head"].get(team_b)
+        if h2h:
+            if h2h["wins"] > h2h["losses"]:
+                return team_a, team_b
+            if h2h["losses"] > h2h["wins"]:
+                return team_b, team_a
 
-            rem_games = Season.remaining_games_in_best_of_7(wins, losses)
+        # net point differential
+        a_diff = stats[team_a]["net_point_differential"]
+        b_diff = stats[team_b]["net_point_differential"]
+        if a_diff > b_diff:
+            return team_a, team_b
+        if b_diff > a_diff:
+            return team_b, team_a
 
-            game_date = self.get_next_date(day_increment=3)
-            num_played_sofar = wins + losses
-
-            for i in range(rem_games):
-                g_idx = num_played_sofar + i
-                team1_home = team1_home_map[g_idx]
-                new_dates.add(game_date)
-
-                if team1_home:
-                    self.append_future_game(
-                        self.future_games, game_date, team1, team2, label
-                    )
-                else:
-                    self.append_future_game(
-                        self.future_games, game_date, team2, team1, label
-                    )
-
-                num_games_added += 1
-                game_date += datetime.timedelta(days=3)
-
-        if num_games_added:
-            self.update_data(games_on_date=self.future_games.tail(num_games_added))
-            for dt in sorted(new_dates):
-                self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
-
-        # Continue scheduling and simulating until all series are complete
-        max_attempts = 10  # Prevent infinite loops
-        attempt = 0
-        while attempt < max_attempts:
-            attempt += 1
-            incomplete_series = []
-
-            # Check which series still need more games
-            for label in ["E_1_2", "W_1_2"]:
-                try:
-                    # Try to get winner - if this fails, series is incomplete
-                    self.get_series_winner(label)
-                except ValueError:
-                    incomplete_series.append(label)
-
-            if not incomplete_series:
-                break  # All series complete
-
-            logger.debug(
-                f"Scheduling additional games for incomplete conference finals series: {incomplete_series}"
-            )
-
-            # Schedule more games for incomplete series
-            additional_dates = set()
-            for label in incomplete_series:
-                # Get current series status
-                series_games = self.completed_games[
-                    self.completed_games["playoff_label"] == label
-                ]
-                if not series_games.empty:
-                    wins = series_games["winner_name"].value_counts()
-                    if not wins.empty:
-                        max_wins = wins.max()
-                        games_played = len(series_games)
-                        remaining = self.remaining_games_in_best_of_7(
-                            max_wins, games_played - max_wins
-                        )
-
-                        if remaining > 0:
-                            # Schedule the next game
-                            last_game_date = series_games["date"].max()
-                            next_game_date = last_game_date + datetime.timedelta(days=3)
-                            additional_dates.add(next_game_date)
-
-                            # Get teams for this series
-                            teams_in_series = list(
-                                set(
-                                    series_games["team"].tolist()
-                                    + series_games["opponent"].tolist()
-                                )
-                            )
-                            if len(teams_in_series) == 2:
-                                team1, team2 = teams_in_series
-
-                                # Determine home team for this game (Game 7 should be at higher seed's home)
-                                if games_played == 6:  # This is Game 7
-                                    # Higher seed (lower number) gets home court
-                                    team1_seed = self.seeds.get(team1, 99)
-                                    team2_seed = self.seeds.get(team2, 99)
-                                    if team1_seed < team2_seed:
-                                        home_team, away_team = team1, team2
-                                    else:
-                                        home_team, away_team = team2, team1
-                                else:
-                                    # Use standard alternating pattern
-                                    home_team, away_team = team1, team2
-
-                                self.append_future_game(
-                                    self.future_games,
-                                    next_game_date,
-                                    home_team,
-                                    away_team,
-                                    label,
-                                )
-
-            # Simulate additional games
-            for date in sorted(list(additional_dates)):
-                self.simulate_day(date, date + datetime.timedelta(days=3), 1)
-
-        if attempt >= max_attempts:
-            print(
-                f"Warning: Could not complete all conference finals series after {max_attempts} attempts"
-            )
-
-        east_winner = self.get_series_winner("E_1_2")
-        west_winner = self.get_series_winner("W_1_2")
-        return east_winner, west_winner
+        # coin flip
+        if random.random() > 0.5:
+            return team_a, team_b
+        return team_b, team_a
 
     def finals(self, e_1, w_1, cur_playoff_results):
-        round_num = 3
-
         # decide who has home-court
-        if (
-            self.regular_season_win_loss_report[e_1][0]
-            > self.regular_season_win_loss_report[w_1][0]
-        ):
-            team1, team2 = e_1, w_1
-        elif (
-            self.regular_season_win_loss_report[e_1][0]
-            < self.regular_season_win_loss_report[w_1][0]
-        ):
-            team1, team2 = w_1, e_1
-        else:
-            team1, team2 = (w_1, e_1) if random.random() > 0.5 else (e_1, w_1)
+        team1, team2 = self._finals_home_court(e_1, w_1)
 
         matchups = {"Finals": (team1, team2)}
+        winners = self.simulate_series(matchups, round_num=3,
+                                       cur_playoff_results=cur_playoff_results,
+                                       is_finals=True)
 
-        new_dates = set()
-        team1_home_map = {
-            0: True,
-            1: True,
-            2: False,
-            3: False,
-            4: True,
-            5: False,
-            6: True,
-        }
-        num_games_added = 0
-        # TODO: is this right?
-        playoff_completed = self.get_playoff_games_completed(
-            utils.get_playoff_start_date(self.year).date()
-        )
-
-        for label, (team1, team2) in matchups.items():
-
-            if team1 in cur_playoff_results[round_num]:
-                wins, losses = cur_playoff_results[round_num][team1][1:]
-            else:
-                wins, losses = 0, 0
-
-            for idx, game in playoff_completed.iterrows():
-                if (game["team"] == team1 and game["opponent"] == team2) or (
-                    game["team"] == team2 and game["opponent"] == team1
-                ):
-                    game["playoff_label"] = label
-                    self.completed_games.loc[idx] = game
-
-            rem_games = Season.remaining_games_in_best_of_7(wins, losses)
-
-            game_date = self.get_next_date(day_increment=3)
-            num_played_sofar = wins + losses
-
-            for i in range(rem_games):
-                g_idx = num_played_sofar + i
-                team1_home = team1_home_map[g_idx]
-                new_dates.add(game_date)
-
-                if team1_home:
-                    self.append_future_game(
-                        self.future_games, game_date, team1, team2, label
-                    )
-                else:
-                    self.append_future_game(
-                        self.future_games, game_date, team2, team1, label
-                    )
-
-                num_games_added += 1
-                game_date += datetime.timedelta(days=3)
-
-        if num_games_added:
-            self.update_data(games_on_date=self.future_games.tail(num_games_added))
-            for dt in sorted(new_dates):
-                self.simulate_day(dt, dt + datetime.timedelta(days=3), 1)
-
-        # Continue scheduling and simulating until the Finals is complete
-        max_attempts = 10  # Prevent infinite loops
-        attempt = 0
-        while attempt < max_attempts:
-            attempt += 1
-            try:
-                # Try to get champion - if this fails, Finals is incomplete
-                self.get_series_winner("Finals")
-                break  # Finals complete
-            except ValueError:
-                logger.debug(
-                    f"Scheduling additional games for incomplete Finals series"
-                )
-
-                # Schedule more games for incomplete Finals
-                # Get current series status
-                series_games = self.completed_games[
-                    self.completed_games["playoff_label"] == "Finals"
-                ]
-                if not series_games.empty:
-                    wins = series_games["winner_name"].value_counts()
-                    if not wins.empty:
-                        max_wins = wins.max()
-                        games_played = len(series_games)
-                        remaining = self.remaining_games_in_best_of_7(
-                            max_wins, games_played - max_wins
-                        )
-
-                        if remaining > 0:
-                            # Schedule the next game
-                            last_game_date = series_games["date"].max()
-                            next_game_date = last_game_date + datetime.timedelta(days=3)
-
-                            # Get teams for this series
-                            teams_in_series = list(
-                                set(
-                                    series_games["team"].tolist()
-                                    + series_games["opponent"].tolist()
-                                )
-                            )
-                            if len(teams_in_series) == 2:
-                                team1, team2 = teams_in_series
-
-                                # Determine home team for this game (Game 7 should be at higher seed's home)
-                                if games_played == 6:  # This is Game 7
-                                    # In Finals, use regular season record for home court
-                                    if (
-                                        self.regular_season_win_loss_report[team1][0]
-                                        > self.regular_season_win_loss_report[team2][0]
-                                    ):
-                                        home_team, away_team = team1, team2
-                                    else:
-                                        home_team, away_team = team2, team1
-                                else:
-                                    # Use original matchup home court order
-                                    if (
-                                        self.regular_season_win_loss_report[team1][0]
-                                        > self.regular_season_win_loss_report[team2][0]
-                                    ):
-                                        home_team, away_team = team1, team2
-                                    else:
-                                        home_team, away_team = team2, team1
-
-                                self.append_future_game(
-                                    self.future_games,
-                                    next_game_date,
-                                    home_team,
-                                    away_team,
-                                    "Finals",
-                                )
-                                # Simulate the additional game
-                                self.simulate_day(
-                                    next_game_date,
-                                    next_game_date + datetime.timedelta(days=3),
-                                    1,
-                                )
-                        else:
-                            break  # No more games needed but still no winner - unusual
-                else:
-                    break  # No Finals games exist - unusual
-
-        if attempt >= max_attempts:
-            logger.warning(
-                f"Warning: Could not complete Finals after {max_attempts} attempts"
-            )
-
-        # -------------- pretty print & declare champion -------------
-        finals_scores = []
+        # pretty-print finals scores
         series_games = self.completed_games[
             self.completed_games["playoff_label"] == "Finals"
         ].copy()
-
+        finals_scores = []
         for _, game in series_games.iterrows():
             total_pts = random.randint(180, 240)
             home_score = int((total_pts + game["margin"]) / 2)
@@ -1938,8 +1532,7 @@ class Season:
                 (game["date"], game["team"], game["opponent"], home_score, away_score)
             )
 
-        champion = self.get_series_winner("Finals")
-        return champion
+        return winners["Finals"]
 
     def get_series_winner(self, series_label):
         series = self.completed_games[
