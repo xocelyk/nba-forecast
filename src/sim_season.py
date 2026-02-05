@@ -194,7 +194,7 @@ class Season:
                 (completed_games["team"] == team)
                 | (completed_games["opponent"] == team)
             ].sort_values(by="date", ascending=True)
-            team_data = utils.duplicate_games(team_data, hca=self.hca)
+            team_data = utils.flip_perspective(team_data, hca=self.hca)
             team_data = team_data[team_data["team"] == team]
             # Vectorized calculation instead of .apply()
             team_data["team_adj_margin"] = (
@@ -321,7 +321,7 @@ class Season:
     def get_team_last_games(self):
         teams_last_games_dict = {}
         for team in self.teams:
-            team_last_games = utils.duplicate_games(self.completed_games, hca=self.hca)
+            team_last_games = utils.flip_perspective(self.completed_games, hca=self.hca)
             team_last_games = team_last_games.loc[team_last_games["team"] == team]
             team_last_games.sort_values(by="date", ascending=False, inplace=True)
             team_last_game = team_last_games.iloc[0]
@@ -2883,40 +2883,8 @@ def write_seed_report(seeds_results_over_sims):
     )
     # filename is appended with date as string, not including time
     date_string = str(datetime.datetime.today()).split(" ")[0]
-    east_teams = [
-        "ATL",
-        "BOS",
-        "BRK",
-        "CHI",
-        "CHO",
-        "CLE",
-        "DET",
-        "IND",
-        "MIA",
-        "MIL",
-        "NYK",
-        "ORL",
-        "PHI",
-        "TOR",
-        "WAS",
-    ]
-    west_teams = [
-        "DAL",
-        "DEN",
-        "GSW",
-        "HOU",
-        "LAC",
-        "LAL",
-        "MEM",
-        "MIN",
-        "NOP",
-        "OKC",
-        "PHO",
-        "POR",
-        "SAC",
-        "SAS",
-        "UTA",
-    ]
+    east_teams = Season.EASTERN_CONFERENCE
+    west_teams = Season.WESTERN_CONFERENCE
     east_df = seeds_results_over_sims_df[
         seeds_results_over_sims_df["team"].isin(east_teams)
     ]
