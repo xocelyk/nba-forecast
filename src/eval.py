@@ -5,7 +5,6 @@ import pickle
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt
-from scipy.interpolate import UnivariateSpline
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.metrics import log_loss, mean_absolute_error, mean_squared_error, r2_score
@@ -118,32 +117,22 @@ def get_win_probability_model_heavy(games):
     return model
 
 
-class StdevFromVarianceSpline:
-    """Callable that returns stdev from a variance spline. Picklable for multiprocessing."""
+class StdevFromVariancePoly:
+    """Callable that returns stdev from a variance polynomial. Picklable for multiprocessing."""
 
-    def __init__(self, variance_spline, degree=3):
-        self._knots = variance_spline.get_knots()
-        self._coeffs = variance_spline.get_coeffs()
-        self._degree = degree
-        self._spline = variance_spline
+    def __init__(self, coeffs):
+        self._coeffs = list(coeffs)
+        self._poly = np.poly1d(coeffs)
 
     def __call__(self, n):
-        return float(np.sqrt(np.maximum(self._spline(n), 0)))
+        return float(np.sqrt(np.maximum(self._poly(n), 0)))
 
     def __getstate__(self):
-        return {
-            "knots": self._knots,
-            "coeffs": self._coeffs,
-            "degree": int(self._degree),
-        }
+        return {"coeffs": self._coeffs}
 
     def __setstate__(self, state):
-        from scipy.interpolate import BSpline
-
-        self._spline = BSpline(state["knots"], state["coeffs"], state["degree"])
-        self._knots = state["knots"]
         self._coeffs = state["coeffs"]
-        self._degree = state["degree"]
+        self._poly = np.poly1d(state["coeffs"])
 
 
 def prediction_interval_stdev(model, x_test, y_test):
@@ -247,11 +236,10 @@ def get_win_margin_model(games, features=None):
     logger.info(f"Test Mean Error (bias): {test_mean_error:.3f}")
     logger.info("=" * 60)
 
-    # Fit a spline to squared errors as a function of num_games_into_season,
-    # then take sqrt at query time to get a smooth stdev estimate.
-    # UnivariateSpline requires strictly increasing x, so group duplicate
-    # x values and use observation counts as weights so that denser regions
-    # have proportionally more influence on the fit.
+    # Fit a low-degree polynomial to variance (mean squared error) as a
+    # function of num_games_into_season, then take sqrt at query time for
+    # stdev. A polynomial captures the slow trend without the oscillation
+    # that splines produce on noisy per-game-number variance estimates.
     grouped = (
         pd.DataFrame({"x": test["num_games_into_season"].values, "sq_err": (errors**2).values})
         .groupby("x")["sq_err"]
@@ -260,10 +248,8 @@ def get_win_margin_model(games, features=None):
     x_unique = grouped.index.values.astype(float)
     y_unique = grouped["mean"].values
     w_unique = grouped["count"].values.astype(float)
-    variance_spline = UnivariateSpline(
-        x_unique, y_unique, w=w_unique, s=w_unique.sum() * 50
-    )
-    stdev_function = StdevFromVarianceSpline(variance_spline)
+    variance_coeffs = np.polyfit(x_unique, y_unique, deg=2, w=w_unique)
+    stdev_function = StdevFromVariancePoly(variance_coeffs)
 
     # Calculate prediction interval standard deviation
     m, std = prediction_interval_stdev(model, X_test, y_test)
