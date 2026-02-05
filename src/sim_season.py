@@ -255,9 +255,6 @@ class Season:
             )
         return team_states
 
-    def get_random_pace(self):
-        return np.random.normal(self.mean_pace, self.std_pace)
-
     def get_win_total_futures(self):
         win_total_futures = {}
         all_games = pd.concat([self.completed_games, self.future_games])
@@ -343,16 +340,6 @@ class Season:
             start_date = date
             end_date = date + datetime.timedelta(days=date_increment)
             self.simulate_day(start_date, end_date, date_increment)
-
-    def get_team_last_games(self):
-        teams_last_games_dict = {}
-        for team in self.teams:
-            team_last_games = utils.flip_perspective(self.completed_games, hca=self.hca)
-            team_last_games = team_last_games.loc[team_last_games["team"] == team]
-            team_last_games.sort_values(by="date", ascending=False, inplace=True)
-            team_last_game = team_last_games.iloc[0]
-            teams_last_games_dict[team] = team_last_game
-        return teams_last_games_dict
 
     def update_data(self, games_on_date=None):
         # TODO: last_n_games should be based on em_ratings calculated from the most recent data
@@ -516,22 +503,6 @@ class Season:
             return
         self.trim_decided_playoff_series_games()
         self.update_data(games_on_date=games_on_date)
-
-    def print_game(self, row, pred_margin):
-        print(row["team"], "vs", row["opponent"], "on", row["date"])
-        print("{} Rating: {}".format(row["team"], round(row["team_rating"], 1)))
-        print("{} Rating: {}".format(row["opponent"], round(row["opponent_rating"], 1)))
-        print(
-            "{} Last 10 Rating: {}".format(
-                row["team"], round(row["team_last_10_rating"], 1)
-            )
-        )
-        print(
-            "{} Last 10 Rating: {}".format(
-                row["opponent"], round(row["opponent_last_10_rating"], 1)
-            )
-        )
-        print("Predicted margin:", round(pred_margin, 1))
 
     def simulate_games_batch(self, games_df):
         """
@@ -1786,21 +1757,6 @@ class Season:
         if wins >= 4 or losses >= 4:
             return 0
         return 4 - max(wins, losses)
-
-
-def playoff_results_over_sims_dict_to_df(playoff_results_over_sims):
-    playoff_results_over_sims_df = (
-        pd.DataFrame(playoff_results_over_sims).transpose().reset_index()
-    )
-    playoff_results_over_sims_df = playoff_results_over_sims_df.rename(
-        columns={"index": "team"}
-    )
-    playoff_results_over_sims_df = playoff_results_over_sims_df.fillna(0)
-    playoff_results_over_sims_df = playoff_results_over_sims_df.sort_values(
-        by=["champion", "finals", "conference_finals", "second_round", "playoffs"],
-        ascending=False,
-    )
-    return playoff_results_over_sims_df
 
 
 def save_raw_simulation_results(season_results_over_sims):

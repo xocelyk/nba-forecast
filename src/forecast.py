@@ -49,10 +49,6 @@ def predict_margin_this_week_games(games, win_margin_model):
     return games
 
 
-def predict_win_prob_this_week_games(games, win_prob_model):
-    pass
-
-
 def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_model):
     to_csv_data = []
     games["date"] = pd.to_datetime(games["date"])
