@@ -535,6 +535,59 @@ def days_since_most_recent_game(team, date, games, cap=10, hca: float = HCA):
         return min(cap, (date - team_data.iloc[0]["date"]).days)
 
 
+def build_model_features(df):
+    """Compute all derived model features from base columns.
+
+    Takes a DataFrame with base columns (team_rating, opponent_rating, etc.)
+    and adds the 12 derived columns used by the win-margin model:
+
+    Diff features (7):
+        rating_diff, last_year_rating_diff, last_10_rating_diff,
+        last_5_rating_diff, last_3_rating_diff, last_1_rating_diff,
+        bayesian_gs_diff
+
+    Engineered features (5):
+        rating_x_season, win_total_ratio, trend_1v10_diff,
+        win_total_change_diff, rating_product
+
+    Falls back team_win_total_last_year -> team_win_total_future when the
+    column is missing (and likewise for opponent_win_total_last_year).
+
+    Does NOT select config.x_features -- callers do that when needed.
+    """
+    df = df.copy()
+
+    # --- diff features ---
+    df["rating_diff"] = df["team_rating"] - df["opponent_rating"]
+    df["last_year_rating_diff"] = df["last_year_team_rating"] - df["last_year_opp_rating"]
+    df["last_10_rating_diff"] = df["team_last_10_rating"] - df["opponent_last_10_rating"]
+    df["last_5_rating_diff"] = df["team_last_5_rating"] - df["opponent_last_5_rating"]
+    df["last_3_rating_diff"] = df["team_last_3_rating"] - df["opponent_last_3_rating"]
+    df["last_1_rating_diff"] = df["team_last_1_rating"] - df["opponent_last_1_rating"]
+    df["bayesian_gs_diff"] = df["team_bayesian_gs"] - df["opp_bayesian_gs"]
+
+    # --- engineered features ---
+    df["rating_x_season"] = df["rating_diff"] * (df["num_games_into_season"] / 82.0)
+    df["win_total_ratio"] = df["team_win_total_future"] / (
+        df["opponent_win_total_future"] + 0.1
+    )
+    df["trend_1v10_diff"] = (df["team_last_1_rating"] - df["team_last_10_rating"]) - (
+        df["opponent_last_1_rating"] - df["opponent_last_10_rating"]
+    )
+
+    if "team_win_total_last_year" not in df.columns:
+        df["team_win_total_last_year"] = df["team_win_total_future"]
+        df["opponent_win_total_last_year"] = df["opponent_win_total_future"]
+
+    df["win_total_change_diff"] = (
+        df["team_win_total_future"] - df["team_win_total_last_year"]
+    ) - (df["opponent_win_total_future"] - df["opponent_win_total_last_year"])
+
+    df["rating_product"] = df["team_rating"] * df["opponent_rating"]
+
+    return df
+
+
 def flip_perspective(df, hca: float = HCA):
     """Duplicate each game row from the opponent's perspective and concatenate.
 

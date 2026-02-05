@@ -550,31 +550,6 @@ def load_training_data(
                     year_data = utils.last_n_games(year_data, 3)
                     year_data = utils.last_n_games(year_data, 1)
 
-                    # Add rating difference features
-                    year_data["rating_diff"] = (
-                        year_data["team_rating"] - year_data["opponent_rating"]
-                    )
-                    year_data["last_year_rating_diff"] = (
-                        year_data["last_year_team_rating"]
-                        - year_data["last_year_opp_rating"]
-                    )
-                    year_data["last_10_rating_diff"] = (
-                        year_data["team_last_10_rating"]
-                        - year_data["opponent_last_10_rating"]
-                    )
-                    year_data["last_5_rating_diff"] = (
-                        year_data["team_last_5_rating"]
-                        - year_data["opponent_last_5_rating"]
-                    )
-                    year_data["last_3_rating_diff"] = (
-                        year_data["team_last_3_rating"]
-                        - year_data["opponent_last_3_rating"]
-                    )
-                    year_data["last_1_rating_diff"] = (
-                        year_data["team_last_1_rating"]
-                        - year_data["opponent_last_1_rating"]
-                    )
-
                     year_data["completed"] = year_data["margin"].apply(
                         lambda x: True if not np.isnan(x) else False
                     )
@@ -587,21 +562,6 @@ def load_training_data(
                         lambda x: win_totals_futures[str(x["year"])][x["opponent"]],
                         axis=1,
                     ).astype(float)
-
-                    # Add engineered features
-                    year_data["rating_x_season"] = year_data["rating_diff"] * (
-                        year_data["num_games_into_season"] / 82.0
-                    )
-                    year_data["win_total_ratio"] = year_data[
-                        "team_win_total_future"
-                    ] / (year_data["opponent_win_total_future"] + 0.1)
-                    year_data["trend_1v10_diff"] = (
-                        year_data["team_last_1_rating"]
-                        - year_data["team_last_10_rating"]
-                    ) - (
-                        year_data["opponent_last_1_rating"]
-                        - year_data["opponent_last_10_rating"]
-                    )
 
                     # Get last year's win totals for win_total_change_diff
                     last_year = year - 1
@@ -635,18 +595,6 @@ def load_training_data(
                         year_data["opponent_win_total_last_year"] = year_data[
                             "opponent_win_total_future"
                         ]
-
-                    year_data["win_total_change_diff"] = (
-                        year_data["team_win_total_future"]
-                        - year_data["team_win_total_last_year"]
-                    ) - (
-                        year_data["opponent_win_total_future"]
-                        - year_data["opponent_win_total_last_year"]
-                    )
-
-                    year_data["rating_product"] = (
-                        year_data["team_rating"] * year_data["opponent_rating"]
-                    )
 
                     # Compute Bayesian game score (prior + incremental updates)
                     HCA = 3.5
@@ -712,9 +660,8 @@ def load_training_data(
                             gs_sum[opp] += opp_gs
                             gs_count[opp] += 1
 
-                    year_data["bayesian_gs_diff"] = (
-                        year_data["team_bayesian_gs"] - year_data["opp_bayesian_gs"]
-                    )
+                    # Compute all diff + engineered features in one call
+                    year_data = utils.build_model_features(year_data)
 
                     # year_data to list of dictionaries
                     year_data = year_data.to_dict("records")

@@ -560,6 +560,17 @@ class Season:
         # Calculate margins
         margins = noise + expected_margins
 
+        # DEBUG: check for NaN margins
+        if np.any(np.isnan(margins)):
+            nan_idx = np.where(np.isnan(margins))[0]
+            for i in nan_idx:
+                print(f"DEBUG NaN margin in simulate_games_batch:")
+                print(f"  expected_margin={expected_margins[i]}, noise={noise[i]}, std_dev={std_devs[i]}")
+                print(f"  num_games_into_season={games.iloc[i]['num_games_into_season']}")
+                print(f"  team={games.iloc[i]['team']}, opp={games.iloc[i]['opponent']}")
+                print(f"  train_data NaN columns: {[c for c in train_data.columns if pd.isna(train_data.iloc[i][c])]}")
+                print(f"  playoff_label={games.iloc[i].get('playoff_label', 'N/A')}")
+
         # Batch predict win probabilities (for reporting only)
         win_probs = self.win_prob_model.predict_proba(expected_margins.reshape(-1, 1))[
             :, 1
@@ -586,99 +597,50 @@ class Season:
         return games
 
     def get_game_data(self, row):
-        team_rating = row["team_rating"]
-        opp_rating = row["opponent_rating"]
-        last_year_team_rating = row["last_year_team_rating"]
-        last_year_opp_rating = row["last_year_opp_rating"]
-        num_games_into_season = row["num_games_into_season"]
-        team_last_10_rating = row["team_last_10_rating"]
-        opponent_last_10_rating = row["opponent_last_10_rating"]
-        team_last_5_rating = row["team_last_5_rating"]
-        opponent_last_5_rating = row["opponent_last_5_rating"]
-        team_last_3_rating = row["team_last_3_rating"]
-        opponent_last_3_rating = row["opponent_last_3_rating"]
-        team_last_1_rating = row["team_last_1_rating"]
-        opponent_last_1_rating = row["opponent_last_1_rating"]
-        team_win_total_future = row["team_win_total_future"]
-        opponent_win_total_future = row["opponent_win_total_future"]
-        team_win_total_last_year = row.get(
-            "team_win_total_last_year", team_win_total_future
-        )
-        opponent_win_total_last_year = row.get(
-            "opponent_win_total_last_year", opponent_win_total_future
-        )
-        team_days_since_most_recent_game = row["team_days_since_most_recent_game"]
-        opponent_days_since_most_recent_game = row[
-            "opponent_days_since_most_recent_game"
-        ]
         playoff = row.get(
             "playoff", int(utils.is_playoff_date(row["date"], row["year"]))
         )
-
-        # Engineered features
-        rating_diff = team_rating - opp_rating
-        rating_x_season = rating_diff * (num_games_into_season / 82.0)
-        win_total_ratio = team_win_total_future / (opponent_win_total_future + 0.1)
-        trend_1v10_diff = (team_last_1_rating - team_last_10_rating) - (
-            opponent_last_1_rating - opponent_last_10_rating
-        )
-        win_total_change_diff = (team_win_total_future - team_win_total_last_year) - (
-            opponent_win_total_future - opponent_win_total_last_year
-        )
-        rating_product = team_rating * opp_rating
-
-        # Bayesian game score features
         team_bayesian_gs = row.get(
             "team_bayesian_gs", self.team_states[row["team"]].bayesian_gs
         )
         opp_bayesian_gs = row.get(
             "opp_bayesian_gs", self.team_states[row["opponent"]].bayesian_gs
         )
-        bayesian_gs_diff = team_bayesian_gs - opp_bayesian_gs
 
-        data = pd.DataFrame(
-            [
-                [
-                    team_rating,
-                    opp_rating,
-                    rating_diff,
-                    team_win_total_future,
-                    opponent_win_total_future,
-                    last_year_team_rating,
-                    last_year_opp_rating,
-                    last_year_team_rating
-                    - last_year_opp_rating,  # last_year_rating_diff
-                    num_games_into_season,
-                    team_last_10_rating,
-                    opponent_last_10_rating,
-                    team_last_10_rating
-                    - opponent_last_10_rating,  # last_10_rating_diff
-                    team_last_5_rating,
-                    opponent_last_5_rating,
-                    team_last_5_rating - opponent_last_5_rating,  # last_5_rating_diff
-                    team_last_3_rating,
-                    opponent_last_3_rating,
-                    team_last_3_rating - opponent_last_3_rating,  # last_3_rating_diff
-                    team_last_1_rating,
-                    opponent_last_1_rating,
-                    team_last_1_rating - opponent_last_1_rating,  # last_1_rating_diff
-                    team_days_since_most_recent_game,
-                    opponent_days_since_most_recent_game,
-                    self.hca,
-                    playoff,
-                    rating_x_season,
-                    win_total_ratio,
-                    trend_1v10_diff,
-                    win_total_change_diff,
-                    rating_product,
-                    team_bayesian_gs,
-                    opp_bayesian_gs,
-                    bayesian_gs_diff,
-                ]
-            ],
-            columns=config.x_features,
-        )
-        return data
+        base = {
+            "team_rating": row["team_rating"],
+            "opponent_rating": row["opponent_rating"],
+            "last_year_team_rating": row["last_year_team_rating"],
+            "last_year_opp_rating": row["last_year_opp_rating"],
+            "num_games_into_season": row["num_games_into_season"],
+            "team_last_10_rating": row["team_last_10_rating"],
+            "opponent_last_10_rating": row["opponent_last_10_rating"],
+            "team_last_5_rating": row["team_last_5_rating"],
+            "opponent_last_5_rating": row["opponent_last_5_rating"],
+            "team_last_3_rating": row["team_last_3_rating"],
+            "opponent_last_3_rating": row["opponent_last_3_rating"],
+            "team_last_1_rating": row["team_last_1_rating"],
+            "opponent_last_1_rating": row["opponent_last_1_rating"],
+            "team_win_total_future": row["team_win_total_future"],
+            "opponent_win_total_future": row["opponent_win_total_future"],
+            "team_days_since_most_recent_game": row["team_days_since_most_recent_game"],
+            "opponent_days_since_most_recent_game": row["opponent_days_since_most_recent_game"],
+            "hca": self.hca,
+            "playoff": playoff,
+            "team_bayesian_gs": team_bayesian_gs,
+            "opp_bayesian_gs": opp_bayesian_gs,
+        }
+
+        # Preserve win_total_last_year if available (for win_total_change_diff)
+        team_win_total_last_year = row.get("team_win_total_last_year")
+        if team_win_total_last_year is not None:
+            base["team_win_total_last_year"] = team_win_total_last_year
+            base["opponent_win_total_last_year"] = row.get(
+                "opponent_win_total_last_year", row["opponent_win_total_future"]
+            )
+
+        data = utils.build_model_features(pd.DataFrame([base]))
+        return data[config.x_features]
 
     def get_game_data_batch(self, games_df):
         """
@@ -692,8 +654,6 @@ class Season:
         """
         # Handle playoff column - use existing if present, otherwise compute vectorized
         if "playoff" not in games_df.columns or games_df["playoff"].isnull().any():
-            # Vectorized playoff date check
-            # Group by year for efficiency (most batches have single year)
             playoff = pd.Series(index=games_df.index, dtype=int)
             for year in games_df["year"].unique():
                 year_mask = games_df["year"] == year
@@ -703,35 +663,24 @@ class Season:
         else:
             playoff = games_df["playoff"]
 
-        # Build the feature DataFrame using vectorized operations
-        data = pd.DataFrame(
+        # Build base DataFrame with passthrough columns
+        base = pd.DataFrame(
             {
                 "team_rating": games_df["team_rating"],
                 "opponent_rating": games_df["opponent_rating"],
-                "rating_diff": games_df["team_rating"] - games_df["opponent_rating"],
                 "team_win_total_future": games_df["team_win_total_future"],
                 "opponent_win_total_future": games_df["opponent_win_total_future"],
                 "last_year_team_rating": games_df["last_year_team_rating"],
                 "last_year_opp_rating": games_df["last_year_opp_rating"],
-                "last_year_rating_diff": games_df["last_year_team_rating"]
-                - games_df["last_year_opp_rating"],
                 "num_games_into_season": games_df["num_games_into_season"],
                 "team_last_10_rating": games_df["team_last_10_rating"],
                 "opponent_last_10_rating": games_df["opponent_last_10_rating"],
-                "last_10_rating_diff": games_df["team_last_10_rating"]
-                - games_df["opponent_last_10_rating"],
                 "team_last_5_rating": games_df["team_last_5_rating"],
                 "opponent_last_5_rating": games_df["opponent_last_5_rating"],
-                "last_5_rating_diff": games_df["team_last_5_rating"]
-                - games_df["opponent_last_5_rating"],
                 "team_last_3_rating": games_df["team_last_3_rating"],
                 "opponent_last_3_rating": games_df["opponent_last_3_rating"],
-                "last_3_rating_diff": games_df["team_last_3_rating"]
-                - games_df["opponent_last_3_rating"],
                 "team_last_1_rating": games_df["team_last_1_rating"],
                 "opponent_last_1_rating": games_df["opponent_last_1_rating"],
-                "last_1_rating_diff": games_df["team_last_1_rating"]
-                - games_df["opponent_last_1_rating"],
                 "team_days_since_most_recent_game": games_df[
                     "team_days_since_most_recent_game"
                 ],
@@ -740,38 +689,20 @@ class Season:
                 ],
                 "hca": self.hca,
                 "playoff": playoff,
-                "rating_x_season": (
-                    games_df["team_rating"] - games_df["opponent_rating"]
-                )
-                * (games_df["num_games_into_season"] / 82.0),
-                "win_total_ratio": games_df["team_win_total_future"]
-                / (games_df["opponent_win_total_future"] + 0.1),
-                "trend_1v10_diff": (
-                    games_df["team_last_1_rating"] - games_df["team_last_10_rating"]
-                )
-                - (
-                    games_df["opponent_last_1_rating"]
-                    - games_df["opponent_last_10_rating"]
-                ),
-                "win_total_change_diff": (
-                    games_df["team_win_total_future"]
-                    - games_df["team_win_total_last_year"]
-                )
-                - (
-                    games_df["opponent_win_total_future"]
-                    - games_df["opponent_win_total_last_year"]
-                ),
-                "rating_product": games_df["team_rating"] * games_df["opponent_rating"],
                 "team_bayesian_gs": games_df["team_bayesian_gs"],
                 "opp_bayesian_gs": games_df["opp_bayesian_gs"],
-                "bayesian_gs_diff": games_df["team_bayesian_gs"]
-                - games_df["opp_bayesian_gs"],
             }
         )
 
-        # Ensure column order matches config.x_features
-        data = data[config.x_features]
-        return data
+        # Carry over win_total_last_year if present
+        if "team_win_total_last_year" in games_df.columns:
+            base["team_win_total_last_year"] = games_df["team_win_total_last_year"]
+            base["opponent_win_total_last_year"] = games_df[
+                "opponent_win_total_last_year"
+            ]
+
+        data = utils.build_model_features(base)
+        return data[config.x_features]
 
     def get_win_loss_report(self):
         record_by_team = {team: [0, 0] for team in self.teams}
@@ -1417,6 +1348,12 @@ class Season:
         ].copy()
         finals_scores = []
         for _, game in series_games.iterrows():
+            if pd.isna(game["margin"]):
+                print(f"DEBUG NaN margin in finals game: {game['team']} vs {game['opponent']} on {game['date']}")
+                print(f"  simulated={game.get('simulated', 'N/A')}, completed={game.get('completed', 'N/A')}")
+                print(f"  team_rating={game.get('team_rating', 'N/A')}, num_games_into_season={game.get('num_games_into_season', 'N/A')}")
+                print(f"  All NaN columns: {[c for c in game.index if pd.isna(game[c])]}")
+                continue
             total_pts = random.randint(180, 240)
             home_score = int((total_pts + game["margin"]) / 2)
             away_score = total_pts - home_score
