@@ -77,12 +77,8 @@ class Season:
         self.std_pace = std_pace
         self.update_counter = 1
         self.update_every = 1
-        # Vectorized pace assignment instead of list comprehensions
         self.future_games["pace"] = np.random.normal(
             self.mean_pace, self.std_pace, size=len(self.future_games)
-        )
-        self.completed_games["pace"] = np.random.normal(
-            self.mean_pace, self.std_pace, size=len(self.completed_games)
         )
         self.em_ratings = utils.get_em_ratings(
             self.completed_games, names=self.teams, hca=self.hca
