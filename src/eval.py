@@ -118,18 +118,32 @@ def get_win_probability_model_heavy(games):
     return model
 
 
-def get_smoothed_stdev_for_num_games(num_games, spline):
-    high = num_games + 50
-    low = num_games - 50
-    high_weight = 1 - (high - num_games) / 100
-    low_weight = 1 - (num_games - low) / 100
-    return (spline(high) * high_weight + spline(low) * low_weight) / (
-        high_weight + low_weight
-    )
+class StdevFromVarianceSpline:
+    """Callable that returns stdev from a variance spline. Picklable for multiprocessing."""
 
+    def __init__(self, variance_spline, degree=3):
+        self._knots = variance_spline.get_knots()
+        self._coeffs = variance_spline.get_coeffs()
+        self._degree = degree
+        self._spline = variance_spline
 
-def create_stdev_function(spline):
-    return lambda num_games: get_smoothed_stdev_for_num_games(num_games, spline)
+    def __call__(self, n):
+        return float(np.sqrt(np.maximum(self._spline(n), 0)))
+
+    def __getstate__(self):
+        return {
+            "knots": self._knots,
+            "coeffs": self._coeffs,
+            "degree": int(self._degree),
+        }
+
+    def __setstate__(self, state):
+        from scipy.interpolate import BSpline
+
+        self._spline = BSpline(state["knots"], state["coeffs"], state["degree"])
+        self._knots = state["knots"]
+        self._coeffs = state["coeffs"]
+        self._degree = state["degree"]
 
 
 def prediction_interval_stdev(model, x_test, y_test):
@@ -233,25 +247,15 @@ def get_win_margin_model(games, features=None):
     logger.info(f"Test Mean Error (bias): {test_mean_error:.3f}")
     logger.info("=" * 60)
 
-    # Round the number of games into the season for error analysis
-    test_with_round = test.copy()
-    test_with_round["num_games_into_season_round_100"] = test_with_round[
-        "num_games_into_season"
-    ].round(-2)
-
-    # Create a DataFrame for errors using the same test set
-    error_df = pd.DataFrame(
-        {
-            "num_games_into_season": test_with_round["num_games_into_season_round_100"],
-            "error": errors,
-        }
-    )
-
-    # Calculate standard deviation of errors grouped by the number of games into the season
-    std_dev_by_game = error_df.groupby("num_games_into_season")["error"].std()
-    x = std_dev_by_game.index
-    y = std_dev_by_game.values
-    spline = UnivariateSpline(x, y, s=200)
+    # Fit a spline to squared errors as a function of num_games_into_season,
+    # then take sqrt at query time to get a smooth stdev estimate
+    x_games = test["num_games_into_season"].values
+    squared_errors = errors**2
+    sort_idx = np.argsort(x_games)
+    x_sorted = x_games[sort_idx]
+    sq_err_sorted = squared_errors[sort_idx]
+    variance_spline = UnivariateSpline(x_sorted, sq_err_sorted, s=len(x_sorted) * 50)
+    stdev_function = StdevFromVarianceSpline(variance_spline)
 
     # Calculate prediction interval standard deviation
     m, std = prediction_interval_stdev(model, X_test, y_test)
@@ -260,7 +264,7 @@ def get_win_margin_model(games, features=None):
     filename = os.path.join(config.DATA_DIR, "win_margin_model_heavy.pkl")
     pickle.dump(model, open(filename, "wb"))
 
-    return model, m, std, spline
+    return model, m, std, stdev_function
 
 
 def get_win_probability_model(games, win_margin_model):

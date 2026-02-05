@@ -6,31 +6,8 @@ import os
 import pickle
 
 import pandas as pd
-from scipy.interpolate import UnivariateSpline
-
 from src import config, sim_season, utils
 from src.eval import get_win_margin_model, get_win_probability_model
-
-
-def get_smoothed_stdev_for_num_games(num_games, spline):
-    """Calculate smoothed standard deviation for a given number of games."""
-    high = num_games + 50
-    low = num_games - 50
-    high_weight = 1 - (high - num_games) / 100
-    low_weight = 1 - (num_games - low) / 100
-    return (spline(high) * high_weight + spline(low) * low_weight) / (
-        high_weight + low_weight
-    )
-
-
-class StdevFunction:
-    """Wrapper class to make the spline function picklable."""
-
-    def __init__(self, spline):
-        self.spline = spline
-
-    def __call__(self, num_games):
-        return get_smoothed_stdev_for_num_games(num_games, self.spline)
 
 
 def main():
@@ -46,10 +23,10 @@ def main():
     data = pd.read_csv(train_data_path)
 
     # Get model parameters
-    _, margin_model_resid_mean, margin_model_resid_std, spline = get_win_margin_model(
-        data
+    _, margin_model_resid_mean, margin_model_resid_std, stdev_function = (
+        get_win_margin_model(data)
     )
-    num_games_to_std_margin_model_resid = StdevFunction(spline)
+    num_games_to_std_margin_model_resid = stdev_function
     win_prob_model = get_win_probability_model(data, win_margin_model)
 
     print("Running test simulation...")
