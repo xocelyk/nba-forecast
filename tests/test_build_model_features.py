@@ -107,9 +107,9 @@ class TestIdempotency:
             "win_total_change_diff",
             "rating_product",
         ]:
-            assert first[col].iloc[0] == pytest.approx(second[col].iloc[0]), (
-                f"Mismatch on {col}"
-            )
+            assert first[col].iloc[0] == pytest.approx(
+                second[col].iloc[0]
+            ), f"Mismatch on {col}"
 
 
 class TestMultipleRows:

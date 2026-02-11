@@ -462,8 +462,12 @@ def build_model_features(df):
 
     # --- diff features ---
     df["rating_diff"] = df["team_rating"] - df["opponent_rating"]
-    df["last_year_rating_diff"] = df["last_year_team_rating"] - df["last_year_opp_rating"]
-    df["last_10_rating_diff"] = df["team_last_10_rating"] - df["opponent_last_10_rating"]
+    df["last_year_rating_diff"] = (
+        df["last_year_team_rating"] - df["last_year_opp_rating"]
+    )
+    df["last_10_rating_diff"] = (
+        df["team_last_10_rating"] - df["opponent_last_10_rating"]
+    )
     df["last_5_rating_diff"] = df["team_last_5_rating"] - df["opponent_last_5_rating"]
     df["last_3_rating_diff"] = df["team_last_3_rating"] - df["opponent_last_3_rating"]
     df["last_1_rating_diff"] = df["team_last_1_rating"] - df["opponent_last_1_rating"]

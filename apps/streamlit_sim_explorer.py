@@ -341,19 +341,17 @@ if selected_teams:
         win_counts = wins.value_counts().sort_index()
         all_wins = range(int(wins.min()), int(wins.max()) + 1)
 
-        pct = []
-        cum_pct_lt = []  # P(X < x)
-        cum_pct_gte = []  # P(X >= x)
+        pct = []  # P(X = x)
+        cum_pct_lte = []  # P(X <= x)
         total = len(wins)
         running_sum = 0
 
         for w in all_wins:
-            cum_pct_lt.append(100 * running_sum / total)
-            cum_pct_gte.append(100 * (total - running_sum) / total)
             count = win_counts.get(w, 0)
             p = 100 * count / total
             running_sum += count
             pct.append(p)
+            cum_pct_lte.append(100 * running_sum / total)
 
         fig_wins = go.Figure()
 
@@ -364,10 +362,10 @@ if selected_teams:
                 marker_color="#5DADE2",
                 marker_line_color="rgba(255,255,255,0.4)",
                 marker_line_width=0.5,
-                customdata=np.stack([cum_pct_lt, cum_pct_gte], axis=-1),
+                customdata=np.stack([pct, cum_pct_lte], axis=-1),
                 hovertemplate="<b>%{x} wins</b><br>"
-                + "P(X < %{x}): %{customdata[0]:.1f}%<br>"
-                + "P(X ≥ %{x}): %{customdata[1]:.1f}%<extra></extra>",
+                + "P(X = %{x}): %{customdata[0]:.1f}%<br>"
+                + "P(X ≤ %{x}): %{customdata[1]:.1f}%<extra></extra>",
             )
         )
 

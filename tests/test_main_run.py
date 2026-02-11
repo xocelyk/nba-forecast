@@ -86,7 +86,7 @@ main.load_game_data = lambda *a, **k: DummyGames()
 main.calculate_em_ratings = lambda *a, **k: {}
 main.initialize_dataframe = lambda *a, **k: dummy_df
 main.add_statistics = lambda *a, **k: dummy_df
-main.train_models = lambda *a, **k: (None, None, None, None, None)
+main.train_models = lambda *a, **k: (None, None, None, None, None, 1.0)
 main.simulate_season = lambda *a, **k: dummy_df
 main.add_predictive_ratings = lambda *a, **k: dummy_df
 main.add_simulation_results = lambda *a, **k: dummy_df
@@ -96,6 +96,13 @@ main.format_for_csv = lambda *a, **k: dummy_df
 sys.modules["data_loader"].load_training_data = lambda *a, **k: None
 sys.modules["forecast"].predict_margin_and_win_prob_future_games = lambda *a, **k: None
 sys.modules["forecast"].predict_margin_this_week_games = lambda *a, **k: None
+sys.modules["forecast"].generate_retrospective_predictions = lambda *a, **k: None
+
+# Stub team_bias module used by main
+team_bias_stub = types.ModuleType("src.team_bias")
+team_bias_stub.compute_team_posteriors = lambda *a, **k: {}
+team_bias_stub.TeamBiasInfo = lambda **k: types.SimpleNamespace(**k)
+sys.modules["src.team_bias"] = team_bias_stub
 
 
 def test_main_runs_without_error():

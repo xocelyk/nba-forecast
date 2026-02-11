@@ -189,6 +189,7 @@ def train_models(training_data: pd.DataFrame) -> Tuple:
         mean_margin_model_resid,
         std_margin_model_resid,
         num_games_to_std_margin_model_resid,
+        tau,
     ) = eval.get_win_margin_model(training_data)
     win_prob_model = eval.get_win_probability_model(training_data, win_margin_model)
     return (
@@ -197,6 +198,7 @@ def train_models(training_data: pd.DataFrame) -> Tuple:
         mean_margin_model_resid,
         std_margin_model_resid,
         num_games_to_std_margin_model_resid,
+        tau,
     )
 
 
@@ -209,6 +211,7 @@ def simulate_season(
     num_sims: int,
     parallel: bool = False,
     start_date: Optional[str] = None,
+    team_bias_info=None,
 ) -> pd.DataFrame:
     (
         win_margin_model,
@@ -216,6 +219,7 @@ def simulate_season(
         mean_margin_model_resid,
         std_margin_model_resid,
         stdev_function,
+        _tau,
     ) = models
     sim_report = sim_season(
         training_data,
@@ -230,6 +234,7 @@ def simulate_season(
         num_sims=num_sims,
         parallel=parallel,
         start_date=start_date,
+        team_bias_info=team_bias_info,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     sim_report.to_csv(os.path.join(config.DATA_DIR, "sim_results", "sim_report.csv"))
@@ -242,11 +247,19 @@ def simulate_season(
 
 
 def add_predictive_ratings(
-    df_final: pd.DataFrame, abbrs: List[str], win_margin_model, year: int
+    df_final: pd.DataFrame,
+    abbrs: List[str],
+    win_margin_model,
+    year: int,
+    team_bias_info=None,
 ) -> pd.DataFrame:
     # Regular season predictive ratings
     predictive_ratings = forecast.get_predictive_ratings_win_margin(
-        abbrs, win_margin_model, year=year, playoff_mode=False
+        abbrs,
+        win_margin_model,
+        year=year,
+        playoff_mode=False,
+        team_bias_info=team_bias_info,
     )
     predictive_ratings = predictive_ratings["expected_margin"].to_dict()
     df_final["predictive_rating"] = df_final["team"].apply(
@@ -255,7 +268,11 @@ def add_predictive_ratings(
 
     # Playoff predictive ratings
     playoff_predictive_ratings = forecast.get_predictive_ratings_win_margin(
-        abbrs, win_margin_model, year=year, playoff_mode=True
+        abbrs,
+        win_margin_model,
+        year=year,
+        playoff_mode=True,
+        team_bias_info=team_bias_info,
     )
     playoff_predictive_ratings = playoff_predictive_ratings["expected_margin"].to_dict()
     df_final["playoff_predictive_rating"] = df_final["team"].apply(
@@ -283,7 +300,7 @@ def add_simulation_results(
         f"{'Team':<6} {'Current':<10} {'Sim Wins':<10} {'Sim Losses':<12} {'Total Games':<12}"
     )
     logger.info("-" * 60)
-    for idx, row in df_final.head(10).iterrows():
+    for idx, row in df_final.iterrows():
         current_record = f"{row['wins']}-{row['losses']}"
         sim_wins = row["expected_wins"]
         sim_losses = row["expected_losses"]
@@ -315,7 +332,7 @@ def add_simulation_results(
         f"{'Team':<6} {'Normalized Wins':<16} {'Normalized Losses':<18} {'Projected Record':<18}"
     )
     logger.info("-" * 60)
-    for idx, row in df_final.head(10).iterrows():
+    for idx, row in df_final.iterrows():
         norm_wins = row["expected_wins"]
         norm_losses = row["expected_losses"]
         proj_record = f"{norm_wins:.1f}-{norm_losses:.1f}"
@@ -474,13 +491,28 @@ def main():
     logger.info("Training models...")
     models = train_models(training_data)
 
-    win_margin_model, win_prob_model, _, _, _ = models
+    win_margin_model, win_prob_model, _, std_resid, _, tau = models
+
+    # Compute per-team bias posteriors from current season completed games
+    from src.team_bias import TeamBiasInfo, compute_team_posteriors
+
+    team_posteriors = compute_team_posteriors(
+        training_data, win_margin_model, config.x_features, tau, std_resid, year=YEAR
+    )
+    team_bias_info = TeamBiasInfo(
+        tau=tau,
+        per_game_sigma=std_resid,
+        team_posteriors=team_posteriors,
+        recency_decay=0.97,
+    )
 
     # Predict future games
     forecast.predict_margin_and_win_prob_future_games(
-        training_data, win_margin_model, win_prob_model
+        training_data, win_margin_model, win_prob_model, team_bias_info=team_bias_info
     )
-    forecast.predict_margin_this_week_games(training_data, win_margin_model)
+    forecast.predict_margin_this_week_games(
+        training_data, win_margin_model, team_bias_info=team_bias_info
+    )
 
     # Generate retrospective predictions for completed games
     logger.info("Generating retrospective predictions...")
@@ -498,10 +530,13 @@ def main():
         num_sims=num_sims,
         parallel=parallel,
         start_date=start_date,
+        team_bias_info=team_bias_info,
     )
 
     # Add predictive ratings
-    df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
+    df_final = add_predictive_ratings(
+        df_final, abbrs, models[0], year=YEAR, team_bias_info=team_bias_info
+    )
     print(df_final)
 
     # Add simulation results
@@ -523,19 +558,7 @@ def main():
     logger.info("-" * 120)
 
     # Show top 10 teams
-    for idx, row in df_final.head(10).iterrows():
-        logger.info(
-            f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
-            f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "
-            f"{row['Projected Record']:<12} {row['Playoffs']:>9.1%} "
-            f"{row['Finals']:>9.1%} {row['Champion']:>9.1%}"
-        )
-
-    # Find and highlight OKC if not in top 10
-    okc_row = df_final[df_final["Team"] == "Oklahoma City Thunder"]
-    if not okc_row.empty and okc_row["Rank"].values[0] > 10:
-        logger.info("..." + " " * 107)
-        row = okc_row.iloc[0]
+    for idx, row in df_final.iterrows():
         logger.info(
             f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
             f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "

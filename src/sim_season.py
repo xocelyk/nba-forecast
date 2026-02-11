@@ -33,11 +33,13 @@ class MarginModel:
         margin_model_resid_mean,
         margin_model_resid_std,
         num_games_to_std_margin_model_resid,
+        team_bias_info=None,
     ):
         self.margin_model = margin_model
         self.resid_std = margin_model_resid_std
         self.num_games_to_std_margin_model_resid = num_games_to_std_margin_model_resid
         self.resid_mean = margin_model_resid_mean
+        self.team_bias_info = team_bias_info
 
 
 BAYESIAN_PRIOR_WEIGHT = 5
@@ -94,18 +96,40 @@ class Season:
         "Southwest": ["HOU", "DAL", "MEM", "NOP", "SAS"],
     }
     EASTERN_CONFERENCE = [
-        "BOS", "NYK", "MIL", "CLE", "ORL",
-        "IND", "PHI", "MIA", "CHI", "ATL",
-        "BRK", "TOR", "WAS", "DET", "CHO",
+        "BOS",
+        "NYK",
+        "MIL",
+        "CLE",
+        "ORL",
+        "IND",
+        "PHI",
+        "MIA",
+        "CHI",
+        "ATL",
+        "BRK",
+        "TOR",
+        "WAS",
+        "DET",
+        "CHO",
     ]
     WESTERN_CONFERENCE = [
-        "OKC", "DEN", "MIN", "LAC", "DAL",
-        "PHX", "LAL", "NOP", "SAC", "GSW",
-        "POR", "UTA", "MEM", "HOU", "SAS",
+        "OKC",
+        "DEN",
+        "MIN",
+        "LAC",
+        "DAL",
+        "PHX",
+        "LAL",
+        "NOP",
+        "SAC",
+        "GSW",
+        "POR",
+        "UTA",
+        "MEM",
+        "HOU",
+        "SAS",
     ]
-    TEAM_TO_DIVISION = {
-        team: div for div, teams in DIVISIONS.items() for team in teams
-    }
+    TEAM_TO_DIVISION = {team: div for div, teams in DIVISIONS.items() for team in teams}
     TEAM_TO_CONFERENCE = {
         **{team: "East" for team in EASTERN_CONFERENCE},
         **{team: "West" for team in WESTERN_CONFERENCE},
@@ -157,6 +181,20 @@ class Season:
         self.win_total_last_year = self.get_last_year_win_totals()
         self.last_year_ratings = self.get_last_year_ratings()
         self.sim_date_increment = sim_date_increment
+
+        # Draw per-team biases from the posterior (once per simulation run)
+        self.team_bias = {}
+        if self.margin_model.team_bias_info is not None:
+            info = self.margin_model.team_bias_info
+            all_teams = sorted(
+                set(
+                    completed_games["team"].unique().tolist()
+                    + future_games["team"].unique().tolist()
+                )
+            )
+            for team in all_teams:
+                mean, var = info.team_posteriors.get(team, (0.0, info.tau**2))
+                self.team_bias[team] = np.random.normal(mean, np.sqrt(var))
 
         em_ratings = utils.get_em_ratings(
             self.completed_games, names=self.teams, hca=self.hca
@@ -536,6 +574,12 @@ class Season:
         # Batch prediction for all games
         expected_margins = self.margin_model.margin_model.predict(train_data)
 
+        # Apply persistent per-team bias for this simulation run
+        if self.team_bias:
+            home_bias = np.array([self.team_bias.get(t, 0) for t in games["team"]])
+            away_bias = np.array([self.team_bias.get(t, 0) for t in games["opponent"]])
+            expected_margins = expected_margins - home_bias + away_bias
+
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
         std_devs = np.array(
@@ -847,7 +891,9 @@ class Season:
             return team1, team2
         return team2, team1
 
-    def simulate_series(self, matchups, round_num, cur_playoff_results, is_finals=False):
+    def simulate_series(
+        self, matchups, round_num, cur_playoff_results, is_finals=False
+    ):
         """Simulate one round of best-of-7 playoff series.
 
         Parameters
@@ -869,8 +915,13 @@ class Season:
             {label: winner_team_name}
         """
         team1_home_map = {
-            0: True, 1: True, 2: False, 3: False,
-            4: True, 5: False, 6: True,
+            0: True,
+            1: True,
+            2: False,
+            3: False,
+            4: True,
+            5: False,
+            6: True,
         }
 
         new_dates = set()
@@ -1014,8 +1065,9 @@ class Season:
             "W_2_7": (west_seeds[2], west_seeds[7]),
             "W_3_6": (west_seeds[3], west_seeds[6]),
         }
-        winners = self.simulate_series(matchups, round_num=0,
-                                       cur_playoff_results=cur_playoff_results)
+        winners = self.simulate_series(
+            matchups, round_num=0, cur_playoff_results=cur_playoff_results
+        )
 
         # re-seed winners: pair 1v8 winner with 4v5 winner, etc.
         e1, e4 = winners["E_1_8"], winners["E_4_5"]
@@ -1041,8 +1093,9 @@ class Season:
             "W_1_4": (west_seeds[1], west_seeds[4]),
             "W_2_3": (west_seeds[2], west_seeds[3]),
         }
-        winners = self.simulate_series(matchups, round_num=1,
-                                       cur_playoff_results=cur_playoff_results)
+        winners = self.simulate_series(
+            matchups, round_num=1, cur_playoff_results=cur_playoff_results
+        )
 
         e1, e2 = winners["E_1_4"], winners["E_2_3"]
         w1, w2 = winners["W_1_4"], winners["W_2_3"]
@@ -1059,8 +1112,9 @@ class Season:
             "E_1_2": (east_seeds[1], east_seeds[2]),
             "W_1_2": (west_seeds[1], west_seeds[2]),
         }
-        winners = self.simulate_series(matchups, round_num=2,
-                                       cur_playoff_results=cur_playoff_results)
+        winners = self.simulate_series(
+            matchups, round_num=2, cur_playoff_results=cur_playoff_results
+        )
         return winners["E_1_2"], winners["W_1_2"]
 
     def _finals_home_court(self, team_a, team_b):
@@ -1106,9 +1160,12 @@ class Season:
         team1, team2 = self._finals_home_court(e_1, w_1)
 
         matchups = {"Finals": (team1, team2)}
-        winners = self.simulate_series(matchups, round_num=3,
-                                       cur_playoff_results=cur_playoff_results,
-                                       is_finals=True)
+        winners = self.simulate_series(
+            matchups,
+            round_num=3,
+            cur_playoff_results=cur_playoff_results,
+            is_finals=True,
+        )
 
         # pretty-print finals scores
         series_games = self.completed_games[
@@ -1486,7 +1543,7 @@ class Season:
         head-to-head games."""
         counts = set()
         for i, t1 in enumerate(teams):
-            for t2 in teams[i + 1:]:
+            for t2 in teams[i + 1 :]:
                 h2h = stats[t1]["head_to_head"].get(t2)
                 counts.add(h2h["games"] if h2h else 0)
         return len(counts) == 1 and 0 not in counts
@@ -1530,7 +1587,9 @@ class Season:
             tied_teams, stats, conference_teams, record_by_team
         )
 
-    def _break_two_team_tie(self, team_a, team_b, stats, conference_teams, record_by_team):
+    def _break_two_team_tie(
+        self, team_a, team_b, stats, conference_teams, record_by_team
+    ):
         """NBA two-team tiebreaker sequence.  Returns [winner, loser]."""
         # 1. Head-to-head
         h2h = stats[team_a]["head_to_head"].get(team_b)
@@ -1553,7 +1612,9 @@ class Season:
             return [team_a, team_b] if a_conf > b_conf else [team_b, team_a]
 
         # 4. Record vs playoff-eligible teams in own conference
-        own_eligible = self._get_playoff_eligible_teams(conference_teams, record_by_team)
+        own_eligible = self._get_playoff_eligible_teams(
+            conference_teams, record_by_team
+        )
         a_w, a_l = self._get_record_vs_teams(team_a, own_eligible, stats)
         b_w, b_l = self._get_record_vs_teams(team_b, own_eligible, stats)
         if a_w != b_w:
@@ -1578,7 +1639,9 @@ class Season:
         random.shuffle(pair)
         return pair
 
-    def _break_multi_team_tie(self, tied_teams, stats, conference_teams, record_by_team):
+    def _break_multi_team_tie(
+        self, tied_teams, stats, conference_teams, record_by_team
+    ):
         """NBA multi-team (3+) tiebreaker sequence with recursive restart
         when a step separates one or more teams from the group."""
         teams = list(tied_teams)
@@ -1605,6 +1668,7 @@ class Season:
         # 1. Division winner: division winners rank above non-division-winners
         def division_winner_key(t):
             return 1 if self._is_division_winner(t, record_by_team) else 0
+
         steps.append(division_winner_key)
 
         # 2. Head-to-head (only if all pairs played equal number of games)
@@ -1621,26 +1685,34 @@ class Season:
         # 3. Conference record
         def conference_record_key(t):
             return stats[t]["conference_wins"]
+
         steps.append(conference_record_key)
 
         # 4. Record vs own-conference playoff-eligible teams
-        own_eligible = self._get_playoff_eligible_teams(conference_teams, record_by_team)
+        own_eligible = self._get_playoff_eligible_teams(
+            conference_teams, record_by_team
+        )
+
         def own_conf_eligible_key(t):
             w, _ = self._get_record_vs_teams(t, own_eligible, stats)
             return w
+
         steps.append(own_conf_eligible_key)
 
         # 5. Record vs other-conference playoff-eligible teams
         other_conf = self._get_other_conference_teams(conference_teams)
         other_eligible = self._get_playoff_eligible_teams(other_conf, record_by_team)
+
         def other_conf_eligible_key(t):
             w, _ = self._get_record_vs_teams(t, other_eligible, stats)
             return w
+
         steps.append(other_conf_eligible_key)
 
         # 6. Net point differential
         def point_diff_key(t):
             return stats[t]["net_point_differential"]
+
         steps.append(point_diff_key)
 
         for i, step_fn in enumerate(steps):
@@ -1652,18 +1724,20 @@ class Season:
                     if result is not None:
                         final = []
                         for group in result:
-                            final.extend(self._break_ties(
-                                group, stats, conference_teams, record_by_team
-                            ))
+                            final.extend(
+                                self._break_ties(
+                                    group, stats, conference_teams, record_by_team
+                                )
+                            )
                         return final
 
             result = _try_separate(teams, step_fn)
             if result is not None:
                 final = []
                 for group in result:
-                    final.extend(self._break_ties(
-                        group, stats, conference_teams, record_by_team
-                    ))
+                    final.extend(
+                        self._break_ties(group, stats, conference_teams, record_by_team)
+                    )
                 return final
 
         # 7. Random (last resort)
@@ -1689,18 +1763,20 @@ class Season:
                 if len(group) == 1:
                     ordered.extend(group)
                 else:
-                    ordered.extend(self._break_ties(
-                        group, stats, conference_teams, record_by_team
-                    ))
+                    ordered.extend(
+                        self._break_ties(group, stats, conference_teams, record_by_team)
+                    )
 
             rows = []
             for seed, team in enumerate(ordered, 1):
-                rows.append({
-                    "team": team,
-                    "wins": record_by_team[team][0],
-                    "losses": record_by_team[team][1],
-                    "seed": seed,
-                })
+                rows.append(
+                    {
+                        "team": team,
+                        "wins": record_by_team[team][0],
+                        "losses": record_by_team[team][1],
+                        "seed": seed,
+                    }
+                )
             df = pd.DataFrame(rows)
             df.index = df["team"]
             return df
@@ -2042,6 +2118,7 @@ def sim_season(
     num_sims=1000,
     parallel=True,
     start_date=None,
+    team_bias_info=None,
 ):
     import os
     from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -2057,6 +2134,7 @@ def sim_season(
         margin_model_resid_mean,
         margin_model_resid_std,
         num_games_to_std_margin_model_resid,
+        team_bias_info=team_bias_info,
     )
     year_games = data[data["year"] == year]
     if start_date is not None:

@@ -52,7 +52,6 @@ class NBAAPILoader:
         self._id_to_abbr = None
         self._names_to_abbr = None
 
-
     def _rate_limit(self):
         """Enforce rate limiting between API calls (thread-safe)."""
         with self._rate_limit_lock:
@@ -146,7 +145,10 @@ class NBAAPILoader:
             # Skip games involving non-NBA teams (e.g., exhibition games)
             home_abbr_raw = row["homeTeam_teamTricode"]
             away_abbr_raw = row["awayTeam_teamTricode"]
-            if home_abbr_raw not in valid_nba_abbrs or away_abbr_raw not in valid_nba_abbrs:
+            if (
+                home_abbr_raw not in valid_nba_abbrs
+                or away_abbr_raw not in valid_nba_abbrs
+            ):
                 continue
 
             game_id = row["gameId"]

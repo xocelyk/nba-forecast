@@ -39,6 +39,7 @@ def make_season(games):
 
 # -- helpers to build record_by_team from games --------------------------
 
+
 def record_from_games(games):
     """Compute {team: [wins, losses]} from a list of game dicts."""
     rec = {}
@@ -66,7 +67,7 @@ class TestTwoTeamHeadToHead:
         games.append(make_game("BOS", "NYK", True))
         games.append(make_game("NYK", "BOS", False))  # BOS wins on road
         games.append(make_game("BOS", "NYK", True))
-        games.append(make_game("NYK", "BOS", True))   # NYK wins 1
+        games.append(make_game("NYK", "BOS", True))  # NYK wins 1
 
         # pad both to 50 wins, 32 losses with non-h2h games against other
         # Eastern Conference teams
@@ -74,7 +75,9 @@ class TestTwoTeamHeadToHead:
         filler_opps_nyk = ["MIA", "ORL", "CHI", "ATL", "CLE"]
         for _ in range(47):  # BOS needs 47 more wins (3 h2h wins)
             games.append(make_game("BOS", filler_opps_bos[_ % 5], True))
-        for _ in range(30):  # BOS needs 30 more losses (2 h2h losses from NYK perspective doesn't apply; BOS lost 1 h2h)
+        for _ in range(
+            30
+        ):  # BOS needs 30 more losses (2 h2h losses from NYK perspective doesn't apply; BOS lost 1 h2h)
             games.append(make_game(filler_opps_bos[_ % 5], "BOS", True))
         for _ in range(49):  # NYK needs 49 more wins (1 h2h win)
             games.append(make_game("NYK", filler_opps_nyk[_ % 5], True))
@@ -195,7 +198,10 @@ class TestTwoTeamPointDifferential:
 
         season = make_season(games)
         stats = season._compute_tiebreaker_stats(record)
-        assert stats["BOS"]["net_point_differential"] > stats["NYK"]["net_point_differential"]
+        assert (
+            stats["BOS"]["net_point_differential"]
+            > stats["NYK"]["net_point_differential"]
+        )
 
         result = season._break_two_team_tie(
             "BOS", "NYK", stats, Season.EASTERN_CONFERENCE, record
@@ -402,7 +408,7 @@ class TestThreeTeamBalancedH2H:
         games.append(make_game("BOS", "CLE", True))
         games.append(make_game("CLE", "BOS", False))  # BOS wins
         games.append(make_game("NYK", "CLE", True))
-        games.append(make_game("CLE", "NYK", True))   # CLE wins 1
+        games.append(make_game("CLE", "NYK", True))  # CLE wins 1
 
         # h2h wins: BOS=4, NYK=1, CLE=1
         # Pad so all three reach 24 total wins
@@ -487,7 +493,9 @@ class TestRandomFallback:
         stats = season._compute_tiebreaker_stats(record)
 
         # Should not crash; result is random but valid
-        result = season._break_ties(["BOS", "NYK"], stats, Season.EASTERN_CONFERENCE, record)
+        result = season._break_ties(
+            ["BOS", "NYK"], stats, Season.EASTERN_CONFERENCE, record
+        )
         assert set(result) == {"BOS", "NYK"}
         assert len(result) == 2
 
@@ -613,8 +621,13 @@ class TestHelperMethods:
         assert stats["LAL"]["conference_wins"] == 0
 
     def test_is_division_winner(self):
-        record = {"BOS": [50, 32], "NYK": [45, 37], "PHI": [40, 42],
-                  "TOR": [35, 47], "BRK": [30, 52]}
+        record = {
+            "BOS": [50, 32],
+            "NYK": [45, 37],
+            "PHI": [40, 42],
+            "TOR": [35, 47],
+            "BRK": [30, 52],
+        }
         season = make_season([])
         assert season._is_division_winner("BOS", record)
         assert not season._is_division_winner("NYK", record)
@@ -641,7 +654,9 @@ class TestHelperMethods:
         assert not season2._all_played_equal_times(["BOS", "NYK", "CLE"], stats2)
 
     def test_get_playoff_eligible_teams(self):
-        record = {t: [60 - i * 3, 22 + i * 3] for i, t in enumerate(Season.EASTERN_CONFERENCE)}
+        record = {
+            t: [60 - i * 3, 22 + i * 3] for i, t in enumerate(Season.EASTERN_CONFERENCE)
+        }
         eligible = Season._get_playoff_eligible_teams(Season.EASTERN_CONFERENCE, record)
         assert len(eligible) == 10
         # Should be the top 10 by wins

@@ -206,9 +206,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         utils.normalize_df_teams(existing_df)
 
         # Add missing columns
-        abbr_to_name = {
-            utils.normalize_abbr(v): k for k, v in names_to_abbr.items()
-        }
+        abbr_to_name = {utils.normalize_abbr(v): k for k, v in names_to_abbr.items()}
 
         existing_df["team_name"] = existing_df["team"].map(abbr_to_name)
         existing_df["opponent_name"] = existing_df["opponent"].map(abbr_to_name)

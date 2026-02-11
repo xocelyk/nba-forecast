@@ -90,8 +90,17 @@ class TestPlayoffState:
     def test_no_games_at_all(self):
         """Empty completed_games returns NO_PLAYOFFS."""
         cols = [
-            "team", "opponent", "date", "margin", "team_win",
-            "playoff", "completed", "year", "pace", "playoff_label", "winner_name",
+            "team",
+            "opponent",
+            "date",
+            "margin",
+            "team_win",
+            "playoff",
+            "completed",
+            "year",
+            "pace",
+            "playoff_label",
+            "winner_name",
         ]
         df = pd.DataFrame(columns=cols)
         fake = FakeSeasonForState(df, [])
@@ -117,11 +126,17 @@ class TestPlayoffState:
         # Round 0: first round (team1 beats team2 4-0)
         games += _make_series_games("BOS", "NYK", 4, 0, base)
         # Round 1: second round
-        games += _make_series_games("BOS", "MIL", 4, 2, base + datetime.timedelta(days=10))
+        games += _make_series_games(
+            "BOS", "MIL", 4, 2, base + datetime.timedelta(days=10)
+        )
         # Round 2: conf finals
-        games += _make_series_games("BOS", "CLE", 4, 1, base + datetime.timedelta(days=20))
+        games += _make_series_games(
+            "BOS", "CLE", 4, 1, base + datetime.timedelta(days=20)
+        )
         # Round 3: finals -- BOS wins the championship 4-3
-        games += _make_series_games("BOS", "OKC", 4, 3, base + datetime.timedelta(days=30))
+        games += _make_series_games(
+            "BOS", "OKC", 4, 3, base + datetime.timedelta(days=30)
+        )
 
         df = pd.DataFrame(games)
         all_teams = list(df["team"].unique()) + list(df["opponent"].unique())
@@ -153,5 +168,6 @@ class TestPlayoffState:
         assert "playoff_state" in Season.__init__.__code__.co_names or True
         # More robust: check that the __init__ source mentions it
         import inspect
+
         source = inspect.getsource(Season.__init__)
         assert "self.playoff_state" in source

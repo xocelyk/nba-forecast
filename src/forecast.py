@@ -20,7 +20,7 @@ def predict_margin_today_games(games, win_margin_model):
     return games
 
 
-def predict_margin_this_week_games(games, win_margin_model):
+def predict_margin_this_week_games(games, win_margin_model, team_bias_info=None):
     to_csv_data = []
     # change date to datetime object
     games["date"] = pd.to_datetime(games["date"])
@@ -33,6 +33,14 @@ def predict_margin_this_week_games(games, win_margin_model):
 
     games = utils.build_model_features(games)
     games["margin"] = win_margin_model.predict(games[config.x_features])
+    if team_bias_info is not None:
+        home_bias = games["team"].map(
+            lambda t: team_bias_info.team_posteriors.get(t, (0, 0))[0]
+        )
+        away_bias = games["opponent"].map(
+            lambda t: team_bias_info.team_posteriors.get(t, (0, 0))[0]
+        )
+        games["margin"] = games["margin"] - home_bias + away_bias
 
     for date in games["date"].unique():
         date_games = games[games["date"] == date]
@@ -49,7 +57,9 @@ def predict_margin_this_week_games(games, win_margin_model):
     return games
 
 
-def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_model):
+def predict_margin_and_win_prob_future_games(
+    games, win_margin_model, win_prob_model, team_bias_info=None
+):
     to_csv_data = []
     games["date"] = pd.to_datetime(games["date"])
     games["date"] = games["date"].dt.date
@@ -59,6 +69,14 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
         return None
     games = utils.build_model_features(games)
     games["pred_margin"] = win_margin_model.predict(games[config.x_features])
+    if team_bias_info is not None:
+        home_bias = games["team"].map(
+            lambda t: team_bias_info.team_posteriors.get(t, (0, 0))[0]
+        )
+        away_bias = games["opponent"].map(
+            lambda t: team_bias_info.team_posteriors.get(t, (0, 0))[0]
+        )
+        games["pred_margin"] = games["pred_margin"] - home_bias + away_bias
     games["win_prob"] = win_prob_model.predict_proba(
         games["pred_margin"].values.reshape(-1, 1)
     )[:, 1]
@@ -103,7 +121,9 @@ def predict_margin_and_win_prob_future_games(games, win_margin_model, win_prob_m
     return games
 
 
-def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
+def get_predictive_ratings_win_margin(
+    teams, model, year, playoff_mode=False, team_bias_info=None
+):
     # Load the HCA value for this year
     import json
 
@@ -264,10 +284,12 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "team_bayesian_gs": team_bayesian_gs,
                 "opp_bayesian_gs": opp_bayesian_gs,
             }
-            X_home = utils.build_model_features(
-                pd.DataFrame([X_home_base])
-            )
-            team_home_margins.append(model.predict(X_home[config.x_features])[0])
+            X_home = utils.build_model_features(pd.DataFrame([X_home_base]))
+            home_pred = model.predict(X_home[config.x_features])[0]
+            if team_bias_info is not None:
+                home_pred -= team_bias_info.team_posteriors.get(team, (0, 0))[0]
+                home_pred += team_bias_info.team_posteriors.get(opp, (0, 0))[0]
+            team_home_margins.append(home_pred)
 
             # play an away game
             X_away_base = {
@@ -293,10 +315,14 @@ def get_predictive_ratings_win_margin(teams, model, year, playoff_mode=False):
                 "team_bayesian_gs": opp_bayesian_gs,
                 "opp_bayesian_gs": team_bayesian_gs,
             }
-            X_away = utils.build_model_features(
-                pd.DataFrame([X_away_base])
-            )
-            team_away_margins.append(-model.predict(X_away[config.x_features])[0])
+            X_away = utils.build_model_features(pd.DataFrame([X_away_base]))
+            away_pred = -model.predict(X_away[config.x_features])[0]
+            if team_bias_info is not None:
+                # away_pred is from team's perspective (negated home pred)
+                # opp is home here, team is away; we correct from team's perspective
+                away_pred += team_bias_info.team_posteriors.get(opp, (0, 0))[0]
+                away_pred -= team_bias_info.team_posteriors.get(team, (0, 0))[0]
+            team_away_margins.append(away_pred)
 
         average_home_margin = np.mean(team_home_margins)
         average_away_margin = np.mean(team_away_margins)
