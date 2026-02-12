@@ -549,24 +549,25 @@ def main():
 
     # Display final standings
     logger.info("")
-    logger.info("=" * 120)
+    logger.info("=" * 145)
     logger.info(f"FINAL STANDINGS - {YEAR} SEASON PROJECTION")
-    logger.info("=" * 120)
+    logger.info("=" * 145)
     logger.info(
-        f"{'Rank':<6} {'Team':<30} {'Record':<10} {'EM':<8} {'Pred':<8} {'Proj':<12} {'Playoffs':<10} {'Finals':<10} {'Champion':<10}"
+        f"{'Rank':<6} {'Team':<30} {'Record':<10} {'EM':<8} {'Pred':<8} {'Proj':<12} "
+        f"{'Playoffs':<10} {'Conf Semis':<12} {'Conf Finals':<13} {'Finals':<10} {'Champion':<10}"
     )
-    logger.info("-" * 120)
+    logger.info("-" * 140)
 
-    # Show top 10 teams
     for idx, row in df_final.iterrows():
         logger.info(
             f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
             f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "
             f"{row['Projected Record']:<12} {row['Playoffs']:>9.1%} "
+            f"{row['Conference Semis']:>11.1%} {row['Conference Finals']:>12.1%} "
             f"{row['Finals']:>9.1%} {row['Champion']:>9.1%}"
         )
 
-    logger.info("=" * 120)
+    logger.info("=" * 145)
     logger.info("Simulation complete!")
 
 
