@@ -6,3 +6,4 @@ visualizations/
 .venv/
 catboost_info/
 .local/
+data/sim_results/archive/sim_game_results_*.csv
