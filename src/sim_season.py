@@ -2165,9 +2165,7 @@ def sim_season(
         # leaving data-file playoff rows here causes phantom results that
         # conflict with the freshly-seeded bracket.
         playoff_start = utils.get_playoff_start_date(year).date()
-        future_year_games = future_year_games[
-            future_year_games["date"] < playoff_start
-        ]
+        future_year_games = future_year_games[future_year_games["date"] < playoff_start]
     else:
         completed_year_games = year_games[year_games["completed"] == True]
         future_year_games = year_games[year_games["completed"] == False]
