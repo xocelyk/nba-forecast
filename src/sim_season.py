@@ -1876,13 +1876,28 @@ def save_raw_simulation_results(season_results_over_sims):
     )
 
 
-def save_simulated_game_results(games_df):
-    """Save game-level simulation results to CSV."""
+def save_simulated_game_results(games_df, max_sims_to_save=1000):
+    """Save game-level simulation results to CSV.
+
+    Args:
+        games_df: DataFrame with all simulation game results.
+        max_sims_to_save: Maximum number of simulations to save to CSV.
+            Limits file size while preserving a representative sample.
+    """
     from . import config
 
     # Reorder columns with simulation_id first
     cols = ["simulation_id"] + [c for c in games_df.columns if c != "simulation_id"]
     games_df = games_df[cols]
+
+    # Limit to first N simulations to keep file size manageable
+    total_sims = games_df["simulation_id"].nunique()
+    if total_sims > max_sims_to_save:
+        keep_ids = sorted(games_df["simulation_id"].unique())[:max_sims_to_save]
+        games_df = games_df[games_df["simulation_id"].isin(keep_ids)]
+        logger.info(
+            f"Saving {max_sims_to_save} of {total_sims} simulations to limit file size"
+        )
 
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     games_df.to_csv(
@@ -2017,10 +2032,6 @@ def run_single_simulation(
         "team",
         "opponent",
         "margin",
-        "team_win",
-        "winner_name",
-        "playoff",
-        "playoff_label",
         "team_rating",
         "opponent_rating",
         "expected_margin",
@@ -2028,6 +2039,11 @@ def run_single_simulation(
     simulated_games = simulated_games[
         [c for c in columns_to_keep if c in simulated_games.columns]
     ]
+    # Round floats to reduce CSV file size
+    float_cols = ["margin", "team_rating", "opponent_rating", "expected_margin"]
+    for col in float_cols:
+        if col in simulated_games.columns:
+            simulated_games[col] = simulated_games[col].round(2)
 
     return SimulationResult(
         wins_dict=wins_dict,

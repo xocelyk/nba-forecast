@@ -12,6 +12,13 @@ st.title("NBA Simulation Explorer")
 def load_data():
     df = pd.read_csv("data/sim_results/sim_game_results.csv")
     df["date"] = pd.to_datetime(df["date"])
+    # Derive playoff flag from date if not present
+    if "playoff" not in df.columns:
+        from src.utils import get_playoff_start_date
+
+        year = df["date"].dt.year.max()
+        playoff_start = get_playoff_start_date(year)
+        df["playoff"] = (df["date"] >= playoff_start).astype(int)
     return df
 
 
