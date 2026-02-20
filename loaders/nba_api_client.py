@@ -94,6 +94,8 @@ class NBAApiClient:
         retry_delay: float = 5.0,
         use_cdn_fallback: bool = True,
         rate_limit_seconds: float = 0.6,
+        circuit_breaker_threshold: int = 2,
+        circuit_breaker_cooldown: float = 300.0,
     ):
         """
         Initialize NBA API client.
@@ -104,6 +106,8 @@ class NBAApiClient:
             retry_delay: Base delay between retries (doubles each attempt)
             use_cdn_fallback: Whether to try CDN if API fails
             rate_limit_seconds: Minimum time between API calls
+            circuit_breaker_threshold: Consecutive API failures before skipping to CDN
+            circuit_breaker_cooldown: Seconds to wait before retrying API after circuit opens
         """
         self.timeout = int(os.environ.get("NBA_API_TIMEOUT", timeout))
         self.max_retries = max_retries
@@ -113,6 +117,45 @@ class NBAApiClient:
         ).lower() in ("true", "1", "yes")
         self.rate_limit_seconds = rate_limit_seconds
         self._last_call_time = 0.0
+
+        # Circuit breaker state
+        self._circuit_breaker_threshold = circuit_breaker_threshold
+        self._circuit_breaker_cooldown = circuit_breaker_cooldown
+        self._consecutive_api_failures = 0
+        self._circuit_opened_at: Optional[float] = None
+
+    def _api_circuit_open(self) -> bool:
+        """Check if the API circuit breaker is open (should skip API calls)."""
+        if self._consecutive_api_failures < self._circuit_breaker_threshold:
+            return False
+        if self._circuit_opened_at is None:
+            return False
+        elapsed = time.time() - self._circuit_opened_at
+        if elapsed >= self._circuit_breaker_cooldown:
+            logger.info(
+                "Circuit breaker cooldown expired, retrying API (half-open)"
+            )
+            return False
+        return True
+
+    def _record_api_failure(self) -> None:
+        """Record an API failure for the circuit breaker."""
+        self._consecutive_api_failures += 1
+        if self._consecutive_api_failures >= self._circuit_breaker_threshold:
+            if self._circuit_opened_at is None:
+                self._circuit_opened_at = time.time()
+                logger.warning(
+                    f"Circuit breaker opened after {self._consecutive_api_failures} "
+                    f"consecutive API failures; skipping API for "
+                    f"{self._circuit_breaker_cooldown}s"
+                )
+
+    def _record_api_success(self) -> None:
+        """Record an API success, resetting the circuit breaker."""
+        if self._consecutive_api_failures > 0:
+            logger.info("API succeeded, circuit breaker reset")
+        self._consecutive_api_failures = 0
+        self._circuit_opened_at = None
 
     def _rate_limit(self) -> None:
         """Enforce rate limiting between API calls."""
@@ -137,9 +180,16 @@ class NBAApiClient:
         """
         logger.info(f"Fetching season schedule for {season}...")
 
+        if self.use_cdn_fallback and self._api_circuit_open():
+            logger.info("Circuit breaker open, using CDN for schedule")
+            return self._fetch_schedule_cdn()
+
         try:
-            return self._fetch_schedule_api(season)
+            df = self._fetch_schedule_api(season)
+            self._record_api_success()
+            return df
         except Exception as e:
+            self._record_api_failure()
             if self.use_cdn_fallback:
                 logger.warning(f"API failed: {e}. Trying CDN fallback...")
                 return self._fetch_schedule_cdn()
@@ -238,9 +288,20 @@ class NBAApiClient:
         req_timeout = timeout if timeout is not None else self.timeout
         req_retries = max_retries if max_retries is not None else self.max_retries
 
+        if self.use_cdn_fallback and self._api_circuit_open():
+            logger.info(f"Circuit breaker open, using CDN for boxscore {game_id}")
+            try:
+                return self._fetch_boxscore_cdn(game_id)
+            except Exception as cdn_e:
+                logger.error(f"CDN fallback failed: {cdn_e}")
+                return None
+
         try:
-            return self._fetch_boxscore_api(game_id, req_timeout, req_retries)
+            result = self._fetch_boxscore_api(game_id, req_timeout, req_retries)
+            self._record_api_success()
+            return result
         except Exception as e:
+            self._record_api_failure()
             if self.use_cdn_fallback:
                 logger.warning(f"Boxscore API failed for {game_id}: {e}. Trying CDN...")
                 try:
@@ -364,9 +425,20 @@ class NBAApiClient:
         """
         self._rate_limit()
 
+        if self.use_cdn_fallback and self._api_circuit_open():
+            logger.info(f"Circuit breaker open, using CDN for playbyplay {game_id}")
+            try:
+                return self._fetch_playbyplay_cdn(game_id)
+            except Exception as cdn_e:
+                logger.error(f"CDN fallback failed: {cdn_e}")
+                return None
+
         try:
-            return self._fetch_playbyplay_api(game_id)
+            result = self._fetch_playbyplay_api(game_id)
+            self._record_api_success()
+            return result
         except Exception as e:
+            self._record_api_failure()
             if self.use_cdn_fallback:
                 logger.warning(
                     f"PlayByPlay API failed for {game_id}: {e}. Trying CDN..."
@@ -469,9 +541,20 @@ class NBAApiClient:
         """
         self._rate_limit()
 
+        if self.use_cdn_fallback and self._api_circuit_open():
+            logger.info(f"Circuit breaker open, using CDN for advanced stats {game_id}")
+            try:
+                return self._fetch_advanced_stats_cdn(game_id)
+            except Exception as cdn_e:
+                logger.error(f"CDN fallback failed: {cdn_e}")
+                return None
+
         try:
-            return self._fetch_advanced_stats_api(game_id)
+            result = self._fetch_advanced_stats_api(game_id)
+            self._record_api_success()
+            return result
         except Exception as e:
+            self._record_api_failure()
             if self.use_cdn_fallback:
                 logger.warning(
                     f"Advanced stats API failed for {game_id}: {e}. Trying CDN..."
