@@ -38,7 +38,7 @@ jobs:
 
         # Main workflow
         - name: Run main
-          run: python main.py --update --num-sims 5000 --year 2026
+          run: python main.py --update --num-sims 5000 --year 2026 --parallel
 
         - name: Commit and push if there are changes
           run: |
