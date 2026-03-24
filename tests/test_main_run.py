@@ -90,6 +90,8 @@ main.train_models = lambda *a, **k: (None, None, None, None, None, 1.0)
 main.simulate_season = lambda *a, **k: _make_dummy_sim_report()
 main.add_predictive_ratings = lambda *a, **k: _make_dummy_df_final()
 main.add_simulation_results = lambda *a, **k: _make_dummy_df_final()
+
+
 def _make_formatted_df():
     return pd.DataFrame(
         {

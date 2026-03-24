@@ -101,7 +101,7 @@ class TestLoadYearData:
         csv_data.to_csv(csv_file, index=False)
 
         # Patch DATA_DIR
-        with patch("config.DATA_DIR", str(tmp_path)):
+        with patch("src.config.DATA_DIR", str(tmp_path)):
             result = data_loader.load_year_data(year=2025)
 
         # Verify results
@@ -132,7 +132,7 @@ class TestLoadYearData:
         csv_file = csv_path / "year_data_2025.csv"
         csv_data.to_csv(csv_file, index=False)
 
-        with patch("config.DATA_DIR", str(tmp_path)):
+        with patch("src.config.DATA_DIR", str(tmp_path)):
             result = data_loader.load_year_data(year=2025)
 
         # Should only get completed games
@@ -160,7 +160,7 @@ class TestLoadYearData:
         csv_file = csv_path / "year_data_2025.csv"
         csv_data.to_csv(csv_file, index=False)
 
-        with patch("config.DATA_DIR", str(tmp_path)):
+        with patch("src.config.DATA_DIR", str(tmp_path)):
             result = data_loader.load_year_data(year=2025)
 
         # Check date is correctly parsed
@@ -202,13 +202,14 @@ class TestUpdateData:
 
         mock_loader.get_season_schedule.return_value = mock_schedule
         mock_loader.add_pace_to_games.return_value = mock_schedule
+        mock_loader.add_garbage_time_to_games.side_effect = lambda df: df
         mock_get_loader.return_value = mock_loader
 
         # Mock team names
         names_to_abbr = {"Celtics": "BOS", "Lakers": "LAL"}
 
         # Setup temp data dir
-        with patch("config.DATA_DIR", str(tmp_path)):
+        with patch("src.config.DATA_DIR", str(tmp_path)):
             games_path = tmp_path / "games"
             games_path.mkdir()
 
@@ -276,11 +277,12 @@ class TestUpdateData:
         mock_loader.add_pace_to_games.return_value = new_schedule[
             new_schedule["game_id"] == "0022400002"
         ]
+        mock_loader.add_garbage_time_to_games.side_effect = lambda df: df
         mock_get_loader.return_value = mock_loader
 
         names_to_abbr = {"Celtics": "BOS", "Lakers": "LAL"}
 
-        with patch("config.DATA_DIR", str(tmp_path)):
+        with patch("src.config.DATA_DIR", str(tmp_path)):
             result = data_loader.update_data(names_to_abbr, year=2025, preload=True)
 
         # Should have both games
@@ -316,11 +318,12 @@ class TestUpdateData:
         mock_loader.get_season_schedule.return_value = schedule
         # Only completed games get pace
         mock_loader.add_pace_to_games.return_value = schedule
+        mock_loader.add_garbage_time_to_games.side_effect = lambda df: df
         mock_get_loader.return_value = mock_loader
 
         names_to_abbr = {"Celtics": "BOS", "Lakers": "LAL"}
 
-        with patch("config.DATA_DIR", str(tmp_path)):
+        with patch("src.config.DATA_DIR", str(tmp_path)):
             games_path = tmp_path / "games"
             games_path.mkdir()
 
@@ -394,7 +397,7 @@ class TestIntegrationWithRealFiles:
             # If we get here, file exists
             assert isinstance(result, list)
             if len(result) > 0:
-                assert len(result[0]) == 10  # Expected row length
+                assert len(result[0]) == 16  # Expected row length
         except FileNotFoundError:
             pytest.skip("2025 data file not found")
 
