@@ -132,9 +132,7 @@ class NBAApiClient:
             return False
         elapsed = time.time() - self._circuit_opened_at
         if elapsed >= self._circuit_breaker_cooldown:
-            logger.info(
-                "Circuit breaker cooldown expired, retrying API (half-open)"
-            )
+            logger.info("Circuit breaker cooldown expired, retrying API (half-open)")
             return False
         return True
 

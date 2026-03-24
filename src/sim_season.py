@@ -174,7 +174,9 @@ class Season:
                 has_nan = df["counts_toward_record"].isna().any()
                 if has_nan and "game_id" in df.columns:
                     is_cup = df["game_id"].astype(str).str.match(r"^006\d{2}00001$")
-                    df["counts_toward_record"] = df["counts_toward_record"].fillna(~is_cup)
+                    df["counts_toward_record"] = df["counts_toward_record"].fillna(
+                        ~is_cup
+                    )
                 elif has_nan:
                     df["counts_toward_record"] = df["counts_toward_record"].fillna(True)
                 # Coerce to bool in case it came through as string
@@ -432,7 +434,10 @@ class Season:
             prior_weight=self.hca_prior_weight,
         )
         # Update per-game HCA on remaining future games (0 for neutral-site games)
-        if "hca" in self.future_games.columns and "counts_toward_record" in self.future_games.columns:
+        if (
+            "hca" in self.future_games.columns
+            and "counts_toward_record" in self.future_games.columns
+        ):
             self.future_games["hca"] = np.where(
                 self.future_games["counts_toward_record"], self.hca, 0.0
             )
@@ -612,7 +617,9 @@ class Season:
             is_regular = (games["playoff"] == 0).values.astype(float)
             home_bias = np.array([self.team_bias.get(t, 0) for t in games["team"]])
             away_bias = np.array([self.team_bias.get(t, 0) for t in games["opponent"]])
-            expected_margins = expected_margins - home_bias * is_regular + away_bias * is_regular
+            expected_margins = (
+                expected_margins - home_bias * is_regular + away_bias * is_regular
+            )
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid

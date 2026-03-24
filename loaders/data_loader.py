@@ -525,30 +525,14 @@ def load_training_data(
                         games_on_date["opp_rating"] = games_on_date["opponent"].map(
                             cur_ratings
                         )
-                        has_counts_toward_record = "counts_toward_record" in games_on_date.columns
+                        has_counts_toward_record = (
+                            "counts_toward_record" in games_on_date.columns
+                        )
                         select_cols = [
-                                "team",
-                                "opponent",
-                                "team_rating",
-                                "opp_rating",
-                                "last_year_team_rating",
-                                "last_year_opp_rating",
-                                "margin",
-                                "pace",
-                                "num_games_into_season",
-                                "date",
-                                "year",
-                        ]
-                        if has_counts_toward_record:
-                            select_cols.append("counts_toward_record")
-                        games_on_date = games_on_date[select_cols]
-                        year_data_temp += games_on_date.values.tolist()
-
-                    output_cols = [
                             "team",
                             "opponent",
                             "team_rating",
-                            "opponent_rating",
+                            "opp_rating",
                             "last_year_team_rating",
                             "last_year_opp_rating",
                             "margin",
@@ -556,6 +540,24 @@ def load_training_data(
                             "num_games_into_season",
                             "date",
                             "year",
+                        ]
+                        if has_counts_toward_record:
+                            select_cols.append("counts_toward_record")
+                        games_on_date = games_on_date[select_cols]
+                        year_data_temp += games_on_date.values.tolist()
+
+                    output_cols = [
+                        "team",
+                        "opponent",
+                        "team_rating",
+                        "opponent_rating",
+                        "last_year_team_rating",
+                        "last_year_opp_rating",
+                        "margin",
+                        "pace",
+                        "num_games_into_season",
+                        "date",
+                        "year",
                     ]
                     if has_counts_toward_record:
                         output_cols.append("counts_toward_record")
