@@ -7,6 +7,9 @@ from .utils import HCA
 def get_wins_losses(game_df):
     wins = {}
     losses = {}
+    # Exclude games that don't count toward record (e.g., NBA Cup championship)
+    if "counts_toward_record" in game_df.columns:
+        game_df = game_df[game_df["counts_toward_record"] == True]
     for idx, row in game_df.iterrows():
         if row["margin"] > 0:
             wins[row["team"]] = wins.get(row["team"], 0) + 1
@@ -19,6 +22,10 @@ def get_wins_losses(game_df):
 
 def get_regular_season_wins_losses(game_df):
     """Return win/loss totals using only the first 82 games for each team."""
+
+    # Exclude games that don't count toward record (e.g., NBA Cup championship)
+    if "counts_toward_record" in game_df.columns:
+        game_df = game_df[game_df["counts_toward_record"] == True]
 
     # Initialize dictionaries for all teams that appear in the data
     teams = set(game_df["team"]).union(set(game_df["opponent"]))

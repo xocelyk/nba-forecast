@@ -115,6 +115,13 @@ def load_year_data(year: int = 2026):
         df["garbage_time_cutoff_action_number"] = None
     if "garbage_time_possessions_before_cutoff" not in df.columns:
         df["garbage_time_possessions_before_cutoff"] = None
+    if "counts_toward_record" not in df.columns:
+        # Default to True, then detect Cup championship games by game ID pattern
+        df["counts_toward_record"] = True
+        df.loc[
+            df["game_id"].astype(str).str.match(r"^006\d{2}00001$"),
+            "counts_toward_record",
+        ] = False
 
     data = []
     for _, row in df.iterrows():
@@ -138,6 +145,7 @@ def load_year_data(year: int = 2026):
                 row.get("garbage_time_cutoff_clock"),
                 row.get("garbage_time_cutoff_action_number"),
                 row.get("garbage_time_possessions_before_cutoff"),
+                row.get("counts_toward_record", True),
             ]
         )
     return data
@@ -198,6 +206,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
                 "garbage_time_cutoff_clock",
                 "garbage_time_cutoff_action_number",
                 "garbage_time_possessions_before_cutoff",
+                "counts_toward_record",
             ],
         )
         # Ensure game_id is string (prevent pandas from converting to int)
@@ -273,6 +282,10 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         if col in data_df.columns:
             columns_to_select.append(col)
 
+    # Add counts_toward_record if it exists
+    if "counts_toward_record" in data_df.columns:
+        columns_to_select.append("counts_toward_record")
+
     # Add advanced stats columns if they exist
     for col in ALL_ADVANCED_STATS_COLUMNS:
         if col in data_df.columns:
@@ -330,6 +343,8 @@ def load_training_data(
     all_data_archive.drop(
         [c for c in all_data_archive.columns if "Unnamed" in c], axis=1, inplace=True
     )
+    if "counts_toward_record" not in all_data_archive.columns:
+        all_data_archive["counts_toward_record"] = True
     all_data_archive = utils.add_playoff_indicator(all_data_archive)
 
     win_totals_futures = load_regular_season_win_totals_futures()
@@ -510,8 +525,8 @@ def load_training_data(
                         games_on_date["opp_rating"] = games_on_date["opponent"].map(
                             cur_ratings
                         )
-                        games_on_date = games_on_date[
-                            [
+                        has_counts_toward_record = "counts_toward_record" in games_on_date.columns
+                        select_cols = [
                                 "team",
                                 "opponent",
                                 "team_rating",
@@ -523,13 +538,13 @@ def load_training_data(
                                 "num_games_into_season",
                                 "date",
                                 "year",
-                            ]
                         ]
+                        if has_counts_toward_record:
+                            select_cols.append("counts_toward_record")
+                        games_on_date = games_on_date[select_cols]
                         year_data_temp += games_on_date.values.tolist()
 
-                    year_data = pd.DataFrame(
-                        year_data_temp,
-                        columns=[
+                    output_cols = [
                             "team",
                             "opponent",
                             "team_rating",
@@ -541,7 +556,12 @@ def load_training_data(
                             "num_games_into_season",
                             "date",
                             "year",
-                        ],
+                    ]
+                    if has_counts_toward_record:
+                        output_cols.append("counts_toward_record")
+                    year_data = pd.DataFrame(
+                        year_data_temp,
+                        columns=output_cols,
                     )
                     year_data = utils.last_n_games(year_data, 10)
                     year_data = utils.last_n_games(year_data, 5)

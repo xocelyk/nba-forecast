@@ -246,6 +246,7 @@ class NBAApiClient:
                         "gameDate": game.get("gameDateUTC"),
                         "gameStatus": game.get("gameStatus"),
                         "gameLabel": game.get("gameLabel", ""),
+                        "gameSubLabel": game.get("gameSubLabel", ""),
                         "homeTeam_teamTricode": home.get("teamTricode"),
                         "homeTeam_teamName": home.get("teamName"),
                         "homeTeam_score": home.get("score"),

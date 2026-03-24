@@ -180,6 +180,19 @@ class NBAAPILoader:
             else:
                 margin = None
 
+            # NBA Cup championship game does not count toward regular season record
+            game_label = row.get("gameLabel", "")
+            game_sub_label = row.get("gameSubLabel", "")
+            is_cup_championship = (
+                "Cup" in str(game_label) and str(game_sub_label) == "Championship"
+            )
+            # Fallback: Cup championship game IDs match pattern 006XX00001
+            if not is_cup_championship:
+                gid = str(game_id)
+                is_cup_championship = (
+                    len(gid) == 10 and gid.startswith("006") and gid.endswith("00001")
+                )
+
             # Create game record (home team perspective)
             game_record = {
                 "game_id": game_id,
@@ -195,6 +208,7 @@ class NBAAPILoader:
                 "pace": None,  # Will be filled in later for completed games
                 "completed": completed,
                 "year": year,
+                "counts_toward_record": not is_cup_championship,
             }
 
             games.append(game_record)

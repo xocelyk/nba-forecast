@@ -159,6 +159,28 @@ class Season:
         )
         self.future_games = utils.add_playoff_indicator(future_games)
         self.future_games["winner_name"] = np.nan
+        # Ensure counts_toward_record is a proper boolean column.
+        # When loaded from CSV it may be string "True"/NaN or missing entirely.
+        # Fall back to game_id pattern: Cup championship IDs match 006XX00001.
+        for df in [self.completed_games, self.future_games]:
+            if "counts_toward_record" not in df.columns:
+                if "game_id" in df.columns:
+                    is_cup = df["game_id"].astype(str).str.match(r"^006\d{2}00001$")
+                    df["counts_toward_record"] = ~is_cup
+                else:
+                    df["counts_toward_record"] = True
+            else:
+                # Fill NaN with True (default), then detect Cup games by ID if available
+                has_nan = df["counts_toward_record"].isna().any()
+                if has_nan and "game_id" in df.columns:
+                    is_cup = df["game_id"].astype(str).str.match(r"^006\d{2}00001$")
+                    df["counts_toward_record"] = df["counts_toward_record"].fillna(~is_cup)
+                elif has_nan:
+                    df["counts_toward_record"] = df["counts_toward_record"].fillna(True)
+                # Coerce to bool in case it came through as string
+                df["counts_toward_record"] = df["counts_toward_record"].map(
+                    lambda x: x if isinstance(x, bool) else str(x).lower() == "true"
+                )
         self.margin_model = margin_model
         self.win_prob_model = win_prob_model
         self.hca_prior_mean = utils.HCA_PRIOR_MEAN
@@ -168,6 +190,9 @@ class Season:
             prior_mean=self.hca_prior_mean,
             prior_weight=self.hca_prior_weight,
         )
+        # Per-game HCA: zero for neutral-site games (e.g., NBA Cup championship)
+        for df in [self.completed_games, self.future_games]:
+            df["hca"] = np.where(df["counts_toward_record"], self.hca, 0.0)
         self.teams = self.teams()
         self.mean_pace = mean_pace
         self.std_pace = std_pace
@@ -253,8 +278,9 @@ class Season:
             ].sort_values(by="date", ascending=True)
             team_data = utils.flip_perspective(team_data, hca=self.hca)
             team_data = team_data[team_data["team"] == team]
+            game_hca = team_data["hca"] if "hca" in team_data.columns else self.hca
             team_data["team_adj_margin"] = (
-                team_data["margin"] + team_data["opponent_rating"] - self.hca
+                team_data["margin"] + team_data["opponent_rating"] - game_hca
             )
             if len(team_data) == 0:
                 team_adj_margins = []
@@ -405,6 +431,13 @@ class Season:
             prior_mean=self.hca_prior_mean,
             prior_weight=self.hca_prior_weight,
         )
+        # Update per-game HCA on remaining future games (0 for neutral-site games)
+        if "hca" in self.future_games.columns and "counts_toward_record" in self.future_games.columns:
+            self.future_games["hca"] = np.where(
+                self.future_games["counts_toward_record"], self.hca, 0.0
+            )
+        elif "hca" in self.future_games.columns:
+            self.future_games["hca"] = self.hca
 
         last_10_games_dict = {
             t: ts.last_n_adj_margin_mean(10) for t, ts in self.team_states.items()
@@ -574,11 +607,12 @@ class Season:
         # Batch prediction for all games
         expected_margins = self.margin_model.margin_model.predict(train_data)
 
-        # Apply persistent per-team bias for this simulation run
+        # Apply persistent per-team bias for this simulation run (regular season only)
         if self.team_bias:
+            is_regular = (games["playoff"] == 0).values.astype(float)
             home_bias = np.array([self.team_bias.get(t, 0) for t in games["team"]])
             away_bias = np.array([self.team_bias.get(t, 0) for t in games["opponent"]])
-            expected_margins = expected_margins - home_bias + away_bias
+            expected_margins = expected_margins - home_bias * is_regular + away_bias * is_regular
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
@@ -611,8 +645,9 @@ class Season:
             row = games.loc[idx]
             team = row["team"]
             opponent = row["opponent"]
-            team_adj_margin = row["margin"] + row["opponent_rating"] - self.hca
-            opponent_adj_margin = -row["margin"] + row["team_rating"] + self.hca
+            game_hca = row["hca"] if "hca" in games.columns else self.hca
+            team_adj_margin = row["margin"] + row["opponent_rating"] - game_hca
+            opponent_adj_margin = -row["margin"] + row["team_rating"] + game_hca
             self.team_states[team].record_game(team_adj_margin, row["date"])
             self.team_states[opponent].record_game(opponent_adj_margin, row["date"])
 
@@ -663,7 +698,7 @@ class Season:
                 "opponent_days_since_most_recent_game": games_df[
                     "opponent_days_since_most_recent_game"
                 ],
-                "hca": self.hca,
+                "hca": games_df["hca"] if "hca" in games_df.columns else self.hca,
                 "playoff": playoff,
                 "team_bayesian_gs": games_df["team_bayesian_gs"],
                 "opp_bayesian_gs": games_df["opp_bayesian_gs"],
@@ -682,10 +717,15 @@ class Season:
 
     def get_win_loss_report(self):
         record_by_team = {team: [0, 0] for team in self.teams}
-        # Only count regular season games (playoff column = 0)
+        # Only count regular season games that count toward record
+        # (excludes playoff games and NBA Cup championship)
         regular_season_games = self.completed_games[
             self.completed_games["playoff"] == 0
         ]
+        if "counts_toward_record" in regular_season_games.columns:
+            regular_season_games = regular_season_games[
+                regular_season_games["counts_toward_record"] == True
+            ]
         for idx, game in regular_season_games.iterrows():
             if game["team_win"]:
                 record_by_team[game["team"]][0] += 1
@@ -1486,6 +1526,8 @@ class Season:
             }
 
         regular = self.completed_games[self.completed_games["playoff"] == 0]
+        if "counts_toward_record" in regular.columns:
+            regular = regular[regular["counts_toward_record"] == True]
         for _, row in regular.iterrows():
             home = row["team"]
             away = row["opponent"]

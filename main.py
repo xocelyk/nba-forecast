@@ -294,8 +294,8 @@ def add_simulation_results(
         lambda x: sim_report.loc[x, "losses"]
     )
 
-    # Log simulation results before normalization
-    logger.info("\nSimulation Results (before 82-game normalization):")
+    # Log simulation results
+    logger.info("\nSimulation Results:")
     logger.info(
         f"{'Team':<6} {'Current':<10} {'Sim Wins':<10} {'Sim Losses':<12} {'Total Games':<12}"
     )
@@ -307,37 +307,6 @@ def add_simulation_results(
         total_games = sim_wins + sim_losses
         logger.info(
             f"{row['team']:<6} {current_record:<10} {sim_wins:<10.2f} {sim_losses:<12.2f} {total_games:<12.2f}"
-        )
-
-    # correction for midseason tournament
-    df_final["expected_wins_temp"] = df_final.apply(
-        lambda row: row["expected_wins"]
-        * 82
-        / (row["expected_wins"] + row["expected_losses"]),
-        axis=1,
-    )
-    df_final["expected_losses_temp"] = df_final.apply(
-        lambda row: row["expected_losses"]
-        * 82
-        / (row["expected_wins"] + row["expected_losses"]),
-        axis=1,
-    )
-    df_final["expected_wins"] = df_final["expected_wins_temp"]
-    df_final["expected_losses"] = df_final["expected_losses_temp"]
-    df_final.drop(columns=["expected_wins_temp", "expected_losses_temp"], inplace=True)
-
-    # Log after normalization
-    logger.info("\nAfter 82-game normalization:")
-    logger.info(
-        f"{'Team':<6} {'Normalized Wins':<16} {'Normalized Losses':<18} {'Projected Record':<18}"
-    )
-    logger.info("-" * 60)
-    for idx, row in df_final.iterrows():
-        norm_wins = row["expected_wins"]
-        norm_losses = row["expected_losses"]
-        proj_record = f"{norm_wins:.1f}-{norm_losses:.1f}"
-        logger.info(
-            f"{row['team']:<6} {norm_wins:<16.2f} {norm_losses:<18.2f} {proj_record:<18}"
         )
     logger.info("")
 
