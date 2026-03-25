@@ -3,7 +3,7 @@ import pytest
 pytest.importorskip("pandas")
 import pandas as pd
 
-import utils
+from src import utils
 
 
 def test_duplicate_games_basic():
@@ -34,7 +34,7 @@ def test_duplicate_games_basic():
         ]
     )
 
-    result = utils.duplicate_games(df)
+    result = utils.flip_perspective(df)
 
     # length doubled
     assert len(result) == 2

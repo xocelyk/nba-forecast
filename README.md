@@ -1,1 +1,1 @@
-See ratings/projections/predictions [here](https://xocelyk.github.io/nba/)
+See forecast [here](https://xocelyk.github.io/nba/)

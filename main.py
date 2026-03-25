@@ -11,16 +11,12 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 
-import data_loader
-import env
-import eval
-import forecast
-import stats
-import utils
+from loaders import data_loader
+from src import config, eval, forecast, stats, utils
 
-# Import logger from env
-from env import logger
-from sim_season import sim_season
+# Import logger from config
+from src.config import logger
+from src.sim_season import sim_season
 
 # ignore warnings
 warnings.filterwarnings("ignore")
@@ -28,7 +24,7 @@ warnings.filterwarnings("ignore")
 
 def parse_arguments() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="NBA Season Simulator")
-    parser.add_argument("--year", type=int, default=2025, help="Year of the season")
+    parser.add_argument("--year", type=int, default=2026, help="Year of the season")
     parser.add_argument("--update", action="store_true", help="Update data")
     parser.add_argument("--save-names", action="store_true", help="Save team names")
     parser.add_argument(
@@ -60,14 +56,14 @@ def load_team_data(
 
             # Temp fix
             with open(
-                os.path.join(env.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
+                os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
             ) as f:
                 names_to_abbr = pickle.load(f)
 
         if save_names:
             try:
                 with open(
-                    os.path.join(env.DATA_DIR, f"names_to_abbr_{year}.pkl"), "wb"
+                    os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "wb"
                 ) as f:
                     pickle.dump(names_to_abbr, f)
             except Exception as e:
@@ -76,7 +72,7 @@ def load_team_data(
     else:
         try:
             with open(
-                os.path.join(env.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
+                os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
             ) as f:
                 names_to_abbr = pickle.load(f)
         except FileNotFoundError:
@@ -91,13 +87,9 @@ def load_team_data(
     abbrs = list(names_to_abbr.values())
     abbr_to_name = {v: k for k, v in names_to_abbr.items()}
 
-    # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-    # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-    # This mapping must match the one in data_loader.py
-    abbr_mapping = {"PHO": "PHX"}
-    abbrs = [abbr_mapping.get(abbr, abbr) for abbr in abbrs]
+    abbrs = [utils.normalize_abbr(abbr) for abbr in abbrs]
     abbr_to_name = {
-        abbr_mapping.get(abbr, abbr): name for abbr, name in abbr_to_name.items()
+        utils.normalize_abbr(abbr): name for abbr, name in abbr_to_name.items()
     }
 
     return abbrs, names_to_abbr, abbr_to_name
@@ -116,19 +108,15 @@ def load_game_data(
     else:
         try:
             games = pd.read_csv(
-                os.path.join(env.DATA_DIR, "games", f"year_data_{year}.csv")
+                os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv"),
+                dtype={"game_id": str},
             )
             games.rename(
                 columns={"team_abbr": "team", "opponent_abbr": "opponent"}, inplace=True
             )
             games["date"] = pd.to_datetime(games["date"], format="mixed")
 
-            # TEMPORARY FIX: Remap old abbreviations to new ones for win totals compatibility
-            # PHO -> PHX (Phoenix changed their abbreviation after 2020)
-            # This mapping must match the one in data_loader.py
-            abbr_mapping = {"PHO": "PHX"}
-            games["team"] = games["team"].replace(abbr_mapping)
-            games["opponent"] = games["opponent"].replace(abbr_mapping)
+            utils.normalize_df_teams(games)
 
             games = utils.add_playoff_indicator(games)
         except Exception as e:
@@ -141,9 +129,11 @@ def load_game_data(
 
 
 def calculate_em_ratings(
-    completed_games: pd.DataFrame, abbrs: List[str], year: int
+    completed_games: pd.DataFrame, abbrs: List[str], year: int, hca: float = None
 ) -> Dict[str, float]:
-    em_ratings = utils.get_em_ratings(completed_games, names=abbrs)
+    if hca is None:
+        hca = utils.HCA
+    em_ratings = utils.get_em_ratings(completed_games, names=abbrs, hca=hca)
     em_ratings = {
         k: v
         for k, v in sorted(em_ratings.items(), key=lambda item: item[1], reverse=True)
@@ -154,7 +144,7 @@ def calculate_em_ratings(
     ]
     em_ratings_df = pd.DataFrame(ratings_lst, columns=["rank", "team", "rating"])
     em_ratings_df.to_csv(
-        os.path.join(env.DATA_DIR, f"em_ratings_{year}.csv"), index=False
+        os.path.join(config.DATA_DIR, f"em_ratings_{year}.csv"), index=False
     )
     return em_ratings
 
@@ -199,6 +189,7 @@ def train_models(training_data: pd.DataFrame) -> Tuple:
         mean_margin_model_resid,
         std_margin_model_resid,
         num_games_to_std_margin_model_resid,
+        tau,
     ) = eval.get_win_margin_model(training_data)
     win_prob_model = eval.get_win_probability_model(training_data, win_margin_model)
     return (
@@ -207,6 +198,7 @@ def train_models(training_data: pd.DataFrame) -> Tuple:
         mean_margin_model_resid,
         std_margin_model_resid,
         num_games_to_std_margin_model_resid,
+        tau,
     )
 
 
@@ -219,6 +211,7 @@ def simulate_season(
     num_sims: int,
     parallel: bool = False,
     start_date: Optional[str] = None,
+    team_bias_info=None,
 ) -> pd.DataFrame:
     (
         win_margin_model,
@@ -226,6 +219,7 @@ def simulate_season(
         mean_margin_model_resid,
         std_margin_model_resid,
         stdev_function,
+        _tau,
     ) = models
     sim_report = sim_season(
         training_data,
@@ -240,23 +234,32 @@ def simulate_season(
         num_sims=num_sims,
         parallel=parallel,
         start_date=start_date,
+        team_bias_info=team_bias_info,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
-    sim_report.to_csv(os.path.join(env.DATA_DIR, "sim_results", "sim_report.csv"))
+    sim_report.to_csv(os.path.join(config.DATA_DIR, "sim_results", "sim_report.csv"))
     sim_report.to_csv(
         os.path.join(
-            env.DATA_DIR, "sim_results", "archive", f"sim_report_{date_string}.csv"
+            config.DATA_DIR, "sim_results", "archive", f"sim_report_{date_string}.csv"
         )
     )
     return sim_report
 
 
 def add_predictive_ratings(
-    df_final: pd.DataFrame, abbrs: List[str], win_margin_model, year: int
+    df_final: pd.DataFrame,
+    abbrs: List[str],
+    win_margin_model,
+    year: int,
+    team_bias_info=None,
 ) -> pd.DataFrame:
     # Regular season predictive ratings
     predictive_ratings = forecast.get_predictive_ratings_win_margin(
-        abbrs, win_margin_model, year=year, playoff_mode=False
+        abbrs,
+        win_margin_model,
+        year=year,
+        playoff_mode=False,
+        team_bias_info=team_bias_info,
     )
     predictive_ratings = predictive_ratings["expected_margin"].to_dict()
     df_final["predictive_rating"] = df_final["team"].apply(
@@ -265,7 +268,11 @@ def add_predictive_ratings(
 
     # Playoff predictive ratings
     playoff_predictive_ratings = forecast.get_predictive_ratings_win_margin(
-        abbrs, win_margin_model, year=year, playoff_mode=True
+        abbrs,
+        win_margin_model,
+        year=year,
+        playoff_mode=True,
+        team_bias_info=team_bias_info,
     )
     playoff_predictive_ratings = playoff_predictive_ratings["expected_margin"].to_dict()
     df_final["playoff_predictive_rating"] = df_final["team"].apply(
@@ -287,50 +294,19 @@ def add_simulation_results(
         lambda x: sim_report.loc[x, "losses"]
     )
 
-    # Log simulation results before normalization
-    logger.info("\nSimulation Results (before 82-game normalization):")
+    # Log simulation results
+    logger.info("\nSimulation Results:")
     logger.info(
         f"{'Team':<6} {'Current':<10} {'Sim Wins':<10} {'Sim Losses':<12} {'Total Games':<12}"
     )
     logger.info("-" * 60)
-    for idx, row in df_final.head(10).iterrows():
+    for idx, row in df_final.iterrows():
         current_record = f"{row['wins']}-{row['losses']}"
         sim_wins = row["expected_wins"]
         sim_losses = row["expected_losses"]
         total_games = sim_wins + sim_losses
         logger.info(
             f"{row['team']:<6} {current_record:<10} {sim_wins:<10.2f} {sim_losses:<12.2f} {total_games:<12.2f}"
-        )
-
-    # correction for midseason tournament
-    df_final["expected_wins_temp"] = df_final.apply(
-        lambda row: row["expected_wins"]
-        * 82
-        / (row["expected_wins"] + row["expected_losses"]),
-        axis=1,
-    )
-    df_final["expected_losses_temp"] = df_final.apply(
-        lambda row: row["expected_losses"]
-        * 82
-        / (row["expected_wins"] + row["expected_losses"]),
-        axis=1,
-    )
-    df_final["expected_wins"] = df_final["expected_wins_temp"]
-    df_final["expected_losses"] = df_final["expected_losses_temp"]
-    df_final.drop(columns=["expected_wins_temp", "expected_losses_temp"], inplace=True)
-
-    # Log after normalization
-    logger.info("\nAfter 82-game normalization:")
-    logger.info(
-        f"{'Team':<6} {'Normalized Wins':<16} {'Normalized Losses':<18} {'Projected Record':<18}"
-    )
-    logger.info("-" * 60)
-    for idx, row in df_final.head(10).iterrows():
-        norm_wins = row["expected_wins"]
-        norm_losses = row["expected_losses"]
-        proj_record = f"{norm_wins:.1f}-{norm_losses:.1f}"
-        logger.info(
-            f"{row['team']:<6} {norm_wins:<16.2f} {norm_losses:<18.2f} {proj_record:<18}"
         )
     logger.info("")
 
@@ -462,8 +438,13 @@ def main():
         mean_pace = 100.0
         std_pace = 3.0
 
+    # Load HCA map for year-specific home court advantage
+    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
+    hca_map = utils.load_hca_map(hca_map_path)
+    year_hca = hca_map.get(YEAR, utils.HCA)
+
     # Calculate EM ratings
-    em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR)
+    em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR, hca=year_hca)
 
     # Initialize dataframe
     df_final = initialize_dataframe(abbrs, abbr_to_name, em_ratings)
@@ -479,13 +460,34 @@ def main():
     logger.info("Training models...")
     models = train_models(training_data)
 
-    win_margin_model, win_prob_model, _, _, _ = models
+    win_margin_model, win_prob_model, _, std_resid, _, tau = models
+
+    # Compute per-team bias posteriors from current season completed games
+    from src.team_bias import TeamBiasInfo, compute_team_posteriors
+
+    team_posteriors = compute_team_posteriors(
+        training_data, win_margin_model, config.x_features, tau, std_resid, year=YEAR
+    )
+    team_bias_info = TeamBiasInfo(
+        tau=tau,
+        per_game_sigma=std_resid,
+        team_posteriors=team_posteriors,
+        recency_decay=0.97,
+    )
 
     # Predict future games
     forecast.predict_margin_and_win_prob_future_games(
-        training_data, win_margin_model, win_prob_model
+        training_data, win_margin_model, win_prob_model, team_bias_info=team_bias_info
     )
-    forecast.predict_margin_this_week_games(training_data, win_margin_model)
+    forecast.predict_margin_this_week_games(
+        training_data, win_margin_model, team_bias_info=team_bias_info
+    )
+
+    # Generate retrospective predictions for completed games
+    logger.info("Generating retrospective predictions...")
+    forecast.generate_retrospective_predictions(
+        training_data, win_margin_model, win_prob_model, YEAR
+    )
 
     logger.info(f"Starting {num_sims} season simulations...")
     sim_report = simulate_season(
@@ -497,10 +499,13 @@ def main():
         num_sims=num_sims,
         parallel=parallel,
         start_date=start_date,
+        team_bias_info=team_bias_info,
     )
 
     # Add predictive ratings
-    df_final = add_predictive_ratings(df_final, abbrs, models[0], year=YEAR)
+    df_final = add_predictive_ratings(
+        df_final, abbrs, models[0], year=YEAR, team_bias_info=team_bias_info
+    )
     print(df_final)
 
     # Add simulation results
@@ -508,41 +513,30 @@ def main():
 
     logger.info("Generating final results...")
     df_final = format_for_csv(df_final)
-    df_final.to_csv(os.path.join(env.DATA_DIR, f"main_{YEAR}.csv"), index=False)
+    df_final.to_csv(os.path.join(config.DATA_DIR, f"main_{YEAR}.csv"), index=False)
     logger.info(f"Results saved to main_{YEAR}.csv")
 
     # Display final standings
     logger.info("")
-    logger.info("=" * 120)
+    logger.info("=" * 145)
     logger.info(f"FINAL STANDINGS - {YEAR} SEASON PROJECTION")
-    logger.info("=" * 120)
+    logger.info("=" * 145)
     logger.info(
-        f"{'Rank':<6} {'Team':<30} {'Record':<10} {'EM':<8} {'Pred':<8} {'Proj':<12} {'Playoffs':<10} {'Finals':<10} {'Champion':<10}"
+        f"{'Rank':<6} {'Team':<30} {'Record':<10} {'EM':<8} {'Pred':<8} {'Proj':<12} "
+        f"{'Playoffs':<10} {'Conf Semis':<12} {'Conf Finals':<13} {'Finals':<10} {'Champion':<10}"
     )
-    logger.info("-" * 120)
+    logger.info("-" * 140)
 
-    # Show top 10 teams
-    for idx, row in df_final.head(10).iterrows():
+    for idx, row in df_final.iterrows():
         logger.info(
             f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
             f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "
             f"{row['Projected Record']:<12} {row['Playoffs']:>9.1%} "
+            f"{row['Conference Semis']:>11.1%} {row['Conference Finals']:>12.1%} "
             f"{row['Finals']:>9.1%} {row['Champion']:>9.1%}"
         )
 
-    # Find and highlight OKC if not in top 10
-    okc_row = df_final[df_final["Team"] == "Oklahoma City Thunder"]
-    if not okc_row.empty and okc_row["Rank"].values[0] > 10:
-        logger.info("..." + " " * 107)
-        row = okc_row.iloc[0]
-        logger.info(
-            f"{row['Rank']:<6} {row['Team']:<30} {row['Record']:<10} "
-            f"{row['EM Rating']:>7.2f} {row['Predictive Rating']:>7.2f} "
-            f"{row['Projected Record']:<12} {row['Playoffs']:>9.1%} "
-            f"{row['Finals']:>9.1%} {row['Champion']:>9.1%}"
-        )
-
-    logger.info("=" * 120)
+    logger.info("=" * 145)
     logger.info("Simulation complete!")
 
 

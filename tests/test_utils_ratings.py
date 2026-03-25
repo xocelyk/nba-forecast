@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-import utils
+from src import utils
 
 
 class TestCalcRmse:
@@ -363,7 +363,7 @@ class TestGetEmRatings:
         assert isinstance(result["B"], float)
 
     @pytest.mark.unit
-    @patch("utils.sgd_ratings")
+    @patch("src.utils.sgd_ratings")
     def test_get_em_ratings_calls_sgd_correctly(self, mock_sgd, sample_season_games):
         """Test that get_em_ratings calls sgd_ratings with correct parameters."""
         mock_sgd.return_value = np.array([1.0, -1.0, 0.5, -0.5])

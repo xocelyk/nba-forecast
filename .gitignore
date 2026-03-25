@@ -1,7 +1,6 @@
 .DS_Store
 *.ipynb
 __pycache__
-*/archive/
 CLAUDE.md
 visualizations/
 tmp/
@@ -19,11 +18,10 @@ pyproject.toml
 pytest.ini
 regenerate_historical_data.py
 simulation_to_odds_date_mapping.csv
-ARCHITECTURE_PROPOSAL.md
-backfill_effective_stats.py
-backfill_pace.py
 data/playoff_model.pkl
 data/regular_season_model.pkl
 data/predictions/archive
 data/seed_reports/archive
 data/sim_results/archive
+catboost_info/
+.local/

@@ -5,7 +5,7 @@ import pandas as pd
 
 if not hasattr(pd.DataFrame, "apply"):
     pytest.skip("pandas stub detected", allow_module_level=True)
-import utils
+from src import utils
 
 
 def test_add_playoff_indicator_uses_year_dates():
