@@ -433,6 +433,8 @@ def add_win_total_features(year_data, win_totals_futures, year):
     """
     Add win total futures columns for team and opponent.
 
+    Uses vectorized .map() instead of row-by-row .apply().
+
     Args:
         year_data: DataFrame with team/opponent columns
         win_totals_futures: Nested dict {year_str: {team: value}}
@@ -445,36 +447,37 @@ def add_win_total_features(year_data, win_totals_futures, year):
 
     year_data = year_data.copy()
 
-    year_data["team_win_total_future"] = year_data.apply(
-        lambda x: win_totals_futures[str(x["year"])][x["team"]], axis=1
-    ).astype(float)
-    year_data["opponent_win_total_future"] = year_data.apply(
-        lambda x: win_totals_futures[str(x["year"])][x["opponent"]], axis=1
-    ).astype(float)
+    # Current year win totals (vectorized map)
+    year_totals = win_totals_futures[str(year)]
+    year_data["team_win_total_future"] = (
+        year_data["team"].map(year_totals).astype(float)
+    )
+    year_data["opponent_win_total_future"] = (
+        year_data["opponent"].map(year_totals).astype(float)
+    )
 
     # Last year's win totals
     last_year = year - 1
     if str(last_year) in win_totals_futures:
+        ly_totals = win_totals_futures[str(last_year)]
+        # Build lookup with abbreviation alternates
+        ly_lookup = dict(ly_totals)
+        for canonical, alt in utils.ABBR_ALTERNATES.items():
+            if canonical not in ly_lookup and alt in ly_lookup:
+                ly_lookup[canonical] = ly_lookup[alt]
 
-        def get_last_year_wt(row, team_col):
-            team = row[team_col]
-            ly_totals = win_totals_futures.get(str(last_year), {})
-            if team in ly_totals:
-                return ly_totals[team]
-            alt = utils.ABBR_ALTERNATES.get(team)
-            if alt and alt in ly_totals:
-                return ly_totals[alt]
-            if team_col == "team":
-                return row["team_win_total_future"]
-            else:
-                return row["opponent_win_total_future"]
-
-        year_data["team_win_total_last_year"] = year_data.apply(
-            lambda x: get_last_year_wt(x, "team"), axis=1
-        ).astype(float)
-        year_data["opponent_win_total_last_year"] = year_data.apply(
-            lambda x: get_last_year_wt(x, "opponent"), axis=1
-        ).astype(float)
+        year_data["team_win_total_last_year"] = (
+            year_data["team"]
+            .map(ly_lookup)
+            .fillna(year_data["team_win_total_future"])
+            .astype(float)
+        )
+        year_data["opponent_win_total_last_year"] = (
+            year_data["opponent"]
+            .map(ly_lookup)
+            .fillna(year_data["opponent_win_total_future"])
+            .astype(float)
+        )
     else:
         year_data["team_win_total_last_year"] = year_data["team_win_total_future"]
         year_data["opponent_win_total_last_year"] = year_data[
@@ -489,7 +492,8 @@ def compute_bayesian_game_scores(year_data, prior_weight=5, hca=3.5):
     Compute Bayesian game scores for each game in chronological order.
 
     Uses prior-year ratings as the prior, incrementally updated with
-    each game's result.
+    each game's result. Operates on pre-extracted arrays for performance
+    (avoids per-row DataFrame lookups).
 
     Args:
         year_data: DataFrame sorted by date with team_rating, opponent_rating,
@@ -502,48 +506,66 @@ def compute_bayesian_game_scores(year_data, prior_weight=5, hca=3.5):
     """
     year_data = year_data.copy()
     year_data = year_data.sort_values("date").reset_index(drop=True)
+    n = len(year_data)
 
-    year_data["team_bayesian_gs"] = np.nan
-    year_data["opp_bayesian_gs"] = np.nan
+    # Pre-extract columns as arrays for fast access
+    teams = year_data["team"].values
+    opps = year_data["opponent"].values
+    margins = year_data["margin"].values
+    team_ratings = (
+        year_data["team_rating"].values
+        if "team_rating" in year_data.columns
+        else np.zeros(n)
+    )
+    opp_ratings = (
+        year_data["opponent_rating"].values
+        if "opponent_rating" in year_data.columns
+        else np.zeros(n)
+    )
+    ly_team = year_data["last_year_team_rating"].values
+    ly_opp = year_data["last_year_opp_rating"].values
 
-    all_teams = set(year_data["team"].tolist() + year_data["opponent"].tolist())
-    gs_sum = {team: 0.0 for team in all_teams}
-    gs_count = {team: 0 for team in all_teams}
-
-    # Get prior ratings
+    # Build prior ratings lookup
+    all_teams = set(teams) | set(opps)
     prior_ratings = {}
     for team in all_teams:
-        team_rows = year_data[year_data["team"] == team]
-        if len(team_rows) > 0:
-            prior_ratings[team] = team_rows["last_year_team_rating"].iloc[0]
+        mask_t = teams == team
+        if mask_t.any():
+            prior_ratings[team] = ly_team[mask_t][0]
         else:
-            opp_rows = year_data[year_data["opponent"] == team]
-            if len(opp_rows) > 0:
-                prior_ratings[team] = opp_rows["last_year_opp_rating"].iloc[0]
+            mask_o = opps == team
+            if mask_o.any():
+                prior_ratings[team] = ly_opp[mask_o][0]
             else:
                 prior_ratings[team] = 0.0
 
-    for idx in year_data.index:
-        row = year_data.loc[idx]
-        team = row["team"]
-        opp = row["opponent"]
+    # Running state
+    gs_sum = {team: 0.0 for team in all_teams}
+    gs_count = {team: 0 for team in all_teams}
 
-        team_prior = prior_ratings.get(team, 0.0)
-        opp_prior = prior_ratings.get(opp, 0.0)
+    # Output arrays
+    team_bgs = np.empty(n)
+    opp_bgs = np.empty(n)
 
-        year_data.loc[idx, "team_bayesian_gs"] = (
-            team_prior * prior_weight + gs_sum[team]
-        ) / (prior_weight + gs_count[team])
-        year_data.loc[idx, "opp_bayesian_gs"] = (
-            opp_prior * prior_weight + gs_sum[opp]
-        ) / (prior_weight + gs_count[opp])
+    for i in range(n):
+        team = teams[i]
+        opp = opps[i]
 
-        if not np.isnan(row["margin"]):
-            team_gs = row["margin"] + row["opponent_rating"] - hca
-            opp_gs = -row["margin"] + row["team_rating"] + hca
-            gs_sum[team] += team_gs
+        team_bgs[i] = (prior_ratings[team] * prior_weight + gs_sum[team]) / (
+            prior_weight + gs_count[team]
+        )
+        opp_bgs[i] = (prior_ratings[opp] * prior_weight + gs_sum[opp]) / (
+            prior_weight + gs_count[opp]
+        )
+
+        margin = margins[i]
+        if not np.isnan(margin):
+            gs_sum[team] += margin + opp_ratings[i] - hca
             gs_count[team] += 1
-            gs_sum[opp] += opp_gs
+            gs_sum[opp] += -margin + team_ratings[i] + hca
             gs_count[opp] += 1
+
+    year_data["team_bayesian_gs"] = team_bgs
+    year_data["opp_bayesian_gs"] = opp_bgs
 
     return year_data
