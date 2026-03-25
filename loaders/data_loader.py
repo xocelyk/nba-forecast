@@ -156,18 +156,15 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     loader = nba_api_loader.get_loader()
 
     # Load existing data if preloading
+    existing_df = None
+    existing_game_ids = set()
     if preload:
         try:
-            existing_data = load_year_data(year)
-            existing_game_ids = set(
-                [str(row[0]) for row in existing_data]
-            )  # Ensure strings
+            filepath = os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv")
+            existing_df = pd.read_csv(filepath, dtype={"game_id": str})
+            existing_game_ids = set(existing_df["game_id"].astype(str))
         except FileNotFoundError:
-            existing_data = []
-            existing_game_ids = set()
-    else:
-        existing_data = []
-        existing_game_ids = set()
+            existing_df = None
 
     # Fetch full season schedule from nba_api (single API call!)
     games_df = loader.get_season_schedule(year)
@@ -179,48 +176,18 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     else:
         new_games = games_df
 
-    # DEPRECATED 2024-12-07: Pace now comes from effective_pace via add_effective_stats_to_games()
-    # No longer fetching pace from box score stats
-
     # Combine with existing data FIRST, then add garbage time to full dataset
-    if preload and existing_data:
-        # Convert existing data back to DataFrame
-        existing_df = pd.DataFrame(
-            existing_data,
-            columns=[
-                "game_id",
-                "date",
-                "team",
-                "opponent",
-                "team_score",
-                "opponent_score",
-                "location",
-                "pace",
-                "completed",
-                "year",
-                "garbage_time_detected",
-                "garbage_time_cutoff_period",
-                "garbage_time_cutoff_clock",
-                "garbage_time_cutoff_action_number",
-                "garbage_time_possessions_before_cutoff",
-                "counts_toward_record",
-            ],
-        )
-        # Ensure game_id is string (prevent pandas from converting to int)
+    if preload and existing_df is not None:
         existing_df["game_id"] = existing_df["game_id"].astype(str)
-
         utils.normalize_df_teams(existing_df)
 
-        # Add missing columns
         abbr_to_name = {utils.normalize_abbr(v): k for k, v in names_to_abbr.items()}
-
         existing_df["team_name"] = existing_df["team"].map(abbr_to_name)
         existing_df["opponent_name"] = existing_df["opponent"].map(abbr_to_name)
         existing_df["margin"] = (
             existing_df["team_score"] - existing_df["opponent_score"]
         )
 
-        # Combine
         data_df = pd.concat([existing_df, new_games], ignore_index=True)
     else:
         data_df = new_games
@@ -233,15 +200,21 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     # for all completed games
     all_completed_games = data_df[data_df["completed"] == True]
     if len(all_completed_games) > 0:
-        print(f"Adding effective stats for {len(all_completed_games)} completed games...")
+        print(
+            f"Adding effective stats for {len(all_completed_games)} completed games..."
+        )
         data_df = loader.add_effective_stats_to_games(data_df)
 
-    # DEPRECATED 2024-12-07: Advanced stats collection disabled
-    # Box score stats (fga, oreb, etc.) are no longer collected
+    # Fetch advanced stats (traditional box score + advanced efficiency metrics)
+    all_completed_games = data_df[data_df["completed"] == True]
+    if len(all_completed_games) > 0:
+        print(
+            f"Adding advanced stats for {len(all_completed_games)} completed games..."
+        )
+        data_df = loader.add_advanced_stats_to_games(data_df)
 
     # Select and order columns
-    # Include only basic game info, garbage time detection, and effective stats
-    # DEPRECATED 2024-12-07: Removed ALL_ADVANCED_STATS_COLUMNS import and box score stats
+    from src.advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS
 
     base_columns = [
         "game_id",
@@ -254,6 +227,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         "opponent_score",
         "margin",
         "location",
+        "pace",
         "completed",
         "year",
     ]
@@ -278,8 +252,13 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         "MISSING_DATA",
     ]
 
-    # Build column list: base + garbage time + effective stats + metadata
+    # Build column list: base + advanced stats + garbage time + effective stats + metadata
     columns_to_select = base_columns.copy()
+
+    # Add advanced stats columns if they exist
+    for col in ALL_ADVANCED_STATS_COLUMNS:
+        if col in data_df.columns:
+            columns_to_select.append(col)
 
     # Add garbage time columns if they exist
     for col in garbage_time_columns:

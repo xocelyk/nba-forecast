@@ -7,6 +7,8 @@ Configurable wrapper for NBA API calls with:
 - Unified interface for schedule, boxscore, and playbyplay data
 """
 
+import gzip
+import json
 import logging
 import os
 import random
@@ -412,9 +414,40 @@ class NBAApiClient:
     # Play-by-Play
     # -------------------------------------------------------------------------
 
+    def _get_pbp_cache_path(self, game_id: str) -> str:
+        """Get the cache file path for a game's PBP data."""
+        cache_dir = os.path.join("data", "pbp")
+        os.makedirs(cache_dir, exist_ok=True)
+        return os.path.join(cache_dir, f"{game_id}.json.gz")
+
+    def _load_pbp_from_cache(self, game_id: str) -> Optional[pd.DataFrame]:
+        """Load PBP data from local gzipped JSON cache."""
+        path = self._get_pbp_cache_path(game_id)
+        if not os.path.exists(path):
+            return None
+        try:
+            with gzip.open(path, "rt") as f:
+                records = json.load(f)
+            return pd.DataFrame(records)
+        except Exception as e:
+            logger.warning(f"Failed to load PBP cache for {game_id}: {e}")
+            return None
+
+    def _save_pbp_to_cache(self, game_id: str, df: pd.DataFrame) -> None:
+        """Save PBP data to local gzipped JSON cache."""
+        try:
+            path = self._get_pbp_cache_path(game_id)
+            records = df.to_dict(orient="records")
+            with gzip.open(path, "wt") as f:
+                json.dump(records, f)
+        except Exception as e:
+            logger.warning(f"Failed to save PBP cache for {game_id}: {e}")
+
     def get_playbyplay(self, game_id: str) -> Optional[pd.DataFrame]:
         """
         Get play-by-play data for a game.
+
+        Checks local cache first, then fetches from API/CDN.
 
         Args:
             game_id: NBA game ID
@@ -422,12 +455,20 @@ class NBAApiClient:
         Returns:
             DataFrame with play-by-play actions or None if unavailable
         """
+        # Check cache first
+        cached = self._load_pbp_from_cache(game_id)
+        if cached is not None:
+            logger.info(f"Loaded {len(cached)} actions from cache for game {game_id}")
+            return cached
+
         self._rate_limit()
 
         if self.use_cdn_fallback and self._api_circuit_open():
             logger.info(f"Circuit breaker open, using CDN for playbyplay {game_id}")
             try:
-                return self._fetch_playbyplay_cdn(game_id)
+                result = self._fetch_playbyplay_cdn(game_id)
+                self._save_pbp_to_cache(game_id, result)
+                return result
             except Exception as cdn_e:
                 logger.error(f"CDN fallback failed: {cdn_e}")
                 return None
@@ -435,6 +476,7 @@ class NBAApiClient:
         try:
             result = self._fetch_playbyplay_api(game_id)
             self._record_api_success()
+            self._save_pbp_to_cache(game_id, result)
             return result
         except Exception as e:
             self._record_api_failure()
@@ -443,7 +485,9 @@ class NBAApiClient:
                     f"PlayByPlay API failed for {game_id}: {e}. Trying CDN..."
                 )
                 try:
-                    return self._fetch_playbyplay_cdn(game_id)
+                    result = self._fetch_playbyplay_cdn(game_id)
+                    self._save_pbp_to_cache(game_id, result)
+                    return result
                 except Exception as cdn_e:
                     logger.error(f"CDN fallback also failed: {cdn_e}")
                     return None
@@ -615,40 +659,62 @@ class NBAApiClient:
             "home": {
                 "fgm": home_trad.get("fieldGoalsMade"),
                 "fga": home_trad.get("fieldGoalsAttempted"),
+                "fg_pct": home_trad.get("fieldGoalsPercentage"),
                 "fg3m": home_trad.get("threePointersMade"),
                 "fg3a": home_trad.get("threePointersAttempted"),
+                "fg3_pct": home_trad.get("threePointersPercentage"),
                 "ftm": home_trad.get("freeThrowsMade"),
                 "fta": home_trad.get("freeThrowsAttempted"),
+                "ft_pct": home_trad.get("freeThrowsPercentage"),
                 "oreb": home_trad.get("reboundsOffensive"),
                 "dreb": home_trad.get("reboundsDefensive"),
+                "reb": home_trad.get("reboundsTotal"),
                 "ast": home_trad.get("assists"),
                 "stl": home_trad.get("steals"),
                 "blk": home_trad.get("blocks"),
                 "tov": home_trad.get("turnovers"),
+                "pf": home_trad.get("foulsPersonal"),
                 "pace": home_adv.get("pace"),
                 "off_rating": home_adv.get("offensiveRating"),
                 "def_rating": home_adv.get("defensiveRating"),
+                "net_rating": home_adv.get("netRating"),
                 "efg_pct": home_adv.get("effectiveFieldGoalPercentage"),
                 "ts_pct": home_adv.get("trueShootingPercentage"),
+                "tov_pct": home_adv.get("turnoverRatio"),
+                "oreb_pct": home_adv.get("offensiveReboundPercentage"),
+                "dreb_pct": home_adv.get("defensiveReboundPercentage"),
+                "ast_pct": home_adv.get("assistPercentage"),
+                "ast_to": home_adv.get("assistToTurnover"),
             },
             "away": {
                 "fgm": away_trad.get("fieldGoalsMade"),
                 "fga": away_trad.get("fieldGoalsAttempted"),
+                "fg_pct": away_trad.get("fieldGoalsPercentage"),
                 "fg3m": away_trad.get("threePointersMade"),
                 "fg3a": away_trad.get("threePointersAttempted"),
+                "fg3_pct": away_trad.get("threePointersPercentage"),
                 "ftm": away_trad.get("freeThrowsMade"),
                 "fta": away_trad.get("freeThrowsAttempted"),
+                "ft_pct": away_trad.get("freeThrowsPercentage"),
                 "oreb": away_trad.get("reboundsOffensive"),
                 "dreb": away_trad.get("reboundsDefensive"),
+                "reb": away_trad.get("reboundsTotal"),
                 "ast": away_trad.get("assists"),
                 "stl": away_trad.get("steals"),
                 "blk": away_trad.get("blocks"),
                 "tov": away_trad.get("turnovers"),
+                "pf": away_trad.get("foulsPersonal"),
                 "pace": away_adv.get("pace"),
                 "off_rating": away_adv.get("offensiveRating"),
                 "def_rating": away_adv.get("defensiveRating"),
+                "net_rating": away_adv.get("netRating"),
                 "efg_pct": away_adv.get("effectiveFieldGoalPercentage"),
                 "ts_pct": away_adv.get("trueShootingPercentage"),
+                "tov_pct": away_adv.get("turnoverRatio"),
+                "oreb_pct": away_adv.get("offensiveReboundPercentage"),
+                "dreb_pct": away_adv.get("defensiveReboundPercentage"),
+                "ast_pct": away_adv.get("assistPercentage"),
+                "ast_to": away_adv.get("assistToTurnover"),
             },
         }
 
@@ -679,40 +745,62 @@ class NBAApiClient:
             "home": {
                 "fgm": home.get("fieldGoalsMade"),
                 "fga": home.get("fieldGoalsAttempted"),
+                "fg_pct": home.get("fieldGoalsPercentage"),
                 "fg3m": home.get("threePointersMade"),
                 "fg3a": home.get("threePointersAttempted"),
+                "fg3_pct": home.get("threePointersPercentage"),
                 "ftm": home.get("freeThrowsMade"),
                 "fta": home.get("freeThrowsAttempted"),
+                "ft_pct": home.get("freeThrowsPercentage"),
                 "oreb": home.get("reboundsOffensive"),
                 "dreb": home.get("reboundsDefensive"),
+                "reb": home.get("reboundsTotal"),
                 "ast": home.get("assists"),
                 "stl": home.get("steals"),
                 "blk": home.get("blocks"),
                 "tov": home.get("turnovers"),
+                "pf": home.get("foulsPersonal"),
                 "pace": None,  # CDN doesn't provide pace directly
                 "off_rating": None,
                 "def_rating": None,
+                "net_rating": None,
                 "efg_pct": home.get("fieldGoalsEffectiveAdjusted"),
                 "ts_pct": home.get("trueShootingPercentage"),
+                "tov_pct": None,
+                "oreb_pct": None,
+                "dreb_pct": None,
+                "ast_pct": None,
+                "ast_to": None,
             },
             "away": {
                 "fgm": away.get("fieldGoalsMade"),
                 "fga": away.get("fieldGoalsAttempted"),
+                "fg_pct": away.get("fieldGoalsPercentage"),
                 "fg3m": away.get("threePointersMade"),
                 "fg3a": away.get("threePointersAttempted"),
+                "fg3_pct": away.get("threePointersPercentage"),
                 "ftm": away.get("freeThrowsMade"),
                 "fta": away.get("freeThrowsAttempted"),
+                "ft_pct": away.get("freeThrowsPercentage"),
                 "oreb": away.get("reboundsOffensive"),
                 "dreb": away.get("reboundsDefensive"),
+                "reb": away.get("reboundsTotal"),
                 "ast": away.get("assists"),
                 "stl": away.get("steals"),
                 "blk": away.get("blocks"),
                 "tov": away.get("turnovers"),
+                "pf": away.get("foulsPersonal"),
                 "pace": None,
                 "off_rating": None,
                 "def_rating": None,
+                "net_rating": None,
                 "efg_pct": away.get("fieldGoalsEffectiveAdjusted"),
                 "ts_pct": away.get("trueShootingPercentage"),
+                "tov_pct": None,
+                "oreb_pct": None,
+                "dreb_pct": None,
+                "ast_pct": None,
+                "ast_to": None,
             },
         }
 

@@ -589,9 +589,9 @@ class NBAAPILoader:
 
         # Find completed games that need effective stats
         completed = games_df["completed"] == True
-        needs_effective_stats = (
-            completed &
-            (games_df["effective_margin"].isna() | games_df["effective_possessions"].isna())
+        needs_effective_stats = completed & (
+            games_df["effective_margin"].isna()
+            | games_df["effective_possessions"].isna()
         )
         games_needing_stats = games_df[needs_effective_stats]
 
@@ -599,7 +599,9 @@ class NBAAPILoader:
             logger.info("All completed games already have effective stats")
             return games_df
 
-        logger.info(f"Adding effective stats for {len(games_needing_stats)} completed games...")
+        logger.info(
+            f"Adding effective stats for {len(games_needing_stats)} completed games..."
+        )
 
         detector = get_detector()
         success_count = 0
@@ -614,11 +616,13 @@ class NBAAPILoader:
                     cutoff_action = game.get("garbage_time_cutoff_action_number")
 
                     if pd.notna(cutoff_action):
-                        stats = detector.get_stats_before_cutoff(game_id, int(cutoff_action))
+                        stats = detector.get_stats_before_cutoff(
+                            game_id, int(cutoff_action)
+                        )
 
                         if stats:
                             # Determine home/away for this team
-                            is_home = game["location"] == "home"
+                            is_home = game["location"].lower() == "home"
 
                             if is_home:
                                 team_score = stats["home_score_at_cutoff"]
@@ -632,24 +636,34 @@ class NBAAPILoader:
                             games_df.at[idx, "team_score_at_cutoff"] = team_score
                             games_df.at[idx, "opponent_score_at_cutoff"] = opp_score
                             games_df.at[idx, "effective_margin"] = margin
-                            games_df.at[idx, "effective_possessions"] = game["garbage_time_possessions_before_cutoff"]
+                            games_df.at[idx, "effective_possessions"] = game[
+                                "garbage_time_possessions_before_cutoff"
+                            ]
 
                             # Calculate effective pace
                             period = game["garbage_time_cutoff_period"]
                             clock_str = game["garbage_time_cutoff_clock"]
 
                             if pd.notna(period) and pd.notna(clock_str):
-                                game_time_minutes = self._calculate_game_time_minutes(period, clock_str)
-                                effective_poss = game["garbage_time_possessions_before_cutoff"]
+                                game_time_minutes = self._calculate_game_time_minutes(
+                                    period, clock_str
+                                )
+                                effective_poss = game[
+                                    "garbage_time_possessions_before_cutoff"
+                                ]
 
                                 if game_time_minutes > 0 and effective_poss > 0:
-                                    effective_pace = (effective_poss / game_time_minutes) * 48
+                                    effective_pace = (
+                                        effective_poss / game_time_minutes
+                                    ) * 48
                                     games_df.at[idx, "effective_pace"] = effective_pace
 
                             success_count += 1
                         else:
                             # Failed to get cutoff stats
-                            logger.warning(f"Could not get cutoff stats for game {game_id}")
+                            logger.warning(
+                                f"Could not get cutoff stats for game {game_id}"
+                            )
                             games_df.at[idx, "MISSING_DATA"] = True
                             games_df.at[idx, "effective_margin"] = game["margin"]
                             games_df.at[idx, "effective_possessions"] = None
@@ -663,7 +677,9 @@ class NBAAPILoader:
                     # No garbage time - use full game stats
                     games_df.at[idx, "effective_margin"] = game["margin"]
                     games_df.at[idx, "team_score_at_cutoff"] = game["team_score"]
-                    games_df.at[idx, "opponent_score_at_cutoff"] = game["opponent_score"]
+                    games_df.at[idx, "opponent_score_at_cutoff"] = game[
+                        "opponent_score"
+                    ]
 
                     # Get total possessions from garbage time detection result
                     # (detect_garbage_time returns possession count even when no garbage time)
@@ -691,7 +707,9 @@ class NBAAPILoader:
                 games_df.at[idx, "effective_margin"] = game["margin"]
                 games_df.at[idx, "effective_possessions"] = None
 
-        logger.info(f"Effective stats added: {success_count}/{len(games_needing_stats)} games")
+        logger.info(
+            f"Effective stats added: {success_count}/{len(games_needing_stats)} games"
+        )
 
         return games_df
 
@@ -734,204 +752,86 @@ class NBAAPILoader:
 
         if period <= 4:
             # Regulation
-            elapsed_seconds = (period - 1) * period_length + (period_length - clock_seconds)
+            elapsed_seconds = (period - 1) * period_length + (
+                period_length - clock_seconds
+            )
         else:
             # Overtime
             regulation_time = 4 * period_length
             ot_periods_completed = period - 5
-            elapsed_seconds = regulation_time + ot_periods_completed * ot_length + (ot_length - clock_seconds)
+            elapsed_seconds = (
+                regulation_time
+                + ot_periods_completed * ot_length
+                + (ot_length - clock_seconds)
+            )
 
         return elapsed_seconds / 60.0
 
-    # DEPRECATED 2024-12-07: Box score stats collection disabled
-    # Keeping code for potential future use
-    # def get_advanced_stats(self, game_id: str) -> Optional[Dict]:
-    #     """
-    #     Fetch both traditional and advanced statistics for a game using V3 endpoints.
-    #
-    #     Uses BoxScoreTraditionalV3 and BoxScoreAdvancedV3 endpoints to get
-    #     comprehensive statistics including Four Factors and efficiency metrics.
-    #
-    #     Args:
-    #         game_id: NBA game ID
-    #
-    #     Returns:
-    #         Dict with all statistics or None if unavailable
-    #     """
-    #     from nba_api.stats.endpoints import boxscoretraditionalv3, boxscoreadvancedv3
-    #
-    #     try:
-    #         # Fetch traditional stats (V3)
-    #         self._rate_limit()
-    #         trad_bs = boxscoretraditionalv3.BoxScoreTraditionalV3(game_id=game_id)
-    #         trad_dfs = trad_bs.get_data_frames()
-    #
-    #         if len(trad_dfs) < 1:
-    #             logger.warning(f"No traditional stats returned for game {game_id}")
-    #             return None
-    #
-    #         # Last DataFrame is team stats
-    #         team_trad = trad_dfs[-1]
-    #         if len(team_trad) < 2:
-    #             logger.warning(f"Insufficient team traditional stats for game {game_id}")
-    #             return None
-    #
-    #         # Fetch advanced stats (V3)
-    #         self._rate_limit()
-    #         adv_bs = boxscoreadvancedv3.BoxScoreAdvancedV3(game_id=game_id)
-    #         adv_dfs = adv_bs.get_data_frames()
-    #
-    #         if len(adv_dfs) < 1:
-    #             logger.warning(f"No advanced stats returned for game {game_id}")
-    #             return None
-    #
-    #         # Last DataFrame is team stats
-    #         team_adv = adv_dfs[-1]
-    #         if len(team_adv) < 2:
-    #             logger.warning(f"Insufficient team advanced stats for game {game_id}")
-    #             return None
-    #
-    #         # Extract stats for home team (first row) and away team (second row)
-    #         home_trad = team_trad.iloc[0]
-    #         away_trad = team_trad.iloc[1]
-    #         home_adv = team_adv.iloc[0]
-    #         away_adv = team_adv.iloc[1]
-    #
-    #         # Combine all stats
-    #         stats = {
-    #             # Traditional stats (home team)
-    #             'fgm': home_trad.get('fieldGoalsMade'),
-    #             'fga': home_trad.get('fieldGoalsAttempted'),
-    #             'fg_pct': home_trad.get('fieldGoalsPercentage'),
-    #             'fg3m': home_trad.get('threePointersMade'),
-    #             'fg3a': home_trad.get('threePointersAttempted'),
-    #             'fg3_pct': home_trad.get('threePointersPercentage'),
-    #             'ftm': home_trad.get('freeThrowsMade'),
-    #             'fta': home_trad.get('freeThrowsAttempted'),
-    #             'ft_pct': home_trad.get('freeThrowsPercentage'),
-    #             'oreb': home_trad.get('reboundsOffensive'),
-    #             'dreb': home_trad.get('reboundsDefensive'),
-    #             'reb': home_trad.get('reboundsTotal'),
-    #             'ast': home_trad.get('assists'),
-    #             'stl': home_trad.get('steals'),
-    #             'blk': home_trad.get('blocks'),
-    #             'tov': home_trad.get('turnovers'),
-    #             'pf': home_trad.get('foulsPersonal'),
-    #
-    #             # Traditional stats (away team / opponent)
-    #             'opp_fgm': away_trad.get('fieldGoalsMade'),
-    #             'opp_fga': away_trad.get('fieldGoalsAttempted'),
-    #             'opp_fg_pct': away_trad.get('fieldGoalsPercentage'),
-    #             'opp_fg3m': away_trad.get('threePointersMade'),
-    #             'opp_fg3a': away_trad.get('threePointersAttempted'),
-    #             'opp_fg3_pct': away_trad.get('threePointersPercentage'),
-    #             'opp_ftm': away_trad.get('freeThrowsMade'),
-    #             'opp_fta': away_trad.get('freeThrowsAttempted'),
-    #             'opp_ft_pct': away_trad.get('freeThrowsPercentage'),
-    #             'opp_oreb': away_trad.get('reboundsOffensive'),
-    #             'opp_dreb': away_trad.get('reboundsDefensive'),
-    #             'opp_reb': away_trad.get('reboundsTotal'),
-    #             'opp_ast': away_trad.get('assists'),
-    #             'opp_stl': away_trad.get('steals'),
-    #             'opp_blk': away_trad.get('blocks'),
-    #             'opp_tov': away_trad.get('turnovers'),
-    #             'opp_pf': away_trad.get('foulsPersonal'),
-    #
-    #             # Advanced stats (home team)
-    #             'pace': home_adv.get('pace'),
-    #             'off_rating': home_adv.get('offensiveRating'),
-    #             'def_rating': home_adv.get('defensiveRating'),
-    #             'net_rating': home_adv.get('netRating'),
-    #             'efg_pct': home_adv.get('effectiveFieldGoalPercentage'),
-    #             'ts_pct': home_adv.get('trueShootingPercentage'),
-    #             'tov_pct': home_adv.get('turnoverRatio'),
-    #             'oreb_pct': home_adv.get('offensiveReboundPercentage'),
-    #             'dreb_pct': home_adv.get('defensiveReboundPercentage'),
-    #             'ast_pct': home_adv.get('assistPercentage'),
-    #             'ast_to': home_adv.get('assistToTurnover'),
-    #
-    #             # Advanced stats (away team / opponent)
-    #             'opp_off_rating': away_adv.get('offensiveRating'),
-    #             'opp_def_rating': away_adv.get('defensiveRating'),
-    #             'opp_net_rating': away_adv.get('netRating'),
-    #             'opp_efg_pct': away_adv.get('effectiveFieldGoalPercentage'),
-    #             'opp_ts_pct': away_adv.get('trueShootingPercentage'),
-    #             'opp_tov_pct': away_adv.get('turnoverRatio'),
-    #             'opp_oreb_pct': away_adv.get('offensiveReboundPercentage'),
-    #             'opp_dreb_pct': away_adv.get('defensiveReboundPercentage'),
-    #             'opp_ast_pct': away_adv.get('assistPercentage'),
-    #             'opp_ast_to': away_adv.get('assistToTurnover'),
-    #         }
-    #
-    #         return stats
-    #
-    #     except Exception as e:
-    #         logger.error(f"Error fetching advanced stats for game {game_id}: {e}")
-    #         return None
+    def add_advanced_stats_to_games(self, games_df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Add advanced statistics to completed games using the NBA API client.
 
-    # DEPRECATED 2024-12-07: Box score stats collection disabled
-    # Keeping code for potential future use
-    # def add_advanced_stats_to_games(self, games_df: pd.DataFrame) -> pd.DataFrame:
-    #     """
-    #     Add comprehensive advanced statistics to completed games.
-    #
-    #     Fetches both traditional and advanced box score metrics from V3 endpoints
-    #     for all completed games that don't already have advanced stats.
-    #
-    #     Args:
-    #         games_df: DataFrame with game data
-    #
-    #     Returns:
-    #         DataFrame with advanced stats columns filled for completed games
-    #     """
-    #     from advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS, has_advanced_stats
-    #
-    #     # Make a copy to avoid modifying original
-    #     games_df = games_df.copy()
-    #
-    #     # Initialize all advanced stats columns if they don't exist
-    #     for col in ALL_ADVANCED_STATS_COLUMNS:
-    #         if col not in games_df.columns:
-    #             games_df[col] = None
-    #
-    #     # Find completed games without advanced stats
-    #     has_stats = has_advanced_stats(games_df)
-    #     needs_stats = games_df["completed"] & ~has_stats
-    #     games_needing_stats = games_df[needs_stats]
-    #
-    #     if len(games_needing_stats) == 0:
-    #         logger.info("All completed games already have advanced stats")
-    #         return games_df
-    #
-    #     logger.info(
-    #         f"Fetching advanced stats for {len(games_needing_stats)} completed games..."
-    #     )
-    #
-    #     # Fetch stats for each game
-    #     success_count = 0
-    #     for idx, game in games_needing_stats.iterrows():
-    #         game_id = game["game_id"]
-    #
-    #         try:
-    #             stats = self.get_advanced_stats(game_id)
-    #
-    #             if stats is not None:
-    #                 # Update all stats
-    #                 for key, value in stats.items():
-    #                     if key in games_df.columns:
-    #                         games_df.at[idx, key] = value
-    #                 success_count += 1
-    #             else:
-    #                 logger.warning(f"Could not get advanced stats for game {game_id}")
-    #
-    #         except Exception as e:
-    #             logger.warning(f"Error fetching advanced stats for game {game_id}: {e}")
-    #
-    #     logger.info(
-    #         f"Advanced stats added: {success_count}/{len(games_needing_stats)} games"
-    #     )
-    #
-    #     return games_df
+        Fetches traditional and advanced box score metrics for all completed
+        games that don't already have advanced stats.
+        """
+        from src.advanced_stats_config import (
+            ALL_ADVANCED_STATS_COLUMNS,
+            has_advanced_stats,
+        )
+
+        games_df = games_df.copy()
+
+        for col in ALL_ADVANCED_STATS_COLUMNS:
+            if col not in games_df.columns:
+                games_df[col] = None
+
+        has_stats = has_advanced_stats(games_df)
+        needs_stats = games_df["completed"] & ~has_stats
+        games_needing_stats = games_df[needs_stats]
+
+        if len(games_needing_stats) == 0:
+            logger.info("All completed games already have advanced stats")
+            return games_df
+
+        logger.info(
+            f"Fetching advanced stats for {len(games_needing_stats)} completed games..."
+        )
+
+        client = get_client()
+        success_count = 0
+        for idx, game in games_needing_stats.iterrows():
+            game_id = game["game_id"]
+
+            try:
+                stats = client.get_advanced_stats(game_id)
+
+                if stats is not None:
+                    home_stats = stats.get("home", {})
+                    away_stats = stats.get("away", {})
+
+                    # Map home team stats
+                    for key, value in home_stats.items():
+                        if key in games_df.columns:
+                            games_df.at[idx, key] = value
+
+                    # Map away team stats as opp_ columns
+                    for key, value in away_stats.items():
+                        opp_key = f"opp_{key}"
+                        if opp_key in games_df.columns:
+                            games_df.at[idx, opp_key] = value
+
+                    success_count += 1
+                else:
+                    logger.warning(f"Could not get advanced stats for game {game_id}")
+
+            except Exception as e:
+                logger.warning(f"Error fetching advanced stats for game {game_id}: {e}")
+
+        logger.info(
+            f"Advanced stats added: {success_count}/{len(games_needing_stats)} games"
+        )
+
+        return games_df
 
     def get_team_id(self, abbreviation: str) -> Optional[int]:
         """
