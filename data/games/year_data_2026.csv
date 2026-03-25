@@ -1075,10 +1075,10 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0022501044,2026-03-23 04:00:00,DAL,GSW,Dallas Mavericks,Golden State Warriors,131.0,137.0,-6.0,Home,99.08503287796236,True,2026,False,,,,57.0,True
 0022501045,2026-03-23 04:00:00,POR,BRK,Portland Trail Blazers,Brooklyn Nets,134.0,99.0,35.0,Home,107.7976880984952,True,2026,True,4.0,PT11M47.00S,609.0,52.0,True
 0022501046,2026-03-23 04:00:00,LAC,MIL,Los Angeles Clippers,Milwaukee Bucks,129.0,96.0,33.0,Home,96.34463021243114,True,2026,True,3.0,PT07M41.00S,372.0,19.0,True
-0022501047,2026-03-24 04:00:00,CHO,SAC,Hornets,Kings,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501048,2026-03-24 04:00:00,NYK,NOP,Knicks,Pelicans,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501049,2026-03-24 04:00:00,CLE,ORL,Cavaliers,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501050,2026-03-24 04:00:00,PHX,DEN,Suns,Nuggets,0.0,0.0,,Home,,False,2026,,,,,,True
+0022501047,2026-03-24 04:00:00,CHO,SAC,Hornets,Kings,134.0,90.0,44.0,Home,98.47226044226045,True,2026,True,3.0,PT07M47.00S,397.0,16.0,True
+0022501048,2026-03-24 04:00:00,NYK,NOP,Knicks,Pelicans,121.0,116.0,5.0,Home,91.97273826458037,True,2026,False,,,,25.0,True
+0022501049,2026-03-24 04:00:00,CLE,ORL,Cavaliers,Magic,136.0,131.0,5.0,Home,92.3558125,True,2026,False,,,,40.0,True
+0022501050,2026-03-24 04:00:00,PHX,DEN,Suns,Nuggets,123.0,125.0,-2.0,Home,95.87413043478261,True,2026,False,,,,33.0,True
 0022501051,2026-03-25 04:00:00,DET,ATL,Pistons,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
 0022501052,2026-03-25 04:00:00,IND,LAL,Pacers,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
 0022501053,2026-03-25 04:00:00,PHI,CHI,76ers,Bulls,0.0,0.0,,Home,,False,2026,,,,,,True
