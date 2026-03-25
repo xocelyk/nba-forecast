@@ -2,7 +2,6 @@ import argparse
 import datetime
 import logging
 import os
-import pickle
 import sys
 import time
 import warnings
@@ -12,7 +11,7 @@ import numpy as np
 import pandas as pd
 
 from loaders import data_loader
-from src import config, eval, forecast, stats, utils
+from src import config, eval, forecast, stats, store, utils
 
 # Import logger from config
 from src.config import logger
@@ -52,36 +51,22 @@ def load_team_data(
             names_to_abbr = data_loader.get_team_names(year=year)
         except Exception as e:
             logging.error(f"Error fetching team abbreviations: {e}")
-            # sys.exit(1)
-
-            # Temp fix
-            with open(
-                os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
-            ) as f:
-                names_to_abbr = pickle.load(f)
+            names_to_abbr = store.load_team_names(year)
+            if names_to_abbr is None:
+                sys.exit(1)
 
         if save_names:
             try:
-                with open(
-                    os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "wb"
-                ) as f:
-                    pickle.dump(names_to_abbr, f)
+                store.save_team_names(names_to_abbr, year)
             except Exception as e:
                 logging.error(f"Error saving team abbreviations: {e}")
                 sys.exit(1)
     else:
-        try:
-            with open(
-                os.path.join(config.DATA_DIR, f"names_to_abbr_{year}.pkl"), "rb"
-            ) as f:
-                names_to_abbr = pickle.load(f)
-        except FileNotFoundError:
+        names_to_abbr = store.load_team_names(year)
+        if names_to_abbr is None:
             logging.error(
                 "Pickle file not found. Consider running with save_names=True first."
             )
-            sys.exit(1)
-        except Exception as e:
-            logging.error(f"Error loading team abbreviations: {e}")
             sys.exit(1)
 
     abbrs = list(names_to_abbr.values())
@@ -107,10 +92,7 @@ def load_game_data(
             sys.exit(1)
     else:
         try:
-            games = pd.read_csv(
-                os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv"),
-                dtype={"game_id": str},
-            )
+            games = store.load_year_data(year)
             games.rename(
                 columns={"team_abbr": "team", "opponent_abbr": "opponent"}, inplace=True
             )
@@ -143,9 +125,7 @@ def calculate_em_ratings(
         for i, (team, rating) in enumerate(em_ratings.items())
     ]
     em_ratings_df = pd.DataFrame(ratings_lst, columns=["rank", "team", "rating"])
-    em_ratings_df.to_csv(
-        os.path.join(config.DATA_DIR, f"em_ratings_{year}.csv"), index=False
-    )
+    store.save_em_ratings(em_ratings_df, year)
     return em_ratings
 
 
@@ -439,8 +419,7 @@ def main():
         std_pace = 3.0
 
     # Load HCA map for year-specific home court advantage
-    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
-    hca_map = utils.load_hca_map(hca_map_path)
+    hca_map = store.load_hca_map()
     year_hca = hca_map.get(YEAR, utils.HCA)
 
     # Calculate EM ratings
@@ -513,7 +492,7 @@ def main():
 
     logger.info("Generating final results...")
     df_final = format_for_csv(df_final)
-    df_final.to_csv(os.path.join(config.DATA_DIR, f"main_{YEAR}.csv"), index=False)
+    store.save_main_output(df_final, YEAR)
     logger.info(f"Results saved to main_{YEAR}.csv")
 
     # Display final standings

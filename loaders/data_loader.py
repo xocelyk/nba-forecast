@@ -1,11 +1,10 @@
-import csv
 import os
 import time
 
 import numpy as np
 import pandas as pd
 
-from src import config, schemas, utils
+from src import config, schemas, store, utils
 
 from . import nba_api_loader
 
@@ -23,27 +22,13 @@ def backfill_garbage_time_for_year(year: int):
     Args:
         year: Year to backfill (e.g., 2024)
     """
-    filename = os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv")
-
-    # Check if file exists
-    if not os.path.exists(filename):
+    try:
+        df = store.load_year_data(year)
+    except FileNotFoundError:
         print(f"No data file found for year {year}, skipping backfill")
         return
 
-    # Load the data
-    df = pd.read_csv(filename, dtype={"game_id": str})
-
-    # Initialize garbage time columns if they don't exist
-    if "garbage_time_detected" not in df.columns:
-        df["garbage_time_detected"] = None
-    if "garbage_time_cutoff_period" not in df.columns:
-        df["garbage_time_cutoff_period"] = None
-    if "garbage_time_cutoff_clock" not in df.columns:
-        df["garbage_time_cutoff_clock"] = None
-    if "garbage_time_cutoff_action_number" not in df.columns:
-        df["garbage_time_cutoff_action_number"] = None
-    if "garbage_time_possessions_before_cutoff" not in df.columns:
-        df["garbage_time_possessions_before_cutoff"] = None
+    schemas.ensure_columns(df, schemas.GARBAGE_TIME_COLUMNS)
 
     # Find completed games without garbage time data
     needs_garbage_time = df["completed"] & df["garbage_time_detected"].isna()
@@ -64,16 +49,14 @@ def backfill_garbage_time_for_year(year: int):
     df_with_garbage_time = schemas.select_columns(
         df_with_garbage_time, schemas.full_game_columns()
     )
-    df_with_garbage_time.to_csv(filename, index=False)
+    store.save_year_data(df_with_garbage_time, year)
 
     print(f"Year {year}: Saved updated data with garbage time detection")
 
 
 def load_year_data(year: int = 2026):
     """Load completed game rows from the CSV for ``year``."""
-    filename = os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv")
-    # Read game_id as string to preserve leading zeros
-    df = pd.read_csv(filename, dtype={"game_id": str})
+    df = store.load_year_data(year)
     df = df[df["completed"] == True]
 
     # Initialize garbage time columns if they don't exist
@@ -123,8 +106,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     existing_game_ids = set()
     if preload:
         try:
-            filepath = os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv")
-            existing_df = pd.read_csv(filepath, dtype={"game_id": str})
+            existing_df = store.load_year_data(year)
             existing_game_ids = set(existing_df["game_id"].astype(str))
         except FileNotFoundError:
             existing_df = None
@@ -179,9 +161,8 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
     # Select and order columns using schema definition
     data_df = schemas.select_columns(data_df, schemas.full_game_columns())
 
-    # Set index and save
-    data_df.set_index("game_id", inplace=True)
-    data_df.to_csv(os.path.join(config.DATA_DIR, "games", f"year_data_{year}.csv"))
+    # Save
+    store.save_year_data(data_df, year)
 
     print(f"Saved {len(data_df)} games to year_data_{year}.csv")
 
@@ -190,27 +171,7 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
 
 def load_regular_season_win_totals_futures():
     """Load historical regular-season win total futures."""
-    filename = os.path.join(
-        config.DATA_DIR, "regular_season_win_totals_odds_archive.csv"
-    )
-    with open(filename, "r") as f:
-        reader = csv.reader(f)
-        data = list(reader)
-
-    res = {}
-    header = []
-    first_row = True
-    for row in data:
-        if first_row:
-            header = row
-            first_row = False
-            continue
-        team = row[0]
-        res[team] = {}
-        for i in range(1, len(row)):
-            cell_val = row[i]
-            res[team][header[i]] = float(cell_val) if cell_val else np.nan
-    return res
+    return store.load_win_totals_futures()
 
 
 def load_training_data(
@@ -225,10 +186,7 @@ def load_training_data(
     """Return a training DataFrame built from historical game data."""
     if regenerate_years is None:
         regenerate_years = []
-    all_data_archive = pd.read_csv(os.path.join(config.DATA_DIR, "train_data.csv"))
-    all_data_archive.drop(
-        [c for c in all_data_archive.columns if "Unnamed" in c], axis=1, inplace=True
-    )
+    all_data_archive = store.load_train_data()
     if "counts_toward_record" not in all_data_archive.columns:
         all_data_archive["counts_toward_record"] = True
     all_data_archive = utils.add_playoff_indicator(all_data_archive)
@@ -236,8 +194,7 @@ def load_training_data(
     win_totals_futures = load_regular_season_win_totals_futures()
 
     # Load HCA map for year-specific home court advantage
-    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
-    hca_map = utils.load_hca_map(hca_map_path)
+    hca_map = store.load_hca_map()
 
     # NOTE: Garbage time backfilling is disabled by default
     # To enable it when implementing effective margin system, uncomment below:
@@ -260,9 +217,7 @@ def load_training_data(
                 year_data = this_year_games
                 year_data["date"] = pd.to_datetime(year_data["date"], format="mixed")
             else:
-                year_data = pd.read_csv(
-                    f"data/games/year_data_{year}.csv", dtype={"game_id": str}
-                )
+                year_data = store.load_year_data(year)
             year_data = year_data.sort_values("date")
             if "team_abbr" in year_data.columns and "team" not in year_data.columns:
                 year_data["team"] = year_data["team_abbr"]
@@ -353,9 +308,7 @@ def load_training_data(
                         columns=["team", "rating"],
                     )
                     end_year_ratings_df["year"] = year - 1
-                    end_year_ratings_df.to_csv(
-                        f"data/end_year_ratings/{year - 1}.csv", index=False
-                    )
+                    store.save_end_year_ratings(end_year_ratings_df, year - 1)
                     year_data["last_year_team_rating"] = year_data["team"].map(
                         end_year_ratings_dct[year - 1]
                     )
@@ -579,29 +532,26 @@ def load_training_data(
                     all_data += year_data
 
         all_data = pd.DataFrame(all_data)
-        all_data.to_csv(f"data/train_data.csv", index=False)
+        store.save_train_data(all_data)
     else:
-        all_data = pd.read_csv(f"data/train_data.csv")
-        all_data.drop(
-            [col for col in all_data.columns if "Unnamed" in col], axis=1, inplace=True
-        )
+        all_data = store.load_train_data()
         all_data["team_win_total_future"] = all_data.apply(
             lambda x: win_totals_futures[str(x["year"])][x["team"]], axis=1
         ).astype(float)
         all_data["opponent_win_total_future"] = all_data.apply(
             lambda x: win_totals_futures[str(x["year"])][x["opponent"]], axis=1
         ).astype(float)
-        all_data.to_csv(f"data/train_data.csv")
+        store.save_train_data(all_data)
 
     all_data = add_days_since_most_recent_game(all_data)
 
     # Add per-season HCA values (recalculate if any years are missing)
     if not hca_map or any(int(y) not in hca_map for y in all_data["year"].unique()):
         hca_map = utils.calculate_hca_by_season(all_data)
-        utils.save_hca_map(hca_map, hca_map_path)
+        store.save_hca_map(hca_map)
     all_data["hca"] = all_data["year"].map(hca_map).astype(float)
 
-    all_data.to_csv(os.path.join(config.DATA_DIR, "train_data.csv"), index=False)
+    store.save_train_data(all_data)
     return all_data
 
 
