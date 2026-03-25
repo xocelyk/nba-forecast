@@ -5,7 +5,7 @@ import time
 import numpy as np
 import pandas as pd
 
-from src import config, utils
+from src import config, schemas, utils
 
 from . import nba_api_loader
 
@@ -60,38 +60,10 @@ def backfill_garbage_time_for_year(year: int):
     loader = nba_api_loader.get_loader()
     df_with_garbage_time = loader.add_garbage_time_to_games(df)
 
-    # Save the updated data
-    # Preserve the column order - garbage time columns should be at the end
-    base_columns = [
-        "game_id",
-        "date",
-        "team",
-        "opponent",
-        "team_name",
-        "opponent_name",
-        "team_score",
-        "opponent_score",
-        "margin",
-        "location",
-        "pace",
-        "completed",
-        "year",
-    ]
-
-    garbage_time_columns = [
-        "garbage_time_detected",
-        "garbage_time_cutoff_period",
-        "garbage_time_cutoff_clock",
-        "garbage_time_cutoff_action_number",
-        "garbage_time_possessions_before_cutoff",
-    ]
-
-    columns_to_save = base_columns.copy()
-    for col in garbage_time_columns:
-        if col in df_with_garbage_time.columns:
-            columns_to_save.append(col)
-
-    df_with_garbage_time = df_with_garbage_time[columns_to_save]
+    # Save the updated data with all available columns in standard order
+    df_with_garbage_time = schemas.select_columns(
+        df_with_garbage_time, schemas.full_game_columns()
+    )
     df_with_garbage_time.to_csv(filename, index=False)
 
     print(f"Year {year}: Saved updated data with garbage time detection")
@@ -105,16 +77,7 @@ def load_year_data(year: int = 2026):
     df = df[df["completed"] == True]
 
     # Initialize garbage time columns if they don't exist
-    if "garbage_time_detected" not in df.columns:
-        df["garbage_time_detected"] = None
-    if "garbage_time_cutoff_period" not in df.columns:
-        df["garbage_time_cutoff_period"] = None
-    if "garbage_time_cutoff_clock" not in df.columns:
-        df["garbage_time_cutoff_clock"] = None
-    if "garbage_time_cutoff_action_number" not in df.columns:
-        df["garbage_time_cutoff_action_number"] = None
-    if "garbage_time_possessions_before_cutoff" not in df.columns:
-        df["garbage_time_possessions_before_cutoff"] = None
+    schemas.ensure_columns(df, schemas.GARBAGE_TIME_COLUMNS)
     if "counts_toward_record" not in df.columns:
         # Default to True, then detect Cup championship games by game ID pattern
         df["counts_toward_record"] = True
@@ -213,73 +176,8 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         )
         data_df = loader.add_advanced_stats_to_games(data_df)
 
-    # Select and order columns
-    from src.advanced_stats_config import ALL_ADVANCED_STATS_COLUMNS
-
-    base_columns = [
-        "game_id",
-        "date",
-        "team",
-        "opponent",
-        "team_name",
-        "opponent_name",
-        "team_score",
-        "opponent_score",
-        "margin",
-        "location",
-        "pace",
-        "completed",
-        "year",
-    ]
-
-    garbage_time_columns = [
-        "garbage_time_detected",
-        "garbage_time_cutoff_period",
-        "garbage_time_cutoff_clock",
-        "garbage_time_cutoff_action_number",
-        "garbage_time_possessions_before_cutoff",
-    ]
-
-    effective_stats_columns = [
-        "effective_margin",
-        "effective_possessions",
-        "effective_pace",
-        "team_score_at_cutoff",
-        "opponent_score_at_cutoff",
-    ]
-
-    metadata_columns = [
-        "MISSING_DATA",
-    ]
-
-    # Build column list: base + advanced stats + garbage time + effective stats + metadata
-    columns_to_select = base_columns.copy()
-
-    # Add advanced stats columns if they exist
-    for col in ALL_ADVANCED_STATS_COLUMNS:
-        if col in data_df.columns:
-            columns_to_select.append(col)
-
-    # Add garbage time columns if they exist
-    for col in garbage_time_columns:
-        if col in data_df.columns:
-            columns_to_select.append(col)
-
-    # Add effective stats columns if they exist
-    for col in effective_stats_columns:
-        if col in data_df.columns:
-            columns_to_select.append(col)
-
-    # Add counts_toward_record if it exists
-    if "counts_toward_record" in data_df.columns:
-        columns_to_select.append("counts_toward_record")
-
-    # Add metadata columns if they exist
-    for col in metadata_columns:
-        if col in data_df.columns:
-            columns_to_select.append(col)
-
-    data_df = data_df[columns_to_select]
+    # Select and order columns using schema definition
+    data_df = schemas.select_columns(data_df, schemas.full_game_columns())
 
     # Set index and save
     data_df.set_index("game_id", inplace=True)

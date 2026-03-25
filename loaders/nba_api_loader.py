@@ -23,6 +23,7 @@ import numpy as np
 import pandas as pd
 from nba_api.stats.static import teams
 
+from src import schemas
 from src.utils import CANONICAL_TO_NBA_API, normalize_abbr
 
 from .nba_api_client import get_client
@@ -436,16 +437,7 @@ class NBAAPILoader:
         games_df = games_df.copy()
 
         # Initialize garbage time columns if they don't exist
-        if "garbage_time_detected" not in games_df.columns:
-            games_df["garbage_time_detected"] = None
-        if "garbage_time_cutoff_period" not in games_df.columns:
-            games_df["garbage_time_cutoff_period"] = None
-        if "garbage_time_cutoff_clock" not in games_df.columns:
-            games_df["garbage_time_cutoff_clock"] = None
-        if "garbage_time_cutoff_action_number" not in games_df.columns:
-            games_df["garbage_time_cutoff_action_number"] = None
-        if "garbage_time_possessions_before_cutoff" not in games_df.columns:
-            games_df["garbage_time_possessions_before_cutoff"] = None
+        schemas.ensure_columns(games_df, schemas.GARBAGE_TIME_COLUMNS)
 
         # Find completed games without garbage time data
         needs_garbage_time = (
@@ -570,17 +562,8 @@ class NBAAPILoader:
         # Make a copy to avoid modifying original
         games_df = games_df.copy()
 
-        # Initialize effective stats columns if they don't exist
-        if "effective_margin" not in games_df.columns:
-            games_df["effective_margin"] = None
-        if "effective_possessions" not in games_df.columns:
-            games_df["effective_possessions"] = None
-        if "effective_pace" not in games_df.columns:
-            games_df["effective_pace"] = None
-        if "team_score_at_cutoff" not in games_df.columns:
-            games_df["team_score_at_cutoff"] = None
-        if "opponent_score_at_cutoff" not in games_df.columns:
-            games_df["opponent_score_at_cutoff"] = None
+        # Initialize effective stats and metadata columns if they don't exist
+        schemas.ensure_columns(games_df, schemas.EFFECTIVE_STATS_COLUMNS)
         if "MISSING_DATA" not in games_df.columns:
             games_df["MISSING_DATA"] = False
 
@@ -774,16 +757,10 @@ class NBAAPILoader:
         Fetches traditional and advanced box score metrics for all completed
         games that don't already have advanced stats.
         """
-        from src.advanced_stats_config import (
-            ALL_ADVANCED_STATS_COLUMNS,
-            has_advanced_stats,
-        )
+        from src.schemas import ALL_ADVANCED_STATS_COLUMNS, has_advanced_stats
 
         games_df = games_df.copy()
-
-        for col in ALL_ADVANCED_STATS_COLUMNS:
-            if col not in games_df.columns:
-                games_df[col] = None
+        schemas.ensure_columns(games_df, ALL_ADVANCED_STATS_COLUMNS)
 
         has_stats = has_advanced_stats(games_df)
         needs_stats = games_df["completed"] & ~has_stats
