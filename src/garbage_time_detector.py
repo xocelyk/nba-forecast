@@ -352,16 +352,125 @@ class GarbageTimeDetector:
 
         return cutoff_info
 
+    @staticmethod
+    def compute_possessions_from_box_score(
+        fga: float, oreb: float, tov: float, fta: float
+    ) -> float:
+        """
+        Estimate possessions using Dean Oliver's formula.
+
+        Formula: Poss = FGA - OREB + TOV + 0.44 * FTA
+
+        Args:
+            fga: Field goal attempts
+            oreb: Offensive rebounds
+            tov: Turnovers
+            fta: Free throw attempts
+
+        Returns:
+            Estimated possessions
+        """
+        return fga - oreb + tov + 0.44 * fta
+
+    @staticmethod
+    def compute_possessions_from_pbp(pbp_df: pd.DataFrame) -> dict:
+        """
+        Count possession-ending events from play-by-play data using
+        Oliver formula components (FGA, OREB, TOV, FTA).
+
+        Tracks made/missed shots, offensive rebounds, turnovers,
+        and free throw attempts for each team, then applies the
+        Oliver formula to estimate possessions per team.
+
+        Args:
+            pbp_df: Play-by-play DataFrame with columns:
+                actionType, teamId, shotResult, subType, etc.
+
+        Returns:
+            Dict with home_poss, away_poss, total_poss (average of both)
+        """
+        if pbp_df is None or len(pbp_df) == 0:
+            return {"home_poss": None, "away_poss": None, "total_poss": None}
+
+        # Identify home/away team IDs from the data
+        team_ids = pbp_df["teamId"].dropna().unique()
+        team_ids = [int(t) for t in team_ids if pd.notna(t) and t != 0]
+
+        if len(team_ids) < 2:
+            return {"home_poss": None, "away_poss": None, "total_poss": None}
+
+        # Determine home team: in NBA PBP, the team associated with
+        # the first non-zero scoreHome change is the home team
+        home_team_id = None
+        for _, row in pbp_df.iterrows():
+            tid = row.get("teamId")
+            action = str(row.get("actionType", "")).lower()
+            if tid and pd.notna(tid) and action in ("2pt", "3pt", "freethrow"):
+                # Check if this team's action increased the home score
+                home_team_id = int(tid)
+                break
+
+        if home_team_id is None:
+            home_team_id = team_ids[0]
+
+        away_team_id = [t for t in team_ids if t != home_team_id]
+        away_team_id = away_team_id[0] if away_team_id else None
+
+        if away_team_id is None:
+            return {"home_poss": None, "away_poss": None, "total_poss": None}
+
+        # Count Oliver formula components per team
+        stats = {
+            home_team_id: {"fga": 0, "oreb": 0, "tov": 0, "fta": 0},
+            away_team_id: {"fga": 0, "oreb": 0, "tov": 0, "fta": 0},
+        }
+
+        for _, row in pbp_df.iterrows():
+            tid = row.get("teamId")
+            if pd.isna(tid) or tid == 0:
+                continue
+            tid = int(tid)
+            if tid not in stats:
+                continue
+
+            action = str(row.get("actionType", "")).lower()
+            sub_type = str(row.get("subType", "")).lower()
+
+            if action in ("2pt", "3pt"):
+                stats[tid]["fga"] += 1
+            elif action == "freethrow":
+                stats[tid]["fta"] += 1
+            elif action == "turnover":
+                stats[tid]["tov"] += 1
+            elif action == "rebound" and sub_type == "offensive":
+                stats[tid]["oreb"] += 1
+
+        home = stats[home_team_id]
+        away = stats[away_team_id]
+
+        home_poss = home["fga"] - home["oreb"] + home["tov"] + 0.44 * home["fta"]
+        away_poss = away["fga"] - away["oreb"] + away["tov"] + 0.44 * away["fta"]
+        total_poss = (home_poss + away_poss) / 2
+
+        return {
+            "home_poss": home_poss,
+            "away_poss": away_poss,
+            "total_poss": total_poss,
+            "home_team_id": home_team_id,
+            "away_team_id": away_team_id,
+        }
+
     def get_stats_before_cutoff(self, game_id: str, cutoff_action_number: int) -> Dict:
         """
-        Calculate game stats up to a specific action number.
+        Calculate game stats up to a specific action number, including
+        possession estimates using the Oliver formula on PBP events.
 
         Args:
             game_id: NBA game ID
             cutoff_action_number: Action number to cut off at
 
         Returns:
-            Dict with stats calculated only up to cutoff point
+            Dict with scores at cutoff and estimated possessions
         """
         pbp_df = self.get_play_by_play(game_id)
 
@@ -388,11 +497,23 @@ class GarbageTimeDetector:
             else:
                 score_away = int(score_away)
 
+            # Compute possessions from PBP up to cutoff
+            poss_stats = self.compute_possessions_from_pbp(before_cutoff)
+
+            # Also compute full-game possessions for reference
+            full_poss_stats = self.compute_possessions_from_pbp(pbp_df)
+
             return {
                 "home_score_at_cutoff": score_home,
                 "away_score_at_cutoff": score_away,
                 "margin_at_cutoff": score_home - score_away,
                 "total_actions": len(before_cutoff),
+                "home_poss_at_cutoff": poss_stats.get("home_poss"),
+                "away_poss_at_cutoff": poss_stats.get("away_poss"),
+                "total_poss_at_cutoff": poss_stats.get("total_poss"),
+                "home_poss_full_game": full_poss_stats.get("home_poss"),
+                "away_poss_full_game": full_poss_stats.get("away_poss"),
+                "total_poss_full_game": full_poss_stats.get("total_poss"),
             }
 
         return {}
