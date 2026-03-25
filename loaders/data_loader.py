@@ -1,10 +1,7 @@
-import os
-import time
-
 import numpy as np
 import pandas as pd
 
-from src import config, schemas, store, transforms, utils
+from src import schemas, store, transforms, utils
 
 from . import nba_api_loader
 
@@ -52,49 +49,6 @@ def backfill_garbage_time_for_year(year: int):
     store.save_year_data(df_with_garbage_time, year)
 
     print(f"Year {year}: Saved updated data with garbage time detection")
-
-
-def load_year_data(year: int = 2026):
-    """Load completed game rows from the CSV for ``year``."""
-    df = store.load_year_data(year)
-    df = df[df["completed"] == True]
-
-    # Initialize garbage time columns if they don't exist
-    schemas.ensure_columns(df, schemas.GARBAGE_TIME_COLUMNS)
-    if "counts_toward_record" not in df.columns:
-        # Default to True, then detect Cup championship games by game ID pattern
-        df["counts_toward_record"] = True
-        df.loc[
-            df["game_id"].astype(str).str.match(r"^006\d{2}00001$"),
-            "counts_toward_record",
-        ] = False
-
-    data = []
-    for _, row in df.iterrows():
-        game_id = str(row["game_id"])  # Ensure string format
-        # Date is now directly from CSV, no parsing from game_id needed
-        date_val = pd.to_datetime(row["date"])
-        data.append(
-            [
-                game_id,
-                date_val,
-                row["team"],
-                row["opponent"],
-                row["team_score"],
-                row["opponent_score"],
-                "Home",
-                row["pace"],
-                row["completed"],
-                year,
-                row.get("garbage_time_detected"),
-                row.get("garbage_time_cutoff_period"),
-                row.get("garbage_time_cutoff_clock"),
-                row.get("garbage_time_cutoff_action_number"),
-                row.get("garbage_time_possessions_before_cutoff"),
-                row.get("counts_toward_record", True),
-            ]
-        )
-    return data
 
 
 def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
