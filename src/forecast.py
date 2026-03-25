@@ -60,7 +60,8 @@ def predict_margin_this_week_games(games, win_margin_model, team_bias_info=None)
 def predict_margin_and_win_prob_future_games(
     games, win_margin_model, win_prob_model, team_bias_info=None
 ):
-    to_csv_data = []
+    from src.models import Prediction
+
     games["date"] = pd.to_datetime(games["date"])
     games["date"] = games["date"].dt.date
     games = games[games["completed"] == False]
@@ -81,27 +82,30 @@ def predict_margin_and_win_prob_future_games(
         games["pred_margin"].values.reshape(-1, 1)
     )[:, 1]
 
-    for date in games["date"].unique():
-        for index, row in games[games["date"] == date].iterrows():
-            to_csv_data.append(
-                [
-                    row["date"],
-                    row["team"],
-                    row["opponent"],
-                    round(row["pred_margin"], 1),
-                    round(row["win_prob"], 3),
-                ]
-            )
+    # Build typed Prediction objects
+    predictions = [
+        Prediction(
+            date=row["date"],
+            team=row["team"],
+            opponent=row["opponent"],
+            predicted_margin=round(row["pred_margin"], 1),
+            win_probability=round(row["win_prob"], 3),
+        )
+        for _, row in games.iterrows()
+    ]
 
+    # Convert to CSV output
     to_csv_data = pd.DataFrame(
-        to_csv_data,
-        columns=[
-            "Date",
-            "Home",
-            "Away",
-            "Predicted Home Margin",
-            "Predicted Home Win Probability",
-        ],
+        [
+            {
+                "Date": p.date,
+                "Home": p.team,
+                "Away": p.opponent,
+                "Predicted Home Margin": p.predicted_margin,
+                "Predicted Home Win Probability": p.win_probability,
+            }
+            for p in predictions
+        ]
     )
     to_csv_data.to_csv(
         os.path.join(
@@ -125,11 +129,9 @@ def get_predictive_ratings_win_margin(
     teams, model, year, playoff_mode=False, team_bias_info=None
 ):
     # Load the HCA value for this year
-    import json
+    from src import store
 
-    hca_map_path = os.path.join(config.DATA_DIR, "hca_by_year.json")
-    with open(hca_map_path, "r") as f:
-        hca_map = {int(k): float(v) for k, v in json.load(f).items()}
+    hca_map = store.load_hca_map()
     current_hca = hca_map.get(year, utils.HCA_PRIOR_MEAN)
     """
     win margin model takes these features:
