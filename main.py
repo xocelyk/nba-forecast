@@ -144,13 +144,18 @@ def initialize_dataframe(
 def add_statistics(
     df_final: pd.DataFrame, completed_games: pd.DataFrame
 ) -> pd.DataFrame:
-    off_eff = stats.get_offensive_efficiency(completed_games)
-    def_eff = stats.get_defensive_efficiency(completed_games)
+    from src import converters
+    from src.models import Game
+
+    games_list = converters.from_dataframe(completed_games, Game)
+
+    off_eff = stats.get_offensive_efficiency(games_list)
+    def_eff = stats.get_defensive_efficiency(games_list)
     adj_off_eff, adj_def_eff = stats.get_adjusted_efficiencies(
-        completed_games, off_eff, def_eff
+        games_list, off_eff, def_eff
     )
-    paces = stats.get_pace(completed_games)
-    wins, losses = stats.get_wins_losses(completed_games)
+    paces = stats.get_pace(games_list)
+    wins, losses = stats.get_wins_losses(games_list)
 
     df_final["wins"] = df_final["team"].map(wins).fillna(0).astype(int)
     df_final["losses"] = df_final["team"].map(losses).fillna(0).astype(int)
@@ -311,7 +316,11 @@ def add_simulation_results(
     df_final["Champion"] = df_final["team"].apply(
         lambda x: round(sim_report.loc[x, "champion"], 3)
     )
-    remaining_sos = stats.get_remaining_sos(df_final, future_games)
+    from src import converters
+    from src.models import Game
+
+    future_games_list = converters.from_dataframe(future_games, Game)
+    remaining_sos = stats.get_remaining_sos(df_final, future_games_list)
     df_final["remaining_sos"] = df_final["team"].apply(lambda x: remaining_sos[x])
     return df_final
 
