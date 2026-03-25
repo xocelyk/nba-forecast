@@ -109,118 +109,14 @@ class NBAAPILoader:
         client = get_client()
         schedule_df = client.get_schedule(season_str)
 
-        # Convert to standardized format (home team perspective)
-        games = self._process_schedule_data(schedule_df, year)
-
-        return games
-
-    def _process_schedule_data(
-        self, schedule_df: pd.DataFrame, year: int
-    ) -> pd.DataFrame:
-        """
-        Process schedule data into standardized format.
-
-        Converts raw ScheduleLeagueV2 data to match sportsipy format:
-        - One row per game (home team perspective)
-        - Standard column names
-        - Team abbreviations mapped to sportsipy format
-
-        Args:
-            schedule_df: Raw schedule DataFrame from nba_api
-            year: Season year
-
-        Returns:
-            Processed DataFrame with standardized columns
-        """
-        games = []
-
         # Get valid NBA team abbreviations for filtering
         self._init_team_cache()
         valid_nba_abbrs = set(self._abbr_to_id.keys())
 
-        for _, row in schedule_df.iterrows():
-            # Skip preseason games
-            if row.get("gameLabel") == "Preseason":
-                continue
+        # Convert to standardized format (home team perspective)
+        from src.transforms import process_schedule_to_games
 
-            # Skip games involving non-NBA teams (e.g., exhibition games)
-            home_abbr_raw = row["homeTeam_teamTricode"]
-            away_abbr_raw = row["awayTeam_teamTricode"]
-            if (
-                home_abbr_raw not in valid_nba_abbrs
-                or away_abbr_raw not in valid_nba_abbrs
-            ):
-                continue
-
-            game_id = row["gameId"]
-            # Parse date and convert to timezone-naive (UTC dates stripped of tz info)
-            game_date = pd.to_datetime(row["gameDate"])
-            if game_date.tzinfo is not None:
-                game_date = game_date.tz_convert("UTC").tz_localize(None)
-
-            # Home team info
-            home_abbr = row["homeTeam_teamTricode"]
-            home_name = row["homeTeam_teamName"]
-            home_score = row["homeTeam_score"]
-
-            # Away team info
-            away_abbr = row["awayTeam_teamTricode"]
-            away_name = row["awayTeam_teamName"]
-            away_score = row["awayTeam_score"]
-
-            home_abbr = normalize_abbr(home_abbr)
-            away_abbr = normalize_abbr(away_abbr)
-
-            # Determine if game is completed
-            game_status = row["gameStatus"]
-            completed = game_status == 3  # 1=scheduled, 2=live, 3=final
-
-            # Calculate margin (only for completed games)
-            if completed and home_score is not None and away_score is not None:
-                margin = float(home_score - away_score)
-            else:
-                margin = None
-
-            # NBA Cup championship game does not count toward regular season record
-            game_label = row.get("gameLabel", "")
-            game_sub_label = row.get("gameSubLabel", "")
-            is_cup_championship = (
-                "Cup" in str(game_label) and str(game_sub_label) == "Championship"
-            )
-            # Fallback: Cup championship game IDs match pattern 006XX00001
-            if not is_cup_championship:
-                gid = str(game_id)
-                is_cup_championship = (
-                    len(gid) == 10 and gid.startswith("006") and gid.endswith("00001")
-                )
-
-            # Create game record (home team perspective)
-            game_record = {
-                "game_id": game_id,
-                "date": game_date,
-                "team": home_abbr,
-                "opponent": away_abbr,
-                "team_name": home_name,
-                "opponent_name": away_name,
-                "team_score": float(home_score) if home_score is not None else None,
-                "opponent_score": float(away_score) if away_score is not None else None,
-                "margin": margin,
-                "location": "Home",
-                "pace": None,  # Will be filled in later for completed games
-                "completed": completed,
-                "year": year,
-                "counts_toward_record": not is_cup_championship,
-            }
-
-            games.append(game_record)
-
-        games_df = pd.DataFrame(games)
-
-        logger.info(
-            f"Processed {len(games_df)} games ({games_df['completed'].sum()} completed)"
-        )
-
-        return games_df
+        return process_schedule_to_games(schedule_df, year, valid_nba_abbrs)
 
     # DEPRECATED 2024-12-07: Box score stats collection disabled
     # Use add_effective_stats_to_games() instead, which gets possessions from play-by-play
@@ -419,27 +315,15 @@ class NBAAPILoader:
         """
         Add garbage time detection data to completed games.
 
-        Detects when games become "effectively over" using the Bill James
-        safe-lead heuristic: (L + P)^2 > T
-        Only applies to games within first 45 minutes of game time.
-
-        Args:
-            games_df: DataFrame with game data
-            num_workers: Number of parallel workers for processing games (default: 1)
-
-        Returns:
-            DataFrame with garbage time columns filled for completed games
+        Fetches PBP and detects garbage time, then delegates to
+        transforms.apply_garbage_time_results to update the DataFrame.
         """
-        # Lazy import to avoid circular dependency
         from src.garbage_time_detector import get_detector
+        from src.transforms import apply_garbage_time_results
 
-        # Make a copy to avoid modifying original
         games_df = games_df.copy()
-
-        # Initialize garbage time columns if they don't exist
         schemas.ensure_columns(games_df, schemas.GARBAGE_TIME_COLUMNS)
 
-        # Find completed games without garbage time data
         needs_garbage_time = (
             games_df["completed"] & games_df["garbage_time_detected"].isna()
         )
@@ -453,91 +337,63 @@ class NBAAPILoader:
             f"Detecting garbage time for {len(games_needing_detection)} completed games..."
         )
 
+        # FETCH: detect garbage time for each game, collect results
         detector = get_detector()
+        results = {}  # idx -> detection result or None
 
-        # Detect garbage time for each game (sequential or parallel depending on num_workers)
         if num_workers <= 1:
-            # Sequential processing (original behavior)
             for idx, game in games_needing_detection.iterrows():
                 game_id = game["game_id"]
-
                 try:
-                    result = detector.detect_garbage_time(
+                    results[idx] = detector.detect_garbage_time(
                         game_id, max_game_time_minutes=45.0
                     )
-
-                    if result is not None:
-                        games_df.at[idx, "garbage_time_detected"] = result[
-                            "garbage_time_started"
-                        ]
-                        games_df.at[idx, "garbage_time_cutoff_period"] = result.get(
-                            "cutoff_period"
-                        )
-                        games_df.at[idx, "garbage_time_cutoff_clock"] = result.get(
-                            "cutoff_clock"
-                        )
-                        games_df.at[idx, "garbage_time_cutoff_action_number"] = (
-                            result.get("cutoff_action_number")
-                        )
-                        games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
-                            result.get("total_possessions_before_cutoff")
-                        )
-                    else:
-                        logger.warning(
-                            f"Could not get garbage time data for game {game_id}"
-                        )
-                        games_df.at[idx, "garbage_time_detected"] = False
-
                 except Exception as e:
                     logger.warning(
                         f"Error detecting garbage time for game {game_id}: {e}"
                     )
-                    games_df.at[idx, "garbage_time_detected"] = False
+                    results[idx] = None
         else:
-            # Parallel processing with ThreadPoolExecutor
             logger.info(
                 f"Using {num_workers} parallel workers for garbage time detection"
             )
-
             with ThreadPoolExecutor(max_workers=num_workers) as executor:
-                # Submit all games for processing
                 future_to_game = {
                     executor.submit(
                         self._process_single_game_garbage_time, idx, game, detector
                     ): (idx, game)
                     for idx, game in games_needing_detection.iterrows()
                 }
-
-                # Process results as they complete
                 for future in as_completed(future_to_game):
                     idx, result_dict = future.result()
+                    # Convert parallel result format to standard format
+                    if result_dict.get("garbage_time_detected") is not False:
+                        results[idx] = {
+                            "garbage_time_started": result_dict[
+                                "garbage_time_detected"
+                            ],
+                            "cutoff_period": result_dict["cutoff_period"],
+                            "cutoff_clock": result_dict["cutoff_clock"],
+                            "cutoff_action_number": result_dict["cutoff_action_number"],
+                            "total_possessions_before_cutoff": result_dict[
+                                "possessions_before_cutoff"
+                            ],
+                        }
+                    else:
+                        results[idx] = None
 
-                    # Update DataFrame with results
-                    games_df.at[idx, "garbage_time_detected"] = result_dict[
-                        "garbage_time_detected"
-                    ]
-                    games_df.at[idx, "garbage_time_cutoff_period"] = result_dict[
-                        "cutoff_period"
-                    ]
-                    games_df.at[idx, "garbage_time_cutoff_clock"] = result_dict[
-                        "cutoff_clock"
-                    ]
-                    games_df.at[idx, "garbage_time_cutoff_action_number"] = result_dict[
-                        "cutoff_action_number"
-                    ]
-                    games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
-                        result_dict["possessions_before_cutoff"]
-                    )
+        # TRANSFORM: apply results to DataFrame
+        games_df = apply_garbage_time_results(games_df, results)
 
-        completed_with_garbage_time = (
+        completed_with_gt = (
             games_df["completed"] & games_df["garbage_time_detected"].notna()
         )
-        games_with_garbage_time = games_df["completed"] & (
+        games_with_gt = games_df["completed"] & (
             games_df["garbage_time_detected"] == True
         )
         logger.info(
-            f"Garbage time detection complete: {completed_with_garbage_time.sum()} games processed, "
-            f"{games_with_garbage_time.sum()} games had garbage time"
+            f"Garbage time detection complete: {completed_with_gt.sum()} games processed, "
+            f"{games_with_gt.sum()} games had garbage time"
         )
 
         return games_df
@@ -546,31 +402,21 @@ class NBAAPILoader:
         """
         Add effective stats (margin, possessions, pace) for all completed games.
 
-        Combines garbage time detection with effective stats calculation:
-        - For games WITH garbage time: uses stats at cutoff
-        - For games WITHOUT garbage time: uses full game stats with PBP possessions
-        - Sets MISSING_DATA=True if PBP fetch fails
-
-        Args:
-            games_df: DataFrame with game data
-
-        Returns:
-            DataFrame with effective stats columns populated
+        Fetches cutoff stats from PBP, then delegates to
+        transforms.apply_effective_stats to update the DataFrame.
         """
         from src.garbage_time_detector import get_detector
+        from src.transforms import apply_effective_stats
 
-        # Make a copy to avoid modifying original
         games_df = games_df.copy()
-
-        # Initialize effective stats and metadata columns if they don't exist
         schemas.ensure_columns(games_df, schemas.EFFECTIVE_STATS_COLUMNS)
         if "MISSING_DATA" not in games_df.columns:
             games_df["MISSING_DATA"] = False
 
-        # First, ensure garbage time detection is done
+        # Ensure garbage time detection is done first
         games_df = self.add_garbage_time_to_games(games_df)
 
-        # Find completed games that need effective stats
+        # Find games that need effective stats
         completed = games_df["completed"] == True
         needs_effective_stats = completed & (
             games_df["effective_margin"].isna()
@@ -586,110 +432,35 @@ class NBAAPILoader:
             f"Adding effective stats for {len(games_needing_stats)} completed games..."
         )
 
+        # FETCH: get cutoff stats for garbage time games
         detector = get_detector()
-        success_count = 0
+        cutoff_stats = {}  # idx -> stats dict or None
 
         for idx, game in games_needing_stats.iterrows():
-            game_id = game["game_id"]
             has_garbage_time = game["garbage_time_detected"] == True
-
-            try:
-                if has_garbage_time:
-                    # Use stats at cutoff
-                    cutoff_action = game.get("garbage_time_cutoff_action_number")
-
-                    if pd.notna(cutoff_action):
-                        stats = detector.get_stats_before_cutoff(
-                            game_id, int(cutoff_action)
+            if has_garbage_time:
+                cutoff_action = game.get("garbage_time_cutoff_action_number")
+                if pd.notna(cutoff_action):
+                    try:
+                        cutoff_stats[idx] = detector.get_stats_before_cutoff(
+                            game["game_id"], int(cutoff_action)
                         )
-
-                        if stats:
-                            # Determine home/away for this team
-                            is_home = game["location"].lower() == "home"
-
-                            if is_home:
-                                team_score = stats["home_score_at_cutoff"]
-                                opp_score = stats["away_score_at_cutoff"]
-                                margin = stats["margin_at_cutoff"]
-                            else:
-                                team_score = stats["away_score_at_cutoff"]
-                                opp_score = stats["home_score_at_cutoff"]
-                                margin = -stats["margin_at_cutoff"]
-
-                            games_df.at[idx, "team_score_at_cutoff"] = team_score
-                            games_df.at[idx, "opponent_score_at_cutoff"] = opp_score
-                            games_df.at[idx, "effective_margin"] = margin
-                            games_df.at[idx, "effective_possessions"] = game[
-                                "garbage_time_possessions_before_cutoff"
-                            ]
-
-                            # Calculate effective pace
-                            period = game["garbage_time_cutoff_period"]
-                            clock_str = game["garbage_time_cutoff_clock"]
-
-                            if pd.notna(period) and pd.notna(clock_str):
-                                game_time_minutes = self._calculate_game_time_minutes(
-                                    period, clock_str
-                                )
-                                effective_poss = game[
-                                    "garbage_time_possessions_before_cutoff"
-                                ]
-
-                                if game_time_minutes > 0 and effective_poss > 0:
-                                    effective_pace = (
-                                        effective_poss / game_time_minutes
-                                    ) * 48
-                                    games_df.at[idx, "effective_pace"] = effective_pace
-
-                            success_count += 1
-                        else:
-                            # Failed to get cutoff stats
-                            logger.warning(
-                                f"Could not get cutoff stats for game {game_id}"
-                            )
-                            games_df.at[idx, "MISSING_DATA"] = True
-                            games_df.at[idx, "effective_margin"] = game["margin"]
-                            games_df.at[idx, "effective_possessions"] = None
-                    else:
-                        # No cutoff action number
-                        logger.warning(f"No cutoff action number for game {game_id}")
-                        games_df.at[idx, "MISSING_DATA"] = True
-                        games_df.at[idx, "effective_margin"] = game["margin"]
-                        games_df.at[idx, "effective_possessions"] = None
+                    except Exception as e:
+                        logger.error(
+                            f"Error fetching cutoff stats for {game['game_id']}: {e}"
+                        )
+                        cutoff_stats[idx] = None
                 else:
-                    # No garbage time - use full game stats
-                    games_df.at[idx, "effective_margin"] = game["margin"]
-                    games_df.at[idx, "team_score_at_cutoff"] = game["team_score"]
-                    games_df.at[idx, "opponent_score_at_cutoff"] = game[
-                        "opponent_score"
-                    ]
+                    cutoff_stats[idx] = None
 
-                    # Get total possessions from garbage time detection result
-                    # (detect_garbage_time returns possession count even when no garbage time)
-                    total_poss = game.get("garbage_time_possessions_before_cutoff")
+        # TRANSFORM: apply results
+        games_df = apply_effective_stats(
+            games_df, cutoff_stats, self._calculate_game_time_minutes
+        )
 
-                    if pd.notna(total_poss) and total_poss > 0:
-                        games_df.at[idx, "effective_possessions"] = total_poss
-
-                        # Calculate pace (assume 48 minutes for regulation)
-                        # TODO: Handle OT games properly
-                        game_minutes = 48.0
-                        effective_pace = (total_poss / game_minutes) * 48
-                        games_df.at[idx, "effective_pace"] = effective_pace
-
-                        success_count += 1
-                    else:
-                        # No possession data - mark as missing
-                        logger.warning(f"No possession data for game {game_id}")
-                        games_df.at[idx, "MISSING_DATA"] = True
-                        games_df.at[idx, "effective_possessions"] = None
-
-            except Exception as e:
-                logger.error(f"Error adding effective stats for game {game_id}: {e}")
-                games_df.at[idx, "MISSING_DATA"] = True
-                games_df.at[idx, "effective_margin"] = game["margin"]
-                games_df.at[idx, "effective_possessions"] = None
-
+        success_count = (
+            games_df.loc[needs_effective_stats, "effective_possessions"].notna().sum()
+        )
         logger.info(
             f"Effective stats added: {success_count}/{len(games_needing_stats)} games"
         )
@@ -754,13 +525,14 @@ class NBAAPILoader:
         """
         Add advanced statistics to completed games using the NBA API client.
 
-        Fetches traditional and advanced box score metrics for all completed
-        games that don't already have advanced stats.
+        Fetches box score metrics, then delegates to
+        transforms.apply_advanced_stats to update the DataFrame.
         """
-        from src.schemas import ALL_ADVANCED_STATS_COLUMNS, has_advanced_stats
+        from src.schemas import has_advanced_stats
+        from src.transforms import apply_advanced_stats
 
         games_df = games_df.copy()
-        schemas.ensure_columns(games_df, ALL_ADVANCED_STATS_COLUMNS)
+        schemas.ensure_columns(games_df, schemas.ALL_ADVANCED_STATS_COLUMNS)
 
         has_stats = has_advanced_stats(games_df)
         needs_stats = games_df["completed"] & ~has_stats
@@ -774,36 +546,21 @@ class NBAAPILoader:
             f"Fetching advanced stats for {len(games_needing_stats)} completed games..."
         )
 
+        # FETCH: get stats for each game
         client = get_client()
-        success_count = 0
+        stats_by_idx = {}
         for idx, game in games_needing_stats.iterrows():
             game_id = game["game_id"]
-
             try:
-                stats = client.get_advanced_stats(game_id)
-
-                if stats is not None:
-                    home_stats = stats.get("home", {})
-                    away_stats = stats.get("away", {})
-
-                    # Map home team stats
-                    for key, value in home_stats.items():
-                        if key in games_df.columns:
-                            games_df.at[idx, key] = value
-
-                    # Map away team stats as opp_ columns
-                    for key, value in away_stats.items():
-                        opp_key = f"opp_{key}"
-                        if opp_key in games_df.columns:
-                            games_df.at[idx, opp_key] = value
-
-                    success_count += 1
-                else:
-                    logger.warning(f"Could not get advanced stats for game {game_id}")
-
+                stats_by_idx[idx] = client.get_advanced_stats(game_id)
             except Exception as e:
                 logger.warning(f"Error fetching advanced stats for game {game_id}: {e}")
+                stats_by_idx[idx] = None
 
+        # TRANSFORM: apply results
+        games_df = apply_advanced_stats(games_df, stats_by_idx)
+
+        success_count = sum(1 for v in stats_by_idx.values() if v is not None)
         logger.info(
             f"Advanced stats added: {success_count}/{len(games_needing_stats)} games"
         )

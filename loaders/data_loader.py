@@ -122,18 +122,10 @@ def update_data(names_to_abbr, year: int = 2026, preload: bool = True):
         new_games = games_df
 
     # Combine with existing data FIRST, then add garbage time to full dataset
+    from src.transforms import merge_existing_and_new_games
+
     if preload and existing_df is not None:
-        existing_df["game_id"] = existing_df["game_id"].astype(str)
-        utils.normalize_df_teams(existing_df)
-
-        abbr_to_name = {utils.normalize_abbr(v): k for k, v in names_to_abbr.items()}
-        existing_df["team_name"] = existing_df["team"].map(abbr_to_name)
-        existing_df["opponent_name"] = existing_df["opponent"].map(abbr_to_name)
-        existing_df["margin"] = (
-            existing_df["team_score"] - existing_df["opponent_score"]
-        )
-
-        data_df = pd.concat([existing_df, new_games], ignore_index=True)
+        data_df = merge_existing_and_new_games(existing_df, new_games, names_to_abbr)
     else:
         data_df = new_games
 
