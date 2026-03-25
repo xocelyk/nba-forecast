@@ -9,6 +9,7 @@ data_loader.py.
 
 import logging
 
+import numpy as np
 import pandas as pd
 
 from src import schemas
@@ -303,3 +304,255 @@ def merge_existing_and_new_games(existing_df, new_games_df, names_to_abbr):
     existing_df["margin"] = existing_df["team_score"] - existing_df["opponent_score"]
 
     return pd.concat([existing_df, new_games_df], ignore_index=True)
+
+
+# ---------------------------------------------------------------------------
+# Training data transforms
+# ---------------------------------------------------------------------------
+
+
+def filter_to_nba_teams(year_data, min_games=20):
+    """
+    Filter game data to only include real NBA teams.
+
+    Uses heuristic: teams must have >= min_games appearances and be
+    valid 3-letter uppercase abbreviations.
+
+    Args:
+        year_data: DataFrame with team/opponent columns
+        min_games: Minimum game count threshold
+
+    Returns:
+        Filtered DataFrame
+    """
+    from src.utils import normalize_df_teams
+
+    normalize_df_teams(year_data)
+
+    all_teams = set(year_data["team"]).union(set(year_data["opponent"]))
+    valid_candidates = {
+        t
+        for t in all_teams
+        if isinstance(t, str) and len(t) == 3 and t.isalpha() and t.isupper()
+    }
+
+    team_counts = (
+        year_data["team"].value_counts() + year_data["opponent"].value_counts()
+    )
+    valid_nba_teams = {
+        team
+        for team in valid_candidates
+        if team in team_counts and team_counts[team] >= min_games
+    }
+
+    return year_data[
+        year_data["team"].isin(valid_nba_teams)
+        & year_data["opponent"].isin(valid_nba_teams)
+    ]
+
+
+def compute_daily_ratings(year_data, end_year_ratings_prev, year_hca):
+    """
+    Compute EM ratings for each game date and map them onto game rows.
+
+    For each unique date, calculates EM ratings from all completed games
+    before that date, then assigns team_rating and opp_rating to games
+    on that date.
+
+    Args:
+        year_data: DataFrame with game data for a single year (must have
+            last_year_team_rating, last_year_opp_rating, margin, pace, etc.)
+        end_year_ratings_prev: Dict of team -> rating from previous year
+        year_hca: Home court advantage value for this year
+
+    Returns:
+        DataFrame with team_rating and opp_rating columns, plus rolling
+        ratings (last 1/3/5/10 games).
+    """
+    from src import utils
+
+    year_data_temp = []
+    has_counts_toward_record = "counts_toward_record" in year_data.columns
+
+    for date in sorted(year_data["date"].unique()):
+        completed_before = year_data[
+            (year_data["date"] < date) & (year_data["completed"] == True)
+        ]
+        games_on_date = year_data[year_data["date"] == date].copy()
+
+        if len(completed_before) > 100:
+            cur_ratings = utils.get_em_ratings(completed_before, hca=year_hca)
+        else:
+            cur_ratings = {team: 0 for team in end_year_ratings_prev.keys()}
+
+        games_on_date["team_rating"] = games_on_date["team"].map(cur_ratings)
+        games_on_date["opp_rating"] = games_on_date["opponent"].map(cur_ratings)
+
+        select_cols = [
+            "team",
+            "opponent",
+            "team_rating",
+            "opp_rating",
+            "last_year_team_rating",
+            "last_year_opp_rating",
+            "margin",
+            "pace",
+            "num_games_into_season",
+            "date",
+            "year",
+        ]
+        if has_counts_toward_record:
+            select_cols.append("counts_toward_record")
+        year_data_temp += games_on_date[select_cols].values.tolist()
+
+    output_cols = [
+        "team",
+        "opponent",
+        "team_rating",
+        "opponent_rating",
+        "last_year_team_rating",
+        "last_year_opp_rating",
+        "margin",
+        "pace",
+        "num_games_into_season",
+        "date",
+        "year",
+    ]
+    if has_counts_toward_record:
+        output_cols.append("counts_toward_record")
+
+    result = pd.DataFrame(year_data_temp, columns=output_cols)
+
+    # Add rolling ratings
+    result = utils.last_n_games(result, 10)
+    result = utils.last_n_games(result, 5)
+    result = utils.last_n_games(result, 3)
+    result = utils.last_n_games(result, 1)
+
+    result["completed"] = result["margin"].apply(
+        lambda x: True if not np.isnan(x) else False
+    )
+    result = utils.add_playoff_indicator(result)
+    result["date"] = pd.to_datetime(result["date"]).dt.date
+
+    return result
+
+
+def add_win_total_features(year_data, win_totals_futures, year):
+    """
+    Add win total futures columns for team and opponent.
+
+    Args:
+        year_data: DataFrame with team/opponent columns
+        win_totals_futures: Nested dict {year_str: {team: value}}
+        year: Current season year
+
+    Returns:
+        DataFrame with win total columns added
+    """
+    from src import utils
+
+    year_data = year_data.copy()
+
+    year_data["team_win_total_future"] = year_data.apply(
+        lambda x: win_totals_futures[str(x["year"])][x["team"]], axis=1
+    ).astype(float)
+    year_data["opponent_win_total_future"] = year_data.apply(
+        lambda x: win_totals_futures[str(x["year"])][x["opponent"]], axis=1
+    ).astype(float)
+
+    # Last year's win totals
+    last_year = year - 1
+    if str(last_year) in win_totals_futures:
+
+        def get_last_year_wt(row, team_col):
+            team = row[team_col]
+            ly_totals = win_totals_futures.get(str(last_year), {})
+            if team in ly_totals:
+                return ly_totals[team]
+            alt = utils.ABBR_ALTERNATES.get(team)
+            if alt and alt in ly_totals:
+                return ly_totals[alt]
+            if team_col == "team":
+                return row["team_win_total_future"]
+            else:
+                return row["opponent_win_total_future"]
+
+        year_data["team_win_total_last_year"] = year_data.apply(
+            lambda x: get_last_year_wt(x, "team"), axis=1
+        ).astype(float)
+        year_data["opponent_win_total_last_year"] = year_data.apply(
+            lambda x: get_last_year_wt(x, "opponent"), axis=1
+        ).astype(float)
+    else:
+        year_data["team_win_total_last_year"] = year_data["team_win_total_future"]
+        year_data["opponent_win_total_last_year"] = year_data[
+            "opponent_win_total_future"
+        ]
+
+    return year_data
+
+
+def compute_bayesian_game_scores(year_data, prior_weight=5, hca=3.5):
+    """
+    Compute Bayesian game scores for each game in chronological order.
+
+    Uses prior-year ratings as the prior, incrementally updated with
+    each game's result.
+
+    Args:
+        year_data: DataFrame sorted by date with team_rating, opponent_rating,
+            last_year_team_rating, last_year_opp_rating, margin columns
+        prior_weight: Weight given to prior ratings (in game equivalents)
+        hca: Home court advantage value for game score calculation
+
+    Returns:
+        DataFrame with team_bayesian_gs and opp_bayesian_gs columns added
+    """
+    year_data = year_data.copy()
+    year_data = year_data.sort_values("date").reset_index(drop=True)
+
+    year_data["team_bayesian_gs"] = np.nan
+    year_data["opp_bayesian_gs"] = np.nan
+
+    all_teams = set(year_data["team"].tolist() + year_data["opponent"].tolist())
+    gs_sum = {team: 0.0 for team in all_teams}
+    gs_count = {team: 0 for team in all_teams}
+
+    # Get prior ratings
+    prior_ratings = {}
+    for team in all_teams:
+        team_rows = year_data[year_data["team"] == team]
+        if len(team_rows) > 0:
+            prior_ratings[team] = team_rows["last_year_team_rating"].iloc[0]
+        else:
+            opp_rows = year_data[year_data["opponent"] == team]
+            if len(opp_rows) > 0:
+                prior_ratings[team] = opp_rows["last_year_opp_rating"].iloc[0]
+            else:
+                prior_ratings[team] = 0.0
+
+    for idx in year_data.index:
+        row = year_data.loc[idx]
+        team = row["team"]
+        opp = row["opponent"]
+
+        team_prior = prior_ratings.get(team, 0.0)
+        opp_prior = prior_ratings.get(opp, 0.0)
+
+        year_data.loc[idx, "team_bayesian_gs"] = (
+            team_prior * prior_weight + gs_sum[team]
+        ) / (prior_weight + gs_count[team])
+        year_data.loc[idx, "opp_bayesian_gs"] = (
+            opp_prior * prior_weight + gs_sum[opp]
+        ) / (prior_weight + gs_count[opp])
+
+        if not np.isnan(row["margin"]):
+            team_gs = row["margin"] + row["opponent_rating"] - hca
+            opp_gs = -row["margin"] + row["team_rating"] + hca
+            gs_sum[team] += team_gs
+            gs_count[team] += 1
+            gs_sum[opp] += opp_gs
+            gs_count[opp] += 1
+
+    return year_data

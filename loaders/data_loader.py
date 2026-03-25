@@ -4,7 +4,7 @@ import time
 import numpy as np
 import pandas as pd
 
-from src import config, schemas, store, utils
+from src import config, schemas, store, transforms, utils
 
 from . import nba_api_loader
 
@@ -224,37 +224,7 @@ def load_training_data(
             year_data["date"] = pd.to_datetime(year_data["date"], format="mixed")
 
             utils.normalize_df_teams(year_data)
-
-            # Filter to only NBA teams to remove exhibition games, All-Star placeholder teams, etc.
-            # Use heuristic: keep teams that appear frequently (NBA teams play 82 games)
-            all_teams_in_data = set(year_data["team"]).union(set(year_data["opponent"]))
-
-            # Filter out obvious non-NBA abbreviations (must be 3-letter uppercase string)
-            valid_candidates = {
-                t
-                for t in all_teams_in_data
-                if isinstance(t, str) and len(t) == 3 and t.isalpha() and t.isupper()
-            }
-
-            # Count games per team to identify NBA teams (should have ~82 games or more)
-            team_counts = (
-                year_data["team"].value_counts() + year_data["opponent"].value_counts()
-            )
-
-            # Keep teams with significant game counts (filters out exhibition/All-Star teams)
-            # NBA teams: 29-30 teams × ~82 games each
-            # Non-NBA: usually just 1-2 exhibition games
-            min_games = 20  # Threshold to filter out exhibition teams
-            valid_nba_teams = {
-                team
-                for team in valid_candidates
-                if team in team_counts and team_counts[team] >= min_games
-            }
-
-            year_data = year_data[
-                year_data["team"].isin(valid_nba_teams)
-                & year_data["opponent"].isin(valid_nba_teams)
-            ]
+            year_data = transforms.filter_to_nba_teams(year_data)
 
             end_year_ratings_dct[year] = {}
             abbrs = list(set(year_data["team"]).union(set(year_data["opponent"])))
@@ -276,9 +246,9 @@ def load_training_data(
                 continue
             else:
                 if reset or year == stop_year or year in regenerate_years:
+                    # Ensure previous year ratings cover all current teams
                     for team in abbrs:
                         if team not in end_year_ratings_dct[year - 1].keys():
-                            # Some teams have changed names over the seasons--hard coding the changes for now
                             if team == "BRK":
                                 end_year_ratings_dct[year - 1][team] = (
                                     end_year_ratings_dct[year - 1]["NJN"]
@@ -301,6 +271,8 @@ def load_training_data(
                     )
                     end_year_ratings_df["year"] = year - 1
                     store.save_end_year_ratings(end_year_ratings_df, year - 1)
+
+                    # Map prior year ratings
                     year_data["last_year_team_rating"] = year_data["team"].map(
                         end_year_ratings_dct[year - 1]
                     )
@@ -308,15 +280,9 @@ def load_training_data(
                         end_year_ratings_dct[year - 1]
                     )
                     year_data["num_games_into_season"] = year_data.apply(
-                        lambda x: len(year_data[year_data["date"] < x["date"]]), axis=1
+                        lambda x: len(year_data[year_data["date"] < x["date"]]),
+                        axis=1,
                     )
-                    year_data["team_win_total_future"] = year_data["team"].map(
-                        win_totals_futures[str(year)]
-                    )
-                    year_data["opp_win_total_future"] = year_data["opponent"].map(
-                        win_totals_futures[str(year)]
-                    )
-                    # Only calculate margin if not already present (preserves correct completed status)
                     if (
                         "margin" not in year_data.columns
                         or year_data["margin"].isna().all()
@@ -325,198 +291,23 @@ def load_training_data(
                             year_data["team_score"] - year_data["opponent_score"]
                         )
 
-                    year_data_temp = []
-                    for i, date in enumerate(sorted(year_data["date"].unique())):
-                        completed_year_data = year_data[year_data["date"] < date]
-                        games_on_date = year_data[year_data["date"] == date]
-                        if (
-                            len(
-                                completed_year_data[
-                                    completed_year_data["completed"] == True
-                                ]
-                            )
-                            > 100
-                        ):
-                            cur_ratings = utils.get_em_ratings(
-                                completed_year_data[
-                                    completed_year_data["completed"] == True
-                                ],
-                                hca=year_hca,
-                            )
-                        else:
-                            # If not enough data to get EM ratings for every team, ratings default to 0
-                            cur_ratings = {
-                                team: 0
-                                for team in end_year_ratings_dct[year - 1].keys()
-                            }
-
-                        games_on_date["team_rating"] = games_on_date["team"].map(
-                            cur_ratings
-                        )
-                        games_on_date["opp_rating"] = games_on_date["opponent"].map(
-                            cur_ratings
-                        )
-                        has_counts_toward_record = (
-                            "counts_toward_record" in games_on_date.columns
-                        )
-                        select_cols = [
-                            "team",
-                            "opponent",
-                            "team_rating",
-                            "opp_rating",
-                            "last_year_team_rating",
-                            "last_year_opp_rating",
-                            "margin",
-                            "pace",
-                            "num_games_into_season",
-                            "date",
-                            "year",
-                        ]
-                        if has_counts_toward_record:
-                            select_cols.append("counts_toward_record")
-                        games_on_date = games_on_date[select_cols]
-                        year_data_temp += games_on_date.values.tolist()
-
-                    output_cols = [
-                        "team",
-                        "opponent",
-                        "team_rating",
-                        "opponent_rating",
-                        "last_year_team_rating",
-                        "last_year_opp_rating",
-                        "margin",
-                        "pace",
-                        "num_games_into_season",
-                        "date",
-                        "year",
-                    ]
-                    if has_counts_toward_record:
-                        output_cols.append("counts_toward_record")
-                    year_data = pd.DataFrame(
-                        year_data_temp,
-                        columns=output_cols,
+                    # TRANSFORM: compute daily ratings + rolling windows
+                    year_data = transforms.compute_daily_ratings(
+                        year_data, end_year_ratings_dct[year - 1], year_hca
                     )
-                    year_data = utils.last_n_games(year_data, 10)
-                    year_data = utils.last_n_games(year_data, 5)
-                    year_data = utils.last_n_games(year_data, 3)
-                    year_data = utils.last_n_games(year_data, 1)
 
-                    year_data["completed"] = year_data["margin"].apply(
-                        lambda x: True if not np.isnan(x) else False
+                    # TRANSFORM: add win total features
+                    year_data = transforms.add_win_total_features(
+                        year_data, win_totals_futures, year
                     )
-                    year_data = utils.add_playoff_indicator(year_data)
-                    year_data["date"] = pd.to_datetime(year_data["date"]).dt.date
-                    year_data["team_win_total_future"] = year_data.apply(
-                        lambda x: win_totals_futures[str(x["year"])][x["team"]], axis=1
-                    ).astype(float)
-                    year_data["opponent_win_total_future"] = year_data.apply(
-                        lambda x: win_totals_futures[str(x["year"])][x["opponent"]],
-                        axis=1,
-                    ).astype(float)
 
-                    # Get last year's win totals for win_total_change_diff
-                    last_year = year - 1
-                    if str(last_year) in win_totals_futures:
+                    # TRANSFORM: compute Bayesian game scores
+                    year_data = transforms.compute_bayesian_game_scores(year_data)
 
-                        def get_last_year_wt(row, team_col):
-                            team = row[team_col]
-                            ly_totals = win_totals_futures.get(str(last_year), {})
-                            if team in ly_totals:
-                                return ly_totals[team]
-                            # Handle abbreviation variations
-                            alt = utils.ABBR_ALTERNATES.get(team)
-                            if alt and alt in ly_totals:
-                                return ly_totals[alt]
-                            # Fallback to current year
-                            if team_col == "team":
-                                return row["team_win_total_future"]
-                            else:
-                                return row["opponent_win_total_future"]
-
-                        year_data["team_win_total_last_year"] = year_data.apply(
-                            lambda x: get_last_year_wt(x, "team"), axis=1
-                        ).astype(float)
-                        year_data["opponent_win_total_last_year"] = year_data.apply(
-                            lambda x: get_last_year_wt(x, "opponent"), axis=1
-                        ).astype(float)
-                    else:
-                        year_data["team_win_total_last_year"] = year_data[
-                            "team_win_total_future"
-                        ]
-                        year_data["opponent_win_total_last_year"] = year_data[
-                            "opponent_win_total_future"
-                        ]
-
-                    # Compute Bayesian game score (prior + incremental updates)
-                    HCA = 3.5
-                    PRIOR_WEIGHT = 5
-                    year_data = year_data.sort_values("date").reset_index(drop=True)
-
-                    # Initialize columns
-                    year_data["team_bayesian_gs"] = np.nan
-                    year_data["opp_bayesian_gs"] = np.nan
-
-                    # Track running sums and counts for each team
-                    all_teams = set(
-                        year_data["team"].tolist() + year_data["opponent"].tolist()
-                    )
-                    gs_sum = {team: 0.0 for team in all_teams}
-                    gs_count = {team: 0 for team in all_teams}
-
-                    # Get prior ratings for each team
-                    prior_ratings = {}
-                    for team in all_teams:
-                        team_rows = year_data[year_data["team"] == team]
-                        if len(team_rows) > 0:
-                            prior_ratings[team] = team_rows[
-                                "last_year_team_rating"
-                            ].iloc[0]
-                        else:
-                            opp_rows = year_data[year_data["opponent"] == team]
-                            if len(opp_rows) > 0:
-                                prior_ratings[team] = opp_rows[
-                                    "last_year_opp_rating"
-                                ].iloc[0]
-                            else:
-                                prior_ratings[team] = 0.0
-
-                    # Process games in chronological order
-                    for idx in year_data.index:
-                        row = year_data.loc[idx]
-                        team = row["team"]
-                        opp = row["opponent"]
-
-                        # Compute current Bayesian GS for each team BEFORE this game
-                        team_prior = prior_ratings.get(team, 0.0)
-                        opp_prior = prior_ratings.get(opp, 0.0)
-
-                        team_bayesian = (team_prior * PRIOR_WEIGHT + gs_sum[team]) / (
-                            PRIOR_WEIGHT + gs_count[team]
-                        )
-                        opp_bayesian = (opp_prior * PRIOR_WEIGHT + gs_sum[opp]) / (
-                            PRIOR_WEIGHT + gs_count[opp]
-                        )
-
-                        year_data.loc[idx, "team_bayesian_gs"] = team_bayesian
-                        year_data.loc[idx, "opp_bayesian_gs"] = opp_bayesian
-
-                        # Update running sums with this game's result (if completed)
-                        if not np.isnan(row["margin"]):
-                            # Game score from team's perspective
-                            team_gs = row["margin"] + row["opponent_rating"] - HCA
-                            opp_gs = -row["margin"] + row["team_rating"] + HCA
-
-                            gs_sum[team] += team_gs
-                            gs_count[team] += 1
-                            gs_sum[opp] += opp_gs
-                            gs_count[opp] += 1
-
-                    # Compute all diff + engineered features in one call
+                    # TRANSFORM: compute all diff + engineered features
                     year_data = utils.build_model_features(year_data)
 
-                    # year_data to list of dictionaries
-                    year_data = year_data.to_dict("records")
-                    all_data += year_data
+                    all_data += year_data.to_dict("records")
 
                 else:
                     year_data = all_data_archive[all_data_archive["year"] == year]
