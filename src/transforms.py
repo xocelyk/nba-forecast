@@ -25,11 +25,11 @@ logger = logging.getLogger("nba")
 
 def process_schedule_to_games(
     schedule_df: pd.DataFrame, year: int, valid_nba_abbrs: set
-) -> pd.DataFrame:
+) -> "List[Game]":
     """
-    Convert raw ScheduleLeagueV2 data to standardized game rows.
+    Convert raw ScheduleLeagueV2 data to typed Game instances.
 
-    One row per game from the home team perspective.
+    One Game per game from the home team perspective.
 
     Args:
         schedule_df: Raw schedule DataFrame from nba_api
@@ -37,74 +37,65 @@ def process_schedule_to_games(
         valid_nba_abbrs: Set of valid NBA team abbreviations for filtering
 
     Returns:
-        DataFrame with columns matching GAME_BASE_COLUMNS
+        List of Game instances
     """
+    from src.models import Game
+
     games = []
 
     for _, row in schedule_df.iterrows():
-        # Skip preseason games
         if row.get("gameLabel") == "Preseason":
             continue
 
-        # Skip games involving non-NBA teams
         home_abbr_raw = row["homeTeam_teamTricode"]
         away_abbr_raw = row["awayTeam_teamTricode"]
         if home_abbr_raw not in valid_nba_abbrs or away_abbr_raw not in valid_nba_abbrs:
             continue
 
-        game_id = row["gameId"]
+        game_id = str(row["gameId"])
         game_date = pd.to_datetime(row["gameDate"])
         if game_date.tzinfo is not None:
             game_date = game_date.tz_convert("UTC").tz_localize(None)
+        game_date = game_date.date()
 
         home_abbr = normalize_abbr(row["homeTeam_teamTricode"])
         away_abbr = normalize_abbr(row["awayTeam_teamTricode"])
-        home_name = row["homeTeam_teamName"]
-        away_name = row["awayTeam_teamName"]
         home_score = row["homeTeam_score"]
         away_score = row["awayTeam_score"]
 
         completed = row["gameStatus"] == 3
-
         if completed and home_score is not None and away_score is not None:
             margin = float(home_score - away_score)
         else:
             margin = None
 
-        # NBA Cup championship detection
         game_label = row.get("gameLabel", "")
         game_sub_label = row.get("gameSubLabel", "")
-        is_cup_championship = (
-            "Cup" in str(game_label) and str(game_sub_label) == "Championship"
-        )
-        if not is_cup_championship:
+        is_cup = "Cup" in str(game_label) and str(game_sub_label) == "Championship"
+        if not is_cup:
             gid = str(game_id)
-            is_cup_championship = (
-                len(gid) == 10 and gid.startswith("006") and gid.endswith("00001")
-            )
+            is_cup = len(gid) == 10 and gid.startswith("006") and gid.endswith("00001")
 
         games.append(
-            {
-                "game_id": game_id,
-                "date": game_date,
-                "team": home_abbr,
-                "opponent": away_abbr,
-                "team_name": home_name,
-                "opponent_name": away_name,
-                "team_score": float(home_score) if home_score is not None else None,
-                "opponent_score": float(away_score) if away_score is not None else None,
-                "margin": margin,
-                "location": "Home",
-                "pace": None,
-                "completed": completed,
-                "year": year,
-                "counts_toward_record": not is_cup_championship,
-            }
+            Game(
+                game_id=game_id,
+                date=game_date,
+                team=home_abbr,
+                opponent=away_abbr,
+                team_name=row["homeTeam_teamName"],
+                opponent_name=row["awayTeam_teamName"],
+                location="Home",
+                year=year,
+                completed=completed,
+                counts_toward_record=not is_cup,
+                team_score=float(home_score) if home_score is not None else None,
+                opponent_score=float(away_score) if away_score is not None else None,
+                margin=margin,
+            )
         )
 
-    games_df = pd.DataFrame(games)
-    logger.info(f"Processed {len(games_df)} games for year {year}")
-    return games_df
+    logger.info(f"Processed {len(games)} games for year {year}")
+    return games
 
 
 # ---------------------------------------------------------------------------

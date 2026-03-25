@@ -114,9 +114,11 @@ class NBAAPILoader:
         valid_nba_abbrs = set(self._abbr_to_id.keys())
 
         # Convert to standardized format (home team perspective)
+        from src import converters
         from src.transforms import process_schedule_to_games
 
-        return process_schedule_to_games(schedule_df, year, valid_nba_abbrs)
+        games = process_schedule_to_games(schedule_df, year, valid_nba_abbrs)
+        return converters.to_dataframe(games)
 
     # DEPRECATED 2024-12-07: Box score stats collection disabled
     # Use add_effective_stats_to_games() instead, which gets possessions from play-by-play
