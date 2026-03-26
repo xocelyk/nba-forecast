@@ -339,17 +339,32 @@ class NBAAPILoader:
             f"Detecting garbage time for {len(games_needing_detection)} completed games..."
         )
 
-        # FETCH: detect garbage time for each game, collect results
+        # FETCH: detect garbage time for each game, build typed results
+        from src.models import GarbageTimeInfo
+
         detector = get_detector()
-        results = {}  # idx -> detection result or None
+        results = {}  # idx -> GarbageTimeInfo or None
 
         if num_workers <= 1:
             for idx, game in games_needing_detection.iterrows():
                 game_id = game["game_id"]
                 try:
-                    results[idx] = detector.detect_garbage_time(
+                    raw = detector.detect_garbage_time(
                         game_id, max_game_time_minutes=45.0
                     )
+                    if raw is not None:
+                        results[idx] = GarbageTimeInfo(
+                            game_id=str(game_id),
+                            detected=raw["garbage_time_started"],
+                            cutoff_period=raw.get("cutoff_period"),
+                            cutoff_clock=raw.get("cutoff_clock"),
+                            cutoff_action_number=raw.get("cutoff_action_number"),
+                            possessions_before_cutoff=raw.get(
+                                "total_possessions_before_cutoff"
+                            ),
+                        )
+                    else:
+                        results[idx] = None
                 except Exception as e:
                     logger.warning(
                         f"Error detecting garbage time for game {game_id}: {e}"
@@ -368,19 +383,17 @@ class NBAAPILoader:
                 }
                 for future in as_completed(future_to_game):
                     idx, result_dict = future.result()
-                    # Convert parallel result format to standard format
                     if result_dict.get("garbage_time_detected") is not False:
-                        results[idx] = {
-                            "garbage_time_started": result_dict[
-                                "garbage_time_detected"
-                            ],
-                            "cutoff_period": result_dict["cutoff_period"],
-                            "cutoff_clock": result_dict["cutoff_clock"],
-                            "cutoff_action_number": result_dict["cutoff_action_number"],
-                            "total_possessions_before_cutoff": result_dict[
+                        results[idx] = GarbageTimeInfo(
+                            game_id=str(result_dict.get("game_id", "")),
+                            detected=result_dict["garbage_time_detected"],
+                            cutoff_period=result_dict["cutoff_period"],
+                            cutoff_clock=result_dict["cutoff_clock"],
+                            cutoff_action_number=result_dict["cutoff_action_number"],
+                            possessions_before_cutoff=result_dict[
                                 "possessions_before_cutoff"
                             ],
-                        }
+                        )
                     else:
                         results[idx] = None
 
@@ -548,13 +561,55 @@ class NBAAPILoader:
             f"Fetching advanced stats for {len(games_needing_stats)} completed games..."
         )
 
-        # FETCH: get stats for each game
+        # FETCH: get stats for each game, build typed objects
+        from src.models import BoxScoreStats, GameBoxScore
+
+        def _make_box_score(raw_dict):
+            """Build BoxScoreStats from raw API dict, using None for missing."""
+            return BoxScoreStats(
+                fgm=raw_dict.get("fgm", 0),
+                fga=raw_dict.get("fga", 0),
+                fg_pct=raw_dict.get("fg_pct", 0),
+                fg3m=raw_dict.get("fg3m", 0),
+                fg3a=raw_dict.get("fg3a", 0),
+                fg3_pct=raw_dict.get("fg3_pct", 0),
+                ftm=raw_dict.get("ftm", 0),
+                fta=raw_dict.get("fta", 0),
+                ft_pct=raw_dict.get("ft_pct", 0),
+                oreb=raw_dict.get("oreb", 0),
+                dreb=raw_dict.get("dreb", 0),
+                reb=raw_dict.get("reb", 0),
+                ast=raw_dict.get("ast", 0),
+                stl=raw_dict.get("stl", 0),
+                blk=raw_dict.get("blk", 0),
+                tov=raw_dict.get("tov", 0),
+                pf=raw_dict.get("pf", 0),
+                off_rating=raw_dict.get("off_rating"),
+                def_rating=raw_dict.get("def_rating"),
+                net_rating=raw_dict.get("net_rating"),
+                efg_pct=raw_dict.get("efg_pct"),
+                ts_pct=raw_dict.get("ts_pct"),
+                tov_pct=raw_dict.get("tov_pct"),
+                oreb_pct=raw_dict.get("oreb_pct"),
+                dreb_pct=raw_dict.get("dreb_pct"),
+                ast_pct=raw_dict.get("ast_pct"),
+                ast_to=raw_dict.get("ast_to"),
+            )
+
         client = get_client()
         stats_by_idx = {}
         for idx, game in games_needing_stats.iterrows():
             game_id = game["game_id"]
             try:
-                stats_by_idx[idx] = client.get_advanced_stats(game_id)
+                raw = client.get_advanced_stats(game_id)
+                if raw is not None:
+                    stats_by_idx[idx] = GameBoxScore(
+                        game_id=str(game_id),
+                        team_stats=_make_box_score(raw.get("home", {})),
+                        opponent_stats=_make_box_score(raw.get("away", {})),
+                    )
+                else:
+                    stats_by_idx[idx] = None
             except Exception as e:
                 logger.warning(f"Error fetching advanced stats for game {game_id}: {e}")
                 stats_by_idx[idx] = None

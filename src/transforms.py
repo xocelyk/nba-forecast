@@ -109,19 +109,32 @@ def apply_garbage_time_results(games_df, results):
 
     Args:
         games_df: DataFrame with game data
-        results: Dict mapping DataFrame index -> detection result dict.
-            Each result dict has keys: garbage_time_started, cutoff_period,
-            cutoff_clock, cutoff_action_number, total_possessions_before_cutoff.
-            A value of None means detection failed (sets garbage_time_detected=False).
+        results: Dict mapping DataFrame index -> GarbageTimeInfo or raw dict or None.
+            None means detection failed (sets garbage_time_detected=False).
 
     Returns:
         DataFrame with garbage time columns populated
     """
+    from src.models import GarbageTimeInfo
+
     games_df = games_df.copy()
     schemas.ensure_columns(games_df, schemas.GARBAGE_TIME_COLUMNS)
 
     for idx, result in results.items():
-        if result is not None:
+        if result is None:
+            games_df.at[idx, "garbage_time_detected"] = False
+        elif isinstance(result, GarbageTimeInfo):
+            games_df.at[idx, "garbage_time_detected"] = result.detected
+            games_df.at[idx, "garbage_time_cutoff_period"] = result.cutoff_period
+            games_df.at[idx, "garbage_time_cutoff_clock"] = result.cutoff_clock
+            games_df.at[idx, "garbage_time_cutoff_action_number"] = (
+                result.cutoff_action_number
+            )
+            games_df.at[idx, "garbage_time_possessions_before_cutoff"] = (
+                result.possessions_before_cutoff
+            )
+        else:
+            # Legacy dict format
             games_df.at[idx, "garbage_time_detected"] = result["garbage_time_started"]
             games_df.at[idx, "garbage_time_cutoff_period"] = result.get("cutoff_period")
             games_df.at[idx, "garbage_time_cutoff_clock"] = result.get("cutoff_clock")
@@ -131,8 +144,6 @@ def apply_garbage_time_results(games_df, results):
             games_df.at[idx, "garbage_time_possessions_before_cutoff"] = result.get(
                 "total_possessions_before_cutoff"
             )
-        else:
-            games_df.at[idx, "garbage_time_detected"] = False
 
     return games_df
 
@@ -238,12 +249,16 @@ def apply_advanced_stats(games_df, stats_by_idx):
 
     Args:
         games_df: DataFrame with game data
-        stats_by_idx: Dict mapping DataFrame index -> stats dict with
-            {"home": {...}, "away": {...}} structure from nba_api_client.
+        stats_by_idx: Dict mapping DataFrame index -> GameBoxScore, raw dict
+            with {"home": {...}, "away": {...}}, or None.
 
     Returns:
         DataFrame with advanced stats columns populated
     """
+    import dataclasses
+
+    from src.models import GameBoxScore
+
     games_df = games_df.copy()
     schemas.ensure_columns(games_df, schemas.ALL_ADVANCED_STATS_COLUMNS)
 
@@ -251,14 +266,19 @@ def apply_advanced_stats(games_df, stats_by_idx):
         if stats is None:
             continue
 
-        home_stats = stats.get("home", {})
-        away_stats = stats.get("away", {})
+        if isinstance(stats, GameBoxScore):
+            team_dict = dataclasses.asdict(stats.team_stats)
+            opp_dict = dataclasses.asdict(stats.opponent_stats)
+        else:
+            # Legacy dict format from nba_api_client
+            team_dict = stats.get("home", {})
+            opp_dict = stats.get("away", {})
 
-        for key, value in home_stats.items():
+        for key, value in team_dict.items():
             if key in games_df.columns:
                 games_df.at[idx, key] = value
 
-        for key, value in away_stats.items():
+        for key, value in opp_dict.items():
             opp_key = f"opp_{key}"
             if opp_key in games_df.columns:
                 games_df.at[idx, opp_key] = value
@@ -485,6 +505,60 @@ def add_win_total_features(year_data, win_totals_futures, year):
         ]
 
     return year_data
+
+
+def add_game_odds(year_data, odds_df):
+    """
+    Join game-level betting odds onto training data.
+
+    Matches on (date, team=home, opponent=away).  Adds ``vegas_spread``
+    (home-perspective signed spread) and ``vegas_total`` columns.
+
+    Handles legacy abbreviations (NJN, NOH, CHA) that may appear in
+    historical training data by mapping them to the canonical forms used
+    in the odds file.
+
+    Args:
+        year_data: Training DataFrame with date, team (home), opponent (away).
+        odds_df: Odds DataFrame from ``store.load_game_odds()``.
+
+    Returns:
+        DataFrame with odds columns added. Unmatched rows get NaN.
+    """
+    # Legacy abbreviations → canonical (odds file uses canonical)
+    _LEGACY = {"NJN": "BRK", "NOH": "NOP", "CHA": "CHO", "BKN": "BRK", "PHO": "PHX"}
+
+    year_data = year_data.copy()
+    odds = odds_df[["date", "home", "away", "spread", "total"]].copy()
+    odds["date"] = pd.to_datetime(odds["date"])
+    odds = odds.rename(
+        columns={
+            "home": "team",
+            "away": "opponent",
+            "spread": "vegas_spread",
+            "total": "vegas_total",
+        }
+    )
+
+    year_data["date"] = pd.to_datetime(year_data["date"])
+
+    # Normalize team columns for matching
+    year_data["_join_team"] = year_data["team"].replace(_LEGACY)
+    year_data["_join_opp"] = year_data["opponent"].replace(_LEGACY)
+
+    merged = year_data.merge(
+        odds,
+        left_on=["date", "_join_team", "_join_opp"],
+        right_on=["date", "team", "opponent"],
+        how="left",
+        suffixes=("", "_odds"),
+    )
+    merged.drop(
+        columns=["_join_team", "_join_opp", "team_odds", "opponent_odds"],
+        errors="ignore",
+        inplace=True,
+    )
+    return merged
 
 
 def compute_bayesian_game_scores(year_data, prior_weight=5, hca=3.5):
