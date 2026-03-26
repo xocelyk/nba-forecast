@@ -139,6 +139,9 @@ def load_training_data(
 
     win_totals_futures = load_regular_season_win_totals_futures()
 
+    # Load game-level betting odds for join during training data build
+    game_odds = store.load_game_odds()
+
     # Load HCA map for year-specific home court advantage
     hca_map = store.load_hca_map()
 
@@ -257,6 +260,10 @@ def load_training_data(
 
                     # TRANSFORM: compute Bayesian game scores
                     year_data = transforms.compute_bayesian_game_scores(year_data)
+
+                    # TRANSFORM: join game-level betting odds
+                    if game_odds is not None:
+                        year_data = transforms.add_game_odds(year_data, game_odds)
 
                     # TRANSFORM: compute all diff + engineered features
                     year_data = utils.build_model_features(year_data)

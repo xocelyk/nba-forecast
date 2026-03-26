@@ -51,6 +51,10 @@ def _win_totals_path() -> str:
     return os.path.join(config.DATA_DIR, "regular_season_win_totals_odds_archive.csv")
 
 
+def _game_odds_path() -> str:
+    return os.path.join(config.DATA_DIR, "odds", "game_odds.csv")
+
+
 def _main_output_path(year: int) -> str:
     return os.path.join(config.DATA_DIR, f"main_{year}.csv")
 
@@ -171,6 +175,22 @@ def save_hca_map(hca_map: Dict[int, float]) -> None:
 # ---------------------------------------------------------------------------
 # Win totals futures
 # ---------------------------------------------------------------------------
+
+
+def load_game_odds() -> Optional[pd.DataFrame]:
+    """Load historical game-level betting odds.
+
+    Returns a DataFrame with columns: season, date, home, away, spread,
+    total, moneyline_home, moneyline_away, home_implied_prob,
+    away_implied_prob, home_score, away_score, playoffs.
+
+    The spread is signed from the home team perspective (negative = home
+    favored).  Returns None if the file does not exist.
+    """
+    path = _game_odds_path()
+    if not os.path.exists(path):
+        return None
+    return pd.read_csv(path)
 
 
 def load_win_totals_futures() -> Dict:

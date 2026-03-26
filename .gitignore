@@ -25,4 +25,5 @@ data/seed_reports/archive
 data/sim_results/archive
 catboost_info/
 data/pbp/
+data/pbpstats/
 .local/
