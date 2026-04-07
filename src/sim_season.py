@@ -145,8 +145,10 @@ class Season:
         mean_pace,
         std_pace,
         sim_date_increment=1,
+        use_spreads=False,
     ):
         self.year = year
+        self.use_spreads = use_spreads
         self.completed_games = utils.add_playoff_indicator(completed_games)
         # Vectorized operations instead of slow .apply() calls
         self.completed_games["winner_name"] = np.where(
@@ -223,8 +225,10 @@ class Season:
                 mean, var = info.team_posteriors.get(team, (0.0, info.tau**2))
                 self.team_bias[team] = np.random.normal(mean, np.sqrt(var))
 
+        em_margin_col = "spread" if self.use_spreads else "margin"
         em_ratings = utils.get_em_ratings(
-            self.completed_games, names=self.teams, hca=self.hca
+            self.completed_games, names=self.teams, hca=self.hca,
+            margin_col=em_margin_col,
         )
         self.team_states = self._init_team_states(em_ratings)
 
@@ -269,8 +273,21 @@ class Season:
         self.playoff_state = None
 
     def _compute_initial_adj_margins(self):
-        """Compute initial adjusted margins per team from completed games."""
+        """Compute initial adjusted margins per team from completed games.
+
+        In spread mode, uses the ``spread`` column instead of ``margin`` so
+        that team state (last-n-game ratings, bayesian_gs) is derived from
+        pre-game spreads rather than noisy actual outcomes.
+        """
         completed_games = self.completed_games.copy()
+        # Choose the signal column: spread (if available) or margin
+        signal_col = "margin"
+        if self.use_spreads and "spread" in completed_games.columns:
+            # Use spread where available, fall back to margin for games without spread
+            completed_games["_signal"] = completed_games["spread"].fillna(
+                completed_games["margin"]
+            )
+            signal_col = "_signal"
         res = {}
         completed_games.sort_values(by="date", ascending=True, inplace=True)
         for team in self.teams:
@@ -282,7 +299,7 @@ class Season:
             team_data = team_data[team_data["team"] == team]
             game_hca = team_data["hca"] if "hca" in team_data.columns else self.hca
             team_data["team_adj_margin"] = (
-                team_data["margin"] + team_data["opponent_rating"] - game_hca
+                team_data[signal_col] + team_data["opponent_rating"] - game_hca
             )
             if len(team_data) == 0:
                 team_adj_margins = []
@@ -460,8 +477,10 @@ class Season:
         if self.update_counter is not None:
             self.update_counter += 1
             if self.update_counter % self.update_every == 0:
+                em_margin_col = "spread" if self.use_spreads else "margin"
                 new_em = utils.get_em_ratings(
-                    self.completed_games, names=self.teams, hca=self.hca
+                    self.completed_games, names=self.teams, hca=self.hca,
+                    margin_col=em_margin_col,
                 )
                 for team, rating in new_em.items():
                     self.team_states[team].em_rating = rating
@@ -623,10 +642,12 @@ class Season:
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
+        # Fill NaN num_games_into_season (e.g. dynamically created play-in/playoff games)
+        games_into = games["num_games_into_season"].fillna(len(self.completed_games)).values
         std_devs = np.array(
             [
                 self.margin_model.num_games_to_std_margin_model_resid(n)
-                for n in games["num_games_into_season"].values
+                for n in games_into
             ]
         )
         noise = np.random.normal(0, std_devs)
@@ -647,16 +668,29 @@ class Season:
         games["expected_margin"] = expected_margins
         games["simulated"] = True
 
+        # In spread mode, store expected_margin as the spread for simulated
+        # games.  For real games the spread comes from betting data; for
+        # simulated games the model's pre-noise prediction plays that role.
+        if self.use_spreads:
+            games["spread"] = expected_margins
+
         # Update team states
+        # In spread mode we feed the spread-based adjusted margin so that
+        # last-n-game ratings and bayesian_gs track the spread signal rather
+        # than noisy actual outcomes.
         for idx in games.index:
             row = games.loc[idx]
             team = row["team"]
             opponent = row["opponent"]
             game_hca = row["hca"] if "hca" in games.columns else self.hca
-            team_adj_margin = row["margin"] + row["opponent_rating"] - game_hca
-            opponent_adj_margin = -row["margin"] + row["team_rating"] + game_hca
-            self.team_states[team].record_game(team_adj_margin, row["date"])
-            self.team_states[opponent].record_game(opponent_adj_margin, row["date"])
+            if self.use_spreads:
+                signal = row["spread"]
+            else:
+                signal = row["margin"]
+            team_adj = signal + row["opponent_rating"] - game_hca
+            opponent_adj = -signal + row["team_rating"] + game_hca
+            self.team_states[team].record_game(team_adj, row["date"])
+            self.team_states[opponent].record_game(opponent_adj, row["date"])
 
         return games
 
@@ -2049,6 +2083,7 @@ def run_single_simulation(
     win_prob_model,
     mean_pace,
     std_pace,
+    use_spreads=False,
 ):
     season = Season(
         year,
@@ -2058,6 +2093,7 @@ def run_single_simulation(
         win_prob_model,
         mean_pace,
         std_pace,
+        use_spreads=use_spreads,
     )
     season.simulate_season()
     wins_losses_dict = season.get_win_loss_report()
@@ -2184,6 +2220,7 @@ def sim_season(
     parallel=True,
     start_date=None,
     team_bias_info=None,
+    use_spreads=False,
 ):
     import os
     from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -2202,6 +2239,14 @@ def sim_season(
         team_bias_info=team_bias_info,
     )
     year_games = data[data["year"] == year]
+
+    # In spread mode, merge spread data into year_games so that the
+    # Season object has access to the spread column.
+    if use_spreads:
+        from loaders.spreads_loader import merge_spreads
+
+        year_games = merge_spreads(year_games, year)
+
     if start_date is not None:
         start_dt = pd.to_datetime(start_date).date()
         completed_year_games = year_games[year_games["date"] < start_dt].copy()
@@ -2233,6 +2278,7 @@ def sim_season(
                     win_prob_model,
                     mean_pace,
                     std_pace,
+                    use_spreads,
                 )
                 for _ in range(num_sims)
             ]
@@ -2249,6 +2295,7 @@ def sim_season(
                 win_prob_model,
                 mean_pace,
                 std_pace,
+                use_spreads,
             )
             output.append(sim_result)
 

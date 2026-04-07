@@ -343,8 +343,18 @@ def sgd_ratings(
 
 
 def get_em_ratings(
-    df, cap=None, names=None, num_epochs=1000, day_cap=200, hca: float = HCA
+    df, cap=None, names=None, num_epochs=1000, day_cap=200, hca: float = HCA,
+    margin_col: str = "margin",
 ):
+    """Compute EM ratings from game data using SGD.
+
+    Parameters
+    ----------
+    margin_col : str
+        Column to use as the game margin signal. Default ``"margin"`` uses
+        actual game margins.  Pass ``"spread"`` to compute ratings from
+        pre-game spreads instead.
+    """
     if names is None:
         teams_dict = {team: i for i, team in enumerate(df["team"].unique())}
     else:
@@ -359,7 +369,10 @@ def get_em_ratings(
     # Filter out games with teams not in teams_dict (e.g., international exhibition games)
     df = df[df["team"].isin(teams_dict.keys()) & df["opponent"].isin(teams_dict.keys())]
 
-    games = df[["team", "opponent", "margin"]]
+    # Fall back to "margin" if the requested column is missing
+    col = margin_col if margin_col in df.columns else "margin"
+
+    games = df[["team", "opponent", col]].rename(columns={col: "margin"})
     margin_fn = (
         (lambda margin: margin)
         if cap is None
@@ -545,6 +558,20 @@ def flip_perspective(df, hca: float = HCA):
             flipped["margin"] = -flipped["margin"] + 2 * flipped["hca"]
         else:
             flipped["margin"] = -flipped["margin"] + 2 * hca
+
+    # Flip spread the same way as margin (spread is from home perspective)
+    if "spread" in flipped.columns:
+        if "hca" in flipped.columns:
+            flipped["spread"] = -flipped["spread"] + 2 * flipped["hca"]
+        else:
+            flipped["spread"] = -flipped["spread"] + 2 * hca
+
+    # Also flip _signal helper column used in spread-mode adj margin calc
+    if "_signal" in flipped.columns:
+        if "hca" in flipped.columns:
+            flipped["_signal"] = -flipped["_signal"] + 2 * flipped["hca"]
+        else:
+            flipped["_signal"] = -flipped["_signal"] + 2 * hca
 
     # Flip team_win if present
     if "team_win" in flipped.columns:

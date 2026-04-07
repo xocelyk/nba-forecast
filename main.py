@@ -40,6 +40,11 @@ def parse_arguments() -> argparse.Namespace:
         default=None,
         help="Start date for simulation in YYYY-MM-DD format",
     )
+    parser.add_argument(
+        "--use-spreads",
+        action="store_true",
+        help="Use pre-game spreads instead of margins for EM ratings",
+    )
     return parser.parse_args()
 
 
@@ -129,11 +134,14 @@ def load_game_data(
 
 
 def calculate_em_ratings(
-    completed_games: pd.DataFrame, abbrs: List[str], year: int, hca: float = None
+    completed_games: pd.DataFrame, abbrs: List[str], year: int, hca: float = None,
+    margin_col: str = "margin",
 ) -> Dict[str, float]:
     if hca is None:
         hca = utils.HCA
-    em_ratings = utils.get_em_ratings(completed_games, names=abbrs, hca=hca)
+    em_ratings = utils.get_em_ratings(
+        completed_games, names=abbrs, hca=hca, margin_col=margin_col
+    )
     em_ratings = {
         k: v
         for k, v in sorted(em_ratings.items(), key=lambda item: item[1], reverse=True)
@@ -212,6 +220,7 @@ def simulate_season(
     parallel: bool = False,
     start_date: Optional[str] = None,
     team_bias_info=None,
+    use_spreads: bool = False,
 ) -> pd.DataFrame:
     (
         win_margin_model,
@@ -235,6 +244,7 @@ def simulate_season(
         parallel=parallel,
         start_date=start_date,
         team_bias_info=team_bias_info,
+        use_spreads=use_spreads,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     sim_report.to_csv(os.path.join(config.DATA_DIR, "sim_results", "sim_report.csv"))
@@ -412,6 +422,7 @@ def main():
     reset = args.reset
     parallel = args.parallel
     start_date = args.start_date
+    use_spreads = args.use_spreads
 
     logger.info(f"Loading team data for {YEAR}...")
     abbrs, names_to_abbr, abbr_to_name = load_team_data(YEAR, update, save_names)
@@ -424,6 +435,22 @@ def main():
     if invalid_rows > 0:
         logger.warning(f"Removing {invalid_rows} invalid rows with missing team data")
         games = games[games["team"].notna() & games["opponent"].notna()]
+
+    # Merge spread data when running in spread-based EM mode
+    if use_spreads:
+        from loaders.spreads_loader import merge_spreads, spreads_coverage
+
+        games = merge_spreads(games, YEAR)
+        coverage = spreads_coverage(games)
+        logger.info(
+            f"Spread data: {coverage['with_spread']}/{coverage['total']} games "
+            f"({coverage['pct']}% coverage)"
+        )
+        if coverage["with_spread"] == 0:
+            logger.warning(
+                "No spread data found! Falling back to margins for EM ratings. "
+                f"Place spread CSV at data/spreads/spreads_{YEAR}.csv"
+            )
 
     completed_games = games[games["completed"]]
     future_games = games[~games["completed"]]
@@ -444,7 +471,10 @@ def main():
     year_hca = hca_map.get(YEAR, utils.HCA)
 
     # Calculate EM ratings
-    em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR, hca=year_hca)
+    em_margin_col = "spread" if use_spreads else "margin"
+    em_ratings = calculate_em_ratings(
+        completed_games, abbrs, YEAR, hca=year_hca, margin_col=em_margin_col
+    )
 
     # Initialize dataframe
     df_final = initialize_dataframe(abbrs, abbr_to_name, em_ratings)
@@ -500,6 +530,7 @@ def main():
         parallel=parallel,
         start_date=start_date,
         team_bias_info=team_bias_info,
+        use_spreads=use_spreads,
     )
 
     # Add predictive ratings
