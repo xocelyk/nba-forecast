@@ -663,10 +663,14 @@ class Season:
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
+        # Fill NaN with total completed games (e.g. play-in/playoff games created dynamically)
+        num_games_values = games["num_games_into_season"].fillna(
+            len(self.completed_games)
+        ).values
         std_devs = np.array(
             [
                 self.margin_model.num_games_to_std_margin_model_resid(n)
-                for n in games["num_games_into_season"].values
+                for n in num_games_values
             ]
         )
         noise = np.random.normal(0, std_devs)
