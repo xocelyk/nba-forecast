@@ -343,8 +343,23 @@ def sgd_ratings(
 
 
 def get_em_ratings(
-    df, cap=None, names=None, num_epochs=1000, day_cap=200, hca: float = HCA
+    df,
+    cap=None,
+    names=None,
+    num_epochs=1000,
+    day_cap=200,
+    hca: float = HCA,
+    margin_col: str = "margin",
 ):
+    """Calculate EM ratings using SGD.
+
+    Parameters
+    ----------
+    margin_col : str
+        Column name to use as the game outcome signal. Default is ``"margin"``
+        (actual point differential). Pass ``"spread"`` to compute
+        spread-based EM ratings from betting lines.
+    """
     if names is None:
         teams_dict = {team: i for i, team in enumerate(df["team"].unique())}
     else:
@@ -359,7 +374,12 @@ def get_em_ratings(
     # Filter out games with teams not in teams_dict (e.g., international exhibition games)
     df = df[df["team"].isin(teams_dict.keys()) & df["opponent"].isin(teams_dict.keys())]
 
-    games = df[["team", "opponent", "margin"]]
+    # Drop rows where the chosen margin column is missing (e.g. no spread data)
+    df = df.dropna(subset=[margin_col])
+
+    games = df[["team", "opponent", margin_col]].rename(
+        columns={margin_col: "margin"}
+    )
     margin_fn = (
         (lambda margin: margin)
         if cap is None

@@ -11,7 +11,7 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 
-from loaders import data_loader
+from loaders import data_loader, spreads_loader
 from src import config, eval, forecast, stats, utils
 
 # Import logger from config
@@ -39,6 +39,17 @@ def parse_arguments() -> argparse.Namespace:
         type=str,
         default=None,
         help="Start date for simulation in YYYY-MM-DD format",
+    )
+    parser.add_argument(
+        "--use-spreads",
+        action="store_true",
+        help="Use game spreads (betting lines) for EM ratings instead of margins",
+    )
+    parser.add_argument(
+        "--spread-em-alpha",
+        type=float,
+        default=0.5,
+        help="How much of margin-EM delta to apply to spread-EM during simulation (0-1)",
     )
     return parser.parse_args()
 
@@ -212,6 +223,8 @@ def simulate_season(
     parallel: bool = False,
     start_date: Optional[str] = None,
     team_bias_info=None,
+    use_spreads: bool = False,
+    spread_em_alpha: float = 0.5,
 ) -> pd.DataFrame:
     (
         win_margin_model,
@@ -235,6 +248,8 @@ def simulate_season(
         parallel=parallel,
         start_date=start_date,
         team_bias_info=team_bias_info,
+        use_spreads=use_spreads,
+        spread_em_alpha=spread_em_alpha,
     )
     date_string = datetime.datetime.today().strftime("%Y-%m-%d")
     sim_report.to_csv(os.path.join(config.DATA_DIR, "sim_results", "sim_report.csv"))
@@ -412,6 +427,8 @@ def main():
     reset = args.reset
     parallel = args.parallel
     start_date = args.start_date
+    use_spreads = args.use_spreads
+    spread_em_alpha = args.spread_em_alpha
 
     logger.info(f"Loading team data for {YEAR}...")
     abbrs, names_to_abbr, abbr_to_name = load_team_data(YEAR, update, save_names)
@@ -424,6 +441,26 @@ def main():
     if invalid_rows > 0:
         logger.warning(f"Removing {invalid_rows} invalid rows with missing team data")
         games = games[games["team"].notna() & games["opponent"].notna()]
+
+    # Load and merge spread data if using spread-based EM ratings
+    if use_spreads:
+        logger.info("Loading spread data...")
+        games = spreads_loader.merge_spreads_with_games(games, YEAR)
+        spread_coverage = games["spread"].notna().sum()
+        completed_with_spreads = (
+            games[games["completed"]]["spread"].notna().sum()
+        )
+        logger.info(
+            f"Spread data: {spread_coverage} total games, "
+            f"{completed_with_spreads} completed games with spreads"
+        )
+        if completed_with_spreads == 0:
+            logger.warning(
+                "No spread data found for completed games. "
+                "Populate data/spreads/spreads_{YEAR}.csv or run "
+                "scripts/fetch_spreads.py first. Falling back to margin-based EM."
+            )
+            use_spreads = False
 
     completed_games = games[games["completed"]]
     future_games = games[~games["completed"]]
@@ -444,7 +481,29 @@ def main():
     year_hca = hca_map.get(YEAR, utils.HCA)
 
     # Calculate EM ratings
-    em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR, hca=year_hca)
+    if use_spreads:
+        # Compute spread-based EM ratings for display and initial setup
+        spread_em_ratings = utils.get_em_ratings(
+            completed_games, names=abbrs, hca=year_hca, margin_col="spread"
+        )
+        logger.info("Using spread-based EM ratings")
+        em_ratings = spread_em_ratings
+        # Also save spread-EM ratings to CSV
+        sorted_spread_em = {
+            k: v
+            for k, v in sorted(
+                spread_em_ratings.items(), key=lambda item: item[1], reverse=True
+            )
+        }
+        spread_ratings_lst = [
+            [i + 1, team, round(rating, 2)]
+            for i, (team, rating) in enumerate(sorted_spread_em.items())
+        ]
+        pd.DataFrame(spread_ratings_lst, columns=["rank", "team", "rating"]).to_csv(
+            os.path.join(config.DATA_DIR, f"spread_em_ratings_{YEAR}.csv"), index=False
+        )
+    else:
+        em_ratings = calculate_em_ratings(completed_games, abbrs, YEAR, hca=year_hca)
 
     # Initialize dataframe
     df_final = initialize_dataframe(abbrs, abbr_to_name, em_ratings)
@@ -500,6 +559,8 @@ def main():
         parallel=parallel,
         start_date=start_date,
         team_bias_info=team_bias_info,
+        use_spreads=use_spreads,
+        spread_em_alpha=spread_em_alpha,
     )
 
     # Add predictive ratings

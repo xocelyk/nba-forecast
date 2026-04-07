@@ -54,6 +54,10 @@ class TeamState:
     bayesian_gs: float = 0.0
     most_recent_game_date: Optional[datetime.date] = None
     bayesian_prior: float = 0.0
+    # Spread-based EM rating (only used when use_spreads=True)
+    spread_em_rating: float = 0.0
+    # Margin-based EM snapshot for computing deltas during simulation
+    margin_em_rating: float = 0.0
 
     def record_game(self, adj_margin: float, game_date: datetime.date) -> None:
         self.adj_margins.append(adj_margin)
@@ -145,6 +149,8 @@ class Season:
         mean_pace,
         std_pace,
         sim_date_increment=1,
+        use_spreads=False,
+        spread_em_alpha=0.5,
     ):
         self.year = year
         self.completed_games = utils.add_playoff_indicator(completed_games)
@@ -226,7 +232,19 @@ class Season:
         em_ratings = utils.get_em_ratings(
             self.completed_games, names=self.teams, hca=self.hca
         )
-        self.team_states = self._init_team_states(em_ratings)
+        self.use_spreads = use_spreads
+        self.spread_em_alpha = spread_em_alpha
+        # Compute spread-based EM ratings if spread data is available
+        if self.use_spreads and "spread" in self.completed_games.columns:
+            spread_em_ratings = utils.get_em_ratings(
+                self.completed_games,
+                names=self.teams,
+                hca=self.hca,
+                margin_col="spread",
+            )
+        else:
+            spread_em_ratings = None
+        self.team_states = self._init_team_states(em_ratings, spread_em_ratings)
 
         # Vectorized initialization of days since most recent game
         most_recent_dates = {
@@ -306,7 +324,7 @@ class Season:
                 most_recent[team] = team_data.iloc[0]["date"]
         return most_recent
 
-    def _init_team_states(self, em_ratings):
+    def _init_team_states(self, em_ratings, spread_em_ratings=None):
         """Build dict[str, TeamState] from completed games data."""
         adj_margins_by_team = self._compute_initial_adj_margins()
         recent_dates = self._compute_most_recent_game_dates()
@@ -320,14 +338,22 @@ class Season:
             bayesian_gs = (prior * BAYESIAN_PRIOR_WEIGHT + gs_sum) / (
                 BAYESIAN_PRIOR_WEIGHT + gs_count
             )
+            margin_em = em_ratings.get(team, 0.0)
+            spread_em = (
+                spread_em_ratings.get(team, 0.0)
+                if spread_em_ratings is not None
+                else margin_em
+            )
             team_states[team] = TeamState(
-                em_rating=em_ratings.get(team, 0.0),
+                em_rating=spread_em if self.use_spreads else margin_em,
                 adj_margins=list(adj_margins),
                 bayesian_gs_sum=gs_sum,
                 bayesian_gs_count=gs_count,
                 bayesian_gs=bayesian_gs,
                 most_recent_game_date=recent_dates.get(team),
                 bayesian_prior=prior,
+                spread_em_rating=spread_em,
+                margin_em_rating=margin_em,
             )
         return team_states
 
@@ -460,11 +486,25 @@ class Season:
         if self.update_counter is not None:
             self.update_counter += 1
             if self.update_counter % self.update_every == 0:
-                new_em = utils.get_em_ratings(
+                new_margin_em = utils.get_em_ratings(
                     self.completed_games, names=self.teams, hca=self.hca
                 )
-                for team, rating in new_em.items():
-                    self.team_states[team].em_rating = rating
+                if self.use_spreads:
+                    # Delta-based spread-EM update: apply a fraction of the
+                    # margin-EM shift to spread-EM.  This lets spread-based
+                    # ratings evolve during simulation without requiring
+                    # actual spread data for simulated games.
+                    for team, new_m_em in new_margin_em.items():
+                        ts = self.team_states[team]
+                        delta = new_m_em - ts.margin_em_rating
+                        ts.spread_em_rating += self.spread_em_alpha * delta
+                        ts.margin_em_rating = new_m_em
+                        # em_rating is the primary rating used for features
+                        ts.em_rating = ts.spread_em_rating
+                else:
+                    for team, rating in new_margin_em.items():
+                        self.team_states[team].em_rating = rating
+                        self.team_states[team].margin_em_rating = rating
 
         em_ratings = {t: ts.em_rating for t, ts in self.team_states.items()}
         bayesian_gs = {t: ts.bayesian_gs for t, ts in self.team_states.items()}
@@ -2049,6 +2089,8 @@ def run_single_simulation(
     win_prob_model,
     mean_pace,
     std_pace,
+    use_spreads=False,
+    spread_em_alpha=0.5,
 ):
     season = Season(
         year,
@@ -2058,6 +2100,8 @@ def run_single_simulation(
         win_prob_model,
         mean_pace,
         std_pace,
+        use_spreads=use_spreads,
+        spread_em_alpha=spread_em_alpha,
     )
     season.simulate_season()
     wins_losses_dict = season.get_win_loss_report()
@@ -2184,6 +2228,8 @@ def sim_season(
     parallel=True,
     start_date=None,
     team_bias_info=None,
+    use_spreads=False,
+    spread_em_alpha=0.5,
 ):
     import os
     from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -2233,6 +2279,8 @@ def sim_season(
                     win_prob_model,
                     mean_pace,
                     std_pace,
+                    use_spreads,
+                    spread_em_alpha,
                 )
                 for _ in range(num_sims)
             ]
@@ -2249,6 +2297,8 @@ def sim_season(
                 win_prob_model,
                 mean_pace,
                 std_pace,
+                use_spreads=use_spreads,
+                spread_em_alpha=spread_em_alpha,
             )
             output.append(sim_result)
 

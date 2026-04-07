@@ -80,6 +80,8 @@ main.parse_arguments = lambda: argparse.Namespace(
     reset=False,
     parallel=False,
     start_date=None,
+    use_spreads=False,
+    spread_em_alpha=0.5,
 )
 main.load_team_data = lambda *a, **k: (["A"], {"Alpha": "A"}, {"A": "Alpha"})
 main.load_game_data = lambda *a, **k: _make_dummy_games()
