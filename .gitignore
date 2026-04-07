@@ -7,3 +7,4 @@ visualizations/
 catboost_info/
 .local/
 data/sim_results/archive/
+*.egg-info/
