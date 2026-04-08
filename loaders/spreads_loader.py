@@ -31,19 +31,31 @@ def load_spreads(year: int) -> pd.DataFrame:
     return df[["game_id", "spread"]]
 
 
-def merge_spreads_with_games(games: pd.DataFrame, year: int) -> pd.DataFrame:
+def merge_spreads_with_games(
+    games: pd.DataFrame, year: int, fallback_to_margin: bool = False
+) -> pd.DataFrame:
     """Merge spread data into the games DataFrame.
 
     Adds a 'spread' column to the games DataFrame. Games without spread data
-    get NaN. Returns the modified DataFrame.
+    get NaN unless ``fallback_to_margin`` is True, in which case missing
+    spreads are filled with the actual game margin.
+
+    Returns the modified DataFrame.
     """
     spreads = load_spreads(year)
     if spreads.empty:
-        games["spread"] = float("nan")
+        if fallback_to_margin and "margin" in games.columns:
+            games["spread"] = games["margin"]
+        else:
+            games["spread"] = float("nan")
         return games
 
     # Merge on game_id
     if "spread" in games.columns:
         games = games.drop(columns=["spread"])
     games = games.merge(spreads, on="game_id", how="left")
+
+    if fallback_to_margin and "margin" in games.columns:
+        games["spread"] = games["spread"].fillna(games["margin"])
+
     return games

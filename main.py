@@ -445,16 +445,21 @@ def main():
     # Load and merge spread data if using spread-based EM ratings
     if use_spreads:
         logger.info("Loading spread data...")
-        games = spreads_loader.merge_spreads_with_games(games, YEAR)
-        spread_coverage = games["spread"].notna().sum()
-        completed_with_spreads = (
-            games[games["completed"]]["spread"].notna().sum()
+        games = spreads_loader.merge_spreads_with_games(games, YEAR, fallback_to_margin=True)
+        # Count how many completed games have real spread data vs margin fallback
+        completed_mask = games["completed"] == True
+        spreads_only = spreads_loader.load_spreads(YEAR)
+        real_spread_ids = set(spreads_only["game_id"]) if not spreads_only.empty else set()
+        completed_with_real_spreads = (
+            games.loc[completed_mask, "game_id"].isin(real_spread_ids).sum()
         )
+        total_completed = completed_mask.sum()
+        margin_fallback = total_completed - completed_with_real_spreads
         logger.info(
-            f"Spread data: {spread_coverage} total games, "
-            f"{completed_with_spreads} completed games with spreads"
+            f"Spread data: {completed_with_real_spreads}/{total_completed} completed games "
+            f"with real spreads, {margin_fallback} filled with actual margin"
         )
-        if completed_with_spreads == 0:
+        if completed_with_real_spreads == 0:
             logger.warning(
                 "No spread data found for completed games. "
                 "Populate data/spreads/spreads_{YEAR}.csv or run "
