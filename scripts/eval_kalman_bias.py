@@ -33,7 +33,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 REPORTS_DIR = os.path.join(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "reports", "experiments"
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "reports",
+    "experiments",
 )
 
 
@@ -148,7 +150,9 @@ def print_metrics_by_segment(result):
         ("Last 20%", gn > np.percentile(gn, 80)),
     ]
 
-    print(f"\n  {'Segment':<14} {'N':>6} {'RMSE Base':>11} {'RMSE Kalman':>13} {'Delta':>8}")
+    print(
+        f"\n  {'Segment':<14} {'N':>6} {'RMSE Base':>11} {'RMSE Kalman':>13} {'Delta':>8}"
+    )
     print(f"  {'-' * 54}")
     for name, mask in segments:
         if mask.sum() == 0:
@@ -221,20 +225,22 @@ def plot_innovation_diagnostics(result, output_path):
 
     # Histogram of raw innovations
     axes[0].hist(innovations, bins=50, edgecolor="black", alpha=0.7)
-    axes[0].set_title(f"Innovation residuals\nmean={np.mean(innovations):.3f}, std={np.std(innovations):.3f}")
+    axes[0].set_title(
+        f"Innovation residuals\nmean={np.mean(innovations):.3f}, std={np.std(innovations):.3f}"
+    )
     axes[0].set_xlabel("Innovation (z - z_hat)")
 
     # Histogram of standardized innovations (should be ~N(0,1))
     axes[1].hist(standardized, bins=50, edgecolor="black", alpha=0.7, density=True)
     x = np.linspace(-4, 4, 100)
-    axes[1].plot(x, np.exp(-x**2 / 2) / np.sqrt(2 * np.pi), "r-", linewidth=2)
-    axes[1].set_title(f"Standardized innovations\nmean={np.mean(standardized):.3f}, std={np.std(standardized):.3f}")
+    axes[1].plot(x, np.exp(-(x**2) / 2) / np.sqrt(2 * np.pi), "r-", linewidth=2)
+    axes[1].set_title(
+        f"Standardized innovations\nmean={np.mean(standardized):.3f}, std={np.std(standardized):.3f}"
+    )
     axes[1].set_xlabel("Standardized innovation")
 
     # Innovation over time
-    axes[2].scatter(
-        range(len(innovations)), innovations, s=1, alpha=0.3
-    )
+    axes[2].scatter(range(len(innovations)), innovations, s=1, alpha=0.3)
     axes[2].axhline(0, color="red", linewidth=0.5)
     axes[2].set_title("Innovations over time")
     axes[2].set_xlabel("Game index")
@@ -269,8 +275,14 @@ def grid_search(games_by_year, xgb_preds_by_year, team_to_idx, test_years):
             games = games_by_year[yr]
             preds = xgb_preds_by_year[yr]
             res = run_kalman_pass(
-                games, preds, team_to_idx,
-                rho=rho, q=q, r=r, init_var=iv, reset_on_season=True,
+                games,
+                preds,
+                team_to_idx,
+                rho=rho,
+                q=q,
+                r=r,
+                init_var=iv,
+                reset_on_season=True,
             )
             all_actuals.append(games["margin"].values)
             all_kalman.append(res["pred_final"].values)
@@ -283,10 +295,17 @@ def grid_search(games_by_year, xgb_preds_by_year, team_to_idx, test_years):
         rmse_k = np.sqrt(mean_squared_error(actuals, kalman))
         rmse_b = np.sqrt(mean_squared_error(actuals, baseline))
 
-        results_log.append({
-            "rho": rho, "q": q, "r": r, "init_var": iv,
-            "rmse_kalman": rmse_k, "rmse_base": rmse_b, "delta": rmse_k - rmse_b,
-        })
+        results_log.append(
+            {
+                "rho": rho,
+                "q": q,
+                "r": r,
+                "init_var": iv,
+                "rmse_kalman": rmse_k,
+                "rmse_base": rmse_b,
+                "delta": rmse_k - rmse_b,
+            }
+        )
 
         if rmse_k < best_rmse:
             best_rmse = rmse_k
@@ -302,7 +321,10 @@ def grid_search(games_by_year, xgb_preds_by_year, team_to_idx, test_years):
 def main():
     parser = argparse.ArgumentParser(description="Evaluate Kalman team bias")
     parser.add_argument(
-        "--test-years", type=int, nargs="+", default=[2023, 2024, 2025],
+        "--test-years",
+        type=int,
+        nargs="+",
+        default=[2023, 2024, 2025],
         help="Years to evaluate on (XGB trained on all prior years)",
     )
     parser.add_argument("--skip-grid", action="store_true", help="Skip grid search")
@@ -319,10 +341,14 @@ def main():
     logger.info(f"Loading training data from {data_path}")
     all_games = pd.read_csv(data_path)
     all_games = all_games[all_games["completed"] == True].copy()
-    all_games = all_games.sort_values(["year", "date", "num_games_into_season"]).reset_index(drop=True)
+    all_games = all_games.sort_values(
+        ["year", "date", "num_games_into_season"]
+    ).reset_index(drop=True)
 
     # Build team index from all teams
-    all_teams = sorted(set(all_games["team"].unique()) | set(all_games["opponent"].unique()))
+    all_teams = sorted(
+        set(all_games["team"].unique()) | set(all_games["opponent"].unique())
+    )
     team_to_idx, idx_to_team = build_team_index(all_teams)
     logger.info(f"Teams: {len(team_to_idx)}")
 
@@ -338,7 +364,9 @@ def main():
             continue
         games_by_year[yr] = test_games.reset_index(drop=True)
         xgb_preds_by_year[yr] = preds
-        logger.info(f"  Year {yr}: {len(test_games)} games, XGB RMSE={np.sqrt(mean_squared_error(test_games['margin'].values, preds)):.4f}")
+        logger.info(
+            f"  Year {yr}: {len(test_games)} games, XGB RMSE={np.sqrt(mean_squared_error(test_games['margin'].values, preds)):.4f}"
+        )
 
     test_years = sorted(games_by_year.keys())
     if not test_years:

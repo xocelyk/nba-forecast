@@ -251,6 +251,9 @@ def compute_kalman_bias(
     """
     from . import utils
 
+    if training_data is None:
+        return None
+
     games = training_data[
         (training_data["year"] == year) & (training_data["completed"] == True)
     ].copy()
