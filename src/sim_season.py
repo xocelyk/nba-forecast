@@ -612,14 +612,11 @@ class Season:
         # Batch prediction for all games
         expected_margins = self.margin_model.margin_model.predict(train_data)
 
-        # Apply persistent per-team bias for this simulation run (regular season only)
+        # Apply persistent per-team bias for this simulation run
         if self.team_bias:
-            is_regular = (games["playoff"] == 0).values.astype(float)
             home_bias = np.array([self.team_bias.get(t, 0) for t in games["team"]])
             away_bias = np.array([self.team_bias.get(t, 0) for t in games["opponent"]])
-            expected_margins = (
-                expected_margins - home_bias * is_regular + away_bias * is_regular
-            )
+            expected_margins = expected_margins - home_bias + away_bias
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
