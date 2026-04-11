@@ -38,9 +38,14 @@ class KalmanBiasInfo:
 
     @property
     def team_posteriors(self) -> Dict[str, Tuple[float, float]]:
-        """Return {team: (mean, var)} for compatibility with forecast code."""
+        """Return {team: (mean, var)} for compatibility with forecast code.
+
+        The Kalman filter uses z = actual - pred, so positive bias means the
+        model underpredicts. The forecast/sim code expects the old convention
+        (positive = overprediction), so we negate the means here.
+        """
         return {
-            team: (float(self.mean[i]), float(self.cov[i, i]))
+            team: (float(-self.mean[i]), float(self.cov[i, i]))
             for team, i in self.team_to_idx.items()
         }
 
@@ -50,9 +55,13 @@ class KalmanBiasInfo:
         return float(np.sqrt(np.mean(np.diag(self.cov))))
 
     def draw_biases(self) -> Dict[str, float]:
-        """Draw one sample from the multivariate posterior for simulation."""
+        """Draw one sample from the multivariate posterior for simulation.
+
+        Returns biases in the old convention (positive = model overpredicts),
+        matching what sim_season expects: margin -= home_bias, margin += away_bias.
+        """
         sample = np.random.multivariate_normal(self.mean, self.cov)
-        return {team: float(sample[i]) for team, i in self.team_to_idx.items()}
+        return {team: float(-sample[i]) for team, i in self.team_to_idx.items()}
 
 
 class TeamBiasKalmanFilter:
