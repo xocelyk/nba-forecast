@@ -462,17 +462,11 @@ def main():
 
     win_margin_model, win_prob_model, _, std_resid, _, tau = models
 
-    # Compute per-team bias posteriors from current season completed games
-    from src.team_bias import TeamBiasInfo, compute_team_posteriors
+    # Compute per-team bias using Kalman filter on current season completed games
+    from src.team_bias_kalman import compute_kalman_bias
 
-    team_posteriors = compute_team_posteriors(
-        training_data, win_margin_model, config.x_features, tau, std_resid, year=YEAR
-    )
-    team_bias_info = TeamBiasInfo(
-        tau=tau,
-        per_game_sigma=std_resid,
-        team_posteriors=team_posteriors,
-        recency_decay=0.97,
+    team_bias_info = compute_kalman_bias(
+        training_data, win_margin_model, config.x_features, year=YEAR
     )
 
     # Predict future games

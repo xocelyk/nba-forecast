@@ -213,15 +213,20 @@ class Season:
         self.team_bias = {}
         if self.margin_model.team_bias_info is not None:
             info = self.margin_model.team_bias_info
-            all_teams = sorted(
-                set(
-                    completed_games["team"].unique().tolist()
-                    + future_games["team"].unique().tolist()
+            if hasattr(info, "draw_biases"):
+                # Kalman filter: draw from multivariate posterior
+                self.team_bias = info.draw_biases()
+            else:
+                # Legacy: draw independently per team
+                all_teams = sorted(
+                    set(
+                        completed_games["team"].unique().tolist()
+                        + future_games["team"].unique().tolist()
+                    )
                 )
-            )
-            for team in all_teams:
-                mean, var = info.team_posteriors.get(team, (0.0, info.tau**2))
-                self.team_bias[team] = np.random.normal(mean, np.sqrt(var))
+                for team in all_teams:
+                    mean, var = info.team_posteriors.get(team, (0.0, info.tau**2))
+                    self.team_bias[team] = np.random.normal(mean, np.sqrt(var))
 
         em_ratings = utils.get_em_ratings(
             self.completed_games, names=self.teams, hca=self.hca
@@ -612,14 +617,11 @@ class Season:
         # Batch prediction for all games
         expected_margins = self.margin_model.margin_model.predict(train_data)
 
-        # Apply persistent per-team bias for this simulation run (regular season only)
+        # Apply persistent per-team bias for this simulation run
         if self.team_bias:
-            is_regular = (games["playoff"] == 0).values.astype(float)
             home_bias = np.array([self.team_bias.get(t, 0) for t in games["team"]])
             away_bias = np.array([self.team_bias.get(t, 0) for t in games["opponent"]])
-            expected_margins = (
-                expected_margins - home_bias * is_regular + away_bias * is_regular
-            )
+            expected_margins = expected_margins - home_bias + away_bias
 
         # Vectorized noise generation based on games into season
         # Handle both scalar and array returns from num_games_to_std_margin_model_resid
