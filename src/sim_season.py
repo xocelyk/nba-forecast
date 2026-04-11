@@ -213,15 +213,20 @@ class Season:
         self.team_bias = {}
         if self.margin_model.team_bias_info is not None:
             info = self.margin_model.team_bias_info
-            all_teams = sorted(
-                set(
-                    completed_games["team"].unique().tolist()
-                    + future_games["team"].unique().tolist()
+            if hasattr(info, "draw_biases"):
+                # Kalman filter: draw from multivariate posterior
+                self.team_bias = info.draw_biases()
+            else:
+                # Legacy: draw independently per team
+                all_teams = sorted(
+                    set(
+                        completed_games["team"].unique().tolist()
+                        + future_games["team"].unique().tolist()
+                    )
                 )
-            )
-            for team in all_teams:
-                mean, var = info.team_posteriors.get(team, (0.0, info.tau**2))
-                self.team_bias[team] = np.random.normal(mean, np.sqrt(var))
+                for team in all_teams:
+                    mean, var = info.team_posteriors.get(team, (0.0, info.tau**2))
+                    self.team_bias[team] = np.random.normal(mean, np.sqrt(var))
 
         em_ratings = utils.get_em_ratings(
             self.completed_games, names=self.teams, hca=self.hca
