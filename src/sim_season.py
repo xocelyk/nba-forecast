@@ -13,6 +13,14 @@ from loaders import data_loader
 
 from . import config, utils
 from .config import logger
+from .playoff_types import (
+    Conference,
+    PlayoffGame,
+    PlayoffSeries,
+    PlayoffSimResult,
+    conference_from_label,
+    round_from_label,
+)
 
 """
 # TODO: update with days since most recent game
@@ -84,6 +92,7 @@ class SimulationResult:
     seeds: dict[str, int]
     finals_games: pd.DataFrame
     simulated_games: pd.DataFrame
+    playoff_sim_result: Optional[PlayoffSimResult] = None
 
 
 class Season:
@@ -923,7 +932,101 @@ class Season:
         # simulate finals
         champ = self.finals(e1, w1, cur_playoff_results)
         playoff_results["champion"] = [champ]
+        self._last_champion = champ
         return playoff_results
+
+    def build_playoff_sim_result(self, sim_id: int = 0) -> PlayoffSimResult:
+        """Assemble a structured PlayoffSimResult from completed playoff games.
+
+        Must be called after playoffs() has run. Reads self.completed_games
+        and self.end_season_standings to reconstruct each series.
+        """
+        games_df = self.completed_games[
+            self.completed_games["playoff_label"].notna()
+        ].copy()
+        series_list: list[PlayoffSeries] = []
+        seed_map = self.end_season_standings
+
+        for label in games_df["playoff_label"].unique():
+            rows = games_df[games_df["playoff_label"] == label].sort_values("date")
+            teams_in_series = set(
+                rows["team"].tolist() + rows["opponent"].tolist()
+            )
+            if len(teams_in_series) != 2:
+                logger.warning(
+                    f"Skipping malformed series {label}: {teams_in_series}"
+                )
+                continue
+            t_a, t_b = list(teams_in_series)
+            s_a = seed_map.get(t_a, 99)
+            s_b = seed_map.get(t_b, 99)
+            if s_a <= s_b:
+                high, low, hs, ls = t_a, t_b, s_a, s_b
+            else:
+                high, low, hs, ls = t_b, t_a, s_b, s_a
+
+            games: list[PlayoffGame] = []
+            for i, (_, row) in enumerate(rows.iterrows(), start=1):
+                winner = row.get("winner_name")
+                if not isinstance(winner, str):
+                    winner = (
+                        row["team"] if row["margin"] > 0 else row["opponent"]
+                    )
+                games.append(
+                    PlayoffGame(
+                        game_num=i,
+                        home=row["team"],
+                        away=row["opponent"],
+                        margin=float(row["margin"]),
+                        winner=winner,
+                    )
+                )
+
+            winner = games[-1].winner
+            loser = low if winner == high else high
+            series_list.append(
+                PlayoffSeries(
+                    label=label,
+                    round=round_from_label(label),
+                    conference=conference_from_label(label),
+                    high_seed=high,
+                    low_seed=low,
+                    high_seed_num=int(hs),
+                    low_seed_num=int(ls),
+                    games=tuple(games),
+                    winner=winner,
+                    loser=loser,
+                )
+            )
+
+        # sort series by round, then label for determinism
+        series_list.sort(key=lambda s: (s.round.value, s.label))
+
+        champion = getattr(self, "_last_champion", "")
+        if not champion:
+            finals_series = next(
+                (s for s in series_list if s.label == "Finals"), None
+            )
+            if finals_series is not None:
+                champion = finals_series.winner
+
+        conf_of = {
+            team: (
+                Conference.EAST
+                if team in Season.EASTERN_CONFERENCE
+                else Conference.WEST
+            )
+            for team in seed_map
+        }
+
+        return PlayoffSimResult(
+            sim_id=sim_id,
+            year=self.year,
+            seeds=dict(seed_map),
+            conference_of=conf_of,
+            series=tuple(series_list),
+            champion=champion,
+        )
 
     def _get_home_team_for_extra_game(self, team1, team2, is_finals=False):
         """Determine home/away for completion-loop games.
@@ -2096,6 +2199,8 @@ def run_single_simulation(
         if col in simulated_games.columns:
             simulated_games[col] = simulated_games[col].round(2)
 
+    playoff_sim_result = season.build_playoff_sim_result(sim_id=0)
+
     return SimulationResult(
         wins_dict=wins_dict,
         losses_dict=losses_dict,
@@ -2103,6 +2208,7 @@ def run_single_simulation(
         seeds=seeds,
         finals_games=finals_games,
         simulated_games=simulated_games,
+        playoff_sim_result=playoff_sim_result,
     )
 
 
@@ -2299,6 +2405,16 @@ def sim_season(
     if all_simulated_games:
         combined_games = pd.concat(all_simulated_games, ignore_index=True)
         save_simulated_game_results(combined_games)
+
+    # Persist structured playoff sim results (per-series, per-game)
+    from .playoff_results_io import save_playoff_sim_results
+
+    playoff_sim_results = [
+        r.playoff_sim_result for r in output if r.playoff_sim_result is not None
+    ]
+    if playoff_sim_results:
+        path = save_playoff_sim_results(playoff_sim_results)
+        logger.info(f"Saved {len(playoff_sim_results)} playoff sim results to {path}")
 
     sim_report_df = get_sim_report(
         season_results_over_sims, playoff_results_over_sims, num_sims
