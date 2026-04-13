@@ -1216,11 +1216,11 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0022501184,2026-04-10 04:00:00,SAC,GSW,Sacramento Kings,Golden State Warriors,124.0,118.0,6.0,Home,102.5604347826087,True,2026,False,,,,54.0,True
 0022501185,2026-04-10 04:00:00,LAL,PHX,Los Angeles Lakers,Phoenix Suns,101.0,73.0,28.0,Home,92.82050711193568,True,2026,True,4.0,PT06M35.00S,586.0,39.0,True
 0022501186,2026-04-12 04:00:00,BOS,ORL,Celtics,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501187,2026-04-12 04:00:00,CLE,WAS,Cavaliers,Wizards,0.0,0.0,,Home,,False,2026,,,,,,True
+0022501187,2026-04-12 04:00:00,CLE,WAS,Cavaliers,Wizards,130.0,117.0,13.0,Home,98.42809302325581,True,2026,False,,,,36.0,True
 0022501188,2026-04-12 04:00:00,IND,DET,Pacers,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501189,2026-04-12 04:00:00,MIA,ATL,Heat,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501190,2026-04-12 04:00:00,NYK,CHO,Knicks,Hornets,0.0,0.0,,Home,,False,2026,,,,,,True
-0022501191,2026-04-12 04:00:00,PHI,MIL,76ers,Bucks,0.0,0.0,,Home,,False,2026,,,,,,True
+0022501189,2026-04-12 04:00:00,MIA,ATL,Heat,Hawks,143.0,117.0,26.0,Home,100.43020772946859,True,2026,True,4.0,PT09M09.00S,517.0,21.0,True
+0022501190,2026-04-12 04:00:00,NYK,CHO,Knicks,Hornets,96.0,110.0,-14.0,Home,94.13695652173914,True,2026,False,,,,29.0,True
+0022501191,2026-04-12 04:00:00,PHI,MIL,76ers,Bucks,126.0,106.0,20.0,Home,101.82429347826087,True,2026,True,4.0,PT07M32.00S,545.0,31.0,True
 0022501192,2026-04-12 04:00:00,TOR,BRK,Raptors,Nets,0.0,0.0,,Home,,False,2026,,,,,,True
 0022501193,2026-04-12 04:00:00,DAL,CHI,Mavericks,Bulls,0.0,0.0,,Home,,False,2026,,,,,,True
 0022501194,2026-04-12 04:00:00,HOU,MEM,Rockets,Grizzlies,0.0,0.0,,Home,,False,2026,,,,,,True
