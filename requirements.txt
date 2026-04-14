@@ -27,7 +27,7 @@ packaging==25.0
 pandas==2.3.3
 parso==0.8.5
 pexpect==4.9.0
-pillow==12.1.1
+pillow==12.2.0
 platformdirs==4.5.0
 prompt_toolkit==3.0.52
 psutil==7.1.3
