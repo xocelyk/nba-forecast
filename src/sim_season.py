@@ -2407,7 +2407,7 @@ def sim_season(
         save_simulated_game_results(combined_games)
 
     # Persist structured playoff sim results (per-series, per-game)
-    from .playoff_results_io import save_playoff_sim_results
+    from .playoff_results_io import save_playoff_sim_results, save_playoff_slot_probs
 
     playoff_sim_results = [
         r.playoff_sim_result for r in output if r.playoff_sim_result is not None
@@ -2415,6 +2415,8 @@ def sim_season(
     if playoff_sim_results:
         path = save_playoff_sim_results(playoff_sim_results)
         logger.info(f"Saved {len(playoff_sim_results)} playoff sim results to {path}")
+        probs_path = save_playoff_slot_probs(playoff_sim_results)
+        logger.info(f"Saved playoff slot probabilities to {probs_path}")
 
     sim_report_df = get_sim_report(
         season_results_over_sims, playoff_results_over_sims, num_sims

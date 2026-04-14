@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import json
 import os
+from collections import defaultdict
 from typing import Iterable
 
 import pandas as pd
@@ -98,6 +100,102 @@ def save_playoff_sim_results(
 
     path = os.path.join(out_dir, f"{basename}.csv")
     df.to_csv(path, index=False)
+    return path
+
+
+_BRACKET_ROUNDS = {Round.R1, Round.CONF_SEMIS, Round.CONF_FINALS, Round.FINALS}
+
+
+def save_playoff_slot_probs(
+    results: Iterable[PlayoffSimResult],
+    out_dir: str | None = None,
+    basename: str = "playoff_slot_probs",
+) -> str:
+    """Persist a compact JSON of per-slot win probabilities by series length.
+
+    Output schema:
+        {
+          "year": int,
+          "n_sims": int,
+          "slots": [
+            {
+              "round": "R1" | "CONF_SEMIS" | "CONF_FINALS" | "FINALS",
+              "conference": "East" | "West" | "Inter",
+              "slot": "E_1_8" | ... | "Finals",
+              "candidates": [
+                {"team": "DET", "seed": 1, "wins": [w4, w5, w6, w7]},
+                ...
+              ]
+            }
+          ]
+        }
+
+    `wins` are raw counts across sims for series length 4/5/6/7. Divide by
+    `n_sims` on the client for marginal probabilities. Play-in rounds are
+    excluded.
+    """
+    results = list(results)
+    n_sims = len(results)
+    year = results[0].year if results else None
+
+    # slot_key -> {round, conference, slot, teams: {abbr -> {seed, wins[4]}}}
+    slots: dict[tuple, dict] = {}
+
+    for r in results:
+        for s in r.series:
+            if s.round not in _BRACKET_ROUNDS:
+                continue
+            key = (s.round.name, s.conference.value, s.label)
+            entry = slots.setdefault(
+                key,
+                {
+                    "round": s.round.name,
+                    "conference": s.conference.value,
+                    "slot": s.label,
+                    "teams": defaultdict(
+                        lambda: {"seed": None, "wins": [0, 0, 0, 0]}
+                    ),
+                },
+            )
+            # record seed hints for both participants
+            for abbr, seed_num in (
+                (s.high_seed, s.high_seed_num),
+                (s.low_seed, s.low_seed_num),
+            ):
+                t = entry["teams"][abbr]
+                if t["seed"] is None and seed_num:
+                    t["seed"] = seed_num
+            # count the winner at this length bucket
+            length = s.length
+            if 4 <= length <= 7:
+                entry["teams"][s.winner]["wins"][length - 4] += 1
+
+    slot_list = []
+    for entry in slots.values():
+        cands = [
+            {"team": abbr, "seed": t["seed"], "wins": t["wins"]}
+            for abbr, t in entry["teams"].items()
+            if sum(t["wins"]) > 0
+        ]
+        cands.sort(key=lambda c: -sum(c["wins"]))
+        slot_list.append(
+            {
+                "round": entry["round"],
+                "conference": entry["conference"],
+                "slot": entry["slot"],
+                "candidates": cands,
+            }
+        )
+
+    slot_list.sort(key=lambda s: (s["round"], s["conference"], s["slot"]))
+
+    payload = {"year": year, "n_sims": n_sims, "slots": slot_list}
+
+    out_dir = out_dir or os.path.join(config.DATA_DIR, "playoff_sim_results")
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, f"{basename}.json")
+    with open(path, "w") as fh:
+        json.dump(payload, fh, separators=(",", ":"))
     return path
 
 
