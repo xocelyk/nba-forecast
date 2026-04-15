@@ -2,6 +2,7 @@
 
 Each function is a thin count-and-normalize over sims. No state, no IO.
 """
+
 from __future__ import annotations
 
 from collections import Counter, defaultdict
@@ -171,9 +172,7 @@ def summary_table(results: Iterable[PlayoffSimResult]) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-def matchup_table(
-    results: Iterable[PlayoffSimResult], target: Round
-) -> pd.DataFrame:
+def matchup_table(results: Iterable[PlayoffSimResult], target: Round) -> pd.DataFrame:
     """Per-matchup table for a round: matchup, P(occurs), conditional series outcomes."""
     results = list(results)
     matchup_p = p_matchup(results, target)

@@ -152,9 +152,7 @@ def save_playoff_slot_probs(
                     "round": s.round.name,
                     "conference": s.conference.value,
                     "slot": s.label,
-                    "teams": defaultdict(
-                        lambda: {"seed": None, "wins": [0, 0, 0, 0]}
-                    ),
+                    "teams": defaultdict(lambda: {"seed": None, "wins": [0, 0, 0, 0]}),
                 },
             )
             # record seed hints for both participants

@@ -949,13 +949,9 @@ class Season:
 
         for label in games_df["playoff_label"].unique():
             rows = games_df[games_df["playoff_label"] == label].sort_values("date")
-            teams_in_series = set(
-                rows["team"].tolist() + rows["opponent"].tolist()
-            )
+            teams_in_series = set(rows["team"].tolist() + rows["opponent"].tolist())
             if len(teams_in_series) != 2:
-                logger.warning(
-                    f"Skipping malformed series {label}: {teams_in_series}"
-                )
+                logger.warning(f"Skipping malformed series {label}: {teams_in_series}")
                 continue
             t_a, t_b = list(teams_in_series)
             s_a = seed_map.get(t_a, 99)
@@ -969,9 +965,7 @@ class Season:
             for i, (_, row) in enumerate(rows.iterrows(), start=1):
                 winner = row.get("winner_name")
                 if not isinstance(winner, str):
-                    winner = (
-                        row["team"] if row["margin"] > 0 else row["opponent"]
-                    )
+                    winner = row["team"] if row["margin"] > 0 else row["opponent"]
                 games.append(
                     PlayoffGame(
                         game_num=i,
@@ -1004,9 +998,7 @@ class Season:
 
         champion = getattr(self, "_last_champion", "")
         if not champion:
-            finals_series = next(
-                (s for s in series_list if s.label == "Finals"), None
-            )
+            finals_series = next((s for s in series_list if s.label == "Finals"), None)
             if finals_series is not None:
                 champion = finals_series.winner
 
