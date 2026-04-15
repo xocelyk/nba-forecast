@@ -2326,6 +2326,16 @@ def sim_season(
     else:
         completed_year_games = year_games[year_games["completed"] == True]
         future_year_games = year_games[year_games["completed"] == False]
+        # Filter out playoff games from future_year_games so that
+        # simulate_season() only runs regular season games.  The playoffs()
+        # method generates its own playoff bracket and games dynamically;
+        # leaving data-file playoff rows here causes phantom results that
+        # conflict with the freshly-seeded bracket (e.g. real-schedule
+        # first-round matchups don't match the sim's play-in-determined
+        # 7/8 seeds, leaving series like W_2_7 with zero games and
+        # raising "No games found for series" during playoffs()).
+        playoff_start = utils.get_playoff_start_date(year).date()
+        future_year_games = future_year_games[future_year_games["date"] < playoff_start]
 
     start_time = time.time()
     if parallel:
