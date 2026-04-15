@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Test script to debug the simulation issue."""
+"""Debug script for manually exercising sim_season.
+
+This is a one-shot debug utility, not a pytest test. It loads a trained model
+from DATA_DIR and runs a single simulation, printing the top-5 championship
+probabilities. Invoke directly:
+
+    python scripts/debug_sim.py
+"""
 
 import datetime
 import os
