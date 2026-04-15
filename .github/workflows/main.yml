@@ -6,6 +6,13 @@ on:
     branches:
       - main
 
+# Prevent overlapping runs. With 10000 sims each run takes ~5 hours, so
+# back-to-back pushes would otherwise spawn concurrent runs that race on
+# `git push` to main — only one wins and the rest fail non-fast-forward.
+concurrency:
+  group: daily-update
+  cancel-in-progress: true
+
 jobs:
   daily_update:
     runs-on: ubuntu-latest
@@ -27,12 +34,12 @@ jobs:
           uses: actions/setup-python@v5
           with:
             python-version: '3.11'
-    
+
         - name: Install dependencies
           run: |
             python -m pip install --upgrade pip
             pip install -r requirements.txt
-    
+
         - name: Create data directories
           run: mkdir -p data/sim_results/archive data/seed_reports/archive
 
@@ -45,5 +52,28 @@ jobs:
             git config --global user.email "bot@invalid.email"
             git config --global user.name "GitHub Action Bot"
             git add .
-            git commit -m "Automated data update [skip ci]" || exit 0   # This exits with 0 if there's nothing to commit
-            git push
+            if git diff --cached --quiet; then
+              echo "No changes to commit"
+              exit 0
+            fi
+            # Rebase our changes on top of latest main in case upstream
+            # moved forward while the (multi-hour) simulation was running.
+            # `reset --soft` keeps all staged changes; we recommit on top
+            # of the new tip and push. Retries handle transient push races.
+            git fetch origin main
+            git reset --soft origin/main
+            git add .
+            git commit -m "Automated data update [skip ci]"
+            for attempt in 1 2 3 4; do
+              if git push origin HEAD:main; then
+                exit 0
+              fi
+              echo "Push attempt $attempt failed; refreshing base and retrying..."
+              git fetch origin main
+              git reset --soft origin/main
+              git add .
+              git commit --amend --no-edit
+              sleep $((attempt * 5))
+            done
+            echo "git push failed after 4 attempts"
+            exit 1
