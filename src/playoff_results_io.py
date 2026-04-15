@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import json
 import os
+import re
+import shutil
 from collections import defaultdict
+from datetime import date as _date
 from typing import Iterable
 
 import pandas as pd
@@ -196,7 +199,82 @@ def save_playoff_slot_probs(
     path = os.path.join(out_dir, f"{basename}.json")
     with open(path, "w") as fh:
         json.dump(payload, fh, separators=(",", ":"))
+
+    # Also drop a per-date archive copy so we can look back at what the
+    # sim showed on a previous date. Re-running on the same date overwrites
+    # the file, keeping only the most recent run for that date.
+    archive_slot_probs(path, basename=basename)
+
     return path
+
+
+_ARCHIVE_DIRNAME = "archive"
+_DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def _archive_dir(out_dir: str) -> str:
+    return os.path.join(out_dir, _ARCHIVE_DIRNAME)
+
+
+def archive_slot_probs(
+    source_path: str,
+    basename: str = "playoff_slot_probs",
+    run_date: str | None = None,
+) -> str:
+    """Copy a slot-probs JSON into ``<out_dir>/archive/<basename>_<YYYY-MM-DD>.json``.
+
+    Overwrites any existing file for the same date, so each date ends up
+    holding the most recent run for that date.
+    """
+    run_date = run_date or _date.today().isoformat()
+    out_dir = os.path.dirname(source_path)
+    arch_dir = _archive_dir(out_dir)
+    os.makedirs(arch_dir, exist_ok=True)
+    dest = os.path.join(arch_dir, f"{basename}_{run_date}.json")
+    shutil.copyfile(source_path, dest)
+    return dest
+
+
+def list_archived_slot_probs_dates(
+    out_dir: str | None = None,
+    basename: str = "playoff_slot_probs",
+) -> list[str]:
+    """Return sorted YYYY-MM-DD strings for which we have an archived slot-probs file."""
+    out_dir = out_dir or os.path.join(config.DATA_DIR, "playoff_sim_results")
+    arch_dir = _archive_dir(out_dir)
+    if not os.path.isdir(arch_dir):
+        return []
+    prefix = f"{basename}_"
+    suffix = ".json"
+    dates: list[str] = []
+    for name in os.listdir(arch_dir):
+        if not (name.startswith(prefix) and name.endswith(suffix)):
+            continue
+        stem = name[len(prefix) : -len(suffix)]
+        if _DATE_RE.match(stem):
+            dates.append(stem)
+    dates.sort()
+    return dates
+
+
+def archived_slot_probs_path(
+    run_date: str,
+    out_dir: str | None = None,
+    basename: str = "playoff_slot_probs",
+) -> str:
+    out_dir = out_dir or os.path.join(config.DATA_DIR, "playoff_sim_results")
+    return os.path.join(_archive_dir(out_dir), f"{basename}_{run_date}.json")
+
+
+def load_archived_slot_probs(
+    run_date: str,
+    out_dir: str | None = None,
+    basename: str = "playoff_slot_probs",
+) -> dict:
+    """Load the archived slot-probs JSON for ``run_date`` (YYYY-MM-DD)."""
+    path = archived_slot_probs_path(run_date, out_dir=out_dir, basename=basename)
+    with open(path) as fh:
+        return json.load(fh)
 
 
 def load_playoff_sim_games(path: str) -> pd.DataFrame:
