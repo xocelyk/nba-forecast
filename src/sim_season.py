@@ -1408,7 +1408,12 @@ class Season:
             match = matches.sort_values("date").iloc[0]
             idx = match.name
             self.completed_games.loc[idx, "playoff_label"] = label
-            winner = match["winner_name"]
+            # Derive winner from margin (winner_name is wiped by playoffs()).
+            if match["margin"] > 0:
+                winner = match["team"]
+            else:
+                winner = match["opponent"]
+            self.completed_games.loc[idx, "winner_name"] = winner
             loser = team_b if winner == team_a else team_a
             return winner, loser
 

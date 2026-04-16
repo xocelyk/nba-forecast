@@ -15,7 +15,11 @@ from src.sim_season import Season
 
 
 def _playin_game(team, opponent, date, margin):
-    """Build a completed play-in game row (home perspective, no label yet)."""
+    """Build a completed play-in game row (home perspective, no label yet).
+
+    ``winner_name`` and ``playoff_label`` are ``None`` to mirror what
+    ``playoffs()`` does at line 871-872 before calling ``play_in()``.
+    """
     return {
         "team": team,
         "opponent": opponent,
@@ -27,7 +31,7 @@ def _playin_game(team, opponent, date, margin):
         "year": 2026,
         "pace": 100.0,
         "playoff_label": None,
-        "winner_name": team if margin > 0 else opponent,
+        "winner_name": None,  # wiped by playoffs() before play_in() is called
     }
 
 
