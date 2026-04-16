@@ -573,9 +573,9 @@ class Season:
 
         if self.future_games["num_games_into_season"].isnull().any():
             # this only works for playoffs
-            self.future_games["num_games_into_season"].fillna(
-                len(self.completed_games), inplace=True
-            )
+            self.future_games["num_games_into_season"] = self.future_games[
+                "num_games_into_season"
+            ].fillna(len(self.completed_games))
 
         if self.future_games["pace"].isnull().any():
             # Vectorized pace generation - much faster than list comprehension
@@ -1408,7 +1408,12 @@ class Season:
             match = matches.sort_values("date").iloc[0]
             idx = match.name
             self.completed_games.loc[idx, "playoff_label"] = label
-            winner = match["winner_name"]
+            # Derive winner from margin (winner_name is wiped by playoffs()).
+            if match["margin"] > 0:
+                winner = match["team"]
+            else:
+                winner = match["opponent"]
+            self.completed_games.loc[idx, "winner_name"] = winner
             loser = team_b if winner == team_a else team_a
             return winner, loser
 
@@ -1428,9 +1433,7 @@ class Season:
                     playoff_label=label,
                 )
             self.update_data(games_on_date=self.future_games.tail(len(matchups)))
-            self.simulate_day(
-                game_date, game_date + datetime.timedelta(days=3), 1
-            )
+            self.simulate_day(game_date, game_date + datetime.timedelta(days=3), 1)
             results = {}
             for team_a, team_b, label in matchups:
                 sim_game = self.completed_games[
