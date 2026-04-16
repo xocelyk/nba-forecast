@@ -1380,183 +1380,119 @@ class Season:
             "team"
         ].values.tolist()[:10]
 
-        # simulate play in round 1
-        playin_round_1_date = self.get_next_date(day_increment=3)
-        self.append_future_game(
-            self.future_games,
-            date=playin_round_1_date,
-            team=e_7,
-            opponent=e_8,
-            playoff_label="E_P_1",
-        )
-        self.append_future_game(
-            self.future_games,
-            date=playin_round_1_date,
-            team=e_9,
-            opponent=e_10,
-            playoff_label="E_P_2",
-        )
-        self.append_future_game(
-            self.future_games,
-            date=playin_round_1_date,
-            team=w_7,
-            opponent=w_8,
-            playoff_label="W_P_1",
-        )
-        self.append_future_game(
-            self.future_games,
-            date=playin_round_1_date,
-            team=w_9,
-            opponent=w_10,
-            playoff_label="W_P_2",
-        )
-        self.update_data(games_on_date=self.future_games.tail(4))
-        self.simulate_day(
-            playin_round_1_date, playin_round_1_date + datetime.timedelta(days=3), 1
-        )
+        playoff_start_date = utils.get_playoff_start_date(self.year).date()
+        playin_labels = ["E_P_1", "E_P_2", "E_P_3", "W_P_1", "W_P_2", "W_P_3"]
 
-        # Note: We no longer assert that future_games is empty since play_in may be called
-        # with other future games still in the schedule
-
-        # east 7 seed
-        E_P_1_winner = self.completed_games[
-            self.completed_games["playoff_label"] == "E_P_1"
-        ]["winner_name"].values[0]
-        # play in round 2
-        E_P_1_loser = (
-            self.completed_games[self.completed_games["playoff_label"] == "E_P_1"][
-                "opponent"
-            ].values[0]
-            if E_P_1_winner
-            == self.completed_games[self.completed_games["playoff_label"] == "E_P_1"][
-                "team"
-            ].values[0]
-            else self.completed_games[self.completed_games["playoff_label"] == "E_P_1"][
-                "team"
-            ].values[0]
-        )
-
-        # play in round 2
-        E_P_2_winner = self.completed_games[
-            self.completed_games["playoff_label"] == "E_P_2"
-        ]["winner_name"].values[0]
-        # eliminated
-        E_P_2_loser = (
-            self.completed_games[self.completed_games["playoff_label"] == "E_P_2"][
-                "opponent"
-            ].values[0]
-            if E_P_2_winner
-            == self.completed_games[self.completed_games["playoff_label"] == "E_P_2"][
-                "team"
-            ].values[0]
-            else self.completed_games[self.completed_games["playoff_label"] == "E_P_2"][
-                "team"
-            ].values[0]
-        )
-
-        # west 7 seed
-        W_P_1_winner = self.completed_games[
-            self.completed_games["playoff_label"] == "W_P_1"
-        ]["winner_name"].values[0]
-        # play in round 2
-        W_P_1_loser = (
-            self.completed_games[self.completed_games["playoff_label"] == "W_P_1"][
-                "opponent"
-            ].values[0]
-            if W_P_1_winner
-            == self.completed_games[self.completed_games["playoff_label"] == "W_P_1"][
-                "team"
-            ].values[0]
-            else self.completed_games[self.completed_games["playoff_label"] == "W_P_1"][
-                "team"
-            ].values[0]
-        )
-
-        # play in round 2
-        W_P_2_winner = self.completed_games[
-            self.completed_games["playoff_label"] == "W_P_2"
-        ]["winner_name"].values[0]
-        # eliminated
-        W_P_2_loser = (
-            self.completed_games[self.completed_games["playoff_label"] == "W_P_2"][
-                "opponent"
-            ].values[0]
-            if W_P_2_winner
-            == self.completed_games[self.completed_games["playoff_label"] == "W_P_2"][
-                "team"
-            ].values[0]
-            else self.completed_games[self.completed_games["playoff_label"] == "W_P_2"][
-                "team"
-            ].values[0]
-        )
-
-        # simulate playin round 2
-        playin_round_2_date = self.get_next_date(day_increment=3)
-        self.append_future_game(
-            self.future_games,
-            date=playin_round_2_date,
-            team=E_P_1_loser,
-            opponent=E_P_2_winner,
-            playoff_label="E_P_3",
-        )
-        self.append_future_game(
-            self.future_games, playin_round_2_date, W_P_1_loser, W_P_2_winner, "W_P_3"
-        )
-        self.update_data(games_on_date=self.future_games.tail(2))
-        self.simulate_day(
-            playin_round_2_date, playin_round_2_date + datetime.timedelta(days=3), 1
-        )
-
-        # east 8 seed
-        E_P_3_winner = self.completed_games[
-            self.completed_games["playoff_label"] == "E_P_3"
-        ]["winner_name"].values[0]
-        E_P_3_loser = (
-            self.completed_games[self.completed_games["playoff_label"] == "E_P_3"][
-                "opponent"
-            ].values[0]
-            if E_P_3_winner
-            == self.completed_games[self.completed_games["playoff_label"] == "E_P_3"][
-                "team"
-            ].values[0]
-            else self.completed_games[self.completed_games["playoff_label"] == "E_P_3"][
-                "team"
-            ].values[0]
-        )
-
-        # west 8 seed
-        W_P_3_winner = self.completed_games[
-            self.completed_games["playoff_label"] == "W_P_3"
-        ]["winner_name"].values[0]
-        W_P_3_loser = (
-            self.completed_games[self.completed_games["playoff_label"] == "W_P_3"][
-                "opponent"
-            ].values[0]
-            if W_P_3_winner
-            == self.completed_games[self.completed_games["playoff_label"] == "W_P_3"][
-                "team"
-            ].values[0]
-            else self.completed_games[self.completed_games["playoff_label"] == "W_P_3"][
-                "team"
-            ].values[0]
-        )
-
-        # Move only play-in games to completed_games, not all future_games
-        # since play_in may now be called from within the main playoff flow
-        playin_games = self.future_games[
-            self.future_games["playoff_label"].isin(
-                ["E_P_1", "E_P_2", "E_P_3", "W_P_1", "W_P_2", "W_P_3"]
+        def find_and_label_completed(team_a, team_b, label):
+            """If an already-played game between team_a and team_b exists in
+            the post-regular-season window, label it with `label` and return
+            ``(winner, loser)``. Otherwise return ``None``.
+            """
+            team_mask = (
+                (self.completed_games["team"] == team_a)
+                & (self.completed_games["opponent"] == team_b)
+            ) | (
+                (self.completed_games["team"] == team_b)
+                & (self.completed_games["opponent"] == team_a)
             )
+            mask = (self.completed_games["date"] >= playoff_start_date) & team_mask
+            # Don't match games that already have a different playoff_label.
+            already_labeled = self.completed_games["playoff_label"].notna() & (
+                self.completed_games["playoff_label"] != label
+            )
+            mask = mask & ~already_labeled
+            matches = self.completed_games[mask]
+            if matches.empty:
+                return None
+            # Take the earliest matching game (first meeting post-regular-season).
+            match = matches.sort_values("date").iloc[0]
+            idx = match.name
+            self.completed_games.loc[idx, "playoff_label"] = label
+            winner = match["winner_name"]
+            loser = team_b if winner == team_a else team_a
+            return winner, loser
+
+        def simulate_playin_games(matchups):
+            """Schedule and simulate ``matchups`` on the next available date,
+            returning a dict mapping label -> (winner, loser).
+            """
+            if not matchups:
+                return {}
+            game_date = self.get_next_date(day_increment=3)
+            for team_a, team_b, label in matchups:
+                self.append_future_game(
+                    self.future_games,
+                    date=game_date,
+                    team=team_a,
+                    opponent=team_b,
+                    playoff_label=label,
+                )
+            self.update_data(games_on_date=self.future_games.tail(len(matchups)))
+            self.simulate_day(
+                game_date, game_date + datetime.timedelta(days=3), 1
+            )
+            results = {}
+            for team_a, team_b, label in matchups:
+                sim_game = self.completed_games[
+                    self.completed_games["playoff_label"] == label
+                ].iloc[0]
+                winner = sim_game["winner_name"]
+                loser = team_b if winner == team_a else team_a
+                results[label] = (winner, loser)
+            return results
+
+        # --- Play-in round 1 ---
+        round_1_matchups = [
+            (e_7, e_8, "E_P_1"),
+            (e_9, e_10, "E_P_2"),
+            (w_7, w_8, "W_P_1"),
+            (w_9, w_10, "W_P_2"),
+        ]
+        round_1_results = {}
+        unplayed_round_1 = []
+        for team_a, team_b, label in round_1_matchups:
+            result = find_and_label_completed(team_a, team_b, label)
+            if result is not None:
+                round_1_results[label] = result
+            else:
+                unplayed_round_1.append((team_a, team_b, label))
+        round_1_results.update(simulate_playin_games(unplayed_round_1))
+
+        E_P_1_winner, E_P_1_loser = round_1_results["E_P_1"]
+        E_P_2_winner, E_P_2_loser = round_1_results["E_P_2"]
+        W_P_1_winner, W_P_1_loser = round_1_results["W_P_1"]
+        W_P_2_winner, W_P_2_loser = round_1_results["W_P_2"]
+
+        # --- Play-in round 2 ---
+        round_2_matchups = [
+            (E_P_1_loser, E_P_2_winner, "E_P_3"),
+            (W_P_1_loser, W_P_2_winner, "W_P_3"),
+        ]
+        round_2_results = {}
+        unplayed_round_2 = []
+        for team_a, team_b, label in round_2_matchups:
+            result = find_and_label_completed(team_a, team_b, label)
+            if result is not None:
+                round_2_results[label] = result
+            else:
+                unplayed_round_2.append((team_a, team_b, label))
+        round_2_results.update(simulate_playin_games(unplayed_round_2))
+
+        E_P_3_winner, E_P_3_loser = round_2_results["E_P_3"]
+        W_P_3_winner, W_P_3_loser = round_2_results["W_P_3"]
+
+        # Defensive: move any remaining play-in games from future_games to
+        # completed_games (simulate_day normally does this, but guard against
+        # edge cases where rows might linger).
+        playin_games = self.future_games[
+            self.future_games["playoff_label"].isin(playin_labels)
         ]
         if not playin_games.empty:
             self.completed_games = pd.concat(
                 [self.completed_games, playin_games], ignore_index=True
             )
-            # Remove only the play-in games from future_games
             self.future_games = self.future_games[
-                ~self.future_games["playoff_label"].isin(
-                    ["E_P_1", "E_P_2", "E_P_3", "W_P_1", "W_P_2", "W_P_3"]
-                )
+                ~self.future_games["playoff_label"].isin(playin_labels)
             ]
 
         ec_seeds = {
