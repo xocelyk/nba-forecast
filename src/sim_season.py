@@ -573,9 +573,9 @@ class Season:
 
         if self.future_games["num_games_into_season"].isnull().any():
             # this only works for playoffs
-            self.future_games["num_games_into_season"].fillna(
-                len(self.completed_games), inplace=True
-            )
+            self.future_games["num_games_into_season"] = self.future_games[
+                "num_games_into_season"
+            ].fillna(len(self.completed_games))
 
         if self.future_games["pace"].isnull().any():
             # Vectorized pace generation - much faster than list comprehension
