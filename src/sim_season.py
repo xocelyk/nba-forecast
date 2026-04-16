@@ -1433,9 +1433,7 @@ class Season:
                     playoff_label=label,
                 )
             self.update_data(games_on_date=self.future_games.tail(len(matchups)))
-            self.simulate_day(
-                game_date, game_date + datetime.timedelta(days=3), 1
-            )
+            self.simulate_day(game_date, game_date + datetime.timedelta(days=3), 1)
             results = {}
             for team_a, team_b, label in matchups:
                 sim_game = self.completed_games[

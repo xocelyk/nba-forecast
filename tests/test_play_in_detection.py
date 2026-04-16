@@ -37,9 +37,7 @@ def _playin_game(team, opponent, date, margin):
 
 def _standings_df(teams):
     """Build a minimal conference standings df with seeds 1..len(teams)."""
-    return pd.DataFrame(
-        {"team": teams, "seed": list(range(1, len(teams) + 1))}
-    )
+    return pd.DataFrame({"team": teams, "seed": list(range(1, len(teams) + 1))})
 
 
 class FakePlayInSeason:
@@ -78,7 +76,9 @@ class FakePlayInSeason:
             base = base.date()
         return base + datetime.timedelta(days=day_increment)
 
-    def append_future_game(self, future_games, date, team, opponent, playoff_label=None):
+    def append_future_game(
+        self, future_games, date, team, opponent, playoff_label=None
+    ):
         new_row = pd.DataFrame(
             {
                 "date": [date],
@@ -90,16 +90,20 @@ class FakePlayInSeason:
                 "winner_name": [np.nan],
             }
         )
-        self.future_games = pd.concat(
-            [self.future_games, new_row], ignore_index=True
-        )
+        self.future_games = pd.concat([self.future_games, new_row], ignore_index=True)
         # Match real Season bookkeeping so .tail() / .loc[] work.
         self.completed_games.index = range(len(self.completed_games))
         self.future_games.index = range(
-            (max(self.completed_games.index) + 1)
-            if len(self.completed_games) > 0
-            else 0,
-            (max(self.completed_games.index) + 1 if len(self.completed_games) > 0 else 0)
+            (
+                (max(self.completed_games.index) + 1)
+                if len(self.completed_games) > 0
+                else 0
+            ),
+            (
+                max(self.completed_games.index) + 1
+                if len(self.completed_games) > 0
+                else 0
+            )
             + len(self.future_games),
         )
 
@@ -107,9 +111,8 @@ class FakePlayInSeason:
         return  # no-op for tests
 
     def simulate_day(self, start_date, end_date, date_increment=1):
-        mask = (
-            (self.future_games["date"] >= start_date)
-            & (self.future_games["date"] < end_date)
+        mask = (self.future_games["date"] >= start_date) & (
+            self.future_games["date"] < end_date
         )
         games = self.future_games[mask].copy()
         if games.empty:
@@ -215,18 +218,14 @@ def test_already_played_full_playin_is_detected():
 
     # Every play-in game in completed_games got a label.
     playin_labels = {"E_P_1", "E_P_2", "E_P_3", "W_P_1", "W_P_2", "W_P_3"}
-    labels_present = set(
-        season.completed_games["playoff_label"].dropna().unique()
-    )
+    labels_present = set(season.completed_games["playoff_label"].dropna().unique())
     assert playin_labels == labels_present
 
 
 def test_no_playin_games_played_simulates_all():
     """When no play-in games are in completed_games, all 6 get simulated."""
     # Need at least one completed game so get_next_date has a reference point.
-    stub_game = _playin_game(
-        "BOS", "NYK", datetime.date(2026, 4, 12), margin=1
-    )
+    stub_game = _playin_game("BOS", "NYK", datetime.date(2026, 4, 12), margin=1)
     stub_game["playoff"] = 0
     completed = pd.DataFrame([stub_game])
 
