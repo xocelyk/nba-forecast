@@ -1233,7 +1233,7 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0052500111,2026-04-14 04:00:00,CHO,MIA,Charlotte Hornets,Miami Heat,127.0,126.0,1.0,Home,94.27907440370238,True,2026,False,,,,33.0,True
 0052500121,2026-04-14 04:00:00,PHX,POR,Phoenix Suns,Portland Trail Blazers,110.0,114.0,-4.0,Home,96.93447994987469,True,2026,False,,,,46.0,True
 0052500101,2026-04-15 04:00:00,PHI,ORL,Philadelphia 76ers,Orlando Magic,109.0,97.0,12.0,Home,99.26781135531137,True,2026,False,,,,38.0,True
-0052500131,2026-04-15 04:00:00,LAC,GSW,Clippers,Warriors,121.0,126.0,-5.0,Home,97.61333976833977,True,2026,False,,,,37.0,True
+0052500131,2026-04-15 04:00:00,LAC,GSW,Los Angeles Clippers,Golden State Warriors,121.0,126.0,-5.0,Home,97.61333976833976,True,2026,False,,,,37.0,True
 0052500201,2026-04-17 04:00:00,ORL,CHO,Magic,Hornets,0.0,0.0,,Home,,False,2026,,,,,,True
 0052500211,2026-04-17 04:00:00,PHX,GSW,Suns,Warriors,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500121,2026-04-18 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
