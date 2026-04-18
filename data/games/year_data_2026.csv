@@ -1234,13 +1234,15 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0052500121,2026-04-14 04:00:00,PHX,POR,Phoenix Suns,Portland Trail Blazers,110.0,114.0,-4.0,Home,96.93447994987469,True,2026,False,,,,46.0,True
 0052500101,2026-04-15 04:00:00,PHI,ORL,Philadelphia 76ers,Orlando Magic,109.0,97.0,12.0,Home,99.26781135531137,True,2026,False,,,,38.0,True
 0052500131,2026-04-15 04:00:00,LAC,GSW,Los Angeles Clippers,Golden State Warriors,121.0,126.0,-5.0,Home,97.61333976833976,True,2026,False,,,,37.0,True
-0052500201,2026-04-17 04:00:00,ORL,CHO,Magic,Hornets,0.0,0.0,,Home,,False,2026,,,,,,True
-0052500211,2026-04-17 04:00:00,PHX,GSW,Suns,Warriors,0.0,0.0,,Home,,False,2026,,,,,,True
+0052500201,2026-04-17 04:00:00,ORL,CHO,Magic,Hornets,121.0,90.0,31.0,Home,102.06530409356725,True,2026,True,3.0,PT00M42.90S,597.0,31.0,True
+0052500211,2026-04-17 04:00:00,PHX,GSW,Suns,Warriors,111.0,96.0,15.0,Home,90.45144230769229,True,2026,True,4.0,PT03M52.00S,614.0,26.0,True
 0042500121,2026-04-18 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500131,2026-04-18 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500161,2026-04-18 04:00:00,DEN,MIN,Nuggets,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500171,2026-04-18 04:00:00,LAL,HOU,Lakers,Rockets,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500101,2026-04-19 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500111,2026-04-19 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500141,2026-04-19 04:00:00,OKC,PHX,Thunder,Suns,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500151,2026-04-19 04:00:00,SAS,POR,Spurs,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500122,2026-04-20 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500132,2026-04-20 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
@@ -1248,33 +1250,45 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0042500112,2026-04-21 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500152,2026-04-21 04:00:00,SAS,POR,Spurs,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500172,2026-04-21 04:00:00,LAL,HOU,Lakers,Rockets,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500102,2026-04-22 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500142,2026-04-22 04:00:00,OKC,PHX,Thunder,Suns,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500123,2026-04-23 04:00:00,ATL,NYK,Hawks,Knicks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500133,2026-04-23 04:00:00,TOR,CLE,Raptors,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500163,2026-04-23 04:00:00,MIN,DEN,Timberwolves,Nuggets,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500113,2026-04-24 04:00:00,PHI,BOS,76ers,Celtics,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500153,2026-04-24 04:00:00,POR,SAS,Trail Blazers,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500173,2026-04-24 04:00:00,HOU,LAL,Rockets,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500103,2026-04-25 04:00:00,ORL,DET,Magic,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500124,2026-04-25 04:00:00,ATL,NYK,Hawks,Knicks,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500143,2026-04-25 04:00:00,PHX,OKC,Suns,Thunder,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500164,2026-04-25 04:00:00,MIN,DEN,Timberwolves,Nuggets,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500114,2026-04-26 04:00:00,PHI,BOS,76ers,Celtics,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500134,2026-04-26 04:00:00,TOR,CLE,Raptors,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500154,2026-04-26 04:00:00,POR,SAS,Trail Blazers,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500174,2026-04-26 04:00:00,HOU,LAL,Rockets,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500104,2026-04-27 04:00:00,ORL,DET,Magic,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500144,2026-04-27 04:00:00,PHX,OKC,Suns,Thunder,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500165,2026-04-27 04:00:00,DEN,MIN,Nuggets,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500115,2026-04-28 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500125,2026-04-28 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500155,2026-04-28 04:00:00,SAS,POR,Spurs,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500105,2026-04-29 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500135,2026-04-29 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500145,2026-04-29 04:00:00,OKC,PHX,Thunder,Suns,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500175,2026-04-29 04:00:00,LAL,HOU,Lakers,Rockets,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500116,2026-04-30 04:00:00,PHI,BOS,76ers,Celtics,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500126,2026-04-30 04:00:00,ATL,NYK,Hawks,Knicks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500156,2026-04-30 04:00:00,POR,SAS,Trail Blazers,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500166,2026-04-30 04:00:00,MIN,DEN,Timberwolves,Nuggets,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500106,2026-05-01 04:00:00,ORL,DET,Magic,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500136,2026-05-01 04:00:00,TOR,CLE,Raptors,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500146,2026-05-01 04:00:00,PHX,OKC,Suns,Thunder,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500176,2026-05-01 04:00:00,HOU,LAL,Rockets,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500117,2026-05-02 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500127,2026-05-02 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500157,2026-05-02 04:00:00,SAS,POR,Spurs,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500167,2026-05-02 04:00:00,DEN,MIN,Nuggets,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500107,2026-05-03 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500137,2026-05-03 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500147,2026-05-03 04:00:00,OKC,PHX,Thunder,Suns,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500177,2026-05-03 04:00:00,LAL,HOU,Lakers,Rockets,0.0,0.0,,Home,,False,2026,,,,,,True
