@@ -2,12 +2,13 @@ from __future__ import annotations
 
 import json
 import os
-from collections import defaultdict
+from collections import Counter, defaultdict
 from typing import Iterable
 
 import pandas as pd
 
 from . import config
+from . import utils
 from .playoff_types import (
     Conference,
     PlayoffGame,
@@ -106,10 +107,90 @@ def save_playoff_sim_results(
 _BRACKET_ROUNDS = {Round.R1, Round.CONF_SEMIS, Round.CONF_FINALS, Round.FINALS}
 
 
+def build_actual_series_results(
+    sim_results: Iterable[PlayoffSimResult],
+    completed_games: pd.DataFrame,
+    year: int,
+) -> dict[tuple[str, str, str], dict]:
+    """Derive real-world series status/record for each bracket slot.
+
+    Joins actual completed playoff games onto simulated bracket slots so the
+    frontend can show live series scores instead of a ``not_started`` fallback.
+
+    Returns a dict keyed by ``(round_name, conference, slot_label)`` mapping
+    to ``{"status": ..., "games_won": {team_abbr: n, ...}}``. ``status`` is one
+    of ``not_started``, ``in_progress``, or ``complete``.
+    """
+    sim_results = list(sim_results)
+    if not sim_results or completed_games is None or completed_games.empty:
+        return {}
+
+    playoff_start = utils.get_playoff_start_date(year).date()
+    cg = completed_games.copy()
+    cg["date"] = pd.to_datetime(cg["date"]).dt.date
+    playoff_games = cg[cg["date"] >= playoff_start]
+    dedupe_cols = [c for c in ("game_id",) if c in playoff_games.columns]
+    if dedupe_cols:
+        playoff_games = playoff_games.drop_duplicates(subset=dedupe_cols, keep="first")
+    else:
+        playoff_games = playoff_games.drop_duplicates(
+            subset=["team", "opponent", "date"], keep="first"
+        )
+    if playoff_games.empty:
+        return {}
+
+    # For each pair of teams seen in a simulated bracket series, pick the most
+    # common (label, round, conference) — that's the slot that corresponds to
+    # the real-world matchup.
+    pair_slot_counts: dict[frozenset, Counter] = defaultdict(Counter)
+    for r in sim_results:
+        for s in r.series:
+            if s.round not in _BRACKET_ROUNDS:
+                continue
+            pair = frozenset({s.high_seed, s.low_seed})
+            if len(pair) != 2:
+                continue
+            pair_slot_counts[pair][(s.round.name, s.conference.value, s.label)] += 1
+
+    pair_to_slot: dict[frozenset, tuple[str, str, str]] = {
+        pair: counter.most_common(1)[0][0]
+        for pair, counter in pair_slot_counts.items()
+    }
+
+    # Group real games by the pair of teams involved.
+    pair_wins: dict[frozenset, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+    for _, g in playoff_games.iterrows():
+        team_a = g["team"]
+        team_b = g["opponent"]
+        pair = frozenset({team_a, team_b})
+        if len(pair) != 2:
+            continue
+        winner = team_a if g["margin"] > 0 else team_b
+        pair_wins[pair][winner] += 1
+
+    results: dict[tuple[str, str, str], dict] = {}
+    for pair, wins in pair_wins.items():
+        slot_key = pair_to_slot.get(pair)
+        if slot_key is None:
+            continue
+        games_won = {team: int(wins.get(team, 0)) for team in pair}
+        total = sum(games_won.values())
+        if total == 0:
+            status = "not_started"
+        elif max(games_won.values()) >= 4:
+            status = "complete"
+        else:
+            status = "in_progress"
+        results[slot_key] = {"status": status, "games_won": games_won}
+
+    return results
+
+
 def save_playoff_slot_probs(
     results: Iterable[PlayoffSimResult],
     out_dir: str | None = None,
     basename: str = "playoff_slot_probs",
+    actual_series_results: dict[tuple[str, str, str], dict] | None = None,
 ) -> str:
     """Persist a compact JSON of per-slot win probabilities by series length.
 
@@ -168,6 +249,8 @@ def save_playoff_slot_probs(
             if 4 <= length <= 7:
                 entry["teams"][s.winner]["wins"][length - 4] += 1
 
+    actual_series_results = actual_series_results or {}
+
     slot_list = []
     for entry in slots.values():
         cands = [
@@ -176,12 +259,17 @@ def save_playoff_slot_probs(
             if sum(t["wins"]) > 0
         ]
         cands.sort(key=lambda c: -sum(c["wins"]))
+        slot_key = (entry["round"], entry["conference"], entry["slot"])
+        series_block = actual_series_results.get(
+            slot_key, {"status": "not_started", "games_won": {}}
+        )
         slot_list.append(
             {
                 "round": entry["round"],
                 "conference": entry["conference"],
                 "slot": entry["slot"],
                 "candidates": cands,
+                "series": series_block,
             }
         )
 
