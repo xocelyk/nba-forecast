@@ -859,11 +859,10 @@ class Season:
         win_loss_report = self.get_win_loss_report()
         self.regular_season_win_loss_report = win_loss_report
         ec_standings, wc_standings = self.get_playoff_standings(win_loss_report)
-        self.end_season_standings = {}
-        for idx, row in ec_standings.iterrows():
-            self.end_season_standings[row["team"]] = row["seed"]
-        for idx, row in wc_standings.iterrows():
-            self.end_season_standings[row["team"]] = row["seed"]
+        self.end_season_standings = {
+            **dict(zip(ec_standings["team"], ec_standings["seed"])),
+            **dict(zip(wc_standings["team"], wc_standings["seed"])),
+        }
 
         self.future_games["playoff_label"] = None
         self.future_games["winner_name"] = None
@@ -1096,22 +1095,23 @@ class Season:
             game_date = self.get_next_date(day_increment=3)
             num_played_sofar = wins + losses
 
+            series_rows = []
             for i in range(rem_games):
                 g_idx = num_played_sofar + i
                 team1_home = team1_home_map[g_idx]
                 new_dates.add(game_date)
-
-                if team1_home:
-                    self.append_future_game(
-                        self.future_games, game_date, team1, team2, label
-                    )
-                else:
-                    self.append_future_game(
-                        self.future_games, game_date, team2, team1, label
-                    )
-
-                num_games_added += 1
+                home, away = (team1, team2) if team1_home else (team2, team1)
+                series_rows.append(
+                    {
+                        "date": game_date,
+                        "team": home,
+                        "opponent": away,
+                        "playoff_label": label,
+                    }
+                )
                 game_date += datetime.timedelta(days=3)
+            self.append_future_games(series_rows)
+            num_games_added += len(series_rows)
 
         # simulate anything we just added
         if num_games_added:
@@ -1424,14 +1424,17 @@ class Season:
             if not matchups:
                 return {}
             game_date = self.get_next_date(day_increment=3)
-            for team_a, team_b, label in matchups:
-                self.append_future_game(
-                    self.future_games,
-                    date=game_date,
-                    team=team_a,
-                    opponent=team_b,
-                    playoff_label=label,
-                )
+            self.append_future_games(
+                [
+                    {
+                        "date": game_date,
+                        "team": team_a,
+                        "opponent": team_b,
+                        "playoff_label": label,
+                    }
+                    for team_a, team_b, label in matchups
+                ]
+            )
             self.update_data(games_on_date=self.future_games.tail(len(matchups)))
             self.simulate_day(game_date, game_date + datetime.timedelta(days=3), 1)
             results = {}
@@ -1521,27 +1524,48 @@ class Season:
 
         return ec_seeds, wc_seeds
 
-    def append_future_game(
-        self, future_games, date, team, opponent, playoff_label=None
-    ):
-        new_row = pd.DataFrame(
-            {
-                "date": date,
-                "team": team,
-                "opponent": opponent,
-                "year": self.year,
-                "playoff_label": playoff_label,
-            },
-            index=[0],
+    def append_future_games(self, rows):
+        """Append multiple future-game rows in a single concat.
+
+        ``rows`` is a list of dicts with keys ``date``, ``team``, ``opponent``,
+        and optional ``playoff_label``. Doing one concat (instead of one per
+        row) avoids quadratic blow-up when a playoff series schedules 7 games.
+        """
+        if not rows:
+            return
+        new_df = pd.DataFrame(
+            [
+                {
+                    "date": r["date"],
+                    "team": r["team"],
+                    "opponent": r["opponent"],
+                    "year": self.year,
+                    "playoff_label": r.get("playoff_label"),
+                }
+                for r in rows
+            ]
         )
-        new_row = utils.add_playoff_indicator(new_row)
-        self.future_games = pd.concat([self.future_games, new_row], ignore_index=True)
-        # new index
-        # TODO: this is a hack, fix it
+        new_df = utils.add_playoff_indicator(new_df)
+        self.future_games = pd.concat([self.future_games, new_df], ignore_index=True)
+        # Re-index so completed and future indices stay disjoint and contiguous.
         self.completed_games.index = range(len(self.completed_games))
         self.future_games.index = range(
             max(self.completed_games.index) + 1,
             max(self.completed_games.index) + len(self.future_games) + 1,
+        )
+
+    def append_future_game(
+        self, future_games, date, team, opponent, playoff_label=None
+    ):
+        self.append_future_games(
+            [
+                {
+                    "date": date,
+                    "team": team,
+                    "opponent": opponent,
+                    "playoff_label": playoff_label,
+                }
+            ]
         )
 
     def get_next_date(self, day_increment=1):

@@ -61,54 +61,31 @@ def get_regular_season_wins_losses(game_df):
     return wins, losses
 
 
-def get_offensive_efficiency(data):
-    # TODO: Fix missing pace data issue - pace should be fetched from nba_api for all completed games
-    # WORKAROUND: Use default pace when missing
-    DEFAULT_PACE = 100.0  # League average pace
+# TODO: Fix missing pace data issue - pace should be fetched from nba_api
+# for all completed games. Until then, fall back to league-average pace.
+DEFAULT_PACE = 100.0
 
-    off_eff = {}
-    for idx, row in data.iterrows():
-        home_points = row["team_score"]
-        away_points = row["opponent_score"]
-        pace = row["pace"] if pd.notna(row["pace"]) else DEFAULT_PACE
-        home_off_eff = home_points / pace
-        away_off_eff = away_points / pace
-        home = row["team"]
-        away = row["opponent"]
-        if home not in off_eff:
-            off_eff[home] = []
-        if away not in off_eff:
-            off_eff[away] = []
-        off_eff[row["team"]].append(home_off_eff)
-        off_eff[row["opponent"]].append(away_off_eff)
-    for team, off_effs in off_eff.items():
-        off_eff[team] = np.mean(off_effs)
-    return off_eff
+
+def _team_efficiency(data, points_col_for_team, points_col_for_opponent):
+    """Average per-team efficiency = points / pace, summed across both
+    sides of every game and grouped by team."""
+    pace = data["pace"].fillna(DEFAULT_PACE)
+    by_team_side = pd.DataFrame(
+        {"team": data["team"], "eff": data[points_col_for_team] / pace}
+    )
+    by_opp_side = pd.DataFrame(
+        {"team": data["opponent"], "eff": data[points_col_for_opponent] / pace}
+    )
+    combined = pd.concat([by_team_side, by_opp_side], ignore_index=True)
+    return combined.groupby("team")["eff"].mean().to_dict()
+
+
+def get_offensive_efficiency(data):
+    return _team_efficiency(data, "team_score", "opponent_score")
 
 
 def get_defensive_efficiency(data):
-    # TODO: Fix missing pace data issue - pace should be fetched from nba_api for all completed games
-    # WORKAROUND: Use default pace when missing
-    DEFAULT_PACE = 100.0  # League average pace
-
-    def_eff = {}
-    for idx, row in data.iterrows():
-        home_points = row["team_score"]
-        away_points = row["opponent_score"]
-        pace = row["pace"] if pd.notna(row["pace"]) else DEFAULT_PACE
-        home_def_eff = away_points / pace
-        away_def_eff = home_points / pace
-        home = row["team"]
-        away = row["opponent"]
-        if home not in def_eff:
-            def_eff[home] = []
-        if away not in def_eff:
-            def_eff[away] = []
-        def_eff[row["team"]].append(home_def_eff)
-        def_eff[row["opponent"]].append(away_def_eff)
-    for team, def_effs in def_eff.items():
-        def_eff[team] = np.mean(def_effs)
-    return def_eff
+    return _team_efficiency(data, "opponent_score", "team_score")
 
 
 def get_adjusted_efficiencies(data, off_eff, def_eff):
@@ -233,20 +210,14 @@ def get_pace(data):
 
 def get_remaining_sos(ratings_df, future_games):
     # returns a dictionary of remaining strength of schedule for each team
-    valid_teams = set(ratings_df["team"].unique())
-    remaining_sos = {team: [] for team in valid_teams}
-    for idx, row in future_games.iterrows():
-        team = row["team"]
-        opponent = row["opponent"]
+    rating_by_team = dict(zip(ratings_df["team"], ratings_df["predictive_rating"]))
+    remaining_sos = {team: [] for team in rating_by_team}
+    for team, opponent in zip(future_games["team"], future_games["opponent"]):
         # Skip games involving non-NBA teams (e.g., exhibition games)
-        if team not in valid_teams or opponent not in valid_teams:
+        if team not in rating_by_team or opponent not in rating_by_team:
             continue
-        remaining_sos[team].append(
-            ratings_df[ratings_df["team"] == opponent]["predictive_rating"].values[0]
-        )
-        remaining_sos[opponent].append(
-            ratings_df[ratings_df["team"] == team]["predictive_rating"].values[0]
-        )
+        remaining_sos[team].append(rating_by_team[opponent])
+        remaining_sos[opponent].append(rating_by_team[team])
     for team in remaining_sos:
         remaining_sos[team] = np.mean(remaining_sos[team])
     return remaining_sos

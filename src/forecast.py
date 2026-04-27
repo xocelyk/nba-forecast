@@ -121,6 +121,36 @@ def predict_margin_and_win_prob_future_games(
     return games
 
 
+def _team_features_from_game(team, row):
+    """Extract features for ``team`` from the most-recent-game row.
+
+    Each row stores features as ``team_*`` / ``opponent_*`` based on which side
+    the game was originally recorded from. Pick the right side for ``team`` so
+    callers never have to repeat the side check.
+    """
+    if row["team"] == team:
+        return {
+            "rating": row["team_rating"],
+            "last_year_rating": row["last_year_team_rating"],
+            "last_10_rating": row["team_last_10_rating"],
+            "last_5_rating": row["team_last_5_rating"],
+            "last_3_rating": row["team_last_3_rating"],
+            "last_1_rating": row["team_last_1_rating"],
+            "win_total_future": row["team_win_total_future"],
+            "bayesian_gs": row["team_bayesian_gs"],
+        }
+    return {
+        "rating": row["opponent_rating"],
+        "last_year_rating": row["last_year_opp_rating"],
+        "last_10_rating": row["opponent_last_10_rating"],
+        "last_5_rating": row["opponent_last_5_rating"],
+        "last_3_rating": row["opponent_last_3_rating"],
+        "last_1_rating": row["opponent_last_1_rating"],
+        "win_total_future": row["opponent_win_total_future"],
+        "bayesian_gs": row["opp_bayesian_gs"],
+    }
+
+
 def get_predictive_ratings_win_margin(
     teams, model, year, playoff_mode=False, team_bias_info=None
 ):
@@ -137,155 +167,64 @@ def get_predictive_ratings_win_margin(
     'team_last_10_rating', 'opponent_last_10_rating', 'team_last_5_rating', 'opponent_last_5_rating', 'team_last_3_rating', 'opponent_last_3_rating', 'team_last_1_rating', 'opponent_last_1_rating'])
     """
     filename = os.path.join(config.DATA_DIR, "train_data.csv")
-    most_recent_games_dict = {}  # team to pandas series of most recent game
-    # most recent game is either the most recently played game OR the next game to be played (if no games have been played yet)
     all_games = pd.read_csv(filename)
     this_year_games = all_games[all_games["year"] == year]
-    this_year_games_completed = this_year_games[this_year_games["completed"] == True]
-    this_year_games_completed.sort_values(by="date", ascending=False, inplace=True)
-    this_year_games_future = this_year_games[this_year_games["completed"] == False]
-    this_year_games_future.sort_values(by="date", ascending=True, inplace=True)
+    completed = this_year_games[this_year_games["completed"] == True].sort_values(
+        by="date", ascending=False
+    )
+    future = this_year_games[this_year_games["completed"] == False].sort_values(
+        by="date", ascending=True
+    )
+
+    # Most recent (or next, if none played yet) game per team, normalized to
+    # that team's perspective.
+    team_snapshots = {}
     for team in teams:
-        team_most_recent_game_df = this_year_games_completed[
-            (this_year_games_completed["team"] == team)
-            | (this_year_games_completed["opponent"] == team)
+        team_completed = completed[
+            (completed["team"] == team) | (completed["opponent"] == team)
         ]
-        if len(team_most_recent_game_df) > 0:
-            team_most_recent_game = team_most_recent_game_df.iloc[0]
-            most_recent_games_dict[team] = team_most_recent_game
-        else:
-            continue  # no games played yet, so we'll get the next game to be played
+        if len(team_completed) > 0:
+            team_snapshots[team] = _team_features_from_game(
+                team, team_completed.iloc[0]
+            )
+            continue
+        team_future = future[(future["team"] == team) | (future["opponent"] == team)]
+        if len(team_future) > 0:
+            team_snapshots[team] = _team_features_from_game(team, team_future.iloc[0])
 
-    for team in teams:
-        if team not in most_recent_games_dict:
-            team_next_game = this_year_games_future[
-                (this_year_games_future["team"] == team)
-                | (this_year_games_future["opponent"] == team)
-            ].iloc[0]
-            most_recent_games_dict[team] = team_next_game
+    teams = list(team_snapshots.keys())
+    num_games_into_season = len(completed)
+    DAYS_SINCE_DEFAULT = 3
 
-    this_year_games = pd.DataFrame(most_recent_games_dict.values())
-    this_year_games = this_year_games.sort_values(by="date", ascending=True)
-    num_games_into_season = len(this_year_games_completed)
-    this_year_ratings = {}
-    last_year_ratings = {}
-    for team in teams:
-        # get games where team was either the opponent or the team
-        this_year_games_for_team = this_year_games[
-            (this_year_games["team"] == team) | (this_year_games["opponent"] == team)
-        ]
-        this_year_games_for_team = this_year_games_for_team.sort_values(
-            by="date", ascending=True
-        )
-        most_recent_game = this_year_games_for_team.iloc[-1]
-        if most_recent_game["team"] == team:
-            this_year_ratings[team] = most_recent_game["team_rating"]
-            last_year_ratings[team] = most_recent_game["last_year_team_rating"]
-        else:
-            this_year_ratings[team] = most_recent_game["opponent_rating"]
-            last_year_ratings[team] = most_recent_game["last_year_opp_rating"]
-
-    teams = list(this_year_ratings.keys())
     team_predictive_em = {}
     for team in teams:
+        t = team_snapshots[team]
         team_home_margins = []
         team_away_margins = []
-        team_rating = this_year_ratings[team]
-        team_df = this_year_games[
-            (this_year_games["team"] == team) | (this_year_games["opponent"] == team)
-        ]
-        team_last_10_rating = (
-            team_df["team_last_10_rating"].iloc[-1]
-            if team_df["team"].iloc[-1] == team
-            else team_df["opponent_last_10_rating"].iloc[-1]
-        )
-        team_last_5_rating = (
-            team_df["team_last_5_rating"].iloc[-1]
-            if team_df["team"].iloc[-1] == team
-            else team_df["opponent_last_5_rating"].iloc[-1]
-        )
-        team_last_3_rating = (
-            team_df["team_last_3_rating"].iloc[-1]
-            if team_df["team"].iloc[-1] == team
-            else team_df["opponent_last_3_rating"].iloc[-1]
-        )
-        team_last_1_rating_rating = (
-            team_df["team_last_1_rating"].iloc[-1]
-            if team_df["team"].iloc[-1] == team
-            else team_df["opponent_last_1_rating"].iloc[-1]
-        )
-        team_win_total_future = (
-            team_df["team_win_total_future"].iloc[-1]
-            if team_df["team"].iloc[-1] == team
-            else team_df["opponent_win_total_future"].iloc[-1]
-        )
-        team_days_since_most_recent_game = 3
-        team_bayesian_gs = (
-            team_df["team_bayesian_gs"].iloc[-1]
-            if team_df["team"].iloc[-1] == team
-            else team_df["opp_bayesian_gs"].iloc[-1]
-        )
-
         for opp in teams:
-            opp_rating = this_year_ratings[opp]
-            opp_df = this_year_games[
-                (this_year_games["team"] == opp) | (this_year_games["opponent"] == opp)
-            ]
-            opp_last_10_rating = (
-                opp_df["team_last_10_rating"].iloc[-1]
-                if opp_df["team"].iloc[-1] == opp
-                else opp_df["opponent_last_10_rating"].iloc[-1]
-            )
-            opp_last_5_rating = (
-                opp_df["team_last_5_rating"].iloc[-1]
-                if opp_df["team"].iloc[-1] == opp
-                else opp_df["opponent_last_5_rating"].iloc[-1]
-            )
-            opp_last_3_rating = (
-                opp_df["team_last_3_rating"].iloc[-1]
-                if opp_df["team"].iloc[-1] == opp
-                else opp_df["opponent_last_3_rating"].iloc[-1]
-            )
-            opp_last_1_rating_rating = (
-                opp_df["team_last_1_rating"].iloc[-1]
-                if opp_df["team"].iloc[-1] == opp
-                else opp_df["opponent_last_1_rating"].iloc[-1]
-            )
-            opp_win_total_future = (
-                opp_df["team_win_total_future"].iloc[-1]
-                if opp_df["team"].iloc[-1] == opp
-                else opp_df["opponent_win_total_future"].iloc[-1]
-            )
-            opp_days_since_most_recent_game = 3
-            opp_bayesian_gs = (
-                opp_df["team_bayesian_gs"].iloc[-1]
-                if opp_df["team"].iloc[-1] == opp
-                else opp_df["opp_bayesian_gs"].iloc[-1]
-            )
-
-            # play a home game
+            o = team_snapshots[opp]
             X_home_base = {
-                "team_rating": team_rating,
-                "opponent_rating": opp_rating,
-                "team_win_total_future": team_win_total_future,
-                "opponent_win_total_future": opp_win_total_future,
-                "last_year_team_rating": last_year_ratings[team],
-                "last_year_opp_rating": last_year_ratings[opp],
+                "team_rating": t["rating"],
+                "opponent_rating": o["rating"],
+                "team_win_total_future": t["win_total_future"],
+                "opponent_win_total_future": o["win_total_future"],
+                "last_year_team_rating": t["last_year_rating"],
+                "last_year_opp_rating": o["last_year_rating"],
                 "num_games_into_season": num_games_into_season,
-                "team_last_10_rating": team_last_10_rating,
-                "opponent_last_10_rating": opp_last_10_rating,
-                "team_last_5_rating": team_last_5_rating,
-                "opponent_last_5_rating": opp_last_5_rating,
-                "team_last_3_rating": team_last_3_rating,
-                "opponent_last_3_rating": opp_last_3_rating,
-                "team_last_1_rating": team_last_1_rating_rating,
-                "opponent_last_1_rating": opp_last_1_rating_rating,
-                "team_days_since_most_recent_game": team_days_since_most_recent_game,
-                "opponent_days_since_most_recent_game": opp_days_since_most_recent_game,
+                "team_last_10_rating": t["last_10_rating"],
+                "opponent_last_10_rating": o["last_10_rating"],
+                "team_last_5_rating": t["last_5_rating"],
+                "opponent_last_5_rating": o["last_5_rating"],
+                "team_last_3_rating": t["last_3_rating"],
+                "opponent_last_3_rating": o["last_3_rating"],
+                "team_last_1_rating": t["last_1_rating"],
+                "opponent_last_1_rating": o["last_1_rating"],
+                "team_days_since_most_recent_game": DAYS_SINCE_DEFAULT,
+                "opponent_days_since_most_recent_game": DAYS_SINCE_DEFAULT,
                 "hca": current_hca,
                 "playoff": 1 if playoff_mode else 0,
-                "team_bayesian_gs": team_bayesian_gs,
-                "opp_bayesian_gs": opp_bayesian_gs,
+                "team_bayesian_gs": t["bayesian_gs"],
+                "opp_bayesian_gs": o["bayesian_gs"],
             }
             X_home = utils.build_model_features(pd.DataFrame([X_home_base]))
             home_pred = model.predict(X_home[config.x_features])[0]
@@ -294,35 +233,35 @@ def get_predictive_ratings_win_margin(
                 home_pred += team_bias_info.team_posteriors.get(opp, (0, 0))[0]
             team_home_margins.append(home_pred)
 
-            # play an away game
+            # Same matchup, swapping which team is home.
             X_away_base = {
-                "team_rating": opp_rating,
-                "opponent_rating": team_rating,
-                "team_win_total_future": opp_win_total_future,
-                "opponent_win_total_future": team_win_total_future,
-                "last_year_team_rating": last_year_ratings[opp],
-                "last_year_opp_rating": last_year_ratings[team],
+                "team_rating": o["rating"],
+                "opponent_rating": t["rating"],
+                "team_win_total_future": o["win_total_future"],
+                "opponent_win_total_future": t["win_total_future"],
+                "last_year_team_rating": o["last_year_rating"],
+                "last_year_opp_rating": t["last_year_rating"],
                 "num_games_into_season": num_games_into_season,
-                "team_last_10_rating": opp_last_10_rating,
-                "opponent_last_10_rating": team_last_10_rating,
-                "team_last_5_rating": opp_last_5_rating,
-                "opponent_last_5_rating": team_last_5_rating,
-                "team_last_3_rating": opp_last_3_rating,
-                "opponent_last_3_rating": team_last_3_rating,
-                "team_last_1_rating": opp_last_1_rating_rating,
-                "opponent_last_1_rating": team_last_1_rating_rating,
-                "team_days_since_most_recent_game": opp_days_since_most_recent_game,
-                "opponent_days_since_most_recent_game": team_days_since_most_recent_game,
+                "team_last_10_rating": o["last_10_rating"],
+                "opponent_last_10_rating": t["last_10_rating"],
+                "team_last_5_rating": o["last_5_rating"],
+                "opponent_last_5_rating": t["last_5_rating"],
+                "team_last_3_rating": o["last_3_rating"],
+                "opponent_last_3_rating": t["last_3_rating"],
+                "team_last_1_rating": o["last_1_rating"],
+                "opponent_last_1_rating": t["last_1_rating"],
+                "team_days_since_most_recent_game": DAYS_SINCE_DEFAULT,
+                "opponent_days_since_most_recent_game": DAYS_SINCE_DEFAULT,
                 "hca": current_hca,
                 "playoff": 1 if playoff_mode else 0,
-                "team_bayesian_gs": opp_bayesian_gs,
-                "opp_bayesian_gs": team_bayesian_gs,
+                "team_bayesian_gs": o["bayesian_gs"],
+                "opp_bayesian_gs": t["bayesian_gs"],
             }
             X_away = utils.build_model_features(pd.DataFrame([X_away_base]))
             away_pred = -model.predict(X_away[config.x_features])[0]
             if team_bias_info is not None:
-                # away_pred is from team's perspective (negated home pred)
-                # opp is home here, team is away; we correct from team's perspective
+                # away_pred is from team's perspective (negated home pred);
+                # opp is home, team is away, correct from team's perspective.
                 away_pred += team_bias_info.team_posteriors.get(opp, (0, 0))[0]
                 away_pred -= team_bias_info.team_posteriors.get(team, (0, 0))[0]
             team_away_margins.append(away_pred)
