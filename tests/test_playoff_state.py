@@ -162,12 +162,9 @@ class TestPlayoffState:
         assert hasattr(PlayoffState, "COMPLETED")
 
     def test_init_playoff_state_is_none(self):
-        """Season.__init__ sets playoff_state to None before playoffs() is called."""
-        # Just check the attribute exists via class inspection is simpler
-        # than constructing a full Season, so check directly
-        assert "playoff_state" in Season.__init__.__code__.co_names or True
-        # More robust: check that the __init__ source mentions it
+        """Season.__init__ assigns self.playoff_state (initialized to None)."""
         import inspect
 
         source = inspect.getsource(Season.__init__)
         assert "self.playoff_state" in source
+        assert "self.playoff_state = None" in source
