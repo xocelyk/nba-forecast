@@ -435,7 +435,8 @@ def days_since_most_recent_game(team, date, games, cap=10, hca: float = HCA):
     if len(team_data) == 0:
         return cap
     else:
-        return min(cap, (date - team_data.iloc[0]["date"]).days)
+        team_data = team_data.sort_values(by="date")
+        return min(cap, (date - team_data.iloc[-1]["date"]).days)
 
 
 def build_model_features(df):
