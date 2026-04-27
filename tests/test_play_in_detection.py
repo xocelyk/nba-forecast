@@ -76,35 +76,45 @@ class FakePlayInSeason:
             base = base.date()
         return base + datetime.timedelta(days=day_increment)
 
+    def append_future_games(self, rows):
+        if not rows:
+            return
+        new_df = pd.DataFrame(
+            [
+                {
+                    "date": r["date"],
+                    "team": r["team"],
+                    "opponent": r["opponent"],
+                    "year": self.year,
+                    "playoff_label": r.get("playoff_label"),
+                    "playoff": 1,
+                    "winner_name": np.nan,
+                }
+                for r in rows
+            ]
+        )
+        self.future_games = pd.concat([self.future_games, new_df], ignore_index=True)
+        # Match real Season bookkeeping so .tail() / .loc[] work.
+        self.completed_games.index = range(len(self.completed_games))
+        start = (
+            (max(self.completed_games.index) + 1)
+            if len(self.completed_games) > 0
+            else 0
+        )
+        self.future_games.index = range(start, start + len(self.future_games))
+
     def append_future_game(
         self, future_games, date, team, opponent, playoff_label=None
     ):
-        new_row = pd.DataFrame(
-            {
-                "date": [date],
-                "team": [team],
-                "opponent": [opponent],
-                "year": [self.year],
-                "playoff_label": [playoff_label],
-                "playoff": [1],
-                "winner_name": [np.nan],
-            }
-        )
-        self.future_games = pd.concat([self.future_games, new_row], ignore_index=True)
-        # Match real Season bookkeeping so .tail() / .loc[] work.
-        self.completed_games.index = range(len(self.completed_games))
-        self.future_games.index = range(
-            (
-                (max(self.completed_games.index) + 1)
-                if len(self.completed_games) > 0
-                else 0
-            ),
-            (
-                max(self.completed_games.index) + 1
-                if len(self.completed_games) > 0
-                else 0
-            )
-            + len(self.future_games),
+        self.append_future_games(
+            [
+                {
+                    "date": date,
+                    "team": team,
+                    "opponent": opponent,
+                    "playoff_label": playoff_label,
+                }
+            ]
         )
 
     def update_data(self, games_on_date=None):
