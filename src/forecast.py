@@ -139,7 +139,8 @@ def get_predictive_ratings_win_margin(
     filename = os.path.join(config.DATA_DIR, "train_data.csv")
     most_recent_games_dict = {}  # team to pandas series of most recent game
     # most recent game is either the most recently played game OR the next game to be played (if no games have been played yet)
-    this_year_games = pd.read_csv(filename)[pd.read_csv(filename)["year"] == year]
+    all_games = pd.read_csv(filename)
+    this_year_games = all_games[all_games["year"] == year]
     this_year_games_completed = this_year_games[this_year_games["completed"] == True]
     this_year_games_completed.sort_values(by="date", ascending=False, inplace=True)
     this_year_games_future = this_year_games[this_year_games["completed"] == False]
@@ -164,7 +165,7 @@ def get_predictive_ratings_win_margin(
             most_recent_games_dict[team] = team_next_game
 
     this_year_games = pd.DataFrame(most_recent_games_dict.values())
-    this_year_games.sort_values(by="date", ascending=False)
+    this_year_games = this_year_games.sort_values(by="date", ascending=True)
     num_games_into_season = len(this_year_games_completed)
     this_year_ratings = {}
     last_year_ratings = {}
@@ -173,7 +174,9 @@ def get_predictive_ratings_win_margin(
         this_year_games_for_team = this_year_games[
             (this_year_games["team"] == team) | (this_year_games["opponent"] == team)
         ]
-        this_year_games_for_team.sort_values(by="date", ascending=False)
+        this_year_games_for_team = this_year_games_for_team.sort_values(
+            by="date", ascending=True
+        )
         most_recent_game = this_year_games_for_team.iloc[-1]
         if most_recent_game["team"] == team:
             this_year_ratings[team] = most_recent_game["team_rating"]
