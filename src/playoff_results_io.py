@@ -7,8 +7,7 @@ from typing import Iterable
 
 import pandas as pd
 
-from . import config
-from . import utils
+from . import config, utils
 from .playoff_types import (
     Conference,
     PlayoffGame,
@@ -153,8 +152,7 @@ def build_actual_series_results(
             pair_slot_counts[pair][(s.round.name, s.conference.value, s.label)] += 1
 
     pair_to_slot: dict[frozenset, tuple[str, str, str]] = {
-        pair: counter.most_common(1)[0][0]
-        for pair, counter in pair_slot_counts.items()
+        pair: counter.most_common(1)[0][0] for pair, counter in pair_slot_counts.items()
     }
 
     # Group real games by the pair of teams involved.
