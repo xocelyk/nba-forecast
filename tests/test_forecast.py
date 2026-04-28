@@ -28,7 +28,6 @@ import pytest
 from src import config as config_module
 from src import forecast
 
-
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
@@ -141,9 +140,7 @@ class TestGetExpectedWinsLosses:
         """A game with win_prob=0.7 should add 0.7 to home's expected wins and
         0.3 to away's expected wins (and the complements to losses)."""
         all_data = self._all_data({"BOS": (0, 0), "LAL": (0, 0)})
-        future = pd.DataFrame(
-            [{"team": "BOS", "opponent": "LAL", "win_prob": 0.7}]
-        )
+        future = pd.DataFrame([{"team": "BOS", "opponent": "LAL", "win_prob": 0.7}])
 
         ew, el = forecast.get_expected_wins_losses(all_data, future)
 
@@ -172,9 +169,7 @@ class TestGetExpectedWinsLosses:
 
     def test_certainty_adds_exactly_one_win(self):
         all_data = self._all_data({"BOS": (0, 0), "LAL": (0, 0)})
-        future = pd.DataFrame(
-            [{"team": "BOS", "opponent": "LAL", "win_prob": 1.0}]
-        )
+        future = pd.DataFrame([{"team": "BOS", "opponent": "LAL", "win_prob": 1.0}])
         ew, el = forecast.get_expected_wins_losses(all_data, future)
         assert ew["BOS"] == 1.0
         assert el["LAL"] == 1.0
@@ -195,9 +190,7 @@ class TestPredictMarginTodayGames:
 
     def test_returns_none_when_games_today_are_all_completed(self):
         today = datetime.date.today()
-        games = pd.DataFrame(
-            [_base_game_row("BOS", "LAL", today, completed=True)]
-        )
+        games = pd.DataFrame([_base_game_row("BOS", "LAL", today, completed=True)])
         assert forecast.predict_margin_today_games(games, FakeMarginModel()) is None
 
     def test_predicts_margin_for_todays_uncompleted_games(self):
@@ -212,9 +205,7 @@ class TestPredictMarginTodayGames:
                     "MIA",
                     today - datetime.timedelta(days=1),  # filtered out
                 ),
-                _base_game_row(
-                    "GSW", "DEN", today, completed=True  # filtered out
-                ),
+                _base_game_row("GSW", "DEN", today, completed=True),  # filtered out
             ]
         )
 
@@ -280,7 +271,9 @@ class TestPredictMarginAndWinProbFutureGames:
         assert row["win_prob"] == pytest.approx(1.0 / (1.0 + np.exp(-0.65)), rel=1e-3)
 
         # Both CSVs (current + dated archive) should be written.
-        current_csv = tmp_data_dir / "predictions" / "predicted_margins_and_win_probs.csv"
+        current_csv = (
+            tmp_data_dir / "predictions" / "predicted_margins_and_win_probs.csv"
+        )
         assert current_csv.exists()
         archive_files = list(
             (tmp_data_dir / "predictions" / "archive").glob(
@@ -298,9 +291,7 @@ class TestPredictMarginAndWinProbFutureGames:
             "Predicted Home Win Probability",
         ]
 
-    def test_team_bias_is_subtracted_from_home_and_added_from_away(
-        self, tmp_data_dir
-    ):
+    def test_team_bias_is_subtracted_from_home_and_added_from_away(self, tmp_data_dir):
         """pred_margin should become raw_margin - home_bias + away_bias."""
         # Two games sharing the same raw pred (6.5): one with bias, one without.
         # The per-row adjustment is what we're isolating.
@@ -347,7 +338,11 @@ class TestGenerateRetrospectivePredictions:
         today = datetime.date.today()
         # Only one game, and it's for a different year.
         games = pd.DataFrame(
-            [_base_game_row("BOS", "LAL", today.replace(year=today.year - 1), completed=True)]
+            [
+                _base_game_row(
+                    "BOS", "LAL", today.replace(year=today.year - 1), completed=True
+                )
+            ]
         )
         result = forecast.generate_retrospective_predictions(
             games, FakeMarginModel(), FakeWinProbModel(), year=today.year
