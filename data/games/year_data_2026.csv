@@ -1266,25 +1266,23 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0042500134,2026-04-26 04:00:00,TOR,CLE,Toronto Raptors,Cleveland Cavaliers,93.0,89.0,4.0,Home,107.01781724347298,True,2026,False,,,,44.0,True
 0042500154,2026-04-26 04:00:00,POR,SAS,Portland Trail Blazers,San Antonio Spurs,93.0,114.0,-21.0,Home,98.2964377406932,True,2026,False,,,,31.0,True
 0042500174,2026-04-26 04:00:00,HOU,LAL,Houston Rockets,Los Angeles Lakers,115.0,96.0,19.0,Home,94.03807275541796,True,2026,True,4.0,PT11M28.00S,524.0,40.0,True
-0042500104,2026-04-27 04:00:00,ORL,DET,Magic,Pistons,94.0,88.0,6.0,Home,105.4084669811321,True,2026,False,,,,47.0,True
-0042500144,2026-04-27 04:00:00,PHX,OKC,Suns,Thunder,122.0,131.0,-9.0,Home,93.56611111111111,True,2026,False,,,,37.0,True
-0042500165,2026-04-27 04:00:00,DEN,MIN,Nuggets,Timberwolves,125.0,113.0,12.0,Home,102.41993315508022,True,2026,True,4.0,PT10M07.00S,572.0,34.0,True
-0042500115,2026-04-28 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500125,2026-04-28 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500155,2026-04-28 04:00:00,SAS,POR,Spurs,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500104,2026-04-27 04:00:00,ORL,DET,Orlando Magic,Detroit Pistons,94.0,88.0,6.0,Home,105.4084669811321,True,2026,False,,,,47.0,True
+0042500144,2026-04-27 04:00:00,PHX,OKC,Phoenix Suns,Oklahoma City Thunder,122.0,131.0,-9.0,Home,93.56611111111113,True,2026,False,,,,37.0,True
+0042500165,2026-04-27 04:00:00,DEN,MIN,Denver Nuggets,Minnesota Timberwolves,125.0,113.0,12.0,Home,102.41993315508022,True,2026,True,4.0,PT10M07.00S,572.0,34.0,True
+0042500115,2026-04-28 04:00:00,BOS,PHI,Celtics,76ers,97.0,113.0,-16.0,Home,95.45657894736843,True,2026,False,,,,40.0,True
+0042500125,2026-04-28 04:00:00,NYK,ATL,Knicks,Hawks,126.0,97.0,29.0,Home,93.08055555555556,True,2026,True,4.0,PT07M31.00S,590.0,32.0,True
+0042500155,2026-04-28 04:00:00,SAS,POR,Spurs,Trail Blazers,114.0,95.0,19.0,Home,96.40264976958525,True,2026,True,4.0,PT03M34.00S,679.0,36.0,True
 0042500105,2026-04-29 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500135,2026-04-29 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500175,2026-04-29 04:00:00,LAL,HOU,Lakers,Rockets,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500116,2026-04-30 04:00:00,PHI,BOS,76ers,Celtics,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500126,2026-04-30 04:00:00,ATL,NYK,Hawks,Knicks,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500156,2026-04-30 04:00:00,POR,SAS,Trail Blazers,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500166,2026-04-30 04:00:00,MIN,DEN,Timberwolves,Nuggets,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500106,2026-05-01 04:00:00,ORL,DET,Magic,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500136,2026-05-01 04:00:00,TOR,CLE,Raptors,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500176,2026-05-01 04:00:00,HOU,LAL,Rockets,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500117,2026-05-02 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500127,2026-05-02 04:00:00,NYK,ATL,Knicks,Hawks,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500157,2026-05-02 04:00:00,SAS,POR,Spurs,Trail Blazers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500167,2026-05-02 04:00:00,DEN,MIN,Nuggets,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500107,2026-05-03 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500137,2026-05-03 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
