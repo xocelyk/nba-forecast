@@ -1147,7 +1147,19 @@ class Season:
                 if series_games.empty:
                     continue
 
-                wins = series_games["winner_name"].value_counts()
+                # Derive winners from team_win (preserved on all completed
+                # games) rather than the winner_name column, which is wiped
+                # at the start of playoffs() and only re-set on sim games
+                # and via trim_decided_playoff_series_games. Reading
+                # winner_name directly silently undercounts real-played
+                # games and causes the completion loop to think a series
+                # is already decided when it is not.
+                derived_winners = np.where(
+                    series_games["team_win"] == 1,
+                    series_games["team"],
+                    series_games["opponent"],
+                )
+                wins = pd.Series(derived_winners).value_counts()
                 if wins.empty:
                     continue
 
