@@ -1275,20 +1275,26 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0042500105,2026-04-29 04:00:00,DET,ORL,Detroit Pistons,Orlando Magic,116.0,109.0,7.0,Home,97.39073170731707,True,2026,False,,,,44.0,True
 0042500135,2026-04-29 04:00:00,CLE,TOR,Cleveland Cavaliers,Toronto Raptors,125.0,120.0,5.0,Home,102.43688601645124,True,2026,False,,,,34.0,True
 0042500175,2026-04-29 04:00:00,LAL,HOU,Los Angeles Lakers,Houston Rockets,93.0,99.0,-6.0,Home,89.85611908177903,True,2026,False,,,,34.0,True
-0042500116,2026-04-30 04:00:00,PHI,BOS,76ers,Celtics,106.0,93.0,13.0,Home,99.16130434782609,True,2026,True,4.0,PT05M10.00S,562.0,22.0,True
-0042500126,2026-04-30 04:00:00,ATL,NYK,Hawks,Knicks,89.0,140.0,-51.0,Home,97.80381628787877,True,2026,False,,,,42.0,True
-0042500166,2026-04-30 04:00:00,MIN,DEN,Timberwolves,Nuggets,110.0,98.0,12.0,Home,91.84820505287898,True,2026,False,,,,29.0,True
-0042500106,2026-05-01 04:00:00,ORL,DET,Magic,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500136,2026-05-01 04:00:00,TOR,CLE,Raptors,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500176,2026-05-01 04:00:00,HOU,LAL,Rockets,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500116,2026-04-30 04:00:00,PHI,BOS,Philadelphia 76ers,Boston Celtics,106.0,93.0,13.0,Home,99.16130434782607,True,2026,True,4.0,PT05M10.00S,562.0,22.0,True
+0042500126,2026-04-30 04:00:00,ATL,NYK,Atlanta Hawks,New York Knicks,89.0,140.0,-51.0,Home,97.80381628787876,True,2026,False,,,,42.0,True
+0042500166,2026-04-30 04:00:00,MIN,DEN,Minnesota Timberwolves,Denver Nuggets,110.0,98.0,12.0,Home,91.84820505287898,True,2026,False,,,,29.0,True
+0042500106,2026-05-01 04:00:00,ORL,DET,Magic,Pistons,79.0,93.0,-14.0,Home,90.4405533596838,True,2026,False,,,,34.0,True
+0042500136,2026-05-01 04:00:00,TOR,CLE,Raptors,Cavaliers,112.0,110.0,2.0,Home,93.1672682120751,True,2026,False,,,,44.0,True
+0042500176,2026-05-01 04:00:00,HOU,LAL,Rockets,Lakers,78.0,98.0,-20.0,Home,96.49444353518821,True,2026,False,,,,36.0,True
 0042500117,2026-05-02 04:00:00,BOS,PHI,Celtics,76ers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500107,2026-05-03 04:00:00,DET,ORL,Pistons,Magic,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500137,2026-05-03 04:00:00,CLE,TOR,Cavaliers,Raptors,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500177,2026-05-03 04:00:00,LAL,HOU,Lakers,Rockets,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500231,2026-05-04 04:00:00,SAS,MIN,Spurs,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500221,2026-05-05 04:00:00,OKC,LAL,Thunder,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500232,2026-05-06 04:00:00,SAS,MIN,Spurs,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500222,2026-05-07 04:00:00,OKC,LAL,Thunder,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500233,2026-05-08 04:00:00,MIN,SAS,Timberwolves,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500223,2026-05-09 04:00:00,LAL,OKC,Lakers,Thunder,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500234,2026-05-10 04:00:00,MIN,SAS,Timberwolves,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500224,2026-05-11 04:00:00,LAL,OKC,Lakers,Thunder,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500235,2026-05-12 04:00:00,SAS,MIN,Spurs,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500225,2026-05-13 04:00:00,OKC,LAL,Thunder,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500236,2026-05-15 04:00:00,MIN,SAS,Timberwolves,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500226,2026-05-16 04:00:00,LAL,OKC,Lakers,Thunder,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500237,2026-05-17 04:00:00,SAS,MIN,Spurs,Timberwolves,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500227,2026-05-18 04:00:00,OKC,LAL,Thunder,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
