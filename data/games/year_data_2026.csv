@@ -1288,10 +1288,10 @@ game_id,date,team,opponent,team_name,opponent_name,team_score,opponent_score,mar
 0042500231,2026-05-04 04:00:00,SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,102.0,104.0,-2.0,Home,96.30665587419055,True,2026,False,,,,32.0,True
 0042500201,2026-05-05 04:00:00,DET,CLE,Detroit Pistons,Cleveland Cavaliers,111.0,101.0,10.0,Home,95.01828260869564,True,2026,False,,,,44.0,True
 0042500221,2026-05-05 04:00:00,OKC,LAL,Oklahoma City Thunder,Los Angeles Lakers,108.0,90.0,18.0,Home,95.39730683090706,True,2026,True,4.0,PT05M16.00S,608.0,23.0,True
-0042500212,2026-05-06 04:00:00,NYK,PHI,Knicks,76ers,108.0,102.0,6.0,Home,92.76408177408177,True,2026,False,,,,42.0,True
-0042500232,2026-05-06 04:00:00,SAS,MIN,Spurs,Timberwolves,133.0,95.0,38.0,Home,109.02582070707071,True,2026,True,3.0,PT03M20.00S,537.0,31.0,True
-0042500202,2026-05-07 04:00:00,DET,CLE,Pistons,Cavaliers,0.0,0.0,,Home,,False,2026,,,,,,True
-0042500222,2026-05-07 04:00:00,OKC,LAL,Thunder,Lakers,0.0,0.0,,Home,,False,2026,,,,,,True
+0042500212,2026-05-06 04:00:00,NYK,PHI,New York Knicks,Philadelphia 76ers,108.0,102.0,6.0,Home,92.76408177408176,True,2026,False,,,,42.0,True
+0042500232,2026-05-06 04:00:00,SAS,MIN,San Antonio Spurs,Minnesota Timberwolves,133.0,95.0,38.0,Home,109.02582070707072,True,2026,True,3.0,PT03M20.00S,537.0,31.0,True
+0042500202,2026-05-07 04:00:00,DET,CLE,Pistons,Cavaliers,107.0,97.0,10.0,Home,89.7823076923077,True,2026,False,,,,35.0,True
+0042500222,2026-05-07 04:00:00,OKC,LAL,Thunder,Lakers,125.0,107.0,18.0,Home,91.1057210031348,True,2026,True,4.0,PT04M04.00S,677.0,38.0,True
 0042500213,2026-05-08 04:00:00,PHI,NYK,76ers,Knicks,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500233,2026-05-08 04:00:00,MIN,SAS,Timberwolves,Spurs,0.0,0.0,,Home,,False,2026,,,,,,True
 0042500203,2026-05-09 04:00:00,CLE,DET,Cavaliers,Pistons,0.0,0.0,,Home,,False,2026,,,,,,True
